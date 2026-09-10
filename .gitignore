@@ -31,7 +31,32 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+.env
+.env.local
+.env.*.local
+
+# Google service account keys (never commit)
+/secrets/
+*service-account*.json
+*-credentials.json
+
+# import dry-run output
+/tmp
+
+# local practice store (tests, attempts, learn curriculum)
+/data
+
+# uploaded audio (keep folder)
+/public/uploads/audio/*
+!/public/uploads/audio/.gitkeep
+
+# learn lesson videos (keep folder)
+/public/uploads/learn/videos/*
+!/public/uploads/learn/videos/.gitkeep
+
+# user avatars (keep folder)
+/public/uploads/avatars/*
+!/public/uploads/avatars/.gitkeep
 
 # vercel
 .vercel
@@ -39,3 +64,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/src/generated/prisma
+
+.vercel
