@@ -108,10 +108,10 @@ export async function SiteFooter() {
   return (
     <footer
       id="site-footer"
-      className="mt-6 border-t border-white/10 bg-wewin-navy text-white"
+      className="w-full border-t border-white/10 bg-wewin-navy text-white"
     >
       <div className="mx-auto w-full max-w-[1400px] px-4 py-5 sm:px-6 sm:py-6 lg:px-8">
-        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-6">
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start lg:gap-8">
           <div className="min-w-0">
             <Link href="/" className="inline-flex items-center gap-2.5">
               <Image
@@ -198,7 +198,7 @@ export async function SiteFooter() {
                   </>
                 );
                 return (
-                  <li key={card.key}>
+                  <li key={card.key} className="min-w-0">
                     {card.href ? (
                       <a
                         href={card.href}
@@ -208,12 +208,12 @@ export async function SiteFooter() {
                             ? "noopener noreferrer"
                             : undefined
                         }
-                        className="flex gap-2 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 transition hover:bg-white/10"
+                        className="flex h-full w-full gap-2 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 transition hover:bg-white/10"
                       >
                         {inner}
                       </a>
                     ) : (
-                      <div className="flex gap-2 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5">
+                      <div className="flex h-full w-full gap-2 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5">
                         {inner}
                       </div>
                     )}
@@ -224,7 +224,7 @@ export async function SiteFooter() {
           </div>
         </div>
 
-        <p className="mt-4 text-center text-[11px] text-white/60">
+        <p className="mt-4 w-full text-center text-[11px] text-white/60">
           {t("copyright", "© 2026 WeWIN Education. All rights reserved.")}
         </p>
       </div>

@@ -19,6 +19,13 @@ import {
   SubmitConfirmDialog,
   TestEndedOverlay,
 } from "@/components/practice/submit-confirm-dialog";
+import { InlineNotesGaps, findInlineBlankNumbers } from "@/components/practice/inline-notes-gaps";
+import {
+  parseReadingQuestionGroups,
+  splitReadingPassageAndTasks,
+  type ReadingQuestionGroup,
+} from "@/lib/practice/reading-content";
+import { splitWritingPrompt } from "@/lib/practice/writing-prompt";
 import { countWords } from "@/lib/scoring";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import {
@@ -32,12 +39,15 @@ import { useTranslations } from "@/i18n/provider";
 type Question = {
   number: number;
   type: string;
+  mediaUrl?: string;
   content: {
     stem?: string;
     options?: { label: string; text: string }[];
     minWords?: number;
     hint?: string;
     sample?: string;
+    blank?: boolean;
+    imageUrl?: string;
   };
 };
 
@@ -68,6 +78,56 @@ function localKey(attemptId: string) {
   return `wewin-attempt:${attemptId}`;
 }
 
+function partsHaveDuplicateNumbers(parts: Part[]): boolean {
+  const seen = new Set<number>();
+  for (const p of parts) {
+    for (const q of p.questions) {
+      if (seen.has(q.number)) return true;
+      seen.add(q.number);
+    }
+  }
+  return false;
+}
+
+/** Assign unique 1..N numbers across parts (Speaking topics often restart at 1). */
+function withGlobalQuestionNumbers(parts: Part[]): Part[] {
+  let n = 1;
+  return parts.map((p) => ({
+    ...p,
+    questions: p.questions.map((q) => ({
+      ...q,
+      number: n++,
+    })),
+  }));
+}
+
+function migrateAnswersAfterRenumber(
+  partsBefore: Part[],
+  partsAfter: Part[],
+  answers: Record<string, string>,
+): Record<string, string> {
+  const next: Record<string, string> = {};
+  const oldQs = partsBefore.flatMap((p) => p.questions);
+  const newQs = partsAfter.flatMap((p) => p.questions);
+  const consumed = new Map<number, number>();
+  for (let i = 0; i < newQs.length; i++) {
+    const newKey = String(newQs[i]!.number);
+    if ((answers[newKey] ?? "").trim()) {
+      next[newKey] = answers[newKey]!;
+      continue;
+    }
+    const oldNum = oldQs[i]?.number;
+    if (oldNum == null) continue;
+    const used = consumed.get(oldNum) ?? 0;
+    const oldKey = String(oldNum);
+    if (used === 0 && (answers[oldKey] ?? "").trim()) {
+      next[newKey] = answers[oldKey]!;
+    }
+    consumed.set(oldNum, used + 1);
+  }
+  return next;
+}
+
 function remainingSeconds(
   startedAt: string,
   timeLimitMinutes: number | null,
@@ -92,11 +152,25 @@ export function PracticeSession({
   const { t } = useTranslations("practice");
   const ts = useTranslations("skills").t;
   const te = useTranslations("errors").t;
-  const [answers, setAnswers] = useState<Record<string, string>>(initialAnswers);
+
+  const shouldRenumber =
+    skill === "SPEAKING" ||
+    skill === "WRITING" ||
+    partsHaveDuplicateNumbers(parts);
+
+  const [answers, setAnswers] = useState<Record<string, string>>(() => {
+    if (!shouldRenumber) return initialAnswers;
+    return migrateAnswersAfterRenumber(
+      parts,
+      withGlobalQuestionNumbers(parts),
+      initialAnswers,
+    );
+  });
   const [activePart, setActivePart] = useState(0);
-  const [currentNumber, setCurrentNumber] = useState<number | null>(
-    () => parts[0]?.questions[0]?.number ?? null,
-  );
+  const [currentNumber, setCurrentNumber] = useState<number | null>(() => {
+    const sp = shouldRenumber ? withGlobalQuestionNumbers(parts) : parts;
+    return sp[0]?.questions[0]?.number ?? null;
+  });
   const [flagged, setFlagged] = useState<Set<number>>(() => new Set());
   const [secondsLeft, setSecondsLeft] = useState<number | null>(() =>
     remainingSeconds(startedAt, timeLimitMinutes),
@@ -120,15 +194,23 @@ export function PracticeSession({
   const isWriting = skill === "WRITING";
   const isSpeaking = skill === "SPEAKING";
   const isLr = isReading || isListening;
-  const audioSrc = audioFiles?.[0];
   const skillLabel = ts(skill, skill);
+
+  const sessionParts = useMemo(
+    () => (shouldRenumber ? withGlobalQuestionNumbers(parts) : parts),
+    [parts, shouldRenumber],
+  );
 
   const navQuestions: NavQuestion[] = useMemo(
     () =>
-      parts.flatMap((p, partIndex) =>
-        p.questions.map((q) => ({ number: q.number, partIndex })),
+      sessionParts.flatMap((p, partIndex) =>
+        p.questions.map((q) => ({
+          number: q.number,
+          partIndex,
+          partLabel: t("partShort", { n: partIndex + 1 }, "P{n}"),
+        })),
       ),
-    [parts],
+    [sessionParts, t],
   );
   const allQuestions = useMemo(
     () => navQuestions.map((q) => q.number),
@@ -152,13 +234,20 @@ export function PracticeSession({
         savedAt?: string;
       };
       if (parsed.answers && Object.keys(parsed.answers).length > 0) {
+        const localAnswers = shouldRenumber
+          ? migrateAnswersAfterRenumber(
+              parts,
+              withGlobalQuestionNumbers(parts),
+              parsed.answers,
+            )
+          : parsed.answers;
         setAnswers((prev) => {
           const serverKeys = Object.keys(prev).filter((k) => (prev[k] ?? "").trim());
-          const localKeys = Object.keys(parsed.answers!).filter(
-            (k) => (parsed.answers![k] ?? "").trim(),
+          const localKeys = Object.keys(localAnswers).filter(
+            (k) => (localAnswers[k] ?? "").trim(),
           );
-          if (localKeys.length >= serverKeys.length) return parsed.answers!;
-          return { ...parsed.answers, ...prev };
+          if (localKeys.length >= serverKeys.length) return localAnswers;
+          return { ...localAnswers, ...prev };
         });
       }
       if (Array.isArray(parsed.flagged)) {
@@ -168,7 +257,7 @@ export function PracticeSession({
       /* ignore */
     }
     hydrated.current = true;
-  }, [attemptId]);
+  }, [attemptId, parts, shouldRenumber]);
 
   const persistDraft = useCallback(
     async (next: Record<string, string>, nextFlagged?: Set<number>) => {
@@ -324,9 +413,21 @@ export function PracticeSession({
     }
   }
 
-  const part = parts[activePart];
+  const part = sessionParts[activePart];
   const clipStart = parseTimestamp(part?.meta?.audiostart ?? part?.meta?.audioStart);
   const clipEnd = parseTimestamp(part?.meta?.audioend ?? part?.meta?.audioEnd);
+  /** Prefer per-section audio on part.meta; else audioFiles[order]; else first file. */
+  const audioSrc = (() => {
+    if (!isListening) return undefined;
+    const fromMeta = part?.meta?.audioUrl ?? part?.meta?.audio;
+    if (typeof fromMeta === "string" && fromMeta.trim()) return fromMeta.trim();
+    if (audioFiles?.length) {
+      const byOrder = audioFiles[part?.order ?? activePart];
+      if (byOrder) return byOrder;
+      return audioFiles[0];
+    }
+    return undefined;
+  })();
   const showContentPanel =
     Boolean(part?.content) && isLr && !isWriting && !isSpeaking;
 
@@ -367,25 +468,30 @@ export function PracticeSession({
   );
 
   const partTabs =
-    parts.length > 1 ? (
+    sessionParts.length > 1 ? (
       <div className="mx-auto flex max-w-[1400px] min-w-0 gap-1 overflow-x-auto px-2 py-1.5 sm:px-3">
-        {parts.map((p, idx) => (
+        {sessionParts.map((p, idx) => (
           <button
             type="button"
-            key={p.order}
+            key={`${p.order}-${idx}`}
             onClick={() => {
               setActivePart(idx);
               const first = p.questions[0]?.number;
               if (first != null) setCurrentNumber(first);
             }}
-            className={`shrink-0 border px-3 py-1.5 text-xs font-semibold uppercase tracking-wide ${
+            className={`shrink-0 border px-3 py-1.5 text-xs font-semibold tracking-wide ${
               idx === activePart
                 ? "border-[#1a3a6b] bg-[#1a3a6b] text-white"
                 : "border-zinc-400 bg-white text-zinc-700 hover:bg-zinc-50"
             }`}
           >
-            <span className="line-clamp-1 max-w-[10rem] normal-case tracking-normal sm:max-w-[14rem]">
-              {p.title}
+            <span className="inline-flex max-w-[12rem] items-center gap-1.5 normal-case tracking-normal sm:max-w-[16rem]">
+              <span className="tabular-nums opacity-90">
+                {t("partShort", { n: idx + 1 }, "P{n}")}
+              </span>
+              {p.title?.trim() ? (
+                <span className="line-clamp-1 font-medium">{p.title}</span>
+              ) : null}
             </span>
           </button>
         ))}
@@ -395,11 +501,16 @@ export function PracticeSession({
   const toolbar =
     isListening && audioSrc ? (
       <AudioPlayer
+        key={audioSrc}
         src={audioSrc}
         clipStart={clipStart}
         clipEnd={clipEnd}
         compact
-        label={part ? `${t("audioPart", "Audio")} · ${part.title}` : undefined}
+        label={
+          part
+            ? `${t("audioPart", "Audio")} · ${part.title}`
+            : t("audioPart", "Audio")
+        }
       />
     ) : null;
 
@@ -415,6 +526,7 @@ export function PracticeSession({
         onPrev={() => goRelative(-1)}
         onNext={() => goRelative(1)}
         showReview
+        groupByPart={shouldRenumber || sessionParts.length > 1}
       />
     ) : isWriting || isSpeaking ? (
       <QuestionNavigator
@@ -427,6 +539,7 @@ export function PracticeSession({
         onPrev={() => goRelative(-1)}
         onNext={() => goRelative(1)}
         showReview={false}
+        groupByPart
       />
     ) : null;
 
@@ -453,49 +566,16 @@ export function PracticeSession({
         ) : null}
 
         {showContentPanel && part?.content ? (
-          <div className="cdi-split grid min-h-0 min-w-0 flex-1 gap-0 lg:grid-cols-2 lg:items-stretch">
-            <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-[#f7f8fa] lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
-              <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
-                {isReading
-                  ? t("passage", "Passage")
-                  : t("notes", "Notes / task text")}
-              </div>
-              <div className="break-words px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800 sm:px-4">
-                {isReading ? passageOnly(part.content) : part.content}
-              </div>
-            </div>
-            <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-white lg:border-t lg:border-l-0 lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
-              <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
-                {part.title}
-              </div>
-              <div className="space-y-5 p-3 sm:p-4">
-                {part.questions.map((q) => (
-                  <div
-                    key={q.number}
-                    ref={(el) => {
-                      if (el) questionRefs.current.set(q.number, el);
-                      else questionRefs.current.delete(q.number);
-                    }}
-                    data-q={q.number}
-                    className={
-                      currentNumber === q.number
-                        ? "rounded-sm ring-2 ring-[#1a3a6b]/35 ring-offset-1"
-                        : undefined
-                    }
-                    onFocusCapture={() => setCurrentNumber(q.number)}
-                  >
-                    <QuestionInput
-                      question={q}
-                      skill={skill}
-                      value={answers[String(q.number)] ?? ""}
-                      onChange={(v) => setAnswer(q.number, v)}
-                      compactStem={Boolean(part.content)}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <ReadingOrNotesSplit
+            part={part}
+            isReading={isReading}
+            skill={skill}
+            answers={answers}
+            currentNumber={currentNumber}
+            questionRefs={questionRefs}
+            onFocusQuestion={setCurrentNumber}
+            onChange={setAnswer}
+          />
         ) : isWriting && part ? (
           <WritingDesk
             part={part}
@@ -509,8 +589,15 @@ export function PracticeSession({
         ) : (
           <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-white">
             <div className="border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
-              {part?.title}
+              {part?.title?.trim()
+                ? part.title
+                : t("partShort", { n: activePart + 1 }, "P{n}")}
             </div>
+            {isSpeaking && part?.content?.trim() ? (
+              <div className="border-b border-zinc-200 bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800 sm:px-4">
+                {part.content}
+              </div>
+            ) : null}
             <div className="space-y-5 p-3 sm:p-4">
               {part?.questions.map((q) => (
                 <div
@@ -519,11 +606,6 @@ export function PracticeSession({
                     if (el) questionRefs.current.set(q.number, el);
                     else questionRefs.current.delete(q.number);
                   }}
-                  className={
-                    currentNumber === q.number
-                      ? "rounded-sm ring-2 ring-[#1a3a6b]/35 ring-offset-1"
-                      : undefined
-                  }
                   onFocusCapture={() => setCurrentNumber(q.number)}
                 >
                   <QuestionInput
@@ -531,6 +613,7 @@ export function PracticeSession({
                     skill={skill}
                     value={answers[String(q.number)] ?? ""}
                     onChange={(v) => setAnswer(q.number, v)}
+                    active={currentNumber === q.number}
                   />
                 </div>
               ))}
@@ -576,16 +659,25 @@ function WritingDesk({
     part.questions.find((x) => x.number === currentNumber) ?? part.questions[0];
   if (!q) return null;
   const value = answers[String(q.number)] ?? "";
-  const stem = formatQuestionStem(q.content.stem ?? "", q.number);
+  const rawStem = q.content.stem ?? part.content ?? "";
+  const stem = formatQuestionStem(rawStem, q.number);
+  const blocks = splitWritingPrompt(stem || rawStem);
   const minWords = defaultMinWords(q, skill);
   const words = countWords(value);
   const ok = minWords > 0 && words >= minWords;
+  const imageUrl =
+    (typeof q.content.imageUrl === "string" && q.content.imageUrl.trim()) ||
+    (typeof q.mediaUrl === "string" && q.mediaUrl.trim()) ||
+    (typeof part.meta?.imageUrl === "string" && String(part.meta.imageUrl).trim()) ||
+    "";
 
   return (
     <div className="cdi-split grid min-h-[70vh] min-w-0 flex-1 gap-0 lg:grid-cols-2">
       <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-[#f7f8fa] lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
         <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
-          {t("writingTask", "Writing task")}
+          {part.title?.trim()
+            ? part.title
+            : t("writingTask", "Writing task")}
         </div>
         <div className="space-y-3 p-3 sm:p-4">
           {part.questions.length > 1 ? (
@@ -606,10 +698,72 @@ function WritingDesk({
               ))}
             </div>
           ) : null}
-          {stem ? (
-            <div className="break-words whitespace-pre-wrap text-sm leading-relaxed text-zinc-800">
+
+          {blocks.timeLine ? (
+            <p className="rounded-sm border border-zinc-300 bg-white px-3 py-2 text-sm italic text-zinc-700">
+              {blocks.timeLine}
+            </p>
+          ) : null}
+
+          {imageUrl ? (
+            <>
+              {blocks.beforeImage.length > 0 ? (
+                <div className="rounded-sm border border-zinc-400 border-l-[3px] border-l-[#1a3a6b] bg-white px-3 py-3 text-sm leading-relaxed text-zinc-900">
+                  {blocks.beforeImage.map((line, i) => (
+                    <p
+                      key={`b-${i}-${line.slice(0, 24)}`}
+                      className="mb-2 break-words font-medium last:mb-0"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
+              <figure className="overflow-hidden rounded-sm border-2 border-zinc-500 bg-white shadow-sm">
+                <div className="border-b border-zinc-300 bg-[#eceff2] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-zinc-600">
+                  {t("writingDiagram", "Diagram / figure")}
+                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={imageUrl}
+                  alt={t("writingDiagram", "Diagram / figure")}
+                  className="mx-auto max-h-[min(32rem,60vh)] w-full object-contain bg-white p-3 sm:p-4"
+                />
+              </figure>
+              {blocks.afterImage.length > 0 ? (
+                <div className="rounded-sm border border-zinc-400 bg-white px-3 py-3 text-sm leading-relaxed text-zinc-800">
+                  {blocks.afterImage.map((line, i) => (
+                    <p
+                      key={`a-${i}-${line.slice(0, 24)}`}
+                      className="mb-2 break-words last:mb-0"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
+            </>
+          ) : blocks.promptLines.length > 0 ? (
+            <div className="rounded-sm border border-zinc-400 border-l-[3px] border-l-[#1a3a6b] bg-white px-3 py-3 text-sm leading-relaxed text-zinc-900">
+              {blocks.promptLines.map((line, i) => (
+                <p
+                  key={`p-${i}-${line.slice(0, 24)}`}
+                  className="mb-2 break-words last:mb-0"
+                >
+                  {line}
+                </p>
+              ))}
+            </div>
+          ) : stem ? (
+            <div className="break-words whitespace-pre-wrap rounded-sm border border-zinc-400 bg-white px-3 py-3 text-sm leading-relaxed text-zinc-800">
               {stem}
             </div>
+          ) : null}
+
+          {blocks.wordLine ? (
+            <p className="rounded-sm border border-dashed border-zinc-400 bg-white px-3 py-2 text-sm font-semibold text-zinc-800">
+              {blocks.wordLine}
+            </p>
           ) : null}
         </div>
       </div>
@@ -620,6 +774,9 @@ function WritingDesk({
         }}
         className="cdi-pane flex min-w-0 flex-col border border-t-0 border-zinc-400/70 bg-white lg:border-t lg:border-l-0 lg:max-h-[calc(100vh-11rem)]"
       >
+        <div className="border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
+          {t("writingAnswer", "Your answer")}
+        </div>
         <textarea
           value={value}
           onChange={(e) => onChange(q.number, e.target.value)}
@@ -646,10 +803,182 @@ function WritingDesk({
   );
 }
 
-function passageOnly(content: string): string {
-  const idx = content.search(/\nQuestions?\s+\d+/i);
-  if (idx > 80) return content.slice(0, idx).trim();
-  return content;
+function ReadingOrNotesSplit({
+  part,
+  isReading,
+  skill,
+  answers,
+  currentNumber,
+  questionRefs,
+  onFocusQuestion,
+  onChange,
+}: {
+  part: Part;
+  isReading: boolean;
+  skill: string;
+  answers: Record<string, string>;
+  currentNumber: number | null;
+  questionRefs: MutableRefObject<Map<number, HTMLElement>>;
+  onFocusQuestion: (n: number) => void;
+  onChange: (n: number, v: string) => void;
+}) {
+  const { t } = useTranslations("practice");
+  const reading = isReading
+    ? splitReadingPassageAndTasks(part.content ?? "")
+    : null;
+  const taskSource = isReading
+    ? (reading?.tasks ?? "")
+    : (part.content ?? "");
+  const groups = taskSource
+    ? parseReadingQuestionGroups(taskSource, part.questions)
+    : [];
+  const leftBody = isReading
+    ? (reading?.passage ?? part.content ?? "")
+    : "";
+
+  const groupedNumbers = new Set(
+    groups.flatMap((g) =>
+      part.questions
+        .filter((q) => q.number >= g.start && q.number <= g.end)
+        .map((q) => q.number),
+    ),
+  );
+  const ungrouped = part.questions.filter((q) => !groupedNumbers.has(q.number));
+
+  const isGapQuestion = (q: Question) =>
+    q.type === "GAP_FILL" ||
+    q.type === "TABLE_COMPLETION" ||
+    q.type === "MAP_LABELING" ||
+    Boolean(q.content.blank);
+
+  const renderQuestion = (q: Question) => (
+    <div
+      key={q.number}
+      ref={(el) => {
+        if (el) questionRefs.current.set(q.number, el);
+        else questionRefs.current.delete(q.number);
+      }}
+      data-q={q.number}
+      onFocusCapture={() => onFocusQuestion(q.number)}
+    >
+      <QuestionInput
+        question={q}
+        skill={skill}
+        value={answers[String(q.number)] ?? ""}
+        onChange={(v) => onChange(q.number, v)}
+        compactStem={Boolean(part.content)}
+        active={currentNumber === q.number}
+      />
+    </div>
+  );
+
+  const renderGroup = (group: ReadingQuestionGroup) => {
+    const qs = part.questions.filter(
+      (q) => q.number >= group.start && q.number <= group.end,
+    );
+    if (qs.length === 0 && !group.notes && !group.header) return null;
+
+    const inlineNumbers = group.notes
+      ? new Set(
+          findInlineBlankNumbers(group.notes).filter(
+            (n) => n >= group.start && n <= group.end,
+          ),
+        )
+      : new Set<number>();
+    const restQs = qs.filter(
+      (q) => !(inlineNumbers.has(q.number) && isGapQuestion(q)),
+    );
+
+    return (
+      <section
+        key={`${group.start}-${group.end}-${group.header}`}
+        className="space-y-4 border-b border-zinc-200 pb-5 last:border-0 last:pb-0"
+      >
+        <div className="space-y-1">
+          <h3 className="break-words text-sm font-bold text-zinc-900">
+            {group.header}
+          </h3>
+          {group.instructions.map((line) => (
+            <p
+              key={line}
+              className="break-words text-sm leading-relaxed text-zinc-700"
+            >
+              {line}
+            </p>
+          ))}
+        </div>
+        {group.notes ? (
+          inlineNumbers.size > 0 ? (
+            <InlineNotesGaps
+              notes={group.notes}
+              answers={answers}
+              currentNumber={currentNumber}
+              questionRefs={questionRefs}
+              onFocusQuestion={onFocusQuestion}
+              onChange={onChange}
+              placeholder={t("answerPlaceholder", "Enter answer…")}
+              allowNumbers={inlineNumbers}
+            />
+          ) : (
+            <div className="break-words rounded-sm border border-zinc-200 bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800">
+              {group.notes}
+            </div>
+          )
+        ) : null}
+        {restQs.length > 0 ? (
+          <div className="space-y-5">{restQs.map(renderQuestion)}</div>
+        ) : null}
+      </section>
+    );
+  };
+
+  const questionsPanel = (
+    <div className="space-y-6 p-3 sm:p-4">
+      {groups.length > 0 ? (
+        <>
+          {groups.map(renderGroup)}
+          {ungrouped.length > 0 ? (
+            <div className="space-y-5">{ungrouped.map(renderQuestion)}</div>
+          ) : null}
+        </>
+      ) : (
+        part.questions.map(renderQuestion)
+      )}
+    </div>
+  );
+
+  // Listening: one interactive column (notes + inline gaps), like Reading's right pane
+  if (!isReading) {
+    return (
+      <div className="cdi-pane min-w-0 flex-1 border border-zinc-400/70 bg-white lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
+        <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
+          {part.title?.trim()
+            ? part.title
+            : t("notes", "Notes / task text")}
+        </div>
+        {questionsPanel}
+      </div>
+    );
+  }
+
+  return (
+    <div className="cdi-split grid min-h-0 min-w-0 flex-1 gap-0 lg:grid-cols-2 lg:items-stretch">
+      <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-[#f7f8fa] lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
+        <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
+          {t("passage", "Passage")}
+        </div>
+        <div className="break-words px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800 sm:px-4">
+          {leftBody}
+        </div>
+      </div>
+      <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-white lg:border-t lg:border-l-0 lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
+        <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
+          {part.title}
+        </div>
+        {questionsPanel}
+      </div>
+    </div>
+  );
 }
 
 function defaultMinWords(question: Question, skill: string): number {
@@ -664,6 +993,7 @@ function QuestionInput({
   value,
   onChange,
   compactStem = false,
+  active = false,
 }: {
   question: Question;
   skill: string;
@@ -676,6 +1006,8 @@ function QuestionInput({
    * primary fix; isRedundantGapStem is a safety net for older data.
    */
   compactStem?: boolean;
+  /** Highlight the answer control (not an outer wrapper frame). */
+  active?: boolean;
 }) {
   const { t } = useTranslations("practice");
   const options = question.content.options ?? [];
@@ -695,14 +1027,17 @@ function QuestionInput({
       isRedundantGapStem(rawStem) ||
       isRedundantGapStem(stem));
   const showStem = Boolean(stem) && !hideBesideNotes;
+  const inputActiveClass = active
+    ? "border-[#1a3a6b] ring-1 ring-[#1a3a6b]/40"
+    : "border-zinc-400 focus:border-[#1a3a6b]";
 
   if (isEssay) {
     const ok = minWords > 0 && words >= minWords;
     return (
       <div className="min-w-0 border-b border-zinc-200 pb-5 last:border-0 last:pb-0">
         <p className="mb-2 text-sm font-medium text-zinc-900">
-          <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-sm bg-[#e8eaed] text-xs font-semibold text-zinc-800">
-            {question.number}
+          <span className="mr-2 font-semibold tabular-nums text-zinc-800">
+            {question.number}.
           </span>
           {t("writingTask", "Writing task")}
         </p>
@@ -716,7 +1051,7 @@ function QuestionInput({
           onChange={(e) => onChange(e.target.value)}
           rows={14}
           placeholder={t("writingPlaceholder", "Write your essay…")}
-          className="w-full min-w-0 rounded-sm border border-zinc-400 px-3 py-2 text-sm leading-relaxed"
+          className={`w-full min-w-0 rounded-sm border bg-white px-3 py-2 text-sm leading-relaxed outline-none ${inputActiveClass}`}
         />
         <p
           className={`mt-2 text-xs font-medium ${
@@ -737,18 +1072,26 @@ function QuestionInput({
   }
 
   if (isSpeaking) {
+    const practiced = value.trim().length > 0;
     return (
       <div className="min-w-0 border-b border-zinc-200 pb-5 last:border-0 last:pb-0">
-        <p className="mb-2 text-sm font-medium text-zinc-900">
-          <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-sm bg-[#e8eaed] text-xs font-semibold text-zinc-800">
-            {question.number}
+        <p className="mb-2 flex min-w-0 items-center gap-2 text-sm font-medium text-zinc-900">
+          <span className="font-semibold tabular-nums text-zinc-800">
+            {question.number}.
           </span>
-          {t("speakingPrompt", "Speaking prompt")}
+          <span>{t("speakingQuestion", "Câu hỏi nói")}</span>
         </p>
-        {stem && (
-          <div className="mb-3 break-words whitespace-pre-wrap border border-zinc-300 border-l-[3px] border-l-[#1a3a6b] bg-[#f7f8fa] px-3 py-3 text-sm text-zinc-800">
+        {stem ? (
+          <div className="mb-3 break-words whitespace-pre-wrap border border-zinc-300 border-l-[3px] border-l-[#1a3a6b] bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed text-zinc-800">
             {stem}
           </div>
+        ) : (
+          <p className="mb-3 text-sm text-zinc-500">
+            {t(
+              "speakingEmptyStem",
+              "Chưa có nội dung đề nói cho câu này — xem phần chủ đề phía trên nếu có.",
+            )}
+          </p>
         )}
         {hint ? (
           <details className="mb-3 border border-dashed border-zinc-400 bg-[#f7f8fa] px-3 py-2 text-sm">
@@ -760,67 +1103,103 @@ function QuestionInput({
             </p>
           </details>
         ) : null}
-        <textarea
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          rows={6}
-          placeholder={t("notesPlaceholder", "Self-study notes…")}
-          className="w-full min-w-0 rounded-sm border border-zinc-400 px-3 py-2 text-sm"
-        />
-        <p className="mt-1 text-xs text-zinc-500">
-          {t("speakingNote", "Speak from the prompt… No AI scoring.")}
+        <p className="mb-3 text-sm text-zinc-600">
+          {t(
+            "speakingInstruction",
+            "Đọc đề rồi tự nói to. Hiện chưa ghi âm / chấm AI.",
+          )}
         </p>
+        <button
+          type="button"
+          onClick={() =>
+            onChange(practiced ? "" : t("speakingPracticedMark", "Đã luyện"))
+          }
+          className={`inline-flex items-center rounded-sm border px-3 py-2 text-sm font-semibold transition ${
+            practiced
+              ? "border-[#1a3a6b] bg-[#1a3a6b] text-white"
+              : "border-zinc-400 bg-white text-zinc-800 hover:bg-zinc-50"
+          }`}
+          aria-pressed={practiced}
+        >
+          {practiced
+            ? t("speakingPracticed", "Đã luyện ✓")
+            : t("speakingMarkPracticed", "Đánh dấu đã luyện")}
+        </button>
       </div>
     );
   }
 
   return (
     <div className="min-w-0 border-b border-zinc-200 pb-5 last:border-0 last:pb-0">
-      <div className="mb-2 flex min-w-0 items-start gap-2">
-        <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-sm bg-[#e8eaed] text-xs font-semibold text-zinc-800">
-          {question.number}
-        </span>
-        {showStem ? (
-          <p className="min-w-0 flex-1 break-words whitespace-pre-wrap pt-0.5 text-sm text-zinc-700">
-            {stem}
-          </p>
-        ) : null}
-      </div>
+      {showStem ? (
+        <p className="mb-2 min-w-0 break-words whitespace-pre-wrap text-sm text-zinc-700">
+          <span className="mr-1.5 font-semibold tabular-nums text-zinc-800">
+            {question.number}.
+          </span>
+          {stem}
+        </p>
+      ) : null}
 
       {options.length >= 2 ? (
         <div className="space-y-2">
-          {options.map((opt) => (
-            <label
-              key={opt.label}
-              className={`flex min-w-0 cursor-pointer items-start gap-2 border px-3 py-2 text-sm ${
-                value === opt.label
-                  ? "border-[#1a3a6b] bg-[#eef2f7]"
-                  : "border-zinc-300 hover:bg-zinc-50"
-              }`}
-            >
-              <input
-                type="radio"
-                name={`q-${question.number}`}
-                className="mt-0.5 shrink-0"
-                checked={value === opt.label}
-                onChange={() => onChange(opt.label)}
-              />
-              <span className="min-w-0 break-words">
-                <strong className="mr-1">{opt.label}.</strong>
-                {opt.text}
-              </span>
-            </label>
-          ))}
+          {!showStem ? (
+            <p className="text-sm font-semibold tabular-nums text-zinc-800">
+              {question.number}.
+            </p>
+          ) : null}
+          {options.map((opt) => {
+            const label = opt.label.trim();
+            const text = opt.text.trim();
+            const same =
+              label.localeCompare(text, undefined, { sensitivity: "accent" }) ===
+              0;
+            const selected = value === opt.label;
+            return (
+              <label
+                key={opt.label}
+                className={`flex min-w-0 cursor-pointer items-start gap-2 border px-3 py-2 text-sm ${
+                  selected
+                    ? "border-[#1a3a6b] bg-[#eef2f7]"
+                    : "border-zinc-300 hover:bg-zinc-50"
+                }`}
+              >
+                <input
+                  type="radio"
+                  name={`q-${question.number}`}
+                  className="mt-0.5 shrink-0"
+                  checked={selected}
+                  onChange={() => onChange(opt.label)}
+                />
+                <span className="min-w-0 break-words">
+                  {same ? (
+                    text
+                  ) : (
+                    <>
+                      <strong className="mr-1">{label}.</strong>
+                      {text}
+                    </>
+                  )}
+                </span>
+              </label>
+            );
+          })}
         </div>
       ) : (
-        <input
-          type="text"
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          placeholder={t("answerPlaceholder", "Enter answer…")}
-          aria-label={t("answerPlaceholder", "Enter answer…")}
-          className="w-full max-w-md min-w-0 rounded-sm border border-zinc-400 px-3 py-2 text-sm"
-        />
+        <div className="flex min-w-0 flex-wrap items-center gap-2">
+          {!showStem ? (
+            <span className="font-semibold tabular-nums text-zinc-800">
+              {question.number}.
+            </span>
+          ) : null}
+          <input
+            type="text"
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            placeholder={t("answerPlaceholder", "Enter answer…")}
+            aria-label={`${t("answerPlaceholder", "Enter answer…")} ${question.number}`}
+            className={`w-full max-w-md min-w-0 rounded-sm border bg-white px-3 py-2 text-sm outline-none ${inputActiveClass}`}
+          />
+        </div>
       )}
     </div>
   );

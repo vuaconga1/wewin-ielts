@@ -43,12 +43,22 @@ yarn-error.log*
 # import dry-run output
 /tmp
 
-# local practice store (tests, attempts, learn curriculum)
-/data
+# local practice store (attempts / users / learn stay local)
+/data/attempts/
+/data/users.json
+/data/keys/
+/data/learn/*
+!/data/learn/.gitkeep
+# published demo tests for Vercel (file-backed catalog)
+/data/tests/*
+!/data/tests/test-1-*.json
+!/data/tests/test-9-*.json
 
-# uploaded audio (keep folder)
+# uploaded audio (keep folder + Test 1/9 listening for production)
 /public/uploads/audio/*
 !/public/uploads/audio/.gitkeep
+!/public/uploads/audio/test-1-section-*.mp3
+!/public/uploads/audio/test-9-section-*.mp3
 
 # learn lesson videos (keep folder)
 /public/uploads/learn/videos/*

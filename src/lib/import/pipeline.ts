@@ -14,6 +14,8 @@ import {
   type DocxExtractMeta,
 } from "./docx";
 import { mergeKeysIntoQuestions, parseKeysDocument } from "./parse-keys";
+import { parseKeysCanonical } from "./normalize-keys";
+import { extractDocxImagesToUploads } from "./extract-docx-images";
 import {
   parseQuestionsFromPartBody,
   parseSpeakingTopicAsQuestion,
@@ -28,6 +30,9 @@ import {
   type ParsedTestDraft,
 } from "./schemas";
 import { splitIntoParts } from "./split-parts";
+import { stripFilledListeningAnswers } from "./strip-filled-answers";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 export type ParseTestInput = {
   contentPath: string;
@@ -66,10 +71,27 @@ export async function parseTestFromFiles(
     input.skill ?? detectSkillFromFilename(input.contentPath) ?? undefined;
 
   let rawText: string;
+  let writingImages: string[] = [];
   try {
-    rawText = normalizeExtractedText(
-      await extractTextFromFile(input.contentPath),
-    );
+    const contentMeta = await extractFileWithMeta(input.contentPath, {
+      preserveContentTables: true,
+    });
+    rawText = normalizeExtractedText(contentMeta.text);
+    const skillGuess =
+      skill ?? detectSkillFromFilename(input.contentPath) ?? undefined;
+    if (
+      skillGuess === "WRITING" &&
+      path.extname(input.contentPath).toLowerCase() === ".docx"
+    ) {
+      const buf = await readFile(input.contentPath);
+      const slug =
+        input.slug ??
+        slugify(input.title ?? titleFromFilename(input.contentPath));
+      writingImages = await extractDocxImagesToUploads(buf, {
+        slug,
+        prefix: `${slug}-task1`,
+      });
+    }
   } catch (e) {
     return {
       draft: null,
@@ -118,6 +140,7 @@ export async function parseTestFromFiles(
     timeLimitMinutes: input.timeLimitMinutes,
     tags: input.tags,
     audioFiles: input.audioFiles,
+    writingImages,
   });
 }
 
@@ -130,10 +153,26 @@ export async function parseTestFromUpload(
     undefined;
 
   let rawText: string;
+  let writingImages: string[] = [];
   try {
-    rawText = normalizeExtractedText(
-      await extractTextFromUpload(input.contentBuffer, input.contentFilename),
+    const contentMeta = await extractUploadWithMeta(
+      input.contentBuffer,
+      input.contentFilename,
+      { preserveContentTables: true },
     );
+    rawText = normalizeExtractedText(contentMeta.text);
+    if (
+      skill === "WRITING" &&
+      path.extname(input.contentFilename).toLowerCase() === ".docx"
+    ) {
+      const slug =
+        input.slug ??
+        slugify(input.title ?? titleFromFilename(input.contentFilename));
+      writingImages = await extractDocxImagesToUploads(input.contentBuffer, {
+        slug,
+        prefix: `${slug}-task1`,
+      });
+    }
   } catch (e) {
     return {
       draft: null,
@@ -186,6 +225,7 @@ export async function parseTestFromUpload(
     timeLimitMinutes: input.timeLimitMinutes,
     tags: input.tags,
     audioFiles: input.audioFiles,
+    writingImages,
   });
 }
 
@@ -204,6 +244,8 @@ type BuildInput = {
   timeLimitMinutes?: number;
   tags?: string[];
   audioFiles?: string[];
+  /** Public URLs extracted from Writing .docx (Task 1 diagram first). */
+  writingImages?: string[];
 };
 
 function buildParseResult(input: BuildInput): ImportParseResult {
@@ -223,7 +265,9 @@ function buildParseResult(input: BuildInput): ImportParseResult {
 
   let keysMap = parseKeysDocument("");
   if (input.keysText !== undefined) {
-    keysMap = parseKeysDocument(input.keysText, { skill });
+    // Always normalize toward Key 9 canonical layout before merge.
+    const keysResult = parseKeysCanonical(input.keysText, { skill });
+    keysMap = keysResult.map;
     if (keysMap.size === 0) {
       if (input.keysMeta?.looksImageOnly) {
         issues.push({
@@ -231,8 +275,8 @@ function buildParseResult(input: BuildInput): ImportParseResult {
           code: "KEYS_IMAGE_ONLY",
           message:
             `File keys gần như không có chữ (chỉ ~${input.keysMeta.imageCount} ảnh screenshot). ` +
-            "Parser không đọc chữ trong ảnh — hãy dùng keys dạng text/bảng Word/Sheet " +
-            "(xem docs/IMPORT_GUIDE.md → Keys).",
+            "Parser không đọc chữ trong ảnh — hãy dùng keys dạng text/bảng Word theo format Key 9 " +
+            "(Listening/Reading + `1. answer`) — xem docs/IMPORT_GUIDE.md → Keys / templates/canonical-keys.md.",
         });
       } else {
         issues.push({
@@ -240,7 +284,8 @@ function buildParseResult(input: BuildInput): ImportParseResult {
           code: "KEYS_EMPTY",
           message:
             "File keys không parse được dòng đáp án nào. " +
-            "Kiểm tra format `1. answer` / `Q1: answer` / bảng STT|Đáp án.",
+            "Chuẩn: format Key 9 — tiêu đề Listening/Reading + dòng `1. answer` " +
+            "(hoặc bảng Word cùng nội dung). Hệ thống sẽ cố chuẩn hóa các layout khác.",
         });
       }
     } else if (
@@ -253,7 +298,7 @@ function buildParseResult(input: BuildInput): ImportParseResult {
         code: "KEYS_PARTIAL_IMAGES",
         message:
           `Keys chỉ parse được ${keysMap.size} đáp án nhưng file có ${input.keysMeta.imageCount} ảnh — ` +
-          "có thể còn đáp án nằm trong screenshot. Nên chuyển toàn bộ keys sang text.",
+          "có thể còn đáp án nằm trong screenshot. Nên chuyển toàn bộ keys sang text format Key 9.",
       });
     }
   }
@@ -269,7 +314,22 @@ function buildParseResult(input: BuildInput): ImportParseResult {
   }
 
   const parts: PartDraft[] = rawParts.map((rp) => {
-    let questions = parseQuestionsFromPartBody(rp.body);
+    let partBody = rp.body;
+    if (skill === "LISTENING") {
+      const cleaned = stripFilledListeningAnswers(partBody);
+      if (cleaned.stripped > 0) {
+        partBody = cleaned.text;
+        issues.push({
+          level: "warning",
+          code: "FILLED_ANSWERS_STRIPPED",
+          message:
+            `Part "${rp.title}": đã xoá ~${cleaned.stripped} chỗ giáo viên điền sẵn / ghi chú ` +
+            "trong đề Listening để học viên thấy chỗ trống.",
+          partOrder: rp.order,
+        });
+      }
+    }
+    let questions = parseQuestionsFromPartBody(partBody);
 
     if (skill === "WRITING" && questions.length === 0 && rp.body.trim()) {
       const taskNum = /\bTask\s*([12])\b/i.exec(rp.title)?.[1];
@@ -293,31 +353,55 @@ function buildParseResult(input: BuildInput): ImportParseResult {
       const sanitized = sanitizePartGapStems(
         rp.title,
         rp.order,
-        rp.body,
+        partBody,
         questions,
       );
       questions = sanitized.questions;
       issues.push(...sanitized.issues);
     }
 
+    let partMeta: Record<string, unknown> | undefined = rp.meta
+      ? { ...rp.meta }
+      : undefined;
+
     if (skill === "WRITING") {
+      const diagramUrl =
+        rp.order === 0 || /\bTask\s*1\b/i.test(rp.title)
+          ? input.writingImages?.[0]
+          : undefined;
       questions = questions.map((q) => {
-        if (q.type === "ESSAY") return q;
-        const opts = (q.content as { options?: unknown[] }).options;
-        if (opts && opts.length >= 2) return q;
         const taskNum = /\bTask\s*([12])\b/i.exec(rp.title)?.[1];
         const n = taskNum ? Number(taskNum) : q.number;
+        const base =
+          q.type === "ESSAY"
+            ? q
+            : (() => {
+                const opts = (q.content as { options?: unknown[] }).options;
+                if (opts && opts.length >= 2) return q;
+                return {
+                  ...q,
+                  type: "ESSAY" as const,
+                  content: {
+                    ...q.content,
+                    minWords:
+                      (q.content as { minWords?: number }).minWords ??
+                      (n === 1 ? 150 : 250),
+                  },
+                };
+              })();
+        if (!diagramUrl) return base;
         return {
-          ...q,
-          type: "ESSAY" as const,
+          ...base,
+          mediaUrl: diagramUrl,
           content: {
-            ...q.content,
-            minWords:
-              (q.content as { minWords?: number }).minWords ??
-              (n === 1 ? 150 : 250),
+            ...base.content,
+            imageUrl: diagramUrl,
           },
         };
       });
+      if (diagramUrl) {
+        partMeta = { ...partMeta, imageUrl: diagramUrl };
+      }
     }
 
     if (skill === "SPEAKING") {
@@ -372,8 +456,8 @@ function buildParseResult(input: BuildInput): ImportParseResult {
     return {
       title: rp.title,
       order: rp.order,
-      content: rp.body,
-      meta: rp.meta,
+      content: partBody,
+      meta: partMeta,
       questions,
     };
   });

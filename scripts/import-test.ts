@@ -106,22 +106,33 @@ async function main() {
   await writeFile(outPath, JSON.stringify({ draft, issues }, null, 2), "utf8");
   console.log(`\nWrote draft JSON → ${outPath}`);
 
+  const { saveTestDraft } = await import("../src/lib/store/test-store");
+  await saveTestDraft(draft);
+  console.log(`Saved local draft → data/tests/${draft.slug}.json`);
+
   const fatal = issues.some((i) => i.level === "error");
   if (hasFlag("persist")) {
     if (fatal && !hasFlag("force")) {
       console.error("\nRefusing to persist: fix errors or pass --force");
       process.exit(1);
     }
-    const { persistParsedTest } = await import("../src/lib/import/persist");
-    const result = await persistParsedTest(draft, issues, {
-      force: hasFlag("force"),
-      status: "DRAFT",
-    });
-    console.log("\n=== Persist ===");
-    console.log(`importJobId: ${result.importJobId}`);
-    console.log(`testId:      ${result.testId}`);
+    try {
+      const { persistParsedTest } = await import("../src/lib/import/persist");
+      const result = await persistParsedTest(draft, issues, {
+        force: hasFlag("force"),
+        status: "DRAFT",
+      });
+      console.log("\n=== Persist ===");
+      console.log(`importJobId: ${result.importJobId}`);
+      console.log(`testId:      ${result.testId}`);
+    } catch (e) {
+      console.warn(
+        "\nDB persist failed (local draft still saved):",
+        e instanceof Error ? e.message : e,
+      );
+    }
   } else {
-    console.log("\n(Dry-run only. Add --persist to write to MySQL.)");
+    console.log("\n(Dry-run / local only. Add --persist to also write DB.)");
   }
 }
 

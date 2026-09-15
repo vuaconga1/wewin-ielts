@@ -374,17 +374,17 @@ export function DashboardShell({
         ) : null}
 
         <div
-          className="wewin-sidebar-inset relative z-10 min-w-0"
+          className="wewin-sidebar-inset relative z-10 flex min-h-screen min-w-0 flex-col"
           data-collapsed={collapsed ? "true" : "false"}
         >
           <main
-            className={`mx-auto w-full min-w-0 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 ${
+            className={`mx-auto w-full min-w-0 flex-1 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 ${
               wide ? "max-w-none" : "max-w-[1400px]"
             }`}
           >
             {children}
           </main>
-          {footer}
+          {footer ? <div className="mt-auto w-full shrink-0">{footer}</div> : null}
         </div>
       </div>
     </TourProvider>

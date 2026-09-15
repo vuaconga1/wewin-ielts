@@ -108,18 +108,50 @@ function matchPassageLine(trimmed: string): MarkerHit | null {
 }
 
 function matchSectionLine(trimmed: string): MarkerHit | null {
+  // Listening papers often use "PART 1 Questions 1-10" instead of "Section 1"
+  const part = trimmed.match(
+    /^(?:#{1,3}\s*)?PART\s+(\d+)\s*[:.\-]?\s*(.*)$/i,
+  );
+  if (part) {
+    const num = Number(part[1]);
+    const subtitle = part[2]?.trim() ?? "";
+    // Allow "Questions 1-10" trailing on the same line as PART N
+    if (
+      subtitle &&
+      !isHeadingLikeSubtitle(subtitle) &&
+      !/^Questions?\s+\d+/i.test(subtitle)
+    ) {
+      return null;
+    }
+    const cleanSub = /^Questions?\s+\d+/i.test(subtitle) ? "" : subtitle;
+    return {
+      index: 0,
+      length: 0,
+      title: cleanSub ? `Section ${num} - ${cleanSub}` : `Section ${num}`,
+      kind: "section",
+      number: num,
+    };
+  }
+
   const m = trimmed.match(
     /^(?:#{1,3}\s*)?(?:Listening\s+)?Section\s+(\d+)\s*[:.\-]?\s*(.*)$/i,
   );
   if (!m) return null;
   const num = Number(m[1]);
   const subtitle = m[2]?.trim() ?? "";
-  if (!isHeadingLikeSubtitle(subtitle || undefined)) return null;
-  // Reject "Questions 1-10 Section 1" style if it snuck in — require section at start
+  // Allow "Questions 1-10" on the same line (Cambridge / WEWIN Listening papers)
+  if (
+    subtitle &&
+    !isHeadingLikeSubtitle(subtitle || undefined) &&
+    !/^Questions?\s+\d+/i.test(subtitle)
+  ) {
+    return null;
+  }
+  const cleanSub = /^Questions?\s+\d+/i.test(subtitle) ? "" : subtitle;
   return {
     index: 0,
     length: 0,
-    title: subtitle ? `Section ${num} - ${subtitle}` : `Section ${num}`,
+    title: cleanSub ? `Section ${num} - ${cleanSub}` : `Section ${num}`,
     kind: "section",
     number: num,
   };
@@ -350,6 +382,18 @@ export function splitIntoParts(text: string): RawPartBlock[] {
     let body = normalized.slice(start, end).trim();
     const { meta, rest } = extractLeadingMeta(body);
     body = rest;
+
+    // When the heading line is "PART 3 Questions 21-30", the range is
+    // consumed with the marker — put it back so the question parser sees it.
+    const markerLine = normalized
+      .slice(markers[i]!.index, markers[i]!.index + markers[i]!.length)
+      .trim();
+    const qTrailer = markerLine.match(
+      /\b(Questions?\s+\d+\s*[-–—]\s*\d+)\b/i,
+    );
+    if (qTrailer && !new RegExp(qTrailer[1]!, "i").test(body.slice(0, 80))) {
+      body = `${qTrailer[1]}\n\n${body}`.trim();
+    }
 
     parts.push({
       title: markers[i]!.title,

@@ -16,7 +16,7 @@ export type KeysMap = Map<number, { answer: unknown; acceptable?: string[] }>;
 const KEY_LINE =
   /^(?:Q(?:uestion)?\s*)?(\d+)\s*[:).\-]\s*(.+)$/i;
 
-const HEADER_MARKERS = /^(stt|đáp án|dap an|answer|no\.?|#)$/i;
+const HEADER_MARKERS = /^(stt|đáp án|dap an|answers?|no\.|#)$/i;
 
 const SKILL_HEADING = /^(listening|reading|writing|speaking)\b/i;
 
@@ -34,16 +34,58 @@ export function parseKeysDocument(
 
   const scoped = scopeKeysBySkill(normalized, options.skill);
 
+  // Prefer explicit "N. answer" tokens (incl. TSV table cells like
+  // "1. FALSE\t14. visual memory\t27. YES") — most reliable for Word keys.
+  const fromNumbered = parseNumberedAnswerTokens(scoped, options);
+  if (fromNumbered.size >= 5) return fromNumbered;
+
   const fromSpreadsheet = parseSpreadsheetKeys(scoped, options);
   if (fromSpreadsheet.size >= 5) return fromSpreadsheet;
 
   const fromTable = parseAlternatingTableKeys(scoped);
   if (fromTable.size >= 5) return fromTable;
 
+  if (fromNumbered.size > 0) return fromNumbered;
   if (fromSpreadsheet.size > 0) return fromSpreadsheet;
   if (fromTable.size > 0) return fromTable;
 
   return parseLineKeys(scoped, options);
+}
+
+/**
+ * Collect every `N. answer` / `N) answer` token, including tab-separated
+ * multi-column Word table rows appended by htmlTablesToTsv.
+ */
+function parseNumberedAnswerTokens(
+  text: string,
+  options: KeysParseOptions,
+): KeysMap {
+  const map: KeysMap = new Map();
+  const re =
+    /(?:^|[\t\n\r])\s*(?:Q(?:uestion)?\s*)?(\d{1,2})\s*[:).\-]\s*([^\t\n\r]+)/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    const number = Number(m[1]);
+    if (!Number.isInteger(number) || number < 1 || number > 60) continue;
+    // First wins: scoped Reading text often still contains a trailing Listening
+    // table TSV (appended after the whole keys doc). Keep the earlier answer.
+    if (map.has(number)) continue;
+    let answerRaw = m[2]!.trim();
+    if (!answerRaw || HEADER_MARKERS.test(answerRaw)) continue;
+    // Ignore section labels mistaken as answers
+    if (/^(passage|section)\s*\d*$/i.test(answerRaw)) continue;
+    let acceptable: string[] | undefined;
+    if (answerRaw.includes("|")) {
+      const parts = answerRaw.split("|").map((s) => s.trim()).filter(Boolean);
+      answerRaw = parts[0]!;
+      if (parts.length > 1) acceptable = parts.slice(1);
+    }
+    map.set(number, {
+      answer: normalizeAnswerToken(answerRaw, options.skill),
+      acceptable,
+    });
+  }
+  return map;
 }
 
 /** If keys file has Listening/Reading sections, keep only the matching skill block. */
@@ -61,7 +103,24 @@ function scopeKeysBySkill(text: string, skill?: KeysParseOptions["skill"]): stri
       blocks.push(current);
       continue;
     }
-    if (current) current.lines.push(line);
+    if (!current) continue;
+    // Stop Reading block when a Listening table dump appears after it (Key N.docx)
+    if (
+      current.skill === "READING" &&
+      isListeningTableHeader(t)
+    ) {
+      current = null;
+      continue;
+    }
+    // Stop Listening block when a Reading table dump appears after it
+    if (
+      current.skill === "LISTENING" &&
+      isReadingTableHeader(t)
+    ) {
+      current = null;
+      continue;
+    }
+    current.lines.push(line);
   }
 
   if (blocks.length === 0) return text;
@@ -69,6 +128,20 @@ function scopeKeysBySkill(text: string, skill?: KeysParseOptions["skill"]): stri
   if (match) return match.lines.join("\n");
   // No matching section — return full text (don't lose keys)
   return text;
+}
+
+function isListeningTableHeader(line: string): boolean {
+  return (
+    /^Section\s*1\b/i.test(line) &&
+    (/Section\s*2/i.test(line) || line.includes("\t"))
+  );
+}
+
+function isReadingTableHeader(line: string): boolean {
+  return (
+    /^Passage\s*1\b/i.test(line) &&
+    (/Passage\s*2/i.test(line) || line.includes("\t"))
+  );
 }
 
 function parseLineKeys(text: string, options: KeysParseOptions): KeysMap {
@@ -79,6 +152,13 @@ function parseLineKeys(text: string, options: KeysParseOptions): KeysMap {
     const line = raw.trim();
     if (!line || line.startsWith("#")) continue;
     if (SKILL_HEADING.test(line) && line.length < 40) continue;
+
+    // Multi-column: "1. FALSE\t14. visual memory\t27. YES"
+    if (line.includes("\t") && /\d+\s*[:).\-]/.test(line)) {
+      const nested = parseNumberedAnswerTokens(line, options);
+      for (const [n, v] of nested) map.set(n, v);
+      continue;
+    }
 
     const m = line.match(KEY_LINE);
     if (!m) continue;
@@ -241,12 +321,11 @@ function parseIntCell(cell: string): number | null {
   return Number.isInteger(n) && n >= 1 && n <= 60 ? n : null;
 }
 
-/** Normalize abbreviations; giữ nguyên chữ cái A–Z (matching). Chỉ chuẩn hóa NGV. */
+/** Normalize abbreviations; Reading expands T/F; NGV → NOT GIVEN. */
 export function normalizeAnswerToken(
   raw: string,
   skill?: KeysParseOptions["skill"],
 ): string {
-  void skill;
   const t = raw.trim();
   const upper = t.toUpperCase();
 
@@ -254,7 +333,12 @@ export function normalizeAnswerToken(
   if (upper === "YES") return "YES";
   if (upper === "NO") return "NO";
 
-  // T/F giữ nguyên — engine chấm sẽ map TRUE↔T, FALSE↔F khi cần
+  if (skill === "READING") {
+    if (upper === "T" || upper === "TRUE") return "TRUE";
+    if (upper === "F" || upper === "FALSE") return "FALSE";
+  }
+
+  // Listening: keep T/F as-is if ever used; usually words / A–G
   return t;
 }
 

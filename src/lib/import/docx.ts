@@ -2,6 +2,7 @@ import mammoth from "mammoth";
 import JSZip from "jszip";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { htmlContentToTextWithMarkdownTables } from "@/lib/practice/notes-table";
 
 export type DocxExtractMeta = {
   text: string;
@@ -25,7 +26,7 @@ export async function extractTextFromUpload(
 export async function extractUploadWithMeta(
   buffer: Buffer,
   filename: string,
-  options: { includeTables?: boolean } = {},
+  options: { includeTables?: boolean; preserveContentTables?: boolean } = {},
 ): Promise<DocxExtractMeta> {
   const ext = path.extname(filename).toLowerCase();
   if (ext === ".docx") {
@@ -45,7 +46,7 @@ export async function extractTextFromFile(filePath: string): Promise<string> {
 
 export async function extractFileWithMeta(
   filePath: string,
-  options: { includeTables?: boolean } = {},
+  options: { includeTables?: boolean; preserveContentTables?: boolean } = {},
 ): Promise<DocxExtractMeta> {
   const ext = path.extname(filePath).toLowerCase();
   if (ext === ".docx") {
@@ -72,24 +73,31 @@ export async function extractTextFromDocxBuffer(
 }
 
 /**
- * Extract docx text + optional Word-table TSV (helps keys that live in tables).
- * Also reports embedded image count for screenshot-only detection.
+ * Extract docx text.
+ * - `includeTables` (keys): append TSV rows for key parsers
+ * - `preserveContentTables` (Listening/Reading body): keep Word tables as
+ *   markdown so the practice UI can render real columns
  */
 export async function extractDocxWithMeta(
   buffer: Buffer,
-  options: { includeTables?: boolean } = {},
+  options: { includeTables?: boolean; preserveContentTables?: boolean } = {},
 ): Promise<DocxExtractMeta> {
   const includeTables = options.includeTables ?? false;
+  const preserveContentTables = options.preserveContentTables ?? false;
 
   const rawResult = await mammoth.extractRawText({ buffer });
   let text = rawResult.value.replace(/\r\n/g, "\n").trim();
 
-  if (includeTables) {
+  if (includeTables || preserveContentTables) {
     try {
       const htmlResult = await mammoth.convertToHtml({ buffer });
-      const tableText = htmlTablesToTsv(htmlResult.value);
-      if (tableText) {
-        text = [text, tableText].filter(Boolean).join("\n\n").trim();
+      if (preserveContentTables) {
+        text = htmlContentToTextWithMarkdownTables(htmlResult.value);
+      } else if (includeTables) {
+        const tableText = htmlTablesToTsv(htmlResult.value);
+        if (tableText) {
+          text = [text, tableText].filter(Boolean).join("\n\n").trim();
+        }
       }
     } catch {
       // Keep raw text if HTML conversion fails
@@ -156,10 +164,34 @@ export function htmlTablesToTsv(html: string): string {
 /**
  * Convert mammoth plain text into markdown-friendlier form:
  * keep blank lines; headings are expected to already be in source as "PART:" etc.
+ * Also restore paragraph breaks when Word list/label lines were concatenated.
  */
 export function normalizeExtractedText(text: string): string {
-  return text
-    .replace(/\r\n/g, "\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
+  let out = text.replace(/\r\n/g, "\n").replace(/\t+/g, " ");
+
+  // Section / question headers stuck to previous sentence (form lists → one line)
+  // Match "LISTENING SECTION N" as one unit — do not split LISTENING|SECTION.
+  out = out.replace(
+    /([^\n])(?=LISTENING\s+SECTION\s+\d+\b)/gi,
+    "$1\n\n",
+  );
+  out = out.replace(
+    /([^\n])(?<!LISTENING\s)(?<!LISTENING)(?=SECTION\s+\d+\b)/gi,
+    "$1\n\n",
+  );
+  out = out.replace(
+    // Case-sensitive: avoid splitting mid-sentence "next to questions 37-40"
+    /([^\n])(?=Questions?\s+\d+(?:\s*[-–—]\s*\d+|\s+and\s+\d+)?\b)/g,
+    "$1\n\n",
+  );
+
+  // Common Listening form / notes labels glued after prior field values
+  out = out.replace(
+    /([^\n])(?=(?:Email address|Current address|New Zealand Employer|Occupation|Rental start date|Preferred property type|first preference|second preference|Bedrooms|Furnishings|Maximum rent|Preferred location|Other requirements|Phone number)\s*:)/gi,
+    "$1\n",
+  );
+  // Sub-bullets under "Other requirements" / similar
+  out = out.replace(/([^\n])(?=(?:must have|would like)\s+\d{1,2}\s)/gi, "$1\n");
+
+  return out.replace(/\n{3,}/g, "\n\n").trim();
 }

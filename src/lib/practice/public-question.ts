@@ -7,6 +7,8 @@ export type PublicQuestionContent = {
   stem?: string;
   options?: { label: string; text: string }[];
   minWords?: number;
+  /** Task 1 chart/diagram/map image path under /uploads/… */
+  imageUrl?: string;
   /** Speaking sample only — never a Listening/Reading key */
   hint?: string;
 };
@@ -15,12 +17,14 @@ export type PublicQuestion = {
   number: number;
   type: string;
   content: PublicQuestionContent;
+  mediaUrl?: string;
 };
 
 type RawQuestion = {
   number: number;
   type: string;
   content?: unknown;
+  mediaUrl?: string | null;
   correctAnswer?: unknown;
   acceptableAnswers?: unknown;
   explanation?: string;
@@ -36,6 +40,7 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
     stem?: string;
     options?: { label: string; text: string }[];
     minWords?: number;
+    imageUrl?: string;
   };
 
   const isSpeaking = q.type === "SPEAKING_PROMPT";
@@ -44,13 +49,20 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
       ? q.explanation
       : undefined;
 
+  const imageUrl =
+    (typeof content.imageUrl === "string" && content.imageUrl.trim()) ||
+    (typeof q.mediaUrl === "string" && q.mediaUrl.trim()) ||
+    undefined;
+
   return {
     number: q.number,
     type: q.type,
+    mediaUrl: imageUrl,
     content: {
       stem: content.stem,
       options: content.options,
       minWords: content.minWords,
+      imageUrl,
       hint,
     },
   };

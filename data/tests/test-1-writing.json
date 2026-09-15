@@ -1,0 +1,54 @@
+{
+  "title": "Test 1 - Writing",
+  "slug": "test-1-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:/Wewin/IELTS/Test 1",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task\n\nThe maps below show the plans of a library in 2001 and 2009\nSummarise the information by selecting and reporting the main features and made comparisons with relevant\n\nWrite at least 150 words",
+      "meta": {
+        "preamble": "Test 1 - Maps",
+        "imageUrl": "/uploads/writing/test-1-task1-diagram.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nThe maps below show the plans of a library in 2001 and 2009\nSummarise the information by selecting and reporting the main features and made comparisons with relevant\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-1-task1-diagram.png"
+          },
+          "mediaUrl": "/uploads/writing/test-1-task1-diagram.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nSome people believe teenagers should focus on all subjects equally, whereas other people think that they should concentrate on only those subjects that they find interesting.\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nSome people believe teenagers should focus on all subjects equally, whereas other people think that they should concentrate on only those subjects that they find interesting.\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-15T09:03:01.042Z"
+}

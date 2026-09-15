@@ -28,6 +28,8 @@ export const QuestionDraftSchema = z.object({
   order: z.number().int().nonnegative(),
   type: QuestionTypeSchema,
   content: z.record(z.string(), z.unknown()),
+  /** Writing Task 1 diagram / chart URL under /uploads/… */
+  mediaUrl: z.string().optional(),
   correctAnswer: z.unknown().optional(),
   acceptableAnswers: z.array(z.string()).optional(),
   explanation: z.string().optional(),

@@ -75,7 +75,7 @@ type TaskHint = QuestionDraft["type"] | "UNKNOWN";
 function detectTaskType(instructionBlock: string): TaskHint {
   const t = instructionBlock.toLowerCase();
   if (
-    /true\s+if|false\s+if|not\s+given|yes\s+if|no\s+if|agrees with the information|agrees with the (views|claims)/.test(
+    /true\s+if|false\s+if|not\s+given|yes\s+if|no\s+if|true\s*\/\s*false|yes\s*\/\s*no|agrees with the information|agrees with the (views|claims)/.test(
       t,
     )
   ) {
@@ -86,11 +86,18 @@ function detectTaskType(instructionBlock: string): TaskHint {
   ) {
     return "MAP_LABELING";
   }
+  if (
+    /choose the correct heading|list of headings|correct heading for each paragraph/.test(
+      t,
+    )
+  ) {
+    return "MATCHING";
+  }
   if (/complete the table/.test(t)) {
     return "TABLE_COMPLETION";
   }
   if (
-    /which paragraph contains|which section contains|choose.*(from the box|FOUR answers|THREE answers)|list of words|list of researchers|match each statement|write the correct letter,\s*a-[a-k]/i.test(
+    /which paragraph contains|which section contains|choose.*(from the box|FOUR answers|THREE answers)|list of words|list of researchers|match each statement|match each characteristic|write the correct letter,\s*a-[a-k]|matching the each correct year|match.*year/i.test(
       t,
     )
   ) {
@@ -127,15 +134,25 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
   const lines = body.split("\n");
   const blocks: SubBlock[] = [];
   let current: SubBlock = { lines: [] };
-  const rangeRe = /^Questions?\s+(\d+)\s*[-–—]\s*(\d+)\s*$/i;
+  // Paper headers: "Questions 1-10", "Question 26", "LISTENING SECTION 1 Questions 1-10"
+  const rangeRe =
+    /^(?:(?:LISTENING\s+)?SECTION\s+\d+\s+)?Questions?\s+(\d+)(?:\s*[-–—]\s*(\d+)|\s+and\s+(\d+))?\b/i;
 
   for (const line of lines) {
-    const m = line.trim().match(rangeRe);
+    const trimmed = line.trim().replace(/\t+/g, " ").replace(/\s+/g, " ");
+    const m = trimmed.match(rangeRe);
+    // Spend-time blurbs are not task blocks: "Questions 14-26 which are based on Reading Passage 2"
+    if (m && /based on (Reading\s+)?Passage/i.test(trimmed)) {
+      current.lines.push(line);
+      continue;
+    }
     if (m) {
       if (current.lines.length) blocks.push(current);
+      const startQ = Number(m[1]);
+      const endQ = m[2] ? Number(m[2]) : m[3] ? Number(m[3]) : startQ;
       current = {
-        startQ: Number(m[1]),
-        endQ: Number(m[2]),
+        startQ: Math.min(startQ, endQ),
+        endQ: Math.max(startQ, endQ),
         lines: [line],
       };
     } else {
@@ -156,7 +173,10 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
         : null;
 
     const bank = extractLetterBank(block.lines);
-    const fromMcq = extractMcqQuestions(block.lines, range);
+    const fromMcq = [
+      ...extractMcqQuestions(block.lines, range),
+      ...extractUnnumberedMcqQuestions(block.lines, range),
+    ];
     const fromStatements = extractNumberedStatements(
       block.lines,
       hint,
@@ -218,7 +238,7 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
       }
     }
 
-    // Matching / TFNG: fill missing numbers from statement-like lines in range
+      // Matching / TFNG: fill missing numbers from statement-like lines in range
     if (range && preferStatements) {
       for (let n = range.start; n <= range.end; n++) {
         if (byNumber.has(n)) continue;
@@ -238,6 +258,39 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
           content.options = tfngOptions(text);
         }
         byNumber.set(n, { number: n, order: 0, type, content });
+      }
+
+      // Paper IELTS often lists TFNG statements without "1 / 2 / 3" prefixes.
+      if (hint === "TRUE_FALSE_NG") {
+        fillUnnumberedTfngStatements(byNumber, block.lines, range, text);
+      }
+      // Matching labels (map features / exhibitions) without numbers
+      if (hint === "MATCHING") {
+        fillUnnumberedMatchingLabels(byNumber, block.lines, range, bank);
+      }
+    }
+
+    // Sub-range matching inside a larger MCQ section:
+    // "…write the correct letter, A-F, next to questions 27-30"
+    const subRangeMatch = text.match(
+      /(?:next to |boxes?\s+)?questions?\s+(\d+)\s*[-–—]\s*(\d+)/i,
+    );
+    if (subRangeMatch && /from the box|interesting features|choose\s+(two|three|four)\s+answers/i.test(text)) {
+      const subRange = {
+        start: Number(subRangeMatch[1]),
+        end: Number(subRangeMatch[2]),
+      };
+      if (
+        !range ||
+        subRange.start !== range.start ||
+        subRange.end !== range.end
+      ) {
+        fillUnnumberedMatchingLabels(
+          byNumber,
+          block.lines,
+          subRange,
+          bank.length ? bank : extractLetterBank(block.lines),
+        );
       }
     }
   }
@@ -273,7 +326,7 @@ function cleanStatementStem(raw: string, number: number): string {
 }
 
 function tfngOptions(text: string): { label: string; text: string }[] {
-  const yesNo = /yes\s+if|no\s+if/i.test(text);
+  const yesNo = /yes\s+if|no\s+if|yes\s*\/\s*no/i.test(text);
   return yesNo
     ? [
         { label: "YES", text: "YES" },
@@ -285,6 +338,112 @@ function tfngOptions(text: string): { label: string; text: string }[] {
         { label: "FALSE", text: "FALSE" },
         { label: "NOT GIVEN", text: "NOT GIVEN" },
       ];
+}
+
+function isLikelyInstructionLine(line: string): boolean {
+  const t = line.trim();
+  if (!t) return true;
+  if (/^Questions?\s+\d+/i.test(t)) return true;
+  if (/^(NB|Note)\b/i.test(t)) return true;
+  if (
+    /^(Do the following|In boxes|Write |Choose |Complete |Match |Look at|Reading Passage|TRUE\s*\/\s*FALSE|YES\s*\/\s*NO)/i.test(
+      t,
+    )
+  ) {
+    return true;
+  }
+  if (
+    /true\s+if|false\s+if|not\s+given|agrees with the/i.test(t) &&
+    t.length < 140
+  ) {
+    return true;
+  }
+  return false;
+}
+
+/**
+ * Assign unnumbered TFNG statement paragraphs to missing question numbers
+ * in order (common in Word exports that omit "1." / "2." prefixes).
+ */
+function fillUnnumberedTfngStatements(
+  byNumber: Map<number, QuestionDraft>,
+  lines: string[],
+  range: { start: number; end: number },
+  blockText: string,
+): void {
+  const missing: number[] = [];
+  for (let n = range.start; n <= range.end; n++) {
+    if (!byNumber.has(n)) missing.push(n);
+  }
+  if (missing.length === 0) return;
+
+  const statements: string[] = [];
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t || isLikelyInstructionLine(t)) continue;
+    if (/^\d{1,2}[.)]?\s+/.test(t)) continue;
+    if (/^[A-K][.)]\s+/.test(t)) continue;
+    if (t.length < 20) continue;
+    if (!/^[A-Z“"']/.test(t)) continue;
+    statements.push(t);
+  }
+
+  const opts = tfngOptions(blockText);
+  for (let i = 0; i < missing.length && i < statements.length; i++) {
+    const n = missing[i]!;
+    byNumber.set(n, {
+      number: n,
+      order: 0,
+      type: "TRUE_FALSE_NG",
+      content: { stem: statements[i]!, options: opts },
+    });
+  }
+}
+
+/**
+ * Assign short unnumbered labels (exhibitions, map areas) to missing
+ * matching question numbers in order.
+ */
+function fillUnnumberedMatchingLabels(
+  byNumber: Map<number, QuestionDraft>,
+  lines: string[],
+  range: { start: number; end: number },
+  bank: { label: string; text: string }[],
+): void {
+  const missing: number[] = [];
+  for (let n = range.start; n <= range.end; n++) {
+    if (!byNumber.has(n)) missing.push(n);
+  }
+  if (missing.length === 0) return;
+
+  const labels: string[] = [];
+  for (const line of lines) {
+    let t = line.trim();
+    if (!t || isLikelyInstructionLine(t)) continue;
+    if (/^\d{1,2}[.)]?\s+/.test(t)) continue;
+    if (/^(Interesting features|Exhibitions|Locations|List of)\b/i.test(t)) {
+      continue;
+    }
+    // Skip bank entries "A. the realistic colours"
+    if (/^[A-K][.)]\s+/.test(t) && t.length > 20) continue;
+    // Strip teacher-filled trailing letter
+    t = t.replace(/\s+[A-F]\s*$/i, "").trim();
+    if (t.length < 3 || t.length > 60) continue;
+    if (/^[A-K]$/i.test(t)) continue;
+    labels.push(t);
+  }
+
+  for (let i = 0; i < missing.length && i < labels.length; i++) {
+    const n = missing[i]!;
+    const content: Record<string, unknown> = { stem: labels[i]! };
+    if (bank.length) content.options = bank;
+    byNumber.set(n, {
+      number: n,
+      order: 0,
+      type: "MATCHING",
+      content,
+    });
+  }
 }
 
 function inRange(
@@ -301,6 +460,15 @@ function extractLetterBank(
   const bank: { label: string; text: string }[] = [];
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i]!.trim();
+    // Roman-numeral heading bank: "i. Fluctuations…" / "viii Determining…"
+    const roman = t.match(/^([ivxlcdm]{1,6})[.)]\s+(.+)$/i);
+    if (roman) {
+      bank.push({
+        label: roman[1]!.toLowerCase(),
+        text: roman[2]!.trim(),
+      });
+      continue;
+    }
     const sameLine = t.match(/^([A-K])\s{1,4}(.+)$/);
     if (sameLine) {
       bank.push({ label: sameLine[1]!, text: sameLine[2]!.trim() });
@@ -331,8 +499,9 @@ function extractBlankQuestions(
   range: { start: number; end: number } | null,
 ): QuestionDraft[] {
   const questions: QuestionDraft[] = [];
+  // Allow optional currency prefix before dots: `4 £ ........` / `7 $ ................`
   const re =
-    /(?:^|[\s(])(\d{1,2})\s*(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|\s{2,}(?=[a-zA-Z(]))/g;
+    /(?:^|[\s(])(\d{1,2})\s*(?:[$£€]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|\s{2,}(?=[a-zA-Z(]))/gu;
   let m: RegExpExecArray | null;
   const seen = new Set<number>();
 
@@ -344,11 +513,9 @@ function extractBlankQuestions(
 
     // Detect blank position only — stem stays empty because the full notes
     // (with this blank) are stored on part.content for the CDI left pane.
+    // Dotted blanks are never MCQ / matching / TFNG even if the block hint is.
     let type: QuestionDraft["type"] = "GAP_FILL";
-    if (hint === "MATCHING") type = "MATCHING";
-    else if (hint === "TRUE_FALSE_NG") type = "TRUE_FALSE_NG";
-    else if (hint === "MULTIPLE_CHOICE") type = "MULTIPLE_CHOICE";
-    else if (hint === "MAP_LABELING") type = "MAP_LABELING";
+    if (hint === "MAP_LABELING") type = "MAP_LABELING";
     else if (hint === "TABLE_COMPLETION") type = "TABLE_COMPLETION";
 
     questions.push({
@@ -408,7 +575,7 @@ function instructionStemFromBlock(text: string): string {
  */
 function findNumberContext(text: string, n: number): string | null {
   const re = new RegExp(
-    `(?:^|[\\s(])(${n})(?=\\s|[.…_…]|\\u2026|$)`,
+    `(?:^|[\\s(])(${n})(?=\\s|(?:[$£€]\\s*)?(?:[.…_…]|\\u2026)|$)`,
     "m",
   );
   const m = re.exec(text);
@@ -450,8 +617,13 @@ function extractMcqQuestions(
         j += 1;
         continue;
       }
-      const om = optLine.match(/^([A-E])[.)]?\s+(.+)$/);
+      // Word often emits "A the examples used." without "A." / "A)"
+      const om =
+        optLine.match(/^([A-E])[.)]\s+(.+)$/) ||
+        optLine.match(/^([A-E])\s{1,4}(.+)$/);
       if (!om) break;
+      // Avoid treating "A more expensive products" bank lines as MCQ options
+      // when the stem wasn't a real question — still OK inside MCQ blocks.
       options.push({ label: om[1]!, text: om[2]!.trim() });
       j += 1;
       if (options.length >= 5) break;
@@ -477,6 +649,65 @@ function extractMcqQuestions(
   return questions;
 }
 
+/**
+ * Word Listening MCQs often land as unnumbered stems + A/B/C lines
+ * (from nested &lt;ol&gt;). Assign numbers in order within the Questions range.
+ */
+function extractUnnumberedMcqQuestions(
+  lines: string[],
+  range: { start: number; end: number } | null,
+): QuestionDraft[] {
+  if (!range) return [];
+  const questions: QuestionDraft[] = [];
+  let nextNum = range.start;
+  let i = 0;
+
+  while (i < lines.length && nextNum <= range.end) {
+    const t = lines[i]!.trim();
+    if (!t || /^\d{1,2}[.)]?\s+/.test(t) || /^([A-E])[.)]\s+/.test(t) || /^([A-E])\s{1,4}\S/.test(t)) {
+      i += 1;
+      continue;
+    }
+    // Stem candidate: not an instruction, followed by A/B options
+    if (/^Questions?\s+\d+/i.test(t) || /^Choose\b/i.test(t)) {
+      i += 1;
+      continue;
+    }
+
+    const options: { label: string; text: string }[] = [];
+    let j = i + 1;
+    while (j < lines.length) {
+      const optLine = lines[j]!.trim();
+      if (!optLine) {
+        j += 1;
+        continue;
+      }
+      const om =
+        optLine.match(/^([A-E])[.)]\s+(.+)$/) ||
+        optLine.match(/^([A-E])\s{1,4}(.+)$/);
+      if (!om) break;
+      options.push({ label: om[1]!, text: om[2]!.trim() });
+      j += 1;
+      if (options.length >= 5) break;
+    }
+
+    if (options.length >= 2 && t.length >= 12) {
+      questions.push({
+        number: nextNum,
+        order: 0,
+        type: "MULTIPLE_CHOICE",
+        content: { stem: t, options },
+      });
+      nextNum += 1;
+      i = j;
+      continue;
+    }
+    i += 1;
+  }
+
+  return questions;
+}
+
 function extractNumberedStatements(
   lines: string[],
   hint: TaskHint,
@@ -490,7 +721,7 @@ function extractNumberedStatements(
 
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i]!.trim();
-    const m = t.match(/^(\d{1,2})[.)]?\s+(.+)$/);
+    const m = t.match(/^(\d{1,2})[.)]\s*(.+)$/) || t.match(/^(\d{1,2})\)\s+(.+)$/);
     if (!m) continue;
     const number = Number(m[1]);
     if (!inRange(number, range)) continue;
@@ -549,10 +780,13 @@ function parseTemplatedQuestions(body: string): QuestionDraft[] {
     if (/^(?:#{1,3}\s*)?(?:PART|Section|Passage|Task|Topic)\b/i.test(t)) {
       continue;
     }
-    if (
-      /^(?:#{1,6}\s*)?Q(?:uestion)?\s*\d+/i.test(t) ||
-      /^(?:#{3,6})\s*\d+/.test(t)
-    ) {
+    // Only markdown/template headers — NOT paper IELTS "Question 26" / "Questions 14-20"
+    // (those must go through parseIeltsStyleQuestions).
+    const isTemplate =
+      /^(?:#{1,6}\s*)?Q(?:uestion)?\s*\d+\s*[\[(][a-z_]+[\])]/i.test(t) ||
+      /^(?:#{3,6})\s*Q?\s*\d+\b/.test(t) ||
+      /^Q\d+\s*:\s*/i.test(t);
+    if (isTemplate) {
       headerIndexes.push(i);
     }
   }

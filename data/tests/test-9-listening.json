@@ -1,0 +1,677 @@
+{
+  "title": "Test 9 - Listening",
+  "slug": "test-9-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\public\\templates",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10 \n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nRental Property Application Form Example: Name: Susan Smith\n\nPhone number: 1 ............. (mobile)\nEmail address: Susansmith@ 2............\nCurrent address: 234 Becketts Road, Brisbane. 4054\nNew Zealand Employer: Auckland Hospital\nOccupation: a 3...............\nRental start date: 8th February\nPreferred property type:\nfirst preference: a house with a 4 ...........\nsecond preference: an apartment with a big 5................\n\nBedrooms: two\nFurnishings: a 6 ................ is required\nMaximum rent: 7 $ ................ per week\nPreferred location: near the 8..............\nOther requirements:\nmust have 9 .............. nearby\nwould like 10 .............. included in the rent",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-9-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "614381997"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "post.com"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "chemist"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "garden"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "balcony"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "fridge"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "400"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "beach"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "parking"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "electricity"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20 \n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nThe Pre-school Family Centre \n\nfor children from 11 .................. to 5 years old\nrun as a 12 ................ by parents, who attend with their children\nparents receive special 13 ............... from the centre\nchildren's activities organised in 14 .................. age groups\n\nFacts about the Centre\n\nsessions from 9.30-12.30 each morning\none afternoon session to help prepare older children for 15 ................... at school\nparents must make several 16 ................. before they enroll their child\neach centre is officially recognised and receives 17 ..................... funding\n\nParents' Commitments\n\ntake on responsibility for a special 18 ..................\nattend one 19 ..................\n\nPractical Advice\n\nattend regularly to help your child gain 20 ................\nyounger children may need to leave early\nprovide a snack for your child",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-9-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "3 months"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "cooperative"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "training"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "mixed"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "reading"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "visits"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "government"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "job"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "meeting"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "confidence"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30 \n\nChoose the correct letter, A, B or C.\n\nPresentation on foot injuries among sports players \n\n21 John and Cath's presentation plans are different in \n\nA the examples used. \n\nB the order of information. \n\nC the main points made.\n\n22 What do the students agree about the anatomy section of their presentation? \n\nA It would be better if Cath spoke about it. \n\nB It should be kept quite short. \n\nC It should be based on information from the internet.\n\n23 What do the students agree to include in the last section? \n\nA visuals of injuries \n\nB demonstrations of treatment \n\nC interviews with patients\n\n24 What is said about the different types of heel injury? \n\nA Diagnosis is straightforward. \n\nB They are expensive to treat. \n\nC Some are more serious than others.\n\n25 On the subject of causes of heel injuries, the students agree to \n\nA focus on a single reason. \n\nB reject certain approaches.\n\nC use a source written by their professor.\n\n26 What does Cath say about stretching as a treatment? \n\nA It is potentially risky. \n\nB It is commonly confused with strengthening. \n\nC It is the least effective part of treatment.\n\nQuestions 27 and 28 \n\nChoose TWO letters A-E. \n\nWhich TWO treatment techniques did the female runner find useful for her swollen heel? \n\nA massage \n\nB ultrasound \n\nC rest \n\nD balancing exercises \n\nE ice\n\nQuestions 29 and 30 \n\nChoose TWO letters, A-E. \n\nWhich TWO sports did the male sprinter find most effective during his rehabilitation programme? \n\nA swimming \n\nB weight-training \n\nC running on grass \n\nD cycling \n\nE jumping",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-9-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "John and Cath's presentation plans are different in",
+            "options": [
+              {
+                "label": "A",
+                "text": "the examples used."
+              },
+              {
+                "label": "B",
+                "text": "the order of information."
+              },
+              {
+                "label": "C",
+                "text": "the main points made."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What do the students agree about the anatomy section of their presentation?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It would be better if Cath spoke about it."
+              },
+              {
+                "label": "B",
+                "text": "It should be kept quite short."
+              },
+              {
+                "label": "C",
+                "text": "It should be based on information from the internet."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What do the students agree to include in the last section?",
+            "options": [
+              {
+                "label": "A",
+                "text": "visuals of injuries"
+              },
+              {
+                "label": "B",
+                "text": "demonstrations of treatment"
+              },
+              {
+                "label": "C",
+                "text": "interviews with patients"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is said about the different types of heel injury?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Diagnosis is straightforward."
+              },
+              {
+                "label": "B",
+                "text": "They are expensive to treat."
+              },
+              {
+                "label": "C",
+                "text": "Some are more serious than others."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "On the subject of causes of heel injuries, the students agree to",
+            "options": [
+              {
+                "label": "A",
+                "text": "focus on a single reason."
+              },
+              {
+                "label": "B",
+                "text": "reject certain approaches."
+              },
+              {
+                "label": "C",
+                "text": "use a source written by their professor."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Cath say about stretching as a treatment?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is potentially risky."
+              },
+              {
+                "label": "B",
+                "text": "It is commonly confused with strengthening."
+              },
+              {
+                "label": "C",
+                "text": "It is the least effective part of treatment."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO treatment techniques did the female runner find useful for her swollen heel?",
+            "options": [
+              {
+                "label": "A",
+                "text": "massage"
+              },
+              {
+                "label": "B",
+                "text": "ultrasound"
+              },
+              {
+                "label": "C",
+                "text": "rest"
+              },
+              {
+                "label": "D",
+                "text": "balancing exercises"
+              },
+              {
+                "label": "E",
+                "text": "ice"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO sports did the male sprinter find most effective during his rehabilitation programme?",
+            "options": [
+              {
+                "label": "A",
+                "text": "swimming"
+              },
+              {
+                "label": "B",
+                "text": "weight-training"
+              },
+              {
+                "label": "C",
+                "text": "running on grass"
+              },
+              {
+                "label": "D",
+                "text": "cycling"
+              },
+              {
+                "label": "E",
+                "text": "jumping"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-36\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\nDifferent Types of Supermarket Layout\n\n| Layout | Description | Advantages | Disadvantages |\n| --- | --- | --- | --- |\n| Grid | parallel aisles | - efficient use of floor space\n- controls 31 ........... | - uninteresting layout\n- shoppers can 32 ............ through their shopping |\n| Free form | 33 ............ organization | - customers need more 34 ............ to find products | - poor use of space, so less 35 ............ |\n| Boutique | displays arranged around a food speciality | - separates space into 36 ............\n- creates attractive image | - poor use of space |\n\nQuestions 37-40\n\nWhich types of products are placed in each location in supermarkets?\n\nChoose FOUR answers from the box and write the correct letter, A-F, next to questions 37-40.\n\nTypes of Products\n\nA more expensive products\n\nB most profitable products\n\nC products reduced in price\n\nD products aimed at children\n\nE products requiring careful selection\n\nF slow-moving products\n\nLocations\n\n37 quieter areas\n\n38 end of aisles\n\n39 middle shelves\n\n40 near the entrance",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-9-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "traffic flows"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "rush"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "random"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "time"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "cost effective"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "small areas"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Types of Products",
+            "options": [
+              {
+                "label": "A",
+                "text": "more expensive products"
+              },
+              {
+                "label": "B",
+                "text": "most profitable products"
+              },
+              {
+                "label": "C",
+                "text": "products reduced in price"
+              },
+              {
+                "label": "D",
+                "text": "products aimed at children"
+              },
+              {
+                "label": "E",
+                "text": "products requiring careful selection"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "end of aisles 39 middle s",
+            "options": [
+              {
+                "label": "A",
+                "text": "more expensive products"
+              },
+              {
+                "label": "B",
+                "text": "most profitable products"
+              },
+              {
+                "label": "C",
+                "text": "products reduced in price"
+              },
+              {
+                "label": "D",
+                "text": "products aimed at children"
+              },
+              {
+                "label": "E",
+                "text": "products requiring careful selection"
+              },
+              {
+                "label": "F",
+                "text": "slow-moving products"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "middle shelves 40 near th",
+            "options": [
+              {
+                "label": "A",
+                "text": "more expensive products"
+              },
+              {
+                "label": "B",
+                "text": "most profitable products"
+              },
+              {
+                "label": "C",
+                "text": "products reduced in price"
+              },
+              {
+                "label": "D",
+                "text": "products aimed at children"
+              },
+              {
+                "label": "E",
+                "text": "products requiring careful selection"
+              },
+              {
+                "label": "F",
+                "text": "slow-moving products"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "near the entrance",
+            "options": [
+              {
+                "label": "A",
+                "text": "more expensive products"
+              },
+              {
+                "label": "B",
+                "text": "most profitable products"
+              },
+              {
+                "label": "C",
+                "text": "products reduced in price"
+              },
+              {
+                "label": "D",
+                "text": "products aimed at children"
+              },
+              {
+                "label": "E",
+                "text": "products requiring careful selection"
+              },
+              {
+                "label": "F",
+                "text": "slow-moving products"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-15T09:14:54.608Z",
+  "audioFiles": [
+    "/uploads/audio/test-9-section-1.mp3",
+    "/uploads/audio/test-9-section-2.mp3",
+    "/uploads/audio/test-9-section-3.mp3",
+    "/uploads/audio/test-9-section-4.mp3"
+  ]
+}

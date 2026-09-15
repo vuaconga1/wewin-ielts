@@ -228,8 +228,8 @@ export function SidebarProfile({
           {user.role === "ADMIN" ? tc("admin") : tc("student")}
         </p>
 
-        <div className="mt-3 w-full rounded-xl border border-wewin-border bg-zinc-50 px-3 py-2.5 text-left">
-          <div className="flex items-center gap-2">
+        <div className="mt-3 w-full rounded-xl border border-wewin-border bg-zinc-50 px-3 py-2.5 text-center">
+          <div className="flex items-center justify-center gap-2">
             <Trophy className="h-4 w-4 shrink-0 text-amber-600" aria-hidden />
             <p className="min-w-0 truncate text-sm font-bold text-wewin-navy">
               {rank.loading
@@ -239,7 +239,7 @@ export function SidebarProfile({
                   : t("unranked")}
             </p>
           </div>
-          <p className="mt-1 text-center text-xs text-zinc-500">
+          <p className="mt-1 text-xs text-zinc-500">
             {rank.loading
               ? "…"
               : t("pointsLabel", {

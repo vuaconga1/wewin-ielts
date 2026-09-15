@@ -69,7 +69,7 @@ export default async function TestsPage({ searchParams }: Props) {
       ) : (
         <Suspense
           fallback={
-            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-5">
               {Array.from({ length: 4 }).map((_, i) => (
                 <div
                   key={i}

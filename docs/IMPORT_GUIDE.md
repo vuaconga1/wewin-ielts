@@ -2,6 +2,8 @@
 
 Mục tiêu: upload file theo format này → hệ thống **tự chia Part** → tạo câu hỏi + đáp án trong DB.
 
+**Mẫu tham chiếu Test 9** (fixes + checklist cho test mới): [`docs/TEST-9-TEMPLATE.md`](./TEST-9-TEMPLATE.md). Admin import tải 4 file mẫu từ `public/templates/test-9-samples.zip`.
+
 ## Cấu trúc thư mục gợi ý (giống Drive)
 
 ```
@@ -229,11 +231,65 @@ Mẫu đã đối chiếu ảnh: `templates/castle-listening-keys.md`, `template
 
 ### Cách thiết kế file Word Keys (quan trọng)
 
+**Chuẩn mặc định từ nay = format `Key 9.docx`** (xem `templates/canonical-keys.md`).
+
 **Không dùng:** chụp ảnh / paste screenshot bảng đáp án vào Word. Parser **không đọc chữ trong ảnh**.
 
-**Phải dùng:** chữ thật (typed text) hoặc bảng Word thật.
+**Phải dùng:** chữ thật (typed text) hoặc bảng Word thật theo layout Key 9.
 
-#### Cách A — Khuyến nghị: mỗi dòng 1 câu (dễ nhất)
+#### Format chuẩn (Key 9) — khuyến nghị
+
+Một file `Key N.docx` có thể chứa **cả Listening + Reading**:
+
+```
+Listening
+
+Section 1
+1. answer
+2. answer
+…
+10. answer
+
+Section 2
+11. answer
+…
+20. answer
+
+Section 3
+21. A
+…
+30. D
+
+Section 4
+31. traffic flows
+…
+40. B
+
+Reading
+
+Passage 1
+1. FALSE
+2. TRUE
+…
+13. money
+
+Passage 2
+14. visual memory
+…
+26. D
+
+Passage 3
+27. YES
+…
+40. B
+```
+
+- Mỗi đáp án: `N. answer` (dấu `.` / `:` / `)` đều được)
+- Reading TFNG: `TRUE` / `FALSE` / `NOT GIVEN` (cũng nhận `T` / `F` / `NGV`)
+- Có thể để đáp án trong **bảng Word** (4 cột Section / 3 cột Passage) miễn nội dung cell vẫn là `N. answer`
+- Import **tự chuẩn hóa** các layout lệch (STT|Đáp án, dòng xen kẽ số/đáp án, …) về dạng Key 9 trước khi gắn đáp án
+
+#### Cách A — mỗi dòng 1 câu (tương đương Key 9)
 
 Trong Word / Google Docs, gõ:
 

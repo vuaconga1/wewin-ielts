@@ -35,7 +35,7 @@ export function partHasNumberedBlanks(
   content: string | null | undefined,
 ): boolean {
   if (!content?.trim()) return false;
-  return /(?:^|[\s(])\d{1,2}\s*(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|\s{2,}(?=[a-zA-Z(]))/m.test(
+  return /(?:^|[\s(])\d{1,2}\s*(?:[$£€]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|\s{2,}(?=[a-zA-Z(]))/m.test(
     content,
   );
 }

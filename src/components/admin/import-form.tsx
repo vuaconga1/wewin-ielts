@@ -171,12 +171,15 @@ export function ImportForm() {
                 />
               </label>
               <a
-                href="/templates/sample-de.zip"
-                download="sample-de.zip"
+                href="/templates/test-9-samples.zip"
+                download="test-9-samples.zip"
                 className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-wewin-navy bg-white px-3 py-2.5 text-sm font-semibold text-wewin-navy hover:bg-wewin-navy/5"
               >
                 <Download className="h-4 w-4 shrink-0" aria-hidden />
-                {t("downloadSamples")}
+                {t(
+                  "downloadSamples",
+                  "Tải 4 file mẫu Test 9 (Listening / Reading / Writing / Keys)",
+                )}
               </a>
             </div>
 
@@ -192,14 +195,12 @@ export function ImportForm() {
                   onChange={(e) => setKeysFile(e.target.files?.[0] ?? null)}
                 />
               </label>
-              <a
-                href="/templates/sample-keys.docx"
-                download="sample-keys.docx"
-                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-wewin-navy bg-white px-3 py-2.5 text-sm font-semibold text-wewin-navy hover:bg-wewin-navy/5"
-              >
-                <Download className="h-4 w-4 shrink-0" aria-hidden />
-                {t("downloadKeysSample")}
-              </a>
+              <p className="mt-2 text-xs text-zinc-500">
+                {t(
+                  "downloadTest9KeysHint",
+                  "Key 9.docx nằm trong gói mẫu Test 9 ở trên.",
+                )}
+              </p>
             </div>
 
             <label className="block sm:col-span-2">

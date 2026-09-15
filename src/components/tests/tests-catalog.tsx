@@ -204,7 +204,7 @@ export function TestsCatalog({
         </div>
       ) : (
         <>
-          <div data-tour="tests-catalog" className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+          <div data-tour="tests-catalog" className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-5">
             {pageItems.map((row) => (
               <article
                 key={row.slug}

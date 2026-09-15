@@ -5,6 +5,8 @@ import { useTranslations } from "@/i18n/provider";
 export type NavQuestion = {
   number: number;
   partIndex: number;
+  /** Optional short part label shown before the first question of each part. */
+  partLabel?: string;
 };
 
 type Props = {
@@ -18,6 +20,8 @@ type Props = {
   onNext: () => void;
   /** When true, show Review control (L/R). */
   showReview?: boolean;
+  /** When true, insert a part divider when partIndex changes. */
+  groupByPart?: boolean;
 };
 
 function isAnswered(answers: Record<string, string>, n: number) {
@@ -34,6 +38,7 @@ export function QuestionNavigator({
   onPrev,
   onNext,
   showReview = true,
+  groupByPart = false,
 }: Props) {
   const { t } = useTranslations("practice");
   const currentFlagged =
@@ -78,38 +83,62 @@ export function QuestionNavigator({
           role="navigation"
           aria-label={t("questionNav", "Question navigator")}
         >
-          {questions.map((q) => {
+          {questions.map((q, i) => {
             const answered = isAnswered(answers, q.number);
             const isFlag = flagged.has(q.number);
             const isCurrent = q.number === currentNumber;
             const shape = isFlag ? "rounded-full" : "rounded-sm";
+            const prev = questions[i - 1];
+            const showPartBreak =
+              groupByPart &&
+              (i === 0 || (prev != null && prev.partIndex !== q.partIndex));
             return (
-              <button
-                type="button"
-                key={q.number}
-                onClick={() => onSelect(q.number)}
-                className={`relative inline-flex h-8 w-8 shrink-0 items-center justify-center border text-xs font-semibold tabular-nums ${shape} ${
-                  isCurrent
-                    ? "border-[#1a3a6b] bg-[#1a3a6b] text-white"
-                    : "border-zinc-500 bg-white text-zinc-900 hover:bg-zinc-100"
-                }`}
-                aria-current={isCurrent ? "true" : undefined}
-                aria-label={
-                  isFlag
-                    ? t("qFlagged", { n: q.number }, "Question {n} (marked for review)")
-                    : t("qNumber", { n: q.number }, "Question {n}")
-                }
-              >
-                {q.number}
-                {answered ? (
-                  <span
-                    className={`absolute bottom-0.5 left-1/2 h-0.5 w-3.5 -translate-x-1/2 ${
-                      isCurrent ? "bg-white" : "bg-zinc-800"
-                    }`}
-                    aria-hidden
-                  />
+              <div key={q.number} className="flex shrink-0 items-center gap-1">
+                {showPartBreak ? (
+                  <>
+                    {i > 0 ? (
+                      <span
+                        className="mx-0.5 h-5 w-px shrink-0 bg-zinc-400"
+                        aria-hidden
+                      />
+                    ) : null}
+                    {q.partLabel ? (
+                      <span className="mr-0.5 hidden shrink-0 text-[10px] font-semibold uppercase tracking-wide text-zinc-500 sm:inline">
+                        {q.partLabel}
+                      </span>
+                    ) : null}
+                  </>
                 ) : null}
-              </button>
+                <button
+                  type="button"
+                  onClick={() => onSelect(q.number)}
+                  className={`relative inline-flex h-8 w-8 shrink-0 items-center justify-center border text-xs font-semibold tabular-nums ${shape} ${
+                    isCurrent
+                      ? "border-[#1a3a6b] bg-[#1a3a6b] text-white"
+                      : "border-zinc-500 bg-white text-zinc-900 hover:bg-zinc-100"
+                  }`}
+                  aria-current={isCurrent ? "true" : undefined}
+                  aria-label={
+                    isFlag
+                      ? t(
+                          "qFlagged",
+                          { n: q.number },
+                          "Question {n} (marked for review)",
+                        )
+                      : t("qNumber", { n: q.number }, "Question {n}")
+                  }
+                >
+                  {q.number}
+                  {answered ? (
+                    <span
+                      className={`absolute bottom-0.5 left-1/2 h-0.5 w-3.5 -translate-x-1/2 ${
+                        isCurrent ? "bg-white" : "bg-zinc-800"
+                      }`}
+                      aria-hidden
+                    />
+                  ) : null}
+                </button>
+              </div>
             );
           })}
         </div>
