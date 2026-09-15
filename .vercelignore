@@ -1,0 +1,27 @@
+# Keep deploys lean: exclude local junk and non-demo audio/data
+.agents
+.claude
+.cursor
+.windsurf
+.tmp-header-compare
+.next
+node_modules
+data/attempts
+data/users.json
+data/keys
+data/learn
+data/tests/*
+!data/tests/test-1-*.json
+!data/tests/test-9-*.json
+public/uploads/audio/*
+!public/uploads/audio/.gitkeep
+!public/uploads/audio/test-1-section-*.mp3
+!public/uploads/audio/test-9-section-*.mp3
+public/uploads/avatars/*
+!public/uploads/avatars/.gitkeep
+public/uploads/learn/videos/*
+!public/uploads/learn/videos/.gitkeep
+secrets
+.env
+.env.*
+!.env.example
