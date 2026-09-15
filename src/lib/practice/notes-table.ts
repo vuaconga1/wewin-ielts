@@ -22,7 +22,7 @@ export function parseMarkdownTable(text: string): NotesTable | null {
     .filter(Boolean);
   if (lines.length < 2) return null;
 
-  let start = lines.findIndex((l) => l.includes("|"));
+  const start = lines.findIndex((l) => l.includes("|"));
   if (start < 0) return null;
 
   // Optional italic/plain title line immediately above the table
@@ -151,12 +151,8 @@ function splitRowCells(lines: string[]): {
   }));
 
   // Known Cambridge placement: lower blank # in a row → advantages side first
+  // (Grid: 31 adv / 32 dis; Free form: 34 / 35; Boutique: only 36 adv.)
   const blankNums = withBlank.map((b) => b.n).filter((n): n is number => n != null);
-  if (blankNums.length >= 2) {
-    const mid = Math.min(...blankNums) + 0.5;
-    // First blank → still in advantages (with preceding non-blank adv bullets)
-    // For Grid: 31 adv, 32 dis. Free form: 34 adv, 35 dis. Boutique: only 36 adv.
-  }
 
   // Structural split used by Word table for this item:
   // - bullets belonging with the first blank number (and earlier) = advantages

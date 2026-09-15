@@ -7,8 +7,6 @@ import {
 } from "./detect-skill";
 import {
   extractFileWithMeta,
-  extractTextFromFile,
-  extractTextFromUpload,
   extractUploadWithMeta,
   normalizeExtractedText,
   type DocxExtractMeta,
