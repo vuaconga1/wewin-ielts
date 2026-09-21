@@ -23,7 +23,7 @@ export const SKILL_VI: Record<IeltsSkill, string> = {
   LISTENING: "Nghe",
   READING: "Đọc",
   WRITING: "Viết",
-  SPEAKING: "Nói",
+  SPEAKING: "Speaking",
 };
 
 export function isIeltsSkill(value: string): value is IeltsSkill {
@@ -290,7 +290,7 @@ export function buildWeekPlan(
       /** Display via i18n `home.planItem` in DashboardHome */
       title: SKILL_LABEL[skill],
       minutes: test?.timeLimitMinutes ?? null,
-      href: test ? `/tests/${test.slug}` : `/tests?skill=${skill}`,
+      href: test ? `/tests/${test.slug}` : `/tests/academic?skill=${skill}`,
       state,
     };
   });

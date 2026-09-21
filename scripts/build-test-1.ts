@@ -14,6 +14,7 @@ import {
 import { parseTestFromFiles } from "../src/lib/import/pipeline";
 import { extractDocxImagesToUploads } from "../src/lib/import/extract-docx-images";
 import { stripFilledListeningAnswers } from "../src/lib/import/strip-filled-answers";
+import { unwrapSingleColumnMarkdownNotes } from "../src/lib/practice/notes-table";
 import { mergeKeysIntoQuestions } from "../src/lib/import/parse-keys";
 import { saveTestDraft } from "../src/lib/store/test-store";
 import type { ParsedTestDraft } from "../src/lib/import/schemas";
@@ -239,10 +240,12 @@ function cleanListeningNotes(draft: ParsedTestDraft): void {
     if (!part.content) continue;
     // Remove leftover answer text glued after dots (second pass)
     const cleaned = stripFilledListeningAnswers(part.content);
-    part.content = cleaned.text
-      // Trailing dots residue after strip
-      .replace(/(\d{1,2}\s*(?:[$£€]\s*)?\.{3,})\.{2,}/g, "$1")
-      .replace(/\.{6,}/g, "........");
+    part.content = unwrapSingleColumnMarkdownNotes(
+      cleaned.text
+        // Trailing dots residue after strip
+        .replace(/(\d{1,2}\s*(?:[$£€]\s*)?\.{3,})\.{2,}/g, "$1")
+        .replace(/\.{6,}/g, "........"),
+    );
   }
 }
 

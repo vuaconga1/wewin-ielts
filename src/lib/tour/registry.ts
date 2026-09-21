@@ -1,4 +1,5 @@
 import type { TourDefinition, TourId, TourStep } from "./types";
+import { isExamTypeModulePath } from "@/lib/tests/exam-type";
 
 const HOME: TourStep[] = [
   {
@@ -119,6 +120,12 @@ const TESTS: TourStep[] = [
     bodyKey: "tests.headerBody",
   },
   {
+    id: "modules",
+    target: '[data-tour="tests-modules"]',
+    titleKey: "tests.modulesTitle",
+    bodyKey: "tests.modulesBody",
+  },
+  {
     id: "filters",
     target: '[data-tour="tests-filters"]',
     titleKey: "tests.filtersTitle",
@@ -209,9 +216,14 @@ export function matchTourId(pathname: string): TourId | null {
   }
   if (path === "/") return "home";
   if (path === "/learn") return "learn";
-  if (path === "/tests") return "tests";
+  if (path === "/tests" || isExamTypeModulePath(path)) return "tests";
   if (path === "/ranking") return "ranking";
   if (path === "/account/attempts") return "attempts";
+
+  // Vocab/grammar is a sibling of course hubs — skip 4-skills tours there.
+  if (path === "/learn/vocab-grammar" || path.startsWith("/learn/vocab-grammar/")) {
+    return null;
+  }
 
   const learnLesson = path.match(/^\/learn\/[^/]+\/[^/]+\/[^/]+$/);
   if (learnLesson) return null;
@@ -223,7 +235,7 @@ export function matchTourId(pathname: string): TourId | null {
   if (learnCourse) return "learn-course";
 
   const testDetail = path.match(/^\/tests\/[^/]+$/);
-  if (testDetail) return "test-detail";
+  if (testDetail && !isExamTypeModulePath(path)) return "test-detail";
 
   return null;
 }

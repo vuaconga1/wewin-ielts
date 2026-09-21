@@ -21,9 +21,11 @@ export type AdminAttemptSkill =
 
 export type AdminAttemptFilters = {
   userId?: string;
-  userQ?: string;
+  /** Reserved for class filter (data wired later). */
+  classId?: string;
   skill?: AdminAttemptSkill | "ALL";
-  testQ?: string;
+  /** Exact test slug when selected from dropdown. */
+  testSlug?: string;
   status?: "ALL" | "FINISHED" | "UNFINISHED";
   from?: string;
   to?: string;
@@ -57,9 +59,23 @@ export type AdminUserOption = {
   attemptCount: number;
 };
 
+export type AdminTestOption = {
+  slug: string;
+  title: string;
+  skill: AdminAttemptSkill | null;
+};
+
+/** Placeholder until class / cohort data exists on users. */
+export type AdminClassOption = {
+  id: string;
+  name: string;
+};
+
 export type AdminAttemptsResult = {
   attempts: AdminAttemptRow[];
   users: AdminUserOption[];
+  tests: AdminTestOption[];
+  classes: AdminClassOption[];
   total: number;
   source: "prisma" | "local" | "mixed";
 };
@@ -99,9 +115,12 @@ export function normalizeAdminAttemptFilters(
 
   return {
     userId: input.userId?.trim() || undefined,
-    userQ: input.userQ?.trim() || undefined,
+    classId: input.classId?.trim() || undefined,
     skill: skill ?? "ALL",
-    testQ: input.testQ?.trim() || undefined,
+    testSlug:
+      input.testSlug?.trim() ||
+      input.testQ?.trim() ||
+      undefined,
     status: status ?? "ALL",
     from: input.from?.trim() || undefined,
     to: input.to?.trim() || undefined,
@@ -156,9 +175,6 @@ function applyRowFilters(
   rows: AdminAttemptRow[],
   filters: AdminAttemptFilters,
 ): AdminAttemptRow[] {
-  const userQ = filters.userQ?.toLowerCase();
-  const testQ = filters.testQ?.toLowerCase();
-
   return rows.filter((row) => {
     if (filters.userId && row.userId !== filters.userId) return false;
     if (filters.skill && filters.skill !== "ALL" && row.skill !== filters.skill) {
@@ -168,14 +184,8 @@ function applyRowFilters(
     if (filters.status === "UNFINISHED" && row.status !== "UNFINISHED") {
       return false;
     }
-    if (userQ) {
-      const hay = `${row.userEmail ?? ""} ${row.username ?? ""}`.toLowerCase();
-      if (!hay.includes(userQ)) return false;
-    }
-    if (testQ) {
-      const hay = `${row.testTitle} ${row.testSlug}`.toLowerCase();
-      if (!hay.includes(testQ)) return false;
-    }
+    // classId reserved — no class data yet; ignore until wired
+    if (filters.testSlug && row.testSlug !== filters.testSlug) return false;
     if (!matchesDateRange(row.startedAt, filters.from, filters.to)) {
       return false;
     }
@@ -360,6 +370,22 @@ function buildUserOptions(
   return options;
 }
 
+function buildTestOptions(allRows: AdminAttemptRow[]): AdminTestOption[] {
+  const bySlug = new Map<string, AdminTestOption>();
+  for (const row of allRows) {
+    if (!row.testSlug) continue;
+    if (bySlug.has(row.testSlug)) continue;
+    bySlug.set(row.testSlug, {
+      slug: row.testSlug,
+      title: row.testTitle || row.testSlug,
+      skill: row.skill,
+    });
+  }
+  return [...bySlug.values()].sort((a, b) =>
+    a.title.localeCompare(b.title, "vi"),
+  );
+}
+
 /** List attempts for admin UI / API with filters. */
 export async function listAdminAttempts(
   filters: AdminAttemptFilters = {},
@@ -378,12 +404,36 @@ export async function listAdminAttempts(
 
   const { rows: allRows, source } = mergeAttemptRows(prismaRows, localRows);
   const users = buildUserOptions(allRows, userMap);
+
+  // Prefer catalog titles from listTests so dropdown shows all known tests,
+  // then merge any attempt-only slugs.
+  const catalog = await listTests();
+  const testsMap = new Map<string, AdminTestOption>();
+  for (const t of catalog) {
+    testsMap.set(t.slug, {
+      slug: t.slug,
+      title: t.title,
+      skill: (t.skill as AdminAttemptSkill) ?? null,
+    });
+  }
+  for (const opt of buildTestOptions(allRows)) {
+    if (!testsMap.has(opt.slug)) testsMap.set(opt.slug, opt);
+  }
+  const tests = [...testsMap.values()].sort((a, b) =>
+    a.title.localeCompare(b.title, "vi"),
+  );
+
+  // Class options stub — fill when class field exists on users / enrollment.
+  const classes: AdminClassOption[] = [];
+
   const filtered = applyRowFilters(allRows, filters);
   const limit = filters.limit ?? 200;
 
   return {
     attempts: filtered.slice(0, limit),
     users,
+    tests,
+    classes,
     total: filtered.length,
     source,
   };

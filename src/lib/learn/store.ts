@@ -622,6 +622,9 @@ export async function submitExercises(input: {
   progress: LessonProgress;
   unlockedNextId: string | null;
 }> {
+  const topicResult = await trySubmitTopicExercises(input);
+  if (topicResult) return topicResult;
+
   const ctx = await getLessonContext(input.lessonId);
   if (!ctx) {
     throw new LearnStoreError("LESSON_NOT_FOUND", "Không tìm thấy bài học");
@@ -676,4 +679,67 @@ export class LearnStoreError extends Error {
     super(message);
     this.code = code;
   }
+}
+
+async function trySubmitTopicExercises(input: {
+  ownerKey: string;
+  lessonId: string;
+  answers: Record<string, string>;
+}): Promise<{
+  passed: boolean;
+  correct: number;
+  total: number;
+  results: Record<string, boolean>;
+  progress: LessonProgress;
+  unlockedNextId: string | null;
+} | null> {
+  const { getTopicById, getTopicsByTrack } = await import(
+    "@/lib/learn/vocab-grammar-store"
+  );
+  const ctx = await getTopicById(input.lessonId);
+  if (!ctx) return null;
+
+  const { topic, track } = ctx;
+  const topics = await getTopicsByTrack(track);
+  const store = await getProgress(input.ownerKey);
+  const entry = ensureLessonEntry(store, input.lessonId);
+
+  // Vocabulary has no video — skip the watch gate.
+  if (track === "vocabulary") {
+    entry.videoCompleted = true;
+  } else if (!entry.videoCompleted) {
+    throw new LearnStoreError(
+      "VIDEO_REQUIRED",
+      "Bạn cần xem hết video trước khi nộp bài tập",
+    );
+  }
+
+  const results: Record<string, boolean> = {};
+  let correct = 0;
+  for (const ex of topic.exercises) {
+    const ok = checkExerciseAnswer(input.answers[ex.id] ?? "", ex.answers);
+    results[ex.id] = ok;
+    if (ok) correct += 1;
+  }
+  const total = topic.exercises.length;
+  const passed = total > 0 && correct / total >= PASS_THRESHOLD;
+
+  if (passed) {
+    entry.exercisePassed = true;
+    entry.updatedAt = new Date().toISOString();
+    await writeProgress(store);
+  }
+
+  const ordered = [...topics].sort((a, b) => a.order - b.order);
+  const idx = ordered.findIndex((t) => t.id === topic.id);
+  const next = idx >= 0 ? ordered[idx + 1] : undefined;
+
+  return {
+    passed,
+    correct,
+    total,
+    results,
+    progress: entry,
+    unlockedNextId: passed && next ? next.slug : null,
+  };
 }

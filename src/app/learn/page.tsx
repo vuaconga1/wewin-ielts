@@ -1,6 +1,7 @@
 import { getLearnOwnerKey } from "@/lib/learn/owner";
 import { getCatalog, getProgress } from "@/lib/learn/store";
-import { courseProgressStats } from "@/lib/learn/progress-utils";
+import { getVocabGrammarCatalog } from "@/lib/learn/vocab-grammar-store";
+import { courseProgressStats, trackProgressStats } from "@/lib/learn/progress-utils";
 import { SiteShell } from "@/components/layout/site-shell";
 import { LearnCoursePicker } from "@/components/learn/learn-course-picker";
 import { getTranslations } from "@/i18n/server";
@@ -30,9 +31,13 @@ export default async function LearnCatalogPage() {
     };
   });
 
+  const vgCatalog = await getVocabGrammarCatalog();
+  const allTopics = [...vgCatalog.grammar, ...vgCatalog.vocabulary];
+  const vocabGrammar = trackProgressStats(allTopics, progress);
+
   return (
     <SiteShell active="learn" wide>
-      <LearnCoursePicker courses={courses} />
+      <LearnCoursePicker courses={courses} vocabGrammar={vocabGrammar} />
     </SiteShell>
   );
 }

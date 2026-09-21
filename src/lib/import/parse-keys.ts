@@ -342,9 +342,26 @@ export function normalizeAnswerToken(
   return t;
 }
 
+/**
+ * Reading keys expand bare "F" → "FALSE" for TFNG, but matching/MCQ answers
+ * are often letter F. Undo that expansion when the question is not TFNG/YNG.
+ */
+function adaptKeyAnswerForQuestionType(
+  answer: string,
+  type?: string,
+): string {
+  if (type === "TRUE_FALSE_NG" || !type) return answer;
+  if (type === "MATCHING" || type === "MULTIPLE_CHOICE") {
+    if (answer === "FALSE") return "F";
+    if (answer === "TRUE") return "T";
+  }
+  return answer;
+}
+
 export function mergeKeysIntoQuestions<
   T extends {
     number: number;
+    type?: string;
     correctAnswer?: unknown;
     acceptableAnswers?: string[];
   },
@@ -355,9 +372,13 @@ export function mergeKeysIntoQuestions<
     }
     const fromKeys = keys.get(q.number);
     if (!fromKeys) return q;
+    const answer =
+      typeof fromKeys.answer === "string"
+        ? adaptKeyAnswerForQuestionType(fromKeys.answer, q.type)
+        : fromKeys.answer;
     return {
       ...q,
-      correctAnswer: fromKeys.answer,
+      correctAnswer: answer,
       acceptableAnswers: q.acceptableAnswers ?? fromKeys.acceptable,
     };
   });

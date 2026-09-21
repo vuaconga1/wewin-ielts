@@ -6,6 +6,7 @@ import {
 } from "@/lib/store/test-store";
 import { getSessionUser } from "@/lib/auth";
 import { practiceAttemptPath } from "@/lib/practice/paths";
+import { parseSpeakingPartKinds } from "@/lib/practice/speaking-exam";
 
 export const runtime = "nodejs";
 
@@ -16,6 +17,7 @@ export async function POST(request: Request) {
       mode?: "PRACTICE" | "FULL";
       sectionOrders?: number[];
       questionNumbers?: number[];
+      speakingPartKinds?: number[];
       timeLimitMinutes?: number | null;
     };
 
@@ -31,8 +33,20 @@ export async function POST(request: Request) {
 
     const mode = body.mode === "FULL" ? "FULL" : "PRACTICE";
     let sectionOrders = body.sectionOrders ?? [];
+    let speakingPartKinds = parseSpeakingPartKinds(body.speakingPartKinds);
 
-    if (mode === "FULL") {
+    if (test.skill === "SPEAKING") {
+      if (mode === "FULL") {
+        speakingPartKinds = [1, 2, 3];
+        sectionOrders = test.parts.map((p) => p.order);
+      } else if (speakingPartKinds?.length) {
+        sectionOrders = test.parts.map((p) => p.order);
+      }
+    } else {
+      speakingPartKinds = null;
+    }
+
+    if (mode === "FULL" && test.skill !== "SPEAKING") {
       sectionOrders = test.parts.map((p) => p.order);
     }
 
@@ -51,28 +65,32 @@ export async function POST(request: Request) {
 
     let questionNumbers: number[] | undefined;
     if (rawQuestionNumbers?.length) {
-      const allowed = new Set(
-        test.parts
-          .filter((p) => sectionOrders.includes(p.order))
-          .flatMap((p) => p.questions.map((q) => q.number)),
-      );
-      questionNumbers = [...new Set(rawQuestionNumbers)].filter((n) =>
-        allowed.has(n),
-      );
-      if (questionNumbers.length === 0) {
-        return NextResponse.json(
-          { error: "Không có câu hỏi hợp lệ để làm lại" },
-          { status: 400 },
+      if (speakingPartKinds) {
+        questionNumbers = [...new Set(rawQuestionNumbers)];
+      } else {
+        const allowed = new Set(
+          test.parts
+            .filter((p) => sectionOrders.includes(p.order))
+            .flatMap((p) => p.questions.map((q) => q.number)),
         );
+        questionNumbers = [...new Set(rawQuestionNumbers)].filter((n) =>
+          allowed.has(n),
+        );
+        if (questionNumbers.length === 0) {
+          return NextResponse.json(
+            { error: "Không có câu hỏi hợp lệ để làm lại" },
+            { status: 400 },
+          );
+        }
+        // Keep only sections that contain at least one selected question
+        sectionOrders = test.parts
+          .filter(
+            (p) =>
+              sectionOrders.includes(p.order) &&
+              p.questions.some((q) => questionNumbers!.includes(q.number)),
+          )
+          .map((p) => p.order);
       }
-      // Keep only sections that contain at least one selected question
-      sectionOrders = test.parts
-        .filter(
-          (p) =>
-            sectionOrders.includes(p.order) &&
-            p.questions.some((q) => questionNumbers!.includes(q.number)),
-        )
-        .map((p) => p.order);
     }
 
     const timeLimitMinutes =
@@ -89,6 +107,7 @@ export async function POST(request: Request) {
         mode,
         sectionOrders,
         questionNumbers,
+        speakingPartKinds: speakingPartKinds ?? undefined,
       });
       if (existing) {
         return NextResponse.json({
@@ -104,6 +123,7 @@ export async function POST(request: Request) {
       mode,
       sectionOrders,
       questionNumbers,
+      speakingPartKinds: speakingPartKinds ?? undefined,
       timeLimitMinutes,
       userId: user?.id ?? null,
     });

@@ -35,9 +35,17 @@ export function partHasNumberedBlanks(
   content: string | null | undefined,
 ): boolean {
   if (!content?.trim()) return false;
-  return /(?:^|[\s(])\d{1,2}\s*(?:[$£€]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|\s{2,}(?=[a-zA-Z(]))/m.test(
-    content,
-  );
+  // Require real blank marks (dots/underscores). Do NOT treat line-leading
+  // "9   What is…?" short-answer stems as notes blanks.
+  if (
+    /(?:^|[\s(])\d{1,2}\s*(?:[$£€]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)/m.test(
+      content,
+    )
+  ) {
+    return true;
+  }
+  // Mid-line space blanks only: "her 9  and"
+  return /(?<=\S)[\s(]\d{1,2}\s{2,}(?=[a-zA-Z(])/m.test(content);
 }
 
 function blankMarkerCount(stem: string): number {

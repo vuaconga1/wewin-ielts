@@ -17,6 +17,7 @@ import {
 } from "@/components/practice/question-navigator";
 import {
   SubmitConfirmDialog,
+  LeaveConfirmDialog,
   TestEndedOverlay,
 } from "@/components/practice/submit-confirm-dialog";
 import { InlineNotesGaps, findInlineBlankNumbers } from "@/components/practice/inline-notes-gaps";
@@ -34,6 +35,21 @@ import {
   isRedundantGapStem,
 } from "@/lib/ui/question-type-label";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
+import {
+  SpeakingExamDesk,
+  type SpeakingExamDeskHandle,
+} from "@/components/practice/speaking-exam-desk";
+import {
+  SpeakingMicSetup,
+  speakingMicStorageKey,
+  speakingClockStorageKey,
+} from "@/components/practice/speaking-mic-setup";
+import {
+  buildSpeakingExamQueue,
+  filterSpeakingExamQueue,
+  isSpeakingAnswered,
+  parseSpeakingPartKinds,
+} from "@/lib/practice/speaking-exam";
 import { useTranslations } from "@/i18n/provider";
 
 type Question = {
@@ -48,6 +64,8 @@ type Question = {
     sample?: string;
     blank?: boolean;
     imageUrl?: string;
+    speakingPart?: 1 | 2 | 3;
+    topic?: string;
   };
 };
 
@@ -70,6 +88,8 @@ type Props = {
   audioFiles?: string[];
   /** Filtered attempt containing only previously wrong questions */
   retryWrong?: boolean;
+  /** Speaking: selected IELTS Part 1/2/3 (not imported pack order). */
+  speakingPartKinds?: number[];
 };
 
 const SAVE_DEBOUNCE_MS = 700;
@@ -129,12 +149,19 @@ function migrateAnswersAfterRenumber(
 }
 
 function remainingSeconds(
-  startedAt: string,
+  clockStartedAt: string,
   timeLimitMinutes: number | null,
 ): number | null {
   if (!timeLimitMinutes) return null;
-  const elapsed = Math.floor((Date.now() - new Date(startedAt).getTime()) / 1000);
+  const elapsed = Math.floor(
+    (Date.now() - new Date(clockStartedAt).getTime()) / 1000,
+  );
   return Math.max(0, timeLimitMinutes * 60 - elapsed);
+}
+
+function fullDurationSeconds(timeLimitMinutes: number | null): number | null {
+  if (!timeLimitMinutes) return null;
+  return timeLimitMinutes * 60;
 }
 
 export function PracticeSession({
@@ -147,6 +174,7 @@ export function PracticeSession({
   parts,
   audioFiles,
   retryWrong = false,
+  speakingPartKinds,
 }: Props) {
   const router = useRouter();
   const { t } = useTranslations("practice");
@@ -172,12 +200,21 @@ export function PracticeSession({
     return sp[0]?.questions[0]?.number ?? null;
   });
   const [flagged, setFlagged] = useState<Set<number>>(() => new Set());
+  /**
+   * Speaking: freeze at full duration (static — SSR/client match during mic setup).
+   * Other skills: null until client sync — avoids Date.now() hydration mismatch.
+   */
   const [secondsLeft, setSecondsLeft] = useState<number | null>(() =>
-    remainingSeconds(startedAt, timeLimitMinutes),
+    skill === "SPEAKING" ? fullDurationSeconds(timeLimitMinutes) : null,
   );
+  /** False until client arms the clock; Speaking stays false until mic setup completes. */
+  const [timerActive, setTimerActive] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [confirmOpen, setConfirmOpen] = useState(false);
+  const [leaveOpen, setLeaveOpen] = useState(false);
+  const [leaving, setLeaving] = useState(false);
   const [testEnded, setTestEnded] = useState(false);
+  const [endedFromTimeout, setEndedFromTimeout] = useState(false);
   const [error, setError] = useState<{ message: string; detail?: string } | null>(
     null,
   );
@@ -188,6 +225,14 @@ export function PracticeSession({
   const answersRef = useRef(answers);
   answersRef.current = answers;
   const questionRefs = useRef<Map<number, HTMLElement>>(new Map());
+  /** Blocks double submit (timer + manual) and leave/abandon races. */
+  const submittingRef = useRef(false);
+  /** True after successful submit or confirmed abandon — skip leave guards. */
+  const allowUnloadRef = useRef(false);
+  const speakingDeskRef = useRef<SpeakingExamDeskHandle | null>(null);
+  const leavePendingRef = useRef<{ href?: string; historyBack?: boolean } | null>(
+    null,
+  );
 
   const isReading = skill === "READING";
   const isListening = skill === "LISTENING";
@@ -196,6 +241,29 @@ export function PracticeSession({
   const isLr = isReading || isListening;
   const skillLabel = ts(skill, skill);
 
+  const speakingQueue = useMemo(
+    () =>
+      isSpeaking
+        ? filterSpeakingExamQueue(
+            buildSpeakingExamQueue(parts),
+            parseSpeakingPartKinds(speakingPartKinds),
+          )
+        : [],
+    [isSpeaking, parts, speakingPartKinds],
+  );
+
+  /** Once per attemptId in this tab — skip mic gate on refresh mid-exam. */
+  const [speakingMicReady, setSpeakingMicReady] = useState(() => {
+    if (!isSpeaking || typeof window === "undefined") return !isSpeaking;
+    try {
+      return sessionStorage.getItem(speakingMicStorageKey(attemptId)) === "1";
+    } catch {
+      return false;
+    }
+  });
+  /** True if mic was already cleared before this mount (refresh mid-exam). */
+  const speakingMicReadyOnMountRef = useRef(speakingMicReady);
+
   const sessionParts = useMemo(
     () => (shouldRenumber ? withGlobalQuestionNumbers(parts) : parts),
     [parts, shouldRenumber],
@@ -203,21 +271,32 @@ export function PracticeSession({
 
   const navQuestions: NavQuestion[] = useMemo(
     () =>
-      sessionParts.flatMap((p, partIndex) =>
-        p.questions.map((q) => ({
-          number: q.number,
-          partIndex,
-          partLabel: t("partShort", { n: partIndex + 1 }, "P{n}"),
-        })),
-      ),
-    [sessionParts, t],
+      isSpeaking
+        ? speakingQueue.map((it) => ({
+            number: it.number,
+            partIndex: it.packIndex,
+            partLabel: t(
+              `speakingPart${it.partKind}` as "speakingPart1",
+              `Part ${it.partKind}`,
+            ),
+          }))
+        : sessionParts.flatMap((p, partIndex) =>
+            p.questions.map((q) => ({
+              number: q.number,
+              partIndex,
+              partLabel: t("partShort", { n: partIndex + 1 }, "P{n}"),
+            })),
+          ),
+    [isSpeaking, speakingQueue, sessionParts, t],
   );
   const allQuestions = useMemo(
     () => navQuestions.map((q) => q.number),
     [navQuestions],
   );
-  const answeredCount = allQuestions.filter(
-    (n) => (answers[String(n)] ?? "").trim() !== "",
+  const answeredCount = allQuestions.filter((n) =>
+    isSpeaking
+      ? isSpeakingAnswered(answers[String(n)])
+      : (answers[String(n)] ?? "").trim() !== "",
   ).length;
   const unansweredCount = allQuestions.length - answeredCount;
 
@@ -303,10 +382,70 @@ export function PracticeSession({
     return () => clearTimeout(timer);
   }, [answers, persistDraft]);
 
+  /**
+   * Arm the exam countdown on the client only.
+   * Speaking: frozen at full duration until mic setup → Start Part 1.
+   * Other skills: tick from attempt startedAt (unchanged).
+   */
   useEffect(() => {
+    if (timeLimitMinutes == null) {
+      setSecondsLeft(null);
+      setTimerActive(false);
+      return;
+    }
+
+    const full = timeLimitMinutes * 60;
+
+    if (isSpeaking) {
+      if (!speakingMicReady) {
+        setSecondsLeft(full);
+        setTimerActive(false);
+        return;
+      }
+
+      let clockAt: string | null = null;
+      try {
+        clockAt = sessionStorage.getItem(speakingClockStorageKey(attemptId));
+      } catch {
+        /* ignore */
+      }
+
+      if (!clockAt) {
+        // Mic ready but no clock key yet:
+        // - Just clicked Start Part 1 (mic setup should have written clock; race fallback → now)
+        // - Legacy refresh mid-exam (mic was ready on mount) → attempt startedAt
+        if (speakingMicReadyOnMountRef.current) {
+          clockAt = startedAt;
+        } else {
+          clockAt = new Date().toISOString();
+        }
+        try {
+          sessionStorage.setItem(speakingClockStorageKey(attemptId), clockAt);
+        } catch {
+          /* ignore */
+        }
+      }
+
+      setSecondsLeft(remainingSeconds(clockAt, timeLimitMinutes));
+      setTimerActive(true);
+      return;
+    }
+
+    setSecondsLeft(remainingSeconds(startedAt, timeLimitMinutes));
+    setTimerActive(true);
+  }, [
+    isSpeaking,
+    speakingMicReady,
+    timeLimitMinutes,
+    startedAt,
+    attemptId,
+  ]);
+
+  useEffect(() => {
+    if (!timerActive) return;
     if (secondsLeft == null) return;
     if (secondsLeft <= 0) {
-      void submit(true);
+      void doSubmit({ fromTimeout: true });
       return;
     }
     const timer = setTimeout(
@@ -315,7 +454,94 @@ export function PracticeSession({
     );
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [secondsLeft]);
+  }, [secondsLeft, timerActive]);
+
+  /** Browser close / refresh — native dialog; abandon on unload if still open. */
+  useEffect(() => {
+    const onBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (allowUnloadRef.current || submittingRef.current) return;
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    const onPageHide = () => {
+      if (allowUnloadRef.current || submittingRef.current) return;
+      try {
+        const url = `/api/practice/${attemptId}/abandon`;
+        if (typeof navigator.sendBeacon === "function") {
+          navigator.sendBeacon(url);
+        } else {
+          void fetch(url, { method: "POST", keepalive: true });
+        }
+        localStorage.removeItem(localKey(attemptId));
+      } catch {
+        /* ignore */
+      }
+    };
+    window.addEventListener("beforeunload", onBeforeUnload);
+    window.addEventListener("pagehide", onPageHide);
+    return () => {
+      window.removeEventListener("beforeunload", onBeforeUnload);
+      window.removeEventListener("pagehide", onPageHide);
+    };
+  }, [attemptId]);
+
+  /** In-app link clicks + browser back → custom leave dialog. */
+  useEffect(() => {
+    history.pushState({ wewinPracticeGuard: true }, "", location.href);
+
+    const requestLeave = (pending: {
+      href?: string;
+      historyBack?: boolean;
+    }) => {
+      if (allowUnloadRef.current || submittingRef.current) return;
+      leavePendingRef.current = pending;
+      setLeaveOpen(true);
+      setConfirmOpen(false);
+    };
+
+    const onPopState = () => {
+      if (allowUnloadRef.current || submittingRef.current) return;
+      history.pushState({ wewinPracticeGuard: true }, "", location.href);
+      requestLeave({ historyBack: true });
+    };
+
+    const onDocClick = (e: MouseEvent) => {
+      if (allowUnloadRef.current || submittingRef.current) return;
+      if (e.defaultPrevented) return;
+      if (e.button !== 0) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const target = e.target;
+      if (!(target instanceof Element)) return;
+      const anchor = target.closest("a[href]");
+      if (!(anchor instanceof HTMLAnchorElement)) return;
+      if (anchor.target === "_blank" || anchor.hasAttribute("download")) return;
+      const hrefAttr = anchor.getAttribute("href");
+      if (!hrefAttr || hrefAttr.startsWith("#")) return;
+      let url: URL;
+      try {
+        url = new URL(anchor.href, location.href);
+      } catch {
+        return;
+      }
+      if (url.origin !== location.origin) {
+        e.preventDefault();
+        requestLeave({ href: url.href });
+        return;
+      }
+      const samePath =
+        url.pathname === location.pathname && url.search === location.search;
+      if (samePath) return;
+      e.preventDefault();
+      requestLeave({ href: `${url.pathname}${url.search}${url.hash}` });
+    };
+
+    window.addEventListener("popstate", onPopState);
+    document.addEventListener("click", onDocClick, true);
+    return () => {
+      window.removeEventListener("popstate", onPopState);
+      document.removeEventListener("click", onDocClick, true);
+    };
+  }, []);
 
   function setAnswer(num: number, value: string) {
     setAnswers((prev) => ({ ...prev, [String(num)]: value }));
@@ -362,27 +588,28 @@ export function PracticeSession({
   }
 
   function reviewFirstUnanswered() {
-    const first = allQuestions.find(
-      (n) => (answers[String(n)] ?? "").trim() === "",
+    const first = allQuestions.find((n) =>
+      isSpeaking
+        ? !isSpeakingAnswered(answers[String(n)])
+        : (answers[String(n)] ?? "").trim() === "",
     );
     setConfirmOpen(false);
     if (first != null) goToQuestion(first);
   }
 
-  async function submit(fromTimer = false) {
-    if (submitting) return;
-    if (!fromTimer) {
-      setConfirmOpen(true);
-      return;
-    }
-    await doSubmit();
+  function submit() {
+    if (submittingRef.current || allowUnloadRef.current) return;
+    setConfirmOpen(true);
   }
 
-  async function doSubmit() {
-    if (submitting) return;
+  async function doSubmit(opts?: { fromTimeout?: boolean }) {
+    if (submittingRef.current || allowUnloadRef.current) return;
+    submittingRef.current = true;
     setSubmitting(true);
     setConfirmOpen(false);
+    setLeaveOpen(false);
     setError(null);
+    setEndedFromTimeout(Boolean(opts?.fromTimeout));
     setTestEnded(true);
     try {
       const res = await fetch(`/api/practice/${attemptId}/submit`, {
@@ -395,25 +622,135 @@ export function PracticeSession({
         const mapped = friendlyError(data.error, t("submitFailed"), te);
         if (data.error) console.warn("[practice/submit]", data.error);
         setError(mapped);
+        submittingRef.current = false;
         setSubmitting(false);
         setTestEnded(false);
+        setEndedFromTimeout(false);
         return;
       }
+      allowUnloadRef.current = true;
       try {
         localStorage.removeItem(localKey(attemptId));
       } catch {
         /* ignore */
       }
+
+      // AI scoring ONLY right after successful submit / timeout auto-submit.
+      // Leave, abandon, refresh, or opening the result page must NOT call OpenAI.
+      if ((isWriting || isSpeaking) && typeof data.aiScoreNonce === "string") {
+        try {
+          const nonce = data.aiScoreNonce as string;
+          if (isWriting) {
+            await fetch(`/api/practice/${attemptId}/ai-score`, {
+              method: "POST",
+              headers: { "x-wewin-ai-score-nonce": nonce },
+            });
+          } else {
+            const blobs =
+              speakingDeskRef.current?.getAudioBlobs() ?? new Map();
+            const form = new FormData();
+            for (const [num, blob] of blobs) {
+              const ext = blob.type.includes("mp4")
+                ? "mp4"
+                : blob.type.includes("ogg")
+                  ? "ogg"
+                  : "webm";
+              form.append(`audio_${num}`, blob, `q${num}.${ext}`);
+            }
+            // Always POST (even with empty FormData) to burn the one-time nonce
+            // without leaving a reusable scoring token around.
+            await fetch(`/api/practice/${attemptId}/ai-score`, {
+              method: "POST",
+              headers: { "x-wewin-ai-score-nonce": nonce },
+              body: form,
+            });
+          }
+        } catch (aiErr) {
+          console.warn("[practice/ai-score]", aiErr);
+        }
+      }
+
       router.push(data.redirect);
     } catch (e) {
       console.warn("[practice/submit]", e);
       setError(friendlyError(e, t("submitNetwork"), te));
+      submittingRef.current = false;
       setSubmitting(false);
       setTestEnded(false);
+      setEndedFromTimeout(false);
     }
   }
 
+  async function confirmLeave() {
+    if (leaving || submittingRef.current || allowUnloadRef.current) return;
+    setLeaving(true);
+    setError(null);
+    try {
+      const res = await fetch(`/api/practice/${attemptId}/abandon`, {
+        method: "POST",
+      });
+      if (!res.ok) {
+        const data = (await res.json().catch(() => ({}))) as {
+          error?: string;
+        };
+        setError(
+          friendlyError(
+            data.error,
+            t("leaveFailed", "Could not end the attempt. Try again."),
+            te,
+          ),
+        );
+        setLeaving(false);
+        return;
+      }
+      allowUnloadRef.current = true;
+      try {
+        localStorage.removeItem(localKey(attemptId));
+      } catch {
+        /* ignore */
+      }
+      const pending = leavePendingRef.current;
+      leavePendingRef.current = null;
+      setLeaveOpen(false);
+      if (pending?.href) {
+        if (/^https?:\/\//i.test(pending.href)) {
+          window.location.href = pending.href;
+        } else {
+          router.push(pending.href);
+        }
+      } else {
+        // Browser back or unknown target — leave practice without re-entering the attempt.
+        router.replace("/tests");
+      }
+    } catch (e) {
+      console.warn("[practice/abandon]", e);
+      setError(
+        friendlyError(
+          e,
+          t("leaveFailed", "Could not end the attempt. Try again."),
+          te,
+        ),
+      );
+      setLeaving(false);
+    }
+  }
+
+  function cancelLeave() {
+    leavePendingRef.current = null;
+    setLeaveOpen(false);
+  }
+
   const part = sessionParts[activePart];
+  const speakingCurrent = isSpeaking
+    ? speakingQueue.find((it) => it.number === currentNumber) ??
+      speakingQueue[0]
+    : null;
+  const speakingPartTitle = speakingCurrent
+    ? t(
+        `speakingPart${speakingCurrent.partKind}` as "speakingPart1",
+        `Part ${speakingCurrent.partKind}`,
+      )
+    : null;
   const clipStart = parseTimestamp(part?.meta?.audiostart ?? part?.meta?.audioStart);
   const clipEnd = parseTimestamp(part?.meta?.audioend ?? part?.meta?.audioEnd);
   /** Prefer per-section audio on part.meta; else audioFiles[order]; else first file. */
@@ -468,7 +805,7 @@ export function PracticeSession({
   );
 
   const partTabs =
-    sessionParts.length > 1 ? (
+    !isSpeaking && sessionParts.length > 1 ? (
       <div className="mx-auto flex max-w-[1400px] min-w-0 gap-1 overflow-x-auto px-2 py-1.5 sm:px-3">
         {sessionParts.map((p, idx) => (
           <button
@@ -515,7 +852,7 @@ export function PracticeSession({
     ) : null;
 
   const footer =
-    isLr && navQuestions.length > 0 ? (
+    isSpeaking ? null : isLr && navQuestions.length > 0 ? (
       <QuestionNavigator
         questions={navQuestions}
         answers={answers}
@@ -528,7 +865,7 @@ export function PracticeSession({
         showReview
         groupByPart={shouldRenumber || sessionParts.length > 1}
       />
-    ) : isWriting || isSpeaking ? (
+    ) : isWriting ? (
       <QuestionNavigator
         questions={navQuestions}
         answers={answers}
@@ -548,13 +885,13 @@ export function PracticeSession({
       <CdiExamShell
         skillLabel={skillLabel}
         testTitle={testTitle}
-        partTitle={part?.title}
+        partTitle={isSpeaking ? speakingPartTitle : part?.title}
         statusLine={statusLine}
         clock={clock}
         secondsLeft={secondsLeft}
         submitLabel={submitLabel}
         submitting={submitting}
-        onSubmitClick={() => void submit(false)}
+        onSubmitClick={() => void submit()}
         toolbar={toolbar}
         partTabs={partTabs}
         footer={footer}
@@ -586,6 +923,28 @@ export function PracticeSession({
             onChange={setAnswer}
             skill={skill}
           />
+        ) : isSpeaking && !speakingMicReady ? (
+          <SpeakingMicSetup
+            attemptId={attemptId}
+            startPartLabel={
+              speakingQueue[0]
+                ? t(
+                    `speakingPart${speakingQueue[0].partKind}` as "speakingPart1",
+                    `Part ${speakingQueue[0].partKind}`,
+                  )
+                : undefined
+            }
+            onReady={() => setSpeakingMicReady(true)}
+          />
+        ) : isSpeaking ? (
+          <SpeakingExamDesk
+            ref={speakingDeskRef}
+            items={speakingQueue}
+            answers={answers}
+            onAnswer={setAnswer}
+            onFocusQuestion={setCurrentNumber}
+            onRequestSubmit={() => void submit()}
+          />
         ) : (
           <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-white">
             <div className="border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
@@ -593,11 +952,6 @@ export function PracticeSession({
                 ? part.title
                 : t("partShort", { n: activePart + 1 }, "P{n}")}
             </div>
-            {isSpeaking && part?.content?.trim() ? (
-              <div className="border-b border-zinc-200 bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800 sm:px-4">
-                {part.content}
-              </div>
-            ) : null}
             <div className="space-y-5 p-3 sm:p-4">
               {part?.questions.map((q) => (
                 <div
@@ -632,7 +986,13 @@ export function PracticeSession({
         onCancel={() => setConfirmOpen(false)}
         onReviewUnanswered={isLr ? reviewFirstUnanswered : undefined}
       />
-      <TestEndedOverlay visible={testEnded} />
+      <LeaveConfirmDialog
+        open={leaveOpen}
+        leaving={leaving}
+        onConfirm={() => void confirmLeave()}
+        onCancel={cancelLeave}
+      />
+      <TestEndedOverlay visible={testEnded} fromTimeout={endedFromTimeout} />
     </>
   );
 }

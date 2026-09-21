@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { useTranslations } from "@/i18n/provider";
 
@@ -39,14 +41,32 @@ export function CdiExamShell({
   footer,
 }: Props) {
   const { t } = useTranslations("practice");
+  const { t: tCommon } = useTranslations("common");
+  const brand = tCommon("brand", "WEWIN Education");
   const urgent =
     secondsLeft != null && secondsLeft > 0 && secondsLeft <= 10 * 60;
   const critical = secondsLeft != null && secondsLeft > 0 && secondsLeft <= 5 * 60;
 
   return (
     <div className="cdi-desk flex min-h-screen min-w-0 flex-col overflow-x-hidden bg-[#d8dce2]">
-      <header className="sticky top-0 z-20 border-b border-black/30 bg-[#2c3645] text-white shadow-md">
+      <header className="sticky top-0 z-20 border-b border-black/20 bg-wewin-navy text-white shadow-md">
         <div className="mx-auto flex max-w-[1400px] min-w-0 flex-wrap items-center gap-2 px-3 py-2 sm:gap-3 sm:px-4">
+          <Link
+            href="/"
+            className="flex shrink-0 items-center"
+            aria-label={brand}
+          >
+            <Image
+              src="/brand/wewin-logo.png"
+              alt={brand}
+              width={168}
+              height={44}
+              sizes="(max-width: 640px) 96px, 128px"
+              className="h-7 w-auto max-w-[min(128px,32vw)] object-contain object-left sm:h-8"
+              priority
+            />
+          </Link>
+
           <div className="min-w-0 flex-1">
             <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-zinc-300">
               {skillLabel}
@@ -91,7 +111,7 @@ export function CdiExamShell({
           </button>
         </div>
         {toolbar ? (
-          <div className="border-t border-white/10 bg-[#242c38]">{toolbar}</div>
+          <div className="border-t border-white/10 bg-wewin-navy-hover">{toolbar}</div>
         ) : null}
       </header>
 

@@ -17,6 +17,11 @@ type Props = {
   videoCompleted: boolean;
   alreadyPassed: boolean;
   unlockedNextId: string | null;
+  /** Override next-lesson link (e.g. vocab/grammar topics). */
+  nextLessonHref?: string;
+  /** Override back-to-catalog link when no next lesson. */
+  catalogHref?: string;
+  catalogLabel?: string;
 };
 
 export function LessonExercises({
@@ -27,6 +32,9 @@ export function LessonExercises({
   videoCompleted,
   alreadyPassed,
   unlockedNextId: initialNext,
+  nextLessonHref,
+  catalogHref,
+  catalogLabel,
 }: Props) {
   const { t } = useTranslations("learn");
   const { t: tSkills } = useTranslations("skills");
@@ -225,7 +233,9 @@ export function LessonExercises({
           ) : null}
           {passed && nextId ? (
             <Link
-              href={learnLessonHref(courseId, skill, nextId)}
+              href={
+                nextLessonHref ?? learnLessonHref(courseId, skill, nextId)
+              }
               className="inline-flex rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700"
             >
               {t("nextLesson")}
@@ -233,10 +243,12 @@ export function LessonExercises({
           ) : null}
           {passed && !nextId ? (
             <Link
-              href={learnSkillHref(courseId, skill)}
+              href={catalogHref ?? learnSkillHref(courseId, skill)}
               className="inline-flex rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm font-semibold text-zinc-800 hover:bg-zinc-50"
             >
-              {t("viewCurriculum", { skill: tSkills(skill) })}
+              {catalogLabel
+                ? t("viewTopicCatalog", { track: catalogLabel }, "Xem lại {track}")
+                : t("viewCurriculum", { skill: tSkills(skill) })}
             </Link>
           ) : null}
         </div>

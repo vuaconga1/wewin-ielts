@@ -6,6 +6,8 @@ import { Loader2, Search } from "lucide-react";
 import type {
   AdminAttemptRow,
   AdminAttemptSkill,
+  AdminClassOption,
+  AdminTestOption,
   AdminUserOption,
 } from "@/lib/admin/attempts";
 import { localeToIntl } from "@/i18n/config";
@@ -13,9 +15,9 @@ import { useTranslations } from "@/i18n/provider";
 
 type FiltersState = {
   userId: string;
-  userQ: string;
+  classId: string;
   skill: "ALL" | AdminAttemptSkill;
-  testQ: string;
+  testSlug: string;
   status: "ALL" | "FINISHED" | "UNFINISHED";
   from: string;
   to: string;
@@ -23,9 +25,9 @@ type FiltersState = {
 
 const EMPTY_FILTERS: FiltersState = {
   userId: "",
-  userQ: "",
+  classId: "",
   skill: "ALL",
-  testQ: "",
+  testSlug: "",
   status: "ALL",
   from: "",
   to: "",
@@ -34,6 +36,8 @@ const EMPTY_FILTERS: FiltersState = {
 type ApiResponse = {
   attempts: AdminAttemptRow[];
   users: AdminUserOption[];
+  tests: AdminTestOption[];
+  classes: AdminClassOption[];
   total: number;
   source: "prisma" | "local" | "mixed";
   error?: string;
@@ -64,6 +68,8 @@ export function AttemptsViewer() {
   const [applied, setApplied] = useState<FiltersState>(EMPTY_FILTERS);
   const [attempts, setAttempts] = useState<AdminAttemptRow[]>([]);
   const [users, setUsers] = useState<AdminUserOption[]>([]);
+  const [tests, setTests] = useState<AdminTestOption[]>([]);
+  const [classes, setClasses] = useState<AdminClassOption[]>([]);
   const [total, setTotal] = useState(0);
   const [source, setSource] = useState<"prisma" | "local" | "mixed" | null>(
     null,
@@ -111,9 +117,9 @@ export function AttemptsViewer() {
     try {
       const params = new URLSearchParams();
       if (filters.userId) params.set("userId", filters.userId);
-      if (filters.userQ.trim()) params.set("userQ", filters.userQ.trim());
+      if (filters.classId) params.set("classId", filters.classId);
       if (filters.skill !== "ALL") params.set("skill", filters.skill);
-      if (filters.testQ.trim()) params.set("testQ", filters.testQ.trim());
+      if (filters.testSlug) params.set("testSlug", filters.testSlug);
       if (filters.status !== "ALL") params.set("status", filters.status);
       if (filters.from) params.set("from", filters.from);
       if (filters.to) params.set("to", filters.to);
@@ -128,6 +134,8 @@ export function AttemptsViewer() {
       }
       setAttempts(data.attempts);
       setUsers(data.users);
+      setTests(data.tests ?? []);
+      setClasses(data.classes ?? []);
       setTotal(data.total);
       setSource(data.source);
     } catch {
@@ -142,6 +150,11 @@ export function AttemptsViewer() {
   useEffect(() => {
     void load(applied);
   }, [applied, load]);
+
+  const testOptions = useMemo(() => {
+    if (draft.skill === "ALL") return tests;
+    return tests.filter((t) => t.skill === draft.skill);
+  }, [tests, draft.skill]);
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -183,17 +196,30 @@ export function AttemptsViewer() {
 
           <label className="block text-sm">
             <span className="mb-1.5 block font-medium text-zinc-700">
-              {t("searchUser")}
+              {t("classLabel", "Lớp")}
             </span>
-            <input
-              type="search"
-              value={draft.userQ}
+            <select
+              value={draft.classId}
               onChange={(e) =>
-                setDraft((f) => ({ ...f, userQ: e.target.value }))
+                setDraft((f) => ({ ...f, classId: e.target.value }))
               }
-              placeholder={t("searchUserPh")}
               className="w-full rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm text-zinc-900 outline-none focus:border-wewin-navy"
-            />
+            >
+              <option value="">{t("allClasses", "Tất cả lớp")}</option>
+              {classes.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
+            {classes.length === 0 ? (
+              <span className="mt-1 block text-xs text-zinc-400">
+                {t(
+                  "classSoonHint",
+                  "Danh sách lớp sẽ cập nhật khi có dữ liệu lớp.",
+                )}
+              </span>
+            ) : null}
           </label>
 
           <label className="block text-sm">
@@ -206,6 +232,8 @@ export function AttemptsViewer() {
                 setDraft((f) => ({
                   ...f,
                   skill: e.target.value as FiltersState["skill"],
+                  // Clear test if it no longer matches the skill filter
+                  testSlug: "",
                 }))
               }
               className="w-full rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm text-zinc-900 outline-none focus:border-wewin-navy"
@@ -220,17 +248,22 @@ export function AttemptsViewer() {
 
           <label className="block text-sm">
             <span className="mb-1.5 block font-medium text-zinc-700">
-              {t("testSearch")}
+              {t("testSearch", "Đề thi")}
             </span>
-            <input
-              type="search"
-              value={draft.testQ}
+            <select
+              value={draft.testSlug}
               onChange={(e) =>
-                setDraft((f) => ({ ...f, testQ: e.target.value }))
+                setDraft((f) => ({ ...f, testSlug: e.target.value }))
               }
-              placeholder={t("testSearchPh")}
               className="w-full rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm text-zinc-900 outline-none focus:border-wewin-navy"
-            />
+            >
+              <option value="">{t("allTests", "Tất cả đề")}</option>
+              {testOptions.map((test) => (
+                <option key={test.slug} value={test.slug}>
+                  {test.title}
+                </option>
+              ))}
+            </select>
           </label>
 
           <label className="block text-sm">

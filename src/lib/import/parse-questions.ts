@@ -114,6 +114,14 @@ function detectTaskType(instructionBlock: string): TaskHint {
   ) {
     return "MULTIPLE_CHOICE";
   }
+  // Short-answer prompts ("Answer the questions below… NO MORE THAN…")
+  // are NOT notes/summary gap-fill — stems belong on each question.
+  if (
+    /answer the questions below/.test(t) &&
+    /no more than|one word|write.*word/.test(t)
+  ) {
+    return "SHORT_ANSWER";
+  }
   if (
     /complete the notes|complete the summary|complete the sentences|complete the form|one word|no more than|write.*word/.test(
       t,
@@ -173,9 +181,15 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
         : null;
 
     const bank = extractLetterBank(block.lines);
+    const skipUnnumberedMcq =
+      hint === "MATCHING" ||
+      hint === "TRUE_FALSE_NG" ||
+      hint === "SHORT_ANSWER";
     const fromMcq = [
       ...extractMcqQuestions(block.lines, range),
-      ...extractUnnumberedMcqQuestions(block.lines, range),
+      ...(skipUnnumberedMcq
+        ? []
+        : extractUnnumberedMcqQuestions(block.lines, range)),
     ];
     const fromStatements = extractNumberedStatements(
       block.lines,
@@ -184,10 +198,12 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
       range,
     );
     // Prefer statements/MCQ over blank snippets for TFNG / matching /
-    // paragraph-heading tasks (avoids "5 Elements… 5 ……" garbage stems).
+    // short-answer / paragraph-heading tasks (avoids "5 Elements… 5 ……"
+    // garbage stems and empty inputs for "9   What is…?" prompts).
     const preferStatements =
       hint === "TRUE_FALSE_NG" ||
       hint === "MATCHING" ||
+      hint === "SHORT_ANSWER" ||
       /which paragraph contains|which section contains|list of researchers/i.test(
         text,
       );
@@ -469,7 +485,7 @@ function extractLetterBank(
       });
       continue;
     }
-    const sameLine = t.match(/^([A-K])\s{1,4}(.+)$/);
+    const sameLine = t.match(/^([A-K])\s+(.+)$/);
     if (sameLine) {
       bank.push({ label: sameLine[1]!, text: sameLine[2]!.trim() });
       continue;
@@ -499,14 +515,16 @@ function extractBlankQuestions(
   range: { start: number; end: number } | null,
 ): QuestionDraft[] {
   const questions: QuestionDraft[] = [];
-  // Allow optional currency prefix before dots: `4 £ ........` / `7 $ ................`
+  // Numbered blanks with dots/underscores (notes/table/form).
+  // Also mid-line space blanks: "her 9  and" — but NOT line-leading
+  // "9   What is…?" short-answer stems (those are statements, not gaps).
   const re =
-    /(?:^|[\s(])(\d{1,2})\s*(?:[$£€]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|\s{2,}(?=[a-zA-Z(]))/gu;
+    /(?:^|[\s(])(\d{1,2})\s*(?:[$£€]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)|(?<=\S)[\s(](\d{1,2})\s{2,}(?=[a-zA-Z(])/gu;
   let m: RegExpExecArray | null;
   const seen = new Set<number>();
 
   while ((m = re.exec(text)) !== null) {
-    const number = Number(m[1]);
+    const number = Number(m[1] ?? m[2]);
     if (!inRange(number, range)) continue;
     if (seen.has(number)) continue;
     seen.add(number);
@@ -620,7 +638,7 @@ function extractMcqQuestions(
       // Word often emits "A the examples used." without "A." / "A)"
       const om =
         optLine.match(/^([A-E])[.)]\s+(.+)$/) ||
-        optLine.match(/^([A-E])\s{1,4}(.+)$/);
+        optLine.match(/^([A-E])\s+(.+)$/);
       if (!om) break;
       // Avoid treating "A more expensive products" bank lines as MCQ options
       // when the stem wasn't a real question — still OK inside MCQ blocks.
@@ -668,8 +686,12 @@ function extractUnnumberedMcqQuestions(
       i += 1;
       continue;
     }
-    // Stem candidate: not an instruction, followed by A/B options
-    if (/^Questions?\s+\d+/i.test(t) || /^Choose\b/i.test(t)) {
+    // Stem candidate: not an instruction / list header, followed by A/B options
+    if (
+      /^Questions?\s+\d+/i.test(t) ||
+      /^Choose\b/i.test(t) ||
+      /^(List of|Interesting features|Exhibitions|Locations)\b/i.test(t)
+    ) {
       i += 1;
       continue;
     }
@@ -684,7 +706,7 @@ function extractUnnumberedMcqQuestions(
       }
       const om =
         optLine.match(/^([A-E])[.)]\s+(.+)$/) ||
-        optLine.match(/^([A-E])\s{1,4}(.+)$/);
+        optLine.match(/^([A-E])\s+(.+)$/);
       if (!om) break;
       options.push({ label: om[1]!, text: om[2]!.trim() });
       j += 1;
@@ -721,7 +743,11 @@ function extractNumberedStatements(
 
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i]!.trim();
-    const m = t.match(/^(\d{1,2})[.)]\s*(.+)$/) || t.match(/^(\d{1,2})\)\s+(.+)$/);
+    // Word papers often omit the period: "9   What is…?" / "4 can endure…"
+    const m =
+      t.match(/^(\d{1,2})[.)]\s*(.+)$/) ||
+      t.match(/^(\d{1,2})\)\s+(.+)$/) ||
+      t.match(/^(\d{1,2})\s+(.+)$/);
     if (!m) continue;
     const number = Number(m[1]);
     if (!inRange(number, range)) continue;
@@ -740,6 +766,8 @@ function extractNumberedStatements(
       .trim();
     if (!stem || stem.length < 3) continue;
     if (bankTexts.has(stem.toLowerCase())) continue;
+    // Pure blank markers left after strip — not a statement stem
+    if (/^[.…_…_\s]+$/u.test(stem)) continue;
     // Tiny fragments that are bank entries, not questions
     if (
       hint !== "TRUE_FALSE_NG" &&
@@ -753,8 +781,12 @@ function extractNumberedStatements(
     let type: QuestionDraft["type"] = "SHORT_ANSWER";
     if (hint === "TRUE_FALSE_NG") type = "TRUE_FALSE_NG";
     else if (hint === "MATCHING") type = "MATCHING";
-    else if (hint === "GAP_FILL") type = "GAP_FILL";
-    else if (hint === "MULTIPLE_CHOICE") type = "MULTIPLE_CHOICE";
+    else if (hint === "SHORT_ANSWER") type = "SHORT_ANSWER";
+    else if (hint === "GAP_FILL") {
+      // Full interrogatives without blank marks are short-answer, not notes gaps
+      const hasBlankMark = /[.…_…]{2,}|_{2,}|\u2026/u.test(stem);
+      type = hasBlankMark ? "GAP_FILL" : "SHORT_ANSWER";
+    } else if (hint === "MULTIPLE_CHOICE") type = "MULTIPLE_CHOICE";
 
     const content: Record<string, unknown> = { stem };
     if (type === "MATCHING" && bank.length) content.options = bank;

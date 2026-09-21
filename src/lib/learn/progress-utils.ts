@@ -1,4 +1,5 @@
 import type { LearnLesson, LearnProgressStore } from "@/lib/learn/types";
+import type { TopicLesson } from "@/lib/learn/vocab-grammar-types";
 
 /** First lesson unlocked; later ones need previous exercisePassed. */
 export function isLessonUnlocked(
@@ -30,6 +31,21 @@ export function skillProgressStats(
     unlocked,
     percent: total === 0 ? 0 : Math.round((completed / total) * 100),
   };
+}
+
+export function isTopicUnlocked(
+  topic: Pick<TopicLesson, "id" | "order">,
+  topics: Pick<TopicLesson, "id" | "order">[],
+  progress: LearnProgressStore,
+): boolean {
+  return isLessonUnlocked(topic, topics, progress);
+}
+
+export function trackProgressStats(
+  topics: Pick<TopicLesson, "id" | "order">[],
+  progress: LearnProgressStore,
+) {
+  return skillProgressStats(topics, progress);
 }
 
 export function courseProgressStats(

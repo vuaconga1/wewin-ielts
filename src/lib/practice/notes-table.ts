@@ -223,11 +223,55 @@ function firstBlankNumber(line: string): number | null {
   return m ? Number(m[1]) : null;
 }
 
+/**
+ * Single-column markdown tables (IELTS notes boxes) must not stay as `| … |`
+ * soup — practice UI expects plain lines with inline blanks (Test 9 style).
+ * Multi-column tables are left alone for real table rendering.
+ */
+export function unwrapSingleColumnMarkdownNotes(text: string): string {
+  if (!text?.includes("|")) return text ?? "";
+  const normalized = text.replace(/\r\n/g, "\n");
+  const lines = normalized.split("\n");
+  const pipeLines = lines.filter((l) => l.includes("|"));
+  if (pipeLines.length < 2) return normalized;
+
+  const isSep = (l: string) =>
+    /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(l.trim());
+  const nonEmptyCellCount = (l: string) => {
+    let s = l.trim();
+    if (s.startsWith("|")) s = s.slice(1);
+    if (s.endsWith("|")) s = s.slice(0, -1);
+    return s.split("|").map((c) => c.trim()).filter(Boolean).length;
+  };
+
+  // Any genuine multi-column row → keep markdown for NotesTableView
+  if (pipeLines.some((l) => !isSep(l) && nonEmptyCellCount(l) > 1)) {
+    return normalized;
+  }
+
+  return lines
+    .map((l) => {
+      if (isSep(l.trim())) return "";
+      if (!l.includes("|")) return l;
+      let s = l.trimEnd();
+      const lead = /^\s*/.exec(l)?.[0] ?? "";
+      s = s.trim();
+      if (s.startsWith("|")) s = s.slice(1);
+      if (s.endsWith("|")) s = s.slice(0, -1);
+      const body = s.trim();
+      return lead && /^\s/.test(l) ? lead + body : body;
+    })
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 /** Try markdown first, then flat Layout/Description reconstruction. */
 export function detectNotesTable(notes: string): NotesTable | null {
-  const md = parseMarkdownTable(notes);
+  const unwrapped = unwrapSingleColumnMarkdownNotes(notes);
+  const md = parseMarkdownTable(unwrapped);
   if (md) return md;
-  return rebuildLayoutDescriptionTable(notes);
+  return rebuildLayoutDescriptionTable(unwrapped);
 }
 
 function cellHtmlToPlain(cellHtml: string): string {
@@ -338,6 +382,16 @@ export function htmlTableToMarkdown(tableHtml: string): string {
     return "";
   }
   const width = Math.max(...rows.map((r) => r.length));
+
+  // Bordered Listening notes boxes are 1-col Word tables. Emit plain lines
+  // (Test 9 form style) — never `| title |` / `| --- |` markdown soup.
+  if (width === 1) {
+    return rows
+      .map((r) => (r[0] ?? "").trim())
+      .filter(Boolean)
+      .join("\n\n");
+  }
+
   const norm = rows.map((r) => {
     const copy = [...r];
     while (copy.length < width) copy.push("");

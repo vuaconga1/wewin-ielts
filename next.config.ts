@@ -5,8 +5,10 @@ const securityHeaders = [
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   { key: "X-Frame-Options", value: "SAMEORIGIN" },
   {
+    // Speaking practice needs getUserMedia audio. `microphone=()` blocks the
+    // entire document (site settings cannot override). Allow same-origin only.
     key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=()",
+    value: "camera=(), microphone=(self), geolocation=()",
   },
   // Light CSP: allow Next.js inline/scripts; block framing by others.
   // Avoid overly strict script-src that breaks Next hydration.

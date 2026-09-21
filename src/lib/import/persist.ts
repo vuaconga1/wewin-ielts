@@ -61,94 +61,98 @@ export async function persistParsedTest(
   });
 
   try {
-    const test = await prisma.$transaction(async (tx) => {
-      const existing = await tx.test.findUnique({
-        where: { slug: draft.slug },
-      });
-      if (existing) {
-        await tx.testSection.deleteMany({ where: { testId: existing.id } });
-        await tx.mediaAsset.deleteMany({ where: { testId: existing.id } });
-      }
-
-      const upserted = existing
-        ? await tx.test.update({
-            where: { id: existing.id },
-            data: {
-              title: draft.title,
-              skill: draft.skill,
-              examType: draft.examType,
-              timeLimitMinutes: draft.timeLimitMinutes,
-              tags: draft.tags ?? [],
-              status: options.status ?? "DRAFT",
-              sourceFolder: draft.sourceFolder,
-              description: draft.description,
-            },
-          })
-        : await tx.test.create({
-            data: {
-              title: draft.title,
-              slug: draft.slug,
-              skill: draft.skill,
-              examType: draft.examType,
-              timeLimitMinutes: draft.timeLimitMinutes,
-              tags: draft.tags ?? [],
-              status: options.status ?? "DRAFT",
-              sourceFolder: draft.sourceFolder,
-              description: draft.description,
-            },
-          });
-
-      for (const part of draft.parts) {
-        const section = await tx.testSection.create({
-          data: {
-            testId: upserted.id,
-            title: part.title,
-            order: part.order,
-            questionCount: part.questions.length,
-            content: part.content,
-            meta: (part.meta ?? undefined) as Prisma.InputJsonValue | undefined,
-          },
+    const test = await prisma.$transaction(
+      async (tx) => {
+        const existing = await tx.test.findUnique({
+          where: { slug: draft.slug },
         });
+        if (existing) {
+          await tx.testSection.deleteMany({ where: { testId: existing.id } });
+          await tx.mediaAsset.deleteMany({ where: { testId: existing.id } });
+        }
 
-        for (const q of part.questions) {
-          const question = await tx.question.create({
+        const upserted = existing
+          ? await tx.test.update({
+              where: { id: existing.id },
+              data: {
+                title: draft.title,
+                skill: draft.skill,
+                examType: draft.examType,
+                timeLimitMinutes: draft.timeLimitMinutes,
+                tags: draft.tags ?? [],
+                status: options.status ?? "DRAFT",
+                sourceFolder: draft.sourceFolder,
+                description: draft.description,
+              },
+            })
+          : await tx.test.create({
+              data: {
+                title: draft.title,
+                slug: draft.slug,
+                skill: draft.skill,
+                examType: draft.examType,
+                timeLimitMinutes: draft.timeLimitMinutes,
+                tags: draft.tags ?? [],
+                status: options.status ?? "DRAFT",
+                sourceFolder: draft.sourceFolder,
+                description: draft.description,
+              },
+            });
+
+        for (const part of draft.parts) {
+          const section = await tx.testSection.create({
             data: {
-              sectionId: section.id,
-              order: q.order,
-              number: q.number,
-              type: q.type,
-              content: q.content as Prisma.InputJsonValue,
+              testId: upserted.id,
+              title: part.title,
+              order: part.order,
+              questionCount: part.questions.length,
+              content: part.content,
+              meta: (part.meta ?? undefined) as Prisma.InputJsonValue | undefined,
             },
           });
 
-          if (q.correctAnswer !== undefined && q.correctAnswer !== null) {
-            await tx.answerKey.create({
+          for (const q of part.questions) {
+            const question = await tx.question.create({
               data: {
-                questionId: question.id,
-                correctAnswer: q.correctAnswer as object,
-                acceptableAnswers: q.acceptableAnswers ?? undefined,
-                explanation: q.explanation,
+                sectionId: section.id,
+                order: q.order,
+                number: q.number,
+                type: q.type,
+                content: q.content as Prisma.InputJsonValue,
+              },
+            });
+
+            if (q.correctAnswer !== undefined && q.correctAnswer !== null) {
+              await tx.answerKey.create({
+                data: {
+                  questionId: question.id,
+                  correctAnswer: q.correctAnswer as object,
+                  acceptableAnswers: q.acceptableAnswers ?? undefined,
+                  explanation: q.explanation,
+                },
+              });
+            }
+          }
+        }
+
+        if (draft.audioFiles?.length) {
+          for (const filePath of draft.audioFiles) {
+            await tx.mediaAsset.create({
+              data: {
+                testId: upserted.id,
+                type: "AUDIO",
+                path: filePath,
+                label: filePath.split(/[/\\]/).pop(),
               },
             });
           }
         }
-      }
 
-      if (draft.audioFiles?.length) {
-        for (const filePath of draft.audioFiles) {
-          await tx.mediaAsset.create({
-            data: {
-              testId: upserted.id,
-              type: "AUDIO",
-              path: filePath,
-              label: filePath.split(/[/\\]/).pop(),
-            },
-          });
-        }
-      }
-
-      return upserted;
-    });
+        return upserted;
+      },
+      // Large listening/reading papers exceed the default 5s interactive timeout.
+      { maxWait: 15_000, timeout: 120_000 },
+    );
 
     await prisma.importJob.update({
       where: { id: job.id },

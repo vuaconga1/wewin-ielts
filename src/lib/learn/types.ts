@@ -18,7 +18,7 @@ export const LEARN_SKILL_VI: Record<LearnSkill, string> = {
   listening: "Nghe",
   reading: "Đọc",
   writing: "Viết",
-  speaking: "Nói",
+  speaking: "Speaking",
 };
 
 export const LEARN_SKILL_DESC: Record<LearnSkill, string> = {

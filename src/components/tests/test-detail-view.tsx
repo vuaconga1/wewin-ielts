@@ -7,12 +7,23 @@ import {
   type TestAttemptHistoryItem,
 } from "@/components/tests/test-attempt-history";
 import { useTranslations } from "@/i18n/provider";
+import {
+  buildSpeakingExamQueue,
+  countSpeakingItemsByPart,
+} from "@/lib/practice/speaking-exam";
 
 type Part = {
   title: string;
   order: number;
+  content?: string;
   questions: {
     number: number;
+    type?: string;
+    content?: {
+      stem?: string;
+      speakingPart?: 1 | 2 | 3;
+      topic?: string;
+    };
   }[];
 };
 
@@ -20,6 +31,8 @@ type Props = {
   slug: string;
   title: string;
   skill: string;
+  examType?: string;
+  backHref?: string;
   tags: string[];
   timeLimitMinutes: number | null;
   parts: Part[];
@@ -33,6 +46,8 @@ export function TestDetailView({
   slug,
   title,
   skill,
+  examType,
+  backHref = "/tests",
   tags,
   timeLimitMinutes,
   parts,
@@ -42,18 +57,40 @@ export function TestDetailView({
   attempts,
 }: Props) {
   const { t } = useTranslations();
+  const examLabel =
+    examType === "GENERAL"
+      ? t("examTypes.GENERAL", "General")
+      : examType === "ACADEMIC"
+        ? t("examTypes.ACADEMIC", "Academic")
+        : null;
+
+  const speakingQueue =
+    skill === "SPEAKING" ? buildSpeakingExamQueue(parts) : [];
+  const speakingCounts =
+    speakingQueue.length > 0
+      ? countSpeakingItemsByPart(speakingQueue)
+      : undefined;
+  const speakingQCount = speakingQueue.length;
+  const displayQCount = speakingQCount > 0 ? speakingQCount : qCount;
+  const displayParts =
+    skill === "SPEAKING" && speakingQCount > 0 ? 3 : parts.length;
 
   return (
     <div className="min-w-0">
       <Link
-        href="/tests"
+        href={backHref}
         className="mb-4 inline-block text-sm font-medium text-wewin-navy hover:underline"
       >
         {t("tests.backList")}
       </Link>
       <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
         <section data-tour="test-detail-info" className="min-w-0">
-          <div className="mb-2 flex flex-wrap gap-2">
+          <div className="mb-2 flex flex-wrap items-center gap-2">
+            {examLabel ? (
+              <span className="rounded border border-wewin-navy/20 bg-wewin-accent-blue-bg px-2 py-0.5 text-xs font-semibold text-wewin-navy">
+                {examLabel}
+              </span>
+            ) : null}
             {(tags.length ? tags : [t(`skills.${skill}`, skill)]).map((tag) => (
               <span key={tag} className="break-words text-sm text-wewin-navy">
                 {tag}
@@ -72,8 +109,8 @@ export function TestDetailView({
             </span>
             <span>
               {t("common.partsQuestions", {
-                parts: parts.length,
-                questions: qCount,
+                parts: displayParts,
+                questions: displayQCount,
               })}
             </span>
           </div>
@@ -93,7 +130,7 @@ export function TestDetailView({
                   <p>
                     {t("tests.defaultDesc", {
                       skill: skill.toLowerCase(),
-                      parts: parts.length,
+                      parts: displayParts,
                     })}
                     {skill === "WRITING"
                       ? t("tests.writingHint")
@@ -123,6 +160,8 @@ export function TestDetailView({
         <aside data-tour="test-detail-start" className="min-w-0">
           <TestStartPanel
             slug={slug}
+            skill={skill}
+            speakingCounts={speakingCounts}
             parts={parts.map((p) => ({
               title: p.title,
               order: p.order,

@@ -9,6 +9,7 @@ export type TestAttemptHistoryItem = {
   id: string;
   mode: "PRACTICE" | "FULL";
   sectionOrders: number[];
+  speakingPartKinds?: number[];
   startedAt: string;
   finishedAt: string | null;
   timeLimitMinutes: number | null;
@@ -54,6 +55,7 @@ export function TestAttemptHistory({
 }: Props) {
   const { t, locale } = useTranslations("tests");
   const { t: tc } = useTranslations("common");
+  const { t: tp } = useTranslations("practice");
   const intlLocale = localeToIntl(locale);
   const unscored = skill === "WRITING" || skill === "SPEAKING";
 
@@ -61,6 +63,12 @@ export function TestAttemptHistory({
 
   function modeLabel(attempt: TestAttemptHistoryItem): string {
     if (attempt.mode === "FULL") return t("modeFull");
+    if (skill === "SPEAKING" && attempt.speakingPartKinds?.length) {
+      return [...attempt.speakingPartKinds]
+        .sort((a, b) => a - b)
+        .map((k) => tp(`speakingPart${k}`, `Part ${k}`))
+        .join(" + ");
+    }
     const titles = [...attempt.sectionOrders]
       .sort((a, b) => a - b)
       .map((order) => partByOrder.get(order) ?? t("sectionFallback", { n: order }));

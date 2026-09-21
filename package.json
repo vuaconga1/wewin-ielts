@@ -17,6 +17,7 @@
     "test:gap-stems": "tsx scripts/test-gap-stems.ts",
     "cleanup:gap-stems": "tsx scripts/cleanup-gap-stems.ts",
     "seed:admin": "tsx scripts/seed-admin.ts",
+    "upsert:tests": "tsx scripts/upsert-tests-from-json.ts",
     "sync:drive-audio": "tsx scripts/sync-drive-audio.ts"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "lucide-react": "^1.40.0",
     "mammoth": "^1.12.2",
     "next": "15.5.24",
+    "openai": "^7.19.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "zod": "^4.5.2"

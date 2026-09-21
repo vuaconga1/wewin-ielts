@@ -1,7 +1,11 @@
 "use client";
 
 import { Fragment, useMemo, type MutableRefObject, type ReactNode } from "react";
-import { detectNotesTable, type NotesTable } from "@/lib/practice/notes-table";
+import {
+  detectNotesTable,
+  unwrapSingleColumnMarkdownNotes,
+  type NotesTable,
+} from "@/lib/practice/notes-table";
 
 /** Match "7 ............", "9……….", "13.……….", "7 $ ......", "11 ___" */
 const INLINE_BLANK_RE =
@@ -9,9 +13,10 @@ const INLINE_BLANK_RE =
 
 export function findInlineBlankNumbers(notes: string): number[] {
   const found = new Set<number>();
+  const source = unwrapSingleColumnMarkdownNotes(notes);
   const re = new RegExp(INLINE_BLANK_RE.source, "gu");
   let m: RegExpExecArray | null;
-  while ((m = re.exec(notes)) !== null) {
+  while ((m = re.exec(source)) !== null) {
     const n = Number(m[1]);
     if (Number.isInteger(n) && n >= 1 && n <= 60) found.add(n);
   }
@@ -189,7 +194,11 @@ export function InlineNotesGaps({
     allowNumbers,
   };
 
-  const table = useMemo(() => detectNotesTable(notes), [notes]);
+  const displayNotes = useMemo(
+    () => unwrapSingleColumnMarkdownNotes(notes),
+    [notes],
+  );
+  const table = useMemo(() => detectNotesTable(displayNotes), [displayNotes]);
 
   if (table) {
     return <NotesTableView table={table} bindings={bindings} />;
@@ -197,7 +206,7 @@ export function InlineNotesGaps({
 
   return (
     <div className="break-words rounded-sm border border-zinc-200 bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800">
-      {renderInlineSegments(notes, "n", bindings)}
+      {renderInlineSegments(displayNotes, "n", bindings)}
     </div>
   );
 }

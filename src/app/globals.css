@@ -176,6 +176,59 @@ body {
       0 14px 28px rgb(15 40 94 / 0.08);
   }
 
+  .learn-theory {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: rgb(24 24 27);
+    word-break: break-word;
+  }
+
+  .learn-theory h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+  }
+
+  .learn-theory h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1.25rem 0 0.5rem;
+  }
+
+  .learn-theory h4 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin: 1rem 0 0.375rem;
+  }
+
+  .learn-theory p {
+    margin: 0.5rem 0;
+  }
+
+  .learn-theory ul {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+
+  .learn-theory table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  .learn-theory th,
+  .learn-theory td {
+    border: 1px solid rgb(212 212 216);
+    padding: 0.5rem 0.625rem;
+    text-align: left;
+  }
+
+  .learn-theory th {
+    background: rgb(250 250 250);
+    font-weight: 600;
+  }
+
   /* CDI practice exam chrome */
   .cdi-timer-flash {
     animation: cdi-timer-pulse 1s ease-in-out infinite;

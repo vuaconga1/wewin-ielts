@@ -9,7 +9,11 @@ import {
 } from "lucide-react";
 import type { LearnSkill } from "@/lib/learn/types";
 import { LEARN_SKILLS } from "@/lib/learn/types";
-import { learnCatalogHref, learnLessonHref, learnSkillHref } from "@/lib/learn/hrefs";
+import {
+  learnCatalogHref,
+  learnLessonHref,
+  learnSkillHref,
+} from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
 type SkillRow = {

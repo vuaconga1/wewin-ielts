@@ -29,6 +29,7 @@ import {
 } from "./schemas";
 import { splitIntoParts } from "./split-parts";
 import { stripFilledListeningAnswers } from "./strip-filled-answers";
+import { unwrapSingleColumnMarkdownNotes } from "@/lib/practice/notes-table";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -326,6 +327,7 @@ function buildParseResult(input: BuildInput): ImportParseResult {
           partOrder: rp.order,
         });
       }
+      partBody = unwrapSingleColumnMarkdownNotes(partBody);
     }
     let questions = parseQuestionsFromPartBody(partBody);
 

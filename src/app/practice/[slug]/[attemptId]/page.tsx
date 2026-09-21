@@ -8,6 +8,7 @@ import {
   practiceResultPath,
 } from "@/lib/practice/paths";
 import { toPublicQuestion } from "@/lib/practice/public-question";
+import { partsForSpeakingAttempt } from "@/lib/practice/speaking-exam";
 import { getAttempt, getTestBySlug } from "@/lib/store/test-store";
 
 export const dynamic = "force-dynamic";
@@ -55,18 +56,31 @@ export default async function PracticePage({ params }: Props) {
       ? new Set(attempt.questionNumbers)
       : null;
 
-  const parts = test.parts
-    .filter((p) => attempt.sectionOrders.includes(p.order))
+  const selectedSource =
+    test.skill === "SPEAKING"
+      ? partsForSpeakingAttempt(test.parts, attempt)
+      : test.parts.filter((p) => attempt.sectionOrders.includes(p.order));
+
+  const skipImportedQuestionFilter =
+    test.skill === "SPEAKING" && Boolean(attempt.speakingPartKinds?.length);
+
+  const parts = selectedSource
     .map((p) => ({
       title: p.title,
       order: p.order,
       content: p.content,
       meta: p.meta,
       questions: p.questions
-        .filter((q) => (filterSet ? filterSet.has(q.number) : true))
+        .filter((q) =>
+          skipImportedQuestionFilter || !filterSet
+            ? true
+            : filterSet.has(q.number),
+        )
         .map((q) => toPublicQuestion(q)),
     }))
-    .filter((p) => p.questions.length > 0);
+    .filter(
+      (p) => p.questions.length > 0 || (p.content ?? "").trim().length > 0,
+    );
 
   return (
     <PracticeSession
@@ -79,6 +93,7 @@ export default async function PracticePage({ params }: Props) {
       parts={parts}
       audioFiles={test.audioFiles}
       retryWrong={Boolean(filterSet)}
+      speakingPartKinds={attempt.speakingPartKinds}
     />
   );
 }

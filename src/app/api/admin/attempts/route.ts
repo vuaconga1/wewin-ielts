@@ -9,7 +9,7 @@ export const runtime = "nodejs";
 
 /**
  * GET /api/admin/attempts
- * Query: userId, userQ, skill, testQ, status, from, to, limit
+ * Query: userId, classId, skill, testSlug, status, from, to, limit
  */
 export async function GET(request: Request) {
   const denied = await requireAdminResponse(getSessionUser);
@@ -19,8 +19,9 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const filters = normalizeAdminAttemptFilters({
       userId: searchParams.get("userId") ?? undefined,
-      userQ: searchParams.get("userQ") ?? undefined,
+      classId: searchParams.get("classId") ?? undefined,
       skill: searchParams.get("skill") ?? undefined,
+      testSlug: searchParams.get("testSlug") ?? undefined,
       testQ: searchParams.get("testQ") ?? undefined,
       status: searchParams.get("status") ?? undefined,
       from: searchParams.get("from") ?? undefined,
