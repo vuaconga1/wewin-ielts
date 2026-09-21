@@ -2,7 +2,7 @@ import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { ParsedTestDraft } from "@/lib/import/schemas";
 import type { StoredAiScore } from "@/lib/ai/types";
-import { BUNDLED_DATA_DIR, DATA_DIR } from "@/lib/paths";
+import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
@@ -258,6 +258,277 @@ export async function getTestBySlug(slug: string): Promise<StoredTest | null> {
   return getTestFromFs(slug);
 }
 
+function asStoredAttempt(value: Prisma.JsonValue | null | undefined): StoredAttempt | null {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const obj = value as Record<string, unknown>;
+  if (typeof obj.id !== "string" || typeof obj.testSlug !== "string") return null;
+  if (obj.mode !== "PRACTICE" && obj.mode !== "FULL") return null;
+  if (!Array.isArray(obj.sectionOrders)) return null;
+  if (typeof obj.startedAt !== "string") return null;
+  if (typeof obj.answers !== "object" || obj.answers === null || Array.isArray(obj.answers)) {
+    return null;
+  }
+  return value as unknown as StoredAttempt;
+}
+
+function attemptScoreFields(attempt: StoredAttempt): {
+  scoreRaw: number | null;
+  scoreBand: number | null;
+} {
+  return {
+    scoreRaw:
+      attempt.score && typeof attempt.score.correct === "number"
+        ? attempt.score.correct
+        : null,
+    scoreBand:
+      attempt.aiScore && typeof attempt.aiScore.overallBand === "number"
+        ? attempt.aiScore.overallBand
+        : null,
+  };
+}
+
+/** Prefer a real User FK; keep guest / unknown ids only inside payload JSON. */
+async function resolvePrismaUserId(
+  userId: string | null | undefined,
+): Promise<string | null> {
+  if (!userId) return null;
+  try {
+    const row = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { id: true },
+    });
+    return row?.id ?? null;
+  } catch {
+    return null;
+  }
+}
+
+async function createAttemptInPrisma(
+  attempt: StoredAttempt,
+): Promise<boolean> {
+  if (!(await canUsePrisma())) return false;
+  try {
+    const test = await prisma.test.findFirst({
+      where: { slug: attempt.testSlug },
+      select: { id: true },
+    });
+    if (!test) return false;
+
+    const userId = await resolvePrismaUserId(attempt.userId);
+    const { scoreRaw, scoreBand } = attemptScoreFields(attempt);
+
+    await prisma.attempt.create({
+      data: {
+        id: attempt.id,
+        userId,
+        testId: test.id,
+        mode: attempt.mode,
+        sectionIds: attempt.sectionOrders,
+        timeLimitMinutes: attempt.timeLimitMinutes,
+        startedAt: new Date(attempt.startedAt),
+        finishedAt: attempt.finishedAt ? new Date(attempt.finishedAt) : null,
+        scoreRaw,
+        scoreBand,
+        payload: attempt as unknown as Prisma.InputJsonValue,
+      },
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function getAttemptFromPrisma(id: string): Promise<StoredAttempt | null> {
+  if (!(await canUsePrisma())) return null;
+  try {
+    const row = await prisma.attempt.findUnique({
+      where: { id },
+      include: { test: { select: { slug: true } } },
+    });
+    if (!row) return null;
+
+    const fromPayload = asStoredAttempt(row.payload);
+    if (fromPayload) {
+      return {
+        ...fromPayload,
+        id: row.id,
+        testSlug: fromPayload.testSlug || row.test.slug,
+        finishedAt:
+          fromPayload.finishedAt ??
+          (row.finishedAt ? row.finishedAt.toISOString() : null),
+      };
+    }
+
+    // Legacy Prisma rows without practice payload
+    const sectionOrders = Array.isArray(row.sectionIds)
+      ? row.sectionIds.filter((n): n is number => typeof n === "number")
+      : [];
+    return {
+      id: row.id,
+      testSlug: row.test.slug,
+      userId: row.userId,
+      mode: row.mode,
+      sectionOrders,
+      timeLimitMinutes: row.timeLimitMinutes,
+      startedAt: row.startedAt.toISOString(),
+      finishedAt: row.finishedAt ? row.finishedAt.toISOString() : null,
+      answers: {},
+      score:
+        row.scoreRaw != null
+          ? { correct: row.scoreRaw, total: row.scoreRaw, percent: 0 }
+          : undefined,
+    };
+  } catch {
+    return null;
+  }
+}
+
+async function saveAttemptInPrisma(attempt: StoredAttempt): Promise<boolean> {
+  if (!(await canUsePrisma())) return false;
+  try {
+    const existing = await prisma.attempt.findUnique({
+      where: { id: attempt.id },
+      select: { id: true },
+    });
+    if (!existing) {
+      return createAttemptInPrisma(attempt);
+    }
+
+    const userId = await resolvePrismaUserId(attempt.userId);
+    const { scoreRaw, scoreBand } = attemptScoreFields(attempt);
+
+    await prisma.attempt.update({
+      where: { id: attempt.id },
+      data: {
+        userId,
+        mode: attempt.mode,
+        sectionIds: attempt.sectionOrders,
+        timeLimitMinutes: attempt.timeLimitMinutes,
+        finishedAt: attempt.finishedAt ? new Date(attempt.finishedAt) : null,
+        scoreRaw,
+        scoreBand,
+        payload: attempt as unknown as Prisma.InputJsonValue,
+      },
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function deleteAttemptFromPrisma(id: string): Promise<boolean> {
+  if (!(await canUsePrisma())) return false;
+  try {
+    await prisma.attempt.delete({ where: { id } });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function listAttemptsFromPrisma(options?: {
+  userId?: string;
+}): Promise<StoredAttempt[] | null> {
+  if (!(await canUsePrisma())) return null;
+  try {
+    const rows = await prisma.attempt.findMany({
+      where: options?.userId ? { userId: options.userId } : undefined,
+      include: { test: { select: { slug: true } } },
+      orderBy: { startedAt: "desc" },
+    });
+
+    const attempts: StoredAttempt[] = [];
+    for (const row of rows) {
+      const fromPayload = asStoredAttempt(row.payload);
+      if (fromPayload) {
+        attempts.push({
+          ...fromPayload,
+          id: row.id,
+          testSlug: fromPayload.testSlug || row.test.slug,
+        });
+        continue;
+      }
+      const sectionOrders = Array.isArray(row.sectionIds)
+        ? row.sectionIds.filter((n): n is number => typeof n === "number")
+        : [];
+      attempts.push({
+        id: row.id,
+        testSlug: row.test.slug,
+        userId: row.userId,
+        mode: row.mode,
+        sectionOrders,
+        timeLimitMinutes: row.timeLimitMinutes,
+        startedAt: row.startedAt.toISOString(),
+        finishedAt: row.finishedAt ? row.finishedAt.toISOString() : null,
+        answers: {},
+        score:
+          row.scoreRaw != null
+            ? { correct: row.scoreRaw, total: row.scoreRaw, percent: 0 }
+            : undefined,
+      });
+    }
+    return attempts;
+  } catch {
+    return null;
+  }
+}
+
+async function createAttemptOnFs(attempt: StoredAttempt): Promise<void> {
+  await ensureDirs();
+  await writeFile(
+    path.join(ATTEMPTS_DIR, `${attempt.id}.json`),
+    JSON.stringify(attempt, null, 2),
+    "utf8",
+  );
+}
+
+async function getAttemptFromFs(id: string): Promise<StoredAttempt | null> {
+  await ensureDirs();
+  try {
+    const raw = await readFile(path.join(ATTEMPTS_DIR, `${id}.json`), "utf8");
+    return JSON.parse(raw) as StoredAttempt;
+  } catch {
+    return null;
+  }
+}
+
+async function saveAttemptOnFs(attempt: StoredAttempt): Promise<void> {
+  await ensureDirs();
+  await writeFile(
+    path.join(ATTEMPTS_DIR, `${attempt.id}.json`),
+    JSON.stringify(attempt, null, 2),
+    "utf8",
+  );
+}
+
+async function deleteAttemptFromFs(id: string): Promise<boolean> {
+  await ensureDirs();
+  try {
+    await unlink(path.join(ATTEMPTS_DIR, `${id}.json`));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function listAttemptsFromFs(options?: {
+  userId?: string;
+}): Promise<StoredAttempt[]> {
+  await ensureDirs();
+  const files = await readdir(ATTEMPTS_DIR);
+  const attempts: StoredAttempt[] = [];
+  for (const f of files) {
+    if (!f.endsWith(".json")) continue;
+    const raw = await readFile(path.join(ATTEMPTS_DIR, f), "utf8");
+    attempts.push(JSON.parse(raw) as StoredAttempt);
+  }
+  let list = attempts.sort((a, b) => (a.startedAt < b.startedAt ? 1 : -1));
+  if (options?.userId) {
+    list = list.filter((a) => a.userId === options.userId);
+  }
+  return list;
+}
+
 export async function createAttempt(input: {
   testSlug: string;
   mode: "PRACTICE" | "FULL";
@@ -267,8 +538,8 @@ export async function createAttempt(input: {
   timeLimitMinutes: number | null;
   userId?: string | null;
 }): Promise<StoredAttempt> {
-  await ensureDirs();
   const id = `att_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
+  const now = new Date().toISOString();
   const attempt: StoredAttempt = {
     id,
     testSlug: input.testSlug,
@@ -282,48 +553,61 @@ export async function createAttempt(input: {
       ? [...input.speakingPartKinds]
       : undefined,
     timeLimitMinutes: input.timeLimitMinutes,
-    startedAt: new Date().toISOString(),
-    updatedAt: new Date().toISOString(),
+    startedAt: now,
+    updatedAt: now,
     finishedAt: null,
     answers: {},
   };
-  await writeFile(
-    path.join(ATTEMPTS_DIR, `${id}.json`),
-    JSON.stringify(attempt, null, 2),
-    "utf8",
-  );
+
+  // Durable path on Vercel/Neon; FS remains local/dev fallback (+ dual-write when DB works).
+  const wroteDb = await createAttemptInPrisma(attempt);
+  if (wroteDb) {
+    // Best-effort local mirror for same-instance continuity in long-lived Node.
+    try {
+      await createAttemptOnFs(attempt);
+    } catch {
+      /* ignore — DB is source of truth */
+    }
+    return attempt;
+  }
+
+  // On Vercel, /tmp is not shared across serverless instances — never return an
+  // att_* that only exists on this instance's disk.
+  if (isVercel) {
+    throw new Error(
+      "Không lưu được bài làm vào database. Kiểm tra Neon (DATABASE_URL) và thử lại.",
+    );
+  }
+
+  await createAttemptOnFs(attempt);
   return attempt;
 }
 
 export async function getAttempt(id: string): Promise<StoredAttempt | null> {
-  await ensureDirs();
-  try {
-    const raw = await readFile(path.join(ATTEMPTS_DIR, `${id}.json`), "utf8");
-    return JSON.parse(raw) as StoredAttempt;
-  } catch {
-    return null;
-  }
+  const fromDb = await getAttemptFromPrisma(id);
+  if (fromDb) return fromDb;
+  return getAttemptFromFs(id);
 }
 
 export async function saveAttempt(attempt: StoredAttempt): Promise<void> {
-  await ensureDirs();
   attempt.updatedAt = new Date().toISOString();
-  await writeFile(
-    path.join(ATTEMPTS_DIR, `${attempt.id}.json`),
-    JSON.stringify(attempt, null, 2),
-    "utf8",
-  );
+  const wroteDb = await saveAttemptInPrisma(attempt);
+  if (!wroteDb) {
+    await saveAttemptOnFs(attempt);
+    return;
+  }
+  try {
+    await saveAttemptOnFs(attempt);
+  } catch {
+    /* ignore — DB is source of truth */
+  }
 }
 
 /** Remove an open attempt so it does not appear in history. */
 export async function deleteAttempt(id: string): Promise<boolean> {
-  await ensureDirs();
-  try {
-    await unlink(path.join(ATTEMPTS_DIR, `${id}.json`));
-    return true;
-  } catch {
-    return false;
-  }
+  const deletedDb = await deleteAttemptFromPrisma(id);
+  const deletedFs = await deleteAttemptFromFs(id);
+  return deletedDb || deletedFs;
 }
 
 function sameNumberSet(a: number[] | undefined, b: number[] | undefined): boolean {
@@ -359,17 +643,15 @@ export async function findOpenAttempt(input: {
 export async function listAttempts(options?: {
   userId?: string;
 }): Promise<StoredAttempt[]> {
-  await ensureDirs();
-  const files = await readdir(ATTEMPTS_DIR);
-  const attempts: StoredAttempt[] = [];
-  for (const f of files) {
-    if (!f.endsWith(".json")) continue;
-    const raw = await readFile(path.join(ATTEMPTS_DIR, f), "utf8");
-    attempts.push(JSON.parse(raw) as StoredAttempt);
-  }
-  let list = attempts.sort((a, b) => (a.startedAt < b.startedAt ? 1 : -1));
-  if (options?.userId) {
-    list = list.filter((a) => a.userId === options.userId);
-  }
-  return list;
+  const fromDb = await listAttemptsFromPrisma(options);
+  const fromFs = await listAttemptsFromFs(options);
+
+  if (!fromDb) return fromFs;
+
+  const byId = new Map<string, StoredAttempt>();
+  for (const a of fromFs) byId.set(a.id, a);
+  for (const a of fromDb) byId.set(a.id, a); // Prisma wins
+  return [...byId.values()].sort((a, b) =>
+    a.startedAt < b.startedAt ? 1 : -1,
+  );
 }

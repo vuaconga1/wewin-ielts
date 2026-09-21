@@ -161,6 +161,8 @@ model Attempt {
   finishedAt      DateTime?
   scoreRaw        Int?
   scoreBand       Float?
+  /// Full practice attempt JSON (StoredAttempt) — durable across serverless instances
+  payload         Json?
 
   user    User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
   test    Test           @relation(fields: [testId], references: [id], onDelete: Cascade)
