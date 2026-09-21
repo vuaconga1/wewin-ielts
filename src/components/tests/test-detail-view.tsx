@@ -65,7 +65,9 @@ export function TestDetailView({
         : null;
 
   const speakingQueue =
-    skill === "SPEAKING" ? buildSpeakingExamQueue(parts) : [];
+    skill === "SPEAKING"
+      ? buildSpeakingExamQueue(parts as Parameters<typeof buildSpeakingExamQueue>[0])
+      : [];
   const speakingCounts =
     speakingQueue.length > 0
       ? countSpeakingItemsByPart(speakingQueue)

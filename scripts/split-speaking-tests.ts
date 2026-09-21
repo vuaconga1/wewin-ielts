@@ -32,6 +32,10 @@ async function main() {
     process.exit(1);
   }
 
+  // Capture after the null guard so nested closures don't see `source | null`
+  // (TS does not preserve narrowing across nested function boundaries).
+  const sourceFolder = source.sourceFolder;
+
   console.log(
     `Source: ${source.slug} | parts=${source.parts.length} | rawQs=${source.parts.reduce((n, p) => n + p.questions.length, 0)}`,
   );
@@ -94,7 +98,7 @@ async function main() {
       examType: "ACADEMIC",
       timeLimitMinutes: 15,
       tags: ["#IELTS Academic", "#Speaking"],
-      sourceFolder: source.sourceFolder,
+      sourceFolder,
       description: `IELTS Academic Speaking practice set ${index} (Part 1 · Part 2 · Part 3).`,
       parts: [
         {

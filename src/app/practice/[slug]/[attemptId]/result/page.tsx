@@ -103,7 +103,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PracticeResultPage({ params }: Props) {
   const { slug, attemptId } = await params;
   const { t } = await getTranslations("result");
-  const { t: ts } = await getTranslations("skills");
   const { t: tCommon } = await getTranslations("common");
   const brand = tCommon("brand", "WEWIN Education");
   const attempt = await getAttempt(attemptId);
