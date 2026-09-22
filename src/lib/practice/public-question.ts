@@ -3,6 +3,8 @@
  * Scoring stays server-side (submit / result after finish).
  */
 
+import { mediaUrl } from "@/lib/media/url";
+
 export type PublicQuestionContent = {
   stem?: string;
   options?: { label: string; text: string }[];
@@ -61,10 +63,11 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
       ? q.explanation
       : undefined;
 
-  const imageUrl =
+  const rawImageUrl =
     (typeof content.imageUrl === "string" && content.imageUrl.trim()) ||
     (typeof q.mediaUrl === "string" && q.mediaUrl.trim()) ||
     undefined;
+  const imageUrl = rawImageUrl ? mediaUrl(rawImageUrl) : undefined;
 
   const covers = Array.isArray(content.covers)
     ? content.covers

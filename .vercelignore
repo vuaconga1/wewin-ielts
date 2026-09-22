@@ -1,6 +1,6 @@
 # Keep deploys lean: exclude local junk; ship published test JSON.
-# Hobby deploy caps ~100MB artifacts — only ship demo section audio (T1/T9).
-# Remaining test-*-section-*.mp3 stay in git for local; use Blob/S3 later for prod.
+# Hobby deploy caps ~100MB artifacts — Listening mp3s live on Cloudflare R2
+# (set R2_PUBLIC_BASE_URL + run npm run media:upload-r2). Do not ship audio.
 .agents
 .claude
 .cursor
@@ -28,8 +28,11 @@ data/tests/*
 !data/tests/test-13-*.json
 public/uploads/audio/*
 !public/uploads/audio/.gitkeep
-!public/uploads/audio/test-1-section-*.mp3
-!public/uploads/audio/test-9-section-*.mp3
+# Optional: also keep writing/images off Vercel once R2 is populated
+# public/uploads/writing/*
+# !public/uploads/writing/.gitkeep
+# public/uploads/images/*
+# !public/uploads/images/.gitkeep
 public/uploads/avatars/*
 !public/uploads/avatars/.gitkeep
 public/uploads/learn/videos/*

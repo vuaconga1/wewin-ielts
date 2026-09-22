@@ -18,9 +18,11 @@
     "cleanup:gap-stems": "tsx scripts/cleanup-gap-stems.ts",
     "seed:admin": "tsx scripts/seed-admin.ts",
     "upsert:tests": "tsx scripts/upsert-tests-from-json.ts",
-    "sync:drive-audio": "tsx scripts/sync-drive-audio.ts"
+    "sync:drive-audio": "tsx scripts/sync-drive-audio.ts",
+    "media:upload-r2": "tsx scripts/upload-media-to-r2.ts"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1137.0",
     "@neondatabase/serverless": "^1.1.0",
     "@prisma/adapter-neon": "^7.10.0",
     "@prisma/client": "^7.10.0",

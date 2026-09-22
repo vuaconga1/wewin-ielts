@@ -2,6 +2,7 @@ import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { ParsedTestDraft } from "@/lib/import/schemas";
 import type { StoredAiScore } from "@/lib/ai/types";
+import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
@@ -298,8 +299,8 @@ export async function listTests(): Promise<StoredTest[]> {
 
 export async function getTestBySlug(slug: string): Promise<StoredTest | null> {
   const fromDb = await getTestFromPrisma(slug);
-  if (fromDb) return fromDb;
-  return getTestFromFs(slug);
+  const test = fromDb ?? (await getTestFromFs(slug));
+  return test ? withPublicMediaUrls(test) : null;
 }
 
 function asStoredAttempt(value: Prisma.JsonValue | null | undefined): StoredAttempt | null {
