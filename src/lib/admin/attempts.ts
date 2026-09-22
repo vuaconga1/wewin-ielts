@@ -6,12 +6,14 @@
 import { canUsePrisma } from "@/lib/db";
 import { practicePath } from "@/lib/practice/paths";
 import { prisma } from "@/lib/prisma";
+import type { Prisma } from "@/generated/prisma/client";
 import {
   listAttempts,
   listTests,
   type StoredAttempt,
 } from "@/lib/store/test-store";
 import { listLocalUsers } from "@/lib/store/user-store";
+import { unstable_cache } from "next/cache";
 
 export type AdminAttemptSkill =
   | "LISTENING"
@@ -108,10 +110,10 @@ export function normalizeAdminAttemptFilters(
 ): AdminAttemptFilters {
   const skill = parseSkill(input.skill);
   const status = parseStatus(input.status);
-  const limitRaw = input.limit ? Number(input.limit) : 200;
+  const limitRaw = input.limit ? Number(input.limit) : 50;
   const limit = Number.isFinite(limitRaw)
-    ? Math.min(Math.max(Math.trunc(limitRaw), 1), 500)
-    : 200;
+    ? Math.min(Math.max(Math.trunc(limitRaw), 1), 200)
+    : 50;
 
   return {
     userId: input.userId?.trim() || undefined,
@@ -266,9 +268,60 @@ async function loadLocalAttemptsAsRows(
 
 async function loadPrismaAttemptsAsRows(
   userMap: Map<string, UserLite>,
+  filters: AdminAttemptFilters,
 ): Promise<AdminAttemptRow[]> {
+  const where: Prisma.AttemptWhereInput = {};
+
+  if (filters.userId) where.userId = filters.userId;
+
+  if (filters.status === "FINISHED") {
+    where.finishedAt = { not: null };
+  } else if (filters.status === "UNFINISHED") {
+    where.finishedAt = null;
+  }
+
+  if (filters.from || filters.to) {
+    const startedAt: Prisma.DateTimeFilter = {};
+    if (filters.from) {
+      const fromMs = Date.parse(filters.from);
+      if (!Number.isNaN(fromMs)) startedAt.gte = new Date(fromMs);
+    }
+    if (filters.to) {
+      const toMs = Date.parse(filters.to);
+      if (!Number.isNaN(toMs)) {
+        const end = /^\d{4}-\d{2}-\d{2}$/.test(filters.to)
+          ? toMs + 24 * 60 * 60 * 1000 - 1
+          : toMs;
+        startedAt.lte = new Date(end);
+      }
+    }
+    where.startedAt = startedAt;
+  }
+
+  const testWhere: Prisma.TestWhereInput = {};
+  if (filters.testSlug) testWhere.slug = filters.testSlug;
+  if (filters.skill && filters.skill !== "ALL") {
+    testWhere.skill = filters.skill;
+  }
+  if (Object.keys(testWhere).length > 0) {
+    where.test = testWhere;
+  }
+
+  const limit = filters.limit ?? 50;
+  // Fetch a bit extra when merging with local rows; still capped.
+  const take = Math.min(Math.max(limit, 1) * 2, 500);
+
   const attempts = await prisma.attempt.findMany({
-    include: {
+    where,
+    select: {
+      id: true,
+      userId: true,
+      mode: true,
+      startedAt: true,
+      finishedAt: true,
+      scoreRaw: true,
+      scoreBand: true,
+      // Intentionally omit payload / sectionIds — list views must stay light.
       user: {
         select: { id: true, email: true, username: true, role: true },
       },
@@ -277,6 +330,7 @@ async function loadPrismaAttemptsAsRows(
       },
     },
     orderBy: { startedAt: "desc" },
+    take,
   });
 
   return attempts.map((a) => {
@@ -390,13 +444,33 @@ function buildTestOptions(allRows: AdminAttemptRow[]): AdminTestOption[] {
 export async function listAdminAttempts(
   filters: AdminAttemptFilters = {},
 ): Promise<AdminAttemptsResult> {
+  const cacheKey = JSON.stringify({
+    userId: filters.userId ?? "",
+    skill: filters.skill ?? "ALL",
+    testSlug: filters.testSlug ?? "",
+    status: filters.status ?? "ALL",
+    from: filters.from ?? "",
+    to: filters.to ?? "",
+    limit: filters.limit ?? 50,
+  });
+
+  return unstable_cache(
+    () => listAdminAttemptsUncached(filters),
+    ["admin-attempts-list", cacheKey],
+    { revalidate: 15 },
+  )();
+}
+
+async function listAdminAttemptsUncached(
+  filters: AdminAttemptFilters,
+): Promise<AdminAttemptsResult> {
   const userMap = await loadUserMap();
   const localRows = await loadLocalAttemptsAsRows(userMap);
 
   let prismaRows: AdminAttemptRow[] = [];
   if (await canUsePrisma()) {
     try {
-      prismaRows = await loadPrismaAttemptsAsRows(userMap);
+      prismaRows = await loadPrismaAttemptsAsRows(userMap, filters);
     } catch {
       prismaRows = [];
     }
@@ -427,7 +501,7 @@ export async function listAdminAttempts(
   const classes: AdminClassOption[] = [];
 
   const filtered = applyRowFilters(allRows, filters);
-  const limit = filters.limit ?? 200;
+  const limit = filters.limit ?? 50;
 
   return {
     attempts: filtered.slice(0, limit),

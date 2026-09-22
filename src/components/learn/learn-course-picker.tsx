@@ -55,6 +55,7 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
             <Link
               key={course.id}
               href={learnCourseHref(course.id)}
+              prefetch={false}
               className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
             >
               <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
@@ -105,6 +106,7 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
 
         <Link
           href={learnVocabGrammarHref()}
+          prefetch={false}
           className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
         >
           <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">

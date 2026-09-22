@@ -4,6 +4,7 @@ import type { ParsedTestDraft } from "@/lib/import/schemas";
 import type { StoredAiScore } from "@/lib/ai/types";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
+import { revalidateTag, unstable_cache } from "next/cache";
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
@@ -46,12 +47,17 @@ export type StoredAttempt = {
 };
 
 /** In-memory TTL for catalog/home list pages (invalidated on draft save). */
-const TESTS_CACHE_TTL_MS = 60_000;
+const TESTS_CACHE_TTL_MS = 300_000;
 
 let testsCache: { data: StoredTest[]; expiresAt: number } | null = null;
 
 function invalidateTestsCache() {
   testsCache = null;
+  try {
+    revalidateTag("tests-catalog");
+  } catch {
+    /* outside request scope */
+  }
 }
 
 async function ensureDirs() {
@@ -288,8 +294,15 @@ export async function listTests(): Promise<StoredTest[]> {
     return structuredClone(testsCache.data);
   }
 
-  const fromDb = await listTestsFromPrisma();
-  const tests = fromDb ?? (await listTestsFromFs());
+  const tests = await unstable_cache(
+    async () => {
+      const fromDb = await listTestsFromPrisma();
+      return fromDb ?? (await listTestsFromFs());
+    },
+    ["tests-catalog-list"],
+    { revalidate: 300, tags: ["tests-catalog"] },
+  )();
+
   testsCache = {
     data: structuredClone(tests),
     expiresAt: now + TESTS_CACHE_TTL_MS,

@@ -171,6 +171,8 @@ model Attempt {
 
   @@index([testId])
   @@index([userId])
+  @@index([startedAt])
+  @@index([userId, startedAt])
 }
 
 model AttemptAnswer {

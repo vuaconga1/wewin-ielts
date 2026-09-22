@@ -123,6 +123,7 @@ export function AttemptsViewer() {
       if (filters.status !== "ALL") params.set("status", filters.status);
       if (filters.from) params.set("from", filters.from);
       if (filters.to) params.set("to", filters.to);
+      params.set("limit", "50");
 
       const res = await fetch(`/api/admin/attempts?${params.toString()}`);
       const data = (await res.json()) as ApiResponse;

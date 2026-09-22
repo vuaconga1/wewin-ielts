@@ -6,6 +6,9 @@ import Link from "next/link";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
 import { useTranslations } from "@/i18n/provider";
+import { clearMyRankCache } from "@/lib/client/ranking-me";
+import { clearSessionMe, setSessionMe } from "@/lib/client/session-me";
+import { initialsFromName } from "@/lib/dashboard-stats";
 
 type Mode = "login" | "register";
 
@@ -78,6 +81,22 @@ export function LoginForm() {
             : next.startsWith("/admin")
               ? "/tests"
               : next;
+      clearMyRankCache();
+      clearSessionMe();
+      if (data.user) {
+        setSessionMe({
+          user: {
+            username: data.user.username,
+            initials: initialsFromName(data.user.username),
+            role: data.user.role,
+            avatarUrl: data.user.avatarUrl ?? null,
+          },
+          canImport:
+            typeof data.canImport === "boolean"
+              ? data.canImport
+              : data.user.role === "ADMIN",
+        });
+      }
       router.push(dest);
       router.refresh();
     } catch (err) {

@@ -1,11 +1,17 @@
-import { canAccessAdmin, getSessionUser } from "@/lib/auth";
+"use client";
+
+import { useEffect, useState } from "react";
 import {
   DashboardShell,
   type DashboardNavKey,
 } from "@/components/dashboard/dashboard-shell";
 import { SiteFooter } from "@/components/layout/site-footer";
-import { initialsFromName } from "@/lib/dashboard-stats";
-import { getUserAvatarUrl } from "@/lib/user-profile";
+import {
+  fetchSessionMe,
+  peekSessionMe,
+  subscribeSessionMe,
+  type SessionMe,
+} from "@/lib/client/session-me";
 
 type Props = {
   children: React.ReactNode;
@@ -14,35 +20,45 @@ type Props = {
   wide?: boolean;
 };
 
+const EMPTY: SessionMe = { user: null, canImport: false };
+
 /**
- * Shared app chrome: left sidebar (same as dashboard).
- * Practice exam routes should skip this shell for a focused UI.
- *
- * getSessionUser / getUserAvatarUrl are React.cache'd (+ avatar TTL) so one
- * request does not duplicate cookie/DB work when the page also loads the user.
+ * Shared app chrome — client-hydrated session so catalog RSC pages stay
+ * static/ISR (no cookies()/Prisma avatar on every soft navigation).
  */
-export async function SiteShell({ children, active, wide }: Props) {
-  const user = await getSessionUser();
-  // Admin nav (users / learn / import / attempts) — ADMIN only; never STUDENT
-  const canImport = canAccessAdmin(user);
-  const avatarUrl = user ? await getUserAvatarUrl(user.id) : null;
+export function SiteShell({ children, active, wide }: Props) {
+  const [session, setSession] = useState<SessionMe>(
+    () => peekSessionMe() ?? EMPTY,
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+    void fetchSessionMe().then((next) => {
+      if (!cancelled) setSession(next);
+    });
+    const unsub = subscribeSessionMe(() => {
+      const peek = peekSessionMe();
+      if (peek) {
+        setSession(peek);
+        return;
+      }
+      void fetchSessionMe().then((next) => {
+        if (!cancelled) setSession(next);
+      });
+    });
+    return () => {
+      cancelled = true;
+      unsub();
+    };
+  }, []);
 
   return (
     <DashboardShell
       active={active}
-      canImport={canImport}
+      canImport={session.canImport}
       wide={wide}
       footer={<SiteFooter />}
-      user={
-        user
-          ? {
-              username: user.username,
-              initials: initialsFromName(user.username),
-              role: user.role,
-              avatarUrl,
-            }
-          : null
-      }
+      user={session.user}
     >
       {children}
     </DashboardShell>

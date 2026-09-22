@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { AuthError, registerStudent } from "@/lib/auth";
+import { AuthError, canAccessAdmin, registerStudent } from "@/lib/auth";
+import { getUserAvatarUrl } from "@/lib/user-profile";
 
 export const runtime = "nodejs";
 
@@ -26,7 +27,11 @@ export async function POST(request: Request) {
       password,
       username: body.username,
     });
-    return NextResponse.json({ user });
+    const avatarUrl = await getUserAvatarUrl(user.id);
+    return NextResponse.json({
+      user: { ...user, avatarUrl },
+      canImport: canAccessAdmin(user),
+    });
   } catch (e) {
     if (e instanceof AuthError) {
       const status = e.code === "EMAIL_TAKEN" ? 409 : 400;

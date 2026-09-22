@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { LogIn, LogOut } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
+import { clearMyRankCache } from "@/lib/client/ranking-me";
+import { clearSessionMe } from "@/lib/client/session-me";
 
 type Props = {
   loggedIn: boolean;
@@ -51,6 +53,8 @@ export function HeaderAuthButton({ loggedIn, className = "" }: Props) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ action: "logout" }),
       });
+      clearSessionMe();
+      clearMyRankCache();
       router.push("/");
       router.refresh();
     } finally {

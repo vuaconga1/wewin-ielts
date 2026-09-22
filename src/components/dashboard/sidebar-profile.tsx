@@ -10,6 +10,7 @@ import {
   clearMyRankCache,
   fetchMyRank,
 } from "@/lib/client/ranking-me";
+import { clearSessionMe } from "@/lib/client/session-me";
 import { formatPoints } from "@/lib/ranking-shared";
 import { useTranslations } from "@/i18n/provider";
 
@@ -99,6 +100,7 @@ export function SidebarProfile({
     setLogoutPending(true);
     try {
       clearMyRankCache();
+      clearSessionMe();
       await fetch("/api/auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

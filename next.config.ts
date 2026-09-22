@@ -41,6 +41,43 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Catalog / learn hub — CDN cache + SWR (pages are ISR / static chrome)
+      {
+        source: "/tests",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=300, stale-while-revalidate=600",
+          },
+        ],
+      },
+      {
+        source: "/tests/academic",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=300, stale-while-revalidate=600",
+          },
+        ],
+      },
+      {
+        source: "/tests/general",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=300, stale-while-revalidate=600",
+          },
+        ],
+      },
+      {
+        source: "/learn",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=300, stale-while-revalidate=600",
+          },
+        ],
+      },
     ];
   },
 };

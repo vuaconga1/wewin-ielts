@@ -1,20 +1,16 @@
 import { TestsModuleCatalog } from "@/components/tests/tests-module-catalog";
-import { getTranslations } from "@/i18n/server";
+import { getTranslationsStatic } from "@/i18n/server";
 
-export const revalidate = 60;
-
-type Props = {
-  searchParams: Promise<{ skill?: string }>;
-};
+export const revalidate = 300;
 
 export async function generateMetadata() {
-  const { t } = await getTranslations();
+  const { t } = getTranslationsStatic();
   return {
     title: t("meta.testsGeneral", "IELTS General Training | Wewin IELTS"),
   };
 }
 
-export default async function TestsGeneralPage({ searchParams }: Props) {
-  const { skill } = await searchParams;
-  return <TestsModuleCatalog examType="GENERAL" initialSkill={skill} />;
+/** Skill filter lives in client URL searchParams — keep page ISR-static. */
+export default async function TestsGeneralPage() {
+  return <TestsModuleCatalog examType="GENERAL" />;
 }

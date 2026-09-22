@@ -1,7 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Globe, Mail, MapPin, Phone } from "lucide-react";
-import { getTranslations } from "@/i18n/server";
+import { useTranslations } from "@/i18n/provider";
 
 /** Official / screenshot contact — update if campuses change. */
 const CONTACT = {
@@ -57,8 +59,8 @@ function SocialIcon({
   );
 }
 
-export async function SiteFooter() {
-  const { t } = await getTranslations("footer");
+export function SiteFooter() {
+  const { t } = useTranslations("footer");
 
   const cards = [
     {

@@ -4,13 +4,43 @@ import {
   loginWithEmailPassword,
   destroySession,
   getSessionUser,
+  canAccessAdmin,
 } from "@/lib/auth";
+import { getUserAvatarUrl } from "@/lib/user-profile";
 
 export const runtime = "nodejs";
 
 export async function GET() {
   const user = await getSessionUser();
-  return NextResponse.json({ user });
+  if (!user) {
+    return NextResponse.json(
+      { user: null, canImport: canAccessAdmin(null) },
+      {
+        headers: {
+          "Cache-Control": "private, no-store",
+        },
+      },
+    );
+  }
+
+  const avatarUrl = await getUserAvatarUrl(user.id);
+  return NextResponse.json(
+    {
+      user: {
+        id: user.id,
+        email: user.email,
+        username: user.username,
+        role: user.role,
+        avatarUrl,
+      },
+      canImport: canAccessAdmin(user),
+    },
+    {
+      headers: {
+        "Cache-Control": "private, no-store",
+      },
+    },
+  );
 }
 
 export async function POST(request: Request) {
@@ -37,7 +67,11 @@ export async function POST(request: Request) {
     }
 
     const user = await loginWithEmailPassword(identifier, password);
-    return NextResponse.json({ user });
+    const avatarUrl = await getUserAvatarUrl(user.id);
+    return NextResponse.json({
+      user: { ...user, avatarUrl },
+      canImport: canAccessAdmin(user),
+    });
   } catch (e) {
     if (e instanceof AuthError) {
       return NextResponse.json({ error: e.message }, { status: 401 });

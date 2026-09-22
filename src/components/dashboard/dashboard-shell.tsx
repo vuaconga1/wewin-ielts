@@ -196,6 +196,7 @@ export function DashboardShell({
               <Link
                 key={item.key}
                 href={item.href}
+                prefetch
                 onClick={() => setOpen(false)}
                 className={navClass(active === item.key, compact)}
                 title={compact ? item.label : undefined}
@@ -244,6 +245,7 @@ export function DashboardShell({
                   <Link
                     key={item.key}
                     href={item.href}
+                    prefetch
                     onClick={() => setOpen(false)}
                     className={navClass(active === item.key, compact)}
                     title={compact ? item.label : undefined}

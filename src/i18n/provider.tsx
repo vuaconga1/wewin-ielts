@@ -4,11 +4,12 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
+  useState,
   useTransition,
   type ReactNode,
 } from "react";
-import { useRouter } from "next/navigation";
 import {
   defaultLocale,
   isLocale,
@@ -17,6 +18,7 @@ import {
   localeToHtmlLang,
   type Locale,
 } from "./config";
+import { getMessages } from "./get-messages";
 import {
   createTranslator,
   type Messages,
@@ -43,28 +45,60 @@ function writeLocaleCookie(locale: Locale) {
   document.documentElement.lang = localeToHtmlLang(locale);
 }
 
+function readStoredLocale(): Locale | null {
+  try {
+    const fromLs = localStorage.getItem(LOCALE_COOKIE);
+    if (isLocale(fromLs)) return fromLs;
+  } catch {
+    /* ignore */
+  }
+  if (typeof document === "undefined") return null;
+  const match = document.cookie
+    .split(";")
+    .map((c) => c.trim())
+    .find((c) => c.startsWith(`${LOCALE_COOKIE}=`));
+  if (!match) return null;
+  const raw = match.slice(LOCALE_COOKIE.length + 1);
+  return isLocale(raw) ? raw : null;
+}
+
 type Props = {
   locale: Locale;
   messages: Messages;
   children: ReactNode;
 };
 
-export function I18nProvider({ locale, messages, children }: Props) {
-  const router = useRouter();
+export function I18nProvider({
+  locale: initialLocale,
+  messages: initialMessages,
+  children,
+}: Props) {
+  const [locale, setLocaleState] = useState<Locale>(initialLocale);
+  const [messages, setMessages] = useState<Messages>(initialMessages);
   const [isPending, startTransition] = useTransition();
+
+  // Bootstrap preferred locale from cookie/localStorage without forcing RSC dynamic.
+  useEffect(() => {
+    const stored = readStoredLocale();
+    if (!stored || stored === locale) return;
+    startTransition(() => {
+      setLocaleState(stored);
+      setMessages(getMessages(stored));
+      document.documentElement.lang = localeToHtmlLang(stored);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-only bootstrap
+  }, []);
 
   const t = useMemo(() => createTranslator(messages), [messages]);
 
-  const setLocale = useCallback(
-    (next: Locale) => {
-      if (!isLocale(next) || next === locale) return;
-      writeLocaleCookie(next);
-      startTransition(() => {
-        router.refresh();
-      });
-    },
-    [locale, router],
-  );
+  const setLocale = useCallback((next: Locale) => {
+    if (!isLocale(next)) return;
+    writeLocaleCookie(next);
+    startTransition(() => {
+      setLocaleState(next);
+      setMessages(getMessages(next));
+    });
+  }, []);
 
   const value = useMemo(
     () => ({ locale, messages, t, setLocale, isPending }),

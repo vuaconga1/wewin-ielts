@@ -8,7 +8,7 @@ import {
 import { TestsCatalog, type CatalogTest } from "@/components/tests/tests-catalog";
 import { SiteShell } from "@/components/layout/site-shell";
 import { EmptyState } from "@/components/ui/empty-state";
-import { getTranslations } from "@/i18n/server";
+import { getTranslationsStatic } from "@/i18n/server";
 import { buildSpeakingExamQueue } from "@/lib/practice/speaking-exam";
 
 function toCatalog(tests: Awaited<ReturnType<typeof listTests>>): CatalogTest[] {
@@ -45,7 +45,7 @@ export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
   const all = await listTests();
   const tests = all.filter((t) => normalizeExamType(t.examType) === examType);
   const catalog = toCatalog(tests);
-  const { t } = await getTranslations("tests");
+  const { t } = getTranslationsStatic("tests");
 
   const isAcademic = examType === "ACADEMIC";
   const moduleTitle = isAcademic

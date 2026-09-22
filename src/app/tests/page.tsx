@@ -3,19 +3,19 @@ import { listTests } from "@/lib/store/test-store";
 import { normalizeExamType } from "@/lib/tests/exam-type";
 import { TestsModulePicker } from "@/components/tests/tests-module-picker";
 import { SiteShell } from "@/components/layout/site-shell";
-import { getTranslations } from "@/i18n/server";
+import { getTranslationsStatic } from "@/i18n/server";
 
-/** Catalog counts change rarely; avoid force-dynamic on every request. */
-export const revalidate = 60;
+/** Catalog — ISR; shell session is client-hydrated (no cookies in RSC). */
+export const revalidate = 300;
 
 export async function generateMetadata() {
-  const { t } = await getTranslations();
+  const { t } = getTranslationsStatic();
   return { title: t("meta.tests") };
 }
 
 export default async function TestsPage() {
   const tests = await listTests();
-  const { t } = await getTranslations();
+  const { t } = getTranslationsStatic();
 
   let academicCount = 0;
   let generalCount = 0;

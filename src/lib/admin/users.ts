@@ -6,6 +6,7 @@
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { hashPassword } from "@/lib/auth";
+import { unstable_cache } from "next/cache";
 import {
   deleteLocalUser,
   findLocalUserByEmail,
@@ -104,25 +105,33 @@ function assertRole(role: string): asserts role is AdminUserRole {
 }
 
 export async function listAdminUsers(): Promise<AdminUserPublic[]> {
-  if (await canUsePrisma()) {
-    const users = await prisma.user.findMany({
-      orderBy: { createdAt: "desc" },
-      select: {
-        id: true,
-        email: true,
-        username: true,
-        role: true,
-        avatarUrl: true,
-        createdAt: true,
-      },
-    });
-    return users.map(toPublic);
-  }
+  return unstable_cache(
+    async () => {
+      if (await canUsePrisma()) {
+        const users = await prisma.user.findMany({
+          orderBy: { createdAt: "desc" },
+          take: 500,
+          select: {
+            id: true,
+            email: true,
+            username: true,
+            role: true,
+            avatarUrl: true,
+            createdAt: true,
+          },
+        });
+        return users.map(toPublic);
+      }
 
-  const local = await listLocalUsers();
-  return local
-    .map(localToPublic)
-    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+      const local = await listLocalUsers();
+      return local
+        .map(localToPublic)
+        .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+        .slice(0, 500);
+    },
+    ["admin-users-list"],
+    { revalidate: 15 },
+  )();
 }
 
 export async function createAdminUser(input: {

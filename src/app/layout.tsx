@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { getLocale } from "@/i18n/get-locale";
+import { defaultLocale, localeToHtmlLang } from "@/i18n/config";
 import { getMessages } from "@/i18n/get-messages";
-import { localeToHtmlLang } from "@/i18n/config";
 import { I18nProvider } from "@/i18n/provider";
 import { translate } from "@/i18n/translate";
 
@@ -17,28 +16,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
-  const messages = getMessages(locale);
-  return {
-    title: "Wewin IELTS",
-    description: translate(messages, "meta.siteDescription"),
-    icons: {
-      icon: [
-        { url: "/favicon.ico", sizes: "any" },
-        { url: "/icon.png", type: "image/png", sizes: "192x192" },
-      ],
-      apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-    },
-  };
-}
+/**
+ * Static root layout — no cookies()/headers() so catalog pages can ISR.
+ * Locale is default (vi) on the server; I18nProvider bootstraps cookie on client.
+ */
+export const metadata: Metadata = {
+  title: "Wewin IELTS",
+  description: translate(getMessages(defaultLocale), "meta.siteDescription"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+};
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const locale = await getLocale();
+  const locale = defaultLocale;
   const messages = getMessages(locale);
 
   return (

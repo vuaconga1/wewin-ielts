@@ -73,8 +73,8 @@ export function TestsCatalog({
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [skill, setSkill] = useState<(typeof SKILLS)[number]>(
-    parseSkill(initialSkill),
+  const [skill, setSkill] = useState<(typeof SKILLS)[number]>(() =>
+    parseSkill(initialSkill ?? searchParams.get("skill") ?? undefined),
   );
   const [query, setQuery] = useState("");
   const [tag, setTag] = useState("");
@@ -259,6 +259,7 @@ export function TestsCatalog({
                 <div className="mt-auto border-t border-zinc-200 pt-4">
                   <Link
                     href={`/tests/${row.slug}`}
+                    prefetch={false}
                     className="inline-block rounded-lg border border-wewin-navy px-4 py-2 text-sm font-medium text-wewin-navy hover:bg-wewin-accent-blue-bg"
                   >
                     {t("tests.detailCta", "Chi tiết / Làm bài")}
