@@ -4,6 +4,7 @@
 
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
+import { cache } from "react";
 import bcrypt from "bcryptjs";
 import { canUsePrisma, isDbConfigured } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
@@ -116,12 +117,13 @@ export async function destroySession(): Promise<void> {
   jar.delete(COOKIE_NAME);
 }
 
-export async function getSessionUser(): Promise<SessionUser | null> {
+/** Deduped within a single RSC/request (SiteShell + page both call this). */
+export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
   const jar = await cookies();
   const token = jar.get(COOKIE_NAME)?.value;
   if (!token) return null;
   return decodeSession(token);
-}
+});
 
 /** Require any logged-in user (STUDENT or ADMIN). */
 export async function requireUser(): Promise<SessionUser> {

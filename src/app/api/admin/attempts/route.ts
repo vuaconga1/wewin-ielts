@@ -30,7 +30,12 @@ export async function GET(request: Request) {
     });
 
     const result = await listAdminAttempts(filters);
-    return NextResponse.json(result);
+    return NextResponse.json(result, {
+      headers: {
+        // Auth-scoped; short private cache softens remount storms in admin UI.
+        "Cache-Control": "private, max-age=15, stale-while-revalidate=60",
+      },
+    });
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
     return NextResponse.json({ error: message }, { status: 500 });

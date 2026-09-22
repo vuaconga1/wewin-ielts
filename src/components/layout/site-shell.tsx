@@ -17,6 +17,9 @@ type Props = {
 /**
  * Shared app chrome: left sidebar (same as dashboard).
  * Practice exam routes should skip this shell for a focused UI.
+ *
+ * getSessionUser / getUserAvatarUrl are React.cache'd (+ avatar TTL) so one
+ * request does not duplicate cookie/DB work when the page also loads the user.
  */
 export async function SiteShell({ children, active, wide }: Props) {
   const user = await getSessionUser();

@@ -7,6 +7,7 @@
  * Writing/Speaking (no scoreRaw / no local score) are skipped.
  */
 
+import { unstable_cache } from "next/cache";
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { initialsFromName } from "@/lib/dashboard-stats";
@@ -35,6 +36,9 @@ export {
 
 export const POINTS_PER_CORRECT = 5;
 
+/** Server board cache TTL (seconds). */
+export const RANKING_REVALIDATE_SEC = 60;
+
 const VN_TZ = "Asia/Ho_Chi_Minh";
 
 type ScoredAttemptRow = {
@@ -49,6 +53,8 @@ type UserLite = {
   id: string;
   username: string;
 };
+
+type RankingBoard = Omit<RankingResult, "currentUser">;
 
 function vnParts(date: Date) {
   const parts = new Intl.DateTimeFormat("en-CA", {
@@ -161,10 +167,21 @@ function localAttemptToScored(
   };
 }
 
-async function loadPrismaScoredAttempts(): Promise<ScoredAttemptRow[]> {
+async function loadPrismaScoredAttempts(range: {
+  start: Date | null;
+  end: Date | null;
+}): Promise<ScoredAttemptRow[]> {
+  const finishedAtFilter: {
+    not: null;
+    gte?: Date;
+    lt?: Date;
+  } = { not: null };
+  if (range.start) finishedAtFilter.gte = range.start;
+  if (range.end) finishedAtFilter.lt = range.end;
+
   const attempts = await prisma.attempt.findMany({
     where: {
-      finishedAt: { not: null },
+      finishedAt: finishedAtFilter,
       userId: { not: null },
       scoreRaw: { not: null },
       test: { skill: { in: ["LISTENING", "READING"] } },
@@ -329,32 +346,40 @@ function aggregateEntries(
   }));
 }
 
-/** Server-side ranking for API + page. */
-export async function getRanking(query: RankingQuery = {}): Promise<RankingResult> {
+async function computeRankingBoard(
+  period: RankingPeriod,
+  year: number,
+  month: number,
+  day: number,
+): Promise<RankingBoard> {
   const now = new Date();
-  const { period, year, month, day } = resolveAnchor(query, now);
   const { start, end } = periodBounds(period, year, month, day);
 
   const userMap = await loadUserMap();
-  const localRows = await loadLocalScoredAttempts();
 
   let prismaRows: ScoredAttemptRow[] = [];
+  let usedPrisma = false;
   if (await canUsePrisma()) {
     try {
-      prismaRows = await loadPrismaScoredAttempts();
+      prismaRows = await loadPrismaScoredAttempts({ start, end });
+      usedPrisma = true;
     } catch {
       prismaRows = [];
     }
   }
 
-  const merged = mergeScoredAttempts(prismaRows, localRows);
-  const inPeriod = merged.filter((r) => inRange(r.finishedAt, start, end));
-  const entries = aggregateEntries(inPeriod, userMap);
+  // When Prisma is healthy, skip local FS scan (listAttempts + listTests) —
+  // that path was doubling DB/FS work on every ranking request.
+  const localRows = usedPrisma ? [] : await loadLocalScoredAttempts();
+  const merged = usedPrisma
+    ? prismaRows
+    : mergeScoredAttempts(prismaRows, localRows);
 
-  const currentUser =
-    query.currentUserId != null
-      ? (entries.find((e) => e.userId === query.currentUserId) ?? null)
-      : null;
+  // Prisma already filtered by range; local path still needs inRange.
+  const inPeriod = usedPrisma
+    ? merged
+    : merged.filter((r) => inRange(r.finishedAt, start, end));
+  const entries = aggregateEntries(inPeriod, userMap);
 
   return {
     period,
@@ -365,7 +390,50 @@ export async function getRanking(query: RankingQuery = {}): Promise<RankingResul
     rangeEnd: end?.toISOString() ?? null,
     updatedAt: now.toISOString(),
     entries,
+  };
+}
+
+function getCachedRankingBoard(
+  period: RankingPeriod,
+  year: number,
+  month: number,
+  day: number,
+): Promise<RankingBoard> {
+  return unstable_cache(
+    () => computeRankingBoard(period, year, month, day),
+    ["ranking-board", period, String(year), String(month), String(day)],
+    { revalidate: RANKING_REVALIDATE_SEC },
+  )();
+}
+
+/** Server-side ranking for API + page. Board is cached; currentUser is per-request. */
+export async function getRanking(query: RankingQuery = {}): Promise<RankingResult> {
+  const { period, year, month, day } = resolveAnchor(query);
+  const board = await getCachedRankingBoard(period, year, month, day);
+
+  const currentUser =
+    query.currentUserId != null
+      ? (board.entries.find((e) => e.userId === query.currentUserId) ?? null)
+      : null;
+
+  return {
+    ...board,
     currentUser,
+  };
+}
+
+/** Lightweight sidebar payload — reuses the same cached board. */
+export async function getMyRankSummary(
+  userId: string,
+  period: string | null = "all",
+): Promise<{ rank: number | null; points: number }> {
+  const result = await getRanking({
+    period: period ?? "all",
+    currentUserId: userId,
+  });
+  return {
+    rank: result.currentUser?.rank ?? null,
+    points: result.currentUser?.points ?? 0,
   };
 }
 

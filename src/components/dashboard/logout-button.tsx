@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { clearMyRankCache } from "@/lib/client/ranking-me";
 import { useTranslations } from "@/i18n/provider";
 
 type Props = {
@@ -18,6 +19,7 @@ export function LogoutButton({
   async function onLogout() {
     setPending(true);
     try {
+      clearMyRankCache();
       await fetch("/api/auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

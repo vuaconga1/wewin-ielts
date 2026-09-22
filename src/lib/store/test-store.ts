@@ -80,16 +80,28 @@ const testInclude = {
 } satisfies Prisma.TestInclude;
 
 /**
- * Catalog / home / ranking list — skip answerKey to avoid heavy joins.
- * Question stems stay for Speaking queue length on catalog cards.
+ * Catalog / home list — skip answerKey and section passage `content`
+ * (Reading passages are huge). Keep question content for Speaking queue sizing.
  */
 const testListInclude = {
   sections: {
-    include: {
-      questions: true,
+    select: {
+      title: true,
+      order: true,
+      questions: {
+        select: {
+          number: true,
+          order: true,
+          type: true,
+          content: true,
+          mediaUrl: true,
+        },
+      },
     },
   },
-  media: true,
+  media: {
+    select: { type: true, path: true },
+  },
 } satisfies Prisma.TestInclude;
 
 type PrismaTestList = Prisma.TestGetPayload<{ include: typeof testListInclude }>;
@@ -140,32 +152,38 @@ function prismaTestToStored(
     description: test.description ?? undefined,
     parts: [...test.sections]
       .sort((a, b) => a.order - b.order)
-      .map((section) => ({
-        title: section.title,
-        order: section.order,
-        content: section.content ?? undefined,
-        meta: metaRecord(section.meta),
-        questions: [...section.questions]
-          .sort((a, b) => a.order - b.order)
-          .map((q) => {
-            const withKey =
-              "answerKey" in q
-                ? (q as PrismaTestFull["sections"][number]["questions"][number])
-                : null;
-            return {
-              number: q.number,
-              order: q.order,
-              type: q.type,
-              content: contentRecord(q.content),
-              mediaUrl: q.mediaUrl ?? undefined,
-              correctAnswer: withKey?.answerKey?.correctAnswer ?? undefined,
-              acceptableAnswers: acceptableList(
-                withKey?.answerKey?.acceptableAnswers,
-              ),
-              explanation: withKey?.answerKey?.explanation ?? undefined,
-            };
-          }),
-      })),
+      .map((section) => {
+        const fullSection =
+          "content" in section && "meta" in section
+            ? (section as PrismaTestFull["sections"][number])
+            : null;
+        return {
+          title: section.title,
+          order: section.order,
+          content: fullSection?.content ?? undefined,
+          meta: fullSection ? metaRecord(fullSection.meta) : undefined,
+          questions: [...section.questions]
+            .sort((a, b) => a.order - b.order)
+            .map((q) => {
+              const withKey =
+                "answerKey" in q
+                  ? (q as PrismaTestFull["sections"][number]["questions"][number])
+                  : null;
+              return {
+                number: q.number,
+                order: q.order,
+                type: q.type,
+                content: contentRecord(q.content),
+                mediaUrl: q.mediaUrl ?? undefined,
+                correctAnswer: withKey?.answerKey?.correctAnswer ?? undefined,
+                acceptableAnswers: acceptableList(
+                  withKey?.answerKey?.acceptableAnswers,
+                ),
+                explanation: withKey?.answerKey?.explanation ?? undefined,
+              };
+            }),
+        };
+      }),
     audioFiles: audioFiles.length ? audioFiles : undefined,
     savedAt: test.updatedAt.toISOString(),
   };
@@ -670,14 +688,25 @@ export async function listAttempts(options?: {
   userId?: string;
 }): Promise<StoredAttempt[]> {
   const fromDb = await listAttemptsFromPrisma(options);
-  const fromFs = await listAttemptsFromFs(options);
 
-  if (!fromDb) return fromFs;
+  // Prisma OK → skip scanning local attempt JSON (expensive; double work on Neon).
+  // On Vercel FS is ephemeral anyway; locally dual-write is best-effort only.
+  if (fromDb) {
+    if (isVercel) return fromDb;
+    // Dev: still merge FS for any pre-DB local attempts, but do not block on empty FS.
+    try {
+      const fromFs = await listAttemptsFromFs(options);
+      if (!fromFs.length) return fromDb;
+      const byId = new Map<string, StoredAttempt>();
+      for (const a of fromFs) byId.set(a.id, a);
+      for (const a of fromDb) byId.set(a.id, a); // Prisma wins
+      return [...byId.values()].sort((a, b) =>
+        a.startedAt < b.startedAt ? 1 : -1,
+      );
+    } catch {
+      return fromDb;
+    }
+  }
 
-  const byId = new Map<string, StoredAttempt>();
-  for (const a of fromFs) byId.set(a.id, a);
-  for (const a of fromDb) byId.set(a.id, a); // Prisma wins
-  return [...byId.values()].sort((a, b) =>
-    a.startedAt < b.startedAt ? 1 : -1,
-  );
+  return listAttemptsFromFs(options);
 }

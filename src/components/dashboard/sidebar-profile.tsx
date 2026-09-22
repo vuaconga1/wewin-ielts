@@ -6,6 +6,10 @@ import { useEffect, useState } from "react";
 import { Camera, LogOut, Trophy, User } from "lucide-react";
 import { AvatarPickerModal } from "@/components/dashboard/avatar-picker-modal";
 import { LogoutButton } from "@/components/dashboard/logout-button";
+import {
+  clearMyRankCache,
+  fetchMyRank,
+} from "@/lib/client/ranking-me";
 import { formatPoints } from "@/lib/ranking-shared";
 import { useTranslations } from "@/i18n/provider";
 
@@ -59,24 +63,25 @@ export function SidebarProfile({
 
   useEffect(() => {
     if (!user) {
+      clearMyRankCache();
       setRank({ rank: null, points: 0, loading: false });
       return;
     }
+    // Compact rail does not show rank — skip network (desktop + mobile still share cache).
+    if (compact) {
+      setRank((prev) => ({ ...prev, loading: false }));
+      return;
+    }
+
     let cancelled = false;
     setRank((prev) => ({ ...prev, loading: true }));
 
-    fetch("/api/ranking?period=all")
-      .then(async (res) => {
-        if (!res.ok) throw new Error("RANK_FETCH_FAILED");
-        return res.json() as Promise<{
-          currentUser: { rank: number; points: number } | null;
-        }>;
-      })
+    fetchMyRank(user.username)
       .then((data) => {
         if (cancelled) return;
         setRank({
-          rank: data.currentUser?.rank ?? null,
-          points: data.currentUser?.points ?? 0,
+          rank: data.rank,
+          points: data.points,
           loading: false,
         });
       })
@@ -88,11 +93,12 @@ export function SidebarProfile({
     return () => {
       cancelled = true;
     };
-  }, [user?.username]);
+  }, [user?.username, compact]);
 
   async function onLogout() {
     setLogoutPending(true);
     try {
+      clearMyRankCache();
       await fetch("/api/auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

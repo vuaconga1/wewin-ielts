@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getSessionUser } from "@/lib/auth";
 import { practicePath } from "@/lib/practice/paths";
-import { listAttempts, getTestBySlug } from "@/lib/store/test-store";
+import { listAttempts, listTests } from "@/lib/store/test-store";
 import { SiteShell } from "@/components/layout/site-shell";
 import { EmptyState } from "@/components/ui/empty-state";
 import { getTranslations, getLocale } from "@/i18n/server";
@@ -25,14 +25,20 @@ export default async function AccountAttemptsPage() {
   const locale = await getLocale();
   const intlLocale = localeToIntl(locale);
 
-  const attempts = await listAttempts({ userId: user.id });
+  const [attempts, tests] = await Promise.all([
+    listAttempts({ userId: user.id }),
+    listTests(),
+  ]);
+  const testBySlug = new Map(tests.map((t) => [t.slug, t]));
 
-  const rows = await Promise.all(
-    attempts.map(async (a) => {
-      const test = await getTestBySlug(a.testSlug);
-      return { attempt: a, title: test?.title ?? a.testSlug, skill: test?.skill };
-    }),
-  );
+  const rows = attempts.map((a) => {
+    const test = testBySlug.get(a.testSlug);
+    return {
+      attempt: a,
+      title: test?.title ?? a.testSlug,
+      skill: test?.skill,
+    };
+  });
 
   return (
     <SiteShell active="attempts">
