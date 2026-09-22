@@ -1,0 +1,53 @@
+{
+  "title": "Test 3 - Writing",
+  "slug": "test-3-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 3",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task\n\nThe diagram below illustrates the production process of olive oil.\nSummarize the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words",
+      "meta": {
+        "imageUrl": "/uploads/writing/test-3-task1-diagram.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nThe diagram below illustrates the production process of olive oil.\nSummarize the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-3-task1-diagram.png"
+          },
+          "mediaUrl": "/uploads/writing/test-3-task1-diagram.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nSome people say it is more important to plant trees in the open spaces in towns and cities than to build more housing.\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nSome people say it is more important to plant trees in the open spaces in towns and cities than to build more housing.\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T00:32:18.202Z"
+}

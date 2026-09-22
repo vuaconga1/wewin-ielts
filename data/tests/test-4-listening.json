@@ -1,0 +1,841 @@
+{
+  "title": "Test 4 - Listening",
+  "slug": "test-4-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 4",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nCampsitesWesterly CampsiteCampsite for families with children under 12\nLocation: near the 1 ........\nSpecial attraction for children: the 2 ........\nA local farmer sells 3 ........\nCampers are allowed to have a 4 ........\nCost per night: 5 £ ........ for a family\nSnetton Forest CampsiteCost per night: £5 per adult (children free)\nRecommended for people who like 6 ........\nCampers can hire a 7 ........\nActivity organised for children: 8 ........\nTrent Valley CampsiteBetter month for families to go: 9 ........\nHas an outdoor 10 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-4-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "sea"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "animals"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "eggs"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "fire"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "15.75"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "fishing"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "bike"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "football"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "July"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "pool"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\n\nQuestions 11-16\n\nChoose the correct letter, A, B or C.\n\n11 What is the most important attitude towards making mistakes according to Arthur?\n\nA Mistakes are inevitable.\n\nB Mistakes can be a chance to learn\n\nC Mistakes can cause serious consequences.\n\n12 What's true about self-confidence according to Arthur?\n\nA self-confidence sometimes leads to failure\n\nB It means being ambitious with what you do\n\nC Self-confidence can be gained through reading\n\n13 What advice does Arthur give to new business leaders?\n\nA Read business journals\n\nB try new things\n\nC Keep their aims\n\n14 How does Arthur deal with difficult problems?\n\nA Ask for advice from friends\n\nB Seek help from experts\n\nC Try to get advice from books\n\n15 What's the common quality of leaders?\n\nA Have good public speaking skills\n\nB Solve all problems skillfully\n\nC be respected by the workforce\n\n16 How should companies take risks?\n\nA deal with them carefully\n\nB be financially advantageous\n\nC think in the long run\n\nQuestions 17-18\n\nChoose TWO letters, A-E.\n\nWhich TWO factors are important when starting a business?\n\nA. fix realistic prices\n\nB. create products better than the competitors'\n\nC. be committed\n\nD. pay attention to detail\n\nE. apply complete strategy\n\nQuestions 19-20\n\nChoose TWO letters, A-E.\n\nWhich TWO kinds of support are important for Arthur?\n\nA. family support\n\nB. good business advice with new ideas\n\nC. support of the bank loan\n\nD. friends' support\n\nE. governmental funding",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-4-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the most important attitude towards making mistakes according to Arthur?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Mistakes are inevitable."
+              },
+              {
+                "label": "B",
+                "text": "Mistakes can be a chance to learn"
+              },
+              {
+                "label": "C",
+                "text": "Mistakes can cause serious consequences."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What's true about self-confidence according to Arthur?",
+            "options": [
+              {
+                "label": "A",
+                "text": "self-confidence sometimes leads to failure"
+              },
+              {
+                "label": "B",
+                "text": "It means being ambitious with what you do"
+              },
+              {
+                "label": "C",
+                "text": "Self-confidence can be gained through reading"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What advice does Arthur give to new business leaders?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Read business journals"
+              },
+              {
+                "label": "B",
+                "text": "try new things"
+              },
+              {
+                "label": "C",
+                "text": "Keep their aims"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does Arthur deal with difficult problems?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Ask for advice from friends"
+              },
+              {
+                "label": "B",
+                "text": "Seek help from experts"
+              },
+              {
+                "label": "C",
+                "text": "Try to get advice from books"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What's the common quality of leaders?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Have good public speaking skills"
+              },
+              {
+                "label": "B",
+                "text": "Solve all problems skillfully"
+              },
+              {
+                "label": "C",
+                "text": "be respected by the workforce"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How should companies take risks?",
+            "options": [
+              {
+                "label": "A",
+                "text": "deal with them carefully"
+              },
+              {
+                "label": "B",
+                "text": "be financially advantageous"
+              },
+              {
+                "label": "C",
+                "text": "think in the long run"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO factors are important when starting a business?",
+            "options": [
+              {
+                "label": "A",
+                "text": "fix realistic prices"
+              },
+              {
+                "label": "B",
+                "text": "create products better than the competitors'"
+              },
+              {
+                "label": "C",
+                "text": "be committed"
+              },
+              {
+                "label": "D",
+                "text": "pay attention to detail"
+              },
+              {
+                "label": "E",
+                "text": "apply complete strategy"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              17,
+              18
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 17
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO kinds of support are important for Arthur?",
+            "options": [
+              {
+                "label": "A",
+                "text": "family support"
+              },
+              {
+                "label": "B",
+                "text": "good business advice with new ideas"
+              },
+              {
+                "label": "C",
+                "text": "support of the bank loan"
+              },
+              {
+                "label": "D",
+                "text": "friends' support"
+              },
+              {
+                "label": "E",
+                "text": "governmental funding"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              19,
+              20
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 19
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\n\nQuestions 21-24\n\nChoose the correct letter, A, B or C\n\nDolphin presentation\n\n21 What is the students' purpose in mentioning the way dolphins make sounds?\n\nA to show comparison with human speech\n\nB to show the unusual anatomy of a dolphin's head\n\nC to show recent developments in understanding the meaning of the sounds\n\n22 According to Fran, Hector's dolphins are unaffected by\n\nA tourist numbers.\n\nB the threat from fishing nets.\n\nC their slow breeding rate.\n\n23 The New Zealand Government set up a marine sanctuary\n\nA because of public pressure.\n\nB as a result of scientific research.\n\nC to protect a dolphin feeding ground.\n\n24 Where is the largest population of Hector's dolphins in New Zealand?\n\nA the east coast\n\nB Southland\n\nC the west coast\n\nQuestions 25-30\n\nWrite the correct letter, A-H\n\nWhich special characteristic does each of the following types of dolphin have?\n\nSpecial characteristics\nA swim along behind boats\nB swim in unusually large groups\nC live along New Zealand's entire coastline\nD swim beneath slow-moving boats\nE tend to be solitary\nF live only off New Zealand's northwest coast\nG are the second largest dolphin species in New Zealand\nH are seen mostly in Kaikoura\n\nTypes of dolphin\n\n25 Common dolphins\n\n26 Dusky dolphins\n\n27 Hector's dolphins\n\n28 Maui's dolphins\n\n29 Orcas\n\n30 Bottle-nose dolphins",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-4-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the students' purpose in mentioning the way dolphins make sounds?",
+            "options": [
+              {
+                "label": "A",
+                "text": "to show comparison with human speech"
+              },
+              {
+                "label": "B",
+                "text": "to show the unusual anatomy of a dolphin's head"
+              },
+              {
+                "label": "C",
+                "text": "to show recent developments in understanding the meaning of the sounds"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to Fran, Hector's dolphins are unaffected by",
+            "options": [
+              {
+                "label": "A",
+                "text": "tourist numbers."
+              },
+              {
+                "label": "B",
+                "text": "the threat from fishing nets."
+              },
+              {
+                "label": "C",
+                "text": "their slow breeding rate."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The New Zealand Government set up a marine sanctuary",
+            "options": [
+              {
+                "label": "A",
+                "text": "because of public pressure."
+              },
+              {
+                "label": "B",
+                "text": "as a result of scientific research."
+              },
+              {
+                "label": "C",
+                "text": "to protect a dolphin feeding ground."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Where is the largest population of Hector's dolphins in New Zealand?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the east coast"
+              },
+              {
+                "label": "B",
+                "text": "Southland"
+              },
+              {
+                "label": "C",
+                "text": "the west coast"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Common dolphins",
+            "options": [
+              {
+                "label": "A",
+                "text": "swim along behind boats"
+              },
+              {
+                "label": "B",
+                "text": "swim in unusually large groups"
+              },
+              {
+                "label": "C",
+                "text": "live along New Zealand's entire coastline"
+              },
+              {
+                "label": "D",
+                "text": "swim beneath slow-moving boats"
+              },
+              {
+                "label": "E",
+                "text": "tend to be solitary"
+              },
+              {
+                "label": "F",
+                "text": "live only off New Zealand's northwest coast"
+              },
+              {
+                "label": "G",
+                "text": "are the second largest dolphin species in New Zealand"
+              },
+              {
+                "label": "H",
+                "text": "are seen mostly in Kaikoura"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Dusky dolphins",
+            "options": [
+              {
+                "label": "A",
+                "text": "swim along behind boats"
+              },
+              {
+                "label": "B",
+                "text": "swim in unusually large groups"
+              },
+              {
+                "label": "C",
+                "text": "live along New Zealand's entire coastline"
+              },
+              {
+                "label": "D",
+                "text": "swim beneath slow-moving boats"
+              },
+              {
+                "label": "E",
+                "text": "tend to be solitary"
+              },
+              {
+                "label": "F",
+                "text": "live only off New Zealand's northwest coast"
+              },
+              {
+                "label": "G",
+                "text": "are the second largest dolphin species in New Zealand"
+              },
+              {
+                "label": "H",
+                "text": "are seen mostly in Kaikoura"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Hector's dolphins",
+            "options": [
+              {
+                "label": "A",
+                "text": "swim along behind boats"
+              },
+              {
+                "label": "B",
+                "text": "swim in unusually large groups"
+              },
+              {
+                "label": "C",
+                "text": "live along New Zealand's entire coastline"
+              },
+              {
+                "label": "D",
+                "text": "swim beneath slow-moving boats"
+              },
+              {
+                "label": "E",
+                "text": "tend to be solitary"
+              },
+              {
+                "label": "F",
+                "text": "live only off New Zealand's northwest coast"
+              },
+              {
+                "label": "G",
+                "text": "are the second largest dolphin species in New Zealand"
+              },
+              {
+                "label": "H",
+                "text": "are seen mostly in Kaikoura"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Maui's dolphins",
+            "options": [
+              {
+                "label": "A",
+                "text": "swim along behind boats"
+              },
+              {
+                "label": "B",
+                "text": "swim in unusually large groups"
+              },
+              {
+                "label": "C",
+                "text": "live along New Zealand's entire coastline"
+              },
+              {
+                "label": "D",
+                "text": "swim beneath slow-moving boats"
+              },
+              {
+                "label": "E",
+                "text": "tend to be solitary"
+              },
+              {
+                "label": "F",
+                "text": "live only off New Zealand's northwest coast"
+              },
+              {
+                "label": "G",
+                "text": "are the second largest dolphin species in New Zealand"
+              },
+              {
+                "label": "H",
+                "text": "are seen mostly in Kaikoura"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Orcas",
+            "options": [
+              {
+                "label": "A",
+                "text": "swim along behind boats"
+              },
+              {
+                "label": "B",
+                "text": "swim in unusually large groups"
+              },
+              {
+                "label": "C",
+                "text": "live along New Zealand's entire coastline"
+              },
+              {
+                "label": "D",
+                "text": "swim beneath slow-moving boats"
+              },
+              {
+                "label": "E",
+                "text": "tend to be solitary"
+              },
+              {
+                "label": "F",
+                "text": "live only off New Zealand's northwest coast"
+              },
+              {
+                "label": "G",
+                "text": "are the second largest dolphin species in New Zealand"
+              },
+              {
+                "label": "H",
+                "text": "are seen mostly in Kaikoura"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Bottle-nose dolphins",
+            "options": [
+              {
+                "label": "A",
+                "text": "swim along behind boats"
+              },
+              {
+                "label": "B",
+                "text": "swim in unusually large groups"
+              },
+              {
+                "label": "C",
+                "text": "live along New Zealand's entire coastline"
+              },
+              {
+                "label": "D",
+                "text": "swim beneath slow-moving boats"
+              },
+              {
+                "label": "E",
+                "text": "tend to be solitary"
+              },
+              {
+                "label": "F",
+                "text": "live only off New Zealand's northwest coast"
+              },
+              {
+                "label": "G",
+                "text": "are the second largest dolphin species in New Zealand"
+              },
+              {
+                "label": "H",
+                "text": "are seen mostly in Kaikoura"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\n\nQuestions 31 – 34\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nRecycling Tyres in Australia\n\nBackground\n\nMore than 1.5 million tyres dumped in Australia per 31 ........\n\nPrevious recycling attempts failed because:\n\nthere were pollution problems – smoke from burning\nrecycling companies didn't make any 32 ........\n\nAdvantages of Molectra's process\n\nMore economical because smaller machines are used\nLess maintenance – tyres softened before shredding\nNo limit on the 33 ........ of tyres recycled\n\nThe Future\n\nTen more factories being built\nPlans to spend 5% of income each year on 34 ........\n\nQuestions 35 – 40\n\nComplete the flow chart below.\n\nWrite ONE WORD ONLY for each answer.\n\nRECYCLYING TYRES\n\n| Process | | Possible Uses |\n| --- | --- | --- |\n| Removal of steel 35 ........ from tyre rim || Steel pellets used in industry |\n| ↓ | | |\n| Chemicals applied to get rid of 36 ........ and soften rubber | | |\n| ↓ | | |\n| Fibres, e.g. nylon, removed || * Strengthening concrete\n* Sheets made of 37 ........ |\n| ↓ | | |\n| Tyres cut up into crumb rubber || * Asphalt for roads\n* Insulation\n* 38 ........ tiles |\n| ↓ | | |\n| The MolectraVac machine microwaves rubber into hydrocarbon || i) Used for activated carbon\n* 39 ........ treatment\n* air filtration\nii) Used for carbon black\n* batteries\n* 40 ........\niii) Oil used for electricity |",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-4-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "month"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "profit"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "size"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "research"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "wires"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "dirt"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "plastic"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "floor"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "water"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "ink"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-4-section-1.mp3",
+    "/uploads/audio/test-4-section-2.mp3",
+    "/uploads/audio/test-4-section-3.mp3",
+    "/uploads/audio/test-4-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T00:37:42.901Z"
+}

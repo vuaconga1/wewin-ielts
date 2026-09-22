@@ -1,8 +1,25 @@
 import Link from "next/link";
-import { DriveSyncForm } from "@/components/admin/drive-sync-form";
-import { ImportForm } from "@/components/admin/import-form";
+import nextDynamic from "next/dynamic";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getTranslations } from "@/i18n/server";
+
+const DriveSyncForm = nextDynamic(
+  () =>
+    import("@/components/admin/drive-sync-form").then((m) => m.DriveSyncForm),
+  {
+    loading: () => (
+      <div className="h-32 animate-pulse rounded-lg bg-zinc-100" aria-hidden />
+    ),
+  },
+);
+const ImportForm = nextDynamic(
+  () => import("@/components/admin/import-form").then((m) => m.ImportForm),
+  {
+    loading: () => (
+      <div className="h-48 animate-pulse rounded-lg bg-zinc-100" aria-hidden />
+    ),
+  },
+);
 
 export async function generateMetadata() {
   const { t } = await getTranslations();

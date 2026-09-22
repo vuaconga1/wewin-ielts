@@ -1,7 +1,7 @@
 import { TestsModuleCatalog } from "@/components/tests/tests-module-catalog";
 import { getTranslations } from "@/i18n/server";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 type Props = {
   searchParams: Promise<{ skill?: string }>;

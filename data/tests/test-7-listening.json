@@ -1,0 +1,592 @@
+{
+  "title": "Test 7 - Listening",
+  "slug": "test-7-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 7",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-6\n\nComplete the table.\n\nWrite ONE WORD ONLY for each answer.\n\n| | Example Name of new tenant: Anders | |\n| --- | --- | --- |\n| | Good Points About Him | Bad Points About Him |\n| Behaviour | He is 1 ........ | He is 2 ........ |\n| His Friends | His friends visit 3 ........ | They 4 ........ |\n| Other | He pays rent 5 ........ | He doesn’t 6 ........ |\n\nQuestions 7-10\n\nComplete the notes.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\nIssues to DiscussCommunication: 7 ........\nFriends: 8 ........\nCigarettes: 9 ........\nCleaning: must 10 ........",
+      "meta": {},
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "quite"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "impolite"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "rarely"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "smoke"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "promptly"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "co-operate"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "attend meeting"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "follow rules"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "strictly forbidden"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "be done"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-17\n\nComplete the sentences.\n\nWrite ONE WORD ONLY for each answer.\n\nIt is important for everyone to know simple first aid 11 ........\n\nAfter an accident, one must firstly be aware of 12 ........\n\nAfter that, the first-aider must 13 ........\n\nClearing of airways may not happen when patients are 14 ........\n\nThe mouth must be checked for 15 ........\n\nCPR must be done if breathing is absent or 16 ........\n\nCPR must be done up to the arrival of 17 ........\n\nQuestions 18-20\n\nChoose THREE answers from the list and write the correct letter, A—G, next to the questions.\n\nWhich THREE pieces of advice does the first-aid officer say are most important?\n\nA. Have proper equipment\n\nB. Give regular first-aid training\n\nC. Have a safety officer\n\nD. Instil safe behaviour\n\nE. Put posters on walls\n\nF. Have safety meetings\n\nG. Have first-aid boxes\n\n18 ........\n\n19 ........\n\n20 ........",
+      "meta": {},
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "steps"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "danger"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "respond"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "unconscious"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "blockages"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "irregular"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "medics"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which THREE pieces of advice does the first-aid officer say are most important?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Have proper equipment"
+              },
+              {
+                "label": "B",
+                "text": "Give regular first-aid training"
+              },
+              {
+                "label": "C",
+                "text": "Have a safety officer"
+              },
+              {
+                "label": "D",
+                "text": "Instil safe behaviour"
+              },
+              {
+                "label": "E",
+                "text": "Put posters on walls"
+              },
+              {
+                "label": "F",
+                "text": "Have safety meetings"
+              },
+              {
+                "label": "G",
+                "text": "Have first-aid boxes"
+              }
+            ],
+            "selectCount": 3,
+            "covers": [
+              18,
+              19,
+              20
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 18
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 18
+          },
+          "correctAnswer": "F"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-25\n\nChoose the correct letter, A, B, or C.\n\n21. Nicole received the best information from the\n\nA. staff\nB. students\nC. cleaners\n\n22. The product used most wastefully was\n\nA. copying paper\nB. plastic\nC. paper plates and cups\n\n23. The proportion of interviewed people who expressed concern over waste was\n\nA. 30%\nB. 45%\nC. 55%\n\n24. The proportion who claim they take action over this problem was\n\nA. 10%\nB. one third\nC. one half\n\n25. Nicole thinks many people do nothing because they are\n\nA. lazy\nB. uncaring\nC. uninformed\n\nQuestions 26-30\n\nComplete the flowchart.\n\nWrite ONE WORD ONLY for each answer.\n\nProcedure to Reduce Copying Waste\n\n26 ........ that the staff do double-sided copying.\n\n↓\n\nUnwanted copies are 27 ........ into a special recycling tray.\n\n↓\n\n28 ........ these clearly, for easy reuse.\n\n↓\n\nStack them in a special copying tray each morning.\n\n↓\n\n29 ........ codes which allow each user to access this tray.\n\n↓\n\nGive the highest users a 30 ........ (e.g. cinema tickets).",
+      "meta": {},
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Nicole received the best information from the",
+            "options": [
+              {
+                "label": "A",
+                "text": "staff"
+              },
+              {
+                "label": "B",
+                "text": "students"
+              },
+              {
+                "label": "C",
+                "text": "cleaners"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The product used most wastefully was",
+            "options": [
+              {
+                "label": "A",
+                "text": "copying paper"
+              },
+              {
+                "label": "B",
+                "text": "plastic"
+              },
+              {
+                "label": "C",
+                "text": "paper plates and cups"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The proportion of interviewed people who expressed concern over waste was",
+            "options": [
+              {
+                "label": "A",
+                "text": "30%"
+              },
+              {
+                "label": "B",
+                "text": "45%"
+              },
+              {
+                "label": "C",
+                "text": "55%"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The proportion who claim they take action over this problem was",
+            "options": [
+              {
+                "label": "A",
+                "text": "10%"
+              },
+              {
+                "label": "B",
+                "text": "one third"
+              },
+              {
+                "label": "C",
+                "text": "one half"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Nicole thinks many people do nothing because they are",
+            "options": [
+              {
+                "label": "A",
+                "text": "lazy"
+              },
+              {
+                "label": "B",
+                "text": "uncaring"
+              },
+              {
+                "label": "C",
+                "text": "uninformed"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "ensure"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "deposited"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "display"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "distribute"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "reward"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-33\n\nChoose the correct letter, A, B, or C.\n\n31. Society cannot\n\nA. find more coal and oil.\nB. reduce waste C02.\nC. take C02 from power stations.\n\n32. Turning carbon dioxide into a solid\n\nA. is slow but practical.\nB. can be made faster.\nC. cannot happen naturally.\n\n33. Seawater\n\nA. has lots of carbonic acid.\nB. has closely connected types of life.\nC. is highly acidic.\n\nQuestions 34-40\n\nComplete the table.\n\nWrite NO MORE THAN TWO WORDS OR A NUMBER for each answer.\n\nThree Problems of Geosequestration\n\n| Risk of leaks | Cost | 34 ........ still not proven |\n| --- | --- | --- |\n| Gas would become 35 ........ | expensive, particularly the 36 ........ | Require the plant to burn 37 ........ of its coal |\n| ↓ | ↓ | ↓ |\n| risk of widespread 38 ........ | Price of electricity could 39 ........ | release of more Sulphur, ash, and 40 ........ |",
+      "meta": {},
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Society cannot",
+            "options": [
+              {
+                "label": "A",
+                "text": "find more coal and oil."
+              },
+              {
+                "label": "B",
+                "text": "reduce waste C02."
+              },
+              {
+                "label": "C",
+                "text": "take C02 from power stations."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Turning carbon dioxide into a solid",
+            "options": [
+              {
+                "label": "A",
+                "text": "is slow but practical."
+              },
+              {
+                "label": "B",
+                "text": "can be made faster."
+              },
+              {
+                "label": "C",
+                "text": "cannot happen naturally."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Seawater",
+            "options": [
+              {
+                "label": "A",
+                "text": "has lots of carbonic acid."
+              },
+              {
+                "label": "B",
+                "text": "has closely connected types of life."
+              },
+              {
+                "label": "C",
+                "text": "is highly acidic."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "effectiveness"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "(a) liquid"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "pipework"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "a quarter",
+          "acceptableAnswers": [
+            "one quarter",
+            "one-quarter",
+            "¼",
+            "1/4"
+          ]
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "suffocation"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "(almost) double"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "heavy metals"
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T04:04:21.842Z"
+}

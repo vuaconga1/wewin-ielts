@@ -1,0 +1,788 @@
+{
+  "title": "Test 13 - Listening",
+  "slug": "test-13-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 13",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\nQuestions 1-5\nComplete the notes.\nWrite NO MORE THAN TWO WORDS AND/OR NUMBERS for each answer.\nBasic Details of Project\nExample: Pre-phase\ninvolves selecting rooms & 1 ........\nPhase 1:\n• time needed: 3 days\n• staff involved: Jenna, Marco, & 2 ........\nPhase 2:\n• time needed: 3 ........\n• staff involved: 4 ........, with assistance from 5 ........\n\nQuestions 6-10\nChoose the correct letter, A, B, or C.\n6. The main form of data collection will be\nA. questionnaires.\nB. Internet polling.\nC. face-to-face interviews.\n7. To finish in time, the staff will have to\nA. work late.\nB. come in early.\nC. take some work home.\n8. The final report will contain\nA. three appendices.\nB. material from the company website.\nC. a supplementary booklet.\n9. The final report will be handed in on the\nA. 5th.\nB. 15th.\nC. 25th.\n10. At the end, there will be\nA. an office party.\nB. a restaurant dinner.\nC. presents for all involved.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-13-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "equipment"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Fred"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "6 days",
+          "acceptableAnswers": [
+            "six days",
+            "6"
+          ]
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Mike"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Leo"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The main form of data collection will be",
+            "options": [
+              {
+                "label": "A",
+                "text": "questionnaires."
+              },
+              {
+                "label": "B",
+                "text": "Internet polling."
+              },
+              {
+                "label": "C",
+                "text": "face-to-face interviews."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "To finish in time, the staff will have to",
+            "options": [
+              {
+                "label": "A",
+                "text": "work late."
+              },
+              {
+                "label": "B",
+                "text": "come in early."
+              },
+              {
+                "label": "C",
+                "text": "take some work home."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The final report will contain",
+            "options": [
+              {
+                "label": "A",
+                "text": "three appendices."
+              },
+              {
+                "label": "B",
+                "text": "material from the company website."
+              },
+              {
+                "label": "C",
+                "text": "a supplementary booklet."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The final report will be handed in on the",
+            "options": [
+              {
+                "label": "A",
+                "text": "5th."
+              },
+              {
+                "label": "B",
+                "text": "15th."
+              },
+              {
+                "label": "C",
+                "text": "25th."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "At the end, there will be",
+            "options": [
+              {
+                "label": "A",
+                "text": "an office party."
+              },
+              {
+                "label": "B",
+                "text": "a restaurant dinner."
+              },
+              {
+                "label": "C",
+                "text": "presents for all involved."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\nQuestions 11-15\nComplete the repair schedule.\nWrite the correct letter, A-F, for each answer.\nProblems to Fix\nA\nBirds in ceiling\nB\nBroken windows\nC\nElectrical fault\nD\nFallen tree\nE\nLeaking roof\nF\nStaining on walls\n\n11. 8 am – noon\n12. noon – 2 pm\n13. 2 pm – 3 pm\n14. 3 pm – 4 pm\n15. 4 pm – 5 pm\nQuestions 16-20\nComplete the sentences.\nWrite NO MORE THAN TWO WORDS for each answer.\nAdditional Details Concerning Repairs\nThe stained walls will be painted 16 ........\nExtra paint will be left in the 17 ........\nThe baby birds will be given to a 18 ........\nThe fallen tree will be used as 19 ........\nThe smaller parts of the tree will be put in a 20 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-13-section-2.mp3",
+        "imageUrl": "/uploads/images/test-13-listening-img1.png",
+        "mediaUrl": "/uploads/images/test-13-listening-img1.png"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "8 am – noon",
+            "options": [
+              {
+                "label": "A",
+                "text": "Birds in ceiling"
+              },
+              {
+                "label": "B",
+                "text": "Broken windows"
+              },
+              {
+                "label": "C",
+                "text": "Electrical fault"
+              },
+              {
+                "label": "D",
+                "text": "Fallen tree"
+              },
+              {
+                "label": "E",
+                "text": "Leaking roof"
+              },
+              {
+                "label": "F",
+                "text": "Staining on walls"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-13-listening-img1.png"
+          },
+          "correctAnswer": "E",
+          "mediaUrl": "/uploads/images/test-13-listening-img1.png"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "noon – 2 pm",
+            "options": [
+              {
+                "label": "A",
+                "text": "Birds in ceiling"
+              },
+              {
+                "label": "B",
+                "text": "Broken windows"
+              },
+              {
+                "label": "C",
+                "text": "Electrical fault"
+              },
+              {
+                "label": "D",
+                "text": "Fallen tree"
+              },
+              {
+                "label": "E",
+                "text": "Leaking roof"
+              },
+              {
+                "label": "F",
+                "text": "Staining on walls"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-13-listening-img1.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-13-listening-img1.png"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "2 pm – 3 pm",
+            "options": [
+              {
+                "label": "A",
+                "text": "Birds in ceiling"
+              },
+              {
+                "label": "B",
+                "text": "Broken windows"
+              },
+              {
+                "label": "C",
+                "text": "Electrical fault"
+              },
+              {
+                "label": "D",
+                "text": "Fallen tree"
+              },
+              {
+                "label": "E",
+                "text": "Leaking roof"
+              },
+              {
+                "label": "F",
+                "text": "Staining on walls"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-13-listening-img1.png"
+          },
+          "correctAnswer": "D",
+          "mediaUrl": "/uploads/images/test-13-listening-img1.png"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "3 pm – 4 pm",
+            "options": [
+              {
+                "label": "A",
+                "text": "Birds in ceiling"
+              },
+              {
+                "label": "B",
+                "text": "Broken windows"
+              },
+              {
+                "label": "C",
+                "text": "Electrical fault"
+              },
+              {
+                "label": "D",
+                "text": "Fallen tree"
+              },
+              {
+                "label": "E",
+                "text": "Leaking roof"
+              },
+              {
+                "label": "F",
+                "text": "Staining on walls"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-13-listening-img1.png"
+          },
+          "correctAnswer": "F",
+          "mediaUrl": "/uploads/images/test-13-listening-img1.png"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "4 pm – 5 pm",
+            "options": [
+              {
+                "label": "A",
+                "text": "Birds in ceiling"
+              },
+              {
+                "label": "B",
+                "text": "Broken windows"
+              },
+              {
+                "label": "C",
+                "text": "Electrical fault"
+              },
+              {
+                "label": "D",
+                "text": "Fallen tree"
+              },
+              {
+                "label": "E",
+                "text": "Leaking roof"
+              },
+              {
+                "label": "F",
+                "text": "Staining on walls"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-13-listening-img1.png"
+          },
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-13-listening-img1.png"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "yellow"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "garden shed"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "wildlife reverse",
+          "acceptableAnswers": [
+            "wildlife reserve"
+          ]
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "firewood"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "garden bin"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\nQuestions 21-26\nComplete the table.\nWrite NO MORE THAN TWO WORDS for each answer.\n\nSubject\nTextbook Used\nCriticism of this book\nSocial History\n21 ........\nIt is 22 ........\nCultural Studies\n23 ........\nIt 24 ........\n25 ........\nGovernment in Action\nIt is 26 ........\n\nQuestions 27-30\nChoose the correct letter, S, C, or P.\nNB You may use a letter more than once.\nS Social History\nC Cultural Studies\nP Political Theory\nWhat are the speakers' favorite subjects?\n27. Steve\n28. David\n29. Susan\n30. Olive",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-13-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Welfare State"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "too long"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "inperspective",
+          "acceptableAnswers": [
+            "in perspective"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "oversimplifies"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Political Theory"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "not relevant"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Steve",
+            "options": [
+              {
+                "label": "S",
+                "text": "Social History"
+              },
+              {
+                "label": "C",
+                "text": "Cultural Studies"
+              },
+              {
+                "label": "P",
+                "text": "Political Theory"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "David",
+            "options": [
+              {
+                "label": "S",
+                "text": "Social History"
+              },
+              {
+                "label": "C",
+                "text": "Cultural Studies"
+              },
+              {
+                "label": "P",
+                "text": "Political Theory"
+              }
+            ]
+          },
+          "correctAnswer": "S"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Susan",
+            "options": [
+              {
+                "label": "S",
+                "text": "Social History"
+              },
+              {
+                "label": "C",
+                "text": "Cultural Studies"
+              },
+              {
+                "label": "P",
+                "text": "Political Theory"
+              }
+            ]
+          },
+          "correctAnswer": "P"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Olive",
+            "options": [
+              {
+                "label": "S",
+                "text": "Social History"
+              },
+              {
+                "label": "C",
+                "text": "Cultural Studies"
+              },
+              {
+                "label": "P",
+                "text": "Political Theory"
+              }
+            ]
+          },
+          "correctAnswer": "P"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\nQuestions 31-32\nChoose the correct letter, A, B, or C.\n31. Originally, country towns\nA. required fewer workers.\nB. had lots of animals.\nC. were more interesting places.\n32. Now, the problems there\nA. can be solved.\nB. are numerous.\nC. are expected.\nQuestions 33–35\nChoose THREE answers from the list and write the correct letter, A-F, next to the questions.\nWhich THREE factors are typical of modern farming?\nA. Many overheads\nB. More machines\nC. Fewer types of products\nD. More frequent feeding\nE. Greater numbers of products\nF. More factories\nQuestions 36–40\nComplete the table.\nWrite NO MORE THAN TWO WORDS for each answer.\nPossible Solution\nImportant Factor\nExamples\ntourism\nLocals must 36 ........\nThe Daylesford area uses its 37 ........\nusing the 38 ........\n- is 39 ........ by its distinctive product\n- must market the idea effectively\nShepparton is known for its 40 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-13-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Originally, country towns",
+            "options": [
+              {
+                "label": "A",
+                "text": "required fewer workers."
+              },
+              {
+                "label": "B",
+                "text": "had lots of animals."
+              },
+              {
+                "label": "C",
+                "text": "were more interesting places."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Now, the problems there",
+            "options": [
+              {
+                "label": "A",
+                "text": "can be solved."
+              },
+              {
+                "label": "B",
+                "text": "are numerous."
+              },
+              {
+                "label": "C",
+                "text": "are expected."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which THREE factors are typical of modern farming?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Many overheads"
+              },
+              {
+                "label": "B",
+                "text": "More machines"
+              },
+              {
+                "label": "C",
+                "text": "Fewer types of products"
+              },
+              {
+                "label": "D",
+                "text": "More frequent feeding"
+              },
+              {
+                "label": "E",
+                "text": "Greater numbers of products"
+              },
+              {
+                "label": "F",
+                "text": "More factories"
+              }
+            ],
+            "selectCount": 3,
+            "covers": [
+              33,
+              34,
+              35
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 33
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 33
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "participate"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "natural springs"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "local product"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "characterized",
+          "acceptableAnswers": [
+            "characterised"
+          ]
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "mature cheese",
+          "acceptableAnswers": [
+            "mature cheeses"
+          ]
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-13-section-1.mp3",
+    "/uploads/audio/test-13-section-2.mp3",
+    "/uploads/audio/test-13-section-3.mp3",
+    "/uploads/audio/test-13-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T04:43:09.231Z"
+}

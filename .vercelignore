@@ -1,4 +1,4 @@
-# Keep deploys lean: exclude local junk and non-demo audio/data
+# Keep deploys lean: exclude local junk; ship published test JSON + section audio
 .agents
 .claude
 .cursor
@@ -12,11 +12,21 @@ data/keys
 data/learn
 data/tests/*
 !data/tests/test-1-*.json
+!data/tests/test-2-*.json
+!data/tests/test-3-*.json
+!data/tests/test-4-*.json
+!data/tests/test-5-*.json
+!data/tests/test-6-*.json
+!data/tests/test-7-*.json
+!data/tests/test-8-*.json
 !data/tests/test-9-*.json
+!data/tests/test-10-*.json
+!data/tests/test-11-*.json
+!data/tests/test-12-*.json
+!data/tests/test-13-*.json
 public/uploads/audio/*
 !public/uploads/audio/.gitkeep
-!public/uploads/audio/test-1-section-*.mp3
-!public/uploads/audio/test-9-section-*.mp3
+!public/uploads/audio/test-*-section-*.mp3
 public/uploads/avatars/*
 !public/uploads/avatars/.gitkeep
 public/uploads/learn/videos/*
@@ -25,3 +35,9 @@ secrets
 .env
 .env.*
 !.env.example
+IELTS
+tmp-test7-audio
+tmp-test7-keys
+tmp-test7-listening.txt
+tmp-test7-reading.txt
+tmp-test7-writing.txt

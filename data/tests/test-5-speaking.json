@@ -1,0 +1,187 @@
+{
+  "title": "Speaking Test 5",
+  "slug": "test-5-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "drive:1FXwP-1uQ4ztbx9uzya86mCFV3bMd6Lqk:Speaking",
+  "description": "IELTS Academic Speaking practice set 5 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer to read on paper or on a screen?",
+            "topic": "Reading",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "When do you need to read carefully, and when not?",
+            "topic": "Reading",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer scanning or detailed reading?",
+            "topic": "Reading",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you like to take scenery pictures?",
+            "topic": "Scenery",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What are the most beautiful sights you have seen while travelling?",
+            "topic": "Scenery",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer typing or handwriting?",
+            "topic": "Typing",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you type on a desktop or laptop keyboard every day?",
+            "topic": "Typing",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "When did you learn how to type on a keyboard?",
+            "topic": "Typing",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How do you improve your typing?",
+            "topic": "Typing",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Who do you spend most time studying/working with? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe a time when you had a problem using an electronic device  \n\nYou should say:  \n\nWhen it happened  \n\nWhere it happened  \n\nWhat the problem was  \n\nAnd explain how you solved the problem at last",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 12,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why are people keen on buying new electronic devices?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 13,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What impact do electronic devices have on people?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 14,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do some people prefer to work by themselves?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 15,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What should a leader do to make team members want to follow him or her?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 16,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Should students learn to do group work?",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

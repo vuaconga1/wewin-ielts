@@ -15,7 +15,7 @@ export type RoleBearer = { role: AppRole } | null | undefined;
 /** Minimal session shape for admin API checks (avoids circular import with auth.ts). */
 export type SessionLike = {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   role: AppRole;
 };

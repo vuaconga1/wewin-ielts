@@ -17,6 +17,7 @@ export async function POST(request: Request) {
   try {
     const body = (await request.json()) as {
       email?: string;
+      username?: string;
       password?: string;
       action?: "login" | "logout";
     };
@@ -26,16 +27,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
-    const email = body.email?.trim();
+    const identifier = (body.email ?? body.username ?? "").trim();
     const password = body.password ?? "";
-    if (!email || !password) {
+    if (!identifier || !password) {
       return NextResponse.json(
-        { error: "Nhập email và mật khẩu" },
+        { error: "Nhập email/username và mật khẩu" },
         { status: 400 },
       );
     }
 
-    const user = await loginWithEmailPassword(email, password);
+    const user = await loginWithEmailPassword(identifier, password);
     return NextResponse.json({ user });
   } catch (e) {
     if (e instanceof AuthError) {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import nextDynamic from "next/dynamic";
 import { notFound, redirect } from "next/navigation";
-import { PracticeSession } from "@/components/practice/practice-session";
 import { getSessionUser } from "@/lib/auth";
 import { canAccessAttempt } from "@/lib/practice/attempt-access";
 import {
@@ -10,6 +10,23 @@ import {
 import { toPublicQuestion } from "@/lib/practice/public-question";
 import { partsForSpeakingAttempt } from "@/lib/practice/speaking-exam";
 import { getAttempt, getTestBySlug } from "@/lib/store/test-store";
+
+const PracticeSession = nextDynamic(
+  () =>
+    import("@/components/practice/practice-session").then(
+      (m) => m.PracticeSession,
+    ),
+  {
+    loading: () => (
+      <div
+        className="flex min-h-[50vh] items-center justify-center bg-[#eceff2]"
+        aria-busy="true"
+      >
+        <div className="h-8 w-40 animate-pulse rounded bg-zinc-200" />
+      </div>
+    ),
+  },
+);
 
 export const dynamic = "force-dynamic";
 

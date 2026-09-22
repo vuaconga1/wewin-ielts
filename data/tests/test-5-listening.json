@@ -1,0 +1,769 @@
+{
+  "title": "Test 5 - Listening",
+  "slug": "test-5-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 5",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nTheatre bookingExample: Booking for Pirates\nDate: 8th December (afternoon)\nName: Fenella 1 ........\nContact number: 07796892326\nBooking details:\nType of booking: 2 ........ with discount\n---tickets: 3 adults at 3 ........ pounds each\nChildren under 16 at 4 ........ pounds each\nRequires seats on the 5 ........ row of the circle\n---one person uses a 6 ........\n---need to have good access to the 7 ........\nWill collect the tickets from the 8 ........\nMeals:\nSeveral people are 9 ........\nFood: 10 ........ ( cheese and tomato )",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-5-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Bittens"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "group"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "23"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "12.50"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "back"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "wheelchair"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "lift"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "library"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "vegetarian"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "pizza"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\n\nQuestions 11-15\n\nWhich choir does each of the following statements apply to?\n\nWrite the correct letter, A, B or C, next to questions 11-15\n\nA Mitchelstown Choir\nB The Blackvale Male Voice Choir\nC The Caroline Singers\n\nStatements\n\n11 They specialise in a particular type of music ........\n\n12 They organise social events ........\n\n13 They have recently won a competition ........\n\n14 They have recently recorded their first CD ........\n\n15 They participate in charity events ........\n\nQuestions 16-20\n\nChoose the correct letter, A, B or C\n\n16 Elizabeth Arnold thinks people join a choir at work because it gives them a chance to\n\nA have a break from work.\n\nB improve their singing.\n\nC make business contacts.\n\n17 How does a company benefit from setting up a choir?\n\nA improved relationships between co-workers\n\nB less sick leave taken by employees\n\nC increased commitment to the company\n\n18 How many members does the John White choir have?\n\nA 5\n\nB 12\n\nC 19\n\n19 When do the choir have their rehearsals?\n\nA before work\n\nB at lunch-time\n\nC after work\n\n20 How does the company support the choir\n\nA by providing concert clothes\n\nB by funding social events\n\nC by paying for singing classes",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-5-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "They specialise in a particular type of music",
+            "options": [
+              {
+                "label": "A",
+                "text": "Mitchelstown Choir"
+              },
+              {
+                "label": "B",
+                "text": "The Blackvale Male Voice Choir"
+              },
+              {
+                "label": "C",
+                "text": "The Caroline Singers"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "They organise social events",
+            "options": [
+              {
+                "label": "A",
+                "text": "Mitchelstown Choir"
+              },
+              {
+                "label": "B",
+                "text": "The Blackvale Male Voice Choir"
+              },
+              {
+                "label": "C",
+                "text": "The Caroline Singers"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "They have recently won a competition",
+            "options": [
+              {
+                "label": "A",
+                "text": "Mitchelstown Choir"
+              },
+              {
+                "label": "B",
+                "text": "The Blackvale Male Voice Choir"
+              },
+              {
+                "label": "C",
+                "text": "The Caroline Singers"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "They have recently recorded their first CD",
+            "options": [
+              {
+                "label": "A",
+                "text": "Mitchelstown Choir"
+              },
+              {
+                "label": "B",
+                "text": "The Blackvale Male Voice Choir"
+              },
+              {
+                "label": "C",
+                "text": "The Caroline Singers"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "They participate in charity events",
+            "options": [
+              {
+                "label": "A",
+                "text": "Mitchelstown Choir"
+              },
+              {
+                "label": "B",
+                "text": "The Blackvale Male Voice Choir"
+              },
+              {
+                "label": "C",
+                "text": "The Caroline Singers"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Elizabeth Arnold thinks people join a choir at work because it gives them a chance to",
+            "options": [
+              {
+                "label": "A",
+                "text": "have a break from work."
+              },
+              {
+                "label": "B",
+                "text": "improve their singing."
+              },
+              {
+                "label": "C",
+                "text": "make business contacts."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does a company benefit from setting up a choir?",
+            "options": [
+              {
+                "label": "A",
+                "text": "improved relationships between co-workers"
+              },
+              {
+                "label": "B",
+                "text": "less sick leave taken by employees"
+              },
+              {
+                "label": "C",
+                "text": "increased commitment to the company"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How many members does the John White choir have?",
+            "options": [
+              {
+                "label": "A",
+                "text": "5"
+              },
+              {
+                "label": "B",
+                "text": "12"
+              },
+              {
+                "label": "C",
+                "text": "19"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When do the choir have their rehearsals?",
+            "options": [
+              {
+                "label": "A",
+                "text": "before work"
+              },
+              {
+                "label": "B",
+                "text": "at lunch-time"
+              },
+              {
+                "label": "C",
+                "text": "after work"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does the company support the choir",
+            "options": [
+              {
+                "label": "A",
+                "text": "by providing concert clothes"
+              },
+              {
+                "label": "B",
+                "text": "by funding social events"
+              },
+              {
+                "label": "C",
+                "text": "by paying for singing classes"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\n\nQuestions 21-26\n\nChoose the correct letter A, B or C.\n\nTourism research\n\n21 Mike suggests they use the word area to mean\n\nA geographical location.\n\nB tourist site.\n\nC research field.\n\n22 According to Eva, most people believe that culture\n\nA refers to long-established events and places.\n\nB includes modern forms of art and entertainment.\n\nC is becoming less linked to particular regions.\n\n23 Why should they carry out about 200 surveys?\n\nA to provide information about a range of events\n\nB to be able to meet the deadline\n\nC to get valid results\n\n24 Which groups of people do they decide to interview?\n\nA domestic tourists and local residents\n\nB local residents and international tourists\n\nC international and domestic tourists\n\n25 Mike expresses concern at having to ask about\n\nA the amount of money a person has spent\n\nB a person's age\n\nC a person's occupation\n\n26 Which form will their results be presented in?\n\nA a table\n\nB a pie chart\n\nC a graph\n\nQuestions 27-30\n\nWhich tourist attraction will be highlighted in each of the following countries?\n\nChoose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.\n\nTourist AttractionsA ancient buildings\nB contemporary art gallery\nC food festival\nD museums displaying traditional objects\nE national parks\nF theatre performances\nG traditional dances\n\nCountries\n\n27 Mexico ........\n\n28 Greece ........\n\n29 Britain ........\n\n30 India ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-5-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Mike suggests they use the word area to mean",
+            "options": [
+              {
+                "label": "A",
+                "text": "geographical location."
+              },
+              {
+                "label": "B",
+                "text": "tourist site."
+              },
+              {
+                "label": "C",
+                "text": "research field."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to Eva, most people believe that culture",
+            "options": [
+              {
+                "label": "A",
+                "text": "refers to long-established events and places."
+              },
+              {
+                "label": "B",
+                "text": "includes modern forms of art and entertainment."
+              },
+              {
+                "label": "C",
+                "text": "is becoming less linked to particular regions."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why should they carry out about 200 surveys?",
+            "options": [
+              {
+                "label": "A",
+                "text": "to provide information about a range of events"
+              },
+              {
+                "label": "B",
+                "text": "to be able to meet the deadline"
+              },
+              {
+                "label": "C",
+                "text": "to get valid results"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which groups of people do they decide to interview?",
+            "options": [
+              {
+                "label": "A",
+                "text": "domestic tourists and local residents"
+              },
+              {
+                "label": "B",
+                "text": "local residents and international tourists"
+              },
+              {
+                "label": "C",
+                "text": "international and domestic tourists"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Mike expresses concern at having to ask about",
+            "options": [
+              {
+                "label": "A",
+                "text": "the amount of money a person has spent"
+              },
+              {
+                "label": "B",
+                "text": "a person's age"
+              },
+              {
+                "label": "C",
+                "text": "a person's occupation"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which form will their results be presented in?",
+            "options": [
+              {
+                "label": "A",
+                "text": "a table"
+              },
+              {
+                "label": "B",
+                "text": "a pie chart"
+              },
+              {
+                "label": "C",
+                "text": "a graph"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Mexico",
+            "options": [
+              {
+                "label": "B",
+                "text": "contemporary art gallery"
+              },
+              {
+                "label": "C",
+                "text": "food festival"
+              },
+              {
+                "label": "D",
+                "text": "museums displaying traditional objects"
+              },
+              {
+                "label": "E",
+                "text": "national parks"
+              },
+              {
+                "label": "F",
+                "text": "theatre performances"
+              },
+              {
+                "label": "G",
+                "text": "traditional dances"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Greece",
+            "options": [
+              {
+                "label": "B",
+                "text": "contemporary art gallery"
+              },
+              {
+                "label": "C",
+                "text": "food festival"
+              },
+              {
+                "label": "D",
+                "text": "museums displaying traditional objects"
+              },
+              {
+                "label": "E",
+                "text": "national parks"
+              },
+              {
+                "label": "F",
+                "text": "theatre performances"
+              },
+              {
+                "label": "G",
+                "text": "traditional dances"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Britain",
+            "options": [
+              {
+                "label": "B",
+                "text": "contemporary art gallery"
+              },
+              {
+                "label": "C",
+                "text": "food festival"
+              },
+              {
+                "label": "D",
+                "text": "museums displaying traditional objects"
+              },
+              {
+                "label": "E",
+                "text": "national parks"
+              },
+              {
+                "label": "F",
+                "text": "theatre performances"
+              },
+              {
+                "label": "G",
+                "text": "traditional dances"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "India",
+            "options": [
+              {
+                "label": "B",
+                "text": "contemporary art gallery"
+              },
+              {
+                "label": "C",
+                "text": "food festival"
+              },
+              {
+                "label": "D",
+                "text": "museums displaying traditional objects"
+              },
+              {
+                "label": "E",
+                "text": "national parks"
+              },
+              {
+                "label": "F",
+                "text": "theatre performances"
+              },
+              {
+                "label": "G",
+                "text": "traditional dances"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\n\nComplete the notes below\n\nWrite NO MORE THAN TWO WORDS for each answer\n\nWorking as a Patent AttorneyGetting a patentNowadays most patents are applied for by a 31 ........\nThe invention has to be 32 ........ in order to be patented\nA detailed 33 ........ of the invention is required\nRequirementsAcademic qualifications e.g. Chemistry or 34 ........\nPeople with very good 35 ........\nKnowledge of a different 36 ........ (desirable)\nAdvantages of the jobInteresting-uses range of expertise\nGood 37 ........\nDisadvantages of the jobSometimes quite 38 ........\nLocation is inflexible\nPossible places of workLarge 39 ........ organisations\nPrivate practices\n40 ........ departments",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-5-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "company"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "original"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "description"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "engineering"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "communication"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "language"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "salary"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "lonley"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "industrial"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "government"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-5-section-1.mp3",
+    "/uploads/audio/test-5-section-2.mp3",
+    "/uploads/audio/test-5-section-3.mp3",
+    "/uploads/audio/test-5-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T00:44:15.219Z"
+}

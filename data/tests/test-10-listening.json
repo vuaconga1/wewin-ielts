@@ -1,0 +1,1007 @@
+{
+  "title": "Test 10 - Listening",
+  "slug": "test-10-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 10",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\nVolunteer work application form: Grace Brown\nMobile\nphone number: 021 636 7189\nEmail address\ngraceb@ 1 ........ co.nz\nQualification\na diploma in 2 ........\nAgreed work hours\nfrom 3 ........ am to 2pm Monday to Friday\nVolunteer work experience\na volunteer city 4 ........\na volunteer netball team 5 ........\nat Rugby World Cup\nHobbies\nlikes to work in her 6 ........\nenjoys flower arranging\nplays the 7 ........\nType of work offered\nworking on a 8 ........ for a month\nworking in a community centre with elderly people\nWhy is she interested in volunteering?\nwants to have more 9 ........\nwants to help others\nWhere did she hear about the agency?\nsaw an advertisement at the 10 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-10-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "travel"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "teaching"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "9.15 am",
+          "acceptableAnswers": [
+            "9.15",
+            "9:15",
+            "9.15am"
+          ]
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "guide"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "coach"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "garden"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "guitar"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "farm"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "friends"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "supermarket"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\nQuestions 11 – 14\nChoose the correct letter, A, B or C.\nTalk to new employees at a strawberry farm\n11 What should employees bring to work?\nA gloves\nB lunch\nC water\n12 If employees can't come to work one day, they should\nA contact the duty manager.\nB leave a phone message at the farm office.\nC call their team leader.\n13 One problem with customers that may occur now is that\nA they sometimes fail to return baskets.\nB they eat the fruit before paying.\nC they can be unsure about prices.\n14 One of the benefits of working at the strawberry farm is that\nA employees' friends are entitled to a small discount.\nB employees can have a quantity of fresh fruit for free.\nC employees don't pay the full price for gift items in the shop.\n\nQuestions 15-20\nLabel the map below.\nWrite the correct letter, A-J, next to questions 15-20.\n\n15. Staff room area\n16. Administration building\n17. Packing shed area\n18. Staff car park area\n19. Ripe strawberries area\n20. Unripe strawberries area",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-10-section-2.mp3",
+        "imageUrl": "/uploads/images/test-10-listening-img1.png",
+        "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What should employees bring to work?",
+            "options": [
+              {
+                "label": "A",
+                "text": "gloves"
+              },
+              {
+                "label": "B",
+                "text": "lunch"
+              },
+              {
+                "label": "C",
+                "text": "water"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "If employees can't come to work one day, they should",
+            "options": [
+              {
+                "label": "A",
+                "text": "contact the duty manager."
+              },
+              {
+                "label": "B",
+                "text": "leave a phone message at the farm office."
+              },
+              {
+                "label": "C",
+                "text": "call their team leader."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "One problem with customers that may occur now is that",
+            "options": [
+              {
+                "label": "A",
+                "text": "they sometimes fail to return baskets."
+              },
+              {
+                "label": "B",
+                "text": "they eat the fruit before paying."
+              },
+              {
+                "label": "C",
+                "text": "they can be unsure about prices."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "One of the benefits of working at the strawberry farm is that",
+            "options": [
+              {
+                "label": "A",
+                "text": "employees' friends are entitled to a small discount."
+              },
+              {
+                "label": "B",
+                "text": "employees can have a quantity of fresh fruit for free."
+              },
+              {
+                "label": "C",
+                "text": "employees don't pay the full price for gift items in the shop."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Staff room",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              },
+              {
+                "label": "I",
+                "text": "I"
+              },
+              {
+                "label": "J",
+                "text": "J"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+          },
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Administration",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              },
+              {
+                "label": "I",
+                "text": "I"
+              },
+              {
+                "label": "J",
+                "text": "J"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+          },
+          "correctAnswer": "H",
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Packing shed",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              },
+              {
+                "label": "I",
+                "text": "I"
+              },
+              {
+                "label": "J",
+                "text": "J"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+          },
+          "correctAnswer": "B",
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Staff car park",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              },
+              {
+                "label": "I",
+                "text": "I"
+              },
+              {
+                "label": "J",
+                "text": "J"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+          },
+          "correctAnswer": "I",
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Ripe strawberries",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              },
+              {
+                "label": "I",
+                "text": "I"
+              },
+              {
+                "label": "J",
+                "text": "J"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Unripe strawberries",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              },
+              {
+                "label": "I",
+                "text": "I"
+              },
+              {
+                "label": "J",
+                "text": "J"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+          },
+          "correctAnswer": "E",
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\nQuestions 21 – 26\nChoose the correct letter A, B or C.\nKathy's dissertation on water pumps\n21 What part of Kathy's dissertation has the tutor just read?\nA her results section\nB her introductory chapter\nC her review of the literature\n22 What did the tutor like about Kathy's work?\nA the organisation\nB the style of writing\nC the use of resources\n23 Kathy and the tutor agree that she needs to\nA do some more library research.\nB record more data\nC narrow down her topic.\n24 Why does the tutor give an example from his own experience?\nA to show how successful he has become\nB to illustrate how times have changed\nC to encourage Kathy to do something similar\n25 Kathy would like the tutor to advise her on her\nA layout.\nB bibliography.\nC appendices.\n26 What is Kathy going to do next?\nA try out some software\nB go to a seminar\nC design a new type of pump\nQuestions 27 – 30\nHow will Kathy benefit from doing each of the following activities?\nChoose FOUR answers from the box and write the correct letter, A-F, next to questions 27-30.\nBenefits\nA broadens practical experience of the field\nB chance to publicise own work\nC effective way of keeping up-to-date\nD looks good on a CV\nE provides useful access to resources\nF way to make useful contacts\nActivities\n27. going to Mechanical Engineers' Society meetings ........\n28. Visiting different workplaces ........\n29. getting some work experience abroad ........\n30. attending an international conference ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-10-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What part of Kathy's dissertation has the tutor just read?",
+            "options": [
+              {
+                "label": "A",
+                "text": "her results section"
+              },
+              {
+                "label": "B",
+                "text": "her introductory chapter"
+              },
+              {
+                "label": "C",
+                "text": "her review of the literature"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What did the tutor like about Kathy's work?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the organisation"
+              },
+              {
+                "label": "B",
+                "text": "the style of writing"
+              },
+              {
+                "label": "C",
+                "text": "the use of resources"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Kathy and the tutor agree that she needs to",
+            "options": [
+              {
+                "label": "A",
+                "text": "do some more library research."
+              },
+              {
+                "label": "B",
+                "text": "record more data"
+              },
+              {
+                "label": "C",
+                "text": "narrow down her topic."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why does the tutor give an example from his own experience?",
+            "options": [
+              {
+                "label": "A",
+                "text": "to show how successful he has become"
+              },
+              {
+                "label": "B",
+                "text": "to illustrate how times have changed"
+              },
+              {
+                "label": "C",
+                "text": "to encourage Kathy to do something similar"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Kathy would like the tutor to advise her on her",
+            "options": [
+              {
+                "label": "A",
+                "text": "layout."
+              },
+              {
+                "label": "B",
+                "text": "bibliography."
+              },
+              {
+                "label": "C",
+                "text": "appendices."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is Kathy going to do next?",
+            "options": [
+              {
+                "label": "A",
+                "text": "try out some software"
+              },
+              {
+                "label": "B",
+                "text": "go to a seminar"
+              },
+              {
+                "label": "C",
+                "text": "design a new type of pump"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "going to Mechanical Engineers' Society meetings",
+            "options": [
+              {
+                "label": "A",
+                "text": "broadens practical experience of the field"
+              },
+              {
+                "label": "B",
+                "text": "chance to publicise own work"
+              },
+              {
+                "label": "C",
+                "text": "effective way of keeping up-to-date"
+              },
+              {
+                "label": "D",
+                "text": "looks good on a CV"
+              },
+              {
+                "label": "E",
+                "text": "provides useful access to resources"
+              },
+              {
+                "label": "F",
+                "text": "way to make useful contacts"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Visiting different workplaces",
+            "options": [
+              {
+                "label": "A",
+                "text": "broadens practical experience of the field"
+              },
+              {
+                "label": "B",
+                "text": "chance to publicise own work"
+              },
+              {
+                "label": "C",
+                "text": "effective way of keeping up-to-date"
+              },
+              {
+                "label": "D",
+                "text": "looks good on a CV"
+              },
+              {
+                "label": "E",
+                "text": "provides useful access to resources"
+              },
+              {
+                "label": "F",
+                "text": "way to make useful contacts"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "getting some work experience abroad",
+            "options": [
+              {
+                "label": "A",
+                "text": "broadens practical experience of the field"
+              },
+              {
+                "label": "B",
+                "text": "chance to publicise own work"
+              },
+              {
+                "label": "C",
+                "text": "effective way of keeping up-to-date"
+              },
+              {
+                "label": "D",
+                "text": "looks good on a CV"
+              },
+              {
+                "label": "E",
+                "text": "provides useful access to resources"
+              },
+              {
+                "label": "F",
+                "text": "way to make useful contacts"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "attending an international conference",
+            "options": [
+              {
+                "label": "A",
+                "text": "broadens practical experience of the field"
+              },
+              {
+                "label": "B",
+                "text": "chance to publicise own work"
+              },
+              {
+                "label": "C",
+                "text": "effective way of keeping up-to-date"
+              },
+              {
+                "label": "D",
+                "text": "looks good on a CV"
+              },
+              {
+                "label": "E",
+                "text": "provides useful access to resources"
+              },
+              {
+                "label": "F",
+                "text": "way to make useful contacts"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\nQuestions 31–34\nComplete the sentences below.\nWrite ONE WORD ONLY for each answer.\nAmerican Salt Marshes\n31 The salt content in marshes can be as high as that of the ........\n32 At different times of the day, there are changes in salinity and in the ........ and warmth of the water\n33 Animals such as worms and shrimps feed on the ........ that grow in the marsh.\n34 Marshland in the US has been used in the past for ........ cultivation.\nQuestions 35–38\nChoose the correct letter, A, B or C.\n35 The speaker says that one result of erecting artificial walls in salt marshes is that\nA water levels can get too high.\nB wildlife has less space.\nC water quality is difficult to control.\n36 Some people have complained about the building of dikes because\nA access for walkers is reduced\nB the insect population has increased.\nC the natural beauty of the area is affected\n37 In the 20t century, a large proportion of marshes in America became\nA salt extraction sites.\nB residential areas.\nC protected insect reserves.\n38 There are now laws which help to prevent\nA the erosion of soil\nB the building of more walls.\nC the extinction of sealife.\nQuestions 39 and 40\nComplete the notes below.\nWrite NO MORE THAN TWO WORDS for each answer.\nThe Horseshoe Crab\nRelated to: spider\nMost common food: 39 ........\nTime of year when female lays eggs: 40 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-10-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "The salt content in marshes can be as high as that of the"
+          },
+          "correctAnswer": "ocean"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "depth"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "plants"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "rice"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The speaker says that one result of erecting artificial walls in salt marshes is that",
+            "options": [
+              {
+                "label": "A",
+                "text": "water levels can get too high."
+              },
+              {
+                "label": "B",
+                "text": "wildlife has less space."
+              },
+              {
+                "label": "C",
+                "text": "water quality is difficult to control."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Some people have complained about the building of dikes because",
+            "options": [
+              {
+                "label": "A",
+                "text": "access for walkers is reduced"
+              },
+              {
+                "label": "B",
+                "text": "the insect population has increased."
+              },
+              {
+                "label": "C",
+                "text": "the natural beauty of the area is affected"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In the 20t century, a large proportion of marshes in America became",
+            "options": [
+              {
+                "label": "A",
+                "text": "salt extraction sites."
+              },
+              {
+                "label": "B",
+                "text": "residential areas."
+              },
+              {
+                "label": "C",
+                "text": "protected insect reserves."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "There are now laws which help to prevent",
+            "options": [
+              {
+                "label": "A",
+                "text": "the erosion of soil"
+              },
+              {
+                "label": "B",
+                "text": "the building of more walls."
+              },
+              {
+                "label": "C",
+                "text": "the extinction of sealife."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "shellfish"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "spring"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-10-section-1.mp3",
+    "/uploads/audio/test-10-section-2.mp3",
+    "/uploads/audio/test-10-section-3.mp3",
+    "/uploads/audio/test-10-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T04:21:06.665Z"
+}

@@ -1,0 +1,187 @@
+{
+  "title": "Speaking Test 2",
+  "slug": "test-2-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "drive:1FXwP-1uQ4ztbx9uzya86mCFV3bMd6Lqk:Speaking",
+  "description": "IELTS Academic Speaking practice set 2 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Who do you spend most time studying/working with? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of things do you study/work on with other people? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there times when you study/work better by yourself? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is it important to like the people you study/work with? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What are your favourite activities?",
+            "topic": "Childhood activities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What were your favourite activities when you were a child?",
+            "topic": "Childhood activities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Did you prefer to do activities alone or with a group of people when you were a child?",
+            "topic": "Childhood activities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there any differences between the activities you liked when you were a child and those you like now?",
+            "topic": "Childhood activities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you look out the window at the scenery when travelling by bus or car?",
+            "topic": "Scenery",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer the mountains or the sea?",
+            "topic": "Scenery",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe a special cake you received from others \n\nYou should say: \n\nWhen it happened \n\nWhere it happened \n\nWho you got the cake from \n\nAnd explain why it’s a special cake",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 12,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "In your country, do people nowadays cook at home as frequently as people did in the past?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 13,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What do you think of people using their mobile phones during a meal?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 14,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What are the differences between special food in Vietnam and other countries?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 15,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is there any food in your country that is eaten at special times or on special occasions?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 16,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why are some people willing to spend a lot of money on meals on special days?",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

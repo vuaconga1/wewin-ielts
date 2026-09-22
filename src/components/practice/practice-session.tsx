@@ -26,6 +26,15 @@ import {
   splitReadingPassageAndTasks,
   type ReadingQuestionGroup,
 } from "@/lib/practice/reading-content";
+import {
+  formatCoveredLabel,
+  getCoveredNumbers,
+  getSelectCount,
+  isMultiSelectQuestion,
+  isPairedSatellite,
+  readMultiSelectAnswers,
+  toggleMultiSelectAnswer,
+} from "@/lib/practice/multi-select";
 import { splitWritingPrompt } from "@/lib/practice/writing-prompt";
 import { countWords } from "@/lib/scoring";
 import { friendlyError } from "@/lib/ui/friendly-error";
@@ -35,10 +44,8 @@ import {
   isRedundantGapStem,
 } from "@/lib/ui/question-type-label";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
-import {
-  SpeakingExamDesk,
-  type SpeakingExamDeskHandle,
-} from "@/components/practice/speaking-exam-desk";
+import nextDynamic from "next/dynamic";
+import type { SpeakingExamDeskHandle } from "@/components/practice/speaking-exam-desk";
 import {
   SpeakingMicSetup,
   speakingMicStorageKey,
@@ -51,6 +58,14 @@ import {
   parseSpeakingPartKinds,
 } from "@/lib/practice/speaking-exam";
 import { useTranslations } from "@/i18n/provider";
+
+const SpeakingExamDesk = nextDynamic(
+  () =>
+    import("@/components/practice/speaking-exam-desk").then(
+      (m) => m.SpeakingExamDesk,
+    ),
+  { ssr: false },
+);
 
 type Question = {
   number: number;
@@ -66,6 +81,12 @@ type Question = {
     imageUrl?: string;
     speakingPart?: 1 | 2 | 3;
     topic?: string;
+    /** Choose TWO/THREE: max selections */
+    selectCount?: number;
+    /** Choose TWO/THREE: answer slots written by this lead question */
+    covers?: number[];
+    /** Satellite of a choose-TWO lead — not rendered alone */
+    pairedFrom?: number;
   };
 };
 
@@ -548,6 +569,11 @@ export function PracticeSession({
     setCurrentNumber(num);
   }
 
+  function patchAnswers(patch: Record<string, string>, focusNumber: number) {
+    setAnswers((prev) => ({ ...prev, ...patch }));
+    setCurrentNumber(focusNumber);
+  }
+
   function goToQuestion(num: number) {
     const nav = navQuestions.find((q) => q.number === num);
     if (!nav) return;
@@ -912,6 +938,7 @@ export function PracticeSession({
             questionRefs={questionRefs}
             onFocusQuestion={setCurrentNumber}
             onChange={setAnswer}
+            onPatchAnswers={patchAnswers}
           />
         ) : isWriting && part ? (
           <WritingDesk
@@ -953,24 +980,35 @@ export function PracticeSession({
                 : t("partShort", { n: activePart + 1 }, "P{n}")}
             </div>
             <div className="space-y-5 p-3 sm:p-4">
-              {part?.questions.map((q) => (
-                <div
-                  key={q.number}
-                  ref={(el) => {
-                    if (el) questionRefs.current.set(q.number, el);
-                    else questionRefs.current.delete(q.number);
-                  }}
-                  onFocusCapture={() => setCurrentNumber(q.number)}
-                >
-                  <QuestionInput
-                    question={q}
-                    skill={skill}
-                    value={answers[String(q.number)] ?? ""}
-                    onChange={(v) => setAnswer(q.number, v)}
-                    active={currentNumber === q.number}
-                  />
-                </div>
-              ))}
+              {part?.questions
+                .filter((q) => !isPairedSatellite(q.content))
+                .map((q) => {
+                  const covers = getCoveredNumbers(q.number, q.content);
+                  return (
+                    <div
+                      key={q.number}
+                      ref={(el) => {
+                        for (const n of covers) {
+                          if (el) questionRefs.current.set(n, el);
+                          else questionRefs.current.delete(n);
+                        }
+                      }}
+                      onFocusCapture={() => setCurrentNumber(q.number)}
+                    >
+                      <QuestionInput
+                        question={q}
+                        skill={skill}
+                        answers={answers}
+                        onChange={(v) => setAnswer(q.number, v)}
+                        onPatchAnswers={patchAnswers}
+                        active={
+                          currentNumber != null &&
+                          covers.includes(currentNumber)
+                        }
+                      />
+                    </div>
+                  );
+                })}
             </div>
           </div>
         )}
@@ -1172,6 +1210,7 @@ function ReadingOrNotesSplit({
   questionRefs,
   onFocusQuestion,
   onChange,
+  onPatchAnswers,
 }: {
   part: Part;
   isReading: boolean;
@@ -1181,6 +1220,7 @@ function ReadingOrNotesSplit({
   questionRefs: MutableRefObject<Map<number, HTMLElement>>;
   onFocusQuestion: (n: number) => void;
   onChange: (n: number, v: string) => void;
+  onPatchAnswers: (patch: Record<string, string>, focusNumber: number) => void;
 }) {
   const { t } = useTranslations("practice");
   const reading = isReading
@@ -1196,14 +1236,28 @@ function ReadingOrNotesSplit({
     ? (reading?.passage ?? part.content ?? "")
     : "";
 
-  const groupedNumbers = new Set(
-    groups.flatMap((g) =>
-      part.questions
-        .filter((q) => q.number >= g.start && q.number <= g.end)
-        .map((q) => q.number),
-    ),
+  /** Prefer the tightest Questions range so Q27 is not rendered under both 21–30 and 27–28. */
+  const primaryGroupByNumber = new Map<number, ReadingQuestionGroup>();
+  for (const q of part.questions) {
+    let best: ReadingQuestionGroup | null = null;
+    for (const g of groups) {
+      if (q.number < g.start || q.number > g.end) continue;
+      const span = g.end - g.start;
+      if (
+        !best ||
+        span < best.end - best.start ||
+        (span === best.end - best.start && g.start > best.start)
+      ) {
+        best = g;
+      }
+    }
+    if (best) primaryGroupByNumber.set(q.number, best);
+  }
+
+  const groupedNumbers = new Set(primaryGroupByNumber.keys());
+  const ungrouped = part.questions.filter(
+    (q) => !groupedNumbers.has(q.number) && !isPairedSatellite(q.content),
   );
-  const ungrouped = part.questions.filter((q) => !groupedNumbers.has(q.number));
 
   const isGapQuestion = (q: Question) =>
     q.type === "GAP_FILL" ||
@@ -1211,30 +1265,40 @@ function ReadingOrNotesSplit({
     q.type === "MAP_LABELING" ||
     Boolean(q.content.blank);
 
-  const renderQuestion = (q: Question) => (
-    <div
-      key={q.number}
-      ref={(el) => {
-        if (el) questionRefs.current.set(q.number, el);
-        else questionRefs.current.delete(q.number);
-      }}
-      data-q={q.number}
-      onFocusCapture={() => onFocusQuestion(q.number)}
-    >
-      <QuestionInput
-        question={q}
-        skill={skill}
-        value={answers[String(q.number)] ?? ""}
-        onChange={(v) => onChange(q.number, v)}
-        compactStem={Boolean(part.content)}
-        active={currentNumber === q.number}
-      />
-    </div>
-  );
+  const renderQuestion = (q: Question) => {
+    const covers = getCoveredNumbers(q.number, q.content);
+    return (
+      <div
+        key={q.number}
+        ref={(el) => {
+          for (const n of covers) {
+            if (el) questionRefs.current.set(n, el);
+            else questionRefs.current.delete(n);
+          }
+        }}
+        data-q={q.number}
+        onFocusCapture={() => onFocusQuestion(q.number)}
+      >
+        <QuestionInput
+          question={q}
+          skill={skill}
+          answers={answers}
+          onChange={(v) => onChange(q.number, v)}
+          onPatchAnswers={onPatchAnswers}
+          compactStem={Boolean(part.content)}
+          active={
+            currentNumber != null && covers.includes(currentNumber)
+          }
+        />
+      </div>
+    );
+  };
 
   const renderGroup = (group: ReadingQuestionGroup) => {
     const qs = part.questions.filter(
-      (q) => q.number >= group.start && q.number <= group.end,
+      (q) =>
+        primaryGroupByNumber.get(q.number) === group &&
+        !isPairedSatellite(q.content),
     );
     if (qs.length === 0 && !group.notes && !group.header) return null;
 
@@ -1302,7 +1366,9 @@ function ReadingOrNotesSplit({
           ) : null}
         </>
       ) : (
-        part.questions.map(renderQuestion)
+        part.questions
+          .filter((q) => !isPairedSatellite(q.content))
+          .map(renderQuestion)
       )}
     </div>
   );
@@ -1350,15 +1416,20 @@ function defaultMinWords(question: Question, skill: string): number {
 function QuestionInput({
   question,
   skill,
-  value,
+  answers,
   onChange,
+  onPatchAnswers,
   compactStem = false,
   active = false,
 }: {
   question: Question;
   skill: string;
-  value: string;
+  answers: Record<string, string>;
   onChange: (v: string) => void;
+  onPatchAnswers?: (
+    patch: Record<string, string>,
+    focusNumber: number,
+  ) => void;
   /**
    * Render contract: when part.content already shows notes/passage with
    * numbered blanks, the answer panel is number + input (+ MCQ options).
@@ -1376,6 +1447,20 @@ function QuestionInput({
   const isEssay = question.type === "ESSAY";
   const isSpeaking = question.type === "SPEAKING_PROMPT";
   const isBlank = isBlankQuestionType(question.type);
+  const multi =
+    isMultiSelectQuestion(question.content) &&
+    getSelectCount(question.content) >= 2;
+  const covers = multi
+    ? getCoveredNumbers(question.number, question.content)
+    : [question.number];
+  const selectCount = multi ? getSelectCount(question.content) : 1;
+  const selectedLetters = multi
+    ? readMultiSelectAnswers(covers, answers)
+    : [];
+  const value = answers[String(question.number)] ?? "";
+  const numberLabel = multi
+    ? formatCoveredLabel(covers)
+    : String(question.number);
   const minWords = defaultMinWords(question, skill);
   const words = countWords(value);
   const hint = question.content.hint;
@@ -1494,7 +1579,7 @@ function QuestionInput({
       {showStem ? (
         <p className="mb-2 min-w-0 break-words whitespace-pre-wrap text-sm text-zinc-700">
           <span className="mr-1.5 font-semibold tabular-nums text-zinc-800">
-            {question.number}.
+            {numberLabel}.
           </span>
           {stem}
         </p>
@@ -1504,7 +1589,7 @@ function QuestionInput({
         <div className="space-y-2">
           {!showStem ? (
             <p className="text-sm font-semibold tabular-nums text-zinc-800">
-              {question.number}.
+              {numberLabel}.
             </p>
           ) : null}
           {options.map((opt) => {
@@ -1513,7 +1598,14 @@ function QuestionInput({
             const same =
               label.localeCompare(text, undefined, { sensitivity: "accent" }) ===
               0;
-            const selected = value === opt.label;
+            const selected = multi
+              ? selectedLetters.some(
+                  (s) =>
+                    s.localeCompare(label, undefined, {
+                      sensitivity: "accent",
+                    }) === 0,
+                )
+              : value === opt.label;
             return (
               <label
                 key={opt.label}
@@ -1524,11 +1616,27 @@ function QuestionInput({
                 }`}
               >
                 <input
-                  type="radio"
-                  name={`q-${question.number}`}
+                  type={multi ? "checkbox" : "radio"}
+                  name={
+                    multi
+                      ? `q-multi-${covers.join("-")}`
+                      : `q-${question.number}`
+                  }
                   className="mt-0.5 shrink-0"
                   checked={selected}
-                  onChange={() => onChange(opt.label)}
+                  onChange={() => {
+                    if (multi && onPatchAnswers) {
+                      const next = toggleMultiSelectAnswer(
+                        covers,
+                        label,
+                        answers,
+                        selectCount,
+                      );
+                      onPatchAnswers(next, question.number);
+                    } else {
+                      onChange(opt.label);
+                    }
+                  }}
                 />
                 <span className="min-w-0 break-words">
                   {same ? (
@@ -1548,7 +1656,7 @@ function QuestionInput({
         <div className="flex min-w-0 flex-wrap items-center gap-2">
           {!showStem ? (
             <span className="font-semibold tabular-nums text-zinc-800">
-              {question.number}.
+              {numberLabel}.
             </span>
           ) : null}
           <input
@@ -1556,7 +1664,7 @@ function QuestionInput({
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder={t("answerPlaceholder", "Enter answer…")}
-            aria-label={`${t("answerPlaceholder", "Enter answer…")} ${question.number}`}
+            aria-label={`${t("answerPlaceholder", "Enter answer…")} ${numberLabel}`}
             className={`w-full max-w-md min-w-0 rounded-sm border bg-white px-3 py-2 text-sm outline-none ${inputActiveClass}`}
           />
         </div>

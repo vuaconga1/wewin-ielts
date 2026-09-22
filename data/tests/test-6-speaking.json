@@ -1,0 +1,187 @@
+{
+  "title": "Speaking Test 6",
+  "slug": "test-6-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "drive:1FXwP-1uQ4ztbx9uzya86mCFV3bMd6Lqk:Speaking",
+  "description": "IELTS Academic Speaking practice set 6 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of things do you study/work on with other people? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there times when you study/work better by yourself? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is it important to like the people you study/work with? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Who do you spend most time studying/working with? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of things do you study/work on with other people? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there times when you study/work better by yourself? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is it important to like the people you study/work with? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Who do you spend most time studying/working with? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of things do you study/work on with other people? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there times when you study/work better by yourself? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe a time when you worked in a group  \n\nYou should say:  \n\nWhat you did  \n\nWho you worked with  \n\nWhat problems you faced  \n\nAnd explain why you worked in the group",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 12,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What group tasks are there in schools?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 13,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there many people who can speak foreign languages in your country?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 14,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Does speaking other languages help at work?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 15,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do people learn any languages other than English?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 16,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why is it easier for children to learn new things than for adults?",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

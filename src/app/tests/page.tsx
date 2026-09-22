@@ -5,7 +5,8 @@ import { TestsModulePicker } from "@/components/tests/tests-module-picker";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getTranslations } from "@/i18n/server";
 
-export const dynamic = "force-dynamic";
+/** Catalog counts change rarely; avoid force-dynamic on every request. */
+export const revalidate = 60;
 
 export async function generateMetadata() {
   const { t } = await getTranslations();

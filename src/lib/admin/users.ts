@@ -21,7 +21,7 @@ export type AdminUserRole = "ADMIN" | "STUDENT";
 
 export type AdminUserPublic = {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   role: AdminUserRole;
   avatarUrl: string | null;
@@ -40,7 +40,7 @@ export class AdminUsersError extends Error {
 
 function toPublic(user: {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   role: AdminUserRole;
   avatarUrl?: string | null;
@@ -63,8 +63,10 @@ function localToPublic(user: StoredUser): AdminUserPublic {
   return toPublic(user);
 }
 
-function normalizeEmail(email: string): string {
-  return email.trim().toLowerCase();
+/** Empty / whitespace → null; otherwise trimmed lowercase. */
+function normalizeOptionalEmail(email: string | null | undefined): string | null {
+  const trimmed = (email ?? "").trim().toLowerCase();
+  return trimmed ? trimmed : null;
 }
 
 function normalizeUsername(username: string): string {
@@ -72,7 +74,7 @@ function normalizeUsername(username: string): string {
 }
 
 function assertEmail(email: string) {
-  if (!email || !email.includes("@")) {
+  if (!email.includes("@")) {
     throw new AdminUsersError("INVALID_EMAIL", "Email không hợp lệ");
   }
 }
@@ -124,15 +126,15 @@ export async function listAdminUsers(): Promise<AdminUserPublic[]> {
 }
 
 export async function createAdminUser(input: {
-  email: string;
+  email?: string | null;
   username: string;
   password: string;
   role: string;
 }): Promise<AdminUserPublic> {
-  const email = normalizeEmail(input.email);
+  const email = normalizeOptionalEmail(input.email);
   const username = normalizeUsername(input.username);
   const password = input.password;
-  assertEmail(email);
+  if (email) assertEmail(email);
   assertUsername(username);
   assertPassword(password);
   assertRole(input.role);
@@ -141,9 +143,11 @@ export async function createAdminUser(input: {
   const passwordHash = await hashPassword(password);
 
   if (await canUsePrisma()) {
-    const existingEmail = await prisma.user.findUnique({ where: { email } });
-    if (existingEmail) {
-      throw new AdminUsersError("EMAIL_TAKEN", "Email đã được đăng ký");
+    if (email) {
+      const existingEmail = await prisma.user.findUnique({ where: { email } });
+      if (existingEmail) {
+        throw new AdminUsersError("EMAIL_TAKEN", "Email đã được đăng ký");
+      }
     }
     const existingUsername = await prisma.user.findUnique({
       where: { username },
@@ -165,7 +169,7 @@ export async function createAdminUser(input: {
     return toPublic(user);
   }
 
-  if (await findLocalUserByEmail(email)) {
+  if (email && (await findLocalUserByEmail(email))) {
     throw new AdminUsersError("EMAIL_TAKEN", "Email đã được đăng ký");
   }
   if (await findLocalUserByUsername(username)) {

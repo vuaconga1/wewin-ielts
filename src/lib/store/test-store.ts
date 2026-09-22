@@ -44,8 +44,8 @@ export type StoredAttempt = {
   aiScoreNonce?: string | null;
 };
 
-/** Short in-memory TTL to avoid readdir+N reads on home/tests pages. */
-const TESTS_CACHE_TTL_MS = 5_000;
+/** In-memory TTL for catalog/home list pages (invalidated on draft save). */
+const TESTS_CACHE_TTL_MS = 60_000;
 
 let testsCache: { data: StoredTest[]; expiresAt: number } | null = null;
 
@@ -69,6 +69,7 @@ type PrismaTestFull = Prisma.TestGetPayload<{
   };
 }>;
 
+/** Full test payload (practice / scoring) — includes answer keys. */
 const testInclude = {
   sections: {
     include: {
@@ -77,6 +78,21 @@ const testInclude = {
   },
   media: true,
 } satisfies Prisma.TestInclude;
+
+/**
+ * Catalog / home / ranking list — skip answerKey to avoid heavy joins.
+ * Question stems stay for Speaking queue length on catalog cards.
+ */
+const testListInclude = {
+  sections: {
+    include: {
+      questions: true,
+    },
+  },
+  media: true,
+} satisfies Prisma.TestInclude;
+
+type PrismaTestList = Prisma.TestGetPayload<{ include: typeof testListInclude }>;
 
 function tagsToStrings(tags: Prisma.JsonValue | null): string[] | undefined {
   if (!Array.isArray(tags)) return undefined;
@@ -106,7 +122,9 @@ function acceptableList(
   return out.length ? out : undefined;
 }
 
-function prismaTestToStored(test: PrismaTestFull): StoredTest {
+function prismaTestToStored(
+  test: PrismaTestFull | PrismaTestList,
+): StoredTest {
   const audioFiles = test.media
     .filter((m) => m.type === "AUDIO")
     .map((m) => m.path);
@@ -129,16 +147,24 @@ function prismaTestToStored(test: PrismaTestFull): StoredTest {
         meta: metaRecord(section.meta),
         questions: [...section.questions]
           .sort((a, b) => a.order - b.order)
-          .map((q) => ({
-            number: q.number,
-            order: q.order,
-            type: q.type,
-            content: contentRecord(q.content),
-            mediaUrl: q.mediaUrl ?? undefined,
-            correctAnswer: q.answerKey?.correctAnswer ?? undefined,
-            acceptableAnswers: acceptableList(q.answerKey?.acceptableAnswers),
-            explanation: q.answerKey?.explanation ?? undefined,
-          })),
+          .map((q) => {
+            const withKey =
+              "answerKey" in q
+                ? (q as PrismaTestFull["sections"][number]["questions"][number])
+                : null;
+            return {
+              number: q.number,
+              order: q.order,
+              type: q.type,
+              content: contentRecord(q.content),
+              mediaUrl: q.mediaUrl ?? undefined,
+              correctAnswer: withKey?.answerKey?.correctAnswer ?? undefined,
+              acceptableAnswers: acceptableList(
+                withKey?.answerKey?.acceptableAnswers,
+              ),
+              explanation: withKey?.answerKey?.explanation ?? undefined,
+            };
+          }),
       })),
     audioFiles: audioFiles.length ? audioFiles : undefined,
     savedAt: test.updatedAt.toISOString(),
@@ -150,7 +176,7 @@ async function listTestsFromPrisma(): Promise<StoredTest[] | null> {
   try {
     const rows = await prisma.test.findMany({
       where: { status: { in: ["PUBLISHED", "DRAFT"] } },
-      include: testInclude,
+      include: testListInclude,
       orderBy: { updatedAt: "desc" },
     });
     if (!rows.length) return null;

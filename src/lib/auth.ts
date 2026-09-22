@@ -9,6 +9,7 @@ import { canUsePrisma, isDbConfigured } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import {
   findLocalUserByEmail,
+  findLocalUserByUsername,
   upsertLocalUser,
 } from "@/lib/store/user-store";
 import {
@@ -18,7 +19,7 @@ import {
 
 export type SessionUser = {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   role: "ADMIN" | "STUDENT";
 };
@@ -76,10 +77,10 @@ function decodeSession(token: string): SessionUser | null {
       Buffer.from(body, "base64url").toString("utf8"),
     ) as SessionUser & { exp?: number };
     if (data.exp && Date.now() > data.exp) return null;
-    if (!data.id || !data.email || !data.role) return null;
+    if (!data.id || !data.username || !data.role) return null;
     return {
       id: data.id,
-      email: data.email,
+      email: data.email ?? null,
       username: data.username,
       role: data.role,
     };
@@ -254,26 +255,32 @@ export async function registerStudent(input: {
 }
 
 export async function loginWithEmailPassword(
-  email: string,
+  identifier: string,
   password: string,
 ): Promise<SessionUser> {
-  const normalized = email.trim().toLowerCase();
+  const raw = identifier.trim();
+  if (!raw) {
+    throw new AuthError(
+      "INVALID_CREDENTIALS",
+      "Email/username hoặc mật khẩu không đúng",
+    );
+  }
 
-  if (await canUsePrisma()) {
-    const user = await prisma.user.findUnique({
-      where: { email: normalized },
-    });
-    if (!user) {
-      throw new AuthError(
-        "INVALID_CREDENTIALS",
-        "Email hoặc mật khẩu không đúng",
-      );
-    }
+  const looksLikeEmail = raw.includes("@");
+  const emailKey = looksLikeEmail ? raw.toLowerCase() : null;
+
+  async function verifyAndSession(user: {
+    id: string;
+    email: string | null;
+    username: string;
+    role: "ADMIN" | "STUDENT";
+    passwordHash: string;
+  }): Promise<SessionUser> {
     const ok = await verifyPassword(password, user.passwordHash);
     if (!ok) {
       throw new AuthError(
         "INVALID_CREDENTIALS",
-        "Email hoặc mật khẩu không đúng",
+        "Email/username hoặc mật khẩu không đúng",
       );
     }
     const session: SessionUser = {
@@ -286,6 +293,30 @@ export async function loginWithEmailPassword(
     return session;
   }
 
+  if (await canUsePrisma()) {
+    let user =
+      emailKey != null
+        ? await prisma.user.findUnique({ where: { email: emailKey } })
+        : null;
+    if (!user) {
+      user = await prisma.user.findUnique({ where: { username: raw } });
+    }
+    if (!user && !looksLikeEmail) {
+      // Case-insensitive username fallback for local typing differences
+      const byLower = await prisma.user.findFirst({
+        where: { username: { equals: raw, mode: "insensitive" } },
+      });
+      user = byLower;
+    }
+    if (!user) {
+      throw new AuthError(
+        "INVALID_CREDENTIALS",
+        "Email/username hoặc mật khẩu không đúng",
+      );
+    }
+    return verifyAndSession(user);
+  }
+
   // DATABASE_URL set but unreachable
   if (await isDbConfigured()) {
     throw new AuthError(
@@ -295,25 +326,18 @@ export async function loginWithEmailPassword(
   }
 
   // Local JSON fallback when DB is not configured
-  const local = await findLocalUserByEmail(normalized);
+  let local =
+    emailKey != null ? await findLocalUserByEmail(emailKey) : null;
+  if (!local) {
+    local = await findLocalUserByUsername(raw);
+  }
   if (!local) {
     throw new AuthError(
       "INVALID_CREDENTIALS",
-      "Email hoặc mật khẩu không đúng. Dev: chạy npm run seed:admin (hoặc cấu hình Neon DATABASE_URL).",
+      "Email/username hoặc mật khẩu không đúng. Dev: chạy npm run seed:admin (hoặc cấu hình Neon DATABASE_URL).",
     );
   }
-  const ok = await verifyPassword(password, local.passwordHash);
-  if (!ok) {
-    throw new AuthError("INVALID_CREDENTIALS", "Email hoặc mật khẩu không đúng");
-  }
-  const session: SessionUser = {
-    id: local.id,
-    email: local.email,
-    username: local.username,
-    role: local.role,
-  };
-  await createSession(session);
-  return session;
+  return verifyAndSession(local);
 }
 
 /** Soft check: is Postgres reachable for auth/persist? */

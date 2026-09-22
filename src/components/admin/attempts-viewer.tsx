@@ -187,7 +187,7 @@ export function AttemptsViewer() {
               <option value="">{t("allLearners")}</option>
               {users.map((u) => (
                 <option key={u.id} value={u.id}>
-                  {u.username} · {u.email}
+                  {u.email ? `${u.username} · ${u.email}` : u.username}
                   {u.attemptCount ? ` (${u.attemptCount})` : ""}
                 </option>
               ))}

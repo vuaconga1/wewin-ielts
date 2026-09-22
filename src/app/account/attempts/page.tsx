@@ -45,7 +45,7 @@ export default async function AccountAttemptsPage() {
         </Link>
         <h1 className="text-2xl font-bold text-zinc-900">{t("account.title")}</h1>
         <p className="mt-1 text-sm text-zinc-600">
-          {user.email}
+          {user.email ?? user.username}
           <span className="text-zinc-400">
             {" "}
             · {user.role === "ADMIN" ? t("common.admin") : t("common.student")}

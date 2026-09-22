@@ -180,9 +180,15 @@ export function normalizeExtractedText(text: string): string {
     "$1\n\n",
   );
   out = out.replace(
-    // Case-sensitive: avoid splitting mid-sentence "next to questions 37-40"
+    // Case-sensitive: avoid splitting mid-sentence "next to questions 37-40".
+    // Also keep spend-time blurbs intact: "…minutes on Questions 1-13, which are based on…"
+    // (splitting there creates a false group header / double-header in Reading UI).
     /([^\n])(?=Questions?\s+\d+(?:\s*[-–—]\s*\d+|\s+and\s+\d+)?\b)/g,
-    "$1\n\n",
+    (match, _g1: string, offset: number, full: string) => {
+      const window = full.slice(Math.max(0, offset - 48), offset + 1);
+      if (/minutes on\s*$/i.test(window)) return match;
+      return `${match}\n\n`;
+    },
   );
 
   // Common Listening form / notes labels glued after prior field values

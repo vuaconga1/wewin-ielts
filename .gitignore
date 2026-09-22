@@ -51,16 +51,26 @@ yarn-error.log*
 /data/keys/
 /data/learn/*
 !/data/learn/.gitkeep
-# published demo tests for Vercel (file-backed catalog)
+# published tests for Vercel (file-backed catalog fallback)
 /data/tests/*
 !/data/tests/test-1-*.json
+!/data/tests/test-2-*.json
+!/data/tests/test-3-*.json
+!/data/tests/test-4-*.json
+!/data/tests/test-5-*.json
+!/data/tests/test-6-*.json
+!/data/tests/test-7-*.json
+!/data/tests/test-8-*.json
 !/data/tests/test-9-*.json
+!/data/tests/test-10-*.json
+!/data/tests/test-11-*.json
+!/data/tests/test-12-*.json
+!/data/tests/test-13-*.json
 
-# uploaded audio (keep folder + Test 1/9 listening for production)
+# uploaded audio (keep folder + section mp3s needed at runtime)
 /public/uploads/audio/*
 !/public/uploads/audio/.gitkeep
-!/public/uploads/audio/test-1-section-*.mp3
-!/public/uploads/audio/test-9-section-*.mp3
+!/public/uploads/audio/test-*-section-*.mp3
 
 # learn lesson videos (keep folder)
 /public/uploads/learn/videos/*

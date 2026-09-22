@@ -382,6 +382,8 @@
           "type": "MULTIPLE_CHOICE",
           "content": {
             "stem": "Which TWO treatment techniques did the female runner find useful for her swollen heel?",
+            "selectCount": 2,
+            "covers": [27, 28],
             "options": [
               {
                 "label": "A",
@@ -410,10 +412,10 @@
         {
           "number": 28,
           "order": 7,
-          "type": "GAP_FILL",
+          "type": "MULTIPLE_CHOICE",
           "content": {
             "stem": "",
-            "blank": true
+            "pairedFrom": 27
           },
           "correctAnswer": "C"
         },
@@ -423,6 +425,8 @@
           "type": "MULTIPLE_CHOICE",
           "content": {
             "stem": "Which TWO sports did the male sprinter find most effective during his rehabilitation programme?",
+            "selectCount": 2,
+            "covers": [29, 30],
             "options": [
               {
                 "label": "A",
@@ -451,10 +455,10 @@
         {
           "number": 30,
           "order": 9,
-          "type": "GAP_FILL",
+          "type": "MULTIPLE_CHOICE",
           "content": {
             "stem": "",
-            "blank": true
+            "pairedFrom": 29
           },
           "correctAnswer": "D"
         }

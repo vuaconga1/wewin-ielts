@@ -1,0 +1,53 @@
+{
+  "title": "Test 10 - Writing",
+  "slug": "test-10-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 10",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task\n\nThe graph shows the percentage of visiting the cinema once a month or more between 1984 to 2003 (4 age groups)\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+      "meta": {
+        "imageUrl": "/uploads/writing/test-10-task1-chart.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nThe graph shows the percentage of visiting the cinema once a month or more between 1984 to 2003 (4 age groups)\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-10-task1-chart.png"
+          },
+          "mediaUrl": "/uploads/writing/test-10-task1-chart.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nMany celebrities complain about the way the media publicises their private lives. Some people believe that they should accept this as part of being famous.\nTo what extent do you agree or disagree with this belief?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nMany celebrities complain about the way the media publicises their private lives. Some people believe that they should accept this as part of being famous.\nTo what extent do you agree or disagree with this belief?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T04:21:06.761Z"
+}

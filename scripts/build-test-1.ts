@@ -19,18 +19,30 @@ import { mergeKeysIntoQuestions } from "../src/lib/import/parse-keys";
 import { saveTestDraft } from "../src/lib/store/test-store";
 import type { ParsedTestDraft } from "../src/lib/import/schemas";
 
-const SRC = "E:/Wewin/IELTS/Test 1";
+const SRC = path.join(process.cwd(), "IELTS", "Test 1");
 const ROOT = process.cwd();
 
 async function buildCanonicalKeys(): Promise<string> {
-  const listenBuf = await readFile(path.join(SRC, "Listening Test Keys.docx"));
-  const readBuf = await readFile(path.join(SRC, "Reading keys.docx"));
-  const listenMeta = await extractDocxWithMeta(listenBuf, { includeTables: true });
-  const readMeta = await extractDocxWithMeta(readBuf, { includeTables: true });
+  // Prefer archived split keys; fall back to Key 1.docx if already merged
+  const listenKeysPath = path.join(SRC, "_old", "Listening Test Keys.docx");
+  const readKeysPath = path.join(SRC, "_old", "Reading keys.docx");
+  const key1Path = path.join(SRC, "Key 1.docx");
 
-  const mergedRaw = ["Listening", "", listenMeta.text, "", "Reading", "", readMeta.text].join(
-    "\n",
-  );
+  let mergedRaw: string;
+  try {
+    const listenBuf = await readFile(listenKeysPath);
+    const readBuf = await readFile(readKeysPath);
+    const listenMeta = await extractDocxWithMeta(listenBuf, { includeTables: true });
+    const readMeta = await extractDocxWithMeta(readBuf, { includeTables: true });
+    mergedRaw = ["Listening", "", listenMeta.text, "", "Reading", "", readMeta.text].join(
+      "\n",
+    );
+  } catch {
+    const key1Buf = await readFile(key1Path);
+    const key1Meta = await extractDocxWithMeta(key1Buf, { includeTables: true });
+    mergedRaw = key1Meta.text;
+  }
+
   const canonical = normalizeKeysToCanonical(mergedRaw);
   console.log(
     `Keys: listening=${canonical.listeningCount} reading=${canonical.readingCount} rewritten=${canonical.rewritten}`,
@@ -42,10 +54,11 @@ async function buildCanonicalKeys(): Promise<string> {
   await writeFile(keysMdPath, canonical.text + "\n", "utf8");
   await writeFile(keysDataPath, canonical.text + "\n", "utf8");
 
-  // Minimal .docx (text only) so admin can download a Word keys file
+  // Minimal .docx (text only) — Key 9 layout in Test 1 folder + public templates
   const docxPath = path.join(ROOT, "public/templates/test-1-keys.docx");
   await writeMinimalDocx(canonical.text, docxPath);
-  console.log(`Wrote keys → ${keysMdPath}, ${keysDataPath}, ${docxPath}`);
+  await writeMinimalDocx(canonical.text, key1Path);
+  console.log(`Wrote keys → ${keysMdPath}, ${keysDataPath}, ${docxPath}, ${key1Path}`);
   return keysMdPath;
 }
 
@@ -100,10 +113,10 @@ async function copyAudio(): Promise<string[]> {
   const audioDir = path.join(ROOT, "public/uploads/audio");
   await mkdir(audioDir, { recursive: true });
   const sources = [
-    "AudioTrack 01 (4).mp3",
-    "AudioTrack 02 (4).mp3",
-    "AudioTrack 03 (4).mp3",
-    "AudioTrack 04 (4).mp3",
+    "section-1.mp3",
+    "section-2.mp3",
+    "section-3.mp3",
+    "section-4.mp3",
   ];
   const urls: string[] = [];
   for (let i = 0; i < sources.length; i++) {
@@ -117,7 +130,7 @@ async function copyAudio(): Promise<string[]> {
 }
 
 async function extractMedia() {
-  const listenBuf = await readFile(path.join(SRC, "Listening 1 .docx"));
+  const listenBuf = await readFile(path.join(SRC, "Listening 1.docx"));
   const mapUrls = await extractDocxImagesToUploads(listenBuf, {
     slug: "test-1-listening",
     prefix: "test-1-listening-map",
@@ -356,7 +369,7 @@ async function main() {
 
   // Listening
   let listening = await importSkill({
-    file: path.join(SRC, "Listening 1 .docx"),
+    file: path.join(SRC, "Listening 1.docx"),
     keys: keysPath,
     skill: "LISTENING",
     slug: "test-1-listening",
@@ -380,7 +393,7 @@ async function main() {
 
   // Reading
   let reading = await importSkill({
-    file: path.join(SRC, "Reading.docx"),
+    file: path.join(SRC, "Reading 1.docx"),
     keys: keysPath,
     skill: "READING",
     slug: "test-1-reading",

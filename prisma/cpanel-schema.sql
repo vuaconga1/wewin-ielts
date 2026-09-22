@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE `User` (
     `id` VARCHAR(191) NOT NULL,
-    `email` VARCHAR(191) NOT NULL,
+    `email` VARCHAR(191) NULL,
     `username` VARCHAR(191) NOT NULL,
     `passwordHash` VARCHAR(191) NOT NULL,
     `role` ENUM('STUDENT', 'ADMIN') NOT NULL DEFAULT 'STUDENT',

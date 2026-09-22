@@ -1,7 +1,17 @@
 import Link from "next/link";
+import nextDynamic from "next/dynamic";
 import { SiteShell } from "@/components/layout/site-shell";
-import { AttemptsViewer } from "@/components/admin/attempts-viewer";
 import { getTranslations } from "@/i18n/server";
+
+const AttemptsViewer = nextDynamic(
+  () =>
+    import("@/components/admin/attempts-viewer").then((m) => m.AttemptsViewer),
+  {
+    loading: () => (
+      <div className="h-40 animate-pulse rounded-lg bg-zinc-100" aria-hidden />
+    ),
+  },
+);
 
 export const dynamic = "force-dynamic";
 

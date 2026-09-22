@@ -21,18 +21,47 @@ export type ReadingQuestionGroup = {
 /** Alias — same structure used for Listening sections. */
 export type PracticeQuestionGroup = ReadingQuestionGroup;
 
+/** Drop spend-time / "Questions N–M based on Passage" chrome from left passage. */
+function stripPassageChrome(passage: string): string {
+  return passage
+    .replace(/\r\n/g, "\n")
+    .replace(
+      /^(\s*You should spend about \d+ minutes on[^\n]*\n*)+/i,
+      "",
+    )
+    .replace(
+      /^(\s*Questions?\s+\d+\s*[-–—]\s*\d+\s+which are based on (?:Reading\s+)?Passage[^\n]*\n*)+/i,
+      "",
+    )
+    .replace(
+      /^(\s*Questions?\s+\d+(?:\s*[-–—]\s*\d+)?\s+which are based on (?:Reading\s+)?Passage[^\n]*\n*)+/i,
+      "",
+    )
+    .replace(/^\n+/, "")
+    .trim();
+}
+
 export function splitReadingPassageAndTasks(content: string): {
   passage: string;
   tasks: string;
 } {
-  const idx = content.search(/\nQuestions?\s+\d+/i);
-  if (idx > 80) {
-    return {
-      passage: content.slice(0, idx).trim(),
-      tasks: content.slice(idx).trim(),
-    };
+  const normalized = content.replace(/\r\n/g, "\n");
+  // Find the first real task header — skip spend-time blurbs like
+  // "Questions 1-13 which are based on Reading Passage 1 below."
+  const re = /\nQuestions?\s+(\d+)(?:\s*[-–—]\s*(\d+)|\s+and\s+(\d+))?\b([^\n]*)/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(normalized)) !== null) {
+    const rest = (m[4] ?? "").trim();
+    if (/based on (Reading\s+)?Passage/i.test(rest)) continue;
+    const idx = m.index;
+    if (idx > 40) {
+      return {
+        passage: stripPassageChrome(normalized.slice(0, idx)),
+        tasks: normalized.slice(idx).trim(),
+      };
+    }
   }
-  return { passage: content.trim(), tasks: "" };
+  return { passage: stripPassageChrome(normalized), tasks: "" };
 }
 
 const BLANK_MARK_RE = /(?:[.…_…]|\.){2,}|_{2,}|\u2026+|_____/u;
@@ -110,6 +139,20 @@ type HeaderMatch = {
 };
 
 /**
+ * True when "Questions N-M …" is a mid-sentence reference (e.g. a line-wrapped
+ * "(Questions 23-26) and the list…"), not a real group header.
+ */
+function isEmbeddedQuestionRangeReference(rest: string): boolean {
+  const r = rest.trim();
+  if (!r) return false;
+  // Broken wrap: "Questions 23-26) and the list of points…"
+  if (/^[)\].,;:]/.test(r)) return true;
+  // Parenthetical cite still on the same line after the range
+  if (/^\)\s/.test(r) || /^\([^)]*\)/.test(r)) return true;
+  return false;
+}
+
+/**
  * Match IELTS group headers, including Listening lines like:
  *   "LISTENING SECTION 1    Questions 1-10"
  *   "Questions 27 and 28"
@@ -123,6 +166,9 @@ export function matchQuestionGroupHeader(line: string): HeaderMatch | null {
     const start = Number(m[1]);
     const end = Number(m[2]);
     const rest = (m[3] ?? "").trim();
+    if (isEmbeddedQuestionRangeReference(rest)) return null;
+    // Spend-time blurbs (not task group headers): "Questions 1-13 which are based on Reading Passage 1 below."
+    if (/based on (Reading\s+)?Passage/i.test(rest)) return null;
     return {
       start,
       end,
@@ -139,6 +185,7 @@ export function matchQuestionGroupHeader(line: string): HeaderMatch | null {
     const start = Math.min(a, b);
     const end = Math.max(a, b);
     const rest = (m[3] ?? "").trim();
+    if (isEmbeddedQuestionRangeReference(rest)) return null;
     return {
       start,
       end,
@@ -181,6 +228,23 @@ export function matchQuestionGroupHeader(line: string): HeaderMatch | null {
       header: rest
         ? `${section} · Questions ${start}-${end} ${rest}`
         : `${section} · Questions ${start}-${end}`,
+    };
+  }
+
+  // Summary/notes often omit "Questions N–M" and only say
+  // "Write your answers in boxes 24–26 on your answer sheet." (Test 2 Reading).
+  m = t.match(
+    /\bboxes?\s+(\d+)\s*(?:[-–—]\s*(\d+)|\s+and\s+(\d+))\b/i,
+  );
+  if (m && /answer sheet|write (your )?answers|correct letter/i.test(t)) {
+    const a = Number(m[1]);
+    const b = Number(m[2] ?? m[3]);
+    const start = Math.min(a, b);
+    const end = Math.max(a, b);
+    return {
+      start,
+      end,
+      header: `Questions ${start}-${end}`,
     };
   }
 
@@ -287,12 +351,56 @@ export function parseReadingQuestionGroups(
   for (const line of lines) {
     const hit = matchQuestionGroupHeader(line);
     if (hit) {
+      // Same range repeated (bad OCR/wrap) → keep as body, don't duplicate UI.
+      if (
+        current &&
+        current.start === hit.start &&
+        current.end === hit.end
+      ) {
+        current.body.push(line);
+        continue;
+      }
+      // Umbrella "Questions 27–40" + later "boxes 27–33" → tighten to 27–33
+      // instead of rendering two overlapping headers (Test 2 Passage 3).
+      if (
+        current &&
+        hit.start >= current.start &&
+        hit.end <= current.end &&
+        (hit.start > current.start || hit.end < current.end)
+      ) {
+        current.start = hit.start;
+        current.end = hit.end;
+        current.header = `Questions ${hit.start}-${hit.end}`;
+        current.body.push(line);
+        continue;
+      }
+      // Carry "Complete the summary…" lines that sat above a boxes-only header
+      // into the new group (Test 2 Reading Q24–26).
+      const carry: string[] = [];
+      if (current) {
+        while (current.body.length) {
+          const last = current.body[current.body.length - 1]!;
+          if (
+            /^(Complete the|Choose ONE WORD|Choose NO MORE THAN|Write your answers in boxes)/i.test(
+              last.trim(),
+            )
+          ) {
+            carry.unshift(current.body.pop()!);
+            continue;
+          }
+          if (!last.trim()) {
+            current.body.pop();
+            continue;
+          }
+          break;
+        }
+      }
       flush();
       current = {
         header: hit.header,
         start: hit.start,
         end: hit.end,
-        body: [],
+        body: carry,
       };
       continue;
     }

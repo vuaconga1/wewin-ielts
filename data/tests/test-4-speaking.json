@@ -1,0 +1,187 @@
+{
+  "title": "Speaking Test 4",
+  "slug": "test-4-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "drive:1FXwP-1uQ4ztbx9uzya86mCFV3bMd6Lqk:Speaking",
+  "description": "IELTS Academic Speaking practice set 4 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is it important to like the people you study/work with? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are you good at telling jokes?",
+            "topic": "Jokes & Comedies",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do your friends like to tell jokes?",
+            "topic": "Jokes & Comedies",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you like to watch comedies?",
+            "topic": "Jokes & Comedies",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Have you ever watched a live show?",
+            "topic": "Jokes & Comedies",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you like taking pictures of different views?",
+            "topic": "View",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer views in urban areas or rural areas?",
+            "topic": "View",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer views in your own country or in other countries?",
+            "topic": "View",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Have you seen an unforgettable and beautiful view or scenery?",
+            "topic": "View",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you like reading?",
+            "topic": "Reading",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe an advertisement with a famous person in it  \n\nYou should say:  \n\nWho the person is  \n\nWhere you can see it  \n\nWhat the advertisement is about  \n\nAnd explain how you feel about the advertisement",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 12,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What are the advantages and disadvantages of advertisements?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 13,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why are many advertisements endorsed by celebrities? How useful are they?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 14,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What is the most important factor in an advertisement?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 15,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why are some advertisements boring? Is advertising important for a company? Why?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 16,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Which is more effective, online advertising or offline advertising?",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

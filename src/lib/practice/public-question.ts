@@ -11,6 +11,14 @@ export type PublicQuestionContent = {
   imageUrl?: string;
   /** Speaking sample only — never a Listening/Reading key */
   hint?: string;
+  /** Gap / notes blank marker (inline input) */
+  blank?: boolean;
+  /** Choose TWO/THREE: max selections (checkboxes) */
+  selectCount?: number;
+  /** Choose TWO/THREE: answer slots written by this lead question */
+  covers?: number[];
+  /** Satellite of a choose-TWO lead — not rendered alone */
+  pairedFrom?: number;
 };
 
 export type PublicQuestion = {
@@ -41,6 +49,10 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
     options?: { label: string; text: string }[];
     minWords?: number;
     imageUrl?: string;
+    blank?: boolean;
+    selectCount?: number;
+    covers?: number[];
+    pairedFrom?: number;
   };
 
   const isSpeaking = q.type === "SPEAKING_PROMPT";
@@ -54,6 +66,12 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
     (typeof q.mediaUrl === "string" && q.mediaUrl.trim()) ||
     undefined;
 
+  const covers = Array.isArray(content.covers)
+    ? content.covers
+        .map((n) => Number(n))
+        .filter((n) => Number.isFinite(n) && n > 0)
+    : undefined;
+
   return {
     number: q.number,
     type: q.type,
@@ -64,6 +82,16 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
       minWords: content.minWords,
       imageUrl,
       hint,
+      blank: content.blank === true ? true : undefined,
+      selectCount:
+        typeof content.selectCount === "number" && content.selectCount >= 2
+          ? Math.floor(content.selectCount)
+          : undefined,
+      covers: covers && covers.length >= 2 ? covers : undefined,
+      pairedFrom:
+        typeof content.pairedFrom === "number" && content.pairedFrom > 0
+          ? content.pairedFrom
+          : undefined,
     },
   };
 }

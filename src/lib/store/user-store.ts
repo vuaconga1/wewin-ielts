@@ -11,7 +11,7 @@ const USERS_FILE = path.join(DATA_DIR, "users.json");
 
 export type StoredUser = {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   passwordHash: string;
   role: "ADMIN" | "STUDENT";
@@ -49,6 +49,7 @@ export async function findLocalUserByEmail(
   email: string,
 ): Promise<StoredUser | null> {
   const normalized = email.trim().toLowerCase();
+  if (!normalized) return null;
   const users = await readAll();
   return users.find((u) => u.email === normalized) ?? null;
 }
@@ -78,15 +79,17 @@ export async function updateLocalUserAvatar(
 }
 
 export async function upsertLocalUser(input: {
-  email: string;
+  email: string | null;
   username: string;
   passwordHash: string;
   role: "ADMIN" | "STUDENT";
 }): Promise<StoredUser> {
-  const email = input.email.trim().toLowerCase();
+  const email = input.email?.trim().toLowerCase() || null;
   const users = await readAll();
   const now = new Date().toISOString();
-  const idx = users.findIndex((u) => u.email === email);
+  const idx = email
+    ? users.findIndex((u) => u.email === email)
+    : -1;
 
   if (idx >= 0) {
     const updated: StoredUser = {

@@ -97,7 +97,7 @@ function detectTaskType(instructionBlock: string): TaskHint {
     return "TABLE_COMPLETION";
   }
   if (
-    /which paragraph contains|which section contains|choose.*(from the box|FOUR answers|THREE answers)|list of words|list of researchers|match each statement|match each characteristic|write the correct letter,\s*a-[a-k]|matching the each correct year|match.*year/i.test(
+    /which paragraph contains|which section contains|choose.*(from the box|FOUR answers|THREE answers)|list of words|list of researchers|list of (dates|people|olympic)|match each\b|write the correct letter,?\s*a\s*[-–—]\s*[a-k]|matching the each correct year|match.*year/i.test(
       t,
     )
   ) {
@@ -112,6 +112,10 @@ function detectTaskType(instructionBlock: string): TaskHint {
   if (
     /choose the correct letter|choose.*letter,\s*a,\s*b\s*(or|&)\s*c/.test(t)
   ) {
+    return "MULTIPLE_CHOICE";
+  }
+  // "Choose TWO things / answers …" (no "letters") — still multi-select MCQ
+  if (/choose\s+(two|three|four)\b/.test(t)) {
     return "MULTIPLE_CHOICE";
   }
   // Short-answer prompts ("Answer the questions below… NO MORE THAN…")
@@ -163,9 +167,60 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
         endQ: Math.max(startQ, endQ),
         lines: [line],
       };
-    } else {
-      current.lines.push(line);
+      continue;
     }
+
+    // Summary/notes often omit "Questions N–M" and only say "boxes 24–26"
+    // (Test 2 Reading Passage 2). Start a new gap block when the range differs.
+    // Do NOT treat answer-sheet-relative "boxes 1–6" under Questions 14–19
+    // (or "boxes 7–9" under Questions 20–22) as a new question range.
+    const boxesM = trimmed.match(
+      /\bboxes?\s+(\d+)\s*[-–—]\s*(\d+)\b/i,
+    );
+    if (boxesM) {
+      const startQ = Number(boxesM[1]);
+      const endQ = Number(boxesM[2]);
+      const lo = Math.min(startQ, endQ);
+      const hi = Math.max(startQ, endQ);
+      const curLo = current.startQ;
+      const curHi = current.endQ;
+      if (curLo != null && curHi != null && lo <= curHi) {
+        // Instructional / relative sheet numbering — keep in current block.
+        current.lines.push(line);
+        continue;
+      }
+      const differs =
+        curLo == null ||
+        curHi == null ||
+        lo < curLo ||
+        hi > curHi ||
+        (lo !== curLo && hi !== curHi);
+      if (differs && (current.lines.length > 0 || current.startQ != null)) {
+        // Keep preceding "Complete the summary…" lines with the new block.
+        const carry: string[] = [];
+        while (current.lines.length) {
+          const last = current.lines[current.lines.length - 1]!;
+          if (
+            /^(Complete the|Choose ONE WORD|Choose NO MORE THAN)/i.test(
+              last.trim(),
+            )
+          ) {
+            carry.unshift(current.lines.pop()!);
+            continue;
+          }
+          break;
+        }
+        if (current.lines.length) blocks.push(current);
+        current = {
+          startQ: lo,
+          endQ: hi,
+          lines: [...carry, line],
+        };
+        continue;
+      }
+    }
+
+    current.lines.push(line);
   }
   if (current.lines.length) blocks.push(current);
 
@@ -312,7 +367,83 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
   }
 
   const numbers = [...byNumber.keys()].sort((a, b) => a - b);
-  return numbers.map((n, order) => ({ ...byNumber.get(n)!, order }));
+  const ordered = numbers.map((n, order) => ({ ...byNumber.get(n)!, order }));
+  return normalizeChooseTwoPairs(ordered, body);
+}
+
+/**
+ * IELTS "Questions N and M / Choose TWO letters" → one multi-select lead
+ * (selectCount + covers) plus a paired satellite for scoring/nav.
+ */
+function normalizeChooseTwoPairs(
+  questions: QuestionDraft[],
+  body: string,
+): QuestionDraft[] {
+  // "Questions 29 and 30" OR "Questions 27 – 28" / "Questions 17-18"
+  // Multi-select = "Choose TWO/THREE letters|things". Exclude matching
+  // "Choose FOUR answers from the box … next to questions 27–30".
+  const pairHeaders = body.matchAll(
+    /Questions?\s+(\d+)\s*(?:and|[-–—]|to)\s*(\d+)\b[\s\S]{0,200}?Choose\s+(TWO|THREE|FOUR)\s+(?:letters?|things?|options?|answers?)\b/gi,
+  );
+
+  const byNumber = new Map(questions.map((q) => [q.number, { ...q }]));
+
+  for (const m of pairHeaders) {
+    const a = Number(m[1]);
+    const b = Number(m[2]);
+    const word = (m[3] ?? "TWO").toUpperCase();
+    const selectCount =
+      word === "THREE" ? 3 : word === "FOUR" ? 4 : 2;
+    const start = Math.min(a, b);
+    const end = Math.max(a, b);
+    if (end - start + 1 !== selectCount) continue;
+
+    const covers = Array.from({ length: selectCount }, (_, i) => start + i);
+    const lead = byNumber.get(start);
+    if (!lead) continue;
+
+    const opts = Array.isArray(
+      (lead.content as { options?: unknown }).options,
+    )
+      ? ((lead.content as { options: unknown[] }).options)
+      : [];
+    if (opts.length < 3) continue;
+
+    const leadContent: Record<string, unknown> = {
+      ...lead.content,
+      selectCount,
+      covers,
+    };
+    delete leadContent.pairedFrom;
+    delete leadContent.blank;
+
+    byNumber.set(start, {
+      ...lead,
+      type: "MULTIPLE_CHOICE",
+      content: leadContent,
+    });
+
+    for (let i = 1; i < covers.length; i++) {
+      const n = covers[i]!;
+      const existing = byNumber.get(n);
+      byNumber.set(n, {
+        number: n,
+        order: existing?.order ?? 0,
+        type: "MULTIPLE_CHOICE",
+        content: {
+          stem: "",
+          pairedFrom: start,
+        },
+        correctAnswer: existing?.correctAnswer,
+        acceptableAnswers: existing?.acceptableAnswers,
+        explanation: existing?.explanation,
+      });
+    }
+  }
+
+  return [...byNumber.keys()]
+    .sort((a, b) => a - b)
+    .map((n, order) => ({ ...byNumber.get(n)!, order }));
 }
 
 function questionRichness(q: QuestionDraft): number {
@@ -686,11 +817,22 @@ function extractUnnumberedMcqQuestions(
       i += 1;
       continue;
     }
-    // Stem candidate: not an instruction / list header, followed by A/B options
+    // Stem candidate: skip format-only Choose lines, but keep real stems like
+    // "Choose TWO things should staff do when moving papers?" (Test 2 Listening).
     if (
       /^Questions?\s+\d+/i.test(t) ||
-      /^Choose\b/i.test(t) ||
       /^(List of|Interesting features|Exhibitions|Locations)\b/i.test(t)
+    ) {
+      i += 1;
+      continue;
+    }
+    if (
+      /^Choose\b/i.test(t) &&
+      (/^Choose\s+(?:the\s+correct\s+letter|TWO\s+letters?|THREE\s+letters?|FOUR\s+letters?|ONE\s+WORD)\b/i.test(
+        t,
+      ) ||
+        /^Choose\s+[A-E]\b/i.test(t) ||
+        /,\s*A\s*[-–—]\s*[A-E]\b/i.test(t))
     ) {
       i += 1;
       continue;

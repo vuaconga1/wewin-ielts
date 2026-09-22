@@ -2,6 +2,11 @@
  * Simple answer comparison for Listening / Reading auto-grade.
  */
 
+import {
+  buildMultiSelectPairMap,
+  type MultiSelectContent,
+} from "@/lib/practice/multi-select";
+
 export function normalizeForCompare(value: unknown): string {
   return String(value ?? "")
     .trim()
@@ -118,6 +123,87 @@ function isAutoGradable(type: string, correctAnswer: unknown): boolean {
   return correctAnswer != null;
 }
 
+/**
+ * Order-independent matching for Choose TWO/THREE letter groups.
+ * Returns one boolean per user slot (same length as userAnswers).
+ */
+export function matchMultiSelectAnswers(
+  userAnswers: unknown[],
+  correctAnswers: unknown[],
+): boolean[] {
+  const remaining = correctAnswers.map((c) => normalizeForCompare(c));
+  return userAnswers.map((raw) => {
+    const user = normalizeForCompare(raw);
+    if (!user) return false;
+    const idx = remaining.findIndex((c) => {
+      if (!c) return false;
+      const aliases = expandAliases(c);
+      for (const u of expandAliases(user)) {
+        if (aliases.has(u)) return true;
+      }
+      return false;
+    });
+    if (idx < 0) return false;
+    remaining.splice(idx, 1);
+    return true;
+  });
+}
+
+function gradeOne(
+  q: {
+    number: number;
+    type: string;
+    content: Record<string, unknown>;
+    correctAnswer?: unknown;
+    acceptableAnswers?: string[];
+    explanation?: string;
+    sectionTitle: string;
+    sectionOrder: number;
+  },
+  userAnswer: string,
+  isCorrectOverride?: boolean,
+): GradedQuestion {
+  const stem = String((q.content as { stem?: string }).stem ?? "");
+  const options = (q.content as { options?: { label: string; text: string }[] })
+    .options;
+  const auto = isAutoGradable(q.type, q.correctAnswer);
+  const isCorrect =
+    isCorrectOverride ??
+    (auto
+      ? isAnswerCorrect(userAnswer, q.correctAnswer, q.acceptableAnswers)
+      : false);
+
+  let status: AnswerStatus;
+  if (!auto) {
+    status = "no_key";
+  } else if (!userAnswer.trim()) {
+    status = "skipped";
+  } else if (isCorrect) {
+    status = "correct";
+  } else {
+    status = "wrong";
+  }
+
+  const explanation =
+    typeof q.explanation === "string" && q.explanation.trim()
+      ? q.explanation.trim()
+      : undefined;
+
+  return {
+    questionNumber: q.number,
+    sectionTitle: q.sectionTitle,
+    sectionOrder: q.sectionOrder,
+    type: q.type,
+    stem,
+    userAnswer,
+    correctAnswer: q.correctAnswer,
+    isCorrect,
+    status,
+    explanation,
+    options,
+  };
+}
+
 export function gradeAnswers(
   questions: {
     number: number;
@@ -131,45 +217,64 @@ export function gradeAnswers(
   }[],
   answers: Record<string, string>,
 ): GradeResult {
-  const items: GradedQuestion[] = questions.map((q) => {
-    const userAnswer = answers[String(q.number)] ?? answers[`Q${q.number}`] ?? "";
-    const stem = String((q.content as { stem?: string }).stem ?? "");
-    const options = (q.content as { options?: { label: string; text: string }[] })
-      .options;
-    const auto = isAutoGradable(q.type, q.correctAnswer);
-    const isCorrect = auto
-      ? isAnswerCorrect(userAnswer, q.correctAnswer, q.acceptableAnswers)
-      : false;
+  const byNumber = new Map(questions.map((q) => [q.number, q]));
+  const pairs = buildMultiSelectPairMap(
+    questions.map((q) => ({
+      number: q.number,
+      content: q.content as MultiSelectContent,
+    })),
+  );
+  const handled = new Set<number>();
+  const items: GradedQuestion[] = [];
 
-    let status: AnswerStatus;
-    if (!auto) {
-      status = "no_key";
-    } else if (!userAnswer.trim()) {
-      status = "skipped";
-    } else if (isCorrect) {
-      status = "correct";
-    } else {
-      status = "wrong";
+  for (const q of questions) {
+    if (handled.has(q.number)) continue;
+
+    const covers = pairs.get(q.number);
+    if (covers && covers.length >= 2) {
+      const pairQs = covers
+        .map((n) => byNumber.get(n))
+        .filter((x): x is (typeof questions)[number] => Boolean(x));
+      const leadOptions = (
+        pairQs[0]?.content as { options?: { label: string; text: string }[] }
+      )?.options;
+      const userSlots = covers.map(
+        (n) => answers[String(n)] ?? answers[`Q${n}`] ?? "",
+      );
+      const correctSlots = pairQs.map((pq) => pq.correctAnswer);
+      const matchFlags = matchMultiSelectAnswers(userSlots, correctSlots);
+
+      for (let i = 0; i < pairQs.length; i++) {
+        const pq = pairQs[i]!;
+        handled.add(pq.number);
+        const contentWithOptions =
+          leadOptions &&
+          !(pq.content as { options?: unknown[] }).options?.length
+            ? { ...pq.content, options: leadOptions }
+            : pq.content;
+        items.push(
+          gradeOne(
+            { ...pq, content: contentWithOptions },
+            userSlots[i] ?? "",
+            matchFlags[i],
+          ),
+        );
+      }
+      continue;
     }
 
-    const explanation =
-      typeof q.explanation === "string" && q.explanation.trim()
-        ? q.explanation.trim()
-        : undefined;
+    handled.add(q.number);
+    const userAnswer =
+      answers[String(q.number)] ?? answers[`Q${q.number}`] ?? "";
+    items.push(gradeOne(q, userAnswer));
+  }
 
-    return {
-      questionNumber: q.number,
-      sectionTitle: q.sectionTitle,
-      sectionOrder: q.sectionOrder,
-      type: q.type,
-      stem,
-      userAnswer,
-      correctAnswer: q.correctAnswer,
-      isCorrect,
-      status,
-      explanation,
-      options,
-    };
+  // Preserve original question order
+  items.sort((a, b) => {
+    if (a.sectionOrder !== b.sectionOrder) {
+      return a.sectionOrder - b.sectionOrder;
+    }
+    return a.questionNumber - b.questionNumber;
   });
 
   const gradable = items.filter((i) => i.status !== "no_key");

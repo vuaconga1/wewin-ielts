@@ -134,14 +134,23 @@ export function LoginForm() {
       </div>
 
       <label className="block text-sm">
-        <span className="font-medium text-zinc-700">{ta("email")}</span>
+        <span className="font-medium text-zinc-700">
+          {mode === "login"
+            ? ta("loginIdentifier", "Email hoặc username")
+            : ta("email", "Email")}
+        </span>
         <input
-          type="email"
+          type={mode === "login" ? "text" : "email"}
           required
           className="mt-1 w-full rounded-lg border border-zinc-300 px-3 py-2 outline-none focus:border-wewin-navy focus:ring-2 focus:ring-wewin-accent-blue-bg"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          autoComplete="email"
+          autoComplete={mode === "login" ? "username" : "email"}
+          placeholder={
+            mode === "login"
+              ? ta("loginIdentifierPlaceholder", "email hoặc username")
+              : undefined
+          }
         />
       </label>
 

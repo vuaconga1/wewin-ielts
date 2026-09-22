@@ -1,0 +1,963 @@
+{
+  "title": "Test 11 - Listening",
+  "slug": "test-11-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 11",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\nQuestions 1-7\nComplete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.\nHoliday on Jackson Island\n\nPlace\nAnna's accommodation\nThings Anna did\nAnna's recommendation\nCamford\nExample\nwith cousin\nwent shopping in the market\nneed to take 1 ........\nNewtown\n\nbus tour\nvisit the 2 ........\nGolden Beach\nin a 3 ........\n4 ........\nStay for at least 5 ........\n6 ........\nin a motel\nwent 7 ........\nbook some lessons in advance\n\nQuestions 8 - 10\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\nMore Advice\nTry the 8. ____________ at the cafe on the mountain.\nHire a 9. ____________\nBuy a 10. ____________ before the holiday",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-11-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "cash"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "museum"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "caravan"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "sailing"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "four days",
+          "acceptableAnswers": [
+            "4 days"
+          ]
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "White Mountain"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "snowboarding"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "cakes"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "car"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "map",
+          "acceptableAnswers": [
+            "maps"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\nQuestions 11 - 15\nLabel the map below.\nWrite the correct letter, A-H, next to questions 11-15.\n\n11. Bike sheds\n12. Snack shop\n13. Fitness rooms\n14. Family rooms\n15. TV room\nQuestions 16 - 20\nChoose the correct letter, A, B or C.\n16. The drama option takes place\nA in the theatre.\nB in the sports hall.\nC in the lecture rooms.\n17. The photography option is reserved for\nA people new to photography.\nB people with special equipment.\nC parents and children.\n18. The writing option will focus on\nA poetry techniques.\nB short stories.\nC starting a novel.\n19. The music option involves\nA singing classes.\nB going to a concert.\nC giving a performance.\n20. What information is given about the creche?\nA it costs the same as last year.\nB lunch costs extra.\nC parents must pay in advance",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-11-section-2.mp3",
+        "imageUrl": "/uploads/images/test-11-listening-img1.png",
+        "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Bike sheds",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+          },
+          "correctAnswer": "G",
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Snack shop",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+          },
+          "correctAnswer": "E",
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Fitness rooms",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Family rooms",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+          },
+          "correctAnswer": "F",
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "TV room",
+            "options": [
+              {
+                "label": "A",
+                "text": "A"
+              },
+              {
+                "label": "B",
+                "text": "B"
+              },
+              {
+                "label": "C",
+                "text": "C"
+              },
+              {
+                "label": "D",
+                "text": "D"
+              },
+              {
+                "label": "E",
+                "text": "E"
+              },
+              {
+                "label": "F",
+                "text": "F"
+              },
+              {
+                "label": "G",
+                "text": "G"
+              },
+              {
+                "label": "H",
+                "text": "H"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+          },
+          "correctAnswer": "H",
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The drama option takes place",
+            "options": [
+              {
+                "label": "A",
+                "text": "in the theatre."
+              },
+              {
+                "label": "B",
+                "text": "in the sports hall."
+              },
+              {
+                "label": "C",
+                "text": "in the lecture rooms."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The photography option is reserved for",
+            "options": [
+              {
+                "label": "A",
+                "text": "people new to photography."
+              },
+              {
+                "label": "B",
+                "text": "people with special equipment."
+              },
+              {
+                "label": "C",
+                "text": "parents and children."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The writing option will focus on",
+            "options": [
+              {
+                "label": "A",
+                "text": "poetry techniques."
+              },
+              {
+                "label": "B",
+                "text": "short stories."
+              },
+              {
+                "label": "C",
+                "text": "starting a novel."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The music option involves",
+            "options": [
+              {
+                "label": "A",
+                "text": "singing classes."
+              },
+              {
+                "label": "B",
+                "text": "going to a concert."
+              },
+              {
+                "label": "C",
+                "text": "giving a performance."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What information is given about the creche?",
+            "options": [
+              {
+                "label": "A",
+                "text": "it costs the same as last year."
+              },
+              {
+                "label": "B",
+                "text": "lunch costs extra."
+              },
+              {
+                "label": "C",
+                "text": "parents must pay in advance"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\nQuestions 21 and 22\nChoose TWO letters, A-E.\nWhich TWO topics were the aims of the geography lesson related to?\nA global inter dependency\nB manufacturing methods\nC the environmental impact of trade\nD transport systems\nE the development of writing tools\n\nQuestions 23 and 24\nChoose TWO letters, A-E.\nWhich TWO problems do Dean and Hannah identify in their lesson?\nA the materials\nB the student grouping\nC the lesson structure\nD the teacher coordination\nE the timing\n\nQuestions 25-30\nComplete the flow-chart below.\nChoose SIX answers from the box and write the correct letter, A-H, next to questions 25-30\nOptions\nA export routes\nB future\nC talk\nD homework\nE worksheet\nF history\nG producers\nH methods of transport\n\nGeography lesson plan: student activities\nExamine a pencil and discuss where the component materials come from.\n↓\nLocate the top 25 ........ on a world map.\n↓\nDiscuss the pros and cons of different 26 ........\n↓\nIn groups, discuss countries' possible 27 ........ to the USA.\n↓\nComplete a 28 ........ about pencil distribution within the USA.\n↓\nShare ideas about the 29 ........ of pencils.\n↓\nPrepare a 30 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-11-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO topics were the aims of the geography lesson related to?",
+            "options": [
+              {
+                "label": "A",
+                "text": "global inter dependency"
+              },
+              {
+                "label": "B",
+                "text": "manufacturing methods"
+              },
+              {
+                "label": "C",
+                "text": "the environmental impact of trade"
+              },
+              {
+                "label": "D",
+                "text": "transport systems"
+              },
+              {
+                "label": "E",
+                "text": "the development of writing tools"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              21,
+              22
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 21
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO problems do Dean and Hannah identify in their lesson?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the materials"
+              },
+              {
+                "label": "B",
+                "text": "the student grouping"
+              },
+              {
+                "label": "C",
+                "text": "the lesson structure"
+              },
+              {
+                "label": "D",
+                "text": "the teacher coordination"
+              },
+              {
+                "label": "E",
+                "text": "the timing"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              23,
+              24
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 23
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Locate the top …… on a world map",
+            "options": [
+              {
+                "label": "A",
+                "text": "export routes"
+              },
+              {
+                "label": "B",
+                "text": "future"
+              },
+              {
+                "label": "C",
+                "text": "talk"
+              },
+              {
+                "label": "D",
+                "text": "homework"
+              },
+              {
+                "label": "E",
+                "text": "worksheet"
+              },
+              {
+                "label": "F",
+                "text": "history"
+              },
+              {
+                "label": "G",
+                "text": "producers"
+              },
+              {
+                "label": "H",
+                "text": "methods of transport"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Discuss the pros and cons of different ……",
+            "options": [
+              {
+                "label": "A",
+                "text": "export routes"
+              },
+              {
+                "label": "B",
+                "text": "future"
+              },
+              {
+                "label": "C",
+                "text": "talk"
+              },
+              {
+                "label": "D",
+                "text": "homework"
+              },
+              {
+                "label": "E",
+                "text": "worksheet"
+              },
+              {
+                "label": "F",
+                "text": "history"
+              },
+              {
+                "label": "G",
+                "text": "producers"
+              },
+              {
+                "label": "H",
+                "text": "methods of transport"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "In groups, discuss countries' possible …… to the USA",
+            "options": [
+              {
+                "label": "A",
+                "text": "export routes"
+              },
+              {
+                "label": "B",
+                "text": "future"
+              },
+              {
+                "label": "C",
+                "text": "talk"
+              },
+              {
+                "label": "D",
+                "text": "homework"
+              },
+              {
+                "label": "E",
+                "text": "worksheet"
+              },
+              {
+                "label": "F",
+                "text": "history"
+              },
+              {
+                "label": "G",
+                "text": "producers"
+              },
+              {
+                "label": "H",
+                "text": "methods of transport"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Complete a …… about pencil distribution within the USA",
+            "options": [
+              {
+                "label": "A",
+                "text": "export routes"
+              },
+              {
+                "label": "B",
+                "text": "future"
+              },
+              {
+                "label": "C",
+                "text": "talk"
+              },
+              {
+                "label": "D",
+                "text": "homework"
+              },
+              {
+                "label": "E",
+                "text": "worksheet"
+              },
+              {
+                "label": "F",
+                "text": "history"
+              },
+              {
+                "label": "G",
+                "text": "producers"
+              },
+              {
+                "label": "H",
+                "text": "methods of transport"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Share ideas about the …… of pencils",
+            "options": [
+              {
+                "label": "A",
+                "text": "export routes"
+              },
+              {
+                "label": "B",
+                "text": "future"
+              },
+              {
+                "label": "C",
+                "text": "talk"
+              },
+              {
+                "label": "D",
+                "text": "homework"
+              },
+              {
+                "label": "E",
+                "text": "worksheet"
+              },
+              {
+                "label": "F",
+                "text": "history"
+              },
+              {
+                "label": "G",
+                "text": "producers"
+              },
+              {
+                "label": "H",
+                "text": "methods of transport"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Prepare a ……",
+            "options": [
+              {
+                "label": "A",
+                "text": "export routes"
+              },
+              {
+                "label": "B",
+                "text": "future"
+              },
+              {
+                "label": "C",
+                "text": "talk"
+              },
+              {
+                "label": "D",
+                "text": "homework"
+              },
+              {
+                "label": "E",
+                "text": "worksheet"
+              },
+              {
+                "label": "F",
+                "text": "history"
+              },
+              {
+                "label": "G",
+                "text": "producers"
+              },
+              {
+                "label": "H",
+                "text": "methods of transport"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\nBiomass fuel\nBiomass is waste plant material, e.g. sawdust, straw.\nBiomass briquettes can be used as domestic or industrial fuel.\nBenefits of biomass briquettes\nFinancial: no 31. ____________ for materials\nConvenience: clean and easy to handle and 32. ____________\nProduction by machine\nBiomass is first converted to a 33. ____________ . Then other substances are added.\nThe machine expels the mixture through 34. ____________ of different shapes.\nN.B. Only a relatively small amount of 35. ____________ is needed to operate the machine.\nProduction by hand\nBiomass is mixed with water and sticky material, e.g. 36. ____________ and then pressed into shape.\nCurrent use\nEurope and the USA\nBriquettes have been in use for some time for 37. ____________\nThe use of briquettes made from wood has increased rapidly.\nIndia and China\n1990s: briquette manufacture began.\n2002: China had about 600 38. ____________\nUganda\nCustomers are mainly public institutions or 39. ____________\nProspects for biomass fuel\nThe 40. ____________ is likely to increase",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-11-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "cost"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "store"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "powder"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "holes"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "electricity",
+          "acceptableAnswers": [
+            "energy",
+            "electrcity"
+          ]
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "starch"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "agriculture"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "factories"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "businesses"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "demand"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-11-section-1.mp3",
+    "/uploads/audio/test-11-section-2.mp3",
+    "/uploads/audio/test-11-section-3.mp3",
+    "/uploads/audio/test-11-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T04:26:40.583Z"
+}

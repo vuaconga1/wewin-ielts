@@ -1,0 +1,787 @@
+{
+  "title": "Test 2 - Listening",
+  "slug": "test-2-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 2",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nThe London Relocation Services\n\nExample\nCustomer's name: Anna Woods\n\nCustomer's personal details\nCurrent address: 118 1 ........ Park, Ballysillan\nPostcode: BT149BJ\nPhone No: 2 ........ (Mobile)\nOther information\nAnna is hoping to find work as a 3 ........\nShe needs to find a 4 ........ school for her son\nRequirements for the new propertyLocationHer preferred location is in the 5 ........ of the city.\nHer husband would like to be near a 6 ........\nHer son would prefer to be close to a 7 ........\nProperty detailsShe would like to live in a 8 ........\nShe prefers 9 ........ bedrooms\nA small 10 ........ is also desirable",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-2-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Fordyce"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "07840051963"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Nurse"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Primary"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "South"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Station"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Park"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "House"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "2"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Office"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\n\nQuestions 11-16\n\nChoose the correct letter, A, B or C\n\nMoving Office\n\n11 what reason does the manager give for moving to a new office building?\n\nA to have more space\n\nB to pay less rent\n\nC be in a central location\n\n12 What is best about the new office building?\n\nA the air- conditioning system\n\nB the amount of natural light\n\nC the low level of noise\n\n13 When will the office move take place?\n\nA after the sales conference\n\nB after the end of the tax year\n\nC after the annual holiday period\n\n14 What information about the new location is already on the company website?\n\nA where to park\n\nB places to eat\n\nC public transport\n\n15 What practical thing must staff do now?\n\nA give details of damaged furniture\n\nB throw away unnecessary papers\n\nC take home personal items\n\n16 staff will need to put folders containing confidential details\n\nA into packing boxes\n\nB into grey plastic bags\n\nC into new filing cabinets\n\nQuestions 17 and 18\n\nChoose Two letters, A- E\n\nWhich TWO things do people often forget when lifting heavy things?\n\nA keep your head up\n\nB do not bend your back\n\nC do not lean to one side\n\nD use handles\n\nE stand with feet apart\n\nQuestions 19 and 20\n\nChoose TWO things should staff do when moving papers?\n\nA wear face mask\n\nB open windows\n\nC wear gloves\n\nD take frequent breaks\n\nE drink plenty of water",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-2-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "what reason does the manager give for moving to a new office building?",
+            "options": [
+              {
+                "label": "A",
+                "text": "to have more space"
+              },
+              {
+                "label": "B",
+                "text": "to pay less rent"
+              },
+              {
+                "label": "C",
+                "text": "be in a central location"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is best about the new office building?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the air- conditioning system"
+              },
+              {
+                "label": "B",
+                "text": "the amount of natural light"
+              },
+              {
+                "label": "C",
+                "text": "the low level of noise"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When will the office move take place?",
+            "options": [
+              {
+                "label": "A",
+                "text": "after the sales conference"
+              },
+              {
+                "label": "B",
+                "text": "after the end of the tax year"
+              },
+              {
+                "label": "C",
+                "text": "after the annual holiday period"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What information about the new location is already on the company website?",
+            "options": [
+              {
+                "label": "A",
+                "text": "where to park"
+              },
+              {
+                "label": "B",
+                "text": "places to eat"
+              },
+              {
+                "label": "C",
+                "text": "public transport"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What practical thing must staff do now?",
+            "options": [
+              {
+                "label": "A",
+                "text": "give details of damaged furniture"
+              },
+              {
+                "label": "B",
+                "text": "throw away unnecessary papers"
+              },
+              {
+                "label": "C",
+                "text": "take home personal items"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "staff will need to put folders containing confidential details",
+            "options": [
+              {
+                "label": "A",
+                "text": "into packing boxes"
+              },
+              {
+                "label": "B",
+                "text": "into grey plastic bags"
+              },
+              {
+                "label": "C",
+                "text": "into new filing cabinets"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do people often forget when lifting heavy things?",
+            "options": [
+              {
+                "label": "A",
+                "text": "keep your head up"
+              },
+              {
+                "label": "B",
+                "text": "do not bend your back"
+              },
+              {
+                "label": "C",
+                "text": "do not lean to one side"
+              },
+              {
+                "label": "D",
+                "text": "use handles"
+              },
+              {
+                "label": "E",
+                "text": "stand with feet apart"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              17,
+              18
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 17
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Choose TWO things should staff do when moving papers?",
+            "options": [
+              {
+                "label": "A",
+                "text": "wear face mask"
+              },
+              {
+                "label": "B",
+                "text": "open windows"
+              },
+              {
+                "label": "C",
+                "text": "wear gloves"
+              },
+              {
+                "label": "D",
+                "text": "take frequent breaks"
+              },
+              {
+                "label": "E",
+                "text": "drink plenty of water"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              19,
+              20
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 19
+          },
+          "correctAnswer": "E"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\n\nQuestions 21-26\n\n Choose the correct letter, A, B or C.\n\n21. Mona's presentation topic is about\n\nA. design development from 1800s\n\nB. design development and social advancement\n\nC. design development and art movement\n\n22. Mona doesn't want to just talk about one topic because\n\nA. She is afraid of her tutor's response\n\nB. She wants to give a complete talk.\n\nC. She thinks it would be too simple\n\n23. What does Ted say about Mona's topic?\n\nA. Very detailed\n\nB. Too old\n\nC. Too broad\n\n24. What is Mona's viewpoint on computers?\n\nA. They have improved work efficiency.\n\nB. They have influenced traditional media.\n\nC. They have changed people's sense of style.\n\n25. Why does Ted think of 'purism'?\n\nA. It's important for architecture\n\nB. It saves a lot of effort\n\nC. He admires it in arts\n\n26. What does Ted suggest Mona\n\nA. meet one of his friends\n\nB. read more books\n\nC. visit a museum\n\nQuestions 27-30\n\nAccording to Ted, what is the right way to make a successful presentation?\n\nChoose FOUR letters from the box and write the correct letter, A-F, next to questions 27-30.\n\nA text handouts\n\nB questions\n\nC an outline\n\nD an introduction\n\nE statement\n\nF explain\n\nG research\n\nStep 1. Write 27 ........\n\nStep 2. 28 ........ further on the topic\n\nStep 3. Put a 29 ........ for every picture and support it\n\nStep 4. every slide illustrates a thought, all the thoughts link together\n\nStep 5. Write 30 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-2-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Mona's presentation topic is about",
+            "options": [
+              {
+                "label": "A",
+                "text": "design development from 1800s"
+              },
+              {
+                "label": "B",
+                "text": "design development and social advancement"
+              },
+              {
+                "label": "C",
+                "text": "design development and art movement"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Mona doesn't want to just talk about one topic because",
+            "options": [
+              {
+                "label": "A",
+                "text": "She is afraid of her tutor's response"
+              },
+              {
+                "label": "B",
+                "text": "She wants to give a complete talk."
+              },
+              {
+                "label": "C",
+                "text": "She thinks it would be too simple"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Ted say about Mona's topic?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Very detailed"
+              },
+              {
+                "label": "B",
+                "text": "Too old"
+              },
+              {
+                "label": "C",
+                "text": "Too broad"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is Mona's viewpoint on computers?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They have improved work efficiency."
+              },
+              {
+                "label": "B",
+                "text": "They have influenced traditional media."
+              },
+              {
+                "label": "C",
+                "text": "They have changed people's sense of style."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why does Ted think of 'purism'?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It's important for architecture"
+              },
+              {
+                "label": "B",
+                "text": "It saves a lot of effort"
+              },
+              {
+                "label": "C",
+                "text": "He admires it in arts"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Ted suggest Mona",
+            "options": [
+              {
+                "label": "A",
+                "text": "meet one of his friends"
+              },
+              {
+                "label": "B",
+                "text": "read more books"
+              },
+              {
+                "label": "C",
+                "text": "visit a museum"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "F explain G research Step 1. Write",
+            "options": [
+              {
+                "label": "A",
+                "text": "text handouts"
+              },
+              {
+                "label": "B",
+                "text": "questions"
+              },
+              {
+                "label": "C",
+                "text": "an outline"
+              },
+              {
+                "label": "D",
+                "text": "an introduction"
+              },
+              {
+                "label": "E",
+                "text": "statement"
+              },
+              {
+                "label": "F",
+                "text": "explain"
+              },
+              {
+                "label": "G",
+                "text": "research"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Step 2.",
+            "options": [
+              {
+                "label": "A",
+                "text": "text handouts"
+              },
+              {
+                "label": "B",
+                "text": "questions"
+              },
+              {
+                "label": "C",
+                "text": "an outline"
+              },
+              {
+                "label": "D",
+                "text": "an introduction"
+              },
+              {
+                "label": "E",
+                "text": "statement"
+              },
+              {
+                "label": "F",
+                "text": "explain"
+              },
+              {
+                "label": "G",
+                "text": "research"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "on the topic Step 3. Put a",
+            "options": [
+              {
+                "label": "A",
+                "text": "text handouts"
+              },
+              {
+                "label": "B",
+                "text": "questions"
+              },
+              {
+                "label": "C",
+                "text": "an outline"
+              },
+              {
+                "label": "D",
+                "text": "an introduction"
+              },
+              {
+                "label": "E",
+                "text": "statement"
+              },
+              {
+                "label": "F",
+                "text": "explain"
+              },
+              {
+                "label": "G",
+                "text": "research"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "thoughts link together Step 5. Write",
+            "options": [
+              {
+                "label": "A",
+                "text": "text handouts"
+              },
+              {
+                "label": "B",
+                "text": "questions"
+              },
+              {
+                "label": "C",
+                "text": "an outline"
+              },
+              {
+                "label": "D",
+                "text": "an introduction"
+              },
+              {
+                "label": "E",
+                "text": "statement"
+              },
+              {
+                "label": "F",
+                "text": "explain"
+              },
+              {
+                "label": "G",
+                "text": "research"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Question 31-40\n\nQuestion 31-36\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nGraphical Symbol\n\n‘Graphical symbol’\n\n• includes the logographs in Egyptian hieroglyphic writing and ancient Chinese pictograms\n\n• found in Africa, the Americas, and Oceania\n\n• still has something to do with 31 ........ use today\n\nAncient graphic writing systems\n\n• Researchers obtain a wide range of 32 ........ about past civilisations.\n\n– Rosetta Stone was found in 1799 when members of Napoleon’s expedition got to Egypt.\n\n– Frenchman Jean-François Champollion determined the phonetic values of the symbols in 1822.\n\n• In those symbols, 33 ........ are used to depict various meanings.\n\nCamera obscura\n\n• 34 ........ helps people understand history better.\n\n• Some charities will 35 ........ many endangered species.\n\n• A camera was tied to one 36 ........ of a bird.\n\nQuestions 37-40\n\nComplete the sentences below.\n\nWrite ONE WORD ONLY for each answer.\n\n37 More _________ will be included in the future with the development of photography.\n\n38 Companies would like to invest a lot to advertise in _________\n\n39 Designing appealing _________ is used as a way of effective branding.\n\n40 Graphic writing systems are of great importance in the subject of ________",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-2-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Commercial"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Knowledge"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Lines"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Photography"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Advertise"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Foot"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Objects"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "Companies would like to invest a lot to advertise in"
+          },
+          "correctAnswer": "Newspapers"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Packaging"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "Graphic writing systems are of great importance in the subject of"
+          },
+          "correctAnswer": "mathematics",
+          "acceptableAnswers": [
+            "math",
+            "maths"
+          ]
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-2-section-1.mp3",
+    "/uploads/audio/test-2-section-2.mp3",
+    "/uploads/audio/test-2-section-3.mp3",
+    "/uploads/audio/test-2-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T00:26:12.843Z"
+}

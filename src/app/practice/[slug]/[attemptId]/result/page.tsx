@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import nextDynamic from "next/dynamic";
 import { notFound, redirect } from "next/navigation";
-import { AiScorePanel } from "@/components/practice/ai-score-panel";
 import { ScoredResultReview } from "@/components/practice/scored-result-review";
 import { getSessionUser } from "@/lib/auth";
 import { canAccessAttempt } from "@/lib/practice/attempt-access";
@@ -22,6 +22,16 @@ import { countWords, estimateBand, gradeAnswers } from "@/lib/scoring";
 import { getAttempt, getTestBySlug } from "@/lib/store/test-store";
 import { getTranslations } from "@/i18n/server";
 import type { Translator } from "@/i18n/translate";
+
+const AiScorePanel = nextDynamic(
+  () =>
+    import("@/components/practice/ai-score-panel").then((m) => m.AiScorePanel),
+  {
+    loading: () => (
+      <div className="h-28 animate-pulse rounded-lg bg-zinc-100" aria-hidden />
+    ),
+  },
+);
 
 export const dynamic = "force-dynamic";
 

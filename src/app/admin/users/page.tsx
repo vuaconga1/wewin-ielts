@@ -1,8 +1,18 @@
 import Link from "next/link";
+import nextDynamic from "next/dynamic";
 import { SiteShell } from "@/components/layout/site-shell";
-import { UsersManager } from "@/components/admin/users-manager";
 import { getSessionUser } from "@/lib/auth";
 import { getTranslations } from "@/i18n/server";
+
+const UsersManager = nextDynamic(
+  () =>
+    import("@/components/admin/users-manager").then((m) => m.UsersManager),
+  {
+    loading: () => (
+      <div className="h-40 animate-pulse rounded-lg bg-zinc-100" aria-hidden />
+    ),
+  },
+);
 
 export const dynamic = "force-dynamic";
 

@@ -1,0 +1,187 @@
+{
+  "title": "Speaking Test 3",
+  "slug": "test-3-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "drive:1FXwP-1uQ4ztbx9uzya86mCFV3bMd6Lqk:Speaking",
+  "description": "IELTS Academic Speaking practice set 3 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How do your friends get news?",
+            "topic": "News",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Have you read the news this morning?",
+            "topic": "News",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you often talk with your friends about the news?",
+            "topic": "News",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What is your favourite food?",
+            "topic": "Food",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kind of food did you like when you were young?",
+            "topic": "Food",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Has your favourite food changed since you were a child?",
+            "topic": "Food",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you eat different foods at different times of the year?",
+            "topic": "Food",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Who do you spend most time studying/working with? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of things do you study/work on with other people? [Why?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there times when you study/work better by yourself? [Why/Why not?]",
+            "topic": "People you study/work with",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe a TV show/online program you have watched recently  \n\nYou should say:  \n\nWhat it is  \n\nWhat it is about  \n\nHow often you watch it  \n\nAnd explain how you feel about it",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 12,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How can we solve the traffic jam problem?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 13,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What are the differences between the TV programs young people like to watch and those old people like to watch?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 14,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What makes a popular TV or online program?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 15,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of TV or online programs are popular in your country?",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 16,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you think it’s good to communicate when eating with your family?",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

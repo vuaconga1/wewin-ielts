@@ -1,0 +1,899 @@
+{
+  "title": "Test 8 - Listening",
+  "slug": "test-8-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 8",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-10\nComplete the table below.\nWrite ONE MORE THAN TWO WORDS AND OR A NUMBER for each answer.\nWashing Machine Warranty\nPersonal details\nName: Judie Smith\nReference number: 1 ........\nTime of purchase: 2 ........\nCurrent address: 120 3 ........, Oxford\nPostcode: 4 ........\nProblems\nThe floor was wet because of the 5 ........\nThe washing machine was out of control and the woman 6 ........ Immediately\nThe floor is made of 7 ........\nArrangement for the repair work\nAsk a 8 ........ to repair the washing machine\nThe repairman is available 9 ........\nThe woman's house is opposite the 10 ........",
+      "meta": {},
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "CWX576884"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "9 months",
+          "acceptableAnswers": [
+            "nine months",
+            "9/nine months"
+          ]
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Middle Street"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Go194KE",
+          "acceptableAnswers": [
+            "GO194KE",
+            "GO19 4KE"
+          ]
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "water",
+          "acceptableAnswers": [
+            "Water"
+          ]
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "switched off",
+          "acceptableAnswers": [
+            "Switched off"
+          ]
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "wood"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "client engineer",
+          "acceptableAnswers": [
+            "Client engineer"
+          ]
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "next Tuesday"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Post Office",
+          "acceptableAnswers": [
+            "post office"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-15\nChoose the correct letter, A, B or C\nDriving license in UK\n11 What is the basic requirement for applying for a UK driving licence?\nA a medical report.\nB a valid licence from another country.\nC Current residency in the UK.\n12 What is true about the translation of original licences?\nA Applicants need to go to a recognised organisation.\nB It is not always necessary for foreigners when applying for a UK licence.\nC Applicants need to pay an extra fee for translation services.\n13 When applying for a UK licence, which type of photos will NOT be approved?\nA Photos in which the applicant is wearing glasses.\nB Photos with a cream background.\nC Photos that are undersized.\n14 What does the speaker think of the licence checking service?\nA The process is too slow.\nB The application form is confusing.\nC Some of the steps are unnecessary.\n15 What does the speaker recommend about making an application?\nA Choosing a quiet location.\nB Visiting the nearest branch.\nC Completing the forms online.\n\nQuestions 16-20\nWhat is the current feature of traffic management in each of the following cities\nWrite the correct letter, A-H, next to questions\n Features\nA good singnage\nB multiple access roads\nC police control points\nD ring roads\nE one- way streets\nF Effective traffic lights\nG Additional lanes\nH Pedestrianised areas\n\nCities\n16. London city\n17. Edinburgh city\n18. Cardiff city\n19. Manchester city\n20. Oxford city",
+      "meta": {},
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the basic requirement for applying for a UK driving licence?",
+            "options": [
+              {
+                "label": "A",
+                "text": "a medical report."
+              },
+              {
+                "label": "B",
+                "text": "a valid licence from another country."
+              },
+              {
+                "label": "C",
+                "text": "Current residency in the UK."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is true about the translation of original licences?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Applicants need to go to a recognised organisation."
+              },
+              {
+                "label": "B",
+                "text": "It is not always necessary for foreigners when applying for a UK licence."
+              },
+              {
+                "label": "C",
+                "text": "Applicants need to pay an extra fee for translation services."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When applying for a UK licence, which type of photos will NOT be approved?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Photos in which the applicant is wearing glasses."
+              },
+              {
+                "label": "B",
+                "text": "Photos with a cream background."
+              },
+              {
+                "label": "C",
+                "text": "Photos that are undersized."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker think of the licence checking service?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The process is too slow."
+              },
+              {
+                "label": "B",
+                "text": "The application form is confusing."
+              },
+              {
+                "label": "C",
+                "text": "Some of the steps are unnecessary."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker recommend about making an application?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Choosing a quiet location."
+              },
+              {
+                "label": "B",
+                "text": "Visiting the nearest branch."
+              },
+              {
+                "label": "C",
+                "text": "Completing the forms online."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "London",
+            "options": [
+              {
+                "label": "A",
+                "text": "good signage"
+              },
+              {
+                "label": "B",
+                "text": "multiple access roads"
+              },
+              {
+                "label": "C",
+                "text": "police control points"
+              },
+              {
+                "label": "D",
+                "text": "ring roads"
+              },
+              {
+                "label": "E",
+                "text": "one-way streets"
+              },
+              {
+                "label": "F",
+                "text": "Effective traffic lights"
+              },
+              {
+                "label": "G",
+                "text": "Additional lanes"
+              },
+              {
+                "label": "H",
+                "text": "Pedestrianised areas"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Edinburgh",
+            "options": [
+              {
+                "label": "A",
+                "text": "good signage"
+              },
+              {
+                "label": "B",
+                "text": "multiple access roads"
+              },
+              {
+                "label": "C",
+                "text": "police control points"
+              },
+              {
+                "label": "D",
+                "text": "ring roads"
+              },
+              {
+                "label": "E",
+                "text": "one-way streets"
+              },
+              {
+                "label": "F",
+                "text": "Effective traffic lights"
+              },
+              {
+                "label": "G",
+                "text": "Additional lanes"
+              },
+              {
+                "label": "H",
+                "text": "Pedestrianised areas"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Cardiff",
+            "options": [
+              {
+                "label": "A",
+                "text": "good signage"
+              },
+              {
+                "label": "B",
+                "text": "multiple access roads"
+              },
+              {
+                "label": "C",
+                "text": "police control points"
+              },
+              {
+                "label": "D",
+                "text": "ring roads"
+              },
+              {
+                "label": "E",
+                "text": "one-way streets"
+              },
+              {
+                "label": "F",
+                "text": "Effective traffic lights"
+              },
+              {
+                "label": "G",
+                "text": "Additional lanes"
+              },
+              {
+                "label": "H",
+                "text": "Pedestrianised areas"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Manchester",
+            "options": [
+              {
+                "label": "A",
+                "text": "good signage"
+              },
+              {
+                "label": "B",
+                "text": "multiple access roads"
+              },
+              {
+                "label": "C",
+                "text": "police control points"
+              },
+              {
+                "label": "D",
+                "text": "ring roads"
+              },
+              {
+                "label": "E",
+                "text": "one-way streets"
+              },
+              {
+                "label": "F",
+                "text": "Effective traffic lights"
+              },
+              {
+                "label": "G",
+                "text": "Additional lanes"
+              },
+              {
+                "label": "H",
+                "text": "Pedestrianised areas"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Oxford",
+            "options": [
+              {
+                "label": "A",
+                "text": "good signage"
+              },
+              {
+                "label": "B",
+                "text": "multiple access roads"
+              },
+              {
+                "label": "C",
+                "text": "police control points"
+              },
+              {
+                "label": "D",
+                "text": "ring roads"
+              },
+              {
+                "label": "E",
+                "text": "one-way streets"
+              },
+              {
+                "label": "F",
+                "text": "Effective traffic lights"
+              },
+              {
+                "label": "G",
+                "text": "Additional lanes"
+              },
+              {
+                "label": "H",
+                "text": "Pedestrianised areas"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-26\nWhat problem does Mona point out about each part of the hotel where she interned?\nWrite the correct letter, A-F, next to questions\nProblems\nA it is lack patience\nB it is very strict\nC it is a daily routine\nD it lacks sufficient staff\nE it is noisy\nF it is very tiring\n\nParts of the hotel\n21. reception desk\n22. restaurant area\n23. coffee bar area\n24. hotel shop\n25. personal office\n26. cleaning staff\n\nQuestions 27-30\nChoose the correct letter, A, B or C\n27 how does the experience benefit Mona?\nA It is good for her future job\nB It is good for her dissertation.\nC It can let her know something about the specific job.\n28 Why does the tutor want Mona to do the presentation?\nA Because she can do it skilfully.\nB Because she wants to do it herself\nC Because she can show other students how to do a presentation\n29 what does Mona suggest Tom do?\nA Talk to the university’s career centre\nB talk to his tutor\nC contact the hotel manager\n30 what is Tom’s plan for his own essay?\nA To study about the rise of five- star hotels\nB to use a video approach\nC To do research into how the hotel industry works",
+      "meta": {},
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "reception",
+            "options": [
+              {
+                "label": "A",
+                "text": "it is lack patience"
+              },
+              {
+                "label": "B",
+                "text": "it is very strict"
+              },
+              {
+                "label": "C",
+                "text": "it is a daily routine"
+              },
+              {
+                "label": "D",
+                "text": "it lacks sufficient staff"
+              },
+              {
+                "label": "E",
+                "text": "it is noisy"
+              },
+              {
+                "label": "F",
+                "text": "it is very tiring"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "restaurant",
+            "options": [
+              {
+                "label": "A",
+                "text": "it is lack patience"
+              },
+              {
+                "label": "B",
+                "text": "it is very strict"
+              },
+              {
+                "label": "C",
+                "text": "it is a daily routine"
+              },
+              {
+                "label": "D",
+                "text": "it lacks sufficient staff"
+              },
+              {
+                "label": "E",
+                "text": "it is noisy"
+              },
+              {
+                "label": "F",
+                "text": "it is very tiring"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "coffee bar",
+            "options": [
+              {
+                "label": "A",
+                "text": "it is lack patience"
+              },
+              {
+                "label": "B",
+                "text": "it is very strict"
+              },
+              {
+                "label": "C",
+                "text": "it is a daily routine"
+              },
+              {
+                "label": "D",
+                "text": "it lacks sufficient staff"
+              },
+              {
+                "label": "E",
+                "text": "it is noisy"
+              },
+              {
+                "label": "F",
+                "text": "it is very tiring"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "shop",
+            "options": [
+              {
+                "label": "A",
+                "text": "it is lack patience"
+              },
+              {
+                "label": "B",
+                "text": "it is very strict"
+              },
+              {
+                "label": "C",
+                "text": "it is a daily routine"
+              },
+              {
+                "label": "D",
+                "text": "it lacks sufficient staff"
+              },
+              {
+                "label": "E",
+                "text": "it is noisy"
+              },
+              {
+                "label": "F",
+                "text": "it is very tiring"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "personal office",
+            "options": [
+              {
+                "label": "A",
+                "text": "it is lack patience"
+              },
+              {
+                "label": "B",
+                "text": "it is very strict"
+              },
+              {
+                "label": "C",
+                "text": "it is a daily routine"
+              },
+              {
+                "label": "D",
+                "text": "it lacks sufficient staff"
+              },
+              {
+                "label": "E",
+                "text": "it is noisy"
+              },
+              {
+                "label": "F",
+                "text": "it is very tiring"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "cleaning",
+            "options": [
+              {
+                "label": "A",
+                "text": "it is lack patience"
+              },
+              {
+                "label": "B",
+                "text": "it is very strict"
+              },
+              {
+                "label": "C",
+                "text": "it is a daily routine"
+              },
+              {
+                "label": "D",
+                "text": "it lacks sufficient staff"
+              },
+              {
+                "label": "E",
+                "text": "it is noisy"
+              },
+              {
+                "label": "F",
+                "text": "it is very tiring"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "how does the experience benefit Mona?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is good for her future job"
+              },
+              {
+                "label": "B",
+                "text": "It is good for her dissertation."
+              },
+              {
+                "label": "C",
+                "text": "It can let her know something about the specific job."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why does the tutor want Mona to do the presentation?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Because she can do it skilfully."
+              },
+              {
+                "label": "B",
+                "text": "Because she wants to do it herself"
+              },
+              {
+                "label": "C",
+                "text": "Because she can show other students how to do a presentation"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "what does Mona suggest Tom do?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Talk to the university’s career centre"
+              },
+              {
+                "label": "B",
+                "text": "talk to his tutor"
+              },
+              {
+                "label": "C",
+                "text": "contact the hotel manager"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "what is Tom’s plan for his own essay?",
+            "options": [
+              {
+                "label": "A",
+                "text": "To study about the rise of five- star hotels"
+              },
+              {
+                "label": "B",
+                "text": "to use a video approach"
+              },
+              {
+                "label": "C",
+                "text": "To do research into how the hotel industry works"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\nThe Early History of Salt\nIntroduction\nSalt is essential for human 31 ........\nAncient Rome\nThe word 32 ........ comes from the Latin word's solarium argetum, which was used to describe the payment to Roman soldiers.\nAncient Sweden\nAnimals were kept in the local 33 ........ at the right time of year.\nFresh meat was only available in 34 ........\nSalt has been used widely: we can tell from the diet of the 35 ........ in Sweden.\n36 ........ Consumption increased rapidly because the food was much too salty.\nSalt source\nPeople mainly extract salt from oceans and 37 ........ in the basins.\nSalt from spring water is more 38 ........ And purer compared to that from sea water\nSalt distribution\nIn ancient Sweden\nLocals needed to protect the 39 ........ By which they imported salt.\nIn other ancient countries\nPeople carrying salt around were seen as a natural means of 40 ........",
+      "meta": {},
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "health"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "salary"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "forest"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "October"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "king"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "beer"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "deserts"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "concentrated"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "shipping"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "transport"
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T04:15:03.812Z"
+}

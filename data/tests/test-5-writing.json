@@ -1,0 +1,53 @@
+{
+  "title": "Test 5 - Writing",
+  "slug": "test-5-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 5",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task\n\nThe chart below illustrates the amount of waste collected by a recycling centre between 2011 and 2015.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+      "meta": {
+        "imageUrl": "/uploads/writing/test-5-task1-diagram.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nThe chart below illustrates the amount of waste collected by a recycling centre between 2011 and 2015.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-5-task1-diagram.png"
+          },
+          "mediaUrl": "/uploads/writing/test-5-task1-diagram.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nToo much emphasis is placed on education for young people. Some people believe that governments should spend more money on leisure activities for the youth instead.\nTo what extent do you agree or disagree with this belief?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nToo much emphasis is placed on education for young people. Some people believe that governments should spend more money on leisure activities for the youth instead.\nTo what extent do you agree or disagree with this belief?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T00:44:15.357Z"
+}

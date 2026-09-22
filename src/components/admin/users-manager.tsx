@@ -82,7 +82,7 @@ export function UsersManager({ currentUserId }: Props) {
     setMode("edit");
     setEditingId(user.id);
     setForm({
-      email: user.email,
+      email: user.email ?? "",
       username: user.username,
       password: "",
       role: user.role,
@@ -108,7 +108,7 @@ export function UsersManager({ currentUserId }: Props) {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            email: form.email,
+            email: form.email.trim() || null,
             username: form.username,
             password: form.password,
             role: form.role,
@@ -163,7 +163,7 @@ export function UsersManager({ currentUserId }: Props) {
       setError(t("cannotDeleteSelf"));
       return;
     }
-    if (!confirm(t("confirmDelete", { email: user.email }))) {
+    if (!confirm(t("confirmDelete", { name: user.username }, `Xóa tài khoản ${user.username}? Thao tác không hoàn tác.`))) {
       return;
     }
     setBusy(true);
@@ -254,11 +254,13 @@ export function UsersManager({ currentUserId }: Props) {
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="block min-w-0 text-sm">
               <span className="mb-1 block font-medium text-zinc-700">
-                {t("email")}
+                {t("email", "Email")}{" "}
+                <span className="font-normal text-zinc-400">
+                  {t("emailOptional", "(tuỳ chọn)")}
+                </span>
               </span>
               <input
                 type="email"
-                required={mode === "create"}
                 disabled={mode === "edit" || busy}
                 value={form.email}
                 onChange={(e) =>
@@ -266,6 +268,7 @@ export function UsersManager({ currentUserId }: Props) {
                 }
                 className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm disabled:bg-zinc-50"
                 autoComplete="off"
+                placeholder={t("emailPlaceholder", "Có thể để trống")}
               />
             </label>
 
@@ -412,7 +415,8 @@ export function UsersManager({ currentUserId }: Props) {
                             ) : null}
                           </p>
                           <p className="truncate break-all text-xs text-zinc-500">
-                            {user.email}
+                            {user.email ??
+                              t("noEmail", "Không có email")}
                           </p>
                         </div>
                       </div>

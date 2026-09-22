@@ -1,0 +1,505 @@
+{
+  "title": "Test 6 - Listening",
+  "slug": "test-6-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 6",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1-5\n\nComplete the form.\n\nWrite NO MORE THAN THREE WORDS OR NUMBERS for each answer.\n\nSurvey Form\nDealing with: exercise (Example)\nTime contacted: 1 ........\nSuburb: 2 ........\nAge Group: 3 ........\nOccupation: 4 ........\nFamily: 5 ........\n\nQuestions 6-10\n\nComplete the summary.\n\nWrite ONE WORD ONLY for each answer.\n\nThe subject undertakes exercise by regularly 6 ........ She does yoga in order to relax\nand 7 ........ her muscles. When she was younger, she would 8 ........, and in the future, she may go 9 ........ although that will depend on whether she has enough 10 ........",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-6-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "20.25 (am)"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Box Hill"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "30 to 39"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "domestic duties"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "married, no children"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "walking"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "tighten"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "hike"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "swimming"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "energy"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-16\n\nLabel the floor plan.\n\nWrite the correct letter, A—F, for each answer.\n\n11 ........ Quiet reading\n\n12 ........ Computers\n\n13 ........ Newspapers & magazines\n\n14 ........ Reference books\n\n15 ........ Audio\n\nsection\n\n16 ........ Main library\n\nQuestions 17-20\n\nComplete the timetable.\n\nWrite the correct letter, A-J, for each answer.\n\n17 ........ Teacher-led discussion\n\n18 ........ Writing skills\n\n19 ........ On-call teacher\n\n20 ........ Language exchange",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-6-section-2.mp3",
+        "imageUrl": "/uploads/images/test-6-listening-img2.png",
+        "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "............... Quiet reading",
+            "imageUrl": "/uploads/images/test-6-listening-img2.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "............... Computers",
+            "imageUrl": "/uploads/images/test-6-listening-img2.png"
+          },
+          "correctAnswer": "E",
+          "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "............... Newspapers & magazines",
+            "imageUrl": "/uploads/images/test-6-listening-img2.png"
+          },
+          "correctAnswer": "D",
+          "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "............... Reference books",
+            "imageUrl": "/uploads/images/test-6-listening-img2.png"
+          },
+          "correctAnswer": "F",
+          "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "............... Audio",
+            "imageUrl": "/uploads/images/test-6-listening-img2.png"
+          },
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "SHORT_ANSWER",
+          "content": {
+            "stem": "............... Main library",
+            "imageUrl": "/uploads/images/test-6-listening-img2.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-6-listening-img2.png"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "...............Teacher-led discussion",
+            "imageUrl": "/uploads/images/test-6-listening-img1.png"
+          },
+          "correctAnswer": "E",
+          "mediaUrl": "/uploads/images/test-6-listening-img1.png"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "............... Writing skills",
+            "imageUrl": "/uploads/images/test-6-listening-img1.png"
+          },
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-6-listening-img1.png"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "............... On-call teacher",
+            "imageUrl": "/uploads/images/test-6-listening-img1.png"
+          },
+          "correctAnswer": "I",
+          "mediaUrl": "/uploads/images/test-6-listening-img1.png"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "............... Language exchange",
+            "imageUrl": "/uploads/images/test-6-listening-img1.png"
+          },
+          "correctAnswer": "F",
+          "mediaUrl": "/uploads/images/test-6-listening-img1.png"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-24\n\nComplete the summary.\n\nWrite ONE WORD ONLY for each answer.\n\nOne of the basic strategies when listening to lectures is to use 21 ........ This saves times, but it is only effective if they can be 22 ........ later. More generally, it is necessary to format the page in anticipation of the 23 ........ of the lecture. As an example, one can draw 24 ........, tables, and flowcharts, consistent with the way the subject matter is presented.\n\nQuestions 25-30\n\nComplete the table.\n\nWrite ONE WORD ONLY for each answer.\n\n| Subject | Recommended Page Design |\n| --- | --- |\n| 25 ........ Studies | flowchart, showing courtroom processes and 26 ........ |\n| Culture Studies | table or spider graph, linking 27 ........ thoughts etc. |\n| Management Theory | network (like spider graph but has 28 ........) |\n| Political Science | linear 29 ........ |\n| Mass Media | just use 30 ........ |",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-6-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "symbols"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "interpreted"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "nature"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "headings"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Legal"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "procedures"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "associated"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "directions"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "notes"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "TABLE_COMPLETION",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "headings"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-35\n\nComplete the notes.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\nQuestions 36-40\n\nComplete the diagram.\n\nWrite NO MORE THAN TWO WORDS AND/OR NUMBERS for each answer.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-6-section-4.mp3",
+        "imageUrl": "/uploads/images/test-6-listening-img4.png",
+        "mediaUrl": "/uploads/images/test-6-listening-img4.png"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img4.png"
+          },
+          "correctAnswer": "billion",
+          "mediaUrl": "/uploads/images/test-6-listening-img4.png"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img4.png"
+          },
+          "correctAnswer": "clean room",
+          "mediaUrl": "/uploads/images/test-6-listening-img4.png"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img4.png"
+          },
+          "correctAnswer": "radiation",
+          "mediaUrl": "/uploads/images/test-6-listening-img4.png"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img4.png"
+          },
+          "correctAnswer": "(deep) underground",
+          "mediaUrl": "/uploads/images/test-6-listening-img4.png"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img4.png"
+          },
+          "correctAnswer": "complex",
+          "mediaUrl": "/uploads/images/test-6-listening-img4.png"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img3.png"
+          },
+          "correctAnswer": "heavy water",
+          "mediaUrl": "/uploads/images/test-6-listening-img3.png"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img3.png"
+          },
+          "correctAnswer": "electronic",
+          "mediaUrl": "/uploads/images/test-6-listening-img3.png"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img3.png"
+          },
+          "correctAnswer": "1000 tons",
+          "mediaUrl": "/uploads/images/test-6-listening-img3.png"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img3.png"
+          },
+          "correctAnswer": "electric current",
+          "mediaUrl": "/uploads/images/test-6-listening-img3.png"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "synthetic": true,
+            "imageUrl": "/uploads/images/test-6-listening-img3.png"
+          },
+          "correctAnswer": "control",
+          "mediaUrl": "/uploads/images/test-6-listening-img3.png"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-6-section-1.mp3",
+    "/uploads/audio/test-6-section-2.mp3",
+    "/uploads/audio/test-6-section-3.mp3",
+    "/uploads/audio/test-6-section-4.mp3"
+  ],
+  "savedAt": "2026-09-22T03:54:46.473Z"
+}

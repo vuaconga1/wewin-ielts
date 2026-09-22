@@ -1,0 +1,53 @@
+{
+  "title": "Test 8 - Writing",
+  "slug": "test-8-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 8",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task\n\nThe graph below shows the percentage of female members of parliament in five European countries between 2000 and 2012.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+      "meta": {
+        "imageUrl": "/uploads/writing/test-8-task1-chart.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nThe graph below shows the percentage of female members of parliament in five European countries between 2000 and 2012.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-8-task1-chart.png"
+          },
+          "mediaUrl": "/uploads/writing/test-8-task1-chart.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nSome people believe that economic growth is essential for eliminating global poverty and hunger, while others argue that it can have harmful effects on the environment.\nConsider both arguments and present your viewpoint.\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nSome people believe that economic growth is essential for eliminating global poverty and hunger, while others argue that it can have harmful effects on the environment.\nConsider both arguments and present your viewpoint.\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T04:15:03.932Z"
+}

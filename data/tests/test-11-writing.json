@@ -1,0 +1,53 @@
+{
+  "title": "Test 11 - Writing",
+  "slug": "test-11-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 11",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task\n\nThe pie charts provide data on the proportion of the world’s forests in five different regions and the proportion of timber found in each region.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+      "meta": {
+        "imageUrl": "/uploads/writing/test-11-task1-chart.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nThe pie charts provide data on the proportion of the world’s forests in five different regions and the proportion of timber found in each region.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-11-task1-chart.png"
+          },
+          "mediaUrl": "/uploads/writing/test-11-task1-chart.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nVideo records are a better way to learn about the way other people in the world live rather than written documents.\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nVideo records are a better way to learn about the way other people in the world live rather than written documents.\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T04:26:40.671Z"
+}

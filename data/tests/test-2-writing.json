@@ -1,0 +1,53 @@
+{
+  "title": "Test 2 - Writing",
+  "slug": "test-2-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 2",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on \nthis task\n\nThe graph provides information about the number of people who immigrated to three nations between 1990 and 2001.\nSummarise the information by selecting and reporting the main features and made comparisons with relevant\n\nWrite at least 150 words",
+      "meta": {
+        "imageUrl": "/uploads/writing/test-2-task1-diagram.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on \nthis task\n\nThe graph provides information about the number of people who immigrated to three nations between 1990 and 2001.\nSummarise the information by selecting and reporting the main features and made comparisons with relevant\n\nWrite at least 150 words",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-2-task1-diagram.png"
+          },
+          "mediaUrl": "/uploads/writing/test-2-task1-diagram.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on this task\n\nIn many countries, the number of animals and plants is declining.\nWhy do you think this is happening?\nHow can this issue be solved?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task\n\nIn many countries, the number of animals and plants is declining.\nWhy do you think this is happening?\nHow can this issue be solved?\n\nGive reasons for your answer and include any relevant examples from your knowledge or experience.\n\nWrite at least 250 words",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T00:26:12.965Z"
+}

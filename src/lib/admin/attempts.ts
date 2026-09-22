@@ -53,7 +53,7 @@ export type AdminAttemptRow = {
 
 export type AdminUserOption = {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   role: "ADMIN" | "STUDENT";
   attemptCount: number;
@@ -195,7 +195,7 @@ function applyRowFilters(
 
 type UserLite = {
   id: string;
-  email: string;
+  email: string | null;
   username: string;
   role: "ADMIN" | "STUDENT";
 };
@@ -365,7 +365,7 @@ function buildUserOptions(
 
   options.sort((a, b) => {
     if (b.attemptCount !== a.attemptCount) return b.attemptCount - a.attemptCount;
-    return a.email.localeCompare(b.email);
+    return a.username.localeCompare(b.username);
   });
   return options;
 }

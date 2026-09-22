@@ -1,0 +1,1040 @@
+{
+  "title": "Test 2 - Reading",
+  "slug": "test-2-reading",
+  "skill": "READING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Reading"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\IELTS\\Test 2",
+  "parts": [
+    {
+      "title": "Passage 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on \n\nQuestions 1-13 which are based on Reading Passage 1 below.\n\nWhen Maps were Made for the Public \n\nSince the art of map-making began, maps have largely been made for explorers, academics, and rulers. It wasn’t until the 19th century that the general public began to demand maps for themselves. More than anything else, it was the appeal of travel to ordinary people that encouraged companies to begin creating and printing more maps than ever before, in order to meet the demands of their new market.\n\nIn the years after the American Civil War (1861–65), the rapidly growing US railroad system had so many independent rail companies, schedules, and destinations that maps were critical for planning a person’s journey. One publisher, Rand McNally, made a fortune from producing railway maps for different parts of the USA, combined with a timetable and many descriptions of scenery and towns in the same booklet.\n\nWhen safety improvements in the 1880s helped to make the bicycle popular, cycling maps quickly appeared, showing roads in good condition even if they were rarely used. Later, in 1896, one of the first cycling guides appeared in print: George Blum’s Cycler’s Guide and Map of Road for California. Each cycle road was highlighted in red and labelled with not only the type of surface riders could expect to find, but also an indication of how steep it was.\n\nThe advent of the car brought a need for road maps and travel information. In 1900, André Michelin published a guide about France, with maps that showed the location of different kinds of reasonably priced accommodation and also car assistance for any mechanical problems. However, it was due primarily to its recommendations regarding which was the best restaurant to go to that the guide quickly became something a huge number of tourists and travellers bought and relied on. Nowhere was the need for road maps greater than in the United States. In 1902, the American Automobile Association was founded in Chicago, and three years later it published its first road maps for long-distance drivers. In 1917, Rand McNally began to publish Auto Trails Maps, a series of maps that each focused in detail on a different region that people might hope to visit within North America. The same publisher also helped to establish the US’s use of identifiers to identify previously nameless roads. Following the European tradition, roads were given names, but now, thanks in part to Rand McNally, they were allocated numbers instead.\n\nThe oil companies did not take long to realize the profit to be made from Americans exploring the open road, so service stations soon began to distribute free maps to encourage this. Free road maps became part of the fabric of American life, and it has been estimated that more than ten billion were distributed before the 1970s. It was then that the rising costs of oil and subsequent falling consumption led to the oil companies investigating where savings could be made. The maps were one of the first things to go. Another map product was the aeronautical chart for pilots. The first examples were produced in France and England around 1911. Techniques progressed greatly during World War I, and during the 1920s there was continual development of maps for air navigation.\n\nNew maps also became available for those who only wanted to cross town by train. Some of the early maps of the London Underground were based on the city above ground; therefore, although they were accurate in terms of distance and direction, the maps were confusing because the stations in central London were so crowded together. In 1931, Harry Beck produced a map that looked rather like an electrical circuit, with straight lines and symbols. It included only one feature above ground: the River Thames. The stations were also spaced relatively equally, making the map much easier to read. Although Beck’s map was initially rejected as too radical, it was approved in 1933. He continued to refine it for the next 25 years.\n\nShortly after Beck’s contribution to the mapping of subterranean London, an equally significant achievement was performed above ground. Phyllis Pearsall was a painter who, in 1935, became lost on the way to a party in London, due to the lack of a good map. This inspired her to plot all of London, and the next year she traced and catalogued its 23,000 streets. With map-maker James Duncan, Pearsall then produced an atlas and a comprehensive street index. Unable to interest any of the major publishers, the two founded their own company, the Geographer’s Map Company Ltd, and produced what was then called the A–Z, Atlas and Guide to London. The company still exists and now publishes more than 300 different A–Z maps and atlases.\n\nQuestions 1–6\n\nComplete the notes below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 1–6 on your answer sheet.\n\nThe development of maps from the 19th century onwards\n\n- A growing interest in travel led to the increased production of maps in the 19th century.\n\nAfter 1865:\n\n- Rand McNally made a lot of money by putting a map and a 1……………… in one publication.\n\nAfter 1880:\n\n- George Philip produced maps that could not be damaged by water.\n\n- George Blum’s cycling map showed:\n\n+ The kind of 2……………… the paths had.\n\n+ How steep the paths might be.\n\n1900 onwards:\n\n- André Michelin’s guide provided information about:\n\n+ Finding economical 3………………\n\n+ What to do if your car broke down.\n\n+ The Michelin guide became popular mainly because it helped people select 4………………\n\n1917 onwards:\n\n- Rand McNally:\n\n+ The company’s Auto Trails Maps helped people explore roads through a particular   5………………of the USA.\n\n+ The company was also responsible for giving 6………………  to American roads.\n\nQuestions 7–13\n\nDo the following statements agree with the information given in Reading Passage 1\n\nIn boxes 7–13 on your answer sheet, write:\n\nTRUE if the statement agrees with the information\n\nFALSE if the statement contradicts the information\n\nNOT GIVEN if there is no information on this\n\n7. The free road maps provided by oil companies were the most detailed maps available to drivers in the USA. \n\n8. Pilots were the first people to make use of aeronautical maps.\n\n9. Beck’s London Underground map was immediately well received by the authorities. \n\n10. Beck stopped working on the design of his map in 1933.  \n\n11. Pearsall created a new map of London because she got lost on her way to an event. \n\n12. Pearsall needed the help of a professional cartographer to complete her map.       \n\n13. Pearsall’s map was widely praised by London’s major publishing companies.",
+      "meta": {
+        "preamble": "READING\n\nDuration: 60 mins\n\nName: _____________________________  Date: _________________________"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Timetable"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Surface"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Accommodation"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Restaurant"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Region"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Numbers"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The free road maps provided by oil companies were the most detailed maps available to drivers in the USA.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Pilots were the first people to make use of aeronautical maps.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Beck’s London Underground map was immediately well received by the authorities.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Beck stopped working on the design of his map in 1933.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Pearsall created a new map of London because she got lost on her way to an event.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Pearsall needed the help of a professional cartographer to complete her map.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Pearsall’s map was widely praised by London’s major publishing companies.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        }
+      ]
+    },
+    {
+      "title": "Passage 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on \n\nQuestions 14-26 which are based on Reading Passage 2 below.\n\nPreserving Antarctic History\nProtecting early buildings in Antarctica\n\nA. Few people coming up to the most comfortable dwelling place imaginable are likely to picture wooden huts on an island off the coldest continent on Earth. But that's where the Antarctic explorer Robert Falcon Scott described the hut at Cape Evans on Ross Island that he used for his 1910–13 expedition. The hut is nestled below the cliffs on a flat, long stretch of sand. In 2011, a bottle of MacKinlay’s whisky, the only one, was to be seen in front of the newly restored structure and sun reflects off the cliffs of the nearby glacier.\n\nB. The New Zealand Antarctic Heritage Trust (NZHAT) and its accompanying workers recently announced the completion of 10 years of intensive work to save the historic buildings on Ross Island as well as the hut at Cape Evans, the hut at Cape Royds on Discovery Hut from Scott’s 1901–04 expedition at Hut Point, and the hut at Cape Royds, built for Ernest Shackleton’s 1907–09 expedition. When work began, many of the artefacts were temporarily removed while carpenters from the team of conservation workers repaired walls, floors and roof. In Scott’s ‘command hut’ was the table where team member Edward Wilson had once incubated his moulds and parasites. Of particular interest is the small wooden racks of sample tubes, sample jars and Bunsen burners standing on the biologist Edward Nelson, by its shape through a dusty window. This was where the young scientist preserved Antarctic specimens as part of his search for new species and an understanding of the Antarctic food chain.\n\nC. The NZHAT executive director Nigel Watson describes the three restored huts as fantastic remnants of humans’ first contact with the continent. The idea for the birth of the conservation project, he says, was the fact that we were in great danger of losing them. ‘When the site work began in 2004, snow and ice were building up around, under and sometimes inside the huts, damaging the structures and threatening their contents. Now we have three buildings that are structurally sound and watertight with a very different feel – they are drier and lighter and the humidity is reduced. It’s a much better environment for the collection.’\n\nD. As well as heritage carpenters, the NZHAT team on Ross Island has included experts in textile, paper and metal conservation: in total, 62 experts from 11 countries have visited Antarctica to work on the project, often spending a whole summer on-site, sleeping in tents around 25km back to Scott Base for the occasional shower. The team is now known as the most exciting conservation project in the world,’ says Watson. ‘So it attracted top heritage conservation talent.’ Some of the most exciting discoveries were the intact cases of MacKinlay’s Rare Old Highland Malt Whisky found encased in ice beneath Shackleton’s hut, a paper notebook that belonged to surgeon, zoologist and photographer George Murray Levick found buried in dirt at Cape Evans and a small box of 22 cellulose nitrate negatives waiting to be developed into photographs found in Herbert Ponting’s darkroom. But most of the 18,202 items catalogued and conserved are more mundane: food, tools, clothing and other personal items that the crews found no purpose to take home on the return voyages.\n\nE. The NZHAT team’s conservation treatments involved thorough cleaning, followed by meticulous treatment to help slow or, even reverse, the deterioration. Metal items would go through a chemical process, followed by a chemical stabilization treatment, then repackaged and preserved in airtight containers for future conservation. Treatment of paper items often involved washing to remove harmful acids and to repair the fractured parts so that in some cases the paper was even stronger than before.\n\nF. As a result of the project, the NZHAT has become the world leader in cold-climate heritage conservation and its members have been interviewed for numerous television documentaries and radio reports. ‘The Ross Island huts are the jewels in the crown,’ says Watson, but there are other historic buildings needing attention. With logistics support from Antarctica New Zealand, programme managers Al Fastier and Lizzie Meek will be part of a small team heading to Cape Adare, an exposed site more than 700km north of Scott Base. The two Cape Adare huts, remnants of an 1898–1900 British expedition, are not only the first buildings on the continent,’ says Watson, but also the only example of humanity’s first buildings on any continent on Earth.\n\nG. The three-year restoration effort will involve construction repairs and the removal, conservation and return of about 11,000 objects. Compared with the huts on Ross Island, which are relatively sheltered, Cape Adare is a ‘very remote and challenging place to work in’, says Watson. It’s set among the world’s biggest colony of Adélie penguins on an exposed spit of land, and it is important that they don’t interrupt the functioning of the colony in any way while they are there. Lizzie Meek looks forward to the challenge. But I’m also looking forward to going back to the Ross Island huts and seeing them with fresh eyes. After so many years of working on them, to be able to step inside and look around to see what we have accomplished will be amazing.\n\nH. If you can find your way to Antarctica, you’ll need a permit to visit any of these huts, which each are in an Antarctic Specially Protected Area. But there’s an easier way to see them without making the long journey: the trust has partnered with Google to offer Street View walkthroughs of each of the dwellings, available via Google Earth or through the NZHAT’s website.\n\nQuestions 14–19 \n\nReading Passage 2 has nine paragraphs A–H.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter, A–H, in boxes 14–19 on your answer sheet.\n\n14. a reason the early explorers left some objects behind\n\n15. an explanation of how to see the huts without traveling to Antarctica\n\n16. reference to the fact that Robert Falcon Scott enjoyed the time he spent living in the hut\n\n17. reference to how the Ross Island project has received attention from the media\n\n18. the reason the decision to begin conservation work at Ross Island was made\n\n19. a description of the process for preserving paper\n\nQuestions 20 and 21\n\nChoose TWO letters, A–E.\n\nWrite the correct letters in boxes 20 and 21 on your answer sheet.\n\nWhich TWO research activities were carried out by Scott’s expedition team?\n\nA. collecting samples of sea life\nB. monitoring penguin behaviour\nC. studying the effects of cold on the human body\nD. keeping a record of Antarctic weather patterns\nE. drawing pictures of plants and animals\n                        \n\nQuestions 22 and 23\n\nChoose TWO letters, A–E.\n\nWrite the correct letters in boxes 22 and 23 on your answer sheet.\n\nWhich TWO statements are true about the conservation workers on Ross Island?\n\nA. They lived in Scott’s huts while carrying out the work.\nB. They were in Antarctica for months at a time.\nC. They had previously worked together in New Zealand.\nD. They restored the contents as well as the buildings themselves.\nE. They had no access to showers at all.\n                        \n\nComplete the summary below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 24–26 on your answer sheet.\n\nCape Adare\n\nAdare is located several hundred kilometres north of Scott’s hut. The huts on Cape are not as 24……………….. as those on Ross Island and the workers have to be careful disturb the group of  25……………… living nearby. Visitors to Antarctica must have a 26………. to see the restored huts.",
+      "meta": {},
+      "questions": [
+        {
+          "number": 14,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a reason the early explorers left some objects behind"
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 15,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "an explanation of how to see the huts without traveling to Antarctica"
+          },
+          "correctAnswer": "I"
+        },
+        {
+          "number": 16,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "reference to the fact that Robert Falcon Scott enjoyed the time he spent living in the hut"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 17,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "reference to how the Ross Island project has received attention from the media"
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 18,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the reason the decision to begin conservation work at Ross Island was made"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 19,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a description of the process for preserving paper"
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 20,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO research activities were carried out by Scott’s expedition team?",
+            "options": [
+              {
+                "label": "A",
+                "text": "collecting samples of sea life"
+              },
+              {
+                "label": "B",
+                "text": "monitoring penguin behaviour"
+              },
+              {
+                "label": "C",
+                "text": "studying the effects of cold on the human body"
+              },
+              {
+                "label": "D",
+                "text": "keeping a record of Antarctic weather patterns"
+              },
+              {
+                "label": "E",
+                "text": "drawing pictures of plants and animals"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              20,
+              21
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 21,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 20
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 22,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO statements are true about the conservation workers on Ross Island?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They lived in Scott’s huts while carrying out the work."
+              },
+              {
+                "label": "B",
+                "text": "They were in Antarctica for months at a time."
+              },
+              {
+                "label": "C",
+                "text": "They had previously worked together in New Zealand."
+              },
+              {
+                "label": "D",
+                "text": "They restored the contents as well as the buildings themselves."
+              },
+              {
+                "label": "E",
+                "text": "They had no access to showers at all."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              22,
+              23
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 22
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Sheltered"
+        },
+        {
+          "number": 25,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Penguins"
+        },
+        {
+          "number": 26,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Permit"
+        }
+      ]
+    },
+    {
+      "title": "Passage 3",
+      "order": 2,
+      "content": "You should spend about 20 minutes on \n\nQuestion 27-40  which are based on Reading Passage 3 below.\n\n Flower Power\n\nParagraph A \n\nWhy do people give flowers? To offer condolence to those who are grieving. To express gratitude. To ask for forgiveness. There is something undeniably powerful about giving flowers; in fact, few objects provoke such a universal response. In the US alone, the flower industry is now worth about $5bn a year—suggesting, at the very least, that they service a compelling human need.\n\nParagraph B\n\nResearch at the Department of Psychology at Rutgers State University of New Jersey confirms that flowers are unique among living organisms in their ability to induce changes in our emotional state. As the first part of their research, the Rutgers psychologists studied women in their homes. Each was presented with a variety of gifts such as flowers, fruit, or sweets. The women were unaware that the study was about the effect of gifts on their emotions. They were told that it was a study about their daily moods, and that they would receive a gift in return for taking part. Following the presentation of the gifts, women receiving flowers were assessed as displaying a much more positive mood than those who received other gifts, and this effect lasted for several days. After receiving flowers, participants were more willing to answer questions concerning their social circle and intimate relationships with friends and family. The results suggest that flowers influence our emotional behaviours, as well as having a strong effect on our immediate expression.\n\nParagraph C \n\nIn the second study, the psychologists observed participants being handed single flowers, or no gift at all, in a constrained and stressful situation—inside an elevator. Contrary to expectations regarding gender differences, both men and women presented with flowers were more likely to smile, to stand closer and to initiate conversation. Several subjects who were initially skeptical about the experiment's purpose then learnt that flowers were also being handed out, and returned to the elevator and demanded a flower. The scientists used elevators for this study precisely because typical behaviour in sparsely occupied elevators is for people to retreat to opposite corners. The subjects who received flowers, however, closed up that space to a considerable extent—indicating that the flowers not only induced a strong positive mood but brought a significant affiliation among people who had never previously met.\n\nParagraph D \n\nThe third study involved regularly sending flowers to a selected sample of men and women. The researchers found not only a profound elevation of mood but also reliable improvements in other measures of cognitive function, like memory. In this series of experiments, some participants produced such extraordinary emotional displays that the psychologists were totally unprepared for them. Subjects gave spontaneous hugs and kisses to the people who delivered the flowers, and sent invitations to the psychologists to come to their homes for refreshments.\n\nParagraph E \n\nVarious evolutionary hypotheses attempt to explain the remarkably powerful psychological effect of flowers. One is that our aesthetic preferences for fertile locations and growing things stem from prehistory, when these clues in our environment could mean the difference between starvation and survival. We may have become hardwired to respond positively to flowers because, for early man, finding them in a particular location predicted future food supplies and possibly a better place to rear children. Yet the flaw in this argument is that the showy flowers which humans seem to find most visually attractive are generally found on those plants which yield no edible products.\n\nParagraph F \n\nThe Rutgers psychologists' findings show that the various physical attributes of flowers combine to directly affect our emotions through multi-channel interactions. We have evolved preferences for the particular colours, textures, patterned symmetries, and specific floral odours which influence our moods. Indeed, previous research has established that popular perfumes, which often have a floral 'top-note', will actually reduce depression. The origins of these inclinations may well be as the evolutionary theories suggest: the patterned symmetries of flowers can be detected easily as a recognisable signal within a wide variety of visual arrays, and a response to certain colour tones is important in finding ripe fruit against a leafy background. But, claim the Rutgers team, these preferences have long been separated from their primary evolutionary use, and become rewarding to us more generally. Thus, plants with preferred colours, shapes and odours—despite having no other products—would therefore be protected and dispersed.\n\nParagraph G \n\nThe Rutgers study suggests that flowers may have actually evolved to exploit their peculiar impact on humans. The team's theory proposes a plant-human co-evolution, or even domestication, based on the intense emotional rewards that flowers provide. The idea that flowering plants, with no known food or other basic survival value to man, have co-evolved with us by exploiting an emotional niche instead, is very much like the scenario presented for the evolution of dogs. Flowers may be the plant equivalent of 'companion animals'. If this is true, then there is a very real sense in which, when you next give flowers, they are using you just as much as you are using them.\n\nQuestions 27–40\n\nReading Passage 3 has seven paragraphs, A-G.\n\nChoose the correct heading for each paragraph from the list of headings below.\n\nWrite the correct number, i-viii, in boxes 27-33 on your answer sheet.\n\nList of Headings\ni. A negative reaction to receiving flowers\nii. Some surprisingly strong responses to flowers\niii. A mutually beneficial relationship?\niv. Becoming more open about personal matters\nv. Some common social functions of flowers\nvi. Sensory appeal versus practical purpose of flowers\nvii. Bridging the gap between strangers in an enclosed space\nviii. An imperfect theory\n\n27 Paragraph A\n28 Paragraph B\n29 Paragraph C\n30 Paragraph D\n31 Paragraph E\n32 Paragraph F\n33 Paragraph G\n\nQuestions 34-37\n\nClassify the following statements as referring to:\n\nA the first study\n\nB the second study\n\nC the third study\n\nWrite the correct letter, A, B, or C, in boxes 34-37 on your answer sheet.\n\n34 The study focused on participants' short-term reaction to receiving flowers.\n\n35 Participants were deliberately misled as to the aim of the study.\n\n36 Receiving flowers had a notable effect on participants' mental capacities.\n\n37 Male and female responses were more uniform than expected.\n\nQuestions 38-40\n\nComplete the summary of paragraph E below.\n\nChoose ONE WORD ONLY from paragraph E for each answer.\n\nWrite your answers in boxes 38-40 on your answer sheet.\n\nA possible explanation for the appeal of flowers\n\nIt has been suggested that our intense response to flowers originates in prehistoric times. The presence of flowers might indicate a potential source of  38…………….. in a particular location, and primitive humans would search for such signs when looking for a suitable site to raise their 39………….. The interpretation of these signs was essential for the survival of our ancestors. However, the problem with this idea is that the plants producing the most attractive flowers do not usually have fruit which is 40……………….",
+      "meta": {},
+      "questions": [
+        {
+          "number": 27,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph A",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "v"
+        },
+        {
+          "number": 28,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph B",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "iv"
+        },
+        {
+          "number": 29,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph C",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "vii"
+        },
+        {
+          "number": 30,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph D",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "ii"
+        },
+        {
+          "number": 31,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph E",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "viii"
+        },
+        {
+          "number": 32,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph F",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "vi"
+        },
+        {
+          "number": 33,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph G",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "iii"
+        },
+        {
+          "number": 34,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "i. A negative reaction to receiving flowers",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 35,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "ii. Some surprisingly strong responses to flowers",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 36,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "iii. A mutually beneficial relationship?",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 37,
+          "order": 10,
+          "type": "MATCHING",
+          "content": {
+            "stem": "iv. Becoming more open about personal matters",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 38,
+          "order": 11,
+          "type": "MATCHING",
+          "content": {
+            "stem": "v. Some common social functions of flowers",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "Food"
+        },
+        {
+          "number": 39,
+          "order": 12,
+          "type": "MATCHING",
+          "content": {
+            "stem": "vi. Sensory appeal versus practical purpose of flowers",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "Children"
+        },
+        {
+          "number": 40,
+          "order": 13,
+          "type": "MATCHING",
+          "content": {
+            "stem": "vii. Bridging the gap between strangers in an enclosed space",
+            "options": [
+              {
+                "label": "i",
+                "text": "A negative reaction to receiving flowers"
+              },
+              {
+                "label": "ii",
+                "text": "Some surprisingly strong responses to flowers"
+              },
+              {
+                "label": "iii",
+                "text": "A mutually beneficial relationship?"
+              },
+              {
+                "label": "iv",
+                "text": "Becoming more open about personal matters"
+              },
+              {
+                "label": "v",
+                "text": "Some common social functions of flowers"
+              },
+              {
+                "label": "vi",
+                "text": "Sensory appeal versus practical purpose of flowers"
+              },
+              {
+                "label": "vii",
+                "text": "Bridging the gap between strangers in an enclosed space"
+              },
+              {
+                "label": "viii",
+                "text": "An imperfect theory"
+              }
+            ]
+          },
+          "correctAnswer": "Edible"
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-09-22T00:26:12.932Z"
+}
