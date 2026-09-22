@@ -1,4 +1,6 @@
-# Keep deploys lean: exclude local junk; ship published test JSON + section audio
+# Keep deploys lean: exclude local junk; ship published test JSON.
+# Hobby deploy caps ~100MB artifacts — only ship demo section audio (T1/T9).
+# Remaining test-*-section-*.mp3 stay in git for local; use Blob/S3 later for prod.
 .agents
 .claude
 .cursor
@@ -26,7 +28,8 @@ data/tests/*
 !data/tests/test-13-*.json
 public/uploads/audio/*
 !public/uploads/audio/.gitkeep
-!public/uploads/audio/test-*-section-*.mp3
+!public/uploads/audio/test-1-section-*.mp3
+!public/uploads/audio/test-9-section-*.mp3
 public/uploads/avatars/*
 !public/uploads/avatars/.gitkeep
 public/uploads/learn/videos/*
