@@ -44,6 +44,8 @@ export type ParseTestInput = {
   timeLimitMinutes?: number;
   tags?: string[];
   audioFiles?: string[];
+  /** Pre-extracted Writing Task 1 diagram URLs (skips docx image extract when set). */
+  writingImages?: string[];
 };
 
 export type ParseTestUploadInput = {
@@ -70,7 +72,7 @@ export async function parseTestFromFiles(
     input.skill ?? detectSkillFromFilename(input.contentPath) ?? undefined;
 
   let rawText: string;
-  let writingImages: string[] = [];
+  let writingImages: string[] = input.writingImages ?? [];
   try {
     const contentMeta = await extractFileWithMeta(input.contentPath, {
       preserveContentTables: true,
@@ -79,6 +81,7 @@ export async function parseTestFromFiles(
     const skillGuess =
       skill ?? detectSkillFromFilename(input.contentPath) ?? undefined;
     if (
+      writingImages.length === 0 &&
       skillGuess === "WRITING" &&
       path.extname(input.contentPath).toLowerCase() === ".docx"
     ) {
