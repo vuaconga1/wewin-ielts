@@ -106,7 +106,6 @@ export function DashboardHome({
           />
           <HomeChallengesCard
             rankPoints={rankPoints ?? 0}
-            streakDays={streakDays}
             practicedToday={practicedToday}
           />
           <HomeRankingPreview entries={rankingTop} intlLocale={intlLocale} />

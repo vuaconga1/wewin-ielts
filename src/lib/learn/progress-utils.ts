@@ -1,7 +1,8 @@
 import type { LearnLesson, LearnProgressStore } from "@/lib/learn/types";
 import type { TopicLesson } from "@/lib/learn/vocab-grammar-types";
 
-/** First lesson unlocked; later ones need previous exercisePassed. */
+/** First lesson unlocked; later ones need previous exercisePassed.
+ * Vocabulary topics have no exercises — all are open. */
 export function isLessonUnlocked(
   lesson: Pick<LearnLesson, "id" | "order">,
   skillLessons: Pick<LearnLesson, "id" | "order">[],
@@ -34,10 +35,13 @@ export function skillProgressStats(
 }
 
 export function isTopicUnlocked(
-  topic: Pick<TopicLesson, "id" | "order">,
-  topics: Pick<TopicLesson, "id" | "order">[],
+  topic: Pick<TopicLesson, "id" | "order" | "track">,
+  topics: Pick<TopicLesson, "id" | "order" | "track">[],
   progress: LearnProgressStore,
+  trackHint?: TopicLesson["track"],
 ): boolean {
+  // Flashcard-only vocabulary: never gate on previous-topic completion.
+  if (topic.track === "vocabulary" || trackHint === "vocabulary") return true;
   return isLessonUnlocked(topic, topics, progress);
 }
 

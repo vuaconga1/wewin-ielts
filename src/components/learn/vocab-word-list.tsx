@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState, useTransition } from "react";
 import Link from "next/link";
 import {
   CheckCircle2,
@@ -7,7 +8,6 @@ import {
   ChevronRight,
   Lock,
 } from "lucide-react";
-import { LessonExercises } from "@/components/learn/lesson-exercises";
 import { VocabWordCard } from "@/components/learn/vocab-word-card";
 import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
@@ -15,7 +15,6 @@ import { isTopicUnlocked } from "@/lib/learn/progress-utils";
 import {
   learnCatalogHref,
   learnVocabGrammarHref,
-  learnVocabGrammarTopicHref,
   learnVocabGrammarTrackHref,
   learnVocabTopicLearnHref,
 } from "@/lib/learn/hrefs";
@@ -41,18 +40,35 @@ export function VocabWordList({
   nextSlug,
 }: Props) {
   const { t } = useTranslations("learn");
-  const unlocked = isTopicUnlocked(topic, topics, progress);
-  const entry = progress.lessons[topic.id];
-  const passed = Boolean(entry?.exercisePassed);
+  const unlocked =
+    topic.track === "vocabulary" ||
+    isTopicUnlocked(topic, topics, progress, "vocabulary");
+  const [passed, setPassed] = useState(
+    Boolean(progress.lessons[topic.id]?.exercisePassed),
+  );
+  const [pending, startTransition] = useTransition();
   const words = topic.words ?? [];
 
-  const ordered = [...topics].sort((a, b) => a.order - b.order);
-  const idx = ordered.findIndex((tpc) => tpc.id === topic.id);
-  const nextTopic = idx >= 0 ? ordered[idx + 1] : undefined;
-  const nextUnlocked =
-    passed && nextTopic && isTopicUnlocked(nextTopic, topics, progress)
-      ? nextTopic.slug
-      : null;
+  // Mark topic complete on first view (no exercises for vocabulary).
+  useEffect(() => {
+    if (passed || !unlocked || words.length === 0) return;
+    let cancelled = false;
+    startTransition(async () => {
+      try {
+        const res = await fetch("/api/learn/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action: "complete", lessonId: topic.id }),
+        });
+        if (!cancelled && res.ok) setPassed(true);
+      } catch {
+        // ignore — completion is best-effort
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [passed, unlocked, words.length, topic.id]);
 
   if (!unlocked) {
     return (
@@ -94,13 +110,6 @@ export function VocabWordList({
             {t("vocabularyTrack", "Từ vựng")}
           </Link>
           <span className="mx-1.5">›</span>
-          <Link
-            href={learnVocabGrammarTopicHref("vocabulary", topic.slug)}
-            className="hover:text-wewin-navy hover:underline"
-          >
-            {displayTitle}
-          </Link>
-          <span className="mx-1.5">›</span>
           <span className="font-medium text-zinc-800">
             {t("vocabLearnBreadcrumb", "Học từ")}
           </span>
@@ -111,6 +120,10 @@ export function VocabWordList({
             <span className="inline-flex items-center gap-1 text-sm font-medium text-emerald-700">
               <CheckCircle2 className="h-4 w-4" />
               {t("markComplete", "Tôi hoàn thành")}
+            </span>
+          ) : pending ? (
+            <span className="text-sm text-zinc-500">
+              {t("vocabSavingProgress", "Đang lưu…")}
             </span>
           ) : null}
           {prevSlug ? (
@@ -136,10 +149,10 @@ export function VocabWordList({
 
       <div>
         <Link
-          href={learnVocabGrammarTopicHref("vocabulary", topic.slug)}
+          href={learnVocabGrammarTrackHref("vocabulary")}
           className="text-sm font-medium text-wewin-navy hover:underline"
         >
-          {t("backToTopicOverview", "← Tổng quan chủ đề")}
+          {t("backToVocabulary", "← Quay lại Từ vựng")}
         </Link>
         <h1 className="mt-2 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
           {displayTitle}
@@ -168,30 +181,6 @@ export function VocabWordList({
           </div>
         )}
       </section>
-
-      {topic.exercises.length > 0 ? (
-        <section>
-          <h2 className="mb-3 text-xl font-bold text-zinc-900 sm:text-2xl">
-            {t("exercisesSection", "Bài tập")}
-          </h2>
-          <LessonExercises
-            courseId="vocab-grammar"
-            lessonId={topic.id}
-            skill="reading"
-            exercises={topic.exercises}
-            videoCompleted
-            alreadyPassed={passed}
-            unlockedNextId={nextUnlocked}
-            nextLessonHref={
-              nextUnlocked
-                ? learnVocabGrammarTopicHref("vocabulary", nextUnlocked)
-                : undefined
-            }
-            catalogHref={learnVocabGrammarTrackHref("vocabulary")}
-            catalogLabel={t("vocabularyTrack", "Từ vựng")}
-          />
-        </section>
-      ) : null}
     </div>
   );
 }

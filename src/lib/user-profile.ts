@@ -1,5 +1,5 @@
 /**
- * Resolve persisted profile fields (avatar) for a session user.
+ * Resolve persisted profile fields (avatar + display name) for a session user.
  */
 
 import { cache } from "react";
@@ -7,48 +7,58 @@ import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { findLocalUserById } from "@/lib/store/user-store";
 
-const AVATAR_TTL_MS = 60_000;
+const PROFILE_TTL_MS = 60_000;
 
-type AvatarCacheEntry = { url: string | null; expiresAt: number };
+export type UserDisplayProfile = {
+  avatarUrl: string | null;
+  fullName: string | null;
+};
 
-/** Warm-instance cache so soft navs do not re-hit Prisma for the same avatar. */
-const avatarByUserId = new Map<string, AvatarCacheEntry>();
+type ProfileCacheEntry = { profile: UserDisplayProfile; expiresAt: number };
 
-function readAvatarCache(userId: string): string | null | undefined {
-  const hit = avatarByUserId.get(userId);
+/** Warm-instance cache so soft navs do not re-hit Prisma for the same profile. */
+const profileByUserId = new Map<string, ProfileCacheEntry>();
+
+function readProfileCache(userId: string): UserDisplayProfile | undefined {
+  const hit = profileByUserId.get(userId);
   if (!hit) return undefined;
   if (Date.now() >= hit.expiresAt) {
-    avatarByUserId.delete(userId);
+    profileByUserId.delete(userId);
     return undefined;
   }
-  return hit.url;
+  return hit.profile;
 }
 
-function writeAvatarCache(userId: string, url: string | null) {
-  avatarByUserId.set(userId, {
-    url,
-    expiresAt: Date.now() + AVATAR_TTL_MS,
+function writeProfileCache(userId: string, profile: UserDisplayProfile) {
+  profileByUserId.set(userId, {
+    profile,
+    expiresAt: Date.now() + PROFILE_TTL_MS,
   });
 }
 
 export function invalidateAvatarCache(userId: string) {
-  avatarByUserId.delete(userId);
+  profileByUserId.delete(userId);
 }
 
-async function loadUserAvatarUrl(userId: string): Promise<string | null> {
-  const cached = readAvatarCache(userId);
-  if (cached !== undefined) return cached;
+async function loadUserDisplayProfile(
+  userId: string,
+): Promise<UserDisplayProfile> {
+  const cached = readProfileCache(userId);
+  if (cached) return cached;
 
   if (await canUsePrisma()) {
     try {
       const user = await prisma.user.findUnique({
         where: { id: userId },
-        select: { avatarUrl: true },
+        select: { avatarUrl: true, fullName: true },
       });
       if (user) {
-        const url = user.avatarUrl ?? null;
-        writeAvatarCache(userId, url);
-        return url;
+        const profile = {
+          avatarUrl: user.avatarUrl ?? null,
+          fullName: user.fullName ?? null,
+        };
+        writeProfileCache(userId, profile);
+        return profile;
       }
     } catch {
       /* fall through */
@@ -56,26 +66,37 @@ async function loadUserAvatarUrl(userId: string): Promise<string | null> {
   }
 
   const local = await findLocalUserById(userId);
-  const url = local?.avatarUrl ?? null;
-  writeAvatarCache(userId, url);
-  return url;
+  const profile = {
+    avatarUrl: local?.avatarUrl ?? null,
+    fullName: local?.fullName ?? null,
+  };
+  writeProfileCache(userId, profile);
+  return profile;
 }
 
 /** React.cache: one Prisma lookup per userId per request. */
-export const getUserAvatarUrl = cache(loadUserAvatarUrl);
+export const getUserDisplayProfile = cache(loadUserDisplayProfile);
+
+export async function getUserAvatarUrl(userId: string): Promise<string | null> {
+  const profile = await getUserDisplayProfile(userId);
+  return profile.avatarUrl;
+}
 
 export async function setUserAvatarUrl(
   userId: string,
   avatarUrl: string | null,
 ): Promise<boolean> {
   let saved = false;
+  let fullName: string | null = null;
 
   if (await canUsePrisma()) {
     try {
-      await prisma.user.update({
+      const updated = await prisma.user.update({
         where: { id: userId },
         data: { avatarUrl },
+        select: { fullName: true },
       });
+      fullName = updated.fullName ?? null;
       saved = true;
     } catch {
       /* fall through to local */
@@ -88,11 +109,12 @@ export async function setUserAvatarUrl(
   const local = await findLocalUserById(userId);
   if (local) {
     await updateLocalUserAvatar(userId, avatarUrl);
+    fullName = local.fullName ?? fullName;
     saved = true;
   }
 
   if (saved) {
-    writeAvatarCache(userId, avatarUrl);
+    writeProfileCache(userId, { avatarUrl, fullName });
   }
 
   return saved;

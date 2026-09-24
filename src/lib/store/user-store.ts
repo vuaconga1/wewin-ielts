@@ -15,6 +15,8 @@ export type StoredUser = {
   username: string;
   passwordHash: string;
   role: "ADMIN" | "STUDENT";
+  fullName?: string | null;
+  classCode?: string | null;
   /** Profile image path or data URL */
   avatarUrl?: string | null;
   createdAt: string;
@@ -83,6 +85,8 @@ export async function upsertLocalUser(input: {
   username: string;
   passwordHash: string;
   role: "ADMIN" | "STUDENT";
+  fullName?: string | null;
+  classCode?: string | null;
 }): Promise<StoredUser> {
   const email = input.email?.trim().toLowerCase() || null;
   const users = await readAll();
@@ -97,6 +101,8 @@ export async function upsertLocalUser(input: {
       username: input.username,
       passwordHash: input.passwordHash,
       role: input.role,
+      ...(input.fullName !== undefined ? { fullName: input.fullName } : {}),
+      ...(input.classCode !== undefined ? { classCode: input.classCode } : {}),
       updatedAt: now,
     };
     users[idx] = updated;
@@ -110,6 +116,8 @@ export async function upsertLocalUser(input: {
     username: input.username,
     passwordHash: input.passwordHash,
     role: input.role,
+    fullName: input.fullName ?? null,
+    classCode: input.classCode ?? null,
     createdAt: now,
     updatedAt: now,
   };
@@ -134,6 +142,8 @@ export async function updateLocalUser(
     username?: string;
     passwordHash?: string;
     role?: "ADMIN" | "STUDENT";
+    fullName?: string | null;
+    classCode?: string | null;
   },
 ): Promise<StoredUser | null> {
   const users = await readAll();
@@ -146,6 +156,8 @@ export async function updateLocalUser(
       ? { passwordHash: patch.passwordHash }
       : {}),
     ...(patch.role != null ? { role: patch.role } : {}),
+    ...(patch.fullName !== undefined ? { fullName: patch.fullName } : {}),
+    ...(patch.classCode !== undefined ? { classCode: patch.classCode } : {}),
     updatedAt: new Date().toISOString(),
   };
   users[idx] = updated;

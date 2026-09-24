@@ -1,0 +1,3751 @@
+{
+  "source": "Cambridge Vocabulary for IELTS",
+  "topics": [
+    {
+      "slug": "unit-1-growing-up",
+      "order": 1,
+      "title": {
+        "vi": "Growing Up",
+        "en": "Growing Up"
+      },
+      "summary": {
+        "vi": "Gia đình, tuổi thơ, mối quan hệ.",
+        "en": "Family, childhood, relationships."
+      },
+      "words": [
+        {
+          "word": "adolescence",
+          "pos": "n",
+          "ipa": "/ˌæd.əˈles.əns/",
+          "meaningVi": "thời thanh niên",
+          "definitionEn": "the period of time in a person's life when they are developing into an adult",
+          "exampleEn": "She had a troubled [adolescence]."
+        },
+        {
+          "word": "adulthood",
+          "pos": "n",
+          "ipa": "/ˈæd.ʌlt.hʊd/",
+          "meaningVi": "tuổi trưởng thành",
+          "definitionEn": "the part of someone's life when they are an adult",
+          "exampleEn": "Responsibility, I suppose, is what defines [adulthood]."
+        },
+        {
+          "word": "Bond",
+          "pos": "n",
+          "ipa": "/bɒnd/",
+          "meaningVi": "mối liên hệ",
+          "definitionEn": "a close connection joining two or more people",
+          "exampleEn": "the [bond](s) of friendship/love"
+        },
+        {
+          "word": "Brotherhood",
+          "pos": "n",
+          "ipa": "/ˈbrʌð.ə.hʊd/",
+          "meaningVi": "tình anh em",
+          "definitionEn": "a feeling of shared interests and support among men, or more generally, among all humans",
+          "exampleEn": "The ideal of the [brotherhood] of man (= where everyone loves each other) is still far from reality."
+        },
+        {
+          "word": "Character",
+          "pos": "n",
+          "ipa": "/ˈkær.ək.tər/",
+          "meaningVi": "tính cách, đặc trưng",
+          "definitionEn": "the particular combination of qualities in a person or place that makes them different from others",
+          "exampleEn": "Politeness is traditionally part of the British [character]."
+        },
+        {
+          "word": "Childhood",
+          "pos": "n",
+          "ipa": "/ˈtʃaɪld.hʊd/",
+          "meaningVi": "tuổi thơ",
+          "definitionEn": "the time when someone is a child",
+          "exampleEn": "She had an unhappy [childhood]."
+        },
+        {
+          "word": "Conflict",
+          "pos": "n",
+          "ipa": "/ˈkɒn.lɪkt/",
+          "meaningVi": "xung đột",
+          "definitionEn": "an active disagreement between people with opposing opinions or principles",
+          "exampleEn": "There was a lot of [conflict] between him and his father."
+        },
+        {
+          "word": "connection",
+          "pos": "n",
+          "ipa": "/kəˈnek.ʃən/",
+          "meaningVi": "mối quan hệ, sự liên quan",
+          "definitionEn": "relation",
+          "exampleEn": "The [connection] between smoking and heart disease is well known."
+        },
+        {
+          "word": "Fatherhood",
+          "pos": "n",
+          "ipa": "/ˈfɑː.ðə.hʊd/",
+          "meaningVi": "cương vị làm cha",
+          "definitionEn": "the state or time of being a father",
+          "exampleEn": "[Fatherhood] is a lifelong responsibility."
+        },
+        {
+          "word": "Friendship",
+          "pos": "n",
+          "ipa": "/ˈfrend.ʃɪp/",
+          "meaningVi": "tình bạn",
+          "exampleEn": "Their [friendship] goes back to when they were at school together."
+        },
+        {
+          "word": "Instinct",
+          "pos": "n",
+          "ipa": "/ˈɪn.stɪŋkt/",
+          "meaningVi": "bản năng",
+          "definitionEn": "the way people or animals naturally react or behave, without having to think or learn about it",
+          "exampleEn": "Her first [instinct] was to run."
+        },
+        {
+          "word": "Interaction",
+          "pos": "n",
+          "ipa": "/ˌɪn.təˈræk.ʃən/",
+          "meaningVi": "sự tương tác",
+          "definitionEn": "an occasion when two or more people or things communicate with or react to each other",
+          "exampleEn": "There's not enough [interaction] between the management and the workers."
+        },
+        {
+          "word": "Motherhood",
+          "pos": "n",
+          "ipa": "/ˈmʌð.ə.hʊd/",
+          "meaningVi": "bổn phận làm mẹ",
+          "definitionEn": "the state or time of being a mother",
+          "exampleEn": "I don't feel ready for [motherhood] yet."
+        },
+        {
+          "word": "Nature",
+          "pos": "n",
+          "ipa": "/ˈneɪ.tʃər/",
+          "meaningVi": "bản tính, bản chất",
+          "definitionEn": "a person's character",
+          "exampleEn": "As a child, Juliana had a very sensitive [nature]."
+        },
+        {
+          "word": "Parent",
+          "pos": "n",
+          "ipa": "/ˈpeə.rənt/",
+          "meaningVi": "ba/mẹ",
+          "definitionEn": "mother or father",
+          "exampleEn": "I'm going to meet Richard's [parent]s for the first time this weekend."
+        },
+        {
+          "word": "relation",
+          "pos": "n",
+          "ipa": "/rɪˈleɪ.ʃən/",
+          "meaningVi": "sự liên quan, mối quan hệ",
+          "definitionEn": "= relationship /rɪˈleɪ.ʃən.ʃɪp/= connection",
+          "exampleEn": "The word [relation] is useful in IELTS."
+        },
+        {
+          "word": "Relative",
+          "pos": "n",
+          "ipa": "/ˈrel.ə.tɪv/",
+          "meaningVi": "họ hàng",
+          "definitionEn": "a member of your family",
+          "exampleEn": "All her close/distant [relative]s came to the wedding."
+        },
+        {
+          "word": "Resemblance",
+          "pos": "n",
+          "ipa": "/rɪˈzem.bləns/",
+          "meaningVi": "sự giống nhau",
+          "definitionEn": "look like",
+          "exampleEn": "There was a clear family [resemblance] between all the brothers."
+        },
+        {
+          "word": "Rivalry",
+          "pos": "n",
+          "ipa": "/ˈraɪ.vəl.ri/",
+          "meaningVi": "sự ganh đua",
+          "definitionEn": "a situation in which people, businesses, etc. compete with each other for the same thing",
+          "exampleEn": "There's such [rivalry] among/between my three sons."
+        },
+        {
+          "word": "Sibling",
+          "pos": "n",
+          "ipa": "/ˈsɪb.lɪŋ/",
+          "meaningVi": "anh/chị/em",
+          "definitionEn": "a brother or sister",
+          "exampleEn": "There was great [sibling] rivalry (= competition) between Peter and his brother."
+        },
+        {
+          "word": "Teenager",
+          "pos": "n",
+          "ipa": "/ˈtiːnˌeɪ.dʒər/",
+          "meaningVi": "thanh thiếu niên",
+          "definitionEn": "a young person between 13 and 19 years old",
+          "exampleEn": "The magazine is aimed at [teenager]s and young adults."
+        },
+        {
+          "word": "Temperament",
+          "pos": "n",
+          "ipa": "/ˈtem.pər.ə.mənt/",
+          "meaningVi": "tính khí",
+          "exampleEn": "a fiery [temperament] ( tính khí nóng nảy)"
+        },
+        {
+          "word": "Ties",
+          "pos": "n",
+          "meaningVi": "mối quan hệ, ràng buộc",
+          "definitionEn": "the friendly feelings that people have for other eople, or special connections with places",
+          "exampleEn": "Family [ties] are weaker if you move a long way away."
+        },
+        {
+          "word": "Upbringing",
+          "pos": "n",
+          "ipa": "/ˈʌpˌbrɪŋ.ɪŋ/",
+          "meaningVi": "sự nuôi dưỡng, sự dạy dỗ",
+          "exampleEn": "Who can argue with the healthy [upbringing] of happy children?"
+        },
+        {
+          "word": "Active role",
+          "pos": "n",
+          "ipa": "/ˈæk.tɪv/",
+          "meaningVi": "/rəʊl/ vai trò tích cực",
+          "exampleEn": "In both cases, individuals can play an [active] role, or can be silent."
+        },
+        {
+          "word": "Extended family",
+          "pos": "n",
+          "ipa": "/ɪkˌsten.dɪd ˈfæm.əl.i/",
+          "meaningVi": "a family unit that includes grandmothers, grandfathers, aunts, and uncles, etc. in addition to parents and children",
+          "definitionEn": "= traditional family",
+          "exampleEn": "He has a very large [extended] family."
+        },
+        {
+          "word": "Family gathering",
+          "pos": "n",
+          "ipa": "/ˈɡæðərɪŋ/",
+          "meaningVi": "sự sum họp gia đình",
+          "exampleEn": "Of course I made the pie, i make it for every holiday [family] gathering and have for years."
+        },
+        {
+          "word": "Immediate family",
+          "pos": "n",
+          "ipa": "/ɪˈmiːdiət/",
+          "meaningVi": "gia đình hiện tại",
+          "definitionEn": "your closest relations, such as your parents, children, husband, or wife",
+          "exampleEn": "The funeral was attended by her [immediate] family (= her parents, children, brothers and sisters) only."
+        },
+        {
+          "word": "Maternal instincts",
+          "pos": "n",
+          "ipa": "/məˈtɜː.nəl/",
+          "meaningVi": "bản năng làm mẹ",
+          "definitionEn": "/ˈɪn.stɪŋkt/",
+          "exampleEn": "It is therefore difficult to assess what was being referred to by [maternal] instinct."
+        },
+        {
+          "word": "Sibling rivalry: sự ganh đua giữa anh",
+          "pos": "n",
+          "ipa": "/chị/",
+          "meaningVi": "em trong nhà",
+          "exampleEn": "There was great [sibling] rivalry (= competition) between Peter and his brother."
+        },
+        {
+          "word": "Stable upbringing",
+          "pos": "n",
+          "meaningVi": "sự nuôi dưỡng vững chắc",
+          "exampleEn": "That is largely learnt from your parents – a result of a \"[stable]\" upbringing."
+        },
+        {
+          "word": "Striking resemblance",
+          "pos": "n",
+          "meaningVi": "sự giống nhau như đúc",
+          "exampleEn": "He also bears a [striking] resemblance to his father."
+        },
+        {
+          "word": "Close",
+          "pos": "adj",
+          "ipa": "/kləʊz/",
+          "meaningVi": "gần gũi",
+          "definitionEn": "having direct family connections or shared beliefs, support, and sympathy",
+          "exampleEn": "In those early months, there's a very [close] bond between mother and child."
+        },
+        {
+          "word": "Close-knit",
+          "pos": "adj",
+          "ipa": "/ˌkləʊsˈnɪt/",
+          "meaningVi": "gần gũi",
+          "exampleEn": "a [close-knit] family/community"
+        },
+        {
+          "word": "Maternal",
+          "pos": "adj",
+          "ipa": "/məˈtɜː.nəl/",
+          "meaningVi": "thuộc về mẹ",
+          "exampleEn": "Her [maternal] grandmother (= mother's mother) is still alive."
+        },
+        {
+          "word": "Paternal",
+          "pos": "adj",
+          "ipa": "/pəˈtɜː.nəl/",
+          "meaningVi": "thuộc về ba",
+          "exampleEn": "My [paternal] grandparents (= my father's parents) were Irish."
+        },
+        {
+          "word": "Rewarding",
+          "pos": "adj",
+          "ipa": "/rɪˈwɔː.dɪŋ/",
+          "meaningVi": "xứng đáng",
+          "definitionEn": "satisfying or beneficial",
+          "exampleEn": "a [rewarding] experience"
+        },
+        {
+          "word": "Accommodate",
+          "pos": "v",
+          "ipa": "/əˈkɒm.ə.deɪt/",
+          "meaningVi": "cung cấp cho ai đó thứ gì",
+          "definitionEn": "to give what is needed to someone",
+          "exampleEn": "We certainly try to [accommodate] students with disabilities."
+        },
+        {
+          "word": "Adopt",
+          "pos": "v",
+          "ipa": "/əˈdɒpt/",
+          "meaningVi": "nhận con nuôi/ áp dụng ( cái gì đó mới)",
+          "definitionEn": "to legally take another person's child into your own family and take care of him or her as your own child",
+          "exampleEn": "They've [adopt]ed a baby girl."
+        },
+        {
+          "word": "Break down",
+          "pos": "v",
+          "meaningVi": "mối quan hệ bị đổ vỡ.",
+          "definitionEn": "If a system, relationship, or discussion breaks down, it fails because there is a problem or disagreement",
+          "exampleEn": "Their marriage had broken down irretrievably."
+        },
+        {
+          "word": "Develop",
+          "pos": "v",
+          "ipa": "/dɪˈvel.əp/",
+          "meaningVi": "phát triển",
+          "exampleEn": "They will have to be more flexible and [develop] new skills."
+        },
+        {
+          "word": "Endure",
+          "pos": "v",
+          "ipa": "/ɪnˈdʒʊər/",
+          "meaningVi": "chịu đựng",
+          "definitionEn": "to suffer something difficult, unpleasant, or painful",
+          "exampleEn": "We had to [endure] a nine-hour delay at the airport."
+        },
+        {
+          "word": "Establish",
+          "pos": "v",
+          "ipa": "/ɪˈstæb.lɪʃ/",
+          "meaningVi": "thiết lập",
+          "exampleEn": "There is a strong need to [establish] effective communication links between staff, parents, pupils, and external bodies."
+        },
+        {
+          "word": "Have something in common",
+          "pos": "v",
+          "meaningVi": "có điểm chung",
+          "definitionEn": "to share interests, experiences, or other characteristics with someone or something",
+          "exampleEn": "We don't really [have] much in common."
+        },
+        {
+          "word": "Inherit",
+          "pos": "v",
+          "ipa": "/ɪnˈher.ɪt/",
+          "meaningVi": "thừa hưởng ( tài sản, ngoại hình, tính cách)",
+          "exampleEn": "Rosie [inherit]ed her red hair from her mother."
+        },
+        {
+          "word": "Interact",
+          "pos": "v",
+          "ipa": "/ˌɪn.təˈrækt/",
+          "meaningVi": "tương tác",
+          "definitionEn": "to communicate with or react to",
+          "exampleEn": "It's interesting at parties to see how people [interact] socially."
+        },
+        {
+          "word": "Nurture",
+          "pos": "v",
+          "ipa": "/ˈnɜː.tʃər/",
+          "meaningVi": "nuôi dưỡng",
+          "exampleEn": "She wants to stay at home and [nurture] her children."
+        },
+        {
+          "word": "Play a role",
+          "pos": "v",
+          "meaningVi": "đóng vai trò",
+          "exampleEn": "Schools [play] an important role in society."
+        },
+        {
+          "word": "Relate to",
+          "pos": "v",
+          "ipa": "/rɪˈleɪt/",
+          "meaningVi": "liên quan đến , liên hệ",
+          "exampleEn": "We need to explain why these issues are important and [relate] them to everyday life."
+        }
+      ]
+    },
+    {
+      "slug": "unit-2-mental-and-physical-development",
+      "order": 2,
+      "title": {
+        "vi": "Mental and Physical Development",
+        "en": "Mental and Physical Development"
+      },
+      "summary": {
+        "vi": "Trí tuệ, tăng trưởng, năng lực.",
+        "en": "Mind, growth, abilities."
+      },
+      "words": [
+        {
+          "word": "Ability",
+          "pos": "n",
+          "ipa": "/əˈbɪl.ə.ti/",
+          "meaningVi": "khả năng",
+          "definitionEn": "the physical or mental power or skill needed to do something",
+          "exampleEn": "She had the [ability] to explain things clearly and concisely."
+        },
+        {
+          "word": "adolescent",
+          "pos": "n",
+          "ipa": "/ˌæd.əˈles.ənt/",
+          "meaningVi": "thanh thiếu niên",
+          "definitionEn": "a young person who is developing into an adult",
+          "exampleEn": "She doesn't understand the emotional problems of [adolescent]s.."
+        },
+        {
+          "word": "Behaviour",
+          "pos": "n",
+          "ipa": "/bɪˈheɪ.vjɚ/",
+          "meaningVi": "hành vi",
+          "definitionEn": "the way that someone behaves",
+          "exampleEn": "Her behavior is often appalling( làm kinh sợ)."
+        },
+        {
+          "word": "concept",
+          "pos": "n",
+          "ipa": "/ˈkɒn.sept/",
+          "meaningVi": "quan điểm",
+          "definitionEn": "a principle or idea",
+          "exampleEn": "The [concept] of free speech is unknown to them."
+        },
+        {
+          "word": "consequence",
+          "pos": "n",
+          "ipa": "/ˈkɒn.sɪ.kwəns/",
+          "meaningVi": "hậu quả",
+          "definitionEn": "a result of a particular action or situation, often one that is bad or not convenient",
+          "exampleEn": "I told the hairdresser to do what she wanted to my hair, and look at the [consequence]s!."
+        },
+        {
+          "word": "gesture",
+          "pos": "n",
+          "ipa": "/ˈdʒes.tʃər/",
+          "meaningVi": "cử chỉ",
+          "exampleEn": "She made a rude [gesture] at the other driver."
+        },
+        {
+          "word": "height",
+          "pos": "n",
+          "ipa": "/haɪt/",
+          "meaningVi": "chiều cao",
+          "exampleEn": "She's about average [height] (= neither short nor tall).."
+        },
+        {
+          "word": "imagination",
+          "pos": "n",
+          "ipa": "/ɪˌmædʒ.ɪˈneɪ.ʃən/",
+          "meaningVi": "trí tưởng tượng",
+          "definitionEn": "the ability to form pictures in the mind",
+          "exampleEn": "My younger son has a very vivid (= active) [imagination]."
+        },
+        {
+          "word": "infancy",
+          "pos": "n",
+          "ipa": "/ˈɪn.fən.si/",
+          "meaningVi": "tuổi còn em bé",
+          "definitionEn": "the time when someone is a baby or a very young child",
+          "exampleEn": "Her youngest child died in [infancy]."
+        },
+        {
+          "word": "infant",
+          "pos": "n",
+          "ipa": "/ˈɪn.fənt/",
+          "meaningVi": "em bé",
+          "definitionEn": "a baby or a very young child",
+          "exampleEn": "a newborn [infant]."
+        },
+        {
+          "word": "knowledge",
+          "pos": "n",
+          "ipa": "/ˈnɒl.ɪdʒ/",
+          "meaningVi": "kiến thức",
+          "exampleEn": "Her [knowledge] of English grammar is very extensive."
+        },
+        {
+          "word": "maturity",
+          "pos": "n",
+          "ipa": "/məˈtʃʊə.rə.ti/",
+          "meaningVi": "sự trưởng thành",
+          "definitionEn": "the quality of behaving mentally and emotionally like an adult",
+          "exampleEn": "How long does it take for the chicks to grow to [maturity]?"
+        },
+        {
+          "word": "memory",
+          "pos": "n",
+          "ipa": "/ˈmem.ər.i/",
+          "meaningVi": "trí nhớ, kỉ niệm",
+          "exampleEn": "a good/bad [memory]"
+        },
+        {
+          "word": "milestone",
+          "pos": "n",
+          "ipa": "/ˈmaɪl.stəʊn/",
+          "meaningVi": "cột m ốc( quan trọng)",
+          "definitionEn": "an important event in the development or history of something or in someone's life",
+          "exampleEn": "He felt that moving out of his parents' home was a real [milestone] in his life."
+        },
+        {
+          "word": "peer",
+          "pos": "n",
+          "ipa": "/pɪər/",
+          "meaningVi": "bạn bè đồng trang lứa",
+          "exampleEn": "Do you think it's true that teenage girls are less self-confident than their male [peer]s?"
+        },
+        {
+          "word": "period",
+          "pos": "n",
+          "ipa": "/ˈpɪə.ri.əd/",
+          "meaningVi": "thời kì, giai đoạn",
+          "definitionEn": "a length of time",
+          "exampleEn": "Her work means that she spends long [period]s away from home."
+        },
+        {
+          "word": "phase",
+          "pos": "n",
+          "ipa": "/feɪz/",
+          "meaningVi": "giai đoạn ( phát triển)",
+          "definitionEn": "any stage in a series of events or in a process of development",
+          "exampleEn": "The project is only in its initial [phase] as yet, but it's looking quite promising.."
+        },
+        {
+          "word": "rate",
+          "pos": "n",
+          "ipa": "/reɪt/",
+          "meaningVi": "tỉ lệ",
+          "exampleEn": "The drug has a high success/failure [rate]."
+        },
+        {
+          "word": "reminder",
+          "pos": "n",
+          "ipa": "/rɪˈmaɪn.dər/",
+          "meaningVi": "cái nhắc nhở ( để nhớ làm điều gì)",
+          "definitionEn": "a written or spoken message that reminds someone to do something",
+          "exampleEn": "If he forgot to pay his rent, his landlady would send him a [reminder]."
+        },
+        {
+          "word": "Social skills",
+          "pos": "n",
+          "meaningVi": "kĩ năng xã hội",
+          "exampleEn": "[Social] skills are what employers need most."
+        },
+        {
+          "word": "Stage= phase",
+          "pos": "n",
+          "meaningVi": "giai đoạn",
+          "exampleEn": "The project is in its final stages and should be completed by August."
+        },
+        {
+          "word": "Toddler",
+          "pos": "n",
+          "ipa": "/ˈtɒd.lər/",
+          "meaningVi": "trẻ tập đi",
+          "definitionEn": "a young child, especially one who is learning or has recently learned to walk",
+          "exampleEn": "Are these toys suitable for [toddler]s?"
+        },
+        {
+          "word": "transition",
+          "pos": "n",
+          "ipa": "/trænˈzɪʃ.ən /",
+          "meaningVi": "sự chuyển tiếp ( từ giai đoạn này sang giai đoạn kia)",
+          "definitionEn": "a change from one form or type to another, or the process by which this happens",
+          "exampleEn": "The [transition] from boyhood to manhood can be a confusing period."
+        },
+        {
+          "word": "Abstract",
+          "pos": "adj",
+          "ipa": "/ˈæb.strækt/",
+          "meaningVi": "trừu tượng",
+          "exampleEn": "Truth and beauty are [abstract] concepts."
+        },
+        {
+          "word": "cognitive",
+          "pos": "adj",
+          "ipa": "/ˈkɒɡ.nə.tɪv/",
+          "meaningVi": "liên quan đến nhận thức",
+          "definitionEn": "connected with thinking or conscious mental processes",
+          "exampleEn": "Studies show a connection between aerobic exercise and [cognitive] ability."
+        },
+        {
+          "word": "clumsy",
+          "pos": "adj",
+          "ipa": "/ˈklʌm.zi/",
+          "meaningVi": "vụng về",
+          "exampleEn": "That's the third glass you've smashed this week - you're so [clumsy]!"
+        },
+        {
+          "word": "be fond of sb",
+          "pos": "adj",
+          "ipa": "/sth : thích cái gì/",
+          "meaningVi": "ai đó",
+          "exampleEn": "She was very fond of horses.."
+        },
+        {
+          "word": "Full-grown",
+          "pos": "adj",
+          "ipa": "/ˌfʊlˈɡrəʊn/",
+          "meaningVi": "phát triển đầy đủ( về thể chất)",
+          "definitionEn": "People and other living things that are full-grown have finished their physical growth and will not grow taller",
+          "exampleEn": "A [full-grown] giraffe is 5.5 m tall.."
+        },
+        {
+          "word": "immature",
+          "pos": "adj",
+          "ipa": "/ˌɪm.əˈtʃʊər/",
+          "meaningVi": "không trưởng thành",
+          "definitionEn": "# mature",
+          "exampleEn": "Stop being so silly and [immature], Chris!"
+        },
+        {
+          "word": "Independent",
+          "pos": "adj",
+          "meaningVi": "độc lập, không phục thuộc",
+          "definitionEn": "# dependent",
+          "exampleEn": "I've always been financially [independent]."
+        },
+        {
+          "word": "Irresponsible # responsible",
+          "pos": "adj",
+          "meaningVi": "vô trách nhiệm",
+          "exampleEn": "It would be [irresponsible] to ignore these warnings."
+        },
+        {
+          "word": "Mature",
+          "pos": "adj",
+          "ipa": "/məˈtʃʊər/",
+          "meaningVi": "trưởng thành",
+          "exampleEn": "He's very [mature] for his age."
+        },
+        {
+          "word": "patient",
+          "pos": "adj",
+          "ipa": "/ˈpeɪ.ʃənt/",
+          "meaningVi": "kiên nhẫn",
+          "exampleEn": "Dinner will be ready in half an hour - just be [patient]!"
+        },
+        {
+          "word": "rebellious",
+          "pos": "adj",
+          "ipa": "/rɪˈbel.i.əs/",
+          "meaningVi": "nổi loạn",
+          "exampleEn": "He was a [rebellious] young man."
+        },
+        {
+          "word": "Significant",
+          "pos": "adj",
+          "ipa": "/sɪɡˈnɪf.ɪ.kənt/",
+          "meaningVi": "quan trọng, đáng kể",
+          "definitionEn": "important or noticeable",
+          "exampleEn": "There has been a [significant] increase in the number of women students in recent years.."
+        },
+        {
+          "word": "tolerant",
+          "pos": "adj",
+          "ipa": "/ˈtɒl.ər.ənt/",
+          "meaningVi": "khoan dụng, hay tha thứ",
+          "definitionEn": "satisfying or beneficial",
+          "exampleEn": "People in Italy are more [tolerant] of children in public places than in Britain."
+        },
+        {
+          "word": "acquire",
+          "pos": "v",
+          "ipa": "/əˈkwaɪər/",
+          "meaningVi": "đạt được, lấy được, học được",
+          "definitionEn": "to get or buy something:",
+          "exampleEn": "It's a good time to [acquire] new talent."
+        },
+        {
+          "word": "develop",
+          "pos": "v",
+          "ipa": "/dɪˈvel.əp/",
+          "meaningVi": "phát triển",
+          "exampleEn": "I'm looking for a job which will enable me to [develop] my skills/talents."
+        },
+        {
+          "word": "gesture",
+          "pos": "v",
+          "meaningVi": "dùng cử chỉ để diễn tả",
+          "definitionEn": "to use a gesture to express or emphasize something",
+          "exampleEn": "He made no answer but walked on, gesturing for me to follow."
+        },
+        {
+          "word": "grow",
+          "pos": "v",
+          "ipa": "/ɡrəʊ/",
+          "meaningVi": "phát triển, lớn lên",
+          "exampleEn": "Children [grow] so quickly."
+        },
+        {
+          "word": "imitate",
+          "pos": "v",
+          "ipa": "/ˈɪm.ɪ.teɪt/",
+          "meaningVi": "bắt chước",
+          "exampleEn": "Some of the younger pop bands try to [imitate] their musical heroes from the past."
+        },
+        {
+          "word": "Look back",
+          "pos": "v",
+          "meaningVi": "nghĩ lại , nhớ lại",
+          "definitionEn": "to think about something that happened in the past",
+          "exampleEn": "When I [look] back I can see where we went wrong."
+        },
+        {
+          "word": "Master",
+          "pos": "v",
+          "meaningVi": "làm gì đó rất giỏi",
+          "exampleEn": "She lived in Italy for several years but never quite [master]ed the language."
+        },
+        {
+          "word": "Remember",
+          "pos": "v",
+          "ipa": "/rɪˈmem.bər/",
+          "meaningVi": "nhớ",
+          "exampleEn": "I don't [remember] signing a contract."
+        },
+        {
+          "word": "Remind",
+          "pos": "v",
+          "ipa": "/rɪˈmaɪnd/",
+          "meaningVi": "nhắc ai đó nhớ làm gì",
+          "definitionEn": "to make someone think of something they have forgotten or might have forgotten",
+          "exampleEn": "She wants to stay at home and nurture her children."
+        },
+        {
+          "word": "Reminisce",
+          "pos": "v",
+          "ipa": "/ˌrem.ɪˈnɪs/",
+          "meaningVi": "hồi tưởng, nhớ lại",
+          "definitionEn": "to talk or write about past experiences that you remember with pleasure",
+          "exampleEn": "My grandfather used to [reminisce] about his years in the navy( hải quân) ."
+        },
+        {
+          "word": "Throw a tantrum",
+          "pos": "v",
+          "ipa": "/θrəʊ/",
+          "meaningVi": "nổi cơn thịnh nộ",
+          "definitionEn": "ˈtæn.trəm/ to experience and show a strong feeling of anger, especially suddenly",
+          "exampleEn": "My mother threw a tantrum when she saw what a mess we'd made of her kitchen."
+        },
+        {
+          "word": "Visualise",
+          "pos": "v",
+          "ipa": "/ˈvɪʒ.u.əl.aɪz/",
+          "meaningVi": "hình dung, mường tượng",
+          "exampleEn": "The word [Visualise] is useful in IELTS."
+        },
+        {
+          "word": "Typically",
+          "pos": "adv",
+          "ipa": "/ˈtɪp.ɪ.kəl.i/",
+          "meaningVi": "thông thường, điển hình",
+          "exampleEn": "[Typically], a doctor will see about 30 patients a day."
+        },
+        {
+          "word": "Bear in mind",
+          "pos": "phrase",
+          "meaningVi": "nhớ kĩ",
+          "definitionEn": "to remember a piece of information when you are making a decision or thinking about a matter",
+          "exampleEn": "[Bear]ing in mind how young she is, I thought she did really well."
+        },
+        {
+          "word": "Broaden the mind",
+          "pos": "phrase",
+          "meaningVi": "mở mang đầu óc",
+          "definitionEn": "to make someone understand more and know more about different subjects, ideas, places, etc.",
+          "exampleEn": "They say that travel [broaden]s the mind."
+        },
+        {
+          "word": "Have sth in mind",
+          "pos": "phrase",
+          "meaningVi": "có dự đinh, kế hoạch làm gì đó",
+          "definitionEn": "to have a plan or intention",
+          "exampleEn": "Did you [have] anything in mind for Helen's present?"
+        },
+        {
+          "word": "It slipped my mind",
+          "pos": "phrase",
+          "meaningVi": "to forget something",
+          "definitionEn": "to forget something",
+          "exampleEn": "I was supposed to go to basketball practice, but [it] completely slipped my mind."
+        },
+        {
+          "word": "Keep an open mind",
+          "pos": "phrase",
+          "meaningVi": "to wait until you know all the facts before forming an opinion or making a decision about something",
+          "definitionEn": "to wait until you know all the facts before forming an opinion or making a decision about something",
+          "exampleEn": "The judge urged the jury to [keep] an open mind until they had heard all the evidence."
+        },
+        {
+          "word": "My mind went blank",
+          "pos": "phrase",
+          "meaningVi": "hay quên",
+          "definitionEn": "to forget something that you know, often temporarily",
+          "exampleEn": "When she asked me his name, [my] mind went blank."
+        },
+        {
+          "word": "Put your mind at ease",
+          "pos": "phrase",
+          "meaningVi": "làm ai đó hết lo",
+          "definitionEn": "to stop someone from worrying about something",
+          "exampleEn": "Chris phoned to say they'd arrived safely, so that really [put] my mind at ease."
+        },
+        {
+          "word": "57. Have sth on your mind",
+          "pos": "phrase",
+          "meaningVi": "to be worrying about something",
+          "definitionEn": "to be worrying about something",
+          "exampleEn": "Paul has a lot on his mind at the moment"
+        }
+      ]
+    },
+    {
+      "slug": "unit-3-keeping-fit",
+      "order": 3,
+      "title": {
+        "vi": "Keeping Fit",
+        "en": "Keeping Fit"
+      },
+      "summary": {
+        "vi": "Thể lực, dinh dưỡng, tập luyện.",
+        "en": "Fitness, diet, exercise."
+      },
+      "words": [
+        {
+          "word": "Allergy",
+          "pos": "n",
+          "ipa": "/ˈæl.ə.dʒi/",
+          "meaningVi": "sự dị ứng ( với thức ăn,..)",
+          "exampleEn": "Your rash is caused by an [allergy] to peanuts."
+        },
+        {
+          "word": "Anxiety",
+          "pos": "n",
+          "ipa": "/æŋˈzaɪ.ə.ti/",
+          "meaningVi": "an uncomfortable feeling of nervousness or worry about something sự lo lắng",
+          "exampleEn": "Children normally feel a lot of [anxiety] about their first day at school."
+        },
+        {
+          "word": "Appetite",
+          "pos": "n",
+          "ipa": "/ˈæp.ə.taɪt/",
+          "meaningVi": "sự thèm ăn",
+          "definitionEn": "the feeling that you want to eat food",
+          "exampleEn": "All that walking has given me an [appetite]."
+        },
+        {
+          "word": "Artery",
+          "pos": "n",
+          "ipa": "/ˈɑː.tər.i/",
+          "meaningVi": "động mạch",
+          "exampleEn": "Hardening of the coronary arteries can lead to a heart attack."
+        },
+        {
+          "word": "Asset",
+          "pos": "n",
+          "ipa": "/ˈæs.et/",
+          "meaningVi": "tài sản",
+          "exampleEn": "A company's [asset]s can consist of cash, investments, specialist knowledge, or copyright material."
+        },
+        {
+          "word": "Benefit",
+          "pos": "n",
+          "ipa": "/ˈben.ɪ.fɪt/",
+          "meaningVi": "lợi ích",
+          "definitionEn": "a helpful or good effect, or something intended to help",
+          "exampleEn": "The discovery of oil brought many [benefit]s to the town."
+        },
+        {
+          "word": "Craving",
+          "pos": "n",
+          "ipa": "/ˈkreɪ.vɪŋ/",
+          "meaningVi": "sự thèm khát",
+          "definitionEn": "a strong feeling of wanting something",
+          "exampleEn": "I have a [craving] for chocolate."
+        },
+        {
+          "word": "Depression",
+          "pos": "n",
+          "ipa": "/dɪˈpreʃ.ən/",
+          "meaningVi": "trí tuyệt vọng, trầm cảm",
+          "definitionEn": "the state of feeling very unhappy and without hope for the future",
+          "exampleEn": "I was overwhelmed by feelings of [depression].."
+        },
+        {
+          "word": "Diagnosis",
+          "pos": "n",
+          "ipa": "/ˌdaɪ.əɡˈnəʊ.sɪs/",
+          "meaningVi": "sự chẩn đoán bệnh",
+          "definitionEn": "a judgment about what a particular illness or problem is, made after examining it",
+          "exampleEn": "[Diagnosis] of the disease is difficult in the early stages."
+        },
+        {
+          "word": "Diet",
+          "pos": "n",
+          "ipa": "/ˈdaɪ.ət /",
+          "meaningVi": "chế độ ăn uống",
+          "exampleEn": "a healthy/balanced/varied [diet]"
+        },
+        {
+          "word": "Dietician",
+          "pos": "n",
+          "ipa": "/ˌdaɪ.əˈtɪʃ.ən/",
+          "meaningVi": "chuyên gia nghiên cứu chế độ ăn uống",
+          "exampleEn": "The word [Dietician] is useful in IELTS."
+        },
+        {
+          "word": "Disease",
+          "pos": "n",
+          "ipa": "/dɪˈziːz/",
+          "meaningVi": "= illness bệnh",
+          "exampleEn": "They reported a sudden outbreak of the [disease] in the south of the country."
+        },
+        {
+          "word": "Eating disorder",
+          "pos": "n",
+          "ipa": "/ˈiː.tɪŋ dɪˌsɔː.dər/",
+          "meaningVi": "chứng rối loạn ăn uống ( ăn quá nhiều hoặc quá ít)",
+          "exampleEn": "The word [Eating disorder] is useful in IELTS."
+        },
+        {
+          "word": "Exercise",
+          "pos": "n",
+          "ipa": "/ˈek.sə.saɪz/",
+          "meaningVi": "thể dục",
+          "definitionEn": "physical activity that you do to make your body strong and healthy",
+          "exampleEn": "Swimming is my favourite form of [exercise]."
+        },
+        {
+          "word": "Factor",
+          "pos": "n",
+          "ipa": "/ˈfæk.tər/",
+          "meaningVi": "yếu tố",
+          "exampleEn": "Too little exercise is a contributory [factor] in heart disease."
+        },
+        {
+          "word": "Fast food",
+          "pos": "n",
+          "ipa": "/ˌfɑːst ˈfuːd/",
+          "meaningVi": "thức ăn nhanh",
+          "exampleEn": "The [fast] food industry is making good progress in developing more healthy alternatives."
+        },
+        {
+          "word": "Fat",
+          "pos": "n",
+          "ipa": "/fæt/",
+          "meaningVi": "chất béo",
+          "exampleEn": "This product contains no animal [fat]."
+        },
+        {
+          "word": "Harm",
+          "pos": "n",
+          "ipa": "/hɑːm/",
+          "meaningVi": "sự tổn hại",
+          "definitionEn": "physical or other injury or damage",
+          "exampleEn": "Missing a meal once in a while won’t do you any [harm]."
+        },
+        {
+          "word": "Health : /",
+          "pos": "n",
+          "ipa": "/helθ/",
+          "meaningVi": "sức khỏe",
+          "exampleEn": "Regular exercise is good for your [health]."
+        },
+        {
+          "word": "Heart attack",
+          "pos": "n",
+          "ipa": "/ˈhɑːt əˌtæk/",
+          "meaningVi": "đau tim",
+          "exampleEn": "John had a [heart] attack three years ago."
+        },
+        {
+          "word": "Infection",
+          "pos": "n",
+          "ipa": "/ɪnˈfek.ʃən/",
+          "meaningVi": "sự nhiễm ( bệnh)",
+          "definitionEn": "a disease in a part of your body that is caused by bacteria or a virus",
+          "exampleEn": "a serious [infection]."
+        },
+        {
+          "word": "Ingredient",
+          "pos": "n",
+          "ipa": "/ɪnˈɡriː.di.ənt/",
+          "meaningVi": "thành phần",
+          "exampleEn": "The list of [ingredient]s included 250 g of almonds."
+        },
+        {
+          "word": "Insomnia",
+          "pos": "n",
+          "meaningVi": "chứng mất ngủ",
+          "definitionEn": "sɒm.ni.ə/ the condition of being unable to sleep, over a period of time",
+          "exampleEn": "Holly suffered from [insomnia] caused by stress at work."
+        },
+        {
+          "word": "Intake",
+          "pos": "n",
+          "ipa": "/ˈɪn.teɪk/",
+          "meaningVi": "sự ăn (uống) vào",
+          "definitionEn": "the amount of a particular substance that is eaten or drunk during a particular time",
+          "exampleEn": "It says on the packet that four slices of this bread contains one half of your recommended daily [intake] of fibre."
+        },
+        {
+          "word": "Junk food",
+          "pos": "n",
+          "ipa": "/ˈdʒʌŋk ˌfuːd/",
+          "meaningVi": "thức ăn nhanh",
+          "definitionEn": "food that is unhealthy but is quick and easy to eat",
+          "exampleEn": "On a daily basis, the average child in America is exposed to dozens of television advertisements for [junk] food."
+        },
+        {
+          "word": "Muscle",
+          "pos": "n",
+          "ipa": "/ˈmʌs.əl/",
+          "meaningVi": "cơ bắp",
+          "exampleEn": "These exercises build [muscle] and increase stamina."
+        },
+        {
+          "word": "Nutrientˈ",
+          "pos": "n",
+          "ipa": "/ njuː.tri.ənt/",
+          "meaningVi": "chất dinh dưỡng",
+          "exampleEn": "A healthy diet should provide all your essential nutrients."
+        },
+        {
+          "word": "Nutrition",
+          "pos": "n",
+          "ipa": "/njuːˈtrɪʃ.ən/",
+          "meaningVi": "sự dinh dưỡng",
+          "exampleEn": "Good [nutrition] is essential if patients are to make a quick recovery."
+        },
+        {
+          "word": "Obesity",
+          "pos": "n",
+          "ipa": "/əʊˈbiː.sə.ti/",
+          "meaningVi": "sự béo phì",
+          "definitionEn": "the fact of being extremely fat, in a way that is dangerous for health",
+          "exampleEn": "A diet that is high in fat and sugar can lead to [obesity]."
+        },
+        {
+          "word": "Onset",
+          "pos": "n",
+          "ipa": "/ˈɒn.set/",
+          "meaningVi": "sự bắt đầu, sự tấn công",
+          "exampleEn": "The new treatment can delay the [onset] of the disease by several years."
+        },
+        {
+          "word": "Portion",
+          "pos": "n",
+          "ipa": "/ˈpɔː.ʃən/",
+          "meaningVi": "phần",
+          "definitionEn": "a part or share of something larger",
+          "exampleEn": "These products account for a relatively small [portion] of sales."
+        },
+        {
+          "word": "Risk",
+          "pos": "n",
+          "ipa": "/rɪsk/",
+          "meaningVi": "rủi ro",
+          "definitionEn": "the possibility of something bad happening",
+          "exampleEn": "In this business, the [risk]s and the rewards are high."
+        },
+        {
+          "word": "Serving",
+          "pos": "n",
+          "ipa": "/ˈsɜː.vɪŋ/",
+          "meaningVi": "một phần nhỏ thức ăn uống",
+          "exampleEn": "The quantities given in the recipe should be enough for four [serving]s."
+        },
+        {
+          "word": "Stroke",
+          "pos": "n",
+          "ipa": "/strəʊk/",
+          "meaningVi": "đột quỵ",
+          "exampleEn": "She suffered/had a [stroke] that left her unable to speak."
+        },
+        {
+          "word": "Treatment",
+          "pos": "n",
+          "ipa": "/ˈtriːt.mənt/",
+          "meaningVi": "sự điều trị (bệnh)",
+          "definitionEn": "the use of drugs, exercises, etc. to cure a person of an illness or injury",
+          "exampleEn": "Chronic back pain may not respond to [treatment]."
+        },
+        {
+          "word": "Therapy",
+          "pos": "n",
+          "ipa": "/ˈθer.ə.pi/",
+          "meaningVi": "liệu pháp",
+          "definitionEn": "a treatment that helps someone feel better, grow stronger, etc., especially after an illness",
+          "exampleEn": "Joining a club can be a [therapy] for loneliness."
+        },
+        {
+          "word": "Variety",
+          "pos": "n",
+          "ipa": "/vəˈraɪ.ə.ti/",
+          "meaningVi": "sự khác nhau, sự đa dạng",
+          "definitionEn": "the characteristic of often changing and being different",
+          "exampleEn": "This [variety] of tomato is particularly good, and is resistant to disease."
+        },
+        {
+          "word": "Weight",
+          "pos": "n",
+          "ipa": "/weɪt/",
+          "meaningVi": "cân nặng",
+          "exampleEn": "What [weight] can this lorry safely carry?"
+        },
+        {
+          "word": "Acute",
+          "pos": "adj",
+          "ipa": "/əˈkjuːt/",
+          "meaningVi": "sâu sắc, trầm trọng",
+          "definitionEn": "very serious, extreme",
+          "exampleEn": "The problem of poverty is particularly [acute] in rural areas."
+        },
+        {
+          "word": "Allergic",
+          "pos": "adj",
+          "ipa": "/əˈlɜr·dʒɪk/",
+          "meaningVi": "dị ứng",
+          "exampleEn": "I’m [allergic] to cats."
+        },
+        {
+          "word": "Alternate",
+          "pos": "adj",
+          "ipa": "/ˈɒl.tə.neɪt/",
+          "meaningVi": "luân phiên, xen kẽ",
+          "definitionEn": "to happen or exist one after the other repeatedly",
+          "exampleEn": "He [alternate]d working in the office with long tours overseas."
+        },
+        {
+          "word": "Brisk",
+          "pos": "adj",
+          "ipa": "/brɪsk/",
+          "meaningVi": "nhanh",
+          "definitionEn": "quick, energetic, and active",
+          "exampleEn": "a [brisk] walk"
+        },
+        {
+          "word": "Chronic",
+          "pos": "adj",
+          "ipa": "/ˈkrɒn.ɪk/",
+          "meaningVi": "(bệnh) kinh niên",
+          "definitionEn": "(especially of a disease or something bad) continuing for a long time",
+          "exampleEn": "[chronic] arthritis/pain"
+        },
+        {
+          "word": "Harmful",
+          "pos": "adj",
+          "ipa": "/ˈhɑːm.fəl/",
+          "meaningVi": "gây hại",
+          "definitionEn": "causing harm",
+          "exampleEn": "This group of chemicals is known to be [harmful] to people with asthma( bệnh hen suyễn)."
+        },
+        {
+          "word": "Healthy",
+          "pos": "adj",
+          "meaningVi": "good for your health",
+          "definitionEn": "good for your health",
+          "exampleEn": "a [healthy] diet"
+        },
+        {
+          "word": "Infectiou",
+          "pos": "adj",
+          "ipa": "/ɪnˈfek.ʃən/",
+          "meaningVi": "bệnh lây nhiễm",
+          "exampleEn": "a throat infection"
+        },
+        {
+          "word": "Moderate",
+          "pos": "adj",
+          "ipa": "/ˈmɒd.ər.ət/",
+          "meaningVi": "vừa phải",
+          "definitionEn": "neither small nor large in size, amount, degree, or strength",
+          "exampleEn": "We have had [moderate] success in changing people's attitudes."
+        },
+        {
+          "word": "Obese",
+          "pos": "adj",
+          "ipa": "/əʊˈbiːs/",
+          "meaningVi": "béo phì",
+          "definitionEn": "extremely fat in a way that is dangerous for health",
+          "exampleEn": "She was not just fat ; she was [obese]."
+        },
+        {
+          "word": "Overweight",
+          "pos": "adj",
+          "ipa": "/ˌəʊ.vəˈweɪt/",
+          "meaningVi": "fat",
+          "definitionEn": "fat",
+          "exampleEn": "He used to be very [overweight]."
+        },
+        {
+          "word": "Persistent",
+          "pos": "adj",
+          "ipa": "/pəˈsɪs.tənt/",
+          "meaningVi": "dai dẳng, bền bỉ",
+          "definitionEn": "lasting for a long time or difficult to get rid of",
+          "exampleEn": "a [persistent] smell/skin rash"
+        },
+        {
+          "word": "Regular",
+          "pos": "adj",
+          "ipa": "/ˈreɡ.jə.lər/",
+          "meaningVi": "thường xuyên",
+          "definitionEn": "happening or doing something often:",
+          "exampleEn": "a [regular] customer/churchgoer/reader/user"
+        },
+        {
+          "word": "Vital",
+          "pos": "adj",
+          "ipa": "/ˈvaɪ.təl/",
+          "meaningVi": "very important, essential, crucial",
+          "definitionEn": "very important, essential, crucial",
+          "exampleEn": "It is [vital] to get medical supplies to the area as soon as possible."
+        },
+        {
+          "word": "Avoid",
+          "pos": "v",
+          "ipa": "/əˈvɔɪd/",
+          "meaningVi": "tránh",
+          "definitionEn": "to stay away from someone or something",
+          "exampleEn": "I try to [avoid] supermarkets on Saturdays - they're always so busy."
+        },
+        {
+          "word": "Counteract",
+          "pos": "v",
+          "ipa": "/ˌkaʊn.tərˈækt/",
+          "meaningVi": "chống lại",
+          "exampleEn": "Drinking a lot of water [counteract]s the dehydrating effects of hot weather."
+        },
+        {
+          "word": "Curb",
+          "pos": "v",
+          "ipa": "/kɜːb/",
+          "meaningVi": "kiềm chế, kiểm soát",
+          "definitionEn": "to control or limit something that is not wanted",
+          "exampleEn": "You really need to [curb] your spending."
+        },
+        {
+          "word": "Cure",
+          "pos": "v",
+          "ipa": "/kjʊər/",
+          "meaningVi": "chữa bệnh",
+          "definitionEn": "to make someone with an illness healthy again",
+          "exampleEn": "At one time doctors couldn't [cure] cancers."
+        },
+        {
+          "word": "Diminish",
+          "pos": "v",
+          "ipa": "/dɪˈmɪn.ɪʃ/",
+          "meaningVi": "giảm sút",
+          "definitionEn": "to reduce or be reduced in size or importance",
+          "exampleEn": "Her popularity as a singer has [diminish]ed since the glory days of the 1980s."
+        },
+        {
+          "word": "Disrupt",
+          "pos": "v",
+          "ipa": "/dɪsˈrʌpt/",
+          "meaningVi": "ngăn chặn, phá vỡ",
+          "exampleEn": "Heavy snow [disrupt]ed travel into the city this morning."
+        },
+        {
+          "word": "Eliminate",
+          "pos": "v",
+          "ipa": "/iˈlɪm.ɪ.neɪt/",
+          "meaningVi": "loại bỏ",
+          "definitionEn": "to remove or take away someone or something",
+          "exampleEn": "A move towards healthy eating could help [eliminate] heart disease."
+        },
+        {
+          "word": "Maintain",
+          "pos": "v",
+          "ipa": "/meɪnˈteɪn/",
+          "meaningVi": "to continue to have duy trì",
+          "exampleEn": "We have standards to [maintain].."
+        },
+        {
+          "word": "Overdo",
+          "pos": "v",
+          "ipa": "/ˌəʊ.vəˈduː/",
+          "meaningVi": "làm quá",
+          "definitionEn": "to do something in a way that is too extreme",
+          "exampleEn": "After a heart attack you have to be careful not to [overdo] it."
+        },
+        {
+          "word": "Overeat",
+          "pos": "v",
+          "ipa": "/ˌəʊ.vərˈiːt/",
+          "meaningVi": "ăn quá nhiều",
+          "definitionEn": "to eat more food than your body needs",
+          "exampleEn": "You’re supposed to [overeat] on Thanksgiving."
+        },
+        {
+          "word": "Prevent",
+          "pos": "v",
+          "ipa": "/prɪˈvent/",
+          "meaningVi": "ngăn ngừa",
+          "definitionEn": "o stop something from happening or someone from doing something",
+          "exampleEn": "Label your suitcases to [prevent] confusion."
+        },
+        {
+          "word": "Recommend",
+          "pos": "v",
+          "ipa": "/ˌrek.əˈmend/",
+          "meaningVi": "đề xuất",
+          "exampleEn": "I can [recommend] the chicken in mushroom sauce - it's delicious."
+        },
+        {
+          "word": "Recover",
+          "pos": "v",
+          "ipa": "/rɪˈkʌv.ər/",
+          "meaningVi": "hồi phục",
+          "definitionEn": "to become completely well again after an illness or injury",
+          "exampleEn": "t took her a long time to [recover] from/after her heart operation."
+        },
+        {
+          "word": "Reduce",
+          "pos": "v",
+          "ipa": "/rɪˈdʒuːs/",
+          "meaningVi": "giảm",
+          "exampleEn": "Do nuclear weapons really [reduce] the risk of war?"
+        },
+        {
+          "word": "Skip",
+          "pos": "v",
+          "meaningVi": "bỏ (bữa)",
+          "exampleEn": "I'm trying to lose weight, so I'm [skip]ping (= not eating) lunch today."
+        },
+        {
+          "word": "Stimulate",
+          "pos": "v",
+          "ipa": "/ˈstɪm.jə.leɪt/",
+          "meaningVi": "kích thích",
+          "definitionEn": "to encourage something to grow, develop, or become active",
+          "exampleEn": "The government plans to cut taxes in order to [stimulate] the economy."
+        },
+        {
+          "word": "Trigger",
+          "pos": "v",
+          "ipa": "/ˈtrɪɡ.ər/",
+          "meaningVi": "Gây ra, dẫn đến",
+          "definitionEn": "to cause something to start",
+          "exampleEn": "Some people find that certain foods [trigger] their headaches."
+        }
+      ]
+    },
+    {
+      "slug": "unit-4-lifestyles",
+      "order": 4,
+      "title": {
+        "vi": "Lifestyles",
+        "en": "Lifestyles"
+      },
+      "summary": {
+        "vi": "Thói quen sống và đời sống hàng ngày.",
+        "en": "Living habits and daily life."
+      },
+      "words": [
+        {
+          "word": "Activity",
+          "pos": "n",
+          "ipa": "/ækˈtɪv.ə.ti/",
+          "meaningVi": "hoạt động",
+          "exampleEn": "There was a lot of [activity] in preparation for the Queen's visit."
+        },
+        {
+          "word": "Aspect",
+          "pos": "n",
+          "ipa": "/ˈæs.pekt/",
+          "meaningVi": "mặt, khía cạnh",
+          "definitionEn": "one part of a situation, problem, subject, etc.",
+          "exampleEn": "Which [aspect]s of the job do you most enjoy?"
+        },
+        {
+          "word": "Attitude",
+          "pos": "n",
+          "ipa": "/ˈæt.ɪ.tʃuːd/",
+          "meaningVi": "thái độ",
+          "definitionEn": "a feeling or opinion about something or someone",
+          "exampleEn": "It's often very difficult to change people's [attitude]s."
+        },
+        {
+          "word": "Achieve a balance",
+          "pos": "n",
+          "meaningVi": "có được sự cân bằng",
+          "exampleEn": "I want to [achieve] a balance between my work life and my home life."
+        },
+        {
+          "word": "Competition",
+          "pos": "n",
+          "ipa": "/ˌkɒm.pəˈtɪʃ.ən/",
+          "meaningVi": "sự cạnh tranh",
+          "definitionEn": "a situation in which someone is trying to win something or be more successful than someone else",
+          "exampleEn": "[Competition] for jobs is intense."
+        },
+        {
+          "word": "Creativity",
+          "pos": "n",
+          "ipa": "/ˌkriː.eɪˈtɪv.ə.ti/",
+          "meaningVi": "tính sáng tạo",
+          "definitionEn": "the ability to produce or use original and unusual ideas",
+          "exampleEn": "[Creativity], ingenuity, and flair are the songwriter's real talents."
+        },
+        {
+          "word": "Daily routine a usual or fixed way of doing things",
+          "pos": "n",
+          "meaningVi": "việc làm hàng ngày",
+          "exampleEn": "Exercise has become part of my [daily] routine."
+        },
+        {
+          "word": "Desire",
+          "pos": "n",
+          "ipa": "/dɪˈzaɪər/",
+          "meaningVi": "sự thèm muốn",
+          "definitionEn": "a strong feeling that you want something",
+          "exampleEn": "There is a strong [desire] for peace among the people."
+        },
+        {
+          "word": "Disappointment",
+          "pos": "n",
+          "ipa": "/ˌdɪs.əˈpɔɪnt.mənt/",
+          "meaningVi": "sự thất vọng",
+          "definitionEn": "the feeling of being disappointed",
+          "exampleEn": "Get tickets early to avoid [disappointment]."
+        },
+        {
+          "word": "Experience",
+          "pos": "n",
+          "ipa": "/ɪkˈspɪə.ri.əns/",
+          "meaningVi": "kinh nghiệm, trải nghiệm",
+          "definitionEn": "knowledge or skill from doing, seeing, or feeling things",
+          "exampleEn": "Do you have any [experience] of working with kids?"
+        },
+        {
+          "word": "Fulfillment",
+          "pos": "n",
+          "ipa": "/fʊlˈfɪl.mənt/",
+          "meaningVi": "sự hoàn thành",
+          "definitionEn": "the fact of doing something that is necessary or something that someone has wanted or promised to do",
+          "exampleEn": "Being here is the fulfilment of a lifelong ambition."
+        },
+        {
+          "word": "Goal",
+          "pos": "n",
+          "ipa": "/ɡəʊl/",
+          "meaningVi": "mục tiêu",
+          "definitionEn": "an aim or purpose",
+          "exampleEn": "Our [goal] is for the country to be fully independent within two years."
+        },
+        {
+          "word": "Hobby",
+          "pos": "n",
+          "ipa": "/ˈhɒb.i/",
+          "meaningVi": "sở thích",
+          "exampleEn": "Angela's [hobby] is restoring vintage motorcycles."
+        },
+        {
+          "word": "Insight",
+          "pos": "n",
+          "ipa": "/ˈɪn.saɪt/",
+          "meaningVi": "sự hiểu biết sâu sắc",
+          "definitionEn": "a clear, deep, and sometimes sudden understanding of a complicated problem or situation",
+          "exampleEn": "It was an interesting book, full of fascinating [insight]s into human relationships."
+        },
+        {
+          "word": "Leisure",
+          "pos": "n",
+          "ipa": "/ˈleʒ.ər/",
+          "meaningVi": "thời gian rảnh",
+          "definitionEn": "the time when you are not working or doing other duties",
+          "exampleEn": "[leisure] activities"
+        },
+        {
+          "word": "Lifestyle",
+          "pos": "n",
+          "ipa": "/ ˈlaɪf.staɪl/",
+          "meaningVi": "phong cách sống",
+          "exampleEn": "He doesn't have a very healthy [lifestyle]."
+        },
+        {
+          "word": "Optimist",
+          "pos": "n",
+          "ipa": "/ˈɒp.tɪ.mɪst/",
+          "meaningVi": "người lac quan",
+          "definitionEn": "someone who always believes that good things will happen",
+          "exampleEn": "She's a born [optimist] (= someone who has always been optimistic)."
+        },
+        {
+          "word": "Outlook",
+          "pos": "n",
+          "ipa": "/ˈaʊt.lʊk/",
+          "meaningVi": "cách nhìn",
+          "definitionEn": "a person's way of understanding and thinking about something",
+          "exampleEn": "He has a fairly positive [outlook] on life."
+        },
+        {
+          "word": "Opportunity",
+          "pos": "n",
+          "ipa": "/ˌɒp.əˈtʃuː.nə.ti/",
+          "meaningVi": "cơ hội",
+          "definitionEn": "an occasion or situation which makes it possible to do something that you want to do or have to do, or the possibility of doing something",
+          "exampleEn": "Everyone will have the [opportunity] to comment."
+        },
+        {
+          "word": "Personality",
+          "pos": "n",
+          "ipa": "/ˌpɜː.sənˈæl.ə.ti/",
+          "meaningVi": "tính cách",
+          "definitionEn": "the type of person you are, shown by the way you behave, feel, and think",
+          "exampleEn": "She has a very warm [personality]."
+        },
+        {
+          "word": "Pessimist",
+          "pos": "n",
+          "ipa": "/ˈpes.ɪ.mɪst/",
+          "meaningVi": "người bi quan",
+          "definitionEn": "a person who thinks that bad things are more likely to happen or who emphasizes the bad part of a situation",
+          "exampleEn": "Don't be such a [pessimist]!"
+        },
+        {
+          "word": "Priority",
+          "pos": "n",
+          "ipa": "/praɪˈɒr.ə.ti/",
+          "meaningVi": "sự ưu tiên",
+          "definitionEn": "something that is very important and must be dealt with before other things",
+          "exampleEn": "The management did not seem to consider office safety to be a [priority]."
+        },
+        {
+          "word": "Pressure",
+          "pos": "n",
+          "ipa": "/ˈpreʃ.ər/",
+          "meaningVi": "áp lực",
+          "definitionEn": "a difficult situation that makes you feel worried or unhappy",
+          "exampleEn": "She's got a lot of [pressure] on her at work just now."
+        },
+        {
+          "word": "Realist",
+          "pos": "n",
+          "ipa": "/ˈrɪə.lɪst/",
+          "meaningVi": "người thực tế",
+          "definitionEn": "someone who hopes for or accepts only what seems possible or likely, and does not hope for or expect more",
+          "exampleEn": "I'm a [realist] - I knew there was no way I could win, so I swam for a good finish, for points."
+        },
+        {
+          "word": "Risk taker",
+          "pos": "n",
+          "meaningVi": "người mạo hiểm",
+          "definitionEn": "someone who often takes risks",
+          "exampleEn": "They are [risk]-takers who either make a lot of money or lose a lot."
+        },
+        {
+          "word": "Self- expression",
+          "pos": "n",
+          "ipa": "/ˌself.ɪkˈspreʃ.ən/",
+          "meaningVi": "sự tự biểu hiện",
+          "definitionEn": "expression of your personality, emotions, or ideas, especially through art, music, or acting",
+          "exampleEn": "He regarded poetry as sentimental [self-]expression."
+        },
+        {
+          "word": "Sense",
+          "pos": "n",
+          "ipa": "/sens/",
+          "meaningVi": "giác quan",
+          "exampleEn": "My cold is so bad I've lost my [sense] of smell/taste"
+        },
+        {
+          "word": "Active",
+          "pos": "adj",
+          "ipa": "/ˈæk.tɪv/",
+          "meaningVi": "năng động",
+          "exampleEn": "You have to try to keep [active] as you grow older."
+        },
+        {
+          "word": "Bored",
+          "pos": "adj",
+          "ipa": "/bɔːd/",
+          "meaningVi": "chán",
+          "exampleEn": "It was a cold, wet day and the children were [bored]."
+        },
+        {
+          "word": "Confused",
+          "pos": "adj",
+          "ipa": "/kənˈfjuːzd/",
+          "meaningVi": "bối rối",
+          "definitionEn": "unable to think clearly or to understand something",
+          "exampleEn": "I'm a bit [confused]. Was that her husband or her son she was with?"
+        },
+        {
+          "word": "Dissatisfied",
+          "pos": "adj",
+          "ipa": "/ˌdɪsˈsæt.ɪs.faɪd/",
+          "meaningVi": "không hài lòng",
+          "definitionEn": "not pleased with something; feeling that something is not as good as it should be",
+          "exampleEn": "If you're [dissatisfied] with the service, why don't you complain to the hotel manager?"
+        },
+        {
+          "word": "Intense",
+          "pos": "adj",
+          "ipa": "/ɪnˈtens/",
+          "meaningVi": "nặng, mạnh",
+          "definitionEn": "extreme and forceful or (of a feeling) very strong",
+          "exampleEn": "[intense] cold/heat/hatred"
+        },
+        {
+          "word": "Materialistic",
+          "pos": "adj",
+          "ipa": "/məˌtɪə.ri.əˈlɪs.tɪk/",
+          "meaningVi": "theo chủ nghĩa vật chất",
+          "definitionEn": "believing that having money and possessions is the most important thing in life",
+          "exampleEn": "These attitudes reflected reformers' anxieties concerning their own [materialistic] culture."
+        },
+        {
+          "word": "Negative",
+          "pos": "adj",
+          "ipa": "/ˈneɡ.ə.tɪv/",
+          "meaningVi": "tiêu cực",
+          "exampleEn": "a [negative] attitude"
+        },
+        {
+          "word": "Outdoor",
+          "pos": "adj",
+          "ipa": "/ˈaʊtˌdɔːr/",
+          "meaningVi": "ngoài trời",
+          "exampleEn": "an [outdoor] swimming pool/festival"
+        },
+        {
+          "word": "Positive",
+          "pos": "adj",
+          "ipa": "/ˈpɒz.ə.tɪv/",
+          "meaningVi": "tích cực",
+          "definitionEn": "full of hope and confidence, or giving cause for hope and confidence",
+          "exampleEn": "a [positive] attitude"
+        },
+        {
+          "word": "Recreational",
+          "pos": "adj",
+          "ipa": "/ˌrek.riˈeɪ.ʃən.əl/",
+          "meaningVi": "thuộc về giải trí",
+          "definitionEn": "connected with ways of enjoying yourself when you are not working",
+          "exampleEn": "[Recreational] fishing is allowed on the river."
+        },
+        {
+          "word": "Successful",
+          "pos": "adj",
+          "ipa": "/səkˈses.fəl/",
+          "meaningVi": "thành công",
+          "exampleEn": "My second attempt at making bread was a little more [successful]."
+        },
+        {
+          "word": "Achieve",
+          "pos": "v",
+          "ipa": "/əˈtʃiːv/",
+          "meaningVi": "đạt được",
+          "definitionEn": "to do or obtain something that you wanted after planning and working to make it happen",
+          "exampleEn": "She finally [achieve]d her ambition to visit South America."
+        },
+        {
+          "word": "Appeal",
+          "pos": "v",
+          "ipa": "/əˈpiːl/",
+          "meaningVi": "thu hút",
+          "definitionEn": "to interest or attract someone",
+          "exampleEn": "It's a programme designed to [appeal] mainly to 16 to 25-year-olds."
+        },
+        {
+          "word": "Attract",
+          "pos": "v",
+          "ipa": "/əˈtrækt/",
+          "meaningVi": "lôi luốn, thu hút",
+          "exampleEn": "Her ideas have [attract]ed a lot of attention/criticism in the scientific community."
+        },
+        {
+          "word": "Express",
+          "pos": "v",
+          "ipa": "/ɪkˈspres/",
+          "meaningVi": "diễn tả, thể hiện",
+          "definitionEn": "to show a feeling, opinion, or fact",
+          "exampleEn": "Her eyes [express]ed deep sadness."
+        },
+        {
+          "word": "Fulfil",
+          "pos": "v",
+          "ipa": "/fʊlˈfɪl/",
+          "meaningVi": "làm trọn, hoàn thành",
+          "definitionEn": "to do something that is expected, hoped for, or promised, or to cause it to happen",
+          "exampleEn": "So did the course [fulfil] all your expectations?"
+        },
+        {
+          "word": "Improve",
+          "pos": "v",
+          "ipa": "/ɪmˈpruːv/",
+          "meaningVi": "get better",
+          "definitionEn": "get better",
+          "exampleEn": "He did a lot to [improve] conditions for factory workers."
+        },
+        {
+          "word": "Motivate",
+          "pos": "v",
+          "ipa": "/ˈməʊ.tɪ.veɪt/",
+          "meaningVi": "tạo động lực",
+          "definitionEn": "to make someone want to do something well",
+          "exampleEn": "Teaching is all about motivating people to learn."
+        },
+        {
+          "word": "Participate",
+          "pos": "v",
+          "ipa": "/pɑːˈtɪs.ɪ.peɪt/",
+          "meaningVi": "tham gia",
+          "definitionEn": "to take part in or become involved in an activity",
+          "exampleEn": "She never [participate]s in any of our discussions, does she?"
+        },
+        {
+          "word": "Regret",
+          "pos": "v",
+          "ipa": "/rɪˈɡret/",
+          "meaningVi": "hối hận",
+          "exampleEn": "I have always [regret]ted not having studied harder at school."
+        },
+        {
+          "word": "Lead a happy life",
+          "pos": "v",
+          "meaningVi": "sống một cuộc sống vui vẻ",
+          "exampleEn": "He was able to [lead] a happy life, despite the illness."
+        },
+        {
+          "word": "Live life on the edge",
+          "pos": "v",
+          "meaningVi": "sống mạo hiểm",
+          "exampleEn": "I liked to [live] on the edge while I was in college, but now that I'm a bit older, I tend to be a bit more conservative in the things I do for fun."
+        },
+        {
+          "word": "Live life to the full",
+          "pos": "v",
+          "meaningVi": "to enjoy doing a lot of different things",
+          "definitionEn": "to enjoy doing a lot of different things",
+          "exampleEn": "She believes in living life to the full."
+        },
+        {
+          "word": "Make a choice",
+          "pos": "v",
+          "meaningVi": "lựa chọn",
+          "exampleEn": "It's a difficult choice to [make]."
+        },
+        {
+          "word": "Make a decision",
+          "pos": "v",
+          "meaningVi": "ra quyết định",
+          "exampleEn": "She has had to [make] some very difficult decisions."
+        },
+        {
+          "word": "Make a living",
+          "pos": "v",
+          "meaningVi": "kiếm sống",
+          "definitionEn": "to earn enough money to buy the things you need",
+          "exampleEn": "Everyone has to [make] a living."
+        },
+        {
+          "word": "Meet a need",
+          "pos": "v",
+          "meaningVi": "đáp ứng nhu cầu",
+          "exampleEn": "We haven't yet been able to find a house that [meet]s our needs."
+        },
+        {
+          "word": "Miss",
+          "pos": "an opportunity",
+          "meaningVi": "bỏ lỡ cơ hội",
+          "exampleEn": "She [miss]ed the opportunity of promotion when she turned down the job of assistant manager."
+        },
+        {
+          "word": "Play a role",
+          "pos": "v",
+          "meaningVi": "đóng vai trò",
+          "exampleEn": "Schools [play] an important role in society."
+        },
+        {
+          "word": "Put pressure on",
+          "pos": "v",
+          "meaningVi": "đặt áp lực lên",
+          "exampleEn": "He [put] too much pressure on the door handle and it snapped."
+        },
+        {
+          "word": "Set a goal",
+          "pos": "v",
+          "meaningVi": "đặt mục tiêu",
+          "exampleEn": "He sales team have [set] themselves a series of goals to achieve by the end of the month."
+        },
+        {
+          "word": "Take part in",
+          "pos": "v",
+          "meaningVi": "tham gia vào",
+          "definitionEn": "to be actively involved in something with other people",
+          "exampleEn": "All the children took part in the Thanksgiving play."
+        },
+        {
+          "word": "Work hard for a living",
+          "pos": "v",
+          "meaningVi": "vất vả kiếm sống",
+          "exampleEn": "Mr John is rich, he doesn’t need to [work] hard for a living."
+        },
+        {
+          "word": "All walks of life",
+          "pos": "phrase",
+          "meaningVi": "mọi khía cạnh trong cuộc sống",
+          "definitionEn": "all levels of social position or achievement",
+          "exampleEn": "In my work I see people from [all] walks of life."
+        },
+        {
+          "word": "Cost of living",
+          "pos": "phrase",
+          "meaningVi": "chi phí sống",
+          "definitionEn": "the amount of money that a person needs to live",
+          "exampleEn": "The increase in interest rates will raise the [cost] of living."
+        },
+        {
+          "word": "Lifelong ambition",
+          "pos": "phrase",
+          "meaningVi": "tham vọng cả đời",
+          "definitionEn": "a wanting that lasts for the whole of a person's life",
+          "exampleEn": "For Rosenior, becoming a manager has been a [lifelong] ambition."
+        },
+        {
+          "word": "Living expenses",
+          "pos": "phrase",
+          "meaningVi": "chi phí sống, sinh hoạt",
+          "exampleEn": "The first step is the most difficult -- estimating your [living] expenses when you retire."
+        },
+        {
+          "word": "Once in a lifelong opportunity",
+          "pos": "phrase",
+          "meaningVi": "cơ hội có một trong đời",
+          "exampleEn": "Let me repeat, this is a [once]-in-a-lifetime opportunity."
+        }
+      ]
+    },
+    {
+      "slug": "unit-5-student-life",
+      "order": 5,
+      "title": {
+        "vi": "Student Life",
+        "en": "Student Life"
+      },
+      "summary": {
+        "vi": "Đại học, học tập, đời sống khuôn viên.",
+        "en": "College, study, campus life."
+      },
+      "words": [
+        {
+          "word": "Assignment",
+          "pos": "n",
+          "ipa": "/əˈsaɪn.mənt/",
+          "meaningVi": "nhiệm vụ được giao",
+          "definitionEn": "a piece of work given to someone, typically as part of their studies or job",
+          "exampleEn": "I have a lot of reading [assignment]s to complete before the end of term."
+        },
+        {
+          "word": "Controversy",
+          "ipa": "/ˈkɑːn.trə.vɝː.si/",
+          "meaningVi": "sự tranh luận",
+          "definitionEn": "a lot of disagreement or argument about something, usually because it affects or is important to many people",
+          "exampleEn": "There was a big [controversy] surrounding/over the use of drugs in athletics."
+        },
+        {
+          "word": "Curriculum",
+          "ipa": "/kəˈrɪk.jə.ləm/",
+          "meaningVi": "chương trình giảng dạy",
+          "definitionEn": "the subjects studied in a school, college, etc. and what each subject includes",
+          "exampleEn": "the school [curriculum]"
+        },
+        {
+          "word": "Dissertation.",
+          "ipa": "/ˌdɪs.ɚˈteɪ.ʃən/",
+          "meaningVi": "luận văn đại học",
+          "exampleEn": "Ann did her dissertation on Baudelaire."
+        },
+        {
+          "word": "Education",
+          "ipa": "/ˌedʒ.əˈkeɪ.ʃən/",
+          "meaningVi": "giáo dục",
+          "exampleEn": "The word [Education] is useful in IELTS."
+        },
+        {
+          "word": "Field",
+          "ipa": "/fiːld/",
+          "meaningVi": "lĩnh vực nghiên cứu",
+          "exampleEn": "The word [Field] is useful in IELTS."
+        },
+        {
+          "word": "Findings",
+          "ipa": "/ˈfaɪn.dɪŋs/",
+          "meaningVi": "những phát hiện từ nghiên cứu",
+          "exampleEn": "The word [Findings] is useful in IELTS."
+        },
+        {
+          "word": "Funding",
+          "ipa": "/ˈfʌn.dɪŋ/",
+          "meaningVi": "vốn tài trợ",
+          "exampleEn": "They received state [funding] for the project."
+        },
+        {
+          "word": "Grade",
+          "ipa": "/ɡreɪd/",
+          "meaningVi": "lớp",
+          "exampleEn": "The word [Grade] is useful in IELTS."
+        },
+        {
+          "word": "Graduation",
+          "ipa": "/ˌɡrædʒ.uˈeɪ.ʃən/",
+          "meaningVi": "sự tốt nghiệp , lễ tốt nghiệp",
+          "exampleEn": "The word [Graduation] is useful in IELTS."
+        },
+        {
+          "word": "Grant",
+          "ipa": "/ɡrænt/",
+          "meaningVi": "trợ cấp",
+          "definitionEn": "an amount of money given especially by the government to a person or organization for a special purpose",
+          "exampleEn": "They gave/awarded her a [grant] to study abroad for one year."
+        },
+        {
+          "word": "High school",
+          "meaningVi": "trường cấp 3",
+          "exampleEn": "The word [High school] is useful in IELTS."
+        },
+        {
+          "word": "Junior school",
+          "meaningVi": "trường cấp 1 ở Anh",
+          "definitionEn": "a school in the UK for children who are seven to eleven years old",
+          "exampleEn": "The word [Junior school] is useful in IELTS."
+        },
+        {
+          "word": "Kindergarten",
+          "ipa": "/ˈkɪn.dɚˌɡɑːr.tən/",
+          "meaningVi": "= nursery school= trường mầm non",
+          "exampleEn": "The word [Kindergarten] is useful in IELTS."
+        },
+        {
+          "word": "Learning disorder",
+          "meaningVi": "sự rối loạn liên quan đến việc học",
+          "exampleEn": "The word [Learning disorder] is useful in IELTS."
+        },
+        {
+          "word": "Lecturer",
+          "ipa": "/ˈlek.tʃɚ.ɚ/",
+          "meaningVi": "giảng viên đại học",
+          "definitionEn": "someone who teaches at a college or university",
+          "exampleEn": "The word [Lecturer] is useful in IELTS."
+        },
+        {
+          "word": "Limit",
+          "ipa": "/ˈlɪm.ɪt/",
+          "meaningVi": "giới hạn",
+          "exampleEn": "The word [Limit] is useful in IELTS."
+        },
+        {
+          "word": "Master",
+          "ipa": "/ˈmæs.tɚ/",
+          "meaningVi": "viện trưởng",
+          "definitionEn": "the head of some schools or university colleges",
+          "exampleEn": "The word [Master] is useful in IELTS."
+        },
+        {
+          "word": "Nursery",
+          "ipa": "/ˈnɝː.sɚ.i/",
+          "meaningVi": "mầm non",
+          "exampleEn": "The word [Nursery] is useful in IELTS."
+        },
+        {
+          "word": "PhD",
+          "ipa": "/ˌpiː.eɪtʃˈdiː/",
+          "meaningVi": "tiến sĩ",
+          "definitionEn": "doctor of philosophy",
+          "exampleEn": "The word [PhD] is useful in IELTS."
+        },
+        {
+          "word": "Primary school",
+          "meaningVi": "trường cấp 1",
+          "exampleEn": "The word [Primary school] is useful in IELTS."
+        },
+        {
+          "word": "Program",
+          "ipa": "/ˈproʊ.ɡræm/",
+          "meaningVi": "chương trình",
+          "exampleEn": "The word [Program] is useful in IELTS."
+        },
+        {
+          "word": "Project",
+          "ipa": "/ˈprɑː.dʒekt/",
+          "meaningVi": "đồ án nghiên cứu của sinh viên",
+          "exampleEn": "The word [Project] is useful in IELTS."
+        },
+        {
+          "word": "Research",
+          "ipa": "/ˈriː.sɝːtʃ/",
+          "meaningVi": "/rɪˈsɝːtʃ/ bài nghiên cứu",
+          "exampleEn": "The word [Research] is useful in IELTS."
+        },
+        {
+          "word": "Resource",
+          "ipa": "/ˈriː.sɔːrs/",
+          "meaningVi": "/ˈriː.zɔːrs/ nguồn, tài nguyên",
+          "exampleEn": "The word [Resource] is useful in IELTS."
+        },
+        {
+          "word": "Scholarship",
+          "ipa": "/ˈskɑː.lɚ.ʃɪp/",
+          "meaningVi": "học bổng/ sự uyên bác",
+          "exampleEn": "The word [Scholarship] is useful in IELTS."
+        },
+        {
+          "word": "Scope",
+          "ipa": "/skoʊp/",
+          "meaningVi": "phạm vi nghiên cứu",
+          "definitionEn": "= range",
+          "exampleEn": "I'm afraid that problem is beyond/outside the [scope] of my lecture."
+        },
+        {
+          "word": "Secondary school",
+          "ipa": "/ˈsek.ən.der.i ˌskuːl/",
+          "meaningVi": "trường cấp 2",
+          "exampleEn": "The word [Secondary school] is useful in IELTS."
+        },
+        {
+          "word": "Source",
+          "meaningVi": "nguồn",
+          "exampleEn": "The word [Source] is useful in IELTS."
+        },
+        {
+          "word": "Syllabus",
+          "ipa": "/ˈsɪl.ə.bəs/",
+          "meaningVi": "nội dung khóa học",
+          "definitionEn": "= programme",
+          "exampleEn": "Which novels are on the [syllabus] this year?"
+        },
+        {
+          "word": "Task",
+          "ipa": "/tæsk/",
+          "meaningVi": "nhiệm vụ",
+          "exampleEn": "The word [Task] is useful in IELTS."
+        },
+        {
+          "word": "Theory",
+          "ipa": "/ˈθɪr.i/",
+          "meaningVi": "học thuyết",
+          "exampleEn": "Darwin's [theory] of evolution"
+        },
+        {
+          "word": "Thesis",
+          "ipa": "/ˈθiː.sɪs/",
+          "meaningVi": "luận văn, luận điểm",
+          "exampleEn": "Their main [thesis] was that war was inevitable."
+        },
+        {
+          "word": "Tutor",
+          "ipa": "/ˈtuː.t̬ɚ/",
+          "meaningVi": "1 hoặc nhóm nhỏ sinh viên ở trường đại học ở Anh",
+          "definitionEn": "giáo viên dạy 1",
+          "exampleEn": "The word [Tutor] is useful in IELTS."
+        },
+        {
+          "word": "Topic",
+          "meaningVi": "chủ đề",
+          "exampleEn": "The word [Topic] is useful in IELTS."
+        },
+        {
+          "word": "University",
+          "meaningVi": "trường đại học",
+          "exampleEn": "The word [University] is useful in IELTS."
+        },
+        {
+          "word": "Academic",
+          "pos": "adj",
+          "ipa": "/ˌæk.əˈdem.ɪk/",
+          "meaningVi": "thuộc về học thuật hoặc mô tả ai đó tri thức uyên bác",
+          "definitionEn": "relating to schools, colleges, and universities, or connected with studying and thinking, not with practical skills; used to describe someone who is clever and enjoys studying",
+          "exampleEn": "The word [Academic] is useful in IELTS."
+        },
+        {
+          "word": "having the necessary qualities or satisfying the necessary conditions",
+          "pos": "adj",
+          "meaningVi": "đủ tư cách",
+          "exampleEn": "You might be eligible for a grant."
+        },
+        {
+          "word": "Mixed",
+          "pos": "adj",
+          "ipa": "/mɪkst/",
+          "meaningVi": "trường có nam và nữ",
+          "definitionEn": "including both sexes",
+          "exampleEn": "Our children go to a [mixed] school."
+        },
+        {
+          "word": "Postgraduate",
+          "pos": "adj",
+          "ipa": "/ˌpoʊstˈɡrædʒ.u.ət/",
+          "meaningVi": "sau đại học",
+          "definitionEn": "a student who has already received one degree and is studying at a university for a more advanced degree",
+          "exampleEn": "The word [Postgraduate] is useful in IELTS."
+        },
+        {
+          "word": "Relevant",
+          "pos": "adj",
+          "ipa": "/ˈrel.ə.vənt/",
+          "meaningVi": "liên quan",
+          "exampleEn": "Education should be [relevant] to the child's needs."
+        },
+        {
+          "word": "Senior",
+          "pos": "adj",
+          "ipa": "/ˈsiː.njɚ/",
+          "meaningVi": "cao cấp hơn/ già hơn",
+          "definitionEn": "high or higher in rank",
+          "exampleEn": "The word [Senior] is useful in IELTS."
+        },
+        {
+          "word": "Single-sex",
+          "pos": "adj",
+          "meaningVi": "chỉ có một giới tính",
+          "exampleEn": "The word [Single-sex] is useful in IELTS."
+        },
+        {
+          "word": "Studious",
+          "pos": "adj",
+          "ipa": "/ˈstuː.di.əs/",
+          "meaningVi": "chăm học",
+          "definitionEn": "A studious person enjoys studying or spends a lot of time studying",
+          "exampleEn": "She was a [studious] child, happiest when reading."
+        },
+        {
+          "word": "Work-related",
+          "pos": "adj",
+          "ipa": "/ˈwɝːk.rɪˌleɪ.t̬ɪd/",
+          "meaningVi": "liên quan đến công việc",
+          "definitionEn": "connected with someone's job or with paid work in general",
+          "exampleEn": "Many people suffer from [work-related] stress."
+        },
+        {
+          "word": "Adopt",
+          "pos": "v",
+          "ipa": "/əˈdoːpt/",
+          "meaningVi": "chấp nhận và sử dụng cái gì đó mới",
+          "definitionEn": "to accept or start to use something new",
+          "exampleEn": "I think it's time to [adopt] a different strategy in my dealings with him."
+        },
+        {
+          "word": "Analyse",
+          "pos": "v",
+          "ipa": "/ˈæn.əl.aɪz/",
+          "meaningVi": "phân tích, nghiên cứu",
+          "exampleEn": "Researchers [analyse]d the purchases of 6,300 households."
+        },
+        {
+          "word": "Conduct",
+          "pos": "v",
+          "ipa": "/kənˈdʌkt/",
+          "meaningVi": "chỉ huy, điều khiển",
+          "definitionEn": "to organize and perform a particular activity",
+          "exampleEn": "We are [conduct]ing a survey to find out what our customers think of their local bus service."
+        },
+        {
+          "word": "Concentrate",
+          "pos": "v",
+          "ipa": "/ˈkɑːn.sən.treɪt/",
+          "meaningVi": "tập trung",
+          "exampleEn": "The word [Concentrate] is useful in IELTS."
+        },
+        {
+          "word": "Consider",
+          "pos": "v",
+          "ipa": "/kənˈsɪd.ɚ/",
+          "meaningVi": "cân nhắc, suy nghĩ kĩ",
+          "definitionEn": "to spend time thinking about a possibility or making a decision",
+          "exampleEn": "The word [Consider] is useful in IELTS."
+        },
+        {
+          "word": "Find out",
+          "pos": "v",
+          "meaningVi": "tìm ra",
+          "exampleEn": "The word [Find out] is useful in IELTS."
+        },
+        {
+          "word": "Graduate",
+          "pos": "v",
+          "ipa": "/ˈɡrædʒ.u.ət/",
+          "meaningVi": "tốt nghiệp",
+          "exampleEn": "The word [Graduate] is useful in IELTS."
+        },
+        {
+          "word": "Organise",
+          "pos": "v",
+          "ipa": "/ˈɔːr.ɡən.aɪz/",
+          "meaningVi": "sắp xếp, tổ chức",
+          "exampleEn": "The word [Organise] is useful in IELTS."
+        },
+        {
+          "word": "Overcome",
+          "pos": "v",
+          "ipa": "/ˌoʊ.vɚˈkʌm/",
+          "meaningVi": "vượt qua",
+          "definitionEn": "to defeat or succeed in controlling or dealing with something",
+          "exampleEn": "Eventually she managed to [overcome] her shyness in class."
+        },
+        {
+          "word": "Review",
+          "pos": "v",
+          "ipa": "/rɪˈvjuː/",
+          "meaningVi": "ôn tập = revise",
+          "exampleEn": "The word [Review] is useful in IELTS."
+        },
+        {
+          "word": "Struggle",
+          "pos": "v",
+          "ipa": "/ˈstrʌɡ.əl/",
+          "meaningVi": "vật lộn, chống chọi",
+          "definitionEn": "to experience difficulty and make a very great effort in order to do something",
+          "exampleEn": "I've been struggling to understand this article all afternoon."
+        },
+        {
+          "word": "Take",
+          "pos": "a course",
+          "meaningVi": "tham gia khóa học",
+          "exampleEn": "The word [Take] is useful in IELTS."
+        },
+        {
+          "word": "Relatively",
+          "pos": "adv",
+          "ipa": "/ˈrel.ə.t̬ɪv.li/",
+          "meaningVi": "tương đối",
+          "exampleEn": "He's a [relatively] good squash player."
+        }
+      ]
+    },
+    {
+      "slug": "unit-6-effective-communication",
+      "order": 6,
+      "title": {
+        "vi": "Effective Communication",
+        "en": "Effective Communication"
+      },
+      "summary": {
+        "vi": "Nói, nghe và thành ngữ giao tiếp.",
+        "en": "Speaking, listening, idioms."
+      },
+      "words": [
+        {
+          "word": "Accuracy",
+          "pos": "n",
+          "ipa": "/ˈæk.jɚ.ə.si/",
+          "meaningVi": "sự chính xác",
+          "definitionEn": "the fact of being exact or correct",
+          "exampleEn": "He challenged the [accuracy] of the research results."
+        },
+        {
+          "word": "Communication",
+          "pos": "n",
+          "ipa": "/kəˌmjuː.nəˈkeɪ.ʃən/",
+          "meaningVi": "sự giao tiếp",
+          "definitionEn": "the act of communicating with people",
+          "exampleEn": "Television is an increasingly important means of [communication]."
+        },
+        {
+          "word": "Concept",
+          "pos": "n",
+          "ipa": "/ˈkɑːn.sept/",
+          "meaningVi": "quan điểm, nguyên tắc",
+          "definitionEn": "a principle or idea",
+          "exampleEn": "It is very difficult to define the [concept] of beauty."
+        },
+        {
+          "word": "Conjecture",
+          "pos": "n",
+          "ipa": "/kənˈdʒek.tʃɚ/",
+          "meaningVi": "sự phỏng đoán, ước đoán",
+          "definitionEn": "a guess about something based on how it seems and not on proof",
+          "exampleEn": "There's been a lot of [conjecture] in the media recently about the marriage."
+        },
+        {
+          "word": "Dialect",
+          "pos": "n",
+          "ipa": "/ˈdaɪ.ə.lekt/",
+          "meaningVi": "tiếng địa phương",
+          "exampleEn": "a regional [dialect]"
+        },
+        {
+          "word": "Fluency",
+          "pos": "n",
+          "ipa": "/ˈfluː.ən.si/",
+          "meaningVi": "độ trôi chảy",
+          "definitionEn": "the ability to speak or write a language easily, well, and quickly",
+          "exampleEn": "His time here is certainly improving his [fluency]."
+        },
+        {
+          "word": "Gesture",
+          "pos": "n",
+          "ipa": "/ˈdʒes.tʃɚ/",
+          "meaningVi": "cử chỉ",
+          "exampleEn": "Her warm thank-you note was a nice [gesture]."
+        },
+        {
+          "word": "Hesitation",
+          "pos": "n",
+          "ipa": "/ˌhez.əˈteɪ.ʃən/",
+          "meaningVi": "sự ngưng lại, sự ngập ngừng",
+          "definitionEn": "the act of pausing before doing something, especially because you are nervous or not certain",
+          "exampleEn": "After a slight [hesitation], she began to speak."
+        },
+        {
+          "word": "Linguist",
+          "pos": "n",
+          "ipa": "/ˈlɪŋ.ɡwɪst/",
+          "meaningVi": "nhà ngôn ngữ học",
+          "definitionEn": "someone who studies foreign languages or can speak them very well, or someone who teaches or studies linguistics",
+          "exampleEn": "The word [Linguist] is useful in IELTS."
+        },
+        {
+          "word": "Linguistics",
+          "pos": "n",
+          "ipa": "/lɪŋˈɡwɪs.tɪks/",
+          "meaningVi": "ngôn ngữ học",
+          "exampleEn": "The word [Linguistics] is useful in IELTS."
+        },
+        {
+          "word": "Means of communication",
+          "pos": "n",
+          "meaningVi": "phương tiện giao tiếp",
+          "exampleEn": "Television is an increasingly important [means] of communication."
+        },
+        {
+          "word": "Mother tongue",
+          "pos": "n",
+          "ipa": "/ˌmʌð.ɚ ˈtʌŋ/",
+          "meaningVi": "tiếng mẹ đẻ = first language",
+          "exampleEn": "The word [Mother tongue] is useful in IELTS."
+        },
+        {
+          "word": "Native speaker",
+          "pos": "n",
+          "ipa": "/ˌneɪ.t̬ɪv ˈspiː.kɚ/",
+          "meaningVi": "người bản xứ",
+          "exampleEn": "All our teachers are [native] speakers of English."
+        },
+        {
+          "word": "Pronunciation",
+          "pos": "n",
+          "ipa": "/prəˌnʌn.siˈeɪ.ʃən/",
+          "meaningVi": "cách phát âm",
+          "definitionEn": "how words are pronounced",
+          "exampleEn": "English [pronunciation] is notoriously difficult."
+        },
+        {
+          "word": "Sign language",
+          "pos": "n",
+          "ipa": "/ˈsaɪn ˌlæŋ.ɡwɪdʒ/",
+          "meaningVi": "ngôn ngữ ký hiệu ( dùng tay ra dấu)",
+          "definitionEn": "a system of communication for people who cannot hear that uses hand and finger movements",
+          "exampleEn": "The word [Sign language] is useful in IELTS."
+        },
+        {
+          "word": "Vocabulary",
+          "pos": "n",
+          "ipa": "/voʊˈkæb.jə.ler.i/",
+          "meaningVi": "từ vựng",
+          "exampleEn": "The word [Vocabulary] is useful in IELTS."
+        },
+        {
+          "word": "Incoherent",
+          "pos": "adj",
+          "ipa": "/ˌɪn.koʊˈhɪr.ənt/",
+          "meaningVi": "không mạch lạc, rõ ràng, ngược lại với “coherent”- rõ ràng, mạch lạc",
+          "definitionEn": "expressing yourself in a way that is not clear",
+          "exampleEn": "The talk she gave was [incoherent] and badly prepared."
+        },
+        {
+          "word": "Inherent",
+          "pos": "adj",
+          "ipa": "/ɪnˈhɪr.ənt/",
+          "meaningVi": "vốn có",
+          "definitionEn": "existing as a natural or basic part of something",
+          "exampleEn": "I have an [inherent] distrust of lawyers."
+        },
+        {
+          "word": "Sophisticated",
+          "pos": "adj",
+          "ipa": "/səˈfɪs.tə.keɪ.t̬ɪd/",
+          "meaningVi": "tinh vi, khôn ngoan",
+          "exampleEn": "I think a more [sophisticated] approach is needed to solve this problem."
+        },
+        {
+          "word": "Spontaneous",
+          "pos": "adj",
+          "ipa": "/spɑːnˈteɪ.ni.əs/",
+          "meaningVi": "bộc phát",
+          "definitionEn": "happening or done in a natural, often sudden way, without any planning or without being forced",
+          "exampleEn": "His jokes seemed [spontaneous], but were in fact carefully prepared beforehand."
+        },
+        {
+          "word": "Clarify",
+          "pos": "v",
+          "ipa": "/ˈkler.ə.faɪ/",
+          "meaningVi": "làm rõ",
+          "definitionEn": "to make something clear",
+          "exampleEn": "I hope this analysis will [clarify] the debate."
+        },
+        {
+          "word": "Communicate",
+          "pos": "v",
+          "ipa": "/kəˈmjuː.nə.keɪt/",
+          "meaningVi": "giao tiếp",
+          "exampleEn": "The word [Communicate] is useful in IELTS."
+        },
+        {
+          "word": "Comprehend",
+          "pos": "v",
+          "ipa": "/ˌkɑːm.prəˈhend/",
+          "meaningVi": "understand",
+          "definitionEn": "understand",
+          "exampleEn": "I fail to [comprehend] their attitude."
+        },
+        {
+          "word": "Conclude",
+          "pos": "v",
+          "ipa": "/kənˈkluːd/",
+          "meaningVi": "kết thúc, kết luận",
+          "definitionEn": "to end a speech, meeting, or piece of writing",
+          "exampleEn": "Before I [conclude], I'd like to thank you all for coming."
+        },
+        {
+          "word": "Confirm",
+          "pos": "v",
+          "ipa": "/kənˈfɝːm/",
+          "meaningVi": "xác nhận",
+          "exampleEn": "Please [confirm] your reservation in writing by Friday."
+        },
+        {
+          "word": "Converse",
+          "pos": "v",
+          "ipa": "/kənˈvɝːs/",
+          "meaningVi": "nói chuyện với ai đó ( danh từ🡪 conversation- cuộc hội thoại)",
+          "definitionEn": "to have a conversation with someone",
+          "exampleEn": "She's so shy that conversing with her can be pretty hard."
+        },
+        {
+          "word": "Define",
+          "pos": "v",
+          "ipa": "/dɪˈfaɪn/",
+          "meaningVi": "định nghĩa",
+          "definitionEn": "to say what the meaning of something, especially a word, is",
+          "exampleEn": "In the dictionary, \"reality\" is [define]d as \"the state of things as they are, rather than as they are imagined to be\"."
+        },
+        {
+          "word": "Demonstrate",
+          "pos": "v",
+          "ipa": "/ˈdem.ən.streɪt/",
+          "meaningVi": "thể hiện, làm rõ",
+          "definitionEn": "to show or make something clear",
+          "exampleEn": "These problems [demonstrate] the importance of strategic planning."
+        },
+        {
+          "word": "Distinguish",
+          "pos": "v",
+          "ipa": "/dɪˈstɪŋ.ɡwɪʃ/",
+          "meaningVi": "nhận ra, phân biệt",
+          "exampleEn": "I sometimes have difficulty [distinguish]ing Spanish from Portuguese."
+        },
+        {
+          "word": "Emerge",
+          "pos": "v",
+          "ipa": "/ɪˈmɝːdʒ/",
+          "meaningVi": "xuất hiện",
+          "definitionEn": "to appear",
+          "exampleEn": "The facts behind the scandal are sure to [emerge] eventually."
+        },
+        {
+          "word": "Evolve",
+          "pos": "v",
+          "ipa": "/ɪˈvɑːlv/",
+          "meaningVi": "tiến hóa, phát triển từ từ",
+          "exampleEn": "The company has [evolve]d over the years into a multi-million dollar organization."
+        },
+        {
+          "word": "Explain",
+          "pos": "v",
+          "ipa": "/ɪkˈspleɪn/",
+          "meaningVi": "giải thích",
+          "definitionEn": "make sth clear",
+          "exampleEn": "The word [Explain] is useful in IELTS."
+        },
+        {
+          "word": "Express",
+          "pos": "v",
+          "ipa": "/ɪkˈspres/",
+          "meaningVi": "thể hiện",
+          "definitionEn": "to show a feeling, opinion, or fact",
+          "exampleEn": "I would like to [express] my thanks for your kindness."
+        },
+        {
+          "word": "Gesture",
+          "pos": "v",
+          "ipa": "/ˈdʒes.tʃɚ/",
+          "meaningVi": "thể hiện qua cử chỉ",
+          "exampleEn": "The word [Gesture] is useful in IELTS."
+        },
+        {
+          "word": "Illustrate",
+          "pos": "v",
+          "ipa": "/ˈɪl.ə.streɪt/",
+          "meaningVi": "thể hiện, mô tả",
+          "exampleEn": "To [illustrate] her point, she told a story about how her family felt when they moved here."
+        },
+        {
+          "word": "Imply",
+          "pos": "v",
+          "ipa": "/ɪmˈplaɪ/",
+          "meaningVi": "sự ngụ ý, ám chỉ",
+          "definitionEn": "to communicate an idea or feeling without saying it directly: ám chỉ🡪 danh từ implication",
+          "exampleEn": "Are you [imply]ing (that) I'm fat?"
+        },
+        {
+          "word": "Indicate",
+          "pos": "v",
+          "ipa": "/ˈɪn.də.keɪt/",
+          "meaningVi": "thể hiện, mô tả",
+          "definitionEn": "to show, point, or make clear in another way",
+          "exampleEn": "She did not move or [indicate] that she had heard him."
+        },
+        {
+          "word": "Pronounce",
+          "pos": "v",
+          "ipa": "/prəˈnaʊns/",
+          "meaningVi": "phát âm",
+          "exampleEn": "The word [Pronounce] is useful in IELTS."
+        },
+        {
+          "word": "Recall",
+          "pos": "v",
+          "ipa": "/ˈriː.kɑːl/",
+          "meaningVi": "nhớ lại, hồi tưởng",
+          "definitionEn": "to bring the memory of a past event into your mind",
+          "exampleEn": "He [recall]ed (that) he had sent the letter over a month ago."
+        },
+        {
+          "word": "Refer",
+          "pos": "v",
+          "meaningVi": "ám chỉ, nói đến , nhắc đến",
+          "exampleEn": "The word [Refer] is useful in IELTS."
+        },
+        {
+          "word": "Signify",
+          "pos": "v",
+          "ipa": "/ˈsɪɡ.nə.faɪ/",
+          "meaningVi": "tuyên bố, thể hiện, ra hiệu",
+          "definitionEn": "to make something known; to show",
+          "exampleEn": "She signified her agreement by nodding her head."
+        },
+        {
+          "word": "State",
+          "pos": "v",
+          "ipa": "/steɪt/",
+          "meaningVi": "phát biểu, tuyên bố",
+          "definitionEn": "to say or write something, especially clearly and carefully",
+          "exampleEn": "Union members [state]d (that) they were unhappy with the proposal."
+        },
+        {
+          "word": "Stutter",
+          "pos": "v",
+          "ipa": "/ˈstʌt̬.ɚ/",
+          "meaningVi": "nói lắp bắp, cà lăm",
+          "definitionEn": "to speak or say something with difficulty",
+          "exampleEn": "She [stutter]s a little, so be patient and let her finish what she's saying."
+        },
+        {
+          "word": "Suggest",
+          "pos": "v",
+          "ipa": "/səˈdʒest/",
+          "meaningVi": "đề xuất",
+          "definitionEn": "to mention an idea, possible plan, or action for other people to consider",
+          "exampleEn": "I [suggest]ed an Italian restaurant near the station for the party."
+        },
+        {
+          "word": "translate",
+          "pos": "v",
+          "ipa": "/trænsˈleɪt/",
+          "meaningVi": "dịch/ chuyển đổi sang dạng khác",
+          "exampleEn": "The ability to talk clearly does not automatically [translate] into the ability to write clearly."
+        },
+        {
+          "word": "There is something to be said for",
+          "pos": "idiom",
+          "meaningVi": "cái gì đó có nhiều lợi ích",
+          "definitionEn": "said to mean that something has advantages",
+          "exampleEn": "[There]'s a lot to be said for living alone."
+        },
+        {
+          "word": "Needless to say",
+          "pos": "idiom",
+          "meaningVi": "không có gì ngạc nhiên là...",
+          "exampleEn": "[Needless] to say, he'll be off work for a while."
+        },
+        {
+          "word": "Have a say",
+          "pos": "idiom",
+          "meaningVi": "có tiếng nói trong việc gì",
+          "definitionEn": "to be involved in making a decision about something",
+          "exampleEn": "When he's 18, he'll begin to [have] a/some say in the running of the family business."
+        },
+        {
+          "word": "When all is said and done",
+          "pos": "idiom",
+          "meaningVi": "được nói khi bạn sắp nói với ai đó về điều quan trọng nhất mà họ nên nhớ trong một tình huống",
+          "definitionEn": "said when you are about to tell someone the most important fact they should remember in a situation",
+          "exampleEn": "[When] all is said and done, you can only do your best."
+        },
+        {
+          "word": "Having said that",
+          "pos": "idiom",
+          "meaningVi": "dù vậy",
+          "definitionEn": "despite what has just been said",
+          "exampleEn": "He forgets most things, but [having] said that, he always remembers my birthday."
+        },
+        {
+          "word": "To say the least",
+          "pos": "idiom",
+          "meaningVi": "nói một cách tối thiểu là",
+          "definitionEn": "used to show that what you are describing is in fact much more serious or important than you have suggested",
+          "exampleEn": "It's going [to] be awkward, to say the least."
+        },
+        {
+          "word": "You can say that again!",
+          "pos": "idiom",
+          "meaningVi": "dùng khi muốn thể hiện mình hoàn toàn đồng ý với điều ai đó vừa nói",
+          "definitionEn": "used to show that you completely agree with what someone has said",
+          "exampleEn": "The word [You can say that again!] is useful in IELTS."
+        },
+        {
+          "word": "That is to say",
+          "pos": "idiom",
+          "meaningVi": "chính xác hơn là",
+          "definitionEn": "or more exactly",
+          "exampleEn": "Our friends, [that] is to say our son's friends, will meet us at the airport"
+        }
+      ]
+    },
+    {
+      "slug": "unit-7-on-the-move",
+      "order": 7,
+      "title": {
+        "vi": "On the Move",
+        "en": "On the Move"
+      },
+      "summary": {
+        "vi": "Từ vựng du lịch và phương tiện.",
+        "en": "Travel and transport vocabulary."
+      },
+      "words": [
+        {
+          "word": "Accommodation",
+          "pos": "n",
+          "ipa": "/əˌkɑː.məˈdeɪ.ʃən/",
+          "meaningVi": "nơi ở",
+          "definitionEn": "a place to live, work, stay, etc. in",
+          "exampleEn": "There's a shortage of cheap [accommodation] (= places to live)."
+        },
+        {
+          "word": "Attraction",
+          "pos": "n",
+          "ipa": "/əˈtræk.ʃən/",
+          "meaningVi": "sự hấp dẫn, điều hấp dẫn",
+          "definitionEn": "something that makes people want to go to a place or do a particular thing",
+          "exampleEn": "tourist [attraction]s: điểm thu hút khách du lịch"
+        },
+        {
+          "word": "community",
+          "pos": "n",
+          "ipa": "/kəˈmjuː.nə.t̬i/",
+          "meaningVi": "cộng đồng",
+          "exampleEn": "There's a real sense of [community] (= caring and friendly feeling) in this neighbourhood."
+        },
+        {
+          "word": "Countryside",
+          "pos": "n",
+          "ipa": "/ˈkʌn.tri.saɪd/",
+          "meaningVi": "vùng nông thôn",
+          "exampleEn": "The word [Countryside] is useful in IELTS."
+        },
+        {
+          "word": "Destinatinon.",
+          "pos": "n",
+          "ipa": "/ˌdes.təˈneɪ.ʃən/",
+          "meaningVi": "điểm đến",
+          "exampleEn": "His letter never reached its destination."
+        },
+        {
+          "word": "Eco-tourism",
+          "pos": "n",
+          "ipa": "/ˈiː.koʊˌtʊr.ɪ.zəm/",
+          "meaningVi": "ngành du lịch sinh thái",
+          "exampleEn": "Costa Rica's national parks have made it a center for ecotourism."
+        },
+        {
+          "word": "Effect",
+          "pos": "n",
+          "ipa": "/əˈfekt/",
+          "meaningVi": "ảnh hưởng",
+          "definitionEn": "outcome, consequence",
+          "exampleEn": "The radiation leak has had disastrous [effect] on/upon the environment."
+        },
+        {
+          "word": "Facilities",
+          "pos": "n",
+          "ipa": "/fəˈsɪl.ə.t̬i/",
+          "meaningVi": "cơ sở vật chất",
+          "exampleEn": "The new sports facility has a swimming pool."
+        },
+        {
+          "word": "Identification",
+          "pos": "n",
+          "ipa": "/aɪˌden.t̬ə.fəˈkeɪ.ʃən/",
+          "meaningVi": "sự nhận diện/ thẻ nhận diện",
+          "definitionEn": "the act of recognizing and naming someone or something; an official document that shows or proves who you are",
+          "exampleEn": "We were asked to show some [identification] before the security guards would let us in."
+        },
+        {
+          "word": "Itinerary",
+          "pos": "n",
+          "ipa": "/aɪˈtɪn.ə.rer.i/",
+          "meaningVi": "lịch trình, hành trình",
+          "definitionEn": "a detailed plan or route of a journey",
+          "exampleEn": "The tour operator will arrange transport and plan your [itinerary]."
+        },
+        {
+          "word": "Journey",
+          "pos": "n",
+          "ipa": "/ˈdʒɝː.ni/",
+          "meaningVi": "chuyến đi, hành trình",
+          "exampleEn": "The word [Journey] is useful in IELTS."
+        },
+        {
+          "word": "Landscape",
+          "pos": "n",
+          "ipa": "/ˈlænd.skeɪp/",
+          "meaningVi": "phong cảnh",
+          "exampleEn": "Demolition firms and builders are busy changing urban [landscape]s."
+        },
+        {
+          "word": "Luggage",
+          "pos": "n",
+          "ipa": "/ˈlʌɡ.ɪdʒ/",
+          "meaningVi": "hành lý",
+          "definitionEn": "= baggage",
+          "exampleEn": "The word [Luggage] is useful in IELTS."
+        },
+        {
+          "word": "Peak",
+          "pos": "n",
+          "ipa": "/piːk/",
+          "meaningVi": "đỉnh điểm",
+          "exampleEn": "Prices reach a [peak] during August."
+        },
+        {
+          "word": "Tourism",
+          "pos": "n",
+          "ipa": "/ˈtʊr.ɪ.zəm/",
+          "meaningVi": "ngành du lịch",
+          "exampleEn": "[Tourism] is Venice's main industry."
+        },
+        {
+          "word": "Tourist",
+          "pos": "n",
+          "ipa": "/ˈtʊr.ɪst/",
+          "meaningVi": "khách du lịch",
+          "exampleEn": "Millions of [tourist]s visit Rome every year."
+        },
+        {
+          "word": "Transport",
+          "pos": "n",
+          "ipa": "/ˈtræn.spɔːrt/",
+          "meaningVi": "phương tiện giao thông; giao thông; sự chuyên chở",
+          "definitionEn": "= transportation",
+          "exampleEn": "The company will arrange [transport] from the airport."
+        },
+        {
+          "word": "Trend",
+          "pos": "n",
+          "ipa": "/trend/",
+          "meaningVi": "xu hướng",
+          "exampleEn": "There's been a downward/upward [trend] in sales in the last few years."
+        },
+        {
+          "word": "Trip",
+          "pos": "n",
+          "ipa": "/trɪp/",
+          "meaningVi": "a short journey",
+          "definitionEn": "a short journey",
+          "exampleEn": "The word [Trip] is useful in IELTS."
+        },
+        {
+          "word": "Adventurous",
+          "pos": "adj",
+          "ipa": "/ədˈven.tʃɚ.əs/",
+          "meaningVi": "thích phiêu lưu, khám phá",
+          "definitionEn": "willing to try new or difficult things",
+          "exampleEn": "I’m pretty [adventurous] in cooking (= willing to try new and unusual things)."
+        },
+        {
+          "word": "Budget",
+          "pos": "adj",
+          "ipa": "/ˈbʌdʒ.ɪt/",
+          "meaningVi": "ngân sách/ very cheap",
+          "exampleEn": "a [budget] holiday/hotel/price"
+        },
+        {
+          "word": "Breathtaking",
+          "pos": "adj",
+          "ipa": "/ˈbreθˌteɪ.kɪŋ/",
+          "meaningVi": "đẹp một cách ngoạn mục",
+          "definitionEn": "extremely exciting, beautiful, or surprising",
+          "exampleEn": "The view from the top of the mountain is [breathtaking]."
+        },
+        {
+          "word": "Coastal",
+          "pos": "adj",
+          "ipa": "/ˈkoʊ.stəl/",
+          "meaningVi": "ven biển",
+          "definitionEn": "positioned on, or relating to the coast",
+          "exampleEn": "The word [Coastal] is useful in IELTS."
+        },
+        {
+          "word": "Cosmopolitan",
+          "pos": "adj",
+          "ipa": "/ˌkɑːz.məˈpɑː.lɪ.t̬ən/",
+          "meaningVi": "bao gồm nhiều người từ nhiều nơi trên thế giới",
+          "exampleEn": "New York is a highly [cosmopolitan] city."
+        },
+        {
+          "word": "Diverse",
+          "pos": "adj",
+          "ipa": "/daɪˈvɜːs/",
+          "meaningVi": "đa dạng, khác nhau",
+          "definitionEn": "varied or different",
+          "exampleEn": "We hold very [diverse] views on the topic."
+        },
+        {
+          "word": "Flexible",
+          "pos": "adj",
+          "ipa": "/ˈflek.sə.bəl/",
+          "meaningVi": "linh hoạt, linh động",
+          "exampleEn": "My schedule is [flexible] - I could arrange to meet with you any day next week."
+        },
+        {
+          "word": "Foreign",
+          "pos": "adj",
+          "ipa": "/ˈfɔːr.ən/",
+          "meaningVi": "thuộc nước ngoài",
+          "exampleEn": "The word [Foreign] is useful in IELTS."
+        },
+        {
+          "word": "Local",
+          "pos": "adj",
+          "ipa": "/ˈloʊ.kəl/",
+          "meaningVi": "thuộc địa phương",
+          "exampleEn": "The word [Local] is useful in IELTS."
+        },
+        {
+          "word": "Luxurious",
+          "pos": "adj",
+          "ipa": "/lʌɡˈʒʊr.i.əs/",
+          "meaningVi": "xa xỉ",
+          "definitionEn": "very comfortable and expensive",
+          "exampleEn": "They have a very [luxurious] house."
+        },
+        {
+          "word": "Mountainous",
+          "pos": "adj",
+          "ipa": "/ˈmaʊn.tən.əs/",
+          "meaningVi": "có nhiều núi",
+          "definitionEn": "having a lot of mountains",
+          "exampleEn": "a [mountainous] region"
+        },
+        {
+          "word": "Peaceful",
+          "pos": "adj",
+          "ipa": "/ˈpiːs.fəl/",
+          "meaningVi": "bình yên",
+          "exampleEn": "a [peaceful] afternoon/place"
+        },
+        {
+          "word": "Picturesque",
+          "pos": "adj",
+          "ipa": "/ˌpɪk.tʃərˈesk/",
+          "meaningVi": "đẹp tựa như tranh",
+          "exampleEn": "The countryside in this region is very [picturesque]."
+        },
+        {
+          "word": "Polluted",
+          "pos": "adj",
+          "ipa": "/pəˈluː.t̬ɪd/",
+          "meaningVi": "ô nhiễm",
+          "exampleEn": "The river in Caracas is heavily [polluted]."
+        },
+        {
+          "word": "Quaint",
+          "pos": "adj",
+          "ipa": "/kweɪnt/",
+          "meaningVi": "đẹp cổ, lạ",
+          "definitionEn": "attractive because of being unusual and especially old-fashioned",
+          "exampleEn": "The area is full of [quaint] little villages."
+        },
+        {
+          "word": "Remote",
+          "pos": "adj",
+          "ipa": "/rɪˈmoʊt/",
+          "meaningVi": "xa xôi, hẻo lánh",
+          "exampleEn": "They live in a [remote] corner of Scotland, miles from the nearest shop."
+        },
+        {
+          "word": "Rough",
+          "pos": "adj",
+          "ipa": "/rʌf/",
+          "meaningVi": "gồ ghề",
+          "exampleEn": "It was a [rough] mountain road, full of stones and huge holes."
+        },
+        {
+          "word": "Rural",
+          "pos": "adj",
+          "ipa": "/ˈrʊr.əl/",
+          "meaningVi": "thuộc về nông thôn🡪 rural areas",
+          "exampleEn": "The word [Rural] is useful in IELTS."
+        },
+        {
+          "word": "Scenic",
+          "pos": "adj",
+          "ipa": "/ˈsiː.nɪk/",
+          "meaningVi": "có cảnh đẹp",
+          "exampleEn": "an area of outstanding [scenic] beauty"
+        },
+        {
+          "word": "Stunning",
+          "pos": "adj",
+          "ipa": "/ˈstʌn.ɪŋ/",
+          "meaningVi": "rất đẹp",
+          "definitionEn": "extremely beautiful or attractive",
+          "exampleEn": "a [stunning] view over the bay of Saint Tropez."
+        },
+        {
+          "word": "Traditional",
+          "pos": "adj",
+          "ipa": "/trəˈdɪʃ.ən.əl/",
+          "meaningVi": "truyền thống, cổ xưa",
+          "exampleEn": "The villagers retain a strong attachment to their [traditional] values/customs/beliefs."
+        },
+        {
+          "word": "Unspoilt",
+          "pos": "adj",
+          "ipa": "/ʌnˈspɔɪld/",
+          "meaningVi": "không bị tàn phá",
+          "definitionEn": "An unspoiled place is beautiful because it has not been changed or damaged by people",
+          "exampleEn": "an island with clean, unspoiled beaches"
+        },
+        {
+          "word": "Urban",
+          "pos": "adj",
+          "ipa": "/ˈɝː.bən/",
+          "meaningVi": "thuộc về thành phố",
+          "exampleEn": "[urban] areas"
+        },
+        {
+          "word": "Fluctuate",
+          "pos": "v",
+          "ipa": "/ˈflʌk.tʃu.eɪt/",
+          "meaningVi": "dao động",
+          "exampleEn": "Her wages [fluctuate] between £150 and £200 a week"
+        }
+      ]
+    },
+    {
+      "slug": "unit-8-through-the-ages",
+      "order": 8,
+      "title": {
+        "vi": "Through the Ages",
+        "en": "Through the Ages"
+      },
+      "summary": {
+        "vi": "Lịch sử và cụm từ về thời gian.",
+        "en": "History and time phrases."
+      },
+      "words": [
+        {
+          "word": "Age",
+          "pos": "n",
+          "ipa": "/eɪdʒ/",
+          "meaningVi": "thời kì",
+          "definitionEn": "a particular period in time",
+          "exampleEn": "The word [Age] is useful in IELTS."
+        },
+        {
+          "word": "archaeologist",
+          "pos": "n",
+          "ipa": "/ˌɑːr.kiˈɑː.lə.dʒɪst/",
+          "meaningVi": "nhà khảo cổ học",
+          "definitionEn": "someone who studies the buildings, graves, tools, and other objects of people who lived in the past",
+          "exampleEn": "The word [archaeologist] is useful in IELTS."
+        },
+        {
+          "word": "decade",
+          "pos": "n",
+          "ipa": "/dekˈeɪd/",
+          "meaningVi": "thập kỷ",
+          "definitionEn": "a period of ten years",
+          "exampleEn": "Air traffic has increased 30% in the last [decade]."
+        },
+        {
+          "word": "era",
+          "pos": "n",
+          "ipa": "/ˈɪr.ə/",
+          "meaningVi": "kỷ nguyên",
+          "definitionEn": "a period of time of which particular events or stages of development are typical",
+          "exampleEn": "The word [era] is useful in IELTS."
+        },
+        {
+          "word": "evidence",
+          "pos": "n",
+          "ipa": "/ˈev.ə.dəns/",
+          "meaningVi": "bằng chứng",
+          "exampleEn": "The police have found no [evidence] of a terrorist link with the murder."
+        },
+        {
+          "word": "excavation",
+          "pos": "n",
+          "ipa": "/ˌeks.kəˈveɪ.ʃən/",
+          "meaningVi": "sự khai quật",
+          "definitionEn": "the act of removing earth that is covering very old objects buried in the ground in order to discover things about the past",
+          "exampleEn": "Construction companies acknowledge the danger of [excavation] work."
+        },
+        {
+          "word": "generation",
+          "pos": "n",
+          "ipa": "/ˌdʒen.əˈreɪ.ʃən/",
+          "meaningVi": "thế hệ",
+          "exampleEn": "The word [generation] is useful in IELTS."
+        },
+        {
+          "word": "the Middle Ages",
+          "pos": "n",
+          "meaningVi": "thời trung cổ",
+          "exampleEn": "The word [the Middle Ages] is useful in IELTS."
+        },
+        {
+          "word": "millenia số nhiều của millenium",
+          "pos": "n",
+          "ipa": "/mɪˈlen.i.əm/",
+          "meaningVi": "a period of 1,000 years",
+          "definitionEn": "a period of 1,000 years",
+          "exampleEn": "The corpse had lain preserved in the soil for almost two millennia."
+        },
+        {
+          "word": "period",
+          "pos": "n",
+          "meaningVi": "giai đoạn",
+          "exampleEn": "The word [period] is useful in IELTS."
+        },
+        {
+          "word": "phase",
+          "pos": "n",
+          "meaningVi": "giai đoạn",
+          "exampleEn": "The word [phase] is useful in IELTS."
+        },
+        {
+          "word": "pioneer",
+          "pos": "n",
+          "ipa": "/ˌpaɪəˈnɪr/",
+          "meaningVi": "người tiên phong",
+          "exampleEn": "The word [pioneer] is useful in IELTS."
+        },
+        {
+          "word": "Timeline",
+          "pos": "n",
+          "ipa": "/ˈtaɪm.laɪn/",
+          "meaningVi": "dòng thời gian",
+          "definitionEn": "a line that shows the time and the order in which events have happened",
+          "exampleEn": "The word [Timeline] is useful in IELTS."
+        },
+        {
+          "word": "Ancient",
+          "pos": "adj",
+          "ipa": "/ˈeɪn.ʃənt/",
+          "meaningVi": "cổ xưa🡪 ancient civilizations/rights/laws",
+          "definitionEn": "of or from a long time ago, having lasted for a very long time",
+          "exampleEn": "The word [Ancient] is useful in IELTS."
+        },
+        {
+          "word": "Chronological",
+          "pos": "adj",
+          "ipa": "/ˌkrɒn.əˈlɑː.dʒɪ.kəl/",
+          "meaningVi": "theo niên đại",
+          "definitionEn": "following the order in which a series of events happened",
+          "exampleEn": "Give me the dates in [chronological] order."
+        },
+        {
+          "word": "Consecutive",
+          "pos": "adj",
+          "ipa": "/kənˈsek.jə.t̬ɪv/",
+          "meaningVi": "liên tiếp không nghỉ",
+          "definitionEn": ". follow one after another without an interruption",
+          "exampleEn": "This is the fifth [consecutive] weekend that I've spent working."
+        },
+        {
+          "word": "Historical",
+          "pos": "adj",
+          "ipa": "/hɪˈstɔːr.ɪ.kəl/",
+          "meaningVi": "thuộc về lịch sử",
+          "exampleEn": "Many important [historical] documents were destroyed when the library was bombed."
+        },
+        {
+          "word": "Imminent",
+          "pos": "adj",
+          "ipa": "/ˈɪm.ə.nənt/",
+          "meaningVi": "sắp đến, sắp xảy ra",
+          "definitionEn": "coming or likely to happen very soon",
+          "exampleEn": "A strike is [imminent]."
+        },
+        {
+          "word": "Middle-aged",
+          "pos": "adj",
+          "ipa": "/ˌmɪd.əlˈeɪdʒd/",
+          "meaningVi": "thuộc trung cổ, trung niên",
+          "exampleEn": "They're a [middle-aged] couple, with grown-up children."
+        },
+        {
+          "word": "Nostalgic",
+          "pos": "adj",
+          "ipa": "/nɑːˈstæl.dʒɪk/",
+          "meaningVi": "hoài niệm, nhớ nhà",
+          "definitionEn": "feeling happy and also slightly sad when you think about things that happened in the past",
+          "exampleEn": "Talking about our old family holidays has made me feel all [nostalgic]."
+        },
+        {
+          "word": "prehistoric",
+          "pos": "adj",
+          "ipa": "/ˌpriː.hɪˈstɔːr.ɪk/",
+          "meaningVi": "tiền sử",
+          "definitionEn": "describing the period before there were written records",
+          "exampleEn": "[prehistoric] man/humans/animals"
+        },
+        {
+          "word": "prior to+ Ving/ Noun before a particular time or event",
+          "pos": "adj",
+          "meaningVi": "trước",
+          "exampleEn": "the weeks [prior] to her death"
+        },
+        {
+          "word": "punctual",
+          "pos": "adj",
+          "ipa": "/ˈpʌŋk.tʃu.əl/",
+          "meaningVi": "đúng giờ",
+          "definitionEn": "arriving, doing something, or happening at the expected, correct time; not late",
+          "exampleEn": "He's fairly [punctual] (= he usually arrives on time)."
+        },
+        {
+          "word": "Time-consuming",
+          "pos": "adj",
+          "ipa": "/ˈtaɪm.kənˌsuː.mɪŋ/",
+          "meaningVi": "tốn thời gian",
+          "definitionEn": "A time-consuming task takes a lot of time to do",
+          "exampleEn": "Producing a dictionary is a very [time-consuming] job."
+        },
+        {
+          "word": "Erode",
+          "pos": "v",
+          "ipa": "/ɪˈroʊd/",
+          "meaningVi": "erosion",
+          "definitionEn": "to rub or be rubbed away gradually:làm xói mòn 🡪 danh từ",
+          "exampleEn": "Wind and rain have [erode]d the statues into shapeless lumps of stone."
+        },
+        {
+          "word": "Infer",
+          "pos": "v",
+          "ipa": "/ɪnˈfɜːr/",
+          "meaningVi": "suy ra",
+          "definitionEn": "to form an opinion or guess that something is true because of the information that you have",
+          "exampleEn": "I [infer]red from her expression that she wanted to leave."
+        },
+        {
+          "word": "Predate",
+          "pos": "v",
+          "ipa": "/ˌpriːˈdeɪt/",
+          "meaningVi": "có trước",
+          "definitionEn": "to have existed or happened before another thing",
+          "exampleEn": "These cave paintings [predate] any others which are known."
+        },
+        {
+          "word": "Span",
+          "pos": "v",
+          "ipa": "/spæn/",
+          "meaningVi": "kéo dài",
+          "definitionEn": "to exist or continue for a particular length of time",
+          "exampleEn": "Her acting career [span]ned almost six decades."
+        },
+        {
+          "word": "In time",
+          "pos": "phrase",
+          "meaningVi": "kịp giờ",
+          "definitionEn": "To be in time for something is to arrive at the right moment, before it is too late to do something",
+          "exampleEn": "I'm glad you got here [in] time to see Julie before she goes."
+        },
+        {
+          "word": "Lose track of time",
+          "pos": "phrase",
+          "meaningVi": "quên mất thời gian",
+          "exampleEn": "The word [Lose track of time] is useful in IELTS."
+        },
+        {
+          "word": "On time",
+          "pos": "phrase",
+          "meaningVi": "đúng giờ",
+          "definitionEn": "at the agreed or expected time",
+          "exampleEn": "I expect all my staff to get to work [on] time."
+        },
+        {
+          "word": "Save time",
+          "pos": "phrase",
+          "meaningVi": "tiết kiệm thời gian",
+          "exampleEn": "The word [Save time] is useful in IELTS."
+        },
+        {
+          "word": "Spend time",
+          "pos": "phrase",
+          "meaningVi": "dành thời gian làm gì",
+          "exampleEn": "The word [Spend time] is useful in IELTS."
+        },
+        {
+          "word": "Take so long",
+          "pos": "phrase",
+          "meaningVi": "mất rất lâu thời gian",
+          "exampleEn": "The word [Take so long] is useful in IELTS."
+        },
+        {
+          "word": "The right time",
+          "pos": "phrase",
+          "meaningVi": "đúng lúc",
+          "exampleEn": "The word [The right time] is useful in IELTS."
+        },
+        {
+          "word": "Chronologically",
+          "pos": "adv",
+          "ipa": "/ˌkrɒn.əˈlɑː.dʒɪ.kəl.i/",
+          "meaningVi": "theo niên đại",
+          "definitionEn": "in a way that follows the order in which a series of events happened",
+          "exampleEn": "The dates are arranged [chronologically]."
+        },
+        {
+          "word": "Formerly",
+          "pos": "adv",
+          "ipa": "/ˈfɔːr.mɚ.li/",
+          "meaningVi": "trước đây",
+          "definitionEn": "in the past",
+          "exampleEn": "The European Union was [formerly] called the European Community."
+        },
+        {
+          "word": "Previously",
+          "pos": "adv",
+          "ipa": "/ˈpriː.vi.əs.li/",
+          "meaningVi": "trước đây",
+          "definitionEn": "before the present time or the time referred to",
+          "exampleEn": "She was [previously] employed as a tour guide."
+        },
+        {
+          "word": "Subsequently",
+          "pos": "adv",
+          "ipa": "/ˈsʌb.sɪ.kwənt.li/",
+          "meaningVi": "sau đó",
+          "definitionEn": "after something else",
+          "exampleEn": "He was badly injured in the crash and [subsequently] died."
+        }
+      ]
+    },
+    {
+      "slug": "unit-9-the-natural-world",
+      "order": 9,
+      "title": {
+        "vi": "The Natural World",
+        "en": "The Natural World"
+      },
+      "summary": {
+        "vi": "Flora, fauna và nông nghiệp — Cambridge Vocabulary for IELTS.",
+        "en": "Flora, fauna and agriculture — Cambridge Vocabulary for IELTS."
+      },
+      "words": [
+        {
+          "word": "Flora",
+          "ipa": "/ˈflɔːrə/",
+          "meaningVi": "Hệ thực vật",
+          "definitionEn": "All the plants living in a particular area or period of time.",
+          "exampleEn": "The word [Flora] is useful in IELTS."
+        },
+        {
+          "word": "Fauna",
+          "ipa": "/ˈfɔːnə/",
+          "meaningVi": "Hệ động vật",
+          "definitionEn": "All the animals living in a particular area or period of time.",
+          "exampleEn": "The word [Fauna] is useful in IELTS."
+        },
+        {
+          "word": "Vegetation",
+          "ipa": "/ˌvedʒəˈteɪʃn/",
+          "meaningVi": "Thảm thực vật, cây cối nói chung",
+          "definitionEn": "Plants in general, or plants found in a particular area or environment.",
+          "exampleEn": "The word [Vegetation] is useful in IELTS."
+        },
+        {
+          "word": "Habitat",
+          "ipa": "/ˈhæbɪtæt/",
+          "meaningVi": "Môi trường sống tự nhiên",
+          "definitionEn": "The natural environment in which an animal or plant normally lives or grows.",
+          "exampleEn": "The word [Habitat] is useful in IELTS."
+        },
+        {
+          "word": "Predator",
+          "ipa": "/ˈpredətər/",
+          "meaningVi": "Động vật ăn thịt, kẻ săn mồi",
+          "definitionEn": "An animal that hunts, kills, and eats other animals.",
+          "exampleEn": "The word [Predator] is useful in IELTS."
+        },
+        {
+          "word": "Burrow",
+          "ipa": "/ˈbɜːrəʊ/",
+          "meaningVi": "Hang (do động vật đào)",
+          "definitionEn": "A hole or tunnel dug in the ground by an animal for shelter.",
+          "exampleEn": "The word [Burrow] is useful in IELTS."
+        },
+        {
+          "word": "Crop",
+          "ipa": "/krɑːp/",
+          "meaningVi": "Cây trồng, vụ mùa",
+          "definitionEn": "A plant grown in large quantities for food or other products.",
+          "exampleEn": "The word [Crop] is useful in IELTS."
+        },
+        {
+          "word": "Pesticide",
+          "ipa": "/ˈpestɪsaɪd/",
+          "meaningVi": "Thuốc trừ sâu",
+          "definitionEn": "A chemical substance used to kill pests, such as insects or small animals.",
+          "exampleEn": "The word [Pesticide] is useful in IELTS."
+        },
+        {
+          "word": "Eradicate",
+          "ipa": "/ɪˈrædɪkeɪt/",
+          "meaningVi": "Diệt trừ, xóa bỏ hoàn toàn",
+          "definitionEn": "To wipe out, destroy, or completely remove something bad.",
+          "exampleEn": "The word [Eradicate] is useful in IELTS."
+        },
+        {
+          "word": "Endangered",
+          "ipa": "/ɪnˈdeɪndʒərd/",
+          "meaningVi": "Có nguy cơ tuyệt chủng",
+          "definitionEn": "Animals or plants that may soon become extinct because there are very few left.",
+          "exampleEn": "The word [Endangered] is useful in IELTS."
+        },
+        {
+          "word": "Extinct",
+          "ipa": "/ɪkˈstɪŋkt/",
+          "meaningVi": "Tuyệt chủng",
+          "definitionEn": "No longer existing.",
+          "exampleEn": "The word [Extinct] is useful in IELTS."
+        },
+        {
+          "word": "Vulnerable",
+          "ipa": "/ˈvʌlnərəbl/",
+          "meaningVi": "Dễ bị tổn thương, nguy cơ bị đe dọa",
+          "definitionEn": "Weak, easily hurt, or at risk of damage or extinction.",
+          "exampleEn": "The word [Vulnerable] is useful in IELTS."
+        },
+        {
+          "word": "Genetically modified",
+          "pos": "gm",
+          "ipa": "/dʒəˌnetɪkli ˈmɑːdɪfaɪd/",
+          "meaningVi": "Biến đổi gen",
+          "definitionEn": "Plants or animals whose genetic material has been altered using engineering techniques.",
+          "exampleEn": "The word [Genetically modified] is useful in IELTS."
+        },
+        {
+          "word": "Ecological balance",
+          "ipa": "/ˌiːkəˈlɑːdʒɪkl ˈbæləns/",
+          "meaningVi": "Cân bằng sinh thái",
+          "definitionEn": "The state of dynamic equilibrium within a community of organisms in a habitat.",
+          "exampleEn": "The word [Ecological balance] is useful in IELTS."
+        },
+        {
+          "word": "Resistant",
+          "pos": "to",
+          "ipa": "/rɪˈzɪstənt/",
+          "meaningVi": "Kháng lại, chống lại",
+          "definitionEn": "Not harmed or affected by something.",
+          "exampleEn": "The word [Resistant] is useful in IELTS."
+        },
+        {
+          "word": "Repercussion",
+          "ipa": "/ˌriːpərˈkʌʃn/",
+          "meaningVi": "Hậu quả kéo dài, tác động ngược lại",
+          "definitionEn": "An unintended, usually bad consequence or effect of an action.",
+          "exampleEn": "The word [Repercussion] is useful in IELTS."
+        },
+        {
+          "word": "Branch",
+          "ipa": "/bræntʃ/",
+          "meaningVi": "Cành cây, nhánh cây lớn",
+          "definitionEn": "A part of a tree that grows out from the trunk.",
+          "exampleEn": "The word [Branch] is useful in IELTS."
+        },
+        {
+          "word": "Twig",
+          "ipa": "/twɪɡ/",
+          "meaningVi": "Cành cây nhỏ, nhành nhỏ",
+          "definitionEn": "A small, thin branch of a tree or bush.",
+          "exampleEn": "The word [Twig] is useful in IELTS."
+        },
+        {
+          "word": "Root",
+          "ipa": "/ruːt/",
+          "meaningVi": "Rễ cây",
+          "definitionEn": "The part of a plant that grows underground and absorbs water/nutrients.",
+          "exampleEn": "The word [Root] is useful in IELTS."
+        },
+        {
+          "word": "Trunk",
+          "ipa": "/trʌŋk/",
+          "meaningVi": "Thân cây gỗ",
+          "definitionEn": "The thick main stem of a tree.",
+          "exampleEn": "The word [Trunk] is useful in IELTS."
+        },
+        {
+          "word": "Thorn",
+          "ipa": "/θɔːrn/",
+          "meaningVi": "Gai",
+          "definitionEn": "A small, sharp pointed growth on the stem of a plant.",
+          "exampleEn": "The word [Thorn] is useful in IELTS."
+        },
+        {
+          "word": "Petal",
+          "ipa": "/ˈpetl/",
+          "meaningVi": "Cánh hoa",
+          "definitionEn": "One of the delicate, brightly colored parts of a flower.",
+          "exampleEn": "The word [Petal] is useful in IELTS."
+        },
+        {
+          "word": "Coat",
+          "ipa": "/kəʊt/",
+          "meaningVi": "Lớp lông thú",
+          "definitionEn": "The hair or fur that covers the body of an animal.",
+          "exampleEn": "The word [Coat] is useful in IELTS."
+        },
+        {
+          "word": "Fur",
+          "ipa": "/fɜːr/",
+          "meaningVi": "Lông thú mềm / dày",
+          "definitionEn": "The thick, soft hair that covers the bodies of certain animals.",
+          "exampleEn": "The word [Fur] is useful in IELTS."
+        },
+        {
+          "word": "Hide",
+          "ipa": "/haɪd/",
+          "meaningVi": "Da động vật (chưa xử lý)",
+          "definitionEn": "An animal's skin, especially when it has been removed and treated or dried.",
+          "exampleEn": "The word [Hide] is useful in IELTS."
+        },
+        {
+          "word": "Scales",
+          "ipa": "/skeɪlz/",
+          "meaningVi": "Vảy (cá, bò sát)",
+          "definitionEn": "Small, flat plates forming the outer protective layer of fish or reptiles.",
+          "exampleEn": "The word [Scales] is useful in IELTS."
+        },
+        {
+          "word": "Feathers",
+          "ipa": "/ˈfeðərz/",
+          "meaningVi": "Lông vũ (chim)",
+          "definitionEn": "The soft, light structures that cover the body of a bird.",
+          "exampleEn": "The word [Feathers] is useful in IELTS."
+        },
+        {
+          "word": "Paw",
+          "ipa": "/pɔː/",
+          "meaningVi": "Chân (có móng vuốt của thú)",
+          "definitionEn": "The foot of an animal that has claws or pads (e.g. cat, dog, bear).",
+          "exampleEn": "The word [Paw] is useful in IELTS."
+        },
+        {
+          "word": "Claw",
+          "ipa": "/klɔː/",
+          "meaningVi": "Móng vuốt",
+          "definitionEn": "A sharp curved nail on the toe of an animal or bird.",
+          "exampleEn": "The word [Claw] is useful in IELTS."
+        },
+        {
+          "word": "Beak",
+          "ipa": "/biːk/",
+          "meaningVi": "Mỏ chim",
+          "definitionEn": "The hard, pointed outer part of a bird's mouth.",
+          "exampleEn": "The word [Beak] is useful in IELTS."
+        },
+        {
+          "word": "Horn",
+          "ipa": "/hɔːrn/",
+          "meaningVi": "Sừng",
+          "definitionEn": "A hard pointed growth on the head of animals such as cows, goats, or deer.",
+          "exampleEn": "The word [Horn] is useful in IELTS."
+        }
+      ]
+    },
+    {
+      "slug": "unit-12-information-technology",
+      "order": 10,
+      "title": {
+        "vi": "Information Technology",
+        "en": "Information Technology"
+      },
+      "summary": {
+        "vi": "Viễn thông, máy tính và công nghệ.",
+        "en": "Telecommunications, computers, and technology."
+      },
+      "words": [
+        {
+          "word": "Automatic",
+          "pos": "adj",
+          "ipa": "/ˌɔː.təˈmæt.ɪk/",
+          "meaningVi": "Working by itself with little or no human control.",
+          "definitionEn": "Working by itself with little or no human control.",
+          "exampleEn": "Modern manufacturing processes rely heavily on [automatic] machinery."
+        },
+        {
+          "word": "Automate",
+          "pos": "v",
+          "ipa": "/ˈɔː.tə.meɪt/",
+          "meaningVi": "To convert a process or facility to be operated by automated means.",
+          "definitionEn": "To convert a process or facility to be operated by automated means.",
+          "exampleEn": "Companies aim to [automate] repetitive tasks to boost efficiency."
+        },
+        {
+          "word": "Computerisation",
+          "pos": "n",
+          "ipa": "/kəmˌpjuː.tər.aɪˈzeɪ.ʃən/",
+          "meaningVi": "The process of converting a system to be operated by computers.",
+          "definitionEn": "The process of converting a system to be operated by computers.",
+          "exampleEn": "The [computerisation] of medical records has streamlined patient care."
+        },
+        {
+          "word": "Cutting-edge",
+          "pos": "adj",
+          "ipa": "/ˌkʌt.ɪŋˈedʒ/",
+          "meaningVi": "At the latest, most advanced stage in the development of something.",
+          "definitionEn": "At the latest, most advanced stage in the development of something.",
+          "exampleEn": "The research lab is equipped with [cutting-edge] technology."
+        },
+        {
+          "word": "Cybernetics",
+          "pos": "n",
+          "ipa": "/ˌsaɪ.bəˈnet.ɪks/",
+          "meaningVi": "The science of communications and automatic control systems in machines and living things.",
+          "definitionEn": "The science of communications and automatic control systems in machines and living things.",
+          "exampleEn": "Advances in [cybernetics] have led to remarkable prosthetic limbs."
+        },
+        {
+          "word": "Device",
+          "pos": "n",
+          "ipa": "/dɪˈvaɪs/",
+          "meaningVi": "A piece of equipment made or adapted for a particular purpose.",
+          "definitionEn": "A piece of equipment made or adapted for a particular purpose.",
+          "exampleEn": "Smartphones are essential electronic [device]s in everyday life."
+        },
+        {
+          "word": "Digital",
+          "pos": "adj",
+          "ipa": "/ˈdɪdʒ.ɪ.təl/",
+          "meaningVi": "Using or relating to digital signals and computer technology.",
+          "definitionEn": "Using or relating to digital signals and computer technology.",
+          "exampleEn": "The transition from analogue to [digital] broadcasting took several years."
+        },
+        {
+          "word": "Innovate",
+          "pos": "v",
+          "ipa": "/ˈɪn.ə.veɪt/",
+          "meaningVi": "To make changes in something established, especially by introducing new methods or ideas.",
+          "definitionEn": "To make changes in something established, especially by introducing new methods or ideas.",
+          "exampleEn": "Tech companies must constantly [innovate] to remain competitive."
+        },
+        {
+          "word": "Innovation",
+          "pos": "n",
+          "ipa": "/ˌɪn.əˈveɪ.ʃən/",
+          "meaningVi": "A new method, idea, product, or piece of technology.",
+          "definitionEn": "A new method, idea, product, or piece of technology.",
+          "exampleEn": "Technological [innovation] continues to transform the global economy."
+        },
+        {
+          "word": "Labor-saving",
+          "pos": "adj",
+          "ipa": "/ˈleɪ.bəˌseɪ.vɪŋ/",
+          "meaningVi": "Designed to reduce the amount of work or effort needed to complete a task.",
+          "definitionEn": "Designed to reduce the amount of work or effort needed to complete a task.",
+          "exampleEn": "Washing machines are among the most valuable [labor-saving] devices."
+        },
+        {
+          "word": "Outdated",
+          "pos": "adj",
+          "ipa": "/ˌaʊtˈdeɪ.tɪd/",
+          "meaningVi": "No longer useful, fashionable, or modern; obsolete.",
+          "definitionEn": "No longer useful, fashionable, or modern; obsolete.",
+          "exampleEn": "Using [outdated] software can expose a computer to security risks."
+        },
+        {
+          "word": "State-of-the-art",
+          "pos": "adj",
+          "ipa": "/ˌsteɪt.əv.ðiːˈɑːt/",
+          "meaningVi": "Using the most modern and recently developed ideas and methods.",
+          "definitionEn": "Using the most modern and recently developed ideas and methods.",
+          "exampleEn": "The hospital opened a [state-of-the-art] surgical wing last month."
+        },
+        {
+          "word": "Telecommunications",
+          "pos": "n",
+          "ipa": "/ˌtel.ɪ.kə.mjuː.nɪˈkeɪ.ʃənz/",
+          "meaningVi": "Communication over a distance by cable, telegraph, telephone, or broadcasting.",
+          "definitionEn": "Communication over a distance by cable, telegraph, telephone, or broadcasting.",
+          "exampleEn": "Rapid growth in [telecommunications] has made global connectivity instant."
+        },
+        {
+          "word": "Virtual",
+          "pos": "adj",
+          "ipa": "/ˈvɜː.tʃu.əl/",
+          "meaningVi": "Created, simulated, or carried on by means of a computer or computer network.",
+          "definitionEn": "Created, simulated, or carried on by means of a computer or computer network.",
+          "exampleEn": "[Virtual] reality allows users to experience interactive 3D environments."
+        }
+      ]
+    },
+    {
+      "slug": "unit-13-the-modern-world",
+      "order": 11,
+      "title": {
+        "vi": "The Modern World",
+        "en": "The Modern World"
+      },
+      "summary": {
+        "vi": "Toàn cầu hóa, thái độ và xu hướng.",
+        "en": "Globalisation, changing attitudes, and trends."
+      },
+      "words": [
+        {
+          "word": "Globalisation",
+          "pos": "n",
+          "ipa": "/ˌɡləʊ.bəl.aɪˈzeɪ.ʃən/",
+          "meaningVi": "The process by which businesses or organisations develop international influence or operation.",
+          "definitionEn": "The process by which businesses or organisations develop international influence or operation.",
+          "exampleEn": "[Globalisation] has made international trade and cultural exchange much easier."
+        },
+        {
+          "word": "Global",
+          "pos": "adj",
+          "ipa": "/ˈɡləʊ.bəl/",
+          "meaningVi": "Relating to the whole world; worldwide.",
+          "definitionEn": "Relating to the whole world; worldwide.",
+          "exampleEn": "Climate change is a [global] issue that requires international cooperation."
+        },
+        {
+          "word": "Modernisation",
+          "pos": "n",
+          "ipa": "/ˌmɒd.ən.aɪˈzeɪ.ʃən/",
+          "meaningVi": "The process of adapting something to modern needs or habits.",
+          "definitionEn": "The process of adapting something to modern needs or habits.",
+          "exampleEn": "The [modernisation] of public transport reduced urban traffic congestion."
+        },
+        {
+          "word": "Trend",
+          "pos": "n",
+          "ipa": "/trend/",
+          "meaningVi": "A general direction in which something is developing or changing.",
+          "definitionEn": "A general direction in which something is developing or changing.",
+          "exampleEn": "There is a growing [trend] towards remote working in the tech sector."
+        },
+        {
+          "word": "Urbanisation",
+          "pos": "n",
+          "ipa": "/ˌɜː.bən.aɪˈzeɪ.ʃən/",
+          "meaningVi": "The process of making an area more urban; population shift from rural to urban areas.",
+          "definitionEn": "The process of making an area more urban; population shift from rural to urban areas.",
+          "exampleEn": "Rapid [urbanisation] has placed pressure on city infrastructure."
+        },
+        {
+          "word": "Attitude",
+          "pos": "n",
+          "ipa": "/ˈæt.ɪ.tjuːd/",
+          "meaningVi": "A settled way of thinking or feeling about someone or something.",
+          "definitionEn": "A settled way of thinking or feeling about someone or something.",
+          "exampleEn": "Public [attitude]s towards renewable energy have become increasingly positive."
+        },
+        {
+          "word": "Multinational",
+          "pos": "adj",
+          "ipa": "/ˌmʌl.tiˈnæʃ.ən.əl/",
+          "meaningVi": "Including or involving several countries or individuals of several nationalities.",
+          "definitionEn": "Including or involving several countries or individuals of several nationalities.",
+          "exampleEn": "[Multinational] corporations operate facilities in numerous regions worldwide."
+        },
+        {
+          "word": "Standardisation",
+          "pos": "n",
+          "ipa": "/ˌstæn.də.daɪˈzeɪ.ʃən/",
+          "meaningVi": "The process of making something conform to a standard.",
+          "definitionEn": "The process of making something conform to a standard.",
+          "exampleEn": "[Standardisation] of safety protocols ensures consistency across all branches."
+        },
+        {
+          "word": "Monopoly",
+          "pos": "n",
+          "ipa": "/məˈnɒp.əl.i/",
+          "meaningVi": "Exclusive control of the supply or trade in a commodity or service.",
+          "definitionEn": "Exclusive control of the supply or trade in a commodity or service.",
+          "exampleEn": "The government regulated the industry to prevent a total [monopoly]."
+        },
+        {
+          "word": "Integration",
+          "pos": "n",
+          "ipa": "/ˌɪn.tɪˈɡreɪ.ʃən/",
+          "meaningVi": "The action or process of combining two or more things into a whole.",
+          "definitionEn": "The action or process of combining two or more things into a whole.",
+          "exampleEn": "Economic [integration] among neighboring nations encourages trade."
+        },
+        {
+          "word": "Socioeconomic",
+          "pos": "adj",
+          "ipa": "/ˌsəʊ.si.əʊˌiː.kəˈnɒm.ɪk/",
+          "meaningVi": "Relating to or concerned with the interaction of social and economic factors.",
+          "definitionEn": "Relating to or concerned with the interaction of social and economic factors.",
+          "exampleEn": "The study analyses the [socioeconomic] impact of urban expansion."
+        },
+        {
+          "word": "Homogenisation",
+          "pos": "n",
+          "ipa": "/hɒm.ədʒ.ə.naɪˈzeɪ.ʃən/",
+          "meaningVi": "The process of making things uniform or similar.",
+          "definitionEn": "The process of making things uniform or similar.",
+          "exampleEn": "Critics fear that global media leads to the [homogenisation] of local cultures."
+        }
+      ]
+    }
+  ]
+}

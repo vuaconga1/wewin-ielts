@@ -29,9 +29,10 @@ export function VocabTopicOverview({
   progress,
 }: Props) {
   const { t } = useTranslations("learn");
-  const unlocked = isTopicUnlocked(topic, topics, progress);
+  const unlocked =
+    topic.track === "vocabulary" ||
+    isTopicUnlocked(topic, topics, progress, "vocabulary");
   const wordCount = topic.wordCount ?? topic.words?.length ?? 0;
-  const exerciseCount = topic.exerciseCount ?? topic.exercises.length;
   const passed = Boolean(progress.lessons[topic.id]?.exercisePassed);
 
   if (!unlocked) {
@@ -110,11 +111,6 @@ export function VocabTopicOverview({
             <li>
               {t("wordCountLabel", { n: wordCount }, "{n} từ vựng")}
             </li>
-            {exerciseCount > 0 ? (
-              <li>
-                {t("exerciseCount", { n: exerciseCount }, "{n} câu bài tập")}
-              </li>
-            ) : null}
             {passed ? (
               <li className="font-medium text-emerald-700">{t("done")}</li>
             ) : null}
@@ -123,7 +119,7 @@ export function VocabTopicOverview({
           <p className="text-sm text-zinc-500">
             {t(
               "vocabOverviewHint",
-              "Học thẻ từ (phát âm, nghĩa, ví dụ), sau đó làm bài tập củng cố nếu có.",
+              "Học thẻ từ: phát âm, nghĩa tiếng Việt và ví dụ.",
             )}
           </p>
 

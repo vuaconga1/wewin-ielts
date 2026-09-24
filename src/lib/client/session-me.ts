@@ -11,7 +11,7 @@ export type SessionMe = {
 };
 
 const TTL_MS = 60_000;
-const STORAGE_KEY = "wewin_session_me_v1";
+const STORAGE_KEY = "wewin_session_me_v2";
 
 type CacheEntry = {
   data: SessionMe;
@@ -97,6 +97,7 @@ type AuthApiUser = {
   id: string;
   email: string | null;
   username: string;
+  fullName?: string | null;
   role: "ADMIN" | "STUDENT";
   avatarUrl?: string | null;
 };
@@ -132,7 +133,8 @@ export function fetchSessionMe(): Promise<SessionMe> {
         user: raw
           ? {
               username: raw.username,
-              initials: initialsFromName(raw.username),
+              fullName: raw.fullName ?? null,
+              initials: initialsFromName(raw.fullName || raw.username),
               role: raw.role,
               avatarUrl: raw.avatarUrl ?? null,
             }

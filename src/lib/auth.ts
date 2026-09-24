@@ -22,6 +22,7 @@ export type SessionUser = {
   id: string;
   email: string | null;
   username: string;
+  fullName: string | null;
   role: "ADMIN" | "STUDENT";
 };
 
@@ -83,6 +84,7 @@ function decodeSession(token: string): SessionUser | null {
       id: data.id,
       email: data.email ?? null,
       username: data.username,
+      fullName: data.fullName ?? null,
       role: data.role,
     };
   } catch {
@@ -153,6 +155,7 @@ export async function requireAdmin(): Promise<SessionUser> {
       id: "open-admin",
       email: "open-admin@local",
       username: "open-admin",
+      fullName: null,
       role: "ADMIN",
     };
   }
@@ -227,6 +230,7 @@ export async function registerStudent(input: {
       id: user.id,
       email: user.email,
       username: user.username,
+      fullName: user.fullName ?? null,
       role: user.role,
     };
     await createSession(session);
@@ -250,6 +254,7 @@ export async function registerStudent(input: {
     id: created.id,
     email: created.email,
     username: created.username,
+    fullName: created.fullName ?? null,
     role: created.role,
   };
   await createSession(session);
@@ -275,6 +280,7 @@ export async function loginWithEmailPassword(
     id: string;
     email: string | null;
     username: string;
+    fullName?: string | null;
     role: "ADMIN" | "STUDENT";
     passwordHash: string;
   }): Promise<SessionUser> {
@@ -289,6 +295,7 @@ export async function loginWithEmailPassword(
       id: user.id,
       email: user.email,
       username: user.username,
+      fullName: user.fullName ?? null,
       role: user.role,
     };
     await createSession(session);

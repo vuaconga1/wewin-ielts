@@ -1,0 +1,22 @@
+---
+description: Answer keys for Listening/Reading must follow Key 9 canonical format; normalize other layouts on import
+globs: src/lib/import/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Keys format (WEWIN) — Key 9 is default
+
+Canonical keys file = **`Key N.docx`** style (see `templates/canonical-keys.md`):
+
+- Headings: `Listening` / `Reading` (one file may contain both)
+- Optional: `Section 1–4`, `Passage 1–3`
+- Answers: **`N. answer`** per line (or Word table cells with the same text)
+- Reading: `TRUE` / `FALSE` / `NOT GIVEN` (also `T`/`F`/`NGV`)
+- **No screenshots** — parser cannot OCR images
+
+Import path:
+1. Extract keys text (+ Word tables → TSV)
+2. `parseKeysCanonical()` / `normalizeKeysToCanonical()` rewrites odd layouts into Key 9 shape
+3. Merge into Listening/Reading questions
+
+When the user sends a non-conforming keys file, **normalize automatically** (do not ask them to retype if text is recoverable). If keys are image-only, report `KEYS_IMAGE_ONLY` and request Key-9 text/table.

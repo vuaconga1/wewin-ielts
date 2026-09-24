@@ -1,0 +1,42 @@
+---
+description: Keep soft-nav and warm-path runtime fast (ISR, cache, slim RSC, no per-click DB in layouts)
+globs: src/**/*.{tsx,ts}
+alwaysApply: true
+---
+
+# Runtime performance (WEWIN)
+
+Soft-nav / click TTFB is critical: aim for **tens of ms** when warm. Hundreds of ms of server work on every click is a regression.
+
+## Soft navigation & shells
+- Catalog/list chrome (`/tests`, `/learn`, …): prefer **static/ISR** (`export const revalidate = …`). See `src/app/tests/page.tsx`.
+- **`SiteShell`**: client-hydrate session/ranking (`session-me`, `ranking-me`) — do **not** call `cookies()` / Prisma / auth / ranking in shared layout/shell on every soft nav.
+- Defer heavy data to the **page that needs it**, not shared layout. Keep RSC payloads slim.
+
+## Cache & data
+- Semi-static data (catalog, ranking): `unstable_cache` and/or HTTP `Cache-Control` (`s-maxage`, `stale-while-revalidate`). See ranking route + `test-store`.
+- Prisma: **lean `select`**, proper indexes (e.g. Attempt `userId`/`startedAt`), no N+1, no fat list payloads for admin/student lists.
+- Neon Free cold starts exist — still minimize DB hits so the **warm** path stays fast; no uncached Prisma on hot nav paths.
+
+## Media
+- Serve audio/images via **R2/CDN URLs** (`src/lib/media/url.ts`), not Vercel deploy bloat or blocking nav fetches.
+
+## When adding features
+1. Ask: does this add **per-click** RSC / DB / auth work on soft nav?
+2. Prefer cache, client TTL state, or deferred fetch over blocking server render in layout/shell.
+3. Do **not** weaken correctness or security for speed; never hardcode secrets.
+
+```tsx
+// ❌ BAD — DB/auth in layout on every soft nav
+export default async function Layout({ children }) {
+  const session = await getSession(); // cookies + Prisma
+  const rank = await db.ranking.findMany();
+  return <Shell user={session} rank={rank}>{children}</Shell>;
+}
+
+// ✅ GOOD — ISR page + client-hydrated shell (SiteShell pattern)
+export const revalidate = 300;
+export default async function Page() {
+  return <SiteShell active="tests">{/* lean page data only */}</SiteShell>;
+}
+```

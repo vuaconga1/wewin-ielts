@@ -1,21 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Check, Gift, RotateCcw, Zap } from "lucide-react";
+import { BookOpen, Check, Gift, Zap } from "lucide-react";
+import { isSkillChallengeDoneToday } from "@/lib/client/daily-challenge-skill";
 import { useTranslations } from "@/i18n/provider";
 
 type Props = {
   rankPoints: number;
-  streakDays: number;
   practicedToday: boolean;
 };
 
 export function HomeChallengesCard({
   rankPoints,
-  streakDays,
   practicedToday,
 }: Props) {
   const { t } = useTranslations("home");
+  const [learnedSkillToday, setLearnedSkillToday] = useState(false);
+
+  useEffect(() => {
+    setLearnedSkillToday(isSkillChallengeDoneToday());
+  }, []);
 
   const goals = [
     {
@@ -33,11 +38,11 @@ export function HomeChallengesCard({
       target: 50,
     },
     {
-      key: "streak",
-      icon: RotateCcw,
-      label: t("challengeStreak", "Giữ chuỗi học 3 ngày"),
-      current: Math.min(3, streakDays),
-      target: 3,
+      key: "learnSkill",
+      icon: BookOpen,
+      label: t("challengeLearnSkill", "Học 1 kỹ năng"),
+      current: learnedSkillToday ? 1 : 0,
+      target: 1,
     },
   ];
 

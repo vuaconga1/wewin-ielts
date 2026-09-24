@@ -42,12 +42,16 @@ export async function POST(request: Request) {
       username?: string;
       password?: string;
       role?: string;
+      fullName?: string | null;
+      classCode?: string | null;
     };
     const user = await createAdminUser({
       email: body.email ?? "",
       username: body.username ?? "",
       password: body.password ?? "",
       role: body.role ?? "STUDENT",
+      fullName: body.fullName,
+      classCode: body.classCode,
     });
     return NextResponse.json({ user }, { status: 201 });
   } catch (e) {

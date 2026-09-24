@@ -1,0 +1,58 @@
+---
+description: UI must be responsive and use i18n for all user-facing strings (vi/en)
+globs: src/**/*.{tsx,ts}
+alwaysApply: true
+---
+
+# UI: responsive + i18n (WEWIN)
+
+## Theme
+- Dominant **WEWIN navy** (`wewin-navy`, accent blue). Do not invent purple/cream AI-default palettes.
+
+## Responsive (always)
+- Layouts must work mobile → desktop: `min-w-0`, `break-words`, avoid horizontal overflow/overlap.
+- Prefer stacked flex/grid on small screens; sidebars collapse (see `DashboardShell`).
+- Touch targets usable on mobile; language switcher must not crush the header.
+
+## i18n (always for UI chrome)
+- Locales: **`vi`** (default) and **`en`**. Cookie `wewin_locale` — **no URL prefix**.
+- Messages: `src/i18n/messages/vi.json` + `en.json` (keep keys in sync).
+- Client: `useTranslations('namespace')` from `@/i18n/provider`.
+- Server: `getTranslations('namespace')` from `@/i18n/server`.
+- Never hardcode user-facing UI copy *as the only source* (menus, buttons, labels, errors, empty states). Add keys to **both** locale files, then `t('key')` / `t('key', { n })` / `t('key', 'Fallback copy')`.
+
+### Never show raw translation keys or technical enums
+- **Never** display raw system/i18n key paths to users (e.g. `tests.historyTitle`, `TESTS.HISTORYTITLE`, `common.loading`).
+- **Never** display SCREAMING_SNAKE technical labels to end users: Prisma/DB enums (`QuestionType`, `ImportJobStatus`, `AttemptMode`, `TestStatus`, skill codes used as chrome), or similar (`SHORT_ANSWER`, `TABLE_COMPLETION`, `TRUE_FALSE_NG`, `GAP_FILL`, `PENDING`, `PRACTICE`).
+- Map enums via i18n (`questionTypes.*`, `skills.*`, `attemptModes.*`, `importJobStatus.*`, `syncItemStatus.*`) or `questionTypeLabel()` in `src/lib/ui/question-type-label.ts`. Prefer **hiding** type badges on student practice/result when the label is not needed for learners; admin UIs may show **friendly** labels only.
+- When adding UI copy:
+  1. Add the key under the correct namespace in **both** `vi.json` and `en.json`.
+  2. Call `t` with the matching namespace (`useTranslations('tests')` + `t('historyTitle')`, or root `t('tests.historyTitle')`).
+  3. Prefer `t(key, defaultMessage)` so a missing key still shows human Vietnamese/English, never the key path.
+- The i18n helper must **not** return the raw key on miss; it uses `defaultMessage` or a humanized last segment (title-cased, including SCREAMING_SNAKE → "Short answer").
+
+```tsx
+// ❌ BAD — hardcoded only, key path, or raw enum
+<button>Nộp bài</button>
+<span>{missingKey && "tests.historyTitle"}</span>
+<span>[{question.type}]</span>
+
+// ✅ GOOD — keys in vi+en, correct namespace, safe fallback; hide or label enums
+const { t } = useTranslations("practice");
+<button>{t("submit", "Nộp bài")}</button>
+{/* Student practice: omit type chip entirely */}
+{/* Admin: */}
+<span>{questionTypeLabel(q.type, useTranslations("questionTypes").t)}</span>
+```
+
+## Do not translate
+- IELTS passage / question stems / keys content from imported tests or DB lesson bodies/titles used as content.
+- Only translate **UI chrome** around that content.
+
+## New pages checklist
+1. Wrap with `SiteShell` (or practice-focused layout) as appropriate.
+2. All visible strings via i18n keys (vi + en), namespace matches usage.
+3. Prefer `t(key, defaultMessage)` for new UI strings.
+4. Mobile layout checked (no overflow, switcher/header OK).
+5. Friendly errors via `friendlyError(..., fallback, useTranslations("errors").t)` when showing API failures.
+6. No raw enums / SCREAMING_SNAKE / i18n key paths in student-facing UI.

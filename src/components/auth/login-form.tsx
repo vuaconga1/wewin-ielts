@@ -87,7 +87,10 @@ export function LoginForm() {
         setSessionMe({
           user: {
             username: data.user.username,
-            initials: initialsFromName(data.user.username),
+            fullName: data.user.fullName ?? null,
+            initials: initialsFromName(
+              data.user.fullName || data.user.username,
+            ),
             role: data.user.role,
             avatarUrl: data.user.avatarUrl ?? null,
           },

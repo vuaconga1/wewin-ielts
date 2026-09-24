@@ -71,6 +71,10 @@ model User {
   username     String   @unique
   passwordHash String
   role         Role     @default(STUDENT)
+  /// Display name (Họ tên)
+  fullName     String?
+  /// Class code(s), e.g. WW00016 or "WW00019, WW00020"
+  classCode    String?
   /// Profile image: /avatars/default-*.svg, /uploads/avatars/*, or data URL
   avatarUrl    String?
   createdAt    DateTime @default(now())
@@ -78,6 +82,8 @@ model User {
 
   attempts   Attempt[]
   importJobs ImportJob[]
+
+  @@index([classCode])
 }
 
 model Test {

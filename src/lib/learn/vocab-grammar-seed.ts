@@ -1,4 +1,5 @@
 import type { LearnExercise } from "@/lib/learn/types";
+import cambridgeVocabUnits from "@/lib/learn/data/cambridge-vocab-units.json";
 import type {
   LocalizedText,
   TopicLesson,
@@ -60,174 +61,19 @@ function topic(
 ): TopicLesson {
   const prefix = partial.track === "grammar" ? "gram" : "vocab";
   const id = `${prefix}-${partial.slug}`;
+  // Vocabulary is flashcards-only (no exercises). Grammar still gets stub MCQs when omitted.
+  const exercises =
+    partial.exercises ??
+    (partial.track === "vocabulary"
+      ? []
+      : stubExercises(id, partial.title.vi, partial.title.en));
   return {
     ...partial,
     id,
     stub,
     words: partial.words,
-    exercises:
-      partial.exercises ??
-      stubExercises(
-        id,
-        partial.title.vi,
-        partial.title.en,
-      ),
+    exercises,
   };
-}
-
-function word(w: VocabWord): VocabWord {
-  return w;
-}
-
-/** Academic Word List basics — flashcard seed (first topic). */
-const AWL_BASIC_WORDS: VocabWord[] = [
-  word({
-    word: "accountant",
-    pos: "n",
-    ipa: "/əˈkaʊn.tənt/",
-    meaningVi: "một người chịu trách nhiệm về tiền trong một doanh nghiệp, kế toán",
-    definitionEn: "a person responsible for the money in a business",
-    exampleEn: "My [accountant] takes care of my taxes.",
-    exampleVi: "Kế toán của tôi lo liệu thuế của tôi",
-  }),
-  word({
-    word: "analyse",
-    pos: "v",
-    ipa: "/ˈæn.əl.aɪz/",
-    meaningVi: "phân tích, xem xét chi tiết",
-    definitionEn: "to examine something in detail in order to understand it",
-    exampleEn: "Researchers [analyse] the data before drawing conclusions.",
-    exampleVi: "Các nhà nghiên cứu phân tích dữ liệu trước khi đưa ra kết luận",
-  }),
-  word({
-    word: "approach",
-    pos: "n",
-    ipa: "/əˈprəʊtʃ/",
-    meaningVi: "cách tiếp cận, phương pháp",
-    definitionEn: "a way of dealing with a situation or problem",
-    exampleEn: "A collaborative [approach] often leads to better results.",
-    exampleVi: "Cách tiếp cận hợp tác thường mang lại kết quả tốt hơn",
-  }),
-  word({
-    word: "assess",
-    pos: "v",
-    ipa: "/əˈses/",
-    meaningVi: "đánh giá, ước lượng",
-    definitionEn: "to judge or decide the amount, value, or quality of something",
-    exampleEn: "Teachers [assess] students through exams and coursework.",
-    exampleVi: "Giáo viên đánh giá học sinh qua bài thi và bài tập",
-  }),
-  word({
-    word: "benefit",
-    pos: "n",
-    ipa: "/ˈben.ɪ.fɪt/",
-    meaningVi: "lợi ích, quyền lợi",
-    definitionEn: "an advantage or useful result of something",
-    exampleEn: "Regular exercise has many health [benefits].",
-    exampleVi: "Tập thể dục đều đặn mang lại nhiều lợi ích sức khỏe",
-  }),
-  word({
-    word: "concept",
-    pos: "n",
-    ipa: "/ˈkɒn.sept/",
-    meaningVi: "khái niệm, ý niệm",
-    definitionEn: "an idea or principle",
-    exampleEn: "The [concept] of sustainability is central to the essay.",
-    exampleVi: "Khái niệm bền vững là trọng tâm của bài luận",
-  }),
-  word({
-    word: "consist",
-    pos: "v",
-    ipa: "/kənˈsɪst/",
-    meaningVi: "bao gồm, cấu thành từ",
-    definitionEn: "to be made of or formed from something",
-    exampleEn: "The course [consists] of lectures and practical workshops.",
-    exampleVi: "Khóa học bao gồm các buổi giảng và workshop thực hành",
-  }),
-  word({
-    word: "create",
-    pos: "v",
-    ipa: "/kriˈeɪt/",
-    meaningVi: "tạo ra, sáng tạo",
-    definitionEn: "to make something new or invent something",
-    exampleEn: "Designers [create] solutions that meet users’ needs.",
-    exampleVi: "Các nhà thiết kế tạo ra giải pháp đáp ứng nhu cầu người dùng",
-  }),
-  word({
-    word: "data",
-    pos: "n",
-    ipa: "/ˈdeɪ.tə/",
-    meaningVi: "dữ liệu, số liệu",
-    definitionEn: "facts or statistics used for reference or analysis",
-    exampleEn: "The chart presents [data] from the last decade.",
-    exampleVi: "Biểu đồ trình bày dữ liệu từ thập kỷ vừa qua",
-  }),
-  word({
-    word: "define",
-    pos: "v",
-    ipa: "/dɪˈfaɪn/",
-    meaningVi: "định nghĩa, xác định rõ",
-    definitionEn: "to explain the exact meaning of a word or idea",
-    exampleEn: "It is important to [define] key terms in academic writing.",
-    exampleVi: "Việc định nghĩa các thuật ngữ chính trong viết học thuật rất quan trọng",
-  }),
-  word({
-    word: "environment",
-    pos: "n",
-    ipa: "/ɪnˈvaɪ.rən.mənt/",
-    meaningVi: "môi trường",
-    definitionEn: "the natural world or the conditions in which people live",
-    exampleEn: "Protecting the [environment] requires global cooperation.",
-    exampleVi: "Bảo vệ môi trường đòi hỏi sự hợp tác toàn cầu",
-  }),
-  word({
-    word: "factor",
-    pos: "n",
-    ipa: "/ˈfæk.tə/",
-    meaningVi: "yếu tố, nhân tố",
-    definitionEn: "one of several things that influence a result",
-    exampleEn: "Cost is a major [factor] in students’ decisions.",
-    exampleVi: "Chi phí là một yếu tố lớn trong quyết định của sinh viên",
-  }),
-];
-
-function stubWords(topicEn: string): VocabWord[] {
-  return [
-    word({
-      word: "example",
-      pos: "n",
-      ipa: "/ɪɡˈzɑːm.pəl/",
-      meaningVi: "ví dụ (nội dung đang cập nhật)",
-      definitionEn: `Sample word for ${topicEn}`,
-      exampleEn: "This is an [example] sentence.",
-      exampleVi: "Đây là một câu ví dụ",
-    }),
-    word({
-      word: "practice",
-      pos: "n",
-      ipa: "/ˈpræk.tɪs/",
-      meaningVi: "luyện tập (nội dung đang cập nhật)",
-      definitionEn: "the act of doing something regularly to improve",
-      exampleEn: "Daily [practice] improves fluency.",
-      exampleVi: "Luyện tập hàng ngày giúp cải thiện độ trôi chảy",
-    }),
-  ];
-}
-
-function awlExercises(): LearnExercise[] {
-  const id = "vocab-academic-basics";
-  return [
-    mcq(`${id}-q1`, "“Accountant” nghĩa là:", "“Accountant” means:", ["Kế toán", "Luật sư", "Bác sĩ", "Giáo viên"], 0),
-    mcq(`${id}-q2`, "“Analyse” là từ loại:", "“Analyse” is a:", ["Noun", "Verb", "Adjective", "Adverb"], 1),
-    mcq(`${id}-q3`, "“Benefit” gần nghĩa với:", "“Benefit” is closest to:", ["Advantage", "Problem", "Delay", "Noise"], 0),
-    mcq(`${id}-q4`, "“Environment” liên quan đến:", "“Environment” relates to:", ["Natural world", "Only maths", "Furniture", "Punctuation"], 0),
-    mcq(`${id}-q5`, "“Assess” nghĩa là:", "“Assess” means:", ["Evaluate", "Ignore", "Hide", "Sing"], 0),
-    mcq(`${id}-q6`, "“Concept” là:", "A “concept” is:", ["An idea", "A tool only", "A colour", "A number only"], 0),
-    mcq(`${id}-q7`, "The course ___ of lectures.", "The course ___ of lectures.", ["consist", "consists", "consisting", "consisted"], 1),
-    mcq(`${id}-q8`, "“Data” thường dùng trong:", "“Data” is often used in:", ["Research/reports", "Cooking only", "Sports scores only", "Fashion"], 0),
-    mcq(`${id}-q9`, "“Define” nghĩa là:", "“Define” means:", ["Explain the meaning", "Delete", "Borrow", "Travel"], 0),
-    mcq(`${id}-q10`, "Cost is a major ___.", "Cost is a major ___.", ["factor", "accountant", "analyse", "create"], 0),
-  ];
 }
 
 const wordClassesTheory = loc(
@@ -444,128 +290,25 @@ const GRAMMAR_TOPICS: TopicLesson[] = [
   topic({ slug: "punctuation", track: "grammar", order: 24, title: loc("Dấu câu cho IELTS Writing", "Punctuation for IELTS Writing"), summary: loc("Comma, semicolon, colon, apostrophe.", "Comma, semicolon, colon, apostrophe."), videoUrl: V.med, theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>") }, true),
 ];
 
-const VOCABULARY_TOPICS: TopicLesson[] = [
+const VOCABULARY_TOPICS: TopicLesson[] = cambridgeVocabUnits.topics.map((unit) =>
   topic(
     {
-      slug: "academic-basics",
+      slug: unit.slug,
       track: "vocabulary",
-      order: 1,
-      title: loc("Academic Word List cơ bản", "Academic Word List basics"),
-      summary: loc(
-        "Nhóm từ học thuật thường gặp band 6–7.",
-        "Core AWL words for band 6–7.",
-      ),
+      order: unit.order,
+      title: loc(unit.title.vi, unit.title.en),
+      summary: loc(unit.summary.vi, unit.summary.en),
       videoUrl: "",
       theoryHtml: loc(
-        "<p>Học các từ Academic Word List cơ bản qua thẻ từ — phát âm, nghĩa và ví dụ.</p>",
-        "<p>Learn core Academic Word List items via flashcards — pronunciation, meaning, and examples.</p>",
+        `<p>Học ${unit.words.length} từ vựng Cambridge Vocabulary for IELTS qua thẻ từ — phát âm, nghĩa và ví dụ.</p>`,
+        `<p>Learn ${unit.words.length} Cambridge Vocabulary for IELTS items via flashcards — pronunciation, meaning, and examples.</p>`,
       ),
-      words: AWL_BASIC_WORDS,
-      exercises: awlExercises(),
+      words: unit.words as VocabWord[],
+      exercises: [],
     },
     false,
   ),
-  topic(
-    {
-      slug: "topic-education",
-      track: "vocabulary",
-      order: 2,
-      title: loc("Chủ đề: Giáo dục", "Topic: Education"),
-      summary: loc(
-        "Từ vựng giáo dục cho Task 2 & Speaking.",
-        "Education vocabulary for Task 2 & Speaking.",
-      ),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Education"),
-    },
-    true,
-  ),
-  topic(
-    {
-      slug: "topic-environment",
-      track: "vocabulary",
-      order: 3,
-      title: loc("Chủ đề: Môi trường", "Topic: Environment"),
-      summary: loc("Climate, pollution, sustainability.", "Climate, pollution, sustainability."),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Environment"),
-    },
-    true,
-  ),
-  topic(
-    {
-      slug: "topic-health",
-      track: "vocabulary",
-      order: 4,
-      title: loc("Chủ đề: Sức khỏe", "Topic: Health"),
-      summary: loc("Healthcare, lifestyle, mental health.", "Healthcare, lifestyle, mental health."),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Health"),
-    },
-    true,
-  ),
-  topic(
-    {
-      slug: "topic-technology",
-      track: "vocabulary",
-      order: 5,
-      title: loc("Chủ đề: Công nghệ", "Topic: Technology"),
-      summary: loc("Digital, AI, innovation vocabulary.", "Digital, AI, innovation vocabulary."),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Technology"),
-    },
-    true,
-  ),
-  topic(
-    {
-      slug: "synonyms-paraphrase",
-      track: "vocabulary",
-      order: 6,
-      title: loc("Từ đồng nghĩa & paraphrase", "Synonyms & paraphrasing"),
-      summary: loc(
-        "Tránh lặp từ trong Writing/Speaking.",
-        "Avoid repetition in Writing/Speaking.",
-      ),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Synonyms & paraphrasing"),
-    },
-    true,
-  ),
-  topic(
-    {
-      slug: "idioms-speaking",
-      track: "vocabulary",
-      order: 7,
-      title: loc("Thành ngữ cho Speaking", "Idioms for Speaking"),
-      summary: loc("Idiom tự nhiên, không gượng ép.", "Natural idioms, not forced."),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Idioms for Speaking"),
-    },
-    true,
-  ),
-  topic(
-    {
-      slug: "writing-collocations",
-      track: "vocabulary",
-      order: 8,
-      title: loc("Collocations cho Writing", "Collocations for Writing"),
-      summary: loc(
-        "Cụm từ học thuật Task 1 & Task 2.",
-        "Academic phrases for Task 1 & Task 2.",
-      ),
-      videoUrl: "",
-      theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>"),
-      words: stubWords("Collocations for Writing"),
-    },
-    true,
-  ),
-];
+);
 
 export const SEED_VOCAB_GRAMMAR: VocabGrammarCatalog = {
   grammar: GRAMMAR_TOPICS,

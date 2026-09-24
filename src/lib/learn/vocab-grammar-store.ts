@@ -29,6 +29,28 @@ function syncTrackFromSeed(
   persisted: TopicLesson[],
 ): { topics: TopicLesson[]; changed: boolean } {
   const seedList = SEED_VOCAB_GRAMMAR[track];
+
+  // Vocabulary is file-driven seed — replace wholesale when slugs/words/exercises drift.
+  if (track === "vocabulary") {
+    const bySlug = new Map(persisted.map((t) => [t.slug, t]));
+    const drifted =
+      persisted.length !== seedList.length ||
+      seedList.some((seed) => {
+        const existing = bySlug.get(seed.slug);
+        if (!existing) return true;
+        return (
+          (existing.words?.length ?? 0) !== (seed.words?.length ?? 0) ||
+          existing.exercises.length !== seed.exercises.length ||
+          existing.stub !== seed.stub ||
+          existing.title.vi !== seed.title.vi
+        );
+      });
+    if (!drifted) {
+      return { topics: sortTopics(persisted), changed: false };
+    }
+    return { topics: sortTopics(structuredClone(seedList)), changed: true };
+  }
+
   const bySlug = new Map(persisted.map((t) => [t.slug, t]));
   let changed = false;
 
@@ -39,17 +61,8 @@ function syncTrackFromSeed(
       return structuredClone(seed);
     }
 
-    const seedWordCount = seed.words?.length ?? 0;
-    const existingWordCount = existing.words?.length ?? 0;
-    const needsWords =
-      track === "vocabulary" && seedWordCount > 0 && existingWordCount !== seedWordCount;
     const needsStub = existing.stub !== seed.stub;
-    const needsExercises =
-      track === "vocabulary" &&
-      seed.exercises.length > 0 &&
-      existing.exercises.length !== seed.exercises.length;
-
-    if (needsWords || needsStub || needsExercises) {
+    if (needsStub) {
       changed = true;
       return structuredClone(seed);
     }

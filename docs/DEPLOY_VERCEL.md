@@ -109,14 +109,19 @@ Vercel Hobby không chứa ~1GB mp3. Media production phục vụ từ **R2 publ
 
 1. Vào [Cloudflare Dashboard](https://dash.cloudflare.com) → **R2 Object Storage** → **Create bucket**  
    Tên gợi ý: `wewin-ielts-media`
-2. Mở bucket → **Settings**:
-   - Bật **Public access** (R2.dev subdomain), **hoặc** (khuyến nghị) **Custom Domains** → gắn `media.your-domain.com`
-3. CORS (browser `<audio>` / `<img>` cross-origin): bucket → **Settings → CORS policy**, ví dụ:
+2. **Account ID**: trang overview R2 (sidebar phải) hoặc URL dashboard — cần cho `R2_ACCOUNT_ID`.
+3. Mở bucket → **Settings**:
+   - **Khuyến nghị:** **Custom Domains** → gắn `media.your-domain.com`
+   - **Hoặc nhanh:** bật **Public access** → Allow Access trên subdomain `pub-….r2.dev`
+4. CORS (browser `<audio>` / `<img>` GET/HEAD): bucket → **Settings → CORS policy**, ví dụ thu hẹp origin:
 
 ```json
 [
   {
-    "AllowedOrigins": ["*"],
+    "AllowedOrigins": [
+      "https://wewin-ielts-zeta.vercel.app",
+      "http://localhost:3000"
+    ],
     "AllowedMethods": ["GET", "HEAD"],
     "AllowedHeaders": ["*"],
     "ExposeHeaders": ["ETag", "Content-Length", "Content-Type"],
@@ -125,15 +130,17 @@ Vercel Hobby không chứa ~1GB mp3. Media production phục vụ từ **R2 publ
 ]
 ```
 
-(Production: thu hẹp `AllowedOrigins` về domain Vercel + domain riêng.)
+(Thêm domain custom của bạn vào `AllowedOrigins` nếu có. Dev tạm có thể dùng `["*"]`.)
 
 ### 2. API token (chỉ để upload từ máy local)
 
 1. R2 → **Manage R2 API Tokens** → **Create API token**
 2. Quyền: **Object Read & Write** trên bucket `wewin-ielts-media`
-3. Copy: **Account ID**, **Access Key ID**, **Secret Access Key**
+3. Copy: **Access Key ID**, **Secret Access Key** (+ **Account ID** từ bước 1)
 
 ### 3. Env local (`.env` — không commit)
+
+Không có trailing slash ở `R2_PUBLIC_BASE_URL`:
 
 ```env
 R2_ACCOUNT_ID="..."
@@ -144,7 +151,7 @@ R2_PUBLIC_BASE_URL="https://media.your-domain.com"
 # hoặc: R2_PUBLIC_BASE_URL="https://pub-xxxxxxxx.r2.dev"
 ```
 
-### 4. Upload media một lần
+### 4. Upload media một lần (audio + ảnh cùng script)
 
 ```bash
 npm run media:upload-r2
@@ -152,26 +159,39 @@ npm run media:upload-r2
 npm run media:upload-r2 -- --force
 ```
 
-Script đẩy `public/uploads/audio|writing|images/**` → keys `uploads/audio/...` (giữ layout). Object đã tồn tại thì skip (trừ `--force`).
+Script đẩy **cùng bucket**:
+
+| Thư mục local | Object key trên R2 |
+|---------------|--------------------|
+| `public/uploads/audio/**` | `uploads/audio/...` |
+| `public/uploads/writing/**` (diagram Writing) | `uploads/writing/...` |
+| `public/uploads/images/**` (map Listening, v.v.) | `uploads/images/...` |
+
+Object đã tồn tại thì skip (trừ `--force`). **Không** upload `avatars/` hay `learn/videos/` — hai thư mục đó cũng bị loại khỏi deploy (`.vercelignore`).
 
 ### 5. Env trên Vercel
 
-Thêm ít nhất:
+**Project → Settings → Environment Variables** (Production) — thêm ít nhất:
 
 | Key | Ghi chú |
 |-----|---------|
-| `R2_PUBLIC_BASE_URL` | Cùng giá trị local — app rewrite `/uploads/...` → CDN |
+| `R2_PUBLIC_BASE_URL` | **Cùng giá trị** local, **không** trailing slash — app rewrite `/uploads/...` → CDN |
 
-(Không cần đưa secret R2 lên Vercel nếu bạn chỉ upload từ máy.) Redeploy sau khi set.
+Secret R2 (`R2_ACCOUNT_ID` / keys) chỉ cần trên máy khi chạy upload; không bắt buộc trên Vercel nếu chỉ đọc CDN. Redeploy sau khi set.
 
-### 6. Verify
+### 6. Hình ảnh trên Vercel (Hobby)
 
-1. Mở Listening practice trên `*.vercel.app`
-2. DevTools → Network → file `.mp3` / diagram `.png`
+- **Audio:** `.vercelignore` loại hết `public/uploads/audio/*` → **bắt buộc** R2 + `R2_PUBLIC_BASE_URL`.
+- **Writing diagrams + Listening maps:** vẫn **có thể** vào artifact deploy (các dòng ignore đang comment). Khi set `R2_PUBLIC_BASE_URL`, app (`mediaUrl`) rewrite `/uploads/...` sang R2 — browser lấy từ CDN dù file nhỏ còn trong deploy.
+- **Một lần** `npm run media:upload-r2` đủ cho audio + ảnh practice; không cần pipeline ảnh riêng.
+- Sau khi R2 đã đầy, có thể bỏ comment trong `.vercelignore` để cũng loại `writing/*` / `images/*` khỏi deploy (tiết kiệm size).
+
+### 7. Verify
+
+1. Mở Listening / Writing practice trên `*.vercel.app`
+2. DevTools → Network → `.mp3` / diagram `.png`
 3. Host phải là domain R2 (`media.…` hoặc `pub-….r2.dev`), **không** phải `*.vercel.app/uploads/audio/...`
-4. Local không set `R2_PUBLIC_BASE_URL` → vẫn nghe được từ `public/uploads`
-
-`.vercelignore` đã loại **toàn bộ** `public/uploads/audio/*` khỏi artifact deploy.
+4. Local **không** set `R2_PUBLIC_BASE_URL` → vẫn dùng `public/uploads`
 
 ---
 

@@ -16,6 +16,8 @@ import { useTranslations } from "@/i18n/provider";
 
 export type SidebarUser = {
   username: string;
+  /** Display name under avatar; falls back to username when null. */
+  fullName: string | null;
   initials: string;
   role: string;
   avatarUrl: string | null;
@@ -156,6 +158,8 @@ export function SidebarProfile({
 
   const numberLocale = locale === "en" ? "en-US" : "vi-VN";
 
+  const displayName = user.fullName?.trim() || user.username;
+
   if (compact) {
     return (
       <>
@@ -165,7 +169,7 @@ export function SidebarProfile({
             onClick={() => setPickerOpen(true)}
             className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-wewin-accent-blue-bg text-xs font-bold text-wewin-navy ring-2 ring-wewin-navy/10 hover:ring-wewin-navy/25"
             aria-label={t("changeAvatar")}
-            title={user.username}
+            title={displayName}
           >
             {avatarUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
@@ -229,8 +233,8 @@ export function SidebarProfile({
           </button>
         </div>
 
-        <p className="max-w-full truncate text-sm font-bold text-wewin-navy">
-          {user.username}
+        <p className="max-w-full truncate text-sm font-bold text-wewin-navy" title={displayName}>
+          {displayName}
         </p>
         <p className="mt-0.5 text-xs text-zinc-500">
           {user.role === "ADMIN" ? tc("admin") : tc("student")}

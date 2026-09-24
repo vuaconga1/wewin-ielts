@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BookMarked, Languages } from "lucide-react";
+import { markSkillChallengeDoneToday } from "@/lib/client/daily-challenge-skill";
 import {
   learnCatalogHref,
   learnVocabGrammarTopicHref,
@@ -63,7 +64,10 @@ export function VocabGrammarHub({ tracks }: Props) {
             ? t("vocabularyTrack", "Từ vựng")
             : t("grammarTrack", "Ngữ pháp");
           const desc = isVocabulary
-            ? t("vocabularyTrackDesc", "8 chủ đề từ vựng theo band và chủ đề IELTS")
+            ? t(
+                "vocabularyTrackDesc",
+                "11 chủ đề Cambridge Vocabulary — thẻ từ (phát âm, nghĩa, ví dụ)",
+              )
             : t("grammarTrackDesc", "24 chủ đề ngữ pháp IELTS — video, lý thuyết, 10 câu/bài");
           const done = row.completed === row.total && row.total > 0;
           // Vocabulary always opens the topic grid; grammar may continue to next topic.
@@ -82,6 +86,7 @@ export function VocabGrammarHub({ tracks }: Props) {
             <Link
               key={row.track}
               href={href}
+              onClick={markSkillChallengeDoneToday}
               className="card-outline-hover group flex flex-col overflow-hidden border-zinc-300"
             >
               <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">

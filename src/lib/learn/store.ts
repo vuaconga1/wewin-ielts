@@ -591,6 +591,44 @@ export async function updateVideoProgress(input: {
   return entry;
 }
 
+/** Mark a vocabulary topic complete (no exercises). Grammar still uses submitExercises. */
+export async function markTopicComplete(input: {
+  ownerKey: string;
+  lessonId: string;
+}): Promise<{
+  progress: LessonProgress;
+  unlockedNextId: string | null;
+}> {
+  const { getTopicById, getTopicsByTrack } = await import(
+    "@/lib/learn/vocab-grammar-store"
+  );
+  const ctx = await getTopicById(input.lessonId);
+  if (!ctx || ctx.track !== "vocabulary") {
+    throw new LearnStoreError(
+      "LESSON_NOT_FOUND",
+      "Chỉ dùng cho chủ đề từ vựng",
+    );
+  }
+
+  const store = await getProgress(input.ownerKey);
+  const entry = ensureLessonEntry(store, input.lessonId);
+  entry.videoCompleted = true;
+  entry.exercisePassed = true;
+  entry.updatedAt = new Date().toISOString();
+  await writeProgress(store);
+
+  const ordered = [...(await getTopicsByTrack("vocabulary"))].sort(
+    (a, b) => a.order - b.order,
+  );
+  const idx = ordered.findIndex((t) => t.id === ctx.topic.id);
+  const next = idx >= 0 ? ordered[idx + 1] : undefined;
+
+  return {
+    progress: entry,
+    unlockedNextId: next?.slug ?? null,
+  };
+}
+
 export function normalizeAnswer(value: string): string {
   return value.trim().toLowerCase().replace(/\s+/g, " ");
 }

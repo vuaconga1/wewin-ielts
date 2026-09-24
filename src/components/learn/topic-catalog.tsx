@@ -11,6 +11,8 @@ import {
   learnCatalogHref,
   learnVocabGrammarHref,
   learnVocabGrammarTopicHref,
+  learnVocabGrammarTrackHref,
+  learnVocabTopicLearnHref,
 } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
@@ -28,6 +30,7 @@ export function TopicCatalog({
   progress,
 }: Props) {
   const { t, locale } = useTranslations("learn");
+  const isVocabulary = track === "vocabulary";
 
   return (
     <div className="space-y-4">
@@ -55,24 +58,32 @@ export function TopicCatalog({
         <h1 className="mt-2 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
           {trackLabel}
         </h1>
-        <p className="mt-1 text-sm text-zinc-600">
-          {track === "vocabulary"
-            ? t(
-                "vocabCatalogDesc",
-                "Chọn chủ đề để xem danh sách từ và luyện bài tập.",
-              )
-            : t(
-                "topicCatalogDesc",
-                "Chọn chủ đề để xem video, lý thuyết và làm 10 câu bài tập.",
-              )}
-        </p>
+        {!isVocabulary ? (
+          <p className="mt-1 text-sm text-zinc-600">
+            {t(
+              "topicCatalogDesc",
+              "Chọn chủ đề để xem video, lý thuyết và làm 10 câu bài tập.",
+            )}
+          </p>
+        ) : null}
       </header>
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className={
+          isVocabulary
+            ? "grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+            : "grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
+        }
+      >
         {topics.map((topic) => {
-          const unlocked = isTopicUnlocked(topic, topics, progress);
+          // Vocabulary: always open (no sequential unlock).
+          const unlocked =
+            isVocabulary || isTopicUnlocked(topic, topics, progress);
           const done = Boolean(progress.lessons[topic.id]?.exercisePassed);
-          const title = pickLocalized(topic.title, locale);
+          // Vocabulary titles stay English (same in vi/en).
+          const title = isVocabulary
+            ? topic.title.en
+            : pickLocalized(topic.title, locale);
           const summary = pickLocalized(topic.summary, locale);
 
           const cardInner = (
@@ -92,7 +103,7 @@ export function TopicCatalog({
                 <p className="line-clamp-2 text-sm leading-snug text-zinc-600">{summary}</p>
                 <div className="mt-auto flex items-center justify-between gap-2">
                   <span className="text-xs font-medium text-zinc-500">
-                    {track === "vocabulary" && (topic.wordCount ?? 0) > 0
+                    {isVocabulary && (topic.wordCount ?? 0) > 0
                       ? t(
                           "wordCountLabel",
                           { n: topic.wordCount ?? 0 },
@@ -142,7 +153,11 @@ export function TopicCatalog({
           return (
             <Link
               key={topic.id}
-              href={learnVocabGrammarTopicHref(track, topic.slug)}
+              href={
+                isVocabulary
+                  ? learnVocabTopicLearnHref(topic.slug)
+                  : learnVocabGrammarTopicHref(track, topic.slug)
+              }
               className="card-outline-hover group flex flex-col overflow-hidden border-zinc-300"
             >
               {cardInner}

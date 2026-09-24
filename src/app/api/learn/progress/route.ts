@@ -3,6 +3,7 @@ import { ensureLearnOwnerKey } from "@/lib/learn/owner";
 import {
   LearnStoreError,
   getProgress,
+  markTopicComplete,
   submitExercises,
   updateVideoProgress,
 } from "@/lib/learn/store";
@@ -26,6 +27,10 @@ type Body =
       action: "exercises";
       lessonId: string;
       answers: Record<string, string>;
+    }
+  | {
+      action: "complete";
+      lessonId: string;
     };
 
 export async function POST(request: Request) {
@@ -60,6 +65,17 @@ export async function POST(request: Request) {
         ownerKey,
         lessonId: body.lessonId,
         answers: body.answers,
+      });
+      return NextResponse.json({ ok: true, ...result });
+    }
+
+    if (body.action === "complete") {
+      if (!body.lessonId) {
+        return NextResponse.json({ error: "Thiếu lessonId" }, { status: 400 });
+      }
+      const result = await markTopicComplete({
+        ownerKey,
+        lessonId: body.lessonId,
       });
       return NextResponse.json({ ok: true, ...result });
     }

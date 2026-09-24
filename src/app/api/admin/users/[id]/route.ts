@@ -24,11 +24,15 @@ export async function PATCH(request: Request, ctx: Ctx) {
       username?: string;
       role?: string;
       password?: string;
+      fullName?: string | null;
+      classCode?: string | null;
     };
     const user = await updateAdminUser(id, {
       username: body.username,
       role: body.role,
       password: body.password,
+      fullName: body.fullName,
+      classCode: body.classCode,
     });
     return NextResponse.json({ user });
   } catch (e) {

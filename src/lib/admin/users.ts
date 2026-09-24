@@ -24,6 +24,8 @@ export type AdminUserPublic = {
   id: string;
   email: string | null;
   username: string;
+  fullName: string | null;
+  classCode: string | null;
   role: AdminUserRole;
   avatarUrl: string | null;
   createdAt: string;
@@ -43,6 +45,8 @@ function toPublic(user: {
   id: string;
   email: string | null;
   username: string;
+  fullName?: string | null;
+  classCode?: string | null;
   role: AdminUserRole;
   avatarUrl?: string | null;
   createdAt: Date | string;
@@ -51,6 +55,8 @@ function toPublic(user: {
     id: user.id,
     email: user.email,
     username: user.username,
+    fullName: user.fullName ?? null,
+    classCode: user.classCode ?? null,
     role: user.role,
     avatarUrl: user.avatarUrl ?? null,
     createdAt:
@@ -71,7 +77,16 @@ function normalizeOptionalEmail(email: string | null | undefined): string | null
 }
 
 function normalizeUsername(username: string): string {
-  return username.trim().slice(0, 48);
+  return username.trim().slice(0, 64);
+}
+
+function normalizeOptionalText(
+  value: string | null | undefined,
+  max = 120,
+): string | null {
+  const trimmed = (value ?? "").trim();
+  if (!trimmed) return null;
+  return trimmed.slice(0, max);
 }
 
 function assertEmail(email: string) {
@@ -90,10 +105,10 @@ function assertUsername(username: string) {
 }
 
 function assertPassword(password: string) {
-  if (password.length < 6) {
+  if (password.length < 3) {
     throw new AdminUsersError(
       "WEAK_PASSWORD",
-      "Mật khẩu cần ít nhất 6 ký tự",
+      "Mật khẩu cần ít nhất 3 ký tự",
     );
   }
 }
@@ -104,21 +119,25 @@ function assertRole(role: string): asserts role is AdminUserRole {
   }
 }
 
+const userPublicSelect = {
+  id: true,
+  email: true,
+  username: true,
+  fullName: true,
+  classCode: true,
+  role: true,
+  avatarUrl: true,
+  createdAt: true,
+} as const;
+
 export async function listAdminUsers(): Promise<AdminUserPublic[]> {
   return unstable_cache(
     async () => {
       if (await canUsePrisma()) {
         const users = await prisma.user.findMany({
           orderBy: { createdAt: "desc" },
-          take: 500,
-          select: {
-            id: true,
-            email: true,
-            username: true,
-            role: true,
-            avatarUrl: true,
-            createdAt: true,
-          },
+          take: 2000,
+          select: userPublicSelect,
         });
         return users.map(toPublic);
       }
@@ -127,9 +146,9 @@ export async function listAdminUsers(): Promise<AdminUserPublic[]> {
       return local
         .map(localToPublic)
         .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-        .slice(0, 500);
+        .slice(0, 2000);
     },
-    ["admin-users-list"],
+    ["admin-users-list-v2"],
     { revalidate: 15 },
   )();
 }
@@ -139,10 +158,14 @@ export async function createAdminUser(input: {
   username: string;
   password: string;
   role: string;
+  fullName?: string | null;
+  classCode?: string | null;
 }): Promise<AdminUserPublic> {
   const email = normalizeOptionalEmail(input.email);
   const username = normalizeUsername(input.username);
   const password = input.password;
+  const fullName = normalizeOptionalText(input.fullName, 120);
+  const classCode = normalizeOptionalText(input.classCode, 200);
   if (email) assertEmail(email);
   assertUsername(username);
   assertPassword(password);
@@ -165,15 +188,8 @@ export async function createAdminUser(input: {
       throw new AdminUsersError("USERNAME_TAKEN", "Username đã được dùng");
     }
     const user = await prisma.user.create({
-      data: { email, username, passwordHash, role },
-      select: {
-        id: true,
-        email: true,
-        username: true,
-        role: true,
-        avatarUrl: true,
-        createdAt: true,
-      },
+      data: { email, username, passwordHash, role, fullName, classCode },
+      select: userPublicSelect,
     });
     return toPublic(user);
   }
@@ -189,6 +205,8 @@ export async function createAdminUser(input: {
     username,
     passwordHash,
     role,
+    fullName,
+    classCode,
   });
   return localToPublic(created);
 }
@@ -199,6 +217,8 @@ export async function updateAdminUser(
     username?: string;
     role?: string;
     password?: string;
+    fullName?: string | null;
+    classCode?: string | null;
   },
 ): Promise<AdminUserPublic> {
   if (!id) {
@@ -209,6 +229,8 @@ export async function updateAdminUser(
     username?: string;
     role?: AdminUserRole;
     passwordHash?: string;
+    fullName?: string | null;
+    classCode?: string | null;
   } = {};
 
   if (input.username != null) {
@@ -224,11 +246,19 @@ export async function updateAdminUser(
     assertPassword(input.password);
     patch.passwordHash = await hashPassword(input.password);
   }
+  if (input.fullName !== undefined) {
+    patch.fullName = normalizeOptionalText(input.fullName, 120);
+  }
+  if (input.classCode !== undefined) {
+    patch.classCode = normalizeOptionalText(input.classCode, 200);
+  }
 
   if (
     patch.username == null &&
     patch.role == null &&
-    patch.passwordHash == null
+    patch.passwordHash == null &&
+    patch.fullName === undefined &&
+    patch.classCode === undefined
   ) {
     throw new AdminUsersError("NO_CHANGES", "Không có thay đổi nào");
   }
@@ -254,15 +284,12 @@ export async function updateAdminUser(
         ...(patch.passwordHash != null
           ? { passwordHash: patch.passwordHash }
           : {}),
+        ...(patch.fullName !== undefined ? { fullName: patch.fullName } : {}),
+        ...(patch.classCode !== undefined
+          ? { classCode: patch.classCode }
+          : {}),
       },
-      select: {
-        id: true,
-        email: true,
-        username: true,
-        role: true,
-        avatarUrl: true,
-        createdAt: true,
-      },
+      select: userPublicSelect,
     });
     return toPublic(user);
   }

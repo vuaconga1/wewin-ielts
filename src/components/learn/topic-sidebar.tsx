@@ -12,7 +12,7 @@ import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
 import type { VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
 import { isTopicUnlocked } from "@/lib/learn/progress-utils";
-import { learnVocabGrammarTopicHref, learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
+import { learnVocabGrammarTopicHref, learnVocabGrammarTrackHref, learnVocabTopicLearnHref } from "@/lib/learn/hrefs";
 import { pickLocalized } from "@/lib/learn/vocab-grammar-types";
 import { useTranslations } from "@/i18n/provider";
 
@@ -36,6 +36,10 @@ export function TopicSidebar({
   nextTopic,
 }: Props) {
   const { t, locale } = useTranslations("learn");
+  const topicHref = (slug: string) =>
+    track === "vocabulary"
+      ? learnVocabTopicLearnHref(slug)
+      : learnVocabGrammarTopicHref(track, slug);
 
   return (
     <aside className="min-w-0 lg:sticky lg:top-0 lg:max-h-screen lg:self-start lg:overflow-y-auto">
@@ -70,7 +74,7 @@ export function TopicSidebar({
             {t("nextLessonLabel", "Bài học tiếp theo:")}
           </p>
           <Link
-            href={learnVocabGrammarTopicHref(track, nextTopic.slug)}
+            href={topicHref(nextTopic.slug)}
             className="mt-1 block break-words text-sm font-semibold text-wewin-navy hover:underline"
           >
             {nextTopic.title}
@@ -128,7 +132,7 @@ export function TopicSidebar({
           return (
             <li key={topic.id}>
               <Link
-                href={learnVocabGrammarTopicHref(track, topic.slug)}
+                href={topicHref(topic.slug)}
                 className={`flex items-start gap-2.5 rounded-xl px-2.5 py-2.5 transition ${
                   active
                     ? "bg-wewin-accent-blue-bg text-wewin-navy"

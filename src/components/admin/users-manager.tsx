@@ -15,6 +15,8 @@ type FormMode = "create" | "edit" | null;
 type FormState = {
   email: string;
   username: string;
+  fullName: string;
+  classCode: string;
   password: string;
   role: AdminUserRole;
 };
@@ -22,9 +24,13 @@ type FormState = {
 const emptyForm: FormState = {
   email: "",
   username: "",
+  fullName: "",
+  classCode: "",
   password: "",
   role: "STUDENT",
 };
+
+const PAGE_SIZE = 20;
 
 export function UsersManager({ currentUserId }: Props) {
   const { t } = useTranslations("usersAdmin");
@@ -40,8 +46,15 @@ export function UsersManager({ currentUserId }: Props) {
   const [mode, setMode] = useState<FormMode>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState<FormState>(emptyForm);
+  const [page, setPage] = useState(1);
 
   const dateLocale = locale === "en" ? "en-US" : "vi-VN";
+  const totalPages = Math.max(1, Math.ceil(users.length / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages);
+  const pageUsers = users.slice(
+    (safePage - 1) * PAGE_SIZE,
+    safePage * PAGE_SIZE,
+  );
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -58,6 +71,7 @@ export function UsersManager({ currentUserId }: Props) {
         return;
       }
       setUsers(data.users ?? []);
+      setPage(1);
     } catch (e) {
       const mapped = friendlyError(e, t("networkRetry"), te);
       setError(mapped.message);
@@ -84,6 +98,8 @@ export function UsersManager({ currentUserId }: Props) {
     setForm({
       email: user.email ?? "",
       username: user.username,
+      fullName: user.fullName ?? "",
+      classCode: user.classCode ?? "",
       password: "",
       role: user.role,
     });
@@ -110,6 +126,8 @@ export function UsersManager({ currentUserId }: Props) {
           body: JSON.stringify({
             email: form.email.trim() || null,
             username: form.username,
+            fullName: form.fullName.trim() || null,
+            classCode: form.classCode.trim() || null,
             password: form.password,
             role: form.role,
           }),
@@ -127,10 +145,14 @@ export function UsersManager({ currentUserId }: Props) {
         const body: {
           username: string;
           role: AdminUserRole;
+          fullName: string | null;
+          classCode: string | null;
           password?: string;
         } = {
           username: form.username,
           role: form.role,
+          fullName: form.fullName.trim() || null,
+          classCode: form.classCode.trim() || null,
         };
         if (form.password.trim()) {
           body.password = form.password;
@@ -163,7 +185,15 @@ export function UsersManager({ currentUserId }: Props) {
       setError(t("cannotDeleteSelf"));
       return;
     }
-    if (!confirm(t("confirmDelete", { name: user.username }, `Xóa tài khoản ${user.username}? Thao tác không hoàn tác.`))) {
+    if (
+      !confirm(
+        t(
+          "confirmDelete",
+          { name: user.username },
+          `Xóa tài khoản ${user.username}? Thao tác không hoàn tác.`,
+        ),
+      )
+    ) {
       return;
     }
     setBusy(true);
@@ -233,10 +263,7 @@ export function UsersManager({ currentUserId }: Props) {
       ) : null}
 
       {mode ? (
-        <form
-          onSubmit={onSubmit}
-          className="wewin-card-3d p-4 sm:p-5"
-        >
+        <form onSubmit={onSubmit} className="wewin-card-3d p-4 sm:p-5">
           <div className="mb-4 flex items-start justify-between gap-3">
             <h2 className="text-lg font-bold text-wewin-navy">
               {mode === "create" ? t("createTitle") : t("editTitle")}
@@ -291,6 +318,39 @@ export function UsersManager({ currentUserId }: Props) {
 
             <label className="block min-w-0 text-sm">
               <span className="mb-1 block font-medium text-zinc-700">
+                {t("fullName", "Họ tên")}
+              </span>
+              <input
+                type="text"
+                disabled={busy}
+                value={form.fullName}
+                onChange={(e) =>
+                  setForm((prev) => ({ ...prev, fullName: e.target.value }))
+                }
+                className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm"
+                autoComplete="off"
+              />
+            </label>
+
+            <label className="block min-w-0 text-sm">
+              <span className="mb-1 block font-medium text-zinc-700">
+                {t("classCode", "Lớp")}
+              </span>
+              <input
+                type="text"
+                disabled={busy}
+                value={form.classCode}
+                onChange={(e) =>
+                  setForm((prev) => ({ ...prev, classCode: e.target.value }))
+                }
+                className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm"
+                autoComplete="off"
+                placeholder="WW00016"
+              />
+            </label>
+
+            <label className="block min-w-0 text-sm">
+              <span className="mb-1 block font-medium text-zinc-700">
                 {mode === "create" ? t("password") : t("passwordOptional")}
               </span>
               <input
@@ -303,7 +363,7 @@ export function UsersManager({ currentUserId }: Props) {
                 }
                 className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm"
                 autoComplete="new-password"
-                minLength={mode === "create" ? 6 : undefined}
+                minLength={mode === "create" ? 3 : undefined}
               />
             </label>
 
@@ -350,10 +410,14 @@ export function UsersManager({ currentUserId }: Props) {
       ) : null}
 
       <div className="wewin-card-3d overflow-x-auto">
-        <table className="min-w-[640px] w-full text-left text-sm">
+        <table className="min-w-[800px] w-full text-left text-sm">
           <thead className="border-b border-wewin-border bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500">
             <tr>
               <th className="px-3 py-3 sm:px-4">{t("colUser")}</th>
+              <th className="px-3 py-3 sm:px-4">
+                {t("colFullName", "Họ tên")}
+              </th>
+              <th className="px-3 py-3 sm:px-4">{t("colClass", "Lớp")}</th>
               <th className="px-3 py-3 sm:px-4">{t("colRole")}</th>
               <th className="px-3 py-3 sm:px-4">{t("colCreated")}</th>
               <th className="px-3 py-3 text-right sm:px-4">{t("colActions")}</th>
@@ -363,7 +427,7 @@ export function UsersManager({ currentUserId }: Props) {
             {loading ? (
               <tr>
                 <td
-                  colSpan={4}
+                  colSpan={6}
                   className="px-4 py-10 text-center text-zinc-500"
                 >
                   <span className="inline-flex items-center gap-2">
@@ -375,14 +439,14 @@ export function UsersManager({ currentUserId }: Props) {
             ) : users.length === 0 ? (
               <tr>
                 <td
-                  colSpan={4}
+                  colSpan={6}
                   className="px-4 py-10 text-center text-zinc-500"
                 >
                   {t("empty")}
                 </td>
               </tr>
             ) : (
-              users.map((user) => {
+              pageUsers.map((user) => {
                 const isSelf = Boolean(
                   currentUserId && user.id === currentUserId,
                 );
@@ -402,7 +466,9 @@ export function UsersManager({ currentUserId }: Props) {
                               className="h-full w-full object-cover"
                             />
                           ) : (
-                            user.username.slice(0, 2).toUpperCase()
+                            (user.fullName || user.username)
+                              .slice(0, 2)
+                              .toUpperCase()
                           )}
                         </span>
                         <div className="min-w-0">
@@ -415,11 +481,20 @@ export function UsersManager({ currentUserId }: Props) {
                             ) : null}
                           </p>
                           <p className="truncate break-all text-xs text-zinc-500">
-                            {user.email ??
-                              t("noEmail", "Không có email")}
+                            {user.email ?? t("noEmail", "Không có email")}
                           </p>
                         </div>
                       </div>
+                    </td>
+                    <td className="px-3 py-3 sm:px-4">
+                      <p className="max-w-[14rem] truncate text-zinc-800">
+                        {user.fullName || t("noFullName", "—")}
+                      </p>
+                    </td>
+                    <td className="px-3 py-3 sm:px-4">
+                      <p className="max-w-[10rem] truncate break-all text-zinc-700">
+                        {user.classCode || t("noClass", "—")}
+                      </p>
                     </td>
                     <td className="px-3 py-3 sm:px-4">
                       <span
@@ -465,6 +540,47 @@ export function UsersManager({ currentUserId }: Props) {
           </tbody>
         </table>
       </div>
+
+      {users.length > 0 ? (
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-zinc-600">
+            {t(
+              "pageInfo",
+              {
+                from: String((safePage - 1) * PAGE_SIZE + 1),
+                to: String(Math.min(safePage * PAGE_SIZE, users.length)),
+                total: String(users.length),
+              },
+              `Hiển thị ${(safePage - 1) * PAGE_SIZE + 1}–${Math.min(safePage * PAGE_SIZE, users.length)} / ${users.length}`,
+            )}
+          </p>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              disabled={safePage <= 1}
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              className="rounded-lg border border-wewin-border px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              {t("prevPage", "Trước")}
+            </button>
+            <span className="text-sm font-medium text-zinc-700">
+              {t(
+                "pageOf",
+                { page: String(safePage), total: String(totalPages) },
+                `Trang ${safePage} / ${totalPages}`,
+              )}
+            </span>
+            <button
+              type="button"
+              disabled={safePage >= totalPages}
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+              className="rounded-lg border border-wewin-border px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              {t("nextPage", "Sau")}
+            </button>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

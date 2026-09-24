@@ -6,7 +6,7 @@ import {
   getSessionUser,
   canAccessAdmin,
 } from "@/lib/auth";
-import { getUserAvatarUrl } from "@/lib/user-profile";
+import { getUserDisplayProfile } from "@/lib/user-profile";
 
 export const runtime = "nodejs";
 
@@ -23,15 +23,16 @@ export async function GET() {
     );
   }
 
-  const avatarUrl = await getUserAvatarUrl(user.id);
+  const profile = await getUserDisplayProfile(user.id);
   return NextResponse.json(
     {
       user: {
         id: user.id,
         email: user.email,
         username: user.username,
+        fullName: profile.fullName ?? user.fullName ?? null,
         role: user.role,
-        avatarUrl,
+        avatarUrl: profile.avatarUrl,
       },
       canImport: canAccessAdmin(user),
     },
@@ -67,9 +68,13 @@ export async function POST(request: Request) {
     }
 
     const user = await loginWithEmailPassword(identifier, password);
-    const avatarUrl = await getUserAvatarUrl(user.id);
+    const profile = await getUserDisplayProfile(user.id);
     return NextResponse.json({
-      user: { ...user, avatarUrl },
+      user: {
+        ...user,
+        fullName: profile.fullName ?? user.fullName,
+        avatarUrl: profile.avatarUrl,
+      },
       canImport: canAccessAdmin(user),
     });
   } catch (e) {
