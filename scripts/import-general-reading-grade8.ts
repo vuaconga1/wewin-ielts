@@ -186,7 +186,7 @@ async function main() {
 
   passage2.content = moveBlankNextToNumber(passage2.content ?? "", [16, 17, 18, 19, 20])
     .replace(
-      /Match each description or statement \(\s*Questions 1[–-]5\)/s,
+      /Match each description or statement \(\s*Questions 1[–-]5\)/,
       "Match each description or statement (Questions 11–15)",
     );
   passage2.questions = [
