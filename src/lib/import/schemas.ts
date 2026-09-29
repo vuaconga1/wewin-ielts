@@ -7,7 +7,7 @@ export const SkillSchema = z.enum([
   "SPEAKING",
 ]);
 
-export const ExamTypeSchema = z.enum(["ACADEMIC", "GENERAL"]);
+export const ExamTypeSchema = z.enum(["ACADEMIC", "GENERAL", "PLACEMENT"]);
 
 export const QuestionTypeSchema = z.enum([
   "GAP_FILL",

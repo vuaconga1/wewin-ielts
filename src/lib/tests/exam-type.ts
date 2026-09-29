@@ -1,28 +1,31 @@
-export const EXAM_TYPES = ["ACADEMIC", "GENERAL"] as const;
+export const EXAM_TYPES = ["ACADEMIC", "GENERAL", "PLACEMENT"] as const;
 
 export type ExamType = (typeof EXAM_TYPES)[number];
 
-export type ExamTypeModule = "academic" | "general";
+export type ExamTypeModule = "academic" | "general" | "placement";
 
 const MODULE_BY_TYPE: Record<ExamType, ExamTypeModule> = {
   ACADEMIC: "academic",
   GENERAL: "general",
+  PLACEMENT: "placement",
 };
 
 const TYPE_BY_MODULE: Record<ExamTypeModule, ExamType> = {
   academic: "ACADEMIC",
   general: "GENERAL",
+  placement: "PLACEMENT",
 };
 
 export function normalizeExamType(value?: string | null): ExamType {
   const upper = value?.trim().toUpperCase();
   if (upper === "GENERAL") return "GENERAL";
+  if (upper === "PLACEMENT") return "PLACEMENT";
   return "ACADEMIC";
 }
 
 export function examTypeFromModule(module: string): ExamType | null {
   const key = module.trim().toLowerCase();
-  if (key === "academic" || key === "general") {
+  if (key === "academic" || key === "general" || key === "placement") {
     return TYPE_BY_MODULE[key];
   }
   return null;
@@ -34,5 +37,9 @@ export function examTypeModulePath(examType?: string | null): string {
 }
 
 export function isExamTypeModulePath(pathname: string): boolean {
-  return pathname === "/tests/academic" || pathname === "/tests/general";
+  return (
+    pathname === "/tests/academic" ||
+    pathname === "/tests/general" ||
+    pathname === "/tests/placement"
+  );
 }

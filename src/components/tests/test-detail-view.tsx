@@ -60,9 +60,11 @@ export function TestDetailView({
   const examLabel =
     examType === "GENERAL"
       ? t("examTypes.GENERAL", "General")
-      : examType === "ACADEMIC"
-        ? t("examTypes.ACADEMIC", "Academic")
-        : null;
+      : examType === "PLACEMENT"
+        ? t("examTypes.PLACEMENT", "Placement")
+        : examType === "ACADEMIC"
+          ? t("examTypes.ACADEMIC", "Academic")
+          : null;
 
   const speakingQueue =
     skill === "SPEAKING"

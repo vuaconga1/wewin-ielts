@@ -7,7 +7,7 @@ import {
 } from "@/lib/tests/exam-type";
 import { TestsCatalog, type CatalogTest } from "@/components/tests/tests-catalog";
 import { SiteShell } from "@/components/layout/site-shell";
-import { EmptyState } from "@/components/ui/empty-state";
+import { TestsModuleEmpty } from "@/components/tests/tests-module-empty";
 import { getTranslationsStatic } from "@/i18n/server";
 import { buildSpeakingExamQueue } from "@/lib/practice/speaking-exam";
 
@@ -47,19 +47,44 @@ export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
   const catalog = toCatalog(tests);
   const { t } = getTranslationsStatic("tests");
 
-  const isAcademic = examType === "ACADEMIC";
-  const moduleTitle = isAcademic
-    ? t("moduleAcademic", "IELTS Academic")
-    : t("moduleGeneral", "IELTS General Training");
-  const moduleSubtitle = isAcademic
-    ? t(
+  const moduleCopy = {
+    ACADEMIC: {
+      title: t("moduleAcademic", "IELTS Academic"),
+      subtitle: t(
         "moduleAcademicSubtitle",
         "Chọn đề Listening, Reading, Writing hoặc Speaking để luyện tập. Chưa nắm kiến thức?",
-      )
-    : t(
+      ),
+      emptyTitle: t("emptyAcademicTitle", "Chưa có đề Academic"),
+      emptyDesc: t(
+        "emptyAcademicDesc",
+        "Chưa có đề Academic. Hãy chọn module khác.",
+      ),
+    },
+    GENERAL: {
+      title: t("moduleGeneral", "IELTS General Training"),
+      subtitle: t(
         "moduleGeneralSubtitle",
         "Chọn đề Listening, Reading, Writing hoặc Speaking (General Training). Chưa nắm kiến thức?",
-      );
+      ),
+      emptyTitle: t("emptyGeneralTitle", "Chưa có đề General Training"),
+      emptyDesc: t(
+        "emptyGeneralDesc",
+        "Chưa có đề General Training. Hãy chọn module khác.",
+      ),
+    },
+    PLACEMENT: {
+      title: t("modulePlacement", "IELTS Placement Test"),
+      subtitle: t(
+        "modulePlacementSubtitle",
+        "Chọn đề Listening, Reading hoặc Writing của bài xếp lớp. Chưa nắm kiến thức?",
+      ),
+      emptyTitle: t("emptyPlacementTitle", "Chưa có đề Placement"),
+      emptyDesc: t(
+        "emptyPlacementDesc",
+        "Chưa có đề Placement. Hãy chọn module khác.",
+      ),
+    },
+  }[examType];
 
   return (
     <SiteShell active="tests">
@@ -68,13 +93,13 @@ export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
           href="/tests"
           className="mb-3 inline-block text-sm font-medium text-wewin-navy hover:underline"
         >
-          {t("backModules", "← Chọn Academic / General")}
+          {t("backModules", "← Chọn module")}
         </Link>
         <h1 className="break-words text-2xl font-bold text-zinc-900">
-          {moduleTitle}
+          {moduleCopy.title}
         </h1>
         <p className="mt-1 text-sm text-zinc-600">
-          {moduleSubtitle}{" "}
+          {moduleCopy.subtitle}{" "}
           <Link href="/learn" className="font-medium text-wewin-navy hover:underline">
             {t("learnLink", "Học 4 kỹ năng")}
           </Link>
@@ -84,28 +109,11 @@ export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
 
       {tests.length === 0 ? (
         <div data-tour="tests-catalog">
-          <EmptyState
-            icon="book"
-            title={
-              isAcademic
-                ? t("emptyAcademicTitle", "Chưa có đề Academic")
-                : t("emptyGeneralTitle", "Chưa có đề General Training")
-            }
-            description={
-              isAcademic
-                ? t(
-                    "emptyAcademicDesc",
-                    "Import đề IELTS Academic để chúng xuất hiện trong catalog này.",
-                  )
-                : t(
-                    "emptyGeneralDesc",
-                    "Import đề IELTS General Training để chúng xuất hiện tại đây.",
-                  )
-            }
-            actionHref="/admin/import"
-            actionLabel={t("emptyAction", "Import đề ngay")}
-            secondaryHref="/tests"
-            secondaryLabel={t("backModulesShort", "Chọn module khác")}
+          <TestsModuleEmpty
+            title={moduleCopy.emptyTitle}
+            description={moduleCopy.emptyDesc}
+            importLabel={t("emptyAction", "Import đề ngay")}
+            backLabel={t("backModulesShort", "Chọn module khác")}
           />
         </div>
       ) : (

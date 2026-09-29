@@ -25,6 +25,7 @@ enum Skill {
 enum ExamType {
   ACADEMIC
   GENERAL
+  PLACEMENT
 }
 
 enum TestStatus {

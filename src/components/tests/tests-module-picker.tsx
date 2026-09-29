@@ -1,15 +1,17 @@
 import Link from "next/link";
-import { BookOpen, Briefcase } from "lucide-react";
+import { BookOpen, Briefcase, ClipboardCheck } from "lucide-react";
 import { getTranslations } from "@/i18n/server";
 
 type Props = {
   academicCount: number;
   generalCount: number;
+  placementCount: number;
 };
 
 export async function TestsModulePicker({
   academicCount,
   generalCount,
+  placementCount,
 }: Props) {
   const { t } = await getTranslations("tests");
 
@@ -38,10 +40,22 @@ export async function TestsModulePicker({
       countLabel: t("moduleTestCount", { n: generalCount }, "{n} đề"),
       cta: t("moduleOpen", "Xem đề →"),
     },
+    {
+      href: "/tests/placement",
+      icon: ClipboardCheck,
+      title: t("modulePlacement", "IELTS Placement Test"),
+      desc: t(
+        "modulePlacementDesc",
+        "Đề xếp lớp cho Listening, Reading và Writing.",
+      ),
+      count: placementCount,
+      countLabel: t("moduleTestCount", { n: placementCount }, "{n} đề"),
+      cta: t("moduleOpen", "Xem đề →"),
+    },
   ] as const;
 
   return (
-    <div data-tour="tests-modules" className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+    <div data-tour="tests-modules" className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
       {modules.map((mod) => {
         const Icon = mod.icon;
         return (

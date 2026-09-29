@@ -222,6 +222,10 @@ export function TestsCatalog({
                     <span className="rounded border border-wewin-navy/20 bg-wewin-accent-blue-bg px-2 py-0.5 text-xs font-medium text-wewin-navy">
                       {t("examTypes.GENERAL", "General")}
                     </span>
+                  ) : row.examType === "PLACEMENT" ? (
+                    <span className="rounded border border-wewin-navy/20 bg-wewin-accent-blue-bg px-2 py-0.5 text-xs font-medium text-wewin-navy">
+                      {t("examTypes.PLACEMENT", "Placement")}
+                    </span>
                   ) : row.examType === "ACADEMIC" ? (
                     <span className="rounded border border-zinc-200 bg-zinc-50 px-2 py-0.5 text-xs font-medium text-zinc-700">
                       {t("examTypes.ACADEMIC", "Academic")}

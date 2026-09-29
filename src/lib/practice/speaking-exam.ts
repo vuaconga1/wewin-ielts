@@ -13,9 +13,9 @@ export type SpeakingTiming = {
 
 /** Official-style CBT timing (practice approximation). */
 export const SPEAKING_TIMING: Record<SpeakingPartKind, SpeakingTiming> = {
-  1: { prepSec: 10, answerSec: 45, allowNotes: false },
+  1: { prepSec: 2, answerSec: 45, allowNotes: false },
   2: { prepSec: 60, answerSec: 120, allowNotes: true },
-  3: { prepSec: 10, answerSec: 45, allowNotes: false },
+  3: { prepSec: 2, answerSec: 45, allowNotes: false },
 };
 
 export type SpeakingExamItem = {

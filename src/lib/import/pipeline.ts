@@ -40,7 +40,7 @@ export type ParseTestInput = {
   title?: string;
   slug?: string;
   sourceFolder?: string;
-  examType?: "ACADEMIC" | "GENERAL";
+  examType?: "ACADEMIC" | "GENERAL" | "PLACEMENT";
   timeLimitMinutes?: number;
   tags?: string[];
   audioFiles?: string[];
@@ -59,7 +59,7 @@ export type ParseTestUploadInput = {
   sourceFolder?: string;
   driveFolderId?: string;
   driveFileIds?: Record<string, string>;
-  examType?: "ACADEMIC" | "GENERAL";
+  examType?: "ACADEMIC" | "GENERAL" | "PLACEMENT";
   timeLimitMinutes?: number;
   tags?: string[];
   audioFiles?: string[];
@@ -242,7 +242,7 @@ type BuildInput = {
   sourceFolder?: string;
   driveFolderId?: string;
   driveFileIds?: Record<string, string>;
-  examType?: "ACADEMIC" | "GENERAL";
+  examType?: "ACADEMIC" | "GENERAL" | "PLACEMENT";
   timeLimitMinutes?: number;
   tags?: string[];
   audioFiles?: string[];

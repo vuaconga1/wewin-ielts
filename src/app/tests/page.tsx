@@ -19,8 +19,11 @@ export default async function TestsPage() {
 
   let academicCount = 0;
   let generalCount = 0;
+  let placementCount = 0;
   for (const row of tests) {
-    if (normalizeExamType(row.examType) === "GENERAL") generalCount += 1;
+    const type = normalizeExamType(row.examType);
+    if (type === "GENERAL") generalCount += 1;
+    else if (type === "PLACEMENT") placementCount += 1;
     else academicCount += 1;
   }
 
@@ -37,7 +40,7 @@ export default async function TestsPage() {
         <p className="mt-1 text-sm text-zinc-600">
           {t(
             "tests.chooserSubtitle",
-            "Chọn module IELTS Academic hoặc General Training, rồi lọc theo kỹ năng để luyện tập. Chưa nắm kiến thức?",
+            "Chọn module IELTS Academic, General Training hoặc Placement Test, rồi lọc theo kỹ năng để luyện tập. Chưa nắm kiến thức?",
           )}{" "}
           <Link href="/learn" className="font-medium text-wewin-navy hover:underline">
             {t("tests.learnLink")}
@@ -49,6 +52,7 @@ export default async function TestsPage() {
       <TestsModulePicker
         academicCount={academicCount}
         generalCount={generalCount}
+        placementCount={placementCount}
       />
     </SiteShell>
   );
