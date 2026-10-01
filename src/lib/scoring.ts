@@ -35,40 +35,200 @@ function expandAliases(n: string): Set<string> {
   return set;
 }
 
+function collapseSpaces(value: string): string {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+/** `n/g` is a NOT GIVEN abbreviation, not two answers. */
+function isNotGivenSlash(value: string): boolean {
+  return value.trim().toLowerCase().replace(/\s+/g, "") === "n/g";
+}
+
+function isPureNumberToken(value: string): boolean {
+  return /^\d+(?:[.,]\d+)?$/.test(value.trim());
+}
+
+/**
+ * Split on `/` that is not inside parentheses.
+ * `1/2` and `12/05/1990` stay one numeric token. `10/ten` still splits.
+ */
+function splitTopLevelSlashes(raw: string): string[] {
+  const trimmed = collapseSpaces(raw);
+  if (!trimmed || isNotGivenSlash(trimmed)) return trimmed ? [trimmed] : [];
+
+  const parts: string[] = [];
+  let depth = 0;
+  let current = "";
+  for (const ch of trimmed) {
+    if (ch === "(" || ch === "（") depth += 1;
+    else if ((ch === ")" || ch === "）") && depth > 0) depth -= 1;
+    else if ((ch === "/" || ch === "／") && depth === 0) {
+      parts.push(current);
+      current = "";
+      continue;
+    }
+    current += ch;
+  }
+  parts.push(current);
+
+  const cleaned = parts.map(collapseSpaces).filter(Boolean);
+  if (cleaned.length < 2) return [trimmed];
+  if (cleaned.every(isPureNumberToken)) return [trimmed];
+  return cleaned;
+}
+
+type ParenGroup = {
+  start: number;
+  end: number;
+  inner: string;
+  /** No space before `(`, as in `word(other)`. */
+  glued: boolean;
+};
+
+function parseParenGroups(input: string): ParenGroup[] {
+  const groups: ParenGroup[] = [];
+  for (let i = 0; i < input.length; i += 1) {
+    const ch = input[i]!;
+    if (ch !== "(" && ch !== "（") continue;
+    let depth = 1;
+    let j = i + 1;
+    for (; j < input.length && depth > 0; j += 1) {
+      const c = input[j]!;
+      if (c === "(" || c === "（") depth += 1;
+      else if (c === ")" || c === "）") depth -= 1;
+    }
+    if (depth !== 0) break;
+    groups.push({
+      start: i,
+      end: j,
+      inner: input.slice(i + 1, j - 1),
+      glued: i > 0 && !/\s/.test(input[i - 1]!),
+    });
+    i = j - 1;
+  }
+  return groups;
+}
+
+/**
+ * Parentheses:
+ * - `word(other)` (no space): `word` OR `other`. Concatenation is also
+ *   accepted, but not required.
+ * - `(the) royal antelope` / `20.25 (am)`: the bracketed word is optional.
+ *   The phrase with and without it is correct; the optional word alone is not.
+ * Empty groups are ignored. A slash inside a group is alternatives for that slot.
+ */
+function parenthesisForms(input: string): string[] {
+  const groups = parseParenGroups(input);
+  if (groups.length === 0) return [];
+
+  const choicesPerGroup = groups.map((group) => {
+    const alternatives = splitTopLevelSlashes(group.inner)
+      .map(collapseSpaces)
+      .filter(Boolean);
+    return ["", ...alternatives];
+  });
+
+  const forms: string[] = [];
+  const walk = (index: number, built: string, cursor: number) => {
+    if (forms.length > 64) return;
+    if (index === groups.length) {
+      const collapsed = collapseSpaces(built + input.slice(cursor));
+      if (collapsed) forms.push(collapsed);
+      return;
+    }
+    const group = groups[index]!;
+    const prefix = built + input.slice(cursor, group.start);
+    for (const choice of choicesPerGroup[index]!) {
+      walk(index + 1, prefix + choice, group.end);
+    }
+  };
+  walk(0, "", 0);
+
+  for (const group of groups) {
+    if (!group.glued) continue;
+    for (const alt of splitTopLevelSlashes(group.inner)) {
+      const collapsed = collapseSpaces(alt);
+      if (collapsed) forms.push(collapsed);
+    }
+  }
+  return forms;
+}
+
+/**
+ * Expand one official key into every string that should score as correct.
+ * The original key is always included, so typing it exactly still matches.
+ */
+export function expandAnswerAlternatives(raw: string): string[] {
+  const out = new Set<string>();
+  const visit = (value: string) => {
+    const trimmed = collapseSpaces(value);
+    if (!trimmed || out.has(trimmed)) return;
+    out.add(trimmed);
+
+    const parts = splitTopLevelSlashes(trimmed);
+    if (parts.length > 1) {
+      for (const form of [parts.join("/"), parts.join(" / ")]) {
+        const collapsed = collapseSpaces(form);
+        if (collapsed) out.add(collapsed);
+      }
+      for (const part of parts) visit(part);
+      return;
+    }
+
+    if (/[()（）]/.test(trimmed)) {
+      for (const form of parenthesisForms(trimmed)) visit(form);
+    }
+  };
+
+  visit(raw);
+  return [...out];
+}
+
+function addNormalizedCandidates(value: unknown, candidates: Set<string>): void {
+  if (value == null) return;
+  if (Array.isArray(value)) {
+    for (const item of value) addNormalizedCandidates(item, candidates);
+    return;
+  }
+  if (typeof value === "object") {
+    // matching map { "1": "A", "2": "B" } — compare JSON loosely
+    candidates.add(normalizeForCompare(JSON.stringify(value)));
+    return;
+  }
+
+  const text = typeof value === "string" ? value : String(value);
+  const alternatives =
+    typeof value === "string" ? expandAnswerAlternatives(text) : [text];
+  for (const alt of alternatives) {
+    const normalized = normalizeForCompare(alt);
+    if (!normalized) continue;
+    for (const alias of expandAliases(normalized)) candidates.add(alias);
+  }
+}
+
+function userMatchesCandidates(
+  userAnswer: unknown,
+  candidates: Set<string>,
+): boolean {
+  const user = normalizeForCompare(userAnswer);
+  if (!user) return false;
+  for (const alias of expandAliases(user)) {
+    if (candidates.has(alias)) return true;
+  }
+  return false;
+}
+
 export function isAnswerCorrect(
   userAnswer: unknown,
   correctAnswer: unknown,
   acceptableAnswers?: string[],
 ): boolean {
-  const user = normalizeForCompare(userAnswer);
-  if (!user) return false;
-
   const candidates = new Set<string>();
-  const add = (v: unknown) => {
-    if (v == null) return;
-    if (Array.isArray(v)) {
-      for (const x of v) add(x);
-      return;
-    }
-    if (typeof v === "object") {
-      // matching map { "1": "A", "2": "B" } — compare JSON loosely
-      candidates.add(normalizeForCompare(JSON.stringify(v)));
-      return;
-    }
-    const n = normalizeForCompare(v);
-    for (const a of expandAliases(n)) candidates.add(a);
-  };
-
-  add(correctAnswer);
+  addNormalizedCandidates(correctAnswer, candidates);
   if (acceptableAnswers) {
-    for (const a of acceptableAnswers) add(a);
+    for (const answer of acceptableAnswers) addNormalizedCandidates(answer, candidates);
   }
-
-  const userAliases = expandAliases(user);
-  for (const u of userAliases) {
-    if (candidates.has(u)) return true;
-  }
-  return false;
+  return userMatchesCandidates(userAnswer, candidates);
 }
 
 export type AnswerStatus = "correct" | "wrong" | "skipped" | "no_key";
@@ -131,18 +291,15 @@ export function matchMultiSelectAnswers(
   userAnswers: unknown[],
   correctAnswers: unknown[],
 ): boolean[] {
-  const remaining = correctAnswers.map((c) => normalizeForCompare(c));
+  const remaining = correctAnswers.map((correct) => {
+    const candidates = new Set<string>();
+    addNormalizedCandidates(correct, candidates);
+    return candidates;
+  });
   return userAnswers.map((raw) => {
-    const user = normalizeForCompare(raw);
-    if (!user) return false;
-    const idx = remaining.findIndex((c) => {
-      if (!c) return false;
-      const aliases = expandAliases(c);
-      for (const u of expandAliases(user)) {
-        if (aliases.has(u)) return true;
-      }
-      return false;
-    });
+    const idx = remaining.findIndex((candidates) =>
+      userMatchesCandidates(raw, candidates),
+    );
     if (idx < 0) return false;
     remaining.splice(idx, 1);
     return true;

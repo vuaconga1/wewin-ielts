@@ -1,3 +1,8 @@
+import {
+  isStandaloneSentenceGapStem,
+  looksLikeRedundantGapStem,
+} from "@/lib/questions/gap-stems";
+
 /**
  * Friendly labels for QuestionType (and similar SCREAMING_SNAKE enums).
  * Prefer i18n `questionTypes.*`; these maps are safe fallbacks so UI never
@@ -134,4 +139,32 @@ export function formatQuestionStem(
  * New imports should emit empty stems (`INLINE_GAP_STEM`) when blanks are
  * inline in part.content — see `src/lib/questions/gap-stems.ts`.
  */
-export { looksLikeRedundantGapStem as isRedundantGapStem } from "@/lib/questions/gap-stems";
+export const isRedundantGapStem = looksLikeRedundantGapStem;
+
+/**
+ * Render contract: hide a gap stem only when it is a notes fragment already
+ * shown in the shared notes pane. A sentence with one blank ("… _______ …")
+ * stays on the answer row. Do not hide it merely because the stem contains
+ * underscores. See scripts/test-sentence-gap-layout.ts.
+ */
+export function shouldHideStemBesideNotes(input: {
+  compactStem: boolean;
+  questionType: string;
+  stem: string;
+  optionCount: number;
+}): boolean {
+  if (!input.compactStem) return false;
+  if (!isBlankQuestionType(input.questionType)) return false;
+  if (input.optionCount >= 2) return false;
+  const formatted = formatQuestionStem(input.stem);
+  if (
+    isStandaloneSentenceGapStem(input.stem) ||
+    isStandaloneSentenceGapStem(formatted)
+  ) {
+    return false;
+  }
+  return (
+    looksLikeRedundantGapStem(input.stem) ||
+    looksLikeRedundantGapStem(formatted)
+  );
+}

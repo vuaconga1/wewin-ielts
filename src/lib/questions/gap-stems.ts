@@ -7,6 +7,12 @@
  * 3. CDI / practice answer panel = question number + input
  *    (+ options for MCQ). Never reprint notes fragments beside the notes pane.
  *
+ * Sentence completion is different: "6 Clarence … _______ …" is one question.
+ * Keep that sentence on the question (do not clear it because some other
+ * blank in the part is a real notes gap). The renderer shows it once, with
+ * the input in the blank — never as static notes plus a stem-less box.
+ * See scripts/test-sentence-gap-layout.ts.
+ *
  * `isRedundantGapStem` / UI hide logic is a safety net for older imports;
  * extractors + import sanitize should emit clean data first.
  */
@@ -85,6 +91,60 @@ export function looksLikeRedundantGapStem(stem: string): boolean {
   return false;
 }
 
+/**
+ * One sentence-completion item: a full sentence with an unnumbered gap
+ * ("Clarence … _______ … in a grocery store", including "A … _______ …").
+ * Not a shared-notes gap ("Habitat 1 ……", "11 …… use today") and not a
+ * mid-word sliding window ("volves selecting …").
+ */
+export function isStandaloneSentenceGapStem(stem: string): boolean {
+  const s = stem.replace(/\s+/g, " ").trim();
+  if (!s || blankMarkerCount(s) !== 1) return false;
+  if (/^[a-z]/.test(s)) return false;
+  if (
+    /(?:^|[\s(])\d{1,2}\s*(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+|_____)/u.test(s)
+  ) {
+    return false;
+  }
+  if (/^complete the (notes|form|table|summary|sentences)\b/i.test(s)) {
+    return false;
+  }
+  const words = s
+    .replace(BLANK_MARK_RE, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  return words.length >= 3;
+}
+
+/**
+ * "6 Clarence … _______ …" — the number is the question label, the gap is
+ * later in the sentence. Returns null for notes rows and option lines.
+ */
+export function perQuestionSentenceStem(
+  line: string,
+): { number: number; sentence: string } | null {
+  const t = line.trim();
+  const m = t.match(/^(\d{1,2})[.)]?\s+(.+)$/);
+  if (!m) return null;
+  const number = Number(m[1]);
+  if (!Number.isInteger(number) || number < 1 || number > 40) return null;
+  const sentence = m[2]!.trim();
+  if (!isStandaloneSentenceGapStem(sentence)) return null;
+  return { number, sentence };
+}
+
+/** Prefer a real stored stem; otherwise the sentence lifted out of notes. */
+export function resolveGapDisplayStem(
+  stored: string | null | undefined,
+  recovered: string | null | undefined,
+): string {
+  const raw = (stored ?? "").trim();
+  if (raw && !looksLikeRedundantGapStem(raw)) return raw;
+  const lifted = (recovered ?? "").trim();
+  return lifted || raw;
+}
+
 function normalizeForCompare(s: string): string {
   return s
     .toLowerCase()
@@ -130,6 +190,10 @@ export function shouldClearInlineGapStem(
   const stem = stemOf(q);
   if (!stem) return false;
 
+  // Complete-the-sentences: the sentence IS the question, even when this
+  // part also has real notes blanks ("39 ……") and even when it starts
+  // with "A " (which otherwise looks like a truncated window). Do not wipe it.
+  if (isStandaloneSentenceGapStem(stem)) return false;
   // Always clear obvious window garbage for blank-fill types
   if (looksLikeRedundantGapStem(stem)) return true;
 

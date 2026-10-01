@@ -517,6 +517,8 @@
     "notesPlaceholder": "Self-study notes…",
     "speakingNote": "Speak from the prompt… No AI scoring.",
     "answerPlaceholder": "Enter answer…",
+    "chooseAnswer": "Choose",
+    "chooseAnswerFor": "Answer for question {n}",
     "review": "Review",
     "prevQuestion": "Previous question",
     "nextQuestion": "Next question",

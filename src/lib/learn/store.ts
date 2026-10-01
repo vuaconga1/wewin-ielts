@@ -14,6 +14,7 @@ import type {
   LessonProgress,
 } from "@/lib/learn/types";
 import { LEARN_SKILLS, isLearnSkill } from "@/lib/learn/types";
+import { isAnswerCorrect } from "@/lib/scoring";
 import {
   isLessonUnlocked,
   skillProgressStats,
@@ -640,11 +641,15 @@ export function checkExerciseAnswer(
   const n = normalizeAnswer(userAnswer);
   if (!n) return false;
   return accepted.some((a) => {
-    const na = normalizeAnswer(a);
+    const raw = a.trim();
+    const na = normalizeAnswer(raw);
     if (n === na) return true;
     // Allow answering with letter only when option is "A. …"
     if (/^[a-d]$/i.test(n) && na.startsWith(`${n}.`)) return true;
-    return false;
+    // "B. Nắm ý chính / cấu trúc bài" uses "/" inside the option sentence.
+    // The real alternatives are already separate entries (the letter, the full line).
+    if (/^[a-d]\.\s/i.test(raw)) return false;
+    return isAnswerCorrect(userAnswer, raw);
   });
 }
 

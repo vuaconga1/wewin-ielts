@@ -4,6 +4,8 @@ Mục tiêu: upload file theo format này → hệ thống **tự chia Part** �
 
 **Mẫu tham chiếu Test 9** (fixes + checklist cho test mới): [`docs/TEST-9-TEMPLATE.md`](./TEST-9-TEMPLATE.md). Admin import tải 4 file mẫu từ `public/templates/test-9-samples.zip`.
 
+Khi sửa import hoặc UI luyện đề, giữ checklist [`docs/practice-ui-rules.md`](./practice-ui-rules.md) — đừng lặp lại lỗi UI đã sửa.
+
 ## Cấu trúc thư mục gợi ý (giống Drive)
 
 ```

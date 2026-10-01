@@ -20,10 +20,23 @@ import {
   LeaveConfirmDialog,
   TestEndedOverlay,
 } from "@/components/practice/submit-confirm-dialog";
+import { BoxedContent } from "@/components/practice/boxed-content";
+import { OptionBank, SharedChoiceAnswers } from "@/components/practice/shared-choice-answers";
 import { InlineNotesGaps, findInlineBlankNumbers } from "@/components/practice/inline-notes-gaps";
 import {
   parseReadingQuestionGroups,
+  decorateReadingPassage,
   splitReadingPassageAndTasks,
+  repairImportedText,
+  withHeadingBank,
+  withPrintedWordList,
+  withParagraphLetterBank,
+  withRecoveredChoices,
+  withYearLetterBank,
+  withRecoveredLeadingLetter,
+  withStatementBank,
+  withSummaryWordList,
+  withYesNoBank,
   type ReadingQuestionGroup,
 } from "@/lib/practice/reading-content";
 import {
@@ -35,13 +48,21 @@ import {
   readMultiSelectAnswers,
   toggleMultiSelectAnswer,
 } from "@/lib/practice/multi-select";
+import {
+  clusterSharedChoices,
+  inlineChoiceBank,
+  optionBankIsLetterOnly,
+  optionBankKey,
+  optionBankUsesWordGrid,
+} from "@/lib/practice/shared-choice";
 import { splitWritingPrompt } from "@/lib/practice/writing-prompt";
 import { countWords } from "@/lib/scoring";
 import { friendlyError } from "@/lib/ui/friendly-error";
+import { resolveGapDisplayStem } from "@/lib/questions/gap-stems";
 import {
   formatQuestionStem,
   isBlankQuestionType,
-  isRedundantGapStem,
+  shouldHideStemBesideNotes,
 } from "@/lib/ui/question-type-label";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
 import nextDynamic from "next/dynamic";
@@ -980,35 +1001,55 @@ export function PracticeSession({
                 : t("partShort", { n: activePart + 1 }, "P{n}")}
             </div>
             <div className="space-y-5 p-3 sm:p-4">
-              {part?.questions
-                .filter((q) => !isPairedSatellite(q.content))
-                .map((q) => {
-                  const covers = getCoveredNumbers(q.number, q.content);
-                  return (
-                    <div
-                      key={q.number}
-                      ref={(el) => {
-                        for (const n of covers) {
-                          if (el) questionRefs.current.set(n, el);
-                          else questionRefs.current.delete(n);
-                        }
-                      }}
-                      onFocusCapture={() => setCurrentNumber(q.number)}
-                    >
-                      <QuestionInput
-                        question={q}
-                        skill={skill}
-                        answers={answers}
-                        onChange={(v) => setAnswer(q.number, v)}
-                        onPatchAnswers={patchAnswers}
-                        active={
-                          currentNumber != null &&
-                          covers.includes(currentNumber)
-                        }
-                      />
-                    </div>
-                  );
-                })}
+              {clusterSharedChoices(
+                (part?.questions ?? []).filter(
+                  (q) => !isPairedSatellite(q.content),
+                ),
+              ).map((block) =>
+                block.kind === "single" ? (
+                  <div
+                    key={block.question.number}
+                    ref={(el) => {
+                      const covers = getCoveredNumbers(
+                        block.question.number,
+                        block.question.content,
+                      );
+                      for (const n of covers) {
+                        if (el) questionRefs.current.set(n, el);
+                        else questionRefs.current.delete(n);
+                      }
+                    }}
+                    onFocusCapture={() =>
+                      setCurrentNumber(block.question.number)
+                    }
+                  >
+                    <QuestionInput
+                      question={block.question}
+                      skill={skill}
+                      answers={answers}
+                      onChange={(v) => setAnswer(block.question.number, v)}
+                      onPatchAnswers={patchAnswers}
+                      active={
+                        currentNumber != null &&
+                        getCoveredNumbers(
+                          block.question.number,
+                          block.question.content,
+                        ).includes(currentNumber)
+                      }
+                    />
+                  </div>
+                ) : (
+                  <SharedChoiceAnswers
+                    key={`bank-${block.questions[0]!.number}`}
+                    questions={block.questions}
+                    answers={answers}
+                    onChange={setAnswer}
+                    currentNumber={currentNumber}
+                    questionRefs={questionRefs}
+                    onFocusQuestion={setCurrentNumber}
+                  />
+                ),
+              )}
             </div>
           </div>
         )}
@@ -1098,7 +1139,7 @@ function WritingDesk({
           ) : null}
 
           {blocks.timeLine ? (
-            <p className="rounded-sm border border-zinc-300 bg-white px-3 py-2 text-sm italic text-zinc-700">
+            <p className="rounded-sm border border-zinc-300 bg-white px-3 py-2 text-base font-bold leading-relaxed text-zinc-900">
               {blocks.timeLine}
             </p>
           ) : null}
@@ -1106,11 +1147,11 @@ function WritingDesk({
           {imageUrl ? (
             <>
               {blocks.beforeImage.length > 0 ? (
-                <div className="rounded-sm border border-zinc-400 border-l-[3px] border-l-[#1a3a6b] bg-white px-3 py-3 text-sm leading-relaxed text-zinc-900">
+                <div className="rounded-sm border border-zinc-400 border-l-[3px] border-l-[#1a3a6b] bg-white px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
                   {blocks.beforeImage.map((line, i) => (
                     <p
                       key={`b-${i}-${line.slice(0, 24)}`}
-                      className="mb-2 break-words font-medium last:mb-0"
+                      className="mb-2 break-words last:mb-0"
                     >
                       {line}
                     </p>
@@ -1129,7 +1170,7 @@ function WritingDesk({
                 />
               </figure>
               {blocks.afterImage.length > 0 ? (
-                <div className="rounded-sm border border-zinc-400 bg-white px-3 py-3 text-sm leading-relaxed text-zinc-800">
+                <div className="rounded-sm border border-zinc-400 bg-white px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
                   {blocks.afterImage.map((line, i) => (
                     <p
                       key={`a-${i}-${line.slice(0, 24)}`}
@@ -1142,7 +1183,7 @@ function WritingDesk({
               ) : null}
             </>
           ) : blocks.promptLines.length > 0 ? (
-            <div className="rounded-sm border border-zinc-400 border-l-[3px] border-l-[#1a3a6b] bg-white px-3 py-3 text-sm leading-relaxed text-zinc-900">
+            <div className="rounded-sm border border-zinc-400 border-l-[3px] border-l-[#1a3a6b] bg-white px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
               {blocks.promptLines.map((line, i) => (
                 <p
                   key={`p-${i}-${line.slice(0, 24)}`}
@@ -1153,13 +1194,13 @@ function WritingDesk({
               ))}
             </div>
           ) : stem ? (
-            <div className="break-words whitespace-pre-wrap rounded-sm border border-zinc-400 bg-white px-3 py-3 text-sm leading-relaxed text-zinc-800">
+            <div className="break-words whitespace-pre-wrap rounded-sm border border-zinc-400 bg-white px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
               {stem}
             </div>
           ) : null}
 
           {blocks.wordLine ? (
-            <p className="rounded-sm border border-dashed border-zinc-400 bg-white px-3 py-2 text-sm font-semibold text-zinc-800">
+            <p className="rounded-sm border border-dashed border-zinc-400 bg-white px-3 py-2 text-base font-bold leading-relaxed text-zinc-900">
               {blocks.wordLine}
             </p>
           ) : null}
@@ -1229,16 +1270,55 @@ function ReadingOrNotesSplit({
   const taskSource = isReading
     ? (reading?.tasks ?? "")
     : (part.content ?? "");
+  const questions = isReading
+    ? withHeadingBank(
+        withRecoveredChoices(
+          withYesNoBank(
+            withRecoveredLeadingLetter(
+              withParagraphLetterBank(
+                withYearLetterBank(
+                  withStatementBank(
+                    withSummaryWordList(
+                      withPrintedWordList(part.questions, taskSource),
+                      taskSource,
+                    ),
+                    taskSource,
+                  ),
+                  taskSource,
+                ),
+                taskSource,
+              ),
+              taskSource,
+            ),
+            taskSource,
+          ),
+          taskSource,
+        ),
+        taskSource,
+      ).map((question) => ({
+        ...question,
+        content: {
+          ...question.content,
+          stem: question.content.stem
+            ? repairImportedText(question.content.stem)
+            : question.content.stem,
+          options: question.content.options?.map((opt) => ({
+            ...opt,
+            text: repairImportedText(opt.text),
+          })),
+        },
+      }))
+    : part.questions;
   const groups = taskSource
-    ? parseReadingQuestionGroups(taskSource, part.questions)
+    ? parseReadingQuestionGroups(taskSource, questions)
     : [];
   const leftBody = isReading
-    ? (reading?.passage ?? part.content ?? "")
+    ? decorateReadingPassage(reading?.passage ?? part.content ?? "", groups)
     : "";
 
   /** Prefer the tightest Questions range so Q27 is not rendered under both 21–30 and 27–28. */
   const primaryGroupByNumber = new Map<number, ReadingQuestionGroup>();
-  for (const q of part.questions) {
+  for (const q of questions) {
     let best: ReadingQuestionGroup | null = null;
     for (const g of groups) {
       if (q.number < g.start || q.number > g.end) continue;
@@ -1254,8 +1334,15 @@ function ReadingOrNotesSplit({
     if (best) primaryGroupByNumber.set(q.number, best);
   }
 
+  const sentenceStemByNumber = new Map<number, string>();
+  for (const g of groups) {
+    for (const [key, value] of Object.entries(g.sentenceStems)) {
+      if (value) sentenceStemByNumber.set(Number(key), value);
+    }
+  }
+
   const groupedNumbers = new Set(primaryGroupByNumber.keys());
-  const ungrouped = part.questions.filter(
+  const ungrouped = questions.filter(
     (q) => !groupedNumbers.has(q.number) && !isPairedSatellite(q.content),
   );
 
@@ -1266,24 +1353,32 @@ function ReadingOrNotesSplit({
     Boolean(q.content.blank);
 
   const renderQuestion = (q: Question) => {
-    const covers = getCoveredNumbers(q.number, q.content);
+    const displayStem = resolveGapDisplayStem(
+      q.content.stem,
+      sentenceStemByNumber.get(q.number),
+    );
+    const question =
+      displayStem === (q.content.stem ?? "").trim()
+        ? q
+        : { ...q, content: { ...q.content, stem: displayStem } };
+    const covers = getCoveredNumbers(question.number, question.content);
     return (
       <div
-        key={q.number}
+        key={question.number}
         ref={(el) => {
           for (const n of covers) {
             if (el) questionRefs.current.set(n, el);
             else questionRefs.current.delete(n);
           }
         }}
-        data-q={q.number}
-        onFocusCapture={() => onFocusQuestion(q.number)}
+        data-q={question.number}
+        onFocusCapture={() => onFocusQuestion(question.number)}
       >
         <QuestionInput
-          question={q}
+          question={question}
           skill={skill}
           answers={answers}
-          onChange={(v) => onChange(q.number, v)}
+          onChange={(v) => onChange(question.number, v)}
           onPatchAnswers={onPatchAnswers}
           compactStem={Boolean(part.content)}
           active={
@@ -1294,8 +1389,33 @@ function ReadingOrNotesSplit({
     );
   };
 
+  const renderQuestionBlocks = (list: Question[], bankTitle?: string) =>
+    clusterSharedChoices(list).map((block) => {
+      if (block.kind === "single") return renderQuestion(block.question);
+      const options = block.questions[0]?.content.options ?? [];
+      const romanBank =
+        Boolean(bankTitle) &&
+        options.length >= 3 &&
+        options.every((opt) =>
+          /^(?:xii|xi|x|ix|viii|vii|vi|v|iv|iii|ii|i)$/i.test(opt.label.trim()),
+        );
+      return (
+        <SharedChoiceAnswers
+          key={`bank-${block.questions[0]!.number}`}
+          questions={block.questions}
+          answers={answers}
+          onChange={onChange}
+          currentNumber={currentNumber}
+          questionRefs={questionRefs}
+          onFocusQuestion={onFocusQuestion}
+          compactStem={Boolean(part.content)}
+          bankTitle={romanBank ? bankTitle : undefined}
+        />
+      );
+    });
+
   const renderGroup = (group: ReadingQuestionGroup) => {
-    const qs = part.questions.filter(
+    const qs = questions.filter(
       (q) =>
         primaryGroupByNumber.get(q.number) === group &&
         !isPairedSatellite(q.content),
@@ -1309,9 +1429,42 @@ function ReadingOrNotesSplit({
           ),
         )
       : new Set<number>();
-    const restQs = qs.filter(
-      (q) => !(inlineNumbers.has(q.number) && isGapQuestion(q)),
-    );
+    const notesBank = inlineChoiceBank(qs, inlineNumbers);
+    const notesBankKey = optionBankKey(notesBank ?? undefined);
+    const notesChoices = new Map<number, NonNullable<typeof notesBank>>();
+    if (notesBank && notesBankKey) {
+      for (const q of qs) {
+        if (
+          inlineNumbers.has(q.number) &&
+          optionBankKey(q.content.options) === notesBankKey
+        ) {
+          notesChoices.set(q.number, notesBank);
+        }
+      }
+    }
+    const restQs = qs.filter((q) => {
+      if (notesChoices.has(q.number)) return false;
+      return !(inlineNumbers.has(q.number) && isGapQuestion(q));
+    });
+
+    const wordListTitle =
+      notesBank && optionBankUsesWordGrid(notesBank)
+        ? group.instructions.find((line) =>
+            /^list of (options|words)$/i.test(line.trim()),
+          )
+        : undefined;
+    const romanHeadingBank = restQs.some((q) => {
+      const options = q.content.options ?? [];
+      return (
+        options.length >= 3 &&
+        options.every((opt) =>
+          /^(?:xii|xi|x|ix|viii|vii|vi|v|iv|iii|ii|i)$/i.test(opt.label.trim()),
+        )
+      );
+    });
+    const headingListTitle = romanHeadingBank
+      ? group.instructions.find((line) => /^list of headings$/i.test(line.trim()))
+      : undefined;
 
     return (
       <section
@@ -1319,13 +1472,15 @@ function ReadingOrNotesSplit({
         className="space-y-4 border-b border-zinc-200 pb-5 last:border-0 last:pb-0"
       >
         <div className="space-y-1">
-          <h3 className="break-words text-sm font-bold text-zinc-900">
+          <h3 className="break-words border-b-2 border-[#1a3a6b] pb-1 text-base font-bold text-[#1a3a6b]">
             {group.header}
           </h3>
-          {group.instructions.map((line) => (
+          {group.instructions
+            .filter((line) => line !== wordListTitle && line !== headingListTitle)
+            .map((line) => (
             <p
               key={line}
-              className="break-words text-sm leading-relaxed text-zinc-700"
+              className="break-words text-base font-bold leading-relaxed text-zinc-900"
             >
               {line}
             </p>
@@ -1342,15 +1497,19 @@ function ReadingOrNotesSplit({
               onChange={onChange}
               placeholder={t("answerPlaceholder", "Enter answer…")}
               allowNumbers={inlineNumbers}
+              choiceOptions={notesChoices.size > 0 ? notesChoices : undefined}
             />
           ) : (
-            <div className="break-words rounded-sm border border-zinc-200 bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800">
-              {group.notes}
-            </div>
+            <BoxedContent text={group.notes} />
           )
         ) : null}
+        {notesBank && !optionBankIsLetterOnly(notesBank) ? (
+          <OptionBank options={notesBank} title={wordListTitle} />
+        ) : null}
         {restQs.length > 0 ? (
-          <div className="space-y-5">{restQs.map(renderQuestion)}</div>
+          <div className="space-y-5">
+            {renderQuestionBlocks(restQs, headingListTitle)}
+          </div>
         ) : null}
       </section>
     );
@@ -1362,13 +1521,15 @@ function ReadingOrNotesSplit({
         <>
           {groups.map(renderGroup)}
           {ungrouped.length > 0 ? (
-            <div className="space-y-5">{ungrouped.map(renderQuestion)}</div>
+            <div className="space-y-5">{renderQuestionBlocks(ungrouped)}</div>
           ) : null}
         </>
       ) : (
-        part.questions
-          .filter((q) => !isPairedSatellite(q.content))
-          .map(renderQuestion)
+        questions.filter((q) => !isPairedSatellite(q.content)).length > 0
+          ? renderQuestionBlocks(
+              questions.filter((q) => !isPairedSatellite(q.content)),
+            )
+          : null
       )}
     </div>
   );
@@ -1393,8 +1554,8 @@ function ReadingOrNotesSplit({
         <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
           {t("passage", "Passage")}
         </div>
-        <div className="break-words px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap text-zinc-800 sm:px-4">
-          {leftBody}
+        <div className="break-words px-3 py-3 text-sm leading-relaxed text-zinc-800 sm:px-4">
+          <BoxedContent text={leftBody} passageLayout />
         </div>
       </div>
       <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-white lg:border-t lg:border-l-0 lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
@@ -1431,10 +1592,10 @@ function QuestionInput({
     focusNumber: number,
   ) => void;
   /**
-   * Render contract: when part.content already shows notes/passage with
-   * numbered blanks, the answer panel is number + input (+ MCQ options).
-   * Never reprint notes fragments. Empty/minimal stems from import are the
-   * primary fix; isRedundantGapStem is a safety net for older data.
+   * Render contract: shared notes with numbered gaps stay in the notes pane
+   * (number + input only here). A sentence-completion stem ("… _______ …")
+   * is shown once, with the input in the blank — never also as static notes.
+   * See scripts/test-sentence-gap-layout.ts.
    */
   compactStem?: boolean;
   /** Highlight the answer control (not an outer wrapper frame). */
@@ -1464,14 +1625,15 @@ function QuestionInput({
   const minWords = defaultMinWords(question, skill);
   const words = countWords(value);
   const hint = question.content.hint;
-  const hideBesideNotes =
-    compactStem &&
-    isBlank &&
-    options.length < 2 &&
-    (/_____/.test(stem) ||
-      isRedundantGapStem(rawStem) ||
-      isRedundantGapStem(stem));
+  const hideBesideNotes = shouldHideStemBesideNotes({
+    compactStem,
+    questionType: question.type,
+    stem: rawStem,
+    optionCount: options.length,
+  });
   const showStem = Boolean(stem) && !hideBesideNotes;
+  const gapParts = showStem ? stem.split(/_____/) : [];
+  const inlineGap = gapParts.length === 2 && options.length < 2 && isBlank;
   const inputActiveClass = active
     ? "border-[#1a3a6b] ring-1 ring-[#1a3a6b]/40"
     : "border-zinc-400 focus:border-[#1a3a6b]";
@@ -1487,7 +1649,7 @@ function QuestionInput({
           {t("writingTask", "Writing task")}
         </p>
         {stem && (
-          <div className="mb-3 break-words whitespace-pre-wrap border border-zinc-300 border-l-[3px] border-l-[#1a3a6b] bg-[#f7f8fa] px-3 py-3 text-sm text-zinc-800">
+          <div className="mb-3 break-words whitespace-pre-wrap border border-zinc-300 border-l-[3px] border-l-[#1a3a6b] bg-[#f7f8fa] px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
             {stem}
           </div>
         )}
@@ -1570,6 +1732,30 @@ function QuestionInput({
             ? t("speakingPracticed", "Đã luyện ✓")
             : t("speakingMarkPracticed", "Đánh dấu đã luyện")}
         </button>
+      </div>
+    );
+  }
+
+  if (inlineGap) {
+    const before = gapParts[0]!.trim();
+    const after = gapParts[1]!.trim();
+    return (
+      <div className="min-w-0 border-b border-zinc-200 pb-5 last:border-0 last:pb-0">
+        <p className="min-w-0 break-words text-sm leading-8 text-zinc-700">
+          <span className="font-semibold tabular-nums text-zinc-800">
+            {numberLabel}.
+          </span>
+          {before ? <> {before}</> : null}{" "}
+          <input
+            type="text"
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            placeholder={t("answerPlaceholder", "Enter answer…")}
+            aria-label={`${t("answerPlaceholder", "Enter answer…")} ${numberLabel}`}
+            className={`mx-0.5 inline-block w-[min(100%,11rem)] min-w-[5.5rem] align-middle rounded-sm border bg-white px-2 py-1 text-sm outline-none ${inputActiveClass}`}
+          />
+          {after ? <> {after}</> : null}
+        </p>
       </div>
     );
   }

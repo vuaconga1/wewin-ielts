@@ -517,6 +517,8 @@
     "notesPlaceholder": "Ghi chú tự luyện…",
     "speakingNote": "Tự nói theo đề… Không chấm AI.",
     "answerPlaceholder": "Nhập đáp án…",
+    "chooseAnswer": "Chọn",
+    "chooseAnswerFor": "Đáp án câu {n}",
     "review": "Xem lại",
     "prevQuestion": "Câu trước",
     "nextQuestion": "Câu sau",

@@ -277,8 +277,7 @@ function fixReadingQ36_37(draft: ParsedTestDraft): void {
         FOREIGN_STEMS[q.number]?.test(full) ||
         /satel/i.test(stem);
       if (looksForeign) {
-        (q.content as Record<string, unknown>).stem =
-          `[Source stem looks copy-pasted from another passage — original Word text kept for recovery] ${full}`;
+        (q.content as Record<string, unknown>).stem = full;
         (q.content as Record<string, unknown>).notesFlag = "FOREIGN_STEM";
         console.log(`Flagged Reading Q${q.number} foreign stem`);
       }

@@ -3,6 +3,8 @@
  * so Listening/Reading can render columns instead of a flat bullet dump.
  */
 
+import { borderedNotesFromTableHtml } from "@/lib/practice/notes-outline";
+
 export type NotesTable = {
   title?: string;
   headers: string[];
@@ -345,6 +347,9 @@ function formatBankTableCell(text: string): string {
 
 /** Convert HTML <table> (mammoth) to markdown with <br> inside cells. */
 export function htmlTableToMarkdown(tableHtml: string): string {
+  const borderedNotes = borderedNotesFromTableHtml(tableHtml);
+  if (borderedNotes) return borderedNotes;
+
   const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
   const rows: string[][] = [];
   let rowMatch: RegExpExecArray | null;
