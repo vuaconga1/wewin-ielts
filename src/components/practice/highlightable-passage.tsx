@@ -6,9 +6,9 @@ import {
   useRef,
   useState,
   type CSSProperties,
-  type MouseEvent,
+  type MouseEvent as ReactMouseEvent,
   type ReactNode,
-  type TouchEvent,
+  type TouchEvent as ReactTouchEvent,
 } from "react";
 import { BoxedContent } from "@/components/practice/boxed-content";
 import { useTranslations } from "@/i18n/provider";
@@ -108,7 +108,7 @@ export function HighlightablePassage({
     });
   }
 
-  function onPointerUp(event: MouseEvent | TouchEvent) {
+  function onPointerUp(event: ReactMouseEvent | ReactTouchEvent) {
     if (readOnly) return;
     const root = rootRef.current;
     if (!root) return;
