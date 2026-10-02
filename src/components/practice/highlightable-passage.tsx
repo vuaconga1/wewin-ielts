@@ -282,11 +282,10 @@ function renderBlocks(
   while (index < blocks.length) {
     const block = blocks[index]!;
     if (block.kind === "paragraph") {
-      const group: Extract<(typeof blocks)[number], { kind: "paragraph" }>[] = [];
+      const group: { pieces: PassagePiece[] }[] = [];
       while (index < blocks.length && blocks[index]?.kind === "paragraph") {
-        group.push(
-          blocks[index] as Extract<(typeof blocks)[number], { kind: "paragraph" }>,
-        );
+        const item = blocks[index];
+        if (item?.kind === "paragraph") group.push(item);
         index += 1;
       }
       nodes.push(
