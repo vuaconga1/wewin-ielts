@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { ParsedTestDraft } from "@/lib/import/schemas";
+import type { PassageHighlight } from "@/lib/practice/passage-highlights";
 import type { StoredAiScore } from "@/lib/ai/types";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
@@ -32,6 +33,8 @@ export type StoredAttempt = {
   updatedAt?: string;
   finishedAt: string | null;
   answers: Record<string, string>;
+  /** Reading passage highlights and short notes, keyed by visible-text offsets. */
+  highlights?: PassageHighlight[];
   score?: {
     correct: number;
     total: number;

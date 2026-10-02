@@ -4,6 +4,7 @@ import {
   canAccessAttempt,
   claimAttemptIfGuest,
 } from "@/lib/practice/attempt-access";
+import { sanitizeHighlights } from "@/lib/practice/passage-highlights";
 import { getAttempt, saveAttempt } from "@/lib/store/test-store";
 
 export const runtime = "nodejs";
@@ -16,6 +17,7 @@ export async function POST(
     const { attemptId } = await context.params;
     const body = (await request.json()) as {
       answers?: Record<string, string>;
+      highlights?: unknown;
     };
 
     const attempt = await getAttempt(attemptId);
@@ -41,6 +43,9 @@ export async function POST(
     claimAttemptIfGuest(attempt, user);
 
     attempt.answers = body.answers ?? attempt.answers;
+    if (Array.isArray(body.highlights)) {
+      attempt.highlights = sanitizeHighlights(body.highlights);
+    }
     await saveAttempt(attempt);
 
     return NextResponse.json({

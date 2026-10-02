@@ -22,6 +22,10 @@ import { countWords, estimateBand, gradeAnswers } from "@/lib/scoring";
 import { getAttempt, getTestBySlug } from "@/lib/store/test-store";
 import { getTranslations } from "@/i18n/server";
 import type { Translator } from "@/i18n/translate";
+import {
+  sanitizeHighlights,
+  type PassageHighlight,
+} from "@/lib/practice/passage-highlights";
 
 const AiScorePanel = nextDynamic(
   () =>
@@ -96,6 +100,74 @@ function formatSpeakingSubmission(
     return { empty: false, text: t("recorded", "Đã ghi âm") };
   }
   return { empty: false, text: trimmed };
+}
+
+function ReadingHighlightReview({
+  highlights,
+  parts,
+  t,
+}: {
+  highlights: PassageHighlight[];
+  parts: { order: number; title: string }[];
+  t: Translator;
+}) {
+  if (!highlights.length) return null;
+  const used = new Set<string>();
+  const groups: { key: string; title: string; items: PassageHighlight[] }[] = [];
+  for (const part of parts) {
+    const items = highlights
+      .filter((item) => item.partOrder === part.order)
+      .sort((a, b) => a.start - b.start);
+    if (!items.length) continue;
+    for (const item of items) used.add(item.id);
+    groups.push({
+      key: `part-${part.order}`,
+      title: part.title?.trim() || t("highlightsTitle", "Chỗ đã tô"),
+      items,
+    });
+  }
+  const rest = highlights
+    .filter((item) => !used.has(item.id))
+    .sort((a, b) => a.start - b.start);
+  if (rest.length) {
+    groups.push({
+      key: "rest",
+      title: t("highlightsTitle", "Chỗ đã tô"),
+      items: rest,
+    });
+  }
+
+  return (
+    <section className="min-w-0 space-y-4 rounded-xl border border-wewin-border bg-white p-4 sm:p-6">
+      <h2 className="text-lg font-semibold text-wewin-navy">
+        {t("highlightsTitle", "Chỗ đã tô")}
+      </h2>
+      {groups.map((group) => (
+        <div key={group.key} className="min-w-0 space-y-3">
+          <p className="break-words text-sm font-semibold text-zinc-700">
+            {group.title}
+          </p>
+          <ul className="space-y-3">
+            {group.items.map((item) => (
+              <li key={item.id} className="min-w-0">
+                <p className="break-words text-sm leading-relaxed text-zinc-900">
+                  <span className="rounded-sm bg-[#ffe566] px-0.5">{item.quote}</span>
+                </p>
+                {item.note.trim() ? (
+                  <p className="mt-1 break-words text-sm leading-relaxed text-zinc-700">
+                    <span className="font-semibold text-wewin-navy">
+                      {t("highlightNoteLabel", "Ghi chú")}:
+                    </span>{" "}
+                    {item.note}
+                  </p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -267,6 +339,17 @@ export default async function PracticeResultPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {test.skill === "READING" ? (
+          <ReadingHighlightReview
+            highlights={sanitizeHighlights(attempt.highlights)}
+            parts={selectedParts.map((part) => ({
+              order: part.order,
+              title: part.title,
+            }))}
+            t={t}
+          />
+        ) : null}
 
         {isSpeaking ? (
           <section className="space-y-6">

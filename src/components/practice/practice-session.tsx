@@ -21,6 +21,7 @@ import {
   TestEndedOverlay,
 } from "@/components/practice/submit-confirm-dialog";
 import { BoxedContent } from "@/components/practice/boxed-content";
+import { HighlightablePassage } from "@/components/practice/highlightable-passage";
 import { OptionBank, SharedChoiceAnswers } from "@/components/practice/shared-choice-answers";
 import { InlineNotesGaps, findInlineBlankNumbers } from "@/components/practice/inline-notes-gaps";
 import {
@@ -39,6 +40,10 @@ import {
   withYesNoBank,
   type ReadingQuestionGroup,
 } from "@/lib/practice/reading-content";
+import {
+  sanitizeHighlights,
+  type PassageHighlight,
+} from "@/lib/practice/passage-highlights";
 import {
   formatCoveredLabel,
   getCoveredNumbers,
@@ -126,6 +131,7 @@ type Props = {
   timeLimitMinutes: number | null;
   startedAt: string;
   initialAnswers: Record<string, string>;
+  initialHighlights?: PassageHighlight[];
   parts: Part[];
   audioFiles?: string[];
   /** Filtered attempt containing only previously wrong questions */
@@ -213,6 +219,7 @@ export function PracticeSession({
   timeLimitMinutes,
   startedAt,
   initialAnswers,
+  initialHighlights = [],
   parts,
   audioFiles,
   retryWrong = false,
@@ -242,6 +249,9 @@ export function PracticeSession({
     return sp[0]?.questions[0]?.number ?? null;
   });
   const [flagged, setFlagged] = useState<Set<number>>(() => new Set());
+  const [highlights, setHighlights] = useState<PassageHighlight[]>(() =>
+    sanitizeHighlights(initialHighlights),
+  );
   /**
    * Speaking: freeze at full duration (static — SSR/client match during mic setup).
    * Other skills: null until client sync — avoids Date.now() hydration mismatch.
@@ -266,6 +276,8 @@ export function PracticeSession({
   const hydrated = useRef(false);
   const answersRef = useRef(answers);
   answersRef.current = answers;
+  const highlightsRef = useRef(highlights);
+  highlightsRef.current = highlights;
   const questionRefs = useRef<Map<number, HTMLElement>>(new Map());
   /** Blocks double submit (timer + manual) and leave/abandon races. */
   const submittingRef = useRef(false);
@@ -352,6 +364,7 @@ export function PracticeSession({
       const parsed = JSON.parse(raw) as {
         answers?: Record<string, string>;
         flagged?: number[];
+        highlights?: unknown;
         savedAt?: string;
       };
       if (parsed.answers && Object.keys(parsed.answers).length > 0) {
@@ -374,6 +387,10 @@ export function PracticeSession({
       if (Array.isArray(parsed.flagged)) {
         setFlagged(new Set(parsed.flagged.filter((n) => Number.isFinite(n))));
       }
+      if (Array.isArray(parsed.highlights)) {
+        const localMarks = sanitizeHighlights(parsed.highlights);
+        setHighlights((prev) => (localMarks.length >= prev.length ? localMarks : prev));
+      }
     } catch {
       /* ignore */
     }
@@ -381,14 +398,20 @@ export function PracticeSession({
   }, [attemptId, parts, shouldRenumber]);
 
   const persistDraft = useCallback(
-    async (next: Record<string, string>, nextFlagged?: Set<number>) => {
+    async (
+      next: Record<string, string>,
+      nextFlagged?: Set<number>,
+      nextHighlights?: PassageHighlight[],
+    ) => {
       const flags = nextFlagged ?? flagged;
+      const marks = nextHighlights ?? highlightsRef.current;
       try {
         localStorage.setItem(
           localKey(attemptId),
           JSON.stringify({
             answers: next,
             flagged: Array.from(flags),
+            highlights: marks,
             savedAt: new Date().toISOString(),
           }),
         );
@@ -400,7 +423,7 @@ export function PracticeSession({
         const res = await fetch(`/api/practice/${attemptId}/save`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ answers: next }),
+          body: JSON.stringify({ answers: next, highlights: marks }),
         });
         if (!res.ok) {
           setSaveState("error");
@@ -419,10 +442,10 @@ export function PracticeSession({
   useEffect(() => {
     if (!hydrated.current) return;
     const timer = setTimeout(() => {
-      void persistDraft(answers);
+      void persistDraft(answers, undefined, highlights);
     }, SAVE_DEBOUNCE_MS);
     return () => clearTimeout(timer);
-  }, [answers, persistDraft]);
+  }, [answers, highlights, persistDraft]);
 
   /**
    * Arm the exam countdown on the client only.
@@ -624,6 +647,7 @@ export function PracticeSession({
           JSON.stringify({
             answers: answersRef.current,
             flagged: Array.from(next),
+            highlights: highlightsRef.current,
             savedAt: new Date().toISOString(),
           }),
         );
@@ -662,7 +686,10 @@ export function PracticeSession({
       const res = await fetch(`/api/practice/${attemptId}/submit`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ answers: answersRef.current }),
+        body: JSON.stringify({
+          answers: answersRef.current,
+          highlights: highlightsRef.current,
+        }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -960,6 +987,13 @@ export function PracticeSession({
             onFocusQuestion={setCurrentNumber}
             onChange={setAnswer}
             onPatchAnswers={patchAnswers}
+            highlights={highlights.filter((item) => item.partOrder === part.order)}
+            onHighlightsChange={(next) => {
+              setHighlights((prev) => [
+                ...prev.filter((item) => item.partOrder !== part.order),
+                ...next,
+              ]);
+            }}
           />
         ) : isWriting && part ? (
           <WritingDesk
@@ -1252,6 +1286,8 @@ function ReadingOrNotesSplit({
   onFocusQuestion,
   onChange,
   onPatchAnswers,
+  highlights = [],
+  onHighlightsChange,
 }: {
   part: Part;
   isReading: boolean;
@@ -1262,6 +1298,8 @@ function ReadingOrNotesSplit({
   onFocusQuestion: (n: number) => void;
   onChange: (n: number, v: string) => void;
   onPatchAnswers: (patch: Record<string, string>, focusNumber: number) => void;
+  highlights?: PassageHighlight[];
+  onHighlightsChange?: (next: PassageHighlight[]) => void;
 }) {
   const { t } = useTranslations("practice");
   const reading = isReading
@@ -1555,7 +1593,12 @@ function ReadingOrNotesSplit({
           {t("passage", "Passage")}
         </div>
         <div className="break-words px-3 py-3 text-sm leading-relaxed text-zinc-800 sm:px-4">
-          <BoxedContent text={leftBody} passageLayout />
+          <HighlightablePassage
+            text={leftBody}
+            partOrder={part.order}
+            highlights={highlights}
+            onChange={onHighlightsChange ?? (() => undefined)}
+          />
         </div>
       </div>
       <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-white lg:border-t lg:border-l-0 lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">

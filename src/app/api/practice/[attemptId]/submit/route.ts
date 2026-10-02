@@ -8,6 +8,7 @@ import {
 import { practiceResultPath } from "@/lib/practice/paths";
 import { estimateBand, gradeAnswers } from "@/lib/scoring";
 import { partsForSpeakingAttempt } from "@/lib/practice/speaking-exam";
+import { sanitizeHighlights } from "@/lib/practice/passage-highlights";
 import { getAttempt, getTestBySlug, saveAttempt } from "@/lib/store/test-store";
 
 export const runtime = "nodejs";
@@ -20,6 +21,7 @@ export async function POST(
     const { attemptId } = await context.params;
     const body = (await request.json()) as {
       answers?: Record<string, string>;
+      highlights?: unknown;
     };
 
     const attempt = await getAttempt(attemptId);
@@ -85,6 +87,9 @@ export async function POST(
     const band = estimateBand(grade.correct, grade.total);
 
     attempt.answers = answers;
+    if (Array.isArray(body.highlights)) {
+      attempt.highlights = sanitizeHighlights(body.highlights);
+    }
     attempt.finishedAt = new Date().toISOString();
     attempt.score = {
       correct: grade.correct,

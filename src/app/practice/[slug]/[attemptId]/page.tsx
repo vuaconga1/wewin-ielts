@@ -107,6 +107,7 @@ export default async function PracticePage({ params }: Props) {
       timeLimitMinutes={attempt.timeLimitMinutes}
       startedAt={attempt.startedAt}
       initialAnswers={attempt.answers ?? {}}
+      initialHighlights={attempt.highlights ?? []}
       parts={parts}
       audioFiles={test.audioFiles}
       retryWrong={Boolean(filterSet)}
