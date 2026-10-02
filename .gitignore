@@ -66,6 +66,7 @@ yarn-error.log*
 !/data/tests/test-11-*.json
 !/data/tests/test-12-*.json
 !/data/tests/test-13-*.json
+!/data/tests/test-14-*.json
 
 # uploaded audio (keep folder + section mp3s needed at runtime)
 /public/uploads/audio/*

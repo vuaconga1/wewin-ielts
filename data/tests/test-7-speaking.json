@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 7",
+  "slug": "test-7-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_07\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 7 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How many languages can you speak?",
+            "speakingPart": 1,
+            "topic": "Languages & Communication"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What do you find most challenging when learning a foreign language?",
+            "speakingPart": 1,
+            "topic": "Languages & Communication"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is learning English important for your future career?",
+            "speakingPart": 1,
+            "topic": "Languages & Communication"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe a person you know who is exceptionally skilled at learning foreign languages.\nYou should say:\n- who this person is\n- what languages they speak\n- how they acquired their language skills\n- and explain why you admire their linguistic ability.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do young children generally acquire second languages more effortlessly than adults?",
+            "speakingPart": 3,
+            "topic": "Language Acquisition & Global Communication"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Will automated translation software reduce the necessity for humans to study foreign languages?",
+            "speakingPart": 3,
+            "topic": "Language Acquisition & Global Communication"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is the worldwide dominance of English threatening minority linguistic heritage?",
+            "speakingPart": 3,
+            "topic": "Language Acquisition & Global Communication"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:07.546Z"
+}

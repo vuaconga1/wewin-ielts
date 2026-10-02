@@ -1574,6 +1574,7 @@ function ReadingOrNotesSplit({
 
   // Listening: one interactive column (notes + inline gaps), like Reading's right pane
   if (!isReading) {
+    const figures = listeningFigureUrls(part);
     return (
       <div className="cdi-pane min-w-0 flex-1 border border-zinc-400/70 bg-white lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
         <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
@@ -1581,6 +1582,23 @@ function ReadingOrNotesSplit({
             ? part.title
             : t("notes", "Notes / task text")}
         </div>
+        {figures.length > 0 ? (
+          <div className="space-y-3 px-3 pt-3 sm:px-4">
+            {figures.map((src) => (
+              <figure
+                key={src}
+                className="overflow-hidden rounded-sm border-2 border-zinc-500 bg-white"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={t("sectionFigure", "Figure")}
+                  className="h-auto w-full max-w-full"
+                />
+              </figure>
+            ))}
+          </div>
+        ) : null}
         {questionsPanel}
       </div>
     );
@@ -1609,6 +1627,27 @@ function ReadingOrNotesSplit({
       </div>
     </div>
   );
+}
+
+/** Maps and plans stored on the listening section. One URL is drawn once. */
+function listeningFigureUrls(part: Part): string[] {
+  const urls: string[] = [];
+  const push = (value: unknown) => {
+    if (typeof value !== "string") return;
+    const url = value.trim();
+    if (!url || urls.includes(url)) return;
+    urls.push(url);
+  };
+  push(part.meta?.imageUrl);
+  const many = part.meta?.imageUrls;
+  if (Array.isArray(many)) {
+    for (const item of many) push(item);
+  }
+  for (const question of part.questions) {
+    push(question.content.imageUrl);
+    push(question.mediaUrl);
+  }
+  return urls;
 }
 
 function defaultMinWords(question: Question, skill: string): number {

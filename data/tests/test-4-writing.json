@@ -15,7 +15,7 @@
       "order": 0,
       "content": "You should spend about 20 minutes on this task\n\nThe diagram below shows the recycling process of aluminium cans.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
       "meta": {
-        "imageUrl": "/uploads/writing/test-4-task1-diagram.png"
+        "imageUrl": "/uploads/writing/test-4-task1-diagram-v2.png"
       },
       "questions": [
         {
@@ -25,9 +25,9 @@
           "content": {
             "stem": "You should spend about 20 minutes on this task\n\nThe diagram below shows the recycling process of aluminium cans.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
             "minWords": 150,
-            "imageUrl": "/uploads/writing/test-4-task1-diagram.png"
+            "imageUrl": "/uploads/writing/test-4-task1-diagram-v2.png"
           },
-          "mediaUrl": "/uploads/writing/test-4-task1-diagram.png"
+          "mediaUrl": "/uploads/writing/test-4-task1-diagram-v2.png"
         }
       ]
     },

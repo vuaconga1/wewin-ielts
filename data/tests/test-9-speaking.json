@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 9",
+  "slug": "test-9-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_09\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 9 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are you an early riser or a night owl?",
+            "speakingPart": 1,
+            "topic": "Morning Routines & Punctuality"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What is your typical morning routine?",
+            "speakingPart": 1,
+            "topic": "Morning Routines & Punctuality"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is punctuality considered important in your culture?",
+            "speakingPart": 1,
+            "topic": "Morning Routines & Punctuality"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe a time when you had to wake up unusually early.\nYou should say:\n- when it happened\n- why you had to get up early\n- what you did that morning\n- and explain how you felt throughout the rest of that day.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do modern work schedules predominantly favour morning people over evening types?",
+            "speakingPart": 3,
+            "topic": "Time Management & Circadian Rhythms"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How does chronic sleep deprivation affect workplace productivity and public health?",
+            "speakingPart": 3,
+            "topic": "Time Management & Circadian Rhythms"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is strict adherence to schedules becoming less rigid with the rise of remote working?",
+            "speakingPart": 3,
+            "topic": "Time Management & Circadian Rhythms"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:07.816Z"
+}

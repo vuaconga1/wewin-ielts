@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 13",
+  "slug": "test-13-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_13\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 13 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you have plants or flowers in your home or balcony?",
+            "speakingPart": 1,
+            "topic": "Gardening, Nature & Plants"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Did you help with gardening as a child?",
+            "speakingPart": 1,
+            "topic": "Gardening, Nature & Plants"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do many people enjoy cultivating plants?",
+            "speakingPart": 1,
+            "topic": "Gardening, Nature & Plants"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe a person you know who loves growing plants, vegetables, or flowers.\nYou should say:\n- who this person is\n- what plants they grow\n- how they care for their garden\n- and explain why they are so passionate about gardening.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What benefits do community allotment gardens bring to urban apartment residents?",
+            "speakingPart": 3,
+            "topic": "Urban Agriculture & Ecological Sustainability"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Can urban rooftop farming contribute significantly to feeding expanding metropolitan populations?",
+            "speakingPart": 3,
+            "topic": "Urban Agriculture & Ecological Sustainability"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why is preserving biodiversity and native plant species vital for global ecosystem health?",
+            "speakingPart": 3,
+            "topic": "Urban Agriculture & Ecological Sustainability"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:08.170Z"
+}

@@ -1,0 +1,828 @@
+{
+  "title": "Test 14 - Listening",
+  "slug": "test-14-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_14\\STUDENT",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Question 1 - 10\n\nQuestions 1-10\n\nComplete the notes below.\n\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.\n\n[[box]]\nName of the hotel: 1 ........... Hotel\n[[b0]]Major changes:\n[[b0]]signboard: the 2 ........... needs to be bigger\n[[b0]]swimming pool: to be relocated from the 3 ........... to the 4 ...........\n[[b0]]resting area: turn the 5 ........... room into reception\n[[b0]]Notice board\n[[b0]]translation needed: 6 ...........\n[[b0]]Price board\n[[b0]]current colour: 7 ...........\n[[b0]]Construction: starts before 8 ...........\n[[b0]]Manager's name: 9 ........... Barron\n[[b0]]Telephone number: 10 ...........\n[[/box]]",
+      "meta": {
+        "preamble": "IELTS ACADEMIC LISTENING PRACTICE TEST 14",
+        "audioUrl": "/uploads/audio/test-14-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "central"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "address"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "basement"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "roof"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "lounge"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Spanish"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "red"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "July"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Cliffton"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "0930036602"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11-20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\n11 What is the new activity in the zoo in November?\n\nA evening tours\nB bonfire nights for adults\nC various parties\n\n12 What is the most popular species in the zoo?\n\nA kangaroo\nB koala\nC sheepdog\n\n13 What is the key to feeding kangaroos?\n\nA feeding more than one at a time\nB gently touching the baby kangaroos\nC standing up straight when feeding\n\n14 Why is the wild dog area closed?\n\nA The wild dogs are unwell.\nB The enclosure is under repair.\nC The dogs have not arrived.\n\n15 Where can visitors get discount tickets this year?\n\nA at the café\nB on the official website\nC at the gift shop\n\nQuestions 16 – 20\n\nLabel the map below\n\nWrite the correct letter, A-G, next to \n\nQuestion 16-20\n\n16 Arena ..........................\n\n17 Educational hall ..........................\n\n18 Picnic spot ..........................\n\n19 Photo printing shop ..........................\n\n20 Gift shop ..........................",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-14-section-2.mp3",
+        "imageUrl": "/uploads/images/test-14-listening-map.png",
+        "mediaUrl": "/uploads/images/test-14-listening-map.png"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the new activity in the zoo in November?",
+            "options": [
+              {
+                "label": "A",
+                "text": "evening tours"
+              },
+              {
+                "label": "B",
+                "text": "bonfire nights for adults"
+              },
+              {
+                "label": "C",
+                "text": "various parties"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the most popular species in the zoo?",
+            "options": [
+              {
+                "label": "A",
+                "text": "kangaroo"
+              },
+              {
+                "label": "B",
+                "text": "koala"
+              },
+              {
+                "label": "C",
+                "text": "sheepdog"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "B",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the key to feeding kangaroos?",
+            "options": [
+              {
+                "label": "A",
+                "text": "feeding more than one at a time"
+              },
+              {
+                "label": "B",
+                "text": "gently touching the baby kangaroos"
+              },
+              {
+                "label": "C",
+                "text": "standing up straight when feeding"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why is the wild dog area closed?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The wild dogs are unwell."
+              },
+              {
+                "label": "B",
+                "text": "The enclosure is under repair."
+              },
+              {
+                "label": "C",
+                "text": "The dogs have not arrived."
+              }
+            ],
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "B",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Where can visitors get discount tickets this year?",
+            "options": [
+              {
+                "label": "A",
+                "text": "at the café"
+              },
+              {
+                "label": "B",
+                "text": "on the official website"
+              },
+              {
+                "label": "C",
+                "text": "at the gift shop"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MAP_LABELING",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MAP_LABELING",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "E",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MAP_LABELING",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "A",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MAP_LABELING",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "D",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MAP_LABELING",
+          "content": {
+            "stem": "",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-14-listening-map.png"
+          },
+          "correctAnswer": "B",
+          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21-30\n\nQuestions 21-24\n\nChoose the correct letter, A, B or C.\n\nMaori Carving\n\n21 Amy and Mike agree that the greenstone tikis\n\nA take great skill to produce.\nB are fascinating curved shapes.\nC have interesting stories behind them.\n\n22 According to Amy, why are so few genuine old tikis found on archaeological dig sites?\n\nA Not many people know about them.\nB They tend to be stolen by treasure hunters.\nC The majority become inherited items.\n\n23 The Maori people considered tikis to be\n\nA decorative items.\nB religious objects.\nC tribal symbols.\n\n24 Tikis are classified into one type or the other by\n\nA where they originated.\nB the materials used.\nC the position of the body.\n\n25 How can modern reproductions be easily distinguished from genuine Maori carvings?\n\nA The materials differ.\nB They are too regular in shape.\nC They are of different sizes.\n\nQuestions 26-30\n\nWhat tool did Maoris use to carry out each of the following tasks?\n\nChoose FIVE answers from the box and write the correct letter, A-E next to \n\nQuestion 27-30\n\nTraditional Tools and Materials\nA Sandstone block\nB Plant glue\nC Stone scoring tool\nD Bone point\nE Stick drill\n\n26 creating a blank ..........................\n\n27 smoothing the surface ..........................\n\n28 carving details ..........................\n\n29 making holes ..........................\n\n30 fixing coloured decorations ..........................",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-14-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Amy and Mike agree that the greenstone tikis",
+            "options": [
+              {
+                "label": "A",
+                "text": "take great skill to produce."
+              },
+              {
+                "label": "B",
+                "text": "are fascinating curved shapes."
+              },
+              {
+                "label": "C",
+                "text": "have interesting stories behind them."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to Amy, why are so few genuine old tikis found on archaeological dig sites?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Not many people know about them."
+              },
+              {
+                "label": "B",
+                "text": "They tend to be stolen by treasure hunters."
+              },
+              {
+                "label": "C",
+                "text": "The majority become inherited items."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The Maori people considered tikis to be",
+            "options": [
+              {
+                "label": "A",
+                "text": "decorative items."
+              },
+              {
+                "label": "B",
+                "text": "religious objects."
+              },
+              {
+                "label": "C",
+                "text": "tribal symbols."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Tikis are classified into one type or the other by",
+            "options": [
+              {
+                "label": "A",
+                "text": "where they originated."
+              },
+              {
+                "label": "B",
+                "text": "the materials used."
+              },
+              {
+                "label": "C",
+                "text": "the position of the body."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How can modern reproductions be easily distinguished from genuine Maori carvings?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The materials differ."
+              },
+              {
+                "label": "B",
+                "text": "They are too regular in shape."
+              },
+              {
+                "label": "C",
+                "text": "They are of different sizes."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "creating a blank",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sandstone block"
+              },
+              {
+                "label": "B",
+                "text": "Plant glue"
+              },
+              {
+                "label": "C",
+                "text": "Stone scoring tool"
+              },
+              {
+                "label": "D",
+                "text": "Bone point"
+              },
+              {
+                "label": "E",
+                "text": "Stick drill"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "smoothing the surface",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sandstone block"
+              },
+              {
+                "label": "B",
+                "text": "Plant glue"
+              },
+              {
+                "label": "C",
+                "text": "Stone scoring tool"
+              },
+              {
+                "label": "D",
+                "text": "Bone point"
+              },
+              {
+                "label": "E",
+                "text": "Stick drill"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "carving details",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sandstone block"
+              },
+              {
+                "label": "B",
+                "text": "Plant glue"
+              },
+              {
+                "label": "C",
+                "text": "Stone scoring tool"
+              },
+              {
+                "label": "D",
+                "text": "Bone point"
+              },
+              {
+                "label": "E",
+                "text": "Stick drill"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "making holes",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sandstone block"
+              },
+              {
+                "label": "B",
+                "text": "Plant glue"
+              },
+              {
+                "label": "C",
+                "text": "Stone scoring tool"
+              },
+              {
+                "label": "D",
+                "text": "Bone point"
+              },
+              {
+                "label": "E",
+                "text": "Stick drill"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "fixing coloured decorations",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sandstone block"
+              },
+              {
+                "label": "B",
+                "text": "Plant glue"
+              },
+              {
+                "label": "C",
+                "text": "Stone scoring tool"
+              },
+              {
+                "label": "D",
+                "text": "Bone point"
+              },
+              {
+                "label": "E",
+                "text": "Stick drill"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31-40\n\nQuestions 31-36\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nSUBURBS\nPeople living in the suburbs:\nlabor workers 31 ............\nAdvantages of living in the suburbs:\nTax and the prices of 32 ............. are low.\nIt is easy to start a 33 .............\nBuilding 34 ............. housing area to meet the demand of growing population\nPeople have more 35 ............. because of wider roads.\nProblem:\nlack space for 36 ............. in the suburbs\n\nQuestions 37-40 \n\nWhat do each of the interviewees think of life in the suburbs compared with that in the cities?\n\nChoose four answers from the box and write the correct letter, A-F, next to \n\nQuestion 37-40\n\nComments\nA People there are friendlier\nB People there are healthier\nC It is less crowded\nD It is more convenient\nE People there are happier\nF There are some similarities\n\nInterviewees\n\n37 Jack Simons ..........................\n\n38 Ellen Simpson ..........................\n\n39 Robert Gregory ..........................\n\n40 Sarah Godfrey ..........................",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-14-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "wealthy residents"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "food"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "business"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "large-scale"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "mobility"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "trade"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Jack Simons",
+            "options": [
+              {
+                "label": "A",
+                "text": "People there are friendlier"
+              },
+              {
+                "label": "B",
+                "text": "People there are healthier"
+              },
+              {
+                "label": "C",
+                "text": "It is less crowded"
+              },
+              {
+                "label": "D",
+                "text": "It is more convenient"
+              },
+              {
+                "label": "E",
+                "text": "People there are happier"
+              },
+              {
+                "label": "F",
+                "text": "There are some similarities"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Ellen Simpson",
+            "options": [
+              {
+                "label": "A",
+                "text": "People there are friendlier"
+              },
+              {
+                "label": "B",
+                "text": "People there are healthier"
+              },
+              {
+                "label": "C",
+                "text": "It is less crowded"
+              },
+              {
+                "label": "D",
+                "text": "It is more convenient"
+              },
+              {
+                "label": "E",
+                "text": "People there are happier"
+              },
+              {
+                "label": "F",
+                "text": "There are some similarities"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Robert Gregory",
+            "options": [
+              {
+                "label": "A",
+                "text": "People there are friendlier"
+              },
+              {
+                "label": "B",
+                "text": "People there are healthier"
+              },
+              {
+                "label": "C",
+                "text": "It is less crowded"
+              },
+              {
+                "label": "D",
+                "text": "It is more convenient"
+              },
+              {
+                "label": "E",
+                "text": "People there are happier"
+              },
+              {
+                "label": "F",
+                "text": "There are some similarities"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Sarah Godfrey",
+            "options": [
+              {
+                "label": "A",
+                "text": "People there are friendlier"
+              },
+              {
+                "label": "B",
+                "text": "People there are healthier"
+              },
+              {
+                "label": "C",
+                "text": "It is less crowded"
+              },
+              {
+                "label": "D",
+                "text": "It is more convenient"
+              },
+              {
+                "label": "E",
+                "text": "People there are happier"
+              },
+              {
+                "label": "F",
+                "text": "There are some similarities"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "E"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-14-section-1.mp3",
+    "/uploads/audio/test-14-section-2.mp3",
+    "/uploads/audio/test-14-section-3.mp3",
+    "/uploads/audio/test-14-section-4.mp3"
+  ],
+  "savedAt": "2026-10-02T08:44:09.495Z"
+}

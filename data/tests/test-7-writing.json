@@ -15,7 +15,7 @@
       "order": 0,
       "content": "You should spend about 20 minutes on this task\n\nThe maps below show a housing estate as it is now and a plan for developing it in the future.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
       "meta": {
-        "imageUrl": "/uploads/writing/test-7-task1-maps.png"
+        "imageUrl": "/uploads/writing/test-7-task1-maps-v2.png"
       },
       "questions": [
         {
@@ -25,9 +25,9 @@
           "content": {
             "stem": "You should spend about 20 minutes on this task\n\nThe maps below show a housing estate as it is now and a plan for developing it in the future.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
             "minWords": 150,
-            "imageUrl": "/uploads/writing/test-7-task1-maps.png"
+            "imageUrl": "/uploads/writing/test-7-task1-maps-v2.png"
           },
-          "mediaUrl": "/uploads/writing/test-7-task1-maps.png"
+          "mediaUrl": "/uploads/writing/test-7-task1-maps-v2.png"
         }
       ]
     },

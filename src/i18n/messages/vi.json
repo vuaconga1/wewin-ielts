@@ -455,6 +455,7 @@
     "submitNetwork": "Không nộp được bài. Kiểm tra mạng rồi thử lại.",
     "writingTask": "Writing task",
     "writingDiagram": "Sơ đồ / hình",
+    "sectionFigure": "Hình trong đề",
     "writingAnswer": "Bài làm của bạn",
     "writingPlaceholder": "Viết bài luận của bạn…",
     "wordCount": "{count} từ · tối thiểu {min}",

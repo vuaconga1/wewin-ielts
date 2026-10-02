@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 10",
+  "slug": "test-10-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_10\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 10 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you enjoy shopping for clothes or gadgets?",
+            "speakingPart": 1,
+            "topic": "Shopping & Consumer Habits"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer shopping in physical stores or online?",
+            "speakingPart": 1,
+            "topic": "Shopping & Consumer Habits"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Have you ever regretted buying something?",
+            "speakingPart": 1,
+            "topic": "Shopping & Consumer Habits"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe an item you purchased on which you spent significantly more money than planned.\nYou should say:\n- what the item was\n- how much it cost\n- why you decided to buy it anyway\n- and explain why you spent more than anticipated.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do people frequently purchase luxury goods they cannot strictly afford?",
+            "speakingPart": 3,
+            "topic": "Consumer Culture & Financial Literacy"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Should financial literacy and personal budgeting be compulsory in school curricula?",
+            "speakingPart": 3,
+            "topic": "Consumer Culture & Financial Literacy"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How do e-commerce platforms and digital payments encourage impulsive spending?",
+            "speakingPart": 3,
+            "topic": "Consumer Culture & Financial Literacy"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:07.922Z"
+}

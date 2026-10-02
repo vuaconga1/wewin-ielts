@@ -191,7 +191,9 @@ function findMarkers(text: string): MarkerHit[] {
     }
 
     if (!hit) {
-      m = trimmed.match(/^(?:#{1,3}\s*)?Task\s+([12])\s*[:.\-]?\s*(.*)$/i);
+      m = trimmed.match(
+        /^(?:#{1,3}\s*)?(?:Writing\s+)?Task\s+([12])\s*[:.\-]?\s*(.*)$/i,
+      );
       if (m) {
         const subtitle = m[2]?.trim();
         if (isHeadingLikeSubtitle(subtitle || undefined)) {

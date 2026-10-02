@@ -1,0 +1,715 @@
+{
+  "title": "Test 14 - Reading",
+  "slug": "test-14-reading",
+  "skill": "READING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Reading"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_14\\STUDENT",
+  "parts": [
+    {
+      "title": "Passage 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\nUrban Green Infrastructure and Climate Resilience\n\nA. As metropolitan regions worldwide grapple with intensifying heatwaves and extreme precipitation events driven by global climate change, urban planners and environmental engineers are increasingly turning away from traditional hard-engineering solutions in favour of nature-based strategies. Urban green infrastructure—the strategically planned network of natural and semi-natural areas designed and managed to deliver a wide range of ecosystem services—is emerging as a cornerstone of sustainable city development. By integrating vegetation, soils, and natural hydrological cycles directly into urban fabrics, cities can bolster their resilience against environmental shocks while enhancing public health and livability.\n\nB. One of the most acute challenges confronting modern cities is the urban heat island effect, a meteorological phenomenon whereby built environments experience substantially higher ambient temperatures than surrounding rural landscapes. This discrepancy arises primarily because conventional construction materials like asphalt and concrete absorb and re-radiate vast amounts of solar radiation, while human activities generate massive volumes of waste heat. Urban tree canopies counteract this thermal loading through two complementary mechanisms: physical shading and evapotranspiration. Trees intercept incoming sunlight before it reaches ground surfaces, preventing heat storage. Simultaneously, plant roots draw moisture from the soil and release water vapour into the atmosphere through microscopic leaf pores, consuming thermal energy in the process and cooling local air temperatures by up to several degrees Celsius.\n\nC. In addition to thermal regulation, urban green infrastructure plays a pivotal role in sustainable stormwater management. In conventional cities dominated by impervious surfaces, rainfall cannot infiltrate the ground naturally. Instead, it generates rapid surface runoff that overwhelms municipal drainage networks, leading to severe flash flooding and discharging untreated pollutants directly into local waterways. Nature-based stormwater interventions, such as bioswales, rain gardens, and engineered retention ponds, mimic natural hydrological systems by slowing down water movement, encouraging ground infiltration, and trapping particulate contaminants through soil filtration and biological uptake by wetland plants.\n\nD. Green roofs—vegetated layers planted over waterproofing membranes on building rooftops—represent another highly effective component of green infrastructure. In addition to intercepting up to seventy percent of seasonal precipitation, green roofs provide substantial thermal insulation, reducing the energy required for mechanical cooling during summer months and retaining interior heat in winter. Furthermore, extensive green roof networks serve as vital biodiversity stepping stones, providing refuge and foraging habitats for pollinators, songbirds, and beneficial insects in densely built urban cores where ground-level parkland is scarce.\n\nE. Despite these established benefits, the widespread deployment of green infrastructure encounters notable institutional and economic obstacles. Municipal governments frequently face tight municipal budgets, where the upfront capital expenditure of retrofitting existing streets with vegetated swales or permeable pavements competes with other essential public services. Moreover, green assets require ongoing maintenance, such as irrigation, pruning, and debris removal, which traditional public works departments may lack the staffing or horticultural expertise to manage effectively. Nonetheless, comprehensive life-cycle cost analyses consistently indicate that the long-term economic dividends of green infrastructure—manifested in averted flood damages, reduced healthcare costs, lower energy bills, and elevated property values—far exceed initial implementation expenditures.\n\nQuestions 1–7\n\nDo the following statements agree with the information given in Reading Passage 1?\n\nIn boxes 1–7 on your answer sheet, write:\n\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this\n\n1. Traditional hard-engineering methods are no longer used anywhere in modern urban design.\n\n2. The urban heat island effect makes cities noticeably warmer than neighbouring rural countryside.\n\n3. Asphalt and concrete absorb solar radiation and re-radiate it as thermal heat.\n\n4. Infiltration through plant leaves is the sole way that trees provide local cooling.\n\n5. Impervious urban surfaces increase the risk of flash flooding during heavy rain.\n\n6. All municipal governments currently possess adequate staff to maintain urban green assets.\n\n7. Life-cycle cost studies demonstrate that the economic benefits of green infrastructure outweigh initial costs.\n\nQuestions 8–13\n\nComplete the summary below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\n\nWrite your answers in boxes 8–13 on your answer sheet.\n\nMechanisms and Components of Urban Green Infrastructure\n\nUrban tree canopies provide significant cooling by blocking incoming 8 .................... and releasing water vapour through the process of 9 .................... .\n\nIn typical urban settings, extensive hard surfaces prevent water absorption and generate swift surface 10 .................... that can flood stormwater systems. To counter this, nature-based drainage features such as bioswales, rain gardens, and engineered 11 .................... encourage infiltration and filter out harmful 12 .................... .\n\nAdditionally, green roofs installed on buildings offer effective thermal insulation and can intercept up to seventy percent of seasonal 13 .................... .",
+      "meta": {
+        "preamble": "IELTS ACADEMIC READING PRACTICE TEST 14"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Traditional hard-engineering methods are no longer used anywhere in modern urban design.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The urban heat island effect makes cities noticeably warmer than neighbouring rural countryside.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Asphalt and concrete absorb solar radiation and re-radiate it as thermal heat.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Infiltration through plant leaves is the sole way that trees provide local cooling.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Impervious urban surfaces increase the risk of flash flooding during heavy rain.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "All municipal governments currently possess adequate staff to maintain urban green assets.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Life-cycle cost studies demonstrate that the economic benefits of green infrastructure outweigh initial costs.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "solar radiation"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "evapotranspiration"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "runoff"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "retention ponds"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "pollutants"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "precipitation"
+        }
+      ]
+    },
+    {
+      "title": "Passage 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.\n\nThe Cognitive Psychology of Deep Reading and Digital Media\n\nA. Human beings were never biologically born to read. While spoken language is hardwired into our evolutionary biology through innate neural structures that develop automatically in early childhood, literacy requires an unnatural cognitive invention. To read, the human brain must repurpose and weave together disparate neural circuits initially evolved for vision, motor coordination, and spoken language. Because reading is a culturally acquired skill, the neurological architecture of the reading brain is fundamentally plastic—it adapts dynamically to the physical characteristics of the medium through which text is consumed.\n\nB. Over the past two decades, the global shift from printed paper to digital screens has sparked intensive investigation among cognitive psychologists, neuroscientists, and educators. Cognitive scientist Maryanne Wolf cautions that the constant consumption of fragmented digital text is subtly transforming how our brains process written information. On digital devices, reading often devolves into skimming, rapid word-spotting, and scrolling, driven by the brain's desire to extract quick information amidst visual distractions. Eye-tracking experiments demonstrate that screen readers rarely read sequentially; instead, their gaze darts across the page in an 'F-shaped' pattern, absorbing headlines and initial sentences while skipping dense paragraphs.\n\nC. This reading style exerts profound implications for what cognitive theorists call 'deep reading' processes. Deep reading encompasses sophisticated intellectual operations, including inductive reasoning, critical analysis, analogical thinking, and empathetic identification with characters or authors. Technology critic Nicholas Carr argues that the cognitive overload induced by hyperlinks, push notifications, and visual stimuli fragments our working memory, preventing information from transitioning into deep long-term memory stores. Without the quiet mental space required for contemplation, readers risk becoming mere decoders of information rather than thoughtful evaluators of meaning.\n\nD. Empirical studies corroborate these concerns. In controlled trials conducted by linguist Naomi Baron, university students who read complex expository texts in print consistently demonstrated superior comprehension and recall compared to peers who read identical material on digital screens. Printed text provides tactile and spatial landmarks—such as the physical thickness of pages turned and fixed topography of text on a page—that construct a coherent cognitive map in the reader's mind. Conversely, digital scrolling disrupts this spatial anchoring, causing mental fatigue and reducing narrative retention.\n\nE. However, cognitive scientists do not advocate abandoning digital technology. Instead, educational researcher Anne Mangen proposes cultivating a 'bi-literate' brain. Under this paradigm, children are taught to master both modes of literacy deliberately: agile digital skimming for rapid research and information gathering, alongside sustained, uninterrupted immersion in printed text for deep intellectual reflection and empathetic growth. By understanding how the reading medium shapes cognition, societies can preserve the deep contemplative mind while harnessing the immense advantages of the digital era.\n\nQuestions 14–18\n\nReading Passage 2 has five paragraphs, A–E.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter, A–E, in boxes 14–18 on your answer sheet.\n\n14. An explanation of why literacy requires the brain to adapt existing neural structures.\n\n15. Evidence showing that readers on screens often follow an F-shaped visual pattern.\n\n16. The concept that digital distractions overload working memory and inhibit deep learning.\n\n17. The recommendation that educational systems develop both digital and print reading abilities.\n\n18. Physical and spatial advantages that print reading provides over digital scrolling.\n\nQuestions 19–23\n\nLook at the following statements (\n\nQuestions 19–23) and the list of researchers below.\n\nMatch each statement with the correct researcher, A–D.\n\nWrite the correct letter, A–D, in boxes 19–23 on your answer sheet.\n\nList of Researchers\n\nA Maryanne Wolf\n\nB Nicholas Carr\n\nC Naomi Baron\n\nD Anne Mangen\n\n19. Reading text on screens encourages superficial scanning rather than thorough absorption.\n\n20. Frequent exposure to digital interruptions prevents information from forming long-term memories.\n\n21. Students comprehend complex texts significantly better when reading from physical paper.\n\n22. Continuous exposure to fragmented digital content is altering the way human brains process written text.\n\n23. Educational curricula should actively train students to develop bi-literate reading competencies.\n\nQuestions 24–26\n\nComplete the sentences below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 24–26 on your answer sheet.\n\n24. Reading is fundamentally a culturally acquired skill that relies on the .................... of the human brain.\n\n25. In deep reading, readers engage in critical reasoning and emotional .................... with authors.\n\n26. Digital scrolling destroys the tactile and spatial .................... that help readers remember a narrative.",
+      "meta": {},
+      "questions": [
+        {
+          "number": 14,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "An explanation of why literacy requires the brain to adapt existing neural structures."
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 15,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Evidence showing that readers on screens often follow an F-shaped visual pattern."
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The concept that digital distractions overload working memory and inhibit deep learning."
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The recommendation that educational systems develop both digital and print reading abilities."
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 18,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Physical and spatial advantages that print reading provides over digital scrolling."
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 19,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Reading text on screens encourages superficial scanning rather than thorough absorption.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Maryanne Wolf"
+              },
+              {
+                "label": "B",
+                "text": "Nicholas Carr"
+              },
+              {
+                "label": "C",
+                "text": "Naomi Baron"
+              },
+              {
+                "label": "D",
+                "text": "Anne Mangen"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 20,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Frequent exposure to digital interruptions prevents information from forming long-term memories.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Maryanne Wolf"
+              },
+              {
+                "label": "B",
+                "text": "Nicholas Carr"
+              },
+              {
+                "label": "C",
+                "text": "Naomi Baron"
+              },
+              {
+                "label": "D",
+                "text": "Anne Mangen"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 21,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Students comprehend complex texts significantly better when reading from physical paper.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Maryanne Wolf"
+              },
+              {
+                "label": "B",
+                "text": "Nicholas Carr"
+              },
+              {
+                "label": "C",
+                "text": "Naomi Baron"
+              },
+              {
+                "label": "D",
+                "text": "Anne Mangen"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Continuous exposure to fragmented digital content is altering the way human brains process written text.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Maryanne Wolf"
+              },
+              {
+                "label": "B",
+                "text": "Nicholas Carr"
+              },
+              {
+                "label": "C",
+                "text": "Naomi Baron"
+              },
+              {
+                "label": "D",
+                "text": "Anne Mangen"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Educational curricula should actively train students to develop bi-literate reading competencies.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Maryanne Wolf"
+              },
+              {
+                "label": "B",
+                "text": "Nicholas Carr"
+              },
+              {
+                "label": "C",
+                "text": "Naomi Baron"
+              },
+              {
+                "label": "D",
+                "text": "Anne Mangen"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 24,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Reading is fundamentally a culturally acquired skill that relies on the .................... of the human brain."
+          },
+          "correctAnswer": "plasticity"
+        },
+        {
+          "number": 25,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In deep reading, readers engage in critical reasoning and emotional .................... with authors."
+          },
+          "correctAnswer": "empathy"
+        },
+        {
+          "number": 26,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Digital scrolling destroys the tactile and spatial .................... that help readers remember a narrative."
+          },
+          "correctAnswer": "landmarks"
+        }
+      ]
+    },
+    {
+      "title": "Passage 3",
+      "order": 2,
+      "content": "You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.\n\nQuestions 27–31\n\nReading Passage 3 has five sections, A–E.\n\nChoose the correct heading for each section from the list of headings below.\n\nWrite the correct number, i–viii, in boxes 27–31 on your answer sheet.\n\nList of Headings\n\ni A solution to high-speed noise pollution\n\nii Early philosophical concepts and the formal definition of biomimicry\n\niii Architectural climate control modeled on insect nests\n\niv The future of synthetic food production\n\nv Hydrodynamic and antibacterial surfaces inspired by marine predators\n\nvi Botanical and reptilian models for self-cleaning and adhesive surfaces\n\nvii The evolutionary failure of human inventions\n\nviii Structural materials inspired by avian bone density\n\n27. Section A ....................\n\n28. Section B ....................\n\n29. Section C ....................\n\n30. Section D ....................\n\n31. Section E ....................\n\nBiomimicry: Engineering Inspired by Nature\n\nA. For nearly four billion years, biological organisms have undergone relentless testing and refinement in nature's vast laboratory of natural selection. Every creature surviving today embodies elegant, energy-efficient solutions to complex physical, chemical, and structural challenges. The practice of emulating biological models, systems, and processes to solve human engineering problems is known as biomimicry—a term coined by American biophysicist Otto Schmitt in the mid-twentieth century and later popularized by science writer Janine Benyus. While early thinkers such as Leonardo da Vinci sketched flying apparatuses inspired by avian flight, modern biomimicry utilizes advanced electron microscopy and nanotechnology to decode nature's microscopic blueprints.\n\nB. One of the most famous applications of biomimicry occurred in the Japanese railway network during the 1990s. When engineers tested the original Shinkansen 500-Series bullet train, the high-speed locomotive generated severe noise pollution. As the train entered narrow tunnels at speeds exceeding 300 kilometres per hour, sudden changes in atmospheric air pressure created an explosive shockwave known as a sonic boom, rattling windows and disturbing residents for kilometres around. Eiji Nakatsu, the chief engineer and an avid birdwatcher, realized that the kingfisher provided a natural solution. Kingfishers dive from air into water—a medium eight hundred times denser—with scarcely a splash. By redesigning the train's front nose cone to resemble the streamlined, tapered beak of a kingfisher, engineers eliminated the tunnel sonic boom, reduced electricity consumption by fifteen percent, and increased operating speeds.\n\nC. In civil architecture, biomimicry has revolutionized passive thermal climate control. When architect Mick Pearce was tasked with designing the Eastgate Centre, a major office and shopping complex in Harare, Zimbabwe, he sought to eliminate energy-intensive conventional air conditioning. Pearce turned to the architectural marvels of macrotermes bellicosus, a local species of termite. These insects construct towering termite mounds that maintain an interior temperature of exactly thirty degrees Celsius year-round, despite extreme outdoor temperatures fluctuating between zero and forty degrees. Pearce copied the termite mound's ventilation system, designing a building with hollow floors, chimneys, and dynamic airflow flues that passively draw cool air from the basement during the night and vent warm air out through roof shafts during the day, using ninety percent less energy than conventional office buildings.\n\nD. In the marine and transport sectors, sharkskin has inspired breakthrough hydrodynamic surfaces. Despite swimming slowly through microbe-rich waters, sharks remain strikingly clean, free of algae and barnacles. Marine biologists discovered that shark skin is covered with microscopic ribbed scales known as dermal denticles. These microscopic grooves disrupt the formation of turbulent water vortices along the shark's body, drastically reducing drag while creating an inhospitable surface where bacteria cannot easily attach. Synthetic riblet films mimicking sharkskin are now applied to commercial airliner hulls to curb fuel burn, as well as hospital wall coatings to impede bacterial transmission without antibiotics.\n\nE. Further remarkable discoveries have emerged from botanical and reptilian investigations. The leaves of the sacred lotus flower exhibit remarkable water repellency and self-cleaning traits: microscopic wax crystals cause water droplets to bead into perfect spheres that roll off the leaf, carrying dirt and fungal spores with them. This 'lotus effect' has inspired hydrophobic exterior paints and stain-resistant window glass. Similarly, the ability of geckos to run effortlessly up sheer vertical glass walls stems from millions of microscopic hairs called setae on their toes, which generate molecular van der Waals forces of dry adhesion. By replicating these microscopic setae, materials scientists have developed reusable adhesives capable of functioning in outer space.\n\nQuestions 32–36\n\nDo the following statements agree with the claims of the writer in Reading Passage 3?\n\nIn boxes 32–36 on your answer sheet, write:\n\nYES if the statement agrees with the claims of the writer\nNO if the statement contradicts the claims of the writer\nNOT GIVEN if it is impossible to say what the writer thinks about this\n\n32. Otto Schmitt was the first human in recorded history to propose drawing inspiration from animals.\n\n33. The original Shinkansen bullet train created an unacceptable sonic boom when entering tunnels.\n\n34. Redesigning the bullet train's nose cone made the train travel slower than its original speed.\n\n35. The Eastgate Centre in Zimbabwe operates without conventional mechanical air conditioning.\n\n36. Shark dermal denticles reduce drag while simultaneously preventing bacterial attachment.\n\nQuestions 37–40\n\nComplete the sentences below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 37–40 on your answer sheet.\n\n37. Eiji Nakatsu based the aerodynamic shape of the high-speed train on the beak of a .................... .\n\n38. The Eastgate complex mimics the passive .................... system of African termite mounds.\n\n39. Dermal scales on sharks disrupt fluid .................... to reduce drag in water.\n\n40. Geckos adhere to smooth surfaces using microscopic hairs that produce .................... forces.",
+      "meta": {},
+      "questions": [
+        {
+          "number": 27,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section A",
+            "options": [
+              {
+                "label": "c",
+                "text": "In civil architecture, biomimicry has revolutionized passive thermal climate control. When architect Mick Pearce was tasked with designing the Eastgate Centre, a major office and shopping complex in Harare, Zimbabwe, he sought to eliminate energy-intensive conventional air conditioning. Pearce turned to the architectural marvels of macrotermes bellicosus, a local species of termite. These insects construct towering termite mounds that maintain an interior temperature of exactly thirty degrees Celsius year-round, despite extreme outdoor temperatures fluctuating between zero and forty degrees. Pearce copied the termite mound's ventilation system, designing a building with hollow floors, chimneys, and dynamic airflow flues that passively draw cool air from the basement during the night and vent warm air out through roof shafts during the day, using ninety percent less energy than conventional office buildings."
+              },
+              {
+                "label": "d",
+                "text": "In the marine and transport sectors, sharkskin has inspired breakthrough hydrodynamic surfaces. Despite swimming slowly through microbe-rich waters, sharks remain strikingly clean, free of algae and barnacles. Marine biologists discovered that shark skin is covered with microscopic ribbed scales known as dermal denticles. These microscopic grooves disrupt the formation of turbulent water vortices along the shark's body, drastically reducing drag while creating an inhospitable surface where bacteria cannot easily attach. Synthetic riblet films mimicking sharkskin are now applied to commercial airliner hulls to curb fuel burn, as well as hospital wall coatings to impede bacterial transmission without antibiotics."
+              }
+            ]
+          },
+          "correctAnswer": "ii"
+        },
+        {
+          "number": 28,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section B",
+            "options": [
+              {
+                "label": "c",
+                "text": "In civil architecture, biomimicry has revolutionized passive thermal climate control. When architect Mick Pearce was tasked with designing the Eastgate Centre, a major office and shopping complex in Harare, Zimbabwe, he sought to eliminate energy-intensive conventional air conditioning. Pearce turned to the architectural marvels of macrotermes bellicosus, a local species of termite. These insects construct towering termite mounds that maintain an interior temperature of exactly thirty degrees Celsius year-round, despite extreme outdoor temperatures fluctuating between zero and forty degrees. Pearce copied the termite mound's ventilation system, designing a building with hollow floors, chimneys, and dynamic airflow flues that passively draw cool air from the basement during the night and vent warm air out through roof shafts during the day, using ninety percent less energy than conventional office buildings."
+              },
+              {
+                "label": "d",
+                "text": "In the marine and transport sectors, sharkskin has inspired breakthrough hydrodynamic surfaces. Despite swimming slowly through microbe-rich waters, sharks remain strikingly clean, free of algae and barnacles. Marine biologists discovered that shark skin is covered with microscopic ribbed scales known as dermal denticles. These microscopic grooves disrupt the formation of turbulent water vortices along the shark's body, drastically reducing drag while creating an inhospitable surface where bacteria cannot easily attach. Synthetic riblet films mimicking sharkskin are now applied to commercial airliner hulls to curb fuel burn, as well as hospital wall coatings to impede bacterial transmission without antibiotics."
+              }
+            ]
+          },
+          "correctAnswer": "i"
+        },
+        {
+          "number": 29,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section C",
+            "options": [
+              {
+                "label": "c",
+                "text": "In civil architecture, biomimicry has revolutionized passive thermal climate control. When architect Mick Pearce was tasked with designing the Eastgate Centre, a major office and shopping complex in Harare, Zimbabwe, he sought to eliminate energy-intensive conventional air conditioning. Pearce turned to the architectural marvels of macrotermes bellicosus, a local species of termite. These insects construct towering termite mounds that maintain an interior temperature of exactly thirty degrees Celsius year-round, despite extreme outdoor temperatures fluctuating between zero and forty degrees. Pearce copied the termite mound's ventilation system, designing a building with hollow floors, chimneys, and dynamic airflow flues that passively draw cool air from the basement during the night and vent warm air out through roof shafts during the day, using ninety percent less energy than conventional office buildings."
+              },
+              {
+                "label": "d",
+                "text": "In the marine and transport sectors, sharkskin has inspired breakthrough hydrodynamic surfaces. Despite swimming slowly through microbe-rich waters, sharks remain strikingly clean, free of algae and barnacles. Marine biologists discovered that shark skin is covered with microscopic ribbed scales known as dermal denticles. These microscopic grooves disrupt the formation of turbulent water vortices along the shark's body, drastically reducing drag while creating an inhospitable surface where bacteria cannot easily attach. Synthetic riblet films mimicking sharkskin are now applied to commercial airliner hulls to curb fuel burn, as well as hospital wall coatings to impede bacterial transmission without antibiotics."
+              }
+            ]
+          },
+          "correctAnswer": "iii"
+        },
+        {
+          "number": 30,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section D",
+            "options": [
+              {
+                "label": "c",
+                "text": "In civil architecture, biomimicry has revolutionized passive thermal climate control. When architect Mick Pearce was tasked with designing the Eastgate Centre, a major office and shopping complex in Harare, Zimbabwe, he sought to eliminate energy-intensive conventional air conditioning. Pearce turned to the architectural marvels of macrotermes bellicosus, a local species of termite. These insects construct towering termite mounds that maintain an interior temperature of exactly thirty degrees Celsius year-round, despite extreme outdoor temperatures fluctuating between zero and forty degrees. Pearce copied the termite mound's ventilation system, designing a building with hollow floors, chimneys, and dynamic airflow flues that passively draw cool air from the basement during the night and vent warm air out through roof shafts during the day, using ninety percent less energy than conventional office buildings."
+              },
+              {
+                "label": "d",
+                "text": "In the marine and transport sectors, sharkskin has inspired breakthrough hydrodynamic surfaces. Despite swimming slowly through microbe-rich waters, sharks remain strikingly clean, free of algae and barnacles. Marine biologists discovered that shark skin is covered with microscopic ribbed scales known as dermal denticles. These microscopic grooves disrupt the formation of turbulent water vortices along the shark's body, drastically reducing drag while creating an inhospitable surface where bacteria cannot easily attach. Synthetic riblet films mimicking sharkskin are now applied to commercial airliner hulls to curb fuel burn, as well as hospital wall coatings to impede bacterial transmission without antibiotics."
+              }
+            ]
+          },
+          "correctAnswer": "v"
+        },
+        {
+          "number": 31,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section E",
+            "options": [
+              {
+                "label": "c",
+                "text": "In civil architecture, biomimicry has revolutionized passive thermal climate control. When architect Mick Pearce was tasked with designing the Eastgate Centre, a major office and shopping complex in Harare, Zimbabwe, he sought to eliminate energy-intensive conventional air conditioning. Pearce turned to the architectural marvels of macrotermes bellicosus, a local species of termite. These insects construct towering termite mounds that maintain an interior temperature of exactly thirty degrees Celsius year-round, despite extreme outdoor temperatures fluctuating between zero and forty degrees. Pearce copied the termite mound's ventilation system, designing a building with hollow floors, chimneys, and dynamic airflow flues that passively draw cool air from the basement during the night and vent warm air out through roof shafts during the day, using ninety percent less energy than conventional office buildings."
+              },
+              {
+                "label": "d",
+                "text": "In the marine and transport sectors, sharkskin has inspired breakthrough hydrodynamic surfaces. Despite swimming slowly through microbe-rich waters, sharks remain strikingly clean, free of algae and barnacles. Marine biologists discovered that shark skin is covered with microscopic ribbed scales known as dermal denticles. These microscopic grooves disrupt the formation of turbulent water vortices along the shark's body, drastically reducing drag while creating an inhospitable surface where bacteria cannot easily attach. Synthetic riblet films mimicking sharkskin are now applied to commercial airliner hulls to curb fuel burn, as well as hospital wall coatings to impede bacterial transmission without antibiotics."
+              }
+            ]
+          },
+          "correctAnswer": "vi"
+        },
+        {
+          "number": 32,
+          "order": 5,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Otto Schmitt was the first human in recorded history to propose drawing inspiration from animals.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 33,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The original Shinkansen bullet train created an unacceptable sonic boom when entering tunnels.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 34,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Redesigning the bullet train's nose cone made the train travel slower than its original speed.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 35,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The Eastgate Centre in Zimbabwe operates without conventional mechanical air conditioning.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 36,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Shark dermal denticles reduce drag while simultaneously preventing bacterial attachment.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 37,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Eiji Nakatsu based the aerodynamic shape of the high-speed train on the beak of a .................... ."
+          },
+          "correctAnswer": "kingfisher"
+        },
+        {
+          "number": 38,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The Eastgate complex mimics the passive .................... system of African termite mounds."
+          },
+          "correctAnswer": "ventilation"
+        },
+        {
+          "number": 39,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Dermal scales on sharks disrupt fluid .................... to reduce drag in water."
+          },
+          "correctAnswer": "vortices"
+        },
+        {
+          "number": 40,
+          "order": 13,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Geckos adhere to smooth surfaces using microscopic hairs that produce .................... forces."
+          },
+          "correctAnswer": "adhesion"
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:10.051Z"
+}

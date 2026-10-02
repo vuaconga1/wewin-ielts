@@ -15,7 +15,7 @@
       "order": 0,
       "content": "You should spend about 20 minutes on this task\n\nThe pie charts provide data on the proportion of the world’s forests in five different regions and the proportion of timber found in each region.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
       "meta": {
-        "imageUrl": "/uploads/writing/test-11-task1-chart.png"
+        "imageUrl": "/uploads/writing/test-11-task1-chart-v2.png"
       },
       "questions": [
         {
@@ -25,9 +25,9 @@
           "content": {
             "stem": "You should spend about 20 minutes on this task\n\nThe pie charts provide data on the proportion of the world’s forests in five different regions and the proportion of timber found in each region.\nProvide an overview of the information by identifying and describing the key details, and include comparisons where appropriate.\n\nWrite at least 150 words",
             "minWords": 150,
-            "imageUrl": "/uploads/writing/test-11-task1-chart.png"
+            "imageUrl": "/uploads/writing/test-11-task1-chart-v2.png"
           },
-          "mediaUrl": "/uploads/writing/test-11-task1-chart.png"
+          "mediaUrl": "/uploads/writing/test-11-task1-chart-v2.png"
         }
       ]
     },

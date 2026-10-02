@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 8",
+  "slug": "test-8-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_08\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 8 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you enjoy traveling to new places?",
+            "speakingPart": 1,
+            "topic": "Travel & Tourism"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What destinations in your country would you recommend to foreign tourists?",
+            "speakingPart": 1,
+            "topic": "Travel & Tourism"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer relaxing beach holidays or cultural city breaks?",
+            "speakingPart": 1,
+            "topic": "Travel & Tourism"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe a memorable place you have traveled to that you would recommend to others.\nYou should say:\n- where the place is\n- when and why you visited it\n- what activities you enjoyed there\n- and explain why you would recommend this destination.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What are the economic benefits and environmental drawbacks of international mass tourism?",
+            "speakingPart": 3,
+            "topic": "Tourism & Economic Impacts"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How can historic tourist cities preserve their architectural integrity amidst heavy visitor flows?",
+            "speakingPart": 3,
+            "topic": "Tourism & Economic Impacts"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Does traveling abroad genuinely broaden an individual’s cultural perspective?",
+            "speakingPart": 3,
+            "topic": "Tourism & Economic Impacts"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:07.702Z"
+}

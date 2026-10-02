@@ -1,0 +1,54 @@
+{
+  "title": "Test 14 - Writing",
+  "slug": "test-14-writing",
+  "skill": "WRITING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Writing"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_14\\STUDENT",
+  "parts": [
+    {
+      "title": "Task 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on this task.\n\nThe bar chart below shows the estimated global water withdrawal by three economic sectors (Agriculture, Industry, and Domestic) in 2000, 2010, and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "meta": {
+        "preamble": "IELTS ACADEMIC WRITING PRACTICE TEST 14\n\nTIME ALLOWED: 60 minutes\nINSTRUCTIONS TO CANDIDATES: You must answer both Task 1 and Task 2.",
+        "imageUrl": "/uploads/writing/test-14-writing-task1.png"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 20 minutes on this task.\n\nThe bar chart below shows the estimated global water withdrawal by three economic sectors (Agriculture, Industry, and Domestic) in 2000, 2010, and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+            "minWords": 150,
+            "imageUrl": "/uploads/writing/test-14-writing-task1.png"
+          },
+          "mediaUrl": "/uploads/writing/test-14-writing-task1.png"
+        }
+      ]
+    },
+    {
+      "title": "Task 2",
+      "order": 1,
+      "content": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nFresh water is a limited natural resource, and many regions face acute water shortages. Some people believe that water use should be strictly rationed and priced heavily by governments, while others believe access to clean water is a fundamental human right that should be free.\n\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "meta": {},
+      "questions": [
+        {
+          "number": 2,
+          "order": 0,
+          "type": "ESSAY",
+          "content": {
+            "stem": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nFresh water is a limited natural resource, and many regions face acute water shortages. Some people believe that water use should be strictly rationed and priced heavily by governments, while others believe access to clean water is a fundamental human right that should be free.\n\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+            "minWords": 250
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:10.325Z"
+}

@@ -1,0 +1,832 @@
+{
+  "title": "Test 12 - Listening",
+  "slug": "test-12-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_12\\STUDENT",
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\n\nQuestions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nGreenwood Holiday Eco-Lodge Booking\n\nCustomer Details:\n• Guest name: Arthur 1 ....................\n• Contact phone number: 2 ....................\n• Booking dates: 14th July to 3 .................... July\n• Number of adults: 2; Number of children: 4 ....................\n\nAccommodation Preferences:\n• Lodge choice: The 5 .................... Cottage\n• Kitchen facilities: requires a full 6 ....................\n• Extra equipment requested: child highchair and a 7 ....................\n\nActivities & Facilities:\n• Free guided walk on Wednesday morning focused on local 8 ....................\n• Bike hire: reserve for 9 .................... days\n\nPayment Terms:\n• Total cost: 10 .................... including environmental tax and linen deposit",
+      "meta": {
+        "preamble": "IELTS ACADEMIC LISTENING PRACTICE TEST 12\n\nGENERATED PRACTICE MATERIAL — NOT ORIGINAL IELTS TEST\n\nIELTS LISTENING PRACTICE TEST 12",
+        "audioUrl": "/uploads/audio/test-12-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Campbell"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "07845 229310"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "21st / 21"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "1 / one"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "Willow"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "kitchen"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "cot"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "wildlife / birds"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "3 / three"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "845"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–20\n\nQuestions 11–15\nChoose the correct letter, A, B or C.\n\n11. The Seaview Marine Heritage Centre was originally established to\n    A. preserve historical fishing vessels.\n    B. monitor endangered seal colonies.\n    C. provide employment for retired sailors.\n\n12. What change was made to the main exhibition hall last winter?\n    A. An interactive touch-screen gallery was installed.\n    B. The floor space was doubled in size.\n    C. A new café area was added.\n\n13. Visitors are advised that the Coastal Cliff Trail\n    A. is unsuitable for pushchairs and wheelchairs.\n    B. requires tickets to be booked 24 hours in advance.\n    C. is closed whenever the tide is rising.\n\n14. How can families receive a discount on boat excursions?\n    A. By presenting a valid rail travel card.\n    B. By booking through the official mobile app.\n    C. By purchasing combined museum-and-boat tickets.\n\n15. What is the speaker’s recommendation regarding lunch?\n    A. Eat at the outdoor picnic benches near the lighthouse.\n    B. Reserve a table in advance at the Waterfront Bistro.\n    C. Try the traditional seafood chowder at the Harbour Kiosk.\n\nQuestions 16–20\nWhich activity or exhibit is located in each part of the centre?\nChoose FIVE answers from the box and write the correct letter, A–H, next to \n\nQuestions 16–20.\n\n    A   Victorian Shipyard Workshop\n    B   Aquarium Nursery\n    C   Audio-Visual Theatre\n    D   Navigation Simulator\n    E   Seabird Observation Deck\n    F   Gift & Book Shop\n    G   Lighthouse Lantern Room\n    H   Model Boat Basin\n\n16. Ground floor East Wing        ....................\n17. Ground floor West Wing        ....................\n18. First floor Mezzanine         ....................\n19. Tower Summit                  ....................\n20. Courtyard Garden              ....................",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-12-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The Seaview Marine Heritage Centre was originally established to",
+            "options": [
+              {
+                "label": "A",
+                "text": "preserve historical fishing vessels."
+              },
+              {
+                "label": "B",
+                "text": "monitor endangered seal colonies."
+              },
+              {
+                "label": "C",
+                "text": "provide employment for retired sailors."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What change was made to the main exhibition hall last winter?",
+            "options": [
+              {
+                "label": "A",
+                "text": "An interactive touch-screen gallery was installed."
+              },
+              {
+                "label": "B",
+                "text": "The floor space was doubled in size."
+              },
+              {
+                "label": "C",
+                "text": "A new café area was added."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Visitors are advised that the Coastal Cliff Trail",
+            "options": [
+              {
+                "label": "A",
+                "text": "is unsuitable for pushchairs and wheelchairs."
+              },
+              {
+                "label": "B",
+                "text": "requires tickets to be booked 24 hours in advance."
+              },
+              {
+                "label": "C",
+                "text": "is closed whenever the tide is rising."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How can families receive a discount on boat excursions?",
+            "options": [
+              {
+                "label": "A",
+                "text": "By presenting a valid rail travel card."
+              },
+              {
+                "label": "B",
+                "text": "By booking through the official mobile app."
+              },
+              {
+                "label": "C",
+                "text": "By purchasing combined museum-and-boat tickets."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the speaker’s recommendation regarding lunch?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Eat at the outdoor picnic benches near the lighthouse."
+              },
+              {
+                "label": "B",
+                "text": "Reserve a table in advance at the Waterfront Bistro."
+              },
+              {
+                "label": "C",
+                "text": "Try the traditional seafood chowder at the Harbour Kiosk."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Ground floor East Wing",
+            "options": [
+              {
+                "label": "A",
+                "text": "Victorian Shipyard Workshop"
+              },
+              {
+                "label": "B",
+                "text": "Aquarium Nursery"
+              },
+              {
+                "label": "C",
+                "text": "Audio-Visual Theatre"
+              },
+              {
+                "label": "D",
+                "text": "Navigation Simulator"
+              },
+              {
+                "label": "E",
+                "text": "Seabird Observation Deck"
+              },
+              {
+                "label": "F",
+                "text": "Gift & Book Shop"
+              },
+              {
+                "label": "G",
+                "text": "Lighthouse Lantern Room"
+              },
+              {
+                "label": "H",
+                "text": "Model Boat Basin"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Ground floor West Wing",
+            "options": [
+              {
+                "label": "A",
+                "text": "Victorian Shipyard Workshop"
+              },
+              {
+                "label": "B",
+                "text": "Aquarium Nursery"
+              },
+              {
+                "label": "C",
+                "text": "Audio-Visual Theatre"
+              },
+              {
+                "label": "D",
+                "text": "Navigation Simulator"
+              },
+              {
+                "label": "E",
+                "text": "Seabird Observation Deck"
+              },
+              {
+                "label": "F",
+                "text": "Gift & Book Shop"
+              },
+              {
+                "label": "G",
+                "text": "Lighthouse Lantern Room"
+              },
+              {
+                "label": "H",
+                "text": "Model Boat Basin"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "First floor Mezzanine",
+            "options": [
+              {
+                "label": "A",
+                "text": "Victorian Shipyard Workshop"
+              },
+              {
+                "label": "B",
+                "text": "Aquarium Nursery"
+              },
+              {
+                "label": "C",
+                "text": "Audio-Visual Theatre"
+              },
+              {
+                "label": "D",
+                "text": "Navigation Simulator"
+              },
+              {
+                "label": "E",
+                "text": "Seabird Observation Deck"
+              },
+              {
+                "label": "F",
+                "text": "Gift & Book Shop"
+              },
+              {
+                "label": "G",
+                "text": "Lighthouse Lantern Room"
+              },
+              {
+                "label": "H",
+                "text": "Model Boat Basin"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Tower Summit",
+            "options": [
+              {
+                "label": "A",
+                "text": "Victorian Shipyard Workshop"
+              },
+              {
+                "label": "B",
+                "text": "Aquarium Nursery"
+              },
+              {
+                "label": "C",
+                "text": "Audio-Visual Theatre"
+              },
+              {
+                "label": "D",
+                "text": "Navigation Simulator"
+              },
+              {
+                "label": "E",
+                "text": "Seabird Observation Deck"
+              },
+              {
+                "label": "F",
+                "text": "Gift & Book Shop"
+              },
+              {
+                "label": "G",
+                "text": "Lighthouse Lantern Room"
+              },
+              {
+                "label": "H",
+                "text": "Model Boat Basin"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Courtyard Garden",
+            "options": [
+              {
+                "label": "A",
+                "text": "Victorian Shipyard Workshop"
+              },
+              {
+                "label": "B",
+                "text": "Aquarium Nursery"
+              },
+              {
+                "label": "C",
+                "text": "Audio-Visual Theatre"
+              },
+              {
+                "label": "D",
+                "text": "Navigation Simulator"
+              },
+              {
+                "label": "E",
+                "text": "Seabird Observation Deck"
+              },
+              {
+                "label": "F",
+                "text": "Gift & Book Shop"
+              },
+              {
+                "label": "G",
+                "text": "Lighthouse Lantern Room"
+              },
+              {
+                "label": "H",
+                "text": "Model Boat Basin"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "H"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–30\n\nQuestions 21–25\nChoose the correct letter, A, B or C.\n\n21. What is the primary focus of Jack and Chloe’s engineering research project?\n    A. Testing lightweight battery storage for domestic solar panels.\n    B. Evaluating rooftop vegetable gardens on commercial office blocks.\n    C. Comparing the insulating efficiency of extensive green roofs.\n\n22. Why did they decide against conducting their experiments on university campus roofs?\n    A. Health and safety regulations prohibited student access.\n    B. The roofs had unsuitable drainage systems.\n    C. Background noise interfered with their electronic sensors.\n\n23. What problem did Chloe encounter when reviewing previous literature?\n    A. Most published studies were conducted in tropical climates.\n    B. Sample sizes used in previous trials were too small.\n    C. The cost data was outdated and inaccurate.\n\n24. Their tutor advises them that their methodology must include\n    A. daily calibration of moisture sensors.\n    B. an identical control roof without vegetation.\n    C. interviews with building maintenance staff.\n\n25. What unexpected finding emerged from their preliminary temperature data?\n    A. Sedum plants provided superior winter insulation to grass turf.\n    B. Heat reduction was greatest during windy afternoons.\n    C. Roof surface temperatures dropped by up to twelve degrees Celsius.\n\nQuestions 26–30\nWho will be responsible for completing each of the following project tasks?\nChoose FIVE answers from the box and write the correct letter, A, B or C, next to \n\nQuestions 26–30.\n\n    A   Jack\n    B   Chloe\n    C   Both Jack and Chloe\n\n26. Statistical analysis of humidity logs           ....................\n27. Creating digital 3D roof diagrams              ....................\n28. Writing the literature review chapter          ....................\n29. Preparing presentation slides for the seminar  ....................\n30. Proofreading the final research paper          ....................",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-12-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the primary focus of Jack and Chloe’s engineering research project?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Testing lightweight battery storage for domestic solar panels."
+              },
+              {
+                "label": "B",
+                "text": "Evaluating rooftop vegetable gardens on commercial office blocks."
+              },
+              {
+                "label": "C",
+                "text": "Comparing the insulating efficiency of extensive green roofs."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why did they decide against conducting their experiments on university campus roofs?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Health and safety regulations prohibited student access."
+              },
+              {
+                "label": "B",
+                "text": "The roofs had unsuitable drainage systems."
+              },
+              {
+                "label": "C",
+                "text": "Background noise interfered with their electronic sensors."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What problem did Chloe encounter when reviewing previous literature?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Most published studies were conducted in tropical climates."
+              },
+              {
+                "label": "B",
+                "text": "Sample sizes used in previous trials were too small."
+              },
+              {
+                "label": "C",
+                "text": "The cost data was outdated and inaccurate."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Their tutor advises them that their methodology must include",
+            "options": [
+              {
+                "label": "A",
+                "text": "daily calibration of moisture sensors."
+              },
+              {
+                "label": "B",
+                "text": "an identical control roof without vegetation."
+              },
+              {
+                "label": "C",
+                "text": "interviews with building maintenance staff."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What unexpected finding emerged from their preliminary temperature data?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sedum plants provided superior winter insulation to grass turf."
+              },
+              {
+                "label": "B",
+                "text": "Heat reduction was greatest during windy afternoons."
+              },
+              {
+                "label": "C",
+                "text": "Roof surface temperatures dropped by up to twelve degrees Celsius."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Statistical analysis of humidity logs",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jack"
+              },
+              {
+                "label": "B",
+                "text": "Chloe"
+              },
+              {
+                "label": "C",
+                "text": "Both Jack and Chloe"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Creating digital 3D roof diagrams",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jack"
+              },
+              {
+                "label": "B",
+                "text": "Chloe"
+              },
+              {
+                "label": "C",
+                "text": "Both Jack and Chloe"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Writing the literature review chapter",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jack"
+              },
+              {
+                "label": "B",
+                "text": "Chloe"
+              },
+              {
+                "label": "C",
+                "text": "Both Jack and Chloe"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Preparing presentation slides for the seminar",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jack"
+              },
+              {
+                "label": "B",
+                "text": "Chloe"
+              },
+              {
+                "label": "C",
+                "text": "Both Jack and Chloe"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Proofreading the final research paper",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jack"
+              },
+              {
+                "label": "B",
+                "text": "Chloe"
+              },
+              {
+                "label": "C",
+                "text": "Both Jack and Chloe"
+              }
+            ],
+            "blank": true
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\n\nQuestions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nCephalopod Adaptive Camouflage\n\nAnatomy and Cellular Structure:\n• Cephalopods (octopuses, squids, and cuttlefish) manipulate skin appearance using specialized cells.\n• Chromatophores:\n  - Elastic sacs containing pigment granules (yellow, red, brown, black).\n  - Controlled directly by radial 31 .................... attached to the central nervous system.\n  - Allow rapid pattern shifts in less than a 32 ....................\n• Iridophores:\n  - Beneath chromatophores; produce metallic hues of gold, green, and 33 ....................\n• Leucophores:\n  - Act as passive broadband reflectors, producing a bright 34 .................... background.\n\nTactile Texture Transformation:\n• Tiny muscular structures called 35 .................... alter skin texture from smooth to rough or spiky.\n• Enables animals to blend into rough kelp, coarse sand, or pitted 36 ....................\n\nSensory Coordination:\n• Along with chromatic aberration, they can detect the 37 .................... of light to notice contrast in open water.\n• Recent research indicates skin tissue contains 38 .................... molecules similar to those in retinas, suggesting dermal light reception.\n\nDefensive & Communicative Functions:\n• Camouflage offers vital protection from apex marine 39 .................... (e.g. sharks and seals).\n• Dynamic 'passing cloud' waves used to startle prey or disorient attackers.\n• High-contrast flashing stripes employed during courtship and territorial 40 ....................",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-12-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "muscles"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "second"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "silver"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "white"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "papillae"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "rocks / stones"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "polarization"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "opsin"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "predators"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "",
+            "blank": true
+          },
+          "correctAnswer": "conflict"
+        }
+      ]
+    }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-12-section-1.mp3",
+    "/uploads/audio/test-12-section-2.mp3",
+    "/uploads/audio/test-12-section-3.mp3",
+    "/uploads/audio/test-12-section-4.mp3"
+  ],
+  "savedAt": "2026-10-02T08:44:08.703Z"
+}

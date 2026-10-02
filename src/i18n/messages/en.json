@@ -455,6 +455,7 @@
     "submitNetwork": "Could not submit. Check your network and try again.",
     "writingTask": "Writing task",
     "writingDiagram": "Diagram / figure",
+    "sectionFigure": "Figure",
     "writingAnswer": "Your answer",
     "writingPlaceholder": "Write your essay…",
     "wordCount": "{count} words · minimum {min}",

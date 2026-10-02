@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 11",
+  "slug": "test-11-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_11\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 11 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you prefer living in a bustling city or a peaceful village?",
+            "speakingPart": 1,
+            "topic": "Cities & Architecture"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What architectural style do you find most appealing?",
+            "speakingPart": 1,
+            "topic": "Cities & Architecture"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What makes a city livable?",
+            "speakingPart": 1,
+            "topic": "Cities & Architecture"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe your favorite city that you have visited or lived in.\nYou should say:\n- where the city is located\n- when you first visited or moved there\n- what the atmosphere and architecture are like\n- and explain why it is your favorite city.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What major challenges will megacities face over the coming decades regarding housing and clean water?",
+            "speakingPart": 3,
+            "topic": "Urban Planning & City Life"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How can municipal planners ensure green parks are preserved in high-density urban areas?",
+            "speakingPart": 3,
+            "topic": "Urban Planning & City Life"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Is rural-to-urban migration causing irreversible decline in countryside communities?",
+            "speakingPart": 3,
+            "topic": "Urban Planning & City Life"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:07.994Z"
+}

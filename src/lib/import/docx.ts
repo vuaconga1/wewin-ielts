@@ -193,8 +193,13 @@ export function normalizeExtractedText(text: string): string {
 
   // Common Listening form / notes labels glued after prior field values
   out = out.replace(
-    /([^\n])(?=(?:Email address|Current address|New Zealand Employer|Occupation|Rental start date|Preferred property type|first preference|second preference|Bedrooms|Furnishings|Maximum rent|Preferred location|Other requirements|Phone number)\s*:)/gi,
+    /([^\n])(?=(?:Email address|Current address|New Zealand Employer|Occupation|Rental start date|Preferred property type|first preference|second preference|Bedrooms|Furnishings|Maximum rent|Preferred location|Other requirements)\s*:)/gi,
     "$1\n",
+  );
+  // Glued "valuePhone number:" starts a new field. Keep "Telephone number" and "Contact phone number".
+  out = out.replace(
+    /(?<=[\p{L}\p{N}])(?<!tele)(?<!contact )(?<!mobile )(?=Phone number\s*:)/giu,
+    "\n",
   );
   // Sub-bullets under "Other requirements" / similar
   out = out.replace(/([^\n])(?=(?:must have|would like)\s+\d{1,2}\s)/gi, "$1\n");

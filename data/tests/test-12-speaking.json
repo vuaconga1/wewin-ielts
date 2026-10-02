@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 12",
+  "slug": "test-12-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_12\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 12 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What skills have you learned outside formal education?",
+            "speakingPart": 1,
+            "topic": "Hobbies & Practical Skills"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you enjoy sports or outdoor activities?",
+            "speakingPart": 1,
+            "topic": "Hobbies & Practical Skills"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What hobby would you like to take up?",
+            "speakingPart": 1,
+            "topic": "Hobbies & Practical Skills"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe a complex skill or activity that you found difficult to master initially.\nYou should say:\n- what the skill was\n- why you chose to learn it\n- what obstacles you encountered\n- and explain how you overcame those difficulties.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How does technology impact fairness in international competitive sports?",
+            "speakingPart": 3,
+            "topic": "Skill Acquisition & Sports Ethics"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Should educational systems prioritize practical vocational skills over academic theory?",
+            "speakingPart": 3,
+            "topic": "Skill Acquisition & Sports Ethics"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Will automation eliminate the need for humans to learn artisan handicrafts?",
+            "speakingPart": 3,
+            "topic": "Skill Acquisition & Sports Ethics"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:08.102Z"
+}

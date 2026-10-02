@@ -1,0 +1,103 @@
+{
+  "title": "Speaking Test 14",
+  "slug": "test-14-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "sourceFolder": "E:\\Wewin\\Wewin-ielts\\DE-IELTS\\IELTS_COMPLETE_TESTS_FINAL\\Test_14\\STUDENT",
+  "description": "IELTS Academic Speaking practice set 14 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What traditional festivals are celebrated in your country?",
+            "speakingPart": 1,
+            "topic": "Cultural Heritage & Traditions"
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you own any handmade or traditional crafts?",
+            "speakingPart": 1,
+            "topic": "Cultural Heritage & Traditions"
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How do young people view traditional arts?",
+            "speakingPart": 1,
+            "topic": "Cultural Heritage & Traditions"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 4,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Candidate Task Card:\nDescribe a traditional craft, artwork, or cultural object from your country.\nYou should say:\n- what the object or craft is\n- what materials and artisan skills are needed to create it\n- how it is traditionally used or displayed\n- and explain its cultural significance.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why are indigenous artisan traditions disappearing in modern industrial economies?",
+            "speakingPart": 3,
+            "topic": "Heritage Conservation & Globalization"
+          }
+        },
+        {
+          "number": 6,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Should national governments provide public subsidies to preserve endangered artisan crafts?",
+            "speakingPart": 3,
+            "topic": "Heritage Conservation & Globalization"
+          }
+        },
+        {
+          "number": 7,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How does rapid modernization impact the cultural identity of younger generations?",
+            "speakingPart": 3,
+            "topic": "Heritage Conservation & Globalization"
+          }
+        }
+      ]
+    }
+  ],
+  "savedAt": "2026-10-02T08:44:08.233Z"
+}
