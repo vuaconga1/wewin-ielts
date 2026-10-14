@@ -106,6 +106,9 @@ export function isStandaloneSentenceGapStem(stem: string): boolean {
   ) {
     return false;
   }
+  // Notes row after the question number is stripped: "........ Newspapers & magazines".
+  // A sentence completion keeps words before the gap ("Clarence ________ in a store").
+  if (/^(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)/u.test(s)) return false;
   if (/^complete the (notes|form|table|summary|sentences)\b/i.test(s)) {
     return false;
   }

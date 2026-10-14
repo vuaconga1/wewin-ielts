@@ -221,7 +221,9 @@ export function UsersManager({ currentUserId }: Props) {
   }
 
   function roleLabel(role: AdminUserRole) {
-    return role === "ADMIN" ? tc("admin") : tc("student");
+    if (role === "ADMIN") return tc("admin");
+    if (role === "TEACHER") return locale === "en" ? "Teacher" : "Giáo viên";
+    return tc("student");
   }
 
   function formatDate(iso: string) {
@@ -383,6 +385,7 @@ export function UsersManager({ currentUserId }: Props) {
                 className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm"
               >
                 <option value="STUDENT">{tc("student")}</option>
+                <option value="TEACHER">{locale === "en" ? "Teacher" : "Giáo viên"}</option>
                 <option value="ADMIN">{tc("admin")}</option>
               </select>
             </label>

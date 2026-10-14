@@ -23,7 +23,7 @@ export type SessionUser = {
   email: string | null;
   username: string;
   fullName: string | null;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
 };
 
 export {
@@ -281,7 +281,7 @@ export async function loginWithEmailPassword(
     email: string | null;
     username: string;
     fullName?: string | null;
-    role: "ADMIN" | "STUDENT";
+    role: "ADMIN" | "TEACHER" | "STUDENT";
     passwordHash: string;
   }): Promise<SessionUser> {
     const ok = await verifyPassword(password, user.passwordHash);

@@ -8,7 +8,7 @@ import type { StoredAttempt } from "@/lib/store/test-store";
 
 type SessionLike = {
   id: string;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
 } | null;
 
 export function canAccessAttempt(

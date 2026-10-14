@@ -39,7 +39,7 @@ export type AdminAttemptRow = {
   userId: string | null;
   userEmail: string | null;
   username: string | null;
-  userRole: "ADMIN" | "STUDENT" | null;
+  userRole: "ADMIN" | "TEACHER" | "STUDENT" | null;
   testSlug: string;
   testTitle: string;
   skill: AdminAttemptSkill | null;
@@ -57,7 +57,7 @@ export type AdminUserOption = {
   id: string;
   email: string | null;
   username: string;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
   attemptCount: number;
 };
 
@@ -199,7 +199,7 @@ type UserLite = {
   id: string;
   email: string | null;
   username: string;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
 };
 
 async function loadUserMap(): Promise<Map<string, UserLite>> {

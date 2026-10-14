@@ -98,7 +98,7 @@ type AuthApiUser = {
   email: string | null;
   username: string;
   fullName?: string | null;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
   avatarUrl?: string | null;
 };
 

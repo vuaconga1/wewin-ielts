@@ -237,7 +237,11 @@ export function SidebarProfile({
           {displayName}
         </p>
         <p className="mt-0.5 text-xs text-zinc-500">
-          {user.role === "ADMIN" ? tc("admin") : tc("student")}
+          {user.role === "ADMIN"
+            ? tc("admin")
+            : user.role === "TEACHER"
+              ? locale === "en" ? "Teacher" : "Giáo viên"
+              : tc("student")}
         </p>
 
         <div className="mt-3 w-full rounded-xl border border-wewin-border bg-zinc-50 px-3 py-2.5 text-center">

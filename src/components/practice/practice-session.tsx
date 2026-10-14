@@ -909,8 +909,9 @@ export function PracticeSession({
       </div>
     ) : null;
 
+  const splitListening = isListening && Boolean(audioSrc);
   const toolbar =
-    isListening && audioSrc ? (
+    isListening && audioSrc && !splitListening ? (
       <AudioPlayer
         key={audioSrc}
         src={audioSrc}
@@ -994,6 +995,18 @@ export function PracticeSession({
                 ...next,
               ]);
             }}
+            listeningMedia={
+              splitListening && audioSrc
+                ? {
+                    src: audioSrc,
+                    clipStart,
+                    clipEnd,
+                    label: part
+                      ? `${t("listeningAudio", "Audio")} · ${part.title}`
+                      : t("listeningAudio", "Audio"),
+                  }
+                : null
+            }
           />
         ) : isWriting && part ? (
           <WritingDesk
@@ -1288,6 +1301,7 @@ function ReadingOrNotesSplit({
   onPatchAnswers,
   highlights = [],
   onHighlightsChange,
+  listeningMedia = null,
 }: {
   part: Part;
   isReading: boolean;
@@ -1300,6 +1314,13 @@ function ReadingOrNotesSplit({
   onPatchAnswers: (patch: Record<string, string>, focusNumber: number) => void;
   highlights?: PassageHighlight[];
   onHighlightsChange?: (next: PassageHighlight[]) => void;
+  /** Listening: audio (and map, if any) on the left, questions on the right. */
+  listeningMedia?: {
+    src: string;
+    clipStart: number | null;
+    clipEnd: number | null;
+    label: string;
+  } | null;
 }) {
   const { t } = useTranslations("practice");
   const reading = isReading
@@ -1460,10 +1481,17 @@ function ReadingOrNotesSplit({
     );
     if (qs.length === 0 && !group.notes && !group.header) return null;
 
-    const inlineNumbers = group.notes
+    const mcqNumbers = new Set<number>();
+    for (const q of qs) {
+      if (q.type !== "MULTIPLE_CHOICE") continue;
+      if ((q.content.options?.length ?? 0) < 2) continue;
+      for (const n of getCoveredNumbers(q.number, q.content)) mcqNumbers.add(n);
+    }
+    const notesText = stripOwnedBlankLines(group.notes ?? "", mcqNumbers);
+    const inlineNumbers = notesText
       ? new Set(
-          findInlineBlankNumbers(group.notes).filter(
-            (n) => n >= group.start && n <= group.end,
+          findInlineBlankNumbers(notesText).filter(
+            (n) => n >= group.start && n <= group.end && !mcqNumbers.has(n),
           ),
         )
       : new Set<number>();
@@ -1482,7 +1510,12 @@ function ReadingOrNotesSplit({
     }
     const restQs = qs.filter((q) => {
       if (notesChoices.has(q.number)) return false;
-      return !(inlineNumbers.has(q.number) && isGapQuestion(q));
+      if (!inlineNumbers.has(q.number)) return true;
+      if (isGapQuestion(q) || isBlankQuestionType(q.type)) return false;
+      if (q.type === "MATCHING" && (q.content.options?.length ?? 0) < 2) {
+        return false;
+      }
+      return true;
     });
 
     const wordListTitle =
@@ -1524,10 +1557,10 @@ function ReadingOrNotesSplit({
             </p>
           ))}
         </div>
-        {group.notes ? (
+        {notesText ? (
           inlineNumbers.size > 0 ? (
             <InlineNotesGaps
-              notes={group.notes}
+              notes={notesText}
               answers={answers}
               currentNumber={currentNumber}
               questionRefs={questionRefs}
@@ -1538,7 +1571,7 @@ function ReadingOrNotesSplit({
               choiceOptions={notesChoices.size > 0 ? notesChoices : undefined}
             />
           ) : (
-            <BoxedContent text={group.notes} />
+            <BoxedContent text={notesText} />
           )
         ) : null}
         {notesBank && !optionBankIsLetterOnly(notesBank) ? (
@@ -1572,9 +1605,38 @@ function ReadingOrNotesSplit({
     </div>
   );
 
-  // Listening: one interactive column (notes + inline gaps), like Reading's right pane
+  // Listening with audio: source column on the left, questions on the right.
   if (!isReading) {
-    const figures = listeningFigureUrls(part);
+    if (listeningMedia) {
+      return (
+        <div className="cdi-split grid min-h-0 min-w-0 flex-1 gap-0 lg:grid-cols-2 lg:items-stretch">
+          <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-[#f7f8fa] lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
+            <div className="sticky top-0 z-[2] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
+              {t("listeningAudio", "Audio")}
+            </div>
+            <div className="sticky top-8 z-[1] border-b border-zinc-300 bg-[#f7f8fa] px-3 py-3 sm:px-4">
+              <AudioPlayer
+                key={listeningMedia.src}
+                src={listeningMedia.src}
+                clipStart={listeningMedia.clipStart}
+                clipEnd={listeningMedia.clipEnd}
+                label={listeningMedia.label}
+                pane
+              />
+            </div>
+            <ListeningFigures part={part} className="space-y-3 px-3 py-3 sm:px-4" />
+          </div>
+          <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-white lg:border-t lg:border-l-0 lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
+            <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
+              {part.title?.trim()
+                ? part.title
+                : t("notes", "Notes / task text")}
+            </div>
+            {questionsPanel}
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="cdi-pane min-w-0 flex-1 border border-zinc-400/70 bg-white lg:max-h-[calc(100vh-11rem)] lg:overflow-y-auto">
         <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
@@ -1582,23 +1644,7 @@ function ReadingOrNotesSplit({
             ? part.title
             : t("notes", "Notes / task text")}
         </div>
-        {figures.length > 0 ? (
-          <div className="space-y-3 px-3 pt-3 sm:px-4">
-            {figures.map((src) => (
-              <figure
-                key={src}
-                className="overflow-hidden rounded-sm border-2 border-zinc-500 bg-white"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt={t("sectionFigure", "Figure")}
-                  className="h-auto w-full max-w-full"
-                />
-              </figure>
-            ))}
-          </div>
-        ) : null}
+        <ListeningFigures part={part} className="space-y-3 px-3 pt-3 sm:px-4" />
         {questionsPanel}
       </div>
     );
@@ -1629,25 +1675,101 @@ function ReadingOrNotesSplit({
   );
 }
 
-/** Maps and plans stored on the listening section. One URL is drawn once. */
-function listeningFigureUrls(part: Part): string[] {
-  const urls: string[] = [];
-  const push = (value: unknown) => {
+type ListeningFigure = { src: string; from: number | null; to: number | null };
+
+/** One image per URL. The caption range is the questions that use that image. */
+function listeningFigures(part: Part): ListeningFigure[] {
+  const order: string[] = [];
+  const numbers = new Map<string, number[]>();
+  const add = (value: unknown, questionNumber?: number) => {
     if (typeof value !== "string") return;
     const url = value.trim();
-    if (!url || urls.includes(url)) return;
-    urls.push(url);
+    if (!url || /\.(mp3|m4a|wav|ogg)(\?|$)/i.test(url)) return;
+    if (!numbers.has(url)) {
+      order.push(url);
+      numbers.set(url, []);
+    }
+    if (questionNumber != null) numbers.get(url)!.push(questionNumber);
   };
-  push(part.meta?.imageUrl);
+  for (const question of part.questions) {
+    add(question.content.imageUrl, question.number);
+    if (question.mediaUrl !== question.content.imageUrl) {
+      add(question.mediaUrl, question.number);
+    }
+  }
+  add(part.meta?.imageUrl);
   const many = part.meta?.imageUrls;
   if (Array.isArray(many)) {
-    for (const item of many) push(item);
+    for (const item of many) add(item);
   }
-  for (const question of part.questions) {
-    push(question.content.imageUrl);
-    push(question.mediaUrl);
-  }
-  return urls;
+  return order.map((src) => {
+    const nums = [...new Set(numbers.get(src) ?? [])].sort((a, b) => a - b);
+    return {
+      src,
+      from: nums[0] ?? null,
+      to: nums[nums.length - 1] ?? null,
+    };
+  });
+}
+
+function ListeningFigures({
+  part,
+  className,
+}: {
+  part: Part;
+  className: string;
+}) {
+  const { t } = useTranslations("practice");
+  const figures = listeningFigures(part);
+  if (figures.length === 0) return null;
+  return (
+    <div className={className}>
+      {figures.map((fig) => {
+        const caption =
+          fig.from == null || fig.to == null
+            ? t("sectionFigure", "Figure")
+            : fig.from === fig.to
+              ? t("figureQuestion", { from: fig.from }, "Question {from}")
+              : t(
+                  "figureQuestions",
+                  { from: fig.from, to: fig.to },
+                  "Questions {from}–{to}",
+                );
+        return (
+          <figure
+            key={fig.src}
+            className="overflow-hidden rounded-sm border-2 border-zinc-500 bg-white"
+          >
+            <div className="border-b border-zinc-300 bg-[#eceff2] px-3 py-1.5 text-[11px] font-semibold tracking-wide text-zinc-600">
+              {caption}
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={fig.src}
+              alt={caption}
+              className="h-auto w-full max-w-full bg-white"
+            />
+          </figure>
+        );
+      })}
+    </div>
+  );
+}
+
+/** Drop "18 ……" lines that only exist as slots for a multiple-choice group. */
+function stripOwnedBlankLines(notes: string, owned: Set<number>): string {
+  if (!notes.trim() || owned.size === 0) return notes;
+  return notes
+    .split("\n")
+    .filter((line) => {
+      const match = line
+        .trim()
+        .match(/^(\d{1,2})\s*(?:[.…_\u2026]{2,}|\.{2,})\s*$/u);
+      return !(match && owned.has(Number(match[1])));
+    })
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 }
 
 function defaultMinWords(question: Question, skill: string): number {

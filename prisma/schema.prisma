@@ -12,6 +12,7 @@ datasource db {
 
 enum Role {
   STUDENT
+  TEACHER
   ADMIN
 }
 
@@ -83,24 +84,45 @@ model User {
 
   attempts   Attempt[]
   importJobs ImportJob[]
+  auditLogs  AuditLog[]
 
   @@index([classCode])
 }
 
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  username  String
+  fullName  String?
+  role      Role
+  action    String
+  ipAddress String?
+  userAgent String?  @db.Text
+  metadata  Json?
+  createdAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+  @@index([userId, createdAt])
+  @@index([role, createdAt])
+  @@index([action, createdAt])
+}
+
 model Test {
-  id                String     @id @default(cuid())
-  title             String
-  slug              String     @unique
-  skill             Skill
-  examType          ExamType   @default(ACADEMIC)
-  timeLimitMinutes  Int?
-  tags              Json?
-  status            TestStatus @default(DRAFT)
-  practiceCount     Int        @default(0)
-  sourceFolder      String?
-  description       String?    @db.Text
-  createdAt         DateTime   @default(now())
-  updatedAt         DateTime   @updatedAt
+  id               String     @id @default(cuid())
+  title            String
+  slug             String     @unique
+  skill            Skill
+  examType         ExamType   @default(ACADEMIC)
+  timeLimitMinutes Int?
+  tags             Json?
+  status           TestStatus @default(DRAFT)
+  practiceCount    Int        @default(0)
+  sourceFolder     String?
+  description      String?    @db.Text
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
 
   sections TestSection[]
   media    MediaAsset[]
@@ -109,11 +131,11 @@ model Test {
 }
 
 model TestSection {
-  id            String @id @default(cuid())
+  id            String  @id @default(cuid())
   testId        String
   title         String
   order         Int
-  questionCount Int    @default(0)
+  questionCount Int     @default(0)
   /// Optional instructions / passage text for this part
   content       String? @db.Text
   /// e.g. { "audioStart": "00:00", "audioEnd": "05:30" }
@@ -137,8 +159,8 @@ model Question {
   content   Json
   mediaUrl  String?
 
-  section       TestSection     @relation(fields: [sectionId], references: [id], onDelete: Cascade)
-  answerKey     AnswerKey?
+  section        TestSection     @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  answerKey      AnswerKey?
   attemptAnswers AttemptAnswer[]
 
   @@unique([sectionId, order])
@@ -146,34 +168,34 @@ model Question {
 }
 
 model AnswerKey {
-  id               String  @id @default(cuid())
-  questionId       String  @unique
+  id                String  @id @default(cuid())
+  questionId        String  @unique
   /// Canonical answer(s): string | string[] | object
-  correctAnswer    Json
+  correctAnswer     Json
   /// Extra accepted variants after normalize
   acceptableAnswers Json?
-  explanation      String? @db.Text
+  explanation       String? @db.Text
 
   question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 }
 
 model Attempt {
-  id              String      @id @default(cuid())
-  userId          String?
-  testId          String
-  mode            AttemptMode
+  id               String      @id @default(cuid())
+  userId           String?
+  testId           String
+  mode             AttemptMode
   /// Selected section ids for practice mode
-  sectionIds      Json?
+  sectionIds       Json?
   timeLimitMinutes Int?
-  startedAt       DateTime    @default(now())
-  finishedAt      DateTime?
-  scoreRaw        Int?
-  scoreBand       Float?
+  startedAt        DateTime    @default(now())
+  finishedAt       DateTime?
+  scoreRaw         Int?
+  scoreBand        Float?
   /// Full practice attempt JSON (StoredAttempt) — durable across serverless instances
-  payload         Json?
+  payload          Json?
 
-  user    User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
-  test    Test           @relation(fields: [testId], references: [id], onDelete: Cascade)
+  user    User?           @relation(fields: [userId], references: [id], onDelete: SetNull)
+  test    Test            @relation(fields: [testId], references: [id], onDelete: Cascade)
   answers AttemptAnswer[]
 
   @@index([testId])
@@ -183,7 +205,7 @@ model Attempt {
 }
 
 model AttemptAnswer {
-  id         String  @id @default(cuid())
+  id         String   @id @default(cuid())
   attemptId  String
   questionId String
   userAnswer Json?

@@ -14,7 +14,7 @@ export type StoredUser = {
   email: string | null;
   username: string;
   passwordHash: string;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
   fullName?: string | null;
   classCode?: string | null;
   /** Profile image path or data URL */
@@ -84,7 +84,7 @@ export async function upsertLocalUser(input: {
   email: string | null;
   username: string;
   passwordHash: string;
-  role: "ADMIN" | "STUDENT";
+  role: "ADMIN" | "TEACHER" | "STUDENT";
   fullName?: string | null;
   classCode?: string | null;
 }): Promise<StoredUser> {
@@ -141,7 +141,7 @@ export async function updateLocalUser(
   patch: {
     username?: string;
     passwordHash?: string;
-    role?: "ADMIN" | "STUDENT";
+    role?: "ADMIN" | "TEACHER" | "STUDENT";
     fullName?: string | null;
     classCode?: string | null;
   },

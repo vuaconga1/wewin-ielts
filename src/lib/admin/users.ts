@@ -18,7 +18,7 @@ import {
   type StoredUser,
 } from "@/lib/store/user-store";
 
-export type AdminUserRole = "ADMIN" | "STUDENT";
+export type AdminUserRole = "ADMIN" | "TEACHER" | "STUDENT";
 
 export type AdminUserPublic = {
   id: string;
@@ -114,8 +114,8 @@ function assertPassword(password: string) {
 }
 
 function assertRole(role: string): asserts role is AdminUserRole {
-  if (role !== "ADMIN" && role !== "STUDENT") {
-    throw new AdminUsersError("INVALID_ROLE", "Role phải là STUDENT hoặc ADMIN");
+  if (role !== "ADMIN" && role !== "TEACHER" && role !== "STUDENT") {
+    throw new AdminUsersError("INVALID_ROLE", "Role phải là STUDENT, TEACHER hoặc ADMIN");
   }
 }
 

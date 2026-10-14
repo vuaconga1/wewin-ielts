@@ -10,6 +10,8 @@ type Props = {
   clipEnd?: number | null;
   /** Compact bar for CDI exam chrome (header toolbar). */
   compact?: boolean;
+  /** Light player for the listening source column. */
+  pane?: boolean;
 };
 
 export function parseTimestamp(value: unknown): number | null {
@@ -41,6 +43,7 @@ export function AudioPlayer({
   clipStart,
   clipEnd,
   compact = false,
+  pane = false,
 }: Props) {
   const { t } = useTranslations("audio");
   const ref = useRef<HTMLAudioElement>(null);
@@ -139,6 +142,55 @@ export function AudioPlayer({
       : start > 0
         ? t("from", { time: fmt(start) })
         : null;
+
+  if (pane) {
+    return (
+      <div className="min-w-0 rounded-sm border border-zinc-400 bg-white px-3 py-3">
+        <audio ref={ref} src={src} preload="metadata" />
+        <div className="mb-2 flex min-w-0 flex-wrap items-center justify-between gap-2">
+          <p className="min-w-0 break-words text-xs font-semibold text-zinc-800">
+            {label ?? t("title")}
+          </p>
+          <span className="shrink-0 font-mono text-[11px] tabular-nums text-zinc-600">
+            {fmt(current)} / {fmt(max || duration)}
+          </span>
+        </div>
+        <div className="flex min-w-0 flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => skip(-5)}
+            className="rounded-sm border border-zinc-400 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-800 hover:bg-zinc-50"
+          >
+            {t("back5")}
+          </button>
+          <button
+            type="button"
+            onClick={toggle}
+            className="rounded-sm border border-[#8a6d00] bg-[#f5c518] px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-zinc-900 hover:bg-[#e6b800]"
+          >
+            {playing ? t("pause") : t("play")}
+          </button>
+          <button
+            type="button"
+            onClick={() => skip(5)}
+            className="rounded-sm border border-zinc-400 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-800 hover:bg-zinc-50"
+          >
+            {t("fwd5")}
+          </button>
+          <input
+            type="range"
+            min={start}
+            max={progressMax}
+            step={0.1}
+            value={Math.min(Math.max(current, start), progressMax)}
+            onChange={(e) => seek(Number(e.target.value))}
+            className="h-1.5 min-w-[8rem] flex-1 cursor-pointer accent-[#1a3a6b]"
+            aria-label={t("title")}
+          />
+        </div>
+      </div>
+    );
+  }
 
   if (compact) {
     return (

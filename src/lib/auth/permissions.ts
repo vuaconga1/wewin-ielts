@@ -8,7 +8,7 @@
 
 import { NextResponse } from "next/server";
 
-export type AppRole = "ADMIN" | "STUDENT";
+export type AppRole = "ADMIN" | "TEACHER" | "STUDENT";
 
 export type RoleBearer = { role: AppRole } | null | undefined;
 
@@ -27,6 +27,10 @@ export function isOpenAdminEnabled(): boolean {
 
 export function isAdmin(user: RoleBearer): boolean {
   return user?.role === "ADMIN";
+}
+
+export function isTeacher(user: RoleBearer): boolean {
+  return user?.role === "TEACHER";
 }
 
 export function isStudent(user: RoleBearer): boolean {

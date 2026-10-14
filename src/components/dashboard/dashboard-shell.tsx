@@ -13,6 +13,7 @@ import {
   GraduationCap,
   Home,
   Menu,
+  ScrollText,
   Trophy,
   Upload,
   UserCog,
@@ -41,6 +42,7 @@ export type DashboardNavKey =
   | "admin-learn"
   | "admin-attempts"
   | "admin-users"
+  | "admin-audit-logs"
   | "login";
 
 type UserChip = SidebarUser | null;
@@ -219,6 +221,12 @@ export function DashboardShell({
                     href: "/admin/users",
                     label: t("nav.adminUsers"),
                     icon: UserCog,
+                  },
+                  {
+                    key: "admin-audit-logs" as const,
+                    href: "/admin/audit-logs",
+                    label: t("nav.adminAuditLogs"),
+                    icon: ScrollText,
                   },
                   {
                     key: "admin-attempts" as const,

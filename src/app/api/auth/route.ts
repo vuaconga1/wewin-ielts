@@ -7,6 +7,7 @@ import {
   canAccessAdmin,
 } from "@/lib/auth";
 import { getUserDisplayProfile } from "@/lib/user-profile";
+import { recordAuditEvent } from "@/lib/audit-log";
 
 export const runtime = "nodejs";
 
@@ -54,6 +55,10 @@ export async function POST(request: Request) {
     };
 
     if (body.action === "logout") {
+      const currentUser = await getSessionUser();
+      if (currentUser) {
+        await recordAuditEvent({ actor: currentUser, action: "LOGOUT", request });
+      }
       await destroySession();
       return NextResponse.json({ ok: true });
     }
@@ -68,6 +73,7 @@ export async function POST(request: Request) {
     }
 
     const user = await loginWithEmailPassword(identifier, password);
+    await recordAuditEvent({ actor: user, action: "LOGIN", request });
     const profile = await getUserDisplayProfile(user.id);
     return NextResponse.json({
       user: {
