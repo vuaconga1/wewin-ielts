@@ -73,6 +73,12 @@ export function classifyOutlineLine(line: string): OutlineLine {
   if (!trimmed) return { kind: "blank" };
   if (/^\[\[\/?box\]\]$/i.test(trimmed)) return { kind: "skip" };
 
+  const plainKept = trimmed.match(/^\[\[plain\]\]\s*([\s\S]*)$/i);
+  if (plainKept) {
+    const text = plainKept[1]!.trim();
+    return text ? { kind: "plain", text } : { kind: "blank" };
+  }
+
   const titled = trimmed.match(NTITLE_RE);
   if (titled) {
     const text = titled[1]!.trim();

@@ -119,6 +119,7 @@ export async function persistParsedTest(
                 number: q.number,
                 type: q.type,
                 content: q.content as Prisma.InputJsonValue,
+                mediaUrl: q.mediaUrl,
               },
             });
 

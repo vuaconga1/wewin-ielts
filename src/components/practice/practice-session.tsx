@@ -21,6 +21,7 @@ import {
   TestEndedOverlay,
 } from "@/components/practice/submit-confirm-dialog";
 import { BoxedContent } from "@/components/practice/boxed-content";
+import { renderRichText } from "@/components/practice/rich-text";
 import { HighlightablePassage } from "@/components/practice/highlightable-passage";
 import { OptionBank, SharedChoiceAnswers } from "@/components/practice/shared-choice-answers";
 import { InlineNotesGaps, findInlineBlankNumbers } from "@/components/practice/inline-notes-gaps";
@@ -99,6 +100,8 @@ type Question = {
   mediaUrl?: string;
   content: {
     stem?: string;
+    variant?: import("@/lib/questions/layout-variants").QuestionLayoutVariant;
+    tableLayout?: import("@/lib/import/schemas").StructuredTableLayout;
     options?: { label: string; text: string }[];
     minWords?: number;
     hint?: string;
@@ -831,7 +834,7 @@ export function PracticeSession({
   const audioSrc = (() => {
     if (!isListening) return undefined;
     const fromMeta = part?.meta?.audioUrl ?? part?.meta?.audio;
-    if (typeof fromMeta === "string" && fromMeta.trim()) return fromMeta.trim();
+    if (typeof fromMeta === "string") return fromMeta.trim() || undefined;
     if (audioFiles?.length) {
       const byOrder = audioFiles[part?.order ?? activePart];
       if (byOrder) return byOrder;
@@ -1151,6 +1154,7 @@ function WritingDesk({
   const minWords = defaultMinWords(q, skill);
   const words = countWords(value);
   const ok = minWords > 0 && words >= minWords;
+  const isGeneralLetter = q.content.variant === "WRITING_GENERAL_LETTER";
   const imageUrl =
     (typeof q.content.imageUrl === "string" && q.content.imageUrl.trim()) ||
     (typeof q.mediaUrl === "string" && q.mediaUrl.trim()) ||
@@ -1183,6 +1187,12 @@ function WritingDesk({
                 </button>
               ))}
             </div>
+          ) : null}
+
+          {isGeneralLetter ? (
+            <p className="rounded-sm border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-[#1a3a6b]">
+              {t("generalLetterTask", "General Training · Letter")}
+            </p>
           ) : null}
 
           {blocks.timeLine ? (
@@ -1242,7 +1252,7 @@ function WritingDesk({
             </div>
           ) : stem ? (
             <div className="break-words whitespace-pre-wrap rounded-sm border border-zinc-400 bg-white px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
-              {stem}
+              {renderRichText(stem, `writing-stem-${q.number}`)}
             </div>
           ) : null}
 
@@ -1452,6 +1462,7 @@ function ReadingOrNotesSplit({
     clusterSharedChoices(list).map((block) => {
       if (block.kind === "single") return renderQuestion(block.question);
       const options = block.questions[0]?.content.options ?? [];
+      const variant = block.questions[0]?.content.variant;
       const romanBank =
         Boolean(bankTitle) &&
         options.length >= 3 &&
@@ -1468,7 +1479,13 @@ function ReadingOrNotesSplit({
           questionRefs={questionRefs}
           onFocusQuestion={onFocusQuestion}
           compactStem={Boolean(part.content)}
-          bankTitle={romanBank ? bankTitle : undefined}
+          bankTitle={
+            variant === "MATCHING_SENTENCE_ENDINGS"
+              ? t("sentenceEndings", "Sentence endings")
+              : romanBank
+                ? bankTitle
+                : undefined
+          }
         />
       );
     });
@@ -1488,6 +1505,17 @@ function ReadingOrNotesSplit({
       for (const n of getCoveredNumbers(q.number, q.content)) mcqNumbers.add(n);
     }
     const notesText = stripOwnedBlankLines(group.notes ?? "", mcqNumbers);
+    const explicitLayoutVariant = qs.find(
+      (question) => typeof question.content.variant === "string",
+    )?.content.variant;
+    const groupInstructionText = [group.header, ...group.instructions].join("\n");
+    const completionLayoutVariant =
+      explicitLayoutVariant ??
+      (/complete the (?:form|application)|booking form/i.test(groupInstructionText)
+        ? "FORM_COMPLETION"
+        : /complete the (?:notes?|table)(?: below)?/i.test(groupInstructionText)
+          ? "NOTE_COMPLETION"
+          : undefined);
     const inlineNumbers = notesText
       ? new Set(
           findInlineBlankNumbers(notesText).filter(
@@ -1569,6 +1597,8 @@ function ReadingOrNotesSplit({
               placeholder={t("answerPlaceholder", "Enter answer…")}
               allowNumbers={inlineNumbers}
               choiceOptions={notesChoices.size > 0 ? notesChoices : undefined}
+              tableLayout={qs.find((question) => question.content.tableLayout)?.content.tableLayout}
+              layoutVariant={completionLayoutVariant}
             />
           ) : (
             <BoxedContent text={notesText} />
@@ -1854,7 +1884,7 @@ function QuestionInput({
         </p>
         {stem && (
           <div className="mb-3 break-words whitespace-pre-wrap border border-zinc-300 border-l-[3px] border-l-[#1a3a6b] bg-[#f7f8fa] px-3 py-3 text-base font-bold leading-relaxed text-zinc-900">
-            {stem}
+            {renderRichText(stem, `stem-${question.number}`)}
           </div>
         )}
         <textarea
@@ -1894,7 +1924,7 @@ function QuestionInput({
         </p>
         {stem ? (
           <div className="mb-3 break-words whitespace-pre-wrap border border-zinc-300 border-l-[3px] border-l-[#1a3a6b] bg-[#f7f8fa] px-3 py-3 text-sm leading-relaxed text-zinc-800">
-            {stem}
+            {renderRichText(stem, `stem-${question.number}`)}
           </div>
         ) : (
           <p className="mb-3 text-sm text-zinc-500">
@@ -1949,7 +1979,7 @@ function QuestionInput({
           <span className="font-semibold tabular-nums text-zinc-800">
             {numberLabel}.
           </span>
-          {before ? <> {before}</> : null}{" "}
+          {before ? <> {renderRichText(before, `before-${question.number}`)}</> : null}{" "}
           <input
             type="text"
             value={value}
@@ -1958,7 +1988,7 @@ function QuestionInput({
             aria-label={`${t("answerPlaceholder", "Enter answer…")} ${numberLabel}`}
             className={`mx-0.5 inline-block w-[min(100%,11rem)] min-w-[5.5rem] align-middle rounded-sm border bg-white px-2 py-1 text-sm outline-none ${inputActiveClass}`}
           />
-          {after ? <> {after}</> : null}
+          {after ? <> {renderRichText(after, `after-${question.number}`)}</> : null}
         </p>
       </div>
     );
@@ -1971,7 +2001,7 @@ function QuestionInput({
           <span className="mr-1.5 font-semibold tabular-nums text-zinc-800">
             {numberLabel}.
           </span>
-          {stem}
+          {renderRichText(stem, `stem-${question.number}`)}
         </p>
       ) : null}
 

@@ -43,6 +43,11 @@ export function isStudent(user: RoleBearer): boolean {
  * - Logged-in STUDENT → never (even if ALLOW_OPEN_ADMIN)
  * - Guest (no session) → only when ALLOW_OPEN_ADMIN (local dev without login)
  */
+/** Teachers and administrators may edit imported tests. */
+export function canEditTests(user: RoleBearer): boolean {
+  return isAdmin(user) || isTeacher(user);
+}
+
 export function canAccessAdmin(user: RoleBearer): boolean {
   if (isAdmin(user)) return true;
   if (user) return false;

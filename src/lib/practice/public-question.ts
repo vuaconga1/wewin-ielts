@@ -6,6 +6,9 @@
 import { mediaUrl } from "@/lib/media/url";
 
 export type PublicQuestionContent = {
+  /** Stable IELTS layout variant; renderer must not infer it again. */
+  variant?: import("@/lib/questions/layout-variants").QuestionLayoutVariant;
+  tableLayout?: import("@/lib/import/schemas").StructuredTableLayout;
   stem?: string;
   options?: { label: string; text: string }[];
   minWords?: number;
@@ -48,6 +51,8 @@ type RawQuestion = {
 export function toPublicQuestion(q: RawQuestion): PublicQuestion {
   const content = (q.content ?? {}) as {
     stem?: string;
+    variant?: import("@/lib/questions/layout-variants").QuestionLayoutVariant;
+  tableLayout?: import("@/lib/import/schemas").StructuredTableLayout;
     options?: { label: string; text: string }[];
     minWords?: number;
     imageUrl?: string;
@@ -81,6 +86,8 @@ export function toPublicQuestion(q: RawQuestion): PublicQuestion {
     mediaUrl: imageUrl,
     content: {
       stem: content.stem,
+      variant: content.variant,
+      tableLayout: content.tableLayout,
       options: content.options,
       minWords: content.minWords,
       imageUrl,

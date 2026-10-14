@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, type ReactNode } from "react";
+import { renderRichText } from "@/components/practice/rich-text";
 import { splitBoxedSegments, splitPricePieces } from "@/lib/practice/boxed-text";
 import {
   classifyOutlineNotes,
@@ -136,7 +137,7 @@ function renderLabeledText(value: string, keyPrefix: string): ReactNode {
   let match: RegExpExecArray | null;
   let labelIndex = 0;
   while ((match = re.exec(value)) !== null) {
-    if (match.index > last) nodes.push(value.slice(last, match.index));
+    if (match.index > last) nodes.push(...renderRichText(value.slice(last, match.index), `${keyPrefix}-before-${labelIndex}`));
     nodes.push(
       <span
         key={`${keyPrefix}-l-${labelIndex}`}
@@ -149,7 +150,7 @@ function renderLabeledText(value: string, keyPrefix: string): ReactNode {
     labelIndex += 1;
   }
   if (labelIndex === 0) return value;
-  if (last < value.length) nodes.push(value.slice(last));
+  if (last < value.length) nodes.push(...renderRichText(value.slice(last), `${keyPrefix}-after`));
   return nodes;
 }
 
@@ -183,7 +184,7 @@ export function BoxedContent({
   /** Reading passage column: paragraph gaps and bold leading A/B/C labels. */
   passageLayout?: boolean;
 }) {
-  const paint = renderText ?? ((value: string) => value);
+  const paint = renderText ?? ((value: string, key: string) => renderRichText(value, key));
   const segments = splitBoxedSegments(text);
   return (
     <div className="min-w-0 space-y-3">
@@ -194,7 +195,7 @@ export function BoxedContent({
               key={`title-${index}`}
               className="mb-4 break-words text-center text-sm font-bold leading-relaxed text-zinc-900 sm:text-base"
             >
-              {segment.value}
+              {renderRichText(segment.value, `segment-${index}`)}
             </h2>
           );
         }
@@ -204,7 +205,7 @@ export function BoxedContent({
               key={`phead-${index}`}
               className="break-words text-sm font-bold leading-7 text-zinc-900"
             >
-              {segment.value}
+              {renderRichText(segment.value, `segment-${index}`)}
             </p>
           );
         }
@@ -214,7 +215,7 @@ export function BoxedContent({
               key={`section-${index}`}
               className="break-words border-b-2 border-[#1a3a6b] pb-1 pt-4 text-base font-bold text-[#1a3a6b] first:pt-1"
             >
-              {segment.value}
+              {renderRichText(segment.value, `segment-${index}`)}
             </h3>
           );
         }

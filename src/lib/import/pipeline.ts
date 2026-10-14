@@ -22,6 +22,7 @@ import {
 import { sanitizePartGapStems } from "@/lib/questions/gap-stems";
 import {
   ParsedTestDraftSchema,
+  QuestionContentSchema,
   type ImportIssue,
   type ImportParseResult,
   type PartDraft,
@@ -31,6 +32,7 @@ import { splitIntoParts } from "./split-parts";
 import { stripFilledListeningAnswers } from "./strip-filled-answers";
 import { unwrapSingleColumnMarkdownNotes } from "@/lib/practice/notes-table";
 import { readFile } from "node:fs/promises";
+import { applyQuestionLayoutVariants, validateQuestionLayouts } from "@/lib/questions/layout-variants";
 import path from "node:path";
 
 export type ParseTestInput = {
@@ -474,7 +476,7 @@ function buildParseResult(input: BuildInput): ImportParseResult {
     skill,
     examType: input.examType ?? "ACADEMIC",
     timeLimitMinutes: input.timeLimitMinutes ?? defaultTimeLimit(skill),
-    tags: input.tags ?? defaultTags(skill),
+    tags: input.tags ?? defaultTags(skill, input.examType ?? "ACADEMIC"),
     sourceFolder: input.sourceFolder,
     driveFolderId: input.driveFolderId,
     driveFileIds: input.driveFileIds,
@@ -494,12 +496,34 @@ function buildParseResult(input: BuildInput): ImportParseResult {
     return { draft: null, issues };
   }
 
-  return { draft: validated.data, issues };
+  const normalized = applyQuestionLayoutVariants(validated.data);
+  for (const part of normalized.parts) {
+    for (const question of part.questions) {
+      const contentResult = QuestionContentSchema.safeParse(question.content);
+      if (!contentResult.success) {
+        for (const contentIssue of contentResult.error.issues) {
+          issues.push({
+            level: "error",
+            code: "QUESTION_CONTENT_INVALID",
+            message: `Q${question.number} (${part.title}) ${contentIssue.path.join(".")}: ${contentIssue.message}`,
+            partOrder: part.order,
+            questionNumber: question.number,
+          });
+        }
+      }
+    }
+  }
+  issues.push(...validateQuestionLayouts(normalized));
+  return { draft: normalized, issues };
 }
 
-function defaultTags(skill: Skill): string[] {
+function defaultTags(
+  skill: Skill,
+  examType: "ACADEMIC" | "GENERAL" | "PLACEMENT",
+): string[] {
+  const examLabel = examType === "GENERAL" ? "General" : examType === "PLACEMENT" ? "Placement" : "Academic";
   return [
-    "#IELTS Academic",
+    `#IELTS ${examLabel}`,
     `#${skill.charAt(0)}${skill.slice(1).toLowerCase()}`,
   ];
 }

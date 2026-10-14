@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "@/i18n/provider";
+import { fetchSessionMe } from "@/lib/client/session-me";
 
 export type CatalogTest = {
   slug: string;
@@ -78,6 +79,15 @@ export function TestsCatalog({
   );
   const [query, setQuery] = useState("");
   const [tag, setTag] = useState("");
+  const [canEdit, setCanEdit] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    void fetchSessionMe().then((session) => {
+      if (active) setCanEdit(session.user?.role === "ADMIN" || session.user?.role === "TEACHER");
+    });
+    return () => { active = false; };
+  }, []);
 
   const tagSet = new Set<string>();
   for (const row of tests) {
@@ -208,9 +218,12 @@ export function TestsCatalog({
             {pageItems.map((row) => (
               <article
                 key={row.slug}
-                className="card-outline-hover flex flex-col p-5"
+                className="card-outline-hover relative flex flex-col p-5"
               >
-                <div className="mb-2 flex flex-wrap items-center gap-2">
+                {canEdit ? (
+                  <Link href={`/tests/${row.slug}/edit`} prefetch={false} className="absolute right-3 top-3 rounded-md border border-wewin-navy bg-white px-2.5 py-1 text-xs font-bold text-wewin-navy shadow-sm hover:bg-wewin-accent-blue-bg">{t("tests.editTest", "Chỉnh sửa")}</Link>
+                ) : null}
+                <div className={`mb-2 flex flex-wrap items-center gap-2 ${canEdit ? "pr-20" : ""}`}>
                   <span
                     className={`rounded border border-transparent px-2 py-0.5 text-xs font-semibold ${
                       SKILL_COLOR[row.skill] ?? "bg-zinc-100 text-zinc-700"

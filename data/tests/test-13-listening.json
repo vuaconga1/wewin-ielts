@@ -453,7 +453,67 @@
           "type": "TABLE_COMPLETION",
           "content": {
             "stem": "",
-            "blank": true
+            "blank": true,
+            "variant": "TABLE_COMPLETION",
+            "tableLayout": {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "text": "Subject",
+                      "header": true
+                    },
+                    {
+                      "text": "Textbook Used",
+                      "header": true
+                    },
+                    {
+                      "text": "Criticism of this book",
+                      "header": true
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "text": "Social History"
+                    },
+                    {
+                      "text": "21 ..............."
+                    },
+                    {
+                      "text": "It is 22 ..............."
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "text": "Cultural Studies"
+                    },
+                    {
+                      "text": "23 ..............."
+                    },
+                    {
+                      "text": "It 24 ..............."
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "text": "25 ..............."
+                    },
+                    {
+                      "text": "Government in Action"
+                    },
+                    {
+                      "text": "It is 26 ..............."
+                    }
+                  ]
+                }
+              ]
+            }
           },
           "correctAnswer": "Welfare State"
         },
@@ -725,7 +785,54 @@
           "type": "TABLE_COMPLETION",
           "content": {
             "stem": "",
-            "blank": true
+            "blank": true,
+            "variant": "TABLE_COMPLETION",
+            "tableLayout": {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "text": "Possible Solution",
+                      "header": true
+                    },
+                    {
+                      "text": "Important Factor",
+                      "header": true
+                    },
+                    {
+                      "text": "Examples",
+                      "header": true
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "text": "tourism"
+                    },
+                    {
+                      "text": "Locals must 36 ..............."
+                    },
+                    {
+                      "text": "The Daylesford area uses its 37 ..............."
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "text": "using the 38 ..............."
+                    },
+                    {
+                      "text": "- is 39 ............... by its distinctive product<br>- must market the idea effectively"
+                    },
+                    {
+                      "text": "Shepparton is known for its 40 ..............."
+                    }
+                  ]
+                }
+              ]
+            }
           },
           "correctAnswer": "participate"
         },

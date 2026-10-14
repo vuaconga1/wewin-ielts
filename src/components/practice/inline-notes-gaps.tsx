@@ -1,12 +1,15 @@
 "use client";
 
 import { Fragment, useMemo, type MutableRefObject, type ReactNode } from "react";
+import { renderRichText } from "@/components/practice/rich-text";
 import { BoxedContent, OutlineNotesBody } from "@/components/practice/boxed-content";
 import { splitBoxedSegments } from "@/lib/practice/boxed-text";
 import {
   isBoldNotesLine,
   isBowChartNotes,
   isFlowchartNotes,
+  isNotesSectionLabel,
+  isNotesSubheading,
   notesLookLikeOutline,
   OUTLINE_BOX_CLASS,
 } from "@/lib/practice/notes-outline";
@@ -15,6 +18,7 @@ import {
   type ChoiceOption,
 } from "@/lib/practice/shared-choice";
 import { useTranslations } from "@/i18n/provider";
+import type { StructuredTableLayout } from "@/lib/import/schemas";
 import {
   detectNotesTable,
   unwrapSingleColumnMarkdownNotes,
@@ -27,7 +31,7 @@ import {
  * not a numbered stem ("1  The name…").
  */
 const INLINE_BLANK_RE =
-  /(?:(?<!\d)(\d{1,2})\s*(?:[$€£]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)|(?<=\S\s)(\d{1,2})\s+(?=\s[A-Za-z]))/gu;
+  /(?:(?<!\d)(\d{1,2})(?:[.)]\s*)?\s*(?:[$€£]\s*)?(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)|(?<=\S\s)(\d{1,2})\s+(?=\s[A-Za-z]))/gu;
 
 function blankNumber(match: RegExpExecArray): number {
   return Number(match[1] ?? match[2]);
@@ -80,6 +84,10 @@ type GapBindings = {
   placeholder: string;
   allowNumbers?: Set<number>;
   choiceOptions?: Map<number, ChoiceOption[]>;
+  /** Explicit table model for merged rows/columns. */
+  tableLayout?: StructuredTableLayout;
+  /** Canonical layout hint used to restore note/form hierarchy. */
+  layoutVariant?: string;
   /** Flowchart steps stay plain. Section labels in outline notes stay bold. */
   plainText?: boolean;
   /** Bow-chart boxes are narrow, so the answer field stays small. */
@@ -195,9 +203,9 @@ function renderNotesText(
     <Fragment key={`${key}-l-${index}`}>
       {index > 0 ? "\n" : null}
       {isBoldNotesLine(line, plain || (brokenByBlank && index === lastContent)) ? (
-        <strong className="font-bold text-zinc-900">{line}</strong>
+        <strong className="font-bold text-zinc-900">{renderRichText(line, `${key}-${index}-bold`)}</strong>
       ) : (
-        line
+        renderRichText(line, `${key}-${index}`)
       )}
     </Fragment>
   ));
@@ -293,6 +301,46 @@ function NotesTableView({
   );
 }
 
+function StructuredTableView({
+  layout,
+  bindings,
+}: {
+  layout: StructuredTableLayout;
+  bindings: GapBindings;
+}) {
+  return (
+    <div className="min-w-0 overflow-x-auto rounded-sm border border-zinc-400 bg-white">
+      {layout.title ? (
+        <p className="border-b border-zinc-300 bg-[#f7f8fa] px-3 py-2 text-center text-sm font-semibold text-zinc-900">
+          {layout.title}
+        </p>
+      ) : null}
+      <table className="w-full min-w-[36rem] border-collapse text-left text-sm text-zinc-800">
+        <tbody>
+          {layout.rows.map((row, rowIndex) => (
+            <tr key={`structured-row-${rowIndex}`} className="align-top">
+              {row.cells.map((cell, cellIndex) => {
+                const Cell = cell.header ? "th" : "td";
+                return (
+                  <Cell
+                    key={`structured-cell-${rowIndex}-${cellIndex}`}
+                    rowSpan={cell.rowSpan}
+                    colSpan={cell.colSpan}
+                    className={cell.header
+                      ? "border border-zinc-400 bg-[#eceff2] px-3 py-2 font-bold text-zinc-900"
+                      : "border border-zinc-300 px-3 py-2 leading-relaxed"}
+                  >
+                    {renderInlineSegments(cell.text, `structured-${rowIndex}-${cellIndex}`, bindings)}
+                  </Cell>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 const BOW_BOX =
   "border-[3px] border-zinc-900 bg-white px-2.5 py-2 text-sm leading-snug text-zinc-900";
 
@@ -366,6 +414,29 @@ function BowChart({ notes, bindings }: { notes: string; bindings: GapBindings })
   );
 }
 
+function normalizeCompletionOutline(notes: string, layoutVariant?: string): string {
+  if (layoutVariant !== "FORM_COMPLETION" && layoutVariant !== "NOTE_COMPLETION") return notes;
+  if (/\[\[(?:box|bow)\]\]|^\s*\|/m.test(notes)) return notes;
+
+  const lines = notes.replace(/\r\n/g, "\n").split("\n");
+  const firstContent = lines.findIndex((line) => line.trim());
+  if (firstContent < 0) return notes;
+
+  const result = lines.map((line, index) => {
+    const text = line.trim();
+    if (!text) return "";
+    if (index === firstContent && !findInlineBlankNumbers(text).length) {
+      return `[[ntitle]]${text}[[/ntitle]]`;
+    }
+    if (/^(?:example|customer details|personal details|property details|other information)$/i.test(text)) {
+      return text;
+    }
+    if (/^\[\[plain\]\]/i.test(text)) return text.replace(/^\[\[plain\]\]\s*/i, "");
+    if (isNotesSubheading(text) || isNotesSectionLabel(text)) return text;
+    return `[[b0]]${text}`;
+  });
+  return `[[box]]\n${result.join("\n")}\n[[/box]]`;
+}
 export function InlineNotesGaps({
   notes,
   answers,
@@ -376,6 +447,8 @@ export function InlineNotesGaps({
   placeholder,
   allowNumbers,
   choiceOptions,
+  tableLayout,
+  layoutVariant,
 }: {
   notes: string;
   answers: Record<string, string>;
@@ -387,6 +460,10 @@ export function InlineNotesGaps({
   allowNumbers?: Set<number>;
   /** Letter dropdowns for summary blanks that share a word list. */
   choiceOptions?: Map<number, ChoiceOption[]>;
+  /** Explicit table model for merged rows/columns. */
+  tableLayout?: StructuredTableLayout;
+  /** Canonical layout hint used to restore note/form hierarchy. */
+  layoutVariant?: string;
 }) {
   const bindings: GapBindings = {
     answers,
@@ -400,14 +477,18 @@ export function InlineNotesGaps({
   };
 
   const displayNotes = useMemo(
-    () => unwrapSingleColumnMarkdownNotes(notes),
-    [notes],
+    () => normalizeCompletionOutline(unwrapSingleColumnMarkdownNotes(notes), layoutVariant),
+    [notes, layoutVariant],
   );
   const segments = useMemo(
     () => splitBoxedSegments(displayNotes),
     [displayNotes],
   );
   const table = useMemo(() => detectNotesTable(displayNotes), [displayNotes]);
+
+  if (tableLayout) {
+    return <StructuredTableView layout={tableLayout} bindings={bindings} />;
+  }
 
   if (isBowChartNotes(displayNotes)) {
     return (

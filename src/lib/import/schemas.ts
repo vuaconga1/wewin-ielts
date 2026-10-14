@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { QUESTION_LAYOUT_VARIANTS } from "@/lib/questions/layout-variants";
 
 export const SkillSchema = z.enum([
   "LISTENING",
@@ -22,6 +23,39 @@ export const QuestionTypeSchema = z.enum([
 ]);
 
 const StringTrimmed = z.string().trim().min(1);
+
+export const ChoiceOptionSchema = z.object({
+  label: StringTrimmed,
+  text: z.string(),
+});
+
+export const StructuredTableCellSchema = z.object({
+  text: z.string(),
+  rowSpan: z.number().int().positive().optional(),
+  colSpan: z.number().int().positive().optional(),
+  header: z.boolean().optional(),
+});
+
+export const StructuredTableLayoutSchema = z.object({
+  title: z.string().optional(),
+  rows: z.array(z.object({ cells: z.array(StructuredTableCellSchema).min(1) })).min(1),
+});
+
+/** Canonical content contract. Unknown legacy keys remain allowed during migration. */
+export type StructuredTableLayout = z.infer<typeof StructuredTableLayoutSchema>;
+
+export const QuestionContentSchema = z.object({
+  stem: z.string().optional(),
+  variant: z.enum(QUESTION_LAYOUT_VARIANTS).optional(),
+  options: z.array(ChoiceOptionSchema).optional(),
+  minWords: z.number().int().nonnegative().optional(),
+  imageUrl: z.string().optional(),
+  blank: z.boolean().optional(),
+  selectCount: z.number().int().min(2).optional(),
+  covers: z.array(z.number().int().positive()).optional(),
+  pairedFrom: z.number().int().positive().optional(),
+  tableLayout: StructuredTableLayoutSchema.optional(),
+}).passthrough();
 
 export const QuestionDraftSchema = z.object({
   number: z.number().int().positive(),

@@ -28,6 +28,7 @@ export type SessionUser = {
 
 export {
   canAccessAdmin,
+  canEditTests,
   isAdmin,
   isOpenAdminEnabled,
   isStudent,
