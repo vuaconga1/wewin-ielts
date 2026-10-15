@@ -2,6 +2,7 @@ import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
 import type { ImportIssue, ParsedTestDraft } from "./schemas";
 import { canUsePrisma } from "@/lib/db";
+import { normalizeTestMapLabelLayouts } from "@/lib/questions/map-label-layout";
 
 export type PersistOptions = {
   /** Persist even if there are error-level issues (not recommended) */
@@ -34,6 +35,8 @@ export async function persistParsedTest(
       "Database không khả dụng. Draft đã lưu local (data/tests/). Cấu hình DATABASE_URL (Neon) rồi thử lại.",
     );
   }
+
+  draft = normalizeTestMapLabelLayouts(draft);
 
   const fatal = issues.filter((i) => i.level === "error");
   if (fatal.length && !options.force) {

@@ -16,6 +16,12 @@ enum Role {
   ADMIN
 }
 
+enum AccessPlan {
+  FREE
+  PAID
+  UNLIMITED
+}
+
 enum Skill {
   LISTENING
   READING
@@ -67,26 +73,30 @@ enum ImportJobStatus {
 }
 
 model User {
-  id           String   @id @default(cuid())
+  id              String     @id @default(cuid())
   /// Optional — accounts can sign in with username + password only
-  email        String?  @unique
-  username     String   @unique
-  passwordHash String
-  role         Role     @default(STUDENT)
+  email           String?    @unique
+  username        String     @unique
+  passwordHash    String
+  role            Role       @default(STUDENT)
   /// Display name (Họ tên)
-  fullName     String?
+  fullName        String?
   /// Class code(s), e.g. WW00016 or "WW00019, WW00020"
-  classCode    String?
+  classCode       String?
   /// Profile image: /avatars/default-*.svg, /uploads/avatars/*, or data URL
-  avatarUrl    String?
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  avatarUrl       String?
+  accessPlan      AccessPlan @default(FREE)
+  accessStartsAt  DateTime   @default(now())
+  accessExpiresAt DateTime?
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
 
   attempts   Attempt[]
   importJobs ImportJob[]
   auditLogs  AuditLog[]
 
   @@index([classCode])
+  @@index([accessPlan, accessExpiresAt])
 }
 
 model AuditLog {

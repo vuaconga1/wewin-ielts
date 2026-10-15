@@ -2,7 +2,7 @@ import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import type { AppRole } from "@/lib/auth/permissions";
 
-export type AuditAction = "LOGIN" | "LOGOUT";
+export type AuditAction = "LOGIN" | "LOGOUT" | "TEST_START" | "USER_CREATE" | "USER_UPDATE" | "USER_PASSWORD_RESET" | "USER_ACCESS_UPDATE" | "USER_DELETE";
 
 export type AuditActor = {
   id: string;
@@ -10,15 +10,6 @@ export type AuditActor = {
   fullName: string | null;
   role: AppRole;
 };
-
-function requestIp(request: Request): string | null {
-  const forwarded = request.headers.get("x-forwarded-for");
-  return (
-    forwarded?.split(",")[0]?.trim() ||
-    request.headers.get("x-real-ip")?.trim() ||
-    null
-  );
-}
 
 /** Authentication must still work if audit persistence is temporarily unavailable. */
 export async function recordAuditEvent(input: {
@@ -36,8 +27,8 @@ export async function recordAuditEvent(input: {
         fullName: input.actor.fullName,
         role: input.actor.role,
         action: input.action,
-        ipAddress: requestIp(input.request),
-        userAgent: input.request.headers.get("user-agent")?.slice(0, 2000) ?? null,
+        ipAddress: null,
+        userAgent: null,
         metadata: input.metadata,
       },
     });
@@ -82,7 +73,6 @@ export async function listAuditLogs(filters: AuditLogFilters) {
           OR: [
             { username: { contains: query, mode: "insensitive" as const } },
             { fullName: { contains: query, mode: "insensitive" as const } },
-            { ipAddress: { contains: query } },
           ],
         }
       : {}),

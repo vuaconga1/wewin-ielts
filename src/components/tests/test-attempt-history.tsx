@@ -4,6 +4,8 @@ import Link from "next/link";
 import { localeToIntl } from "@/i18n/config";
 import { useTranslations } from "@/i18n/provider";
 import { practicePath } from "@/lib/practice/paths";
+import { useState } from "react";
+import { PaginationControls } from "@/components/ui/pagination";
 
 export type TestAttemptHistoryItem = {
   id: string;
@@ -58,6 +60,11 @@ export function TestAttemptHistory({
   const { t: tp } = useTranslations("practice");
   const intlLocale = localeToIntl(locale);
   const unscored = skill === "WRITING" || skill === "SPEAKING";
+  const [page, setPage] = useState(1);
+  const pageSize = 10;
+  const totalPages = Math.max(1, Math.ceil(attempts.length / pageSize));
+  const safePage = Math.min(page, totalPages);
+  const pageAttempts = attempts.slice((safePage - 1) * pageSize, safePage * pageSize);
 
   const partByOrder = new Map(parts.map((p) => [p.order, p.title]));
 
@@ -130,6 +137,7 @@ export function TestAttemptHistory({
   }
 
   return (
+    <div>
     <div className="overflow-x-auto rounded-lg border border-zinc-200">
       <table className="w-full min-w-[560px] text-left text-sm">
         <thead className="border-b border-zinc-200 bg-wewin-accent-blue-bg/60 text-xs uppercase text-zinc-500">
@@ -142,7 +150,7 @@ export function TestAttemptHistory({
           </tr>
         </thead>
         <tbody>
-          {attempts.map((attempt) => (
+          {pageAttempts.map((attempt) => (
             <tr key={attempt.id} className="border-t border-zinc-200">
               <td className="whitespace-nowrap px-3 py-2.5 text-zinc-700 sm:px-4">
                 {new Date(attempt.startedAt).toLocaleString(intlLocale)}
@@ -170,6 +178,8 @@ export function TestAttemptHistory({
           ))}
         </tbody>
       </table>
+    </div>
+    <PaginationControls page={safePage} totalPages={totalPages} onPageChange={setPage} />
     </div>
   );
 }

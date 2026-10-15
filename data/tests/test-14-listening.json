@@ -124,7 +124,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11-20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\n11 What is the new activity in the zoo in November?\n\nA evening tours\nB bonfire nights for adults\nC various parties\n\n12 What is the most popular species in the zoo?\n\nA kangaroo\nB koala\nC sheepdog\n\n13 What is the key to feeding kangaroos?\n\nA feeding more than one at a time\nB gently touching the baby kangaroos\nC standing up straight when feeding\n\n14 Why is the wild dog area closed?\n\nA The wild dogs are unwell.\nB The enclosure is under repair.\nC The dogs have not arrived.\n\n15 Where can visitors get discount tickets this year?\n\nA at the café\nB on the official website\nC at the gift shop\n\nQuestions 16 – 20\n\nLabel the map below\n\nWrite the correct letter, A-G, next to \n\nQuestion 16-20\n\n16 Arena ..........................\n\n17 Educational hall ..........................\n\n18 Picnic spot ..........................\n\n19 Photo printing shop ..........................\n\n20 Gift shop ..........................",
+      "content": "Questions 11-20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\n11 What is the new activity in the zoo in November?\n\nA evening tours\nB bonfire nights for adults\nC various parties\n\n12 What is the most popular species in the zoo?\n\nA kangaroo\nB koala\nC sheepdog\n\n13 What is the key to feeding kangaroos?\n\nA feeding more than one at a time\nB gently touching the baby kangaroos\nC standing up straight when feeding\n\n14 Why is the wild dog area closed?\n\nA The wild dogs are unwell.\nB The enclosure is under repair.\nC The dogs have not arrived.\n\n15 Where can visitors get discount tickets this year?\n\nA at the café\nB on the official website\nC at the gift shop\n\nQuestions 16 – 20\n\nLabel the map below\n\nWrite the correct letter, A-G, next to \n\nQuestion 16-20\n\n",
       "meta": {
         "audioUrl": "/uploads/audio/test-14-section-2.mp3",
         "imageUrl": "/uploads/images/test-14-listening-map.png",
@@ -153,8 +153,8 @@
             ],
             "imageUrl": "/uploads/images/test-14-listening-map.png"
           },
-          "correctAnswer": "A",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "A"
         },
         {
           "number": 12,
@@ -178,8 +178,8 @@
             ],
             "imageUrl": "/uploads/images/test-14-listening-map.png"
           },
-          "correctAnswer": "B",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "B"
         },
         {
           "number": 13,
@@ -203,8 +203,8 @@
             ],
             "imageUrl": "/uploads/images/test-14-listening-map.png"
           },
-          "correctAnswer": "C",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "C"
         },
         {
           "number": 14,
@@ -228,8 +228,8 @@
             ],
             "imageUrl": "/uploads/images/test-14-listening-map.png"
           },
-          "correctAnswer": "B",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "B"
         },
         {
           "number": 15,
@@ -253,68 +253,73 @@
             ],
             "imageUrl": "/uploads/images/test-14-listening-map.png"
           },
-          "correctAnswer": "A",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "A"
         },
         {
           "number": 16,
           "order": 5,
           "type": "MAP_LABELING",
           "content": {
-            "stem": "",
+            "stem": "Arena _____",
             "blank": true,
-            "imageUrl": "/uploads/images/test-14-listening-map.png"
+            "imageUrl": "/uploads/images/test-14-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "C",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "C"
         },
         {
           "number": 17,
           "order": 6,
           "type": "MAP_LABELING",
           "content": {
-            "stem": "",
+            "stem": "Educational hall _____",
             "blank": true,
-            "imageUrl": "/uploads/images/test-14-listening-map.png"
+            "imageUrl": "/uploads/images/test-14-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "E",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "E"
         },
         {
           "number": 18,
           "order": 7,
           "type": "MAP_LABELING",
           "content": {
-            "stem": "",
+            "stem": "Picnic spot _____",
             "blank": true,
-            "imageUrl": "/uploads/images/test-14-listening-map.png"
+            "imageUrl": "/uploads/images/test-14-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "A",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "A"
         },
         {
           "number": 19,
           "order": 8,
           "type": "MAP_LABELING",
           "content": {
-            "stem": "",
+            "stem": "Photo printing shop _____",
             "blank": true,
-            "imageUrl": "/uploads/images/test-14-listening-map.png"
+            "imageUrl": "/uploads/images/test-14-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "D",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "D"
         },
         {
           "number": 20,
           "order": 9,
           "type": "MAP_LABELING",
           "content": {
-            "stem": "",
+            "stem": "Gift shop _____",
             "blank": true,
-            "imageUrl": "/uploads/images/test-14-listening-map.png"
+            "imageUrl": "/uploads/images/test-14-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "B",
-          "mediaUrl": "/uploads/images/test-14-listening-map.png"
+          "mediaUrl": "/uploads/images/test-14-listening-map.png",
+          "correctAnswer": "B"
         }
       ]
     },

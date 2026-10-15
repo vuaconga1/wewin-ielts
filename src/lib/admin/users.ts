@@ -6,7 +6,8 @@
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { hashPassword } from "@/lib/auth";
-import { unstable_cache } from "next/cache";
+import { accessStatus, addCalendarMonths, freeAccessExpiry, type AccessPlan } from "@/lib/access";
+import { revalidateTag, unstable_cache } from "next/cache";
 import {
   deleteLocalUser,
   findLocalUserByEmail,
@@ -29,6 +30,10 @@ export type AdminUserPublic = {
   role: AdminUserRole;
   avatarUrl: string | null;
   createdAt: string;
+  accessPlan: AccessPlan;
+  accessStartsAt: string;
+  accessExpiresAt: string | null;
+  accessStatus: "ACTIVE" | "EXPIRING" | "EXPIRED" | "UNLIMITED";
 };
 
 export class AdminUsersError extends Error {
@@ -50,7 +55,12 @@ function toPublic(user: {
   role: AdminUserRole;
   avatarUrl?: string | null;
   createdAt: Date | string;
+  accessPlan?: AccessPlan;
+  accessStartsAt?: Date | string;
+  accessExpiresAt?: Date | string | null;
 }): AdminUserPublic {
+  const plan = user.accessPlan ?? (user.role === "STUDENT" ? "FREE" : "UNLIMITED");
+  const expiresAt = user.accessExpiresAt ?? null;
   return {
     id: user.id,
     email: user.email,
@@ -63,6 +73,14 @@ function toPublic(user: {
       typeof user.createdAt === "string"
         ? user.createdAt
         : user.createdAt.toISOString(),
+    accessPlan: plan,
+    accessStartsAt: user.accessStartsAt
+      ? typeof user.accessStartsAt === "string" ? user.accessStartsAt : user.accessStartsAt.toISOString()
+      : typeof user.createdAt === "string" ? user.createdAt : user.createdAt.toISOString(),
+    accessExpiresAt: expiresAt
+      ? typeof expiresAt === "string" ? expiresAt : expiresAt.toISOString()
+      : null,
+    accessStatus: user.role === "STUDENT" ? accessStatus(plan, expiresAt) : "UNLIMITED",
   };
 }
 
@@ -128,6 +146,9 @@ const userPublicSelect = {
   role: true,
   avatarUrl: true,
   createdAt: true,
+  accessPlan: true,
+  accessStartsAt: true,
+  accessExpiresAt: true,
 } as const;
 
 export async function listAdminUsers(): Promise<AdminUserPublic[]> {
@@ -149,7 +170,7 @@ export async function listAdminUsers(): Promise<AdminUserPublic[]> {
         .slice(0, 2000);
     },
     ["admin-users-list-v2"],
-    { revalidate: 15 },
+    { revalidate: 15, tags: ["admin-users"] },
   )();
 }
 
@@ -173,6 +194,9 @@ export async function createAdminUser(input: {
   const role = input.role;
 
   const passwordHash = await hashPassword(password);
+  const accessPlan: AccessPlan = role === "STUDENT" ? "FREE" : "UNLIMITED";
+  const accessStartsAt = new Date();
+  const accessExpiresAt = role === "STUDENT" ? freeAccessExpiry(accessStartsAt) : null;
 
   if (await canUsePrisma()) {
     if (email) {
@@ -188,9 +212,10 @@ export async function createAdminUser(input: {
       throw new AdminUsersError("USERNAME_TAKEN", "Username đã được dùng");
     }
     const user = await prisma.user.create({
-      data: { email, username, passwordHash, role, fullName, classCode },
+      data: { email, username, passwordHash, role, fullName, classCode, accessPlan, accessStartsAt, accessExpiresAt },
       select: userPublicSelect,
     });
+    revalidateTag("admin-users");
     return toPublic(user);
   }
 
@@ -207,7 +232,11 @@ export async function createAdminUser(input: {
     role,
     fullName,
     classCode,
+    accessPlan,
+    accessStartsAt: accessStartsAt.toISOString(),
+    accessExpiresAt: accessExpiresAt?.toISOString() ?? null,
   });
+  revalidateTag("admin-users");
   return localToPublic(created);
 }
 
@@ -291,6 +320,7 @@ export async function updateAdminUser(
       },
       select: userPublicSelect,
     });
+    revalidateTag("admin-users");
     return toPublic(user);
   }
 
@@ -308,6 +338,7 @@ export async function updateAdminUser(
   if (!updated) {
     throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);
   }
+  revalidateTag("admin-users");
   return localToPublic(updated);
 }
 
@@ -332,6 +363,7 @@ export async function deleteAdminUser(
       throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);
     }
     await prisma.user.delete({ where: { id } });
+    revalidateTag("admin-users");
     return;
   }
 
@@ -339,4 +371,45 @@ export async function deleteAdminUser(
   if (!ok) {
     throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);
   }
+}
+
+export async function setAdminUserAccess(
+  id: string,
+  input: { months?: number; days?: number; expiresAt?: string; unlimited?: boolean },
+): Promise<AdminUserPublic> {
+  const now = new Date();
+  const calculate = (current: Date | string | null | undefined) => {
+    if (input.unlimited) return { accessPlan: "UNLIMITED" as const, accessExpiresAt: null };
+    if (input.expiresAt) {
+      const exact = new Date(`${input.expiresAt}T23:59:59.999+07:00`);
+      if (Number.isNaN(exact.getTime())) throw new AdminUsersError("INVALID_EXPIRY", "Ngày hết hạn không hợp lệ");
+      return { accessPlan: "PAID" as const, accessExpiresAt: exact };
+    }
+    const base = current && new Date(current).getTime() > now.getTime() ? new Date(current) : now;
+    if (input.months && [1, 2, 3, 6, 12].includes(input.months)) {
+      return { accessPlan: "PAID" as const, accessExpiresAt: addCalendarMonths(base, input.months) };
+    }
+    if (input.days === 7) {
+      return { accessPlan: "FREE" as const, accessExpiresAt: new Date(base.getTime() + 7 * 86_400_000) };
+    }
+    throw new AdminUsersError("INVALID_DURATION", "Thời hạn không hợp lệ");
+  };
+
+  if (await canUsePrisma()) {
+    const existing = await prisma.user.findUnique({ where: { id }, select: { accessExpiresAt: true } });
+    if (!existing) throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);
+    const user = await prisma.user.update({ where: { id }, data: calculate(existing.accessExpiresAt), select: userPublicSelect });
+    revalidateTag("admin-users");
+    return toPublic(user);
+  }
+  const existing = await findLocalUserById(id);
+  if (!existing) throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);
+  const access = calculate(existing.accessExpiresAt);
+  const updated = await updateLocalUser(id, {
+    accessPlan: access.accessPlan,
+    accessExpiresAt: access.accessExpiresAt?.toISOString() ?? null,
+  });
+  if (!updated) throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);
+  revalidateTag("admin-users");
+  return localToPublic(updated);
 }

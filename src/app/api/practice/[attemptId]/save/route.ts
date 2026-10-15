@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth";
+import { expiredAccessResponse } from "@/lib/auth/access-guard";
 import {
   canAccessAttempt,
   claimAttemptIfGuest,
@@ -26,6 +27,8 @@ export async function POST(
     }
 
     const user = await getSessionUser();
+    const expired = await expiredAccessResponse(user);
+    if (expired) return expired;
     if (!canAccessAttempt(attempt, user)) {
       return NextResponse.json(
         { error: "Không có quyền lưu bài làm này" },

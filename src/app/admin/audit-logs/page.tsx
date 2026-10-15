@@ -22,7 +22,8 @@ function validRole(value: string): AppRole | "" {
 }
 
 function validAction(value: string): AuditAction | "" {
-  return value === "LOGIN" || value === "LOGOUT" ? value : "";
+  const actions: AuditAction[] = ["LOGIN", "LOGOUT", "TEST_START", "USER_CREATE", "USER_UPDATE", "USER_PASSWORD_RESET", "USER_ACCESS_UPDATE", "USER_DELETE"];
+  return actions.includes(value as AuditAction) ? value as AuditAction : "";
 }
 
 function pageHref(params: SearchParams, page: number): string {
@@ -42,7 +43,8 @@ function roleLabel(role: AppRole): string {
 }
 
 function actionLabel(action: string): string {
-  return action === "LOGIN" ? "Đăng nhập" : "Đăng xuất";
+  const labels: Record<string, string> = { LOGIN: "Đăng nhập", LOGOUT: "Đăng xuất", TEST_START: "Bắt đầu làm test", USER_CREATE: "Tạo user", USER_UPDATE: "Sửa user", USER_PASSWORD_RESET: "Reset password", USER_ACCESS_UPDATE: "Cập nhật thời hạn", USER_DELETE: "Xóa user" };
+  return labels[action] ?? action;
 }
 
 export default async function AuditLogsPage({
@@ -78,7 +80,7 @@ export default async function AuditLogsPage({
         <div>
           <h1 className="text-2xl font-bold text-zinc-900">Nhật ký hoạt động</h1>
           <p className="mt-1 text-sm text-zinc-600">
-            Theo dõi thời gian đăng nhập, đăng xuất của học viên và giáo viên.
+            Theo dõi hoạt động đăng nhập, đăng xuất và làm bài test.
           </p>
         </div>
         <Link href="/admin/users" className="text-sm font-medium text-wewin-navy hover:underline">
@@ -110,12 +112,18 @@ export default async function AuditLogsPage({
             <option value="">Tất cả</option>
             <option value="LOGIN">Đăng nhập</option>
             <option value="LOGOUT">Đăng xuất</option>
+            <option value="TEST_START">Bắt đầu làm test</option>
+            <option value="USER_CREATE">Tạo user</option>
+            <option value="USER_UPDATE">Sửa user</option>
+            <option value="USER_PASSWORD_RESET">Reset password</option>
+            <option value="USER_ACCESS_UPDATE">Cập nhật thời hạn</option>
+            <option value="USER_DELETE">Xóa user</option>
           </select>
         </label>
         <label className="text-sm font-medium text-zinc-700 xl:col-span-2">
-          Tìm người dùng hoặc IP
+          Tìm người dùng
           <div className="mt-1 flex gap-2">
-            <input name="q" defaultValue={query} placeholder="Tên, username, IP..." className="min-w-0 flex-1 rounded-lg border border-wewin-border bg-white px-3 py-2" />
+            <input name="q" defaultValue={query} placeholder="Tên hiển thị hoặc username..." className="min-w-0 flex-1 rounded-lg border border-wewin-border bg-white px-3 py-2" />
             <button className="rounded-full bg-wewin-navy px-4 py-2 font-semibold text-white hover:bg-wewin-navy-hover">Lọc</button>
           </div>
         </label>
@@ -129,15 +137,13 @@ export default async function AuditLogsPage({
         <>
           <p className="mb-3 text-sm text-zinc-600">Tìm thấy {result.total} hoạt động</p>
           <div className="wewin-card-3d overflow-x-auto">
-            <table className="min-w-[900px] w-full text-left text-sm">
+            <table className="min-w-[650px] w-full text-left text-sm">
               <thead className="border-b border-wewin-border bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500">
                 <tr>
                   <th className="px-4 py-3">Thời gian</th>
                   <th className="px-4 py-3">Người dùng</th>
                   <th className="px-4 py-3">Vai trò</th>
                   <th className="px-4 py-3">Hành động</th>
-                  <th className="px-4 py-3">IP</th>
-                  <th className="px-4 py-3">Thiết bị</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-wewin-border">
@@ -146,7 +152,6 @@ export default async function AuditLogsPage({
                     <td className="whitespace-nowrap px-4 py-3 font-medium text-zinc-800">{dateFormat.format(log.createdAt)}</td>
                     <td className="px-4 py-3">
                       <p className="font-medium text-zinc-900">{log.fullName || log.username}</p>
-                      {log.fullName ? <p className="text-xs text-zinc-500">@{log.username}</p> : null}
                     </td>
                     <td className="px-4 py-3">{roleLabel(log.role)}</td>
                     <td className="px-4 py-3">
@@ -154,12 +159,10 @@ export default async function AuditLogsPage({
                         {actionLabel(log.action)}
                       </span>
                     </td>
-                    <td className="whitespace-nowrap px-4 py-3 text-zinc-600">{log.ipAddress || "—"}</td>
-                    <td className="max-w-sm truncate px-4 py-3 text-xs text-zinc-500" title={log.userAgent || undefined}>{log.userAgent || "—"}</td>
                   </tr>
                 ))}
                 {result.items.length === 0 ? (
-                  <tr><td colSpan={6} className="px-4 py-12 text-center text-zinc-500">Không có hoạt động phù hợp bộ lọc.</td></tr>
+                  <tr><td colSpan={4} className="px-4 py-12 text-center text-zinc-500">Không có hoạt động phù hợp bộ lọc.</td></tr>
                 ) : null}
               </tbody>
             </table>

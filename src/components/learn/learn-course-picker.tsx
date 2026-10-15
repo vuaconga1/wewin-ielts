@@ -34,18 +34,11 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
   return (
     <div className="space-y-4">
       <header data-tour="learn-header" className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-wider text-wewin-navy">
-          {t("catalogKicker", "Học 4 kỹ năng")}
-        </p>
-        <h1 className="mt-0.5 text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
+      
+        <h1 className="mt-0.5 text-xl font-bold tracking-tight text-zinc-900 sm:text-3xl">
           {t("catalogTitle", "Chọn khóa học")}
         </h1>
-        <p className="mt-1 text-sm text-zinc-600">
-          {t(
-            "catalogDesc",
-            "Chọn khóa học 4 kỹ năng hoặc học từ vựng và ngữ pháp.",
-          )}
-        </p>
+       
       </header>
 
       <div data-tour="learn-courses" className="grid gap-3 sm:grid-cols-2">
@@ -61,11 +54,6 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
               <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
                 <GraduationCap className="h-5 w-5 shrink-0 opacity-90" />
                 <div className="min-w-0">
-                  {course.level ? (
-                    <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
-                      {t("levelKicker", { level: course.level }, "Cấp độ {level}")}
-                    </p>
-                  ) : null}
                   <h2 className="truncate text-base font-bold leading-tight">
                     {course.title}
                   </h2>

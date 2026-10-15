@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import {
   ChevronLeft,
   ChevronRight,
@@ -11,6 +12,7 @@ import {
   Trophy,
 } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
+import { PaginationControls } from "@/components/ui/pagination";
 import {
   formatPoints,
   shiftDay,
@@ -138,11 +140,16 @@ const PERIODS: RankingPeriod[] = ["day", "week", "month", "all"];
 
 export function RankingBoard({ data, intlLocale, isLoggedIn }: Props) {
   const { t } = useTranslations("ranking");
+  const [page, setPage] = useState(1);
   const router = useRouter();
   const { period, year, month, day, entries, currentUser, updatedAt } = data;
 
   const top3 = entries.slice(0, 3);
   const rest = entries.slice(3);
+  const pageSize = 20;
+  const totalPages = Math.max(1, Math.ceil(rest.length / pageSize));
+  const safePage = Math.min(page, totalPages);
+  const pageEntries = rest.slice((safePage - 1) * pageSize, safePage * pageSize);
   const first = top3.find((e) => e.rank === 1);
   const second = top3.find((e) => e.rank === 2);
   const third = top3.find((e) => e.rank === 3);
@@ -302,7 +309,7 @@ export function RankingBoard({ data, intlLocale, isLoggedIn }: Props) {
 
           {rest.length > 0 ? (
             <ul className="wewin-card-3d overflow-hidden rounded-2xl">
-              {rest.map((entry) => {
+              {pageEntries.map((entry) => {
                 const isYou = currentUser?.userId === entry.userId;
                 return (
                   <li
@@ -335,6 +342,7 @@ export function RankingBoard({ data, intlLocale, isLoggedIn }: Props) {
               })}
             </ul>
           ) : null}
+          <PaginationControls page={safePage} totalPages={totalPages} onPageChange={setPage} />
         </>
       )}
 

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth";
+import { expiredAccessResponse } from "@/lib/auth/access-guard";
 import { isAdmin } from "@/lib/auth/permissions";
 import { runAiScoreForAttempt } from "@/lib/ai/run-score";
 import { getAiQuota } from "@/lib/ai/quota";
@@ -34,6 +35,8 @@ export async function GET(
     }
 
     const user = await getSessionUser();
+    const expired = await expiredAccessResponse(user);
+    if (expired) return expired;
     if (!canAccessAttempt(attempt, user)) {
       return NextResponse.json({ error: "Không có quyền" }, { status: 403 });
     }
@@ -107,6 +110,8 @@ export async function POST(
     }
 
     const user = await getSessionUser();
+    const expired = await expiredAccessResponse(user);
+    if (expired) return expired;
     if (!canAccessAttempt(attempt, user)) {
       return NextResponse.json(
         { error: "Không có quyền chấm bài này" },

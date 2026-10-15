@@ -5,6 +5,7 @@ import {
   createAdminUser,
   listAdminUsers,
 } from "@/lib/admin/users";
+import { recordAuditEvent } from "@/lib/audit-log";
 
 export const runtime = "nodejs";
 
@@ -53,6 +54,8 @@ export async function POST(request: Request) {
       fullName: body.fullName,
       classCode: body.classCode,
     });
+    const actor = await getSessionUser();
+    if (actor) await recordAuditEvent({ actor, action: "USER_CREATE", request, metadata: { targetUserId: user.id, targetUsername: user.username } });
     return NextResponse.json({ user }, { status: 201 });
   } catch (e) {
     if (e instanceof AdminUsersError) {

@@ -117,12 +117,9 @@ export function LoginForm() {
       className="card-outline mx-auto w-full max-w-md space-y-5 p-6 sm:p-8"
     >
       <div>
-        <h1 className="text-xl font-bold text-zinc-900">
+        <h1 className="text-center text-xl font-bold text-zinc-900">
           {mode === "login" ? ta("loginTitle") : ta("registerTitle")}
         </h1>
-        <p className="mt-1 text-sm text-zinc-600">
-          {mode === "login" ? ta("loginDesc") : ta("registerDesc")}
-        </p>
         {reason === "admin" && mode === "login" ? (
           <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-800">
             {ta("adminReason")}
@@ -232,8 +229,7 @@ export function LoginForm() {
       </button>
 
       <p className="text-center text-xs text-zinc-500">
-        {ta("defaultAdminHint")}{" "}
-        <code>admin@wewin.local</code> / <code>change-me</code>
+    
         <br />
         <Link href="/tests" className="text-wewin-navy hover:underline">
           {ta("continueAsGuest")}

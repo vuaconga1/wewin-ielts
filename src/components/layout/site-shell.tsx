@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import {
   DashboardShell,
   type DashboardNavKey,
@@ -22,34 +22,24 @@ type Props = {
 
 const EMPTY: SessionMe = { user: null, canImport: false };
 
+function sessionSnapshot(): SessionMe {
+  return peekSessionMe() ?? EMPTY;
+}
+
 /**
  * Shared app chrome — client-hydrated session so catalog RSC pages stay
  * static/ISR (no cookies()/Prisma avatar on every soft navigation).
+ * The server snapshot stays logged-out; the cached session is applied after hydration.
  */
 export function SiteShell({ children, active, wide }: Props) {
-  const [session, setSession] = useState<SessionMe>(
-    () => peekSessionMe() ?? EMPTY,
+  const session = useSyncExternalStore(
+    subscribeSessionMe,
+    sessionSnapshot,
+    () => EMPTY,
   );
 
   useEffect(() => {
-    let cancelled = false;
-    void fetchSessionMe().then((next) => {
-      if (!cancelled) setSession(next);
-    });
-    const unsub = subscribeSessionMe(() => {
-      const peek = peekSessionMe();
-      if (peek) {
-        setSession(peek);
-        return;
-      }
-      void fetchSessionMe().then((next) => {
-        if (!cancelled) setSession(next);
-      });
-    });
-    return () => {
-      cancelled = true;
-      unsub();
-    };
+    void fetchSessionMe();
   }, []);
 
   return (

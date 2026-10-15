@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { ParsedTestDraft } from "@/lib/import/schemas";
+import { normalizeTestMapLabelLayouts } from "@/lib/questions/map-label-layout";
 import type { PassageHighlight } from "@/lib/practice/passage-highlights";
 import type { StoredAiScore } from "@/lib/ai/types";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
@@ -284,7 +285,8 @@ async function getTestFromFs(slug: string): Promise<StoredTest | null> {
 
 export async function saveTestDraft(draft: ParsedTestDraft): Promise<StoredTest> {
   await ensureDirs();
-  const stored: StoredTest = { ...draft, savedAt: new Date().toISOString() };
+  const normalized = normalizeTestMapLabelLayouts(draft);
+  const stored: StoredTest = { ...normalized, savedAt: new Date().toISOString() };
   const file = path.join(TESTS_DIR, `${draft.slug}.json`);
   await writeFile(file, JSON.stringify(stored, null, 2), "utf8");
   invalidateTestsCache();

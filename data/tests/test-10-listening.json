@@ -128,7 +128,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11-20\nQuestions 11 – 14\nChoose the correct letter, A, B or C.\nTalk to new employees at a strawberry farm\n11 What should employees bring to work?\nA gloves\nB lunch\nC water\n12 If employees can't come to work one day, they should\nA contact the duty manager.\nB leave a phone message at the farm office.\nC call their team leader.\n13 One problem with customers that may occur now is that\nA they sometimes fail to return baskets.\nB they eat the fruit before paying.\nC they can be unsure about prices.\n14 One of the benefits of working at the strawberry farm is that\nA employees' friends are entitled to a small discount.\nB employees can have a quantity of fresh fruit for free.\nC employees don't pay the full price for gift items in the shop.\n\nQuestions 15-20\nLabel the map below.\nWrite the correct letter, A-J, next to questions 15-20.\n\n15. Staff room area\n16. Administration building\n17. Packing shed area\n18. Staff car park area\n19. Ripe strawberries area\n20. Unripe strawberries area",
+      "content": "Questions 11-20\nQuestions 11 – 14\nChoose the correct letter, A, B or C.\nTalk to new employees at a strawberry farm\n11 What should employees bring to work?\nA gloves\nB lunch\nC water\n12 If employees can't come to work one day, they should\nA contact the duty manager.\nB leave a phone message at the farm office.\nC call their team leader.\n13 One problem with customers that may occur now is that\nA they sometimes fail to return baskets.\nB they eat the fruit before paying.\nC they can be unsure about prices.\n14 One of the benefits of working at the strawberry farm is that\nA employees' friends are entitled to a small discount.\nB employees can have a quantity of fresh fruit for free.\nC employees don't pay the full price for gift items in the shop.\n\nQuestions 15-20\nLabel the map below.\nWrite the correct letter, A-J, next to questions 15-20.\n",
       "meta": {
         "audioUrl": "/uploads/audio/test-10-section-2.mp3",
         "imageUrl": "/uploads/images/test-10-listening-img1.png",
@@ -230,320 +230,80 @@
         {
           "number": 15,
           "order": 4,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Staff room",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              },
-              {
-                "label": "I",
-                "text": "I"
-              },
-              {
-                "label": "J",
-                "text": "J"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+            "stem": "Staff room area _____",
+            "imageUrl": "/uploads/images/test-10-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "C",
-          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png",
+          "correctAnswer": "C"
         },
         {
           "number": 16,
           "order": 5,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Administration",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              },
-              {
-                "label": "I",
-                "text": "I"
-              },
-              {
-                "label": "J",
-                "text": "J"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+            "stem": "Administration building _____",
+            "imageUrl": "/uploads/images/test-10-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "H",
-          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png",
+          "correctAnswer": "H"
         },
         {
           "number": 17,
           "order": 6,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Packing shed",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              },
-              {
-                "label": "I",
-                "text": "I"
-              },
-              {
-                "label": "J",
-                "text": "J"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+            "stem": "Packing shed area _____",
+            "imageUrl": "/uploads/images/test-10-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "B",
-          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png",
+          "correctAnswer": "B"
         },
         {
           "number": 18,
           "order": 7,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Staff car park",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              },
-              {
-                "label": "I",
-                "text": "I"
-              },
-              {
-                "label": "J",
-                "text": "J"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+            "stem": "Staff car park area _____",
+            "imageUrl": "/uploads/images/test-10-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "I",
-          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png",
+          "correctAnswer": "I"
         },
         {
           "number": 19,
           "order": 8,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Ripe strawberries",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              },
-              {
-                "label": "I",
-                "text": "I"
-              },
-              {
-                "label": "J",
-                "text": "J"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+            "stem": "Ripe strawberries area _____",
+            "imageUrl": "/uploads/images/test-10-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "A",
-          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png",
+          "correctAnswer": "A"
         },
         {
           "number": 20,
           "order": 9,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Unripe strawberries",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              },
-              {
-                "label": "I",
-                "text": "I"
-              },
-              {
-                "label": "J",
-                "text": "J"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-10-listening-img1.png"
+            "stem": "Unripe strawberries area _____",
+            "imageUrl": "/uploads/images/test-10-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "E",
-          "mediaUrl": "/uploads/images/test-10-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-10-listening-img1.png",
+          "correctAnswer": "E"
         }
       ]
     },

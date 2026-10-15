@@ -395,8 +395,7 @@
   "tests": {
     "title": "Practice tests",
     "subtitle": "Choose Listening, Reading, Writing, or Speaking to practice. Need the basics first?",
-    "chooserSubtitle": "Choose IELTS Academic, General Training, or Placement Test, then filter by skill to practice. Need the basics first?",
-    "learnLink": "Learn 4 skills",
+
     "backModules": "← Choose a module",
     "backModulesShort": "Choose another module",
     "moduleAcademic": "IELTS Academic",
@@ -405,7 +404,7 @@
     "moduleGeneralDesc": "General Training tests for Listening, Reading, Writing, and Speaking.",
     "modulePlacement": "IELTS Placement Test",
     "modulePlacementDesc": "Placement tests for Listening, Reading, and Writing.",
-    "moduleAcademicSubtitle": "Choose Listening, Reading, Writing, or Speaking to practice. Need the basics first?",
+
     "moduleGeneralSubtitle": "Choose Listening, Reading, Writing, or Speaking (General Training). Need the basics first?",
     "modulePlacementSubtitle": "Choose a Listening, Reading, or Writing placement test. Need the basics first?",
     "moduleTestCount": "{n} tests",
@@ -891,7 +890,7 @@
     "courseCreateFailed": "Could not create course",
     "colCourse": "Course",
     "skillFilter": "{vi} ({n})",
-    "restoreSeed": "Restore seed",
+  
     "restoring": "Restoring…",
     "addLesson": "Add lesson",
     "confirmDelete": "Delete lesson \"{title}\"? This cannot be undone.",
@@ -1010,7 +1009,8 @@
     "prevPage": "Previous",
     "nextPage": "Next",
     "pageOf": "Page {page} / {total}",
-    "pageInfo": "Showing {from}–{to} of {total}"
+    "pageInfo": "Showing {from}–{to} of {total}",
+    "reportsPagination": "Student report pagination"
   },
   "tour": {
     "open": "Show guide",

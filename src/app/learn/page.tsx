@@ -30,7 +30,7 @@ export default async function LearnCatalogPage() {
   ];
 
   return (
-    <SiteShell active="learn" wide>
+    <SiteShell active="learn">
       <LearnCoursePickerHydrated
         courses={courses}
         vocabGrammarTopics={vocabGrammarTopics}

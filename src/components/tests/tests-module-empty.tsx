@@ -26,9 +26,7 @@ export function TestsModuleEmpty({
   importLabel,
   backLabel,
 }: Props) {
-  const [canImport, setCanImport] = useState(
-    () => peekSessionMe()?.canImport ?? false,
-  );
+  const [canImport, setCanImport] = useState(false);
 
   useEffect(() => {
     let cancelled = false;

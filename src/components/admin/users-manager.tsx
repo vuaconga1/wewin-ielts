@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Loader2, Pencil, Plus, Trash2, X } from "lucide-react";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { useTranslations } from "@/i18n/provider";
@@ -47,11 +47,26 @@ export function UsersManager({ currentUserId }: Props) {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState<FormState>(emptyForm);
   const [page, setPage] = useState(1);
+  const [query, setQuery] = useState("");
+  const [accessFilter, setAccessFilter] = useState("ALL");
+  const [expiryDates, setExpiryDates] = useState<Record<string, string>>({});
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [bulkDuration, setBulkDuration] = useState("1");
+  const [bulkDate, setBulkDate] = useState("");
 
   const dateLocale = locale === "en" ? "en-US" : "vi-VN";
-  const totalPages = Math.max(1, Math.ceil(users.length / PAGE_SIZE));
+  const filteredUsers = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return users.filter((user) => {
+      if (accessFilter !== "ALL" && user.accessStatus !== accessFilter) return false;
+      if (!needle) return true;
+      return [user.username, user.email, user.fullName, user.classCode]
+        .some((value) => value?.toLowerCase().includes(needle));
+    });
+  }, [accessFilter, query, users]);
+  const totalPages = Math.max(1, Math.ceil(filteredUsers.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
-  const pageUsers = users.slice(
+  const pageUsers = filteredUsers.slice(
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE,
   );
@@ -220,6 +235,59 @@ export function UsersManager({ currentUserId }: Props) {
     }
   }
 
+  async function updateAccess(user: AdminUserPublic, access: { months?: number; days?: number; expiresAt?: string; unlimited?: boolean }) {
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch(`/api/admin/users/${user.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ access }),
+      });
+      const data = (await res.json()) as { error?: string };
+      if (!res.ok) throw new Error(data.error || "Không thể gia hạn tài khoản");
+      setMessage(`Đã cập nhật thời hạn cho ${user.username}`);
+      await load();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Không thể gia hạn tài khoản");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function updateBulkAccess() {
+    if (!selectedIds.length) return;
+    const access = bulkDuration === "7d" ? { days: 7 }
+      : bulkDuration === "unlimited" ? { unlimited: true }
+      : bulkDuration === "custom" ? { expiresAt: bulkDate }
+      : { months: Number(bulkDuration) };
+    if (bulkDuration === "custom" && !bulkDate) return;
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/admin/users/bulk", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userIds: selectedIds, access }),
+      });
+      const data = (await res.json()) as { error?: string; updated?: number };
+      if (!res.ok) throw new Error(data.error || "Không thể cập nhật hàng loạt");
+      setMessage(`Đã cập nhật ${data.updated ?? selectedIds.length} tài khoản`);
+      setSelectedIds([]);
+      await load();
+    } catch (error) {
+      setError(error instanceof Error ? error.message : "Không thể cập nhật hàng loạt");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  function accessLabel(user: AdminUserPublic) {
+    if (user.role !== "STUDENT" || user.accessPlan === "UNLIMITED" || !user.accessExpiresAt) return "Vĩnh viễn";
+    const days = Math.max(0, Math.ceil((new Date(user.accessExpiresAt).getTime() - Date.now()) / 86_400_000));
+    return days > 0 ? `Còn ${days} ngày` : "Đã hết hạn";
+  }
+
   function roleLabel(role: AdminUserRole) {
     if (role === "ADMIN") return tc("admin");
     if (role === "TEACHER") return locale === "en" ? "Teacher" : "Giáo viên";
@@ -251,6 +319,24 @@ export function UsersManager({ currentUserId }: Props) {
           <Plus className="h-4 w-4" />
           {t("addUser")}
         </button>
+      </div>
+      <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_14rem]">
+        <input value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} placeholder="Tìm tên, username, email hoặc lớp" className="rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm" />
+        <select value={accessFilter} onChange={(event) => { setAccessFilter(event.target.value); setPage(1); }} className="rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm">
+          <option value="ALL">Tất cả thời hạn</option>
+          <option value="ACTIVE">Đang hoạt động</option>
+          <option value="EXPIRING">Sắp hết hạn</option>
+          <option value="EXPIRED">Đã hết hạn</option>
+          <option value="UNLIMITED">Không giới hạn</option>
+        </select>
+      </div>
+      <div className="flex flex-wrap items-center gap-2 rounded-xl border border-wewin-border bg-white p-3">
+        <span className="mr-auto text-sm font-semibold text-zinc-700">Đã chọn {selectedIds.length} tài khoản</span>
+        <select value={bulkDuration} onChange={(event) => setBulkDuration(event.target.value)} className="rounded-lg border border-wewin-border px-3 py-2 text-sm">
+          <option value="7d">Cộng 7 ngày</option><option value="1">Cộng 1 tháng</option><option value="2">Cộng 2 tháng</option><option value="3">Cộng 3 tháng</option><option value="6">Cộng 6 tháng</option><option value="12">Cộng 12 tháng</option><option value="custom">Đặt ngày cụ thể</option><option value="unlimited">Vĩnh viễn</option>
+        </select>
+        {bulkDuration === "custom" ? <input type="date" value={bulkDate} onChange={(event) => setBulkDate(event.target.value)} className="rounded-lg border border-wewin-border px-3 py-2 text-sm" /> : null}
+        <button type="button" onClick={() => void updateBulkAccess()} disabled={busy || !selectedIds.length || (bulkDuration === "custom" && !bulkDate)} className="rounded-lg bg-wewin-navy px-4 py-2 text-sm font-semibold text-white disabled:opacity-40">Áp dụng hàng loạt</button>
       </div>
 
       {error ? (
@@ -413,15 +499,22 @@ export function UsersManager({ currentUserId }: Props) {
       ) : null}
 
       <div className="wewin-card-3d overflow-x-auto">
-        <table className="min-w-[800px] w-full text-left text-sm">
+        <table className="min-w-[1050px] w-full text-left text-sm">
           <thead className="border-b border-wewin-border bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500">
             <tr>
+              <th className="px-3 py-3">
+                <input type="checkbox" aria-label="Chọn tất cả học viên trên trang" checked={pageUsers.some((user) => user.role === "STUDENT") && pageUsers.filter((user) => user.role === "STUDENT").every((user) => selectedIds.includes(user.id))} onChange={(event) => {
+                  const pageIds = pageUsers.filter((user) => user.role === "STUDENT").map((user) => user.id);
+                  setSelectedIds((current) => event.target.checked ? [...new Set([...current, ...pageIds])] : current.filter((id) => !pageIds.includes(id)));
+                }} />
+              </th>
               <th className="px-3 py-3 sm:px-4">{t("colUser")}</th>
               <th className="px-3 py-3 sm:px-4">
                 {t("colFullName", "Họ tên")}
               </th>
               <th className="px-3 py-3 sm:px-4">{t("colClass", "Lớp")}</th>
               <th className="px-3 py-3 sm:px-4">{t("colRole")}</th>
+              <th className="px-3 py-3 sm:px-4">Thời hạn</th>
               <th className="px-3 py-3 sm:px-4">{t("colCreated")}</th>
               <th className="px-3 py-3 text-right sm:px-4">{t("colActions")}</th>
             </tr>
@@ -430,7 +523,7 @@ export function UsersManager({ currentUserId }: Props) {
             {loading ? (
               <tr>
                 <td
-                  colSpan={6}
+                  colSpan={8}
                   className="px-4 py-10 text-center text-zinc-500"
                 >
                   <span className="inline-flex items-center gap-2">
@@ -442,7 +535,7 @@ export function UsersManager({ currentUserId }: Props) {
             ) : users.length === 0 ? (
               <tr>
                 <td
-                  colSpan={6}
+                  colSpan={8}
                   className="px-4 py-10 text-center text-zinc-500"
                 >
                   {t("empty")}
@@ -458,6 +551,9 @@ export function UsersManager({ currentUserId }: Props) {
                     key={user.id}
                     className="border-b border-wewin-border last:border-0"
                   >
+                    <td className="px-3 py-3">
+                      {user.role === "STUDENT" ? <input type="checkbox" aria-label={`Chọn ${user.username}`} checked={selectedIds.includes(user.id)} onChange={(event) => setSelectedIds((current) => event.target.checked ? [...current, user.id] : current.filter((id) => id !== user.id))} /> : null}
+                    </td>
                     <td className="px-3 py-3 sm:px-4">
                       <div className="flex min-w-0 items-center gap-3">
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full bg-wewin-accent-blue-bg text-xs font-bold text-wewin-navy">
@@ -511,10 +607,26 @@ export function UsersManager({ currentUserId }: Props) {
                       </span>
                     </td>
                     <td className="whitespace-nowrap px-3 py-3 text-zinc-600 sm:px-4">
+                      <span className={`inline-flex rounded-full px-2 py-0.5 text-xs font-semibold ${user.accessStatus === "EXPIRED" ? "bg-red-50 text-red-700" : user.accessStatus === "EXPIRING" ? "bg-amber-50 text-amber-700" : "bg-emerald-50 text-emerald-700"}`}>
+                        {accessLabel(user)}
+                      </span>
+                      {user.accessExpiresAt ? <p className="mt-1 text-xs">{formatDate(user.accessExpiresAt)}</p> : null}
+                    </td>
+                    <td className="whitespace-nowrap px-3 py-3 text-zinc-600 sm:px-4">
                       {formatDate(user.createdAt)}
                     </td>
                     <td className="px-3 py-3 text-right sm:px-4">
                       <div className="inline-flex flex-wrap justify-end gap-1">
+                        {user.role === "STUDENT" ? (
+                          <>
+                            <button type="button" onClick={() => void updateAccess(user, { days: 7 })} disabled={busy} className="rounded-lg border border-emerald-200 px-2 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-50 disabled:opacity-50">+7 ngày</button>
+                            <button type="button" onClick={() => void updateAccess(user, { months: 1 })} disabled={busy} className="rounded-lg border border-blue-200 px-2 py-1.5 text-xs font-medium text-blue-700 hover:bg-blue-50 disabled:opacity-50">+1 tháng</button>
+                            <button type="button" onClick={() => void updateAccess(user, { months: 2 })} disabled={busy} className="rounded-lg border border-blue-200 px-2 py-1.5 text-xs font-medium text-blue-700 hover:bg-blue-50 disabled:opacity-50">+2 tháng</button>
+                            <button type="button" onClick={() => void updateAccess(user, { unlimited: true })} disabled={busy} className="rounded-lg border border-violet-200 px-2 py-1.5 text-xs font-medium text-violet-700 hover:bg-violet-50 disabled:opacity-50">Vĩnh viễn</button>
+                            <input type="date" aria-label={`Ngày hết hạn của ${user.username}`} value={expiryDates[user.id] ?? ""} onChange={(event) => setExpiryDates((current) => ({ ...current, [user.id]: event.target.value }))} className="rounded-lg border border-wewin-border px-2 py-1 text-xs" />
+                            <button type="button" onClick={() => expiryDates[user.id] && void updateAccess(user, { expiresAt: expiryDates[user.id] })} disabled={busy || !expiryDates[user.id]} className="rounded-lg border border-wewin-border px-2 py-1.5 text-xs font-medium disabled:opacity-40">Đặt ngày</button>
+                          </>
+                        ) : null}
                         <button
                           type="button"
                           onClick={() => openEdit(user)}

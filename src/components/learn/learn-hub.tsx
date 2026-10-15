@@ -63,11 +63,6 @@ export function LearnHub({
           >
             {t("backCatalog", "← Tất cả khóa học")}
           </Link>
-          <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-wewin-navy">
-            {courseLevel
-              ? t("levelKicker", { level: courseLevel }, "Cấp độ {level} · Học kiến thức")
-              : t("hubKicker", "Học kiến thức")}
-          </p>
           <h1 className="mt-0.5 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
             {courseTitle}
           </h1>

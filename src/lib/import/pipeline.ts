@@ -20,6 +20,7 @@ import {
   parseWritingTaskAsQuestion,
 } from "./parse-questions";
 import { sanitizePartGapStems } from "@/lib/questions/gap-stems";
+import { normalizeMapLabelPart } from "@/lib/questions/map-label-layout";
 import {
   ParsedTestDraftSchema,
   QuestionContentSchema,
@@ -365,7 +366,12 @@ function buildParseResult(input: BuildInput): ImportParseResult {
       issues.push(...sanitized.issues);
     }
 
-    let partMeta: Record<string, unknown> | undefined = rp.meta
+
+    if (skill === "LISTENING") {
+      const mapLayout = normalizeMapLabelPart(partBody, questions);
+      partBody = mapLayout.content ?? partBody;
+      questions = mapLayout.questions;
+    }    let partMeta: Record<string, unknown> | undefined = rp.meta
       ? { ...rp.meta }
       : undefined;
 

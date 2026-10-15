@@ -12,6 +12,7 @@ import type {
 } from "@/lib/admin/attempts";
 import { localeToIntl } from "@/i18n/config";
 import { useTranslations } from "@/i18n/provider";
+import { PaginationControls } from "@/components/ui/pagination";
 
 type FiltersState = {
   userId: string;
@@ -76,6 +77,10 @@ export function AttemptsViewer() {
   );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
+  const pageSize = 20;
+  const totalPages = Math.max(1, Math.ceil(attempts.length / pageSize));
+  const pageAttempts = attempts.slice((page - 1) * pageSize, page * pageSize);
 
   const skillOptions = useMemo(
     () =>
@@ -123,7 +128,7 @@ export function AttemptsViewer() {
       if (filters.status !== "ALL") params.set("status", filters.status);
       if (filters.from) params.set("from", filters.from);
       if (filters.to) params.set("to", filters.to);
-      params.set("limit", "50");
+      params.set("limit", "200");
 
       const res = await fetch(`/api/admin/attempts?${params.toString()}`);
       const data = (await res.json()) as ApiResponse;
@@ -134,6 +139,7 @@ export function AttemptsViewer() {
         return;
       }
       setAttempts(data.attempts);
+      setPage(1);
       setUsers(data.users);
       setTests(data.tests ?? []);
       setClasses(data.classes ?? []);
@@ -377,7 +383,7 @@ export function AttemptsViewer() {
               </tr>
             </thead>
             <tbody>
-              {attempts.map((row) => (
+              {pageAttempts.map((row) => (
                 <tr key={row.id} className="border-t border-zinc-200">
                   <td className="max-w-[12rem] px-4 py-3 sm:max-w-[16rem]">
                     <div className="break-words font-medium text-zinc-900">
@@ -446,6 +452,7 @@ export function AttemptsViewer() {
           </table>
         </div>
       )}
+      <PaginationControls page={page} totalPages={totalPages} onPageChange={setPage} />
     </div>
   );
 }

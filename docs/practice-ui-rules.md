@@ -95,3 +95,12 @@ Scoring, not layout. Keys from imports hit this often.
 - An all-numeric slash such as `1/2` or `12/05/1990` stays one token (`isPureNumberToken`). `10/ten` still splits.
 
 Test: `scripts/test-answer-alternatives.ts`.
+
+## Map / plan / diagram labeling
+
+A `Label the map/plan/diagram below` task must render each answer control on the same row as its label: `11. Rocks [input]`. Never keep the numbered label as static section text and then render a detached input underneath.
+
+- Normalize with `normalizeMapLabelPart` / `normalizeTestMapLabelLayouts` in `src/lib/questions/map-label-layout.ts`.
+- The normalizer detects the task range, lifts numbered or ordered dotted label rows into question stems, removes the duplicate static rows, changes the questions to `MAP_LABELING`, removes letter-only matching options, and stores `blank: true` with a single `_____` marker.
+- The rule runs during the import pipeline, local JSON saves, and database persistence. Existing JSON can be repaired with `npm run normalize:map-label-layouts`.
+- Regression test: `npm run test:map-label-layout`.

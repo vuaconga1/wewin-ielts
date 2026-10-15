@@ -36,17 +36,8 @@ export default async function TestsPage() {
         >
           {t("common.backHome")}
         </Link>
-        <h1 className="text-2xl font-bold text-zinc-900">{t("tests.title")}</h1>
-        <p className="mt-1 text-sm text-zinc-600">
-          {t(
-            "tests.chooserSubtitle",
-            "Chọn module IELTS Academic, General Training hoặc Placement Test, rồi lọc theo kỹ năng để luyện tập. Chưa nắm kiến thức?",
-          )}{" "}
-          <Link href="/learn" className="font-medium text-wewin-navy hover:underline">
-            {t("tests.learnLink")}
-          </Link>
-          .
-        </p>
+        <h1 className="text-3xl font-bold text-zinc-900">{t("tests.title")}</h1>
+   
       </div>
 
       <TestsModulePicker

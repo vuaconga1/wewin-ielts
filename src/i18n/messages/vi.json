@@ -395,8 +395,7 @@
   "tests": {
     "title": "Luyện đề",
     "subtitle": "Chọn đề Listening, Reading, Writing hoặc Speaking để luyện tập. Chưa nắm kiến thức?",
-    "chooserSubtitle": "Chọn module IELTS Academic, General Training hoặc Placement Test, rồi lọc theo kỹ năng để luyện tập. Chưa nắm kiến thức?",
-    "learnLink": "Học 4 kỹ năng",
+
     "backModules": "← Chọn module",
     "backModulesShort": "Chọn module khác",
     "moduleAcademic": "IELTS Academic",
@@ -405,7 +404,7 @@
     "moduleGeneralDesc": "Đề General Training cho Listening, Reading, Writing và Speaking.",
     "modulePlacement": "IELTS Placement Test",
     "modulePlacementDesc": "Đề xếp lớp cho Listening, Reading và Writing.",
-    "moduleAcademicSubtitle": "Chọn đề Listening, Reading, Writing hoặc Speaking để luyện tập. Chưa nắm kiến thức?",
+  
     "moduleGeneralSubtitle": "Chọn đề Listening, Reading, Writing hoặc Speaking (General Training). Chưa nắm kiến thức?",
     "modulePlacementSubtitle": "Chọn đề Listening, Reading hoặc Writing của bài xếp lớp. Chưa nắm kiến thức?",
     "moduleTestCount": "{n} đề",
@@ -891,7 +890,7 @@
     "courseCreateFailed": "Không tạo được khóa học",
     "colCourse": "Khóa học",
     "skillFilter": "{vi} ({n})",
-    "restoreSeed": "Khôi phục seed",
+
     "restoring": "Đang khôi phục…",
     "addLesson": "Thêm bài học",
     "confirmDelete": "Xóa bài \"{title}\"? Thao tác không hoàn tác.",
@@ -1010,7 +1009,8 @@
     "prevPage": "Trước",
     "nextPage": "Sau",
     "pageOf": "Trang {page} / {total}",
-    "pageInfo": "Hiển thị {from}–{to} / {total}"
+    "pageInfo": "Hiển thị {from}–{to} / {total}",
+    "reportsPagination": "Phân trang danh sách học viên"
   },
   "tour": {
     "open": "Hiện hướng dẫn",

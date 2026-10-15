@@ -42,6 +42,7 @@ export type DashboardNavKey =
   | "admin-learn"
   | "admin-attempts"
   | "admin-users"
+  | "admin-reports"
   | "admin-audit-logs"
   | "login";
 
@@ -212,8 +213,13 @@ export function DashboardShell({
             );
           })}
           {/* Admin links: canImport is true only for ADMIN (or guest + ALLOW_OPEN_ADMIN). Never for STUDENT. */}
-          {canImport && user?.role !== "STUDENT" ? (
+          {canImport && user && user.role !== "STUDENT" ? (
             <>
+              <div
+                role="separator"
+                aria-label="Chức năng quản trị"
+                className="my-2 border-t border-wewin-border"
+              />
               {(
                 [
                   {
@@ -221,6 +227,12 @@ export function DashboardShell({
                     href: "/admin/users",
                     label: t("nav.adminUsers"),
                     icon: UserCog,
+                  },
+                  {
+                    key: "admin-reports" as const,
+                    href: "/admin/reports",
+                    label: "Báo cáo học viên",
+                    icon: ChartLine,
                   },
                   {
                     key: "admin-audit-logs" as const,

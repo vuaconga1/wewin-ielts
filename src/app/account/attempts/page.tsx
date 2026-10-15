@@ -7,6 +7,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { EmptyState } from "@/components/ui/empty-state";
 import { getTranslations, getLocale } from "@/i18n/server";
 import { localeToIntl } from "@/i18n/config";
+import { PaginationLinks } from "@/components/ui/pagination";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +16,7 @@ export async function generateMetadata() {
   return { title: t("meta.attempts") };
 }
 
-export default async function AccountAttemptsPage() {
+export default async function AccountAttemptsPage({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
   const user = await getSessionUser();
   if (!user) {
     redirect("/login?next=/account/attempts");
@@ -39,6 +40,11 @@ export default async function AccountAttemptsPage() {
       skill: test?.skill,
     };
   });
+  const params = await searchParams;
+  const pageSize = 20;
+  const totalPages = Math.max(1, Math.ceil(rows.length / pageSize));
+  const page = Math.min(totalPages, Math.max(1, Number.parseInt(params.page ?? "1", 10) || 1));
+  const pageRows = rows.slice((page - 1) * pageSize, page * pageSize);
 
   return (
     <SiteShell active="attempts">
@@ -82,7 +88,7 @@ export default async function AccountAttemptsPage() {
               </tr>
             </thead>
             <tbody>
-              {rows.map(({ attempt, title, skill }) => (
+              {pageRows.map(({ attempt, title, skill }) => (
                 <tr key={attempt.id} className="border-t border-zinc-200">
                   <td className="max-w-[14rem] px-4 py-3 sm:max-w-none">
                     <div className="break-words font-medium text-zinc-900">
@@ -121,6 +127,7 @@ export default async function AccountAttemptsPage() {
               ))}
             </tbody>
           </table>
+          <PaginationLinks page={page} totalPages={totalPages} pathname="/account/attempts" />
         </div>
       )}
     </SiteShell>

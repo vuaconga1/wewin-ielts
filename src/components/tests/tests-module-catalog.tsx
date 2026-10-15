@@ -10,9 +10,10 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { TestsModuleEmpty } from "@/components/tests/tests-module-empty";
 import { getTranslationsStatic } from "@/i18n/server";
 import { buildSpeakingExamQueue } from "@/lib/practice/speaking-exam";
+import { compareTestsAscending } from "@/lib/tests/test-sort";
 
 function toCatalog(tests: Awaited<ReturnType<typeof listTests>>): CatalogTest[] {
-  return tests.map((trow) => {
+  return [...tests].sort(compareTestsAscending).map((trow) => {
     const speakingQueue =
       trow.skill === "SPEAKING" ? buildSpeakingExamQueue(trow.parts) : [];
     return {
@@ -50,10 +51,7 @@ export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
   const moduleCopy = {
     ACADEMIC: {
       title: t("moduleAcademic", "IELTS Academic"),
-      subtitle: t(
-        "moduleAcademicSubtitle",
-        "Chọn đề Listening, Reading, Writing hoặc Speaking để luyện tập. Chưa nắm kiến thức?",
-      ),
+
       emptyTitle: t("emptyAcademicTitle", "Chưa có đề Academic"),
       emptyDesc: t(
         "emptyAcademicDesc",
@@ -95,16 +93,9 @@ export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
         >
           {t("backModules", "← Chọn module")}
         </Link>
-        <h1 className="break-words text-2xl font-bold text-zinc-900">
+        <h1 className="break-words text-3xl font-bold text-zinc-900">
           {moduleCopy.title}
         </h1>
-        <p className="mt-1 text-sm text-zinc-600">
-          {moduleCopy.subtitle}{" "}
-          <Link href="/learn" className="font-medium text-wewin-navy hover:underline">
-            {t("learnLink", "Học 4 kỹ năng")}
-          </Link>
-          .
-        </p>
       </div>
 
       {tests.length === 0 ? (

@@ -19,6 +19,9 @@ export type StoredUser = {
   classCode?: string | null;
   /** Profile image path or data URL */
   avatarUrl?: string | null;
+  accessPlan?: "FREE" | "PAID" | "UNLIMITED";
+  accessStartsAt?: string;
+  accessExpiresAt?: string | null;
   createdAt: string;
   updatedAt: string;
 };
@@ -87,6 +90,9 @@ export async function upsertLocalUser(input: {
   role: "ADMIN" | "TEACHER" | "STUDENT";
   fullName?: string | null;
   classCode?: string | null;
+  accessPlan?: "FREE" | "PAID" | "UNLIMITED";
+  accessStartsAt?: string;
+  accessExpiresAt?: string | null;
 }): Promise<StoredUser> {
   const email = input.email?.trim().toLowerCase() || null;
   const users = await readAll();
@@ -103,6 +109,9 @@ export async function upsertLocalUser(input: {
       role: input.role,
       ...(input.fullName !== undefined ? { fullName: input.fullName } : {}),
       ...(input.classCode !== undefined ? { classCode: input.classCode } : {}),
+      ...(input.accessPlan !== undefined ? { accessPlan: input.accessPlan } : {}),
+      ...(input.accessStartsAt !== undefined ? { accessStartsAt: input.accessStartsAt } : {}),
+      ...(input.accessExpiresAt !== undefined ? { accessExpiresAt: input.accessExpiresAt } : {}),
       updatedAt: now,
     };
     users[idx] = updated;
@@ -118,6 +127,14 @@ export async function upsertLocalUser(input: {
     role: input.role,
     fullName: input.fullName ?? null,
     classCode: input.classCode ?? null,
+    accessPlan: input.accessPlan ?? (input.role === "STUDENT" ? "FREE" : "UNLIMITED"),
+    accessStartsAt: input.accessStartsAt ?? now,
+    accessExpiresAt:
+      input.accessExpiresAt !== undefined
+        ? input.accessExpiresAt
+        : input.role === "STUDENT"
+          ? new Date(Date.now() + 7 * 86_400_000).toISOString()
+          : null,
     createdAt: now,
     updatedAt: now,
   };
@@ -144,6 +161,9 @@ export async function updateLocalUser(
     role?: "ADMIN" | "TEACHER" | "STUDENT";
     fullName?: string | null;
     classCode?: string | null;
+    accessPlan?: "FREE" | "PAID" | "UNLIMITED";
+    accessStartsAt?: string;
+    accessExpiresAt?: string | null;
   },
 ): Promise<StoredUser | null> {
   const users = await readAll();
@@ -158,6 +178,9 @@ export async function updateLocalUser(
     ...(patch.role != null ? { role: patch.role } : {}),
     ...(patch.fullName !== undefined ? { fullName: patch.fullName } : {}),
     ...(patch.classCode !== undefined ? { classCode: patch.classCode } : {}),
+    ...(patch.accessPlan !== undefined ? { accessPlan: patch.accessPlan } : {}),
+    ...(patch.accessStartsAt !== undefined ? { accessStartsAt: patch.accessStartsAt } : {}),
+    ...(patch.accessExpiresAt !== undefined ? { accessExpiresAt: patch.accessExpiresAt } : {}),
     updatedAt: new Date().toISOString(),
   };
   users[idx] = updated;

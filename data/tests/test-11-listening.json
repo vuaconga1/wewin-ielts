@@ -129,7 +129,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11-20\nQuestions 11 - 15\nLabel the map below.\nWrite the correct letter, A-H, next to questions 11-15.\n\n11. Bike sheds\n12. Snack shop\n13. Fitness rooms\n14. Family rooms\n15. TV room\nQuestions 16 - 20\nChoose the correct letter, A, B or C.\n16. The drama option takes place\nA in the theatre.\nB in the sports hall.\nC in the lecture rooms.\n17. The photography option is reserved for\nA people new to photography.\nB people with special equipment.\nC parents and children.\n18. The writing option will focus on\nA poetry techniques.\nB short stories.\nC starting a novel.\n19. The music option involves\nA singing classes.\nB going to a concert.\nC giving a performance.\n20. What information is given about the creche?\nA it costs the same as last year.\nB lunch costs extra.\nC parents must pay in advance",
+      "content": "Questions 11-20\nQuestions 11 - 15\nLabel the map below.\nWrite the correct letter, A-H, next to questions 11-15.\n\nQuestions 16 - 20\nChoose the correct letter, A, B or C.\n16. The drama option takes place\nA in the theatre.\nB in the sports hall.\nC in the lecture rooms.\n17. The photography option is reserved for\nA people new to photography.\nB people with special equipment.\nC parents and children.\n18. The writing option will focus on\nA poetry techniques.\nB short stories.\nC starting a novel.\n19. The music option involves\nA singing classes.\nB going to a concert.\nC giving a performance.\n20. What information is given about the creche?\nA it costs the same as last year.\nB lunch costs extra.\nC parents must pay in advance",
       "meta": {
         "audioUrl": "/uploads/audio/test-11-section-2.mp3",
         "imageUrl": "/uploads/images/test-11-listening-img1.png",
@@ -139,227 +139,67 @@
         {
           "number": 11,
           "order": 0,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Bike sheds",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+            "stem": "Bike sheds _____",
+            "imageUrl": "/uploads/images/test-11-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "G",
-          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png",
+          "correctAnswer": "G"
         },
         {
           "number": 12,
           "order": 1,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Snack shop",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+            "stem": "Snack shop _____",
+            "imageUrl": "/uploads/images/test-11-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "E",
-          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png",
+          "correctAnswer": "E"
         },
         {
           "number": 13,
           "order": 2,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Fitness rooms",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+            "stem": "Fitness rooms _____",
+            "imageUrl": "/uploads/images/test-11-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "A",
-          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png",
+          "correctAnswer": "A"
         },
         {
           "number": 14,
           "order": 3,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Family rooms",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+            "stem": "Family rooms _____",
+            "imageUrl": "/uploads/images/test-11-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "F",
-          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png",
+          "correctAnswer": "F"
         },
         {
           "number": 15,
           "order": 4,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "TV room",
-            "options": [
-              {
-                "label": "A",
-                "text": "A"
-              },
-              {
-                "label": "B",
-                "text": "B"
-              },
-              {
-                "label": "C",
-                "text": "C"
-              },
-              {
-                "label": "D",
-                "text": "D"
-              },
-              {
-                "label": "E",
-                "text": "E"
-              },
-              {
-                "label": "F",
-                "text": "F"
-              },
-              {
-                "label": "G",
-                "text": "G"
-              },
-              {
-                "label": "H",
-                "text": "H"
-              }
-            ],
-            "imageUrl": "/uploads/images/test-11-listening-img1.png"
+            "stem": "TV room _____",
+            "imageUrl": "/uploads/images/test-11-listening-img1.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "H",
-          "mediaUrl": "/uploads/images/test-11-listening-img1.png"
+          "mediaUrl": "/uploads/images/test-11-listening-img1.png",
+          "correctAnswer": "H"
         },
         {
           "number": 16,

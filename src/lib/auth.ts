@@ -8,6 +8,7 @@ import { cache } from "react";
 import bcrypt from "bcryptjs";
 import { canUsePrisma, isDbConfigured } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
+import { freeAccessExpiry } from "@/lib/access";
 import {
   findLocalUserByEmail,
   findLocalUserByUsername,
@@ -225,6 +226,9 @@ export async function registerStudent(input: {
         username: finalUsername,
         passwordHash,
         role: "STUDENT",
+        accessPlan: "FREE",
+        accessStartsAt: new Date(),
+        accessExpiresAt: freeAccessExpiry(),
       },
     });
     const session: SessionUser = {
@@ -250,6 +254,9 @@ export async function registerStudent(input: {
     username,
     passwordHash,
     role: "STUDENT",
+    accessPlan: "FREE",
+    accessStartsAt: new Date().toISOString(),
+    accessExpiresAt: freeAccessExpiry().toISOString(),
   });
   const session: SessionUser = {
     id: created.id,

@@ -123,7 +123,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11-20\n\nQuestions 11-14\n\nLabel the map below\n\nWrite the correct letter, A-I, next to the questions 11-14\n\nThe Elmsden Way\n\n11. Rocks ........\n\n12. Colleen Nature Reserve ........\n\n13. Ashington China Factory ........\n\n14. Langton forest ........\n\nQuestions 15-20\n\nChoose the correct letter, A, B or C.\n\n15. What kind of warning does the speaker give to cyclists:\n\nA. there may be traffic jams\nB. avoid wet cycle paths\nC. there may be animals in the way\n\n16. The starting point of Elmsden station is\n\nA. very busy\nB. more modern\nC. re-opened recently\n\n17. What can people do at the visitor's centre?\n\nA. rent a bike\nB. buy refreshments\nC. learn local history\n\n18. To commute between Langton and Elmston by train, you need to\n\nA. book in advance\nB. go on weekends\nC. pay additional charges\n\n19. What should you be aware of when visiting River Elm\n\nA. it takes a long time\nB. the waterfall is inaccessible\nC. go by bike\n\n20. Where can you get the information if you want to join the local route?\n\nA. the local newspaper\nB. the station website\nC. national cycling network",
+      "content": "Questions 11-20\n\nQuestions 11-14\n\nLabel the map below\n\nWrite the correct letter, A-I, next to the questions 11-14\n\nThe Elmsden Way\n\nQuestions 15-20\n\nChoose the correct letter, A, B or C.\n\n15. What kind of warning does the speaker give to cyclists:\n\nA. there may be traffic jams\nB. avoid wet cycle paths\nC. there may be animals in the way\n\n16. The starting point of Elmsden station is\n\nA. very busy\nB. more modern\nC. re-opened recently\n\n17. What can people do at the visitor's centre?\n\nA. rent a bike\nB. buy refreshments\nC. learn local history\n\n18. To commute between Langton and Elmston by train, you need to\n\nA. book in advance\nB. go on weekends\nC. pay additional charges\n\n19. What should you be aware of when visiting River Elm\n\nA. it takes a long time\nB. the waterfall is inaccessible\nC. go by bike\n\n20. Where can you get the information if you want to join the local route?\n\nA. the local newspaper\nB. the station website\nC. national cycling network",
       "meta": {
         "audioUrl": "/uploads/audio/test-3-section-2.mp3",
         "imageUrl": "/uploads/images/test-3-listening-map.png",
@@ -135,45 +135,52 @@
           "order": 0,
           "type": "MAP_LABELING",
           "content": {
-            "stem": "",
+            "stem": "Rocks _____",
             "blank": true,
-            "imageUrl": "/uploads/images/test-3-listening-map.png"
+            "imageUrl": "/uploads/images/test-3-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "B",
-          "mediaUrl": "/uploads/images/test-3-listening-map.png"
+          "mediaUrl": "/uploads/images/test-3-listening-map.png",
+          "correctAnswer": "B"
         },
         {
           "number": 12,
           "order": 1,
-          "type": "SHORT_ANSWER",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Colleen Nature Reserve",
-            "imageUrl": "/uploads/images/test-3-listening-map.png"
+            "stem": "Colleen Nature Reserve _____",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-3-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "E",
-          "mediaUrl": "/uploads/images/test-3-listening-map.png"
+          "mediaUrl": "/uploads/images/test-3-listening-map.png",
+          "correctAnswer": "E"
         },
         {
           "number": 13,
           "order": 2,
-          "type": "SHORT_ANSWER",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Ashington China Factory",
-            "imageUrl": "/uploads/images/test-3-listening-map.png"
+            "stem": "Ashington China Factory _____",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-3-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "F",
-          "mediaUrl": "/uploads/images/test-3-listening-map.png"
+          "mediaUrl": "/uploads/images/test-3-listening-map.png",
+          "correctAnswer": "F"
         },
         {
           "number": 14,
           "order": 3,
-          "type": "SHORT_ANSWER",
+          "type": "MAP_LABELING",
           "content": {
-            "stem": "Langton forest",
-            "imageUrl": "/uploads/images/test-3-listening-map.png"
+            "stem": "Langton forest _____",
+            "blank": true,
+            "imageUrl": "/uploads/images/test-3-listening-map.png",
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "I",
-          "mediaUrl": "/uploads/images/test-3-listening-map.png"
+          "mediaUrl": "/uploads/images/test-3-listening-map.png",
+          "correctAnswer": "I"
         },
         {
           "number": 15,

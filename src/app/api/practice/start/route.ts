@@ -5,8 +5,10 @@ import {
   getTestBySlug,
 } from "@/lib/store/test-store";
 import { getSessionUser } from "@/lib/auth";
+import { expiredAccessResponse } from "@/lib/auth/access-guard";
 import { practiceAttemptPath } from "@/lib/practice/paths";
 import { parseSpeakingPartKinds } from "@/lib/practice/speaking-exam";
+import { recordAuditEvent } from "@/lib/audit-log";
 
 export const runtime = "nodejs";
 
@@ -99,6 +101,8 @@ export async function POST(request: Request) {
         : body.timeLimitMinutes;
 
     const user = await getSessionUser();
+    const expired = await expiredAccessResponse(user);
+    if (expired) return expired;
 
     if (user) {
       const existing = await findOpenAttempt({
@@ -110,6 +114,7 @@ export async function POST(request: Request) {
         speakingPartKinds: speakingPartKinds ?? undefined,
       });
       if (existing) {
+        await recordAuditEvent({ actor: user, action: "TEST_START", request, metadata: { testSlug: slug, mode, resumed: true } });
         return NextResponse.json({
           attemptId: existing.id,
           resumed: true,
@@ -127,6 +132,7 @@ export async function POST(request: Request) {
       timeLimitMinutes,
       userId: user?.id ?? null,
     });
+    if (user) await recordAuditEvent({ actor: user, action: "TEST_START", request, metadata: { testSlug: slug, mode, resumed: false } });
 
     return NextResponse.json({
       attemptId: attempt.id,

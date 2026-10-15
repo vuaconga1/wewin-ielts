@@ -12,6 +12,7 @@ import type {
 import { LEARN_SKILLS } from "@/lib/learn/types";
 import { learnLessonHref } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
+import { PaginationControls } from "@/components/ui/pagination";
 
 type LessonRow = LearnLesson & { courseId: string; courseTitle: string };
 
@@ -36,6 +37,7 @@ export function LearnLessonList({ catalog }: Props) {
   const [courseLevel, setCourseLevel] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
 
   const allLessons: LessonRow[] = useMemo(() => {
     const rows: LessonRow[] = [];
@@ -66,6 +68,10 @@ export function LearnLessonList({ catalog }: Props) {
       return true;
     });
   }, [allLessons, courseFilter, skillFilter]);
+  const pageSize = 20;
+  const totalPages = Math.max(1, Math.ceil(lessons.length / pageSize));
+  const safePage = Math.min(page, totalPages);
+  const pageLessons = lessons.slice((safePage - 1) * pageSize, safePage * pageSize);
 
   const counts = useMemo(() => {
     const scoped =
@@ -196,21 +202,7 @@ export function LearnLessonList({ catalog }: Props) {
           >
             {t("addCourse", "Thêm khóa học")}
           </button>
-          <button
-            type="button"
-            onClick={onResetSeed}
-            disabled={resetting}
-            className="rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:opacity-60"
-          >
-            {resetting ? (
-              <span className="inline-flex items-center gap-1.5">
-                <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                {t("restoring")}
-              </span>
-            ) : (
-              t("restoreSeed")
-            )}
-          </button>
+        
           <Link
             href="/admin/learn/new"
             className="inline-flex items-center gap-1.5 rounded-xl bg-wewin-navy px-3 py-2 text-sm font-semibold text-white hover:bg-wewin-navy-hover"
@@ -346,7 +338,7 @@ export function LearnLessonList({ catalog }: Props) {
                 </td>
               </tr>
             ) : (
-              lessons.map((lesson) => (
+              pageLessons.map((lesson) => (
                 <tr
                   key={`${lesson.courseId}:${lesson.id}`}
                   className="border-b border-zinc-200 last:border-0 hover:bg-zinc-50/80"
@@ -415,6 +407,7 @@ export function LearnLessonList({ catalog }: Props) {
           </tbody>
         </table>
       </div>
+      <PaginationControls page={safePage} totalPages={totalPages} onPageChange={setPage} />
     </div>
   );
 }
