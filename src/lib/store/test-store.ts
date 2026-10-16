@@ -304,7 +304,7 @@ export async function listTests(): Promise<StoredTest[]> {
       const fromDb = await listTestsFromPrisma();
       return fromDb ?? (await listTestsFromFs());
     },
-    ["tests-catalog-list-v6"],
+    ["tests-catalog-list-v7"],
     { revalidate: 300, tags: ["tests-catalog"] },
   )();
 
