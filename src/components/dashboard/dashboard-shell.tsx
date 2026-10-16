@@ -63,13 +63,13 @@ const SIDEBAR_COLLAPSED_KEY = "wewin_sidebar_collapsed";
 
 function navClass(active: boolean, compact: boolean) {
   if (compact) {
-    return `flex items-center justify-center rounded-full p-2.5 text-sm font-medium transition ${
+    return `sidebar-nav-item mx-1 flex items-center justify-center rounded-full p-2.5 text-sm font-medium transition ${
       active
         ? "bg-wewin-navy text-white"
         : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"
     }`;
   }
-  return `flex items-center gap-3 rounded-full px-3 py-2.5 text-sm font-medium transition ${
+  return `sidebar-nav-item mx-1 flex items-center gap-3 rounded-full px-3 py-2.5 text-sm font-medium transition ${
     active
       ? "bg-wewin-navy text-white"
       : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"

@@ -194,7 +194,7 @@ export function AudioPlayer({
 
   if (compact) {
     return (
-      <div className="mx-auto flex max-w-[1400px] min-w-0 flex-wrap items-center gap-2 px-3 py-1.5 sm:gap-3 sm:px-4">
+      <div className="mx-auto flex max-w-[1800px] min-w-0 flex-wrap items-center gap-2 px-3 py-1.5 sm:gap-3 sm:px-4">
         <audio ref={ref} src={src} preload="metadata" />
         <p className="min-w-0 shrink truncate text-[11px] font-medium text-zinc-300">
           {label ?? t("title")}

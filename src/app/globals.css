@@ -150,6 +150,67 @@ body {
     transform: translateY(-2px) translateZ(0);
   }
 
+  /* Test catalog: make the card under the pointer clearly stand out. */
+  .tests-catalog-card {
+    z-index: 0;
+    transform-origin: center;
+    transition-duration: 220ms;
+  }
+
+  .tests-catalog-card:hover,
+  .tests-catalog-card:focus-within {
+    z-index: 10;
+    border-color: color-mix(in srgb, var(--wewin-navy) 48%, white);
+    box-shadow:
+      0 4px 8px rgb(15 40 94 / 0.08),
+      0 18px 34px rgb(15 40 94 / 0.18),
+      0 32px 54px rgb(15 40 94 / 0.14);
+    transform: translateY(-6px) scale(1.04) translateZ(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tests-catalog-card {
+      transition: none;
+    }
+
+    .tests-catalog-card:hover,
+    .tests-catalog-card:focus-within {
+      transform: none;
+    }
+  }
+
+  /* Sidebar navigation: enlarge the hovered/focused destination. */
+  .sidebar-nav-item {
+    position: relative;
+    z-index: 0;
+    transform-origin: left center;
+    transition:
+      color 180ms ease,
+      background-color 180ms ease,
+      box-shadow 200ms ease,
+      transform 200ms ease;
+  }
+
+  .sidebar-nav-item:hover,
+  .sidebar-nav-item:focus-visible {
+    z-index: 10;
+    box-shadow:
+      0 5px 12px rgb(15 40 94 / 0.12),
+      0 12px 24px rgb(15 40 94 / 0.1);
+    transform: translateX(4px) scale(1.035) translateZ(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sidebar-nav-item {
+      transition: none;
+    }
+
+    .sidebar-nav-item:hover,
+    .sidebar-nav-item:focus-visible {
+      transform: none;
+    }
+  }
+
   /* Practice / dense reading surfaces — fully opaque for clarity */
   .panel {
     border-radius: var(--radius-panel);

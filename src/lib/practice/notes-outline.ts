@@ -444,8 +444,9 @@ export function borderedNotesFromTableHtml(tableHtml: string): string | null {
     }
     if (INLINE_TAGS.has(tok.name)) continue;
     if (tok.kind === "open") {
-      if ((tok.name === "ul" || tok.name === "ol") && ulDepth === 0 && buffer.trim()) {
-        flush("plain");
+      if ((tok.name === "ul" || tok.name === "ol") && buffer.trim()) {
+        if (ulDepth === 0) flush("plain");
+        else flush("bullet", ulDepth - 1);
       }
       if (tok.name === "ul" || tok.name === "ol") ulDepth += 1;
       continue;

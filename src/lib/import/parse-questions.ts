@@ -235,7 +235,13 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
         ? { start: block.startQ, end: block.endQ }
         : null;
 
-    const bank = extractLetterBank(block.lines);
+    const rangeBank = letterRangeBank(text);
+    let bank = extractLetterBank(block.lines);
+    if (rangeBank.length && bank.length && bank.every((b) => /^[A-K]$/.test(b.label))) {
+      const allowed = new Set(rangeBank.map((b) => b.label));
+      bank = bank.filter((b) => allowed.has(b.label));
+    }
+    if (!bank.length && hint === "MATCHING") bank = rangeBank;
     const skipUnnumberedMcq =
       hint === "MATCHING" ||
       hint === "TRUE_FALSE_NG" ||
@@ -341,6 +347,16 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
       }
     }
 
+    const gapVariant = gapVariantFromInstruction(text);
+    if (range && gapVariant) {
+      for (let n = range.start; n <= range.end; n++) {
+        const q = byNumber.get(n);
+        if (q?.type === "GAP_FILL" && !(q.content as { variant?: string }).variant) {
+          byNumber.set(n, { ...q, content: { ...q.content, variant: gapVariant } });
+        }
+      }
+    }
+
     // Sub-range matching inside a larger MCQ section:
     // "…write the correct letter, A-F, next to questions 27-30"
     const subRangeMatch = text.match(
@@ -383,7 +399,7 @@ function normalizeChooseTwoPairs(
   // Multi-select = "Choose TWO/THREE letters|things". Exclude matching
   // "Choose FOUR answers from the box … next to questions 27–30".
   const pairHeaders = body.matchAll(
-    /Questions?\s+(\d+)\s*(?:and|[-–—]|to)\s*(\d+)\b[\s\S]{0,200}?Choose\s+(TWO|THREE|FOUR)\s+(?:letters?|things?|options?|answers?)\b/gi,
+    /Questions?\s+(\d+)\s*(?:and|[-–—]|to)\s*(\d+)\b[\s\S]{0,200}?Choose\s+(TWO|THREE|FOUR)\s+(?:letters?|things?|options?|answers?)\b(?!\s+from the box)/gi,
   );
 
   const byNumber = new Map(questions.map((q) => [q.number, { ...q }]));
@@ -601,6 +617,29 @@ function inRange(
   return n >= range.start && n <= range.end;
 }
 
+/** "Write the correct letter, A–G" with no printed list (paragraph / section matching). */
+function letterRangeBank(text: string): { label: string; text: string }[] {
+  const m = text.match(/correct letter,?\s*A\s*[-–—]\s*([B-K])\b/i);
+  if (!m) return [];
+  const last = m[1]!.toUpperCase().charCodeAt(0);
+  const bank: { label: string; text: string }[] = [];
+  for (let code = 65; code <= last; code++) {
+    const label = String.fromCharCode(code);
+    bank.push({ label, text: label });
+  }
+  return bank;
+}
+
+function gapVariantFromInstruction(text: string): string | null {
+  const t = text.toLowerCase();
+  if (/complete the flow[ -]?chart/.test(t)) return "FLOW_CHART_COMPLETION";
+  if (/complete the form/.test(t)) return "FORM_COMPLETION";
+  if (/complete the summary/.test(t)) return "SUMMARY_COMPLETION";
+  if (/complete the sentences?/.test(t)) return "SENTENCE_COMPLETION";
+  if (/complete the notes/.test(t)) return "NOTE_COMPLETION";
+  return null;
+}
+
 function extractLetterBank(
   lines: string[],
 ): { label: string; text: string }[] {
@@ -608,7 +647,9 @@ function extractLetterBank(
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i]!.trim();
     // Roman-numeral heading bank: "i. Fluctuations…" / "viii Determining…"
-    const roman = t.match(/^([ivxlcdm]{1,6})[.)]\s+(.+)$/i);
+    const roman =
+      t.match(/^([ivxlcdm]{1,6})[.)]\s+(.+)$/i) ??
+      t.match(/^(i{1,3}|iv|vi{0,3}|ix|xi{0,3})\s+([A-Z].*)$/);
     if (roman) {
       bank.push({
         label: roman[1]!.toLowerCase(),
@@ -724,7 +765,7 @@ function instructionStemFromBlock(text: string): string {
  */
 function findNumberContext(text: string, n: number): string | null {
   const re = new RegExp(
-    `(?:^|[\\s(])(${n})(?=\\s|(?:[$£€]\\s*)?(?:[.…_…]|\\u2026)|$)`,
+    `(?:^|[\\s(\\]])(${n})(?=\\s|(?:[$£€]\\s*)?(?:[.…_…]|\\u2026)|$)`,
     "m",
   );
   const m = re.exec(text);

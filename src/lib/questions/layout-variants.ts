@@ -221,6 +221,9 @@ export function inferQuestionLayoutVariant(
         ? "YES_NO_NOT_GIVEN"
         : "TRUE_FALSE_NOT_GIVEN";
     case "MATCHING":
+      if (content.options?.length && content.options.every((o) => /^[ivx]+$/i.test(o.label))) {
+        return "MATCHING_HEADINGS";
+      }
       if (/sentence endings?|complete each sentence/.test(text)) return "MATCHING_SENTENCE_ENDINGS";
       if (/list of headings?|correct heading/.test(text)) return "MATCHING_HEADINGS";
       if (/matching features?|which person|which researcher|which year|which place/.test(text)) {
@@ -247,8 +250,8 @@ export function inferQuestionLayoutVariant(
         : "WRITING_ESSAY";
     case "SPEAKING_PROMPT": {
       const part = content.speakingPart;
-      if (part === 2 || /part\s*2|cue card|long turn/.test(text)) return "SPEAKING_PART_2";
-      if (part === 3 || /part\s*3|discussion/.test(text)) return "SPEAKING_PART_3";
+      if (part === 2 || /part\s*2|section\s*2\b|cue card|long turn|you should say/.test(text)) return "SPEAKING_PART_2";
+      if (part === 3 || /part\s*3|section\s*3\b|discussion/.test(text)) return "SPEAKING_PART_3";
       return "SPEAKING_PART_1";
     }
     default:

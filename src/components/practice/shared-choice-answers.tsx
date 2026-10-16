@@ -41,6 +41,8 @@ type Props = {
   compactStem?: boolean;
   /** Paper label for a shared bank, such as "List of Headings". */
   bankTitle?: string;
+  /** Keep answer positions visible in the prompt pane without accepting input. */
+  readOnlyPlaceholders?: boolean;
 };
 
 function sameText(label: string, text: string): boolean {
@@ -147,6 +149,7 @@ function AnswerSelect({
   wide,
   onChange,
   onFocus,
+  disabled = false,
 }: {
   number: number;
   options: ChoiceOption[];
@@ -155,11 +158,23 @@ function AnswerSelect({
   wide: boolean;
   onChange: (value: string) => void;
   onFocus: () => void;
+  disabled?: boolean;
 }) {
   const { t } = useTranslations("practice");
+  if (disabled) {
+    return (
+      <span
+        aria-hidden="true"
+        className={`mt-2 block h-4 shrink-0 border-b border-zinc-700 ${
+          wide ? "w-full sm:w-44" : "w-full sm:w-24"
+        }`}
+      />
+    );
+  }
   return (
     <select
-      value={options.some((opt) => opt.label === value) ? value : ""}
+      value={disabled ? "" : options.some((opt) => opt.label === value) ? value : ""}
+      disabled={disabled}
       aria-label={t("chooseAnswerFor", { n: number }, "Đáp án câu {n}")}
       onFocus={onFocus}
       onChange={(e) => onChange(e.target.value)}
@@ -190,6 +205,7 @@ export function SharedChoiceAnswers({
   onFocusQuestion,
   compactStem = false,
   bankTitle,
+  readOnlyPlaceholders = false,
 }: Props) {
   const options = questions[0]?.content.options ?? [];
   if (options.length < 2) return null;
@@ -246,9 +262,10 @@ export function SharedChoiceAnswers({
                   <AnswerSelect
                     number={n}
                     options={options}
-                    value={answers[String(n)] ?? ""}
+                    value={readOnlyPlaceholders ? "" : answers[String(n)] ?? ""}
                     active={currentNumber === n}
                     wide={wide}
+                    disabled={readOnlyPlaceholders}
                     onFocus={() => onFocusQuestion(n)}
                     onChange={(value) => onChange(n, value)}
                   />

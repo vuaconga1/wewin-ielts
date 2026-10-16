@@ -19,6 +19,8 @@ type Props = {
   onSubmitClick: () => void;
   /** Compact toolbar under header (e.g. listening audio). */
   toolbar?: ReactNode;
+  /** Place the toolbar below the part tabs instead of inside the header. */
+  toolbarAfterTabs?: boolean;
   /** Minimal part/task tabs (replaces left sidebar). */
   partTabs?: ReactNode;
   children: ReactNode;
@@ -36,6 +38,7 @@ export function CdiExamShell({
   submitting,
   onSubmitClick,
   toolbar,
+  toolbarAfterTabs = false,
   partTabs,
   children,
   footer,
@@ -50,7 +53,7 @@ export function CdiExamShell({
   return (
     <div className="cdi-desk flex min-h-screen min-w-0 flex-col overflow-x-hidden bg-[#d8dce2]">
       <header className="sticky top-0 z-20 border-b border-black/20 bg-wewin-navy text-white shadow-md">
-        <div className="mx-auto flex max-w-[1400px] min-w-0 flex-wrap items-center gap-2 px-3 py-2 sm:gap-3 sm:px-4">
+        <div className="mx-auto flex max-w-[1800px] min-w-0 flex-wrap items-center gap-2 px-3 py-2 sm:gap-3 sm:px-4">
           <Link
             href="/"
             className="flex shrink-0 items-center"
@@ -110,7 +113,7 @@ export function CdiExamShell({
             {submitting ? t("submitting", "Submitting…") : submitLabel}
           </button>
         </div>
-        {toolbar ? (
+        {toolbar && !toolbarAfterTabs ? (
           <div className="border-t border-white/10 bg-wewin-navy-hover">{toolbar}</div>
         ) : null}
       </header>
@@ -119,7 +122,13 @@ export function CdiExamShell({
         <div className="border-b border-zinc-400/50 bg-[#eceff2]">{partTabs}</div>
       ) : null}
 
-      <div className="mx-auto flex w-full max-w-[1400px] min-w-0 flex-1 flex-col px-2 py-2 sm:px-3 sm:py-3">
+      {toolbar && toolbarAfterTabs ? (
+        <div className="border-b border-zinc-400/50 bg-[#f7f8fa] px-2 py-2 sm:px-3">
+          <div className="mx-auto w-full max-w-[1800px]">{toolbar}</div>
+        </div>
+      ) : null}
+
+      <div className="mx-auto flex w-full max-w-[1800px] min-w-0 flex-1 flex-col px-2 py-2 sm:px-3 sm:py-3">
         {children}
       </div>
 

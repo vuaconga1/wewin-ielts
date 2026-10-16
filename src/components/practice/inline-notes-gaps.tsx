@@ -92,6 +92,8 @@ type GapBindings = {
   plainText?: boolean;
   /** Bow-chart boxes are narrow, so the answer field stays small. */
   narrowInput?: boolean;
+  /** Show the printed answer positions without accepting answers. */
+  readOnlyPlaceholders?: boolean;
 };
 
 function renderInlineSegments(
@@ -140,12 +142,24 @@ function renderInlineSegments(
         <span className="mr-1 font-semibold tabular-nums text-zinc-800">
           {seg.number}
         </span>
-        {choices && choices.length >= 2 ? (
+        {bindings.readOnlyPlaceholders ? (
+          <span
+            aria-hidden="true"
+            className={`mx-0.5 inline-block border-b border-zinc-700 align-baseline ${
+              bindings.narrowInput
+                ? "w-[8.25rem] max-w-full"
+                : bindings.plainText
+                  ? "w-24 min-w-[3.5rem]"
+                  : "w-[6.75rem] min-w-[4.5rem]"
+            }`}
+          />
+        ) : choices && choices.length >= 2 ? (
           <InlineChoiceSelect
             number={seg.number}
             options={choices}
-            value={bindings.answers[String(seg.number)] ?? ""}
+            value={bindings.readOnlyPlaceholders ? "" : bindings.answers[String(seg.number)] ?? ""}
             active={active}
+            disabled={bindings.readOnlyPlaceholders}
             onChange={(value) => bindings.onChange(seg.number, value)}
             onFocus={() => bindings.onFocusQuestion(seg.number)}
             inputRef={(el) => {
@@ -156,15 +170,23 @@ function renderInlineSegments(
         ) : (
         <input
           ref={(el) => {
+            if (bindings.readOnlyPlaceholders) return;
             if (el) bindings.questionRefs.current.set(seg.number, el);
             else bindings.questionRefs.current.delete(seg.number);
           }}
           data-q={seg.number}
           type="text"
-          value={bindings.answers[String(seg.number)] ?? ""}
+          value={bindings.readOnlyPlaceholders ? "" : bindings.answers[String(seg.number)] ?? ""}
+          disabled={bindings.readOnlyPlaceholders}
           onChange={(e) => bindings.onChange(seg.number, e.target.value)}
           onFocus={() => bindings.onFocusQuestion(seg.number)}
-          placeholder={bindings.narrowInput ? "……" : bindings.placeholder}
+          placeholder={
+            bindings.readOnlyPlaceholders
+              ? ""
+              : bindings.narrowInput
+                ? "……"
+                : bindings.placeholder
+          }
           aria-label={`${bindings.placeholder} ${seg.number}`}
           className={`inline-block max-w-full rounded-sm border bg-white px-1 py-0.5 text-sm leading-snug text-zinc-900 outline-none ${
             bindings.narrowInput
@@ -216,6 +238,7 @@ function InlineChoiceSelect({
   options,
   value,
   active,
+  disabled = false,
   onChange,
   onFocus,
   inputRef,
@@ -224,16 +247,26 @@ function InlineChoiceSelect({
   options: ChoiceOption[];
   value: string;
   active: boolean;
+  disabled?: boolean;
   onChange: (value: string) => void;
   onFocus: () => void;
   inputRef: (el: HTMLSelectElement | null) => void;
 }) {
   const { t } = useTranslations("practice");
+  if (disabled) {
+    return (
+      <span
+        aria-hidden="true"
+        className="mx-0.5 inline-block h-[1.65rem] w-[4.75rem] rounded-sm border border-zinc-400 bg-zinc-100 align-baseline"
+      />
+    );
+  }
   return (
     <select
       ref={inputRef}
       data-q={number}
       value={options.some((opt) => opt.label === value) ? value : ""}
+      disabled={disabled}
       aria-label={t("chooseAnswerFor", { n: number }, "Đáp án câu {n}")}
       onFocus={onFocus}
       onChange={(e) => onChange(e.target.value)}
@@ -449,6 +482,7 @@ export function InlineNotesGaps({
   choiceOptions,
   tableLayout,
   layoutVariant,
+  readOnlyPlaceholders = false,
 }: {
   notes: string;
   answers: Record<string, string>;
@@ -464,6 +498,7 @@ export function InlineNotesGaps({
   tableLayout?: StructuredTableLayout;
   /** Canonical layout hint used to restore note/form hierarchy. */
   layoutVariant?: string;
+  readOnlyPlaceholders?: boolean;
 }) {
   const bindings: GapBindings = {
     answers,
@@ -474,6 +509,7 @@ export function InlineNotesGaps({
     placeholder,
     allowNumbers,
     choiceOptions,
+    readOnlyPlaceholders,
   };
 
   const displayNotes = useMemo(

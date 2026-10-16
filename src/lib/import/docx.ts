@@ -186,7 +186,7 @@ export function normalizeExtractedText(text: string): string {
     /([^\n])(?=Questions?\s+\d+(?:\s*[-–—]\s*\d+|\s+and\s+\d+)?\b)/g,
     (match, _g1: string, offset: number, full: string) => {
       const window = full.slice(Math.max(0, offset - 48), offset + 1);
-      if (/minutes on\s*$/i.test(window)) return match;
+      if (/(?:minutes on|\banswer|next to)\s*$/i.test(window)) return match;
       return `${match}\n\n`;
     },
   );

@@ -49,7 +49,7 @@ export function QuestionNavigator({
 
   return (
     <div className="cdi-nav border-t border-zinc-400/40 bg-[#e8eaed]">
-      <div className="mx-auto flex max-w-[1400px] min-w-0 flex-wrap items-center gap-2 px-2 py-2 sm:gap-3 sm:px-3">
+      <div className="mx-auto flex max-w-[1800px] min-w-0 flex-wrap items-center gap-2 px-2 py-2 sm:gap-3 sm:px-3">
         {showReview ? (
           <button
             type="button"

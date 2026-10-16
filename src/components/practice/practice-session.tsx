@@ -844,6 +844,7 @@ export function PracticeSession({
   })();
   const showContentPanel =
     Boolean(part?.content) && isLr && !isWriting && !isSpeaking;
+  const detachedNotesAnswers = isListening;
 
   const clock =
     secondsLeft == null
@@ -883,7 +884,7 @@ export function PracticeSession({
 
   const partTabs =
     !isSpeaking && sessionParts.length > 1 ? (
-      <div className="mx-auto flex max-w-[1400px] min-w-0 gap-1 overflow-x-auto px-2 py-1.5 sm:px-3">
+      <div className="mx-auto flex max-w-[1800px] min-w-0 gap-1 overflow-x-auto px-2 py-1.5 sm:px-3">
         {sessionParts.map((p, idx) => (
           <button
             type="button"
@@ -912,9 +913,8 @@ export function PracticeSession({
       </div>
     ) : null;
 
-  const splitListening = isListening && Boolean(audioSrc);
   const toolbar =
-    isListening && audioSrc && !splitListening ? (
+    isListening && audioSrc ? (
       <AudioPlayer
         key={audioSrc}
         src={audioSrc}
@@ -971,6 +971,7 @@ export function PracticeSession({
         submitting={submitting}
         onSubmitClick={() => void submit()}
         toolbar={toolbar}
+        toolbarAfterTabs={isListening}
         partTabs={partTabs}
         footer={footer}
       >
@@ -980,7 +981,8 @@ export function PracticeSession({
           </div>
         ) : null}
 
-        {showContentPanel && part?.content ? (
+        {(showContentPanel && part?.content) ||
+        (isListening && part && part.questions.length > 0) ? (
           <ReadingOrNotesSplit
             part={part}
             isReading={isReading}
@@ -999,17 +1001,9 @@ export function PracticeSession({
               ]);
             }}
             listeningMedia={
-              splitListening && audioSrc
-                ? {
-                    src: audioSrc,
-                    clipStart,
-                    clipEnd,
-                    label: part
-                      ? `${t("listeningAudio", "Audio")} · ${part.title}`
-                      : t("listeningAudio", "Audio"),
-                  }
-                : null
+              null
             }
+            detachedNotesAnswers={detachedNotesAnswers}
           />
         ) : isWriting && part ? (
           <WritingDesk
@@ -1223,7 +1217,7 @@ function WritingDesk({
                 <img
                   src={imageUrl}
                   alt={t("writingDiagram", "Diagram / figure")}
-                  className="mx-auto max-h-[min(32rem,60vh)] w-full object-contain bg-white p-3 sm:p-4"
+                  className="mx-auto h-auto max-h-[min(32rem,60dvh)] w-auto max-w-full object-contain bg-white p-3 sm:p-4"
                 />
               </figure>
               {blocks.afterImage.length > 0 ? (
@@ -1312,6 +1306,7 @@ function ReadingOrNotesSplit({
   highlights = [],
   onHighlightsChange,
   listeningMedia = null,
+  detachedNotesAnswers = false,
 }: {
   part: Part;
   isReading: boolean;
@@ -1331,6 +1326,8 @@ function ReadingOrNotesSplit({
     clipEnd: number | null;
     label: string;
   } | null;
+  /** Pilot layout: printed notes on the left, answer sheet on the right. */
+  detachedNotesAnswers?: boolean;
 }) {
   const { t } = useTranslations("practice");
   const reading = isReading
@@ -1339,7 +1336,7 @@ function ReadingOrNotesSplit({
   const taskSource = isReading
     ? (reading?.tasks ?? "")
     : (part.content ?? "");
-  const questions = isReading
+  let questions = isReading
     ? withHeadingBank(
         withRecoveredChoices(
           withYesNoBank(
@@ -1378,6 +1375,59 @@ function ReadingOrNotesSplit({
         },
       }))
     : part.questions;
+  // Some imported "choose answers from the box" groups incorrectly tag their
+  // first item as MULTIPLE_CHOICE. Restore it as a matching item so every
+  // number in the printed range uses the same answer control.
+  const matchingRange =
+    taskSource.match(
+      /questions?\s+(\d{1,2})\s*[-–]\s*(\d{1,2})[\s\S]{0,800}?choose\s+(?:two|three|four|\d+)\s+answers?\s+from\s+(?:the\s+)?(?:box|list)/i,
+    ) ??
+    taskSource.match(
+      /choose\s+(?:two|three|four|\d+)\s+answers?\s+from\s+(?:the\s+)?(?:box|list)[\s\S]*?questions?\s+(\d{1,2})\s*[-–]\s*(\d{1,2})/i,
+    );
+  const matchingInstruction = /choose\s+(?:two|three|four|\d+)\s+answers?\s+from\s+(?:the\s+)?(?:box|list)/i.exec(taskSource);
+  const precedingRanges = matchingInstruction
+    ? [
+        ...taskSource
+          .slice(0, matchingInstruction.index)
+          .matchAll(/questions?\s+(\d{1,2})\s*-\s*(\d{1,2})/gi),
+      ]
+    : [];
+  const nearestMatchingRange = precedingRanges[precedingRanges.length - 1];
+  const resolvedMatchingRange = nearestMatchingRange ?? matchingRange;
+  if (resolvedMatchingRange) {
+    const start = Number(resolvedMatchingRange[1]);
+    const end = Number(resolvedMatchingRange[2]);
+    const optionBank = questions.find(
+      (question) =>
+        question.number >= start &&
+        question.number <= end &&
+        (question.content.options?.length ?? 0) >= 2,
+    )?.content.options;
+    if (optionBank) {
+      questions = questions.map((question) => {
+        if (
+          question.number < start ||
+          question.number > end ||
+          question.type !== "MULTIPLE_CHOICE"
+        ) {
+          return question;
+        }
+        const location = taskSource.match(
+          new RegExp(`(?:^|\\n)\\s*${question.number}\\s+([^\\n]+)`, "i"),
+        )?.[1]?.trim();
+        return {
+          ...question,
+          type: "MATCHING",
+          content: {
+            ...question.content,
+            stem: location || question.content.stem,
+            options: optionBank,
+          },
+        };
+      });
+    }
+  }
   const groups = taskSource
     ? parseReadingQuestionGroups(taskSource, questions)
     : [];
@@ -1420,6 +1470,18 @@ function ReadingOrNotesSplit({
     q.type === "TABLE_COMPLETION" ||
     q.type === "MAP_LABELING" ||
     Boolean(q.content.blank);
+  /** Detached answer column: choose-TWO slots get the lead's letter bank. */
+  const sidebarQuestions = questions
+    .map((q) => {
+      const leadNumber = q.content.pairedFrom;
+      if (!isPairedSatellite(q.content) || (q.content.options?.length ?? 0) >= 2) {
+        return q;
+      }
+      const lead = questions.find((other) => other.number === leadNumber);
+      return lead?.content.options
+        ? { ...q, content: { ...q.content, options: lead.content.options } }
+        : q;
+    });
 
   const renderQuestion = (q: Question) => {
     const displayStem = resolveGapDisplayStem(
@@ -1453,6 +1515,7 @@ function ReadingOrNotesSplit({
           active={
             currentNumber != null && covers.includes(currentNumber)
           }
+          optionsReadOnly={detachedNotesAnswers}
         />
       </div>
     );
@@ -1486,6 +1549,7 @@ function ReadingOrNotesSplit({
                 ? bankTitle
                 : undefined
           }
+          readOnlyPlaceholders={detachedNotesAnswers}
         />
       );
     });
@@ -1599,6 +1663,7 @@ function ReadingOrNotesSplit({
               choiceOptions={notesChoices.size > 0 ? notesChoices : undefined}
               tableLayout={qs.find((question) => question.content.tableLayout)?.content.tableLayout}
               layoutVariant={completionLayoutVariant}
+              readOnlyPlaceholders={detachedNotesAnswers}
             />
           ) : (
             <BoxedContent text={notesText} />
@@ -1637,6 +1702,95 @@ function ReadingOrNotesSplit({
 
   // Listening with audio: source column on the left, questions on the right.
   if (!isReading) {
+    if (detachedNotesAnswers) {
+      return (
+        <div className="cdi-split mx-auto grid w-full max-w-[1504px] min-h-0 min-w-0 flex-1 gap-0 lg:grid-cols-[minmax(0,1fr)_26rem] lg:items-stretch">
+          <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-white lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto">
+            <div className="sticky top-0 z-[2] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
+              {part.title}
+            </div>
+            <ListeningFigures part={part} className="space-y-3 px-3 pt-3 sm:px-4" />
+            {questionsPanel}
+          </div>
+          <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-[#f7f8fa] lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto lg:border-l-0 lg:border-t">
+            <div className="sticky top-0 z-[2] border-b border-zinc-300 bg-[#eceff2] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
+              {t("answers", "Answers")}
+            </div>
+            <div className="space-y-5 p-4 sm:p-6">
+              {sidebarQuestions.map((question) => (
+                <label key={question.number} className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blue-50 text-sm font-bold text-[#1a3a6b]">
+                    {question.number}
+                  </span>
+                  {(question.content.options?.length ?? 0) >= 2 ? (
+                    <select
+                      ref={(el) => {
+                        if (el) questionRefs.current.set(question.number, el);
+                        else questionRefs.current.delete(question.number);
+                      }}
+                      data-q={question.number}
+                      value={answers[String(question.number)] ?? ""}
+                      onChange={(event) => onChange(question.number, event.target.value)}
+                      onFocus={() => onFocusQuestion(question.number)}
+                      aria-label={t("chooseAnswerFor", { n: question.number }, "Answer {n}")}
+                      className={`h-10 w-72 max-w-full rounded-sm border bg-white px-3 text-sm font-semibold outline-none ${
+                        currentNumber === question.number
+                          ? "border-[#1a3a6b] ring-1 ring-[#1a3a6b]/40"
+                          : "border-zinc-400 focus:border-[#1a3a6b]"
+                      }`}
+                    >
+                      <option value="">{t("chooseAnswer", "Choose")}</option>
+                      {question.content.options?.map((option) => (
+                        <option key={option.label} value={option.label}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      ref={(el) => {
+                        if (el) questionRefs.current.set(question.number, el);
+                        else questionRefs.current.delete(question.number);
+                      }}
+                      data-q={question.number}
+                      type="text"
+                      value={answers[String(question.number)] ?? ""}
+                      onChange={(event) => onChange(question.number, event.target.value)}
+                      onFocus={() => onFocusQuestion(question.number)}
+                      placeholder={t("answerPlaceholder", "Enter answer…")}
+                      aria-label={`${t("answerPlaceholder", "Enter answer…")} ${question.number}`}
+                      className={`h-10 w-72 max-w-full rounded-sm border bg-white px-3 text-sm outline-none ${
+                        currentNumber === question.number
+                          ? "border-[#1a3a6b] ring-1 ring-[#1a3a6b]/40"
+                          : "border-zinc-400 focus:border-[#1a3a6b]"
+                      }`}
+                    />
+                  )}
+                </label>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+    if (listeningFigures(part).length > 0) {
+      return (
+        <div className="cdi-split grid min-h-0 min-w-0 flex-1 gap-0 lg:grid-cols-2 lg:items-stretch">
+          <div className="cdi-pane min-w-0 border border-zinc-400/70 bg-[#f7f8fa] lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto">
+            <div className="sticky top-0 z-[2] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-700">
+              {t("figures", "Figures")}
+            </div>
+            <ListeningFigures part={part} className="space-y-3 px-3 py-3 sm:px-4" />
+          </div>
+          <div className="cdi-pane min-w-0 border border-t-0 border-zinc-400/70 bg-white lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto lg:border-l-0 lg:border-t">
+            <div className="sticky top-0 z-[1] border-b border-zinc-300 bg-[#eceff2] px-3 py-2 text-xs font-semibold text-zinc-800">
+              {part.title?.trim() ? part.title : t("notes", "Notes / task text")}
+            </div>
+            {questionsPanel}
+          </div>
+        </div>
+      );
+    }
     if (listeningMedia) {
       return (
         <div className="cdi-split grid min-h-0 min-w-0 flex-1 gap-0 lg:grid-cols-2 lg:items-stretch">
@@ -1777,7 +1931,7 @@ function ListeningFigures({
             <img
               src={fig.src}
               alt={caption}
-              className="h-auto w-full max-w-full bg-white"
+              className="mx-auto h-auto max-h-[min(42rem,60dvh)] w-auto max-w-full object-contain bg-white"
             />
           </figure>
         );
@@ -1816,6 +1970,7 @@ function QuestionInput({
   onPatchAnswers,
   compactStem = false,
   active = false,
+  optionsReadOnly = false,
 }: {
   question: Question;
   skill: string;
@@ -1834,6 +1989,8 @@ function QuestionInput({
   compactStem?: boolean;
   /** Highlight the answer control (not an outer wrapper frame). */
   active?: boolean;
+  /** Options are answered in the detached Answers column; list them as text only. */
+  optionsReadOnly?: boolean;
 }) {
   const { t } = useTranslations("practice");
   const options = question.content.options ?? [];
@@ -1866,6 +2023,9 @@ function QuestionInput({
     optionCount: options.length,
   });
   const showStem = Boolean(stem) && !hideBesideNotes;
+  const letterOnlyOptions = options.every(
+    (opt) => !opt.text.trim() || opt.text.trim() === opt.label.trim(),
+  );
   const gapParts = showStem ? stem.split(/_____/) : [];
   const inlineGap = gapParts.length === 2 && options.length < 2 && isBlank;
   const inputActiveClass = active
@@ -2005,7 +2165,13 @@ function QuestionInput({
         </p>
       ) : null}
 
-      {options.length >= 2 ? (
+      {options.length >= 2 && optionsReadOnly && letterOnlyOptions ? (
+        showStem ? null : (
+          <p className="text-sm font-semibold tabular-nums text-zinc-800">
+            {numberLabel}.
+          </p>
+        )
+      ) : options.length >= 2 ? (
         <div className="space-y-2">
           {!showStem ? (
             <p className="text-sm font-semibold tabular-nums text-zinc-800">
@@ -2018,6 +2184,24 @@ function QuestionInput({
             const same =
               label.localeCompare(text, undefined, { sensitivity: "accent" }) ===
               0;
+            const optionText = same ? (
+              text
+            ) : (
+              <>
+                <strong className="mr-1">{label}.</strong>
+                {text}
+              </>
+            );
+            if (optionsReadOnly) {
+              return (
+                <p
+                  key={opt.label}
+                  className="min-w-0 break-words border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                >
+                  {optionText}
+                </p>
+              );
+            }
             const selected = multi
               ? selectedLetters.some(
                   (s) =>
@@ -2058,16 +2242,7 @@ function QuestionInput({
                     }
                   }}
                 />
-                <span className="min-w-0 break-words">
-                  {same ? (
-                    text
-                  ) : (
-                    <>
-                      <strong className="mr-1">{label}.</strong>
-                      {text}
-                    </>
-                  )}
-                </span>
+                <span className="min-w-0 break-words">{optionText}</span>
               </label>
             );
           })}

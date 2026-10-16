@@ -218,7 +218,7 @@ export function TestsCatalog({
             {pageItems.map((row) => (
               <article
                 key={row.slug}
-                className="card-outline-hover relative flex flex-col p-5"
+                className="card-outline-hover tests-catalog-card relative flex flex-col p-5"
               >
                 {canEdit ? (
                   <Link href={`/tests/${row.slug}/edit`} prefetch={false} className="absolute right-3 top-3 rounded-md border border-wewin-navy bg-white px-2.5 py-1 text-xs font-bold text-wewin-navy shadow-sm hover:bg-wewin-accent-blue-bg">{t("tests.editTest", "Chỉnh sửa")}</Link>
