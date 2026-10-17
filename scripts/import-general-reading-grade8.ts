@@ -7,7 +7,8 @@
 
 import path from "node:path";
 import { parseTestFromFiles } from "../src/lib/import/pipeline";
-import type { ParsedTestDraft, QuestionDraft } from "../src/lib/import/schemas";
+import type { QuestionDraft } from "../src/lib/import/schemas";
+import { normalizePublishedMockDraft } from "../src/lib/import/normalize-mock-tests";
 
 const FILE = path.resolve(
   "e:/Wewin/Wewin-Education-main/anh_wewin/flyer/unit 7/Castle & Environment/Reading (for 8th grade and below) .docx",
@@ -243,8 +244,9 @@ async function main() {
 
   const { saveTestDraft } = await import("../src/lib/store/test-store");
   const { persistParsedTest } = await import("../src/lib/import/persist");
-  await saveTestDraft(draft);
-  const result = await persistParsedTest(draft, [], { status: "PUBLISHED" });
+  const normalized = normalizePublishedMockDraft(draft);
+  await saveTestDraft(normalized);
+  const result = await persistParsedTest(normalized, [], { status: "PUBLISHED" });
   console.log(`saved ${draft.slug} testId=${result.testId} questions=${numbers.length}`);
 }
 

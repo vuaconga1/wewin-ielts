@@ -188,7 +188,7 @@ function isLikelyQuestionLine(line: string): boolean {
   if (/^PART\s*[123]\b/i.test(t)) return false;
   if (/^Discussion topics:/i.test(t)) return false;
   if (/^You (will|have|should|can)\b/i.test(t)) return false;
-  if (/^Describe\b/i.test(t)) return true;
+  if (/^(?:Describe|Tell me)\b/i.test(t)) return true;
   if (/\?\s*(?:\[[^\]]+\])?\s*$/.test(t)) return true;
   if (/\?\s*$/.test(t)) return true;
   return false;

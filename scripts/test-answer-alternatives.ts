@@ -1,5 +1,5 @@
 /**
- * Answer keys with "/" or parentheses accept either alternative.
+ * Answer keys with "/" accept either alternative; parenthesised text is optional.
  *
  * Run:
  *   npx tsx scripts/test-answer-alternatives.ts
@@ -28,14 +28,21 @@ function main() {
   assert(!isAnswerCorrect("nope", "ádasd/ádag"), "slash: reject unrelated word");
   assert(!isAnswerCorrect("", "ádasd/ádag"), "slash: blank is not correct");
 
-  assert(isAnswerCorrect("âfsd", "âfsd(adasd)"), "parens: outside word");
-  assert(isAnswerCorrect("adasd", "âfsd(adasd)"), "parens: inside word");
-  assert(
-    isAnswerCorrect("âfsd(adasd)", "âfsd(adasd)"),
-    "parens: literal key still accepted",
-  );
-  assert(!isAnswerCorrect("wrong", "âfsd(adasd)"), "parens: reject unrelated word");
-  assert(!isAnswerCorrect("âfsd()", "âfsd(adasd)"), "parens: empty parens are not the inside word");
+  assert(isAnswerCorrect("camera", "camera(s)"), "glued suffix: without the suffix");
+  assert(isAnswerCorrect("cameras", "camera(s)"), "glued suffix: with the suffix");
+  assert(isAnswerCorrect("camera(s)", "camera(s)"), "glued suffix: literal key still accepted");
+  assert(!isAnswerCorrect("s", "camera(s)"), "glued suffix: suffix alone is not enough");
+  assert(!isAnswerCorrect("wrong", "camera(s)"), "glued suffix: reject unrelated word");
+  assert(isAnswerCorrect("10 September", "10(th) September"), "glued ordinal: without th");
+  assert(isAnswerCorrect("10th September", "10(th) September"), "glued ordinal: with th");
+  assert(!isAnswerCorrect("th", "10(th) September"), "glued ordinal: th alone is not enough");
+  assert(!isAnswerCorrect("st", "1(st) October"), "glued ordinal: st alone is not enough");
+  assert(isAnswerCorrect("blond", "blond(e)"), "glued letter: without e");
+  assert(isAnswerCorrect("blonde", "blond(e)"), "glued letter: with e");
+  assert(!isAnswerCorrect("e", "blond(e)"), "glued letter: e alone is not enough");
+  assert(isAnswerCorrect("multicoloured", "multi(-)coloured / multi(-)colored"), "glued hyphen: without it");
+  assert(isAnswerCorrect("multi-colored", "multi(-)coloured / multi(-)colored"), "glued hyphen: with it");
+  assert(!isAnswerCorrect("-", "multi(-)coloured / multi(-)colored"), "glued hyphen: hyphen alone is not enough");
 
   assert(isAnswerCorrect("colour", "colour"), "plain key still requires that word");
   assert(isAnswerCorrect("  Colour  ", "colour"), "plain key keeps case and space folding");
@@ -85,15 +92,16 @@ function main() {
   assert(!isAnswerCorrect("am", "20.25 (am)"), "optional trailing bracket: word alone is not enough");
 
   assert(isAnswerCorrect("colour", "colour()"), "empty parens leave the word");
-  assert(isAnswerCorrect("base", "base(alt/other)"), "slash inside parens: outside");
-  assert(isAnswerCorrect("alt", "base(alt/other)"), "slash inside parens: first inner");
-  assert(isAnswerCorrect("other", "base(alt/other)"), "slash inside parens: second inner");
-  assert(isAnswerCorrect("foo", "foo(bar)(baz)"), "two glued groups: outside");
-  assert(isAnswerCorrect("bar", "foo(bar)(baz)"), "two glued groups: first inner");
-  assert(isAnswerCorrect("baz", "foo(bar)(baz)"), "two glued groups: second inner");
-  assert(isAnswerCorrect("a", "a/b(c)"), "slash then parens: first");
-  assert(isAnswerCorrect("b", "a/b(c)"), "slash then parens: outside the group");
-  assert(isAnswerCorrect("c", "a/b(c)"), "slash then parens: inside the group");
+  assert(isAnswerCorrect("indoor", "indoor (staff/employees)"), "slash inside parens: without the group");
+  assert(isAnswerCorrect("indoor staff", "indoor (staff/employees)"), "slash inside parens: first inner");
+  assert(isAnswerCorrect("indoor employees", "indoor (staff/employees)"), "slash inside parens: second inner");
+  assert(!isAnswerCorrect("staff", "indoor (staff/employees)"), "slash inside parens: inner alone is not enough");
+  assert(isAnswerCorrect("chinese architecture", "(unique) (Chinese) architecture"), "two optional groups: one kept");
+  assert(isAnswerCorrect("architecture", "(unique) (Chinese) architecture"), "two optional groups: none kept");
+  assert(isAnswerCorrect("unique chinese architecture", "(unique) (Chinese) architecture"), "two optional groups: both kept");
+  assert(isAnswerCorrect("photos", "(provide) photograph/(provide) photographs/(provide) photos"), "slash then optional word");
+  assert(isAnswerCorrect("provide photographs", "(provide) photograph/(provide) photographs/(provide) photos"), "slash then optional word kept");
+  assert(!isAnswerCorrect("provide", "(provide) photograph/(provide) photographs/(provide) photos"), "slash then optional word alone");
 
   assert(
     isAnswerCorrect("ádag", "nope", ["ádasd/ádag"]),
@@ -114,12 +122,12 @@ function main() {
         number: 2,
         type: "GAP_FILL",
         content: { stem: "sample" },
-        correctAnswer: "âfsd(adasd)",
+        correctAnswer: "camera(s)",
         sectionTitle: "Reading",
         sectionOrder: 1,
       },
     ],
-    { "1": "ádag", "2": "âfsd" },
+    { "1": "ádag", "2": "cameras" },
   );
   assert(graded.correct === 2, "gradeAnswers counts either alternative as correct");
   assert(graded.items[0]?.status === "correct", "result status for one slash side");
@@ -129,7 +137,7 @@ function main() {
     "result still shows the original slash key",
   );
   assert(
-    graded.items[1]?.correctAnswer === "âfsd(adasd)",
+    graded.items[1]?.correctAnswer === "camera(s)",
     "result still shows the original parenthesis key",
   );
 
@@ -253,7 +261,8 @@ function main() {
   assert(checkExerciseAnswer("ádasd", ["ádasd/ádag"]), "learn: slash left side");
   assert(checkExerciseAnswer("ádag", ["ádasd/ádag"]), "learn: slash right side");
   assert(!checkExerciseAnswer("nope", ["ádasd/ádag"]), "learn: slash rejects a wrong word");
-  assert(checkExerciseAnswer("adasd", ["âfsd(adasd)"]), "learn: paren inside");
+  assert(checkExerciseAnswer("cameras", ["camera(s)"]), "learn: glued suffix kept");
+  assert(!checkExerciseAnswer("s", ["camera(s)"]), "learn: glued suffix alone is not enough");
   assert(
     checkExerciseAnswer("B", ["B", "B. Nắm ý chính / cấu trúc bài"]),
     "learn: option letter still counts",

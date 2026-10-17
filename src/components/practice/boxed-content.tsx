@@ -128,61 +128,12 @@ function BoxBody({
   );
 }
 
-const PLABEL_RE = /\[\[plabel\]\]([\s\S]*?)\[\[\/plabel\]\]/g;
-
-function renderLabeledText(value: string, keyPrefix: string): ReactNode {
-  const re = new RegExp(PLABEL_RE.source, "g");
-  const nodes: ReactNode[] = [];
-  let last = 0;
-  let match: RegExpExecArray | null;
-  let labelIndex = 0;
-  while ((match = re.exec(value)) !== null) {
-    if (match.index > last) nodes.push(...renderRichText(value.slice(last, match.index), `${keyPrefix}-before-${labelIndex}`));
-    nodes.push(
-      <span
-        key={`${keyPrefix}-l-${labelIndex}`}
-        className="text-lg font-bold text-zinc-900"
-      >
-        {match[1]}
-      </span>,
-    );
-    last = match.index + match[0].length;
-    labelIndex += 1;
-  }
-  if (labelIndex === 0) return value;
-  if (last < value.length) nodes.push(...renderRichText(value.slice(last), `${keyPrefix}-after`));
-  return nodes;
-}
-
-function PassageParagraphs({ value }: { value: string }) {
-  const paragraphs = value
-    .split(/\n{2,}/)
-    .map((paragraph) => paragraph.replace(/^\n+|\n+$/g, ""))
-    .filter((paragraph) => paragraph.trim());
-  if (!paragraphs.length) return null;
-  return (
-    <div className="min-w-0 space-y-5 text-left">
-      {paragraphs.map((paragraph, index) => (
-        <p
-          key={`p-${index}`}
-          className="min-w-0 break-words text-justify indent-8 leading-7"
-        >
-          {renderLabeledText(paragraph, `p-${index}`)}
-        </p>
-      ))}
-    </div>
-  );
-}
-
 export function BoxedContent({
   text,
   renderText,
-  passageLayout = false,
 }: {
   text: string;
   renderText?: (value: string, key: string) => ReactNode;
-  /** Reading passage column: paragraph gaps and bold leading A/B/C labels. */
-  passageLayout?: boolean;
 }) {
   const paint = renderText ?? ((value: string, key: string) => renderRichText(value, key));
   const segments = splitBoxedSegments(text);
@@ -225,9 +176,6 @@ export function BoxedContent({
               <BoxBody value={segment.value} renderText={paint} />
             </div>
           );
-        }
-        if (passageLayout) {
-          return <PassageParagraphs key={`text-${index}`} value={segment.value} />;
         }
         return (
           <div key={`text-${index}`} className="whitespace-pre-wrap text-left">

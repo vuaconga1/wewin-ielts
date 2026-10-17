@@ -232,20 +232,31 @@ Research confirms that flowers change our emotional state.`,
     "the paragraph body after Paragraph A is not a label",
   );
 
-  const ui = fs.readFileSync("src/components/practice/boxed-content.tsx", "utf8");
+  const ui = fs.readFileSync("src/components/practice/highlightable-passage.tsx", "utf8");
   assert(ui.includes("space-y-5") && ui.includes("text-justify indent-8 leading-7"), "passage paragraphs are justified, indented, and openly spaced");
   assert(
     ui.includes("text-lg font-bold"),
     "paragraph labels render larger and bold",
   );
-  assert(ui.includes("plabel"), "the passage renderer reads plabel markers");
-  const session = fs.readFileSync(
-    "src/components/practice/practice-session.tsx",
+  assert(
+    fs.readFileSync("src/lib/practice/passage-highlights.ts", "utf8").includes("plabel"),
+    "the passage renderer reads plabel markers",
+  );
+  const workspace = fs.readFileSync(
+    "src/components/practice/question-workspace.tsx",
     "utf8",
   );
   assert(
-    session.includes("<BoxedContent text={leftBody} passageLayout />"),
+    /<HighlightablePassage\s+text=\{leftBody\}/.test(workspace),
     "only the reading passage column opts into paragraph layout",
+  );
+  const passageUi = fs.readFileSync(
+    "src/components/practice/highlightable-passage.tsx",
+    "utf8",
+  );
+  assert(
+    passageUi.includes("text-justify indent-8 leading-7"),
+    "highlightable passage paragraphs are justified and indented",
   );
 
   const test12 = JSON.parse(

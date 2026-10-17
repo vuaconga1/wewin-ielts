@@ -35,6 +35,11 @@ import { unwrapSingleColumnMarkdownNotes } from "@/lib/practice/notes-table";
 import { readFile } from "node:fs/promises";
 import { applyQuestionLayoutVariants, validateQuestionLayouts } from "@/lib/questions/layout-variants";
 import path from "node:path";
+import {
+  normalizeGeneralWritingTask,
+  parseSpeakingPartQuestions,
+  type SpeakingPartKind,
+} from "./normalize-writing-speaking";
 
 export type ParseTestInput = {
   contentPath: string;
@@ -320,6 +325,9 @@ function buildParseResult(input: BuildInput): ImportParseResult {
 
   const parts: PartDraft[] = rawParts.map((rp) => {
     let partBody = rp.body;
+    if (skill === "WRITING") {
+      partBody = normalizeGeneralWritingTask(partBody);
+    }
     if (skill === "LISTENING") {
       const cleaned = stripFilledListeningAnswers(partBody);
       if (cleaned.stripped > 0) {
@@ -337,20 +345,26 @@ function buildParseResult(input: BuildInput): ImportParseResult {
     }
     let questions = parseQuestionsFromPartBody(partBody);
 
-    if (skill === "WRITING" && questions.length === 0 && rp.body.trim()) {
+    if (skill === "WRITING" && questions.length === 0 && partBody.trim()) {
       const taskNum = /\bTask\s*([12])\b/i.exec(rp.title)?.[1];
       questions = [
         parseWritingTaskAsQuestion(
-          rp.body,
+          partBody,
           taskNum ? Number(taskNum) : rp.order + 1,
         ),
       ];
     }
 
-    if (skill === "SPEAKING" && questions.length === 0 && rp.body.trim()) {
-      questions = [
-        parseSpeakingTopicAsQuestion(rp.body, rp.order + 1),
-      ];
+    if (skill === "SPEAKING" && rp.body.trim()) {
+      const titlePart = /\b(?:part|section)\s*([123])\b/i.exec(rp.title)?.[1];
+      const speakingPart = Number(titlePart ?? rp.order + 1) as SpeakingPartKind;
+      const parsed =
+        speakingPart === 1 || speakingPart === 2 || speakingPart === 3
+          ? parseSpeakingPartQuestions(rp.body, speakingPart)
+          : [];
+      questions = parsed.length > 0
+        ? parsed
+        : [parseSpeakingTopicAsQuestion(rp.body, rp.order + 1)];
     }
 
     // Defense in depth: clear sliding-window gap stems when notes already
@@ -472,6 +486,17 @@ function buildParseResult(input: BuildInput): ImportParseResult {
       questions,
     };
   });
+
+  if (skill === "SPEAKING") {
+    let number = 0;
+    for (const part of parts) {
+      part.questions = part.questions.map((question, order) => ({
+        ...question,
+        number: ++number,
+        order,
+      }));
+    }
+  }
 
   const title = input.title ?? titleFromFilename(input.contentFilename);
   const slug = input.slug ?? slugify(title);

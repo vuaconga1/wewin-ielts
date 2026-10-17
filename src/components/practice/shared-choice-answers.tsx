@@ -211,6 +211,26 @@ export function SharedChoiceAnswers({
   if (options.length < 2) return null;
   const wide = choiceLabelsAreWords(options);
 
+  /** Spec §4.4: the shared question once, then A–E; answer slots live only in ANSWERS. */
+  if (readOnlyPlaceholders && questions.every((q) => isMultiSelectQuestion(q.content))) {
+    return (
+      <div className="min-w-0 space-y-3 border-b border-zinc-200 pb-5 last:border-0 last:pb-0">
+        {questions.map((question) =>
+          showStem(question, compactStem) ? (
+            <p
+              key={question.number}
+              data-q={question.number}
+              className="min-w-0 break-words whitespace-pre-wrap text-sm text-zinc-800"
+            >
+              {formatQuestionStem(question.content.stem ?? "", question.number)}
+            </p>
+          ) : null,
+        )}
+        <OptionBank options={options} title={bankTitle} />
+      </div>
+    );
+  }
+
   return (
     <div className="min-w-0 space-y-4 border-b border-zinc-200 pb-5 last:border-0 last:pb-0">
       <OptionBank options={options} title={bankTitle} />
@@ -229,6 +249,7 @@ export function SharedChoiceAnswers({
             <div
               key={question.number}
               ref={(el) => {
+                if (readOnlyPlaceholders) return;
                 for (const n of covers) {
                   if (el) questionRefs.current.set(n, el);
                   else questionRefs.current.delete(n);

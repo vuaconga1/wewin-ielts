@@ -21,6 +21,18 @@ assert(numberedResult.questions.every((q) => q.type === "MAP_LABELING"), "map ro
 assert(numberedResult.questions[0]!.content.stem === "Bike sheds _____", "input marker stays on label row");
 assert(!("options" in numberedResult.questions[0]!.content), "letter-only matching options are removed");
 
+const planResult = normalizeMapLabelPart(
+  "Questions 17-18\nLabel the plan below.\n17 Box office ........\n18 Cafe ........",
+  [17, 18].map((number, order) => ({ number, order, type: "MAP_LABELING", content: { stem: "", blank: true } })),
+);
+assert(planResult.questions.every((q) => q.content.variant === "PLAN_LABELING"), "plan instruction sets PLAN_LABELING");
+
+const diagramResult = normalizeMapLabelPart(
+  "Questions 38-39\nLabel the diagram below.\n38 Top layer ........\n39 Base ........",
+  [38, 39].map((number, order) => ({ number, order, type: "MAP_LABELING", content: { stem: "", blank: true } })),
+);
+assert(diagramResult.questions.every((q) => q.content.variant === "DIAGRAM_LABELING"), "diagram instruction sets DIAGRAM_LABELING");
+
 const unnumbered: QuestionDraft[] = [15, 16].map((number) => ({
   number,
   order: number - 15,

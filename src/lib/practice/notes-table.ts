@@ -15,13 +15,18 @@ const MD_TABLE_SEP = /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/;
 
 /**
  * Parse a GitHub-style markdown table (cells may contain `<br>` for line breaks).
+ *
+ * When the header row ends with `|`, a body row that does not is still open:
+ * the following lines are more lines of its last cell (bullets typed on new
+ * lines) until a line closes the row with `|`. A line that ended in a space
+ * was soft-wrapped mid-sentence, so it joins with a space instead of `<br>`.
  */
 export function parseMarkdownTable(text: string): NotesTable | null {
-  const lines = text
+  const rawLines = text
     .replace(/\r\n/g, "\n")
     .split("\n")
-    .map((l) => l.trim())
-    .filter(Boolean);
+    .filter((l) => l.trim());
+  const lines = rawLines.map((l) => l.trim());
   if (lines.length < 2) return null;
 
   const start = lines.findIndex((l) => l.includes("|"));
@@ -44,10 +49,16 @@ export function parseMarkdownTable(text: string): NotesTable | null {
   const headers = splitMdRow(headerLine);
   if (headers.length < 2) return null;
 
+  const closedRows = headerLine.endsWith("|");
   const rows: string[][] = [];
   for (let i = start + 2; i < lines.length; i++) {
-    const line = lines[i]!;
+    let line = lines[i]!;
     if (!line.includes("|")) break;
+    while (closedRows && !line.endsWith("|") && i + 1 < lines.length) {
+      const softWrap = /\s$/.test(rawLines[i]!);
+      i += 1;
+      line = `${line}${softWrap ? " " : "<br>"}${lines[i]!}`;
+    }
     const cells = splitMdRow(line);
     if (cells.length === 1 && !cells[0]) continue;
     // Pad / trim to header width

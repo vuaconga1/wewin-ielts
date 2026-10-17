@@ -3,6 +3,7 @@ import type { Prisma } from "@/generated/prisma/client";
 import type { ImportIssue, ParsedTestDraft } from "./schemas";
 import { canUsePrisma } from "@/lib/db";
 import { normalizeTestMapLabelLayouts } from "@/lib/questions/map-label-layout";
+import { invalidateTestCatalogCache } from "@/lib/store/test-store";
 
 export type PersistOptions = {
   /** Persist even if there are error-level issues (not recommended) */
@@ -166,6 +167,8 @@ export async function persistParsedTest(
         errors: issues.length ? issues : undefined,
       },
     });
+
+    invalidateTestCatalogCache();
 
     return {
       testId: test.id,

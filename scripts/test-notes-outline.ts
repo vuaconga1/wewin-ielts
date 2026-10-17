@@ -281,6 +281,56 @@ After 1865:
   );
   assert(outlineMarkerClass("plus").includes("notes-bullet-plus"), "plus marker class");
 
+  assert(
+    isNotesSubheading("Secondary lifting equipment (chains, slings, etc.)"),
+    "a heading with a trailing example list is still a heading",
+  );
+  assert(
+    !isNotesSubheading("Chains and slings (see 21) are checked"),
+    "a parenthesis with a digit does not make a heading",
+  );
+  const lifting = classifyOutlineNotes(`Preventing accidents with heavy loads
+[[b0]]use objects such as 20 ............... to make sure the load doesn't pass over anyone's head
+[[b0]]appoint a 21 ............... to give verbal directions to the crane driver
+Secondary lifting equipment (chains, slings, etc.)
+[[b0]]more likely to cause 22 ...............`);
+  const crane = lifting.find((line) => line.kind === "bullet" && /crane driver/.test(line.text));
+  assert(
+    crane?.kind === "bullet" && !/Secondary/.test(crane.text),
+    "C18 T1-R: the next heading is not glued onto the Q21 bullet",
+  );
+  assert(
+    lifting.some((line) => line.kind === "plain" && line.text === "Secondary lifting equipment (chains, slings, etc.)"),
+    "C18 T1-R: the secondary-equipment heading keeps its own line",
+  );
+
+  const conference = classifyOutlineNotes(`ORGANISING A BUSINESS CONFERENCE
+• ensure the programme fulfils delegates' requirements
+Venue and timing:
+• choose a place with a large hall and also 16 ............... spaces for smaller meetings
+Speakers:
+• choose appropriate speakers`);
+  assert(
+    conference.some((line) => line.kind === "plain" && line.text === "Venue and timing:") &&
+      conference.some((line) => line.kind === "plain" && line.text === "Speakers:"),
+    "C11 T3-R: section labels keep their own lines",
+  );
+  const workTime = classifyOutlineNotes(`Periods of availability include:
+[[b0]]a period at the workstation when the driver has some 26 ............... might count as a period of availability
+Periods of availability exclude:
+[[b0]]time spent stopping and starting the vehicle when 27 ............... causes delays`);
+  assert(
+    workTime.some((line) => line.kind === "plain" && line.text === "Periods of availability exclude:"),
+    "C12 T5-R: a capitalised lead-in ending in a colon is not glued onto the Q26 bullet",
+  );
+  const tail = classifyOutlineNotes(`• George Blum's cycling map
+showed:
+• the kind of 2 ..........`);
+  assert(
+    tail.some((line) => line.kind === "bullet" && /cycling map showed:/.test(line.text)),
+    "a lowercase wrapped tail ending in a colon still joins its bullet",
+  );
+
   const causeBullets = causes.filter((line) => line.kind === "bullet");
   assert(
     causeBullets.length === 2 &&

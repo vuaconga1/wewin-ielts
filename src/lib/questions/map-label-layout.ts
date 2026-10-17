@@ -18,6 +18,12 @@ function cleanLabel(value: string): string {
   return value.replace(BLANK_RE, "").trim();
 }
 
+function mapLayoutVariant(content: string): "MAP_LABELING" | "PLAN_LABELING" | "DIAGRAM_LABELING" {
+  if (/label\s+the\s+plan\s+below/i.test(content)) return "PLAN_LABELING";
+  if (/label\s+the\s+diagram\s+below/i.test(content)) return "DIAGRAM_LABELING";
+  return "MAP_LABELING";
+}
+
 /**
  * Canonical layout for IELTS map/plan/diagram labels:
  * `11. Rocks [input]` is one question row. The same row must not also remain
@@ -68,16 +74,18 @@ export function normalizeMapLabelPart(
     });
   }
 
+  const variant = mapLayoutVariant(content);
   const nextQuestions = questions.map((q) => {
     if (q.number < range.start || q.number > range.end) return q;
     const storedStem = cleanLabel(String((q.content as { stem?: unknown }).stem ?? ""));
     const label = labels.get(q.number) || storedStem;
     if (!label) return q;
-    const { options: _options, ...rest } = q.content as Record<string, unknown>;
+    const rest = { ...(q.content as Record<string, unknown>) };
+    delete rest.options;
     return {
       ...q,
       type: "MAP_LABELING" as const,
-      content: { ...rest, stem: `${label} _____`, blank: true, variant: "MAP_LABELING" },
+      content: { ...rest, stem: `${label} _____`, blank: true, variant },
     };
   });
 

@@ -478,6 +478,11 @@
     "networkError": "Không kết nối được máy chủ."
   },
   "practice": {
+    "answers": "Phần trả lời",
+    "enlargeFigure": "Phóng to hình",
+    "tapToEnlarge": "Chạm để phóng to",
+    "closeFigure": "Đóng",
+    "sentenceEndings": "Phần kết câu",
     "retryWrong": "Làm lại câu sai",
     "answered": "Đã trả lời {answered}/{total}",
     "saving": "· Đang lưu…",

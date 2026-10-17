@@ -153,12 +153,17 @@ export function isNotesSectionLabel(line: string): boolean {
   return words.length >= 1 && words.length <= 3;
 }
 
+/**
+ * A trailing example list such as "(chains, slings, etc.)" does not stop a
+ * label from being a heading; digits anywhere still do.
+ */
 export function isNotesSubheading(line: string): boolean {
-  const t = line.trim();
-  if (t.length < 8 || t.length > 70) return false;
+  const full = line.trim();
+  if (/\d/.test(full)) return false;
+  const t = full.replace(/\s*\([^()]{1,40}\)$/, "");
+  if (full.length < 8 || full.length > 70) return false;
   if (/[.!?,:;]/.test(t)) return false;
   if (!/^[A-Z]/.test(t)) return false;
-  if (/\d/.test(t)) return false;
   if (
     /^(questions?|write |choose |complete |match |reading |list of )/i.test(t)
   ) {
@@ -220,6 +225,11 @@ export function joinOrphanBullets(text: string): string {
   return out.join("\n");
 }
 
+/** "Venue and timing:" / "Periods of availability exclude:" introduce the next bullets. */
+function isCapitalisedLeadIn(text: string): boolean {
+  return /^[A-Z]/.test(text.trim()) && text.trim().endsWith(":");
+}
+
 function mergeWrappedBulletLines(lines: OutlineLine[]): OutlineLine[] {
   const out: OutlineLine[] = [];
   for (const line of lines) {
@@ -229,6 +239,7 @@ function mergeWrappedBulletLines(lines: OutlineLine[]): OutlineLine[] {
       prev?.kind === "bullet" &&
       !/[.?!]["']?$/.test(prev.text.trim()) &&
       !isNotesSubheading(line.text) &&
+      !isCapitalisedLeadIn(line.text) &&
       line.text.trim().length <= 80
     ) {
       prev.text = `${prev.text} ${line.text.trim()}`;

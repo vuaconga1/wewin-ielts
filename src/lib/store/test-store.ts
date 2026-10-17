@@ -6,7 +6,7 @@ import type { PassageHighlight } from "@/lib/practice/passage-highlights";
 import type { StoredAiScore } from "@/lib/ai/types";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
-import { revalidateTag, unstable_cache } from "next/cache";
+import { revalidatePath, revalidateTag, unstable_cache } from "next/cache";
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
@@ -55,10 +55,14 @@ const TESTS_CACHE_TTL_MS = 300_000;
 
 let testsCache: { data: StoredTest[]; expiresAt: number } | null = null;
 
-function invalidateTestsCache() {
+export function invalidateTestCatalogCache() {
   testsCache = null;
   try {
     revalidateTag("tests-catalog");
+    revalidatePath("/tests");
+    revalidatePath("/tests/general");
+    revalidatePath("/tests/academic");
+    revalidatePath("/tests/placement");
   } catch {
     /* outside request scope */
   }
@@ -289,7 +293,7 @@ export async function saveTestDraft(draft: ParsedTestDraft): Promise<StoredTest>
   const stored: StoredTest = { ...normalized, savedAt: new Date().toISOString() };
   const file = path.join(TESTS_DIR, `${draft.slug}.json`);
   await writeFile(file, JSON.stringify(stored, null, 2), "utf8");
-  invalidateTestsCache();
+  invalidateTestCatalogCache();
   return stored;
 }
 

@@ -54,12 +54,11 @@ export function partHasNumberedBlanks(
   return /(?<=\S)[\s(]\d{1,2}\s{2,}(?=[a-zA-Z(])/m.test(content);
 }
 
+/** One run of dots / underscores / ellipses is one blank, however long it is. */
 function blankMarkerCount(stem: string): number {
   const s = stem.trim();
   if (!s) return 0;
-  const unders = s.match(/_____/g)?.length ?? 0;
-  const dots = s.match(/(?:[.…_…]|\.){2,}|_{2,}|\u2026+/gu)?.length ?? 0;
-  return Math.max(unders, dots);
+  return s.match(/(?:[.…_…]|\.){2,}|_{2,}|\u2026+/gu)?.length ?? 0;
 }
 
 /**
@@ -106,9 +105,6 @@ export function isStandaloneSentenceGapStem(stem: string): boolean {
   ) {
     return false;
   }
-  // Notes row after the question number is stripped: "........ Newspapers & magazines".
-  // A sentence completion keeps words before the gap ("Clarence ________ in a store").
-  if (/^(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)/u.test(s)) return false;
   if (/^complete the (notes|form|table|summary|sentences)\b/i.test(s)) {
     return false;
   }
@@ -117,6 +113,11 @@ export function isStandaloneSentenceGapStem(stem: string): boolean {
     .trim()
     .split(/\s+/)
     .filter(Boolean);
+  // A leading gap is usually a notes / plan row ("........ Newspapers & magazines").
+  // It is a sentence only when a full clause follows ("______ are available to … easier.").
+  if (/^(?:(?:[.…_…]|\.){2,}|_{2,}|\u2026+)/u.test(s)) {
+    return words.length >= 4 && /[.?!]$/.test(s);
+  }
   return words.length >= 3;
 }
 

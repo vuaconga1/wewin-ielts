@@ -81,8 +81,6 @@ type ParenGroup = {
   start: number;
   end: number;
   inner: string;
-  /** No space before `(`, as in `word(other)`. */
-  glued: boolean;
 };
 
 function parseParenGroups(input: string): ParenGroup[] {
@@ -102,7 +100,6 @@ function parseParenGroups(input: string): ParenGroup[] {
       start: i,
       end: j,
       inner: input.slice(i + 1, j - 1),
-      glued: i > 0 && !/\s/.test(input[i - 1]!),
     });
     i = j - 1;
   }
@@ -110,12 +107,12 @@ function parseParenGroups(input: string): ParenGroup[] {
 }
 
 /**
- * Parentheses:
- * - `word(other)` (no space): `word` OR `other`. Concatenation is also
- *   accepted, but not required.
- * - `(the) royal antelope` / `20.25 (am)`: the bracketed word is optional.
- *   The phrase with and without it is correct; the optional word alone is not.
- * Empty groups are ignored. A slash inside a group is alternatives for that slot.
+ * Parentheses mark optional text, as in Cambridge keys:
+ * - `camera(s)` / `10(th) September` / `multi(-)coloured`: with or without
+ *   the bracketed letters.
+ * - `(the) royal antelope` / `20.25 (am)`: with or without the bracketed word.
+ * The bracketed text alone is never correct. Empty groups are ignored.
+ * A slash inside a group is alternatives for that slot.
  */
 function parenthesisForms(input: string): string[] {
   const groups = parseParenGroups(input);
@@ -143,14 +140,6 @@ function parenthesisForms(input: string): string[] {
     }
   };
   walk(0, "", 0);
-
-  for (const group of groups) {
-    if (!group.glued) continue;
-    for (const alt of splitTopLevelSlashes(group.inner)) {
-      const collapsed = collapseSpaces(alt);
-      if (collapsed) forms.push(collapsed);
-    }
-  }
   return forms;
 }
 

@@ -57,7 +57,7 @@ function isStandaloneBelowLine(line: string): boolean {
 function isBareQuestionHeadingLine(line: string): boolean {
   const t = line.trim();
   if (t.includes("[[")) return false;
-  return /^questions?\s+\d+\s*(?:[-–—]\s*\d+|\s+and\s+\d+)?\s*$/i.test(t);
+  return /^questions?\s+\d+\s*(?:[-–—]\s*\d+|\s+and\s+\d+)?\s*:?$/i.test(t);
 }
 
 /** Instruction lines that sit above the real passage, including split wraps. */
@@ -426,14 +426,77 @@ export function decorateReadingPassage(
   const prepared = prepareReadingPassageBody(passage, groups);
   if (!prepared.trim() || startsWithStructure(prepared)) return prepared;
   const lines = prepared.split("\n");
-  const found = findPassageTitle(lines);
-  let withTitle = prepared;
+  const leadIns = lines.flatMap((line, index) => (isTextLeadInLine(line) ? [index] : []));
+  if (!leadIns.length) return decorateOneText(lines, false);
+
+  const chunks: string[] = [];
+  const preface = lines.slice(0, leadIns[0]);
+  if (preface.some((line) => line.trim())) chunks.push(decorateOneText(preface, false));
+  leadIns.forEach((at, i) => {
+    chunks.push(`[[section]]${lines[at]!.trim()}[[/section]]`);
+    const body = lines.slice(at + 1, leadIns[i + 1] ?? lines.length);
+    if (body.some((line) => line.trim())) chunks.push(decorateOneText(body, true));
+  });
+  return chunks.join("\n\n");
+}
+
+/**
+ * "Read the text below and answer Questions 22–27." opens one of the texts
+ * of a General Training section.
+ */
+function isTextLeadInLine(line: string): boolean {
+  return /^read the (?:texts?|passages?|article|information|advertisements?|extracts?|notices?|reviews?|leaflet|letter)\b.*\bquestions?\s+\d+/i.test(
+    line.trim(),
+  );
+}
+
+/** Mark the title of one text and lay out its paragraphs. */
+function decorateOneText(lines: string[], afterLeadIn: boolean): string {
+  const found = findPassageTitle(lines) ?? (afterLeadIn ? titleAfterLeadIn(lines) : null);
+  const next = lines.slice();
   if (found && !lines[found.index]!.trim().startsWith("[[title]]")) {
-    const next = lines.slice();
     next[found.index] = `[[title]]${found.title}[[/title]]`;
-    withTitle = next.join("\n");
   }
-  return layoutReadingParagraphs(withTitle);
+  return layoutReadingParagraphs(next.join("\n").trim());
+}
+
+/**
+ * The short heading line right under a lead-in ("Hilton Laboratory",
+ * "Is Your Child at School Today?").
+ */
+function titleAfterLeadIn(lines: string[]): { index: number; title: string } | null {
+  const index = lines.findIndex((line) => line.trim());
+  if (index < 0) return null;
+  const first = lines[index]!.trim();
+  if (first.includes("[[") || first.length > TITLE_MAX) return null;
+  if (/[.!:]["'”’]?$/.test(first) || isParagraphOpener(first)) return null;
+  return { index, title: first };
+}
+
+/**
+ * Text 2 of a section ("Read the text below and answer Questions 22–27.",
+ * its title and body) sits between the questions of text 1 and its own
+ * "Questions 22–27" header. It belongs in the passage column.
+ */
+function liftLaterTexts(tasks: string): { texts: string[]; tasks: string } {
+  const lines = tasks.replace(/\r\n/g, "\n").split("\n");
+  const texts: string[] = [];
+  const kept: string[] = [];
+  for (let i = 0; i < lines.length; i += 1) {
+    if (!isTextLeadInLine(lines[i]!)) {
+      kept.push(lines[i]!);
+      continue;
+    }
+    let end = i + 1;
+    while (end < lines.length && !/^Questions?\s+\d+/i.test(lines[end]!.trim())) end += 1;
+    if (end >= lines.length) {
+      kept.push(lines[i]!);
+      continue;
+    }
+    texts.push(lines.slice(i, end).join("\n").trim());
+    i = end - 1;
+  }
+  return { texts, tasks: kept.join("\n").replace(/\n{3,}/g, "\n\n").trim() };
 }
 
 const ROMAN_HEADING_TOKENS = [
@@ -819,8 +882,13 @@ function nextContent(
  * YES / NO / NOT GIVEN printed as three words, then three "if…" lines, are
  * one gloss each.
  */
+/** "Look at the following statements (" + "Questions 28–31) and the list…" is one sentence. */
+function joinCutQuestionRange(text: string): string {
+  return text.replace(/\(\s*\n(?:\s*\n)*\s*(Questions?\s+\d{1,2}\s*[-–]\s*\d{1,2}\))/gi, "($1");
+}
+
 function joinWrappedPassageSentences(text: string): string {
-  const lines = text.replace(/\r\n/g, "\n").split("\n");
+  const lines = joinCutQuestionRange(text.replace(/\r\n/g, "\n")).split("\n");
   const out: string[] = [];
   for (let i = 0; i < lines.length; i += 1) {
     const t = lines[i]!.trim();
@@ -1032,7 +1100,14 @@ function shortLetterRuns(
       expected = String.fromCharCode(expected.charCodeAt(0) + 1);
     }
     if (options.length < 3) continue;
-    const before = lines.slice(Math.max(0, i - 40), i).join("\n");
+    let from = Math.max(0, i - 40);
+    for (let k = i - 1; k >= from; k -= 1) {
+      if (/^Questions?\s+\d/i.test(lines[k]!.trim())) {
+        from = k;
+        break;
+      }
+    }
+    const before = lines.slice(from, i).join("\n");
     runs.push({ options, numbers: inlineBlankNumbers(before) });
     i = j;
   }
@@ -1593,9 +1668,10 @@ export function splitReadingPassageAndTasks(content: string): {
     }
   }
   const split = pullEmbeddedPassage(passage, tasks);
+  const later = liftLaterTexts(split.tasks);
   return {
-    passage: stripPassageChrome(split.passage),
-    tasks: joinWrappedPassageSentences(split.tasks),
+    passage: stripPassageChrome([split.passage, ...later.texts].join("\n\n")),
+    tasks: joinWrappedPassageSentences(later.tasks),
   };
 }
 
@@ -1613,11 +1689,12 @@ function isInstructionLine(line: string): boolean {
   const t = line.trim();
   if (!t) return false;
   if (/^Questions?\s+\d+/i.test(t)) return false;
+  if (lineHasInlineBlank(t)) return false;
   if (/^example\s+(?:paragraph|section)\s+[A-I]\b/i.test(t)) return true;
   if (/^White your answers\b/i.test(t)) return true;
   if (/^(NB|Note)\b/i.test(t)) return true;
   if (
-    /^(Do the following|In boxes|Write |Choose |Complete |Match |Matching\b|Look at|Reading Passage|Read the |Now read |Answer the questions|According to |Which paragraph|Which section|Which types|TRUE\s*\/\s*FALSE|YES\s*\/\s*NO)/i.test(
+    /^(Do the following|In boxes|Write |Choose |Complete |Label |Match |Matching\b|Look at|Reading Passage|Read the |Now read |Answer the questions|According to |Which paragraph|Which section|Which types|TRUE\s*\/\s*FALSE|YES\s*\/\s*NO)/i.test(
       t,
     )
   ) {
@@ -1712,7 +1789,11 @@ function isEmbeddedQuestionRangeReference(rest: string): boolean {
  *   "Questions 27 and 28"
  */
 export function matchQuestionGroupHeader(line: string): HeaderMatch | null {
-  const t = line.trim().replace(/\t+/g, " ").replace(/\s+/g, " ");
+  const t = line
+    .trim()
+    .replace(/\t+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/^(Questions?\s+\d+(?:\s*[-–—]\s*\d+|\s+and\s+\d+)?)\s*:$/i, "$1");
   if (!t) return null;
 
   let m = t.match(/^Questions?\s+(\d+)\s*[-–—]\s*(\d+)\b(.*)$/i);
@@ -1898,6 +1979,25 @@ export function parseReadingQuestionGroups(
       if (lineHasInlineBlank(t)) {
         noteLines.push(raw);
         continue;
+      }
+      // Older imports can leave a question stem empty while retaining the
+      // complete numbered question in part.content (for example,
+      // "9 What is the smallest species …?"). Recover that text for the
+      // prompt row instead of rendering only "9 ____". Numbered notes with
+      // real blank marks were handled above and remain in the notes block.
+      const numbered = t.match(/^(\d{1,2})[.)]?\s+(\S[\s\S]*)$/);
+      if (numbered) {
+        const number = Number(numbered[1]);
+        const stored = rawStemByNumber.get(number) ?? "";
+        if (
+          number >= current.start &&
+          number <= current.end &&
+          questionNumbers.has(number) &&
+          (!stored || looksLikeRedundantGapStem(stored))
+        ) {
+          sentenceStems[number] = numbered[2]!.trim();
+          continue;
+        }
       }
       if (isDuplicateStemLine(t, stemByNumber)) continue;
       // Option banks are rendered once beside the dropdowns, not inside notes.

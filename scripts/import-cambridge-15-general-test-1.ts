@@ -37,7 +37,7 @@ const listeningAnswers = [
   "Jamieson", "afternoon", "communication", "week", "10", "suit", "passport", "personality", "feedback", "time",
 ];
 
-function listeningDraft(audioUrls: string[]): ParsedTestDraft {
+export function listeningDraft(audioUrls: string[]): ParsedTestDraft {
   const traits = ["outgoing", "selfish", "independent", "attention-seeking", "introverted", "co-operative", "caring", "competitive"]
     .map((text, i) => option(String.fromCharCode(65 + i), text));
   const sections = [
@@ -205,7 +205,7 @@ F — After 1850 surface gold largely disappeared. Mining was difficult and dang
 
 G — Gold production peaked in 1852 at about $81 million, then declined to around $45 million annually by 1857. Settlement continued, and California’s population reached 380,000 by the end of the decade.`;
 
-function readingDraft(): ParsedTestDraft {
+export function readingDraft(): ParsedTestDraft {
   const cookers = ["Ezy Rice Cooker", "Family Rice Cooker", "Mini Rice Cooker", "VPN Rice Cooker", "S16 Rice Cooker"].map((t,i)=>option(String.fromCharCode(65+i),t));
   const sections = [
     { title: "Section 1", order: 0, content: section1Text, questions: [
@@ -242,8 +242,8 @@ function readingDraft(): ParsedTestDraft {
   return { title: "Cambridge IELTS 15 General Training — Test 1 Reading", slug: "cambridge-ielts-15-general-test-1-reading", skill: "READING", examType: "GENERAL", timeLimitMinutes: 60, tags: ["#IELTS General", "#Reading", "#Cambridge 15", "#Test 1"], sourceFolder: SOURCE, description: "Cambridge IELTS 15 General Training, Test 1 — Reading.", parts: sections };
 }
 
-function writingDraft(): ParsedTestDraft {
-  const task1 = `You should spend about 20 minutes on this task.\n\nA friend of yours is thinking of going on a camping holiday for the first time this summer. He/She has asked for your advice.\n\nWrite a letter to your friend. In your letter:\n• explain why you think your friend would enjoy a camping holiday\n• describe some possible disadvantages\n• say whether you would like to go camping with your friend this summer\n\nWrite at least 150 words. You do NOT need to write any addresses.\n\nBegin your letter as follows:\nDear …,`;
+export function writingDraft(): ParsedTestDraft {
+  const task1 = `You should spend about 20 minutes on this task.\n\nA friend of yours is thinking of going on a camping holiday for the first time this summer. He/She has asked for your advice.\n\nWrite a letter to your friend. In your letter:\n• explain why you think your friend would enjoy a camping holiday\n• describe some possible disadvantages\n• say whether you would like to go camping with your friend this summer\n\nWrite at least 150 words. You do NOT need to write any addresses.\n\nBegin your letter as follows:\nDear ……………,`;
   const task2 = `You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nIn many countries today, crime novels and TV crime dramas are becoming more and more popular.\n\nWhy do you think these books and TV shows are popular? What is your opinion of crime fiction and TV crime dramas?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.`;
   return { title: "Cambridge IELTS 15 General Training — Test 1 Writing", slug: "cambridge-ielts-15-general-test-1-writing", skill: "WRITING", examType: "GENERAL", timeLimitMinutes: 60, tags: ["#IELTS General", "#Writing", "#Cambridge 15", "#Test 1"], sourceFolder: SOURCE, description: "Cambridge IELTS 15 General Training, Test 1 — Writing.", parts: [
     { title: "Writing Task 1", order: 0, content: task1, questions: [{ number: 1, order: 0, type: "ESSAY", content: { stem: task1, minWords: 150, variant: "WRITING_GENERAL_LETTER" } }] },
@@ -251,11 +251,11 @@ function writingDraft(): ParsedTestDraft {
   ]};
 }
 
-function speakingDraft(): ParsedTestDraft {
+export function speakingDraft(): ParsedTestDraft {
   const prompt = (number: number, stem: string, variant: string): QuestionDraft => ({ number, order: number - 1, type: "SPEAKING_PROMPT", content: { stem, variant } });
   return { title: "Cambridge IELTS 15 General Training — Test 1 Speaking", slug: "cambridge-ielts-15-general-test-1-speaking", skill: "SPEAKING", examType: "GENERAL", timeLimitMinutes: 14, tags: ["#IELTS General", "#Speaking", "#Cambridge 15", "#Test 1"], sourceFolder: SOURCE, description: "Cambridge IELTS 15, Test 1 — Speaking.", parts: [
     { title: "Part 1 — Email", order: 0, content: "The examiner asks about yourself, your home, work or studies, and email.", questions: [prompt(1, "What kinds of emails do you receive about your work or studies?", "SPEAKING_PART_1"), prompt(2, "Do you prefer to email, phone or text your friends? Why?", "SPEAKING_PART_1"), prompt(3, "Do you reply to emails and messages as soon as you receive them? Why or why not?", "SPEAKING_PART_1"), prompt(4, "Are you happy to receive emails that advertise things? Why or why not?", "SPEAKING_PART_1")] },
-    { title: "Part 2 — A hotel", order: 1, content: "You have one minute to prepare. Speak for one to two minutes.", questions: [prompt(5, "Describe a hotel that you know. You should say: where this hotel is; what this hotel looks like; what facilities this hotel has; and explain whether you think this is a nice hotel to stay in.", "SPEAKING_PART_2_CUE_CARD")] },
+    { title: "Part 2 — A hotel", order: 1, content: "You have one minute to prepare. Speak for one to two minutes.", questions: [prompt(5, "Describe a hotel that you know.\nYou should say:\n• where this hotel is\n• what this hotel looks like\n• what facilities this hotel has\nand explain whether you think this is a nice hotel to stay in.", "SPEAKING_PART_2")] },
     { title: "Part 3 — Hotels", order: 2, content: "Discussion topics: staying and working in hotels.", questions: [prompt(6, "What things are important when people choose a hotel?", "SPEAKING_PART_3"), prompt(7, "Why do some people not like staying in hotels?", "SPEAKING_PART_3"), prompt(8, "Do you think staying in a luxury hotel is a waste of money?", "SPEAKING_PART_3"), prompt(9, "Is working in a hotel a good career for life?", "SPEAKING_PART_3"), prompt(10, "How is working in a big hotel different from working in a small hotel?", "SPEAKING_PART_3"), prompt(11, "What skills are needed to be a successful hotel manager?", "SPEAKING_PART_3")] },
   ]};
 }
@@ -299,4 +299,6 @@ async function main() {
   }
 }
 
-main().catch((error) => { console.error(error); process.exit(1); });
+if (!process.env.C15_LIBRARY_ONLY) {
+  main().catch((error) => { console.error(error); process.exit(1); });
+}

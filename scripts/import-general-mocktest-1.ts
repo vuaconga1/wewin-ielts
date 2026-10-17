@@ -13,6 +13,7 @@ import { copyFile, mkdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import type { ParsedTestDraft, QuestionDraft } from "../src/lib/import/schemas";
+import { normalizePublishedMockDraft } from "../src/lib/import/normalize-mock-tests";
 
 const ROOT = path.resolve(__dirname, "..");
 const SRC = path.resolve(
@@ -471,7 +472,7 @@ async function main() {
   if (!process.argv.includes("--skip-upload")) {
     await uploadAudio(audioUrls);
   }
-  const drafts = buildDrafts(audioUrls);
+  const drafts = buildDrafts(audioUrls).map(normalizePublishedMockDraft);
   const { saveTestDraft } = await import("../src/lib/store/test-store");
   const { persistParsedTest } = await import("../src/lib/import/persist");
 

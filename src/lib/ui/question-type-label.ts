@@ -145,7 +145,9 @@ export const isRedundantGapStem = looksLikeRedundantGapStem;
  * Render contract: hide a gap stem only when it is a notes fragment already
  * shown in the shared notes pane. A sentence with one blank ("… _______ …")
  * stays on the answer row. Do not hide it merely because the stem contains
- * underscores. See scripts/test-sentence-gap-layout.ts.
+ * underscores. A map/plan label ("maze _____") is the question itself, even
+ * in lower case. See scripts/test-sentence-gap-layout.ts and
+ * scripts/test-left-right-contract.ts.
  */
 export function shouldHideStemBesideNotes(input: {
   compactStem: boolean;
@@ -155,6 +157,11 @@ export function shouldHideStemBesideNotes(input: {
 }): boolean {
   if (!input.compactStem) return false;
   if (!isBlankQuestionType(input.questionType)) return false;
+  // SHORT_ANSWER text is the question itself, not a fragment of shared notes.
+  // The legacy published Bovids seed has five lower-case matching statements
+  // that were otherwise mistaken for sliding-window imports and hidden.
+  if (input.questionType === "SHORT_ANSWER") return false;
+  if (input.questionType === "MAP_LABELING") return false;
   if (input.optionCount >= 2) return false;
   const formatted = formatQuestionStem(input.stem);
   if (

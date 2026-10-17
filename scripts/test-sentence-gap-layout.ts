@@ -9,6 +9,8 @@ import { findInlineBlankNumbers } from "../src/components/practice/inline-notes-
 import { parseQuestionsFromPartBody } from "../src/lib/import/parse-questions";
 import { parseReadingQuestionGroups } from "../src/lib/practice/reading-content";
 import {
+  isStandaloneSentenceGapStem,
+  perQuestionSentenceStem,
   resolveGapDisplayStem,
   sanitizePartGapStems,
 } from "../src/lib/questions/gap-stems";
@@ -225,6 +227,83 @@ Complete the sentences below.
   };
   const cleared = sanitizePartGapStems("Section 1", 0, NOTES, [window]);
   assert(cleared.cleared === 1, "sliding-window stems are still cleared");
+
+  // C11 T1-R Q22–27: a 14-underscore gap is ONE blank, and a sentence that
+  // starts with the gap is still that question's sentence.
+  const longGaps = `
+Questions 22-27
+Complete the sentences below.
+Choose NO MORE THAN TWO WORDS from the text for each answer.
+22 There are certain places in the building that staff should avoid unless they have ______________ .
+23 To ensure people can get out easily, it is important that there are no ______________ to exits.
+26 ______________ are available to make tasks which require moving objects easier.
+27 You should have ______________ while you are working.
+`.trim();
+  assert(
+    perQuestionSentenceStem(
+      "22 There are certain places in the building that staff should avoid unless they have ______________ .",
+    )?.number === 22,
+    "a long underscore run counts as one blank",
+  );
+  assert(
+    !isStandaloneSentenceGapStem("A ______ and a ______ were found."),
+    "two separate gaps are still two blanks",
+  );
+  assert(
+    !isStandaloneSentenceGapStem("........ Newspapers & magazines"),
+    "a short label row after a leading gap is not a sentence",
+  );
+  assert(
+    !isStandaloneSentenceGapStem("........ Teacher-led discussion"),
+    "a timetable row after a leading gap is not a sentence",
+  );
+  const longGroup = parseReadingQuestionGroups(
+    longGaps,
+    [22, 23, 26, 27].map((n) => ({ number: n, type: "GAP_FILL", content: { stem: "", blank: true } })),
+  )[0]!;
+  for (const n of [22, 23, 26, 27]) {
+    assert(longGroup.sentenceStems[n], `Q${n} sentence with a long gap is lifted out of notes`);
+  }
+  assert(!/______________/.test(longGroup.notes), "long-gap sentences are not left as static notes");
+  assert(
+    longGroup.sentenceStems[26]!.startsWith("______________ are available"),
+    "a sentence that starts with the gap keeps its words",
+  );
+
+  // Legacy published Reading seed (Bovids): Q9–13 were imported with empty
+  // stems even though the complete short-answer questions remain in the task
+  // text. They must be recovered for the prompt pane, not reduced to "9 ___".
+  const shortAnswers = `
+Questions 9-13
+Answer the questions below.
+Choose NO MORE THAN THREE WORDS from the passage for each answer.
+Write your answers in boxes 9-13 on your answer sheet.
+9 What is the smallest species of Bovid called?
+10 Which species of Bovinae has now died out?
+11 What facilitates the movement of the sitatunga over wetland?
+12 What sort of terrain do barbary sheep live in?
+13 What is the only living member of the Antilocapridae sub-family?
+`.trim();
+  const shortGroup = parseReadingQuestionGroups(
+    shortAnswers,
+    [9, 10, 11, 12, 13].map((n) => ({
+      number: n,
+      type: "GAP_FILL",
+      content: { stem: "", blank: true },
+    })),
+  )[0]!;
+  assert(
+    shortGroup.sentenceStems[9] === "What is the smallest species of Bovid called?",
+    "an empty legacy stem is recovered from a numbered short-answer question",
+  );
+  assert(
+    shortGroup.sentenceStems[13]?.includes("Antilocapridae"),
+    "the last numbered short-answer question is recovered",
+  );
+  assert(
+    !/smallest species|Antilocapridae/.test(shortGroup.notes),
+    "recovered short-answer questions are not duplicated as static notes",
+  );
 
   console.log("OK  sentence-gap layout");
 }

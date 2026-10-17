@@ -68,7 +68,7 @@ function base(test: number, skill: ParsedTestDraft["skill"]): Omit<ParsedTestDra
 
 const MAP2 = "/uploads/images/cambridge-15-general/test-2-minster-park.jpg";
 
-function listening2(audio: string[]): ParsedTestDraft {
+export function listening2(audio: string[]): ParsedTestDraft {
   const topics = letters(["poverty", "education", "Dickens’s travels", "entertainment", "crime and the law", "wealth", "medicine", "a woman’s life"]);
   const mapOptions = "ABCDEFGHI".split("").map((label) => option(label, label));
   const mapItem = (number: number, answer: string): QuestionDraft => ({
@@ -155,12 +155,12 @@ Questions 25–30
 What topic do Cathy and Graham choose to illustrate with each novel?
 Choose SIX answers from the box and write the correct letter, A–H, next to questions 25–30.
 
-25 The Pickwick Papers ${BLANK}
-26 Oliver Twist ${BLANK}
-27 Nicholas Nickleby ${BLANK}
-28 Martin Chuzzlewit ${BLANK}
-29 Bleak House ${BLANK}
-30 Little Dorrit ${BLANK}`,
+25 The Pickwick Papers
+26 Oliver Twist
+27 Nicholas Nickleby
+28 Martin Chuzzlewit
+29 Bleak House
+30 Little Dorrit`,
         questions: [
           ...chooseTwo(21, "Which TWO groups of people is the display primarily intended for?", ["students from the English department", "residents of the local area", "the university’s teaching staff", "potential new students", "students from other departments"], ["B", "D"]),
           ...chooseTwo(23, "What are Cathy and Graham’s TWO reasons for choosing the novelist Charles Dickens?", ["His speeches inspired others to try to improve society.", "He used his publications to draw attention to social problems.", "His novels are well-known now.", "He was consulted on a number of social issues.", "His reputation has changed in recent times."], ["B", "C"]),
@@ -211,7 +211,7 @@ Evaluation and lessons learned
   };
 }
 
-function listening3(audio: string[]): ParsedTestDraft {
+export function listening3(audio: string[]): ParsedTestDraft {
   const hazel = letters([
     "She will definitely look for a suitable article.",
     "She may look for a suitable article.",
@@ -309,10 +309,10 @@ Questions 27–30
 What does Hazel decide to do about each of the following types of articles?
 Write the correct letter, A, B or C, next to questions 27–30.
 
-27 national news item ${BLANK}
-28 editorial ${BLANK}
-29 human interest ${BLANK}
-30 arts ${BLANK}`,
+27 national news item
+28 editorial
+29 human interest
+30 arts`,
         questions: [
           gap(21, "page"), gap(22, "size"), gap(23, "graphic", ["graphic", "graphics"]),
           gap(24, "structure"), gap(25, "purpose"), gap(26, "assumption", ["assumption", "assumptions"]),
@@ -495,13 +495,23 @@ Knowing where the eggs go will allow conservationists and law enforcement agents
 Questions 28–33
 The text has six sections, A–F.
 Choose the correct heading for each section from the list of headings below.
+Write the correct number, i–vii, in boxes 28–33 on your answer sheet.
 
-28 Section A ${BLANK}
-29 Section B ${BLANK}
-30 Section C ${BLANK}
-31 Section D ${BLANK}
-32 Section E ${BLANK}
-33 Section F ${BLANK}
+List of Headings
+i Developing an item that appears true to life
+ii Extending the project to other endangered species
+iii A short but intensive investigation with longer-term follow-up
+iv Problems facing sea turtles at a global level
+v Collection of eggs and their possible onward routes
+vi Intensive and large-scale poaching in one location
+vii Why catching the poachers may not solve the problem
+
+28 Section A
+29 Section B
+30 Section C
+31 Section D
+32 Section E
+33 Section F
 
 Questions 34–37
 Choose the correct letter, A, B, C or D.
@@ -514,7 +524,7 @@ Making convincing sea turtle eggs
 
 One difficulty in creating a fake sea turtle egg is to get the appropriate texture for the shell. Unlike a bird’s egg, a turtle’s egg has a shell which is 38 ${BLANK}. Lauren Wilde has studied eggs from Californian turtles that live on 39 ${BLANK} to create a realistic reproduction of the shell. A GPS device will then be placed inside a 40 ${BLANK} in the fake shell. Finally, silicone will be applied to the shell to make it waterproof.`;
 
-function reading2(): ParsedTestDraft {
+export function reading2(): ParsedTestDraft {
   const museums = letters(["Whittlesey Museum", "Octavia Hill’s Birthplace House", "Chatteris Museum", "March and District Museum", "Wisbech and Fenland Museum"]);
   const headings = romans([
     "Developing an item that appears true to life",
@@ -580,7 +590,7 @@ function reading2(): ParsedTestDraft {
   };
 }
 
-function writing2(): ParsedTestDraft {
+export function writing2(): ParsedTestDraft {
   const task1 = `You should spend about 20 minutes on this task.
 
 A museum near your home is looking for people to do part-time voluntary/unpaid work. You would like to do some voluntary/unpaid work at the museum.
@@ -618,7 +628,7 @@ Write at least 250 words.`;
   };
 }
 
-function speaking2(): ParsedTestDraft {
+export function speaking2(): ParsedTestDraft {
   let n = 1;
   const prompt = (stem: string, variant: string): QuestionDraft => ({ number: n, order: n++ - 1, type: "SPEAKING_PROMPT", content: { stem, variant } });
   return {
@@ -631,7 +641,7 @@ function speaking2(): ParsedTestDraft {
         prompt("What do you think would be the hardest language for you to learn? [Why?]", "SPEAKING_PART_1"),
       ]},
       { title: "Part 2", order: 1, content: "You will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say.", questions: [
-        prompt("Describe a website that you bought something from. You should say: what the website is; what you bought from this website; how satisfied you were with what you bought; and explain what you liked or disliked about using this website.", "SPEAKING_PART_2"),
+        prompt("Describe a website that you bought something from.\nYou should say:\n• what the website is\n• what you bought from this website\n• how satisfied you were with what you bought\nand explain what you liked or disliked about using this website.", "SPEAKING_PART_2"),
       ]},
       { title: "Part 3", order: 2, content: "Discussion topics: shopping online, and the culture of consumerism.", questions: [
         prompt("What kinds of things do people in your country often buy from online shops?", "SPEAKING_PART_3"),
@@ -647,7 +657,7 @@ function speaking2(): ParsedTestDraft {
 
 const MAP4 = "/uploads/images/cambridge-15-general/test-4-croft-valley-park.jpg";
 
-function listening4(audio: string[]): ParsedTestDraft {
+export function listening4(audio: string[]): ParsedTestDraft {
   const mapOptions = "ABCDEFGH".split("").map((label) => option(label, label));
   const mapItem = (number: number, answer: string): QuestionDraft => ({
     number, order: number - 1, type: "MAP_LABELING",
@@ -708,8 +718,8 @@ Questions 19 and 20
 Choose TWO letters, A–E.`,
         questions: [
           mapItem(11, "D"), mapItem(12, "C"), mapItem(13, "G"), mapItem(14, "H"), mapItem(15, "A"), mapItem(16, "E"),
-          ...chooseTwo(17, "What does the speaker say about the adventure playground?", ["Children must be supervised.", "It costs more in winter.", "Some activities are only for younger children.", "No payment is required.", "It was recently expanded."], ["A", "D"]),
-          ...chooseTwo(19, "What does the speaker say about the glass houses?", ["They are closed at weekends.", "Volunteers are needed to work there.", "They were badly damaged by fire.", "More money is needed to repair some of the glass.", "Visitors can see palm trees from tropical regions."], ["A", "C"]),
+          ...chooseTwo(17, "Which TWO statements does the speaker make about the adventure playground?", ["Children must be supervised.", "It costs more in winter.", "Some activities are only for younger children.", "No payment is required.", "It was recently expanded."], ["A", "D"]),
+          ...chooseTwo(19, "Which TWO statements does the speaker make about the glass houses?", ["They are closed at weekends.", "Volunteers are needed to work there.", "They were badly damaged by fire.", "More money is needed to repair some of the glass.", "Visitors can see palm trees from tropical regions."], ["A", "C"]),
         ],
       },
       {
@@ -723,12 +733,12 @@ Questions 25–30
 Who is going to do research into each topic?
 Write the correct letter, A, B or C, next to questions 25–30.
 
-25 the goods that are refrigerated ${BLANK}
-26 the effects on health ${BLANK}
-27 the impact on food producers ${BLANK}
-28 the impact on cities ${BLANK}
-29 refrigerated transport ${BLANK}
-30 domestic fridges ${BLANK}`,
+25 the goods that are refrigerated
+26 the effects on health
+27 the impact on food producers
+28 the impact on cities
+29 refrigerated transport
+30 domestic fridges`,
         questions: [
           mcq(21, "What did Annie discover from reading about icehouses?", ["why they were first created", "how the ice was kept frozen", "where they were located"], "B"),
           mcq(22, "What point does Annie make about refrigeration in ancient Rome?", ["It became a commercial business.", "It used snow from nearby.", "It took a long time to become popular."], "A"),
@@ -835,4 +845,6 @@ async function main() {
   }
 }
 
-main().catch((error) => { console.error(error); process.exit(1); });
+if (!process.env.C15_LIBRARY_ONLY) {
+  main().catch((error) => { console.error(error); process.exit(1); });
+}

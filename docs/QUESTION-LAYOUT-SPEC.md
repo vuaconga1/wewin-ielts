@@ -102,6 +102,16 @@ Chấp nhận `A`, `A.`, `A)`. Không gộp nhiều lựa chọn trên một dò
 - Không lặp lại cùng một câu ở hai chỗ.
 - Không dịch hay sửa nội dung đề.
 
+### 1.8. Layout khi làm bài: trái để đọc, phải để trả lời
+
+Quy tắc bắt buộc cho trang làm bài Listening và Reading, với **mọi dạng câu hỏi**:
+
+- **Cột trái chỉ để đọc**: bài đọc (Reading), toàn bộ đề câu hỏi (notes, bảng, flow chart, ảnh map, câu điền từ, MCQ, danh sách lựa chọn, headings…). Chỗ trống hiện là số câu + `______`.
+- **Cột phải chỉ có cột ANSWERS**: mỗi câu đúng một ô, đánh số liên tục. Điền từ = ô text; MCQ / matching / map / TFNG = dropdown chọn chữ cái hoặc giá trị; "Choose TWO" = mỗi số câu một ô.
+- **Tuyệt đối không** có ô nhập, dropdown, radio hay checkbox ở cột trái, kể cả ô nằm trong câu hoặc danh sách ô bên dưới nhóm câu.
+- Mỗi câu chỉ có **một** chỗ nhập đáp án duy nhất (ở cột phải).
+- Mobile: hai cột xếp chồng, nhưng phần đề vẫn chỉ để đọc và ANSWERS vẫn là khối riêng.
+
 ---
 
 ## 2. Bảng tổng hợp dạng câu hỏi
@@ -328,6 +338,9 @@ Write the correct letter, A–I, next to Questions 15–20.
 19 children's play area
 20 picnic area
 ```
+
+- Riêng **Listening có ảnh bản đồ/sơ đồ**: cột trái chỉ giữ instruction và ảnh lớn; các nhãn ngắn chuyển sang cột **ANSWERS**, cùng hàng với dropdown, ví dụ `15. Scarecrow [dropdown]`.
+- Không áp dụng ngoại lệ này cho Reading hoặc câu Listening không gắn ảnh.
 
 **Dạng điền chữ vào bản đồ:**
 

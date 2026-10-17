@@ -947,7 +947,8 @@ function extractNumberedStatements(
       .replace(new RegExp(`\\b${number}\\b\\s*[.…_…]{2,}.*$`, "u"), "")
       .replace(/\s*[.…_…]{2,}\s*$/u, "")
       .trim();
-    if (!stem || stem.length < 3) continue;
+    // Two-letter matching items such as country codes ("29 UK") are real stems.
+    if (!stem || (stem.length < 3 && !(hint === "MATCHING" && /^[A-Z]{2}$/.test(stem)))) continue;
     if (bankTexts.has(stem.toLowerCase())) continue;
     // Pure blank markers left after strip — not a statement stem
     if (/^[.…_…_\s]+$/u.test(stem)) continue;

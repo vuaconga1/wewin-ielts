@@ -478,6 +478,11 @@
     "networkError": "Could not reach the server."
   },
   "practice": {
+    "answers": "Answers",
+    "enlargeFigure": "Enlarge figure",
+    "tapToEnlarge": "Tap to enlarge",
+    "closeFigure": "Close",
+    "sentenceEndings": "Sentence endings",
     "retryWrong": "Retry wrong answers",
     "answered": "Answered {answered}/{total}",
     "saving": "· Saving…",
