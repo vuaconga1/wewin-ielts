@@ -7,7 +7,7 @@ import type { StoredAiScore } from "@/lib/ai/types";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
 import { revalidatePath, revalidateTag, unstable_cache } from "next/cache";
-import { canUsePrisma } from "@/lib/db";
+import { canUsePrisma, isDbConfigured } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
 
@@ -220,19 +220,30 @@ function prismaTestToStored(
   };
 }
 
-async function listTestsFromPrisma(): Promise<StoredTest[] | null> {
-  if (!(await canUsePrisma())) return null;
-  try {
-    const rows = await prisma.test.findMany({
-      where: { status: { in: ["PUBLISHED", "DRAFT"] } },
-      include: testListInclude,
-      orderBy: { updatedAt: "desc" },
-    });
-    if (!rows.length) return null;
-    return rows.map(prismaTestToStored);
-  } catch {
-    return null;
+const CATALOG_DB_ATTEMPTS = 3;
+
+/**
+ * Throws when the DB stays unreachable, so a Neon cold start never gets
+ * cached as the (much smaller) bundled JSON catalog.
+ */
+async function listTestsFromPrisma(): Promise<StoredTest[]> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= CATALOG_DB_ATTEMPTS; attempt += 1) {
+    try {
+      const rows = await prisma.test.findMany({
+        where: { status: { in: ["PUBLISHED", "DRAFT"] } },
+        include: testListInclude,
+        orderBy: { updatedAt: "desc" },
+      });
+      return rows.map(prismaTestToStored);
+    } catch (error) {
+      lastError = error;
+      if (attempt < CATALOG_DB_ATTEMPTS) {
+        await new Promise((resolve) => setTimeout(resolve, attempt * 1_000));
+      }
+    }
   }
+  throw lastError;
 }
 
 async function getTestFromPrisma(slug: string): Promise<StoredTest | null> {
@@ -319,14 +330,24 @@ export async function listTests(): Promise<StoredTest[]> {
     return structuredClone(testsCache.data);
   }
 
-  const tests = await unstable_cache(
-    async () => {
-      const fromDb = await listTestsFromPrisma();
-      return fromDb ?? (await listTestsFromFs());
-    },
-    ["tests-catalog-list-v7"],
-    { revalidate: 300, tags: ["tests-catalog"] },
-  )();
+  let tests: StoredTest[];
+  try {
+    tests = await unstable_cache(
+      async () => {
+        if (!(await isDbConfigured())) return listTestsFromFs();
+        const fromDb = await listTestsFromPrisma();
+        return fromDb.length ? fromDb : listTestsFromFs();
+      },
+      ["tests-catalog-list-v8"],
+      { revalidate: 300, tags: ["tests-catalog"] },
+    )();
+  } catch (error) {
+    if (testsCache) return structuredClone(testsCache.data);
+    if (process.env.NEXT_PHASE === "phase-production-build") {
+      return listTestsFromFs();
+    }
+    throw error;
+  }
 
   testsCache = {
     data: structuredClone(tests),
