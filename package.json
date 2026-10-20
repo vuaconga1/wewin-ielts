@@ -20,6 +20,7 @@
     "test:letter-range": "tsx scripts/test-letter-range.ts",
     "test:dictation-scoring": "tsx scripts/test-dictation-scoring.ts",
     "test:fill-blank-scoring": "tsx scripts/test-fill-blank-scoring.ts",
+    "test:listen-answer-scoring": "tsx scripts/test-listen-answer-scoring.ts",
     "test:shadowing-scoring": "tsx scripts/test-shadowing-scoring.ts",
     "test:notes-table": "tsx scripts/test-notes-table.ts",
     "test:reading-multi-passage": "tsx scripts/test-reading-multi-passage.ts",

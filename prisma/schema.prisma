@@ -282,6 +282,8 @@ enum DictationMode {
   FULL_TEXT
   /// Learner fills teacher-selected gaps in the transcript
   FILL_BLANK
+  /// Learner answers short questions about the audio (rule-based keyword grading)
+  QUESTION_ANSWER
 }
 
 /// Short audio + transcript; transcript never leaves the server before submit.
@@ -297,6 +299,8 @@ model DictationExercise {
   mode         DictationMode @default(FULL_TEXT)
   /// FILL_BLANK only: FillBlankGap[] — { id, startToken, endToken (exclusive), acceptedAnswers? }
   gaps         Json?
+  /// QUESTION_ANSWER only: ListenQuestion[] — { id, prompt, answers, match, rejectAnswers?, maxWords? }
+  questions    Json?
   /// { maxListenCount: number | null, playbackRates: number[], scoringMode: "LEARNING" }
   settings     Json?
   status       TestStatus    @default(PUBLISHED)
@@ -326,10 +330,12 @@ model DictationAttempt {
   /// DictationWordResult[] — correct | missing | extra | incorrect
   wordResults      Json?
   errorSummary     Json?
-  /// FILL_BLANK only: { [gapId]: string }
+  /// FILL_BLANK / QUESTION_ANSWER: { [gapId | questionId]: string }
   submittedAnswers Json?
   /// FILL_BLANK only: FillBlankGapResult[] graded at submit time
   gapResults       Json?
+  /// QUESTION_ANSWER only: ListenQuestionResult[] graded at submit time
+  questionResults  Json?
 
   user     User?             @relation(fields: [userId], references: [id], onDelete: SetNull)
   exercise DictationExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)

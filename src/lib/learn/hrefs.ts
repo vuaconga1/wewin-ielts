@@ -1,3 +1,4 @@
+import type { DictationMode } from "@/lib/dictation/types";
 import type { LearnSkill } from "@/lib/learn/types";
 import type { VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
 
@@ -44,16 +45,21 @@ export function learnFillBlankHref(slug?: string): string {
   return slug ? `/learn/fill-blank/${slug}` : "/learn/fill-blank";
 }
 
-/** Dictation and fill-blank share storage but are separate games with separate routes. */
-export function learnListeningExerciseHref(
-  mode: "FULL_TEXT" | "FILL_BLANK",
-  slug?: string,
-): string {
-  return mode === "FILL_BLANK" ? learnFillBlankHref(slug) : learnDictationHref(slug);
+export function learnListenAnswerHref(slug?: string): string {
+  return slug ? `/learn/listen-answer/${slug}` : "/learn/listen-answer";
 }
 
-export function adminListeningExerciseHref(mode: "FULL_TEXT" | "FILL_BLANK"): string {
-  return mode === "FILL_BLANK" ? "/admin/fill-blank" : "/admin/dictation";
+/** Dictation, fill-blank and listen-answer share storage but are separate games with separate routes. */
+export function learnListeningExerciseHref(mode: DictationMode, slug?: string): string {
+  if (mode === "FILL_BLANK") return learnFillBlankHref(slug);
+  if (mode === "QUESTION_ANSWER") return learnListenAnswerHref(slug);
+  return learnDictationHref(slug);
+}
+
+export function adminListeningExerciseHref(mode: DictationMode): string {
+  if (mode === "FILL_BLANK") return "/admin/fill-blank";
+  if (mode === "QUESTION_ANSWER") return "/admin/listen-answer";
+  return "/admin/dictation";
 }
 
 export function learnShadowingHref(slug?: string): string {

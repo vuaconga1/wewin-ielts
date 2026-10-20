@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Headphones, TextCursorInput } from "lucide-react";
+import { Headphones, MessageCircleQuestion, TextCursorInput } from "lucide-react";
 import { learnCatalogHref, learnListeningExerciseHref } from "@/lib/learn/hrefs";
 import type { DictationCatalogItem, DictationMode } from "@/lib/dictation/types";
 import { useTranslations } from "@/i18n/provider";
@@ -10,8 +10,37 @@ type Props = { items: DictationCatalogItem[]; mode: DictationMode };
 
 export function DictationCatalog({ items, mode }: Props) {
   const { t } = useTranslations("dictation");
-  const fill = mode === "FILL_BLANK";
-  const Icon = fill ? TextCursorInput : Headphones;
+  const copy =
+    mode === "FILL_BLANK"
+      ? {
+          Icon: TextCursorInput,
+          title: t("fillCatalogTitle", "Nghe điền từ"),
+          desc: t(
+            "fillCatalogDesc",
+            "Nghe audio, đọc transcript bị ẩn một số từ và điền phần còn thiếu vào từng ô trống.",
+          ),
+          empty: t("fillEmptyTitle", "Chưa có bài nghe điền từ"),
+        }
+      : mode === "QUESTION_ANSWER"
+        ? {
+            Icon: MessageCircleQuestion,
+            title: t("qaCatalogTitle", "Nghe & trả lời câu hỏi"),
+            desc: t(
+              "qaCatalogDesc",
+              "Nghe đoạn hội thoại hoặc đoạn văn ngắn rồi trả lời câu hỏi bằng vài từ tiếng Anh — ai làm gì, ở đâu, chọn A hay B.",
+            ),
+            empty: t("qaEmptyTitle", "Chưa có bài nghe & trả lời"),
+          }
+        : {
+            Icon: Headphones,
+            title: t("catalogTitle", "Nghe chép chính tả"),
+            desc: t(
+              "catalogDesc",
+              "Nghe audio ngắn, gõ lại nội dung rồi bấm Kiểm tra để xem lỗi theo từng từ.",
+            ),
+            empty: t("emptyTitle", "Chưa có bài chép chính tả"),
+          };
+  const { Icon } = copy;
 
   return (
     <div className="space-y-4">
@@ -23,30 +52,14 @@ export function DictationCatalog({ items, mode }: Props) {
           {t("backLearn", "← Học")}
         </Link>
         <h1 className="mt-0.5 text-xl font-bold tracking-tight text-zinc-900 sm:text-3xl">
-          {fill
-            ? t("fillCatalogTitle", "Nghe điền từ")
-            : t("catalogTitle", "Nghe chép chính tả")}
+          {copy.title}
         </h1>
-        <p className="mt-1 text-sm text-zinc-600">
-          {fill
-            ? t(
-                "fillCatalogDesc",
-                "Nghe audio, đọc transcript bị ẩn một số từ và điền phần còn thiếu vào từng ô trống.",
-              )
-            : t(
-                "catalogDesc",
-                "Nghe audio ngắn, gõ lại nội dung rồi bấm Kiểm tra để xem lỗi theo từng từ.",
-              )}
-        </p>
+        <p className="mt-1 text-sm text-zinc-600">{copy.desc}</p>
       </header>
 
       {items.length === 0 ? (
         <div className="wewin-card-3d border-dashed px-6 py-10 text-center">
-          <p className="font-semibold text-zinc-800">
-            {fill
-              ? t("fillEmptyTitle", "Chưa có bài nghe điền từ")
-              : t("emptyTitle", "Chưa có bài chép chính tả")}
-          </p>
+          <p className="font-semibold text-zinc-800">{copy.empty}</p>
           <p className="mt-1 text-sm text-zinc-600">
             {t("emptyDesc", "Nội dung sẽ được cập nhật sớm.")}
           </p>

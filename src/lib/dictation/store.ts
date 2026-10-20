@@ -11,6 +11,14 @@ import {
   validateGaps,
 } from "@/lib/dictation/fill-blank";
 import {
+  gradeListenAnswer,
+  ListenAnswerConfigError,
+  MAX_QA_ANSWER_CHARS,
+  readQuestions,
+  toPublicQuestions,
+  validateQuestions,
+} from "@/lib/dictation/listen-answer";
+import {
   getDictationRepo,
   type DictationRepo,
   type DictationStatus,
@@ -26,6 +34,8 @@ import type {
   DictationSubmitResult,
   FillBlankGap,
   FillBlankSubmitResult,
+  ListenAnswerSubmitResult,
+  ListenQuestion,
   PublicDictationExercise,
 } from "@/lib/dictation/types";
 
@@ -53,9 +63,11 @@ export function invalidateDictationCatalog(slug?: string) {
     revalidateTag(CATALOG_TAG);
     revalidatePath("/learn/dictation");
     revalidatePath("/learn/fill-blank");
+    revalidatePath("/learn/listen-answer");
     if (slug) {
       revalidatePath(`/learn/dictation/${slug}`);
       revalidatePath(`/learn/fill-blank/${slug}`);
+      revalidatePath(`/learn/listen-answer/${slug}`);
     }
   } catch {
     /* outside request scope */
@@ -75,7 +87,10 @@ export const listPublishedDictations = unstable_cache(
   { revalidate: 300, tags: [CATALOG_TAG] },
 );
 
-/** Cached public row: the transcript is reduced to gap segments here and never leaves the server. */
+/**
+ * Cached public row: the transcript is reduced to gap segments (or dropped for questions)
+ * and answers never leave the server.
+ */
 const getPublishedDictationRow = unstable_cache(
   async (slug: string) => {
     const repo = await getDictationRepo();
@@ -85,6 +100,9 @@ const getPublishedDictationRow = unstable_cache(
     const fillBlank = row.mode === "FILL_BLANK";
     const gaps = fillBlank ? readGaps(row.gaps, row.transcript) : [];
     if (fillBlank && gaps.length === 0) return null;
+    const qa = row.mode === "QUESTION_ANSWER";
+    const questions = qa ? readQuestions(row.questions) : [];
+    if (qa && questions.length === 0) return null;
     return {
       id: row.id,
       slug: row.slug,
@@ -95,9 +113,10 @@ const getPublishedDictationRow = unstable_cache(
       settings: row.settings ?? null,
       mode: row.mode,
       segments: fillBlank ? buildPublicSegments(row.transcript, gaps) : null,
+      questions: qa ? toPublicQuestions(questions) : null,
     };
   },
-  ["dictation-exercise-v2"],
+  ["dictation-exercise-v3"],
   { revalidate: 300, tags: [CATALOG_TAG] },
 );
 
@@ -126,13 +145,17 @@ export async function startDictationAttempt(input: {
   return { attemptId: attempt.id, startedAt: attempt.startedAt.toISOString() };
 }
 
-/** Keeps only known gap ids with string answers, each capped in length. */
-function sanitizeAnswers(raw: unknown, gaps: FillBlankGap[]): Record<string, string> {
+/** Keeps only known gap / question ids with string answers, each capped in length. */
+function sanitizeAnswers(
+  raw: unknown,
+  items: { id: string }[],
+  maxChars: number,
+): Record<string, string> {
   const obj = raw && typeof raw === "object" && !Array.isArray(raw) ? (raw as Record<string, unknown>) : {};
   const out: Record<string, string> = {};
-  for (const gap of gaps) {
-    const value = obj[gap.id];
-    out[gap.id] = typeof value === "string" ? value.slice(0, MAX_ANSWER_CHARS) : "";
+  for (const item of items) {
+    const value = obj[item.id];
+    out[item.id] = typeof value === "string" ? value.slice(0, maxChars) : "";
   }
   return out;
 }
@@ -142,10 +165,10 @@ export async function submitDictationAttempt(input: {
   userId: string | null;
   /** FULL_TEXT payload */
   text?: unknown;
-  /** FILL_BLANK payload: { [gapId]: answer } */
+  /** FILL_BLANK / QUESTION_ANSWER payload: { [gapId | questionId]: answer } */
   answers?: unknown;
   listenCount: number;
-}): Promise<DictationSubmitResult | FillBlankSubmitResult> {
+}): Promise<DictationSubmitResult | FillBlankSubmitResult | ListenAnswerSubmitResult> {
   const repo = await requireRepo();
   const attempt = await repo.findAttempt(input.attemptId);
   if (!attempt) throw new DictationError("NOT_FOUND", "Attempt not found");
@@ -175,7 +198,7 @@ export async function submitDictationAttempt(input: {
     }
     const gaps = readGaps(exercise.gaps, exercise.transcript);
     if (gaps.length === 0) throw new DictationError("NOT_FOUND", "Exercise has no gaps");
-    const answers = sanitizeAnswers(input.answers, gaps);
+    const answers = sanitizeAnswers(input.answers, gaps, MAX_ANSWER_CHARS);
     const grade = gradeFillBlank(exercise.transcript, gaps, answers);
     const ok = await repo.completeAttempt(attempt.id, {
       submittedText: "",
@@ -190,6 +213,7 @@ export async function submitDictationAttempt(input: {
       errorSummary: { missing: [], incorrect: [], extra: [] },
       submittedAnswers: answers,
       gapResults: grade.gapResults,
+      questionResults: null,
     });
     if (!ok) throw new DictationError("ALREADY_SUBMITTED", "Attempt already submitted");
     return {
@@ -200,6 +224,40 @@ export async function submitDictationAttempt(input: {
       durationSeconds,
       transcript: exercise.transcript,
       segments: buildResultSegments(exercise.transcript, gaps, grade.gapResults),
+    };
+  }
+
+  if (exercise.mode === "QUESTION_ANSWER") {
+    if (!input.answers || typeof input.answers !== "object") {
+      throw new DictationError("INVALID_BODY", "Missing answers");
+    }
+    const questions = readQuestions(exercise.questions);
+    if (questions.length === 0) throw new DictationError("NOT_FOUND", "Exercise has no questions");
+    const answers = sanitizeAnswers(input.answers, questions, MAX_QA_ANSWER_CHARS);
+    const grade = gradeListenAnswer(questions, answers);
+    const ok = await repo.completeAttempt(attempt.id, {
+      submittedText: "",
+      normalizedText: "",
+      score: grade.score,
+      correctCount: grade.correctCount,
+      totalWords: grade.totalQuestions,
+      listenCount,
+      completedAt,
+      durationSeconds,
+      wordResults: [],
+      errorSummary: { missing: [], incorrect: [], extra: [] },
+      submittedAnswers: answers,
+      gapResults: null,
+      questionResults: grade.questionResults,
+    });
+    if (!ok) throw new DictationError("ALREADY_SUBMITTED", "Attempt already submitted");
+    return {
+      ...grade,
+      mode: "QUESTION_ANSWER",
+      attemptId: attempt.id,
+      listenCount,
+      durationSeconds,
+      transcript: exercise.transcript,
     };
   }
 
@@ -221,6 +279,7 @@ export async function submitDictationAttempt(input: {
     errorSummary: grade.errorSummary,
     submittedAnswers: null,
     gapResults: null,
+    questionResults: null,
   });
   if (!ok) throw new DictationError("ALREADY_SUBMITTED", "Attempt already submitted");
 
@@ -278,6 +337,20 @@ export async function getDictationAttemptReview(input: {
   }
   const exercise = await repo.findExercise({ id: attempt.exerciseId });
   if (!exercise) throw new DictationError("NOT_FOUND", "Exercise not found");
+  if (attempt.questionResults) {
+    return {
+      mode: "QUESTION_ANSWER",
+      attemptId: attempt.id,
+      score: attempt.score,
+      correctCount: attempt.correctCount,
+      totalQuestions: attempt.totalWords,
+      questionResults: attempt.questionResults,
+      listenCount: attempt.listenCount,
+      durationSeconds: attempt.durationSeconds,
+      transcript: exercise.transcript,
+      completedAt: attempt.completedAt.toISOString(),
+    };
+  }
   if (attempt.gapResults) {
     const gaps = exercise.mode === "FILL_BLANK" ? readGaps(exercise.gaps, exercise.transcript) : [];
     return {
@@ -325,6 +398,7 @@ export type DictationAdminDetail = {
   transcript: string;
   mode: DictationMode;
   gaps: FillBlankGap[];
+  questions: ListenQuestion[];
   settings: DictationSettings;
   status: DictationStatus;
   order: number;
@@ -338,6 +412,7 @@ export type DictationInput = {
   transcript: string;
   mode?: string;
   gaps?: unknown;
+  questions?: unknown;
   settings?: unknown;
   status?: string;
   order?: number;
@@ -356,6 +431,7 @@ export async function getDictationForAdmin(id: string): Promise<DictationAdminDe
     ? {
         ...row,
         gaps: readGaps(row.gaps, row.transcript),
+        questions: readQuestions(row.questions),
         settings: parseDictationSettings(row.settings),
       }
     : null;
@@ -391,15 +467,18 @@ function normalizeInput(input: DictationInput): ExerciseData {
   if (tokenize(transcript).length === 0) {
     throw new DictationError("EMPTY_TRANSCRIPT", "Transcript is empty");
   }
-  const mode: DictationMode = input.mode === "FILL_BLANK" ? "FILL_BLANK" : "FULL_TEXT";
+  const mode: DictationMode =
+    input.mode === "FILL_BLANK" || input.mode === "QUESTION_ANSWER" ? input.mode : "FULL_TEXT";
   let gaps: FillBlankGap[] | null = null;
-  if (mode === "FILL_BLANK") {
-    try {
-      gaps = validateGaps(input.gaps, transcript);
-    } catch (err) {
-      if (err instanceof FillBlankConfigError) throw new DictationError(err.code, err.message);
-      throw err;
+  let questions: ListenQuestion[] | null = null;
+  try {
+    if (mode === "FILL_BLANK") gaps = validateGaps(input.gaps, transcript);
+    if (mode === "QUESTION_ANSWER") questions = validateQuestions(input.questions);
+  } catch (err) {
+    if (err instanceof FillBlankConfigError || err instanceof ListenAnswerConfigError) {
+      throw new DictationError(err.code, err.message);
     }
+    throw err;
   }
   const status: DictationStatus =
     input.status === "DRAFT" || input.status === "ARCHIVED" ? input.status : "PUBLISHED";
@@ -412,6 +491,7 @@ function normalizeInput(input: DictationInput): ExerciseData {
     transcript,
     mode,
     gaps,
+    questions,
     settings: parseDictationSettings(input.settings),
     status,
     order: Number.isFinite(order) ? Math.max(0, Math.floor(order)) : 0,

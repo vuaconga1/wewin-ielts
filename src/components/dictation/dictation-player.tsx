@@ -8,6 +8,7 @@ import { formatClock } from "@/lib/dictation/format";
 import type {
   DictationSubmitResult,
   FillBlankSubmitResult,
+  ListenAnswerSubmitResult,
   PublicDictationExercise,
 } from "@/lib/dictation/types";
 import { useTranslations } from "@/i18n/provider";
@@ -15,6 +16,10 @@ import { DictationResult } from "@/components/dictation/dictation-result";
 import { DictationHistory } from "@/components/dictation/dictation-history";
 import { FillBlankInputs } from "@/components/dictation/fill-blank-inputs";
 import { FillBlankResult } from "@/components/dictation/fill-blank-result";
+import { ListenAnswerInputs } from "@/components/dictation/listen-answer-inputs";
+import { ListenAnswerResult } from "@/components/dictation/listen-answer-result";
+
+type SubmitResult = DictationSubmitResult | FillBlankSubmitResult | ListenAnswerSubmitResult;
 
 /** Playing from (almost) the start counts as a new listen; resume after pause does not. */
 const FRESH_START_SEC = 0.3;
@@ -39,7 +44,12 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
   const { t } = useTranslations("dictation");
   const { settings } = exercise;
   const fillSegments = exercise.mode === "FILL_BLANK" ? (exercise.segments ?? []) : null;
-  const gapIds = fillSegments?.flatMap((s) => (s.type === "gap" ? [s.id] : [])) ?? [];
+  const questions = exercise.mode === "QUESTION_ANSWER" ? (exercise.questions ?? []) : null;
+  const itemIds =
+    fillSegments?.flatMap((s) => (s.type === "gap" ? [s.id] : [])) ??
+    questions?.map((q) => q.id) ??
+    [];
+  const answerMode = Boolean(fillSegments || questions);
   const audioRef = useRef<HTMLAudioElement>(null);
   const attemptIdRef = useRef<string | null>(null);
   const startPromise = useRef<Promise<string | null> | null>(null);
@@ -53,9 +63,9 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
   const [notice, setNotice] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
-  const [result, setResult] = useState<DictationSubmitResult | FillBlankSubmitResult | null>(null);
+  const [result, setResult] = useState<SubmitResult | null>(null);
   const [historyKey, setHistoryKey] = useState(0);
-  const filledCount = gapIds.filter((id) => session.answers[id]?.trim()).length;
+  const filledCount = itemIds.filter((id) => session.answers[id]?.trim()).length;
 
   useEffect(() => {
     leftRef.current = false;
@@ -171,19 +181,30 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
       setError(t("playFirst", "Hãy nghe audio trước khi kiểm tra."));
       return;
     }
-    if (fillSegments) {
+    if (answerMode) {
       if (filledCount === 0) {
-        setError(t("emptyGaps", "Bạn chưa điền ô trống nào."));
+        setError(
+          questions
+            ? t("qaEmpty", "Bạn chưa trả lời câu hỏi nào.")
+            : t("emptyGaps", "Bạn chưa điền ô trống nào."),
+        );
         return;
       }
+      const left = itemIds.length - filledCount;
       if (
-        filledCount < gapIds.length &&
+        left > 0 &&
         !window.confirm(
-          t(
-            "confirmBlankSubmit",
-            { n: gapIds.length - filledCount },
-            "Còn {n} ô chưa điền. Các ô này sẽ được tính là bỏ trống. Vẫn nộp bài?",
-          ),
+          questions
+            ? t(
+                "qaConfirmBlankSubmit",
+                { n: left },
+                "Còn {n} câu chưa trả lời. Các câu này sẽ được tính là bỏ trống. Vẫn nộp bài?",
+              )
+            : t(
+                "confirmBlankSubmit",
+                { n: left },
+                "Còn {n} ô chưa điền. Các ô này sẽ được tính là bỏ trống. Vẫn nộp bài?",
+              ),
         )
       ) {
         return;
@@ -196,7 +217,7 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
     try {
       const attemptId = await ensureAttempt();
       if (!attemptId) return;
-      const payload = fillSegments
+      const payload = answerMode
         ? { answers: session.answers, listenCount: session.listenCount }
         : { text: session.text, listenCount: session.listenCount };
       const res = await fetch(`/api/dictation/attempts/${attemptId}/submit`, {
@@ -204,9 +225,7 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = (await res.json()) as (DictationSubmitResult | FillBlankSubmitResult) & {
-        code?: string;
-      };
+      const data = (await res.json()) as SubmitResult & { code?: string };
       if (!res.ok) {
         if (data.code === "ALREADY_SUBMITTED" || data.code === "NOT_FOUND") {
           attemptIdRef.current = null;
@@ -259,7 +278,9 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
         >
           {fillSegments
             ? t("fillBackCatalog", "← Tất cả bài nghe điền từ")
-            : t("backCatalog", "← Tất cả bài chép chính tả")}
+            : questions
+              ? t("qaBackCatalog", "← Tất cả bài nghe & trả lời")
+              : t("backCatalog", "← Tất cả bài chép chính tả")}
         </Link>
         <div className="mt-1 flex flex-wrap items-center gap-2">
           <h1 className="min-w-0 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
@@ -275,7 +296,12 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
           {exercise.instructions ||
             (fillSegments
               ? t("fillDefaultInstructions", "Nghe audio và điền từ hoặc cụm từ còn thiếu vào từng ô trống.")
-              : t("defaultInstructions", "Nghe và chép lại chính xác câu bạn nghe được."))}
+              : questions
+                ? t(
+                    "qaDefaultInstructions",
+                    "Nghe audio rồi trả lời từng câu hỏi bằng tiếng Anh. Chỉ cần câu trả lời có chứa ý chính (tên người, hành động…) là được tính đúng.",
+                  )
+                : t("defaultInstructions", "Nghe và chép lại chính xác câu bạn nghe được."))}
         </p>
       </header>
 
@@ -337,6 +363,8 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
 
       {result?.mode === "FILL_BLANK" ? (
         <FillBlankResult result={result} onReplay={replay} onRetry={retry} />
+      ) : result?.mode === "QUESTION_ANSWER" ? (
+        <ListenAnswerResult result={result} onReplay={replay} onRetry={retry} />
       ) : result ? (
         <DictationResult
           result={result}
@@ -351,7 +379,7 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
               {t("fillInputTitle", "Điền vào chỗ trống")}
             </h2>
             <span className="rounded-full bg-wewin-accent-blue-bg px-2.5 py-0.5 text-xs font-bold tabular-nums text-wewin-navy" aria-live="polite">
-              {t("filledProgress", { filled: filledCount, total: gapIds.length }, "Đã điền {filled}/{total} ô")}
+              {t("filledProgress", { filled: filledCount, total: itemIds.length }, "Đã điền {filled}/{total} ô")}
             </span>
           </div>
           <FillBlankInputs
@@ -359,6 +387,43 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
             answers={session.answers}
             onChange={(gapId, value) =>
               setSession((s) => ({ ...s, answers: { ...s.answers, [gapId]: value } }))
+            }
+            disabled={submitting}
+          />
+          {error ? (
+            <p className="text-sm text-rose-600" role="alert">
+              {error}
+            </p>
+          ) : null}
+          <button
+            type="submit"
+            disabled={submitting}
+            className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-wewin-navy px-5 py-2.5 text-sm font-semibold text-white hover:bg-wewin-navy-hover disabled:opacity-60"
+          >
+            {submitting ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+            {submitting ? t("checking", "Đang chấm…") : t("submitFill", "Nộp bài")}
+          </button>
+        </form>
+      ) : questions ? (
+        <form onSubmit={onSubmit} className="card-outline space-y-4 p-4 sm:p-5">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-sm font-semibold text-zinc-900">{t("qaInputTitle", "Trả lời câu hỏi")}</h2>
+            <span
+              className="rounded-full bg-wewin-accent-blue-bg px-2.5 py-0.5 text-xs font-bold tabular-nums text-wewin-navy"
+              aria-live="polite"
+            >
+              {t(
+                "qaProgress",
+                { filled: filledCount, total: itemIds.length },
+                "Đã trả lời {filled}/{total} câu",
+              )}
+            </span>
+          </div>
+          <ListenAnswerInputs
+            questions={questions}
+            answers={session.answers}
+            onChange={(questionId, value) =>
+              setSession((s) => ({ ...s, answers: { ...s.answers, [questionId]: value } }))
             }
             disabled={submitting}
           />

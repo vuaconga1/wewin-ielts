@@ -1,9 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Play, Star } from "lucide-react";
-import type { RecommendedTest } from "@/lib/dashboard-stats";
+import { BookOpen, Clock, Headphones, Mic, PenLine, Star, type LucideIcon } from "lucide-react";
+import type { IeltsSkill, RecommendedTest } from "@/lib/dashboard-stats";
 import { useTranslations } from "@/i18n/provider";
+
+const SKILL_ICON: Record<IeltsSkill, LucideIcon> = {
+  LISTENING: Headphones,
+  READING: BookOpen,
+  WRITING: PenLine,
+  SPEAKING: Mic,
+};
 
 type Props = {
   tests: RecommendedTest[];
@@ -41,35 +48,41 @@ export function HomeRecommendedTests({ tests }: Props) {
         </div>
       ) : (
         <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1 sm:grid sm:grid-cols-2 sm:overflow-visible lg:grid-cols-4">
-          {tests.map((test) => (
-            <Link
-              key={test.slug}
-              href={`/tests/${test.slug}`}
-              className="wewin-card-3d wewin-card-3d-hover group relative w-[min(200px,68vw)] shrink-0 overflow-hidden sm:w-auto"
-            >
-              <div className="relative flex h-32 flex-col justify-between bg-gradient-to-br from-wewin-accent-blue-bg to-white p-3">
-                <span className="w-fit rounded-md bg-wewin-navy px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
-                  {tSkills(test.skill)}
-                </span>
-                <span className="absolute bottom-3 right-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-wewin-navy text-white shadow-md transition group-hover:bg-wewin-navy-hover">
-                  <Play className="h-3.5 w-3.5 fill-white" aria-hidden />
-                </span>
-              </div>
-              <div className="space-y-1 border-t border-zinc-100 p-3">
-                <p className="line-clamp-2 text-sm font-bold text-zinc-900">
-                  {test.title}
-                </p>
-                <div className="flex items-center justify-between gap-2">
-                  <p className="truncate text-xs text-zinc-500">
-                    {tSkills(`vi.${test.skill}`)}
-                    {test.minutes
-                      ? ` · ${t("minutesLabel", { n: test.minutes }, "{n} phút")}`
-                      : ""}
+            {tests.map((test) => {
+              const Icon = SKILL_ICON[test.skill];
+              return (
+                <Link
+                  key={test.slug}
+                  href={`/tests/${test.slug}`}
+                  className="wewin-card-3d wewin-card-3d-hover group flex w-[min(220px,72vw)] shrink-0 flex-col gap-3 p-3 sm:w-auto"
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-wewin-accent-blue-bg text-wewin-navy group-hover:bg-wewin-navy group-hover:text-white">
+                      <Icon className="h-4 w-4" aria-hidden />
+                    </span>
+                    <span className="truncate text-[11px] font-semibold uppercase tracking-wide text-wewin-navy">
+                      {tSkills(test.skill)}
+                    </span>
+                  </div>
+                  <p className="line-clamp-2 min-h-10 text-sm font-bold leading-5 text-zinc-900">
+                    {test.title}
                   </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+                  <div className="mt-auto flex items-center justify-between gap-2 border-t border-zinc-100 pt-2">
+                    <span className="inline-flex min-w-0 items-center gap-1 text-xs text-zinc-500">
+                      <Clock className="h-3.5 w-3.5 shrink-0" aria-hidden />
+                      <span className="truncate">
+                        {test.minutes
+                          ? t("minutesLabel", { n: test.minutes }, "{n} phút")
+                          : tSkills(`vi.${test.skill}`)}
+                      </span>
+                    </span>
+                    <span className="shrink-0 text-xs font-bold text-wewin-navy">
+                      {t("startTest", "Làm đề →")}
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
         </div>
       )}
     </section>

@@ -9,6 +9,7 @@ const NAV_PREFIXES: [string, DashboardNavKey][] = [
   ["/admin/learn", "admin-learn"],
   ["/admin/dictation", "admin-dictation"],
   ["/admin/fill-blank", "admin-fill-blank"],
+  ["/admin/listen-answer", "admin-listen-answer"],
   ["/admin/shadowing", "admin-shadowing"],
   ["/admin/attempts", "admin-attempts"],
   ["/admin/users", "admin-users"],

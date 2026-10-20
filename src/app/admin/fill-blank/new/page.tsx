@@ -36,6 +36,7 @@ export default async function AdminFillBlankNewPage() {
           transcript: "",
           mode: "FILL_BLANK",
           gaps: [],
+          questions: [],
           settings: DEFAULT_DICTATION_SETTINGS,
           status: "PUBLISHED",
           order: nextOrder,

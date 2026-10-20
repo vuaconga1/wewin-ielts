@@ -2,7 +2,7 @@ import { notFound, permanentRedirect } from "next/navigation";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DictationPlayer } from "@/components/dictation/dictation-player";
 import { getPublicDictation } from "@/lib/dictation/store";
-import { learnDictationHref } from "@/lib/learn/hrefs";
+import { learnListeningExerciseHref } from "@/lib/learn/hrefs";
 import { getTranslationsStatic } from "@/i18n/server";
 
 export const revalidate = 300;
@@ -22,7 +22,7 @@ export default async function FillBlankExercisePage({ params }: Props) {
   const { slug } = await params;
   const exercise = await getPublicDictation(slug);
   if (!exercise) notFound();
-  if (exercise.mode !== "FILL_BLANK") permanentRedirect(learnDictationHref(slug));
+  if (exercise.mode !== "FILL_BLANK") permanentRedirect(learnListeningExerciseHref(exercise.mode, slug));
   return (
     <SiteShell active="learn">
       <DictationPlayer exercise={exercise} />

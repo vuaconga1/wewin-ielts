@@ -18,6 +18,8 @@ import type {
   DictationWordResult,
   FillBlankGap,
   FillBlankGapResult,
+  ListenQuestion,
+  ListenQuestionResult,
 } from "@/lib/dictation/types";
 
 export type DictationStatus = "DRAFT" | "PUBLISHED" | "ARCHIVED";
@@ -32,6 +34,7 @@ export type ExerciseRecord = {
   transcript: string;
   mode: DictationMode;
   gaps: unknown;
+  questions: unknown;
   settings: unknown;
   status: DictationStatus;
   order: number;
@@ -42,9 +45,10 @@ export type ExerciseListRow = Pick<
   "id" | "slug" | "title" | "level" | "mode" | "status" | "order"
 > & { attempts: number };
 
-export type ExerciseData = Omit<ExerciseRecord, "id" | "slug" | "settings" | "gaps"> & {
+export type ExerciseData = Omit<ExerciseRecord, "id" | "slug" | "settings" | "gaps" | "questions"> & {
   settings: DictationSettings;
   gaps: FillBlankGap[] | null;
+  questions: ListenQuestion[] | null;
 };
 
 export type AttemptRecord = {
@@ -68,6 +72,7 @@ export type AttemptCompletion = {
   errorSummary: DictationErrorSummary;
   submittedAnswers: Record<string, string> | null;
   gapResults: FillBlankGapResult[] | null;
+  questionResults: ListenQuestionResult[] | null;
 };
 
 export type CompletedAttemptRow = {
@@ -149,6 +154,7 @@ const prismaRepo: DictationRepo = {
         transcript: true,
         mode: true,
         gaps: true,
+        questions: true,
         settings: true,
         status: true,
         order: true,
@@ -164,14 +170,23 @@ const prismaRepo: DictationRepo = {
   },
   async createExercise(slug, data) {
     return prisma.dictationExercise.create({
-      data: { ...data, gaps: data.gaps ?? Prisma.DbNull, slug },
+      data: {
+        ...data,
+        gaps: data.gaps ?? Prisma.DbNull,
+        questions: data.questions ?? Prisma.DbNull,
+        slug,
+      },
       select: { id: true, slug: true },
     });
   },
   async updateExercise(id, data) {
     return prisma.dictationExercise.update({
       where: { id },
-      data: { ...data, gaps: data.gaps ?? Prisma.DbNull },
+      data: {
+        ...data,
+        gaps: data.gaps ?? Prisma.DbNull,
+        questions: data.questions ?? Prisma.DbNull,
+      },
       select: { id: true, slug: true },
     });
   },
@@ -197,6 +212,7 @@ const prismaRepo: DictationRepo = {
         ...data,
         submittedAnswers: data.submittedAnswers ?? Prisma.DbNull,
         gapResults: data.gapResults ?? Prisma.DbNull,
+        questionResults: data.questionResults ?? Prisma.DbNull,
         status: "COMPLETED",
       },
     });
@@ -252,6 +268,7 @@ const prismaRepo: DictationRepo = {
         errorSummary: true,
         submittedAnswers: true,
         gapResults: true,
+        questionResults: true,
       },
     });
     if (!r) return null;
@@ -271,6 +288,7 @@ const prismaRepo: DictationRepo = {
       errorSummary: (r.errorSummary ?? EMPTY_SUMMARY) as DictationErrorSummary,
       submittedAnswers: (r.submittedAnswers ?? null) as Record<string, string> | null,
       gapResults: (r.gapResults ?? null) as FillBlankGapResult[] | null,
+      questionResults: (r.questionResults ?? null) as ListenQuestionResult[] | null,
     };
   },
 };
@@ -353,6 +371,7 @@ const fileRepo: DictationRepo = {
       transcript: row.transcript,
       mode: row.mode ?? "FULL_TEXT",
       gaps: row.gaps ?? null,
+      questions: row.questions ?? null,
       settings: row.settings,
       status: row.status,
       order: row.order,
@@ -461,6 +480,7 @@ const fileRepo: DictationRepo = {
       errorSummary: a.errorSummary ?? EMPTY_SUMMARY,
       submittedAnswers: a.submittedAnswers ?? null,
       gapResults: a.gapResults ?? null,
+      questionResults: a.questionResults ?? null,
     };
   },
 };

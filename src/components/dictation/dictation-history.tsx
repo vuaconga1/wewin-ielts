@@ -14,6 +14,7 @@ import type {
 } from "@/lib/dictation/types";
 import { DictationResult } from "@/components/dictation/dictation-result";
 import { FillBlankResult } from "@/components/dictation/fill-blank-result";
+import { ListenAnswerResult } from "@/components/dictation/listen-answer-result";
 
 type HistoryState =
   | { status: "loading" }
@@ -135,7 +136,9 @@ export function DictationHistory({ slug, mode, refreshKey }: Props) {
                 <span className="text-sm tabular-nums text-zinc-600">
                   {mode === "FILL_BLANK"
                     ? t("gapsOf", { correct: item.correctCount, total: item.totalWords }, "{correct}/{total} ô")
-                    : t("wordsOf", { correct: item.correctCount, total: item.totalWords }, "{correct}/{total} từ")}
+                    : mode === "QUESTION_ANSWER"
+                      ? t("questionsOf", { correct: item.correctCount, total: item.totalWords }, "{correct}/{total} câu")
+                      : t("wordsOf", { correct: item.correctCount, total: item.totalWords }, "{correct}/{total} từ")}
                 </span>
                 <span className="text-sm tabular-nums text-zinc-600">
                   {formatClock(item.durationSeconds)}
@@ -160,6 +163,11 @@ export function DictationHistory({ slug, mode, refreshKey }: Props) {
                     <p className="p-2 text-sm text-rose-600">{reviewError}</p>
                   ) : review?.mode === "FILL_BLANK" ? (
                     <FillBlankResult
+                      result={review}
+                      title={t("reviewTitle", { time: formatTime(review.completedAt) }, "Bài làm lúc {time}")}
+                    />
+                  ) : review?.mode === "QUESTION_ANSWER" ? (
+                    <ListenAnswerResult
                       result={review}
                       title={t("reviewTitle", { time: formatTime(review.completedAt) }, "Bài làm lúc {time}")}
                     />

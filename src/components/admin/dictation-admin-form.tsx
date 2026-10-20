@@ -4,12 +4,23 @@ import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { startNavProgress } from "@/lib/client/nav-progress";
 import { Loader2, Upload } from "lucide-react";
-import type { DictationMode, DictationSettings, FillBlankGap } from "@/lib/dictation/types";
+import type {
+  DictationMode,
+  DictationSettings,
+  FillBlankGap,
+  ListenQuestion,
+} from "@/lib/dictation/types";
 import { readGaps } from "@/lib/dictation/fill-blank";
 import { adminListeningExerciseHref } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { FillBlankGapEditor } from "@/components/admin/fill-blank-gap-editor";
+import {
+  fromQuestionDrafts,
+  ListenQuestionEditor,
+  toQuestionDrafts,
+  type QuestionDraft,
+} from "@/components/admin/listen-question-editor";
 
 type Status = "DRAFT" | "PUBLISHED" | "ARCHIVED";
 
@@ -22,6 +33,7 @@ export type DictationFormValues = {
   transcript: string;
   mode: DictationMode;
   gaps: FillBlankGap[];
+  questions: ListenQuestion[];
   settings: DictationSettings;
   status: Status;
   order: number;
@@ -47,6 +59,9 @@ export function DictationAdminForm({ initial }: { initial: DictationFormValues }
   const mode = initial.mode;
   const [gaps, setGaps] = useState<FillBlankGap[]>(initial.gaps);
   const [gapsDropped, setGapsDropped] = useState(false);
+  const [questionDrafts, setQuestionDrafts] = useState<QuestionDraft[]>(() =>
+    toQuestionDrafts(initial.questions),
+  );
   const [maxListen, setMaxListen] = useState(
     initial.settings.maxListenCount == null ? "" : String(initial.settings.maxListenCount),
   );
@@ -100,6 +115,10 @@ export function DictationAdminForm({ initial }: { initial: DictationFormValues }
       setError(t("errors.NO_GAPS", "Bài nghe điền từ cần ít nhất một ô trống."));
       return;
     }
+    if (mode === "QUESTION_ANSWER" && questionDrafts.length === 0) {
+      setError(t("errors.NO_QUESTIONS", "Bài nghe & trả lời cần ít nhất một câu hỏi."));
+      return;
+    }
     setSaving(true);
     try {
       const body = {
@@ -110,6 +129,7 @@ export function DictationAdminForm({ initial }: { initial: DictationFormValues }
         transcript,
         mode,
         gaps: mode === "FILL_BLANK" ? gaps : [],
+        questions: mode === "QUESTION_ANSWER" ? fromQuestionDrafts(questionDrafts) : [],
         status,
         order: Number(order) || 0,
         settings: {
@@ -213,7 +233,9 @@ export function DictationAdminForm({ initial }: { initial: DictationFormValues }
         <span className="block text-xs text-zinc-500">
           {mode === "FILL_BLANK"
             ? t("transcriptHintFillBlank", "Học viên chỉ thấy transcript với các ô trống; đáp án chỉ trả về sau khi nộp bài.")
-            : t("transcriptHint", "Chỉ dùng ở server khi chấm; học viên không thấy trước khi nộp bài.")}
+            : mode === "QUESTION_ANSWER"
+              ? t("transcriptHintQuestions", "Học viên chỉ xem transcript sau khi nộp bài, để đối chiếu câu trả lời.")
+              : t("transcriptHint", "Chỉ dùng ở server khi chấm; học viên không thấy trước khi nộp bài.")}
         </span>
       </label>
 
@@ -226,6 +248,15 @@ export function DictationAdminForm({ initial }: { initial: DictationFormValues }
             </p>
           ) : null}
           <FillBlankGapEditor transcript={transcript} gaps={gaps} onChange={setGaps} />
+        </div>
+      ) : null}
+
+      {mode === "QUESTION_ANSWER" ? (
+        <div className="space-y-2">
+          <span className="block text-sm font-semibold text-zinc-800">
+            {t("fieldQuestions", { n: questionDrafts.length }, "Câu hỏi ({n})")}
+          </span>
+          <ListenQuestionEditor drafts={questionDrafts} onChange={setQuestionDrafts} />
         </div>
       ) : null}
 

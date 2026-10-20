@@ -1,15 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import { BookMarked, GraduationCap, Headphones, Mic, TextCursorInput } from "lucide-react";
+import {
+  BookMarked,
+  GraduationCap,
+  Headphones,
+  MessageCircleQuestion,
+  Mic,
+  TextCursorInput,
+} from "lucide-react";
 import {
   learnCourseHref,
   learnDictationHref,
   learnFillBlankHref,
+  learnListenAnswerHref,
   learnShadowingHref,
   learnVocabGrammarHref,
 } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
+
+/**
+ * Dictation, fill-blank, listen-answer and shadowing cards are hidden on production
+ * until launch; set NEXT_PUBLIC_SHOW_PRACTICE_GAMES=1 (build-time) to show them.
+ */
+const SHOW_PRACTICE_GAMES =
+  process.env.NODE_ENV !== "production" || process.env.NEXT_PUBLIC_SHOW_PRACTICE_GAMES === "1";
 
 export type CourseCard = {
   id: string;
@@ -145,6 +160,8 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
           </div>
         </Link>
 
+        {SHOW_PRACTICE_GAMES ? (
+        <>
         <Link
           href={learnDictationHref()}
           prefetch={false}
@@ -208,6 +225,37 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
         </Link>
 
         <Link
+          href={learnListenAnswerHref()}
+          prefetch={false}
+          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+        >
+          <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
+            <MessageCircleQuestion className="h-5 w-5 shrink-0 opacity-90" />
+            <div className="min-w-0">
+              <h2 className="truncate text-base font-bold leading-tight">
+                {t("listenAnswerCard", "Nghe & trả lời câu hỏi")}
+              </h2>
+              <p className="text-xs text-white/85">
+                {t("listenAnswerSub", "Short answer · Luyện nghe hiểu")}
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2.5 border-t border-zinc-200 px-4 py-3">
+            <p className="line-clamp-3 text-sm leading-snug break-words text-zinc-600">
+              {t(
+                "listenAnswerDesc",
+                "Nghe đoạn văn ngắn và trả lời câu hỏi bằng vài từ tiếng Anh — ai làm gì, ở đâu, chọn A hay B. Chấm ngay sau khi nộp.",
+              )}
+            </p>
+            <div className="mt-auto flex justify-end">
+              <span className="shrink-0 rounded-md bg-wewin-accent-blue-bg px-2 py-1 text-xs font-bold text-wewin-navy group-hover:bg-wewin-navy group-hover:text-white">
+                {t("openListenAnswer", "Luyện ngay →")}
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        <Link
           href={learnShadowingHref()}
           prefetch={false}
           className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
@@ -235,6 +283,8 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
             </div>
           </div>
         </Link>
+        </>
+        ) : null}
 
         {courses.length === 0 ? (
           <div className="wewin-card-3d border-dashed px-6 py-10 text-center sm:col-span-2">

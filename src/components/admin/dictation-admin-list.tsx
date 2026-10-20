@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { adminListeningExerciseHref, learnListeningExerciseHref } from "@/lib/learn/hrefs";
+import type { DictationMode } from "@/lib/dictation/types";
 import { useTranslations } from "@/i18n/provider";
 
 export type DictationAdminListRow = {
@@ -11,7 +12,7 @@ export type DictationAdminListRow = {
   slug: string;
   title: string;
   level: string | null;
-  mode: "FULL_TEXT" | "FILL_BLANK";
+  mode: DictationMode;
   status: "DRAFT" | "PUBLISHED" | "ARCHIVED";
   order: number;
   attempts: number;

@@ -36,6 +36,7 @@ export default async function AdminDictationNewPage() {
           transcript: "",
           mode: "FULL_TEXT",
           gaps: [],
+          questions: [],
           settings: DEFAULT_DICTATION_SETTINGS,
           status: "PUBLISHED",
           order: nextOrder,

@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DictationAdminForm } from "@/components/admin/dictation-admin-form";
 import { getDictationForAdmin } from "@/lib/dictation/store";
+import { adminListeningExerciseHref } from "@/lib/learn/hrefs";
 import { getTranslations } from "@/i18n/server";
 
 export const dynamic = "force-dynamic";
@@ -18,7 +19,7 @@ export default async function AdminFillBlankEditPage({ params }: Props) {
   const { id } = await params;
   const exercise = await getDictationForAdmin(id);
   if (!exercise) notFound();
-  if (exercise.mode !== "FILL_BLANK") redirect(`/admin/dictation/${id}`);
+  if (exercise.mode !== "FILL_BLANK") redirect(`${adminListeningExerciseHref(exercise.mode)}/${id}`);
   const { t } = await getTranslations("fillBlankAdmin");
 
   return (
@@ -41,6 +42,7 @@ export default async function AdminFillBlankEditPage({ params }: Props) {
           transcript: exercise.transcript,
           mode: exercise.mode,
           gaps: exercise.gaps,
+          questions: exercise.questions,
           settings: exercise.settings,
           status: exercise.status,
           order: exercise.order,

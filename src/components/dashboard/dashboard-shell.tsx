@@ -11,12 +11,9 @@ import {
   ChevronRight,
   Clapperboard,
   GraduationCap,
-  Headphones,
   Home,
   Menu,
-  Mic,
   ScrollText,
-  TextCursorInput,
   Trophy,
   Upload,
   UserCog,
@@ -45,6 +42,7 @@ export type DashboardNavKey =
   | "admin-learn"
   | "admin-dictation"
   | "admin-fill-blank"
+  | "admin-listen-answer"
   | "admin-shadowing"
   | "admin-attempts"
   | "admin-users"
@@ -257,24 +255,6 @@ export function DashboardShell({
                     href: "/admin/learn",
                     label: t("nav.adminLearn"),
                     icon: Clapperboard,
-                  },
-                  {
-                    key: "admin-dictation" as const,
-                    href: "/admin/dictation",
-                    label: t("nav.adminDictation", "Bài chép chính tả"),
-                    icon: Headphones,
-                  },
-                  {
-                    key: "admin-fill-blank" as const,
-                    href: "/admin/fill-blank",
-                    label: t("nav.adminFillBlank", "Bài nghe điền từ"),
-                    icon: TextCursorInput,
-                  },
-                  {
-                    key: "admin-shadowing" as const,
-                    href: "/admin/shadowing",
-                    label: t("nav.adminShadowing", "Bài Shadowing"),
-                    icon: Mic,
                   },
                   {
                     key: "import" as const,
