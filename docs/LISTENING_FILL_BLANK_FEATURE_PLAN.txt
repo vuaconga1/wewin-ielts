@@ -1,0 +1,388 @@
+WEWIN — KẾ HOẠCH TÍNH NĂNG NGHE ĐIỀN TỪ
+Phiên bản: 1.0
+
+============================================================
+1. MỤC TIÊU
+============================================================
+
+Xây dựng bài luyện nghe trong đó học viên:
+
+- Nghe một đoạn audio.
+- Đọc transcript đã được ẩn một số từ hoặc cụm từ.
+- Điền phần nội dung còn thiếu vào các ô trống.
+- Nộp bài để hệ thống đối chiếu với transcript gốc và chấm điểm.
+- Xem lại transcript hoàn chỉnh cùng phản hồi cho từng ô trống.
+
+Tính năng này phù hợp để luyện nhận diện từ vựng, nối âm, từ chức năng,
+con số, tên riêng và cụm từ thường xuất hiện trong Listening IELTS.
+
+Định hướng triển khai: mở rộng module Dictation hiện có, thay vì tạo một
+module hoàn toàn độc lập. Có thể tái sử dụng audio player, attempt, lịch sử
+làm bài, quyền truy cập, upload audio và hạ tầng chấm phía server.
+
+
+============================================================
+2. PHẠM VI MVP
+============================================================
+
+Bao gồm:
+
+- Một audio cho mỗi bài luyện.
+- Một transcript gốc do quản trị viên nhập.
+- Các khoảng trống được giáo viên chọn thủ công từ transcript.
+- Một ô trống có thể tương ứng với một từ hoặc một cụm nhiều từ.
+- Phát/tạm dừng, tua audio và các tốc độ phát được cấu hình.
+- Nộp đáp án một lần cho mỗi attempt.
+- Chấm chính xác theo từng ô trống ở server.
+- Hiển thị điểm, đáp án đúng và phản hồi sau khi nộp.
+- Lưu lịch sử những lần làm bài đã nộp của học viên đăng nhập.
+
+Chưa thuộc MVP:
+
+- Tự động dùng AI để tạo khoảng trống.
+- Chấm phát âm.
+- Chấm điểm từng từ trong một ô trống nhiều từ.
+- Đồng bộ transcript theo timestamp của audio.
+- Gợi ý đáp án khi đang làm bài.
+
+
+============================================================
+3. LUỒNG HỌC VIÊN
+============================================================
+
+Bước 1 — Mở bài luyện
+
+- Học viên mở bài từ danh sách Nghe điền từ.
+- Trang hiển thị tiêu đề, cấp độ, hướng dẫn, audio player và transcript có
+  các ô trống.
+- Không gửi transcript gốc hay đáp án các ô trống xuống trình duyệt.
+
+Bước 2 — Nghe và điền đáp án
+
+- Học viên phát audio, có thể pause, tua và nghe lại theo cấu hình bài.
+- Mỗi lần phát lại từ đầu được tính là một lượt nghe; pause/resume không
+  tăng lượt nghe.
+- Học viên nhập đáp án vào từng ô trống.
+- Hỗ trợ phím Tab và Shift+Tab để chuyển giữa các ô.
+- Hiển thị tiến độ, ví dụ: "Đã điền 5/8 ô".
+- Bắt đầu tính thời gian từ lần phát audio đầu tiên.
+
+Bước 3 — Nộp bài
+
+- Học viên nhấn "Nộp bài".
+- Client kiểm tra tối thiểu: đã nghe audio ít nhất một lần và không có ô
+  trống nào chưa điền. Có thể cho phép nộp khi còn ô trống nếu muốn ghi nhận
+  câu trả lời bỏ trống; khi đó cần hộp xác nhận.
+- API gửi object đáp án theo gap ID, không ghép thành transcript hoàn chỉnh.
+- Server xác thực attempt, quyền sở hữu và trạng thái chưa nộp, sau đó chấm.
+
+Bước 4 — Xem kết quả
+
+- Hiển thị điểm tổng, ví dụ: 75/100.
+- Hiển thị số ô đúng trên tổng số ô, ví dụ: 6/8 ô đúng.
+- Hiển thị số lần nghe và thời gian làm bài.
+- Transcript được hiển thị hoàn chỉnh sau nộp:
+  * Xanh: đáp án đúng.
+  * Đỏ: đáp án sai, kèm phần học viên đã nhập và đáp án chuẩn.
+  * Cam: ô bị bỏ trống, kèm đáp án chuẩn.
+- Học viên có thể nghe lại audio, xem lịch sử, hoặc chọn "Làm lại" để tạo
+  một attempt mới.
+
+
+============================================================
+4. CẤU TRÚC BÀI LUYỆN
+============================================================
+
+Mở rộng DictationExercise bằng loại bài và cấu hình khoảng trống.
+
+mode:
+
+- FULL_TEXT: bài chép chính tả hiện có; học viên nhập toàn bộ transcript.
+- FILL_BLANK: bài nghe điền từ; học viên chỉ nhập các gap được chỉ định.
+
+Cấu trúc gap đề xuất:
+
+type FillBlankGap = {
+  id: string;
+  startToken: number;
+  endToken: number;
+  acceptedAnswers?: string[];
+};
+
+Quy ước:
+
+- startToken và endToken xác định đoạn token trong transcript gốc.
+- endToken là vị trí kết thúc độc quyền (exclusive), do đó gap một từ có
+  endToken = startToken + 1.
+- Các gap không được chồng lấn, phải nằm trong phạm vi transcript và phải có
+  ít nhất một token.
+- acceptedAnswers là các phương án được chấp nhận thêm do giáo viên nhập.
+
+Ví dụ transcript gốc:
+
+"I'd like to book a room for two nights."
+
+Các gap:
+
+- gap-1: token "book"
+- gap-2: token "two"
+
+Transcript hiển thị cho học viên:
+
+"I'd like to [gap-1] a room for [gap-2] nights."
+
+
+============================================================
+5. BẢO MẬT ĐÁP ÁN VÀ PUBLIC PAYLOAD
+============================================================
+
+Transcript gốc là đáp án và không được trả về trước khi học viên nộp bài.
+
+Public payload của bài FILL_BLANK chỉ nên gồm:
+
+- id, slug, title, level, instructions, audioUrl, settings.
+- Danh sách các đoạn văn bản nhìn thấy (segments).
+- Danh sách gap ID và thứ tự hiển thị.
+- Thông tin UI không làm lộ đáp án, ví dụ độ rộng tối thiểu của ô.
+
+Public payload tuyệt đối không gồm:
+
+- transcript gốc đầy đủ.
+- đáp án gốc của từng gap.
+- startToken/endToken nếu dữ liệu đó có thể giúp suy ra đáp án từ một
+  transcript bị lộ trong cùng payload.
+- acceptedAnswers.
+
+Việc chấm, lấy đáp án và tạo transcript hoàn chỉnh phải thực hiện tại server.
+Transcript chỉ được trả về trong response kết quả sau khi attempt đã được
+đánh dấu COMPLETED.
+
+
+============================================================
+6. CHẤM ĐIỂM
+============================================================
+
+6.1 Chuẩn hoá đáp án
+
+Áp dụng đồng nhất cho đáp án chuẩn, acceptedAnswers và câu trả lời học viên:
+
+- Chuẩn hoá Unicode.
+- Bỏ khoảng trắng đầu/cuối và gộp nhiều khoảng trắng liên tiếp.
+- Không phân biệt chữ hoa/chữ thường.
+- Bỏ qua dấu câu thông thường: . , ! ? : ; " ' ( ) -
+- Giữ nội dung từ vựng; không tự mở rộng viết tắt, ví dụ "don't" và
+  "do not" chỉ được coi là tương đương khi giáo viên khai báo explicit trong
+  acceptedAnswers.
+
+6.2 Kết quả mỗi gap
+
+type FillBlankGapResult = {
+  gapId: string;
+  submitted: string;
+  expected: string;
+  status: "correct" | "incorrect" | "blank";
+};
+
+- correct: đáp án sau chuẩn hoá trùng expected hoặc một acceptedAnswer.
+- incorrect: có nội dung nhưng không khớp.
+- blank: học viên không nhập nội dung.
+
+6.3 Công thức điểm MVP
+
+score = round(correctGapCount / totalGapCount * 100)
+
+- Mỗi gap có trọng số bằng nhau trong MVP.
+- Gap sai hoặc bỏ trống không bị trừ điểm âm.
+- Nếu totalGapCount bằng 0, bài phải bị từ chối khi tạo/cập nhật; không được
+  đưa vào trạng thái PUBLISHED.
+- Gap nhiều từ được tính đúng khi toàn bộ cụm đúng sau chuẩn hoá.
+
+Nâng cấp sau MVP có thể hỗ trợ điểm từng từ hoặc trọng số khác nhau cho từng
+gap, chẳng hạn tên riêng và số điện thoại có trọng số cao hơn.
+
+
+============================================================
+7. GIAO DIỆN HỌC VIÊN
+============================================================
+
+Audio player:
+
+- Nút phát/tạm dừng.
+- Thanh tua và thời lượng.
+- Tốc độ phát theo settings hiện có.
+- Số lượt nghe và bộ đếm thời gian.
+- Thông báo rõ khi audio không phát được hoặc đã đạt giới hạn lượt nghe.
+
+Transcript có gap:
+
+- Giữ ngữ cảnh câu/đoạn để học viên đọc dễ dàng.
+- Input nằm inline trong câu, có border rõ ràng và nhãn hỗ trợ screen reader.
+- Độ rộng tối thiểu phù hợp một từ; input có thể nở theo nội dung nhập.
+- Khi focus một gap, dùng style rõ ràng, không chỉ dựa vào màu sắc.
+- Không tự động sửa chính tả hoặc tự viết hoa làm thay đổi câu trả lời.
+- Trên màn hình nhỏ, input được phép xuống dòng tự nhiên mà không làm vỡ
+  thứ tự transcript.
+
+Kết quả:
+
+- Không chỉ dùng màu; kèm icon hoặc nhãn "Đúng", "Sai", "Bỏ trống".
+- Với đáp án sai, hiển thị: "Bạn nhập: ... — Đáp án: ...".
+- Cung cấp nút "Nghe lại" và "Làm lại".
+
+
+============================================================
+8. QUẢN TRỊ NỘI DUNG
+============================================================
+
+Màn hình tạo/sửa bài Dictation cần thêm:
+
+- Trường chọn loại bài: FULL_TEXT hoặc FILL_BLANK.
+- Transcript và audio như quy trình hiện tại.
+- Preview transcript sau khi token hoá.
+- Giáo viên bôi chọn một hoặc nhiều từ liên tiếp để tạo gap.
+- Giáo viên có thể xoá, sửa hoặc gộp lại gap.
+- Mỗi gap cho phép khai báo acceptedAnswers tùy chọn.
+- Preview chế độ học viên để kiểm tra giao diện trước khi lưu.
+
+Ràng buộc khi lưu:
+
+- Title, audioUrl và transcript không được rỗng.
+- FILL_BLANK phải có tối thiểu một gap hợp lệ.
+- Gap không chồng lấn và không nằm ngoài transcript.
+- Các gap phải được sắp theo vị trí transcript.
+- Cảnh báo nếu tỷ lệ nội dung bị ẩn quá cao, ví dụ trên 50%, nhưng giáo viên
+  vẫn có thể quyết định lưu.
+
+Khuyến nghị nội dung:
+
+- Audio MVP nên dài khoảng 10–60 giây.
+- Bắt đầu với 3–10 gap mỗi bài.
+- Ưu tiên từ/cụm có giá trị luyện nghe thay vì che quá nhiều từ chức năng.
+- Không tạo gap xuyên qua dấu câu hoặc ở đầu/cuối câu nếu làm mất ngữ cảnh.
+
+
+============================================================
+9. ATTEMPT, API VÀ LƯU KẾT QUẢ
+============================================================
+
+Có thể mở rộng DictationAttempt hiện có bằng các trường/JSON sau:
+
+- submittedAnswers: object { [gapId]: string }.
+- gapResults: FillBlankGapResult[].
+- score, correctCount, totalWords/totalGaps, listenCount, startedAt,
+  completedAt, durationSeconds.
+
+Tùy chọn rõ ràng hơn: đổi totalWords thành totalItems hoặc bổ sung totalGaps
+để tránh hiểu sai báo cáo của bài FULL_TEXT và FILL_BLANK.
+
+API đề xuất:
+
+- POST /api/dictation/[slug]/start
+  Tạo attempt IN_PROGRESS. Có thể tái sử dụng endpoint hiện có.
+
+- POST /api/dictation/attempts/[attemptId]/submit
+  Với FULL_TEXT: { text, listenCount }
+  Với FILL_BLANK: { answers: Record<string, string>, listenCount }
+  Server suy ra mode từ exercise, không tin mode do client gửi.
+
+- GET /api/dictation/attempts/[attemptId]
+  Chỉ cho chủ sở hữu attempt; với attempt COMPLETED trả kết quả và transcript
+  hoàn chỉnh.
+
+- GET /api/dictation/[slug]/history
+  Trả lịch sử đã nộp của đúng học viên đăng nhập.
+
+Kiểm soát server:
+
+- Không cho nộp attempt của người khác.
+- Không cho nộp lại attempt COMPLETED.
+- Giới hạn độ dài từng đáp án và tổng payload.
+- Clamp listenCount theo giới hạn settings; không tin số liệu client hoàn toàn.
+- Lưu kết quả chấm trong cùng thao tác cập nhật attempt để tránh chấm lại khác
+  kết quả khi nội dung bài bị quản trị viên chỉnh sửa sau này.
+
+
+============================================================
+10. CÁC BƯỚC TRIỂN KHAI
+============================================================
+
+Giai đoạn 1 — Thiết kế dữ liệu và scoring
+
+1. Bổ sung mode và gaps vào type, schema Prisma và repository Dictation.
+2. Viết parser/validator cho cấu hình gap.
+3. Viết hàm dựng masked transcript chỉ chứa segments công khai.
+4. Viết hàm normalize và gradeFillBlank ở server.
+5. Viết unit test cho scoring trước khi xây UI.
+
+Giai đoạn 2 — API và attempt
+
+1. Mở rộng public exercise payload theo mode.
+2. Cập nhật submit endpoint để nhận answers cho FILL_BLANK.
+3. Lưu submittedAnswers và gapResults.
+4. Cập nhật attempt review/history.
+5. Xác nhận không có endpoint hoặc payload nào làm lộ đáp án trước submit.
+
+Giai đoạn 3 — Giao diện học viên
+
+1. Tách/reuse phần audio player hiện có.
+2. Tạo FillBlankDictationPlayer.
+3. Render transcript inline với các input, điều hướng bàn phím và progress.
+4. Tạo FillBlankResult để hiển thị đáp án và trạng thái từng gap.
+5. Kiểm tra giao diện desktop, mobile và keyboard-only.
+
+Giai đoạn 4 — Giao diện quản trị
+
+1. Thêm lựa chọn mode.
+2. Xây UI chọn và chỉnh gap từ transcript tokenized.
+3. Bổ sung acceptedAnswers và preview học viên.
+4. Thêm validation trước khi lưu và thông báo lỗi dễ hiểu.
+
+Giai đoạn 5 — Hoàn thiện
+
+1. Bổ sung bản dịch i18n cho màn hình học viên và quản trị.
+2. Thêm analytics cơ bản: số lượt làm, điểm trung bình, số gap hay sai.
+3. Kiểm tra accessibility, responsive và xử lý lỗi audio/API.
+4. Cập nhật tài liệu vận hành: cách tạo bài và quy tắc viết đáp án thay thế.
+
+
+============================================================
+11. KỊCH BẢN KIỂM THỬ BẮT BUỘC
+============================================================
+
+Scoring:
+
+- Đúng tuyệt đối.
+- Đúng khác hoa/thường, dấu câu và nhiều khoảng trắng.
+- Sai một từ trong gap nhiều từ.
+- Bỏ trống một hoặc nhiều gap.
+- Đáp án acceptedAnswers.
+- Gap có apostrophe, số, ký tự Unicode.
+- Transcript/gap cấu hình không hợp lệ bị từ chối.
+
+API và bảo mật:
+
+- Payload tải bài không chứa transcript gốc hoặc expected answer.
+- User A không xem/nộp/xoá attempt của user B.
+- Attempt đã COMPLETED không thể submit lần hai.
+- Attempt IN_PROGRESS được dọn khi người dùng rời trang theo cơ chế hiện có.
+- Payload đáp án quá dài bị giới hạn an toàn.
+
+UX:
+
+- Có thể điền hoàn toàn bằng bàn phím.
+- Input không vỡ layout trên mobile.
+- Giới hạn lượt nghe hoạt động đúng khi phát lại từ đầu.
+- Có thông báo rõ khi audio lỗi, API lỗi hoặc nộp bài thất bại.
+- Sau nộp, transcript hoàn chỉnh và feedback khớp đúng từng gap.
+
+
+============================================================
+12. TIÊU CHÍ HOÀN THÀNH MVP
+============================================================
+
+- Quản trị viên tạo được bài FILL_BLANK có audio, transcript và gap.
+- Học viên nghe audio, điền gap, nộp và nhận điểm chính xác.
+- Đáp án không lộ ra trước khi nộp bài.
+- Kết quả hiển thị rõ đáp án đúng/sai/bỏ trống cho từng gap.
+- Lịch sử attempt hoạt động với học viên đăng nhập.
+- FULL_TEXT Dictation hiện có vẫn hoạt động không bị ảnh hưởng.

@@ -61,8 +61,12 @@ function syncTrackFromSeed(
       return structuredClone(seed);
     }
 
-    const needsStub = existing.stub !== seed.stub;
-    if (needsStub) {
+    const drifted =
+      existing.stub !== seed.stub ||
+      existing.slidesUrl !== seed.slidesUrl ||
+      existing.order !== seed.order ||
+      existing.title.vi !== seed.title.vi;
+    if (drifted) {
       changed = true;
       return structuredClone(seed);
     }

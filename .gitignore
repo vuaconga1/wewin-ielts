@@ -49,6 +49,8 @@ yarn-error.log*
 /data/attempts/
 /data/users.json
 /data/keys/
+/data/dictation/
+/data/shadowing/
 /data/learn/*
 !/data/learn/.gitkeep
 # published tests for Vercel (file-backed catalog fallback)

@@ -34,6 +34,7 @@ import { clusterSharedChoices } from "@/lib/practice/shared-choice";
 import { splitWritingPrompt } from "@/lib/practice/writing-prompt";
 import { countWords } from "@/lib/scoring";
 import { friendlyError } from "@/lib/ui/friendly-error";
+import { cancelNavProgress, startNavProgress } from "@/lib/client/nav-progress";
 import { formatQuestionStem } from "@/lib/ui/question-type-label";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
 import nextDynamic from "next/dynamic";
@@ -539,6 +540,7 @@ export function PracticeSession({
         url.pathname === location.pathname && url.search === location.search;
       if (samePath) return;
       e.preventDefault();
+      cancelNavProgress();
       requestLeave({ href: `${url.pathname}${url.search}${url.hash}` });
     };
 
@@ -686,6 +688,7 @@ export function PracticeSession({
         }
       }
 
+      startNavProgress();
       router.push(data.redirect);
     } catch (e) {
       console.warn("[practice/submit]", e);
@@ -728,6 +731,7 @@ export function PracticeSession({
       const pending = leavePendingRef.current;
       leavePendingRef.current = null;
       setLeaveOpen(false);
+      startNavProgress();
       if (pending?.href) {
         if (/^https?:\/\//i.test(pending.href)) {
           window.location.href = pending.href;

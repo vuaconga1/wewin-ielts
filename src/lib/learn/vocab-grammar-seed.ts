@@ -223,7 +223,10 @@ function fullPresentTensesExercises(): LearnExercise[] {
   ];
 }
 
-const GRAMMAR_TOPICS: TopicLesson[] = [
+/** Video + exercise grammar course, hidden while the slide-based course is live. */
+const SHOW_LEGACY_GRAMMAR = false;
+
+const LEGACY_GRAMMAR_TOPICS: TopicLesson[] = [
   topic({
     slug: "word-classes",
     track: "grammar",
@@ -289,6 +292,57 @@ const GRAMMAR_TOPICS: TopicLesson[] = [
   topic({ slug: "collocations", track: "grammar", order: 23, title: loc("Collocations", "Collocations"), summary: loc("Cụm từ cố định cho Speaking/Writing.", "Fixed phrases for Speaking/Writing."), videoUrl: V.short, theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>") }, true),
   topic({ slug: "punctuation", track: "grammar", order: 24, title: loc("Dấu câu cho IELTS Writing", "Punctuation for IELTS Writing"), summary: loc("Comma, semicolon, colon, apostrophe.", "Comma, semicolon, colon, apostrophe."), videoUrl: V.med, theoryHtml: loc("<p>Nội dung đang được cập nhật.</p>", "<p>Content coming soon.</p>") }, true),
 ];
+
+function googleSlidesEmbed(fileId: string): string {
+  return `https://docs.google.com/presentation/d/${fileId}/embed?start=false&loop=false&delayms=60000`;
+}
+
+/** WeWIN IELTS Grammar decks (Google Drive folder "New Grammar"). */
+const SLIDE_GRAMMAR_DECKS: {
+  slug: string;
+  fileId: string;
+  label: string;
+  vi: string;
+  en: string;
+}[] = [
+  { slug: "g1-four-core-tenses", fileId: "1J2yJp-Zbrtj2czmjx4sRvW-mnIRyFKB0Cg-XiiIsKwY", label: "Grammar 1", vi: "Bốn thì nền tảng", en: "Four core tenses" },
+  { slug: "g2-subject-verb-agreement", fileId: "11B2HE7JJwpqvtCVCAWAbf-QRMRJ-fExOLGK_iBMMoq4", label: "Grammar 2", vi: "Hòa hợp chủ ngữ và động từ", en: "Subject-verb agreement" },
+  { slug: "g3-passive-voice", fileId: "1NIVxrxyaYm68o6F2bmXWvkY2HoCypUDWQNJ3REwV7M4", label: "Grammar 3", vi: "Câu bị động", en: "Passive voice" },
+  { slug: "g4-relative-clauses", fileId: "1nuN7k9UnvTs4b1oTXh0ijzp-Q1Siamlyswmeh8sAS_g", label: "Grammar 4", vi: "Mệnh đề quan hệ", en: "Relative clauses" },
+  { slug: "g5-1-prepositions-time-place-movement", fileId: "11mtIcbI3hVptRxNKhU6regi7hXPa9Le3XJ6xrfvYM34", label: "Grammar 5.1", vi: "Giới từ thời gian, nơi chốn và chuyển động", en: "Prepositions of time, place and movement" },
+  { slug: "g5-2-dependent-prepositions", fileId: "1kva0H0_1cFMv11JJPpd3PwapEDzYZn5R9maPbAGE9V8", label: "Grammar 5.2", vi: "Giới từ đi với tính từ, động từ và danh từ", en: "Prepositions after adjectives, verbs and nouns" },
+  { slug: "g6-1-nouns-quantity", fileId: "1xP80QQxc2-lTV92Qedw41WF75LRzxSuvUxyosrmFH-g", label: "Grammar 6.1", vi: "Danh từ và số lượng", en: "Nouns and quantity" },
+  { slug: "g6-2-articles", fileId: "1sVHb8y4GRUg_Q_Xlc5VIb87V-7cvXjFcm4tnoDox5io", label: "Grammar 6.2", vi: "Mạo từ a, an, the và không mạo từ", en: "Articles: a, an, the and zero article" },
+  { slug: "g7-1-verb-patterns", fileId: "1h9XURZr_7zCmaMXysg8b90do-SqaMwViIDDsk_4CPj0", label: "Grammar 7.1", vi: "Động từ và dạng động từ theo sau", en: "Verbs and verb patterns" },
+  { slug: "g7-2-modal-verbs", fileId: "1lZw21whZxL739ZTQBJ833t-dbGjhPNoqBIsARZ1QVWU", label: "Grammar 7.2", vi: "Động từ khuyết thiếu", en: "Modal verbs" },
+  { slug: "g8-1-adjectives", fileId: "1YoQR917BT8GiE1lo_qINe22qFkDL4b8ZdoHUD2QuAXI", label: "Grammar 8.1", vi: "Tính từ và cụm tính từ", en: "Adjectives and adjective phrases" },
+  { slug: "g8-2-adverbs", fileId: "1EZwod-bnSooKNNAZAUxJ98Te3k2SqFYBBmohu12DmzM", label: "Grammar 8.2", vi: "Trạng từ và vị trí trạng từ", en: "Adverbs and adverb position" },
+  { slug: "g9-1-comparisons", fileId: "1JvRjR1Wt4YVMppeqe-SFwctE7jpll0RZT2hFdr5ZCXA", label: "Grammar 9.1", vi: "So sánh hơn, nhất và bằng", en: "Comparatives, superlatives and equality" },
+  { slug: "g9-2-advanced-comparisons", fileId: "1d3iU4_D2F7lUnOBZLLUZKGv4vffkLdjYa9dgyjXzNNA", label: "Grammar 9.2", vi: "Các cấu trúc so sánh mở rộng", en: "Extended comparison structures" },
+  { slug: "g10-1-cause-effect", fileId: "1nH01NLR7E-ugN62aKlLlhag05n6i_70IhQ4fvS3jH0g", label: "Grammar 10.1", vi: "Liên kết nguyên nhân và kết quả", en: "Linking cause and effect" },
+  { slug: "g10-2-contrast-concession", fileId: "19stYrThuS280rcYahJkGEt85guAkGVwM2f645YZQsj8", label: "Grammar 10.2", vi: "Liên kết tương phản và nhượng bộ", en: "Linking contrast and concession" },
+  { slug: "g10-3-purpose", fileId: "1CVHvLsBKshVOj9jDNpU41Ln-SvgWZEv_Q64kvYYpgfE", label: "Grammar 10.3", vi: "Diễn đạt mục đích", en: "Expressing purpose" },
+  { slug: "g10-4-conditionals", fileId: "1i3gWkCYpgXnmyV9psVj26A_ABNs8amvvZtYyOfwI8qk", label: "Grammar 10.4", vi: "Câu điều kiện", en: "Conditionals" },
+  { slug: "g10-5-time-addition-sequence", fileId: "1FAWMRNFBnRvA0Izk9dQrSWkUAZxfNWEcG2KqiAk-lps", label: "Grammar 10.5", vi: "Liên kết thời gian, bổ sung và trình tự", en: "Linking time, addition and sequence" },
+  { slug: "g11-1-very-too-enough-so-such", fileId: "1dgQHvEtxTHFnGVYlsJWq8Bq_VuK4btJE-jpee4XNKtE", label: "Grammar 11.1", vi: "Very, too, enough, so và such", en: "Very, too, enough, so and such" },
+  { slug: "g11-2-quantifiers-confusables", fileId: "1by7lTEWYidDlOji0svF-_foSGKV_kqYlvRuFw5R9buc", label: "Grammar 11.2", vi: "Lượng từ và các cặp từ dễ nhầm", en: "Quantifiers and commonly confused words" },
+];
+
+const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = SLIDE_GRAMMAR_DECKS.map((deck, i) =>
+  topic({
+    slug: deck.slug,
+    track: "grammar",
+    order: i + 1,
+    title: loc(deck.vi, deck.en),
+    summary: loc(`${deck.label} – ${deck.vi}`, `${deck.label} – ${deck.en}`),
+    videoUrl: "",
+    slidesUrl: googleSlidesEmbed(deck.fileId),
+    theoryHtml: loc("", ""),
+    exercises: [],
+  }),
+);
+
+const GRAMMAR_TOPICS = SHOW_LEGACY_GRAMMAR ? LEGACY_GRAMMAR_TOPICS : SLIDE_GRAMMAR_TOPICS;
 
 const VOCABULARY_TOPICS: TopicLesson[] = cambridgeVocabUnits.topics.map((unit) =>
   topic(

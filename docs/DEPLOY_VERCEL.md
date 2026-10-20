@@ -119,6 +119,7 @@ Vercel Hobby không chứa ~1GB mp3. Media production phục vụ từ **R2 publ
 [
   {
     "AllowedOrigins": [
+      "https://ielts.wewin.edu.vn",
       "https://wewin-ielts-zeta.vercel.app",
       "http://localhost:3000"
     ],

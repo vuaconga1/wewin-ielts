@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listTests } from "@/lib/store/test-store";
+import { listPublicTests } from "@/lib/store/test-store";
 import { normalizeExamType } from "@/lib/tests/exam-type";
 import { TestsModulePicker } from "@/components/tests/tests-module-picker";
 import { SiteShell } from "@/components/layout/site-shell";
@@ -14,7 +14,7 @@ export async function generateMetadata() {
 }
 
 export default async function TestsPage() {
-  const tests = await listTests();
+  const tests = await listPublicTests();
   const { t } = getTranslationsStatic();
 
   let academicCount = 0;

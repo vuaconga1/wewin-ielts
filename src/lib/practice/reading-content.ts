@@ -609,7 +609,11 @@ function findLetteredPassage(source: string): LetteredSlice | null {
       titleStart = i;
       continue;
     }
-    if (isTaskBoundaryLine(t)) break;
+    if (isTextLeadInLine(t)) {
+      titleStart = i;
+      break;
+    }
+    if (isTaskBoundaryLine(t) || isInstructionLine(t)) break;
     titleStart = i;
   }
 

@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import Link from "next/link";
-import { listTests } from "@/lib/store/test-store";
+import { listPublicTests } from "@/lib/store/test-store";
 import {
   normalizeExamType,
   type ExamType,
@@ -12,7 +12,7 @@ import { getTranslationsStatic } from "@/i18n/server";
 import { buildSpeakingExamQueue } from "@/lib/practice/speaking-exam";
 import { compareTestsAscending } from "@/lib/tests/test-sort";
 
-function toCatalog(tests: Awaited<ReturnType<typeof listTests>>): CatalogTest[] {
+function toCatalog(tests: Awaited<ReturnType<typeof listPublicTests>>): CatalogTest[] {
   return [...tests].sort(compareTestsAscending).map((trow) => {
     const speakingQueue =
       trow.skill === "SPEAKING" ? buildSpeakingExamQueue(trow.parts) : [];
@@ -43,7 +43,7 @@ type Props = {
 };
 
 export async function TestsModuleCatalog({ examType, initialSkill }: Props) {
-  const all = await listTests();
+  const all = await listPublicTests();
   const tests = all.filter((t) => normalizeExamType(t.examType) === examType);
   const catalog = toCatalog(tests);
   const { t } = getTranslationsStatic("tests");

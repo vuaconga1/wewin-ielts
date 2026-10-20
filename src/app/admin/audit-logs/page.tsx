@@ -2,6 +2,8 @@ import Link from "next/link";
 import { SiteShell } from "@/components/layout/site-shell";
 import { listAuditLogs, type AuditAction } from "@/lib/audit-log";
 import type { AppRole } from "@/lib/auth/permissions";
+import { getActivitySummary, type PeriodCount } from "@/lib/site-visit";
+import { getTranslations } from "@/i18n/server";
 
 export const dynamic = "force-dynamic";
 
@@ -59,14 +61,34 @@ export default async function AuditLogsPage({
   const action = validAction(one(params.action));
   const query = one(params.q);
   const requestedPage = Number.parseInt(one(params.page), 10);
-  const result = await listAuditLogs({
-    from,
-    to,
-    role,
-    action,
-    query,
-    page: Number.isFinite(requestedPage) ? requestedPage : 1,
-  });
+  const [result, summary, { t }] = await Promise.all([
+    listAuditLogs({
+      from,
+      to,
+      role,
+      action,
+      query,
+      page: Number.isFinite(requestedPage) ? requestedPage : 1,
+    }),
+    getActivitySummary(role).catch((error) => {
+      console.error("[audit-logs] Could not load summary", error);
+      return null;
+    }),
+    getTranslations("auditStats"),
+  ]);
+  const numberFormat = new Intl.NumberFormat("vi-VN");
+  const statCards: { key: string; title: string; main: PeriodCount; sub: PeriodCount; hintKey: string; hint: string }[] = summary
+    ? [
+        { key: "login", title: t("loginUsers", "Người đăng nhập"), main: summary.loginUsers, sub: summary.loginEvents, hintKey: "loginUsersHint", hint: "{n} lượt đăng nhập" },
+        { key: "test", title: t("testUsers", "Người làm test"), main: summary.testUsers, sub: summary.testEvents, hintKey: "testUsersHint", hint: "{n} lượt bắt đầu test" },
+        { key: "visit", title: t("visits", "Lượt truy cập"), main: summary.visits, sub: summary.visitors, hintKey: "visitsHint", hint: "{n} thiết bị khác nhau" },
+      ]
+    : [];
+  const periods: { key: keyof PeriodCount; label: string }[] = [
+    { key: "day", label: t("today", "Hôm nay") },
+    { key: "week", label: t("thisWeek", "Tuần này") },
+    { key: "month", label: t("thisMonth", "Tháng này") },
+  ];
   const totalPages = Math.max(1, Math.ceil(result.total / result.pageSize));
   const dateFormat = new Intl.DateTimeFormat("vi-VN", {
     timeZone: "Asia/Bangkok",
@@ -87,6 +109,37 @@ export default async function AuditLogsPage({
           Quản lý tài khoản
         </Link>
       </div>
+
+      {summary ? (
+        <section className="mb-5" aria-labelledby="audit-stats-title">
+          <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+            <h2 id="audit-stats-title" className="text-lg font-semibold text-zinc-900">{t("title", "Thống kê tổng")}</h2>
+            <p className="min-w-0 break-words text-xs text-zinc-500">
+              {role
+                ? t("roleNote", { role: roleLabel(role) }, "Đang lọc theo vai trò: {role}. Lượt truy cập luôn tính toàn trang.")
+                : t("subtitle", "Tính theo giờ Việt Nam: hôm nay, tuần này (từ thứ Hai) và tháng này.")}
+            </p>
+          </div>
+          <div className="grid gap-3 md:grid-cols-3">
+            {statCards.map((card) => (
+              <div key={card.key} className="wewin-card-3d min-w-0 p-4">
+                <p className="text-sm font-semibold text-wewin-navy">{card.title}</p>
+                <dl className="mt-3 grid grid-cols-3 gap-2">
+                  {periods.map((period) => (
+                    <div key={period.key} className="min-w-0 rounded-lg bg-zinc-50 px-2 py-2 text-center">
+                      <dt className="truncate text-[11px] font-medium uppercase tracking-wide text-zinc-500">{period.label}</dt>
+                      <dd className="mt-1 text-xl font-bold text-zinc-900 sm:text-2xl">{numberFormat.format(card.main[period.key])}</dd>
+                      <dd className="mt-0.5 break-words text-[11px] leading-tight text-zinc-500">
+                        {t(card.hintKey, { n: numberFormat.format(card.sub[period.key]) }, card.hint)}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <form className="wewin-card-3d mb-5 grid gap-3 p-4 md:grid-cols-2 xl:grid-cols-6">
         <label className="text-sm font-medium text-zinc-700">

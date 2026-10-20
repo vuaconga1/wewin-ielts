@@ -54,7 +54,10 @@ export function TopicSidebar({
         <div className="flex items-start gap-2">
           <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />
           <p className="break-words text-sm font-medium text-wewin-navy">
-            {t("videoLecture", "Video bài giảng")}: {currentTitle}
+            {topics.find((tpc) => tpc.slug === currentSlug)?.slidesUrl
+              ? t("slidesLesson", "Slide bài giảng")
+              : t("videoLecture", "Video bài giảng")}
+            : {currentTitle}
           </p>
         </div>
       </div>
@@ -111,7 +114,9 @@ export function TopicSidebar({
                     ? t("locked")
                     : done
                       ? t("done")
-                      : videoDone
+                      : topic.slidesUrl
+                        ? t("viewSlides", "Xem slide")
+                        : videoDone
                         ? t("doExercises")
                         : t("watchVideo")}
                 </span>

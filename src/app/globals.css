@@ -118,6 +118,31 @@ body {
     }
   }
 
+  /* Top bar while a page transition is pending (NavigationProgress) */
+  .wewin-nav-progress-bar {
+    width: 0;
+    animation: wewin-nav-progress 10s cubic-bezier(0.1, 0.7, 0.3, 1) forwards;
+  }
+
+  @keyframes wewin-nav-progress {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 35%;
+    }
+    100% {
+      width: 92%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wewin-nav-progress-bar {
+      animation: none;
+      width: 60%;
+    }
+  }
+
   /* Elevated content cards — soft navy-tinted 3D pop */
   .wewin-card-3d,
   .card-outline,

@@ -36,6 +36,30 @@ export function learnVocabGrammarTopicHref(
   return `/learn/vocab-grammar/${track}/${slug}`;
 }
 
+export function learnDictationHref(slug?: string): string {
+  return slug ? `/learn/dictation/${slug}` : "/learn/dictation";
+}
+
+export function learnFillBlankHref(slug?: string): string {
+  return slug ? `/learn/fill-blank/${slug}` : "/learn/fill-blank";
+}
+
+/** Dictation and fill-blank share storage but are separate games with separate routes. */
+export function learnListeningExerciseHref(
+  mode: "FULL_TEXT" | "FILL_BLANK",
+  slug?: string,
+): string {
+  return mode === "FILL_BLANK" ? learnFillBlankHref(slug) : learnDictationHref(slug);
+}
+
+export function adminListeningExerciseHref(mode: "FULL_TEXT" | "FILL_BLANK"): string {
+  return mode === "FILL_BLANK" ? "/admin/fill-blank" : "/admin/dictation";
+}
+
+export function learnShadowingHref(slug?: string): string {
+  return slug ? `/learn/shadowing/${slug}` : "/learn/shadowing";
+}
+
 /** Vocabulary learn/practice page (word cards + optional exercises). */
 export function learnVocabTopicLearnHref(slug: string): string {
   return `/learn/vocab-grammar/vocabulary/${slug}/learn`;

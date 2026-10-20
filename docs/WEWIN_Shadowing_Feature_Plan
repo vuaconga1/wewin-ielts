@@ -1,0 +1,713 @@
+WEWIN — SHADOWING / SPEAKING PRACTICE
+PLAN XÂY DỰNG TÍNH NĂNG NGHE VÀ ĐỌC LẠI TIẾNG ANH
+Phiên bản: 1.0
+Mục đích: Tài liệu yêu cầu và lộ trình phát triển để đội ngũ hoặc AI coding agent triển khai theo từng giai đoạn.
+
+======================================================================
+1. MỤC TIÊU VÀ PHẠM VI
+======================================================================
+
+1.1. Mục tiêu
+Xây dựng tính năng luyện nói theo phương pháp Shadowing:
+- Học sinh nghe một câu hoặc đoạn tiếng Anh mẫu.
+- Nội dung văn bản mẫu được ẩn trong lúc luyện.
+- Học sinh ghi âm giọng đọc của mình.
+- Hệ thống chuyển giọng nói thành văn bản (Speech-to-Text / STT).
+- Hệ thống so sánh phần học sinh đọc với nội dung mẫu.
+- Hiển thị kết quả dễ hiểu, giúp học sinh biết từ nào đúng, thiếu, sai hoặc đọc thừa.
+- Cho phép nghe lại audio mẫu và audio của học sinh để tự so sánh.
+
+1.2. Đối tượng và quy mô dự kiến
+- Khoảng 500 học sinh.
+- Dự kiến 10–50 người dùng đồng thời.
+- Đoạn audio mẫu thường dài 5–20 giây.
+- Nội dung luyện tập chủ yếu là tiếng Anh.
+
+1.3. Công nghệ định hướng
+- Frontend và API điều phối: Next.js.
+- Nền tảng web hiện tại: Vercel.
+- Speech-to-Text: faster-whisper sử dụng mô hình distil-large-v3 trong giai đoạn đầu.
+- Lưu trữ audio: object storage riêng tư, ví dụ Cloudflare R2.
+- Hàng đợi công việc: có thể dùng Redis/Upstash hoặc bảng job trong cơ sở dữ liệu hiện có.
+- Lưu kết quả và trạng thái: cơ sở dữ liệu của ứng dụng.
+- Worker xử lý STT: dịch vụ Python độc lập với Next.js.
+
+Lưu ý: Đây là định hướng kiến trúc, không phải yêu cầu bắt buộc phải dùng mọi dịch vụ nêu trên. Cần tận dụng hạ tầng và cơ sở dữ liệu hiện có của WEWIN khi phù hợp.
+
+1.4. Không nằm trong phạm vi tài liệu
+- Hướng dẫn triển khai hoặc vận hành VPS.
+- Hướng dẫn thuê, cấu hình hoặc vận hành GPU.
+- Cam kết độ trễ hoặc chi phí trước khi benchmark thực tế.
+
+======================================================================
+2. LUỒNG NGHIỆP VỤ CHO HỌC SINH
+======================================================================
+
+Bước 1 — Mở bài luyện tập
+- Học sinh mở một bài luyện Shadowing.
+- Giao diện hiển thị hướng dẫn ngắn và audio mẫu.
+- Không hiển thị transcript mẫu trong chế độ luyện mặc định.
+
+Bước 2 — Nghe mẫu
+- Học sinh có thể phát, tạm dừng và nghe lại audio mẫu.
+- Hiển thị thời lượng audio và trạng thái đang phát.
+- Cho phép nghe lại nhiều lần trước khi ghi âm.
+- Không tự động phát audio mẫu nếu điều đó gây bất tiện hoặc làm gián đoạn học sinh.
+
+Bước 3 — Ghi âm
+- Học sinh bấm nút bắt đầu ghi âm.
+- Trình duyệt yêu cầu quyền microphone khi cần.
+- Hiển thị trạng thái ghi âm, thời lượng đã ghi và nút dừng.
+- Có thể cho phép nghe lại bản ghi trước khi gửi.
+- Nếu người dùng từ chối quyền microphone, hiển thị hướng dẫn xử lý rõ ràng.
+- Giới hạn thời lượng ghi âm phù hợp với bài tập; mặc định định hướng tối đa 30 giây cho audio mẫu 5–20 giây, nhưng cần cho phép cấu hình.
+
+Bước 4 — Gửi bài
+- Học sinh xác nhận gửi bản ghi.
+- Frontend kiểm tra định dạng, dung lượng và thời lượng cơ bản.
+- Audio được tải lên kho lưu trữ qua cơ chế upload được cấp quyền; tránh truyền toàn bộ file audio qua API Next.js nếu không cần thiết.
+- API xác thực người dùng, kiểm tra quyền truy cập bài tập và tạo job xử lý.
+- Trả về job ID và trạng thái ban đầu để frontend theo dõi.
+
+Bước 5 — Xử lý
+- Job được đưa vào hàng đợi.
+- Worker lấy job, tải audio cần thiết và chạy STT.
+- Hệ thống chuẩn hóa transcript và so sánh với transcript chuẩn.
+- Lưu kết quả xử lý trước khi đánh dấu job hoàn tất.
+- Nếu thất bại, lưu trạng thái lỗi có thể xử lý được; không để job treo vô hạn.
+
+Bước 6 — Xem kết quả
+- Học sinh thấy trạng thái đang xử lý cho đến khi có kết quả.
+- Khi hoàn tất, hiển thị điểm khớp nội dung, transcript nhận diện và phân loại từ.
+- Cho phép nghe audio mẫu và audio của học sinh.
+- Cho phép mở transcript chuẩn sau khi đã nộp bài.
+- Nếu hệ thống không thể nhận diện đáng tin cậy, phải thông báo rõ và cho phép ghi âm lại; không tự tạo điểm số giả.
+
+======================================================================
+3. YÊU CẦU CHỨC NĂNG
+======================================================================
+
+3.1. Quản lý bài luyện tập
+Mỗi bài luyện tập cần có tối thiểu:
+- ID bài tập.
+- Tiêu đề.
+- Ngôn ngữ, mặc định tiếng Anh.
+- Transcript chuẩn.
+- Audio mẫu hoặc tham chiếu tới audio mẫu.
+- Thời lượng audio mẫu.
+- Trạng thái hoạt động.
+- Thông tin cấp lớp/khóa học nếu hệ thống hiện tại cần.
+- Cấu hình số lần thử nếu nghiệp vụ WEWIN có giới hạn lượt làm.
+
+Transcript chuẩn là dữ liệu nguồn để so sánh. Không dùng transcript do mô hình nhận diện tạo ra làm đáp án chuẩn.
+
+3.2. Audio mẫu
+- Phát, tạm dừng, phát lại.
+- Không tự hiển thị transcript trong chế độ luyện.
+- Có thể phát transcript sau khi học sinh nộp bài hoặc theo chính sách của bài học.
+- Kiểm tra quyền truy cập audio mẫu theo quyền truy cập bài tập.
+- Không để URL lưu trữ riêng tư có hiệu lực vô thời hạn bị lộ ra ngoài.
+
+3.3. Ghi âm của học sinh
+- Dùng API ghi âm được trình duyệt hỗ trợ, chẳng hạn MediaRecorder.
+- Kiểm tra quyền microphone và xử lý trường hợp trình duyệt không hỗ trợ.
+- Chấp nhận các định dạng thực tế được trình duyệt tạo ra; backend cần xác minh định dạng thật thay vì chỉ tin MIME type do client gửi.
+- Giới hạn kích thước và thời lượng.
+- Cho phép nghe lại trước khi gửi nếu phù hợp với UX.
+- Có thể ghi âm lại trước khi nộp.
+- Khi đã nộp, tạo một submission riêng để tránh ghi đè nhầm bản ghi trước đó.
+
+3.4. Chuyển giọng nói thành văn bản
+- Sử dụng faster-whisper với mô hình distil-large-v3 trong giai đoạn đầu.
+- Đặt ngôn ngữ nhận diện là English khi bài tập là tiếng Anh, tránh phát hiện ngôn ngữ không cần thiết.
+- Nạp mô hình một lần trong vòng đời worker; không khởi tạo mô hình mới cho từng submission.
+- Lưu transcript nhận diện, thời lượng xử lý và thông tin lỗi cần thiết.
+- Cấu hình các tham số STT tập trung, không rải rác trong code.
+- Không coi transcript STT là đánh giá phát âm hoàn chỉnh.
+- Nếu audio im lặng, quá ngắn, nhiễu nặng hoặc kết quả không đáng tin cậy, trả trạng thái phù hợp thay vì chấm điểm như bình thường.
+
+3.5. So sánh transcript
+So sánh transcript chuẩn với transcript nhận diện để phân loại:
+- Đúng: từ khớp với nội dung chuẩn.
+- Thiếu: từ có trong chuẩn nhưng không xuất hiện trong phần nhận diện.
+- Thay thế/sai khác: từ nhận diện không khớp với từ chuẩn ở vị trí tương ứng.
+- Thừa: từ được nhận diện nhưng không có trong nội dung chuẩn.
+
+Dùng thuật toán căn chỉnh chuỗi như Levenshtein/Edit Distance hoặc alignment tương đương. Không chỉ so sánh hai chuỗi bằng phép kiểm tra bằng nhau.
+
+Trước khi so sánh:
+- Chuẩn hóa chữ hoa/chữ thường.
+- Chuẩn hóa dấu câu theo chính sách thống nhất.
+- Chuẩn hóa khoảng trắng.
+- Giữ lại nội dung từ vựng cần thiết cho việc học.
+- Xử lý dấu nháy và dạng viết tắt một cách nhất quán, ví dụ “don't” và “do not”. Không tự mở rộng dạng viết tắt nếu điều đó làm sai lệch ý nghĩa hoặc không thống nhất với bài chuẩn.
+
+Kết quả phải có thông tin vị trí từ để frontend có thể tô màu từ tương ứng trong câu.
+
+3.6. Điểm khớp nội dung
+Giai đoạn đầu có thể sử dụng Word Error Rate (WER):
+WER = (S + D + I) / N
+Trong đó:
+- S: số từ bị thay thế.
+- D: số từ bị thiếu.
+- I: số từ thừa.
+- N: số từ trong transcript chuẩn.
+
+Điểm khớp nội dung có thể tính:
+Content Match Score = max(0, 100 × (1 − WER))
+
+Yêu cầu:
+- Hiển thị đây là điểm khớp nội dung dựa trên STT, không phải điểm phát âm tuyệt đối.
+- Xử lý riêng trường hợp transcript chuẩn rỗng hoặc không hợp lệ.
+- Tránh chia cho 0.
+- Không làm tròn sớm khi tính toán.
+- Ghi rõ chính sách chuẩn hóa được áp dụng.
+- Cân nhắc hiển thị số từ đúng/thiếu/thay thế/thừa cùng điểm tổng để điểm số dễ hiểu.
+- Nếu STT thất bại hoặc chất lượng quá thấp, không trả điểm 0 như thể học sinh đọc sai hoàn toàn; hãy hiển thị “Chưa thể đánh giá — vui lòng ghi âm lại”.
+
+3.7. Đánh giá phát âm
+Phân biệt hai khái niệm:
+A. Độ khớp nội dung: dựa trên transcript STT và so sánh văn bản.
+B. Độ chính xác phát âm: cần phương pháp phân tích âm thanh/ngữ âm chuyên biệt.
+
+Trong MVP:
+- Có thể hiển thị điểm khớp nội dung.
+- Không gọi điểm khớp nội dung là “điểm phát âm”.
+- Nếu chưa có mô hình đánh giá phát âm, ghi rõ tính năng chấm phát âm chi tiết chưa khả dụng.
+
+Giai đoạn nâng cao:
+- Nghiên cứu forced alignment và/hoặc mô hình đánh giá phát âm cấp âm vị.
+- Forced alignment dùng transcript đã biết để căn thời điểm từ/âm vị trong audio; tự nó không chứng minh học sinh phát âm đúng.
+- Chỉ đưa ra điểm phát âm sau khi đã kiểm chứng mô hình trên dữ liệu tiếng Anh phù hợp với nhóm học sinh mục tiêu.
+- Hiển thị mức độ tin cậy và tránh khẳng định tuyệt đối nếu mô hình không đủ chắc chắn.
+
+3.8. Phát lại và so sánh audio
+- Có hai trình phát độc lập: audio mẫu và audio học sinh.
+- Cho phép phát/tạm dừng/phát lại.
+- Hiển thị thời lượng.
+- Có thể bổ sung chế độ phát lần lượt mẫu rồi đến bản ghi học sinh.
+- Không bắt buộc phải phát đồng thời trong MVP.
+- Không tự động đồng bộ hoặc căn chỉnh audio nếu chưa có dữ liệu alignment đáng tin cậy.
+- Audio học sinh chỉ được truy cập bởi đúng học sinh và các vai trò được phép theo chính sách hệ thống.
+
+3.9. Trạng thái job
+Định nghĩa trạng thái tối thiểu:
+- uploaded: audio đã được tải lên.
+- queued: đang chờ xử lý.
+- processing: worker đang xử lý.
+- completed: đã có kết quả hoàn chỉnh.
+- failed: xử lý thất bại.
+- needs_retry: cần người dùng ghi âm hoặc gửi lại.
+
+Quy tắc:
+- Chỉ đánh dấu completed sau khi kết quả đã được lưu thành công.
+- Mỗi job có thời điểm tạo, bắt đầu xử lý, hoàn tất và thông tin lỗi phù hợp.
+- Có timeout, retry giới hạn và cơ chế chống xử lý trùng.
+- Frontend cần có trạng thái tải, thành công, lỗi và thao tác thử lại.
+- Không hiển thị lỗi kỹ thuật nhạy cảm trực tiếp cho học sinh.
+
+======================================================================
+4. KIẾN TRÚC LOGIC VÀ TRÁCH NHIỆM CÁC THÀNH PHẦN
+======================================================================
+
+4.1. Frontend Next.js
+Chịu trách nhiệm:
+- Hiển thị bài tập và audio mẫu.
+- Ghi âm bằng microphone.
+- Kiểm tra sơ bộ thời lượng/kích thước.
+- Xin quyền upload audio.
+- Gửi audio theo luồng upload phù hợp.
+- Tạo submission/job thông qua API.
+- Theo dõi trạng thái xử lý.
+- Hiển thị kết quả và phát lại audio.
+- Xử lý loading, lỗi, quyền truy cập và thử lại.
+
+Không chạy suy luận mô hình STT nặng trong trình duyệt.
+
+4.2. API Next.js
+Chịu trách nhiệm:
+- Xác thực người dùng.
+- Kiểm tra quyền truy cập bài tập và submission.
+- Cấp quyền upload/download có thời hạn cho object storage.
+- Kiểm tra metadata và tạo job.
+- Cung cấp trạng thái và kết quả cho đúng người dùng.
+- Giới hạn tần suất gửi bài.
+- Không để lộ secret của storage, queue hoặc worker.
+- Không nhận hoặc trả audio lớn qua API nếu có thể upload trực tiếp tới object storage.
+
+4.3. Object storage
+Chịu trách nhiệm:
+- Lưu audio mẫu và audio học sinh.
+- Phân tách quyền truy cập theo loại dữ liệu.
+- Dùng bucket/private object hoặc cơ chế tương đương.
+- Tạo URL có thời hạn ngắn khi cần truy cập.
+- Áp dụng chính sách lưu giữ/xóa audio.
+- Không đặt audio riêng tư ở vùng public.
+
+4.4. Queue và worker STT
+Chịu trách nhiệm:
+- Nhận job theo hàng đợi.
+- Xác minh job và tải audio hợp lệ.
+- Chạy faster-whisper.
+- So sánh transcript.
+- Lưu kết quả.
+- Cập nhật trạng thái job.
+- Retry các lỗi tạm thời trong giới hạn.
+- Tránh xử lý đồng thời quá mức so với năng lực thực tế.
+- Dùng idempotency để tránh tạo kết quả trùng khi job được gửi lại.
+
+4.5. Database
+Cần lưu metadata, trạng thái, kết quả và quan hệ với người dùng/bài tập. Tận dụng database hiện tại của WEWIN nếu phù hợp, tránh tạo hệ thống dữ liệu thứ hai không cần thiết.
+
+======================================================================
+5. MÔ HÌNH DỮ LIỆU ĐỀ XUẤT
+======================================================================
+
+Tên bảng/collection chỉ mang tính gợi ý; cần điều chỉnh theo schema hiện tại của WEWIN.
+
+5.1. shadowing_exercises
+- id
+- title
+- language
+- reference_text
+- reference_audio_key
+- reference_audio_duration_ms
+- is_active
+- created_at
+- updated_at
+
+5.2. shadowing_submissions
+- id
+- exercise_id
+- student_id
+- student_audio_key
+- audio_duration_ms
+- audio_mime_type
+- status
+- attempt_number
+- created_at
+- submitted_at
+- completed_at
+- error_code
+- retry_count
+
+5.3. shadowing_results
+- id
+- submission_id
+- recognized_text
+- normalized_reference_text
+- normalized_recognized_text
+- correct_word_count
+- substitution_count
+- deletion_count
+- insertion_count
+- wer
+- content_match_score
+- alignment_result_json
+- stt_model
+- processing_duration_ms
+- confidence_or_quality_metadata
+- created_at
+
+Nguyên tắc:
+- Không lưu dữ liệu trùng lặp nếu có thể tính lại an toàn.
+- Không lưu token hoặc URL ký có thời hạn lâu dài trong database.
+- Tách quyền đọc kết quả và audio theo quyền truy cập submission.
+- Dùng khóa ngoại/quan hệ phù hợp với database hiện tại.
+- Lưu phiên bản thuật toán hoặc cấu hình so sánh để kết quả có thể được giải thích và tái tạo.
+
+======================================================================
+6. API CONTRACT ĐỀ XUẤT
+======================================================================
+
+Tên endpoint cần khớp với quy ước API hiện tại của WEWIN.
+
+6.1. Tạo quyền upload
+POST /api/shadowing/upload-url
+
+Đầu vào:
+- exerciseId
+- fileName hoặc metadata tối thiểu cần thiết
+- contentType
+- sizeBytes
+
+Đầu ra:
+- upload URL có thời hạn
+- object key hoặc upload token cần thiết
+- thông tin hết hạn
+
+Kiểm tra:
+- Người dùng đã đăng nhập.
+- Có quyền làm bài tập.
+- Định dạng/kích thước được phép.
+- Không cho client tự quyết định object key tùy ý nếu có nguy cơ ghi đè dữ liệu.
+
+6.2. Tạo submission
+POST /api/shadowing/submissions
+
+Đầu vào:
+- exerciseId
+- uploaded object key hoặc upload token
+- durationMs
+- metadata cần thiết
+
+Đầu ra:
+- submissionId
+- status
+
+Kiểm tra:
+- Audio thực sự tồn tại.
+- Object thuộc đúng người dùng hoặc đúng phiên upload.
+- Thời lượng và định dạng hợp lệ.
+- Không tạo job trùng khi request được gửi lại.
+
+6.3. Lấy trạng thái
+GET /api/shadowing/submissions/{submissionId}
+
+Đầu ra:
+- submissionId
+- status
+- createdAt
+- completedAt nếu có
+- kết quả nếu đã hoàn tất
+- thông báo lỗi thân thiện nếu thất bại
+
+Chỉ chủ sở hữu hoặc vai trò được phép mới được truy cập.
+
+6.4. Gửi lại/xử lý lại
+Chỉ triển khai nếu có nhu cầu nghiệp vụ rõ ràng. Phân biệt:
+- Học sinh ghi âm và nộp một attempt mới.
+- Hệ thống retry lại job cũ do lỗi kỹ thuật.
+
+Không dùng cùng một thao tác cho cả hai trường hợp.
+
+6.5. Quy tắc API chung
+- Dùng schema validation ở server.
+- Chuẩn hóa response/error format.
+- Không tin dữ liệu client gửi về MIME type, thời lượng hoặc quyền sở hữu object.
+- Giới hạn request rate.
+- Ghi log bằng submission ID/job ID, tránh ghi nội dung nhạy cảm không cần thiết.
+- Không trả stack trace, secret hoặc thông tin hạ tầng cho frontend.
+
+======================================================================
+7. THIẾT KẾ GIAO DIỆN
+======================================================================
+
+7.1. Màn hình luyện tập
+Thành phần:
+- Tiêu đề bài.
+- Hướng dẫn ngắn.
+- Trình phát audio mẫu.
+- Nút nghe lại.
+- Nút ghi âm.
+- Trạng thái microphone.
+- Bộ đếm thời lượng ghi âm.
+- Nút dừng.
+- Nút nghe lại bản ghi.
+- Nút ghi lại.
+- Nút nộp bài.
+
+Trải nghiệm:
+- Các nút phải có trạng thái disabled/loading hợp lý.
+- Hiển thị rõ khi trình duyệt chưa được cấp quyền microphone.
+- Không để người dùng gửi bài nhiều lần do nhấn liên tục.
+- Bố cục tương thích màn hình máy tính và điện thoại.
+
+7.2. Màn hình xử lý
+- Thông báo đang xử lý.
+- Trạng thái rõ ràng, không làm người dùng tưởng trang bị treo.
+- Không yêu cầu người dùng giữ trang mở nếu kiến trúc cho phép kiểm tra lại sau.
+- Khi tải lại trang, trạng thái submission phải được khôi phục từ server.
+
+7.3. Màn hình kết quả
+- Điểm khớp nội dung.
+- Nhãn giải thích điểm phản ánh điều gì.
+- Transcript nhận diện.
+- Transcript chuẩn, chỉ hiển thị theo quy tắc bài học.
+- Tô màu từ:
+  + đúng: màu tích cực, dễ đọc.
+  + thiếu: đánh dấu vị trí từ chuẩn bị thiếu.
+  + thay thế/sai khác: phân biệt với từ đúng.
+  + thừa: hiển thị riêng hoặc đánh dấu rõ.
+- Hai trình phát audio mẫu và học sinh.
+- Nút ghi âm lại/làm lại nếu được phép.
+- Thông báo khi chất lượng audio thấp hoặc không thể đánh giá.
+
+Yêu cầu accessibility:
+- Không chỉ dựa vào màu sắc để thể hiện lỗi; cần thêm nhãn/icon/text.
+- Nút có nhãn dễ hiểu.
+- Có trạng thái focus bàn phím.
+- Tương phản màu đủ tốt.
+
+======================================================================
+8. BẢO MẬT, QUYỀN RIÊNG TƯ VÀ ĐỘ TIN CẬY
+======================================================================
+
+- Xác thực người dùng ở mọi API có dữ liệu riêng tư.
+- Kiểm tra quyền sở hữu submission ở server; không chỉ dựa vào ID khó đoán.
+- Không cho học sinh đọc audio/kết quả của học sinh khác.
+- Dùng URL ký có thời hạn ngắn.
+- Bucket lưu audio phải private.
+- Kiểm tra định dạng thực tế và giới hạn file.
+- Giới hạn thời lượng để tránh upload audio quá dài.
+- Giới hạn số job theo người dùng trong một khoảng thời gian.
+- Chống upload trùng và request tạo job trùng.
+- Dùng timeout, retry giới hạn và trạng thái lỗi rõ ràng.
+- Không ghi audio, token, signed URL hoặc thông tin cá nhân vào log nếu không cần thiết.
+- Xác định thời hạn lưu audio và kết quả; ví dụ chính sách lưu audio 30 ngày chỉ là đề xuất để thảo luận, không phải mặc định đã được phê duyệt.
+- Cung cấp cơ chế xóa audio theo chính sách sản phẩm và yêu cầu hợp lệ.
+- Nếu người dùng là trẻ em/học sinh, cần xem xét chính sách quyền riêng tư, thông báo cho phụ huynh/nhà trường và yêu cầu pháp lý áp dụng.
+- Không dùng bản ghi học sinh để huấn luyện mô hình nếu chưa có cơ sở pháp lý, thông báo và sự cho phép phù hợp.
+
+======================================================================
+9. XỬ LÝ LỖI VÀ TRƯỜNG HỢP BIÊN
+======================================================================
+
+Phải kiểm thử và xử lý:
+- Người dùng từ chối quyền microphone.
+- Thiết bị không có microphone.
+- Trình duyệt không hỗ trợ API ghi âm.
+- Audio rỗng hoặc quá ngắn.
+- Audio vượt giới hạn.
+- File hỏng hoặc định dạng không hợp lệ.
+- Audio im lặng.
+- Audio quá nhiễu hoặc có nhiều giọng nói.
+- Học sinh ngừng ghi âm giữa câu.
+- Upload bị gián đoạn.
+- Upload thành công nhưng tạo job thất bại.
+- Job được gửi hai lần.
+- Worker bị dừng giữa lúc xử lý.
+- STT timeout hoặc phát sinh lỗi.
+- Database/storage tạm thời không khả dụng.
+- Kết quả STT rỗng.
+- Transcript chuẩn rỗng hoặc chỉ có dấu câu.
+- Từ viết tắt, số, dấu nháy, dấu câu và cách viết khác nhau.
+- Học sinh đọc đúng nhưng STT nhận diện sai.
+- Học sinh đọc sai nhưng STT đoán thành câu chuẩn.
+- Người dùng tải lại trang khi job đang xử lý.
+- Học sinh cố truy cập submission của người khác.
+- Audio mẫu hoặc audio học sinh không còn tồn tại.
+
+Nguyên tắc:
+- Phân biệt lỗi người dùng, lỗi dữ liệu và lỗi hệ thống.
+- Không biến lỗi STT thành điểm thấp giả tạo.
+- Retry chỉ với lỗi có khả năng phục hồi.
+- Thông báo cho học sinh phải ngắn gọn, dễ hiểu và không lộ chi tiết kỹ thuật.
+
+======================================================================
+10. KIỂM THỬ VÀ TIÊU CHÍ CHẤP NHẬN
+======================================================================
+
+10.1. Kiểm thử chức năng
+- Học sinh nghe được audio mẫu.
+- Transcript mẫu được ẩn trong chế độ luyện.
+- Ghi âm, dừng, nghe lại và gửi bài hoạt động.
+- API tạo submission đúng quyền.
+- Trạng thái job cập nhật đúng.
+- Kết quả có transcript và phân loại từ.
+- Audio mẫu và audio học sinh có thể phát lại.
+- Tải lại trang không làm mất trạng thái submission.
+- Người dùng không thể truy cập dữ liệu của người khác.
+
+10.2. Kiểm thử thuật toán so sánh
+Tạo bộ test có transcript chuẩn và kết quả nhận diện giả lập:
+- Câu đọc đúng hoàn toàn.
+- Thiếu một từ ở đầu, giữa và cuối.
+- Thay thế một từ.
+- Thừa một từ.
+- Nhiều lỗi trong cùng câu.
+- Khác chữ hoa/chữ thường.
+- Khác dấu câu.
+- Có dạng viết tắt.
+- Transcript rỗng.
+- Transcript chuẩn rỗng.
+- Câu có số và ký hiệu.
+
+Kết quả alignment phải ổn định, có thể kiểm tra bằng unit test và đủ dữ liệu để frontend tô màu đúng vị trí.
+
+10.3. Kiểm thử STT
+Chuẩn bị tập audio tiếng Anh đại diện cho học sinh mục tiêu:
+- Giọng đọc chậm và nhanh.
+- Các mức độ thành thạo khác nhau.
+- Các giọng/âm sắc khác nhau.
+- Một số điều kiện tiếng ồn thực tế.
+- Các câu có từ dễ nhầm lẫn.
+
+Đánh giá WER và lỗi nhận diện trên tập kiểm thử. Không chỉ dựa vào một vài bản ghi mẫu để kết luận mô hình đủ tốt.
+
+10.4. Kiểm thử tải và hàng đợi
+- Thử các đợt gửi bài với 1, 10, 25 và 50 người dùng.
+- Dùng audio dài 5, 10 và 20 giây.
+- Đo thời gian chờ trong queue, thời gian STT, tổng thời gian hoàn tất, tỷ lệ lỗi và số job bị xử lý trùng/mất.
+- Thử tải kéo dài 15–30 phút để phát hiện nghẽn tài nguyên.
+- Mục tiêu độ trễ cần được xác nhận bằng benchmark; không coi một con số dự kiến là cam kết trước khi đo.
+- Đảm bảo job không mất khi frontend đóng tab hoặc tải lại trang.
+
+10.5. Tiêu chí nghiệm thu MVP
+MVP được xem là đạt khi:
+- Luồng nghe → ghi âm → gửi → xử lý → xem kết quả hoạt động đầu cuối.
+- Kết quả so sánh từ đúng với bộ unit test.
+- Có thông báo phù hợp cho audio không hợp lệ hoặc không thể nhận diện.
+- Phân quyền dữ liệu đã được kiểm tra.
+- Không có lỗi nghiêm trọng về lộ audio hoặc truy cập chéo người dùng.
+- Job có trạng thái và xử lý lỗi rõ ràng.
+- Có số liệu benchmark ban đầu về WER, độ trễ và tỷ lệ lỗi.
+
+======================================================================
+11. LỘ TRÌNH PHÁT TRIỂN THEO GIAI ĐOẠN
+======================================================================
+
+Giai đoạn 0 — Khảo sát codebase hiện tại
+- Đọc cấu trúc Next.js và quy ước API hiện có.
+- Xác định hệ thống đăng nhập, database, quyền học sinh và quan hệ bài tập.
+- Kiểm tra cách WEWIN đang lưu audio/file nếu đã có.
+- Chọn phương án queue/storage tương thích với kiến trúc hiện tại.
+- Ghi lại các quyết định kiến trúc trước khi sửa code.
+Đầu ra: tài liệu ngắn về tích hợp vào codebase hiện tại, không tạo hệ thống song song không cần thiết.
+
+Giai đoạn 1 — Đặc tả dữ liệu và API
+- Chốt schema exercise, submission, result.
+- Chốt trạng thái job.
+- Chốt hợp đồng API và format lỗi.
+- Chốt quyền truy cập.
+- Chốt giới hạn thời lượng/kích thước audio.
+Đầu ra: schema/API contract và danh sách test.
+
+Giai đoạn 2 — Giao diện nghe và ghi âm
+- Xây dựng trình phát audio mẫu.
+- Xây dựng ghi âm microphone.
+- Xây dựng dừng, nghe lại, ghi lại và gửi bài.
+- Xử lý quyền microphone và lỗi trình duyệt.
+- Tạm dùng response giả lập nếu backend chưa hoàn tất.
+Đầu ra: luồng giao diện có thể kiểm thử độc lập.
+
+Giai đoạn 3 — Upload audio và quản lý submission
+- Tạo API cấp quyền upload.
+- Upload audio lên object storage.
+- Xác minh object sau upload.
+- Tạo submission và job.
+- Kiểm tra quyền sở hữu, giới hạn file và chống gửi trùng.
+Đầu ra: audio được lưu và submission có trạng thái hợp lệ.
+
+Giai đoạn 4 — Worker STT
+- Tạo service Python độc lập.
+- Tích hợp faster-whisper và distil-large-v3.
+- Nạp mô hình một lần trong worker.
+- Xử lý audio và trả transcript.
+- Chuẩn hóa lỗi và thời gian xử lý.
+- Ghi nhận model/config đang sử dụng.
+Đầu ra: job có thể nhận transcript STT ổn định.
+
+Giai đoạn 5 — So sánh và tính điểm nội dung
+- Cài đặt chuẩn hóa transcript.
+- Triển khai word alignment/Edit Distance.
+- Phân loại đúng, thiếu, thay thế và thừa.
+- Tính WER và điểm khớp nội dung.
+- Viết unit test cho các trường hợp biên.
+Đầu ra: kết quả so sánh có cấu trúc, kèm vị trí từ.
+
+Giai đoạn 6 — Màn hình kết quả
+- Hiển thị điểm và giải thích ý nghĩa.
+- Hiển thị transcript nhận diện.
+- Tô màu từ theo kết quả alignment.
+- Cho phép phát lại audio mẫu và audio học sinh.
+- Hiển thị trạng thái ghi âm lại khi cần.
+Đầu ra: học sinh hiểu được mình đã đọc thiếu/sai/thừa từ nào.
+
+Giai đoạn 7 — Tích hợp, bảo mật và kiểm thử
+- Kiểm tra phân quyền toàn bộ endpoint.
+- Kiểm tra signed URL và quyền truy cập storage.
+- Kiểm tra retry, timeout, job trùng và job treo.
+- Chạy bộ test chức năng, thuật toán và STT.
+- Chạy benchmark tải và ghi nhận kết quả.
+Đầu ra: MVP có thể nghiệm thu dựa trên tiêu chí đã chốt.
+
+Giai đoạn 8 — Cải tiến sau MVP
+- Tối ưu chuẩn hóa và alignment cho dạng viết tắt/số.
+- Cải thiện trải nghiệm phát lại.
+- Thêm lịch sử luyện tập nếu có nhu cầu.
+- Nghiên cứu forced alignment để hiển thị thời điểm từ.
+- Nghiên cứu chấm phát âm cấp âm vị bằng tập dữ liệu kiểm chứng.
+- Chỉ phát triển điểm phát âm khi đã chứng minh được độ tin cậy.
+Đầu ra: danh sách cải tiến ưu tiên dựa trên dữ liệu sử dụng thật.
+
+======================================================================
+12. CHỈ SỐ CẦN THEO DÕI
+======================================================================
+
+- Tỷ lệ upload thành công.
+- Tỷ lệ job hoàn tất.
+- Tỷ lệ job thất bại và nguyên nhân.
+- Thời gian chờ trong queue.
+- Thời gian xử lý STT.
+- Tổng thời gian từ gửi bài đến kết quả.
+- WER trên tập dữ liệu đánh giá có transcript chuẩn.
+- Tỷ lệ audio phải ghi âm lại do chất lượng thấp.
+- Tỷ lệ request trùng.
+- Số job bị treo hoặc mất.
+- Chi phí lưu trữ và xử lý trên mỗi submission, khi có dữ liệu chi phí.
+
+Không lưu thêm dữ liệu cá nhân chỉ để phục vụ thống kê nếu không cần thiết.
+
+======================================================================
+13. QUY TẮC CHO AI CODING AGENT
+======================================================================
+
+Trước khi viết code:
+1. Đọc codebase hiện tại và tìm hệ thống auth, database, file storage, UI components và API conventions.
+2. Không giả định dự án dùng một thư viện hoặc schema cụ thể khi chưa kiểm tra.
+3. Đề xuất kế hoạch thay đổi file và quan hệ phụ thuộc.
+4. Ưu tiên tái sử dụng component, hệ thống đăng nhập và database hiện có.
+5. Không sửa các module không liên quan.
+6. Chia việc thành các giai đoạn nhỏ; hoàn tất và kiểm thử từng giai đoạn trước khi sang giai đoạn kế tiếp.
+
+Khi triển khai:
+- TypeScript cần có kiểu dữ liệu rõ ràng cho API và kết quả alignment.
+- Validate dữ liệu ở server, không chỉ ở client.
+- Không đưa secret vào client bundle.
+- Không ghi URL ký hoặc audio riêng tư vào log.
+- Tạo unit test cho logic so sánh và tính điểm.
+- Tạo test cho phân quyền và trạng thái job.
+- Không giả vờ rằng điểm khớp transcript là điểm phát âm.
+- Không tự tạo dữ liệu kết quả giả trong production.
+- Không triển khai forced alignment hoặc chấm âm vị như thể đã được kiểm chứng nếu chưa có kiểm thử.
+- Cập nhật tài liệu khi API/schema thay đổi.
+
+Sau mỗi giai đoạn, báo cáo:
+- File đã tạo/sửa.
+- Luồng đã hoàn thành.
+- Kiểm thử đã chạy và kết quả.
+- Vấn đề còn tồn tại.
+- Các quyết định cần người dùng xác nhận.
+
+======================================================================
+14. CÁC QUYẾT ĐỊNH CẦN CHỐT TRƯỚC KHI PHÁT TRIỂN
+======================================================================
+
+- Audio mẫu hiện được lưu ở đâu trong WEWIN?
+- Database hiện tại là gì và có bảng người dùng/bài tập nào có thể tái sử dụng?
+- Bài Shadowing được tạo bởi giáo viên, quản trị viên hay hệ thống nội dung?
+- Học sinh có được làm lại không, và có giới hạn số lần không?
+- Có hiển thị transcript chuẩn sau khi nộp không?
+- Audio học sinh được giữ trong bao lâu?
+- Giáo viên có được nghe bản ghi của học sinh không?
+- Có cần lịch sử và tiến bộ qua nhiều lần luyện không?
+- Có cần hỗ trợ nhiều ngôn ngữ trong tương lai không?
+- Điểm trong MVP chỉ là điểm khớp nội dung hay có yêu cầu khác? Khuyến nghị MVP chỉ hiển thị điểm khớp nội dung, chưa gọi là điểm phát âm.
+
+======================================================================
+15. KẾT LUẬN
+======================================================================
+
+Ưu tiên MVP theo thứ tự:
+1. Luồng nghe, ghi âm và upload ổn định.
+2. Hàng đợi và trạng thái job đáng tin cậy.
+3. STT bằng faster-whisper + distil-large-v3.
+4. So sánh transcript và phân loại từ.
+5. Điểm khớp nội dung có giải thích rõ ràng.
+6. Phát lại audio mẫu và audio học sinh.
+7. Bảo mật, xử lý lỗi và benchmark.
+8. Sau khi MVP ổn định mới nghiên cứu đánh giá phát âm chuyên sâu.
+
+Nguyên tắc quan trọng nhất:
+Transcript STT chỉ là ước lượng những gì hệ thống nghe được. Điểm khớp văn bản không đồng nghĩa với độ chính xác phát âm. Hệ thống phải thể hiện giới hạn này rõ ràng, đặc biệt khi dùng cho việc học và đánh giá học sinh.

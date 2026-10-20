@@ -42,6 +42,8 @@ const RESERVED_COURSE_IDS = new Set<string>([
   "new",
   "progress",
   "admin",
+  "dictation",
+  "shadowing",
 ]);
 
 let catalogCache: { data: LearnCatalog; expiresAt: number } | null = null;
@@ -592,7 +594,7 @@ export async function updateVideoProgress(input: {
   return entry;
 }
 
-/** Mark a vocabulary topic complete (no exercises). Grammar still uses submitExercises. */
+/** Mark a vocabulary topic or grammar slide deck complete (no exercises). */
 export async function markTopicComplete(input: {
   ownerKey: string;
   lessonId: string;
@@ -604,10 +606,10 @@ export async function markTopicComplete(input: {
     "@/lib/learn/vocab-grammar-store"
   );
   const ctx = await getTopicById(input.lessonId);
-  if (!ctx || ctx.track !== "vocabulary") {
+  if (!ctx || (ctx.track !== "vocabulary" && !ctx.topic.slidesUrl)) {
     throw new LearnStoreError(
       "LESSON_NOT_FOUND",
-      "Chỉ dùng cho chủ đề từ vựng",
+      "Chỉ dùng cho chủ đề từ vựng hoặc bài slide",
     );
   }
 
@@ -618,7 +620,7 @@ export async function markTopicComplete(input: {
   entry.updatedAt = new Date().toISOString();
   await writeProgress(store);
 
-  const ordered = [...(await getTopicsByTrack("vocabulary"))].sort(
+  const ordered = [...(await getTopicsByTrack(ctx.track))].sort(
     (a, b) => a.order - b.order,
   );
   const idx = ordered.findIndex((t) => t.id === ctx.topic.id);

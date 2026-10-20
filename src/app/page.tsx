@@ -1,5 +1,5 @@
 import { getSessionUser } from "@/lib/auth";
-import { listAttempts, listTests } from "@/lib/store/test-store";
+import { listAttempts, listPublicTests } from "@/lib/store/test-store";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DashboardHome } from "@/components/dashboard/dashboard-home";
 import {
@@ -26,7 +26,7 @@ export default async function Home() {
   const intlLocale = localeToIntl(locale);
   const { t } = await getTranslations();
 
-  const tests = await listTests();
+  const tests = await listPublicTests();
   const attempts = user ? await listAttempts({ userId: user.id }) : [];
 
   const hero = pickHero(tests, attempts);

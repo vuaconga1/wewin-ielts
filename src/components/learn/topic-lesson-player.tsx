@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   CheckCircle2,
@@ -9,6 +9,7 @@ import {
   Lock,
 } from "lucide-react";
 import { LessonVideo } from "@/components/learn/lesson-video";
+import { LessonSlides } from "@/components/learn/lesson-slides";
 import { LessonExercises } from "@/components/learn/lesson-exercises";
 import { TheoryPanel } from "@/components/learn/theory-panel";
 import { TopicSidebar } from "@/components/learn/topic-sidebar";
@@ -61,7 +62,26 @@ export function TopicLessonPlayer({
   const [videoCompleted, setVideoCompleted] = useState(
     Boolean(entry?.videoCompleted),
   );
-  const passed = Boolean(entry?.exercisePassed);
+  const [passed, setPassed] = useState(Boolean(entry?.exercisePassed));
+  const isSlides = Boolean(topic.slidesUrl);
+
+  // Slide decks have no exercises — opening the deck counts as completion.
+  useEffect(() => {
+    if (!isSlides || passed) return;
+    let cancelled = false;
+    void fetch("/api/learn/progress", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "complete", lessonId: topic.id }),
+    })
+      .then((res) => {
+        if (!cancelled && res.ok) setPassed(true);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [isSlides, passed, topic.id]);
 
   const ordered = [...topics].sort((a, b) => a.order - b.order);
   const idx = ordered.findIndex((tpc) => tpc.id === topic.id);
@@ -163,41 +183,49 @@ export function TopicLessonPlayer({
           <p className="break-words text-sm text-zinc-600">{displaySummary}</p>
         ) : null}
 
-        <LessonVideo
-          src={topic.videoUrl}
-          lessonId={topic.id}
-          initialMaxWatchedSec={entry?.maxWatchedSec ?? 0}
-          alreadyCompleted={Boolean(entry?.videoCompleted)}
-          onCompleted={() => setVideoCompleted(true)}
-        />
-
-        <TheoryPanel
-          theoryHtml={theoryHtml}
-          slidesHtml={slidesHtml}
-          stub={topic.stub}
-        />
-
-        <section>
-          <h2 className="mb-3 text-xl font-bold text-zinc-900 sm:text-2xl">
-            {t("exercisesSection", "Bài tập")}
-          </h2>
-          <LessonExercises
-            courseId="vocab-grammar"
+        {topic.slidesUrl ? (
+          <LessonSlides src={topic.slidesUrl} title={displayTitle} />
+        ) : (
+          <LessonVideo
+            src={topic.videoUrl}
             lessonId={topic.id}
-            skill="reading"
-            exercises={topic.exercises}
-            videoCompleted={videoCompleted}
-            alreadyPassed={passed}
-            unlockedNextId={nextUnlocked}
-            nextLessonHref={
-              nextUnlocked
-                ? learnVocabGrammarTopicHref(track, nextUnlocked)
-                : undefined
-            }
-            catalogHref={learnVocabGrammarTrackHref(track)}
-            catalogLabel={trackLabel}
+            initialMaxWatchedSec={entry?.maxWatchedSec ?? 0}
+            alreadyCompleted={Boolean(entry?.videoCompleted)}
+            onCompleted={() => setVideoCompleted(true)}
           />
-        </section>
+        )}
+
+        {theoryHtml.trim() || slidesHtml ? (
+          <TheoryPanel
+            theoryHtml={theoryHtml}
+            slidesHtml={slidesHtml}
+            stub={topic.stub}
+          />
+        ) : null}
+
+        {topic.exercises.length > 0 ? (
+          <section>
+            <h2 className="mb-3 text-xl font-bold text-zinc-900 sm:text-2xl">
+              {t("exercisesSection", "Bài tập")}
+            </h2>
+            <LessonExercises
+              courseId="vocab-grammar"
+              lessonId={topic.id}
+              skill="reading"
+              exercises={topic.exercises}
+              videoCompleted={videoCompleted}
+              alreadyPassed={passed}
+              unlockedNextId={nextUnlocked}
+              nextLessonHref={
+                nextUnlocked
+                  ? learnVocabGrammarTopicHref(track, nextUnlocked)
+                  : undefined
+              }
+              catalogHref={learnVocabGrammarTrackHref(track)}
+              catalogLabel={trackLabel}
+            />
+          </section>
+        ) : null}
       </div>
     </div>
   );

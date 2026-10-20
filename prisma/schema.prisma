@@ -91,9 +91,11 @@ model User {
   createdAt       DateTime   @default(now())
   updatedAt       DateTime   @updatedAt
 
-  attempts   Attempt[]
-  importJobs ImportJob[]
-  auditLogs  AuditLog[]
+  attempts          Attempt[]
+  importJobs        ImportJob[]
+  auditLogs         AuditLog[]
+  dictationAttempts DictationAttempt[]
+  shadowingAttempts ShadowingAttempt[]
 
   @@index([classCode])
   @@index([accessPlan, accessExpiresAt])
@@ -117,6 +119,18 @@ model AuditLog {
   @@index([userId, createdAt])
   @@index([role, createdAt])
   @@index([action, createdAt])
+}
+
+/// One row per browser visit (deduped per visitor within 30 minutes).
+model SiteVisit {
+  id        String   @id @default(cuid())
+  /// Anonymous per-browser id from localStorage
+  visitorId String
+  userId    String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([visitorId, createdAt])
 }
 
 model Test {
@@ -256,4 +270,123 @@ model ImportJob {
   test  Test? @relation(fields: [testId], references: [id], onDelete: SetNull)
 
   @@index([status])
+}
+
+enum DictationAttemptStatus {
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum DictationMode {
+  /// Learner types the whole transcript
+  FULL_TEXT
+  /// Learner fills teacher-selected gaps in the transcript
+  FILL_BLANK
+}
+
+/// Short audio + transcript; transcript never leaves the server before submit.
+model DictationExercise {
+  id           String        @id @default(cuid())
+  slug         String        @unique
+  title        String
+  /// CEFR level, e.g. A2, B1
+  level        String?
+  instructions String?       @db.Text
+  audioUrl     String
+  transcript   String        @db.Text
+  mode         DictationMode @default(FULL_TEXT)
+  /// FILL_BLANK only: FillBlankGap[] — { id, startToken, endToken (exclusive), acceptedAnswers? }
+  gaps         Json?
+  /// { maxListenCount: number | null, playbackRates: number[], scoringMode: "LEARNING" }
+  settings     Json?
+  status       TestStatus    @default(PUBLISHED)
+  order        Int           @default(0)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  attempts DictationAttempt[]
+
+  @@index([status, order])
+}
+
+model DictationAttempt {
+  id               String                 @id @default(cuid())
+  userId           String?
+  exerciseId       String
+  status           DictationAttemptStatus @default(IN_PROGRESS)
+  submittedText    String?                @db.Text
+  normalizedText   String?                @db.Text
+  score            Int?
+  correctCount     Int?
+  totalWords       Int?
+  listenCount      Int                    @default(0)
+  startedAt        DateTime               @default(now())
+  completedAt      DateTime?
+  durationSeconds  Int?
+  /// DictationWordResult[] — correct | missing | extra | incorrect
+  wordResults      Json?
+  errorSummary     Json?
+  /// FILL_BLANK only: { [gapId]: string }
+  submittedAnswers Json?
+  /// FILL_BLANK only: FillBlankGapResult[] graded at submit time
+  gapResults       Json?
+
+  user     User?             @relation(fields: [userId], references: [id], onDelete: SetNull)
+  exercise DictationExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
+  @@index([exerciseId])
+  @@index([userId, exerciseId, startedAt])
+}
+
+model ShadowingExercise {
+  id               String     @id @default(cuid())
+  slug             String     @unique
+  title            String
+  level            String?
+  instructions     String?    @db.Text
+  audioUrl         String
+  transcript       String     @db.Text
+  maxRecordSeconds Int        @default(30)
+  status           TestStatus @default(PUBLISHED)
+  order            Int        @default(0)
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+
+  attempts ShadowingAttempt[]
+
+  @@index([status, order])
+}
+
+model ShadowingAttempt {
+  id                 String    @id @default(cuid())
+  userId             String
+  exerciseId         String
+  /// STT backend that produced recognizedText, e.g. "web-speech" (test only)
+  sttProvider        String
+  recognizedText     String    @db.Text
+  normalizedText     String    @db.Text
+  /// Content match score 0–100 = max(0, 100 × (1 − WER)); not a pronunciation score
+  score              Int
+  wer                Float
+  totalWords         Int
+  correctCount       Int
+  substitutionCount  Int
+  deletionCount      Int
+  insertionCount     Int
+  wordResults        Json
+  errorSummary       Json
+  /// Private storage key; nulled once the recording is purged
+  recordingKey       String?
+  recordingMime      String?
+  recordingMs        Int?
+  recordingExpiresAt DateTime?
+  createdAt          DateTime  @default(now())
+
+  user     User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exercise ShadowingExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  @@index([userId, exerciseId, createdAt])
+  @@index([exerciseId, createdAt])
+  @@index([recordingExpiresAt])
 }

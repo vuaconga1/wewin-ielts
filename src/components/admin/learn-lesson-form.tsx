@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { startNavProgress } from "@/lib/client/nav-progress";
 import Link from "next/link";
 import { Loader2, Plus, Trash2 } from "lucide-react";
 import type {
@@ -167,6 +168,7 @@ export function LearnLessonForm({
       }
       if (mode === "create" && data.editUrl) {
         setSuccess(t("created"));
+        startNavProgress();
         router.push(data.editUrl);
         router.refresh();
         return;

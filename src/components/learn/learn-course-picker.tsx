@@ -1,8 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { BookMarked, GraduationCap } from "lucide-react";
-import { learnCourseHref, learnVocabGrammarHref } from "@/lib/learn/hrefs";
+import { BookMarked, GraduationCap, Headphones, Mic, TextCursorInput } from "lucide-react";
+import {
+  learnCourseHref,
+  learnDictationHref,
+  learnFillBlankHref,
+  learnShadowingHref,
+  learnVocabGrammarHref,
+} from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
 export type CourseCard = {
@@ -135,6 +141,97 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
                   style={{ width: `${vocabGrammar.percent}%` }}
                 />
               </div>
+            </div>
+          </div>
+        </Link>
+
+        <Link
+          href={learnDictationHref()}
+          prefetch={false}
+          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+        >
+          <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
+            <Headphones className="h-5 w-5 shrink-0 opacity-90" />
+            <div className="min-w-0">
+              <h2 className="truncate text-base font-bold leading-tight">
+                {t("dictationCard", "Nghe chép chính tả")}
+              </h2>
+              <p className="text-xs text-white/85">
+                {t("dictationSub", "Dictation · Luyện nghe")}
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2.5 border-t border-zinc-200 px-4 py-3">
+            <p className="line-clamp-3 text-sm leading-snug break-words text-zinc-600">
+              {t(
+                "dictationDesc",
+                "Nghe audio ngắn, gõ lại nội dung và nhận phản hồi theo từng từ.",
+              )}
+            </p>
+            <div className="mt-auto flex justify-end">
+              <span className="shrink-0 rounded-md bg-wewin-accent-blue-bg px-2 py-1 text-xs font-bold text-wewin-navy group-hover:bg-wewin-navy group-hover:text-white">
+                {t("openDictation", "Luyện ngay →")}
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        <Link
+          href={learnFillBlankHref()}
+          prefetch={false}
+          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+        >
+          <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
+            <TextCursorInput className="h-5 w-5 shrink-0 opacity-90" />
+            <div className="min-w-0">
+              <h2 className="truncate text-base font-bold leading-tight">
+                {t("fillBlankCard", "Nghe điền từ")}
+              </h2>
+              <p className="text-xs text-white/85">
+                {t("fillBlankSub", "Gap fill · Luyện nghe")}
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2.5 border-t border-zinc-200 px-4 py-3">
+            <p className="line-clamp-3 text-sm leading-snug break-words text-zinc-600">
+              {t(
+                "fillBlankDesc",
+                "Nghe audio và điền những từ, cụm từ còn thiếu trong transcript — luyện nghe số, tên riêng và nối âm.",
+              )}
+            </p>
+            <div className="mt-auto flex justify-end">
+              <span className="shrink-0 rounded-md bg-wewin-accent-blue-bg px-2 py-1 text-xs font-bold text-wewin-navy group-hover:bg-wewin-navy group-hover:text-white">
+                {t("openFillBlank", "Luyện ngay →")}
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        <Link
+          href={learnShadowingHref()}
+          prefetch={false}
+          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+        >
+          <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
+            <Mic className="h-5 w-5 shrink-0 opacity-90" />
+            <div className="min-w-0">
+              <h2 className="truncate text-base font-bold leading-tight">
+                {t("shadowingCard", "Shadowing — Nghe và đọc lại")}
+              </h2>
+              <p className="text-xs text-white/85">{t("shadowingSub", "Shadowing · Luyện nói")}</p>
+            </div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2.5 border-t border-zinc-200 px-4 py-3">
+            <p className="line-clamp-3 text-sm leading-snug break-words text-zinc-600">
+              {t(
+                "shadowingDesc",
+                "Nghe câu mẫu, ghi âm giọng đọc và xem hệ thống nhận diện khớp với câu mẫu đến đâu.",
+              )}
+            </p>
+            <div className="mt-auto flex justify-end">
+              <span className="shrink-0 rounded-md bg-wewin-accent-blue-bg px-2 py-1 text-xs font-bold text-wewin-navy group-hover:bg-wewin-navy group-hover:text-white">
+                {t("openShadowing", "Luyện ngay →")}
+              </span>
             </div>
           </div>
         </Link>

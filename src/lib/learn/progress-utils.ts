@@ -35,13 +35,14 @@ export function skillProgressStats(
 }
 
 export function isTopicUnlocked(
-  topic: Pick<TopicLesson, "id" | "order" | "track">,
+  topic: Pick<TopicLesson, "id" | "order" | "track" | "slidesUrl">,
   topics: Pick<TopicLesson, "id" | "order" | "track">[],
   progress: LearnProgressStore,
   trackHint?: TopicLesson["track"],
 ): boolean {
-  // Flashcard-only vocabulary: never gate on previous-topic completion.
+  // Flashcard-only vocabulary and slide decks: never gate on previous-topic completion.
   if (topic.track === "vocabulary" || trackHint === "vocabulary") return true;
+  if (topic.slidesUrl) return true;
   return isLessonUnlocked(topic, topics, progress);
 }
 

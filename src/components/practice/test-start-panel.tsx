@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import { startNavProgress } from "@/lib/client/nav-progress";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
 import { useTranslations } from "@/i18n/provider";
@@ -120,6 +121,7 @@ export function TestStartPanel({
         setError(mapped);
         return;
       }
+      startNavProgress();
       router.push(data.redirect);
     } catch (e) {
       console.warn("[practice/start]", e);

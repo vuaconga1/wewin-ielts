@@ -30,6 +30,8 @@ export type TopicLesson = {
   title: LocalizedText;
   summary: LocalizedText;
   videoUrl: string;
+  /** Google Slides embed URL; when set, the player shows slides instead of video. */
+  slidesUrl?: string;
   durationSec?: number;
   theoryHtml: LocalizedText;
   slidesHtml?: LocalizedText;

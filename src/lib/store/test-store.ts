@@ -55,6 +55,22 @@ const TESTS_CACHE_TTL_MS = 300_000;
 
 let testsCache: { data: StoredTest[]; expiresAt: number } | null = null;
 
+const PRODUCTION_HIDDEN_LISTENING_SERIES = new Set(["11", "12", "18"]);
+
+function isProductionHiddenTest(test: StoredTest): boolean {
+  if (test.skill !== "LISTENING") return false;
+  const match = test.slug.match(
+    /^cambridge-ielts-(\d+)-general-test-\d+-listening$/,
+  );
+  return Boolean(match?.[1] && PRODUCTION_HIDDEN_LISTENING_SERIES.has(match[1]));
+}
+
+function isProductionDeployment(): boolean {
+  return process.env.VERCEL_ENV
+    ? process.env.VERCEL_ENV === "production"
+    : process.env.NODE_ENV === "production";
+}
+
 export function invalidateTestCatalogCache() {
   testsCache = null;
   try {
@@ -317,6 +333,13 @@ export async function listTests(): Promise<StoredTest[]> {
     expiresAt: now + TESTS_CACHE_TTL_MS,
   };
   return tests;
+}
+
+/** Public catalog tests; keeps unfinished papers available to admins and old attempts. */
+export async function listPublicTests(): Promise<StoredTest[]> {
+  const tests = await listTests();
+  if (!isProductionDeployment()) return tests;
+  return tests.filter((test) => !isProductionHiddenTest(test));
 }
 
 export async function getTestBySlug(slug: string): Promise<StoredTest | null> {

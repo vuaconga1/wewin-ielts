@@ -4,6 +4,8 @@ import "./globals.css";
 import { defaultLocale, localeToHtmlLang } from "@/i18n/config";
 import { getMessages } from "@/i18n/get-messages";
 import { I18nProvider } from "@/i18n/provider";
+import { NavigationProgress } from "@/components/layout/navigation-progress";
+import { VisitTracker } from "@/components/layout/visit-tracker";
 import { translate } from "@/i18n/translate";
 
 const geistSans = Geist({
@@ -46,6 +48,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <I18nProvider locale={locale} messages={messages}>
+          <NavigationProgress />
+          <VisitTracker />
           {children}
         </I18nProvider>
       </body>

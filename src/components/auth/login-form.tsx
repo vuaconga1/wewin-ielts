@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { startNavProgress } from "@/lib/client/nav-progress";
 import Link from "next/link";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
@@ -100,6 +101,7 @@ export function LoginForm() {
               : data.user.role === "ADMIN",
         });
       }
+      startNavProgress();
       router.push(dest);
       router.refresh();
     } catch (err) {

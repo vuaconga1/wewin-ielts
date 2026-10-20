@@ -6,8 +6,12 @@
 .cursor
 .windsurf
 .tmp-header-compare
+.tmp-import
 .next
 node_modules
+DE-IELTS
+tmp
+eng.traineddata
 data/attempts
 data/users.json
 data/keys

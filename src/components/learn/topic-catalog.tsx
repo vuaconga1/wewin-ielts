@@ -60,10 +60,12 @@ export function TopicCatalog({
         </h1>
         {!isVocabulary ? (
           <p className="mt-1 text-sm text-zinc-600">
-            {t(
-              "topicCatalogDesc",
-              "Chọn chủ đề để xem video, lý thuyết và làm 10 câu bài tập.",
-            )}
+            {topics.some((tpc) => tpc.slidesUrl)
+              ? t("topicCatalogDescSlides", "Chọn chủ đề để xem slide bài giảng.")
+              : t(
+                  "topicCatalogDesc",
+                  "Chọn chủ đề để xem video, lý thuyết và làm 10 câu bài tập.",
+                )}
           </p>
         ) : null}
       </header>
@@ -109,7 +111,9 @@ export function TopicCatalog({
                           { n: topic.wordCount ?? 0 },
                           "{n} từ vựng",
                         )
-                      : t(
+                      : topic.slidesUrl
+                        ? t("slidesLesson", "Slide bài giảng")
+                        : t(
                           "exerciseCount",
                           { n: topic.exerciseCount ?? topic.exercises.length },
                           "{n} câu bài tập",

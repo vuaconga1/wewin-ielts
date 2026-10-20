@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import { startNavProgress } from "@/lib/client/nav-progress";
 import type { GradedQuestion } from "@/lib/scoring";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
@@ -90,6 +91,7 @@ export function ScoredResultReview({
         setError(mapped);
         return;
       }
+      startNavProgress();
       router.push(data.redirect);
     } catch (e) {
       console.warn("[practice/start redo]", e);
