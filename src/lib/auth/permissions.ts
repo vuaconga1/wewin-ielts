@@ -54,23 +54,45 @@ export function canAccessAdmin(user: RoleBearer): boolean {
   return isOpenAdminEnabled();
 }
 
+/** ADMIN or TEACHER. */
+export function isStaff(user: RoleBearer): boolean {
+  return isAdmin(user) || isTeacher(user);
+}
+
+/**
+ * Read-only staff sections (accounts, student reports, attempt history):
+ * ADMIN, TEACHER, or guest + ALLOW_OPEN_ADMIN. Never STUDENT.
+ */
+export function canAccessStaffArea(user: RoleBearer): boolean {
+  if (isStaff(user)) return true;
+  if (user) return false;
+  return isOpenAdminEnabled();
+}
+
 /**
  * Status for a denied admin request.
  * - 401: not logged in (and open-admin off)
- * - 403: logged in but not ADMIN
+ * - 403: logged in but role not allowed
  * - null: allowed
  */
 export function adminAccessDeniedStatus(
   user: RoleBearer,
+  allow: (user: RoleBearer) => boolean = canAccessAdmin,
 ): 401 | 403 | null {
-  if (canAccessAdmin(user)) return null;
+  if (allow(user)) return null;
   if (!user) return 401;
   return 403;
 }
 
-export function adminDeniedMessage(status: 401 | 403): string {
+export function adminDeniedMessage(
+  status: 401 | 403,
+  user?: RoleBearer,
+): string {
   if (status === 401) {
     return "Unauthorized — cần đăng nhập tài khoản ADMIN";
+  }
+  if (isTeacher(user)) {
+    return "Forbidden — chức năng này chỉ dành cho quản trị viên";
   }
   return "Forbidden — tài khoản học viên không được truy cập khu vực quản trị";
 }
@@ -88,7 +110,20 @@ export async function requireAdminResponse(
   const status = adminAccessDeniedStatus(user);
   if (status === null) return null;
   return NextResponse.json(
-    { error: adminDeniedMessage(status) },
+    { error: adminDeniedMessage(status, user) },
+    { status },
+  );
+}
+
+/** Like requireAdminResponse, but also lets TEACHER through (read-only staff APIs). */
+export async function requireStaffResponse(
+  getUser: () => Promise<SessionLike | null>,
+): Promise<NextResponse | null> {
+  const user = await getUser();
+  const status = adminAccessDeniedStatus(user, canAccessStaffArea);
+  if (status === null) return null;
+  return NextResponse.json(
+    { error: adminDeniedMessage(status, user) },
     { status },
   );
 }

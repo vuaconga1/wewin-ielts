@@ -5,7 +5,7 @@ import nextDynamic from "next/dynamic";
 import { notFound, redirect } from "next/navigation";
 import { ScoredResultReview } from "@/components/practice/scored-result-review";
 import { getSessionUser } from "@/lib/auth";
-import { canAccessAttempt } from "@/lib/practice/attempt-access";
+import { canViewAttempt } from "@/lib/practice/attempt-access";
 import {
   practiceAttemptPath,
   practiceResultPath,
@@ -195,7 +195,7 @@ export default async function PracticeResultPage({ params }: Props) {
   }
 
   const user = await getSessionUser();
-  if (!canAccessAttempt(attempt, user)) {
+  if (!canViewAttempt(attempt, user)) {
     if (!user) {
       redirect(
         `/login?next=${encodeURIComponent(practiceResultPath(slug, attemptId))}`,

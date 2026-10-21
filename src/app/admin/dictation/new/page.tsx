@@ -4,6 +4,7 @@ import { DictationAdminForm } from "@/components/admin/dictation-admin-form";
 import { listDictationsForAdmin } from "@/lib/dictation/store";
 import { DEFAULT_DICTATION_SETTINGS } from "@/lib/dictation/types";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +14,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminDictationNewPage() {
+  await requireAdminPage();
   const rows = await listDictationsForAdmin("FULL_TEXT");
   const nextOrder = rows.length ? Math.max(...rows.map((r) => r.order)) + 1 : 1;
   const { t } = await getTranslations("dictationAdmin");

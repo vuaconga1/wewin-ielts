@@ -4,6 +4,8 @@ import { listAuditLogs, type AuditAction } from "@/lib/audit-log";
 import type { AppRole } from "@/lib/auth/permissions";
 import { getActivitySummary, type PeriodCount } from "@/lib/site-visit";
 import { getTranslations } from "@/i18n/server";
+import { practiceResultPath } from "@/lib/practice/paths";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -54,6 +56,7 @@ export default async function AuditLogsPage({
 }: {
   searchParams: Promise<SearchParams>;
 }) {
+  await requireAdminPage();
   const params = await searchParams;
   const from = one(params.from);
   const to = one(params.to);
@@ -61,7 +64,7 @@ export default async function AuditLogsPage({
   const action = validAction(one(params.action));
   const query = one(params.q);
   const requestedPage = Number.parseInt(one(params.page), 10);
-  const [result, summary, { t }] = await Promise.all([
+  const [result, summary, { t }, { t: tLog }] = await Promise.all([
     listAuditLogs({
       from,
       to,
@@ -75,6 +78,7 @@ export default async function AuditLogsPage({
       return null;
     }),
     getTranslations("auditStats"),
+    getTranslations("auditLogs"),
   ]);
   const numberFormat = new Intl.NumberFormat("vi-VN");
   const statCards: { key: string; title: string; main: PeriodCount; sub: PeriodCount; hintKey: string; hint: string }[] = summary
@@ -190,12 +194,13 @@ export default async function AuditLogsPage({
         <>
           <p className="mb-3 text-sm text-zinc-600">Tìm thấy {result.total} hoạt động</p>
           <div className="wewin-card-3d overflow-x-auto">
-            <table className="min-w-[650px] w-full text-left text-sm">
+            <table className="min-w-[860px] w-full text-left text-sm">
               <thead className="border-b border-wewin-border bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500">
                 <tr>
                   <th className="px-4 py-3">Thời gian</th>
                   <th className="px-4 py-3">Người dùng</th>
                   <th className="px-4 py-3">Vai trò</th>
+                  <th className="px-4 py-3">{tLog("deviceColumn", "Thiết bị / IP")}</th>
                   <th className="px-4 py-3">Hành động</th>
                 </tr>
               </thead>
@@ -207,15 +212,50 @@ export default async function AuditLogsPage({
                       <p className="font-medium text-zinc-900">{log.fullName || log.username}</p>
                     </td>
                     <td className="px-4 py-3">{roleLabel(log.role)}</td>
-                    <td className="px-4 py-3">
+                    <td className="min-w-0 px-4 py-3">
+                      {log.device || log.ipAddress ? (
+                        <>
+                          <p className="break-words text-zinc-800" title={log.userAgent ?? undefined}>{log.device ?? "—"}</p>
+                          <p className="break-all font-mono text-xs text-zinc-500">{log.ipAddress ?? "—"}</p>
+                        </>
+                      ) : (
+                        <span className="text-xs text-zinc-400">{tLog("deviceUnknown", "Chưa ghi nhận")}</span>
+                      )}
+                    </td>
+                    <td className="min-w-0 px-4 py-3">
                       <span className={log.action === "LOGIN" ? "rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700" : "rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-semibold text-zinc-700"}>
                         {actionLabel(log.action)}
                       </span>
+                      {log.test ? (
+                        <div className="mt-1.5 min-w-0 text-xs">
+                          <p className="break-words font-medium text-zinc-900">
+                            {log.test.title ?? log.test.slug}
+                            {log.test.resumed ? <span className="font-normal text-zinc-500"> · {tLog("resumed", "làm tiếp")}</span> : null}
+                          </p>
+                          {log.test.attemptId && log.test.finished ? (
+                            <Link
+                              href={practiceResultPath(log.test.slug, log.test.attemptId)}
+                              prefetch={false}
+                              className="mt-0.5 inline-block font-semibold text-wewin-navy hover:underline"
+                            >
+                              {tLog("viewResult", "Xem kết quả")} →
+                            </Link>
+                          ) : (
+                            <p className="mt-0.5 text-zinc-500">
+                              {!log.test.title
+                                ? tLog("testRemoved", "Đề đã bị xoá")
+                                : log.test.attemptId
+                                  ? tLog("notSubmitted", "Chưa nộp bài")
+                                  : tLog("attemptMissing", "Không tìm thấy bài làm")}
+                            </p>
+                          )}
+                        </div>
+                      ) : null}
                     </td>
                   </tr>
                 ))}
                 {result.items.length === 0 ? (
-                  <tr><td colSpan={4} className="px-4 py-12 text-center text-zinc-500">Không có hoạt động phù hợp bộ lọc.</td></tr>
+                  <tr><td colSpan={5} className="px-4 py-12 text-center text-zinc-500">Không có hoạt động phù hợp bộ lọc.</td></tr>
                 ) : null}
               </tbody>
             </table>

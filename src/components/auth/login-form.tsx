@@ -10,6 +10,7 @@ import { useTranslations } from "@/i18n/provider";
 import { clearMyRankCache } from "@/lib/client/ranking-me";
 import { clearSessionMe, setSessionMe } from "@/lib/client/session-me";
 import { initialsFromName } from "@/lib/dashboard-stats";
+import { isTeacherAdminPath } from "@/lib/auth/staff-paths";
 
 type Mode = "login" | "register";
 
@@ -80,7 +81,9 @@ export function LoginForm() {
           : data.user?.role === "ADMIN"
             ? "/admin/learn"
             : next.startsWith("/admin")
-              ? "/tests"
+              ? data.user?.role === "TEACHER" && isTeacherAdminPath(next)
+                ? next
+                : "/tests"
               : next;
       clearMyRankCache();
       clearSessionMe();

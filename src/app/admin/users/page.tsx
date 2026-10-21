@@ -1,8 +1,9 @@
 import Link from "next/link";
 import nextDynamic from "next/dynamic";
 import { SiteShell } from "@/components/layout/site-shell";
-import { getSessionUser } from "@/lib/auth";
+import { canAccessAdmin } from "@/lib/auth";
 import { getTranslations } from "@/i18n/server";
+import { requireStaffPage } from "@/lib/auth/page-guards";
 
 const UsersManager = nextDynamic(
   () =>
@@ -22,8 +23,9 @@ export async function generateMetadata() {
 }
 
 export default async function AdminUsersPage() {
+  const session = await requireStaffPage();
   const { t } = await getTranslations("admin");
-  const session = await getSessionUser();
+  const canManage = canAccessAdmin(session);
 
   return (
     <SiteShell active="admin-users">
@@ -34,23 +36,28 @@ export default async function AdminUsersPage() {
           </h1>
           <p className="mt-1 text-sm text-zinc-600">{t("usersDesc")}</p>
         </div>
-        <div className="flex flex-wrap gap-3 text-sm">
-          <Link
-            href="/admin/learn"
-            className="font-medium text-zinc-600 hover:text-wewin-navy"
-          >
-            {t("learnManageLink")}
-          </Link>
-          <Link
-            href="/admin/import"
-            className="font-medium text-zinc-600 hover:text-wewin-navy"
-          >
-            {t("importLink")}
-          </Link>
-        </div>
+        {canManage ? (
+          <div className="flex flex-wrap gap-3 text-sm">
+            <Link
+              href="/admin/learn"
+              className="font-medium text-zinc-600 hover:text-wewin-navy"
+            >
+              {t("learnManageLink")}
+            </Link>
+            <Link
+              href="/admin/import"
+              className="font-medium text-zinc-600 hover:text-wewin-navy"
+            >
+              {t("importLink")}
+            </Link>
+          </div>
+        ) : null}
       </div>
 
-      <UsersManager currentUserId={session?.id ?? null} />
+      <UsersManager
+        currentUserId={session?.id ?? null}
+        canManage={canManage}
+      />
     </SiteShell>
   );
 }

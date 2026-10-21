@@ -2,12 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getAdminUserReport } from "@/lib/admin/reports";
+import { requireStaffPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
 const statusLabel = { NOT_STARTED: "Chưa làm", IN_PROGRESS: "Đang làm", COMPLETED: "Đã làm", WEAK: "Yếu" } as const;
 
 export default async function AdminUserReportPage({ params }: { params: Promise<{ userId: string }> }) {
+  await requireStaffPage();
   const { userId } = await params;
   const report = await getAdminUserReport(userId);
   if (!report) notFound();

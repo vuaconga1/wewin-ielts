@@ -5,6 +5,7 @@ import { DictationAdminForm } from "@/components/admin/dictation-admin-form";
 import { getDictationForAdmin } from "@/lib/dictation/store";
 import { adminListeningExerciseHref } from "@/lib/learn/hrefs";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -16,6 +17,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminDictationEditPage({ params }: Props) {
+  await requireAdminPage();
   const { id } = await params;
   const exercise = await getDictationForAdmin(id);
   if (!exercise) notFound();

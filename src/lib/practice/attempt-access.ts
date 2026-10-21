@@ -21,6 +21,15 @@ export function canAccessAttempt(
   return user.id === attempt.userId;
 }
 
+/** Read-only view (result page): owner, ADMIN, or TEACHER. */
+export function canViewAttempt(
+  attempt: Pick<StoredAttempt, "userId">,
+  user: SessionLike,
+): boolean {
+  if (canAccessAttempt(attempt, user)) return true;
+  return user?.role === "TEACHER";
+}
+
 /** Attach session user to a guest attempt when first saved/submitted. */
 export function claimAttemptIfGuest(
   attempt: StoredAttempt,

@@ -3,6 +3,7 @@ import { getCatalog } from "@/lib/learn/store";
 import { LearnLessonList } from "@/components/admin/learn-lesson-list";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +13,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminLearnPage() {
+  await requireAdminPage();
   const catalog = await getCatalog();
   const { t } = await getTranslations("admin");
 

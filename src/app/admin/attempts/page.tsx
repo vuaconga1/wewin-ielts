@@ -2,6 +2,8 @@ import Link from "next/link";
 import nextDynamic from "next/dynamic";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getTranslations } from "@/i18n/server";
+import { canAccessAdmin } from "@/lib/auth";
+import { requireStaffPage } from "@/lib/auth/page-guards";
 
 const AttemptsViewer = nextDynamic(
   () =>
@@ -21,7 +23,9 @@ export async function generateMetadata() {
 }
 
 export default async function AdminAttemptsPage() {
+  const session = await requireStaffPage();
   const { t } = await getTranslations("admin");
+  const canManage = canAccessAdmin(session);
 
   return (
     <SiteShell active="admin-attempts">
@@ -35,18 +39,22 @@ export default async function AdminAttemptsPage() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3 text-sm">
-          <Link
-            href="/admin/import"
-            className="font-medium text-zinc-600 hover:text-wewin-navy"
-          >
-            {t("importLink")}
-          </Link>
-          <Link
-            href="/admin/learn"
-            className="font-medium text-zinc-600 hover:text-wewin-navy"
-          >
-            {t("learnManageLink")}
-          </Link>
+          {canManage ? (
+            <>
+              <Link
+                href="/admin/import"
+                className="font-medium text-zinc-600 hover:text-wewin-navy"
+              >
+                {t("importLink")}
+              </Link>
+              <Link
+                href="/admin/learn"
+                className="font-medium text-zinc-600 hover:text-wewin-navy"
+              >
+                {t("learnManageLink")}
+              </Link>
+            </>
+          ) : null}
           <Link
             href="/account/attempts"
             className="font-medium text-wewin-navy hover:underline"

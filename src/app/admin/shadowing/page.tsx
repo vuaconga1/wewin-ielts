@@ -3,6 +3,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { ShadowingAdminList } from "@/components/admin/shadowing-admin-list";
 import { listShadowingForAdmin } from "@/lib/shadowing/store";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +13,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminShadowingPage() {
+  await requireAdminPage();
   const rows = await listShadowingForAdmin();
   const { t } = await getTranslations("shadowingAdmin");
 

@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
-import { getSessionUser, requireAdminResponse } from "@/lib/auth";
+import {
+  getSessionUser,
+  requireAdminResponse,
+  requireStaffResponse,
+} from "@/lib/auth";
 import {
   AdminUsersError,
   createAdminUser,
@@ -10,11 +14,11 @@ import { recordAuditEvent } from "@/lib/audit-log";
 export const runtime = "nodejs";
 
 /**
- * GET /api/admin/users — list users (no password hashes)
- * POST /api/admin/users — create user
+ * GET /api/admin/users — list users (no password hashes); ADMIN + TEACHER
+ * POST /api/admin/users — create user; ADMIN only
  */
 export async function GET() {
-  const denied = await requireAdminResponse(getSessionUser);
+  const denied = await requireStaffResponse(getSessionUser);
   if (denied) return denied;
 
   try {

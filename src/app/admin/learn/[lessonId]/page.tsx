@@ -4,6 +4,7 @@ import { getCatalog, getLessonContext } from "@/lib/learn/store";
 import { LearnLessonForm } from "@/components/admin/learn-lesson-form";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function AdminLearnEditPage({ params }: Props) {
+  await requireAdminPage();
   const { lessonId } = await params;
   const ctx = await getLessonContext(lessonId);
   if (!ctx) notFound();

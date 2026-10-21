@@ -29,11 +29,14 @@ export type SessionUser = {
 
 export {
   canAccessAdmin,
+  canAccessStaffArea,
   canEditTests,
   isAdmin,
   isOpenAdminEnabled,
+  isStaff,
   isStudent,
   requireAdminResponse,
+  requireStaffResponse,
 } from "@/lib/auth/permissions";
 
 const COOKIE_NAME = "wewin_session";

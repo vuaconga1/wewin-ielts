@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiteShell } from "@/components/layout/site-shell";
 import { buildAdminReports } from "@/lib/admin/reports";
 import { getTranslations } from "@/i18n/server";
+import { requireStaffPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -37,6 +38,7 @@ function pageNumbers(current: number, total: number): Array<number | "ellipsis">
 }
 
 export default async function AdminReportsPage({ searchParams }: { searchParams: Promise<{ q?: string; access?: string; progress?: string; page?: string }> }) {
+  await requireStaffPage();
   const params = await searchParams;
   const { t } = await getTranslations("admin");
   const reports = await buildAdminReports();

@@ -1,0 +1,97 @@
+KIỂM TRA THIẾU AUDIO / KEYS — DE-IELTS/5 bộ Vol - Real IELTS
+================================================================
+Ngày quét: 2026-10-21. Nguồn đối chiếu: Google Drive gốc
+  https://drive.google.com/drive/folders/1E9ncWz-YrveIgjj0AIRg0V1A_iXpceTm
+Bản trên máy thiếu 16 file so với Drive -> đã tải bổ sung 15 file (bỏ qua 1 file zip Vol 6),
+mỗi file audio đã nghe kiểm đầu file (faster-whisper local) để xác nhận đúng part.
+"Đủ" = có đủ 4 part audio / đủ 40 đáp án. Mọi mục dưới đây là tình trạng SAU khi bổ sung từ Drive.
+
+----------------------------------------------------------------
+VOL 1 (10 test L+R) — ĐÃ IMPORT, chi tiết xem IMPORT_MISSING_AUDIO_KEYS.txt
+----------------------------------------------------------------
+Audio : Test 3 KHÔNG có audio (Drive cũng không có). Các test còn lại đủ.
+Keys L: thiếu ở T2, T4, T5, T6, T9, T10 (đã tự tạo khi import); T7 key không chắc -> bỏ Listening.
+Keys R: T10 thiếu toàn bộ; T4 thiếu Q19, Q25; T6 thiếu Q26; T8 thiếu Q3.
+Đề    : Reading T7 và T9 thiếu câu 27.
+
+----------------------------------------------------------------
+VOL 2 — Listening
+----------------------------------------------------------------
+Test 1 : Đủ audio, đủ key.
+Test 2 : Đủ audio, đủ key.
+Test 3 : Đủ audio, đủ key.
+Test 4 : Đủ audio (P2, P3 tải từ Drive). THIẾU KEY. Không có transcript.
+Test 5 : Đủ audio (P3 tải từ Drive). Key đủ (key t5.pdf, bản scan). Có transcript P1-P4.
+Test 6 : THIẾU TOÀN BỘ AUDIO (Drive cũng không có). THIẾU KEY (chỉ có transcript P1-P4).
+Test 7 : = VOL 3 Test 5 (cùng đề, audio giống hệt). Đủ audio (s1, s4 tải từ Drive).
+         Không có key trong VOL 2 -> dùng key VOL 3 Test 5 (xlsx).
+         File "Bản sao của test 7.pdf" thực ra là transcript của VOL 3 Test 7 (= VOL 2 Test 9) -> đặt nhầm thư mục.
+Test 8 : THIẾU AUDIO Part 3 (có P1, P2, P4; Drive cũng không có P3). THIẾU KEY (chỉ có transcript P1-P4).
+Test 9 : = VOL 3 Test 7 (cùng đề, audio P1-P3 trùng file). Thiếu P4 -> lấy VOL 3 T7 section 4.
+         Không có key trong VOL 2 -> dùng key VOL 3 Test 7 (xlsx, có ghi chú "check"). Transcript thiếu P2.
+Test 10: = VOL 3 Test 8 (cùng đề). Đủ audio (section 3 tải từ Drive, trùng VOL 3 T8).
+         Không có key trong VOL 2 -> dùng key VOL 3 Test 8 (xlsx). Có transcript P1-P4.
+
+VOL 2 — Reading (không đánh số test, 10 file đề + 9 ảnh key)
+  AC_.pdf      <-> Key/AC.jpg (cần đối chiếu lại khi import)
+  AC2, AC5, AC6, AC7, AR4 <-> ảnh key cùng tên: đủ.
+  Test 1.pdf, Test 3.pdf : key nằm ở trang cuối PDF: đủ.
+  book review.pdf : chỉ 1 passage (Q1-13) <-> Key/Book view.jpg.
+  whale culture.pdf : chỉ 1 passage (Q27-40) <-> Key/Whale culture.jpg.
+  Key/AC3.jpg : CÓ KEY NHƯNG KHÔNG CÓ ĐỀ (Drive cũng không có).
+  => 8 đề Reading đủ 3 passage có key + 2 passage lẻ.
+
+----------------------------------------------------------------
+VOL 3 — Listening (key: "Dap an listening 10 tests.xlsx", đủ 40/40 cả 10 test)
+----------------------------------------------------------------
+Test 1-4: 1 file audio full, đủ.
+Test 5  : Đủ (section 4 "Health on the Night Shift" tải từ Drive).
+Test 6-10: Đủ 4 section.
+Ghi chú trong xlsx: T1 Q26 "key của OE D tự check"; T7 "check".
+Transcript: có cho T1-5, T7-10; không có T6.
+Trùng: Track 4 của T10 = P4 của VOL 5 Test 2 (Office Design).
+
+VOL 3 — Reading: key T1-9 trong "Dap an reading 9 tests.xlsx", T10 trong explain_/test 10.pdf. Đủ.
+  Giải thích (explain_): có T2, 3, 4, 6, 8, 9, 10 (T4, 8, 9 tải từ Drive).
+Trùng: Reading Test 10 = VOL 4 Reading Test 10 (file giống hệt, cả key).
+
+----------------------------------------------------------------
+VOL 4 — Listening (key: "Key + trans/Đáp án vol update.xlsx", đủ 40/40 cả 10 test)
+----------------------------------------------------------------
+Test 1-3, 5-8, 10: Đủ 4 part.
+Test 4 : Đủ 4 part (Track 4 có 2 bản trùng: .mp3 và .wma).
+Test 9 : THIẾU AUDIO Part 4 (có 01, 02, 03 = Section 1, 2, 3; Drive cũng không có).
+         Ghi chú xlsx "không có file Part 1" là SAI.
+Ghi chú cũ trong xlsx: T4 "không có file pdf để nghe", T5 "Không có file nghe và pdf"
+  -> hiện đã có đủ audio + đề trong thư mục, ghi chú đã lỗi thời.
+Test 5 có thêm key.pdf riêng. Transcript T2 Part 2 tải bổ sung từ Drive.
+
+VOL 4 — Reading: key-explain có T1, 2, 3, 5-10. THIẾU KEY Test 4 (Drive cũng không có; PDF đề không kèm đáp án).
+Test 10 trùng VOL 3 Test 10.
+
+----------------------------------------------------------------
+VOL 5 — Listening (key: "key- listening vol 5 1.pdf", bản scan, trang 2-11 = Test 1-10, đủ)
+----------------------------------------------------------------
+Test 1-10: Đủ 4 part (T1 P4 tải từ Drive).
+Key T5 Q18 bị sửa tay thành "Code".
+Script: đủ T1-10 (docx).
+
+VOL 5 — Reading: đủ đề + explanation (có key) T1-10; T6 có thêm "Test 6 key.docx".
+VOL 5 — Writing: Task 1 có đề 1-7, 9, 10 (THIẾU đề số 8); Task 2 đủ 10 đề.
+
+----------------------------------------------------------------
+IELTS Listening Actual Tests Vol 6 — chỉ Listening, 6 test
+----------------------------------------------------------------
+Test 1-6: mỗi test 1 file audio full (22-25 phút), đủ.
+Key + tapescript nằm trong PDF (trang 31-36: đáp án; từ trang 37: tapescript). Đủ.
+
+----------------------------------------------------------------
+IELTS Reading Recent Actual Tests Vol 6.pdf (MỚI, tải từ Drive) — chỉ Reading
+----------------------------------------------------------------
+Bản scan 95 trang; đáp án ở phụ lục cuối sách (trang 89-94, mỗi trang 1 test). Có watermark ielts-share.com.
+
+----------------------------------------------------------------
+TÓM TẮT CÒN THIẾU THẬT (cả trên Drive)
+----------------------------------------------------------------
+Audio: VOL 1 T3 (toàn bộ) | VOL 2 T6 (toàn bộ) | VOL 2 T8 Part 3 | VOL 4 T9 Part 4
+Keys : VOL 2 Listening T4, T6, T8 | VOL 4 Reading T4 | VOL 2 Reading AC3 có key nhưng thiếu đề

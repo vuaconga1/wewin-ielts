@@ -114,7 +114,7 @@ export async function POST(request: Request) {
         speakingPartKinds: speakingPartKinds ?? undefined,
       });
       if (existing) {
-        await recordAuditEvent({ actor: user, action: "TEST_START", request, metadata: { testSlug: slug, mode, resumed: true } });
+        await recordAuditEvent({ actor: user, action: "TEST_START", request, metadata: { testSlug: slug, attemptId: existing.id, mode, resumed: true } });
         return NextResponse.json({
           attemptId: existing.id,
           resumed: true,
@@ -132,7 +132,7 @@ export async function POST(request: Request) {
       timeLimitMinutes,
       userId: user?.id ?? null,
     });
-    if (user) await recordAuditEvent({ actor: user, action: "TEST_START", request, metadata: { testSlug: slug, mode, resumed: false } });
+    if (user) await recordAuditEvent({ actor: user, action: "TEST_START", request, metadata: { testSlug: slug, attemptId: attempt.id, mode, resumed: false } });
 
     return NextResponse.json({
       attemptId: attempt.id,

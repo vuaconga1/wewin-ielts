@@ -5,6 +5,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import type { LearnSkill } from "@/lib/learn/types";
 import { isLearnSkill } from "@/lib/learn/types";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -18,6 +19,7 @@ type Props = {
 };
 
 export default async function AdminLearnNewPage({ searchParams }: Props) {
+  await requireAdminPage();
   const sp = await searchParams;
   const catalog = await getCatalog();
   const skill: LearnSkill = isLearnSkill(sp.skill ?? "")

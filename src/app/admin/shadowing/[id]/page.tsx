@@ -9,6 +9,7 @@ import {
   listShadowingAttemptsForAdmin,
 } from "@/lib/shadowing/store";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -20,6 +21,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminShadowingEditPage({ params }: Props) {
+  await requireAdminPage();
   const { id } = await params;
   const [exercise, attempts] = await Promise.all([
     getShadowingForAdmin(id),

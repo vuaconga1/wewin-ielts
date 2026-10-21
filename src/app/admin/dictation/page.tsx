@@ -3,6 +3,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { DictationAdminList } from "@/components/admin/dictation-admin-list";
 import { listDictationsForAdmin } from "@/lib/dictation/store";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +13,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminDictationPage() {
+  await requireAdminPage();
   const rows = await listDictationsForAdmin("FULL_TEXT");
   const { t } = await getTranslations("dictationAdmin");
 

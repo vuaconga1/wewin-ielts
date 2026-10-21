@@ -45,6 +45,7 @@
     "adminListenAnswer": "Bài nghe & trả lời",
     "adminShadowing": "Bài Shadowing",
     "adminUsers": "Quản lý tài khoản",
+    "adminReports": "Báo cáo học viên",
     "adminAuditLogs": "Nhật ký hoạt động",
     "import": "Import đề",
     "loginRegister": "Đăng nhập / Đăng ký",
@@ -391,7 +392,7 @@
     "code": "403 · Không có quyền",
     "adminTitle": "Khu vực quản trị chỉ dành cho Admin",
     "genericTitle": "Bạn không được phép xem trang này",
-    "adminDesc": "Tài khoản học viên (STUDENT) không thể vào Import đề, Quản lý bài học hay đồng bộ Drive. Hãy dùng tài khoản ADMIN, hoặc quay lại luyện tập.",
+    "adminDesc": "Tài khoản của bạn không có quyền mở chức năng quản trị này (ví dụ Import đề, Quản lý bài học, Nhật ký hoạt động). Hãy dùng tài khoản quản trị viên, hoặc quay lại luyện tập.",
     "genericDesc": "Nếu bạn nghĩ đây là nhầm lẫn, hãy đăng nhập lại bằng đúng tài khoản hoặc liên hệ quản trị viên.",
     "home": "Về trang chủ",
     "learn": "Học 4 kỹ năng",
@@ -1000,6 +1001,7 @@
     "loadingHistory": "Đang tải lịch sử…"
   },
   "usersAdmin": {
+    "readOnlyNotice": "Bạn đang xem ở chế độ chỉ đọc. Chỉ quản trị viên mới có thể thêm, sửa, xóa tài khoản hoặc gia hạn thời gian học.",
     "loading": "Đang tải…",
     "count": "{n} tài khoản",
     "addUser": "Thêm tài khoản",
@@ -1546,5 +1548,14 @@
     "testUsersHint": "{n} lượt bắt đầu test",
     "visits": "Lượt truy cập",
     "visitsHint": "{n} thiết bị khác nhau"
+  },
+  "auditLogs": {
+    "deviceColumn": "Thiết bị / IP",
+    "deviceUnknown": "Chưa ghi nhận",
+    "resumed": "làm tiếp",
+    "viewResult": "Xem kết quả",
+    "notSubmitted": "Chưa nộp bài",
+    "attemptMissing": "Không tìm thấy bài làm",
+    "testRemoved": "Đề đã bị xoá"
   }
 }

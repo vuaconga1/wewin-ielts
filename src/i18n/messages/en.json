@@ -45,6 +45,7 @@
     "adminListenAnswer": "Listen & answer",
     "adminShadowing": "Shadowing exercises",
     "adminUsers": "Manage accounts",
+    "adminReports": "Student reports",
     "adminAuditLogs": "Activity logs",
     "import": "Import tests",
     "loginRegister": "Log in / Sign up",
@@ -391,7 +392,7 @@
     "code": "403 · Access denied",
     "adminTitle": "Admin area is for Admins only",
     "genericTitle": "You are not allowed to view this page",
-    "adminDesc": "Student accounts cannot access Import, Lesson management, or Drive sync. Use an ADMIN account, or go back to practice.",
+    "adminDesc": "Your account cannot open this admin feature (e.g. Import, Lesson management, Activity logs). Use an administrator account, or go back to practice.",
     "genericDesc": "If this seems wrong, sign in again with the correct account or contact an administrator.",
     "home": "Back to home",
     "learn": "Learn 4 skills",
@@ -1000,6 +1001,7 @@
     "loadingHistory": "Loading history…"
   },
   "usersAdmin": {
+    "readOnlyNotice": "You are viewing in read-only mode. Only administrators can add, edit or delete accounts, or extend access.",
     "loading": "Loading…",
     "count": "{n} accounts",
     "addUser": "Add account",
@@ -1547,5 +1549,14 @@
     "testUsersHint": "{n} test starts",
     "visits": "Visits",
     "visitsHint": "{n} unique devices"
+  },
+  "auditLogs": {
+    "deviceColumn": "Device / IP",
+    "deviceUnknown": "Not recorded",
+    "resumed": "resumed",
+    "viewResult": "View result",
+    "notSubmitted": "Not submitted",
+    "attemptMissing": "Attempt not found",
+    "testRemoved": "Test deleted"
   }
 }

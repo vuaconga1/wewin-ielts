@@ -4,6 +4,7 @@ import { ShadowingAdminForm } from "@/components/admin/shadowing-admin-form";
 import { listShadowingForAdmin } from "@/lib/shadowing/store";
 import { DEFAULT_MAX_RECORD_SECONDS } from "@/lib/shadowing/types";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +14,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminShadowingNewPage() {
+  await requireAdminPage();
   const rows = await listShadowingForAdmin();
   const nextOrder = rows.length ? Math.max(...rows.map((r) => r.order)) + 1 : 1;
   const { t } = await getTranslations("shadowingAdmin");

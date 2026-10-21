@@ -2,6 +2,7 @@ import Link from "next/link";
 import nextDynamic from "next/dynamic";
 import { SiteShell } from "@/components/layout/site-shell";
 import { getTranslations } from "@/i18n/server";
+import { requireAdminPage } from "@/lib/auth/page-guards";
 
 const DriveSyncForm = nextDynamic(
   () =>
@@ -27,6 +28,7 @@ export async function generateMetadata() {
 }
 
 export default async function AdminImportPage() {
+  await requireAdminPage();
   const { t } = await getTranslations("admin");
 
   return (

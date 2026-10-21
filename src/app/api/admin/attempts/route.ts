@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getSessionUser, requireAdminResponse } from "@/lib/auth";
+import { getSessionUser, requireStaffResponse } from "@/lib/auth";
 import {
   listAdminAttempts,
   normalizeAdminAttemptFilters,
@@ -12,7 +12,7 @@ export const runtime = "nodejs";
  * Query: userId, classId, skill, testSlug, status, from, to, limit
  */
 export async function GET(request: Request) {
-  const denied = await requireAdminResponse(getSessionUser);
+  const denied = await requireStaffResponse(getSessionUser);
   if (denied) return denied;
 
   try {

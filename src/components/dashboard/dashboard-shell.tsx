@@ -29,6 +29,7 @@ import { HeaderAuthButton } from "@/components/layout/header-auth-button";
 import { TourButton } from "@/components/tour/tour-button";
 import { TourProvider } from "@/components/tour/tour-provider";
 import { useTranslations } from "@/i18n/provider";
+import { isTeacherAdminPath } from "@/lib/auth/staff-paths";
 import { tourUserKey } from "@/lib/tour/storage";
 import type { TourStep } from "@/lib/tour/types";
 
@@ -216,8 +217,8 @@ export function DashboardShell({
               </Link>
             );
           })}
-          {/* Admin links: canImport is true only for ADMIN (or guest + ALLOW_OPEN_ADMIN). Never for STUDENT. */}
-          {canImport && user && user.role !== "STUDENT" ? (
+          {/* Admin links: all for ADMIN (canImport); TEACHER_ADMIN_PATHS only for TEACHER. Never for STUDENT. */}
+          {user && ((canImport && user.role !== "STUDENT") || user.role === "TEACHER") ? (
             <>
               <div
                 role="separator"
@@ -235,7 +236,7 @@ export function DashboardShell({
                   {
                     key: "admin-reports" as const,
                     href: "/admin/reports",
-                    label: "Báo cáo học viên",
+                    label: t("nav.adminReports", "Báo cáo học viên"),
                     icon: ChartLine,
                   },
                   {
@@ -263,7 +264,12 @@ export function DashboardShell({
                     icon: Upload,
                   },
                 ] as const
-              ).map((item) => {
+              )
+                .filter(
+                  (item) =>
+                    user.role === "ADMIN" || isTeacherAdminPath(item.href),
+                )
+                .map((item) => {
                 const Icon = item.icon;
                 return (
                   <Link
