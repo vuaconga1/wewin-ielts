@@ -64,6 +64,9 @@ export function invalidateDictationCatalog(slug?: string) {
     revalidatePath("/learn/dictation");
     revalidatePath("/learn/fill-blank");
     revalidatePath("/learn/listen-answer");
+    revalidatePath("/learn/dictation/level/[level]", "page");
+    revalidatePath("/learn/fill-blank/level/[level]", "page");
+    revalidatePath("/learn/listen-answer/level/[level]", "page");
     if (slug) {
       revalidatePath(`/learn/dictation/${slug}`);
       revalidatePath(`/learn/fill-blank/${slug}`);

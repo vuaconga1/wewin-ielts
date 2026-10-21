@@ -1,0 +1,31 @@
+NHẬT KÝ ĐỀ THIẾU AUDIO / ĐÁP ÁN (KEYS) KHI IMPORT
+====================================================
+Quy ước: mỗi lần import bộ đề mới, ghi thêm một mục ở cuối file.
+  - THIẾU AUDIO      : nguồn không có file nghe -> bỏ phần Listening (hoặc ghi cách xử lý)
+  - THIẾU KEYS       : nguồn không có đáp án -> ghi rõ: tự tạo (từ nguồn nào) / bỏ đề
+  - THIẾU CÂU        : đề gốc thiếu câu hỏi
+  - KEY ĐÃ SỬA       : đáp án gốc sai, đã chỉnh
+Trạng thái import mặc định: DRAFT.
+
+
+----------------------------------------------------
+[2026-10-21] Real IELTS VOL 1 (DE-IELTS/5 bộ Vol - Real IELTS/VOL 1) — IELTS Academic
+----------------------------------------------------
+Test 1  : Đủ audio + keys.
+Test 2  : THIẾU KEYS Listening -> tự tạo, đối chiếu nguồn đăng đề.
+Test 3  : THIẾU AUDIO -> KHÔNG import Listening, chỉ có Reading.
+          KEY ĐÃ SỬA: Reading Q19 C -> B.
+Test 4  : THIẾU KEYS Listening -> tự tạo, đối chiếu nguồn đăng đề.
+          THIẾU KEYS Reading Q19, Q25 -> tự điền.
+Test 5  : THIẾU KEYS Listening -> tự tạo, đối chiếu nguồn đăng đề.
+Test 6  : THIẾU KEYS Listening -> tự tạo từ bản chép lời audio (chạy local, miễn phí).
+          THIẾU KEYS Reading Q26 -> tự điền "public education".
+Test 7  : Đáp án Listening KHÔNG CHẮC CHẮN -> KHÔNG import Listening, chỉ có Reading.
+          THIẾU CÂU: Reading thiếu Q27 (đề còn 39 câu).
+          KEY ĐÃ SỬA: Reading Q40 = C.
+Test 8  : THIẾU KEYS Reading Q3 -> tự điền. Listening key đối chiếu nguồn đăng đề.
+          Cần xem lại: Reading Q32 (để FALSE, các nguồn không thống nhất).
+Test 9  : THIẾU KEYS Listening -> tự tạo từ bản chép lời audio (đã khớp đủ 40 câu).
+          THIẾU CÂU: Reading thiếu Q27 (đề còn 39 câu).
+          KEY ĐÃ SỬA: Reading Q17 -> "Tasmania", Q33 -> "iv".
+Test 10 : THIẾU KEYS cả Listening và Reading -> tự tạo toàn bộ, đối chiếu nguồn đăng đề.

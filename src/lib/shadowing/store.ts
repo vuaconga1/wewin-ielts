@@ -3,7 +3,7 @@ import { revalidatePath, revalidateTag, unstable_cache } from "next/cache";
 import { mediaUrl } from "@/lib/media/url";
 import { prisma } from "@/lib/prisma";
 import { tokenize } from "@/lib/dictation/scoring";
-import { clampRecordSeconds, gradeShadowing } from "@/lib/shadowing/scoring";
+import { clampRecordSeconds, gradeShadowing, pickClosestAlternatives } from "@/lib/shadowing/scoring";
 import {
   deleteRecording,
   readRecording,
@@ -65,6 +65,7 @@ export function invalidateShadowingCatalog(slug?: string) {
   try {
     revalidateTag(CATALOG_TAG);
     revalidatePath("/learn/shadowing");
+    revalidatePath("/learn/shadowing/level/[level]", "page");
     if (slug) revalidatePath(`/learn/shadowing/${slug}`);
   } catch {
     /* outside request scope */
@@ -108,9 +109,10 @@ const getPublishedShadowingRow = unstable_cache(
       instructions: row.instructions,
       audioUrl: row.audioUrl,
       maxRecordSeconds: row.maxRecordSeconds,
+      transcript: row.transcript,
     };
   },
-  ["shadowing-exercise-v1"],
+  ["shadowing-exercise-v2"],
   { revalidate: 300, tags: [CATALOG_TAG] },
 );
 
@@ -149,6 +151,8 @@ export async function submitShadowingAttempt(input: {
   userId: string;
   sttProvider: string;
   recognizedText: string;
+  /** Per-chunk alternative guesses from the recognizer, best first. */
+  alternatives?: unknown;
   recording: RecordingUpload | null;
 }): Promise<ShadowingAttemptResult> {
   const repo = await requireRepo();
@@ -159,7 +163,11 @@ export async function submitShadowingAttempt(input: {
   if (!STT_PROVIDERS.includes(input.sttProvider as SttProviderId)) {
     throw new ShadowingError("INVALID_PROVIDER", "Unsupported speech recognizer");
   }
-  const recognizedText = input.recognizedText.trim().slice(0, MAX_RECOGNIZED_CHARS);
+  const recognizedText = (
+    pickClosestAlternatives(exercise.transcript, input.alternatives) ?? input.recognizedText
+  )
+    .trim()
+    .slice(0, MAX_RECOGNIZED_CHARS);
   if (tokenize(recognizedText).length === 0) {
     throw new ShadowingError("NO_SPEECH", "Nothing was recognized");
   }

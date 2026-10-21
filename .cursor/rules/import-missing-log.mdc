@@ -1,0 +1,12 @@
+---
+description: Log tests missing audio or answer keys when importing IELTS tests
+alwaysApply: true
+---
+
+# Import log: missing audio / keys
+
+Whenever importing a set of IELTS tests, append an entry to `docs/IMPORT_MISSING_AUDIO_KEYS.txt` (follow the format at the top of that file) listing, per test:
+- missing audio and what was done (skip Listening, etc.)
+- missing answer keys and whether they were derived (and from what source) or the test was dropped
+- missing questions in the source paper
+- answer keys corrected from the source

@@ -8,6 +8,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const MAX_RECORDING_BYTES = 4 * 1024 * 1024;
+const MAX_ALTERNATIVES_CHARS = 50_000;
 
 type Context = { params: Promise<{ slug: string }> };
 
@@ -48,11 +49,22 @@ export async function POST(request: Request, { params }: Context) {
       };
     }
 
+    let alternatives: unknown = null;
+    const rawAlternatives = form.get("alternatives");
+    if (typeof rawAlternatives === "string" && rawAlternatives.length <= MAX_ALTERNATIVES_CHARS) {
+      try {
+        alternatives = JSON.parse(rawAlternatives);
+      } catch {
+        alternatives = null;
+      }
+    }
+
     const result = await submitShadowingAttempt({
       slug,
       userId: user.id,
       sttProvider,
       recognizedText,
+      alternatives,
       recording,
     });
     return NextResponse.json(result, { headers: { "Cache-Control": "private, no-store" } });

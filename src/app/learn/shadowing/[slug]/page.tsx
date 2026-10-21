@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { SiteShell } from "@/components/layout/site-shell";
+import { PracticeGameExerciseFrame } from "@/components/learn/practice-game-pages";
 import { ShadowingPractice } from "@/components/shadowing/shadowing-practice";
 import { getPublicShadowing } from "@/lib/shadowing/store";
 import { getTranslationsStatic } from "@/i18n/server";
@@ -22,8 +22,8 @@ export default async function ShadowingExercisePage({ params }: Props) {
   const exercise = await getPublicShadowing(slug);
   if (!exercise) notFound();
   return (
-    <SiteShell active="learn">
-      <ShadowingPractice exercise={exercise} />
-    </SiteShell>
+    <PracticeGameExerciseFrame game="shadowing" exercise={exercise}>
+      <ShadowingPractice key={exercise.slug} exercise={exercise} />
+    </PracticeGameExerciseFrame>
   );
 }

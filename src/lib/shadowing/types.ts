@@ -8,7 +8,7 @@ export type SttProviderId = "web-speech";
 
 export const DEFAULT_MAX_RECORD_SECONDS = 30;
 export const MIN_RECORD_SECONDS = 5;
-export const MAX_RECORD_SECONDS = 120;
+export const MAX_RECORD_SECONDS = 300;
 
 export type ShadowingGrade = {
   /** Content match 0–100 = max(0, 100 × (1 − WER)). Not a pronunciation score. */
@@ -24,7 +24,7 @@ export type ShadowingGrade = {
   errorSummary: ShadowingErrorSummary;
 };
 
-/** Safe for the browser before submit — never includes the transcript. */
+/** Sent to the browser; the transcript is shown so learners can read along while shadowing. */
 export type PublicShadowingExercise = {
   id: string;
   slug: string;
@@ -33,6 +33,7 @@ export type PublicShadowingExercise = {
   instructions: string | null;
   audioUrl: string;
   maxRecordSeconds: number;
+  transcript: string;
 };
 
 export type ShadowingCatalogItem = {

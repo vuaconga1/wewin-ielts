@@ -1,5 +1,5 @@
 import { notFound, permanentRedirect } from "next/navigation";
-import { SiteShell } from "@/components/layout/site-shell";
+import { PracticeGameExerciseFrame } from "@/components/learn/practice-game-pages";
 import { DictationPlayer } from "@/components/dictation/dictation-player";
 import { getPublicDictation } from "@/lib/dictation/store";
 import { learnListeningExerciseHref } from "@/lib/learn/hrefs";
@@ -24,8 +24,8 @@ export default async function FillBlankExercisePage({ params }: Props) {
   if (!exercise) notFound();
   if (exercise.mode !== "FILL_BLANK") permanentRedirect(learnListeningExerciseHref(exercise.mode, slug));
   return (
-    <SiteShell active="learn">
-      <DictationPlayer exercise={exercise} />
-    </SiteShell>
+    <PracticeGameExerciseFrame game="fill-blank" exercise={exercise}>
+      <DictationPlayer key={exercise.slug} exercise={exercise} />
+    </PracticeGameExerciseFrame>
   );
 }

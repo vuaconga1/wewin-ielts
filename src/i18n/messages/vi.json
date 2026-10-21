@@ -769,7 +769,7 @@
     "openFillBlank": "Luyện ngay →",
     "listenAnswerCard": "Nghe & trả lời câu hỏi",
     "listenAnswerSub": "Short answer · Luyện nghe hiểu",
-    "listenAnswerDesc": "Nghe đoạn văn ngắn và trả lời câu hỏi bằng vài từ tiếng Anh — ai làm gì, ở đâu, chọn A hay B. Chấm ngay sau khi nộp.",
+    "listenAnswerDesc": "Nghe đoạn văn ngắn và trả lời câu hỏi bằng vài từ tiếng Anh.",
     "openListenAnswer": "Luyện ngay →",
     "shadowingCard": "Shadowing — Nghe và đọc lại",
     "shadowingSub": "Shadowing · Luyện nói",
@@ -1164,6 +1164,8 @@
     "emptyTitle": "Chưa có bài chép chính tả",
     "emptyDesc": "Nội dung sẽ được cập nhật sớm.",
     "level": "Trình độ {level}",
+    "otherLevel": "Bài khác",
+    "lessonCount": "{n} bài",
     "start": "Làm bài →",
     "defaultInstructions": "Nghe và chép lại chính xác câu bạn nghe được.",
     "play": "Phát",
@@ -1224,7 +1226,7 @@
     "gapYouWrote": "Bạn nhập: {submitted} — Đáp án: {expected}",
     "gapAnswer": "Đáp án: {expected}",
     "qaCatalogTitle": "Nghe & trả lời câu hỏi",
-    "qaCatalogDesc": "Nghe đoạn hội thoại hoặc đoạn văn ngắn rồi trả lời câu hỏi bằng vài từ tiếng Anh — ai làm gì, ở đâu, chọn A hay B.",
+    "qaCatalogDesc": "Nghe đoạn hội thoại hoặc đoạn văn ngắn rồi trả lời câu hỏi bằng vài từ tiếng Anh.",
     "qaEmptyTitle": "Chưa có bài nghe & trả lời",
     "qaBackCatalog": "← Tất cả bài nghe & trả lời",
     "qaDefaultInstructions": "Nghe audio rồi trả lời từng câu hỏi bằng tiếng Anh. Chỉ cần câu trả lời có chứa ý chính (tên người, hành động…) là được tính đúng.",
@@ -1376,6 +1378,36 @@
       "deleteFailed": "Không xóa được bài. Thử lại."
     }
   },
+  "practiceGames": {
+    "backLearn": "← Học",
+    "backGameHub": "← Chọn trình độ",
+    "breadcrumbLearn": "Học",
+    "nextLessonLabel": "Bài tiếp theo:",
+    "prevLesson": "Bài trước",
+    "nextLesson": "Bài sau",
+    "lessonCount": "{n} bài",
+    "openLevel": "Vào học →",
+    "levelSwitch": "Chọn trình độ",
+    "levels": {
+      "basic": {
+        "title": "Trình độ Basic",
+        "desc": "Đoạn audio ngắn, tốc độ chậm và từ vựng quen thuộc — phù hợp khi mới bắt đầu."
+      },
+      "intermediate": {
+        "title": "Trình độ Intermediate",
+        "desc": "Đoạn dài hơn, hội thoại tự nhiên và tốc độ nói gần thực tế — nâng cao phản xạ nghe."
+      }
+    },
+    "shadowingTips": {
+      "title": "Bí quyết luyện Shadowing hiệu quả",
+      "step1Title": "Nghe ngấm ngữ điệu",
+      "step1Desc": "Nghe audio mẫu 1–2 lần ở tốc độ 1x hoặc 0.75x để nắm trọng âm và cách ngắt nghỉ tự nhiên.",
+      "step2Title": "Đọc đuổi theo audio",
+      "step2Desc": "Nói đuổi theo giọng đọc ngay sau khoảng nửa giây, bắt chước khẩu hình, ngữ điệu và nối âm.",
+      "step3Title": "Đối chiếu và cải thiện",
+      "step3Desc": "Ghi âm giọng của bạn, xem điểm đối chiếu và nghe lại để tìm những từ chưa rõ hoặc bị sót."
+    }
+  },
   "shadowing": {
     "catalogTitle": "Shadowing — Nghe và đọc lại",
     "catalogDesc": "Nghe câu mẫu, ghi âm giọng đọc của bạn và xem hệ thống nhận diện khớp với câu mẫu đến đâu.",
@@ -1384,11 +1416,14 @@
     "emptyTitle": "Chưa có bài Shadowing",
     "emptyDesc": "Nội dung sẽ được cập nhật sớm.",
     "level": "Trình độ {level}",
+    "otherLevel": "Bài khác",
+    "lessonCount": "{n} bài",
     "start": "Luyện →",
     "defaultInstructions": "Nghe câu mẫu, sau đó ghi âm và đọc lại thật giống.",
-    "testNotice": "Bản thử nghiệm: nhận diện giọng nói đang dùng công nghệ có sẵn của trình duyệt (nên dùng Chrome hoặc Edge). Kết quả chỉ mang tính tham khảo.",
     "sampleAudio": "Audio mẫu",
     "recordTitle": "Ghi âm giọng đọc của bạn",
+    "readAlongTitle": "Transcript",
+    "readAlongHint": "Đọc theo nội dung bên dưới. Không cần đọc tên người nói.",
     "record": "Ghi âm",
     "stop": "Dừng",
     "recording": "Đang ghi âm… bấm để dừng",

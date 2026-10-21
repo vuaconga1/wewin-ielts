@@ -163,6 +163,14 @@ function placeSentenceBlankNumbers(content: string, numbers: number[]): string {
   return next;
 }
 
+function fixListeningSentenceGaps(draft: ParsedTestDraft) {
+  for (const number of [37, 38, 39, 40]) {
+    const q = findQuestion(draft, number);
+    q.type = "GAP_FILL";
+    q.content = { stem: "", blank: true };
+  }
+}
+
 function fixListeningSteps(draft: ParsedTestDraft) {
   for (const number of [27, 28, 29, 30]) {
     const q = findQuestion(draft, number);
@@ -254,9 +262,10 @@ async function main() {
 
     if (job.skill === "LISTENING") {
       fixListeningSteps(draft);
+      fixListeningSentenceGaps(draft);
       const section4 = draft.parts.find((part) => part.order === 3);
       if (section4?.content) {
-        section4.content = placeSentenceBlankNumbers(section4.content, [37, 39]);
+        section4.content = placeSentenceBlankNumbers(section4.content, [37, 38, 39, 40]);
       }
       applyAnswers(draft, LISTENING_ANSWERS);
       draft.parts.forEach((part, index) => {

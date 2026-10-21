@@ -1,0 +1,25 @@
+---
+description: Never use paid AI/APIs on the user's keys without explicit approval
+alwaysApply: true
+---
+
+# Paid services require explicit consent (BẮT BUỘC)
+
+Không được tự ý sử dụng AI / dịch vụ trả phí bằng key của người dùng. Mọi tính năng tính phí theo lượt dùng (hoặc code sẽ gọi dịch vụ đó) phải **hỏi rõ và được người dùng đồng ý trước**.
+
+## Applies to
+- Running scripts / commands that call paid APIs with keys from `.env` (OpenAI: Whisper, GPT, TTS, embeddings…; Anthropic; Google; ElevenLabs; any per-request billing), even for a "quick test" on one file.
+- Adding or changing app code that calls a paid API (new feature, new call site, higher volume, a more expensive model).
+- Paid cloud usage that bills per request (e.g. bulk R2/S3 operations beyond normal uploads, paid third-party SaaS APIs).
+
+## Before using it
+1. Stop and ask (use `AskQuestion`): what service/model, why, how many calls, **estimated cost**, one-time or recurring (per learner use).
+2. Offer a free alternative when one exists (local/open-source tool, heuristic, skip the feature).
+3. Proceed only after an explicit "yes". Approval covers only the scope that was described; ask again for a new scope or larger volume.
+
+```text
+❌ Run whisper on 2 lessons "to test feasibility", then ask.
+✅ "Cần gọi OpenAI Whisper cho 48 file (~80 phút, ~0,5 USD, một lần). Bạn đồng ý không? Phương án miễn phí: …"
+```
+
+- Never hardcode or print secrets/keys.

@@ -72,10 +72,12 @@ function isNearMiss(expected: string, actual: string): boolean {
 /**
  * Word-level Levenshtein alignment. Each step is one of
  * match (correct), substitution (incorrect), deletion (missing) or insertion (extra).
+ * `same` decides whether two normalised words count as a match (exact by default).
  */
 export function alignWords(
   expected: DictationToken[],
   actual: DictationToken[],
+  same: (expected: string, actual: string) => boolean = (a, b) => a === b,
 ): DictationWordResult[] {
   const n = expected.length;
   const m = actual.length;
@@ -86,9 +88,9 @@ export function alignWords(
 
   for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= m; j++) {
-      const same = expected[i - 1].norm === actual[j - 1].norm;
+      const match = same(expected[i - 1].norm, actual[j - 1].norm);
       dp[i * width + j] = Math.min(
-        dp[(i - 1) * width + (j - 1)] + (same ? 0 : 1),
+        dp[(i - 1) * width + (j - 1)] + (match ? 0 : 1),
         dp[(i - 1) * width + j] + 1,
         dp[i * width + (j - 1)] + 1,
       );
@@ -104,13 +106,14 @@ export function alignWords(
       const exp = expected[i - 1];
       const act = actual[j - 1];
       const diag = dp[(i - 1) * width + (j - 1)];
-      if (exp.norm === act.norm && here === diag) {
+      const match = same(exp.norm, act.norm);
+      if (match && here === diag) {
         out.push({ status: "correct", expected: exp.raw, actual: act.raw });
         i--;
         j--;
         continue;
       }
-      if (exp.norm !== act.norm && here === diag + 1) {
+      if (!match && here === diag + 1) {
         out.push({
           status: "incorrect",
           expected: exp.raw,

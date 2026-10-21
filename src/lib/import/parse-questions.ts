@@ -246,12 +246,22 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
       hint === "MATCHING" ||
       hint === "TRUE_FALSE_NG" ||
       hint === "SHORT_ANSWER";
+    const bankLabels = bank.map((b) => b.label).join();
     const fromMcq = [
       ...extractMcqQuestions(block.lines, range),
       ...(skipUnnumberedMcq
         ? []
         : extractUnnumberedMcqQuestions(block.lines, range)),
-    ];
+    ].filter(
+      // The last matching stem sits right above the shared A–H list; that list is
+      // the bank, not this question's own MCQ options.
+      (q) =>
+        hint !== "MATCHING" ||
+        !bankLabels ||
+        (q.content as { options?: { label: string }[] }).options
+          ?.map((o) => o.label)
+          .join() !== bankLabels,
+    );
     const fromStatements = extractNumberedStatements(
       block.lines,
       hint,
@@ -809,14 +819,15 @@ function extractMcqQuestions(
       }
       // Word often emits "A the examples used." without "A." / "A)"
       const om =
-        optLine.match(/^([A-E])[.)]\s+(.+)$/) ||
-        optLine.match(/^([A-E])\s+(.+)$/);
+        optLine.match(/^([A-H])[.)]\s+(.+)$/) ||
+        optLine.match(/^([A-H])\s+(.+)$/);
       if (!om) break;
       // Avoid treating "A more expensive products" bank lines as MCQ options
       // when the stem wasn't a real question — still OK inside MCQ blocks.
       options.push({ label: om[1]!, text: om[2]!.trim() });
       j += 1;
-      if (options.length >= 5) break;
+      // "Choose THREE letters, A–G" lists run past E.
+      if (options.length >= 8) break;
     }
 
     if (options.length >= 2) {
@@ -854,7 +865,7 @@ function extractUnnumberedMcqQuestions(
 
   while (i < lines.length && nextNum <= range.end) {
     const t = lines[i]!.trim();
-    if (!t || /^\d{1,2}[.)]?\s+/.test(t) || /^([A-E])[.)]\s+/.test(t) || /^([A-E])\s{1,4}\S/.test(t)) {
+    if (!t || /^\d{1,2}[.)]?\s+/.test(t) || /^([A-H])[.)]\s+/.test(t) || /^([A-H])\s{1,4}\S/.test(t)) {
       i += 1;
       continue;
     }
@@ -888,12 +899,12 @@ function extractUnnumberedMcqQuestions(
         continue;
       }
       const om =
-        optLine.match(/^([A-E])[.)]\s+(.+)$/) ||
-        optLine.match(/^([A-E])\s+(.+)$/);
+        optLine.match(/^([A-H])[.)]\s+(.+)$/) ||
+        optLine.match(/^([A-H])\s+(.+)$/);
       if (!om) break;
       options.push({ label: om[1]!, text: om[2]!.trim() });
       j += 1;
-      if (options.length >= 5) break;
+      if (options.length >= 8) break;
     }
 
     if (options.length >= 2 && t.length >= 12) {
@@ -942,8 +953,8 @@ function extractNumberedStatements(
       ?.trim();
     if (prevNonEmpty && /^[A-K]$/.test(prevNonEmpty)) continue;
 
-    const stem = m[2]!
-      .trim()
+    const rawStem = m[2]!.trim();
+    const stem = rawStem
       .replace(new RegExp(`\\b${number}\\b\\s*[.…_…]{2,}.*$`, "u"), "")
       .replace(/\s*[.…_…]{2,}\s*$/u, "")
       .trim();
@@ -968,7 +979,8 @@ function extractNumberedStatements(
     else if (hint === "SHORT_ANSWER") type = "SHORT_ANSWER";
     else if (hint === "GAP_FILL") {
       // Full interrogatives without blank marks are short-answer, not notes gaps
-      const hasBlankMark = /[.…_…]{2,}|_{2,}|\u2026/u.test(stem);
+      // Trailing blanks ("… advertise in ______") are stripped from `stem` above.
+      const hasBlankMark = /[.…_…]{2,}|_{2,}|\u2026/u.test(rawStem);
       type = hasBlankMark ? "GAP_FILL" : "SHORT_ANSWER";
     } else if (hint === "MULTIPLE_CHOICE") type = "MULTIPLE_CHOICE";
 

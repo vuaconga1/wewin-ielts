@@ -1,5 +1,6 @@
 import type { DictationMode } from "@/lib/dictation/types";
 import type { LearnSkill } from "@/lib/learn/types";
+import type { PracticeGame } from "@/lib/learn/practice-games";
 import type { VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
 
 export function learnCatalogHref(): string {
@@ -64,6 +65,10 @@ export function adminListeningExerciseHref(mode: DictationMode): string {
 
 export function learnShadowingHref(slug?: string): string {
   return slug ? `/learn/shadowing/${slug}` : "/learn/shadowing";
+}
+
+export function learnGameHref(game: PracticeGame, slug?: string): string {
+  return slug ? `/learn/${game}/${slug}` : `/learn/${game}`;
 }
 
 /** Vocabulary learn/practice page (word cards + optional exercises). */

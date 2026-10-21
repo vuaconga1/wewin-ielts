@@ -1,9 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { Loader2, Pause, Play, Timer } from "lucide-react";
-import { learnListeningExerciseHref } from "@/lib/learn/hrefs";
 import { formatClock } from "@/lib/dictation/format";
 import type {
   DictationSubmitResult,
@@ -270,19 +268,9 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
     session.startedAtMs != null ? Math.max(0, (now - session.startedAtMs) / 1000) : 0;
 
   return (
-    <div className="mx-auto w-full max-w-3xl min-w-0 space-y-4">
+    <div className="w-full min-w-0 space-y-4">
       <header className="min-w-0">
-        <Link
-          href={learnListeningExerciseHref(exercise.mode)}
-          className="text-sm font-medium text-wewin-navy hover:underline"
-        >
-          {fillSegments
-            ? t("fillBackCatalog", "← Tất cả bài nghe điền từ")
-            : questions
-              ? t("qaBackCatalog", "← Tất cả bài nghe & trả lời")
-              : t("backCatalog", "← Tất cả bài chép chính tả")}
-        </Link>
-        <div className="mt-1 flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <h1 className="min-w-0 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
             {exercise.title}
           </h1>
@@ -296,12 +284,7 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
           {exercise.instructions ||
             (fillSegments
               ? t("fillDefaultInstructions", "Nghe audio và điền từ hoặc cụm từ còn thiếu vào từng ô trống.")
-              : questions
-                ? t(
-                    "qaDefaultInstructions",
-                    "Nghe audio rồi trả lời từng câu hỏi bằng tiếng Anh. Chỉ cần câu trả lời có chứa ý chính (tên người, hành động…) là được tính đúng.",
-                  )
-                : t("defaultInstructions", "Nghe và chép lại chính xác câu bạn nghe được."))}
+              : t("defaultInstructions", "Nghe và chép lại chính xác câu bạn nghe được."))}
         </p>
       </header>
 

@@ -1164,6 +1164,8 @@
     "emptyTitle": "No dictation exercises yet",
     "emptyDesc": "Content is coming soon.",
     "level": "Level {level}",
+    "otherLevel": "Other lessons",
+    "lessonCount": "{n} lessons",
     "start": "Start →",
     "defaultInstructions": "Listen and write down exactly what you hear.",
     "play": "Play",
@@ -1376,6 +1378,36 @@
       "deleteFailed": "Could not delete the exercise. Please try again."
     }
   },
+  "practiceGames": {
+    "backLearn": "← Learn",
+    "backGameHub": "← Choose level",
+    "breadcrumbLearn": "Learn",
+    "nextLessonLabel": "Next lesson:",
+    "prevLesson": "Previous",
+    "nextLesson": "Next",
+    "lessonCount": "{n} lessons",
+    "openLevel": "Start →",
+    "levelSwitch": "Choose level",
+    "levels": {
+      "basic": {
+        "title": "Basic level",
+        "desc": "Short audio, slow pace and familiar vocabulary — a good place to start."
+      },
+      "intermediate": {
+        "title": "Intermediate level",
+        "desc": "Longer clips, natural conversations and near real-life speed — sharpen your listening reflexes."
+      }
+    },
+    "shadowingTips": {
+      "title": "Tips for effective shadowing",
+      "step1Title": "Absorb the intonation",
+      "step1Desc": "Listen to the model audio once or twice at 1x or 0.75x to catch the stress and natural pauses.",
+      "step2Title": "Shadow the audio",
+      "step2Desc": "Speak about half a second behind the speaker, copying their mouth shape, intonation and linking.",
+      "step3Title": "Compare and improve",
+      "step3Desc": "Record yourself, check the match score and listen back to find words that were unclear or missed."
+    }
+  },
   "shadowing": {
     "catalogTitle": "Shadowing — Listen and repeat",
     "catalogDesc": "Listen to a model sentence, record yourself and see how closely the recognized speech matches it.",
@@ -1384,11 +1416,15 @@
     "emptyTitle": "No shadowing exercises yet",
     "emptyDesc": "Content is coming soon.",
     "level": "Level {level}",
+    "otherLevel": "Other lessons",
+    "lessonCount": "{n} lessons",
     "start": "Practise →",
     "defaultInstructions": "Listen to the model, then record yourself repeating it as closely as you can.",
-    "testNotice": "Test version: speech recognition uses the browser's built-in engine (Chrome or Edge recommended). Results are for reference only.",
+  
     "sampleAudio": "Model audio",
     "recordTitle": "Record your voice",
+    "readAlongTitle": "Transcript",
+    "readAlongHint": "Read along with the text below. Speaker names are not read aloud.",
     "record": "Record",
     "stop": "Stop",
     "recording": "Recording… tap to stop",

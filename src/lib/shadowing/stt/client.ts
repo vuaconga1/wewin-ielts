@@ -8,9 +8,16 @@ import type { SttProviderId } from "@/lib/shadowing/types";
 
 export type SpeechErrorCode = "not-allowed" | "audio-capture" | "network" | "unsupported" | "other";
 
+export type SpeechTranscript = {
+  /** Best guess of the recognizer for the whole recording. */
+  text: string;
+  /** Alternative guesses for each finalized chunk, best first (lets the server pick the closest). */
+  segments: string[][];
+};
+
 export type SpeechSession = {
   /** Stops listening and resolves with the full recognized text. */
-  stop(): Promise<string>;
+  stop(): Promise<SpeechTranscript>;
   abort(): void;
 };
 
@@ -27,7 +34,7 @@ export interface SpeechRecognizerProvider {
 }
 
 type RecognitionAlternative = { transcript: string };
-type RecognitionResult = { isFinal: boolean; 0: RecognitionAlternative; length: number };
+type RecognitionResult = ArrayLike<RecognitionAlternative> & { isFinal: boolean };
 type RecognitionEvent = { resultIndex: number; results: ArrayLike<RecognitionResult> };
 type RecognitionErrorEvent = { error: string };
 type Recognition = {
@@ -54,6 +61,7 @@ function recognitionCtor(): RecognitionCtor | null {
 }
 
 const STOP_TIMEOUT_MS = 3_000;
+const MAX_ALTERNATIVES = 5;
 const FATAL_ERRORS = new Set(["not-allowed", "service-not-allowed", "audio-capture", "network"]);
 
 function mapError(error: string): SpeechErrorCode {
@@ -71,24 +79,29 @@ export const webSpeechProvider: SpeechRecognizerProvider = {
     const Ctor = recognitionCtor();
     if (!Ctor) {
       onError?.("unsupported");
-      return { stop: async () => "", abort: () => {} };
+      return { stop: async () => ({ text: "", segments: [] }), abort: () => {} };
     }
 
     /** Finalized text from earlier recognition runs (Chrome ends runs after silences). */
     let committed = "";
+    let committedSegments: string[][] = [];
     let runFinal = "";
+    let runSegments: string[][] = [];
     let runInterim = "";
     let stopping = false;
     let fatal = false;
     let rec: Recognition | null = null;
-    let resolveStop: ((text: string) => void) | null = null;
+    let resolveStop: ((result: SpeechTranscript) => void) | null = null;
 
     const fullText = () =>
       [committed, runFinal, runInterim].map((s) => s.trim()).filter(Boolean).join(" ");
 
     const finish = () => {
-      const text = fullText();
-      resolveStop?.(text);
+      const interim = runInterim.trim();
+      resolveStop?.({
+        text: fullText(),
+        segments: [...committedSegments, ...runSegments, ...(interim ? [[interim]] : [])],
+      });
       resolveStop = null;
     };
 
@@ -97,16 +110,22 @@ export const webSpeechProvider: SpeechRecognizerProvider = {
       r.lang = lang;
       r.continuous = true;
       r.interimResults = true;
-      r.maxAlternatives = 1;
+      r.maxAlternatives = MAX_ALTERNATIVES;
       r.onresult = (e) => {
         let finals = "";
         let interim = "";
+        const segments: string[][] = [];
         for (let i = 0; i < e.results.length; i++) {
           const res = e.results[i];
-          if (res.isFinal) finals += ` ${res[0].transcript}`;
-          else interim += ` ${res[0].transcript}`;
+          if (res.isFinal) {
+            finals += ` ${res[0].transcript}`;
+            segments.push(Array.from(res, (alt) => alt.transcript.trim()).filter(Boolean));
+          } else {
+            interim += ` ${res[0].transcript}`;
+          }
         }
         runFinal = finals;
+        runSegments = segments;
         runInterim = interim;
         onText?.(fullText());
       };
@@ -116,8 +135,11 @@ export const webSpeechProvider: SpeechRecognizerProvider = {
         onError?.(mapError(e.error));
       };
       r.onend = () => {
+        const interim = runInterim.trim();
         committed = fullText();
+        committedSegments = [...committedSegments, ...runSegments, ...(interim ? [[interim]] : [])];
         runFinal = "";
+        runSegments = [];
         runInterim = "";
         if (stopping || fatal) {
           finish();
@@ -139,7 +161,7 @@ export const webSpeechProvider: SpeechRecognizerProvider = {
     return {
       stop() {
         stopping = true;
-        return new Promise<string>((resolve) => {
+        return new Promise<SpeechTranscript>((resolve) => {
           resolveStop = resolve;
           window.setTimeout(finish, STOP_TIMEOUT_MS);
           try {

@@ -19,13 +19,6 @@ import {
 } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
-/**
- * Dictation, fill-blank, listen-answer and shadowing cards are hidden on production
- * until launch; set NEXT_PUBLIC_SHOW_PRACTICE_GAMES=1 (build-time) to show them.
- */
-const SHOW_PRACTICE_GAMES =
-  process.env.NODE_ENV !== "production" || process.env.NEXT_PUBLIC_SHOW_PRACTICE_GAMES === "1";
-
 export type CourseCard = {
   id: string;
   title: string;
@@ -160,8 +153,6 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
           </div>
         </Link>
 
-        {SHOW_PRACTICE_GAMES ? (
-        <>
         <Link
           href={learnDictationHref()}
           prefetch={false}
@@ -244,7 +235,7 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
             <p className="line-clamp-3 text-sm leading-snug break-words text-zinc-600">
               {t(
                 "listenAnswerDesc",
-                "Nghe đoạn văn ngắn và trả lời câu hỏi bằng vài từ tiếng Anh — ai làm gì, ở đâu, chọn A hay B. Chấm ngay sau khi nộp.",
+                "Nghe đoạn văn ngắn và trả lời câu hỏi bằng vài từ tiếng Anh.",
               )}
             </p>
             <div className="mt-auto flex justify-end">
@@ -283,9 +274,6 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
             </div>
           </div>
         </Link>
-        </>
-        ) : null}
-
         {courses.length === 0 ? (
           <div className="wewin-card-3d border-dashed px-6 py-10 text-center sm:col-span-2">
             <p className="font-semibold text-zinc-800">
