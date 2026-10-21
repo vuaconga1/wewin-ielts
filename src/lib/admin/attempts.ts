@@ -57,6 +57,7 @@ export type AdminUserOption = {
   id: string;
   email: string | null;
   username: string;
+  fullName: string | null;
   role: "ADMIN" | "TEACHER" | "STUDENT";
   attemptCount: number;
 };
@@ -199,6 +200,7 @@ type UserLite = {
   id: string;
   email: string | null;
   username: string;
+  fullName: string | null;
   role: "ADMIN" | "TEACHER" | "STUDENT";
 };
 
@@ -207,7 +209,13 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
 
   if (await canUsePrisma()) {
     const users = await prisma.user.findMany({
-      select: { id: true, email: true, username: true, role: true },
+      select: {
+        id: true,
+        email: true,
+        username: true,
+        fullName: true,
+        role: true,
+      },
       orderBy: { email: "asc" },
     });
     for (const u of users) {
@@ -215,6 +223,7 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
         id: u.id,
         email: u.email,
         username: u.username,
+        fullName: u.fullName?.trim() || null,
         role: u.role,
       });
     }
@@ -227,6 +236,7 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
         id: u.id,
         email: u.email,
         username: u.username,
+        fullName: u.fullName?.trim() || null,
         role: u.role,
       });
     }
@@ -400,6 +410,7 @@ function buildUserOptions(
       id: user.id,
       email: user.email,
       username: user.username,
+      fullName: user.fullName,
       role: user.role,
       attemptCount: counts.get(user.id) ?? 0,
     });
@@ -412,6 +423,7 @@ function buildUserOptions(
       id: userId,
       email: "(không rõ)",
       username: userId.slice(0, 12),
+      fullName: null,
       role: "STUDENT",
       attemptCount: count,
     });
@@ -419,7 +431,10 @@ function buildUserOptions(
 
   options.sort((a, b) => {
     if (b.attemptCount !== a.attemptCount) return b.attemptCount - a.attemptCount;
-    return a.username.localeCompare(b.username);
+    return (a.fullName || a.username).localeCompare(
+      b.fullName || b.username,
+      "vi",
+    );
   });
   return options;
 }

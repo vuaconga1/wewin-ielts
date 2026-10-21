@@ -13,6 +13,7 @@ import type {
 import { localeToIntl } from "@/i18n/config";
 import { useTranslations } from "@/i18n/provider";
 import { PaginationControls } from "@/components/ui/pagination";
+import { UserCombobox } from "@/components/admin/user-combobox";
 
 type FiltersState = {
   userId: string;
@@ -180,26 +181,20 @@ export function AttemptsViewer() {
         className="card-outline space-y-4 p-4 sm:p-5"
       >
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <label className="block text-sm">
-            <span className="mb-1.5 block font-medium text-zinc-700">
-              {t("learner")}
-            </span>
-            <select
-              value={draft.userId}
-              onChange={(e) =>
-                setDraft((f) => ({ ...f, userId: e.target.value }))
-              }
-              className="w-full rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm text-zinc-900 outline-none focus:border-wewin-navy"
+          <div className="block min-w-0 text-sm">
+            <label
+              htmlFor="attempts-learner-filter"
+              className="mb-1.5 block font-medium text-zinc-700"
             >
-              <option value="">{t("allLearners")}</option>
-              {users.map((u) => (
-                <option key={u.id} value={u.id}>
-                  {u.email ? `${u.username} · ${u.email}` : u.username}
-                  {u.attemptCount ? ` (${u.attemptCount})` : ""}
-                </option>
-              ))}
-            </select>
-          </label>
+              {t("learner")}
+            </label>
+            <UserCombobox
+              id="attempts-learner-filter"
+              users={users}
+              value={draft.userId}
+              onChange={(userId) => setDraft((f) => ({ ...f, userId }))}
+            />
+          </div>
 
           <label className="block text-sm">
             <span className="mb-1.5 block font-medium text-zinc-700">
