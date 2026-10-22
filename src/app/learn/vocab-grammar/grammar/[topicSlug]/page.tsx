@@ -1,11 +1,15 @@
 import { notFound } from "next/navigation";
 import { getLearnOwnerKey } from "@/lib/learn/owner";
 import { getProgress } from "@/lib/learn/store";
-import { getTopicBySlug, getTopicsByTrack } from "@/lib/learn/vocab-grammar-store";
+import { getGrammarCourseTopics, getTopicBySlug } from "@/lib/learn/vocab-grammar-store";
 import { toPublicTopic, toPublicTopicMeta } from "@/lib/learn/vocab-grammar-public";
-import { pickLocalized } from "@/lib/learn/vocab-grammar-types";
+import { pickLocalized, topicCourse } from "@/lib/learn/vocab-grammar-types";
+import { learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
+import { getViewerRole } from "@/lib/auth";
+import { canViewIeltsGrammar } from "@/lib/auth/roles";
 import { SiteShell } from "@/components/layout/site-shell";
 import { TopicLessonPlayer } from "@/components/learn/topic-lesson-player";
+import { GrammarCourseLocked } from "@/components/learn/grammar-course-tabs";
 import { getLocale, getTranslations } from "@/i18n/server";
 
 export const dynamic = "force-dynamic";
@@ -33,20 +37,62 @@ export default async function GrammarTopicPage({ params }: Props) {
 
   const locale = await getLocale();
   const { t } = await getTranslations();
+  const course = topicCourse(topic);
+
+  if (course === "ielts-3-4") {
+    const role = await getViewerRole();
+    if (!canViewIeltsGrammar(role)) {
+      const courseHref = learnVocabGrammarTrackHref("grammar", course);
+      return (
+        <SiteShell active="learn" wide>
+          <GrammarCourseLocked
+            title={t("learn.grammarCourseLockedTitle", "Khóa học dành cho học viên WeWIN")}
+            description={
+              role
+                ? t(
+                    "learn.grammarCourseLockedVisitor",
+                    "Tài khoản của bạn chưa thuộc lớp học nào. Liên hệ WeWIN để được thêm vào lớp và mở khóa học này.",
+                  )
+                : t(
+                    "learn.grammarCourseLockedGuest",
+                    "Đăng nhập bằng tài khoản học viên WeWIN để xem khóa học này.",
+                  )
+            }
+            cta={
+              role
+                ? { href: learnVocabGrammarTrackHref("grammar"), label: t("learn.backCurriculum") }
+                : {
+                    href: `/login?next=${encodeURIComponent(courseHref)}`,
+                    label: t("learn.loginToView", "Đăng nhập"),
+                  }
+            }
+          />
+        </SiteShell>
+      );
+    }
+  }
+
   const ownerKey = await getLearnOwnerKey();
-  const progress = await getProgress(ownerKey);
-  const topics = await getTopicsByTrack("grammar");
+  const [progress, topics] = await Promise.all([
+    getProgress(ownerKey),
+    getGrammarCourseTopics(course),
+  ]);
   const ordered = [...topics].sort((a, b) => a.order - b.order);
   const idx = ordered.findIndex((tpc) => tpc.slug === topicSlug);
   const prev = idx > 0 ? ordered[idx - 1] : undefined;
   const next = idx >= 0 ? ordered[idx + 1] : undefined;
+  const courseLabel =
+    course === "ielts-3-4"
+      ? t("learn.grammarCourseIelts34", "Ngữ pháp IELTS 3.0–4.0")
+      : t("learn.grammarCourseBasic", "Ngữ pháp cơ bản");
 
   return (
     <SiteShell active="learn" wide>
       <TopicLessonPlayer
         track="grammar"
-        moduleTitle={t("learn.grammarTrack", "Ngữ pháp IELTS")}
-        trackLabel={t("learn.grammarTrack", "Ngữ pháp")}
+        course={course}
+        moduleTitle={courseLabel}
+        trackLabel={courseLabel}
         topic={toPublicTopic(topic)}
         displayTitle={pickLocalized(topic.title, locale)}
         displaySummary={pickLocalized(topic.summary, locale)}

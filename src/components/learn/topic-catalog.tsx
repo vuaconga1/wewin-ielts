@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { BookOpen, Lock } from "lucide-react";
 import type { LearnProgressStore } from "@/lib/learn/types";
@@ -21,6 +22,10 @@ type Props = {
   trackLabel: string;
   topics: PublicTopicLesson[];
   progress: LearnProgressStore;
+  /** Rendered between the header and the topic grid (e.g. grammar course tabs). */
+  toolbar?: ReactNode;
+  /** Replaces the topic grid when the viewer may not open this course. */
+  lockedPanel?: ReactNode;
 };
 
 export function TopicCatalog({
@@ -28,6 +33,8 @@ export function TopicCatalog({
   trackLabel,
   topics,
   progress,
+  toolbar,
+  lockedPanel,
 }: Props) {
   const { t, locale } = useTranslations("learn");
   const isVocabulary = track === "vocabulary";
@@ -58,18 +65,12 @@ export function TopicCatalog({
         <h1 className="mt-2 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
           {trackLabel}
         </h1>
-        {!isVocabulary ? (
-          <p className="mt-1 text-sm text-zinc-600">
-            {topics.some((tpc) => tpc.slidesUrl)
-              ? t("topicCatalogDescSlides", "Chọn chủ đề để xem slide bài giảng.")
-              : t(
-                  "topicCatalogDesc",
-                  "Chọn chủ đề để xem video, lý thuyết và làm 10 câu bài tập.",
-                )}
-          </p>
-        ) : null}
+      
       </header>
 
+      {toolbar}
+
+      {lockedPanel ?? (
       <div
         className={
           isVocabulary
@@ -169,6 +170,7 @@ export function TopicCatalog({
           );
         })}
       </div>
+      )}
     </div>
   );
 }

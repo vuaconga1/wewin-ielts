@@ -6,9 +6,13 @@ import {
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
+  Layers,
+  List,
   Lock,
 } from "lucide-react";
 import { VocabWordCard } from "@/components/learn/vocab-word-card";
+import { VocabFlashcards } from "@/components/learn/vocab-flashcards";
+import { topicCollection } from "@/lib/learn/vocab-grammar-types";
 import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
 import { isTopicUnlocked } from "@/lib/learn/progress-utils";
@@ -17,6 +21,7 @@ import {
   learnVocabGrammarHref,
   learnVocabGrammarTrackHref,
   learnVocabTopicLearnHref,
+  learnVocabularyHref,
 } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
@@ -48,6 +53,10 @@ export function VocabWordList({
   );
   const [pending, startTransition] = useTransition();
   const words = topic.words ?? [];
+  const collection = topicCollection(topic);
+  const [view, setView] = useState<"flashcards" | "list">(
+    collection === "topics" ? "flashcards" : "list",
+  );
 
   // Mark topic complete on first view (no exercises for vocabulary).
   useEffect(() => {
@@ -104,7 +113,7 @@ export function VocabWordList({
           </Link>
           <span className="mx-1.5">›</span>
           <Link
-            href={learnVocabGrammarTrackHref("vocabulary")}
+            href={learnVocabularyHref(collection)}
             className="hover:text-wewin-navy hover:underline"
           >
             {t("vocabularyTrack", "Từ vựng")}
@@ -149,7 +158,7 @@ export function VocabWordList({
 
       <div>
         <Link
-          href={learnVocabGrammarTrackHref("vocabulary")}
+          href={learnVocabularyHref(collection)}
           className="text-sm font-medium text-wewin-navy hover:underline"
         >
           {t("backToVocabulary", "← Quay lại Từ vựng")}
@@ -166,13 +175,49 @@ export function VocabWordList({
       </div>
 
       <section className="space-y-3" aria-label={t("vocabWordsSection", "Danh sách từ vựng")}>
-        <h2 className="text-lg font-bold text-zinc-900 sm:text-xl">
-          {t("vocabWordsSection", "Danh sách từ vựng")}
-        </h2>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-bold text-zinc-900 sm:text-xl">
+            {view === "flashcards"
+              ? t("vocabFlashcardsSection", "Flashcard")
+              : t("vocabWordsSection", "Danh sách từ vựng")}
+          </h2>
+          {words.length > 0 ? (
+            <div
+              role="tablist"
+              className="inline-flex rounded-lg border border-zinc-200 bg-zinc-50 p-0.5"
+            >
+              {(["flashcards", "list"] as const).map((mode) => (
+                <button
+                  key={mode}
+                  type="button"
+                  role="tab"
+                  aria-selected={view === mode}
+                  onClick={() => setView(mode)}
+                  className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium ${
+                    view === mode
+                      ? "bg-white text-wewin-navy shadow-sm"
+                      : "text-zinc-600 hover:text-wewin-navy"
+                  }`}
+                >
+                  {mode === "flashcards" ? (
+                    <Layers className="h-4 w-4" />
+                  ) : (
+                    <List className="h-4 w-4" />
+                  )}
+                  {mode === "flashcards"
+                    ? t("vocabViewFlashcards", "Flashcard")
+                    : t("vocabViewList", "Danh sách")}
+                </button>
+              ))}
+            </div>
+          ) : null}
+        </div>
         {words.length === 0 ? (
           <p className="rounded-xl border border-dashed border-zinc-300 bg-zinc-50 px-4 py-8 text-center text-sm text-zinc-600">
             {t("contentComingSoon", "Nội dung đang cập nhật")}
           </p>
+        ) : view === "flashcards" ? (
+          <VocabFlashcards words={words} />
         ) : (
           <div className="flex flex-col gap-3">
             {words.map((w) => (

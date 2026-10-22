@@ -1,6 +1,7 @@
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { findLocalUserById } from "@/lib/store/user-store";
+import { isLearnerRole } from "@/lib/auth/permissions";
 
 export type AccessPlan = "FREE" | "PAID" | "UNLIMITED";
 export type AccessStatus = "ACTIVE" | "EXPIRING" | "EXPIRED" | "UNLIMITED";
@@ -33,18 +34,18 @@ export async function getUserAccess(userId: string) {
       select: { role: true, accessPlan: true, accessStartsAt: true, accessExpiresAt: true },
     });
     if (!user) return null;
-    return { ...user, status: user.role === "STUDENT" ? accessStatus(user.accessPlan, user.accessExpiresAt) : "UNLIMITED" as const };
+    return { ...user, status: isLearnerRole(user.role) ? accessStatus(user.accessPlan, user.accessExpiresAt) : "UNLIMITED" as const };
   }
   const user = await findLocalUserById(userId);
   if (!user) return null;
-  const plan = user.accessPlan ?? (user.role === "STUDENT" ? "FREE" : "UNLIMITED");
+  const plan = user.accessPlan ?? (isLearnerRole(user.role) ? "FREE" : "UNLIMITED");
   const expiresAt = user.accessExpiresAt ?? null;
   return {
     role: user.role,
     accessPlan: plan,
     accessStartsAt: user.accessStartsAt ? new Date(user.accessStartsAt) : new Date(user.createdAt),
     accessExpiresAt: expiresAt ? new Date(expiresAt) : null,
-    status: user.role === "STUDENT" ? accessStatus(plan, expiresAt) : "UNLIMITED" as const,
+    status: isLearnerRole(user.role) ? accessStatus(plan, expiresAt) : "UNLIMITED" as const,
   };
 }
 

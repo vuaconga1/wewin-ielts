@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
-import type { VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
+import type { GrammarCourse, VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
 import { isTopicUnlocked } from "@/lib/learn/progress-utils";
 import { learnVocabGrammarTopicHref, learnVocabGrammarTrackHref, learnVocabTopicLearnHref } from "@/lib/learn/hrefs";
 import { pickLocalized } from "@/lib/learn/vocab-grammar-types";
@@ -18,6 +18,7 @@ import { useTranslations } from "@/i18n/provider";
 
 type Props = {
   track: VocabGrammarTrack;
+  course?: GrammarCourse;
   moduleTitle: string;
   topics: PublicTopicLesson[];
   progress: LearnProgressStore;
@@ -28,6 +29,7 @@ type Props = {
 
 export function TopicSidebar({
   track,
+  course,
   moduleTitle,
   topics,
   progress,
@@ -64,7 +66,7 @@ export function TopicSidebar({
 
       <div className="border-b border-zinc-200 px-4 py-3">
         <Link
-          href={learnVocabGrammarTrackHref(track)}
+          href={learnVocabGrammarTrackHref(track, course)}
           className="text-sm font-medium text-wewin-navy hover:underline"
         >
           {t("backTrack", "← Quay lại chương học")}

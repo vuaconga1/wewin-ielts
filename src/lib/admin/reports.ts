@@ -1,4 +1,5 @@
 import { listAdminUsers, type AdminUserPublic } from "@/lib/admin/users";
+import { isLearnerRole } from "@/lib/auth/permissions";
 import { listAttempts, listTests, type StoredAttempt, type StoredTest } from "@/lib/store/test-store";
 
 export type ReportSkill = "LISTENING" | "READING" | "WRITING" | "SPEAKING";
@@ -65,7 +66,7 @@ export async function buildAdminReports(): Promise<UserReportRow[]> {
     catalogBySkill.get(test.skill as ReportSkill)!.push(...partKeys(test));
   }
 
-  return users.filter((user) => user.role === "STUDENT").map((user) => {
+  return users.filter((user) => isLearnerRole(user.role)).map((user) => {
     const userAttempts = attempts.filter((attempt) => attempt.userId === user.id);
     const skills = SKILLS.map((skill): SkillProgress => {
       const skillAttempts = userAttempts.filter((attempt) => testBySlug.get(attempt.testSlug)?.skill === skill);

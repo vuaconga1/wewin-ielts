@@ -6,12 +6,15 @@ import { cache } from "react";
 import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { findLocalUserById } from "@/lib/store/user-store";
+import type { AppRole } from "@/lib/auth/roles";
 
 const PROFILE_TTL_MS = 60_000;
 
 export type UserDisplayProfile = {
   avatarUrl: string | null;
   fullName: string | null;
+  /** Current DB role (session cookie may still carry the role it was issued with). */
+  role?: AppRole;
 };
 
 type ProfileCacheEntry = { profile: UserDisplayProfile; expiresAt: number };
@@ -50,12 +53,13 @@ async function loadUserDisplayProfile(
     try {
       const user = await prisma.user.findUnique({
         where: { id: userId },
-        select: { avatarUrl: true, fullName: true },
+        select: { avatarUrl: true, fullName: true, role: true },
       });
       if (user) {
         const profile = {
           avatarUrl: user.avatarUrl ?? null,
           fullName: user.fullName ?? null,
+          role: user.role,
         };
         writeProfileCache(userId, profile);
         return profile;
@@ -69,6 +73,7 @@ async function loadUserDisplayProfile(
   const profile = {
     avatarUrl: local?.avatarUrl ?? null,
     fullName: local?.fullName ?? null,
+    role: local?.role,
   };
   writeProfileCache(userId, profile);
   return profile;

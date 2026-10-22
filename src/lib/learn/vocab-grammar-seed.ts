@@ -1,5 +1,6 @@
 import type { LearnExercise } from "@/lib/learn/types";
 import cambridgeVocabUnits from "@/lib/learn/data/cambridge-vocab-units.json";
+import flyerVocabTopics from "@/lib/learn/data/flyer-vocab-topics.json";
 import type {
   LocalizedText,
   TopicLesson,
@@ -328,19 +329,89 @@ const SLIDE_GRAMMAR_DECKS: {
   { slug: "g11-2-quantifiers-confusables", fileId: "1by7lTEWYidDlOji0svF-_foSGKV_kqYlvRuFw5R9buc", label: "Grammar 11.2", vi: "Lượng từ và các cặp từ dễ nhầm", en: "Quantifiers and commonly confused words" },
 ];
 
-const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = SLIDE_GRAMMAR_DECKS.map((deck, i) =>
-  topic({
-    slug: deck.slug,
-    track: "grammar",
-    order: i + 1,
-    title: loc(deck.vi, deck.en),
-    summary: loc(`${deck.label} – ${deck.vi}`, `${deck.label} – ${deck.en}`),
-    videoUrl: "",
-    slidesUrl: googleSlidesEmbed(deck.fileId),
-    theoryHtml: loc("", ""),
-    exercises: [],
-  }),
-);
+/** WeWIN IELTS 3.0–4.0 decks (Google Drive folder "IELTS 3.0_4.0"); teacher guide omitted. */
+const IELTS_34_DECKS: { n: number; slug: string; fileId: string; title: string }[] = [
+  { n: 1, slug: "ielts34-01-daily-life-vocabulary-and-listening", fileId: "1ruxhDpLfAmTFdWDPMKy71VeEkFafDXnIN9ovbNn2cpU", title: "Daily Life Vocabulary and Listening" },
+  { n: 2, slug: "ielts34-02-daily-life-reading-and-grammar", fileId: "1OZqwAehGy5vZg3GYcinBrVAroouud5hZQ4-W-miEe1k", title: "Daily Life Reading and Grammar" },
+  { n: 3, slug: "ielts34-03-daily-life-speaking-and-pronunciation", fileId: "1QosNfOWa8Xw3IGr7zvKii4BY265REcSb3r1FahfCSks", title: "Daily Life Speaking and Pronunciation" },
+  { n: 4, slug: "ielts34-04-daily-life-writing-and-application", fileId: "1_yDNCb_53f6So8d3YK4TXAs5VMrTVFVt4gr1GVCdMGQ", title: "Daily Life Writing and Application" },
+  { n: 5, slug: "ielts34-05-house-and-home-vocabulary-and-listening", fileId: "1tIWDsgoqGn5gR9E_PLlmkqEntuy434a4TS2oGf9cBRA", title: "House and Home Vocabulary and Listening" },
+  { n: 6, slug: "ielts34-06-house-and-home-reading-and-grammar", fileId: "1gZAeyUAskRuE2DygIdhvsQMhZp84wjEm3-BMLgAwEY8", title: "House and Home Reading and Grammar" },
+  { n: 7, slug: "ielts34-07-house-and-home-speaking-and-pronunciation", fileId: "19N3KA3hCp1Fq2fWDgtrjqk56kEqZ3lp6S3shJJ8xktA", title: "House and Home Speaking and Pronunciation" },
+  { n: 8, slug: "ielts34-08-house-and-home-writing-and-application", fileId: "1uVdmW7lRzN_nLeEm9NmvE9_QuyxeCeY-wk95UmjCpJE", title: "House and Home Writing and Application" },
+  { n: 9, slug: "ielts34-09-hobbies-leisure-and-entertainment-vocabulary-and-listening", fileId: "1GU7QY2uxYU0ZoHqVrGWY8WVZ-huouBuLJCPp46ftqNc", title: "Hobbies, Leisure and Entertainment Vocabulary and Listening" },
+  { n: 10, slug: "ielts34-10-hobbies-leisure-and-entertainment-reading-and-grammar", fileId: "1bZlYRpNyOjmq9DeQB21vsLhJ_2ImytM56SaznPMK2Y8", title: "Hobbies, Leisure and Entertainment Reading and Grammar" },
+  { n: 11, slug: "ielts34-11-hobbies-leisure-and-entertainment-speaking-and-pronunciation", fileId: "1JXkxWnh80apDLCxGT9k8LXHkN5NVho9m7UC7vgcu81A", title: "Hobbies, Leisure and Entertainment Speaking and Pronunciation" },
+  { n: 12, slug: "ielts34-12-hobbies-leisure-and-entertainment-writing-and-application", fileId: "1QzbtbjywZFUVHysrgxlZfpaKodMGAVxTCeAfzETA9xg", title: "Hobbies, Leisure and Entertainment Writing and Application" },
+  { n: 13, slug: "ielts34-13-travel-and-holidays-vocabulary-and-listening", fileId: "1xBz46KyV86OlQSYwMeNUFq5Ihae3ketvobNTcyJskGY", title: "Travel and Holidays Vocabulary and Listening" },
+  { n: 14, slug: "ielts34-14-travel-and-holidays-reading-and-grammar", fileId: "1uRm_WbJAydpGewrK-ZwKuHDfTBptjOwxM_-v2stCaOo", title: "Travel and Holidays Reading and Grammar" },
+  { n: 15, slug: "ielts34-15-travel-and-holidays-speaking-and-pronunciation", fileId: "10U_B5o0OLmurCWRAJXIYkKUIr6PcYP7cDT0t9OGPfi8", title: "Travel and Holidays Speaking and Pronunciation" },
+  { n: 16, slug: "ielts34-16-travel-and-holidays-writing-and-application", fileId: "1jmb0pwWUCVEyuJv5R5pQCtzTJMbH0tDHWYcu7RF2N0o", title: "Travel and Holidays Writing and Application" },
+  { n: 17, slug: "ielts34-17-food-vocabulary-and-listening", fileId: "1F2LoWcJ4UozfJeVXm-BJqNOwIU5zqtusWYoXHGZJFDI", title: "Food Vocabulary and Listening" },
+  { n: 18, slug: "ielts34-18-food-reading-and-grammar", fileId: "1pn-AEKxKg1sgV6qzgD9cR6J_OWCQC0jWSWxv6aD7lhc", title: "Food Reading and Grammar" },
+  { n: 19, slug: "ielts34-19-food-speaking-and-pronunciation", fileId: "1_mQd85y2VCSzgIook9Nt-1umbT4caOOooXO_si0ik0Y", title: "Food Speaking and Pronunciation" },
+  { n: 20, slug: "ielts34-20-food-writing-and-application", fileId: "1Kf0WhvJ87k6eUfmf0P-1AWzM5-ujxFgi4NYy6KMMKKk", title: "Food Writing and Application" },
+  { n: 21, slug: "ielts34-21-progress-check-1", fileId: "1yvAB_JiFZclTjj-z1ZmGuIHKTmzRDWSq4jtUtImOr0k", title: "Progress Check 1" },
+  { n: 22, slug: "ielts34-22-transport-and-places-in-town-vocabulary-and-listening", fileId: "1-5wYFRMbgzJgrwLBFCoRxoGfsRUXJzEVCoqtu_Lh5JE", title: "Transport and Places in Town Vocabulary and Listening" },
+  { n: 23, slug: "ielts34-23-transport-and-places-in-town-reading-and-grammar", fileId: "1B3c63S174NteEJBkDlg7M79GPViZQJjg0NhGsCYazow", title: "Transport and Places in Town Reading and Grammar" },
+  { n: 24, slug: "ielts34-24-transport-and-places-in-town-speaking-and-pronunciation", fileId: "1z8RiiSltibGWwJiFkAZ18CbpH3LxEsNG2FzCEUPT3nU", title: "Transport and Places in Town Speaking and Pronunciation" },
+  { n: 25, slug: "ielts34-25-transport-and-places-in-town-writing-and-application", fileId: "1osQPDAA6nkijf6-g3ZctlqmFyF2uHNEsUaKZyqRON4U", title: "Transport and Places in Town Writing and Application" },
+  { n: 26, slug: "ielts34-26-jobs-work-and-study-vocabulary-and-listening", fileId: "17wW0Tx2DeHY3j-wbOaM99dkbmBljTXcFgqXsvt-I0b4", title: "Jobs, Work and Study Vocabulary and Listening" },
+  { n: 27, slug: "ielts34-27-jobs-work-and-study-reading-and-grammar", fileId: "1Rs0szr77wzk-LeGWDNi5ZQB_Zjk9uCFw8W9wEFaLVAw", title: "Jobs, Work and Study Reading and Grammar" },
+  { n: 28, slug: "ielts34-28-jobs-work-and-study-speaking-and-pronunciation", fileId: "1Fvh47bkT9JiBdr0WS3xMp_g2zEZQy72fHJ6ODLSBuvU", title: "Jobs, Work and Study Speaking and Pronunciation" },
+  { n: 29, slug: "ielts34-29-jobs-work-and-study-writing-and-application", fileId: "1JlVS4rxGKk84iX8mKa_Ys7975uSQ4Kk_fMPRbIigpPU", title: "Jobs, Work and Study Writing and Application" },
+  { n: 30, slug: "ielts34-30-health-and-medicine-vocabulary-and-listening", fileId: "1klbeZgasf_hHYv4nSGRNEVKNgSgnwN0tJ3SRWT-h-Cw", title: "Health and Medicine Vocabulary and Listening" },
+  { n: 31, slug: "ielts34-31-health-and-medicine-reading-and-grammar", fileId: "1fwfC-VkHBU44y5zzgeLsU_hJKboX4mNaz3M0Yc-14-E", title: "Health and Medicine Reading and Grammar" },
+  { n: 32, slug: "ielts34-32-health-and-medicine-speaking-and-pronunciation", fileId: "1Li49xTc4aO6rdOoU9NXjNDRReiVfwjuYOjOu9pqWNV8", title: "Health and Medicine Speaking and Pronunciation" },
+  { n: 33, slug: "ielts34-33-health-and-medicine-writing-and-application", fileId: "16rUesXRai89icMLC9bxH8HplhQ3kwDktoIkn4vGsm0s", title: "Health and Medicine Writing and Application" },
+  { n: 34, slug: "ielts34-34-language-vocabulary-and-listening", fileId: "1gRo_Qk3WbwRBoAxNf-gQoZOGJFH6vem_hH3RrBJ1vFs", title: "Language Vocabulary and Listening" },
+  { n: 35, slug: "ielts34-35-language-reading-and-grammar", fileId: "1s8WCnhOYw1dW7n95nBehklyehsL_nyXdrLUxT-PRCl4", title: "Language Reading and Grammar" },
+  { n: 36, slug: "ielts34-36-language-speaking-and-pronunciation", fileId: "12jaQAnAbPMLQCplBr72TLgcOWbzpvN4c5Hp70DxiTjI", title: "Language Speaking and Pronunciation" },
+  { n: 37, slug: "ielts34-37-language-writing-and-application", fileId: "1a2KjKEPWXSHF0_g59LTaDAsJTYYJOTkvmEs8QSbtDtE", title: "Language Writing and Application" },
+  { n: 38, slug: "ielts34-38-science-and-technology-vocabulary-and-listening", fileId: "1hTmaoOju9C-lYJss4lRRhY-GpU696Dp8H5nyauKZO3k", title: "Science and Technology Vocabulary and Listening" },
+  { n: 39, slug: "ielts34-39-science-and-technology-reading-and-grammar", fileId: "1QkoCVpTJu3fJOuci5OJWOBhOekEHH2FKGRpdGglxw54", title: "Science and Technology Reading and Grammar" },
+  { n: 40, slug: "ielts34-40-science-and-technology-speaking-and-pronunciation", fileId: "1uQTJhekDQJWs_fy1kmLcG4mvHvYHEQKYLQ2BD85K7qc", title: "Science and Technology Speaking and Pronunciation" },
+  { n: 41, slug: "ielts34-41-science-and-technology-writing-and-application", fileId: "1o_PkRgd0ePc7u7G0JLIZDAKOIvGy53neficRIQIJKUs", title: "Science and Technology Writing and Application" },
+  { n: 42, slug: "ielts34-42-progress-check-2", fileId: "1YXp5chCoCiCbWPjXp-ToxonK-zFoU_FezkZXDWvI8YA", title: "Progress Check 2" },
+  { n: 43, slug: "ielts34-43-listening-and-reading-bridge", fileId: "11FrgqBVBp9ymYQACWJVoZFo56RoXFrX2JAUwVmvmkQw", title: "Listening and Reading Bridge" },
+  { n: 44, slug: "ielts34-44-academic-writing-and-speaking-bridge", fileId: "1DejpjS4hr7zE3Ag2IhYxflegmmVf9zp7j0kQfaS-h7s", title: "Academic Writing and Speaking Bridge" },
+  { n: 45, slug: "ielts34-45-internal-listening-and-reading-assessment", fileId: "1e0gTwdpgyYMOCpcHwObBJi_ivgb3heRP4UaVGGEgYmk", title: "Internal Listening and Reading Assessment" },
+  { n: 46, slug: "ielts34-46-writing-practice-test-and-speaking-review", fileId: "1W9DNsyJmV1scKT8rsnVqMNFqtjHJivjEWuwhn7LE1AM", title: "Writing Practice Test and Speaking Review" },
+  { n: 47, slug: "ielts34-47-error-clinic-and-individual-repair", fileId: "100tQQcVBStAPqCx3CFK2FzRkWUSMNsrMOx24XkhBMbo", title: "Error Clinic and Individual Repair" },
+  { n: 48, slug: "ielts34-48-exit-assessment-and-next-steps", fileId: "1rpyY1M5MD1WpnCtMV9RjsPkgCfZQlsuyhhbCF96bQyg", title: "Exit Assessment and Next Steps" },
+];
+
+const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = [
+  ...SLIDE_GRAMMAR_DECKS.map((deck, i) =>
+    topic({
+      slug: deck.slug,
+      track: "grammar",
+      course: "basic",
+      order: i + 1,
+      title: loc(deck.vi, deck.en),
+      summary: loc(`${deck.label} – ${deck.vi}`, `${deck.label} – ${deck.en}`),
+      videoUrl: "",
+      slidesUrl: googleSlidesEmbed(deck.fileId),
+      theoryHtml: loc("", ""),
+      exercises: [],
+    }),
+  ),
+  // Orders 101+ keep the two courses apart; each course is ordered on its own.
+  ...IELTS_34_DECKS.map((deck) =>
+    topic({
+      slug: deck.slug,
+      track: "grammar",
+      course: "ielts-3-4",
+      order: 100 + deck.n,
+      title: loc(deck.title, deck.title),
+      summary: loc(`IELTS 3.0–4.0 · Bài ${deck.n}`, `IELTS 3.0–4.0 · Lesson ${deck.n}`),
+      videoUrl: "",
+      slidesUrl: googleSlidesEmbed(deck.fileId),
+      theoryHtml: loc("", ""),
+      exercises: [],
+    }),
+  ),
+];
 
 const GRAMMAR_TOPICS = SHOW_LEGACY_GRAMMAR ? LEGACY_GRAMMAR_TOPICS : SLIDE_GRAMMAR_TOPICS;
 
@@ -364,7 +435,28 @@ const VOCABULARY_TOPICS: TopicLesson[] = cambridgeVocabUnits.topics.map((unit) =
   ),
 );
 
+const TOPIC_VOCABULARY: TopicLesson[] = flyerVocabTopics.topics.map((unit) =>
+  topic(
+    {
+      slug: unit.slug,
+      track: "vocabulary",
+      collection: "topics",
+      order: unit.order,
+      title: loc(unit.title.vi, unit.title.en),
+      summary: loc(unit.summary.vi, unit.summary.en),
+      videoUrl: "",
+      theoryHtml: loc(
+        `<p>Học ${unit.words.length} từ vựng IELTS thông dụng chủ đề ${unit.summary.vi} qua flashcard.</p>`,
+        `<p>Learn ${unit.words.length} common IELTS words about ${unit.title.en} with flashcards.</p>`,
+      ),
+      words: unit.words as VocabWord[],
+      exercises: [],
+    },
+    false,
+  ),
+);
+
 export const SEED_VOCAB_GRAMMAR: VocabGrammarCatalog = {
   grammar: GRAMMAR_TOPICS,
-  vocabulary: VOCABULARY_TOPICS,
+  vocabulary: [...VOCABULARY_TOPICS, ...TOPIC_VOCABULARY],
 };

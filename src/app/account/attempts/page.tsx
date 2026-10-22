@@ -60,7 +60,12 @@ export default async function AccountAttemptsPage({ searchParams }: { searchPara
           {user.email ?? user.username}
           <span className="text-zinc-400">
             {" "}
-            · {user.role === "ADMIN" ? t("common.admin") : t("common.student")}
+            ·{" "}
+            {user.role === "ADMIN"
+              ? t("common.admin")
+              : user.role === "VISITOR"
+                ? t("common.visitor", "Khách")
+                : t("common.student")}
           </span>
         </p>
       </div>

@@ -737,39 +737,19 @@
           "order": 7,
           "type": "MATCHING",
           "content": {
-            "stem": "i. A negative reaction to receiving flowers",
+            "stem": "The study focused on participants' short-term reaction to receiving flowers.",
             "options": [
               {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
+                "label": "A",
+                "text": "the first study"
               },
               {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
+                "label": "B",
+                "text": "the second study"
               },
               {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
+                "label": "C",
+                "text": "the third study"
               }
             ]
           },
@@ -780,39 +760,19 @@
           "order": 8,
           "type": "MATCHING",
           "content": {
-            "stem": "ii. Some surprisingly strong responses to flowers",
+            "stem": "Participants were deliberately misled as to the aim of the study.",
             "options": [
               {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
+                "label": "A",
+                "text": "the first study"
               },
               {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
+                "label": "B",
+                "text": "the second study"
               },
               {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
+                "label": "C",
+                "text": "the third study"
               }
             ]
           },
@@ -823,39 +783,19 @@
           "order": 9,
           "type": "MATCHING",
           "content": {
-            "stem": "iii. A mutually beneficial relationship?",
+            "stem": "Receiving flowers had a notable effect on participants' mental capacities.",
             "options": [
               {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
+                "label": "A",
+                "text": "the first study"
               },
               {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
+                "label": "B",
+                "text": "the second study"
               },
               {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
+                "label": "C",
+                "text": "the third study"
               }
             ]
           },
@@ -866,39 +806,19 @@
           "order": 10,
           "type": "MATCHING",
           "content": {
-            "stem": "iv. Becoming more open about personal matters",
+            "stem": "Male and female responses were more uniform than expected.",
             "options": [
               {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
+                "label": "A",
+                "text": "the first study"
               },
               {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
+                "label": "B",
+                "text": "the second study"
               },
               {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
+                "label": "C",
+                "text": "the third study"
               }
             ]
           },
@@ -907,129 +827,30 @@
         {
           "number": 38,
           "order": 11,
-          "type": "MATCHING",
+          "type": "GAP_FILL",
           "content": {
-            "stem": "v. Some common social functions of flowers",
-            "options": [
-              {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
-              },
-              {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
-              },
-              {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
-              }
-            ]
+            "stem": "",
+            "blank": true
           },
           "correctAnswer": "Food"
         },
         {
           "number": 39,
           "order": 12,
-          "type": "MATCHING",
+          "type": "GAP_FILL",
           "content": {
-            "stem": "vi. Sensory appeal versus practical purpose of flowers",
-            "options": [
-              {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
-              },
-              {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
-              },
-              {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
-              }
-            ]
+            "stem": "",
+            "blank": true
           },
           "correctAnswer": "Children"
         },
         {
           "number": 40,
           "order": 13,
-          "type": "MATCHING",
+          "type": "GAP_FILL",
           "content": {
-            "stem": "vii. Bridging the gap between strangers in an enclosed space",
-            "options": [
-              {
-                "label": "i",
-                "text": "A negative reaction to receiving flowers"
-              },
-              {
-                "label": "ii",
-                "text": "Some surprisingly strong responses to flowers"
-              },
-              {
-                "label": "iii",
-                "text": "A mutually beneficial relationship?"
-              },
-              {
-                "label": "iv",
-                "text": "Becoming more open about personal matters"
-              },
-              {
-                "label": "v",
-                "text": "Some common social functions of flowers"
-              },
-              {
-                "label": "vi",
-                "text": "Sensory appeal versus practical purpose of flowers"
-              },
-              {
-                "label": "vii",
-                "text": "Bridging the gap between strangers in an enclosed space"
-              },
-              {
-                "label": "viii",
-                "text": "An imperfect theory"
-              }
-            ]
+            "stem": "",
+            "blank": true
           },
           "correctAnswer": "Edible"
         }

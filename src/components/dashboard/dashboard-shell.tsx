@@ -217,8 +217,8 @@ export function DashboardShell({
               </Link>
             );
           })}
-          {/* Admin links: all for ADMIN (canImport); TEACHER_ADMIN_PATHS only for TEACHER. Never for STUDENT. */}
-          {user && ((canImport && user.role !== "STUDENT") || user.role === "TEACHER") ? (
+          {/* Admin links: all for ADMIN (canImport); TEACHER_ADMIN_PATHS only for TEACHER. Never for STUDENT/VISITOR. */}
+          {user && ((canImport && user.role === "ADMIN") || user.role === "TEACHER") ? (
             <>
               <div
                 role="separator"

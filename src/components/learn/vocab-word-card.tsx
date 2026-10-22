@@ -72,6 +72,7 @@ export function VocabWordCard({ entry }: Props) {
         ) : null}
       </div>
 
+      {entry.exampleEn ? (
       <div className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-800">
         <p className="font-semibold text-zinc-900">{t("exampleLabel", "Ví dụ:")}</p>
         <div className="flex min-w-0 items-start gap-2">
@@ -94,6 +95,7 @@ export function VocabWordCard({ entry }: Props) {
           </div>
         </div>
       </div>
+      ) : null}
     </article>
   );
 }

@@ -5,6 +5,7 @@ import { Loader2, Pencil, Plus, Trash2, X } from "lucide-react";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { useTranslations } from "@/i18n/provider";
 import type { AdminUserPublic, AdminUserRole } from "@/lib/admin/users";
+import { isLearnerRole } from "@/lib/auth/roles";
 
 type Props = {
   currentUserId: string | null;
@@ -285,7 +286,7 @@ export function UsersManager({ currentUserId, canManage }: Props) {
   }
 
   function accessLabel(user: AdminUserPublic) {
-    if (user.role !== "STUDENT" || user.accessPlan === "UNLIMITED" || !user.accessExpiresAt) return "Vĩnh viễn";
+    if (!isLearnerRole(user.role) || user.accessPlan === "UNLIMITED" || !user.accessExpiresAt) return "Vĩnh viễn";
     const days = Math.max(0, Math.ceil((new Date(user.accessExpiresAt).getTime() - Date.now()) / 86_400_000));
     return days > 0 ? `Còn ${days} ngày` : "Đã hết hạn";
   }
@@ -293,6 +294,7 @@ export function UsersManager({ currentUserId, canManage }: Props) {
   function roleLabel(role: AdminUserRole) {
     if (role === "ADMIN") return tc("admin");
     if (role === "TEACHER") return locale === "en" ? "Teacher" : "Giáo viên";
+    if (role === "VISITOR") return tc("visitor", "Khách");
     return tc("student");
   }
 
@@ -483,9 +485,18 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                 className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm"
               >
                 <option value="STUDENT">{tc("student")}</option>
+                <option value="VISITOR">{tc("visitor", "Khách")}</option>
                 <option value="TEACHER">{locale === "en" ? "Teacher" : "Giáo viên"}</option>
                 <option value="ADMIN">{tc("admin")}</option>
               </select>
+              {isLearnerRole(form.role) ? (
+                <span className="mt-1 block break-words text-xs text-zinc-500">
+                  {t(
+                    "learnerRoleHint",
+                    "Có lớp → Học viên; không có lớp → Khách (tự động theo ô Lớp).",
+                  )}
+                </span>
+              ) : null}
             </label>
           </div>
 
@@ -515,8 +526,8 @@ export function UsersManager({ currentUserId, canManage }: Props) {
           <thead className="border-b border-wewin-border bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500">
             <tr>
               {canManage ? <th className="px-3 py-3">
-                <input type="checkbox" aria-label="Chọn tất cả học viên trên trang" checked={pageUsers.some((user) => user.role === "STUDENT") && pageUsers.filter((user) => user.role === "STUDENT").every((user) => selectedIds.includes(user.id))} onChange={(event) => {
-                  const pageIds = pageUsers.filter((user) => user.role === "STUDENT").map((user) => user.id);
+                <input type="checkbox" aria-label="Chọn tất cả học viên trên trang" checked={pageUsers.some((user) => isLearnerRole(user.role)) && pageUsers.filter((user) => isLearnerRole(user.role)).every((user) => selectedIds.includes(user.id))} onChange={(event) => {
+                  const pageIds = pageUsers.filter((user) => isLearnerRole(user.role)).map((user) => user.id);
                   setSelectedIds((current) => event.target.checked ? [...new Set([...current, ...pageIds])] : current.filter((id) => !pageIds.includes(id)));
                 }} />
               </th> : null}
@@ -564,7 +575,7 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                     className="border-b border-wewin-border last:border-0"
                   >
                     {canManage ? <td className="px-3 py-3">
-                      {user.role === "STUDENT" ? <input type="checkbox" aria-label={`Chọn ${user.username}`} checked={selectedIds.includes(user.id)} onChange={(event) => setSelectedIds((current) => event.target.checked ? [...current, user.id] : current.filter((id) => id !== user.id))} /> : null}
+                      {isLearnerRole(user.role) ? <input type="checkbox" aria-label={`Chọn ${user.username}`} checked={selectedIds.includes(user.id)} onChange={(event) => setSelectedIds((current) => event.target.checked ? [...current, user.id] : current.filter((id) => id !== user.id))} /> : null}
                     </td> : null}
                     <td className="px-3 py-3 sm:px-4">
                       <div className="flex min-w-0 items-center gap-3">
@@ -612,7 +623,9 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                         className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-semibold ${
                           user.role === "ADMIN"
                             ? "bg-wewin-navy/10 text-wewin-navy"
-                            : "bg-zinc-100 text-zinc-700"
+                            : user.role === "VISITOR"
+                              ? "bg-amber-50 text-amber-700"
+                              : "bg-zinc-100 text-zinc-700"
                         }`}
                       >
                         {roleLabel(user.role)}
@@ -629,7 +642,7 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                     </td>
                     {canManage ? <td className="px-3 py-3 text-right sm:px-4">
                       <div className="inline-flex flex-wrap justify-end gap-1">
-                        {user.role === "STUDENT" ? (
+                        {isLearnerRole(user.role) ? (
                           <>
                             <button type="button" onClick={() => void updateAccess(user, { days: 7 })} disabled={busy} className="rounded-lg border border-emerald-200 px-2 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-50 disabled:opacity-50">+7 ngày</button>
                             <button type="button" onClick={() => void updateAccess(user, { months: 1 })} disabled={busy} className="rounded-lg border border-blue-200 px-2 py-1.5 text-xs font-medium text-blue-700 hover:bg-blue-50 disabled:opacity-50">+1 tháng</button>

@@ -1,7 +1,11 @@
 import type { DictationMode } from "@/lib/dictation/types";
 import type { LearnSkill } from "@/lib/learn/types";
 import type { PracticeGame } from "@/lib/learn/practice-games";
-import type { VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
+import type {
+  GrammarCourse,
+  VocabCollection,
+  VocabGrammarTrack,
+} from "@/lib/learn/vocab-grammar-types";
 
 export function learnCatalogHref(): string {
   return "/learn";
@@ -27,8 +31,14 @@ export function learnVocabGrammarHref(): string {
   return "/learn/vocab-grammar";
 }
 
-export function learnVocabGrammarTrackHref(track: VocabGrammarTrack): string {
-  return `/learn/vocab-grammar/${track}`;
+export function learnVocabGrammarTrackHref(
+  track: VocabGrammarTrack,
+  course?: GrammarCourse,
+): string {
+  const base = `/learn/vocab-grammar/${track}`;
+  return track === "grammar" && course && course !== "basic"
+    ? `${base}?course=${course}`
+    : base;
 }
 
 export function learnVocabGrammarTopicHref(
@@ -69,6 +79,11 @@ export function learnShadowingHref(slug?: string): string {
 
 export function learnGameHref(game: PracticeGame, slug?: string): string {
   return slug ? `/learn/${game}/${slug}` : `/learn/${game}`;
+}
+
+export function learnVocabularyHref(collection?: VocabCollection): string {
+  const base = learnVocabGrammarTrackHref("vocabulary");
+  return collection && collection !== "cambridge" ? `${base}?set=${collection}` : base;
 }
 
 /** Vocabulary learn/practice page (word cards + optional exercises). */

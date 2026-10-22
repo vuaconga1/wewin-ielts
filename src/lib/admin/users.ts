@@ -7,6 +7,7 @@ import { canUsePrisma } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import { hashPassword } from "@/lib/auth";
 import { accessStatus, addCalendarMonths, freeAccessExpiry, type AccessPlan } from "@/lib/access";
+import { isLearnerRole, learnerRoleForClass, type AppRole } from "@/lib/auth/permissions";
 import { revalidateTag, unstable_cache } from "next/cache";
 import {
   deleteLocalUser,
@@ -19,7 +20,7 @@ import {
   type StoredUser,
 } from "@/lib/store/user-store";
 
-export type AdminUserRole = "ADMIN" | "TEACHER" | "STUDENT";
+export type AdminUserRole = AppRole;
 
 export type AdminUserPublic = {
   id: string;
@@ -59,7 +60,7 @@ function toPublic(user: {
   accessStartsAt?: Date | string;
   accessExpiresAt?: Date | string | null;
 }): AdminUserPublic {
-  const plan = user.accessPlan ?? (user.role === "STUDENT" ? "FREE" : "UNLIMITED");
+  const plan = user.accessPlan ?? (isLearnerRole(user.role) ? "FREE" : "UNLIMITED");
   const expiresAt = user.accessExpiresAt ?? null;
   return {
     id: user.id,
@@ -80,7 +81,7 @@ function toPublic(user: {
     accessExpiresAt: expiresAt
       ? typeof expiresAt === "string" ? expiresAt : expiresAt.toISOString()
       : null,
-    accessStatus: user.role === "STUDENT" ? accessStatus(plan, expiresAt) : "UNLIMITED",
+    accessStatus: isLearnerRole(user.role) ? accessStatus(plan, expiresAt) : "UNLIMITED",
   };
 }
 
@@ -132,9 +133,14 @@ function assertPassword(password: string) {
 }
 
 function assertRole(role: string): asserts role is AdminUserRole {
-  if (role !== "ADMIN" && role !== "TEACHER" && role !== "STUDENT") {
-    throw new AdminUsersError("INVALID_ROLE", "Role phải là STUDENT, TEACHER hoặc ADMIN");
+  if (role !== "ADMIN" && role !== "TEACHER" && role !== "STUDENT" && role !== "VISITOR") {
+    throw new AdminUsersError("INVALID_ROLE", "Role phải là STUDENT, VISITOR, TEACHER hoặc ADMIN");
   }
+}
+
+/** Learners follow class membership; staff roles are kept as chosen. */
+function resolveRole(role: AdminUserRole, classCode: string | null | undefined): AdminUserRole {
+  return isLearnerRole(role) ? learnerRoleForClass(classCode) : role;
 }
 
 const userPublicSelect = {
@@ -191,12 +197,12 @@ export async function createAdminUser(input: {
   assertUsername(username);
   assertPassword(password);
   assertRole(input.role);
-  const role = input.role;
+  const role = resolveRole(input.role, classCode);
 
   const passwordHash = await hashPassword(password);
-  const accessPlan: AccessPlan = role === "STUDENT" ? "FREE" : "UNLIMITED";
+  const accessPlan: AccessPlan = isLearnerRole(role) ? "FREE" : "UNLIMITED";
   const accessStartsAt = new Date();
-  const accessExpiresAt = role === "STUDENT" ? freeAccessExpiry(accessStartsAt) : null;
+  const accessExpiresAt = isLearnerRole(role) ? freeAccessExpiry(accessStartsAt) : null;
 
   if (await canUsePrisma()) {
     if (email) {
@@ -305,6 +311,11 @@ export async function updateAdminUser(
         throw new AdminUsersError("USERNAME_TAKEN", "Username đã được dùng");
       }
     }
+    const nextRole = resolveRole(
+      patch.role ?? existing.role,
+      patch.classCode !== undefined ? patch.classCode : existing.classCode,
+    );
+    if (nextRole !== existing.role) patch.role = nextRole;
     const user = await prisma.user.update({
       where: { id },
       data: {
@@ -334,6 +345,11 @@ export async function updateAdminUser(
       throw new AdminUsersError("USERNAME_TAKEN", "Username đã được dùng");
     }
   }
+  const nextRole = resolveRole(
+    patch.role ?? existing.role,
+    patch.classCode !== undefined ? patch.classCode : existing.classCode,
+  );
+  if (nextRole !== existing.role) patch.role = nextRole;
   const updated = await updateLocalUser(id, patch);
   if (!updated) {
     throw new AdminUsersError("NOT_FOUND", "Không tìm thấy tài khoản", 404);

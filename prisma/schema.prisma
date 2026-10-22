@@ -12,6 +12,8 @@ datasource db {
 
 enum Role {
   STUDENT
+  /// Registered learner without a class ("Khách"); differs from a signed-out guest.
+  VISITOR
   TEACHER
   ADMIN
 }

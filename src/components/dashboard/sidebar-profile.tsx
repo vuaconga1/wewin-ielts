@@ -241,7 +241,9 @@ export function SidebarProfile({
             ? tc("admin")
             : user.role === "TEACHER"
               ? locale === "en" ? "Teacher" : "Giáo viên"
-              : tc("student")}
+              : user.role === "VISITOR"
+                ? tc("visitor", "Khách")
+                : tc("student")}
         </p>
 
         <div className="mt-3 w-full rounded-xl border border-wewin-border bg-zinc-50 px-3 py-2.5 text-center">

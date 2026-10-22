@@ -8,7 +8,9 @@
 
 import { NextResponse } from "next/server";
 
-export type AppRole = "ADMIN" | "TEACHER" | "STUDENT";
+import type { AppRole } from "@/lib/auth/roles";
+
+export { isLearnerRole, learnerRoleForClass, type AppRole } from "@/lib/auth/roles";
 
 export type RoleBearer = { role: AppRole } | null | undefined;
 
@@ -37,6 +39,9 @@ export function isStudent(user: RoleBearer): boolean {
   return user?.role === "STUDENT";
 }
 
+export function isVisitor(user: RoleBearer): boolean {
+  return user?.role === "VISITOR";
+}
 /**
  * True when the caller may use admin UI/APIs.
  * - ADMIN role → always allowed

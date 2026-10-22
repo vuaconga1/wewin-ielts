@@ -1,11 +1,12 @@
 /**
- * Local JSON user store — used when MySQL is unavailable (same pattern as test-store).
- * File: data/users.json (gitignored under /data). On Vercel → /tmp/wewin-data (ephemeral).
+ * Local JSON user store â€” used when MySQL is unavailable (same pattern as test-store).
+ * File: data/users.json (gitignored under /data). On Vercel â†’ /tmp/wewin-data (ephemeral).
  */
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { DATA_DIR } from "@/lib/paths";
+import { isLearnerRole, type AppRole } from "@/lib/auth/permissions";
 
 const USERS_FILE = path.join(DATA_DIR, "users.json");
 
@@ -14,7 +15,7 @@ export type StoredUser = {
   email: string | null;
   username: string;
   passwordHash: string;
-  role: "ADMIN" | "TEACHER" | "STUDENT";
+  role: AppRole;
   fullName?: string | null;
   classCode?: string | null;
   /** Profile image path or data URL */
@@ -87,7 +88,7 @@ export async function upsertLocalUser(input: {
   email: string | null;
   username: string;
   passwordHash: string;
-  role: "ADMIN" | "TEACHER" | "STUDENT";
+  role: AppRole;
   fullName?: string | null;
   classCode?: string | null;
   accessPlan?: "FREE" | "PAID" | "UNLIMITED";
@@ -127,12 +128,12 @@ export async function upsertLocalUser(input: {
     role: input.role,
     fullName: input.fullName ?? null,
     classCode: input.classCode ?? null,
-    accessPlan: input.accessPlan ?? (input.role === "STUDENT" ? "FREE" : "UNLIMITED"),
+    accessPlan: input.accessPlan ?? (isLearnerRole(input.role) ? "FREE" : "UNLIMITED"),
     accessStartsAt: input.accessStartsAt ?? now,
     accessExpiresAt:
       input.accessExpiresAt !== undefined
         ? input.accessExpiresAt
-        : input.role === "STUDENT"
+        : isLearnerRole(input.role)
           ? new Date(Date.now() + 7 * 86_400_000).toISOString()
           : null,
     createdAt: now,
@@ -158,7 +159,7 @@ export async function updateLocalUser(
   patch: {
     username?: string;
     passwordHash?: string;
-    role?: "ADMIN" | "TEACHER" | "STUDENT";
+    role?: AppRole;
     fullName?: string | null;
     classCode?: string | null;
     accessPlan?: "FREE" | "PAID" | "UNLIMITED";

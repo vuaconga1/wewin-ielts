@@ -3,6 +3,30 @@ import type { LearnExercise } from "@/lib/learn/types";
 export const VOCAB_GRAMMAR_TRACKS = ["vocabulary", "grammar"] as const;
 export type VocabGrammarTrack = (typeof VOCAB_GRAMMAR_TRACKS)[number];
 
+/** Independent slide courses inside the grammar track. */
+export const GRAMMAR_COURSES = ["basic", "ielts-3-4"] as const;
+export type GrammarCourse = (typeof GRAMMAR_COURSES)[number];
+
+export function isGrammarCourse(value: unknown): value is GrammarCourse {
+  return (GRAMMAR_COURSES as readonly unknown[]).includes(value);
+}
+
+export function topicCourse(topic: { course?: GrammarCourse }): GrammarCourse {
+  return topic.course ?? "basic";
+}
+
+/** Word sets inside the vocabulary track. */
+export const VOCAB_COLLECTIONS = ["cambridge", "topics"] as const;
+export type VocabCollection = (typeof VOCAB_COLLECTIONS)[number];
+
+export function isVocabCollection(value: unknown): value is VocabCollection {
+  return (VOCAB_COLLECTIONS as readonly unknown[]).includes(value);
+}
+
+export function topicCollection(topic: { collection?: VocabCollection }): VocabCollection {
+  return topic.collection ?? "cambridge";
+}
+
 export type LocalizedText = {
   vi: string;
   en: string;
@@ -16,7 +40,7 @@ export type VocabWord = {
   ipa?: string;
   meaningVi: string;
   definitionEn?: string;
-  exampleEn: string;
+  exampleEn?: string;
   exampleVi?: string;
   audioUkUrl?: string;
   audioUsUrl?: string;
@@ -26,6 +50,10 @@ export type TopicLesson = {
   id: string;
   slug: string;
   track: VocabGrammarTrack;
+  /** Grammar track only; missing → "basic". */
+  course?: GrammarCourse;
+  /** Vocabulary track only; missing → "cambridge". */
+  collection?: VocabCollection;
   order: number;
   title: LocalizedText;
   summary: LocalizedText;

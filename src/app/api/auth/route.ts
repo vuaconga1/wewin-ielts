@@ -32,7 +32,7 @@ export async function GET() {
         email: user.email,
         username: user.username,
         fullName: profile.fullName ?? user.fullName ?? null,
-        role: user.role,
+        role: profile.role ?? user.role,
         avatarUrl: profile.avatarUrl,
       },
       canImport: canAccessAdmin(user),

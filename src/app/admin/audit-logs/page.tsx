@@ -20,7 +20,7 @@ function one(value: string | string[] | undefined): string {
 }
 
 function validRole(value: string): AppRole | "" {
-  return value === "STUDENT" || value === "TEACHER" || value === "ADMIN"
+  return value === "STUDENT" || value === "VISITOR" || value === "TEACHER" || value === "ADMIN"
     ? value
     : "";
 }
@@ -43,6 +43,7 @@ function pageHref(params: SearchParams, page: number): string {
 function roleLabel(role: AppRole): string {
   if (role === "ADMIN") return "Quản trị viên";
   if (role === "TEACHER") return "Giáo viên";
+  if (role === "VISITOR") return "Khách";
   return "Học viên";
 }
 
@@ -159,6 +160,7 @@ export default async function AuditLogsPage({
           <select name="role" defaultValue={role} className="mt-1 w-full rounded-lg border border-wewin-border bg-white px-3 py-2">
             <option value="">Tất cả</option>
             <option value="STUDENT">Học viên</option>
+            <option value="VISITOR">Khách</option>
             <option value="TEACHER">Giáo viên</option>
             <option value="ADMIN">Quản trị viên</option>
           </select>

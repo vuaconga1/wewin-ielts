@@ -3,7 +3,7 @@ import { getLearnOwnerKey } from "@/lib/learn/owner";
 import { getProgress } from "@/lib/learn/store";
 import { getTopicBySlug, getTopicsByTrack } from "@/lib/learn/vocab-grammar-store";
 import { toPublicTopic, toPublicTopicMeta } from "@/lib/learn/vocab-grammar-public";
-import { pickLocalized } from "@/lib/learn/vocab-grammar-types";
+import { pickLocalized, topicCollection } from "@/lib/learn/vocab-grammar-types";
 import { SiteShell } from "@/components/layout/site-shell";
 import { VocabWordList } from "@/components/learn/vocab-word-list";
 import { getLocale, getTranslations } from "@/i18n/server";
@@ -35,7 +35,10 @@ export default async function VocabularyTopicLearnPage({ params }: Props) {
   const ownerKey = await getLearnOwnerKey();
   const progress = await getProgress(ownerKey);
   const topics = await getTopicsByTrack("vocabulary");
-  const ordered = [...topics].sort((a, b) => a.order - b.order);
+  const collection = topicCollection(topic);
+  const ordered = topics
+    .filter((tpc) => topicCollection(tpc) === collection)
+    .sort((a, b) => a.order - b.order);
   const idx = ordered.findIndex((tpc) => tpc.slug === topicSlug);
   const prev = idx > 0 ? ordered[idx - 1] : undefined;
   const next = idx >= 0 ? ordered[idx + 1] : undefined;

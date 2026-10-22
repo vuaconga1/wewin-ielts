@@ -3,10 +3,12 @@ import path from "node:path";
 import { DATA_DIR } from "@/lib/paths";
 import { updateVideoProgress } from "@/lib/learn/store";
 import { SEED_VOCAB_GRAMMAR } from "@/lib/learn/vocab-grammar-seed";
-import type {
-  TopicLesson,
-  VocabGrammarCatalog,
-  VocabGrammarTrack,
+import {
+  topicCourse,
+  type GrammarCourse,
+  type TopicLesson,
+  type VocabGrammarCatalog,
+  type VocabGrammarTrack,
 } from "@/lib/learn/vocab-grammar-types";
 
 const LEARN_DIR = path.join(DATA_DIR, "learn");
@@ -42,6 +44,7 @@ function syncTrackFromSeed(
           (existing.words?.length ?? 0) !== (seed.words?.length ?? 0) ||
           existing.exercises.length !== seed.exercises.length ||
           existing.stub !== seed.stub ||
+          existing.collection !== seed.collection ||
           existing.title.vi !== seed.title.vi
         );
       });
@@ -63,6 +66,7 @@ function syncTrackFromSeed(
 
     const drifted =
       existing.stub !== seed.stub ||
+      existing.course !== seed.course ||
       existing.slidesUrl !== seed.slidesUrl ||
       existing.order !== seed.order ||
       existing.title.vi !== seed.title.vi;
@@ -136,6 +140,13 @@ export async function getTopicsByTrack(
 ): Promise<TopicLesson[]> {
   const catalog = await getVocabGrammarCatalog();
   return catalog[track];
+}
+
+export async function getGrammarCourseTopics(
+  course: GrammarCourse,
+): Promise<TopicLesson[]> {
+  const topics = await getTopicsByTrack("grammar");
+  return topics.filter((t) => topicCourse(t) === course);
 }
 
 export async function getTopicBySlug(

@@ -11,12 +11,14 @@ import { prisma } from "@/lib/prisma";
 import { freeAccessExpiry } from "@/lib/access";
 import {
   findLocalUserByEmail,
+  findLocalUserById,
   findLocalUserByUsername,
   upsertLocalUser,
 } from "@/lib/store/user-store";
 import {
   canAccessAdmin,
   isOpenAdminEnabled,
+  type AppRole,
 } from "@/lib/auth/permissions";
 
 export type SessionUser = {
@@ -24,7 +26,7 @@ export type SessionUser = {
   email: string | null;
   username: string;
   fullName: string | null;
-  role: "ADMIN" | "TEACHER" | "STUDENT";
+  role: AppRole;
 };
 
 export {
@@ -34,7 +36,10 @@ export {
   isAdmin,
   isOpenAdminEnabled,
   isStaff,
+  isLearnerRole,
   isStudent,
+  isVisitor,
+  learnerRoleForClass,
   requireAdminResponse,
   requireStaffResponse,
 } from "@/lib/auth/permissions";
@@ -132,6 +137,28 @@ export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
   return decodeSession(token);
 });
 
+/**
+ * Current role from the user record. The session cookie keeps the role it was
+ * issued with (up to 14 days), so admin role/class edits only show up here.
+ */
+export const getViewerRole = cache(async (): Promise<AppRole | null> => {
+  const user = await getSessionUser();
+  if (!user) return null;
+  try {
+    if (await canUsePrisma()) {
+      const row = await prisma.user.findUnique({
+        where: { id: user.id },
+        select: { role: true },
+      });
+      return row?.role ?? null;
+    }
+    const local = await findLocalUserById(user.id);
+    return local?.role ?? user.role;
+  } catch {
+    return user.role;
+  }
+});
+
 /** Require any logged-in user (STUDENT or ADMIN). */
 export async function requireUser(): Promise<SessionUser> {
   const user = await getSessionUser();
@@ -181,7 +208,7 @@ function usernameFromEmail(email: string): string {
 }
 
 /**
- * Register a STUDENT account only (never ADMIN).
+ * Self-registration creates a VISITOR ("Khách") — no class yet, never ADMIN.
  * Uses MySQL when available, otherwise data/users.json.
  */
 export async function registerStudent(input: {
@@ -228,7 +255,7 @@ export async function registerStudent(input: {
         email,
         username: finalUsername,
         passwordHash,
-        role: "STUDENT",
+        role: "VISITOR",
         accessPlan: "FREE",
         accessStartsAt: new Date(),
         accessExpiresAt: freeAccessExpiry(),
@@ -256,7 +283,7 @@ export async function registerStudent(input: {
     email,
     username,
     passwordHash,
-    role: "STUDENT",
+    role: "VISITOR",
     accessPlan: "FREE",
     accessStartsAt: new Date().toISOString(),
     accessExpiresAt: freeAccessExpiry().toISOString(),
@@ -292,7 +319,7 @@ export async function loginWithEmailPassword(
     email: string | null;
     username: string;
     fullName?: string | null;
-    role: "ADMIN" | "TEACHER" | "STUDENT";
+    role: AppRole;
     passwordHash: string;
   }): Promise<SessionUser> {
     const ok = await verifyPassword(password, user.passwordHash);

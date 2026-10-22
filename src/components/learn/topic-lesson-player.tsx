@@ -15,7 +15,7 @@ import { TheoryPanel } from "@/components/learn/theory-panel";
 import { TopicSidebar } from "@/components/learn/topic-sidebar";
 import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
-import type { VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
+import type { GrammarCourse, VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
 import { isTopicUnlocked } from "@/lib/learn/progress-utils";
 import {
   learnCatalogHref,
@@ -27,6 +27,8 @@ import { useTranslations } from "@/i18n/provider";
 
 type Props = {
   track: VocabGrammarTrack;
+  /** Grammar course the topic belongs to (back links return to its tab). */
+  course?: GrammarCourse;
   moduleTitle: string;
   trackLabel: string;
   topic: PublicTopicLesson;
@@ -43,6 +45,7 @@ type Props = {
 
 export function TopicLessonPlayer({
   track,
+  course,
   moduleTitle,
   trackLabel,
   topic,
@@ -57,6 +60,7 @@ export function TopicLessonPlayer({
   nextTitle,
 }: Props) {
   const { t } = useTranslations("learn");
+  const trackHref = learnVocabGrammarTrackHref(track, course);
   const unlocked = isTopicUnlocked(topic, topics, progress);
   const entry = progress.lessons[topic.id];
   const [videoCompleted, setVideoCompleted] = useState(
@@ -100,7 +104,7 @@ export function TopicLessonPlayer({
           {t("lessonLockedDesc")}
         </p>
         <Link
-          href={learnVocabGrammarTrackHref(track)}
+          href={trackHref}
           className="mt-6 inline-flex rounded-xl bg-wewin-navy px-4 py-2.5 text-sm font-semibold text-white hover:bg-wewin-navy-hover"
         >
           {t("backCurriculum")}
@@ -114,6 +118,7 @@ export function TopicLessonPlayer({
       <div className="min-w-0 border-b border-zinc-200 lg:border-b-0 lg:border-r">
         <TopicSidebar
           track={track}
+          course={course}
           moduleTitle={moduleTitle}
           topics={topics}
           progress={progress}
@@ -142,7 +147,7 @@ export function TopicLessonPlayer({
             </Link>
             <span className="mx-1.5">›</span>
             <Link
-              href={learnVocabGrammarTrackHref(track)}
+              href={trackHref}
               className="hover:text-wewin-navy hover:underline"
             >
               {trackLabel}
@@ -221,7 +226,7 @@ export function TopicLessonPlayer({
                   ? learnVocabGrammarTopicHref(track, nextUnlocked)
                   : undefined
               }
-              catalogHref={learnVocabGrammarTrackHref(track)}
+              catalogHref={trackHref}
               catalogLabel={trackLabel}
             />
           </section>
