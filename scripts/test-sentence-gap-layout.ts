@@ -152,8 +152,34 @@ function main() {
     "empty-stem Q9 sentence is recovered for the answer row",
   );
   assert(
-    !storedEmpty[0]!.sentenceStems[7],
-    "Q7 keeps its stored stem and is not replaced",
+    /pay for goods at a _{2,}/.test(storedEmpty[0]!.sentenceStems[7] ?? ""),
+    "Q7 stored without its trailing blank gets the full sentence",
+  );
+  assert(
+    /at a _{2,}/.test(
+      resolveGapDisplayStem(
+        "In Clarence Saunders' store, people should pay for goods at a",
+        storedEmpty[0]!.sentenceStems[7],
+      ),
+    ),
+    "Q7 display stem shows the trailing blank",
+  );
+  const withOptions = parseReadingQuestionGroups(SENTENCES, [
+    {
+      number: 8,
+      type: "MATCHING",
+      content: {
+        stem: "Customers would be under surveillance at the",
+        options: [
+          { label: "A", text: "x" },
+          { label: "B", text: "y" },
+        ],
+      },
+    },
+  ]);
+  assert(
+    !withOptions[0]!.sentenceStems[8],
+    "a choice question keeps its stored stem",
   );
   const recovered = resolveGapDisplayStem(
     "",

@@ -144,8 +144,18 @@ export function resolveGapDisplayStem(
   recovered: string | null | undefined,
 ): string {
   const raw = (stored ?? "").trim();
-  if (raw && !looksLikeRedundantGapStem(raw)) return raw;
   const lifted = (recovered ?? "").trim();
+  // "…rectified by" stored without the trailing "________." the sentence has.
+  if (
+    raw &&
+    lifted &&
+    blankMarkerCount(raw) === 0 &&
+    blankMarkerCount(lifted) === 1 &&
+    normalizeForCompare(lifted).startsWith(normalizeForCompare(raw))
+  ) {
+    return lifted;
+  }
+  if (raw && !looksLikeRedundantGapStem(raw)) return raw;
   return lifted || raw;
 }
 

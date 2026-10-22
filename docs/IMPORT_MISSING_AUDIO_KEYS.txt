@@ -29,3 +29,26 @@ Test 9  : THIẾU KEYS Listening -> tự tạo từ bản chép lời audio (đ�
           THIẾU CÂU: Reading thiếu Q27 (đề còn 39 câu).
           KEY ĐÃ SỬA: Reading Q17 -> "Tasmania", Q33 -> "iv".
 Test 10 : THIẾU KEYS cả Listening và Reading -> tự tạo toàn bộ, đối chiếu nguồn đăng đề.
+
+----------------------------------------------------
+[2026-10-22] Rà soát + sửa lỗi toàn bộ đề IELTS Academic đã PUBLISHED (không import mới)
+----------------------------------------------------
+test-7-listening : THIẾU AUDIO trên web -> đã gắn audio 4 section (cắt từ Test_07_Listening_Full.mp3,
+                   nguồn IELTS_COMPLETE_TESTS_FINAL/Test_07), upload R2.
+                   KEY ĐÃ SỬA: Q1 "quite" -> "quiet"; Q36 thêm đáp án chấp nhận "pipe work" / "pipe-work".
+                   Các key còn lại đối chiếu bản chép lời audio (faster-whisper chạy local, miễn phí): khớp.
+test-8-listening : THIẾU AUDIO trên web -> đã gắn audio 4 section (/uploads/audio/test-8-section-1..4.mp3), upload R2.
+                   Key đối chiếu bản chép lời audio (local, miễn phí): khớp, không sửa.
+test-1-listening : Section 3 Q21-30 dựng lại từ đề gốc (Q21-26 MCQ A-C, Q27-30 matching A-F). Key giữ nguyên.
+                   Section 2 xoá ghi chú giáo viên lẫn trong đề (lộ gợi ý đáp án: "= pay online", "(I.D)"...).
+test-5-listening : Q27-30 thiếu lựa chọn A "ancient buildings" -> đã bổ sung.
+test-2-reading   : Passage 2 thiếu tách đoạn (đề gốc 9 đoạn A-I) -> tách D/E, đổi nhãn E-H thành F-I.
+test-8-reading + real-ielts-vol-1-test-8-reading : Q9-13 thiếu lựa chọn "B Japan" -> đã bổ sung.
+test-6-reading   : Q19-23 sửa danh sách người (A-D) bị OCR sai tên.
+test-10-reading  : sửa lỗi OCR passage 3 ("Ddomestic", "a item" -> "an era", "marker" -> "maker", câu chèn sai),
+                   box từ A-G bị chèn "Questions 37-40" ở giữa, instruction YES/NO/NOT GIVEN.
+test-3/9/14-listening, test-2/4/7-listening, test-9-reading, RV1 test-9-listening : sửa heading/instruction dính dòng,
+                   chú thích tiếng Việt lẫn trong đề.
+test-6-listening : ảnh Q36-40 có chữ thừa "36……" -> cắt ảnh mới.
+THIẾU CÂU (không sửa được): real-ielts-vol-1-test-7-reading và test-9-reading thiếu Q27 trong đề gốc (đã ghi ở mục 2026-10-21).
+ĐÃ XOÁ khỏi web : 3 đề cũ hỏng "listening-1", "reading", "writing-1" (không có bài làm học viên).

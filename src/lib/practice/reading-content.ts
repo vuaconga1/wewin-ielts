@@ -902,7 +902,12 @@ function joinWrappedPassageSentences(text: string): string {
       let prevIndex = out.length - 1;
       while (prevIndex >= 0 && !out[prevIndex]!.trim()) prevIndex -= 1;
       const prev = prevIndex >= 0 ? out[prevIndex]!.trim() : "";
-      if (prev && !/[.?!]$/.test(prev) && !/^READING PASSAGE\s+\d+$/i.test(prev)) {
+      if (
+        prev &&
+        !/[.?!]$/.test(prev) &&
+        !/^READING PASSAGE\s+\d+$/i.test(prev) &&
+        !matchQuestionGroupHeader(prev)
+      ) {
         out.splice(prevIndex, out.length - prevIndex, `${prev} ${piece}`);
       } else {
         out.push(piece);
@@ -1834,6 +1839,13 @@ export function matchQuestionGroupHeader(line: string): HeaderMatch | null {
     };
   }
 
+  // Single-question task: "Question 40" / "Questions 40" on its own line.
+  m = t.match(/^Questions?\s+(\d+)$/i);
+  if (m) {
+    const n = Number(m[1]);
+    return { start: n, end: n, header: `Question ${n}` };
+  }
+
   // Prefixed section title + Questions range (Listening)
   m = t.match(
     /^(.*?\b(?:SECTION|Section|PART|Part)\s*\d+)\s+Questions?\s+(\d+)\s*[-–—]\s*(\d+)\b(.*)$/i,
@@ -1898,16 +1910,18 @@ export function parseReadingQuestionGroups(
   questions: {
     number: number;
     type: string;
-    content: { stem?: string; blank?: boolean };
+    content: { stem?: string; blank?: boolean; options?: unknown[] };
   }[],
 ): ReadingQuestionGroup[] {
   if (!tasks.trim()) return [];
 
   const stemByNumber = new Map<number, string>();
   const rawStemByNumber = new Map<number, string>();
+  const choiceNumbers = new Set<number>();
   for (const q of questions) {
     const raw = (q.content.stem ?? "").trim();
     if (raw) rawStemByNumber.set(q.number, raw);
+    if ((q.content.options?.length ?? 0) >= 2) choiceNumbers.add(q.number);
     const stem = normalizeForCompare(raw);
     if (stem.length >= 8) stemByNumber.set(q.number, stem);
   }
@@ -1973,7 +1987,12 @@ export function parseReadingQuestionGroups(
       if (sentence) {
         liftedSentenceLines = true;
         const stored = rawStemByNumber.get(sentence.number) ?? "";
-        if (!stored || looksLikeRedundantGapStem(stored)) {
+        const storedLostTrailingGap =
+          Boolean(stored) &&
+          !choiceNumbers.has(sentence.number) &&
+          !BLANK_MARK_RE.test(stored) &&
+          normalizeForCompare(sentence.sentence).startsWith(normalizeForCompare(stored));
+        if (!stored || looksLikeRedundantGapStem(stored) || storedLostTrailingGap) {
           sentenceStems[sentence.number] = sentence.sentence;
         }
         continue;
@@ -2032,6 +2051,20 @@ export function parseReadingQuestionGroups(
       (hasGapMarks || (liftedSentenceLines && Boolean(joinedNotes))
         ? joinedNotes
         : "");
+    // A matching task's own question ("Which feature do the speakers identify
+    // … for each of the following exhibitions?") stays visible when the rest
+    // of the leftover lines are dropped as a duplicate list.
+    if (!usableNotes) {
+      const asks: string[] = [];
+      for (const line of noteLines) {
+        const t = line.trim();
+        if (!/^(Which|What|Who|Where|When|How)\b[^?]{10,200}\?$/.test(t)) continue;
+        const asked = normalizeForCompare(t.replace(/\?$/, ""));
+        if ([...stemByNumber.values()].some((stem) => stem.includes(asked))) continue;
+        asks.push(t);
+      }
+      instructions.unshift(...asks);
+    }
 
     groups.push({
       header: current.header,
@@ -2073,9 +2106,24 @@ export function parseReadingQuestionGroups(
         current.body.push(line);
         continue;
       }
-      // Umbrella "Questions 27–40" + later "boxes 27–33" → tighten to 27–33
-      // instead of rendering two overlapping headers (Test 2 Passage 3).
+      // Umbrella "Questions 21–30" + later "Questions 27 and 28": the earlier
+      // items (21–26) keep the umbrella's instructions; close them as their
+      // own group instead of tightening the umbrella onto 27–28.
       if (
+        current &&
+        !boxesOnly &&
+        hit.start > current.start &&
+        hit.end <= current.end &&
+        rangeHitsQuestion(current.start, hit.start - 1)
+      ) {
+        current.end = hit.start - 1;
+        current.header =
+          current.start === current.end
+            ? `Question ${current.start}`
+            : `Questions ${current.start}-${current.end}`;
+      } else if (
+        // Umbrella "Questions 27–40" + later "boxes 27–33" → tighten to 27–33
+        // instead of rendering two overlapping headers (Test 2 Passage 3).
         current &&
         hit.start >= current.start &&
         hit.end <= current.end &&
