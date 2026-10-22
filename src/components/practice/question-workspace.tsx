@@ -190,7 +190,7 @@ export function ReadingOrNotesSplit({
     ? [
         ...taskSource
           .slice(0, matchingInstruction.index)
-          .matchAll(/questions?\s+(\d{1,2})\s*-\s*(\d{1,2})/gi),
+          .matchAll(/questions?\s+(\d{1,2})\s*[-–—]\s*(\d{1,2})/gi),
       ]
     : [];
   const nearestMatchingRange = precedingRanges[precedingRanges.length - 1];
@@ -198,18 +198,28 @@ export function ReadingOrNotesSplit({
   if (resolvedMatchingRange) {
     const start = Number(resolvedMatchingRange[1]);
     const end = Number(resolvedMatchingRange[2]);
-    const optionBank = questions.find(
+    const inRange = questions.filter(
       (question) =>
         question.number >= start &&
         question.number <= end &&
         (question.content.options?.length ?? 0) >= 2,
-    )?.content.options;
+    );
+    const bankSource =
+      inRange.find((question) => question.type === "MATCHING") ?? inRange[0];
+    const optionBank = bankSource?.content.options;
+    const bankTexts = new Set(
+      (optionBank ?? []).map((opt) => opt.text.trim().toLowerCase()),
+    );
     if (optionBank) {
       questions = questions.map((question) => {
         if (
           question.number < start ||
           question.number > end ||
-          question.type !== "MULTIPLE_CHOICE"
+          question.type !== "MULTIPLE_CHOICE" ||
+          // A real A/B/C item with its own options is not part of the box.
+          !(question.content.options ?? []).every((opt) =>
+            bankTexts.has(opt.text.trim().toLowerCase()),
+          )
         ) {
           return question;
         }

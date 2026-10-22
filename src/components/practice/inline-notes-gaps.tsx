@@ -90,6 +90,8 @@ type GapBindings = {
   layoutVariant?: string;
   /** Flowchart steps stay plain. Section labels in outline notes stay bold. */
   plainText?: boolean;
+  /** Table cells hold content, not section labels, so they are never auto-bolded. */
+  cellText?: boolean;
   /** Bow-chart boxes are narrow, so the answer field stays small. */
   narrowInput?: boolean;
   /** Show the printed answer positions without accepting answers. */
@@ -118,7 +120,8 @@ function renderInlineSegments(
                 part,
                 `${keyPrefix}-t-${i}-${pi}`,
                 next?.kind === "blank",
-                Boolean(bindings.plainText),
+                Boolean(bindings.plainText || bindings.cellText),
+                pi === 0 && segments[i - 1]?.kind === "blank",
               )}
             </Fragment>,
           );
@@ -212,6 +215,8 @@ function renderNotesText(
   key: string,
   brokenByBlank: boolean,
   plain: boolean,
+  /** The first line continues the sentence of the gap in front of it. */
+  afterBlank = false,
 ): ReactNode[] {
   const lines = part.split("\n");
   let lastContent = -1;
@@ -224,7 +229,10 @@ function renderNotesText(
   return lines.map((line, index) => (
     <Fragment key={`${key}-l-${index}`}>
       {index > 0 ? "\n" : null}
-      {isBoldNotesLine(line, plain || (brokenByBlank && index === lastContent)) ? (
+      {isBoldNotesLine(
+        line,
+        plain || (brokenByBlank && index === lastContent) || (afterBlank && index === 0),
+      ) ? (
         <strong className="font-bold text-zinc-900">{renderRichText(line, `${key}-${index}-bold`)}</strong>
       ) : (
         renderRichText(line, `${key}-${index}`)
@@ -323,7 +331,7 @@ function NotesTableView({
                     ci === 0 ? "whitespace-nowrap font-semibold" : ""
                   }`}
                 >
-                  {renderInlineSegments(cell, `r${ri}c${ci}`, bindings)}
+                  {renderInlineSegments(cell, `r${ri}c${ci}`, { ...bindings, cellText: true })}
                 </td>
               ))}
             </tr>
@@ -363,7 +371,10 @@ function StructuredTableView({
                       ? "border border-zinc-400 bg-[#eceff2] px-3 py-2 font-bold text-zinc-900"
                       : "border border-zinc-300 px-3 py-2 leading-relaxed"}
                   >
-                    {renderInlineSegments(cell.text, `structured-${rowIndex}-${cellIndex}`, bindings)}
+                    {renderInlineSegments(cell.text, `structured-${rowIndex}-${cellIndex}`, {
+                      ...bindings,
+                      cellText: true,
+                    })}
                   </Cell>
                 );
               })}

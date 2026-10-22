@@ -1942,6 +1942,25 @@ export function parseReadingQuestionGroups(
     const sentenceStems: Record<number, string> = {};
     let liftedSentenceLines = false;
 
+    // A flowchart or notes block that also has "27 ……" gaps mid-line keeps its
+    // "26 …… that the staff …" rows; they are steps, not sentence items.
+    const sharedNotesContext = current.body.some((line) => {
+      const t = line.trim();
+      return /^[↓⬇]$/.test(t) || (lineHasInlineBlank(t) && !perQuestionSentenceStem(t));
+    });
+    const { start: groupStart, end: groupEnd } = current;
+    const groupOptionLines = new Set<string>();
+    for (const q of questions) {
+      if (q.number < groupStart || q.number > groupEnd) continue;
+      for (const opt of (q.content.options ?? []) as { label?: string; text?: string }[]) {
+        if (opt?.label && opt.text) {
+          groupOptionLines.add(normalizeForCompare(`${opt.label} ${opt.text}`));
+        }
+      }
+    }
+    const isGroupOptionLine = (line: string) =>
+      groupOptionLines.has(normalizeForCompare(line.replace(/^([A-L])[.)]?\s+/i, "$1 ")));
+
     const skipNote = new Set<number>();
     for (let i = 0; i < current.body.length; i += 1) {
       if (
@@ -1984,7 +2003,11 @@ export function parseReadingQuestionGroups(
       // Shared notes ("Habitat 1 ……") stay inline. See
       // scripts/test-sentence-gap-layout.ts.
       const sentence = perQuestionSentenceStem(t);
-      if (sentence) {
+      const leadingGapStep =
+        sharedNotesContext &&
+        Boolean(sentence) &&
+        /^(?:(?:[.…_]|\.){2,}|_{2,}|\u2026+)/u.test(sentence!.sentence);
+      if (sentence && !leadingGapStep) {
         liftedSentenceLines = true;
         const stored = rawStemByNumber.get(sentence.number) ?? "";
         const storedLostTrailingGap =
@@ -2024,7 +2047,7 @@ export function parseReadingQuestionGroups(
       }
       if (isDuplicateStemLine(t, stemByNumber)) continue;
       // Option banks are rendered once beside the dropdowns, not inside notes.
-      if (isOptionBankLine(t)) continue;
+      if (isOptionBankLine(t) || isGroupOptionLine(t)) continue;
       noteLines.push(raw);
     }
 
