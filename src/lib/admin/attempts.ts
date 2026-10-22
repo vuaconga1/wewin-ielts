@@ -68,7 +68,7 @@ export type AdminTestOption = {
   skill: AdminAttemptSkill | null;
 };
 
-/** Placeholder until class / cohort data exists on users. */
+/** `id` is the class code (WW00016), shared by `User.classCode` and `Classroom.code`. */
 export type AdminClassOption = {
   id: string;
   name: string;
@@ -177,6 +177,7 @@ function scoreLabelFromPrisma(
 function applyRowFilters(
   rows: AdminAttemptRow[],
   filters: AdminAttemptFilters,
+  classUserIds: Set<string> | null,
 ): AdminAttemptRow[] {
   return rows.filter((row) => {
     if (filters.userId && row.userId !== filters.userId) return false;
@@ -187,7 +188,9 @@ function applyRowFilters(
     if (filters.status === "UNFINISHED" && row.status !== "UNFINISHED") {
       return false;
     }
-    // classId reserved — no class data yet; ignore until wired
+    if (filters.classId && !(row.userId && classUserIds?.has(row.userId))) {
+      return false;
+    }
     if (filters.testSlug && row.testSlug !== filters.testSlug) return false;
     if (!matchesDateRange(row.startedAt, filters.from, filters.to)) {
       return false;
@@ -202,7 +205,16 @@ type UserLite = {
   username: string;
   fullName: string | null;
   role: "ADMIN" | "TEACHER" | "STUDENT" | "VISITOR" | "VISITOR";
+  classCodes: string[];
 };
+
+/** "WW00019, WW00020" → ["WW00019", "WW00020"] */
+function splitClassCodes(raw: string | null | undefined): string[] {
+  return (raw ?? "")
+    .split(/[,;\s]+/)
+    .map((code) => code.trim().toUpperCase())
+    .filter(Boolean);
+}
 
 async function loadUserMap(): Promise<Map<string, UserLite>> {
   const map = new Map<string, UserLite>();
@@ -215,6 +227,11 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
         username: true,
         fullName: true,
         role: true,
+        classCode: true,
+        classEnrollments: {
+          where: { status: "ACTIVE" },
+          select: { classroom: { select: { code: true } } },
+        },
       },
       orderBy: { email: "asc" },
     });
@@ -225,6 +242,12 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
         username: u.username,
         fullName: u.fullName?.trim() || null,
         role: u.role,
+        classCodes: [
+          ...new Set([
+            ...splitClassCodes(u.classCode),
+            ...u.classEnrollments.map((e) => e.classroom.code.toUpperCase()),
+          ]),
+        ],
       });
     }
   }
@@ -238,11 +261,56 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
         username: u.username,
         fullName: u.fullName?.trim() || null,
         role: u.role,
+        classCodes: [],
       });
     }
   }
 
   return map;
+}
+
+async function loadClassOptions(
+  userMap: Map<string, UserLite>,
+): Promise<AdminClassOption[]> {
+  const byCode = new Map<string, string>();
+  if (await canUsePrisma()) {
+    const rooms = await prisma.classroom.findMany({
+      select: { code: true, name: true },
+    });
+    for (const room of rooms) {
+      const code = room.code.toUpperCase();
+      const name = room.name.trim();
+      byCode.set(
+        code,
+        !name || name.toUpperCase() === code
+          ? code
+          : name.toUpperCase().startsWith(code)
+            ? name
+            : `${code} — ${name}`,
+      );
+    }
+  }
+  for (const user of userMap.values()) {
+    for (const code of user.classCodes) {
+      if (!byCode.has(code)) byCode.set(code, code);
+    }
+  }
+  return [...byCode]
+    .map(([id, name]) => ({ id, name }))
+    .sort((a, b) => a.id.localeCompare(b.id, "en", { numeric: true }));
+}
+
+function userIdsInClass(
+  userMap: Map<string, UserLite>,
+  classId: string | undefined,
+): Set<string> | null {
+  if (!classId) return null;
+  const code = classId.trim().toUpperCase();
+  const ids = new Set<string>();
+  for (const user of userMap.values()) {
+    if (user.classCodes.includes(code)) ids.add(user.id);
+  }
+  return ids;
 }
 
 async function loadLocalAttemptsAsRows(
@@ -279,10 +347,18 @@ async function loadLocalAttemptsAsRows(
 async function loadPrismaAttemptsAsRows(
   userMap: Map<string, UserLite>,
   filters: AdminAttemptFilters,
+  classUserIds: Set<string> | null,
 ): Promise<AdminAttemptRow[]> {
   const where: Prisma.AttemptWhereInput = {};
 
   if (filters.userId) where.userId = filters.userId;
+  if (classUserIds) {
+    where.userId = filters.userId
+      ? classUserIds.has(filters.userId)
+        ? filters.userId
+        : { in: [] }
+      : { in: [...classUserIds] };
+  }
 
   if (filters.status === "FINISHED") {
     where.finishedAt = { not: null };
@@ -461,6 +537,7 @@ export async function listAdminAttempts(
 ): Promise<AdminAttemptsResult> {
   const cacheKey = JSON.stringify({
     userId: filters.userId ?? "",
+    classId: filters.classId ?? "",
     skill: filters.skill ?? "ALL",
     testSlug: filters.testSlug ?? "",
     status: filters.status ?? "ALL",
@@ -481,11 +558,12 @@ async function listAdminAttemptsUncached(
 ): Promise<AdminAttemptsResult> {
   const userMap = await loadUserMap();
   const localRows = await loadLocalAttemptsAsRows(userMap);
+  const classUserIds = userIdsInClass(userMap, filters.classId);
 
   let prismaRows: AdminAttemptRow[] = [];
   if (await canUsePrisma()) {
     try {
-      prismaRows = await loadPrismaAttemptsAsRows(userMap, filters);
+      prismaRows = await loadPrismaAttemptsAsRows(userMap, filters, classUserIds);
     } catch {
       prismaRows = [];
     }
@@ -512,10 +590,9 @@ async function listAdminAttemptsUncached(
     a.title.localeCompare(b.title, "vi"),
   );
 
-  // Class options stub — fill when class field exists on users / enrollment.
-  const classes: AdminClassOption[] = [];
+  const classes = await loadClassOptions(userMap);
 
-  const filtered = applyRowFilters(allRows, filters);
+  const filtered = applyRowFilters(allRows, filters, classUserIds);
   const limit = filters.limit ?? 50;
 
   return {
