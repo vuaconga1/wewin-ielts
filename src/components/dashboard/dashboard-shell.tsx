@@ -18,6 +18,7 @@ import {
   Upload,
   UserCog,
   Users,
+  Video,
   X,
 } from "lucide-react";
 import {
@@ -36,6 +37,7 @@ import type { TourStep } from "@/lib/tour/types";
 export type DashboardNavKey =
   | "home"
   | "learn"
+  | "classroom"
   | "tests"
   | "ranking"
   | "attempts"
@@ -142,6 +144,13 @@ export function DashboardShell({
       href: "/learn",
       label: t("nav.learn"),
       icon: GraduationCap,
+    },
+    {
+      key: "classroom" as const,
+      href: "/classroom",
+      label: t("nav.classroom", "Lớp học của tôi"),
+      icon: Video,
+      authOnly: true,
     },
     {
       key: "tests" as const,

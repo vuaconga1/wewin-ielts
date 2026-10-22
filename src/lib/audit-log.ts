@@ -3,7 +3,18 @@ import { prisma } from "@/lib/prisma";
 import type { AppRole } from "@/lib/auth/permissions";
 import { describeDevice } from "@/lib/audit-device";
 
-export type AuditAction = "LOGIN" | "LOGOUT" | "TEST_START" | "USER_CREATE" | "USER_UPDATE" | "USER_PASSWORD_RESET" | "USER_ACCESS_UPDATE" | "USER_DELETE";
+export type AuditAction =
+  | "LOGIN"
+  | "LOGOUT"
+  | "TEST_START"
+  | "USER_CREATE"
+  | "USER_UPDATE"
+  | "USER_PASSWORD_RESET"
+  | "USER_ACCESS_UPDATE"
+  | "USER_DELETE"
+  | "CLASSROOM_JOIN"
+  | "CLASSROOM_HOST_START"
+  | "CLASSROOM_PRESENTATION_UPDATE";
 
 export type AuditActor = {
   id: string;

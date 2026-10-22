@@ -29,6 +29,7 @@
     "normalize:map-label-layouts": "tsx scripts/normalize-map-label-layouts.ts",
     "cleanup:gap-stems": "tsx scripts/cleanup-gap-stems.ts",
     "seed:admin": "tsx scripts/seed-admin.ts",
+    "seed:classroom": "tsx scripts/seed-classroom-prototype.ts",
     "seed:listening-samples": "tsx scripts/seed-listening-samples.ts",
     "upsert:tests": "tsx scripts/upsert-tests-from-json.ts",
     "sync:drive-audio": "tsx scripts/sync-drive-audio.ts",
@@ -39,6 +40,7 @@
     "test:mock-normalization": "tsx scripts/test-mock-normalization.ts",
     "test:catalog-invalidation": "tsx scripts/test-catalog-invalidation.ts",
     "test:gt-final-audit": "tsx scripts/test-gt-final-audit.ts",
+    "test:classroom": "tsx scripts/test-classroom.ts",
     "fix:gt-mocks": "tsx scripts/fix-gt-mocks.ts"
   },
   "dependencies": {
@@ -46,6 +48,7 @@
     "@neondatabase/serverless": "^1.1.0",
     "@prisma/adapter-neon": "^7.10.0",
     "@prisma/client": "^7.10.0",
+    "ably": "2.29.0",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.4.2",
     "googleapis": "^178.0.0",

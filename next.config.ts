@@ -18,6 +18,19 @@ const securityHeaders = [
   },
 ];
 
+const zoomMeetingFrameCsp = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "frame-ancestors 'self'",
+  "worker-src blob:",
+  "style-src 'self' 'unsafe-inline' https://source.zoom.us https://*.zoom.us",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://source.zoom.us https://zoom.us https://*.zoom.us https://dmogdx0jrul3u.cloudfront.net blob:",
+  "connect-src 'self' https://zoom.us https://*.zoom.us wss://*.zoom.us https://zoom.com https://*.zoom.com wss://*.zoom.com https://zoom.com.cn https://*.zoom.com.cn wss://*.zoom.com.cn",
+  "img-src 'self' https: data: blob:",
+  "media-src 'self' https: blob:",
+  "font-src 'self' https: data:",
+].join("; ");
+
 const nextConfig: NextConfig = {
   serverExternalPackages: [
     "@prisma/client",
@@ -75,6 +88,31 @@ const nextConfig: NextConfig = {
           {
             key: "Cache-Control",
             value: "public, s-maxage=300, stale-while-revalidate=600",
+          },
+        ],
+      },
+      // Zoom Meeting SDK lives only in the classroom route. Keep camera and
+      // screen capture denied elsewhere on the site.
+      {
+        source: "/classroom/:path*",
+        headers: [
+          {
+            key: "Permissions-Policy",
+            value:
+              "camera=(self), microphone=(self), display-capture=(self), fullscreen=(self), geolocation=()",
+          },
+        ],
+      },
+      {
+        source: "/classroom/:sessionId/meeting-frame",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: zoomMeetingFrameCsp,
+          },
+          {
+            key: "Referrer-Policy",
+            value: "no-referrer",
           },
         ],
       },

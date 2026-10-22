@@ -74,6 +74,34 @@ enum ImportJobStatus {
   PERSISTED
 }
 
+enum ClassroomStatus {
+  ACTIVE
+  ARCHIVED
+}
+
+enum ClassTeacherRole {
+  HOST
+  CO_HOST
+}
+
+enum EnrollmentStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum LiveSessionStatus {
+  SCHEDULED
+  LIVE
+  ENDED
+  CANCELLED
+}
+
+enum PresentationMode {
+  NONE
+  WEWIN_SLIDES
+  ZOOM_SCREEN_SHARE
+}
+
 model User {
   id              String     @id @default(cuid())
   /// Optional — accounts can sign in with username + password only
@@ -98,6 +126,11 @@ model User {
   auditLogs         AuditLog[]
   dictationAttempts DictationAttempt[]
   shadowingAttempts ShadowingAttempt[]
+  classEnrollments  ClassEnrollment[]
+  classAssignments  ClassTeacher[]
+  hostedSessions    LiveSession[]       @relation("LiveSessionHost")
+  presentations     Presentation[]      @relation("PresentationCreator")
+  presentationEdits PresentationState[] @relation("PresentationUpdater")
 
   @@index([classCode])
   @@index([accessPlan, accessExpiresAt])
@@ -133,6 +166,121 @@ model SiteVisit {
 
   @@index([createdAt])
   @@index([visitorId, createdAt])
+}
+
+model Classroom {
+  id        String          @id @default(cuid())
+  code      String          @unique
+  name      String
+  timezone  String          @default("Asia/Ho_Chi_Minh")
+  status    ClassroomStatus @default(ACTIVE)
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+
+  enrollments   ClassEnrollment[]
+  teachers      ClassTeacher[]
+  liveSessions  LiveSession[]
+  presentations Presentation[]
+
+  @@index([status, code])
+}
+
+model ClassEnrollment {
+  id          String           @id @default(cuid())
+  classroomId String
+  userId      String
+  status      EnrollmentStatus @default(ACTIVE)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  classroom Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([classroomId, userId])
+  @@index([userId, status])
+}
+
+model ClassTeacher {
+  id          String           @id @default(cuid())
+  classroomId String
+  userId      String
+  role        ClassTeacherRole @default(HOST)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  classroom Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([classroomId, userId])
+  @@index([userId, role])
+}
+
+model LiveSession {
+  id                     String            @id @default(cuid())
+  classroomId            String
+  hostUserId             String?
+  title                  String
+  scheduledStart         DateTime
+  scheduledEnd           DateTime?
+  status                 LiveSessionStatus @default(SCHEDULED)
+  zoomMeetingId          String
+  zoomHostUserId         String?
+  zoomPasscodeCiphertext String?           @db.Text
+  createdAt              DateTime          @default(now())
+  updatedAt              DateTime          @updatedAt
+
+  classroom         Classroom          @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  host              User?              @relation("LiveSessionHost", fields: [hostUserId], references: [id], onDelete: SetNull)
+  presentationState PresentationState?
+
+  @@index([classroomId, scheduledStart])
+  @@index([hostUserId, scheduledStart])
+  @@index([zoomMeetingId])
+}
+
+model Presentation {
+  id          String   @id @default(cuid())
+  classroomId String
+  createdById String?
+  title       String
+  /// [{ "id": "slide-1", "imageUrl": "https://...", "alt": "..." }]
+  slides      Json
+  slideCount  Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  classroom Classroom           @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  createdBy User?               @relation("PresentationCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  states    PresentationState[]
+
+  @@index([classroomId, createdAt])
+}
+
+model PresentationState {
+  id             String           @id @default(cuid())
+  liveSessionId  String           @unique
+  presentationId String?
+  slideIndex     Int              @default(0)
+  version        Int              @default(0)
+  mode           PresentationMode @default(NONE)
+  updatedById    String?
+  updatedAt      DateTime         @updatedAt
+
+  liveSession  LiveSession   @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  presentation Presentation? @relation(fields: [presentationId], references: [id], onDelete: SetNull)
+  updatedBy    User?         @relation("PresentationUpdater", fields: [updatedById], references: [id], onDelete: SetNull)
+
+  @@index([presentationId])
+  @@index([updatedById, updatedAt])
+}
+
+model RateLimitBucket {
+  id          String   @id
+  count       Int      @default(0)
+  windowStart DateTime
+  expiresAt   DateTime
+
+  @@index([expiresAt])
 }
 
 model Test {
