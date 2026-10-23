@@ -18,6 +18,8 @@ type Props = {
   active?: DashboardNavKey;
   /** Uncapped content width (lesson player); default is max-w-[1400px] */
   wide?: boolean;
+  noFooter?: boolean;
+  fitScreen?: boolean;
 };
 
 const EMPTY: SessionMe = { user: null, canImport: false };
@@ -31,7 +33,13 @@ function sessionSnapshot(): SessionMe {
  * static/ISR (no cookies()/Prisma avatar on every soft navigation).
  * The server snapshot stays logged-out; the cached session is applied after hydration.
  */
-export function SiteShell({ children, active, wide }: Props) {
+export function SiteShell({
+  children,
+  active,
+  wide,
+  noFooter = false,
+  fitScreen = false,
+}: Props) {
   const session = useSyncExternalStore(
     subscribeSessionMe,
     sessionSnapshot,
@@ -47,7 +55,9 @@ export function SiteShell({ children, active, wide }: Props) {
       active={active}
       canImport={session.canImport}
       wide={wide}
-      footer={<SiteFooter />}
+      noFooter={noFooter}
+      fitScreen={fitScreen}
+      footer={noFooter || fitScreen ? null : <SiteFooter />}
       user={session.user}
     >
       {children}

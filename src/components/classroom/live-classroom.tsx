@@ -6,10 +6,10 @@ import {
   ArrowLeft,
   ChevronLeft,
   ChevronRight,
-  MonitorUp,
-  Presentation,
-  Video,
+  PanelRightClose,
+  PanelRightOpen,
 } from "lucide-react";
+import { ClassroomSplitView } from "@/components/classroom/classroom-split-view";
 import { SlideViewer } from "@/components/classroom/slide-viewer";
 import { ZoomMeetingPanel } from "@/components/classroom/zoom-meeting-panel";
 import { useTranslations } from "@/i18n/provider";
@@ -37,7 +37,10 @@ export type LiveClassroomProps = {
 
 type AblyMessage = { data?: unknown };
 type AblyChannel = {
-  subscribe(name: string, listener: (message: AblyMessage) => void): Promise<void>;
+  subscribe(
+    name: string,
+    listener: (message: AblyMessage) => void,
+  ): Promise<void>;
   unsubscribe(name: string, listener: (message: AblyMessage) => void): void;
 };
 type AblyRealtimeClient = {
@@ -89,18 +92,8 @@ function loadAblyBrowserSdk(): Promise<AblyBrowserSdk> {
   return ablyBrowserSdkPromise;
 }
 
-const STATUS_KEYS = {
-  SCHEDULED: "scheduled",
-  LIVE: "live",
-  ENDED: "ended",
-  CANCELLED: "cancelled",
-} as const;
-const STATUS_FALLBACKS = {
-  SCHEDULED: "Sắp diễn ra",
-  LIVE: "Đang diễn ra",
-  ENDED: "Đã kết thúc",
-  CANCELLED: "Đã hủy",
-} as const;
+const WEB_PANEL_KEY = "wewin_classroom_web_panel";
+
 
 export function LiveClassroom({
   session,
@@ -196,12 +189,37 @@ export function LiveClassroom({
   );
   const slide = presentation?.slides[state.slideIndex] ?? null;
 
+  const [wideScreen, setWideScreen] = useState(false);
+  const [webPanelOpen, setWebPanelOpen] = useState(true);
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1024px)");
+    const update = () => setWideScreen(media.matches);
+    update();
+    media.addEventListener("change", update);
+    try {
+      if (localStorage.getItem(WEB_PANEL_KEY) === "closed")
+        setWebPanelOpen(false);
+    } catch {
+      /* ignore */
+    }
+    return () => media.removeEventListener("change", update);
+  }, []);
+
+  function setWebPanel(open: boolean) {
+    setWebPanelOpen(open);
+    try {
+      localStorage.setItem(WEB_PANEL_KEY, open ? "open" : "closed");
+    } catch {
+      /* ignore */
+    }
+  }
+
+  const splitActive = canControl && wideScreen && webPanelOpen;
+
   async function updatePresentation(
     patch: Partial<
-      Pick<
-        PublicPresentationState,
-        "mode" | "presentationId" | "slideIndex"
-      >
+      Pick<PublicPresentationState, "mode" | "presentationId" | "slideIndex">
     >,
   ) {
     if (!canControl || updating) return;
@@ -217,7 +235,7 @@ export function LiveClassroom({
             mode: patch.mode ?? state.mode,
             presentationId:
               patch.presentationId === undefined
-                ? state.presentationId ?? presentation?.id ?? null
+                ? (state.presentationId ?? presentation?.id ?? null)
                 : patch.presentationId,
             slideIndex: patch.slideIndex ?? state.slideIndex,
             expectedVersion: state.version,
@@ -259,163 +277,60 @@ export function LiveClassroom({
               </h1>
             </div>
           </div>
-          <div className="flex shrink-0 items-center gap-2 text-xs">
-            <span className="rounded-full bg-white/10 px-3 py-1.5 font-semibold">
-              {t(
-                STATUS_KEYS[session.status],
-                STATUS_FALLBACKS[session.status],
+          {canControl && wideScreen ? (
+            <button
+              type="button"
+              onClick={() => setWebPanel(!webPanelOpen)}
+              aria-pressed={webPanelOpen}
+              className={`inline-flex items-center gap-2 rounded-lg border-2 px-3 py-1.5 text-sm font-semibold ${
+                webPanelOpen
+                  ? "border-white/40 bg-white/20 text-white"
+                  : "border-white/20 bg-white/10 text-white hover:bg-white/20"
+              }`}
+            >
+              {webPanelOpen ? (
+                <PanelRightClose className="h-4 w-4" />
+              ) : (
+                <PanelRightOpen className="h-4 w-4" />
               )}
-            </span>
-            <span className="hidden rounded-full bg-white/10 px-3 py-1.5 sm:inline">
-              {realtimeStatus === "connected"
-                ? t("realtimeConnected", "Đồng bộ tức thời")
-                : realtimeStatus === "polling"
-                  ? t("syncFallback", "Đang đồng bộ định kỳ")
-                  : t("reconnecting", "Đang kết nối lại trạng thái lớp…")}
-            </span>
-          </div>
+              {t("webPanelToggle", "Trang web bên cạnh")}
+            </button>
+          ) : null}
         </div>
       </header>
 
-      {canControl ? (
-        <div className="border-b border-wewin-border bg-white px-4 py-3 sm:px-6">
-          <div className="mx-auto flex max-w-[1600px] min-w-0 flex-wrap items-center gap-2">
-            <button
-              type="button"
-              disabled={updating || !presentation}
-              onClick={() =>
-                void updatePresentation({
-                  mode: "WEWIN_SLIDES",
-                  presentationId: presentation?.id ?? null,
-                  slideIndex: state.slideIndex,
-                })
-              }
-              className={`inline-flex min-h-10 items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold ${
-                state.mode === "WEWIN_SLIDES"
-                  ? "bg-wewin-navy text-white"
-                  : "bg-zinc-100 text-zinc-700"
-              } disabled:opacity-50`}
-            >
-              <Presentation className="h-4 w-4" />
-              {t("modeSlides", "Slide WEWIN")}
-            </button>
-            <button
-              type="button"
-              disabled={updating}
-              onClick={() =>
-                void updatePresentation({ mode: "ZOOM_SCREEN_SHARE" })
-              }
-              className={`inline-flex min-h-10 items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold ${
-                state.mode === "ZOOM_SCREEN_SHARE"
-                  ? "bg-wewin-navy text-white"
-                  : "bg-zinc-100 text-zinc-700"
-              } disabled:opacity-50`}
-            >
-              <MonitorUp className="h-4 w-4" />
-              {t("modeScreenShare", "Chia sẻ màn hình")}
-            </button>
-            <button
-              type="button"
-              disabled={updating}
-              onClick={() => void updatePresentation({ mode: "NONE" })}
-              className={`inline-flex min-h-10 items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold ${
-                state.mode === "NONE"
-                  ? "bg-wewin-navy text-white"
-                  : "bg-zinc-100 text-zinc-700"
-              } disabled:opacity-50`}
-            >
-              <Video className="h-4 w-4" />
-              {t("modeNone", "Chỉ hiển thị Zoom")}
-            </button>
-
-            {session.presentations.length > 0 ? (
-              <select
-                value={presentation?.id ?? ""}
-                disabled={updating}
-                aria-label={t("selectPresentation", "Chọn bộ slide")}
-                onChange={(event) =>
-                  void updatePresentation({
-                    mode: "WEWIN_SLIDES",
-                    presentationId: event.target.value,
-                    slideIndex: 0,
-                  })
-                }
-                className="min-h-10 min-w-0 max-w-full rounded-lg border border-zinc-300 bg-white px-3 text-sm sm:max-w-64"
-              >
-                {session.presentations.map((item) => (
-                  <option key={item.id} value={item.id}>
-                    {item.title}
-                  </option>
-                ))}
-              </select>
-            ) : null}
-
-            {state.mode === "WEWIN_SLIDES" && presentation ? (
-              <div className="ml-auto flex items-center gap-2">
-                <button
-                  type="button"
-                  disabled={updating || state.slideIndex <= 0}
-                  onClick={() =>
-                    void updatePresentation({ slideIndex: state.slideIndex - 1 })
-                  }
-                  aria-label={t("previousSlide", "Slide trước")}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-300 disabled:opacity-40"
-                >
-                  <ChevronLeft className="h-5 w-5" />
-                </button>
-                <span className="min-w-20 text-center text-sm font-semibold text-zinc-700">
-                  {t(
-                    "slideProgress",
-                    {
-                      current: state.slideIndex + 1,
-                      total: presentation.slideCount,
-                    },
-                    "Slide {current}/{total}",
-                  )}
-                </span>
-                <button
-                  type="button"
-                  disabled={
-                    updating || state.slideIndex >= presentation.slideCount - 1
-                  }
-                  onClick={() =>
-                    void updatePresentation({ slideIndex: state.slideIndex + 1 })
-                  }
-                  aria-label={t("nextSlide", "Slide sau")}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-300 disabled:opacity-40"
-                >
-                  <ChevronRight className="h-5 w-5" />
-                </button>
-              </div>
-            ) : null}
-          </div>
-          {updateError ? (
-            <p className="mx-auto mt-2 max-w-[1600px] text-sm text-red-700">
-              {t("updateFailed", "Không thể đồng bộ slide. Vui lòng thử lại.")}
-            </p>
-          ) : null}
-        </div>
-      ) : state.mode === "WEWIN_SLIDES" ? (
+      {state.mode === "WEWIN_SLIDES" && !canControl ? (
         <div className="border-b border-blue-100 bg-blue-50 px-4 py-2 text-center text-sm text-wewin-navy">
           {t("followingTeacher", "Đang theo dõi slide của giáo viên")}
         </div>
       ) : null}
 
       <main
-        className={`mx-auto grid max-w-[1600px] min-w-0 gap-4 p-3 sm:p-4 ${
-          state.mode === "WEWIN_SLIDES"
-            ? "xl:grid-cols-[minmax(0,1.35fr)_minmax(420px,0.65fr)]"
-            : "grid-cols-1"
-        }`}
+        className={`min-w-0 p-3 sm:p-4 ${splitActive ? "" : "mx-auto max-w-[1600px]"}`}
       >
-        {state.mode === "WEWIN_SLIDES" ? (
-          <SlideViewer
-            slide={slide}
-            title={presentation?.title ?? t("slidePanel", "Slide bài giảng")}
-            emptyLabel={t("noSlides", "Lớp học chưa có bộ slide.")}
-          />
-        ) : null}
-        <ZoomMeetingPanel sessionId={session.id} />
+        <ClassroomSplitView
+          open={splitActive}
+          onClose={() => setWebPanel(false)}
+        >
+          <div
+            className={`grid min-w-0 gap-4 ${
+              state.mode === "WEWIN_SLIDES" && !splitActive
+                ? "xl:grid-cols-[minmax(0,1.35fr)_minmax(420px,0.65fr)]"
+                : "grid-cols-1"
+            }`}
+          >
+            {state.mode === "WEWIN_SLIDES" ? (
+              <SlideViewer
+                slide={slide}
+                title={
+                  presentation?.title ?? t("slidePanel", "Slide bài giảng")
+                }
+                emptyLabel={t("noSlides", "Lớp học chưa có bộ slide.")}
+              />
+            ) : null}
+            <ZoomMeetingPanel sessionId={session.id} />
+          </div>
+        </ClassroomSplitView>
       </main>
     </div>
   );

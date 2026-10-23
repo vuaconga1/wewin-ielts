@@ -15,6 +15,8 @@ const NAV_PREFIXES: [string, DashboardNavKey][] = [
   ["/admin/users", "admin-users"],
   ["/admin/reports", "admin-reports"],
   ["/admin/audit-logs", "admin-audit-logs"],
+  ["/admin/classes", "admin-classes"],
+  ["/admin/zoom", "admin-zoom"],
   ["/admin/import", "import"],
   ["/account/attempts", "attempts"],
   ["/learn", "learn"],

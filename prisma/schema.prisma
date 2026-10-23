@@ -118,9 +118,14 @@ model User {
   accessPlan      AccessPlan @default(FREE)
   accessStartsAt  DateTime   @default(now())
   accessExpiresAt DateTime?
+  /// Staff only: Zoom user (inside a configured ZoomAccount) that hosts this teacher's new sessions
+  zoomAccountId   String?
+  zoomUserId      String?
+  zoomUserEmail   String?
   createdAt       DateTime   @default(now())
   updatedAt       DateTime   @updatedAt
 
+  zoomAccount       ZoomAccount?        @relation("UserZoomHost", fields: [zoomAccountId], references: [id], onDelete: SetNull)
   attempts          Attempt[]
   importJobs        ImportJob[]
   auditLogs         AuditLog[]
@@ -168,15 +173,41 @@ model SiteVisit {
   @@index([visitorId, createdAt])
 }
 
-model Classroom {
-  id        String          @id @default(cuid())
-  code      String          @unique
-  name      String
-  timezone  String          @default("Asia/Ho_Chi_Minh")
-  status    ClassroomStatus @default(ACTIVE)
-  createdAt DateTime        @default(now())
-  updatedAt DateTime        @updatedAt
+/// Zoom Server-to-Server OAuth + Meeting SDK credentials managed from /admin/zoom.
+/// Secrets are AES-GCM encrypted with CLASSROOM_SECRET_ENCRYPTION_KEY.
+model ZoomAccount {
+  id                     String    @id @default(cuid())
+  name                   String
+  accountId              String
+  clientId               String
+  clientSecretCiphertext String    @db.Text
+  sdkKey                 String
+  sdkSecretCiphertext    String    @db.Text
+  /// Zoom user (id or email) that owns created meetings; "me" = account owner
+  hostUserId             String    @default("me")
+  isDefault              Boolean   @default(false)
+  lastVerifiedAt         DateTime?
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
 
+  classrooms   Classroom[]
+  liveSessions LiveSession[]
+  linkedUsers  User[]        @relation("UserZoomHost")
+
+  @@index([isDefault])
+}
+
+model Classroom {
+  id            String          @id @default(cuid())
+  code          String          @unique
+  name          String
+  timezone      String          @default("Asia/Ho_Chi_Minh")
+  status        ClassroomStatus @default(ACTIVE)
+  zoomAccountId String?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  zoomAccount   ZoomAccount?      @relation(fields: [zoomAccountId], references: [id], onDelete: SetNull)
   enrollments   ClassEnrollment[]
   teachers      ClassTeacher[]
   liveSessions  LiveSession[]
@@ -226,16 +257,25 @@ model LiveSession {
   zoomMeetingId          String
   zoomHostUserId         String?
   zoomPasscodeCiphertext String?           @db.Text
+  /// Set when WEWIN created the meeting through this account (null = manual/legacy env meeting)
+  zoomAccountId          String?
+  /// Occurrence of a Zoom recurring meeting (weekly series)
+  zoomOccurrenceId       String?
+  /// Shared by every session created from one weekly schedule
+  seriesId               String?
   createdAt              DateTime          @default(now())
   updatedAt              DateTime          @updatedAt
 
   classroom         Classroom          @relation(fields: [classroomId], references: [id], onDelete: Cascade)
   host              User?              @relation("LiveSessionHost", fields: [hostUserId], references: [id], onDelete: SetNull)
+  zoomAccount       ZoomAccount?       @relation(fields: [zoomAccountId], references: [id], onDelete: Restrict)
   presentationState PresentationState?
 
   @@index([classroomId, scheduledStart])
   @@index([hostUserId, scheduledStart])
   @@index([zoomMeetingId])
+  @@index([zoomAccountId])
+  @@index([seriesId])
 }
 
 model Presentation {

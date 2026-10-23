@@ -1,5 +1,8 @@
 /**
- * Client session for SiteShell — one fetch per tab TTL, survives soft nav remounts.
+ * Client session for SiteShell — survives soft nav remounts.
+ * Stale-while-revalidate: the last known session stays visible after TTL and is
+ * refreshed in the background, so the shell never flips to "guest" just because
+ * the cache aged out. Only a successful /api/auth response can log the UI out.
  */
 
 import { initialsFromName } from "@/lib/dashboard-stats";
@@ -11,11 +14,11 @@ export type SessionMe = {
 };
 
 const TTL_MS = 60_000;
-const STORAGE_KEY = "wewin_session_me_v2";
+const STORAGE_KEY = "wewin_session_me_v3";
 
 type CacheEntry = {
   data: SessionMe;
-  expiresAt: number;
+  fetchedAt: number;
 };
 
 let memory: CacheEntry | null = null;
@@ -33,26 +36,21 @@ export function subscribeSessionMe(listener: () => void): () => void {
   };
 }
 
-function readSession(): SessionMe | null {
+function readStorage(): CacheEntry | null {
   if (typeof sessionStorage === "undefined") return null;
   try {
     const raw = sessionStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as CacheEntry;
-    if (typeof parsed.expiresAt !== "number" || Date.now() >= parsed.expiresAt) {
-      return null;
-    }
-    return parsed.data;
+    if (typeof parsed.fetchedAt !== "number" || !parsed.data) return null;
+    return parsed;
   } catch {
     return null;
   }
 }
 
 function writeSession(data: SessionMe) {
-  const entry: CacheEntry = {
-    data,
-    expiresAt: Date.now() + TTL_MS,
-  };
+  const entry: CacheEntry = { data, fetchedAt: Date.now() };
   memory = entry;
   if (typeof sessionStorage === "undefined") return;
   try {
@@ -62,17 +60,14 @@ function writeSession(data: SessionMe) {
   }
 }
 
+function currentEntry(): CacheEntry | null {
+  if (!memory) memory = readStorage();
+  return memory;
+}
+
+/** Last known session (possibly stale); stable reference until the next write. */
 export function peekSessionMe(): SessionMe | null {
-  if (memory && Date.now() < memory.expiresAt) return memory.data;
-  const fromSession = readSession();
-  if (fromSession) {
-    memory = {
-      data: fromSession,
-      expiresAt: Date.now() + TTL_MS,
-    };
-    return fromSession;
-  }
-  return null;
+  return currentEntry()?.data ?? null;
 }
 
 export function clearSessionMe() {
@@ -110,20 +105,16 @@ function canImportFromPayload(
   return user?.role === "ADMIN";
 }
 
-/** Fetch current user + admin flag (deduped). */
-export function fetchSessionMe(): Promise<SessionMe> {
-  const peek = peekSessionMe();
-  if (peek) return Promise.resolve(peek);
+const EMPTY: SessionMe = { user: null, canImport: false };
+
+function revalidate(): Promise<SessionMe> {
   if (inflight) return inflight;
 
   inflight = (async () => {
     try {
       const res = await fetch("/api/auth", { cache: "no-store" });
-      if (!res.ok) {
-        const empty: SessionMe = { user: null, canImport: false };
-        writeSession(empty);
-        return empty;
-      }
+      // Server/network hiccup: keep showing what we had instead of logging out.
+      if (!res.ok) return peekSessionMe() ?? EMPTY;
       const json = (await res.json()) as {
         user?: AuthApiUser | null;
         canImport?: boolean;
@@ -141,14 +132,24 @@ export function fetchSessionMe(): Promise<SessionMe> {
           : null,
         canImport: canImportFromPayload(raw, json.canImport),
       };
-      writeSession(data);
+      setSessionMe(data);
       return data;
     } catch {
-      return { user: null, canImport: false };
+      return peekSessionMe() ?? EMPTY;
     } finally {
       inflight = null;
     }
   })();
 
   return inflight;
+}
+
+/** Current user + admin flag (deduped). Stale cache resolves immediately and refreshes in background. */
+export function fetchSessionMe(): Promise<SessionMe> {
+  const entry = currentEntry();
+  if (entry) {
+    if (Date.now() - entry.fetchedAt >= TTL_MS) void revalidate();
+    return Promise.resolve(entry.data);
+  }
+  return revalidate();
 }

@@ -16,7 +16,30 @@
 - WEWIN presentations use a manifest of individual image URLs. Google Slides
   embeds cannot expose or synchronize their current page across origins.
 
-## Required Zoom setup
+## Admin-managed Zoom accounts (recommended)
+
+Admins connect Zoom accounts at **/admin/zoom**; credentials are stored in the
+`ZoomAccount` table with secrets AES-GCM encrypted by
+`CLASSROOM_SECRET_ENCRYPTION_KEY`. Each account needs, in the same Zoom account:
+
+1. A **Server-to-Server OAuth** app with scopes `meeting:write:meeting:admin`,
+   `meeting:update:meeting:admin`, `meeting:delete:meeting:admin`,
+   `meeting:read:meeting:admin`, `user:read:zak:admin` (plus
+   `user:read:token:admin` when the host user is not the account owner).
+2. A **Meeting SDK** app (SDK Key / SDK Secret).
+
+**/admin/classes** (ADMIN; TEACHER for assigned classes) creates classes,
+assigns teachers/students (auto-enrolled from `User.classCode`) and schedules
+sessions. Creating a session calls Zoom to create the meeting (type 2), or a
+recurring meeting with fixed time (type 8) whose occurrences map 1:1 to
+`LiveSession` rows sharing a `seriesId`. Editing/deleting a session updates or
+deletes the meeting/occurrence on Zoom. A class's Zoom account only applies to
+new sessions; existing sessions keep `LiveSession.zoomAccountId`.
+
+Sessions without `zoomAccountId` (seeded/manual) keep using the env
+credentials below, falling back to the default DB account.
+
+## Legacy env-based Zoom setup
 
 1. Create a **Meeting SDK** app in the Zoom account that owns the prototype
    meeting. Add `ZOOM_MEETING_SDK_KEY` and `ZOOM_MEETING_SDK_SECRET` to local

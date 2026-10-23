@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import {
   BookOpen,
+  CalendarDays,
   ChartLine,
   ChevronLeft,
   ChevronRight,
@@ -14,6 +15,7 @@ import {
   Home,
   Menu,
   ScrollText,
+  Settings,
   Trophy,
   Upload,
   UserCog,
@@ -51,6 +53,8 @@ export type DashboardNavKey =
   | "admin-users"
   | "admin-reports"
   | "admin-audit-logs"
+  | "admin-classes"
+  | "admin-zoom"
   | "login";
 
 type UserChip = SidebarUser | null;
@@ -64,6 +68,8 @@ type Props = {
   wide?: boolean;
   /** Server-rendered site footer (SiteShell); omitted on focused practice UIs */
   footer?: React.ReactNode;
+  noFooter?: boolean;
+  fitScreen?: boolean;
 };
 
 const SIDEBAR_COLLAPSED_KEY = "wewin_sidebar_collapsed";
@@ -90,6 +96,8 @@ export function DashboardShell({
   canImport,
   wide = false,
   footer,
+  noFooter = false,
+  fitScreen = false,
 }: Props) {
   const pathname = usePathname();
   /** Full-page campus photo + frost — login only; elsewhere solid wewin-bg */
@@ -236,6 +244,18 @@ export function DashboardShell({
               />
               {(
                 [
+                  {
+                    key: "admin-classes" as const,
+                    href: "/admin/classes",
+                    label: t("nav.adminClasses", "Lớp & lịch học"),
+                    icon: CalendarDays,
+                  },
+                  {
+                    key: "admin-zoom" as const,
+                    href: "/admin/zoom",
+                    label: t("nav.adminZoom", "Tài khoản Zoom"),
+                    icon: Settings,
+                  },
                   {
                     key: "admin-users" as const,
                     href: "/admin/users",
@@ -415,17 +435,25 @@ export function DashboardShell({
         ) : null}
 
         <div
-          className="wewin-sidebar-inset relative z-10 flex min-h-screen min-w-0 flex-col"
+          className={`wewin-sidebar-inset relative z-10 flex min-w-0 flex-col ${
+            fitScreen
+              ? "min-h-screen lg:h-screen lg:max-h-screen lg:overflow-hidden"
+              : "min-h-screen"
+          }`}
           data-collapsed={collapsed ? "true" : "false"}
         >
           <main
-            className={`mx-auto w-full min-w-0 flex-1 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 ${
-              wide ? "max-w-none" : "max-w-[1400px]"
-            }`}
+            className={`mx-auto w-full min-w-0 flex-1 ${
+              fitScreen
+                ? "p-2 sm:p-3 lg:p-3 flex flex-col min-h-0 lg:overflow-hidden"
+                : "px-4 py-6 sm:px-6 sm:py-8 lg:px-8"
+            } ${wide ? "max-w-none" : "max-w-[1400px]"}`}
           >
             {children}
           </main>
-          {footer ? <div className="mt-auto w-full shrink-0">{footer}</div> : null}
+          {footer && !noFooter && !fitScreen ? (
+            <div className="mt-auto w-full shrink-0">{footer}</div>
+          ) : null}
         </div>
       </div>
     </TourProvider>

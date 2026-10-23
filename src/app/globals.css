@@ -262,6 +262,42 @@ body {
       0 14px 28px rgb(15 40 94 / 0.08);
   }
 
+  /* Slide lesson player: fits strictly within 1 viewport frame without page scroll */
+  .lesson-slide-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lesson-slide-frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #09090b;
+    border: 1px solid rgba(24, 24, 27, 0.2);
+    box-shadow:
+      0 4px 6px -1px rgba(15, 40, 94, 0.06),
+      0 10px 24px -3px rgba(15, 40, 94, 0.12);
+  }
+
+  @media (min-width: 1024px) {
+    .lesson-slide-wrapper {
+      container-type: size;
+    }
+
+    .lesson-slide-frame {
+      width: min(100cqw, calc(100cqh * (16 / 9)));
+      max-height: 100cqh;
+      max-width: 100%;
+    }
+  }
+
   .learn-theory {
     font-size: 0.9375rem;
     line-height: 1.65;

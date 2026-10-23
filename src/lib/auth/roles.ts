@@ -9,7 +9,7 @@ export function isLearnerRole(role: string | null | undefined): boolean {
   return role === "STUDENT" || role === "VISITOR";
 }
 
-/** "IELTS 3.0–4.0" grammar slides: class members and staff only (not VISITOR, not signed-out guests). */
+/** IELTS grammar slide courses (3.0–4.0, 4.0–5.0): class members and staff only (not VISITOR, not signed-out guests). */
 export function canViewIeltsGrammar(role: AppRole | null | undefined): boolean {
   return role === "ADMIN" || role === "TEACHER" || role === "STUDENT";
 }

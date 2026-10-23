@@ -113,9 +113,13 @@ export function TopicLessonPlayer({
     );
   }
 
+  const hasExtraContent = Boolean(
+    theoryHtml.trim() || slidesHtml || topic.exercises.length > 0,
+  );
+
   return (
-    <div className="region-split grid min-w-0 lg:grid-cols-[260px_minmax(0,1fr)]">
-      <div className="min-w-0 border-b border-zinc-200 lg:border-b-0 lg:border-r">
+    <div className="region-split flex flex-col lg:grid lg:grid-cols-[280px_minmax(0,1fr)] min-w-0 h-full min-h-0">
+      <div className="min-w-0 border-b border-zinc-200 lg:border-b-0 lg:border-r shrink-0 lg:shrink lg:h-full lg:min-h-0 flex flex-col overflow-visible lg:overflow-hidden">
         <TopicSidebar
           track={track}
           course={course}
@@ -132,64 +136,75 @@ export function TopicLessonPlayer({
         />
       </div>
 
-      <div className="min-w-0 space-y-5 p-4 sm:p-6">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <nav className="min-w-0 text-xs text-zinc-500 sm:text-sm">
-            <Link href={learnCatalogHref()} className="hover:text-wewin-navy hover:underline">
-              {t("catalogTitle", "Chọn khóa học")}
-            </Link>
-            <span className="mx-1.5">›</span>
-            <Link
-              href={learnVocabGrammarHref()}
-              className="hover:text-wewin-navy hover:underline"
-            >
-              {t("vocabGrammarCard", "Từ vựng và ngữ pháp")}
-            </Link>
-            <span className="mx-1.5">›</span>
-            <Link
-              href={trackHref}
-              className="hover:text-wewin-navy hover:underline"
-            >
-              {trackLabel}
-            </Link>
-            <span className="mx-1.5">›</span>
-            <span className="break-words font-medium text-zinc-800">{displayTitle}</span>
-          </nav>
+      <div
+        className={`min-w-0 flex-1 flex flex-col h-full min-h-0 p-3 sm:p-4 ${
+          hasExtraContent ? "overflow-y-auto space-y-3" : "overflow-hidden"
+        }`}
+      >
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between shrink-0 pb-2 border-b border-zinc-100">
+          <div className="min-w-0">
+            <nav className="min-w-0 text-xs text-zinc-500 flex items-center flex-wrap gap-1">
+              <Link href={learnCatalogHref()} className="hover:text-wewin-navy hover:underline shrink-0">
+                {t("catalogTitle", "Chọn khóa học")}
+              </Link>
+              <span className="text-zinc-400">›</span>
+              <Link
+                href={learnVocabGrammarHref()}
+                className="hover:text-wewin-navy hover:underline shrink-0"
+              >
+                {t("vocabGrammarCard", "Từ vựng và ngữ pháp")}
+              </Link>
+              <span className="text-zinc-400">›</span>
+              <Link
+                href={trackHref}
+                className="hover:text-wewin-navy hover:underline shrink-0"
+              >
+                {trackLabel}
+              </Link>
+              <span className="text-zinc-400">›</span>
+              <span className="truncate font-semibold text-zinc-800" title={displayTitle}>
+                {displayTitle}
+              </span>
+            </nav>
+            {displaySummary ? (
+              <p className="mt-0.5 truncate text-xs text-zinc-500" title={displaySummary}>
+                {displaySummary}
+              </p>
+            ) : null}
+          </div>
 
-          <div className="flex flex-wrap items-center gap-2 sm:justify-end">
+          <div className="flex shrink-0 items-center gap-1.5 sm:justify-end">
             {passed ? (
-              <span className="inline-flex items-center gap-1 text-sm font-medium text-emerald-700">
-                <CheckCircle2 className="h-4 w-4" />
+              <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700 border border-emerald-200">
+                <CheckCircle2 className="h-3.5 w-3.5" />
                 {t("markComplete", "Tôi hoàn thành")}
               </span>
             ) : null}
             {prevSlug ? (
               <Link
                 href={learnVocabGrammarTopicHref(track, prevSlug)}
-                className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 px-2.5 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+                className="inline-flex items-center gap-1 rounded-lg border border-zinc-200 bg-white px-2.5 py-1 text-xs font-medium text-zinc-700 hover:bg-zinc-50 shadow-xs"
               >
-                <ChevronLeft className="h-4 w-4" />
-                {t("prevLesson", "Bài trước")}
+                <ChevronLeft className="h-3.5 w-3.5" />
+                <span>{t("prevLesson", "Bài trước")}</span>
               </Link>
             ) : null}
             {nextSlug ? (
               <Link
                 href={learnVocabGrammarTopicHref(track, nextSlug)}
-                className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 px-2.5 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+                className="inline-flex items-center gap-1 rounded-lg border border-zinc-200 bg-white px-2.5 py-1 text-xs font-medium text-zinc-700 hover:bg-zinc-50 shadow-xs"
               >
-                {t("nextLessonShort", "Bài sau")}
-                <ChevronRight className="h-4 w-4" />
+                <span>{t("nextLessonShort", "Bài sau")}</span>
+                <ChevronRight className="h-3.5 w-3.5" />
               </Link>
             ) : null}
           </div>
         </div>
 
-        {displaySummary ? (
-          <p className="break-words text-sm text-zinc-600">{displaySummary}</p>
-        ) : null}
-
         {topic.slidesUrl ? (
-          <LessonSlides src={topic.slidesUrl} title={displayTitle} />
+          <div className="flex-1 min-h-0 w-full flex items-center justify-center pt-1">
+            <LessonSlides src={topic.slidesUrl} title={displayTitle} />
+          </div>
         ) : (
           <LessonVideo
             src={topic.videoUrl}

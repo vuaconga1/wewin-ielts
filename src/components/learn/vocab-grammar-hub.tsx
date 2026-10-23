@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { BookMarked, Languages } from "lucide-react";
 import { markSkillChallengeDoneToday } from "@/lib/client/daily-challenge-skill";
-import {
-  learnCatalogHref,
-  learnVocabGrammarTopicHref,
-  learnVocabGrammarTrackHref,
-} from "@/lib/learn/hrefs";
+import { learnCatalogHref, learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
 type TrackRow = {
@@ -15,7 +11,6 @@ type TrackRow = {
   total: number;
   completed: number;
   percent: number;
-  nextSlug: string | null;
 };
 
 type Props = {
@@ -68,19 +63,17 @@ export function VocabGrammarHub({ tracks }: Props) {
                 "vocabularyTrackDesc",
                 "11 chủ đề Cambridge Vocabulary — thẻ từ (phát âm, nghĩa, ví dụ)",
               )
-            : t("grammarTrackDesc", "24 chủ đề ngữ pháp IELTS — video, lý thuyết, 10 câu/bài");
+            : t(
+                "grammarTrackDesc",
+                "Ngữ pháp cơ bản và lộ trình IELTS 3.0–4.0, 4.0–5.0 — slide bài giảng",
+              );
           const done = row.completed === row.total && row.total > 0;
-          // Vocabulary always opens the topic grid; grammar may continue to next topic.
-          const href = isVocabulary
-            ? learnVocabGrammarTrackHref("vocabulary")
-            : row.nextSlug
-              ? learnVocabGrammarTopicHref("grammar", row.nextSlug)
-              : learnVocabGrammarTrackHref("grammar");
+          const href = learnVocabGrammarTrackHref(row.track);
           const cta = done
             ? t("review", "Ôn lại →")
             : isVocabulary
               ? t("browseTopics", "Chọn chủ đề →")
-              : t("continueLearn", "Học tiếp →");
+              : t("browseCourses", "Chọn khóa học →");
 
           return (
             <Link

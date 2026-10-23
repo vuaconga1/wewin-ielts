@@ -2,6 +2,8 @@ import { createHmac } from "node:crypto";
 
 const SIGNATURE_TTL_SECONDS = 2 * 60 * 60;
 
+export type MeetingSdkCredentials = { sdkKey: string; sdkSecret: string };
+
 function base64Url(value: string | Buffer): string {
   return Buffer.from(value)
     .toString("base64")
@@ -10,23 +12,11 @@ function base64Url(value: string | Buffer): string {
     .replace(/\//g, "_");
 }
 
-export function zoomMeetingSdkKey(): string {
-  const value = process.env.ZOOM_MEETING_SDK_KEY?.trim();
-  if (!value) throw new Error("ZOOM_MEETING_SDK_KEY is not configured");
-  return value;
-}
-
-function zoomMeetingSdkSecret(): string {
-  const value = process.env.ZOOM_MEETING_SDK_SECRET?.trim();
-  if (!value) throw new Error("ZOOM_MEETING_SDK_SECRET is not configured");
-  return value;
-}
-
-export function isMeetingSdkConfigured(): boolean {
-  return Boolean(
-    process.env.ZOOM_MEETING_SDK_KEY?.trim() &&
-      process.env.ZOOM_MEETING_SDK_SECRET?.trim(),
-  );
+/** Legacy single-account credentials from ZOOM_MEETING_SDK_KEY / _SECRET. */
+export function envMeetingSdkCredentials(): MeetingSdkCredentials | null {
+  const sdkKey = process.env.ZOOM_MEETING_SDK_KEY?.trim();
+  const sdkSecret = process.env.ZOOM_MEETING_SDK_SECRET?.trim();
+  return sdkKey && sdkSecret ? { sdkKey, sdkSecret } : null;
 }
 
 export function normalizeZoomMeetingNumber(value: string): string {
@@ -41,9 +31,11 @@ export function createMeetingSdkSignature(input: {
   meetingNumber: string;
   role: 0 | 1;
   now?: Date;
+  credentials?: MeetingSdkCredentials;
 }): string {
-  const sdkKey = zoomMeetingSdkKey();
-  const secret = zoomMeetingSdkSecret();
+  const credentials = input.credentials ?? envMeetingSdkCredentials();
+  if (!credentials) throw new Error("Zoom Meeting SDK is not configured");
+  const { sdkKey, sdkSecret } = credentials;
   const meetingNumber = normalizeZoomMeetingNumber(input.meetingNumber);
   const nowSeconds = Math.floor((input.now ?? new Date()).getTime() / 1000);
   const issuedAt = nowSeconds - 30;
@@ -63,6 +55,6 @@ export function createMeetingSdkSignature(input: {
   const unsigned = `${base64Url(JSON.stringify(header))}.${base64Url(
     JSON.stringify(payload),
   )}`;
-  const signature = createHmac("sha256", secret).update(unsigned).digest();
+  const signature = createHmac("sha256", sdkSecret).update(unsigned).digest();
   return `${unsigned}.${base64Url(signature)}`;
 }

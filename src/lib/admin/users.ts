@@ -9,6 +9,7 @@ import { hashPassword } from "@/lib/auth";
 import { accessStatus, addCalendarMonths, freeAccessExpiry, type AccessPlan } from "@/lib/access";
 import { isLearnerRole, learnerRoleForClass, type AppRole } from "@/lib/auth/permissions";
 import { revalidateTag, unstable_cache } from "next/cache";
+import { syncUserClassEnrollments } from "@/lib/classroom/enrollment";
 import {
   deleteLocalUser,
   findLocalUserByEmail,
@@ -221,6 +222,9 @@ export async function createAdminUser(input: {
       data: { email, username, passwordHash, role, fullName, classCode, accessPlan, accessStartsAt, accessExpiresAt },
       select: userPublicSelect,
     });
+    await syncUserClassEnrollments({ id: user.id, role, classCode }).catch((error) =>
+      console.error("[admin-users] Could not sync class enrollments", error),
+    );
     revalidateTag("admin-users");
     return toPublic(user);
   }
@@ -331,6 +335,15 @@ export async function updateAdminUser(
       },
       select: userPublicSelect,
     });
+    if (patch.classCode !== undefined || patch.role != null) {
+      await syncUserClassEnrollments({
+        id,
+        role: patch.role ?? existing.role,
+        classCode: patch.classCode !== undefined ? patch.classCode : existing.classCode,
+      }).catch((error) =>
+        console.error("[admin-users] Could not sync class enrollments", error),
+      );
+    }
     revalidateTag("admin-users");
     return toPublic(user);
   }

@@ -3,7 +3,11 @@ import { getLearnOwnerKey } from "@/lib/learn/owner";
 import { getProgress } from "@/lib/learn/store";
 import { getGrammarCourseTopics, getTopicBySlug } from "@/lib/learn/vocab-grammar-store";
 import { toPublicTopic, toPublicTopicMeta } from "@/lib/learn/vocab-grammar-public";
-import { pickLocalized, topicCourse } from "@/lib/learn/vocab-grammar-types";
+import {
+  isRestrictedGrammarCourse,
+  pickLocalized,
+  topicCourse,
+} from "@/lib/learn/vocab-grammar-types";
 import { learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
 import { getViewerRole } from "@/lib/auth";
 import { canViewIeltsGrammar } from "@/lib/auth/roles";
@@ -39,7 +43,7 @@ export default async function GrammarTopicPage({ params }: Props) {
   const { t } = await getTranslations();
   const course = topicCourse(topic);
 
-  if (course === "ielts-3-4") {
+  if (isRestrictedGrammarCourse(course)) {
     const role = await getViewerRole();
     if (!canViewIeltsGrammar(role)) {
       const courseHref = learnVocabGrammarTrackHref("grammar", course);
@@ -84,10 +88,12 @@ export default async function GrammarTopicPage({ params }: Props) {
   const courseLabel =
     course === "ielts-3-4"
       ? t("learn.grammarCourseIelts34", "Ngữ pháp IELTS 3.0–4.0")
-      : t("learn.grammarCourseBasic", "Ngữ pháp cơ bản");
+      : course === "ielts-4-5"
+        ? t("learn.grammarCourseIelts45", "Ngữ pháp IELTS 4.0–5.0")
+        : t("learn.grammarCourseBasic", "Ngữ pháp cơ bản");
 
   return (
-    <SiteShell active="learn" wide>
+    <SiteShell active="learn" wide fitScreen noFooter>
       <TopicLessonPlayer
         track="grammar"
         course={course}

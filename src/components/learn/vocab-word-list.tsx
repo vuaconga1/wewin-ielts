@@ -3,6 +3,7 @@
 import { useEffect, useState, useTransition } from "react";
 import Link from "next/link";
 import {
+  ArrowLeft,
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
@@ -98,8 +99,8 @@ export function VocabWordList({
   }
 
   return (
-    <div className="mx-auto min-w-0 max-w-3xl space-y-5 px-4 py-4 sm:px-6 sm:py-6">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <div className="mx-auto min-w-0 max-w-4xl space-y-6 px-4 py-6 sm:px-6 sm:py-8">
+      <div className="flex flex-col gap-3 border-b border-zinc-200 pb-4 sm:flex-row sm:items-center sm:justify-between">
         <nav className="min-w-0 text-xs text-zinc-500 sm:text-sm">
           <Link href={learnCatalogHref()} className="hover:text-wewin-navy hover:underline">
             {t("catalogTitle", "Chọn khóa học")}
@@ -126,7 +127,7 @@ export function VocabWordList({
 
         <div className="flex flex-wrap items-center gap-2 sm:justify-end">
           {passed ? (
-            <span className="inline-flex items-center gap-1 text-sm font-medium text-emerald-700">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
               <CheckCircle2 className="h-4 w-4" />
               {t("markComplete", "Tôi hoàn thành")}
             </span>
@@ -138,7 +139,7 @@ export function VocabWordList({
           {prevSlug ? (
             <Link
               href={learnVocabTopicLearnHref(prevSlug)}
-              className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 px-2.5 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+              className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm font-medium text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50"
             >
               <ChevronLeft className="h-4 w-4" />
               {t("prevLesson", "Bài trước")}
@@ -147,7 +148,7 @@ export function VocabWordList({
           {nextSlug ? (
             <Link
               href={learnVocabTopicLearnHref(nextSlug)}
-              className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 px-2.5 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+              className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm font-medium text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50"
             >
               {t("nextLessonShort", "Bài sau")}
               <ChevronRight className="h-4 w-4" />
@@ -156,27 +157,34 @@ export function VocabWordList({
         </div>
       </div>
 
-      <div>
+      <header className="rounded-2xl border border-slate-200 bg-gradient-to-br from-white via-white to-slate-50 px-5 py-5 shadow-sm sm:px-7 sm:py-6">
         <Link
           href={learnVocabularyHref(collection)}
-          className="text-sm font-medium text-wewin-navy hover:underline"
+          className="inline-flex items-center gap-1.5 text-sm font-semibold text-wewin-navy transition hover:text-wewin-accent-blue"
         >
+          <ArrowLeft className="h-4 w-4" />
           {t("backToVocabulary", "← Quay lại Từ vựng")}
         </Link>
-        <h1 className="mt-2 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
-          {displayTitle}
-        </h1>
-        {displaySummary ? (
-          <p className="mt-1 break-words text-sm text-zinc-600">{displaySummary}</p>
-        ) : null}
-        <p className="mt-1 text-sm text-zinc-500">
-          {t("wordCountLabel", { n: words.length }, "{n} từ vựng")}
-        </p>
-      </div>
+        <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="min-w-0">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-wewin-accent-blue">{t("vocabularyTrack", "Vocabulary")}</p>
+            <h1 className="mt-1.5 break-words text-2xl font-bold tracking-tight text-wewin-navy sm:text-3xl">
+              {displayTitle}
+            </h1>
+            {displaySummary ? (
+              <p className="mt-2 max-w-2xl break-words text-sm leading-6 text-zinc-600">{displaySummary}</p>
+            ) : null}
+          </div>
+          <div className="shrink-0 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-zinc-500">{t("vocabWordsSection", "Vocabulary list")}</p>
+            <p className="mt-0.5 text-lg font-bold tabular-nums text-wewin-navy">{t("wordCountLabel", { n: words.length }, "{n} words")}</p>
+          </div>
+        </div>
+      </header>
 
-      <section className="space-y-3" aria-label={t("vocabWordsSection", "Danh sách từ vựng")}>
+      <section className="space-y-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6" aria-label={t("vocabWordsSection", "Danh sách từ vựng")}>
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-lg font-bold text-zinc-900 sm:text-xl">
+          <h2 className="text-lg font-bold text-wewin-navy sm:text-xl">
             {view === "flashcards"
               ? t("vocabFlashcardsSection", "Flashcard")
               : t("vocabWordsSection", "Danh sách từ vựng")}
@@ -184,7 +192,7 @@ export function VocabWordList({
           {words.length > 0 ? (
             <div
               role="tablist"
-              className="inline-flex rounded-lg border border-zinc-200 bg-zinc-50 p-0.5"
+              className="inline-flex rounded-lg border border-slate-200 bg-white p-1 shadow-sm"
             >
               {(["flashcards", "list"] as const).map((mode) => (
                 <button
@@ -195,8 +203,8 @@ export function VocabWordList({
                   onClick={() => setView(mode)}
                   className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium ${
                     view === mode
-                      ? "bg-white text-wewin-navy shadow-sm"
-                      : "text-zinc-600 hover:text-wewin-navy"
+                      ? "bg-wewin-navy text-white shadow-sm"
+                      : "text-zinc-600 hover:bg-slate-50 hover:text-wewin-navy"
                   }`}
                 >
                   {mode === "flashcards" ? (

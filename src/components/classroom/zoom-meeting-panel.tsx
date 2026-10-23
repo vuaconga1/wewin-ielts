@@ -1,13 +1,25 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ExternalLink, Video } from "lucide-react";
+import { Clock, ExternalLink, Video } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
 
 type MobileJoinInfo = {
   meetingNumber: string;
   password: string;
 };
+
+function formatDuration(totalSeconds: number): string {
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  const pad = (n: number) => n.toString().padStart(2, "0");
+
+  if (hours > 0) {
+    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+  }
+  return `${pad(minutes)}:${pad(seconds)}`;
+}
 
 export function ZoomMeetingPanel({ sessionId }: { sessionId: string }) {
   const { t } = useTranslations("classroom");
@@ -17,6 +29,35 @@ export function ZoomMeetingPanel({ sessionId }: { sessionId: string }) {
   const [joined, setJoined] = useState(false);
   const [error, setError] = useState(false);
   const [mobileInfo, setMobileInfo] = useState<MobileJoinInfo | null>(null);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+
+  useEffect(() => {
+    if (!joined) {
+      setElapsedSeconds(0);
+      return;
+    }
+
+    const storageKey = `wewin_zoom_joined_${sessionId}`;
+    let startTime = Date.now();
+    try {
+      const stored = sessionStorage.getItem(storageKey);
+      if (stored && !isNaN(Number(stored))) {
+        startTime = Number(stored);
+      } else {
+        sessionStorage.setItem(storageKey, String(startTime));
+      }
+    } catch {
+      /* ignore */
+    }
+
+    const update = () => {
+      setElapsedSeconds(Math.max(0, Math.floor((Date.now() - startTime) / 1000)));
+    };
+
+    update();
+    const interval = setInterval(update, 1000);
+    return () => clearInterval(interval);
+  }, [joined, sessionId]);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 1024px) and (pointer: fine)");
@@ -70,9 +111,19 @@ export function ZoomMeetingPanel({ sessionId }: { sessionId: string }) {
           {t("zoomPanel", "Phòng học Zoom")}
         </h2>
         {joined ? (
-          <span className="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
-            {t("live", "Đang diễn ra")}
-          </span>
+          <div className="flex items-center gap-2 shrink-0">
+            <span
+              className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-semibold font-mono text-zinc-700 shadow-2xs"
+              title={t("meetingDuration", "Thời gian buổi học")}
+            >
+              <Clock className="h-3.5 w-3.5 text-zinc-500" />
+              <span>{formatDuration(elapsedSeconds)}</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              {t("live", "Đang diễn ra")}
+            </span>
+          </div>
         ) : null}
       </div>
 

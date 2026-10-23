@@ -55,7 +55,14 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
        
       </header>
 
-      <div data-tour="learn-courses" className="grid gap-3 sm:grid-cols-2">
+      <section data-tour="learn-courses" className="space-y-3">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-wewin-accent-blue">Learning</p>
+            <h2 className="mt-1 text-lg font-bold text-wewin-navy">{t("coursesSection", "Khóa học")}</h2>
+          </div>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
         {courses.map((course) => {
           const done = course.completed === course.total && course.total > 0;
           return (
@@ -153,10 +160,23 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
           </div>
         </Link>
 
+        </div>
+      </section>
+
+      <section className="space-y-3 rounded-2xl border border-slate-200 bg-slate-100/70 p-4 sm:p-5">
+        <div className="flex items-center gap-3">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-wewin-navy text-white"><Headphones className="h-4 w-4" /></span>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-wewin-accent-blue">Practice lab</p>
+            <h2 className="mt-0.5 text-lg font-bold text-wewin-navy">{t("practiceGamesTitle", "Luyện tập nhanh")}</h2>
+            <p className="mt-0.5 text-sm text-zinc-600">{t("practiceGamesDesc", "Chọn hoạt động để luyện một kỹ năng cụ thể.")}</p>
+          </div>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
         <Link
           href={learnDictationHref()}
           prefetch={false}
-          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+          className="group flex min-w-0 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-wewin-navy/30 hover:shadow-md"
         >
           <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
             <Headphones className="h-5 w-5 shrink-0 opacity-90" />
@@ -187,7 +207,7 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
         <Link
           href={learnFillBlankHref()}
           prefetch={false}
-          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+          className="group flex min-w-0 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-wewin-navy/30 hover:shadow-md"
         >
           <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
             <TextCursorInput className="h-5 w-5 shrink-0 opacity-90" />
@@ -218,7 +238,7 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
         <Link
           href={learnListenAnswerHref()}
           prefetch={false}
-          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+          className="group flex min-w-0 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-wewin-navy/30 hover:shadow-md"
         >
           <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
             <MessageCircleQuestion className="h-5 w-5 shrink-0 opacity-90" />
@@ -249,7 +269,7 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
         <Link
           href={learnShadowingHref()}
           prefetch={false}
-          className="card-outline-hover group flex min-w-0 flex-col overflow-hidden border-zinc-300"
+          className="group flex min-w-0 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-wewin-navy/30 hover:shadow-md"
         >
           <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
             <Mic className="h-5 w-5 shrink-0 opacity-90" />
@@ -274,17 +294,9 @@ export function LearnCoursePicker({ courses, vocabGrammar }: Props) {
             </div>
           </div>
         </Link>
-        {courses.length === 0 ? (
-          <div className="wewin-card-3d border-dashed px-6 py-10 text-center sm:col-span-2">
-            <p className="font-semibold text-zinc-800">
-              {t("emptyCoursesTitle", "Chưa có khóa học")}
-            </p>
-            <p className="mt-1 text-sm text-zinc-600">
-              {t("emptyCoursesDesc", "Nội dung sẽ được cập nhật sớm.")}
-            </p>
-          </div>
-        ) : null}
-      </div>
+
+        </div>
+      </section>
     </div>
   );
 }

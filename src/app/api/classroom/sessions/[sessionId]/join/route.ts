@@ -8,12 +8,11 @@ import {
 } from "@/lib/classroom/rate-limit";
 import { decryptClassroomSecret } from "@/lib/classroom/secret";
 import { prisma } from "@/lib/prisma";
-import { getZoomHostZak, isZoomHostAuthConfigured } from "@/lib/zoom/host-auth";
+import { resolveZoomAccountForSession } from "@/lib/zoom/accounts";
+import { getZoomHostZak } from "@/lib/zoom/host-auth";
 import {
   createMeetingSdkSignature,
-  isMeetingSdkConfigured,
   normalizeZoomMeetingNumber,
-  zoomMeetingSdkKey,
 } from "@/lib/zoom/sdk-signature";
 
 export const runtime = "nodejs";
@@ -65,30 +64,36 @@ export async function POST(request: Request, context: Context) {
   if (access.session.status === "CANCELLED" || access.session.status === "ENDED") {
     return jsonError("SESSION_NOT_JOINABLE", 409);
   }
-  if (!isMeetingSdkConfigured()) {
-    return jsonError("ZOOM_NOT_CONFIGURED", 503);
-  }
-
   const meeting = await prisma.liveSession.findUnique({
     where: { id: sessionId },
     select: {
       zoomMeetingId: true,
       zoomHostUserId: true,
       zoomPasscodeCiphertext: true,
+      zoomAccountId: true,
     },
   });
   if (!meeting) return jsonError("SESSION_NOT_FOUND", 404);
 
   try {
+    const zoom = await resolveZoomAccountForSession(meeting.zoomAccountId);
+    if (!zoom.sdk) return jsonError("ZOOM_NOT_CONFIGURED", 503);
     const role: 0 | 1 = access.canHost ? 1 : 0;
-    if (role === 1 && !isZoomHostAuthConfigured()) {
+    if (role === 1 && !zoom.oauth) {
       return jsonError("ZOOM_HOST_AUTH_NOT_CONFIGURED", 503);
     }
     const meetingNumber = normalizeZoomMeetingNumber(meeting.zoomMeetingId);
-    const signature = createMeetingSdkSignature({ meetingNumber, role });
+    const signature = createMeetingSdkSignature({
+      meetingNumber,
+      role,
+      credentials: zoom.sdk,
+    });
     const zak =
-      role === 1
-        ? await getZoomHostZak(meeting.zoomHostUserId ?? undefined)
+      role === 1 && zoom.oauth
+        ? await getZoomHostZak(
+            zoom.oauth,
+            meeting.zoomHostUserId || zoom.hostUserId,
+          )
         : undefined;
     const password = decryptClassroomSecret(meeting.zoomPasscodeCiphertext);
 
@@ -105,7 +110,7 @@ export async function POST(request: Request, context: Context) {
 
     return NextResponse.json(
       {
-        sdkKey: zoomMeetingSdkKey(),
+        sdkKey: zoom.sdk.sdkKey,
         signature,
         meetingNumber,
         password,

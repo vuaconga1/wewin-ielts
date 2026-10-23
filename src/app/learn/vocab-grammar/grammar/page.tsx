@@ -2,7 +2,11 @@ import { getLearnOwnerKey } from "@/lib/learn/owner";
 import { getProgress } from "@/lib/learn/store";
 import { getGrammarCourseTopics } from "@/lib/learn/vocab-grammar-store";
 import { toPublicTopicMeta } from "@/lib/learn/vocab-grammar-public";
-import { isGrammarCourse, type GrammarCourse } from "@/lib/learn/vocab-grammar-types";
+import {
+  isGrammarCourse,
+  isRestrictedGrammarCourse,
+  type GrammarCourse,
+} from "@/lib/learn/vocab-grammar-types";
 import { learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
 import { getViewerRole } from "@/lib/auth";
 import { canViewIeltsGrammar } from "@/lib/auth/roles";
@@ -31,7 +35,7 @@ export default async function GrammarCatalogPage({ searchParams }: Props) {
 
   const role = await getViewerRole();
   const ieltsLocked = !canViewIeltsGrammar(role);
-  const locked = course === "ielts-3-4" && ieltsLocked;
+  const locked = isRestrictedGrammarCourse(course) && ieltsLocked;
 
   const ownerKey = await getLearnOwnerKey();
   const [progress, topics] = await Promise.all([
@@ -42,8 +46,9 @@ export default async function GrammarCatalogPage({ searchParams }: Props) {
   const labels: Record<GrammarCourse, string> = {
     basic: t("learn.grammarCourseBasic", "Ngữ pháp cơ bản"),
     "ielts-3-4": t("learn.grammarCourseIelts34", "Ngữ pháp IELTS 3.0–4.0"),
+    "ielts-4-5": t("learn.grammarCourseIelts45", "Ngữ pháp IELTS 4.0–5.0"),
   };
-  const loginHref = `/login?next=${encodeURIComponent(learnVocabGrammarTrackHref("grammar", "ielts-3-4"))}`;
+  const loginHref = `/login?next=${encodeURIComponent(learnVocabGrammarTrackHref("grammar", course))}`;
 
   return (
     <SiteShell active="learn" wide>
@@ -56,8 +61,9 @@ export default async function GrammarCatalogPage({ searchParams }: Props) {
           <GrammarCourseTabs
             active={course}
             labels={labels}
-            locked={{ "ielts-3-4": ieltsLocked }}
+            locked={{ "ielts-3-4": ieltsLocked, "ielts-4-5": ieltsLocked }}
             lockedLabel={t("learn.locked", "Đã khóa")}
+          
           />
         }
         lockedPanel={

@@ -13,6 +13,11 @@ import {
   createMeetingSdkSignature,
   normalizeZoomMeetingNumber,
 } from "../src/lib/zoom/sdk-signature";
+import {
+  expandWeeklyWallTimes,
+  utcToZonedWallTime,
+  zonedWallTimeToUtc,
+} from "../src/lib/classroom/schedule-time";
 
 process.env.ZOOM_MEETING_SDK_KEY = "sdk-test-key";
 process.env.ZOOM_MEETING_SDK_SECRET = "sdk-test-secret";
@@ -41,6 +46,55 @@ assert(
   Number(participant.exp) - Number(participant.iat) >= 1800,
   "Zoom JWT respects the minimum lifetime",
 );
+const perAccount = decodeJwtPayload(
+  createMeetingSdkSignature({
+    meetingNumber: "98765432101",
+    role: 1,
+    credentials: { sdkKey: "db-account-key", sdkSecret: "db-account-secret" },
+  }),
+);
+assert.equal(perAccount.sdkKey, "db-account-key");
+assert.equal(perAccount.role, 1);
+
+assert.equal(
+  zonedWallTimeToUtc("2026-10-26T19:00", "Asia/Ho_Chi_Minh")?.toISOString(),
+  "2026-10-26T12:00:00.000Z",
+);
+assert.equal(
+  utcToZonedWallTime(new Date("2026-10-26T12:00:00Z"), "Asia/Ho_Chi_Minh"),
+  "2026-10-26T19:00",
+);
+assert.equal(
+  zonedWallTimeToUtc("2026-07-01T09:00", "America/New_York")?.toISOString(),
+  "2026-07-01T13:00:00.000Z",
+);
+assert.equal(zonedWallTimeToUtc("not-a-date", "Asia/Ho_Chi_Minh"), null);
+// 2026-10-26 is a Monday; Mon/Wed/Fri through Sunday 2026-11-08 → 6 sessions.
+assert.deepEqual(
+  expandWeeklyWallTimes({
+    startWallTime: "2026-10-26T19:00",
+    weekdays: [1, 3, 5],
+    untilDate: "2026-11-08",
+  }),
+  [
+    "2026-10-26T19:00",
+    "2026-10-28T19:00",
+    "2026-10-30T19:00",
+    "2026-11-02T19:00",
+    "2026-11-04T19:00",
+    "2026-11-06T19:00",
+  ],
+);
+assert.equal(
+  expandWeeklyWallTimes({
+    startWallTime: "2026-01-01T19:00",
+    weekdays: [0, 1, 2, 3, 4, 5, 6],
+    untilDate: "2026-12-31",
+  }).length,
+  51,
+  "expansion stops one past the series limit",
+);
+
 assert.equal(normalizeZoomMeetingNumber("123-456-789"), "123456789");
 assert.throws(() => normalizeZoomMeetingNumber("123"));
 

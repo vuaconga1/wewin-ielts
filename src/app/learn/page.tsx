@@ -16,7 +16,11 @@ export default async function LearnCatalogPage() {
   const catalog = await getCatalog();
   const vgCatalog = await getVocabGrammarCatalog();
 
-  const courses = catalog.courses.map((course) => ({
+  const courses = catalog.courses
+    .filter((course) =>
+      process.env.NODE_ENV !== "production" || course.id !== "ielts-4-skills",
+    )
+    .map((course) => ({
     id: course.id,
     title: course.title,
     description: course.description,

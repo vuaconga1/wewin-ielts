@@ -4,11 +4,16 @@ export const VOCAB_GRAMMAR_TRACKS = ["vocabulary", "grammar"] as const;
 export type VocabGrammarTrack = (typeof VOCAB_GRAMMAR_TRACKS)[number];
 
 /** Independent slide courses inside the grammar track. */
-export const GRAMMAR_COURSES = ["basic", "ielts-3-4"] as const;
+export const GRAMMAR_COURSES = ["basic", "ielts-3-4", "ielts-4-5"] as const;
 export type GrammarCourse = (typeof GRAMMAR_COURSES)[number];
 
 export function isGrammarCourse(value: unknown): value is GrammarCourse {
   return (GRAMMAR_COURSES as readonly unknown[]).includes(value);
+}
+
+/** Courses open only to class members and staff (see `canViewIeltsGrammar`). */
+export function isRestrictedGrammarCourse(course: GrammarCourse): boolean {
+  return course !== "basic";
 }
 
 export function topicCourse(topic: { course?: GrammarCourse }): GrammarCourse {

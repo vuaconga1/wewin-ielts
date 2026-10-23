@@ -10,8 +10,8 @@ type Props = {
 export function LessonSlides({ src, title }: Props) {
   const { t } = useTranslations("learn");
   return (
-    <div className="overflow-hidden rounded-xl bg-zinc-900 shadow-sm">
-      <div className="relative aspect-video w-full">
+    <div className="lesson-slide-wrapper">
+      <div className="lesson-slide-frame">
         <iframe
           src={src}
           title={t("slidesFrameTitle", { title }, "Slide bài giảng: {title}")}

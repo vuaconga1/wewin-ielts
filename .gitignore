@@ -94,3 +94,21 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# IDEs and local tooling
+.vscode/
+.claude/
+.windsurf/
+.agents/
+.tmp-*
+
+# Local scratch / test files
+/tmp-test*
+*.traineddata
+
+# Raw resource packs and downloads (not part of deployment)
+/DE-IELTS/
+/IELTS/
+/WEWIN_Audio_Downloader/
+/WEWIN_Basic_Lessons_01-24/
+/WEWIN_Intermediate_Lessons/

@@ -381,6 +381,78 @@ const IELTS_34_DECKS: { n: number; slug: string; fileId: string; title: string }
   { n: 48, slug: "ielts34-48-exit-assessment-and-next-steps", fileId: "1rpyY1M5MD1WpnCtMV9RjsPkgCfZQlsuyhhbCF96bQyg", title: "Exit Assessment and Next Steps" },
 ];
 
+/** WeWIN IELTS 4.0–5.0 decks (Google Drive folder "01 Slides - 60 lessons"); index + 1 = lesson number. */
+const IELTS_45_DECKS: { fileId: string; title: string }[] = [
+  { fileId: "1NTk7MXWuqsbdAI9q9Yp2-dIIj109GM73AyghCRJ_fDo", title: "Entry Diagnostic and Learning Plan" },
+  { fileId: "1OsCWK2OWOL37h-zsyP1YcOVANIZc0NBT8XgecjRgxH8", title: "Grammar and Sentence Repair" },
+  { fileId: "1rvBo8IBurMY1Vzo60iktIxK0cMGKolmNe_dm4kYMM8M", title: "Relationships Reading and Vocabulary" },
+  { fileId: "1tZTIYmAcV261FL-VxtiVrOl22guYsSZxMQ9y-uMtJf0", title: "Relationships Grammar and Reading Practice" },
+  { fileId: "1MGqt8nENvnDEFypeYe-THR_eQPsiDOGGRJ_1F6v1Y8U", title: "Relationships Listening Skills" },
+  { fileId: "155v7NjFDBfbsP1xBEcFLY-sv-5JdAuluSiMlyP9K8uE", title: "Relationships Speaking and Pronunciation" },
+  { fileId: "1L20An0sGCqOKOnb-SdurcqbaZly3rVgxgIjLPEfGwfA", title: "Relationships Academic Writing Task 1" },
+  { fileId: "1W68EpfVkw5ACorL_vZ4Oa5XD4sjUciSUresSMsvF2_0", title: "Relationships Academic Writing Task 2" },
+  { fileId: "1L2vIQdlVh_LeVig0KXNFk0nlTUm4lUAq9DD20CYeyaY", title: "Places and Buildings Reading and Vocabulary" },
+  { fileId: "1KtAs8wy-4pBNVx2nn6a6-OYoHZ6SWt9UsRaeNYJkMHY", title: "Places and Buildings Grammar and Reading Practice" },
+  { fileId: "1oVcTEYdgkZ8REyj7RMO6dE2pYs_9UaVEJvguDzObwNM", title: "Places and Buildings Listening Skills" },
+  { fileId: "1e8V58o2WFzzya04nB4ZyFiGK0zb6JtYopYq0YaqOj_8", title: "Places and Buildings Speaking and Pronunciation" },
+  { fileId: "1WDge_URAMnBPWROWcGA61OuIEpEGcKD_pI9IbTXjcY4", title: "Places and Buildings Academic Writing Task 1" },
+  { fileId: "1E5MdxgVdX-aYeW_QnMijWcFO_URoi4_JmnZsbHys6F8", title: "Places and Buildings Academic Writing Task 2" },
+  { fileId: "13HVReZ9Ir7fJHwOXJptH5SiXVmAS47KePjYumKw6P-c", title: "Review 1: Relationships and Places" },
+  { fileId: "1HHopx6OqgFEydInqtgWCh6JPs2K5P6kWlE3FGLEazgA", title: "Education and Employment Reading and Vocabulary" },
+  { fileId: "1na3bLo4kemz_2rs-W2h461F4VrhlWltqcUoUUTXKdIA", title: "Education and Employment Grammar and Reading Practice" },
+  { fileId: "1cqyJZS3JuZxD0DOlaRMW_vM2BZZZYMpDptyqbc0AGtI", title: "Education and Employment Listening Skills" },
+  { fileId: "11is-FRShyv58XeCFp8P1NW3T5tjjxFgRYEeiniHuMlI", title: "Education and Employment Speaking and Pronunciation" },
+  { fileId: "11AcB1ssA1zhH4_J8OCnTIkW0MPy_JoDy9yC2Vm1IWG8", title: "Education and Employment Academic Writing Task 1" },
+  { fileId: "1766iTeipU4K7ALgFBBeHYMwr_u7lybys0sXtDIKgyY4", title: "Education and Employment Academic Writing Task 2" },
+  { fileId: "1VWt_3ORU0DL9on-rExDiRCr4sxf_4FnKtgBgpu4hgwI", title: "Food and Drink Reading and Vocabulary" },
+  { fileId: "1vljEXVsLk4Yhp8zusOWZWVhET0rdbC93rtFtUBsh0KA", title: "Food and Drink Grammar and Reading Practice" },
+  { fileId: "16OqK4uO2uZX2aC3tGc47DTbBlnJGDbon4e0zzv65Eqw", title: "Food and Drink Listening Skills" },
+  { fileId: "1gVUl2ZtoGcn2oW3zlCnjkD-0u-BCGf4wOI6yywgq8B0", title: "Food and Drink Speaking and Pronunciation" },
+  { fileId: "1Jo8esuV8IEPKDSRmlGLlTkgwpBDiwHskFvjvC6RT2lw", title: "Food and Drink Academic Writing Task 1" },
+  { fileId: "1KN9GjZ4ocfJiqvkWROVL7W7Wt3a1ccp4kuVrWTIGmKs", title: "Food and Drink Academic Writing Task 2" },
+  { fileId: "1aiPQZY80EoshgR8Vtxh-ax19DlSywtXMMalbTeLFBRI", title: "Progress Check 1" },
+  { fileId: "1eOOz_T7-Yp3v02Yu2QeVP2WeyKJqKkU9WFDv8PFYJk0", title: "Consumerism Reading and Vocabulary" },
+  { fileId: "1DTyCzLLgC7FyhUzG8rAJpFwKHucpCuZQM76Y6WQbXCg", title: "Consumerism Grammar and Reading Practice" },
+  { fileId: "1_CD0vne3-ZjOiu7W1EzsQtnAWobS1osMwOSp-AuEV_o", title: "Consumerism Listening Skills" },
+  { fileId: "1gkO-TenaIAkcFGiBOjsADxJSBdcFLXiEvUWIw2agrWo", title: "Consumerism Speaking and Pronunciation" },
+  { fileId: "1bgPgcYx4G8Q8qZdO__z17927DpGWZFfDvNsYO1M-xts", title: "Consumerism Academic Writing Task 1" },
+  { fileId: "1FpbSEqS6zUwFKlWDTu6eGGKGD7ndCnBcPpjOmO6GMDk", title: "Consumerism Academic Writing Task 2" },
+  { fileId: "1YbM1qYmNiepdTK7S8i8qq4BdcPR5plz1uzd2jz_TF0s", title: "Leisure Time Reading and Vocabulary" },
+  { fileId: "1tJC0oimd4NfRWQR6vQAyzjHKKK-__l52GA-JIk3EmOQ", title: "Leisure Time Grammar and Reading Practice" },
+  { fileId: "1HVs6eSJrmcILM7SeanhhJ5VXDSsbcv6z8JrvyW04Sd8", title: "Leisure Time Listening Skills" },
+  { fileId: "10WdZDqCjyI0g7p0EreOTy-xlcsmkIaNiTtBmrJYxyZs", title: "Leisure Time Speaking and Pronunciation" },
+  { fileId: "1zkjLJvrjEeo_Vy5aoJ1QUeX3TP3JPmceCSPPvMbOIpY", title: "Leisure Time Academic Writing Task 1" },
+  { fileId: "1Gph0AU0ojh6qfj3twiyEYttgXu4h2X1roNrgZnYjlvA", title: "Leisure Time Academic Writing Task 2" },
+  { fileId: "1kF9_J2_HH6V_a01odgLFvsnnPC36ZLRLt68Az7TQ4XA", title: "Review 2: Consumerism and Leisure" },
+  { fileId: "1fAxbgOgPYE1_Q_JIfD-gdr4DjdOYlJvs4GXrJrolkV8", title: "Fame and the Media Reading and Vocabulary" },
+  { fileId: "1tJFhlQJ_l16IzBiy5nsIgfIp4obK-g9FFsBOyEQjz2k", title: "Fame and the Media Grammar and Reading Practice" },
+  { fileId: "1CXotQXAyCqqPWjvsyVtKhN131eO5n-Hv9XQlDUe575I", title: "Fame and the Media Listening Skills" },
+  { fileId: "1yacP-0C9FpZcs3C6TnIf9GgobdvWtxCh5Y5VxE5yrCk", title: "Fame and the Media Speaking and Pronunciation" },
+  { fileId: "1qBwTY-OpqUgBAuuQYJPxa4aMEC8nY8Ck7kxMzEajsDs", title: "Fame and the Media Academic Writing Task 1" },
+  { fileId: "1lkhyhobMzSG7ywFJhWLi6TTfWDKtxY2uLxNRKN4gL4c", title: "Fame and the Media Academic Writing Task 2" },
+  { fileId: "1dZRoIf1rrXxUSE7Zwj2JaQ0pqcJmJMA07O-kxEA_YZc", title: "Natural World Reading and Vocabulary" },
+  { fileId: "1kOLwLt-LRpmGsQyo5twO26wNRuIRPFj2TzFdgz3aNm0", title: "Natural World Grammar and Reading Practice" },
+  { fileId: "1fmMbtoHaVHfIih5g96IwCM-tgro1_7ixB4DXQ3BxVuU", title: "Natural World Listening Skills" },
+  { fileId: "1zBdvLLxTv-IyQubeEQsMiYS12J1mDlX-WWq0hewKDbc", title: "Natural World Speaking and Pronunciation" },
+  { fileId: "1RNRdokW9WjT5BDhiFIMsAfjfA1uKxX1MCo5iJtJDv2Y", title: "Natural World Academic Writing Task 1" },
+  { fileId: "1yqSp7x-3SesAYgKHmIxyPaQ6IgXTsSgrwb0utDufdsI", title: "Natural World Academic Writing Task 2" },
+  { fileId: "1Yh0SmQfYmO6bGFgO1OFGzAFcrJWObA7CFAP4g-wKFBc", title: "Progress Check 2" },
+  { fileId: "1EobFCgYh1s180uRcb1Y8bfq3CUU73Gv0taw7yWnXmbY", title: "Listening and Reading Exam Workshop" },
+  { fileId: "18gJ_Lm2QHlqvalmi_YArIBhCz4jsd44-KdwPWNVR0R4", title: "Academic Writing Practice Test" },
+  { fileId: "1tZ_2eHKPSw70DZgqU7mZDGK3Hqs4bhJFGY0dqjUozlA", title: "Speaking Interview Workshop" },
+  { fileId: "1_3KzJoOVlAOXrGwThgcdk5NrhBoc1bbh-AZB6fSMbEA", title: "Error Clinic and Individual Repair" },
+  { fileId: "1c1k0Jkra048syUTYduN9ZGcgxA4KmGZRaRwDv8SK7PA", title: "Internal Listening and Reading Assessment" },
+  { fileId: "1JLPVVffL07fyxvp01dC1lZgRaAeJ0jh55TQAu6-lBWA", title: "Exit Portfolio and Next Steps" },
+];
+
+function deckSlug(prefix: string, n: number, title: string): string {
+  const words = title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `${prefix}-${String(n).padStart(2, "0")}-${words}`;
+}
+
 const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = [
   ...SLIDE_GRAMMAR_DECKS.map((deck, i) =>
     topic({
@@ -405,6 +477,20 @@ const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = [
       order: 100 + deck.n,
       title: loc(deck.title, deck.title),
       summary: loc(`IELTS 3.0–4.0 · Bài ${deck.n}`, `IELTS 3.0–4.0 · Lesson ${deck.n}`),
+      videoUrl: "",
+      slidesUrl: googleSlidesEmbed(deck.fileId),
+      theoryHtml: loc("", ""),
+      exercises: [],
+    }),
+  ),
+  ...IELTS_45_DECKS.map((deck, i) =>
+    topic({
+      slug: deckSlug("ielts45", i + 1, deck.title),
+      track: "grammar",
+      course: "ielts-4-5",
+      order: 200 + i + 1,
+      title: loc(deck.title, deck.title),
+      summary: loc(`IELTS 4.0–5.0 · Bài ${i + 1}`, `IELTS 4.0–5.0 · Lesson ${i + 1}`),
       videoUrl: "",
       slidesUrl: googleSlidesEmbed(deck.fileId),
       theoryHtml: loc("", ""),

@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ChevronLeft, ChevronRight, RotateCcw, Shuffle } from "lucide-react";
+import { ChevronLeft, ChevronRight, RotateCcw, Shuffle, Sparkles } from "lucide-react";
 import type { VocabWord } from "@/lib/learn/vocab-grammar-types";
 import { VocabAudioButton } from "@/components/learn/vocab-audio-button";
 import { useTranslations } from "@/i18n/provider";
@@ -85,11 +85,11 @@ export function VocabFlashcards({ words }: Props) {
     "absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-2xl border px-5 py-6 text-center [backface-visibility:hidden]";
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
       <div className="flex min-w-0 items-center gap-3">
         <div className="h-2 min-w-0 flex-1 overflow-hidden rounded-full bg-zinc-100">
           <div
-            className="h-full rounded-full bg-wewin-navy transition-all"
+            className="h-full rounded-full bg-gradient-to-r from-wewin-navy to-wewin-accent-blue transition-all duration-500"
             style={{ width: `${percent}%` }}
           />
         </div>
@@ -105,14 +105,15 @@ export function VocabFlashcards({ words }: Props) {
           onClick={() => setFlipped((f) => !f)}
           aria-label={t("flashcardFlip", "Lật thẻ")}
           aria-pressed={flipped}
-          className="relative block h-64 w-full cursor-pointer select-none rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wewin-navy sm:h-72"
+          className="relative block h-72 w-full cursor-pointer select-none rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wewin-navy sm:h-80"
         >
           <div
             className={`relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] ${
               flipped ? "[transform:rotateY(180deg)]" : ""
             }`}
           >
-            <div className={`${faceClass} border-zinc-200 bg-white shadow-sm`}>
+            <div className={`${faceClass} border-slate-200 bg-gradient-to-br from-white via-white to-slate-50 px-6 shadow-[0_12px_30px_rgba(13,27,62,0.08)]`}>
+              <span className="rounded-full bg-wewin-accent-blue-bg px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-wewin-navy"><Sparkles className="mr-1 inline h-3 w-3" />Vocabulary</span>
               <p className="max-w-full break-words text-2xl font-bold text-zinc-900 sm:text-3xl">
                 {entry.word}
                 {posLabel ? (
@@ -148,7 +149,7 @@ export function VocabFlashcards({ words }: Props) {
             </div>
 
             <div
-              className={`${faceClass} border-wewin-navy bg-wewin-navy text-white [transform:rotateY(180deg)]`}
+              className={`${faceClass} border-wewin-navy bg-gradient-to-br from-wewin-navy to-[#172c61] text-white [transform:rotateY(180deg)]`}
             >
               <p className="max-w-full break-words text-xl font-bold sm:text-2xl">
                 {entry.meaningVi}
@@ -171,13 +172,13 @@ export function VocabFlashcards({ words }: Props) {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-5">
         <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={toggleShuffle}
             aria-pressed={isShuffled}
-            className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-medium ${
+            className={`inline-flex items-center gap-1.5 rounded-lg border px-3.5 py-2 text-sm font-medium transition ${
               isShuffled
                 ? "border-wewin-navy bg-wewin-accent-blue-bg text-wewin-navy"
                 : "border-zinc-200 text-zinc-700 hover:bg-zinc-50"
@@ -189,7 +190,7 @@ export function VocabFlashcards({ words }: Props) {
           <button
             type="button"
             onClick={restart}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3.5 py-2 text-sm font-medium text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50"
           >
             <RotateCcw className="h-4 w-4" />
             {t("flashcardRestart", "Học lại")}
@@ -200,7 +201,7 @@ export function VocabFlashcards({ words }: Props) {
             type="button"
             onClick={() => go(-1)}
             disabled={index === 0}
-            className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 disabled:opacity-40"
+            className="inline-flex items-center gap-0.5 rounded-lg border border-zinc-200 bg-white px-3.5 py-2 text-sm font-medium text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50 disabled:opacity-40"
           >
             <ChevronLeft className="h-4 w-4" />
             {t("flashcardPrev", "Trước")}
@@ -209,7 +210,7 @@ export function VocabFlashcards({ words }: Props) {
             type="button"
             onClick={() => go(1)}
             disabled={index >= total - 1}
-            className="inline-flex items-center gap-0.5 rounded-lg bg-wewin-navy px-3 py-2 text-sm font-semibold text-white hover:bg-wewin-navy-hover disabled:opacity-40"
+            className="inline-flex items-center gap-0.5 rounded-lg bg-wewin-navy px-3.5 py-2 text-sm font-semibold text-white shadow-sm shadow-wewin-navy/20 transition hover:bg-wewin-navy-hover disabled:opacity-40"
           >
             {t("flashcardNext", "Tiếp")}
             <ChevronRight className="h-4 w-4" />

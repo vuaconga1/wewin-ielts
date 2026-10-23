@@ -93,6 +93,20 @@ export async function GET(_request: Request, context: Context) {
 <body>
   <div id="status"></div>
   <div id="meetingSDKElement"></div>
+  <script>
+    // Keep the classroom tab (teacher's private web panel) out of the share picker.
+    (function () {
+      var media = navigator.mediaDevices;
+      if (!media || typeof media.getDisplayMedia !== "function") return;
+      var original = media.getDisplayMedia.bind(media);
+      media.getDisplayMedia = function (options) {
+        return original(Object.assign({}, options || {}, {
+          selfBrowserSurface: "exclude",
+          preferCurrentTab: false
+        }));
+      };
+    })();
+  </script>
   <script src="https://source.zoom.us/${ZOOM_VERSION}/lib/vendor/react.min.js"></script>
   <script src="https://source.zoom.us/${ZOOM_VERSION}/lib/vendor/react-dom.min.js"></script>
   <script src="https://source.zoom.us/${ZOOM_VERSION}/lib/vendor/redux.min.js"></script>

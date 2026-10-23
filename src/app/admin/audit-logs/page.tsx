@@ -48,7 +48,7 @@ function roleLabel(role: AppRole): string {
 }
 
 function actionLabel(action: string): string {
-  const labels: Record<string, string> = { LOGIN: "Đăng nhập", LOGOUT: "Đăng xuất", TEST_START: "Bắt đầu làm test", USER_CREATE: "Tạo user", USER_UPDATE: "Sửa user", USER_PASSWORD_RESET: "Reset password", USER_ACCESS_UPDATE: "Cập nhật thời hạn", USER_DELETE: "Xóa user" };
+  const labels: Record<string, string> = { LOGIN: "Đăng nhập", LOGOUT: "Đăng xuất", TEST_START: "Bắt đầu làm test", USER_CREATE: "Tạo user", USER_UPDATE: "Sửa user", USER_PASSWORD_RESET: "Reset password", USER_ACCESS_UPDATE: "Cập nhật thời hạn", USER_DELETE: "Xóa user", CLASSROOM_JOIN: "Vào lớp Zoom", CLASSROOM_HOST_START: "Mở lớp Zoom (chủ trì)", CLASSROOM_PRESENTATION_UPDATE: "Đổi slide lớp học", CLASSROOM_CREATE: "Tạo lớp", CLASSROOM_UPDATE: "Sửa lớp", CLASSROOM_MEMBERS_UPDATE: "Cập nhật thành viên lớp", CLASS_SESSION_CREATE: "Tạo lịch học", CLASS_SESSION_UPDATE: "Sửa lịch học", CLASS_SESSION_DELETE: "Xóa lịch học", ZOOM_ACCOUNT_CREATE: "Thêm tài khoản Zoom", ZOOM_ACCOUNT_UPDATE: "Sửa tài khoản Zoom", ZOOM_ACCOUNT_DELETE: "Xóa tài khoản Zoom", ZOOM_HOST_LINK: "Chọn tài khoản Zoom chủ trì", ZOOM_HOST_UNLINK: "Bỏ tài khoản Zoom chủ trì" };
   return labels[action] ?? action;
 }
 
