@@ -77,10 +77,11 @@ export function invalidateDictationCatalog(slug?: string) {
   }
 }
 
+// Cached readers throw when the DB is unreachable (e.g. Neon cold start): unstable_cache and ISR
+// never store a thrown error, whereas a returned null/[] would be served as 404/empty for minutes.
 export const listPublishedDictations = unstable_cache(
   async (mode: DictationMode): Promise<DictationCatalogItem[]> => {
-    const repo = await getDictationRepo();
-    if (!repo) return [];
+    const repo = await requireRepo();
     const rows = await repo.listExercises(true);
     return rows
       .filter((r) => r.mode === mode)
@@ -96,8 +97,7 @@ export const listPublishedDictations = unstable_cache(
  */
 const getPublishedDictationRow = unstable_cache(
   async (slug: string) => {
-    const repo = await getDictationRepo();
-    if (!repo) return null;
+    const repo = await requireRepo();
     const row = await repo.findExercise({ slug });
     if (!row || row.status !== "PUBLISHED") return null;
     const fillBlank = row.mode === "FILL_BLANK";

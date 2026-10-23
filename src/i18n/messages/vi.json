@@ -660,6 +660,12 @@
     "database": "Cơ sở dữ liệu chưa sẵn sàng. Thử lại sau hoặc báo admin.",
     "timeout": "Yêu cầu quá lâu. Thử lại sau ít phút."
   },
+  "errorPage": {
+    "title": "Không tải được nội dung",
+    "desc": "Máy chủ đang bận hoặc mất kết nối tạm thời. Vui lòng thử lại sau vài giây.",
+    "retry": "Thử lại",
+    "backLearn": "Về trang học"
+  },
   "notFound": {
     "code": "404",
     "title": "Không tìm thấy trang",

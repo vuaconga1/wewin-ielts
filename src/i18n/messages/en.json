@@ -660,6 +660,12 @@
     "database": "Database is not ready. Try again later or contact an admin.",
     "timeout": "The request took too long. Try again in a few minutes."
   },
+  "errorPage": {
+    "title": "Could not load this content",
+    "desc": "The server is busy or briefly unreachable. Please try again in a few seconds.",
+    "retry": "Try again",
+    "backLearn": "Back to learning"
+  },
   "notFound": {
     "code": "404",
     "title": "Page not found",

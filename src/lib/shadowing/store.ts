@@ -84,10 +84,10 @@ function recordingAvailable(a: Pick<AttemptRecord, "recordingKey" | "recordingEx
 
 // ---------- Learner ----------
 
+// Throw (not null/[]) when the DB is unreachable so a transient outage is never cached as 404/empty.
 export const listPublishedShadowing = unstable_cache(
   async (): Promise<ShadowingCatalogItem[]> => {
-    const repo = await getShadowingRepo();
-    if (!repo) return [];
+    const repo = await requireRepo();
     const rows = await repo.listExercises(true);
     return rows.map(({ id, slug, title, level }) => ({ id, slug, title, level }));
   },
@@ -97,8 +97,7 @@ export const listPublishedShadowing = unstable_cache(
 
 const getPublishedShadowingRow = unstable_cache(
   async (slug: string) => {
-    const repo = await getShadowingRepo();
-    if (!repo) return null;
+    const repo = await requireRepo();
     const row = await repo.findExercise({ slug });
     if (!row || row.status !== "PUBLISHED") return null;
     return {
