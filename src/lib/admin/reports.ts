@@ -14,6 +14,9 @@ export type SkillProgress = {
   skill: ReportSkill;
   completedParts: number;
   totalParts: number;
+  /** A test counts as completed once every part of it has been finished. */
+  completedTests: number;
+  totalTests: number;
   average: number | null;
   weak: boolean;
   parts: PartProgress[];
@@ -90,10 +93,18 @@ export async function buildAdminReports(): Promise<UserReportRow[]> {
           : related.length ? "IN_PROGRESS" as const : "NOT_STARTED" as const;
         return { ...part, status, average: partAverage, attempts: finished };
       });
+      const partsByTest = new Map<string, PartProgress[]>();
+      for (const part of parts) {
+        const slug = part.key.slice(0, part.key.indexOf(":"));
+        partsByTest.set(slug, [...(partsByTest.get(slug) ?? []), part]);
+      }
+      const isDone = (part: PartProgress) => part.status === "COMPLETED" || part.status === "WEAK";
       return {
         skill,
-        completedParts: parts.filter((part) => part.status === "COMPLETED" || part.status === "WEAK").length,
+        completedParts: parts.filter(isDone).length,
         totalParts: parts.length,
+        completedTests: [...partsByTest.values()].filter((testParts) => testParts.every(isDone)).length,
+        totalTests: partsByTest.size,
         average,
         weak: isWeak(skill, average),
         parts,

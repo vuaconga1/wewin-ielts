@@ -1,5 +1,6 @@
 import { getCatalog } from "@/lib/learn/store";
 import { getVocabGrammarCatalog } from "@/lib/learn/vocab-grammar-store";
+import { IELTS_SLIDE_COURSES, topicCourse } from "@/lib/learn/vocab-grammar-types";
 import { SiteShell } from "@/components/layout/site-shell";
 import { LearnCoursePickerHydrated } from "@/components/learn/learn-course-picker-hydrated";
 import { getTranslationsStatic } from "@/i18n/server";
@@ -29,14 +30,23 @@ export default async function LearnCatalogPage() {
   }));
 
   const vocabGrammarTopics = [
-    ...vgCatalog.grammar.map((t) => ({ id: t.id })),
+    ...vgCatalog.grammar.filter((t) => topicCourse(t) === "basic").map((t) => ({ id: t.id })),
     ...vgCatalog.vocabulary.map((t) => ({ id: t.id })),
   ];
+
+  const ieltsCourses = IELTS_SLIDE_COURSES.map((course) => ({
+    course,
+    topicIds: vgCatalog.grammar
+      .filter((t) => topicCourse(t) === course)
+      .sort((a, b) => a.order - b.order)
+      .map((t) => t.id),
+  })).filter((c) => c.topicIds.length > 0);
 
   return (
     <SiteShell active="learn">
       <LearnCoursePickerHydrated
         courses={courses}
+        ieltsCourses={ieltsCourses}
         vocabGrammarTopics={vocabGrammarTopics}
       />
     </SiteShell>

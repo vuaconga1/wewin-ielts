@@ -15,7 +15,11 @@ import { TheoryPanel } from "@/components/learn/theory-panel";
 import { TopicSidebar } from "@/components/learn/topic-sidebar";
 import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
-import type { GrammarCourse, VocabGrammarTrack } from "@/lib/learn/vocab-grammar-types";
+import {
+  isRestrictedGrammarCourse,
+  type GrammarCourse,
+  type VocabGrammarTrack,
+} from "@/lib/learn/vocab-grammar-types";
 import { isTopicUnlocked } from "@/lib/learn/progress-utils";
 import {
   learnCatalogHref,
@@ -148,13 +152,17 @@ export function TopicLessonPlayer({
                 {t("catalogTitle", "Chọn khóa học")}
               </Link>
               <span className="text-zinc-400">›</span>
-              <Link
-                href={learnVocabGrammarHref()}
-                className="hover:text-wewin-navy hover:underline shrink-0"
-              >
-                {t("vocabGrammarCard", "Từ vựng và ngữ pháp")}
-              </Link>
-              <span className="text-zinc-400">›</span>
+              {course && isRestrictedGrammarCourse(course) ? null : (
+                <>
+                  <Link
+                    href={learnVocabGrammarHref()}
+                    className="hover:text-wewin-navy hover:underline shrink-0"
+                  >
+                    {t("vocabGrammarCard", "Từ vựng và ngữ pháp")}
+                  </Link>
+                  <span className="text-zinc-400">›</span>
+                </>
+              )}
               <Link
                 href={trackHref}
                 className="hover:text-wewin-navy hover:underline shrink-0"

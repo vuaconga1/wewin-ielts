@@ -16,8 +16,16 @@ import { DEFAULT_DICTATION_SETTINGS, type FillBlankGap } from "../src/lib/dictat
 import { loadWewinLessons, publishLessonAudio, type WewinLesson } from "./lib/wewin-lessons";
 
 const DRY_RUN = process.argv.includes("--dry-run");
+const SLUG = process.argv.find((a) => a.startsWith("--slug="))?.slice("--slug=".length);
 
-function buildGaps({ transcript, spans }: WewinLesson): FillBlankGap[] {
+const EXTRA_ACCEPTED_ANSWERS: Record<string, Record<string, string[]>> = {
+  "wewin-basic-01": {
+    g10: ["more glamorous", "to be more glamorous", "more glamour", "to be more glamour"],
+  },
+};
+
+function buildGaps(lesson: WewinLesson): FillBlankGap[] {
+  const { transcript, spans } = lesson;
   const tokens = tokenizeTranscript(transcript);
   let offset = 0;
   const tokenStarts = tokens.map((t) => {
@@ -30,15 +38,19 @@ function buildGaps({ transcript, spans }: WewinLesson): FillBlankGap[] {
     let endToken = startToken;
     while (endToken < tokens.length && tokenStarts[endToken] < span.end) endToken++;
     const expected = transcript.slice(tokens[startToken].coreStart, tokens[endToken - 1].coreEnd);
-    return normalizeAnswer(expected) === normalizeAnswer(span.answer)
-      ? { id: span.id, startToken, endToken }
-      : { id: span.id, startToken, endToken, acceptedAnswers: [span.answer] };
+    const extra = EXTRA_ACCEPTED_ANSWERS[lesson.slug]?.[span.id] ?? [];
+    const baseAccepted = normalizeAnswer(expected) === normalizeAnswer(span.answer) ? [] : [span.answer];
+    const acceptedAnswers = Array.from(new Set([...baseAccepted, ...extra]));
+    return acceptedAnswers.length
+      ? { id: span.id, startToken, endToken, acceptedAnswers }
+      : { id: span.id, startToken, endToken };
   });
   return validateGaps(gaps, transcript);
 }
 
 async function main() {
-  const lessons = await loadWewinLessons();
+  let lessons = await loadWewinLessons();
+  if (SLUG) lessons = lessons.filter((l) => l.slug === SLUG);
   const built = lessons.map((lesson) => ({ lesson, gaps: buildGaps(lesson) }));
   console.log(`Parsed ${built.length} lesson(s).`);
 

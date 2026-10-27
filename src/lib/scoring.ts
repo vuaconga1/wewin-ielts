@@ -6,13 +6,15 @@ import {
   buildMultiSelectPairMap,
   type MultiSelectContent,
 } from "@/lib/practice/multi-select";
+import { canonicalizeSpelling } from "@/lib/spelling-variants";
 
 export function normalizeForCompare(value: unknown): string {
-  return String(value ?? "")
+  const base = String(value ?? "")
     .trim()
     .toLowerCase()
     .replace(/\s+/g, " ")
     .replace(/[’']/g, "'");
+  return canonicalizeSpelling(base);
 }
 
 /** Map sheet abbreviations ↔ full forms */

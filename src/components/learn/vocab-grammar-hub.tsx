@@ -69,11 +69,7 @@ export function VocabGrammarHub({ tracks }: Props) {
               );
           const done = row.completed === row.total && row.total > 0;
           const href = learnVocabGrammarTrackHref(row.track);
-          const cta = done
-            ? t("review", "Ôn lại →")
-            : isVocabulary
-              ? t("browseTopics", "Chọn chủ đề →")
-              : t("browseCourses", "Chọn khóa học →");
+          const cta = done ? t("review", "Ôn lại →") : t("browseTopics", "Chọn chủ đề →");
 
           return (
             <Link

@@ -4,11 +4,12 @@ import { getProgress } from "@/lib/learn/store";
 import { getGrammarCourseTopics, getTopicBySlug } from "@/lib/learn/vocab-grammar-store";
 import { toPublicTopic, toPublicTopicMeta } from "@/lib/learn/vocab-grammar-public";
 import {
+  grammarCourseLabel,
   isRestrictedGrammarCourse,
   pickLocalized,
   topicCourse,
 } from "@/lib/learn/vocab-grammar-types";
-import { learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
+import { learnCatalogHref, learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
 import { getViewerRole } from "@/lib/auth";
 import { canViewIeltsGrammar } from "@/lib/auth/roles";
 import { SiteShell } from "@/components/layout/site-shell";
@@ -64,7 +65,7 @@ export default async function GrammarTopicPage({ params }: Props) {
             }
             cta={
               role
-                ? { href: learnVocabGrammarTrackHref("grammar"), label: t("learn.backCurriculum") }
+                ? { href: learnCatalogHref(), label: t("learn.backCatalog", "← Tất cả khóa học") }
                 : {
                     href: `/login?next=${encodeURIComponent(courseHref)}`,
                     label: t("learn.loginToView", "Đăng nhập"),
@@ -85,12 +86,7 @@ export default async function GrammarTopicPage({ params }: Props) {
   const idx = ordered.findIndex((tpc) => tpc.slug === topicSlug);
   const prev = idx > 0 ? ordered[idx - 1] : undefined;
   const next = idx >= 0 ? ordered[idx + 1] : undefined;
-  const courseLabel =
-    course === "ielts-3-4"
-      ? t("learn.grammarCourseIelts34", "Ngữ pháp IELTS 3.0–4.0")
-      : course === "ielts-4-5"
-        ? t("learn.grammarCourseIelts45", "Ngữ pháp IELTS 4.0–5.0")
-        : t("learn.grammarCourseBasic", "Ngữ pháp cơ bản");
+  const courseLabel = grammarCourseLabel(course, t);
 
   return (
     <SiteShell active="learn" wide fitScreen noFooter>

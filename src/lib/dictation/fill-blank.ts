@@ -4,6 +4,7 @@
  * Client-safe (no server imports) so the admin editor can share the tokenizer.
  */
 
+import { canonicalizeSpelling } from "@/lib/spelling-variants";
 import type {
   FillBlankGap,
   FillBlankGapResult,
@@ -47,9 +48,9 @@ export function tokenizeTranscript(transcript: string): TranscriptToken[] {
   return out;
 }
 
-/** Case, surrounding spaces and common punctuation are ignored; contractions are not expanded. */
+/** Case, surrounding spaces, common punctuation and US/UK spelling variants are normalized; contractions are not expanded. */
 export function normalizeAnswer(text: string): string {
-  return text
+  const cleaned = text
     .normalize("NFKC")
     .toLowerCase()
     .replace(/[’‘`´']/g, "")
@@ -57,6 +58,7 @@ export function normalizeAnswer(text: string): string {
     .replace(/[.,!?:;"“”«»()[\]{}…]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+  return canonicalizeSpelling(cleaned);
 }
 
 export function gapExpected(

@@ -215,11 +215,10 @@ export function ShadowingAudioPlayer({
               type="button"
               onClick={togglePlay}
               aria-label={playing ? "Tạm dừng" : "Phát audio"}
-              className={`flex h-11 w-11 items-center justify-center rounded-xl font-medium text-white shadow-sm transition-all active:scale-95 ${
-                playing
+              className={`flex h-11 w-11 items-center justify-center rounded-xl font-medium text-white shadow-sm transition-all active:scale-95 ${playing
                   ? "bg-slate-900 hover:bg-slate-800 ring-2 ring-slate-900/20"
                   : "bg-wewin-navy hover:bg-wewin-navy-hover ring-2 ring-wewin-navy/20"
-              }`}
+                }`}
             >
               {playing ? (
                 <Pause className="h-5 w-5 fill-current" />
@@ -249,11 +248,10 @@ export function ShadowingAudioPlayer({
                   key={rate}
                   type="button"
                   onClick={() => changeSpeed(rate)}
-                  className={`rounded-lg px-2 py-1 text-xs font-semibold transition-all ${
-                    speed === rate
+                  className={`rounded-lg px-2 py-1 text-xs font-semibold transition-all ${speed === rate
                       ? "bg-white text-wewin-navy shadow-2xs"
                       : "text-slate-600 hover:text-slate-900"
-                  }`}
+                    }`}
                 >
                   {rate}x
                 </button>

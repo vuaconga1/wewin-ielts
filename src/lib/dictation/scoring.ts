@@ -11,6 +11,8 @@ import {
   type DictationWordResult,
 } from "@/lib/dictation/types";
 
+import { canonicalizeSpelling } from "@/lib/spelling-variants";
+
 export type DictationToken = {
   /** Original text as typed / written in the transcript (for display). */
   raw: string;
@@ -23,12 +25,13 @@ const APOSTROPHES = /[’‘`´]/g;
 const DASHES = /[-–—]+/;
 
 export function normalizeWord(raw: string): string {
-  return raw
+  const norm = raw
     .normalize("NFKC")
     .toLowerCase()
     .replace(APOSTROPHES, "'")
     .replace(PUNCTUATION, "")
     .replace(/^'+|'+$/g, "");
+  return canonicalizeSpelling(norm);
 }
 
 /** Split on whitespace and dashes; drop tokens that are only punctuation. */

@@ -6,8 +6,6 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { VocabGrammarHub } from "@/components/learn/vocab-grammar-hub";
 import { getTranslations } from "@/i18n/server";
 import { topicCourse } from "@/lib/learn/vocab-grammar-types";
-import { getViewerRole } from "@/lib/auth";
-import { canViewIeltsGrammar } from "@/lib/auth/roles";
 
 export const dynamic = "force-dynamic";
 
@@ -20,17 +18,15 @@ export async function generateMetadata() {
 
 export default async function VocabGrammarHubPage() {
   const ownerKey = await getLearnOwnerKey();
-  const [progress, fullCatalog, role] = await Promise.all([
+  const [progress, fullCatalog] = await Promise.all([
     getProgress(ownerKey),
     getVocabGrammarCatalog(),
-    getViewerRole(),
   ]);
-  const catalog = canViewIeltsGrammar(role)
-    ? fullCatalog
-    : {
-        ...fullCatalog,
-        grammar: fullCatalog.grammar.filter((tpc) => topicCourse(tpc) === "basic"),
-      };
+  // IELTS slide courses are listed separately on /learn.
+  const catalog = {
+    ...fullCatalog,
+    grammar: fullCatalog.grammar.filter((tpc) => topicCourse(tpc) === "basic"),
+  };
 
   const tracks = (["grammar", "vocabulary"] as const).map((track) => {
     const stats = trackProgressStats(catalog[track], progress);

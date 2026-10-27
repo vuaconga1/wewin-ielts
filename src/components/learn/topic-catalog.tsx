@@ -12,7 +12,6 @@ import {
   learnCatalogHref,
   learnVocabGrammarHref,
   learnVocabGrammarTopicHref,
-  learnVocabGrammarTrackHref,
   learnVocabTopicLearnHref,
 } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
@@ -26,6 +25,8 @@ type Props = {
   toolbar?: ReactNode;
   /** Replaces the topic grid when the viewer may not open this course. */
   lockedPanel?: ReactNode;
+  /** Standalone IELTS courses sit directly under the course catalog. */
+  parent?: "vocab-grammar" | "catalog";
 };
 
 export function TopicCatalog({
@@ -35,31 +36,39 @@ export function TopicCatalog({
   progress,
   toolbar,
   lockedPanel,
+  parent = "vocab-grammar",
 }: Props) {
   const { t, locale } = useTranslations("learn");
   const isVocabulary = track === "vocabulary";
+  const underCatalog = parent === "catalog";
 
   return (
     <div className="space-y-4">
       <header className="min-w-0">
         <Link
-          href={learnVocabGrammarHref()}
+          href={underCatalog ? learnCatalogHref() : learnVocabGrammarHref()}
           className="text-sm font-medium text-wewin-navy hover:underline"
         >
-          {t("backVocabGrammar", "← Từ vựng và ngữ pháp")}
+          {underCatalog
+            ? t("backCatalog", "← Tất cả khóa học")
+            : t("backVocabGrammar", "← Từ vựng và ngữ pháp")}
         </Link>
         <nav className="mt-2 text-xs text-zinc-500 sm:text-sm">
           <Link href={learnCatalogHref()} className="hover:text-wewin-navy hover:underline">
             {t("catalogTitle", "Chọn khóa học")}
           </Link>
           <span className="mx-1.5">›</span>
-          <Link
-            href={learnVocabGrammarHref()}
-            className="hover:text-wewin-navy hover:underline"
-          >
-            {t("vocabGrammarCard", "Từ vựng và ngữ pháp")}
-          </Link>
-          <span className="mx-1.5">›</span>
+          {underCatalog ? null : (
+            <>
+              <Link
+                href={learnVocabGrammarHref()}
+                className="hover:text-wewin-navy hover:underline"
+              >
+                {t("vocabGrammarCard", "Từ vựng và ngữ pháp")}
+              </Link>
+              <span className="mx-1.5">›</span>
+            </>
+          )}
           <span className="font-medium text-zinc-800">{trackLabel}</span>
         </nav>
         <h1 className="mt-2 break-words text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">

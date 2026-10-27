@@ -113,16 +113,21 @@ function pointsFromCorrect(correct: number): number {
   return Math.max(0, Math.trunc(correct)) * POINTS_PER_CORRECT;
 }
 
+/** Learners are shown by full name; the student code (username) is the fallback. */
+function displayName(u: { username: string; fullName?: string | null }): string {
+  return u.fullName?.trim() || u.username;
+}
+
 async function loadUserMap(): Promise<Map<string, UserLite>> {
   const map = new Map<string, UserLite>();
 
   if (await canUsePrisma()) {
     try {
       const users = await prisma.user.findMany({
-        select: { id: true, username: true },
+        select: { id: true, username: true, fullName: true },
       });
       for (const u of users) {
-        map.set(u.id, { id: u.id, username: u.username });
+        map.set(u.id, { id: u.id, username: displayName(u) });
       }
     } catch {
       /* ignore — fall through to local */
@@ -132,7 +137,7 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
   const local = await listLocalUsers();
   for (const u of local) {
     if (!map.has(u.id)) {
-      map.set(u.id, { id: u.id, username: u.username });
+      map.set(u.id, { id: u.id, username: displayName(u) });
     }
   }
 
@@ -401,7 +406,7 @@ function getCachedRankingBoard(
 ): Promise<RankingBoard> {
   return unstable_cache(
     () => computeRankingBoard(period, year, month, day),
-    ["ranking-board", period, String(year), String(month), String(day)],
+    ["ranking-board-v2", period, String(year), String(month), String(day)],
     { revalidate: RANKING_REVALIDATE_SEC },
   )();
 }

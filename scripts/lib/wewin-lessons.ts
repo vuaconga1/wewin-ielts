@@ -20,6 +20,8 @@ export const LEVELS = [
 const ANSWER_FIXES: Record<string, string> = {
   "Some dairy prducts": "Some dairy products",
   "bondong time": "bonding time",
+  "Pick up tennis": "Pick up tennis balls",
+  "Teaches my loyalty": "Teaches me loyalty",
 };
 
 /** Words that keep their capital letter when the blank sits mid-sentence. */

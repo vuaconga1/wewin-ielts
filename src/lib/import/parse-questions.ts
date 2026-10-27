@@ -97,7 +97,7 @@ function detectTaskType(instructionBlock: string): TaskHint {
     return "TABLE_COMPLETION";
   }
   if (
-    /which paragraph contains|which section contains|choose.*(from the box|FOUR answers|THREE answers)|list of words|list of researchers|list of (dates|people|olympic)|match each\b|write the correct letter,?\s*a\s*[-–—]\s*[a-k]|matching the each correct year|match.*year/i.test(
+    /which paragraph contains|which section contains|choose.*(from the box|FOUR answers|THREE answers)|list of words|list of researchers|list of (dates|people|olympic)|match each\b|correct ending|sentence.*ending|write the correct letter,?\s*a\s*[-–—]\s*[a-z]|matching the each correct year|match.*year/i.test(
       t,
     )
   ) {
@@ -237,7 +237,7 @@ function parseIeltsStyleQuestions(body: string): QuestionDraft[] {
 
     const rangeBank = letterRangeBank(text);
     let bank = extractLetterBank(block.lines);
-    if (rangeBank.length && bank.length && bank.every((b) => /^[A-K]$/.test(b.label))) {
+    if (rangeBank.length && bank.length && bank.every((b) => /^[A-Z]$/.test(b.label))) {
       const allowed = new Set(rangeBank.map((b) => b.label));
       bank = bank.filter((b) => allowed.has(b.label));
     }
@@ -555,7 +555,7 @@ function fillUnnumberedTfngStatements(
     const t = line.trim();
     if (!t || isLikelyInstructionLine(t)) continue;
     if (/^\d{1,2}[.)]?\s+/.test(t)) continue;
-    if (/^[A-K][.)]\s+/.test(t)) continue;
+    if (/^[A-Z][.)]\s+/.test(t)) continue;
     if (t.length < 20) continue;
     if (!/^[A-Z“"']/.test(t)) continue;
     statements.push(t);
@@ -598,11 +598,11 @@ function fillUnnumberedMatchingLabels(
       continue;
     }
     // Skip bank entries "A. the realistic colours"
-    if (/^[A-K][.)]\s+/.test(t) && t.length > 20) continue;
+    if (/^[A-Z][.)]\s+/.test(t) && t.length > 20) continue;
     // Strip teacher-filled trailing letter
     t = t.replace(/\s+[A-F]\s*$/i, "").trim();
     if (t.length < 3 || t.length > 60) continue;
-    if (/^[A-K]$/i.test(t)) continue;
+    if (/^[A-Z]$/i.test(t)) continue;
     labels.push(t);
   }
 
@@ -629,7 +629,7 @@ function inRange(
 
 /** "Write the correct letter, A–G" with no printed list (paragraph / section matching). */
 function letterRangeBank(text: string): { label: string; text: string }[] {
-  const m = text.match(/correct letter,?\s*A\s*[-–—]\s*([B-K])\b/i);
+  const m = text.match(/correct letter,?\s*A\s*[-–—]\s*([B-Z])\b/i);
   if (!m) return [];
   const last = m[1]!.toUpperCase().charCodeAt(0);
   const bank: { label: string; text: string }[] = [];
@@ -654,31 +654,36 @@ function extractLetterBank(
   lines: string[],
 ): { label: string; text: string }[] {
   const bank: { label: string; text: string }[] = [];
+  let hasRoman = false;
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i]!.trim();
     // Roman-numeral heading bank: "i. Fluctuations…" / "viii Determining…"
     const roman =
-      t.match(/^([ivxlcdm]{1,6})[.)]\s+(.+)$/i) ??
-      t.match(/^(i{1,3}|iv|vi{0,3}|ix|xi{0,3})\s+([A-Z].*)$/);
+      t.match(/^(i{1,3}|iv|vi{0,3}|ix|x|xi{0,3}|xii)[.)]\s+(.+)$/i) ??
+      t.match(/^(i{1,3}|iv|vi{0,3}|ix|x|xi{0,3}|xii)\s+([A-Z].*)$/);
     if (roman) {
       bank.push({
         label: roman[1]!.toLowerCase(),
         text: roman[2]!.trim(),
       });
+      hasRoman = true;
       continue;
     }
-    const sameLine = t.match(/^([A-K])\s+(.+)$/);
+    if (hasRoman) {
+      continue;
+    }
+    const sameLine = t.match(/^([A-Z])[.)]?\s+(.+)$/);
     if (sameLine) {
       bank.push({ label: sameLine[1]!, text: sameLine[2]!.trim() });
       continue;
     }
     // Mammoth often splits "A" and "form and function" onto separate lines
-    const letterOnly = t.match(/^([A-K])$/);
+    const letterOnly = t.match(/^([A-Z])$/);
     if (letterOnly) {
       let j = i + 1;
       while (j < lines.length && !lines[j]!.trim()) j += 1;
       const next = lines[j]?.trim() ?? "";
-      if (next && !/^[A-K]$/.test(next) && !/^\d/.test(next)) {
+      if (next && !/^[A-Z]$/.test(next) && !/^\d/.test(next) && next.length < 150) {
         bank.push({ label: letterOnly[1]!, text: next });
       }
     }
@@ -951,7 +956,7 @@ function extractNumberedStatements(
       .reverse()
       .find((l) => l.trim())
       ?.trim();
-    if (prevNonEmpty && /^[A-K]$/.test(prevNonEmpty)) continue;
+    if (prevNonEmpty && /^[A-Z]$/.test(prevNonEmpty)) continue;
 
     const rawStem = m[2]!.trim();
     const stem = rawStem

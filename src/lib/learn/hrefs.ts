@@ -41,6 +41,11 @@ export function learnVocabGrammarTrackHref(
     : base;
 }
 
+/** IELTS slide courses reuse the grammar topic routes but are listed on /learn. */
+export function learnIeltsCourseHref(course: GrammarCourse): string {
+  return learnVocabGrammarTrackHref("grammar", course);
+}
+
 export function learnVocabGrammarTopicHref(
   track: VocabGrammarTrack,
   slug: string,

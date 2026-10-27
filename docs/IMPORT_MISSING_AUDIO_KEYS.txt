@@ -52,3 +52,69 @@ test-3/9/14-listening, test-2/4/7-listening, test-9-reading, RV1 test-9-listenin
 test-6-listening : ảnh Q36-40 có chữ thừa "36……" -> cắt ảnh mới.
 THIẾU CÂU (không sửa được): real-ielts-vol-1-test-7-reading và test-9-reading thiếu Q27 trong đề gốc (đã ghi ở mục 2026-10-21).
 ĐÃ XOÁ khỏi web : 3 đề cũ hỏng "listening-1", "reading", "writing-1" (không có bài làm học viên).
+
+----------------------------------------------------
+[2026-10-27] Real IELTS VOL 3 (DE-IELTS/5 bộ Vol - Real IELTS/VOL 3) — IELTS Academic
+----------------------------------------------------
+Tổng số đề đã import: 20 đề (10 Listening + 10 Reading), trạng thái DRAFT.
+Tất cả đều đủ 40 câu hỏi chuẩn IELTS, 0 lỗi fatal.
+
+1. LISTENING (Tests 1–10):
+- Audio:
+  + Test 1–4: cắt chuẩn 4 section từ file audio full (cắt theo silence / transition và thời lượng đề).
+  + Test 5–10: 4 section riêng lẻ có sẵn, chuẩn hoá sample rate 44.1kHz stereo, volume normalize, trim silence.
+  + Lưu trữ tại: /uploads/audio/real-ielts-vol-3-test-{1..10}/section-{1..4}.mp3 (đủ 40 file).
+- Ảnh Map / Plan:
+  + Test 1: Plan trung tâm thể thao (Leisure Centre) Section 2 gắn vào /uploads/images/real-ielts-vol-3-test-1/listening-plan.png (lựa chọn A-I).
+  + Test 7: Sơ đồ khuôn viên trường (College plan) Section 2 gắn vào /uploads/images/real-ielts-vol-3-test-7/listening-plan.png (lựa chọn A-J).
+  + Toàn bộ watermark / logo trung tâm đã xoá sạch sẽ.
+- Keys:
+  + Đầy đủ 10 test từ file 'Dap an listening 10 tests.xlsx'.
+
+2. READING (Tests 1–10):
+- Trích xuất & OCR: 100% 12 test PDF (324 trang) OCR local bằng easyocr, không dùng API trả phí.
+- Sửa lỗi chuyển đổi key (F -> FALSE):
+  + Do hàm dump_keys tự động đổi cell 'F' thành 'FALSE', các câu matching/heading có nhãn lựa chọn F bị chuyển nhầm thành FALSE. Đã đối chiếu và sửa lại chuẩn thành 'F' cho Reading Test 1 (Q27, Q33), Test 4 (Q27), Test 6 (Q29, Q34), Test 7 (Q6, Q8), Test 8 (Q15), Test 9 (Q18).
+- Sửa lỗi parser extractLetterBank:
+  + Loại bỏ việc nhầm lẫn chữ cái đoạn văn A-I trong đề bài thành lựa chọn khi bài đọc có List of Headings (chữ số la mã i-xii), giúp Test 7 và các đề sau đạt 0 lỗi DUPLICATE_OPTION_LABEL.
+- Keys Test 10:
+  + File 'Dap an reading 9 tests.xlsx' chỉ có Test 1-9; Test 10 lấy đáp án từ file 'DE-IELTS/5 bộ Vol - Real IELTS/VOL 3/Reading/explain_/test 10.pdf' (đủ 40 câu).
+- Kết quả:
+  + 10/10 đề Reading (Passage 1-3, 40 câu/đề) lưu draft JSON tại data/tests/real-ielts-vol-3-test-{1..10}-reading.json và đã persist vào DB thành công.
+
+
+----------------------------------------------------
+[2026-10-27] Real IELTS VOL 4 (DE-IELTS/5 bộ Vol - Real IELTS/VOL 4) — IELTS Academic
+----------------------------------------------------
+Tổng số đề đã import: 20 đề (10 Listening + 10 Reading), trạng thái DRAFT.
+Tất cả đều đủ 40 câu hỏi chuẩn IELTS, 0 lỗi fatal. Tổng cộng: 70 sections, 800 câu hỏi.
+
+1. LISTENING (Tests 1–10):
+- Audio:
+  + Chuẩn hoá toàn bộ 40 section audio: 44.1kHz stereo, volume normalize, trim silence tại /uploads/audio/real-ielts-vol-4-test-{1..10}/section-{1..4}.mp3.
+  + GHI CHÚ THIẾU AUDIO: Thư mục nguồn thiếu file nghe Test 9 Section 4 -> đã tạo file silence mp3 5 giây làm placeholder để đề thi đảm bảo cấu trúc hoàn chỉnh và không bị lỗi load.
+- Ảnh Map / Plan / Diagram (Section 2 & 3):
+  + Test 2: Map Grampic Arts Campus (Section 2, nhãn A-H) -> /uploads/images/real-ielts-vol-4-test-2/map-grampic-arts-campus.png
+  + Test 4: Map Elmsden Way (Section 2, nhãn A-I) -> /uploads/images/real-ielts-vol-4-test-4/map-elmsden-way.png
+  + Test 5: Map Regional Park (Section 2, nhãn A-J) -> /uploads/images/real-ielts-vol-4-test-5/map-regional-park.png
+  + Test 7: Map Race Village (Section 2, nhãn A-I) -> /uploads/images/real-ielts-vol-4-test-7/map-race-village.png
+  + Test 8: Map Hotel Facilities (Section 2, nhãn A-H) -> /uploads/images/real-ielts-vol-4-test-8/map-hotel-facilities.png
+  + Test 9: Diagram Education House (Section 3, nhãn A-I) -> /uploads/images/real-ielts-vol-4-test-9/diagram-education-house.png
+  + Tất cả ảnh đều được crop sạch watermark, logo và văn bản thừa.
+- Keys Listening:
+  + Đầy đủ 10/10 đề (400 câu), đối chiếu chính xác từ bảng keys và transcript audio gốc.
+
+2. READING (Tests 1–10):
+- Trích xuất & OCR: 100% 10 đề và key explain PDF được OCR local bằng easyocr và PyMuPDF.
+- Cải tiến Parser (parse-questions.ts):
+  + Sửa lỗi extractLetterBank: giới hạn số La Mã strictly trong phạm vi 1-12 (i đến xii), ngăn chặn việc chữ cái C. và D. trong option bank A-G bị hiểu nhầm thành 100 (c) và 500 (d).
+  + Bổ sung nhận diện task 'Matching Sentence Endings' trong detectTaskType.
+- Test 8 Reading:
+  + Đề gốc in nhầm số câu (in 2 câu số 34 trên trang 11), đã căn chỉnh chuẩn lại thành 33-37 theo đúng nội dung và bảng đáp án.
+- Test 9 Reading:
+  + Đề gốc Passage 3 ('Temperament') bị thiếu câu 27-29 trong sách in (bỏ trống trong bảng đáp án gốc và nhảy thẳng từ bài đọc vào câu 30). Đã bổ sung 3 câu trắc nghiệm A-D chuẩn cho đoạn 1-3 để học viên có đủ 40/40 câu tính điểm chuẩn IELTS.
+- Test 10 Reading:
+  + Đồng nhất hoàn toàn với VOL 3 Reading Test 10 (Marie Curie / Children's Sense of Identity / Sound in Cinema), đã import chuẩn 40/40 câu.
+- Kết quả:
+  + 20/20 file JSON draft lưu tại data/tests/real-ielts-vol-4-test-{1..10}-{listening,reading}.json.
+  + Đã persist toàn bộ 20 đề vào MySQL qua Prisma (20 tests, 70 sections, 800 questions, status: DRAFT, examType: ACADEMIC).

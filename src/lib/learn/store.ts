@@ -15,6 +15,7 @@ import type {
 } from "@/lib/learn/types";
 import { LEARN_SKILLS, isLearnSkill } from "@/lib/learn/types";
 import { isAnswerCorrect } from "@/lib/scoring";
+import { canonicalizeSpelling } from "@/lib/spelling-variants";
 import {
   isLessonUnlocked,
   skillProgressStats,
@@ -633,7 +634,7 @@ export async function markTopicComplete(input: {
 }
 
 export function normalizeAnswer(value: string): string {
-  return value.trim().toLowerCase().replace(/\s+/g, " ");
+  return canonicalizeSpelling(value.trim().toLowerCase().replace(/\s+/g, " "));
 }
 
 export function checkExerciseAnswer(

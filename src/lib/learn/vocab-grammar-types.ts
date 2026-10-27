@@ -4,11 +4,30 @@ export const VOCAB_GRAMMAR_TRACKS = ["vocabulary", "grammar"] as const;
 export type VocabGrammarTrack = (typeof VOCAB_GRAMMAR_TRACKS)[number];
 
 /** Independent slide courses inside the grammar track. */
-export const GRAMMAR_COURSES = ["basic", "ielts-3-4", "ielts-4-5"] as const;
+export const GRAMMAR_COURSES = ["basic", "ielts-3-4", "ielts-4-5", "ielts-5-6"] as const;
 export type GrammarCourse = (typeof GRAMMAR_COURSES)[number];
+
+/** IELTS slide courses, listed as standalone courses on /learn (not under grammar). */
+export const IELTS_SLIDE_COURSES = ["ielts-3-4", "ielts-4-5", "ielts-5-6"] as const;
+export type IeltsSlideCourse = (typeof IELTS_SLIDE_COURSES)[number];
 
 export function isGrammarCourse(value: unknown): value is GrammarCourse {
   return (GRAMMAR_COURSES as readonly unknown[]).includes(value);
+}
+
+type Translate = (key: string, fallback: string) => string;
+
+export function grammarCourseLabel(course: GrammarCourse, t: Translate): string {
+  switch (course) {
+    case "ielts-3-4":
+      return t("learn.grammarCourseIelts34", "Khóa IELTS 3.0–4.0");
+    case "ielts-4-5":
+      return t("learn.grammarCourseIelts45", "Khóa IELTS 4.0–5.0");
+    case "ielts-5-6":
+      return t("learn.grammarCourseIelts56", "Khóa IELTS 5.0–6.0");
+    default:
+      return t("learn.grammarCourseBasic", "Ngữ pháp cơ bản");
+  }
 }
 
 /** Courses open only to class members and staff (see `canViewIeltsGrammar`). */

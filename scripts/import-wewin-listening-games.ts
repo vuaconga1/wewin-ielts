@@ -27,6 +27,7 @@ import {
 } from "./lib/wewin-lessons";
 
 const DRY_RUN = process.argv.includes("--dry-run");
+const SLUG = process.argv.find((a) => a.startsWith("--slug="))?.slice("--slug=".length);
 const ONLY = process.argv
   .find((a) => a.startsWith("--only="))
   ?.slice("--only=".length)
@@ -52,7 +53,8 @@ async function loadQuestions(lesson: WewinLesson): Promise<ListenQuestion[] | nu
 }
 
 async function main() {
-  const lessons = await loadWewinLessons();
+  let lessons = await loadWewinLessons();
+  if (SLUG) lessons = lessons.filter((l) => l.slug === SLUG);
   console.log(`Parsed ${lessons.length} lesson(s).`);
   const questions = new Map<string, ListenQuestion[]>();
   for (const lesson of lessons) {

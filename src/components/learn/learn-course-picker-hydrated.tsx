@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import {
   LearnCoursePicker,
   type CourseCard,
+  type IeltsCourseCard,
   type VocabGrammarCard,
 } from "@/components/learn/learn-course-picker";
 import {
@@ -11,6 +12,7 @@ import {
   trackProgressStats,
 } from "@/lib/learn/progress-utils";
 import type { LearnProgressStore } from "@/lib/learn/types";
+import type { IeltsSlideCourse } from "@/lib/learn/vocab-grammar-types";
 
 type CourseSeed = {
   id: string;
@@ -22,16 +24,20 @@ type CourseSeed = {
 
 type TopicSeed = { id: string };
 
+type IeltsCourseSeed = { course: IeltsSlideCourse; topicIds: string[] };
+
 type Props = {
   courses: CourseSeed[];
+  ieltsCourses: IeltsCourseSeed[];
   vocabGrammarTopics: TopicSeed[];
 };
 
 function toCards(
   courses: CourseSeed[],
+  ieltsCourses: IeltsCourseSeed[],
   topics: TopicSeed[],
   progress: LearnProgressStore | null,
-): { courses: CourseCard[]; vocabGrammar: VocabGrammarCard } {
+): { courses: CourseCard[]; ieltsCourses: IeltsCourseCard[]; vocabGrammar: VocabGrammarCard } {
   const empty: LearnProgressStore = {
     ownerKey: "guest_pending",
     lessons: {},
@@ -53,6 +59,10 @@ function toCards(
         percent: stats.percent,
       };
     }),
+    ieltsCourses: ieltsCourses.map(({ course, topicIds }) => ({
+      course,
+      ...trackProgressStats(topicIds.map((id, i) => ({ id, order: i })), p),
+    })),
     vocabGrammar: trackProgressStats(topicRows, p),
   };
 }
@@ -62,10 +72,11 @@ function toCards(
  */
 export function LearnCoursePickerHydrated({
   courses,
+  ieltsCourses,
   vocabGrammarTopics,
 }: Props) {
   const [cards, setCards] = useState(() =>
-    toCards(courses, vocabGrammarTopics, null),
+    toCards(courses, ieltsCourses, vocabGrammarTopics, null),
   );
 
   useEffect(() => {
@@ -76,7 +87,7 @@ export function LearnCoursePickerHydrated({
         if (!res.ok) return;
         const data = (await res.json()) as { progress?: LearnProgressStore };
         if (cancelled || !data.progress) return;
-        setCards(toCards(courses, vocabGrammarTopics, data.progress));
+        setCards(toCards(courses, ieltsCourses, vocabGrammarTopics, data.progress));
       } catch {
         /* keep zero progress */
       }
@@ -84,11 +95,12 @@ export function LearnCoursePickerHydrated({
     return () => {
       cancelled = true;
     };
-  }, [courses, vocabGrammarTopics]);
+  }, [courses, ieltsCourses, vocabGrammarTopics]);
 
   return (
     <LearnCoursePicker
       courses={cards.courses}
+      ieltsCourses={cards.ieltsCourses}
       vocabGrammar={cards.vocabGrammar}
     />
   );
