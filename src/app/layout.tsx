@@ -6,6 +6,7 @@ import { getMessages } from "@/i18n/get-messages";
 import { I18nProvider } from "@/i18n/provider";
 import { NavigationProgress } from "@/components/layout/navigation-progress";
 import { VisitTracker } from "@/components/layout/visit-tracker";
+import { WewinChatWidget } from "@/components/chat/wewin-chat-widget";
 import { translate } from "@/i18n/translate";
 
 const geistSans = Geist({
@@ -51,6 +52,7 @@ export default function RootLayout({
           <NavigationProgress />
           <VisitTracker />
           {children}
+          <WewinChatWidget />
         </I18nProvider>
       </body>
     </html>

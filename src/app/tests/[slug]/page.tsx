@@ -7,7 +7,20 @@ import { SiteShell } from "@/components/layout/site-shell";
 
 export const dynamic = "force-dynamic";
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ parts?: string | string[] }>;
+};
+
+function parsePartsParam(value: string | string[] | undefined): number[] | undefined {
+  const raw = Array.isArray(value) ? value[0] : value;
+  if (!raw) return undefined;
+  const orders = raw
+    .split(",")
+    .map((part) => Number(part))
+    .filter((n) => Number.isInteger(n) && n >= 0);
+  return orders.length ? orders : undefined;
+}
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
@@ -15,8 +28,9 @@ export async function generateMetadata({ params }: Props) {
   return { title: test ? `${test.title} | Wewin IELTS` : "Đề thi" };
 }
 
-export default async function TestDetailPage({ params }: Props) {
+export default async function TestDetailPage({ params, searchParams }: Props) {
   const { slug } = await params;
+  const initialParts = parsePartsParam((await searchParams).parts);
   const test = await getTestBySlug(slug);
   if (!test) notFound();
 
@@ -42,6 +56,7 @@ export default async function TestDetailPage({ params }: Props) {
         qCount={qCount}
         description={test.description}
         isLoggedIn={Boolean(user)}
+        initialParts={initialParts}
         attempts={attempts.map((a) => ({
           id: a.id,
           mode: a.mode,

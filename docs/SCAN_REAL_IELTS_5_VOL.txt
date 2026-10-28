@@ -70,6 +70,7 @@ VOL 4 — Reading: key-explain có T1, 2, 3, 5-10. THIẾU KEY Test 4 (Drive cũ
 Test 10 trùng VOL 3 Test 10.
 
 ----------------------------------------------------------------
+VOL 5 (10 test L+R) — ĐÃ IMPORT TOÀN BỘ, chi tiết xem IMPORT_MISSING_AUDIO_KEYS.txt
 VOL 5 — Listening (key: "key- listening vol 5 1.pdf", bản scan, trang 2-11 = Test 1-10, đủ)
 ----------------------------------------------------------------
 Test 1-10: Đủ 4 part (T1 P4 tải từ Drive).

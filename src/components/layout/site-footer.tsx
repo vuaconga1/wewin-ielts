@@ -4,31 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Globe, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
-
-/** Official / screenshot contact — update if campuses change. */
-const CONTACT = {
-  campus1: "292B Nơ Trang Long, P.12, Bình Thạnh, TP.HCM",
-  campus2: "742 Xô Viết Nghệ Tĩnh, phường Thạnh Mỹ Tây, Bình Thạnh, TP.HCM",
-  hotline1: "0345 969 388",
-  hotline1Tel: "+84345969388",
-  hotline2: "037 866 9388",
-  hotline2Tel: "+84378669388",
-  email: "officemanager@wewin.edu.vn",
-  website: "https://wewin.edu.vn",
-  websiteLabel: "wewin.edu.vn",
-} as const;
-
-/**
- * Social URLs — Facebook / TikTok / YouTube are official WEWIN handles.
- * TODO: replace Zalo placeholder when the official OA link is confirmed.
- */
-const SOCIAL = {
-  facebook: "https://www.facebook.com/winwineducation",
-  zalo: "#",
-  tiktok: "https://www.tiktok.com/@wewin.education.vn",
-  youtube: "https://www.youtube.com/@WeWINEducation",
-  mail: `mailto:${CONTACT.email}`,
-} as const;
+import { CONTACT, SOCIAL } from "@/lib/contact";
 
 function mapsSearchUrl(address: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;

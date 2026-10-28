@@ -10,6 +10,7 @@ import {
   topicCourse,
 } from "@/lib/learn/vocab-grammar-types";
 import { learnCatalogHref, learnVocabGrammarTrackHref } from "@/lib/learn/hrefs";
+import { coursePriceVnd } from "@/lib/learn/course-pricing";
 import { getViewerRole } from "@/lib/auth";
 import { canViewIeltsGrammar } from "@/lib/auth/roles";
 import { SiteShell } from "@/components/layout/site-shell";
@@ -48,6 +49,7 @@ export default async function GrammarTopicPage({ params }: Props) {
     const role = await getViewerRole();
     if (!canViewIeltsGrammar(role)) {
       const courseHref = learnVocabGrammarTrackHref("grammar", course);
+      const priceVnd = coursePriceVnd(course);
       return (
         <SiteShell active="learn" wide>
           <GrammarCourseLocked
@@ -70,6 +72,15 @@ export default async function GrammarTopicPage({ params }: Props) {
                     href: `/login?next=${encodeURIComponent(courseHref)}`,
                     label: t("learn.loginToView", "Đăng nhập"),
                   }
+            }
+            purchase={
+              priceVnd
+                ? {
+                    courseTitle: grammarCourseLabel(course, t),
+                    priceVnd,
+                    priceLabel: t("purchase.price", "Học phí"),
+                  }
+                : undefined
             }
           />
         </SiteShell>

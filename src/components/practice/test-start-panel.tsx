@@ -20,6 +20,7 @@ type Props = {
   parts: Part[];
   defaultTimeLimit: number | null;
   speakingCounts?: Record<SpeakingPartKind, number>;
+  initialParts?: number[];
 };
 
 const SPEAKING_KINDS: SpeakingPartKind[] = [1, 2, 3];
@@ -30,13 +31,17 @@ export function TestStartPanel({
   parts,
   defaultTimeLimit,
   speakingCounts,
+  initialParts,
 }: Props) {
   const router = useRouter();
   const { t } = useTranslations();
   const te = useTranslations("errors").t;
   const isSpeaking = skill === "SPEAKING";
   const [tab, setTab] = useState<"practice" | "full">("practice");
-  const [selected, setSelected] = useState<number[]>(parts.map((p) => p.order));
+  const [selected, setSelected] = useState<number[]>(() => {
+    const preset = parts.map((p) => p.order).filter((order) => initialParts?.includes(order));
+    return preset.length ? preset : parts.map((p) => p.order);
+  });
   const [selectedKinds, setSelectedKinds] =
     useState<SpeakingPartKind[]>(SPEAKING_KINDS);
   const [timeLimit, setTimeLimit] = useState<string>(

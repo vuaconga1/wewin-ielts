@@ -40,6 +40,8 @@ type Props = {
   description?: string;
   isLoggedIn: boolean;
   attempts: TestAttemptHistoryItem[];
+  /** Pre-selected practice parts (homework link `?parts=1,3`) */
+  initialParts?: number[];
 };
 
 export function TestDetailView({
@@ -55,6 +57,7 @@ export function TestDetailView({
   description,
   isLoggedIn,
   attempts,
+  initialParts,
 }: Props) {
   const { t } = useTranslations();
   const examLabel =
@@ -172,6 +175,7 @@ export function TestDetailView({
               questions: p.questions.map((q) => ({ number: q.number })),
             }))}
             defaultTimeLimit={timeLimitMinutes}
+            initialParts={initialParts}
           />
         </aside>
       </div>

@@ -6,6 +6,8 @@ import {
   type DashboardNavKey,
 } from "@/components/dashboard/dashboard-shell";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { HomeworkPopup } from "@/components/homework/homework-popup";
+import { isLearnerRole } from "@/lib/auth/roles";
 import {
   fetchSessionMe,
   peekSessionMe,
@@ -61,6 +63,7 @@ export function SiteShell({
       user={session.user}
     >
       {children}
+      {isLearnerRole(session.user?.role) ? <HomeworkPopup /> : null}
     </DashboardShell>
   );
 }

@@ -12,6 +12,7 @@ import {
   zonedWallTimeToUtc,
 } from "@/lib/classroom/schedule-time";
 import { encryptClassroomSecret } from "@/lib/classroom/secret";
+import { matchesAllWords } from "@/lib/ui/fold-text";
 import {
   resolveZoomAccountById,
   resolveZoomAccountForCreate,
@@ -64,13 +65,11 @@ function assertAdmin(actor: ClassActor) {
   if (!isAdmin(actor)) throw new ClassroomManageError("FORBIDDEN", 403);
 }
 
-async function assertClassAccess(actor: ClassActor, classroomId: string) {
+/** ADMIN and TEACHER can open every class; creating classes and editing membership/settings stay ADMIN-only. */
+export async function assertClassAccess(actor: ClassActor, classroomId: string) {
   assertStaff(actor);
-  const classroom = await prisma.classroom.findFirst({
-    where: {
-      id: classroomId,
-      ...(isAdmin(actor) ? {} : { teachers: { some: { userId: actor.id } } }),
-    },
+  const classroom = await prisma.classroom.findUnique({
+    where: { id: classroomId },
     select: {
       id: true,
       code: true,
@@ -90,7 +89,6 @@ export async function listManagedClassrooms(actor: ClassActor) {
   assertStaff(actor);
   const now = new Date();
   const rows = await prisma.classroom.findMany({
-    where: isAdmin(actor) ? {} : { teachers: { some: { userId: actor.id } } },
     select: {
       id: true,
       code: true,
@@ -105,6 +103,7 @@ export async function listManagedClassrooms(actor: ClassActor) {
           liveSessions: {
             where: { scheduledStart: { gte: now }, status: { in: ["SCHEDULED", "LIVE"] } },
           },
+          assignments: true,
         },
       },
     },
@@ -120,7 +119,27 @@ export async function listManagedClassrooms(actor: ClassActor) {
     studentCount: row._count.enrollments,
     teacherCount: row._count.teachers,
     upcomingCount: row._count.liveSessions,
+    homeworkCount: row._count.assignments,
   }));
+}
+
+/** Classes whose active students match `query` (name/username, accent-insensitive) → up to 3 matched names each. */
+export async function findClassroomsByStudent(actor: ClassActor, query: string) {
+  assertStaff(actor);
+  const q = query.trim().slice(0, 80);
+  if (!q) return {};
+  const rows = await prisma.classEnrollment.findMany({
+    where: { status: "ACTIVE" },
+    select: { classroomId: true, user: { select: { username: true, fullName: true } } },
+  });
+  const matches: Record<string, string[]> = {};
+  for (const row of rows) {
+    const name = row.user.fullName?.trim() || row.user.username;
+    if (!matchesAllWords(`${name} ${row.user.username}`, q)) continue;
+    const list = (matches[row.classroomId] ??= []);
+    if (list.length < 3) list.push(name);
+  }
+  return matches;
 }
 
 export async function getManagedClassroom(actor: ClassActor, classroomId: string) {

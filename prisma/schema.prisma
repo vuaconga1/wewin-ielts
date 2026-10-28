@@ -136,6 +136,7 @@ model User {
   hostedSessions    LiveSession[]       @relation("LiveSessionHost")
   presentations     Presentation[]      @relation("PresentationCreator")
   presentationEdits PresentationState[] @relation("PresentationUpdater")
+  homeworkCreated   ClassAssignment[]   @relation("ClassAssignmentCreator")
 
   @@index([classCode])
   @@index([accessPlan, accessExpiresAt])
@@ -212,8 +213,37 @@ model Classroom {
   teachers      ClassTeacher[]
   liveSessions  LiveSession[]
   presentations Presentation[]
+  assignments   ClassAssignment[]
 
   @@index([status, code])
+}
+
+/// Homework: one IELTS test (whole paper or selected parts) assigned to a class with a deadline.
+/// Labels are snapshotted so the list stays readable if the test is renamed.
+model ClassAssignment {
+  id            String   @id @default(cuid())
+  classroomId   String
+  testId        String
+  /// Parts (TestSection.order) the learner must submit; always explicit, full list = whole test
+  sectionOrders Int[]
+  wholeTest     Boolean  @default(true)
+  testSlug      String
+  testTitle     String
+  skill         Skill
+  /// e.g. "Part 1, Part 3"; null when wholeTest
+  partLabel     String?
+  questionCount Int      @default(0)
+  deadlineAt    DateTime
+  createdById   String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  classroom Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  test      Test      @relation(fields: [testId], references: [id], onDelete: Cascade)
+  createdBy User?     @relation("ClassAssignmentCreator", fields: [createdById], references: [id], onDelete: SetNull)
+
+  @@index([classroomId, deadlineAt])
+  @@index([testId])
 }
 
 model ClassEnrollment {
@@ -342,6 +372,7 @@ model Test {
   media    MediaAsset[]
   attempts Attempt[]
   imports  ImportJob[]
+  homework ClassAssignment[]
 }
 
 model TestSection {

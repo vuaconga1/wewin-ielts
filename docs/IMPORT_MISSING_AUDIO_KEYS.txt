@@ -118,3 +118,36 @@ Tất cả đều đủ 40 câu hỏi chuẩn IELTS, 0 lỗi fatal. Tổng cộn
 - Kết quả:
   + 20/20 file JSON draft lưu tại data/tests/real-ielts-vol-4-test-{1..10}-{listening,reading}.json.
   + Đã persist toàn bộ 20 đề vào MySQL qua Prisma (20 tests, 70 sections, 800 questions, status: DRAFT, examType: ACADEMIC).
+
+
+----------------------------------------------------
+[2026-10-28] Real IELTS VOL 5 (DE-IELTS/5 bộ Vol - Real IELTS/VOL 5) — IELTS Academic
+----------------------------------------------------
+Tổng số đề đã import: 20 đề (10 Listening + 10 Reading), trạng thái DRAFT, phân loại ACADEMIC.
+Tất cả 20 đề đều đạt 40/40 câu hỏi chuẩn IELTS, 0 lỗi fatal, 0 cảnh báo layout.
+Tổng cộng: 70 sections (40 Listening + 30 Reading), 800 câu hỏi, 800 đáp án chuẩn.
+
+1. LISTENING (Tests 1–10):
+- Audio:
+  + Chuẩn hoá và cắt gọn toàn bộ 40 section audio theo chuẩn: 44.1kHz stereo, volume normalize, trim silence tại /uploads/audio/real-ielts-vol-5-test-{1..10}/section-{1..4}.mp3.
+  + Toàn bộ 40 section đều có audio đầy đủ, không thiếu section nào.
+- Ảnh Map / Plan / Diagram:
+  + Test 2: Diagram Condenser (Section 3, nhãn A-G) -> /uploads/images/real-ielts-vol-5-test-2/diagram-condenser.png
+  + Test 5: Map Sports Centre (Section 2, nhãn A-E) -> /uploads/images/real-ielts-vol-5-test-5/map-sports-centre.png
+  + Test 6: Map Strawberry Farm (Section 2, nhãn A-J) -> /uploads/images/real-ielts-vol-5-test-6/map-strawberry-farm.png
+  + Test 9: Map School Campus (Section 2, nhãn A-J) -> /uploads/images/real-ielts-vol-5-test-9/map-school-campus.png
+  + Test 10: Map Park Gallery (Section 2, nhãn A-F) -> /uploads/images/real-ielts-vol-5-test-10/map-park-gallery.png
+  + Tất cả ảnh đều được crop sạch watermark, số điện thoại, link nhóm và văn bản thừa.
+- Keys Listening:
+  + Đầy đủ 10/10 đề (400 câu), đối chiếu chính xác từ bảng keys và transcript audio gốc.
+
+2. READING (Tests 1–10):
+- Trích xuất & OCR: 100% 121 trang tài liệu và explanation PDF được trích xuất kỹ thuật số và OCR song song (EasyOCR CPU 3 workers).
+- Đối chiếu & Hiệu chỉnh:
+  + Test 8 Reading: Passage 2 & 3 đối chiếu trực tiếp từ explanation - 8.pdf (tránh lệch số từ bản in mờ).
+  + Test 9 Reading: Khôi phục trọn vẹn câu 34 trắc nghiệm về nghiên cứu endorphins của Fabrizio Benedetti (bị thiếu trên bản in PDF trang 12).
+  + Test 10 Reading: Khôi phục chính xác câu 16 summary ('hunting' by people) thay vì nhầm với tên tác giả Paul S Martin.
+- Kết quả:
+  + 20/20 file JSON draft lưu tại data/tests/real-ielts-vol-5-test-{1..10}-{listening,reading}.json.
+  + Đã persist toàn bộ 20 đề vào Database qua Prisma (20 tests, 70 sections, 800 questions, status: DRAFT, examType: ACADEMIC).
+  + Đã verify toàn diện qua .tmp-import/vol5/verify-db.ts: 100% test đều đạt 40/40 questions.

@@ -41,6 +41,7 @@
     "test:catalog-invalidation": "tsx scripts/test-catalog-invalidation.ts",
     "test:gt-final-audit": "tsx scripts/test-gt-final-audit.ts",
     "test:classroom": "tsx scripts/test-classroom.ts",
+    "test:homework-progress": "tsx scripts/test-homework-progress.ts",
     "fix:gt-mocks": "tsx scripts/fix-gt-mocks.ts"
   },
   "dependencies": {

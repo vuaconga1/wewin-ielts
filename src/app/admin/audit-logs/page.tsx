@@ -26,7 +26,7 @@ function validRole(value: string): AppRole | "" {
 }
 
 function validAction(value: string): AuditAction | "" {
-  const actions: AuditAction[] = ["LOGIN", "LOGOUT", "TEST_START", "USER_CREATE", "USER_UPDATE", "USER_PASSWORD_RESET", "USER_ACCESS_UPDATE", "USER_DELETE"];
+  const actions: AuditAction[] = ["LOGIN", "LOGOUT", "TEST_START", "USER_CREATE", "USER_UPDATE", "USER_PASSWORD_RESET", "USER_ACCESS_UPDATE", "USER_DELETE", "HOMEWORK_ASSIGN", "HOMEWORK_DEADLINE_UPDATE", "HOMEWORK_DELETE"];
   return actions.includes(value as AuditAction) ? value as AuditAction : "";
 }
 
@@ -48,8 +48,33 @@ function roleLabel(role: AppRole): string {
 }
 
 function actionLabel(action: string): string {
-  const labels: Record<string, string> = { LOGIN: "Đăng nhập", LOGOUT: "Đăng xuất", TEST_START: "Bắt đầu làm test", USER_CREATE: "Tạo user", USER_UPDATE: "Sửa user", USER_PASSWORD_RESET: "Reset password", USER_ACCESS_UPDATE: "Cập nhật thời hạn", USER_DELETE: "Xóa user", CLASSROOM_JOIN: "Vào lớp Zoom", CLASSROOM_HOST_START: "Mở lớp Zoom (chủ trì)", CLASSROOM_PRESENTATION_UPDATE: "Đổi slide lớp học", CLASSROOM_CREATE: "Tạo lớp", CLASSROOM_UPDATE: "Sửa lớp", CLASSROOM_MEMBERS_UPDATE: "Cập nhật thành viên lớp", CLASS_SESSION_CREATE: "Tạo lịch học", CLASS_SESSION_UPDATE: "Sửa lịch học", CLASS_SESSION_DELETE: "Xóa lịch học", ZOOM_ACCOUNT_CREATE: "Thêm tài khoản Zoom", ZOOM_ACCOUNT_UPDATE: "Sửa tài khoản Zoom", ZOOM_ACCOUNT_DELETE: "Xóa tài khoản Zoom", ZOOM_HOST_LINK: "Chọn tài khoản Zoom chủ trì", ZOOM_HOST_UNLINK: "Bỏ tài khoản Zoom chủ trì" };
+  const labels: Record<string, string> = { LOGIN: "Đăng nhập", LOGOUT: "Đăng xuất", TEST_START: "Bắt đầu làm test", USER_CREATE: "Tạo user", USER_UPDATE: "Sửa user", USER_PASSWORD_RESET: "Reset password", USER_ACCESS_UPDATE: "Cập nhật thời hạn", USER_DELETE: "Xóa user", CLASSROOM_JOIN: "Vào lớp Zoom", CLASSROOM_HOST_START: "Mở lớp Zoom (chủ trì)", CLASSROOM_PRESENTATION_UPDATE: "Đổi slide lớp học", CLASSROOM_CREATE: "Tạo lớp", CLASSROOM_UPDATE: "Sửa lớp", CLASSROOM_MEMBERS_UPDATE: "Cập nhật thành viên lớp", CLASS_SESSION_CREATE: "Tạo lịch học", CLASS_SESSION_UPDATE: "Sửa lịch học", CLASS_SESSION_DELETE: "Xóa lịch học", HOMEWORK_ASSIGN: "Giao bài tập", HOMEWORK_DEADLINE_UPDATE: "Sửa hạn nộp", HOMEWORK_DELETE: "Xóa bài tập", ZOOM_ACCOUNT_CREATE: "Thêm tài khoản Zoom", ZOOM_ACCOUNT_UPDATE: "Sửa tài khoản Zoom", ZOOM_ACCOUNT_DELETE: "Xóa tài khoản Zoom", ZOOM_HOST_LINK: "Chọn tài khoản Zoom chủ trì", ZOOM_HOST_UNLINK: "Bỏ tài khoản Zoom chủ trì" };
   return labels[action] ?? action;
+}
+
+function HomeworkAuditDetail({ metadata, format }: { metadata: unknown; format: Intl.DateTimeFormat }) {
+  const m = metadata && typeof metadata === "object" ? (metadata as Record<string, unknown>) : {};
+  const text = (key: string) => (typeof m[key] === "string" ? (m[key] as string) : null);
+  const deadline = text("deadlineAt");
+  const previous = text("previousDeadlineAt");
+  return (
+    <div className="mt-1.5 min-w-0 text-xs">
+      <p className="break-words font-medium text-zinc-900">
+        {text("testTitle") ?? text("testSlug") ?? "—"}
+        {text("partLabel") ? <span className="font-normal text-zinc-500"> · {text("partLabel")}</span> : null}
+      </p>
+      <p className="mt-0.5 break-words text-zinc-500">
+        {text("className") ?? "—"}
+        {deadline ? (
+          <>
+            {" · Hạn: "}
+            {previous ? `${format.format(new Date(previous))} → ` : ""}
+            {format.format(new Date(deadline))}
+          </>
+        ) : null}
+      </p>
+    </div>
+  );
 }
 
 export default async function AuditLogsPage({
@@ -177,6 +202,9 @@ export default async function AuditLogsPage({
             <option value="USER_PASSWORD_RESET">Reset password</option>
             <option value="USER_ACCESS_UPDATE">Cập nhật thời hạn</option>
             <option value="USER_DELETE">Xóa user</option>
+            <option value="HOMEWORK_ASSIGN">Giao bài tập</option>
+            <option value="HOMEWORK_DEADLINE_UPDATE">Sửa hạn nộp</option>
+            <option value="HOMEWORK_DELETE">Xóa bài tập</option>
           </select>
         </label>
         <label className="text-sm font-medium text-zinc-700 xl:col-span-2">
@@ -228,6 +256,9 @@ export default async function AuditLogsPage({
                       <span className={log.action === "LOGIN" ? "rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700" : "rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-semibold text-zinc-700"}>
                         {actionLabel(log.action)}
                       </span>
+                      {log.action.startsWith("HOMEWORK_") ? (
+                        <HomeworkAuditDetail metadata={log.metadata} format={dateFormat} />
+                      ) : null}
                       {log.test ? (
                         <div className="mt-1.5 min-w-0 text-xs">
                           <p className="break-words font-medium text-zinc-900">

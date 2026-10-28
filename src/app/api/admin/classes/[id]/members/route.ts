@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { recordAuditEvent } from "@/lib/audit-log";
+import { invalidateClassProgress } from "@/lib/classroom/homework";
 import {
   addClassMember,
   removeClassMember,
@@ -28,6 +29,7 @@ export async function POST(request: Request, context: Context) {
     const body = (await request.json().catch(() => null)) as Record<string, unknown> | null;
     if (body?.sync === true) {
       const synced = await syncClassroomMembers(auth.actor, id);
+      invalidateClassProgress(id);
       await recordAuditEvent({
         actor: auth.actor,
         action: "CLASSROOM_MEMBERS_UPDATE",
@@ -37,6 +39,7 @@ export async function POST(request: Request, context: Context) {
       return NextResponse.json({ synced }, { headers: NO_STORE });
     }
     await addClassMember(auth.actor, id, body);
+    invalidateClassProgress(id);
     await recordAuditEvent({
       actor: auth.actor,
       action: "CLASSROOM_MEMBERS_UPDATE",
@@ -60,6 +63,7 @@ export async function DELETE(request: Request, context: Context) {
   try {
     const body = (await request.json().catch(() => null)) as Record<string, unknown> | null;
     await removeClassMember(auth.actor, id, body);
+    invalidateClassProgress(id);
     await recordAuditEvent({
       actor: auth.actor,
       action: "CLASSROOM_MEMBERS_UPDATE",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { SiteShell } from "@/components/layout/site-shell";
 import { ClassDetailManager } from "@/components/admin/class-detail-manager";
+import { ClassHomeworkManager } from "@/components/admin/class-homework-manager";
 import { getTranslations } from "@/i18n/server";
 import { requireStaffPage } from "@/lib/auth/page-guards";
 import {
@@ -10,6 +11,7 @@ import {
   getManagedClassroom,
   listClassMemberCandidates,
 } from "@/lib/classroom/manage";
+import { listClassAssignments } from "@/lib/classroom/homework";
 import { listZoomAccountOptions } from "@/lib/zoom/accounts";
 
 export const dynamic = "force-dynamic";
@@ -28,7 +30,7 @@ export default async function AdminClassDetailPage({
   if (!session) notFound();
   const { id } = await params;
   const isAdmin = session.role === "ADMIN";
-  const [{ t }, classroom, zoomAccounts, candidates] = await Promise.all([
+  const [{ t }, classroom, zoomAccounts, candidates, assignments] = await Promise.all([
     getTranslations("classAdmin"),
     getManagedClassroom(session, id).catch((error) => {
       if (error instanceof ClassroomManageError && error.status === 404) return null;
@@ -36,6 +38,7 @@ export default async function AdminClassDetailPage({
     }),
     isAdmin ? listZoomAccountOptions() : Promise.resolve([]),
     isAdmin ? listClassMemberCandidates() : Promise.resolve(null),
+    listClassAssignments(session, id).catch(() => []),
   ]);
   if (!classroom) notFound();
 
@@ -67,6 +70,15 @@ export default async function AdminClassDetailPage({
         zoomAccounts={zoomAccounts}
         candidates={candidates}
       />
+      <div className="mt-6 min-w-0">
+        <ClassHomeworkManager
+          key={`homework-${classroom.id}`}
+          classroomId={classroom.id}
+          timezone={classroom.timezone}
+          archived={classroom.status === "ARCHIVED"}
+          initialAssignments={assignments}
+        />
+      </div>
     </SiteShell>
   );
 }
