@@ -48,7 +48,7 @@ export class AdminUsersError extends Error {
   }
 }
 
-function toPublic(user: {
+export function toPublic(user: {
   id: string;
   email: string | null;
   username: string;

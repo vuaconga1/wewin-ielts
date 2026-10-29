@@ -49,6 +49,9 @@ export default async function LearnCourseHubPage({ params }: Props) {
 
   // Old URL `/learn/listening` → default course skill page
   if (isLearnSkill(courseSlug)) {
+    if (process.env.NODE_ENV === "production" && courseSlug === "speaking") {
+      notFound();
+    }
     const defaultId = await getDefaultCourseId();
     redirect(learnSkillHref(defaultId, courseSlug));
   }
@@ -64,6 +67,13 @@ export default async function LearnCourseHubPage({ params }: Props) {
   let totalAll = 0;
 
   for (const skill of LEARN_SKILLS) {
+    if (
+      process.env.NODE_ENV === "production" &&
+      courseSlug === "ielts-4-skills" &&
+      skill === "speaking"
+    ) {
+      continue;
+    }
     const lessons = course.lessons
       .filter((l) => l.skill === skill)
       .sort((a, b) => a.order - b.order);

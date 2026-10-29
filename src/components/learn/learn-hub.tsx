@@ -88,9 +88,10 @@ export function LearnHub({
       </header>
 
       <div data-tour="learn-course-skills" className="grid gap-3 sm:grid-cols-2">
-        {LEARN_SKILLS.map((skill) => {
-          const row = skills.find((s) => s.skill === skill)!;
+        {skills.map((row) => {
+          const skill = row.skill;
           const Icon = ICONS[skill];
+          if (!Icon) return null;
           const done = row.completed === row.total && row.total > 0;
           return (
             <Link

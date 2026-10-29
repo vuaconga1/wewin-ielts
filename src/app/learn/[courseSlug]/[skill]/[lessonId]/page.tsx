@@ -22,7 +22,14 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props) {
-  const { lessonId } = await params;
+  const { courseSlug, skill: raw, lessonId } = await params;
+  if (
+    process.env.NODE_ENV === "production" &&
+    courseSlug === "ielts-4-skills" &&
+    raw === "speaking"
+  ) {
+    return { title: "Not Found" };
+  }
   const { t } = await getTranslations();
   const ctx = await getLessonContext(lessonId);
   if (!ctx) return { title: t("meta.lesson") };
@@ -31,6 +38,13 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function LearnLessonPage({ params }: Props) {
   const { courseSlug, skill: raw, lessonId } = await params;
+  if (
+    process.env.NODE_ENV === "production" &&
+    courseSlug === "ielts-4-skills" &&
+    raw === "speaking"
+  ) {
+    notFound();
+  }
   if (!isLearnSkill(raw)) notFound();
 
   const course = await getCourse(courseSlug);

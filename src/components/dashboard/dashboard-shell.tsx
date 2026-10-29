@@ -16,6 +16,7 @@ import {
   Menu,
   ScrollText,
   Settings,
+  Sparkles,
   Trophy,
   Upload,
   UserCog,
@@ -38,6 +39,7 @@ import type { TourStep } from "@/lib/tour/types";
 
 export type DashboardNavKey =
   | "home"
+  | "test-practice"
   | "learn"
   | "classroom"
   | "tests"
@@ -146,7 +148,7 @@ export function DashboardShell({
   }, []);
 
   const NAV = [
-    { key: "home" as const, href: "/", label: t("nav.home"), icon: Home },
+    { key: "home" as const, href: "/dashboard", label: t("nav.home"), icon: Home },
     {
       key: "learn" as const,
       href: "/learn",

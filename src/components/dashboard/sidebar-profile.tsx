@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Camera, LogOut, Trophy, User } from "lucide-react";
+import { Camera, Clock, LogOut, Trophy, User } from "lucide-react";
 import { AvatarPickerModal } from "@/components/dashboard/avatar-picker-modal";
 import { LogoutButton } from "@/components/dashboard/logout-button";
 import {
@@ -21,6 +21,9 @@ export type SidebarUser = {
   initials: string;
   role: string;
   avatarUrl: string | null;
+  accessPlan?: "FREE" | "PAID" | "UNLIMITED";
+  accessExpiresAt?: string | null;
+  accessStatus?: "ACTIVE" | "EXPIRING" | "EXPIRED" | "UNLIMITED";
 };
 
 type Props = {
@@ -160,6 +163,54 @@ export function SidebarProfile({
 
   const displayName = user.fullName?.trim() || user.username;
 
+  // Kiểm tra tài khoản có thời hạn vĩnh viễn không
+  const isUnlimited =
+    user.accessPlan === "UNLIMITED" ||
+    user.accessStatus === "UNLIMITED" ||
+    user.role === "ADMIN" ||
+    user.role === "TEACHER" ||
+    (!user.accessExpiresAt && user.accessPlan !== "FREE" && user.accessPlan !== "PAID");
+
+  const now = Date.now();
+  const expiresAtMs = user.accessExpiresAt ? Date.parse(user.accessExpiresAt) : null;
+  const isExpired = user.accessStatus === "EXPIRED" || (expiresAtMs != null && expiresAtMs <= now);
+  const diffMs = expiresAtMs != null ? expiresAtMs - now : 0;
+
+  let remainingText = "Đã hết hạn";
+  if (!isExpired && diffMs > 0) {
+    const days = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+    const hours = Math.ceil(diffMs / (1000 * 60 * 60));
+    if (days > 1) {
+      remainingText = `Còn ${days} ngày`;
+    } else if (hours > 1) {
+      remainingText = `Còn ${hours} giờ`;
+    } else {
+      remainingText = "Còn dưới 1 giờ";
+    }
+  }
+
+  let expiryDateStr: string | null = null;
+  if (expiresAtMs != null && !Number.isNaN(expiresAtMs)) {
+    try {
+      expiryDateStr = new Intl.DateTimeFormat("vi-VN", {
+        timeZone: "Asia/Ho_Chi_Minh",
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+      }).format(new Date(expiresAtMs));
+    } catch {
+      expiryDateStr = null;
+    }
+  }
+
+  function handleContactClick(e: React.MouseEvent<HTMLAnchorElement>) {
+    const footer = document.getElementById("site-footer");
+    if (footer) {
+      e.preventDefault();
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   if (compact) {
     return (
       <>
@@ -245,6 +296,49 @@ export function SidebarProfile({
                 ? tc("visitor", "Khách")
                 : tc("student")}
         </p>
+
+        {!isUnlimited ? (
+          <div className="mt-2.5 w-full rounded-xl border border-wewin-border bg-white px-3 py-2 text-center shadow-xs">
+            <div className="flex items-center justify-center gap-1.5 text-xs">
+              <Clock
+                className={`h-3.5 w-3.5 shrink-0 ${
+                  isExpired
+                    ? "text-red-500"
+                    : diffMs <= 7 * 86_400_000
+                      ? "text-amber-500"
+                      : "text-emerald-600"
+                }`}
+                aria-hidden
+              />
+              <span className="text-zinc-600">Thời hạn còn lại:</span>
+              <span
+                className={`font-semibold ${
+                  isExpired
+                    ? "text-red-600"
+                    : diffMs <= 7 * 86_400_000
+                      ? "text-amber-600"
+                      : "text-emerald-700"
+                }`}
+              >
+                {remainingText}
+              </span>
+            </div>
+            {expiryDateStr ? (
+              <p className="mt-0.5 text-[11px] text-zinc-400">
+                (Hạn dùng: {expiryDateStr})
+              </p>
+            ) : null}
+            <div className="mt-1.5 border-t border-zinc-100 pt-1.5">
+              <Link
+                href="/#site-footer"
+                onClick={handleContactClick}
+                className="inline-block text-[11px] text-zinc-400 underline hover:text-zinc-600 transition-colors"
+              >
+                liên hệ Wewin để gia hạn
+              </Link>
+            </div>
+          </div>
+        ) : null}
 
         <div className="mt-3 w-full rounded-xl border border-wewin-border bg-zinc-50 px-3 py-2.5 text-center">
           <div className="flex items-center justify-center gap-2">

@@ -39,7 +39,8 @@ export type AdminAttemptRow = {
   userId: string | null;
   userEmail: string | null;
   username: string | null;
-  userRole: "ADMIN" | "TEACHER" | "STUDENT" | "VISITOR" | "VISITOR" | null;
+  userFullName?: string | null;
+  userRole: "ADMIN" | "TEACHER" | "STUDENT" | "VISITOR" | null;
   testSlug: string;
   testTitle: string;
   skill: AdminAttemptSkill | null;
@@ -328,6 +329,7 @@ async function loadLocalAttemptsAsRows(
       userId: a.userId ?? null,
       userEmail: user?.email ?? null,
       username: user?.username ?? null,
+      userFullName: user?.fullName ?? null,
       userRole: user?.role ?? null,
       testSlug: a.testSlug,
       testTitle: test?.title ?? a.testSlug,
@@ -409,7 +411,7 @@ async function loadPrismaAttemptsAsRows(
       scoreBand: true,
       // Intentionally omit payload / sectionIds — list views must stay light.
       user: {
-        select: { id: true, email: true, username: true, role: true },
+        select: { id: true, email: true, username: true, fullName: true, role: true },
       },
       test: {
         select: { slug: true, title: true, skill: true },
@@ -430,6 +432,7 @@ async function loadPrismaAttemptsAsRows(
       userId: a.userId,
       userEmail: user?.email ?? null,
       username: user?.username ?? null,
+      userFullName: user?.fullName ?? null,
       userRole: user?.role ?? null,
       testSlug: a.test.slug,
       testTitle: a.test.title,

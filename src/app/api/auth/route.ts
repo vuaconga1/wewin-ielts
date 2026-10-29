@@ -7,6 +7,7 @@ import {
   canAccessAdmin,
 } from "@/lib/auth";
 import { getUserDisplayProfile } from "@/lib/user-profile";
+import { getUserAccess } from "@/lib/access";
 import { recordAuditEvent } from "@/lib/audit-log";
 
 export const runtime = "nodejs";
@@ -25,6 +26,8 @@ export async function GET() {
   }
 
   const profile = await getUserDisplayProfile(user.id);
+  const access = await getUserAccess(user.id);
+
   return NextResponse.json(
     {
       user: {
@@ -34,6 +37,11 @@ export async function GET() {
         fullName: profile.fullName ?? user.fullName ?? null,
         role: profile.role ?? user.role,
         avatarUrl: profile.avatarUrl,
+        accessPlan: access?.accessPlan ?? "UNLIMITED",
+        accessExpiresAt: access?.accessExpiresAt
+          ? access.accessExpiresAt.toISOString()
+          : null,
+        accessStatus: access?.status ?? "UNLIMITED",
       },
       canImport: canAccessAdmin(user),
     },
@@ -75,11 +83,18 @@ export async function POST(request: Request) {
     const user = await loginWithEmailPassword(identifier, password);
     await recordAuditEvent({ actor: user, action: "LOGIN", request });
     const profile = await getUserDisplayProfile(user.id);
+    const access = await getUserAccess(user.id);
+
     return NextResponse.json({
       user: {
         ...user,
         fullName: profile.fullName ?? user.fullName,
         avatarUrl: profile.avatarUrl,
+        accessPlan: access?.accessPlan ?? "UNLIMITED",
+        accessExpiresAt: access?.accessExpiresAt
+          ? access.accessExpiresAt.toISOString()
+          : null,
+        accessStatus: access?.status ?? "UNLIMITED",
       },
       canImport: canAccessAdmin(user),
     });

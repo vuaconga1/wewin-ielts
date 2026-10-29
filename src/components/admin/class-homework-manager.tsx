@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
 import { utcToZonedWallTime } from "@/lib/classroom/schedule-time";
-import type { HomeworkSkill } from "@/lib/classroom/homework-core";
 import type {
   ClassAssignmentView,
   ClassProgress,
@@ -33,11 +32,57 @@ const primaryBtn =
   "inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-wewin-navy px-4 py-2.5 text-sm font-semibold text-white hover:bg-wewin-navy-hover disabled:opacity-60";
 const dangerBtn = `${secondaryBtn} border-rose-200 text-rose-600 hover:bg-rose-50`;
 
-const SKILLS: HomeworkSkill[] = ["LISTENING", "READING", "WRITING", "SPEAKING"];
-const EXAM_ORDER = ["ACADEMIC", "GENERAL", "PLACEMENT"];
+const EXAM_ORDER = [
+  "SHADOWING",
+  "DICTATION",
+  "FILL_BLANK",
+  "LISTEN_ANSWER",
+  "ACADEMIC",
+  "GENERAL",
+  "PLACEMENT",
+];
+
+const GAME_EXAMS = new Set(["SHADOWING", "DICTATION", "FILL_BLANK", "LISTEN_ANSWER"]);
+
+export type HomeworkCategory =
+  | "IELTS_LISTENING"
+  | "IELTS_READING"
+  | "IELTS_WRITING"
+  | "IELTS_SPEAKING"
+  | "GAME_SHADOWING"
+  | "GAME_DICTATION"
+  | "GAME_FILL_BLANK"
+  | "GAME_LISTEN_ANSWER";
+
+function examGroupLabel(exam: string) {
+  switch (exam) {
+    case "SHADOWING":
+      return "Shadowing — Luyện nói";
+    case "DICTATION":
+      return "Nghe chép chính tả (Dictation)";
+    case "FILL_BLANK":
+      return "Nghe điền từ (Gap Fill)";
+    case "LISTEN_ANSWER":
+      return "Nghe & trả lời (Q&A)";
+    case "ACADEMIC":
+      return "Đề thi Academic";
+    case "GENERAL":
+      return "Đề thi General Training";
+    case "PLACEMENT":
+      return "Đề kiểm tra trình độ";
+    default:
+      return exam;
+  }
+}
 
 type Notice = { kind: "ok" | "error"; text: string } | null;
-type DraftRow = { key: number; skill: HomeworkSkill | ""; slug: string; parts: number[]; deadline: string };
+type DraftRow = {
+  key: number;
+  category: HomeworkCategory | "";
+  slug: string;
+  parts: number[];
+  deadline: string;
+};
 
 let rowSeq = 0;
 
@@ -54,7 +99,6 @@ export function ClassHomeworkManager({
 }) {
   const { t, locale } = useTranslations("classHomework");
   const { t: tSkills } = useTranslations("skills");
-  const { t: tExam } = useTranslations("examTypes");
   const { t: tErrors } = useTranslations("errors");
   const [assignments, setAssignments] = useState(initialAssignments);
   const [busy, setBusy] = useState<string | null>(null);
@@ -137,7 +181,7 @@ export function ClassHomeworkManager({
     [timezone],
   );
   const newRow = useCallback(
-    (): DraftRow => ({ key: ++rowSeq, skill: "", slug: "", parts: [], deadline: defaultDeadline() }),
+    (): DraftRow => ({ key: ++rowSeq, category: "", slug: "", parts: [], deadline: defaultDeadline() }),
     [defaultDeadline],
   );
   const [rows, setRows] = useState<DraftRow[]>([]);
@@ -162,13 +206,52 @@ export function ClassHomeworkManager({
     [catalog],
   );
 
-  function testsForSkill(skill: HomeworkSkill | "") {
-    if (!skill || !catalog) return [];
-    const list = catalog.filter((test) => test.skill === skill);
-    return EXAM_ORDER.map((exam) => ({
-      exam,
-      tests: list.filter((test) => test.examType === exam),
-    })).filter((group) => group.tests.length);
+  function testsForCategory(category: HomeworkCategory | "") {
+    if (!category || !catalog) return [];
+    switch (category) {
+      case "IELTS_LISTENING": {
+        const list = catalog.filter((test) => test.skill === "LISTENING" && !GAME_EXAMS.has(test.examType));
+        return EXAM_ORDER.filter((exam) => !GAME_EXAMS.has(exam))
+          .map((exam) => ({ exam, tests: list.filter((test) => test.examType === exam) }))
+          .filter((group) => group.tests.length);
+      }
+      case "IELTS_READING": {
+        const list = catalog.filter((test) => test.skill === "READING" && !GAME_EXAMS.has(test.examType));
+        return EXAM_ORDER.filter((exam) => !GAME_EXAMS.has(exam))
+          .map((exam) => ({ exam, tests: list.filter((test) => test.examType === exam) }))
+          .filter((group) => group.tests.length);
+      }
+      case "IELTS_WRITING": {
+        const list = catalog.filter((test) => test.skill === "WRITING" && !GAME_EXAMS.has(test.examType));
+        return EXAM_ORDER.filter((exam) => !GAME_EXAMS.has(exam))
+          .map((exam) => ({ exam, tests: list.filter((test) => test.examType === exam) }))
+          .filter((group) => group.tests.length);
+      }
+      case "IELTS_SPEAKING": {
+        const list = catalog.filter((test) => test.skill === "SPEAKING" && !GAME_EXAMS.has(test.examType));
+        return EXAM_ORDER.filter((exam) => !GAME_EXAMS.has(exam))
+          .map((exam) => ({ exam, tests: list.filter((test) => test.examType === exam) }))
+          .filter((group) => group.tests.length);
+      }
+      case "GAME_SHADOWING": {
+        const tests = catalog.filter((test) => test.examType === "SHADOWING");
+        return tests.length ? [{ exam: "SHADOWING", tests }] : [];
+      }
+      case "GAME_DICTATION": {
+        const tests = catalog.filter((test) => test.examType === "DICTATION");
+        return tests.length ? [{ exam: "DICTATION", tests }] : [];
+      }
+      case "GAME_FILL_BLANK": {
+        const tests = catalog.filter((test) => test.examType === "FILL_BLANK");
+        return tests.length ? [{ exam: "FILL_BLANK", tests }] : [];
+      }
+      case "GAME_LISTEN_ANSWER": {
+        const tests = catalog.filter((test) => test.examType === "LISTEN_ANSWER");
+        return tests.length ? [{ exam: "LISTEN_ANSWER", tests }] : [];
+      }
+      default:
+        return [];
+    }
   }
 
   function patchRow(key: number, patch: Partial<DraftRow>) {
@@ -248,13 +331,32 @@ export function ClassHomeworkManager({
     void loadProgress();
   }
 
-  function assignmentTitle(item: Pick<ClassAssignmentView, "testTitle" | "partLabel" | "skill">) {
+  function assignmentTitle(item: Pick<ClassAssignmentView, "testTitle" | "partLabel" | "skill" | "testSlug">) {
+    const slug = item.testSlug ?? "";
+    const isGame =
+      slug.startsWith("shadowing/") ||
+      slug.startsWith("dictation/") ||
+      slug.startsWith("fill-blank/") ||
+      slug.startsWith("listen-answer/");
+
+    let gameBadge = "";
+    if (slug.startsWith("shadowing/")) gameBadge = "Shadowing";
+    else if (slug.startsWith("dictation/")) gameBadge = "Chép chính tả";
+    else if (slug.startsWith("fill-blank/")) gameBadge = "Điền từ";
+    else if (slug.startsWith("listen-answer/")) gameBadge = "Nghe & trả lời";
+
     return (
       <>
         <span className="font-semibold text-wewin-navy">{item.testTitle}</span>
         <span className="text-zinc-500">
           {" · "}
-          {tSkills(item.skill, item.skill)}
+          {isGame ? (
+            <span className="inline-flex items-center rounded bg-purple-50 px-1.5 py-0.5 text-xs font-semibold text-purple-700">
+              {gameBadge}
+            </span>
+          ) : (
+            tSkills(item.skill, item.skill)
+          )}
           {" · "}
           {item.partLabel ?? t("wholeTest", "Cả đề")}
         </span>
@@ -263,6 +365,14 @@ export function ClassHomeworkManager({
   }
 
   function testHref(item: ClassAssignmentView) {
+    if (
+      item.testSlug.startsWith("shadowing/") ||
+      item.testSlug.startsWith("dictation/") ||
+      item.testSlug.startsWith("fill-blank/") ||
+      item.testSlug.startsWith("listen-answer/")
+    ) {
+      return `/learn/${item.testSlug}`;
+    }
     return `/tests/${encodeURIComponent(item.testSlug)}`;
   }
 
@@ -314,45 +424,73 @@ export function ClassHomeworkManager({
           ) : (
             rows.map((row, index) => {
               const test = row.slug ? testsBySlug.get(row.slug) : undefined;
-              const canPickParts = test && test.skill !== "SPEAKING" && test.parts.length > 1;
+              const isSkill =
+                row.slug.startsWith("shadowing/") ||
+                row.slug.startsWith("dictation/") ||
+                row.slug.startsWith("fill-blank/") ||
+                row.slug.startsWith("listen-answer/");
+              const canPickParts = !isSkill && test && test.skill !== "SPEAKING" && test.parts.length > 1;
               return (
                 <div key={row.key} className="min-w-0 space-y-3 rounded-xl border border-zinc-200 bg-white p-3">
-                  <div className="grid min-w-0 gap-3 sm:grid-cols-[minmax(0,10rem)_minmax(0,1fr)_minmax(0,13rem)]">
+                  <div className="grid min-w-0 gap-3 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_minmax(0,13rem)]">
                     <label className="block min-w-0 space-y-1">
-                      <span className="text-xs font-semibold text-zinc-700">{t("fieldSkill", "Kỹ năng")}</span>
+                      <span className="text-xs font-semibold text-zinc-700">Kỹ năng / Phân loại</span>
                       <select
-                        value={row.skill}
+                        value={row.category}
                         onChange={(e) =>
-                          patchRow(row.key, { skill: e.target.value as HomeworkSkill | "", slug: "", parts: [] })
+                          patchRow(row.key, {
+                            category: e.target.value as HomeworkCategory | "",
+                            slug: "",
+                            parts: [],
+                          })
                         }
                         className={inputCls}
                       >
-                        <option value="">{t("pickSkill", "Chọn kỹ năng…")}</option>
-                        {SKILLS.map((skill) => (
-                          <option key={skill} value={skill}>
-                            {tSkills(skill, skill)}
-                          </option>
-                        ))}
+                        <option value="">Chọn phân loại bài…</option>
+                        <optgroup label="Đề thi IELTS (4 kỹ năng cơ bản)">
+                          <option value="IELTS_LISTENING">Listening (Nghe)</option>
+                          <option value="IELTS_READING">Reading (Đọc)</option>
+                          <option value="IELTS_WRITING">Writing (Viết)</option>
+                          <option value="IELTS_SPEAKING">Speaking (Nói)</option>
+                        </optgroup>
+                        <optgroup label="Luyện tập kỹ năng (4 Games)">
+                          <option value="GAME_SHADOWING">Shadowing — Luyện nói</option>
+                          <option value="GAME_DICTATION">Nghe chép chính tả (Dictation)</option>
+                          <option value="GAME_FILL_BLANK">Nghe điền từ (Gap Fill)</option>
+                          <option value="GAME_LISTEN_ANSWER">Nghe & trả lời (Q&A)</option>
+                        </optgroup>
                       </select>
                     </label>
                     <label className="block min-w-0 space-y-1">
-                      <span className="text-xs font-semibold text-zinc-700">{t("fieldTest", "Đề")}</span>
+                      <span className="text-xs font-semibold text-zinc-700">
+                        {row.category.startsWith("GAME_") ? "Bài luyện tập" : "Đề thi"}
+                      </span>
                       <select
                         value={row.slug}
-                        disabled={!row.skill}
+                        disabled={!row.category}
                         onChange={(e) => patchRow(row.key, { slug: e.target.value, parts: [] })}
                         className={inputCls}
                       >
-                        <option value="">{t("pickTest", "Chọn đề…")}</option>
-                        {testsForSkill(row.skill).map((group) => (
-                          <optgroup key={group.exam} label={tExam(group.exam, group.exam)}>
-                            {group.tests.map((item) => (
+                        <option value="">
+                          {row.category.startsWith("GAME_") ? "Chọn bài luyện tập…" : "Chọn đề thi…"}
+                        </option>
+                        {testsForCategory(row.category).map((group) =>
+                          GAME_EXAMS.has(group.exam) ? (
+                            group.tests.map((item) => (
                               <option key={item.slug} value={item.slug}>
                                 {item.title}
                               </option>
-                            ))}
-                          </optgroup>
-                        ))}
+                            ))
+                          ) : (
+                            <optgroup key={group.exam} label={examGroupLabel(group.exam)}>
+                              {group.tests.map((item) => (
+                                <option key={item.slug} value={item.slug}>
+                                  {item.title}
+                                </option>
+                              ))}
+                            </optgroup>
+                          ),
+                        )}
                       </select>
                     </label>
                     <label className="block min-w-0 space-y-1">
@@ -458,7 +596,7 @@ export function ClassHomeworkManager({
                       </button>
                     </div>
                   ) : (
-                    <p className={`mt-0.5 text-xs ${overdue ? "text-rose-600" : "text-zinc-500"}`}>
+                    <p suppressHydrationWarning className={`mt-0.5 text-xs ${overdue ? "text-rose-600" : "text-zinc-500"}`}>
                       {t("deadlineLabel", "Hạn nộp")}: {fmt(item.deadlineAt)}
                       {" · "}
                       {t("questionCount", { n: item.questionCount }, "{n} câu")}
@@ -542,7 +680,7 @@ export function ClassHomeworkManager({
                 <div key={item.id} className="min-w-0 rounded-xl border border-zinc-200">
                   <div className="min-w-0 border-b border-zinc-100 bg-zinc-50/70 px-3 py-2">
                     <p className="break-words text-sm">{assignmentTitle(item)}</p>
-                    <p className="text-xs text-zinc-500">
+                    <p suppressHydrationWarning className="text-xs text-zinc-500">
                       {t("deadlineLabel", "Hạn nộp")}: {fmt(item.deadlineAt)} ·{" "}
                       {t("doneCount", { done, total: item.rows.length }, "{done}/{total} học viên đã làm")}
                     </p>
@@ -582,7 +720,14 @@ export function ClassHomeworkManager({
                               {row.band !== null ? (
                                 row.bestAttemptId ? (
                                   <Link
-                                    href={`/practice/${encodeURIComponent(item.testSlug)}/${row.bestAttemptId}/result`}
+                                    href={
+                                      item.testSlug.startsWith("shadowing/") ||
+                                      item.testSlug.startsWith("dictation/") ||
+                                      item.testSlug.startsWith("fill-blank/") ||
+                                      item.testSlug.startsWith("listen-answer/")
+                                        ? `/learn/${item.testSlug}`
+                                        : `/practice/${encodeURIComponent(item.testSlug)}/${row.bestAttemptId}/result`
+                                    }
                                     className="font-semibold text-wewin-navy hover:underline"
                                     title={t("viewBest", "Xem bài làm tốt nhất")}
                                   >
@@ -600,7 +745,7 @@ export function ClassHomeworkManager({
                             <td className="px-3 py-2 tabular-nums">{row.attemptCount}</td>
                             <td className="px-3 py-2">
                               {row.submittedAt ? (
-                                <span className={row.isLate ? "text-rose-600" : "text-emerald-700"}>
+                                <span suppressHydrationWarning className={row.isLate ? "text-rose-600" : "text-emerald-700"}>
                                   {fmt(row.submittedAt)}
                                   <span className="block text-xs">
                                     {row.isLate ? t("late", "Trễ hạn") : t("onTime", "Đúng hạn")}

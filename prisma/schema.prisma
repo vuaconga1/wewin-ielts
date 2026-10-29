@@ -223,7 +223,7 @@ model Classroom {
 model ClassAssignment {
   id            String   @id @default(cuid())
   classroomId   String
-  testId        String
+  testId        String?
   /// Parts (TestSection.order) the learner must submit; always explicit, full list = whole test
   sectionOrders Int[]
   wholeTest     Boolean  @default(true)
@@ -234,12 +234,14 @@ model ClassAssignment {
   partLabel     String?
   questionCount Int      @default(0)
   deadlineAt    DateTime
+  exerciseType  String?
+  exerciseId    String?
   createdById   String?
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 
   classroom Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
-  test      Test      @relation(fields: [testId], references: [id], onDelete: Cascade)
+  test      Test?     @relation(fields: [testId], references: [id], onDelete: Cascade)
   createdBy User?     @relation("ClassAssignmentCreator", fields: [createdById], references: [id], onDelete: SetNull)
 
   @@index([classroomId, deadlineAt])

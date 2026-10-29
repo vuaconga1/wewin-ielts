@@ -73,14 +73,6 @@ function Avatar({
   );
 }
 
-function RankBadge({ rank }: { rank: number }) {
-  return (
-    <span className="inline-flex items-center rounded-md bg-amber-400/90 px-1.5 py-0.5 text-[11px] font-bold text-wewin-navy">
-      #{rank}
-    </span>
-  );
-}
-
 function PodiumCard({
   entry,
   place,
@@ -123,7 +115,6 @@ function PodiumCard({
         <p className="line-clamp-2 min-w-0 break-words text-sm font-semibold text-wewin-navy">
           {entry.username}
         </p>
-        <RankBadge rank={entry.rank} />
       </div>
       <div
         className={`flex w-full flex-1 flex-col items-center justify-start rounded-t-2xl px-3 pt-4 pb-5 shadow-sm ${height} ${block} ${textOnBlock}`}
@@ -332,10 +323,9 @@ export function RankingBoard({ data, intlLocale, isLoggedIn }: Props) {
                         ) : null}
                       </p>
                     </div>
-                    <RankBadge rank={entry.rank} />
                     <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold tabular-nums text-zinc-800">
                       <Star className="h-3.5 w-3.5 text-amber-400" aria-hidden />
-                      {formatPoints(entry.points, intlLocale)}
+                      {formatPoints(entry.points, intlLocale)} {t("pointsSuffix", "điểm")}
                     </span>
                   </li>
                 );
@@ -360,7 +350,7 @@ export function RankingBoard({ data, intlLocale, isLoggedIn }: Props) {
               {currentUser.username}
             </p>
             <span className="shrink-0 text-sm font-bold tabular-nums">
-              {formatPoints(currentUser.points, intlLocale)}
+              {formatPoints(currentUser.points, intlLocale)} {t("pointsSuffix", "điểm")}
             </span>
           </div>
         </div>
@@ -372,7 +362,9 @@ export function RankingBoard({ data, intlLocale, isLoggedIn }: Props) {
           <div className="mx-auto flex max-w-[1400px] items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
             <span className="shrink-0 text-sm font-semibold">{t("unranked")}</span>
             <p className="min-w-0 flex-1 text-sm text-white/80">{t("unrankedHint")}</p>
-            <span className="shrink-0 text-sm font-bold tabular-nums">0</span>
+            <span className="shrink-0 text-sm font-bold tabular-nums">
+              0 {t("pointsSuffix", "điểm")}
+            </span>
           </div>
         </div>
       ) : (

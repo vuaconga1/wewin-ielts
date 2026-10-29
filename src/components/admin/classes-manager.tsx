@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { CalendarDays, ChevronLeft, ClipboardList, ChevronRight, GraduationCap, Loader2, Plus, Search, Users, Video, X } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
-import { CLASS_TIMEZONES } from "@/lib/classroom/schedule-time";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { matchesAllWords } from "@/lib/ui/fold-text";
 
@@ -42,7 +41,7 @@ export function ClassesManager({
   const [creating, setCreating] = useState(false);
   const [code, setCode] = useState("");
   const [name, setName] = useState("");
-  const [timezone, setTimezone] = useState<string>(CLASS_TIMEZONES[0]);
+  const timezone = "Asia/Ho_Chi_Minh";
   const [zoomAccountId, setZoomAccountId] = useState("");
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -188,17 +187,7 @@ export function ClassesManager({
                 />
               </label>
             </div>
-            <div className="grid min-w-0 gap-4 sm:grid-cols-2">
-              <label className="block min-w-0 space-y-1">
-                <span className="text-sm font-semibold text-zinc-800">{t("fieldTimezone", "Múi giờ")}</span>
-                <select value={timezone} onChange={(e) => setTimezone(e.target.value)} className={inputCls}>
-                  {CLASS_TIMEZONES.map((zone) => (
-                    <option key={zone} value={zone}>
-                      {zone}
-                    </option>
-                  ))}
-                </select>
-              </label>
+            <div>
               <label className="block min-w-0 space-y-1">
                 <span className="text-sm font-semibold text-zinc-800">{t("fieldZoomAccount", "Tài khoản Zoom")}</span>
                 <select value={zoomAccountId} onChange={(e) => setZoomAccountId(e.target.value)} className={inputCls}>

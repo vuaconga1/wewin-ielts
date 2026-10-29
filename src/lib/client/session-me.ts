@@ -14,7 +14,7 @@ export type SessionMe = {
 };
 
 const TTL_MS = 60_000;
-const STORAGE_KEY = "wewin_session_me_v3";
+const STORAGE_KEY = "wewin_session_me_v4";
 
 type CacheEntry = {
   data: SessionMe;
@@ -95,6 +95,9 @@ type AuthApiUser = {
   fullName?: string | null;
   role: "ADMIN" | "TEACHER" | "STUDENT" | "VISITOR";
   avatarUrl?: string | null;
+  accessPlan?: "FREE" | "PAID" | "UNLIMITED";
+  accessExpiresAt?: string | null;
+  accessStatus?: "ACTIVE" | "EXPIRING" | "EXPIRED" | "UNLIMITED";
 };
 
 function canImportFromPayload(
@@ -128,6 +131,9 @@ function revalidate(): Promise<SessionMe> {
               initials: initialsFromName(raw.fullName || raw.username),
               role: raw.role,
               avatarUrl: raw.avatarUrl ?? null,
+              accessPlan: raw.accessPlan,
+              accessExpiresAt: raw.accessExpiresAt,
+              accessStatus: raw.accessStatus,
             }
           : null,
         canImport: canImportFromPayload(raw, json.canImport),

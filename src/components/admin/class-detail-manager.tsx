@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
 import {
-  CLASS_TIMEZONES,
   expandWeeklyWallTimes,
   MAX_SERIES_OCCURRENCES,
   utcToZonedWallTime,
@@ -53,6 +52,10 @@ const WEEK_ORDER = [1, 2, 3, 4, 5, 6, 0];
 function personName(person: Person | null | undefined) {
   if (!person) return "";
   return person.fullName?.trim() || person.username;
+}
+
+function formatSessionDate(date: Date, formatter: Intl.DateTimeFormat) {
+  return formatter.format(date).replace(/\bTh\s+/g, "Thứ ");
 }
 
 function foldText(value: string) {
@@ -314,7 +317,6 @@ export function ClassDetailManager({
   // ---------- Class settings (admin) ----------
   const [className, setClassName] = useState(classroom.name);
   const [classCode, setClassCode] = useState(classroom.code);
-  const [classTz, setClassTz] = useState(classroom.timezone);
   const [classZoom, setClassZoom] = useState(classroom.zoomAccountId ?? "");
 
   async function saveClass(e: React.FormEvent) {
@@ -322,7 +324,7 @@ export function ClassDetailManager({
     const ok = await call("class", `/api/admin/classes/${classroom.id}`, "PATCH", {
       name: className,
       code: classCode,
-      timezone: classTz,
+      timezone: "Asia/Ho_Chi_Minh",
       zoomAccountId: classZoom || null,
     });
     if (ok) {
@@ -416,8 +418,8 @@ export function ClassDetailManager({
                   </span>
                 ) : null}
               </div>
-              <p className="mt-1 break-words text-sm text-zinc-700">
-                {dateFormatter.format(new Date(session.start))} ·{" "}
+              <p suppressHydrationWarning className="mt-1 break-words text-sm text-zinc-700">
+                {formatSessionDate(new Date(session.start), dateFormatter)} ·{" "}
                 {t("minutes", { n: session.durationMinutes }, "{n} phút")}
               </p>
               <p className="mt-0.5 break-words text-xs text-zinc-500">
@@ -752,7 +754,7 @@ export function ClassDetailManager({
         <section className="card-outline min-w-0 space-y-4 p-4 sm:p-5">
           <h2 className="text-lg font-bold text-wewin-navy">{t("settingsTitle", "Cài đặt lớp")}</h2>
           <form onSubmit={saveClass} className="min-w-0 space-y-4">
-            <div className="grid min-w-0 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid min-w-0 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               <label className="block min-w-0 space-y-1">
                 <span className="text-sm font-semibold text-zinc-800">{t("fieldCode", "Mã lớp")}</span>
                 <input required value={classCode} onChange={(e) => setClassCode(e.target.value.toUpperCase())} className={inputCls} />
@@ -760,16 +762,6 @@ export function ClassDetailManager({
               <label className="block min-w-0 space-y-1">
                 <span className="text-sm font-semibold text-zinc-800">{t("fieldName", "Tên lớp")}</span>
                 <input required value={className} onChange={(e) => setClassName(e.target.value)} className={inputCls} />
-              </label>
-              <label className="block min-w-0 space-y-1">
-                <span className="text-sm font-semibold text-zinc-800">{t("fieldTimezone", "Múi giờ")}</span>
-                <select value={classTz} onChange={(e) => setClassTz(e.target.value)} className={inputCls}>
-                  {[...new Set([classroom.timezone, ...CLASS_TIMEZONES])].map((zone) => (
-                    <option key={zone} value={zone}>
-                      {zone}
-                    </option>
-                  ))}
-                </select>
               </label>
               <label className="block min-w-0 space-y-1">
                 <span className="text-sm font-semibold text-zinc-800">{t("fieldZoomAccount", "Tài khoản Zoom")}</span>

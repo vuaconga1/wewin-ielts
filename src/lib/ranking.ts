@@ -52,6 +52,7 @@ type ScoredAttemptRow = {
 type UserLite = {
   id: string;
   username: string;
+  role?: string;
 };
 
 type RankingBoard = Omit<RankingResult, "currentUser">;
@@ -124,10 +125,10 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
   if (await canUsePrisma()) {
     try {
       const users = await prisma.user.findMany({
-        select: { id: true, username: true, fullName: true },
+        select: { id: true, username: true, fullName: true, role: true },
       });
       for (const u of users) {
-        map.set(u.id, { id: u.id, username: displayName(u) });
+        map.set(u.id, { id: u.id, username: displayName(u), role: u.role });
       }
     } catch {
       /* ignore — fall through to local */
@@ -137,7 +138,7 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
   const local = await listLocalUsers();
   for (const u of local) {
     if (!map.has(u.id)) {
-      map.set(u.id, { id: u.id, username: displayName(u) });
+      map.set(u.id, { id: u.id, username: displayName(u), role: u.role });
     }
   }
 
@@ -190,6 +191,9 @@ async function loadPrismaScoredAttempts(range: {
       userId: { not: null },
       scoreRaw: { not: null },
       test: { skill: { in: ["LISTENING", "READING"] } },
+      user: {
+        role: { notIn: ["ADMIN", "TEACHER"] },
+      },
     },
     select: {
       id: true,
@@ -321,6 +325,10 @@ function aggregateEntries(
 
   for (const row of rows) {
     const user = userMap.get(row.userId);
+    // Exclude ADMIN and TEACHER from leaderboard
+    if (user?.role === "ADMIN" || user?.role === "TEACHER") {
+      continue;
+    }
     const username = user?.username ?? row.userId.slice(0, 12);
     const prev = totals.get(row.userId) ?? {
       points: 0,
@@ -406,7 +414,7 @@ function getCachedRankingBoard(
 ): Promise<RankingBoard> {
   return unstable_cache(
     () => computeRankingBoard(period, year, month, day),
-    ["ranking-board-v2", period, String(year), String(month), String(day)],
+    ["ranking-board-v3", period, String(year), String(month), String(day)],
     { revalidate: RANKING_REVALIDATE_SEC },
   )();
 }

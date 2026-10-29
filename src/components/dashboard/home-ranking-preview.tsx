@@ -66,7 +66,7 @@ export function HomeRankingPreview({ entries, intlLocale }: Props) {
                 </p>
               </div>
               <span className="shrink-0 text-sm font-bold tabular-nums text-wewin-navy">
-                {formatPoints(entry.points, intlLocale)}
+                {formatPoints(entry.points, intlLocale)} {t("pointsSuffix", "điểm")}
               </span>
             </li>
           ))}

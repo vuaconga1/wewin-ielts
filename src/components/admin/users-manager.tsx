@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { Loader2, Pencil, Plus, Trash2, X } from "lucide-react";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { useTranslations } from "@/i18n/provider";
@@ -609,9 +610,19 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                       </div>
                     </td>
                     <td className="px-3 py-3 sm:px-4">
-                      <p className="max-w-[14rem] truncate text-zinc-800">
-                        {user.fullName || t("noFullName", "—")}
-                      </p>
+                      {isLearnerRole(user.role) ? (
+                        <Link
+                          href={`/admin/reports/${user.id}`}
+                          className="max-w-[14rem] truncate font-medium text-wewin-navy hover:underline block"
+                          title="Xem báo cáo & lịch sử làm bài"
+                        >
+                          {user.fullName || t("noFullName", "—")}
+                        </Link>
+                      ) : (
+                        <p className="max-w-[14rem] truncate text-zinc-800">
+                          {user.fullName || t("noFullName", "—")}
+                        </p>
+                      )}
                     </td>
                     <td className="px-3 py-3 sm:px-4">
                       <p className="max-w-[10rem] truncate break-all text-zinc-700">
@@ -651,6 +662,15 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                             <input type="date" aria-label={`Ngày hết hạn của ${user.username}`} value={expiryDates[user.id] ?? ""} onChange={(event) => setExpiryDates((current) => ({ ...current, [user.id]: event.target.value }))} className="rounded-lg border border-wewin-border px-2 py-1 text-xs" />
                             <button type="button" onClick={() => expiryDates[user.id] && void updateAccess(user, { expiresAt: expiryDates[user.id] })} disabled={busy || !expiryDates[user.id]} className="rounded-lg border border-wewin-border px-2 py-1.5 text-xs font-medium disabled:opacity-40">Đặt ngày</button>
                           </>
+                        ) : null}
+                        {isLearnerRole(user.role) ? (
+                          <Link
+                            href={`/admin/reports/${user.id}`}
+                            className="inline-flex items-center gap-1 rounded-lg border border-wewin-border bg-white px-2.5 py-1.5 text-xs font-semibold text-wewin-navy hover:bg-zinc-50"
+                            title="Xem chi tiết lịch sử học viên"
+                          >
+                            Báo cáo
+                          </Link>
                         ) : null}
                         <button
                           type="button"

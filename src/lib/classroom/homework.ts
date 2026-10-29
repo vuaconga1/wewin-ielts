@@ -29,6 +29,8 @@ const assignmentSelect = {
   testSlug: true,
   testTitle: true,
   skill: true,
+  exerciseType: true,
+  exerciseId: true,
   sectionOrders: true,
   wholeTest: true,
   partLabel: true,
@@ -39,10 +41,12 @@ const assignmentSelect = {
 
 type AssignmentRow = {
   id: string;
-  testId: string;
+  testId: string | null;
   testSlug: string;
   testTitle: string;
   skill: HomeworkSkill;
+  exerciseType?: string | null;
+  exerciseId?: string | null;
   sectionOrders: number[];
   wholeTest: boolean;
   partLabel: string | null;
@@ -80,9 +84,9 @@ function toView(row: AssignmentRow): ClassAssignmentView {
 function toRef(row: AssignmentRow): HomeworkAssignmentRef {
   return {
     id: row.id,
-    testId: row.testId,
+    testId: row.testId || row.exerciseId || row.testSlug,
     skill: row.skill,
-    sectionOrders: row.sectionOrders,
+    sectionOrders: row.sectionOrders?.length ? row.sectionOrders : [1],
     questionCount: row.questionCount,
     deadlineAt: row.deadlineAt,
     createdAt: row.createdAt,
@@ -90,6 +94,14 @@ function toRef(row: AssignmentRow): HomeworkAssignmentRef {
 }
 
 export function homeworkHref(row: { testSlug: string; wholeTest: boolean; sectionOrders: number[] }) {
+  if (
+    row.testSlug.startsWith("shadowing/") ||
+    row.testSlug.startsWith("dictation/") ||
+    row.testSlug.startsWith("fill-blank/") ||
+    row.testSlug.startsWith("listen-answer/")
+  ) {
+    return `/learn/${row.testSlug}`;
+  }
   const base = `/tests/${encodeURIComponent(row.testSlug)}`;
   return row.wholeTest ? base : `${base}?parts=${row.sectionOrders.join(",")}`;
 }
@@ -113,22 +125,69 @@ export type HomeworkCatalogTest = {
 };
 
 export async function loadHomeworkCatalog(): Promise<HomeworkCatalogTest[]> {
-  const tests = await listPublicTests();
-  return tests
-    .map((test) => ({
-      slug: test.slug,
-      title: test.title,
-      skill: test.skill as HomeworkSkill,
-      examType: normalizeExamType(test.examType),
-      parts: [...test.parts]
-        .sort((a, b) => a.order - b.order)
-        .map((part) => ({
-          order: part.order,
-          title: part.title,
-          questionCount: part.questions.length,
-        })),
-    }))
-    .sort((a, b) => a.title.localeCompare(b.title, "en", { numeric: true }));
+  const [tests, shadowing, dictation] = await Promise.all([
+    listPublicTests(),
+    prisma.shadowingExercise.findMany({
+      where: { status: "PUBLISHED" },
+      select: { id: true, slug: true, title: true, level: true },
+      orderBy: { order: "asc" },
+    }),
+    prisma.dictationExercise.findMany({
+      where: { status: "PUBLISHED" },
+      select: { id: true, slug: true, title: true, level: true, mode: true },
+      orderBy: { order: "asc" },
+    }),
+  ]);
+
+  const testItems: HomeworkCatalogTest[] = tests.map((test) => ({
+    slug: test.slug,
+    title: test.title,
+    skill: test.skill as HomeworkSkill,
+    examType: normalizeExamType(test.examType),
+    parts: [...test.parts]
+      .sort((a, b) => a.order - b.order)
+      .map((part) => ({
+        order: part.order,
+        title: part.title,
+        questionCount: part.questions.length,
+      })),
+  }));
+
+  const shadowingItems: HomeworkCatalogTest[] = shadowing.map((item) => ({
+    slug: `shadowing/${item.slug}`,
+    title: `${item.title}${item.level ? ` · ${item.level}` : ""}`,
+    skill: "SPEAKING",
+    examType: "SHADOWING",
+    parts: [{ order: 1, title: "Luyện nói Shadowing", questionCount: 1 }],
+  }));
+
+  const dictationItems: HomeworkCatalogTest[] = dictation.map((item) => {
+    let prefix = "dictation";
+    let examType = "DICTATION";
+    let label = "Nghe chép chính tả";
+    if (item.mode === "FILL_BLANK") {
+      prefix = "fill-blank";
+      examType = "FILL_BLANK";
+      label = "Nghe điền từ";
+    } else if (item.mode === "QUESTION_ANSWER") {
+      prefix = "listen-answer";
+      examType = "LISTEN_ANSWER";
+      label = "Nghe & trả lời";
+    }
+    return {
+      slug: `${prefix}/${item.slug}`,
+      title: `${item.title}${item.level ? ` · ${item.level}` : ""}`,
+      skill: "LISTENING",
+      examType,
+      parts: [{ order: 1, title: label, questionCount: 1 }],
+    };
+  });
+
+  return [
+    ...testItems.sort((a, b) => a.title.localeCompare(b.title, "en", { numeric: true })),
+    ...shadowingItems,
+    ...dictationItems,
+  ];
 }
 
 // ---------- CRUD ----------
@@ -168,20 +227,122 @@ export async function createClassAssignments(actor: ClassActor, classroomId: str
   if (!parsed.success) throw new ClassroomManageError("INVALID_INPUT");
 
   const slugs = [...new Set(parsed.data.assignments.map((item) => item.testSlug))];
-  const tests = await prisma.test.findMany({
-    where: { slug: { in: slugs }, status: { not: "ARCHIVED" } },
-    select: {
-      id: true,
-      slug: true,
-      title: true,
-      skill: true,
-      sections: { select: { order: true, title: true, questionCount: true, _count: { select: { questions: true } } } },
-    },
-  });
-  const bySlug = new Map(tests.map((test) => [test.slug, test]));
+  const standardSlugs = slugs.filter((s) => !s.includes("/"));
+  const skillSlugs = slugs.filter((s) => s.includes("/"));
+
+  // Standard tests
+  const tests = standardSlugs.length
+    ? await prisma.test.findMany({
+        where: { slug: { in: standardSlugs }, status: { not: "ARCHIVED" } },
+        select: {
+          id: true,
+          slug: true,
+          title: true,
+          skill: true,
+          sections: {
+            select: {
+              order: true,
+              title: true,
+              questionCount: true,
+              _count: { select: { questions: true } },
+            },
+          },
+        },
+      })
+    : [];
+  const testBySlug = new Map(tests.map((test) => [test.slug, test]));
+
+  // Shadowing exercises
+  const shadowSlugs = skillSlugs
+    .filter((s) => s.startsWith("shadowing/"))
+    .map((s) => s.replace(/^shadowing\//, ""));
+  const shadowExercises = shadowSlugs.length
+    ? await prisma.shadowingExercise.findMany({
+        where: { slug: { in: shadowSlugs } },
+        select: { id: true, slug: true, title: true, level: true },
+      })
+    : [];
+  const shadowBySlug = new Map(shadowExercises.map((e) => [e.slug, e]));
+
+  // Dictation exercises
+  const dictSlugs = skillSlugs
+    .filter(
+      (s) =>
+        s.startsWith("dictation/") ||
+        s.startsWith("fill-blank/") ||
+        s.startsWith("listen-answer/"),
+    )
+    .map((s) => s.split("/")[1]);
+  const dictExercises = dictSlugs.length
+    ? await prisma.dictationExercise.findMany({
+        where: { slug: { in: dictSlugs } },
+        select: { id: true, slug: true, title: true, level: true, mode: true },
+      })
+    : [];
+  const dictBySlug = new Map(dictExercises.map((e) => [e.slug, e]));
 
   const data = parsed.data.assignments.map((item) => {
-    const test = bySlug.get(item.testSlug);
+    const deadlineAt = zonedWallTimeToUtc(item.deadlineWallTime, classroom.timezone);
+    if (!deadlineAt) throw new ClassroomManageError("INVALID_DEADLINE");
+
+    // Case 1: Shadowing
+    if (item.testSlug.startsWith("shadowing/")) {
+      const slug = item.testSlug.replace(/^shadowing\//, "");
+      const ex = shadowBySlug.get(slug);
+      if (!ex) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
+      return {
+        classroomId,
+        testId: null,
+        exerciseType: "SHADOWING",
+        exerciseId: ex.id,
+        testSlug: item.testSlug,
+        testTitle: ex.title,
+        skill: "SPEAKING" as const,
+        sectionOrders: [1],
+        wholeTest: true,
+        partLabel: ex.level ? `Shadowing (${ex.level})` : "Shadowing",
+        questionCount: 1,
+        deadlineAt,
+        createdById: actor.id,
+      };
+    }
+
+    // Case 2: Dictation / Fill Blank / Listen Answer
+    if (
+      item.testSlug.startsWith("dictation/") ||
+      item.testSlug.startsWith("fill-blank/") ||
+      item.testSlug.startsWith("listen-answer/")
+    ) {
+      const parts = item.testSlug.split("/");
+      const prefix = parts[0];
+      const slug = parts[1];
+      const ex = dictBySlug.get(slug);
+      if (!ex) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
+      const label =
+        prefix === "dictation"
+          ? "Chép chính tả"
+          : prefix === "fill-blank"
+            ? "Nghe điền từ"
+            : "Nghe & trả lời";
+      return {
+        classroomId,
+        testId: null,
+        exerciseType: ex.mode,
+        exerciseId: ex.id,
+        testSlug: item.testSlug,
+        testTitle: ex.title,
+        skill: "LISTENING" as const,
+        sectionOrders: [1],
+        wholeTest: true,
+        partLabel: ex.level ? `${label} (${ex.level})` : label,
+        questionCount: 1,
+        deadlineAt,
+        createdById: actor.id,
+      };
+    }
+
+    // Case 3: Standard test
+    const test = testBySlug.get(item.testSlug);
     if (!test) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
     const sections = [...test.sections].sort((a, b) => a.order - b.order);
     if (!sections.length) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
@@ -194,11 +355,11 @@ export async function createClassAssignments(actor: ClassActor, classroomId: str
     const wholeTest = requested.length === 0 || requested.length === allOrders.length;
     const orders = wholeTest ? allOrders : requested;
     const picked = sections.filter((section) => orders.includes(section.order));
-    const deadlineAt = zonedWallTimeToUtc(item.deadlineWallTime, classroom.timezone);
-    if (!deadlineAt) throw new ClassroomManageError("INVALID_DEADLINE");
     return {
       classroomId,
       testId: test.id,
+      exerciseType: "TEST",
+      exerciseId: null,
       testSlug: test.slug,
       testTitle: test.title,
       skill: test.skill,
@@ -279,41 +440,151 @@ type RawAttemptRow = {
   speakingPartKinds: unknown;
 };
 
-/** One query for every (learner × assigned test); payload JSON is read server-side only for the few fields needed. */
+/** Fetch attempts across standard tests, shadowing, and dictation/fill-blank/listen-answer exercises. */
 async function fetchHomeworkAttempts(
   userIds: string[],
-  testIds: string[],
+  assignments: {
+    testId: string | null;
+    exerciseId?: string | null;
+    exerciseType?: string | null;
+    testSlug: string;
+  }[],
   since: Date,
 ): Promise<HomeworkAttempt[]> {
-  if (!userIds.length || !testIds.length) return [];
-  const rows = await prisma.$queryRaw<RawAttemptRow[]>`
-    SELECT "id", "userId", "testId", "sectionIds", "finishedAt", "scoreRaw", "scoreBand",
-      ("payload"::jsonb #>> '{score,total}') AS "total",
-      ("payload"::jsonb -> 'questionNumbers') AS "questionNumbers",
-      ("payload"::jsonb -> 'speakingPartKinds') AS "speakingPartKinds"
-    FROM "Attempt"
-    WHERE "userId" = ANY(${userIds}::text[])
-      AND "testId" = ANY(${testIds}::text[])
-      AND "finishedAt" IS NOT NULL
-      AND "finishedAt" >= ${since}
-    ORDER BY "finishedAt" ASC
-    LIMIT 20000`;
-  return rows.map((row) => {
-    const total = row.total === null ? null : Number(row.total);
-    const questionNumbers = numberArray(row.questionNumbers);
-    return {
+  if (!userIds.length || !assignments.length) return [];
+
+  const standardTestIds = [
+    ...new Set(
+      assignments.map((a) => a.testId).filter((id): id is string => Boolean(id)),
+    ),
+  ];
+
+  const shadowingExerciseIds = [
+    ...new Set(
+      assignments
+        .filter(
+          (a) =>
+            a.exerciseType === "SHADOWING" ||
+            a.testSlug.startsWith("shadowing/"),
+        )
+        .map((a) => a.exerciseId)
+        .filter((id): id is string => Boolean(id)),
+    ),
+  ];
+
+  const dictationExerciseIds = [
+    ...new Set(
+      assignments
+        .filter(
+          (a) =>
+            (a.exerciseType && a.exerciseType !== "SHADOWING") ||
+            a.testSlug.startsWith("dictation/") ||
+            a.testSlug.startsWith("fill-blank/") ||
+            a.testSlug.startsWith("listen-answer/"),
+        )
+        .map((a) => a.exerciseId)
+        .filter((id): id is string => Boolean(id)),
+    ),
+  ];
+
+  let standardAttempts: HomeworkAttempt[] = [];
+  if (standardTestIds.length) {
+    const rows = await prisma.$queryRaw<RawAttemptRow[]>`
+      SELECT "id", "userId", "testId", "sectionIds", "finishedAt", "scoreRaw", "scoreBand",
+        ("payload"::jsonb #>> '{score,total}') AS "total",
+        ("payload"::jsonb -> 'questionNumbers') AS "questionNumbers",
+        ("payload"::jsonb -> 'speakingPartKinds') AS "speakingPartKinds"
+      FROM "Attempt"
+      WHERE "userId" = ANY(${userIds}::text[])
+        AND "testId" = ANY(${standardTestIds}::text[])
+        AND "finishedAt" IS NOT NULL
+        AND "finishedAt" >= ${since}
+      ORDER BY "finishedAt" ASC
+      LIMIT 20000`;
+    standardAttempts = rows.map((row) => {
+      const total = row.total === null ? null : Number(row.total);
+      const questionNumbers = numberArray(row.questionNumbers);
+      return {
+        id: row.id,
+        userId: row.userId,
+        testId: row.testId,
+        sectionOrders: numberArray(row.sectionIds) ?? [],
+        finishedAt: new Date(row.finishedAt),
+        correct: row.scoreRaw,
+        total: total !== null && Number.isFinite(total) ? total : null,
+        aiBand: row.scoreBand,
+        partial: Boolean(questionNumbers?.length),
+        speakingPartKinds: numberArray(row.speakingPartKinds),
+      };
+    });
+  }
+
+  let shadowingAttempts: HomeworkAttempt[] = [];
+  if (shadowingExerciseIds.length) {
+    const rows = await prisma.shadowingAttempt.findMany({
+      where: {
+        userId: { in: userIds },
+        exerciseId: { in: shadowingExerciseIds },
+        createdAt: { gte: since },
+      },
+      select: {
+        id: true,
+        userId: true,
+        exerciseId: true,
+        score: true,
+        createdAt: true,
+      },
+      orderBy: { createdAt: "asc" },
+    });
+    shadowingAttempts = rows.map((row) => ({
       id: row.id,
       userId: row.userId,
-      testId: row.testId,
-      sectionOrders: numberArray(row.sectionIds) ?? [],
-      finishedAt: new Date(row.finishedAt),
-      correct: row.scoreRaw,
-      total: total !== null && Number.isFinite(total) ? total : null,
-      aiBand: row.scoreBand,
-      partial: Boolean(questionNumbers?.length),
-      speakingPartKinds: numberArray(row.speakingPartKinds),
-    };
-  });
+      testId: row.exerciseId,
+      sectionOrders: [1],
+      finishedAt: row.createdAt,
+      correct: row.score,
+      total: 100,
+      aiBand: null,
+      partial: false,
+      speakingPartKinds: null,
+    }));
+  }
+
+  let dictationAttempts: HomeworkAttempt[] = [];
+  if (dictationExerciseIds.length) {
+    const rows = await prisma.dictationAttempt.findMany({
+      where: {
+        userId: { in: userIds },
+        exerciseId: { in: dictationExerciseIds },
+        completedAt: { not: null, gte: since },
+      },
+      select: {
+        id: true,
+        userId: true,
+        exerciseId: true,
+        score: true,
+        totalWords: true,
+        correctCount: true,
+        completedAt: true,
+        startedAt: true,
+      },
+      orderBy: { completedAt: "asc" },
+    });
+    dictationAttempts = rows.map((row) => ({
+      id: row.id,
+      userId: row.userId!,
+      testId: row.exerciseId,
+      sectionOrders: [1],
+      finishedAt: row.completedAt || row.startedAt,
+      correct: row.score ?? row.correctCount,
+      total: row.totalWords ?? 100,
+      aiBand: null,
+      partial: false,
+      speakingPartKinds: null,
+    }));
+  }
+
+  return [...standardAttempts, ...shadowingAttempts, ...dictationAttempts];
 }
 
 export type ProgressRow = {
@@ -359,7 +630,7 @@ async function loadClassProgressUncached(classroomId: string): Promise<ClassProg
     : new Date();
   const attempts = await fetchHomeworkAttempts(
     students.map((student) => student.id),
-    [...new Set(assignments.map((row) => row.testId))],
+    assignments,
     since,
   );
   const byUser = new Map<string, HomeworkAttempt[]>();
@@ -507,7 +778,7 @@ export async function listIncompleteHomework(userId: string): Promise<Incomplete
 
   const attempts = await fetchHomeworkAttempts(
     [userId],
-    [...new Set(rows.map((row) => row.testId))],
+    rows,
     new Date(Math.min(...rows.map((row) => row.createdAt.getTime()))),
   );
   const items = rows

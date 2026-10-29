@@ -381,11 +381,24 @@ export function AttemptsViewer() {
               {pageAttempts.map((row) => (
                 <tr key={row.id} className="border-t border-zinc-200">
                   <td className="max-w-[12rem] px-4 py-3 sm:max-w-[16rem]">
-                    <div className="break-words font-medium text-zinc-900">
-                      {row.username ?? tc("dash")}
-                    </div>
+                    {row.userId ? (
+                      <Link
+                        href={`/admin/reports/${row.userId}`}
+                        className="break-words font-medium text-wewin-navy hover:underline block"
+                        title="Xem toàn bộ lịch sử học viên"
+                      >
+                        {row.userFullName || row.username || tc("dash")}
+                      </Link>
+                    ) : (
+                      <div className="break-words font-medium text-zinc-900">
+                        {row.userFullName || row.username || tc("dash")}
+                      </div>
+                    )}
                     <div className="break-all text-xs text-zinc-500">
-                      {row.userEmail ?? t("guestUser")}
+                      {row.userFullName && row.username ? (
+                        <span className="font-mono text-zinc-400">{row.username} · </span>
+                      ) : null}
+                      {row.userEmail ?? (row.username ? "Học viên" : t("guestUser"))}
                     </div>
                   </td>
                   <td className="max-w-[14rem] px-4 py-3 sm:max-w-[18rem]">

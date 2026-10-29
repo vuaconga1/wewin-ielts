@@ -413,5 +413,39 @@ body {
   .animate-mic-pulse {
     animation: mic-pulse-ring 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+
+  /* About page: infinite "our mission" ticker (content duplicated once) */
+  @keyframes wewin-marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-wewin-marquee {
+    animation: wewin-marquee 28s linear infinite;
+  }
+
+  @keyframes wewin-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-wewin-float {
+    animation: wewin-float 4s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-wewin-marquee,
+    .animate-wewin-float {
+      animation: none;
+    }
+  }
 }
 

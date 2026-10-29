@@ -1,73 +1,20 @@
-import { getSessionUser } from "@/lib/auth";
-import { listAttempts, listPublicTests } from "@/lib/store/test-store";
-import { SiteShell } from "@/components/layout/site-shell";
-import { DashboardHome } from "@/components/dashboard/dashboard-home";
-import {
-  computeProgress,
-  computeSkillStatuses,
-  computeStreak,
-  dateKey,
-  displayGivenName,
-  formatGreetingDate,
-  greetingKey,
-  pickHero,
-  pickRecommendedTests,
-} from "@/lib/dashboard-stats";
-import { getRanking } from "@/lib/ranking";
-import { getLocale } from "@/i18n/server";
-import { localeToIntl } from "@/i18n/config";
-import { getTranslations } from "@/i18n/server";
+import type { Metadata } from "next";
+import { LandingHeader } from "@/components/test-practice/landing-header";
+import { AboutLanding } from "@/components/test-practice/about-landing";
 
-export const dynamic = "force-dynamic";
+export const metadata: Metadata = {
+  title: "WEWIN Education - Nền tảng Học & Luyện thi IELTS thực chiến",
+  description:
+    "Nền tảng học và luyện thi IELTS thực chiến 4 kỹ năng tại Wewin Education: kho đề Cambridge & Real Exam, chấm điểm tức thì, Shadowing, Dictation và bảng vàng học viên đạt 7.5 - 8.5 IELTS.",
+};
 
-export default async function Home() {
-  const user = await getSessionUser();
-  const locale = await getLocale();
-  const intlLocale = localeToIntl(locale);
-  const { t } = await getTranslations();
-
-  const tests = await listPublicTests();
-  const attempts = user ? await listAttempts({ userId: user.id }) : [];
-
-  const hero = pickHero(tests, attempts);
-  const progress = computeProgress(tests, attempts);
-  const streak = computeStreak(attempts);
-  const skills = computeSkillStatuses(tests, attempts);
-  const recommended = pickRecommendedTests(tests, attempts, 4);
-
-  const ranking = await getRanking({
-    period: "month",
-    currentUserId: user?.id ?? null,
-  });
-
-  const todayKey = dateKey(new Date().toISOString());
-  const practicedToday = attempts.some(
-    (a) => dateKey(a.finishedAt ?? a.updatedAt ?? a.startedAt) === todayKey,
-  );
-
-  const givenName = user
-    ? displayGivenName(user.username)
-    : t("common.you");
-
+export default function HomePage() {
   return (
-    <SiteShell active="home">
-      <DashboardHome
-        dateLabel={formatGreetingDate(new Date(), intlLocale)}
-        greetingKey={greetingKey()}
-        givenName={givenName}
-        loggedIn={Boolean(user)}
-        hero={hero}
-        progress={progress}
-        streakDays={streak.days}
-        weekActive={streak.weekActive}
-        practicedToday={practicedToday}
-        skills={skills}
-        recommended={recommended}
-        rankingTop={ranking.entries.slice(0, 3)}
-        rankPoints={ranking.currentUser?.points ?? null}
-        rankPlace={ranking.currentUser?.rank ?? null}
-        intlLocale={intlLocale}
-      />
-    </SiteShell>
+    <div className="min-h-screen bg-white flex flex-col selection:bg-blue-600 selection:text-white">
+      <LandingHeader />
+      <main className="flex-1 w-full overflow-x-hidden">
+        <AboutLanding />
+      </main>
+    </div>
   );
 }

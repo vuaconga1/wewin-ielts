@@ -12,7 +12,7 @@ import {
 import type { IeltsSkill } from "@/lib/dashboard-stats";
 import { useTranslations } from "@/i18n/provider";
 
-const SKILLS: {
+const ALL_SKILLS: {
   skill: IeltsSkill;
   path: string;
   icon: typeof Ear;
@@ -22,6 +22,11 @@ const SKILLS: {
   { skill: "WRITING", path: "/learn/writing", icon: PenLine },
   { skill: "SPEAKING", path: "/learn/speaking", icon: Mic },
 ];
+
+const SKILLS =
+  process.env.NODE_ENV === "production"
+    ? ALL_SKILLS.filter((s) => s.skill !== "SPEAKING")
+    : ALL_SKILLS;
 
 type SkillRow = {
   skill: IeltsSkill;

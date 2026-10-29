@@ -35,6 +35,7 @@
   },
   "nav": {
     "home": "Home",
+    "testPractice": "IELTS & Practice",
     "learn": "Learn 4 skills",
     "classroom": "My classrooms",
     "tests": "Practice tests",
@@ -511,7 +512,8 @@
     "loginHint": "Sign in to see your rank on the leaderboard.",
     "loginCta": "Sign in",
     "unranked": "Unranked",
-    "unrankedHint": "Finish Listening/Reading in this period to earn points."
+    "unrankedHint": "Finish Listening/Reading in this period to earn points.",
+    "pointsSuffix": "pts"
   },
   "locale": {
     "vi": "VI",
@@ -725,7 +727,8 @@
       "familiar": "Familiar",
       "tried": "Tried",
       "none": "Not started"
-    }
+    },
+    "pointsSuffix": "pts"
   },
   "footer": {
     "brandShort": "WEWIN",
@@ -807,7 +810,6 @@
   "tests": {
     "title": "Practice tests",
     "subtitle": "Choose Listening, Reading, Writing, or Speaking to practice. Need the basics first?",
-
     "backModules": "← Choose a module",
     "backModulesShort": "Choose another module",
     "moduleAcademic": "IELTS Academic",
@@ -816,7 +818,6 @@
     "moduleGeneralDesc": "General Training tests for Listening, Reading, Writing, and Speaking.",
     "modulePlacement": "IELTS Placement Test",
     "modulePlacementDesc": "Placement tests for Listening, Reading, and Writing.",
-
     "moduleGeneralSubtitle": "Choose Listening, Reading, Writing, or Speaking (General Training). Need the basics first?",
     "modulePlacementSubtitle": "Choose a Listening, Reading, or Writing placement test. Need the basics first?",
     "moduleTestCount": "{n} tests",
@@ -1192,7 +1193,6 @@
     "grammarCourseIelts56": "IELTS 5.0–6.0 course",
     "ieltsCourseDesc": "A {n}-session path with lesson slides: vocabulary, grammar, listening, reading, speaking and writing.",
     "ieltsCourseMembersOnly": "For WeWIN students",
-
     "browseCourses": "Browse courses →",
     "grammarCourseLockedTitle": "This course is for WeWIN students",
     "grammarCourseLockedVisitor": "Your account is not in a class yet. Contact WeWIN to join a class and unlock this course.",
@@ -1204,7 +1204,6 @@
     "vocabularyTrackDesc": "11 Cambridge Vocabulary topics — word cards (IPA, meaning, examples)",
     "backVocabGrammar": "← Vocabulary & Grammar",
     "backCourse": "← Back to course",
-
     "slidesLesson": "Lesson slides",
     "viewSlides": "View slides",
     "slidesFrameTitle": "Lesson slides: {title}",
@@ -1355,7 +1354,6 @@
     "courseCreateFailed": "Could not create course",
     "colCourse": "Course",
     "skillFilter": "{vi} ({n})",
-  
     "restoring": "Restoring…",
     "addLesson": "Add lesson",
     "confirmDelete": "Delete lesson \"{title}\"? This cannot be undone.",
@@ -1860,7 +1858,6 @@
     "lessonCount": "{n} lessons",
     "start": "Practise →",
     "defaultInstructions": "Listen to the model, then record yourself repeating it as closely as you can.",
-  
     "sampleAudio": "Model audio",
     "recordTitle": "Record your voice",
     "readAlongTitle": "Transcript",
@@ -1996,5 +1993,82 @@
     "notSubmitted": "Not submitted",
     "attemptMissing": "Attempt not found",
     "testRemoved": "Test deleted"
+  },
+  "aboutPage": {
+    "mascotAlt": "WEWIN mascot",
+    "hero": {
+      "badge": "About WEWIN Education",
+      "titleLine1": "An IELTS Learning & Exam-Prep Platform",
+      "titleLine2": "for all 4 skills",
+      "subtitle": "Cambridge & Real Exam test bank, a computer-delivered exam interface, instant scoring, plus exclusive Dictation and Shadowing tools.",
+      "ctaPrimary": "Start learning",
+      "ctaSecondary": "Free mock test"
+    },
+    "story": {
+      "lead": "Same lessons, same textbook, same classroom",
+      "question": "So why do some people reach their goal quickly while others keep struggling?",
+      "quote": "Everyone has a different starting point, different strengths and weaknesses, and a different pace.",
+      "steps": {
+        "start": "Different starting points",
+        "strength": "Unique strengths & weaknesses",
+        "pace": "Your own pace of progress"
+      }
+    },
+    "platform": {
+      "lead": "That is why WEWIN built its exam-prep platform on",
+      "title": "A real-exam practice roadmap",
+      "titleSub": "(Personalized to your level)",
+      "desc": "We continuously measure your actual level through every test, pinpoint weaknesses by question type and suggest the right practice instead of forcing you through a fixed path."
+    },
+    "experts": {
+      "heading": "Dedicated teachers combined with smart exam-prep technology",
+      "teamTitle": "An expert team that sets the standard",
+      "teamDesc": "All materials and assessment criteria are built by experienced WEWIN teachers, helping you uncover blind spots, build language thinking and master strategies for every question type.",
+      "exp1": "8.0+ IELTS teachers with years of exam-prep experience",
+      "exp2": "Writing & Speaking feedback based on examiner criteria",
+      "exp3": "Interactive live classes with close follow-up",
+      "techTitle": "Technology that personalizes your learning",
+      "techDesc": "Building on that expertise, the system tracks your results and flexibly suggests practice that fits your real level at every moment.",
+      "features": {
+        "mock": "Computer-delivered mock tests",
+        "score": "Instant scoring & analysis",
+        "dictation": "Dictation practice",
+        "shadowing": "Shadowing speaking practice"
+      }
+    },
+    "mission": {
+      "ticker": "our mission",
+      "title": "Conquering IELTS is not a “privilege” for the few",
+      "desc": "WEWIN's mission is to use technology to close the gap. Wherever you are and whatever your level, WEWIN helps you access proven exam-prep methods and reach your IELTS goal anytime, anywhere."
+    },
+    "honor": {
+      "badge": "WEWIN Hall of Fame",
+      "title": "Honoring our outstanding high-scoring IELTS students",
+      "subtitle": "Proud to accompany our students in reaching IELTS 7.5 – 8.5.",
+      "imageAlt": "WEWIN students honored for high IELTS scores"
+    },
+    "journey": {
+      "title": "Where are you on your IELTS journey?",
+      "desc": "Take a mock test to find your current band and get practice suggestions that match your goal.",
+      "cta": "Free level check"
+    },
+    "contact": {
+      "title": "Need any help?",
+      "subtitle": "Leave your details and WEWIN will contact you with a suitable study plan.",
+      "mascotBubble": "WEWIN is here to help!",
+      "address": "292B No Trang Long & 742 Xo Viet Nghe Tinh, Binh Thanh, HCMC",
+      "name": "Full name",
+      "phone": "Phone number",
+      "email": "Email",
+      "interest": "You are interested in",
+      "interests": {
+        "selfStudy": "Self-study IELTS online",
+        "course": "Courses at the center",
+        "placement": "Placement test",
+        "other": "Other questions"
+      },
+      "submit": "Request consultation",
+      "mailSubject": "IELTS consultation request - {name}"
+    }
   }
 }

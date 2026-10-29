@@ -17,7 +17,7 @@ type Mode = "login" | "register";
 export function LoginForm() {
   const router = useRouter();
   const search = useSearchParams();
-  const next = search.get("next") || "/tests";
+  const next = search.get("next") || "/dashboard";
   const reason = search.get("reason");
   const te = useTranslations("errors").t;
   const ta = useTranslations("auth").t;
@@ -79,7 +79,7 @@ export function LoginForm() {
         data.user?.role === "ADMIN" && next.startsWith("/admin")
           ? next
           : data.user?.role === "ADMIN"
-            ? "/admin/learn"
+            ? "/admin/classes"
             : next.startsWith("/admin")
               ? data.user?.role === "TEACHER" && isTeacherAdminPath(next)
                 ? next
