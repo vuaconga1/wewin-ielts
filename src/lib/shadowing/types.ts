@@ -1,4 +1,5 @@
 import type { DictationErrorSummary, DictationWordResult } from "@/lib/dictation/types";
+import type { CueTiming } from "@/lib/shadowing/cues";
 
 export type ShadowingWordResult = DictationWordResult;
 export type ShadowingErrorSummary = DictationErrorSummary;
@@ -34,6 +35,8 @@ export type PublicShadowingExercise = {
   audioUrl: string;
   maxRecordSeconds: number;
   transcript: string;
+  /** Aligned sentence timings matching `transcriptLines(transcript)`; null → estimated in the browser. */
+  cues: CueTiming[] | null;
 };
 
 export type ShadowingCatalogItem = {

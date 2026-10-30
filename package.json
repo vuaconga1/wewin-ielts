@@ -13,6 +13,7 @@
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
     "import:test": "tsx scripts/import-test.ts",
+    "shadowing:cues": "tsx scripts/shadowing-cues.ts",
     "import:regression": "tsx scripts/import-regression.ts",
     "test:gap-stems": "tsx scripts/test-gap-stems.ts",
     "test:map-label-layout": "tsx scripts/test-map-label-layout.ts",

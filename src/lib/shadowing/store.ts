@@ -4,6 +4,7 @@ import { mediaUrl } from "@/lib/media/url";
 import { prisma } from "@/lib/prisma";
 import { tokenize } from "@/lib/dictation/scoring";
 import { clampRecordSeconds, gradeShadowing, pickClosestAlternatives } from "@/lib/shadowing/scoring";
+import { validCueTimings } from "@/lib/shadowing/cues";
 import {
   deleteRecording,
   readRecording,
@@ -109,9 +110,10 @@ const getPublishedShadowingRow = unstable_cache(
       audioUrl: row.audioUrl,
       maxRecordSeconds: row.maxRecordSeconds,
       transcript: row.transcript,
+      cues: validCueTimings(row.cues, row.transcript, row.audioUrl),
     };
   },
-  ["shadowing-exercise-v2"],
+  ["shadowing-exercise-v3"],
   { revalidate: 300, tags: [CATALOG_TAG] },
 );
 

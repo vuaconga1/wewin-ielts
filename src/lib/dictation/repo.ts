@@ -487,12 +487,16 @@ const fileRepo: DictationRepo = {
 
 // ---------- Backend selection ----------
 
-const PROBE_TTL_MS = 30_000;
+const PROBE_TTL_SUCCESS_MS = 60_000;
+const PROBE_TTL_ERROR_MS = 2_000;
 let tableProbe: { ok: boolean; checkedAt: number } | null = null;
 
 async function dictationTablesExist(): Promise<boolean> {
   const now = Date.now();
-  if (tableProbe && now - tableProbe.checkedAt < PROBE_TTL_MS) return tableProbe.ok;
+  if (tableProbe) {
+    const ttl = tableProbe.ok ? PROBE_TTL_SUCCESS_MS : PROBE_TTL_ERROR_MS;
+    if (now - tableProbe.checkedAt < ttl) return tableProbe.ok;
+  }
   try {
     const rows = await prisma.$queryRaw<{ ok: boolean }[]>`
       SELECT to_regclass('"DictationExercise"') IS NOT NULL AS ok`;

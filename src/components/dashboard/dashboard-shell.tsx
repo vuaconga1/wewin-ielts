@@ -28,6 +28,7 @@ import {
   SidebarProfile,
   type SidebarUser,
 } from "@/components/dashboard/sidebar-profile";
+import { ProductSwitcher } from "@/components/dashboard/product-switcher";
 import { LanguageSwitcher } from "@/components/i18n/language-switcher";
 import { HeaderAuthButton } from "@/components/layout/header-auth-button";
 import { TourButton } from "@/components/tour/tour-button";
@@ -186,11 +187,23 @@ export function DashboardShell({
   function renderSidebar(compact: boolean) {
     return (
       <div className="flex h-full min-h-0 flex-col">
+        <div
+          data-tour="product-switcher"
+          className={`border-b border-wewin-border pb-3 ${
+            compact ? "px-0 mb-4" : "-mx-4 px-4 mb-0"
+          }`}
+        >
+          <ProductSwitcher
+            compact={compact}
+            onNavigate={() => setOpen(false)}
+          />
+        </div>
+
         {user ? (
           <div
             data-tour="home-profile"
             className={`mb-5 border-b border-wewin-border pb-4 ${
-              compact ? "px-0" : ""
+              compact ? "px-0" : "pt-3"
             }`}
           >
             <SidebarProfile
@@ -204,7 +217,7 @@ export function DashboardShell({
           <div
             data-tour="home-profile"
             className={`mb-5 border-b border-wewin-border pb-4 ${
-              compact ? "flex justify-center" : ""
+              compact ? "flex justify-center" : "pt-3"
             }`}
           >
             <SidebarProfile
@@ -370,6 +383,10 @@ export function DashboardShell({
                 priority
               />
             </Link>
+          </div>
+
+          <div className="ml-2 flex items-center sm:ml-4">
+            <ProductSwitcher variant="header" />
           </div>
 
           <div className="min-w-0 flex-1" aria-hidden="true" />

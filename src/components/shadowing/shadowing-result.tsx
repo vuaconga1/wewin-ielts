@@ -31,23 +31,23 @@ export function ShadowingResult({ result, sampleAudioUrl, title, onRetry }: Prop
   const scoreConfig =
     score >= 80
       ? {
-          badge: "Xuất sắc 🎉",
+          badge: t("scoreExcellent", "Xuất sắc 🎉"),
           color: "text-emerald-600 bg-emerald-50 border-emerald-200",
           ring: "stroke-emerald-500",
-          msg: "Khả năng phát âm và bắt nhịp câu rất chuẩn!",
+          msg: t("scoreExcellentMsg", "Khả năng phát âm và bắt nhịp câu rất chuẩn!"),
         }
       : score >= 60
         ? {
-            badge: "Khá tốt 👏",
+            badge: t("scoreGood", "Khá tốt 👏"),
             color: "text-sky-600 bg-sky-50 border-sky-200",
             ring: "stroke-sky-500",
-            msg: "Bắt kịp phần lớn nội dung, chỉ sai lệch một số từ nhỏ.",
+            msg: t("scoreGoodMsg", "Bắt kịp phần lớn nội dung, chỉ sai lệch một số từ nhỏ."),
           }
         : {
-            badge: "Cần luyện thêm 💪",
+            badge: t("scoreNeedsPractice", "Cần luyện thêm 💪"),
             color: "text-amber-600 bg-amber-50 border-amber-200",
             ring: "stroke-amber-500",
-            msg: "Hãy nghe lại audio mẫu với tốc độ 0.75x để theo dõi kỹ hơn.",
+            msg: t("scoreNeedsPracticeMsg", "Hãy nghe lại audio mẫu với tốc độ 0.75x để theo dõi kỹ hơn."),
           };
 
   return (
@@ -158,7 +158,9 @@ export function ShadowingResult({ result, sampleAudioUrl, title, onRetry }: Prop
         </h3>
         <p className="whitespace-pre-wrap break-words rounded-xl border border-slate-200/80 bg-white p-3.5 text-sm leading-relaxed text-slate-800 shadow-2xs">
           {result.recognizedText || (
-            <span className="italic text-slate-400">Không nghe rõ giọng đọc.</span>
+            <span className="italic text-slate-400">
+              {t("noVoiceDetected", "Không nghe rõ giọng đọc.")}
+            </span>
           )}
         </p>
       </div>
@@ -166,7 +168,7 @@ export function ShadowingResult({ result, sampleAudioUrl, title, onRetry }: Prop
       {/* Audio Comparison: Sample Audio vs Your Voice */}
       <div className="space-y-2 border-t border-slate-100 pt-4">
         <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
-          Đối chiếu âm thanh (Audio Comparison)
+          {t("audioComparison", "Đối chiếu âm thanh (Audio Comparison)")}
         </h3>
         <div className="grid gap-3 sm:grid-cols-2">
           {sampleAudioUrl ? (

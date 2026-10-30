@@ -5,17 +5,13 @@ import Link from "next/link";
 import {
   AlertCircle,
   Check,
-  CheckCircle2,
   Clock,
-  FlaskConical,
-  Headphones,
   Loader2,
   Mic,
   RotateCcw,
   Send,
   Sparkles,
   Square,
-  Volume2,
 } from "lucide-react";
 import { learnShadowingHref } from "@/lib/learn/hrefs";
 import { formatClock } from "@/lib/dictation/format";
@@ -273,38 +269,16 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
   const progressRatio = Math.min(1, elapsedMs / maxMs);
 
   return (
-    <div className="w-full min-w-0 space-y-6">
-      <header className="space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="space-y-1">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                {exercise.title}
-              </h1>
-              {exercise.level ? (
-                <span className="inline-flex items-center gap-1 rounded-full border border-sky-200 bg-sky-50 px-3 py-0.5 text-xs font-bold text-sky-800">
-                  <Sparkles className="h-3 w-3 text-sky-600" />
-                  {exercise.level}
-                </span>
-              ) : null}
-            </div>
-          
-          </div>
-        </div>
-
-        {/* Beta Notice Pill */}
-      
-      </header>
-
+    <div className="w-full min-w-0 space-y-4">
       {/* Main 2-Column Responsive Practice Deck */}
-      <div className="grid grid-cols-1 items-start gap-6 xl:grid-cols-12">
+      <div className="grid grid-cols-1 items-start gap-4 xl:grid-cols-12">
         {/* Left Column (Col 1-7): Audio Player + Voice Recording Studio / Result */}
-        <div className="space-y-5 xl:col-span-7">
+        <div className="space-y-4 xl:col-span-7">
           {/* 1. Model Audio Player */}
           <ShadowingAudioPlayer
             src={exercise.audioUrl}
             title={t("sampleAudio", "Audio mẫu")}
-            badge={exercise.level ? `Trình độ ${exercise.level}` : "Giọng bản xứ"}
+            badge={exercise.level ? t("level", { level: exercise.level }, `Trình độ ${exercise.level}`) : undefined}
             audioRef={sampleRef}
           />
 
@@ -316,45 +290,35 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
               onRetry={retry}
             />
           ) : (
-            <section className="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs transition-shadow hover:shadow-md">
-              {/* Studio Header & Status Indicator */}
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <div className="flex items-center gap-2">
-                  <div
-                    className={`flex h-8 w-8 items-center justify-center rounded-lg transition-colors ${
-                      recordingActive
-                        ? "bg-rose-100 text-rose-600"
-                        : "bg-indigo-50 text-indigo-600"
-                    }`}
-                  >
-                    <Mic className="h-4 w-4" />
-                  </div>
-                  <div>
-                    <h2 className="text-sm font-bold text-slate-800">
-                      {t("recordTitle", "Phòng thu âm (Voice Studio)")}
-                    </h2>
-                    <p className="text-[11px] text-slate-500">
-                      Đọc lại theo ngữ điệu và phát âm của audio mẫu
-                    </p>
-                  </div>
+            <section className="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs transition-shadow hover:shadow-md">
+              {/* Studio Header */}
+              <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                <div className="flex items-center gap-2.5">
+                  <span className={`flex h-8 w-8 items-center justify-center rounded-lg ${
+                    recordingActive ? "bg-rose-100 text-rose-600" : "bg-purple-100 text-purple-700"
+                  }`}>
+                    <Mic className={`h-4.5 w-4.5 ${recordingActive ? "animate-pulse" : ""}`} />
+                  </span>
+                  <h2 className="text-sm sm:text-base font-bold uppercase tracking-wider text-slate-800">
+                    {recordingActive ? t("recordingActiveTitle", "Đang thu âm giọng đọc") : t("recordingStudio", "Ghi âm giọng đọc")}
+                  </h2>
                 </div>
 
                 {/* State Badge */}
                 <div>
                   {recordingActive ? (
                     <span className="inline-flex items-center gap-1.5 rounded-full border border-rose-200 bg-rose-50 px-2.5 py-0.5 text-xs font-bold text-rose-700">
-                      <span className="h-2 w-2 rounded-full bg-rose-600 animate-pulse" />
-                      Đang ghi âm...
+                      <span className="h-1.5 w-1.5 rounded-full bg-rose-600 animate-pulse" />
+                      {t("recordingBadge", "Đang thu...")}
                     </span>
                   ) : phase === "recorded" ? (
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-700">
-                      <Check className="h-3 w-3 text-emerald-600" />
-                      Đã ghi âm xong
+                    <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-700">
+                      <Check className="h-3.5 w-3.5 text-emerald-600" />
+                      {t("recordedBadge", "Đã ghi âm xong")}
                     </span>
                   ) : (
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
-                      <Clock className="h-3 w-3 text-slate-400" />
-                      Tối đa {formatClock(exercise.maxRecordSeconds)}
+                    <span className="text-xs font-medium text-slate-400">
+                      {t("maxTime", { time: formatClock(exercise.maxRecordSeconds) }, `Tối đa ${formatClock(exercise.maxRecordSeconds)}`)}
                     </span>
                   )}
                 </div>
@@ -362,138 +326,98 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
 
               {/* Supported Check */}
               {supported === false ? (
-                <div className="mt-4 rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">
-                  <p className="font-semibold">Trình duyệt chưa hỗ trợ ghi âm</p>
-                  <p className="mt-1 text-xs text-rose-600">
-                    {t(
-                      "errors.unsupported",
-                      "Trình duyệt này chưa hỗ trợ nhận diện giọng nói. Hãy mở trang web trên Chrome hoặc Microsoft Edge để tiếp tục.",
-                    )}
+                <div className="mt-4 rounded-xl border border-rose-200 bg-rose-50 p-4 text-xs text-rose-700">
+                  <p className="font-semibold">{t("errors.unsupported", "Trình duyệt chưa hỗ trợ ghi âm")}</p>
+                  <p className="mt-1 text-slate-500">
+                    Chrome, Edge or Safari desktop recommended.
                   </p>
                 </div>
               ) : (
-                <div className="mt-5 space-y-5">
-                  {/* IDLE / STARTING STATE */}
+                <div className="mt-4">
+                  {/* IDLE / STARTING STATE - Hero Action CTA */}
                   {phase === "idle" || phase === "starting" ? (
-                    <div className="flex flex-col items-center justify-center py-6 text-center">
-                      {/* Big Glowing Mic Button */}
-                      <button
-                        type="button"
-                        onClick={() => void startRecording()}
-                        disabled={busy || supported !== true}
-                        aria-label={t("record", "Bấm để ghi âm")}
-                        className="group relative flex h-20 w-20 items-center justify-center rounded-full bg-wewin-navy text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-wewin-navy-hover active:scale-95 disabled:opacity-50"
-                      >
-                        <span className="absolute -inset-1 rounded-full bg-wewin-navy/20 blur-sm transition-all group-hover:-inset-2 group-hover:bg-wewin-navy/30" />
-                        {busy ? (
-                          <Loader2 className="relative h-8 w-8 animate-spin" />
-                        ) : (
-                          <Mic className="relative h-8 w-8 transition-transform group-hover:scale-110" />
-                        )}
-                      </button>
-
-                      <div className="mt-4 space-y-1">
-                        <p className="text-base font-bold text-slate-900">
-                          {t("tapToRecord", "Bấm micro để bắt đầu ghi âm")}
-                        </p>
-                        <p className="text-xs text-slate-500">
-                          Nói to, rõ ràng và phát âm tự nhiên theo câu mẫu
-                        </p>
+                    <div className="flex flex-col items-center justify-center py-6 px-4 text-center">
+                      {/* Pulse Circle Button */}
+                      <div className="relative mb-3">
+                        <button
+                          type="button"
+                          onClick={() => void startRecording()}
+                          disabled={busy || supported !== true}
+                          aria-label={t("tapToSpeak", "Bấm để ghi âm")}
+                          className="group relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-tr from-wewin-navy via-indigo-700 to-purple-600 text-white shadow-lg shadow-indigo-600/25 transition-all hover:scale-105 hover:shadow-indigo-600/40 active:scale-95 disabled:opacity-50"
+                        >
+                          {busy ? (
+                            <Loader2 className="h-7 w-7 animate-spin" />
+                          ) : (
+                            <Mic className="h-7 w-7 transition-transform group-hover:scale-110" />
+                          )}
+                        </button>
                       </div>
 
-                      {/* 3 Quick Tips */}
-                      <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs">
-                        <span className="inline-flex items-center gap-1 rounded-lg bg-slate-100 px-2.5 py-1 text-slate-600">
-                          🎧 1. Nghe mẫu
-                        </span>
-                        <span className="text-slate-300">→</span>
-                        <span className="inline-flex items-center gap-1 rounded-lg bg-slate-100 px-2.5 py-1 text-slate-600">
-                          🎙️ 2. Đọc theo
-                        </span>
-                        <span className="text-slate-300">→</span>
-                        <span className="inline-flex items-center gap-1 rounded-lg bg-slate-100 px-2.5 py-1 text-slate-600">
-                          ✨ 3. Nhận điểm tức thì
-                        </span>
-                      </div>
+                      <h3 className="text-base sm:text-lg font-bold text-slate-800">
+                        {t("tapToSpeak", "Bấm micro để bắt đầu nói")}
+                      </h3>
                     </div>
                   ) : null}
 
                   {/* RECORDING ACTIVE STATE */}
                   {recordingActive || phase === "processing" ? (
-                    <div className="space-y-4 rounded-xl border border-rose-100 bg-rose-50/30 p-5">
-                      <div className="flex flex-col items-center justify-center gap-4 text-center">
-                        {/* Pulsing Stop Button */}
-                        <div className="relative flex items-center justify-center">
-                          <button
-                            type="button"
-                            onClick={() => void stopRecording()}
-                            disabled={phase === "processing"}
-                            aria-label={t("stop", "Dừng ghi âm")}
-                            className="animate-mic-pulse flex h-20 w-20 items-center justify-center rounded-full bg-rose-600 text-white shadow-md transition-transform hover:bg-rose-700 active:scale-95"
-                          >
-                            {phase === "processing" ? (
-                              <Loader2 className="h-8 w-8 animate-spin" />
-                            ) : (
-                              <Square className="h-7 w-7 fill-current" />
-                            )}
-                          </button>
-                        </div>
+                    <div className="space-y-4 rounded-xl border border-rose-200 bg-rose-50/30 p-5">
+                      <div className="flex flex-col items-center justify-center gap-3 text-center">
+                        {/* Stop Button */}
+                        <button
+                          type="button"
+                          onClick={() => void stopRecording()}
+                          disabled={phase === "processing"}
+                          aria-label={t("stop", "Dừng ghi âm")}
+                          className="flex h-16 w-16 items-center justify-center rounded-full bg-rose-600 text-white shadow-lg shadow-rose-600/30 transition-transform hover:bg-rose-700 active:scale-95"
+                        >
+                          {phase === "processing" ? (
+                            <Loader2 className="h-6 w-6 animate-spin" />
+                          ) : (
+                            <Square className="h-6 w-6 fill-current" />
+                          )}
+                        </button>
 
                         {/* Digital Timer */}
-                        <div className="space-y-1">
-                          <div className="font-mono text-2xl font-bold tabular-nums text-slate-900">
+                        <div>
+                          <div className="font-mono text-2xl font-black tabular-nums text-slate-900">
                             {formatClock(elapsedMs / 1000)}{" "}
-                            <span className="text-sm font-normal text-slate-500">
+                            <span className="text-xs font-normal text-slate-400">
                               / {formatClock(exercise.maxRecordSeconds)}
                             </span>
                           </div>
-                          <p className="text-xs font-semibold text-rose-600">
-                            {phase === "processing"
-                              ? t("processing", "Đang xử lý âm thanh…")
-                              : t("recording", "Đang ghi âm… Bấm nút đỏ để dừng")}
+                          <p className="mt-0.5 text-xs sm:text-sm font-semibold text-rose-600">
+                            {phase === "processing" ? t("processingAudio", "Đang xử lý âm thanh…") : t("recordingHint", "Đang ghi âm... Bấm nút đỏ để hoàn thành")}
                           </p>
                         </div>
 
-                        {/* Sound Wave Animation Bars */}
-                        <div className="flex h-10 items-center justify-center gap-1 px-4">
-                          {[
-                            0.4, 0.8, 0.5, 1.0, 0.7, 0.9, 0.3, 0.95, 0.6, 0.85, 0.4, 0.75,
-                            0.5, 0.9, 0.6, 0.3,
-                          ].map((heightRatio, i) => (
+                        {/* Sound Wave Animation */}
+                        <div className="flex h-7 items-center justify-center gap-1.5">
+                          {[0.4, 0.8, 0.5, 1.0, 0.7, 0.9, 0.3, 0.95, 0.6, 0.4].map((ratio, i) => (
                             <span
                               key={i}
                               className="animate-soundwave w-1 rounded-full bg-rose-500"
                               style={{
                                 animationDelay: `${(i % 5) * 0.18}s`,
-                                height: `${Math.round(heightRatio * 32)}px`,
+                                height: `${Math.round(ratio * 22)}px`,
                               }}
                             />
                           ))}
                         </div>
-
-                        {/* Progress Bar towards Max Time */}
-                        <div className="h-1.5 w-full max-w-md overflow-hidden rounded-full bg-slate-200">
-                          <div
-                            className="h-full bg-rose-500 transition-all duration-200"
-                            style={{ width: `${progressRatio * 100}%` }}
-                          />
-                        </div>
                       </div>
 
                       {/* Live Speech Recognition Box */}
-                      <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
-                        <div className="flex items-center gap-1.5 pb-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                          <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
-                          <span>{t("listening", "Đang nhận diện giọng nói...")}</span>
+                      {liveText ? (
+                        <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
+                          <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">
+                            {t("liveListening", "🎙️ Hệ thống đang nghe bạn đọc:")}
+                          </p>
+                          <p className="text-xs sm:text-sm leading-relaxed font-medium text-slate-800">
+                            {liveText}
+                          </p>
                         </div>
-                        <p className="min-h-12 whitespace-pre-wrap break-words text-sm leading-relaxed text-slate-800">
-                          {liveText || (
-                            <span className="italic text-slate-400">
-                              Hãy đọc câu mẫu to và rõ ràng, từ ngữ sẽ hiển thị tại đây...
-                            </span>
-                          )}
-                        </p>
-                      </div>
+                      ) : null}
                     </div>
                   ) : null}
 
@@ -503,12 +427,12 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
                       {/* User's Audio Playback */}
                       {recording ? (
                         <div className="space-y-1.5">
-                          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                          <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-600">
                             {t("yourRecording", "Nghe lại bản ghi của bạn")}
                           </h3>
                           <UserAudioPlayer
                             src={recording.url}
-                            label="Giọng đọc của bạn"
+                            label={t("yourRecording", "Giọng đọc của bạn")}
                             className="border-emerald-200/90 bg-emerald-50/40"
                           />
                         </div>
@@ -517,22 +441,22 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
                       {/* Recognized Text Display */}
                       <div className="space-y-1.5">
                         <div className="flex items-center justify-between">
-                          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                          <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-600">
                             {t("recognizedTitle", "Văn bản hệ thống nghe được")}
                           </h3>
                           {recognized && (
-                            <span className="text-[11px] text-slate-500">
-                              {recognized.split(/\s+/).filter(Boolean).length} từ
+                            <span className="text-xs text-slate-500">
+                              {t("wordsCount", { n: recognized.split(/\s+/).filter(Boolean).length }, `${recognized.split(/\s+/).filter(Boolean).length} từ`)}
                             </span>
                           )}
                         </div>
 
                         {recognized ? (
-                          <p className="whitespace-pre-wrap break-words rounded-xl border border-slate-200/90 bg-slate-50/60 p-3.5 text-sm leading-relaxed text-slate-800">
+                          <p className="whitespace-pre-wrap break-words rounded-xl border border-slate-200/90 bg-slate-50/60 p-3.5 text-sm sm:text-base leading-relaxed text-slate-800">
                             {recognized}
                           </p>
                         ) : (
-                          <div className="rounded-xl border border-amber-200 bg-amber-50 p-3.5 text-xs text-amber-900">
+                          <div className="rounded-xl border border-amber-200 bg-amber-50 p-3.5 text-xs sm:text-sm text-amber-900">
                             <p className="font-semibold">Chưa phát hiện giọng nói rõ ràng</p>
                             <p className="mt-0.5">
                               {t(
@@ -550,9 +474,9 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
                           type="button"
                           onClick={resetRecording}
                           disabled={phase === "submitting"}
-                          className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 shadow-2xs transition-all hover:bg-slate-50 hover:text-slate-900 active:scale-95 disabled:opacity-50"
+                          className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm sm:text-base font-semibold text-slate-700 shadow-2xs transition-all hover:bg-slate-50 hover:text-slate-900 active:scale-95 disabled:opacity-50"
                         >
-                          <RotateCcw className="h-4 w-4" />
+                          <RotateCcw className="h-4.5 w-4.5" />
                           <span>{t("reRecord", "Ghi âm lại")}</span>
                         </button>
 
@@ -560,17 +484,17 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
                           type="button"
                           onClick={() => void submit()}
                           disabled={phase === "submitting" || !recognized}
-                          className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-wewin-navy px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-wewin-navy-hover active:scale-95 disabled:opacity-50 sm:flex-initial"
+                          className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-wewin-navy to-indigo-700 px-6 py-2.5 text-sm sm:text-base font-bold text-white shadow-md shadow-indigo-700/20 transition-all hover:opacity-95 active:scale-95 disabled:opacity-50 sm:flex-initial"
                         >
                           {phase === "submitting" ? (
-                            <Loader2 className="h-4 w-4 animate-spin" />
+                            <Loader2 className="h-4.5 w-4.5 animate-spin" />
                           ) : (
-                            <Send className="h-4 w-4" />
+                            <Sparkles className="h-4.5 w-4.5 text-amber-300" />
                           )}
                           <span>
                             {phase === "submitting"
-                              ? t("submitting", "Đang chấm điểm…")
-                              : t("submit", "Nộp bài & Chấm điểm")}
+                              ? t("submittingAI", "Đang chấm điểm AI…")
+                              : t("submitAI", "Nộp bài & Xem điểm AI")}
                           </span>
                         </button>
                       </div>
@@ -602,7 +526,14 @@ export function ShadowingPractice({ exercise }: { exercise: PublicShadowingExerc
 
         {/* Right Column (Col 8-12): Sticky Transcript Console */}
         <div className="xl:sticky xl:top-20 xl:col-span-5">
-          <ShadowingTranscript transcript={exercise.transcript} />
+          <ShadowingTranscript
+            transcript={exercise.transcript}
+            timings={exercise.cues}
+            audioRef={sampleRef}
+            disabled={recordingActive || phase === "processing" || phase === "submitting"}
+            onRecord={result ? undefined : () => void startRecording()}
+            recordDisabled={busy || supported !== true || (phase !== "idle" && phase !== "recorded")}
+          />
         </div>
 
         {/* Bottom Full-Width Section: Practice History */}

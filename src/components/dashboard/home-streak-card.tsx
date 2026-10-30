@@ -35,10 +35,10 @@ export function HomeStreakCard({ streakDays, weekActive, loggedIn }: Props) {
         {WEEK_KEYS.map((key, i) => (
           <div key={key} className="flex flex-1 flex-col items-center gap-1.5">
             <span
-              className={`flex h-8 w-full max-w-8 items-center justify-center rounded-full border text-[10px] font-bold ${
+              className={`flex h-8 w-full max-w-8 items-center justify-center rounded-full border-[1.5px] border-zinc-900 text-[10px] font-bold ${
                 weekActive[i]
-                  ? "border-wewin-navy bg-wewin-navy text-white"
-                  : "border-zinc-200 bg-zinc-50 text-zinc-400"
+                  ? "bg-wewin-navy text-white"
+                  : "bg-white text-zinc-400"
               }`}
             >
               {weekActive[i] ? "✓" : ""}
@@ -49,19 +49,12 @@ export function HomeStreakCard({ streakDays, weekActive, loggedIn }: Props) {
           </div>
         ))}
       </div>
-      {!loggedIn ? (
+      {!loggedIn && (
         <p className="mt-4 text-xs text-zinc-500">
           <Link href="/login" className="font-medium text-wewin-navy hover:underline">
             {t("loginLink", "Đăng nhập")}
           </Link>{" "}
           {t("loginToSaveStreak", "để lưu chuỗi ngày luyện.")}
-        </p>
-      ) : (
-        <p className="mt-4 text-xs text-zinc-500">
-          {t(
-            "streakHint",
-            "Luyện hoặc học mỗi ngày để giữ chuỗi và nhận điểm xếp hạng.",
-          )}
         </p>
       )}
     </section>

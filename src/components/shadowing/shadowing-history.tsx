@@ -39,6 +39,7 @@ export function ShadowingHistory({ slug, sampleAudioUrl, refreshKey }: Props) {
   const [review, setReview] = useState<ShadowingAttemptResult | null>(null);
   const [reviewLoading, setReviewLoading] = useState(false);
   const [reviewError, setReviewError] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -121,7 +122,9 @@ export function ShadowingHistory({ slug, sampleAudioUrl, refreshKey }: Props) {
         <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-400">
           <Sparkles className="h-6 w-6" />
         </div>
-        <h3 className="mt-3 text-sm font-bold text-slate-800">Chưa có lần nộp bài nào</h3>
+        <h3 className="mt-3 text-sm font-bold text-slate-800">
+          {t("historyNoAttempts", "Chưa có lần nộp bài nào")}
+        </h3>
         <p className="mt-1 max-w-sm text-xs text-slate-500">
           {t(
             "historyEmpty",
@@ -161,7 +164,7 @@ export function ShadowingHistory({ slug, sampleAudioUrl, refreshKey }: Props) {
                         </span>
                         {item.hasRecording && (
                           <span
-                            title="Có kèm bản ghi âm"
+                            title={t("hasRecordingTooltip", "Có kèm bản ghi âm")}
                             className="inline-flex items-center gap-1 rounded-md bg-sky-50 px-1.5 py-0.5 text-[10px] font-semibold text-sky-700"
                           >
                             <Mic className="h-3 w-3" />
@@ -231,35 +234,44 @@ export function ShadowingHistory({ slug, sampleAudioUrl, refreshKey }: Props) {
     );
   }
 
+  const itemCount = state.status === "ready" ? state.items.length : 0;
+
   return (
-    <section className="space-y-4 rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+    <section className="overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs">
+      <button
+        type="button"
+        onClick={() => setExpanded(!expanded)}
+        className="flex w-full items-center justify-between p-4 text-left transition hover:bg-slate-50/80"
+        aria-expanded={expanded}
+      >
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600">
-            <History className="h-4 w-4" />
-          </div>
-          <div>
-            <h2 className="text-base font-bold text-slate-900">
-              {t("historyTitle", "Lịch sử làm bài")}
-            </h2>
-            <p className="text-xs text-slate-500">Xem lại quá trình và so sánh kết quả từng lần đọc</p>
-          </div>
+          <History className="h-4 w-4 text-slate-500" />
+          <h2 className="text-xs font-bold uppercase tracking-wider text-slate-700">
+            {t("historyTitle", "Lịch sử làm bài")}
+          </h2>
+          {itemCount > 0 && (
+            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600">
+              {t("attemptCountBadge", { n: itemCount }, `${itemCount} lần`)}
+            </span>
+          )}
         </div>
 
-        {state.status === "ready" && state.items.length > 0 && (
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-xl border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-800">
-              <Trophy className="h-3.5 w-3.5 text-amber-600" />
-              Cao nhất: {highestScore}/100
+        <div className="flex items-center gap-2">
+          {itemCount > 0 && highestScore > 0 && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-bold text-amber-800 border border-amber-200">
+              <Trophy className="h-3 w-3 text-amber-600" />
+              {highestScore}/100
             </span>
-            <span className="rounded-xl bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
-              {state.items.length} lượt nộp
-            </span>
-          </div>
-        )}
-      </div>
+          )}
+          {expanded ? (
+            <ChevronUp className="h-4 w-4 text-slate-400" />
+          ) : (
+            <ChevronDown className="h-4 w-4 text-slate-400" />
+          )}
+        </div>
+      </button>
 
-      {body}
+      {expanded && <div className="border-t border-slate-100 p-4">{body}</div>}
     </section>
   );
 }

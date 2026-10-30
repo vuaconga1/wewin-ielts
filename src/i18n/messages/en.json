@@ -747,7 +747,13 @@
       "tiktok": "TikTok",
       "youtube": "YouTube",
       "mail": "Email"
-    }
+    },
+    "explore": "Explore",
+    "features": "Features",
+    "contact": "Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "aboutDesc": "WeWIN Education is a comprehensive 4-skills IELTS exam-prep platform featuring adaptive learning roadmaps and international-standard computer-delivered tests."
   },
   "auth": {
     "login": "Log in",
@@ -1199,6 +1205,9 @@
     "grammarCourseLockedGuest": "Sign in with your WeWIN student account to view this course.",
     "loginToView": "Sign in",
     "studentOnly": "Students only",
+    "cardNotStarted": "Not started",
+    "cardLessonsDone": "{done}/{total} lessons done",
+    "cardPracticeNow": "Practise now",
     "vocabularyTrack": "Vocabulary",
     "grammarTrackDesc": "Basic grammar — illustrated, easy-to-follow lesson slides",
     "vocabularyTrackDesc": "11 Cambridge Vocabulary topics — word cards (IPA, meaning, examples)",
@@ -1844,7 +1853,15 @@
       "step2Desc": "Speak about half a second behind the speaker, copying their mouth shape, intonation and linking.",
       "step3Title": "Compare and improve",
       "step3Desc": "Record yourself, check the match score and listen back to find words that were unclear or missed."
-    }
+    },
+    "prev": "Previous",
+    "next": "Next",
+    "shortShadowing": "Shadowing",
+    "shortDictation": "Dictation",
+    "shortFillBlank": "Fill in Blanks",
+    "shortListenAnswer": "Listen & Answer",
+    "levelBasic": "Basic",
+    "levelIntermediate": "Intermediate"
   },
   "shadowing": {
     "catalogTitle": "Shadowing — Listen and repeat",
@@ -1862,6 +1879,15 @@
     "recordTitle": "Record your voice",
     "readAlongTitle": "Transcript",
     "readAlongHint": "Read along with the text below. Speaker names are not read aloud.",
+    "sentenceCounter": "Sentence {n} / {total}",
+    "replaySentence": "Replay",
+    "replaySentenceHint": "Replay this sentence (R)",
+    "prevSentence": "Previous sentence",
+    "nextSentence": "Next sentence",
+    "play": "Play",
+    "pause": "Pause",
+    "shortcutsHint": "Space play / pause · ←/→ change sentence · R replay sentence",
+    "estimatedTiming": "Sentence timings are estimated from text length and may be a few seconds off.",
     "record": "Record",
     "stop": "Stop",
     "recording": "Recording… tap to stop",
@@ -1913,7 +1939,43 @@
       "submitFailed": "Could not submit. Please try again.",
       "historyFailed": "Could not load your attempt history.",
       "reviewFailed": "Could not open this attempt."
-    }
+    },
+    "sentencesCount": "{n} sentences",
+    "wordsCount": "{n} words",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "recordingStudio": "Voice Recording Studio",
+    "recordingActiveTitle": "Recording your voice",
+    "recordingBadge": "Recording...",
+    "recordedBadge": "Recording finished",
+    "maxTime": "Max {time}",
+    "tapToSpeak": "Tap microphone to speak",
+    "processingAudio": "Processing audio…",
+    "recordingHint": "Recording... Tap red square to finish",
+    "liveListening": "🎙️ Live speech recognition:",
+    "submitAI": "Submit & View AI Score",
+    "submittingAI": "Scoring with AI…",
+    "scoreExcellent": "Excellent 🎉",
+    "scoreGood": "Good job 👏",
+    "scoreNeedsPractice": "Needs practice 💪",
+    "scoreExcellentMsg": "Great pronunciation and natural rhythm!",
+    "scoreGoodMsg": "Caught most words with only minor inaccuracies.",
+    "scoreNeedsPracticeMsg": "Listen again at 0.75x to catch rhythm and pauses.",
+    "highestScore": "Highest score: {score}/100",
+    "attemptCount": "{n} submissions",
+    "listenStep": "Step 1: Listen",
+    "rewind5s": "Rewind 5s",
+    "forward5s": "Forward 5s",
+    "volume": "Volume",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "audioComparison": "Audio Comparison",
+    "noVoiceDetected": "No clear voice detected.",
+    "audioProgress": "Audio progress bar",
+    "playAgain": "Play again",
+    "historyNoAttempts": "No attempts yet",
+    "hasRecordingTooltip": "Audio recording included",
+    "attemptCountBadge": "{n} attempts"
   },
   "shadowingAdmin": {
     "title": "Shadowing exercises",
@@ -1997,78 +2059,185 @@
   "aboutPage": {
     "mascotAlt": "WEWIN mascot",
     "hero": {
-      "badge": "About WEWIN Education",
+      "badge": "IELTS Adaptive Learning Platform",
       "titleLine1": "An IELTS Learning & Exam-Prep Platform",
       "titleLine2": "for all 4 skills",
-      "subtitle": "Cambridge & Real Exam test bank, a computer-delivered exam interface, instant scoring, plus exclusive Dictation and Shadowing tools.",
+      "subtitle": "Cambridge & Real Exam test bank, computer-delivered exam interface, instant scoring, plus exclusive Dictation and Shadowing tools.",
       "ctaPrimary": "Start learning",
       "ctaSecondary": "Free mock test"
     },
     "story": {
       "lead": "Same lessons, same textbook, same classroom",
-      "question": "So why do some people reach their goal quickly while others keep struggling?",
-      "quote": "Everyone has a different starting point, different strengths and weaknesses, and a different pace.",
+      "question": "Why do some quickly reach their goal while others remain stuck?",
+      "quote": "Everyone has a different starting point, unique strengths and weaknesses, and their own pace of learning.",
       "steps": {
-        "start": "Different starting points",
-        "strength": "Unique strengths & weaknesses",
-        "pace": "Your own pace of progress"
+        "start": "Starting Point",
+        "startDesc": "Every student has an initial foundation in vocabulary, grammar and pronunciation that is unique. Your learning path must start where you stand.",
+        "strength": "Strengths & Weaknesses",
+        "strengthDesc": "Some listen well but struggle with vocabulary; others read fast but need better intonation. Focus your time where it matters most.",
+        "pace": "Learning Pace",
+        "paceDesc": "Retention, comprehension and schedules differ for everyone. Our smart system adapts pacing to fit you best."
       }
     },
     "platform": {
-      "lead": "That is why WEWIN built its exam-prep platform on",
-      "title": "A real-exam practice roadmap",
-      "titleSub": "(Personalized to your level)",
-      "desc": "We continuously measure your actual level through every test, pinpoint weaknesses by question type and suggest the right practice instead of forcing you through a fixed path."
+      "lead": "That is why WeWIN was born and positioned as",
+      "title": "An IELTS Adaptive Learning Platform",
+      "titleSub": "the first in Vietnam",
+      "desc": "Instead of forcing a rigid roadmap onto everyone, WeWIN continuously diagnoses strengths and weaknesses to personalize exercises so you progress fastest in every skill."
     },
     "experts": {
-      "heading": "Dedicated teachers combined with smart exam-prep technology",
-      "teamTitle": "An expert team that sets the standard",
-      "teamDesc": "All materials and assessment criteria are built by experienced WEWIN teachers, helping you uncover blind spots, build language thinking and master strategies for every question type.",
-      "exp1": "8.0+ IELTS teachers with years of exam-prep experience",
-      "exp2": "Writing & Speaking feedback based on examiner criteria",
-      "exp3": "Interactive live classes with close follow-up",
-      "techTitle": "Technology that personalizes your learning",
-      "techDesc": "Building on that expertise, the system tracks your results and flexibly suggests practice that fits your real level at every moment.",
+      "badge": "Academic Excellence & Technology",
+      "heading": "Harnessing technology to replicate the thinking of top masters",
+      "teamDesc": "All materials and assessment criteria at WeWIN are developed by top experts and former IELTS examiners. With real-world insight, they help you uncover blind spots, develop language intuition, and master optimal strategies.",
+      "teamTitle": "An Expert Team Setting the Standard",
+      "exp1": "Curriculum and scoring criteria aligned with Cambridge and IDP exam standards.",
+      "exp2": "Detailed analysis of each criterion: Lexical Resource, Grammatical Range & Accuracy, Coherence & Task Response.",
+      "exp3": "Streamlined test-taking tactics that minimize computer test-day friction.",
+      "exp4": "Exclusive 8.0 - 9.0 Speaking & Writing model answer bank.",
+      "exploreProgram": "Explore 4-skills curriculum",
+      "techTitle": "Technology That Personalizes Your Learning",
+      "techDesc": "Inheriting full expert methodology, our Adaptive Learning system continuously monitors, measures, and adjusts your study plan to your real skill level at every moment.",
+      "exploreTests": "Experience real-exam test bank",
       "features": {
-        "mock": "Computer-delivered mock tests",
-        "score": "Instant scoring & analysis",
-        "dictation": "Dictation practice",
-        "shadowing": "Shadowing speaking practice"
+        "score": "Instant scoring",
+        "mock": "Targeted remedial exercises",
+        "dictation": "Dictation listening practice",
+        "shadowing": "Shadowing speaking reflexes"
       }
     },
     "mission": {
-      "ticker": "our mission",
-      "title": "Conquering IELTS is not a “privilege” for the few",
-      "desc": "WEWIN's mission is to use technology to close the gap. Wherever you are and whatever your level, WEWIN helps you access proven exam-prep methods and reach your IELTS goal anytime, anywhere."
+      "ticker": "OUR MISSION",
+      "title": "Conquering IELTS is not a privilege for the few",
+      "desc": "Our mission is to combine Technology and proven methodology to erase all barriers. Wherever you are and whatever your current level, WeWIN helps you access top experts and achieve your IELTS goals anytime, anywhere, with maximum efficiency."
     },
     "honor": {
-      "badge": "WEWIN Hall of Fame",
-      "title": "Honoring our outstanding high-scoring IELTS students",
-      "subtitle": "Proud to accompany our students in reaching IELTS 7.5 – 8.5.",
-      "imageAlt": "WEWIN students honored for high IELTS scores"
+      "badge": "Hall of Fame",
+      "title": "Honoring outstanding high-scoring IELTS students",
+      "subtitle": "The clearest proof of WeWIN Education's effective methodology is hundreds of students exceeding their 7.0 - 8.5 IELTS target bands.",
+      "imageAlt": "WeWIN IELTS outstanding students Hall of Fame"
     },
     "journey": {
+      "kicker": "Start Today",
       "title": "Where are you on your IELTS journey?",
-      "desc": "Take a mock test to find your current band and get practice suggestions that match your goal.",
-      "cta": "Free level check"
+      "desc": "Don't let time slip away in uncertainty. Take a level assessment to receive a detailed diagnostic report and personalized roadmap for free from WeWIN.",
+      "cta": "Free level assessment"
     },
     "contact": {
-      "title": "Need any help?",
-      "subtitle": "Leave your details and WEWIN will contact you with a suitable study plan.",
-      "mascotBubble": "WEWIN is here to help!",
-      "address": "292B No Trang Long & 742 Xo Viet Nghe Tinh, Binh Thanh, HCMC",
+      "title": "Need any assistance?",
+      "subtitle": "Please leave your details, and our WeWIN team will reach out with a personalized study roadmap free of charge.",
+      "successTitle": "Consultation Request Submitted!",
+      "successDesc": "Thank you {name}! A WeWIN education consultant will contact you via {phone} as soon as possible.",
       "name": "Full name",
       "phone": "Phone number",
       "email": "Email",
       "interest": "You are interested in",
       "interests": {
-        "selfStudy": "Self-study IELTS online",
-        "course": "Courses at the center",
-        "placement": "Placement test",
-        "other": "Other questions"
+        "course": "4-Skills IELTS Courses",
+        "selfStudy": "Real-Exam Practice Package",
+        "placement": "Placement Test & Roadmap Consultation",
+        "other": "Other inquiries"
       },
-      "submit": "Request consultation",
-      "mailSubject": "IELTS consultation request - {name}"
+      "notes": "Questions or target band score",
+      "notesPlaceholder": "Target 6.5 - 7.5 IELTS, need to improve Speaking & Writing...",
+      "submit": "Request Consultation Now",
+      "supportTitle": "WeWIN Education",
+      "supportSubtitle": "Student Support 24/7",
+      "hotline": "Hotline:",
+      "campus": "Campuses:",
+      "campus1": "Campus 1: 292B No Trang Long, W.12, Binh Thanh, HCMC",
+      "campus2": "Campus 2: 742 Xo Viet Nghe Tinh, W.25, Binh Thanh, HCMC",
+      "workingHours": "Working hours: Mon - Sat: 8:00 - 21:00 | Sun: 8:00 - 17:30"
+    },
+    "adaptive": {
+      "diagTitle": "Smart Diagnostics",
+      "diagDesc": "Pinpoint gaps in vocabulary, grammar and pronunciation.",
+      "customTitle": "Personalized Practice",
+      "customDesc": "Exercises fine-tuned to your real-time learning pace.",
+      "timeTitle": "Optimized Test Timing",
+      "timeDesc": "Master exam strategies to cut test execution time by 50%."
+    },
+    "stats": {
+      "highestBand": "Highest band score",
+      "targetReached": "Reached or exceeded goal",
+      "trustedStudents": "Trusted students",
+      "standardTests": "Computer-delivered exams"
+    },
+    "footer": {
+      "aboutDesc": "WeWIN Education is a comprehensive 4-skills IELTS exam-prep platform featuring adaptive learning roadmaps and international-standard computer-delivered tests.",
+      "explore": "Explore",
+      "aboutWeWin": "About WeWIN",
+      "placementTest": "Level check",
+      "learnSkills": "Learn 4 skills",
+      "mockTests": "Practice tests",
+      "features": "Features",
+      "dictation": "Dictation",
+      "shadowing": "Shadowing",
+      "ranking": "Leaderboard",
+      "hallOfFame": "Hall of Fame",
+      "contact": "Contact",
+      "address": "Binh Thanh, HCMC",
+      "copyright": "© {year} WeWIN Education. All rights reserved.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "landingHeader": {
+    "about": "About WeWIN",
+    "aboutDesc": "WEWIN Education Ecosystem",
+    "placementTest": "Placement Test",
+    "learn4Skills": "Learn 4 Skills",
+    "practiceTests": "Practice Tests",
+    "hallOfFame": "Hall of Fame",
+    "support": "Consulting & Support",
+    "toDashboard": "Go to Dashboard",
+    "login": "Log in",
+    "cambridgeTitle": "Cambridge Prep",
+    "cambridgeSub": "Starters • Movers • Flyers • KET",
+    "vstepTitle": "VSTEP Prep",
+    "vstepSub": "VSTEP B1 • B2 • C1 Exam Prep",
+    "gamesTitle": "Play Games",
+    "gamesSub": "Global Success E-Learning 1 to 9",
+    "chineseTitle": "Learn Chinese",
+    "chineseSub": "HSK 1–9 & Conversational Chinese"
+  },
+  "productSwitcher": {
+    "switchProduct": "SWITCH PRODUCT",
+    "start": "Start →",
+    "current": "Current",
+    "cambridge": {
+      "name": "WEWIN Exam",
+      "shortName": "Cambridge Exam",
+      "category": "CAMBRIDGE",
+      "subtitle": "Starters • Movers • Flyers • KET",
+      "desc": "Practice tests & vocabulary review for Cambridge exams"
+    },
+    "ielts": {
+      "name": "WEWIN IELTS",
+      "shortName": "WEWIN IELTS",
+      "category": "IELTS",
+      "subtitle": "ACADEMIC & GENERAL",
+      "desc": "Practical 4-skill IELTS exam preparation with AI"
+    },
+    "elearning": {
+      "name": "WEWIN Games",
+      "shortName": "Play Games",
+      "category": "E-LEARNING",
+      "subtitle": "Global Success 1 to 9",
+      "desc": "Learn English through interactive games based on textbooks"
+    },
+    "vstep": {
+      "name": "WEWIN VSTEP",
+      "shortName": "VSTEP Prep",
+      "category": "VSTEP",
+      "subtitle": "B1 • B2 • C1",
+      "desc": "VSTEP B1, B2, C1 exam preparation with real test sets"
+    },
+    "chinese": {
+      "name": "WEWIN Chinese",
+      "shortName": "Chinese",
+      "category": "CHINESE",
+      "subtitle": "HSK 1–9 & Conversation",
+      "desc": "Conversational Chinese & HSK 1–9 exam preparation"
     }
   }
 }

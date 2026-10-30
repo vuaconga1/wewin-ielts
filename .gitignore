@@ -115,3 +115,10 @@ next-env.d.ts
 
 danh-sach-hoc-vien-co-so-trong-ten.txt
 html lang=en class=min-h-full style.txt
+
+# Shadowing forced-alignment (scripts/shadowing-cues.ts)
+/.venv-align/
+/tmp/shadowing-align/
+/stable-ts-main/
+__pycache__/
+*.pyc

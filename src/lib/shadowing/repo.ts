@@ -8,7 +8,9 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { canUsePrisma } from "@/lib/db";
 import { DATA_DIR } from "@/lib/paths";
+import { Prisma } from "@/generated/prisma/client";
 import { prisma } from "@/lib/prisma";
+import type { StoredCueSet } from "@/lib/shadowing/cues";
 import type { ShadowingErrorSummary, ShadowingWordResult } from "@/lib/shadowing/types";
 
 export type ShadowingStatus = "DRAFT" | "PUBLISHED" | "ARCHIVED";
@@ -24,6 +26,8 @@ export type ExerciseRecord = {
   maxRecordSeconds: number;
   status: ShadowingStatus;
   order: number;
+  /** Raw stored cue set; validate with `validCueTimings` before use. */
+  cues: unknown;
 };
 
 export type ExerciseListRow = Pick<
@@ -31,7 +35,7 @@ export type ExerciseListRow = Pick<
   "id" | "slug" | "title" | "level" | "status" | "order"
 > & { attempts: number };
 
-export type ExerciseData = Omit<ExerciseRecord, "id" | "slug">;
+export type ExerciseData = Omit<ExerciseRecord, "id" | "slug" | "cues">;
 
 export type AttemptData = {
   userId: string;
@@ -76,6 +80,7 @@ export interface ShadowingRepo {
   slugTaken(slug: string): Promise<boolean>;
   createExercise(slug: string, data: ExerciseData): Promise<{ id: string; slug: string }>;
   updateExercise(id: string, data: ExerciseData): Promise<{ id: string; slug: string }>;
+  setCues(id: string, cues: StoredCueSet | null): Promise<void>;
   deleteExercise(id: string): Promise<void>;
   /** Recording keys still stored for an exercise (to purge before deletion). */
   recordingKeysForExercise(exerciseId: string): Promise<string[]>;
@@ -102,6 +107,7 @@ const exerciseSelect = {
   maxRecordSeconds: true,
   status: true,
   order: true,
+  cues: true,
 } as const;
 
 const attemptListSelect = {
@@ -162,6 +168,13 @@ const prismaRepo: ShadowingRepo = {
   },
   async updateExercise(id, data) {
     return prisma.shadowingExercise.update({ where: { id }, data, select: { id: true, slug: true } });
+  },
+  async setCues(id, cues) {
+    await prisma.shadowingExercise.update({
+      where: { id },
+      data: { cues: cues ?? Prisma.DbNull },
+      select: { id: true },
+    });
   },
   async deleteExercise(id) {
     await prisma.shadowingExercise.delete({ where: { id } });
@@ -251,6 +264,7 @@ function toExerciseRecord(e: StoredExercise): ExerciseRecord {
     maxRecordSeconds: e.maxRecordSeconds,
     status: e.status,
     order: e.order,
+    cues: e.cues ?? null,
   };
 }
 
@@ -286,7 +300,7 @@ const fileRepo: ShadowingRepo = {
   async createExercise(slug, data) {
     const rows = await readJson<StoredExercise>(EXERCISES_FILE);
     const now = new Date().toISOString();
-    const row: StoredExercise = { ...data, id: randomUUID(), slug, createdAt: now, updatedAt: now };
+    const row: StoredExercise = { ...data, id: randomUUID(), slug, cues: null, createdAt: now, updatedAt: now };
     rows.push(row);
     await writeJson(EXERCISES_FILE, rows);
     return { id: row.id, slug };
@@ -298,6 +312,13 @@ const fileRepo: ShadowingRepo = {
     rows[idx] = { ...rows[idx], ...data, updatedAt: new Date().toISOString() };
     await writeJson(EXERCISES_FILE, rows);
     return { id, slug: rows[idx].slug };
+  },
+  async setCues(id, cues) {
+    const rows = await readJson<StoredExercise>(EXERCISES_FILE);
+    const idx = rows.findIndex((e) => e.id === id);
+    if (idx < 0) throw new Error("NOT_FOUND");
+    rows[idx] = { ...rows[idx], cues, updatedAt: new Date().toISOString() };
+    await writeJson(EXERCISES_FILE, rows);
   },
   async deleteExercise(id) {
     const [exercises, attempts] = await Promise.all([
@@ -374,12 +395,16 @@ const fileRepo: ShadowingRepo = {
 
 // ---------- Backend selection ----------
 
-const PROBE_TTL_MS = 30_000;
+const PROBE_TTL_SUCCESS_MS = 60_000;
+const PROBE_TTL_ERROR_MS = 2_000;
 let tableProbe: { ok: boolean; checkedAt: number } | null = null;
 
 async function shadowingTablesExist(): Promise<boolean> {
   const now = Date.now();
-  if (tableProbe && now - tableProbe.checkedAt < PROBE_TTL_MS) return tableProbe.ok;
+  if (tableProbe) {
+    const ttl = tableProbe.ok ? PROBE_TTL_SUCCESS_MS : PROBE_TTL_ERROR_MS;
+    if (now - tableProbe.checkedAt < ttl) return tableProbe.ok;
+  }
   try {
     const rows = await prisma.$queryRaw<{ ok: boolean }[]>`
       SELECT to_regclass('"ShadowingExercise"') IS NOT NULL AS ok`;

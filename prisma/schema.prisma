@@ -576,6 +576,8 @@ model ShadowingExercise {
   instructions     String?    @db.Text
   audioUrl         String
   transcript       String     @db.Text
+  /// Sentence timings from forced alignment (scripts/shadowing-cues.ts); ignored once transcript/audio change
+  cues             Json?
   maxRecordSeconds Int        @default(30)
   status           TestStatus @default(PUBLISHED)
   order            Int        @default(0)

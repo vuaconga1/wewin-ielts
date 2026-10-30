@@ -747,7 +747,13 @@
       "tiktok": "TikTok",
       "youtube": "YouTube",
       "mail": "Email"
-    }
+    },
+    "explore": "Khám phá",
+    "features": "Tính năng",
+    "contact": "Liên hệ",
+    "terms": "Điều khoản sử dụng",
+    "privacy": "Chính sách bảo mật",
+    "aboutDesc": "WeWIN Education là nền tảng đào tạo và luyện thi IELTS thực chiến toàn diện 4 kỹ năng Listening, Reading, Writing và Speaking thông qua lộ trình cá nhân hóa Adaptive Learning và hệ thống đề thi chuẩn quốc tế."
   },
   "auth": {
     "login": "Đăng nhập",
@@ -1199,6 +1205,9 @@
     "grammarCourseLockedGuest": "Đăng nhập bằng tài khoản học viên WeWIN để xem khóa học này.",
     "loginToView": "Đăng nhập",
     "studentOnly": "Chỉ dành cho học viên",
+    "cardNotStarted": "Chưa bắt đầu",
+    "cardLessonsDone": "{done}/{total} bài hoàn thành",
+    "cardPracticeNow": "Luyện ngay",
     "vocabularyTrack": "Từ vựng",
     "grammarTrackDesc": "Ngữ pháp cơ bản — slide bài giảng dễ học, có minh họa",
     "vocabularyTrackDesc": "11 chủ đề Cambridge Vocabulary — thẻ từ (phát âm, nghĩa, ví dụ)",
@@ -1844,7 +1853,15 @@
       "step2Desc": "Nói đuổi theo giọng đọc ngay sau khoảng nửa giây, bắt chước khẩu hình, ngữ điệu và nối âm.",
       "step3Title": "Đối chiếu và cải thiện",
       "step3Desc": "Ghi âm giọng của bạn, xem điểm đối chiếu và nghe lại để tìm những từ chưa rõ hoặc bị sót."
-    }
+    },
+    "prev": "Trước",
+    "next": "Sau",
+    "shortShadowing": "Shadowing",
+    "shortDictation": "Chép chính tả",
+    "shortFillBlank": "Nghe điền từ",
+    "shortListenAnswer": "Nghe & Trả lời",
+    "levelBasic": "Basic",
+    "levelIntermediate": "Intermediate"
   },
   "shadowing": {
     "catalogTitle": "Shadowing — Nghe và đọc lại",
@@ -1862,6 +1879,15 @@
     "recordTitle": "Ghi âm giọng đọc của bạn",
     "readAlongTitle": "Transcript",
     "readAlongHint": "Đọc theo nội dung bên dưới. Không cần đọc tên người nói.",
+    "sentenceCounter": "Câu {n} / {total}",
+    "replaySentence": "Nghe lại",
+    "replaySentenceHint": "Nghe lại câu này (R)",
+    "prevSentence": "Câu trước",
+    "nextSentence": "Câu sau",
+    "play": "Phát",
+    "pause": "Tạm dừng",
+    "shortcutsHint": "Space phát / dừng · ←/→ đổi câu · R nghe lại câu",
+    "estimatedTiming": "Thời điểm từng câu được ước lượng theo độ dài, có thể lệch vài giây.",
     "record": "Ghi âm",
     "stop": "Dừng",
     "recording": "Đang ghi âm… bấm để dừng",
@@ -1913,7 +1939,43 @@
       "submitFailed": "Không nộp được bài. Thử lại.",
       "historyFailed": "Không tải được lịch sử làm bài.",
       "reviewFailed": "Không mở được bài làm này."
-    }
+    },
+    "sentencesCount": "{n} câu",
+    "wordsCount": "{n} từ",
+    "zoomIn": "Phóng to chữ",
+    "zoomOut": "Thu nhỏ chữ",
+    "recordingStudio": "Phòng thu âm giọng đọc",
+    "recordingActiveTitle": "Đang thu âm giọng đọc",
+    "recordingBadge": "Đang thu...",
+    "recordedBadge": "Đã ghi âm xong",
+    "maxTime": "Tối đa {time}",
+    "tapToSpeak": "Bấm micro để bắt đầu nói",
+    "processingAudio": "Đang xử lý âm thanh…",
+    "recordingHint": "Đang ghi âm... Bấm nút đỏ để hoàn thành",
+    "liveListening": "🎙️ Hệ thống đang nghe bạn đọc:",
+    "submitAI": "Nộp bài & Xem điểm AI",
+    "submittingAI": "Đang chấm điểm AI…",
+    "scoreExcellent": "Xuất sắc 🎉",
+    "scoreGood": "Khá tốt 👏",
+    "scoreNeedsPractice": "Cần luyện thêm 💪",
+    "scoreExcellentMsg": "Khả năng phát âm và bắt nhịp câu rất chuẩn!",
+    "scoreGoodMsg": "Bắt kịp phần lớn nội dung, chỉ sai lệch một số từ nhỏ.",
+    "scoreNeedsPracticeMsg": "Hãy nghe lại audio mẫu với tốc độ 0.75x để theo dõi kỹ hơn.",
+    "highestScore": "Điểm cao nhất: {score}/100",
+    "attemptCount": "{n} lần nộp",
+    "listenStep": "Bước 1: Lắng nghe",
+    "rewind5s": "Lùi 5 giây",
+    "forward5s": "Tua nhanh 5 giây",
+    "volume": "Âm lượng",
+    "mute": "Tắt âm thanh",
+    "unmute": "Bật âm thanh",
+    "audioComparison": "Đối chiếu âm thanh (Audio Comparison)",
+    "noVoiceDetected": "Không nghe rõ giọng đọc.",
+    "audioProgress": "Thanh tiến trình audio",
+    "playAgain": "Nghe lại",
+    "historyNoAttempts": "Chưa có lần nộp bài nào",
+    "hasRecordingTooltip": "Có kèm bản ghi âm",
+    "attemptCountBadge": "{n} lần"
   },
   "shadowingAdmin": {
     "title": "Bài Shadowing",
@@ -1997,78 +2059,185 @@
   "aboutPage": {
     "mascotAlt": "Mascot WEWIN",
     "hero": {
-      "badge": "Về WEWIN Education",
+      "badge": "Nền tảng IELTS Adaptive Learning",
       "titleLine1": "Nền tảng Học và Luyện thi IELTS",
       "titleLine2": "thực chiến 4 kỹ năng",
-      "subtitle": "Kho đề Cambridge & Real Exam, giao diện thi máy chuẩn quốc tế, chấm điểm tức thì cùng công cụ Chép chính tả và Shadowing độc quyền.",
+      "subtitle": "Kho đề Cambridge & Real Exam, giao diện thi máy chuẩn quốc tế, chấm điểm tức thì cùng bộ công cụ Chép chính tả và Shadowing độc quyền.",
       "ctaPrimary": "Bắt đầu học",
       "ctaSecondary": "Thi thử miễn phí"
     },
     "story": {
       "lead": "Cùng một bài giảng, cùng một giáo trình, cùng một lớp học",
       "question": "Tại sao có những người nhanh chóng đạt mục tiêu nhưng cũng có người vẫn mãi loay hoay?",
-      "quote": "Mỗi người đều có điểm xuất phát, điểm mạnh, điểm yếu và tốc độ khác nhau.",
+      "quote": "Mỗi người đều có điểm xuất phát, điểm mạnh, điểm yếu và tốc độ học tập khác nhau.",
       "steps": {
-        "start": "Điểm xuất phát khác nhau",
-        "strength": "Điểm mạnh, điểm yếu riêng",
-        "pace": "Tốc độ tiến bộ riêng"
+        "start": "Điểm xuất phát",
+        "startDesc": "Mỗi học viên có nền tảng từ vựng, ngữ pháp và phát âm ban đầu không giống nhau. Lộ trình học cần bắt đầu chính xác từ nơi bạn đang đứng.",
+        "strength": "Điểm mạnh & Điểm yếu",
+        "strengthDesc": "Có bạn nghe tốt nhưng từ vựng yếu, có bạn đọc nhanh nhưng ngữ điệu phát âm chưa chuẩn. Cần tập trung thời gian cải thiện đúng điểm nghẽn.",
+        "pace": "Tốc độ học tập",
+        "paceDesc": "Khả năng tiếp thu, ghi nhớ và thời gian biểu của mỗi học viên hoàn toàn khác biệt. Hệ thống thông minh điều chỉnh nhịp độ tối ưu nhất."
       }
     },
     "platform": {
-      "lead": "Đó là lý do WEWIN xây dựng nền tảng luyện thi dựa trên",
-      "title": "Lộ trình luyện thi thực chiến",
-      "titleSub": "(Cá nhân hóa theo năng lực)",
-      "desc": "Liên tục đo lường năng lực thực tế qua từng bài thi, chỉ ra điểm yếu theo từng dạng câu hỏi và gợi ý nội dung luyện tập phù hợp thay vì bắt bạn học theo một lộ trình có sẵn."
+      "lead": "Đó là lý do WeWIN ra đời và được định vị là",
+      "title": "Nền tảng IELTS Adaptive Learning",
+      "titleSub": "đầu tiên tại Việt Nam",
+      "desc": "Thay vì áp dụng một lộ trình cứng nhắc cho tất cả, WeWIN tự động chẩn đoán điểm mạnh - điểm yếu và liên tục cá nhân hóa bài tập luyện để bạn tiến bộ nhanh nhất trên từng kỹ năng."
     },
     "experts": {
-      "heading": "Kết hợp đội ngũ giáo viên tận tâm với công nghệ luyện thi thông minh",
-      "teamTitle": "Đội ngũ chuyên môn kiến tạo nên chuẩn mực",
-      "teamDesc": "Toàn bộ học liệu và tiêu chí đánh giá được xây dựng bởi đội ngũ giáo viên WEWIN giàu kinh nghiệm thực chiến, giúp bạn bóc tách các “điểm mù”, hình thành tư duy ngôn ngữ và chiến thuật cho mọi dạng đề.",
-      "exp1": "Giáo viên 8.0+ IELTS, nhiều năm kinh nghiệm luyện thi",
-      "exp2": "Chữa bài Writing & Speaking theo tiêu chí giám khảo",
-      "exp3": "Lớp học tương tác trực tiếp, theo sát từng học viên",
+      "badge": "Chất lượng chuyên môn & Công nghệ",
+      "heading": "Ứng dụng công nghệ để nhân bản tư duy của những bậc thầy xuất sắc nhất",
+      "teamDesc": "Toàn bộ học liệu cùng bộ tiêu chí đánh giá tại WeWIN được xây dựng bởi các chuyên gia hàng đầu và cựu giám khảo IELTS. Bằng kinh nghiệm thực chiến, họ giúp bạn bóc tách các “điểm mù”, hình thành tư duy ngôn ngữ và trang bị chiến thuật tối ưu cho mọi dạng đề.",
+      "teamTitle": "Đội ngũ Chuyên gia kiến tạo chuẩn mực",
+      "exp1": "Giáo trình & bộ tiêu chí chấm điểm chuẩn khảo thí Cambridge và IDP.",
+      "exp2": "Phân tích chi tiết từng tiêu chí: Lexical Resource, Grammatical Range & Accuracy, Coherence & Task Response.",
+      "exp3": "Chiến thuật giải đề tinh gọn, tối ưu thời gian thao tác trên máy tính.",
+      "exp4": "Kho bài mẫu Speaking & Writing band 8.0 - 9.0 độc quyền.",
+      "exploreProgram": "Khám phá chương trình học 4 kỹ năng",
       "techTitle": "Công nghệ cá nhân hóa trải nghiệm học tập",
-      "techDesc": "Kế thừa trọn vẹn tư duy đó, hệ thống liên tục theo sát kết quả và linh hoạt gợi ý bài luyện phù hợp với năng lực thực tế của bạn ở mọi thời điểm.",
+      "techDesc": "Kế thừa trọn vẹn tư duy của chuyên gia, hệ thống Adaptive Learning liên tục đo lường, theo sát và linh hoạt điều chỉnh lộ trình học tập phù hợp với năng lực thực tế của bạn ở mọi thời điểm.",
+      "exploreTests": "Trải nghiệm kho đề thi thực chiến",
       "features": {
-        "mock": "Thi thử mô phỏng thi máy",
-        "score": "Chấm điểm & phân tích tức thì",
-        "dictation": "Chép chính tả (Dictation)",
-        "shadowing": "Luyện nói Shadowing"
+        "score": "Chấm điểm tức thì",
+        "mock": "Gợi ý bài tập bù đắp",
+        "dictation": "Luyện nghe Chép chính tả",
+        "shadowing": "Phản xạ phát âm Shadowing"
       }
     },
     "mission": {
-      "ticker": "our mission",
+      "ticker": "OUR MISSION",
       "title": "Chinh phục IELTS không là “đặc quyền” của riêng ai",
-      "desc": "Sứ mệnh của WEWIN là dùng công nghệ để xóa nhòa khoảng cách. Dù bạn ở đâu hay đang ở trình độ nào, WEWIN giúp bạn tiếp cận phương pháp luyện thi chuẩn và chinh phục mục tiêu IELTS mọi lúc, mọi nơi."
+      "desc": "Sứ mệnh của chúng tôi là sử dụng Công nghệ & Phương pháp thực chiến để xoá nhòa mọi rào cản. Dù bạn ở đâu hay đang ở trình độ nào, WeWIN giúp bạn tiếp cận những Chuyên gia hàng đầu, chinh phục mục tiêu IELTS mọi lúc, mọi nơi, một cách hiệu quả và tiết kiệm nhất."
     },
     "honor": {
-      "badge": "Bảng vàng WEWIN",
+      "badge": "Bảng Vàng Vinh Danh",
       "title": "Vinh danh học viên xuất sắc đạt điểm cao IELTS",
-      "subtitle": "Tự hào đồng hành cùng các bạn học viên chinh phục mục tiêu 7.5 – 8.5 IELTS.",
-      "imageAlt": "Vinh danh học viên WEWIN đạt điểm cao IELTS"
+      "subtitle": "Minh chứng rõ ràng nhất cho hiệu quả của phương pháp học tập thực chiến tại WeWIN Education là hàng trăm học viên đã vượt mục tiêu band điểm 7.0 - 8.5 IELTS.",
+      "imageAlt": "Bảng vàng học viên xuất sắc WeWIN IELTS"
     },
     "journey": {
+      "kicker": "Khởi đầu ngay hôm nay",
       "title": "Bạn đang ở đâu trên hành trình IELTS?",
-      "desc": "Làm một bài thi thử để biết band điểm hiện tại và nhận gợi ý luyện tập phù hợp với mục tiêu của bạn.",
+      "desc": "Đừng để thời gian trôi qua trong mơ hồ. Hãy làm bài kiểm tra trình độ để nhận chẩn đoán chi tiết và lộ trình cá nhân hóa hoàn toàn miễn phí từ WeWIN.",
       "cta": "Kiểm tra trình độ miễn phí"
     },
     "contact": {
       "title": "Bạn cần hỗ trợ gì không?",
-      "subtitle": "Vui lòng để lại thông tin, WEWIN sẽ liên hệ và tư vấn lộ trình phù hợp cho bạn.",
-      "mascotBubble": "WEWIN hỗ trợ tư vấn!",
-      "address": "292B Nơ Trang Long & 742 Xô Viết Nghệ Tĩnh, Bình Thạnh, TP.HCM",
+      "subtitle": "Vui lòng để lại thông tin, đội ngũ WeWIN sẽ liên hệ tư vấn lộ trình học phù hợp nhất cho bạn hoàn toàn miễn phí.",
+      "successTitle": "Đăng ký tư vấn thành công!",
+      "successDesc": "Cảm ơn bạn {name}! Chuyên viên tư vấn WeWIN sẽ liên hệ qua số điện thoại {phone} trong thời gian sớm nhất.",
       "name": "Họ và tên",
       "phone": "Số điện thoại",
       "email": "Email",
       "interest": "Bạn quan tâm đến",
       "interests": {
-        "selfStudy": "Tự luyện thi IELTS online",
-        "course": "Khóa học tại trung tâm",
-        "placement": "Kiểm tra trình độ đầu vào",
-        "other": "Câu hỏi khác"
+        "course": "Khóa học IELTS 4 kỹ năng",
+        "selfStudy": "Gói luyện thi thực chiến",
+        "placement": "Kiểm tra trình độ & Tư vấn lộ trình",
+        "other": "Yêu cầu khác"
       },
-      "submit": "Đăng ký tư vấn",
-      "mailSubject": "Đăng ký tư vấn IELTS - {name}"
+      "notes": "Câu hỏi hoặc mục tiêu band điểm",
+      "notesPlaceholder": "Mục tiêu 6.5 - 7.5 IELTS, cần cải thiện Speaking & Writing...",
+      "submit": "Đăng ký tư vấn ngay",
+      "supportTitle": "WeWIN Education",
+      "supportSubtitle": "Hỗ trợ học viên 24/7",
+      "hotline": "Hotline tư vấn:",
+      "campus": "Cơ sở đào tạo:",
+      "campus1": "CS1: 292B Nơ Trang Long, P.12, Q. Bình Thạnh, TP.HCM",
+      "campus2": "CS2: 742 Xô Viết Nghệ Tĩnh, P.25, Q. Bình Thạnh, TP.HCM",
+      "workingHours": "Giờ làm việc: Thứ 2 - Thứ 7: 8h00 - 21h00 | Chủ nhật: 8h00 - 17h30"
+    },
+    "adaptive": {
+      "diagTitle": "Chẩn đoán thông minh",
+      "diagDesc": "Xác định chính xác lỗ hổng từ vựng, ngữ pháp và phát âm.",
+      "customTitle": "Cá nhân hóa bài tập",
+      "customDesc": "Bài luyện được tinh chỉnh theo đúng tiến độ của bạn.",
+      "timeTitle": "Tối ưu thời gian thi",
+      "timeDesc": "Nắm vững chiến thuật rút ngắn 50% thời gian làm bài."
+    },
+    "stats": {
+      "highestBand": "Band điểm cao nhất",
+      "targetReached": "Đạt và vượt mục tiêu",
+      "trustedStudents": "Học viên tin tưởng",
+      "standardTests": "Đề thi máy chuẩn quốc tế"
+    },
+    "footer": {
+      "aboutDesc": "WeWIN Education là nền tảng đào tạo và luyện thi IELTS thực chiến toàn diện 4 kỹ năng Listening, Reading, Writing và Speaking thông qua lộ trình cá nhân hóa Adaptive Learning và hệ thống đề thi chuẩn quốc tế.",
+      "explore": "Khám phá",
+      "aboutWeWin": "Về WeWIN",
+      "placementTest": "Kiểm tra trình độ",
+      "learnSkills": "Học 4 kỹ năng",
+      "mockTests": "Luyện đề thi thử",
+      "features": "Tính năng",
+      "dictation": "Chép chính tả",
+      "shadowing": "Luyện nói Shadowing",
+      "ranking": "Bảng xếp hạng",
+      "hallOfFame": "Bảng vàng vinh danh",
+      "contact": "Liên hệ",
+      "address": "Bình Thạnh, TP. Hồ Chí Minh",
+      "copyright": "© {year} WeWIN Education. Toàn bộ bản quyền được bảo lưu.",
+      "terms": "Điều khoản sử dụng",
+      "privacy": "Chính sách bảo mật"
+    }
+  },
+  "landingHeader": {
+    "about": "Về WeWIN",
+    "aboutDesc": "Hệ sinh thái giáo dục WEWIN",
+    "placementTest": "Kiểm tra trình độ",
+    "learn4Skills": "Học 4 kỹ năng",
+    "practiceTests": "Luyện thi",
+    "hallOfFame": "Bảng vàng",
+    "support": "Tư vấn & Hỗ trợ",
+    "toDashboard": "Vào Dashboard",
+    "login": "Đăng nhập",
+    "cambridgeTitle": "Ôn luyện Cambridge",
+    "cambridgeSub": "Starters • Movers • Flyers • KET",
+    "vstepTitle": "Ôn luyện VSTEP",
+    "vstepSub": "Luyện thi VSTEP B1 • B2 • C1",
+    "gamesTitle": "Chơi Games",
+    "gamesSub": "E-Learning Global Success 1 đến 9",
+    "chineseTitle": "Học Tiếng Hoa",
+    "chineseSub": "HSK 1–9 & Tiếng Trung giao tiếp"
+  },
+  "productSwitcher": {
+    "switchProduct": "CHUYỂN SẢN PHẨM",
+    "start": "Start →",
+    "current": "Đang dùng",
+    "cambridge": {
+      "name": "WEWIN Exam",
+      "shortName": "Cambridge Exam",
+      "category": "CAMBRIDGE",
+      "subtitle": "Starters • Movers • Flyers • KET",
+      "desc": "Luyện tập & bổ trợ đề thi, từ vựng ôn tập chuẩn Cambridge"
+    },
+    "ielts": {
+      "name": "WEWIN IELTS",
+      "shortName": "WEWIN IELTS",
+      "category": "IELTS",
+      "subtitle": "ACADEMIC & GENERAL",
+      "desc": "Luyện thi IELTS thực chiến 4 kỹ năng cùng AI"
+    },
+    "elearning": {
+      "name": "WEWIN Games",
+      "shortName": "Chơi Games",
+      "category": "E-LEARNING",
+      "subtitle": "Global Success 1 đến 9",
+      "desc": "Học tiếng Anh qua trò chơi tương tác theo sách giáo khoa"
+    },
+    "vstep": {
+      "name": "WEWIN VSTEP",
+      "shortName": "Ôn thi VSTEP",
+      "category": "VSTEP",
+      "subtitle": "B1 • B2 • C1",
+      "desc": "Luyện thi VSTEP B1, B2, C1 với kho đề thi thực tế"
+    },
+    "chinese": {
+      "name": "WEWIN Chinese",
+      "shortName": "Tiếng Trung",
+      "category": "CHINESE",
+      "subtitle": "HSK 1–9 & Giao tiếp",
+      "desc": "Tiếng Trung giao tiếp & luyện thi HSK 1 đến 9"
     }
   }
 }

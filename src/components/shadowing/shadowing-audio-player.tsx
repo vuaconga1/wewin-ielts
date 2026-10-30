@@ -10,6 +10,7 @@ import {
   Volume2,
   VolumeX,
 } from "lucide-react";
+import { useTranslations } from "@/i18n/provider";
 
 type Props = {
   src: string;
@@ -29,12 +30,15 @@ function formatTime(sec: number): string {
 
 export function ShadowingAudioPlayer({
   src,
-  title = "Audio mẫu",
-  badge = "Giọng bản xứ",
+  title,
+  badge,
   audioRef: externalRef,
   className = "",
   onPlayChange,
 }: Props) {
+  const { t } = useTranslations("shadowing");
+  const displayTitle = title ?? t("sampleAudio", "Audio mẫu");
+  const displayBadge = badge ?? t("listenStep", "Bước 1: Lắng nghe");
   const internalRef = useRef<HTMLAudioElement | null>(null);
   const ref = externalRef ?? internalRef;
 
@@ -146,26 +150,24 @@ export function ShadowingAudioPlayer({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-2xl border border-slate-200/90 bg-gradient-to-b from-white to-slate-50/70 p-4 sm:p-5 shadow-xs transition-shadow hover:shadow-md ${className}`}
+      className={`relative overflow-hidden rounded-2xl border border-indigo-100 bg-gradient-to-b from-indigo-50/20 via-white to-white p-4 sm:p-5 shadow-xs transition-shadow hover:shadow-md ${className}`}
     >
       <audio ref={ref} src={src} preload="metadata" />
 
       {/* Header bar of audio player */}
-      <div className="flex items-center justify-between gap-3 border-b border-slate-100 pb-3">
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-wewin-accent-blue-bg text-wewin-accent-blue">
-            <Headphones className="h-4 w-4" />
-          </div>
-          <div>
-            <h2 className="text-sm font-bold text-slate-800">{title}</h2>
-            <p className="text-[11px] text-slate-500">Nghe kỹ ngữ điệu và nối âm</p>
-          </div>
+      <div className="flex items-center justify-between gap-3 border-b border-slate-100 pb-2.5">
+        <div className="flex items-center gap-2.5">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-100 text-indigo-700">
+            <Headphones className="h-4.5 w-4.5" />
+          </span>
+          <h2 className="text-sm sm:text-base font-bold uppercase tracking-wider text-slate-800">
+            {displayTitle}
+          </h2>
         </div>
 
-        {badge && (
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-sky-200 bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-800">
-            <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
-            {badge}
+        {displayBadge && (
+          <span className="inline-flex items-center gap-1 rounded-full border border-indigo-200/80 bg-indigo-50 px-2.5 py-0.5 text-xs font-bold text-indigo-700">
+            {displayBadge}
           </span>
         )}
       </div>
@@ -182,7 +184,7 @@ export function ShadowingAudioPlayer({
               step={0.1}
               value={currentTime}
               onChange={(e) => seek(Number(e.target.value))}
-              aria-label="Thanh tiến trình audio"
+              aria-label={t("audioProgress", "Thanh tiến trình audio")}
               className="h-2 w-full cursor-pointer appearance-none rounded-lg bg-slate-200 accent-wewin-navy transition-all hover:bg-slate-300"
               style={{
                 background: `linear-gradient(to right, #0d1b3e ${progressPercent}%, #e2e8f0 ${progressPercent}%)`,
@@ -190,8 +192,8 @@ export function ShadowingAudioPlayer({
             />
           </div>
 
-          <div className="flex items-center justify-between font-mono text-xs tabular-nums text-slate-500">
-            <span className="font-medium text-slate-700">{formatTime(currentTime)}</span>
+          <div className="flex items-center justify-between font-mono text-sm tabular-nums text-slate-600">
+            <span className="font-semibold text-slate-800">{formatTime(currentTime)}</span>
             <span>{formatTime(duration)}</span>
           </div>
         </div>
@@ -203,8 +205,8 @@ export function ShadowingAudioPlayer({
             <button
               type="button"
               onClick={() => skip(-5)}
-              aria-label="Lùi 5 giây"
-              title="Lùi 5 giây"
+              aria-label={t("rewind5s", "Lùi 5 giây")}
+              title={t("rewind5s", "Lùi 5 giây")}
               className="group flex h-9 items-center gap-1 rounded-xl border border-slate-200 bg-white px-2.5 text-xs font-bold text-slate-600 transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 active:scale-95"
             >
               <RotateCcw className="h-3.5 w-3.5 transition-transform group-hover:-rotate-45" />
@@ -214,7 +216,7 @@ export function ShadowingAudioPlayer({
             <button
               type="button"
               onClick={togglePlay}
-              aria-label={playing ? "Tạm dừng" : "Phát audio"}
+              aria-label={playing ? t("pause", "Tạm dừng") : t("play", "Phát audio")}
               className={`flex h-11 w-11 items-center justify-center rounded-xl font-medium text-white shadow-sm transition-all active:scale-95 ${playing
                   ? "bg-slate-900 hover:bg-slate-800 ring-2 ring-slate-900/20"
                   : "bg-wewin-navy hover:bg-wewin-navy-hover ring-2 ring-wewin-navy/20"
@@ -230,8 +232,8 @@ export function ShadowingAudioPlayer({
             <button
               type="button"
               onClick={() => skip(5)}
-              aria-label="Tua nhanh 5 giây"
-              title="Tua nhanh 5 giây"
+              aria-label={t("forward5s", "Tua nhanh 5 giây")}
+              title={t("forward5s", "Tua nhanh 5 giây")}
               className="group flex h-9 items-center gap-1 rounded-xl border border-slate-200 bg-white px-2.5 text-xs font-bold text-slate-600 transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 active:scale-95"
             >
               <span>5s</span>
@@ -267,7 +269,7 @@ export function ShadowingAudioPlayer({
               <button
                 type="button"
                 onClick={toggleMute}
-                aria-label={muted ? "Bật âm thanh" : "Tắt âm thanh"}
+                aria-label={muted ? t("unmute", "Bật âm thanh") : t("mute", "Tắt âm thanh")}
                 className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-all hover:bg-slate-50 hover:text-slate-900"
               >
                 {muted || volume === 0 ? (
@@ -286,7 +288,7 @@ export function ShadowingAudioPlayer({
                     step={0.05}
                     value={muted ? 0 : volume}
                     onChange={(e) => changeVolume(Number(e.target.value))}
-                    aria-label="Âm lượng"
+                    aria-label={t("volume", "Âm lượng")}
                     className="h-1.5 w-full cursor-pointer accent-wewin-navy"
                   />
                 </div>
@@ -302,13 +304,15 @@ export function ShadowingAudioPlayer({
 /** Lightweight audio preview player for user recordings */
 export function UserAudioPlayer({
   src,
-  label = "Bản ghi của bạn",
+  label,
   className = "",
 }: {
   src: string;
   label?: string;
   className?: string;
 }) {
+  const { t } = useTranslations("shadowing");
+  const displayLabel = label ?? t("yourRecording", "Bản ghi của bạn");
   const ref = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -370,7 +374,7 @@ export function UserAudioPlayer({
       <button
         type="button"
         onClick={toggle}
-        aria-label={playing ? "Tạm dừng" : "Nghe lại"}
+        aria-label={playing ? t("pause", "Tạm dừng") : t("playAgain", "Nghe lại")}
         className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-wewin-navy text-white shadow-2xs transition-transform hover:scale-105 active:scale-95"
       >
         {playing ? <Pause className="h-4 w-4 fill-current" /> : <Play className="h-4 w-4 fill-current translate-x-0.5" />}
@@ -378,7 +382,7 @@ export function UserAudioPlayer({
 
       <div className="min-w-0 flex-1">
         <div className="flex items-center justify-between text-xs">
-          <span className="font-semibold text-slate-800">{label}</span>
+          <span className="font-semibold text-slate-800">{displayLabel}</span>
           <span className="font-mono tabular-nums text-slate-500">
             {formatTime(currentTime)} / {formatTime(duration)}
           </span>

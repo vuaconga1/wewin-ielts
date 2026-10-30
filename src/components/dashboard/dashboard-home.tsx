@@ -90,9 +90,10 @@ export function DashboardHome({
             />
           </div>
 
-          <div data-tour="home-skills">
+          {/* Tạm thời ẩn phần học qua video / 4 kỹ năng cho đến khi có video thật */}
+          {/* <div data-tour="home-skills">
             <HomeSkillsRow skills={skills} />
-          </div>
+          </div> */}
           <div data-tour="home-recommended">
             <HomeRecommendedTests tests={recommended} />
           </div>

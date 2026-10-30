@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getSessionUser } from "@/lib/auth";
+import { getUserDisplayProfile } from "@/lib/user-profile";
 import { listAttempts, listPublicTests } from "@/lib/store/test-store";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DashboardHome } from "@/components/dashboard/dashboard-home";
@@ -51,7 +52,16 @@ export default async function DashboardPage() {
     (a) => dateKey(a.finishedAt ?? a.updatedAt ?? a.startedAt) === todayKey,
   );
 
-  const givenName = user
+  let displayName = user?.fullName;
+  if (!displayName && user?.id) {
+    const profile = await getUserDisplayProfile(user.id);
+    displayName = profile?.fullName ?? null;
+  }
+
+  // Ưu tiên hiển thị tên học viên (fullName) thay vì mã học viên (username)
+  const givenName = displayName?.trim()
+    ? displayName.trim()
+    : user
     ? displayGivenName(user.username)
     : t("common.you");
 
