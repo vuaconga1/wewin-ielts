@@ -271,7 +271,7 @@ export async function scoreSpeakingClips(
     });
   }
 
-  const overall = await aggregateFinalBand({
+  const overall = aggregateFinalBand({
     skill: "SPEAKING",
     tasks: scoredTasks,
   });

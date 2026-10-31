@@ -1,7 +1,7 @@
 /**
  * Rename tests to neutral "Test n - Skill" titles (no source book names such as
- * "VOL 3" / "Cambridge IELTS 13 General Training"), strip source tags and
- * descriptions. Numbering is per exam type + skill. Slugs are unchanged so
+ * "Cambridge IELTS 13 General Training"), strip source tags and descriptions.
+ * The Real IELTS sets are titled "Vol v Test t - Skill". Numbering is per exam type + skill. Slugs are unchanged so
  * existing attempts / links keep working.
  *
  * Usage:
@@ -37,6 +37,9 @@ type Row = {
 };
 
 type Plan = { row: Row; title: string; tags: string[]; description: string | null };
+
+/** The Real IELTS sets keep their volume/test numbers: "Vol 1 Test 1 - Listening". */
+const VOL_SLUG = /^real-ielts-vol-(\d+)-test-(\d+)-/;
 
 /** Lower rank = earlier number. Original WEWIN "test-N-skill" keep N. */
 function sortKey(slug: string): [number, number, number] {
@@ -80,7 +83,22 @@ function buildPlan(rows: Row[]): Plan[] {
   }
 
   const plans: Plan[] = [];
-  for (const list of byExam.values()) {
+  for (const [examType, all] of byExam) {
+    const list: Row[] = [];
+    for (const r of all) {
+      const vol = r.slug.match(VOL_SLUG);
+      if (!vol) {
+        list.push(r);
+        continue;
+      }
+      const label = SKILL_LABEL[r.skill] ?? r.skill;
+      plans.push({
+        row: r,
+        title: `Vol ${vol[1]} Test ${vol[2]} - ${label}`,
+        tags: [EXAM_TAG[examType]!, `#${label}`],
+        description: isSourceDescription(r.description) ? null : r.description,
+      });
+    }
     const numberBySet = new Map<string, number>();
     const used = new Set<number>();
     for (const r of list) {

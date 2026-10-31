@@ -37,10 +37,11 @@ export default async function GrammarCatalogPage({ searchParams }: Props) {
   const { t } = await getTranslations();
   const raw = (await searchParams).course;
   const course: GrammarCourse = isGrammarCourse(raw) ? raw : "basic";
-  const isIeltsCourse = isRestrictedGrammarCourse(course);
+  const isRestricted = isRestrictedGrammarCourse(course);
+  const isStandalone = course !== "basic";
 
-  const role = isIeltsCourse ? await getViewerRole() : null;
-  const locked = isIeltsCourse && !canViewIeltsGrammar(role);
+  const role = isRestricted ? await getViewerRole() : null;
+  const locked = isRestricted && !canViewIeltsGrammar(role);
 
   const ownerKey = await getLearnOwnerKey();
   const [progress, topics] = await Promise.all([
@@ -62,8 +63,8 @@ export default async function GrammarCatalogPage({ searchParams }: Props) {
     <SiteShell active="learn" wide>
       <TopicCatalog
         track="grammar"
-        trackLabel={isIeltsCourse ? grammarCourseLabel(course, t) : t("learn.grammarTrack", "Ngữ pháp")}
-        parent={isIeltsCourse ? "catalog" : "vocab-grammar"}
+        trackLabel={course !== "basic" ? grammarCourseLabel(course, t) : t("learn.grammarTrack", "Ngữ pháp")}
+        parent={isStandalone ? "catalog" : "vocab-grammar"}
         topics={topics.map(toPublicTopicMeta)}
         progress={progress}
         lockedPanel={

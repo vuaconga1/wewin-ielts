@@ -16,7 +16,6 @@ import { TopicSidebar } from "@/components/learn/topic-sidebar";
 import type { LearnProgressStore } from "@/lib/learn/types";
 import type { PublicTopicLesson } from "@/lib/learn/vocab-grammar-public";
 import {
-  isRestrictedGrammarCourse,
   type GrammarCourse,
   type VocabGrammarTrack,
 } from "@/lib/learn/vocab-grammar-types";
@@ -152,7 +151,7 @@ export function TopicLessonPlayer({
                 {t("catalogTitle", "Chọn khóa học")}
               </Link>
               <span className="text-zinc-400">›</span>
-              {course && isRestrictedGrammarCourse(course) ? null : (
+              {course && course !== "basic" ? null : (
                 <>
                   <Link
                     href={learnVocabGrammarHref()}

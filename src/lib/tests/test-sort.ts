@@ -11,11 +11,20 @@ function testNumber(value: { title: string; slug?: string }): number {
   return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
 }
 
-/** Sort Test 1, Test 2, ... Test 10; then Listening, Reading, Writing, Speaking. */
+/** 0 for tests outside a volume series, so "Test n" comes before "Vol 1 Test n". */
+function volumeNumber(value: { title: string; slug?: string }): number {
+  const match = `${value.title} ${value.slug ?? ""}`.match(/\bvol[-\s]+(\d+)\b/i);
+  return match ? Number(match[1]) : 0;
+}
+
+/** Sort Test 1, Test 2, ... Test 10, then Vol 1 Test 1, ...; then Listening, Reading, Writing, Speaking. */
 export function compareTestsAscending(
   a: { title: string; slug?: string; skill?: string },
   b: { title: string; slug?: string; skill?: string },
 ): number {
+  const byVolume = volumeNumber(a) - volumeNumber(b);
+  if (byVolume !== 0) return byVolume;
+
   const byNumber = testNumber(a) - testNumber(b);
   if (byNumber !== 0) return byNumber;
 

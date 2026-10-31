@@ -298,24 +298,68 @@ function googleSlidesEmbed(fileId: string): string {
   return `https://docs.google.com/presentation/d/${fileId}/embed?start=false&loop=false&delayms=60000`;
 }
 
-/** WeWIN IELTS Grammar decks (Google Drive folder "WeWIN IELTS Grammar – Dễ học & Minh họa"); teacher guide omitted. */
+function googleDrivePreview(fileId: string): string {
+  return `https://drive.google.com/file/d/${fileId}/preview`;
+}
+
+/** WeWIN IELTS Grammar decks; updated with new WeWIN curriculum while preserving non-overlapping topics. */
 const SLIDE_GRAMMAR_DECKS: {
   slug: string;
   fileId: string;
+  isPdf?: boolean;
+  usePreview?: boolean;
   label: string;
   vi: string;
   en: string;
+  theoryVi?: string;
+  theoryEn?: string;
 }[] = [
-  { slug: "g1-four-core-tenses", fileId: "1iHe1MP1bw4Df5H4tbvldD6U47J0mx_hPrKmDY_YFVgI", label: "Grammar 1", vi: "Bốn thì nền tảng", en: "Four core tenses" },
+  {
+    slug: "g1-english-tenses",
+    fileId: "1cxSPOtjty40ACeG__gutkcLeiOok2iDB",
+    isPdf: true,
+    usePreview: true,
+    label: "Grammar 1",
+    vi: "Hệ thống các thì trong tiếng Anh",
+    en: "English Tenses Overview",
+    theoryVi: "<p>Chuyên đề Hệ thống các thì trong tiếng Anh (Tenses) - Giáo trình WeWIN.</p><p><a href=\"https://drive.google.com/file/d/1cxSPOtjty40ACeG__gutkcLeiOok2iDB/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Mở toàn màn hình / Tải file PDF Tenses ↗</a></p>",
+    theoryEn: "<p>WeWIN English Tenses Overview module.</p><p><a href=\"https://drive.google.com/file/d/1cxSPOtjty40ACeG__gutkcLeiOok2iDB/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Open full screen / Download PDF Tenses ↗</a></p>",
+  },
   { slug: "g2-subject-verb-agreement", fileId: "13mw0w6ju5czLOP8c4AXG6t5ZW0RozhlyDS5U7X2hEBQ", label: "Grammar 2", vi: "Hòa hợp chủ ngữ và động từ", en: "Subject-verb agreement" },
   { slug: "g3-passive-voice", fileId: "1qZGL7IsjEm1SUE1spsBG1g6FemPXkUNGdKqAYBCWB08", label: "Grammar 3", vi: "Câu bị động", en: "Passive voice" },
   { slug: "g4-relative-clauses", fileId: "198fWHNASOlMSRN_2HGX-JA7mJ64HNRy3y57_O13ItDY", label: "Grammar 4", vi: "Mệnh đề quan hệ", en: "Relative clauses" },
-  { slug: "g5-1-prepositions-time-place-movement", fileId: "1Nq0mYf9asV9iUZaYCzogCCw7-HdnC1SKapCGG40lAsI", label: "Grammar 5.1", vi: "Giới từ thời gian, nơi chốn và chuyển động", en: "Prepositions of time, place and movement" },
-  { slug: "g5-2-dependent-prepositions", fileId: "1Pv3FzyhvYiK9ckVsgI8rg-rXQJ3S57yj3ext1mnUq1I", label: "Grammar 5.2", vi: "Giới từ đi với tính từ, động từ và danh từ", en: "Prepositions after adjectives, verbs and nouns" },
+  {
+    slug: "g5-prepositions",
+    fileId: "1ZGNV1ojTl0etb_m5EP60bdopmhgmsNaL",
+    usePreview: true,
+    label: "Grammar 5",
+    vi: "Giới từ (Prepositions)",
+    en: "English Prepositions",
+    theoryVi: "<p>Chuyên đề Giới từ (Prepositions) trong tiếng Anh - Giáo trình WeWIN.</p><p>Tài liệu PDF chi tiết: <a href=\"https://drive.google.com/file/d/1D5D99OxOHYgKPJMdgiQwUHMo_eJMOcoh/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Xem / Tải file PDF Preposition ↗</a></p>",
+    theoryEn: "<p>WeWIN Prepositions module for foundational English.</p><p>Reference PDF: <a href=\"https://drive.google.com/file/d/1D5D99OxOHYgKPJMdgiQwUHMo_eJMOcoh/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">View / Download PDF Preposition ↗</a></p>",
+  },
   { slug: "g6-1-nouns-quantity", fileId: "1yYCnunmT_Z6ciXuADZ_Zy8mL_YrA3osIO0oqyjg7Ym0", label: "Grammar 6.1", vi: "Danh từ và số lượng", en: "Nouns and quantity" },
-  { slug: "g6-2-articles", fileId: "1uA2RG1zH6hqIMWcgguPC9KFBXCzx646e557S_wsxtDQ", label: "Grammar 6.2", vi: "Mạo từ a, an, the và không mạo từ", en: "Articles: a, an, the and zero article" },
+  {
+    slug: "g6-2-articles",
+    fileId: "1kiZtTqSHGTex11VcwOLdBBa5bea-KR39",
+    usePreview: true,
+    label: "Grammar 6.2",
+    vi: "Mạo từ (English Articles: A, An, The)",
+    en: "English Articles: A, An, The",
+    theoryVi: "<p>Chuyên đề Mạo từ (Articles) trong tiếng Anh - Giáo trình WeWIN.</p><p>Tài liệu PDF chi tiết: <a href=\"https://drive.google.com/file/d/1Vp-z3K_bglrMJjf2Wb3SnoRHO9c9DkOa/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Xem / Tải file PDF Article ↗</a></p>",
+    theoryEn: "<p>WeWIN Articles module for foundational English.</p><p>Reference PDF: <a href=\"https://drive.google.com/file/d/1Vp-z3K_bglrMJjf2Wb3SnoRHO9c9DkOa/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">View / Download PDF Article ↗</a></p>",
+  },
   { slug: "g7-1-verb-patterns", fileId: "1GIG1C2G4Py2I4nzVCoARyFhEY4OEFh1elaf1EKW__-E", label: "Grammar 7.1", vi: "Động từ và dạng động từ theo sau", en: "Verbs and verb patterns" },
-  { slug: "g7-2-modal-verbs", fileId: "1_XweIx5U8-9FCc8IYNXohVwgj9oqsJrcOlz1eJJepBA", label: "Grammar 7.2", vi: "Động từ khuyết thiếu", en: "Modal verbs" },
+  {
+    slug: "g7-2-modal-verbs",
+    fileId: "1B2uTdHkEzlw7SEzT9cLmI3x9_mnySoZu",
+    usePreview: true,
+    label: "Grammar 7.2",
+    vi: "Động từ khuyết thiếu (Modal & Semi-Modal Verbs)",
+    en: "Modal & Semi-Modal Verbs",
+    theoryVi: "<p>Chuyên đề Động từ khuyết thiếu (Modal & Semi-Modal Verbs) - Giáo trình WeWIN.</p><p>Tài liệu PDF chi tiết: <a href=\"https://drive.google.com/file/d/16NficyGQv0dQBCgY55AaqmYnfY_6zZ6P/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Xem / Tải file PDF Modal Verbs ↗</a></p>",
+    theoryEn: "<p>WeWIN Modal & Semi-Modal Verbs module.</p><p>Reference PDF: <a href=\"https://drive.google.com/file/d/16NficyGQv0dQBCgY55AaqmYnfY_6zZ6P/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">View / Download PDF Modal Verbs ↗</a></p>",
+  },
   { slug: "g8-1-adjectives", fileId: "1ts6dDBK6LrONJ1UGFke7aXZsRMYCb_z1bg1OjfPQNVg", label: "Grammar 8.1", vi: "Tính từ và cụm tính từ", en: "Adjectives and adjective phrases" },
   { slug: "g8-2-adverbs", fileId: "1xZGEmyaM0kfDJScpxRz5IQcpwZj5-5WHPITxgymP5mY", label: "Grammar 8.2", vi: "Trạng từ và vị trí trạng từ", en: "Adverbs and adverb position" },
   { slug: "g9-1-comparisons", fileId: "13H7d-_XC22gRvUOuW5HJ-Rxo5nZdN4I26MN1fJnjbGM", label: "Grammar 9.1", vi: "So sánh hơn, nhất và bằng", en: "Comparatives, superlatives and equality" },
@@ -326,7 +370,27 @@ const SLIDE_GRAMMAR_DECKS: {
   { slug: "g10-4-conditionals", fileId: "1uimvmKD948jAnZetz1vN0U_qM3njgra-UTQP6_2m6HI", label: "Grammar 10.4", vi: "Câu điều kiện", en: "Conditionals" },
   { slug: "g10-5-time-addition-sequence", fileId: "1RVVb7sJRh37wgxdnQ_9IY6VZ_EopGa-ErEg4bSdYl5s", label: "Grammar 10.5", vi: "Liên kết thời gian, bổ sung và trình tự", en: "Linking time, addition and sequence" },
   { slug: "g11-1-very-too-enough-so-such", fileId: "1j4O1OiEk1xRMs8TivZ_0UC8NYb-hKV5H0uEM_xy0sHQ", label: "Grammar 11.1", vi: "Very, too, enough, so và such", en: "Very, too, enough, so and such" },
-  { slug: "g11-2-quantifiers-confusables", fileId: "1Twn8xDEs_nj6TSnlOMVVShZaEPAhIIJVCBH64BjY5eM", label: "Grammar 11.2", vi: "Lượng từ và các cặp từ dễ nhầm", en: "Quantifiers and commonly confused words" },
+  {
+    slug: "g11-2-determiners",
+    fileId: "1Nc4nuo926Biym-rzjSf0jt2ysgp22Kak",
+    usePreview: true,
+    label: "Grammar 11.2",
+    vi: "Từ hạn định (Determiners & Quantifiers)",
+    en: "Determiners & Quantifiers",
+    theoryVi: "<p>Chuyên đề Từ hạn định (Determiners) - Giáo trình WeWIN.</p><p>Tài liệu PDF chi tiết: <a href=\"https://drive.google.com/file/d/1dk49-pQYaI6fU5hn3VyqGHYSAvUuy9pi/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Xem / Tải file PDF Determiners ↗</a></p>",
+    theoryEn: "<p>WeWIN Determiners & Quantifiers module.</p><p>Reference PDF: <a href=\"https://drive.google.com/file/d/1dk49-pQYaI6fU5hn3VyqGHYSAvUuy9pi/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">View / Download PDF Determiners ↗</a></p>",
+  },
+  {
+    slug: "g12-phrasal-verbs",
+    fileId: "19dAGGcC3LIP3AlLuof2KDEYe4XtvNJn3",
+    isPdf: true,
+    usePreview: true,
+    label: "Grammar 12",
+    vi: "Cụm động từ thông dụng (Phrasal Verbs)",
+    en: "Essential Phrasal Verbs",
+    theoryVi: "<p>Chuyên đề Cụm động từ thông dụng (Phrasal Verbs) - Giáo trình WeWIN.</p><p><a href=\"https://drive.google.com/file/d/19dAGGcC3LIP3AlLuof2KDEYe4XtvNJn3/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Mở toàn màn hình / Tải file PDF Phrasal Verbs ↗</a></p>",
+    theoryEn: "<p>WeWIN Essential Phrasal Verbs module.</p><p><a href=\"https://drive.google.com/file/d/19dAGGcC3LIP3AlLuof2KDEYe4XtvNJn3/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 font-semibold hover:underline\">Open full screen / Download PDF Phrasal Verbs ↗</a></p>",
+  },
 ];
 
 /** WeWIN IELTS 3.0–4.0 decks (Google Drive folder "IELTS 3.0_4.0"); teacher guide omitted. */
@@ -517,6 +581,123 @@ function deckSlug(prefix: string, n: number, title: string): string {
   return `${prefix}-${String(n).padStart(2, "0")}-${words}`;
 }
 
+/** WeWIN IELTS Speaking decks (Google Drive folder 178SAYbymf4wuEvqAbWR217zzYofqfSw5). */
+const SPEAKING_DECKS: {
+  slug: string;
+  fileId: string;
+  isPdf?: boolean;
+  order: number;
+  vi: string;
+  en: string;
+  summaryVi: string;
+  summaryEn: string;
+  theoryVi?: string;
+  theoryEn?: string;
+}[] = [
+  {
+    slug: "speaking-01-descriptions-liking",
+    fileId: "1t9c8HVIXRxkBemwNCYKmxpYoXC6FWiAD",
+    order: 401,
+    vi: "Part 1: Descriptions, Types of, Liking & Disliking",
+    en: "Part 1: Descriptions, Types of, Liking & Disliking",
+    summaryVi: "Chiến thuật miêu tả, phân loại, diễn đạt sở thích và thói quen",
+    summaryEn: "Describing, categorizing, expressing likes and dislikes",
+  },
+  {
+    slug: "speaking-02-habit-comparing",
+    fileId: "1vM8at_LUSyk9JH6H_G6UsB0_8HJNJP-u",
+    order: 402,
+    vi: "Part 1: Habit, Yes/No, WH-, Comparing",
+    en: "Part 1: Habit, Yes/No, WH-, Comparing",
+    summaryVi: "Chiến lược trả lời dạng thói quen, câu hỏi Yes/No, WH- và so sánh",
+    summaryEn: "Handling habit, Yes/No, WH- and comparative questions",
+  },
+  {
+    slug: "speaking-03-extension-strategies",
+    fileId: "1X37r5wKZMWMz-QpaP5SRInlmIsa0otQU",
+    order: 403,
+    vi: "Part 1: 5 Extension Strategies",
+    en: "Part 1: 5 Extension Strategies",
+    summaryVi: "5 chiến thuật mở rộng câu trả lời tự nhiên và trôi chảy trong Part 1",
+    summaryEn: "5 strategies to extend answers naturally and fluently in Part 1",
+  },
+  {
+    slug: "speaking-04-describe-person",
+    fileId: "1xDoQjLPYVswM65Ns2sxJ2ZLv8uhvEmBq",
+    order: 404,
+    vi: "Part 2 Strategies: Describe a Person",
+    en: "Part 2 Strategies: Describe a Person",
+    summaryVi: "Chiến thuật lập dàn ý và miêu tả một người chi tiết, tự nhiên",
+    summaryEn: "Outlining strategies and describing a person fluently",
+  },
+  {
+    slug: "speaking-05-describing-objects",
+    fileId: "1dKZBLH8ftC2CA1TbVEEhd-djRvfMEx1V",
+    order: 405,
+    vi: "Part 2: Describing Objects",
+    en: "Part 2: Describing Objects",
+    summaryVi: "Cấu trúc nói 2 phút miêu tả đồ vật, công nghệ và kỷ vật",
+    summaryEn: "2-minute speaking framework describing objects, tech, and souvenirs",
+  },
+  {
+    slug: "speaking-06-describe-past-event",
+    fileId: "1wK-RO0Heco0knPqPu6ZInp8clhlJH1YC",
+    order: 406,
+    vi: "Part 2: Describe a Past Event",
+    en: "Part 2: Describe a Past Event",
+    summaryVi: "Chiến thuật miêu tả trải nghiệm, kỷ niệm và sự kiện trong quá khứ",
+    summaryEn: "Describing past experiences, memorable milestones and events",
+  },
+  {
+    slug: "speaking-07-describe-place",
+    fileId: "1oIokPYFUB3iwDZU_DcsPjmqpXpi78iJ1",
+    order: 407,
+    vi: "Part 2: Describe a Place",
+    en: "Part 2: Describe a Place",
+    summaryVi: "Chiến thuật miêu tả địa điểm, thành phố, điểm du lịch và không gian sống",
+    summaryEn: "Describing places, cities, travel destinations and living spaces",
+  },
+  {
+    slug: "speaking-08-giving-supporting-opinions",
+    fileId: "1nTzjeLYmFcNSsutlfJT77fU6UoBVePk_",
+    order: 408,
+    vi: "Part 3: Giving and Supporting Opinions",
+    en: "Part 3: Giving and Supporting Opinions",
+    summaryVi: "Đưa ra quan điểm rõ ràng và phát triển lập luận hỗ trợ đa chiều",
+    summaryEn: "Presenting clear opinions and supporting strong arguments",
+  },
+  {
+    slug: "speaking-09-agree-disagree",
+    fileId: "1wCPo2xUTmBpBgXWsSZH0h09wb5_k2E2a",
+    order: 409,
+    vi: "Part 3: Agree & Disagree",
+    en: "Part 3: Agree & Disagree",
+    summaryVi: "Bày tỏ sự đồng tình, phản đối và quan điểm đa chiều có chiều sâu",
+    summaryEn: "Expressing agreement, disagreement and nuanced arguments",
+  },
+  {
+    slug: "speaking-10-evaluating-opinions",
+    fileId: "17drFAfsDABDrJtGuq39rE3tDsDZSn40r",
+    order: 410,
+    vi: "Part 3: Evaluating Opinions",
+    en: "Part 3: Evaluating Opinions",
+    summaryVi: "Đánh giá tính khả thi, phân tích mặt lợi - hại và xu hướng tương lai",
+    summaryEn: "Evaluating viewpoints, analyzing pros/cons and future trends",
+  },
+  {
+    slug: "speaking-11-theory-3-parts",
+    fileId: "1FSv8pt3G1TiUtmmKLNSI8-0EIGuHbKLk",
+    isPdf: true,
+    order: 411,
+    vi: "IELTS Speaking: Lý thuyết tổng hợp 3 Parts",
+    en: "IELTS Speaking: Comprehensive 3 Parts Theory",
+    summaryVi: "Tài liệu lý thuyết và chiến lược tổng hợp cho cả 3 phần thi IELTS Speaking",
+    summaryEn: "Comprehensive theory guide and core strategies for all 3 IELTS Speaking parts",
+    theoryVi: "<p>Tài liệu lý thuyết tổng quan 3 phần thi IELTS Speaking chuẩn WeWIN Education.</p><p><a href=\"https://drive.google.com/file/d/1FSv8pt3G1TiUtmmKLNSI8-0EIGuHbKLk/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center gap-1.5 text-blue-600 font-semibold hover:underline mt-2\">Mở file PDF toàn màn hình trên Google Drive ↗</a></p>",
+    theoryEn: "<p>Comprehensive 3-part IELTS Speaking theory guide by WeWIN Education.</p><p><a href=\"https://drive.google.com/file/d/1FSv8pt3G1TiUtmmKLNSI8-0EIGuHbKLk/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center gap-1.5 text-blue-600 font-semibold hover:underline mt-2\">Open full PDF on Google Drive ↗</a></p>",
+  },
+];
+
 const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = [
   ...SLIDE_GRAMMAR_DECKS.map((deck, i) =>
     topic({
@@ -527,12 +708,12 @@ const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = [
       title: loc(deck.vi, deck.en),
       summary: loc(`${deck.label} – ${deck.vi}`, `${deck.label} – ${deck.en}`),
       videoUrl: "",
-      slidesUrl: googleSlidesEmbed(deck.fileId),
-      theoryHtml: loc("", ""),
+      slidesUrl: deck.usePreview || deck.isPdf ? googleDrivePreview(deck.fileId) : googleSlidesEmbed(deck.fileId),
+      theoryHtml: loc(deck.theoryVi ?? "", deck.theoryEn ?? ""),
       exercises: [],
     }),
   ),
-  // Orders 101+ keep the two courses apart; each course is ordered on its own.
+  // Orders 101+ keep the courses apart; each course is ordered on its own.
   ...IELTS_34_DECKS.map((deck) =>
     topic({
       slug: deck.slug,
@@ -572,6 +753,20 @@ const SLIDE_GRAMMAR_TOPICS: TopicLesson[] = [
       videoUrl: "",
       slidesUrl: googleSlidesEmbed(deck.fileId),
       theoryHtml: loc("", ""),
+      exercises: [],
+    }),
+  ),
+  ...SPEAKING_DECKS.map((deck) =>
+    topic({
+      slug: deck.slug,
+      track: "grammar",
+      course: "ielts-speaking",
+      order: deck.order,
+      title: loc(deck.vi, deck.en),
+      summary: loc(deck.summaryVi, deck.summaryEn),
+      videoUrl: "",
+      slidesUrl: googleDrivePreview(deck.fileId),
+      theoryHtml: loc(deck.theoryVi ?? "", deck.theoryEn ?? ""),
       exercises: [],
     }),
   ),

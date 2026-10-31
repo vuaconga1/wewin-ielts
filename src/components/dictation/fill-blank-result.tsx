@@ -44,7 +44,7 @@ export function FillBlankResult({ result, title, onReplay, onRetry }: Props) {
   ];
 
   return (
-    <section className="card-outline space-y-5 p-4 sm:p-5">
+    <section onCopy={(e) => e.preventDefault()} className="card-outline select-none space-y-5 p-4 sm:p-5">
       <h2 className="break-words text-lg font-bold text-zinc-900">
         {title ?? t("resultTitle", "Kết quả")}
       </h2>

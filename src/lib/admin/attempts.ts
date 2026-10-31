@@ -47,6 +47,12 @@ export type AdminAttemptRow = {
   mode: "PRACTICE" | "FULL";
   scoreLabel: string | null;
   scoreBand: number | null;
+  scoreCorrect: number | null;
+  scoreTotal: number | null;
+  /** Parts / passages done in this attempt; empty = whole test. */
+  sectionOrders: number[];
+  /** Redo-wrong-answers attempt (subset of questions). */
+  partial: boolean;
   startedAt: string;
   finishedAt: string | null;
   status: "FINISHED" | "UNFINISHED";
@@ -67,6 +73,8 @@ export type AdminTestOption = {
   slug: string;
   title: string;
   skill: AdminAttemptSkill | null;
+  /** All part orders of the test (empty when not in the catalog). */
+  sectionOrders: number[];
 };
 
 /** `id` is the class code (WW00016), shared by `User.classCode` and `Classroom.code`. */
@@ -336,7 +344,11 @@ async function loadLocalAttemptsAsRows(
       skill: (test?.skill as AdminAttemptSkill | undefined) ?? null,
       mode: a.mode,
       scoreLabel: scoreLabelFromLocal(a),
-      scoreBand: null,
+      scoreBand: a.aiScore?.overallBand ?? null,
+      scoreCorrect: a.score?.correct ?? null,
+      scoreTotal: a.score?.total ?? null,
+      sectionOrders: a.sectionOrders ?? [],
+      partial: Boolean(a.questionNumbers?.length),
       startedAt: a.startedAt,
       finishedAt: a.finishedAt,
       status: finished ? ("FINISHED" as const) : ("UNFINISHED" as const),
@@ -344,6 +356,39 @@ async function loadLocalAttemptsAsRows(
       source: "local" as const,
     };
   });
+}
+
+function numberArray(value: unknown): number[] {
+  if (!Array.isArray(value)) return [];
+  return value.map(Number).filter((n) => Number.isFinite(n));
+}
+
+/** Score total + redo flag live only in `payload`; read just those JSON paths. */
+async function loadPrismaAttemptExtras(
+  ids: string[],
+): Promise<Map<string, { total: number | null; partial: boolean }>> {
+  const map = new Map<string, { total: number | null; partial: boolean }>();
+  if (!ids.length) return map;
+  try {
+    const rows = await prisma.$queryRaw<
+      { id: string; total: string | null; questionNumbers: unknown }[]
+    >`
+      SELECT "id",
+        ("payload"::jsonb #>> '{score,total}') AS "total",
+        ("payload"::jsonb -> 'questionNumbers') AS "questionNumbers"
+      FROM "Attempt"
+      WHERE "id" = ANY(${ids}::text[])`;
+    for (const row of rows) {
+      const total = row.total === null ? null : Number(row.total);
+      map.set(row.id, {
+        total: total !== null && Number.isFinite(total) ? total : null,
+        partial: numberArray(row.questionNumbers).length > 0,
+      });
+    }
+  } catch {
+    /* totals stay unknown — rows still render */
+  }
+  return map;
 }
 
 async function loadPrismaAttemptsAsRows(
@@ -409,7 +454,8 @@ async function loadPrismaAttemptsAsRows(
       finishedAt: true,
       scoreRaw: true,
       scoreBand: true,
-      // Intentionally omit payload / sectionIds — list views must stay light.
+      sectionIds: true,
+      // Intentionally omit payload — list views must stay light.
       user: {
         select: { id: true, email: true, username: true, fullName: true, role: true },
       },
@@ -421,12 +467,15 @@ async function loadPrismaAttemptsAsRows(
     take,
   });
 
+  const extras = await loadPrismaAttemptExtras(attempts.map((a) => a.id));
+
   return attempts.map((a) => {
     const user =
       a.user ??
       (a.userId ? userMap.get(a.userId) : undefined) ??
       null;
     const finished = Boolean(a.finishedAt);
+    const extra = extras.get(a.id);
     return {
       id: a.id,
       userId: a.userId,
@@ -440,6 +489,10 @@ async function loadPrismaAttemptsAsRows(
       mode: a.mode,
       scoreLabel: scoreLabelFromPrisma(a.scoreRaw, a.scoreBand),
       scoreBand: a.scoreBand,
+      scoreCorrect: a.scoreRaw,
+      scoreTotal: extra?.total ?? null,
+      sectionOrders: numberArray(a.sectionIds),
+      partial: extra?.partial ?? false,
       startedAt: a.startedAt.toISOString(),
       finishedAt: a.finishedAt?.toISOString() ?? null,
       status: finished ? ("FINISHED" as const) : ("UNFINISHED" as const),
@@ -527,6 +580,7 @@ function buildTestOptions(allRows: AdminAttemptRow[]): AdminTestOption[] {
       slug: row.testSlug,
       title: row.testTitle || row.testSlug,
       skill: row.skill,
+      sectionOrders: [],
     });
   }
   return [...bySlug.values()].sort((a, b) =>
@@ -584,6 +638,7 @@ async function listAdminAttemptsUncached(
       slug: t.slug,
       title: t.title,
       skill: (t.skill as AdminAttemptSkill) ?? null,
+      sectionOrders: t.parts.map((p) => p.order),
     });
   }
   for (const opt of buildTestOptions(allRows)) {

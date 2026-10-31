@@ -3,12 +3,10 @@
  * Student-facing result: scores only (no feedback text).
  */
 
+import { overallBand, taskBand } from "@/lib/ai/band";
 import { getOpenAiClient } from "@/lib/ai/client";
 import { finalScoreModel } from "@/lib/ai/config";
-import {
-  WRITING_AGGREGATE_SYSTEM,
-  WRITING_EXAMINER_SYSTEM,
-} from "@/lib/ai/prompts";
+import { WRITING_EXAMINER_SYSTEM } from "@/lib/ai/prompts";
 import type { AiTaskScore, StoredAiScore } from "@/lib/ai/types";
 
 export type WritingTaskInput = {
@@ -143,7 +141,7 @@ export async function scoreWritingTasks(
     });
   }
 
-  const overall = await aggregateFinalBand({
+  const overall = aggregateFinalBand({
     skill: "WRITING",
     tasks: scoredTasks,
   });
@@ -159,45 +157,11 @@ export async function scoreWritingTasks(
   };
 }
 
-export async function aggregateFinalBand(input: {
+/** Rounds every task band to a valid IELTS band, then combines them by the official weighting. */
+export function aggregateFinalBand(input: {
   skill: "WRITING" | "SPEAKING";
   tasks: AiTaskScore[];
-}): Promise<{ band: number | null; summary: string | null }> {
-  const client = getOpenAiClient();
-  const model = finalScoreModel();
-  const system =
-    input.skill === "WRITING"
-      ? WRITING_AGGREGATE_SYSTEM
-      : (await import("@/lib/ai/prompts")).SPEAKING_AGGREGATE_SYSTEM;
-
-  const completion = await client.chat.completions.create({
-    model,
-    temperature: 0.1,
-    response_format: { type: "json_object" },
-    messages: [
-      { role: "system", content: system },
-      {
-        role: "user",
-        content: JSON.stringify({
-          skill: input.skill,
-          tasks: input.tasks.map((t) => ({
-            number: t.number,
-            label: t.label,
-            band: t.band,
-            criteria: t.criteria.map((c) => ({
-              name: c.name,
-              band: c.band,
-            })),
-          })),
-        }),
-      },
-    ],
-  });
-
-  const raw = completion.choices[0]?.message?.content ?? "{}";
-  const parsed = parseJsonObject(raw) ?? {};
-  return {
-    band: numOrNull(parsed.band),
-    summary: null,
-  };
+}): { band: number | null; summary: string | null } {
+  for (const task of input.tasks) task.band = taskBand(task);
+  return { band: overallBand(input.skill, input.tasks), summary: null };
 }

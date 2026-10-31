@@ -8,6 +8,8 @@ type Props = {
   segments: FillBlankSegment[];
   answers: Record<string, string>;
   onChange: (gapId: string, value: string) => void;
+  /** Called instead of accepting pasted / dropped text. */
+  onBlockedInput?: (e: React.SyntheticEvent) => void;
   disabled?: boolean;
 };
 
@@ -15,7 +17,7 @@ const MIN_CH = 7;
 const MAX_CH = 28;
 
 /** Transcript with inline inputs; Tab / Shift+Tab move between gaps in reading order. */
-export function FillBlankInputs({ segments, answers, onChange, disabled }: Props) {
+export function FillBlankInputs({ segments, answers, onChange, onBlockedInput, disabled }: Props) {
   const { t } = useTranslations("dictation");
   return (
     <p className="whitespace-pre-wrap break-words text-base leading-[2.6] text-zinc-800 sm:text-lg sm:leading-[2.6]">
@@ -31,6 +33,8 @@ export function FillBlankInputs({ segments, answers, onChange, disabled }: Props
             <input
               value={value}
               onChange={(e) => onChange(seg.id, e.target.value)}
+              onPaste={onBlockedInput}
+              onDrop={onBlockedInput}
               disabled={disabled}
               maxLength={MAX_ANSWER_CHARS}
               autoComplete="off"

@@ -77,7 +77,13 @@ export function I18nProvider({
   const [locale, setLocaleState] = useState<Locale>(initialLocale);
   const [messages, setMessages] = useState<Messages>(initialMessages);
   const [isPending, startTransition] = useTransition();
-  const router = useRouter();
+  let router: ReturnType<typeof useRouter> | null = null;
+  try {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    router = useRouter();
+  } catch {
+    router = null;
+  }
 
   // Bootstrap preferred locale from cookie/localStorage without forcing RSC dynamic.
   useEffect(() => {
@@ -87,7 +93,7 @@ export function I18nProvider({
       setLocaleState(stored);
       setMessages(getMessages(stored));
       document.documentElement.lang = localeToHtmlLang(stored);
-      router.refresh();
+      if (router) router.refresh();
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-only bootstrap
   }, [router]);
@@ -100,7 +106,7 @@ export function I18nProvider({
     startTransition(() => {
       setLocaleState(next);
       setMessages(getMessages(next));
-      router.refresh();
+      if (router) router.refresh();
     });
   }, [router]);
 

@@ -22,8 +22,14 @@ export async function generateMetadata() {
   return { title: t("meta.adminAttempts") };
 }
 
-export default async function AdminAttemptsPage() {
+export default async function AdminAttemptsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ userId?: string | string[] }>;
+}) {
   const session = await requireStaffPage();
+  const { userId } = await searchParams;
+  const initialUserId = typeof userId === "string" ? userId.trim() : "";
   const { t } = await getTranslations("admin");
   const canManage = canAccessAdmin(session);
 
@@ -64,7 +70,7 @@ export default async function AdminAttemptsPage() {
         </div>
       </div>
 
-      <AttemptsViewer />
+      <AttemptsViewer initialUserId={initialUserId} />
     </SiteShell>
   );
 }

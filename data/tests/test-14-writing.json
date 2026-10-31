@@ -35,7 +35,7 @@
     {
       "title": "Task 2",
       "order": 1,
-      "content": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nFresh water is a limited natural resource, and many regions face acute water shortages. Some people believe that water use should be strictly rationed and priced heavily by governments, while others believe access to clean water is a fundamental human right that should be free.\n\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "content": "You should spend about 40 minutes on this task.\n\n\nFresh water is a limited natural resource, and many regions face acute water shortages. Some people believe that water use should be strictly rationed and priced heavily by governments, while others believe access to clean water is a fundamental human right that should be free.\n\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
       "meta": {},
       "questions": [
         {
@@ -43,7 +43,7 @@
           "order": 0,
           "type": "ESSAY",
           "content": {
-            "stem": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nFresh water is a limited natural resource, and many regions face acute water shortages. Some people believe that water use should be strictly rationed and priced heavily by governments, while others believe access to clean water is a fundamental human right that should be free.\n\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+            "stem": "You should spend about 40 minutes on this task.\n\n\nFresh water is a limited natural resource, and many regions face acute water shortages. Some people believe that water use should be strictly rationed and priced heavily by governments, while others believe access to clean water is a fundamental human right that should be free.\n\nDiscuss both views and give your opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
             "minWords": 250
           }
         }

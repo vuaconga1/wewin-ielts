@@ -74,7 +74,10 @@ export function AlignedTranscript({
           ))}
         </ul>
       </div>
-      <p className="flex flex-wrap items-start gap-x-1 gap-y-2 rounded-xl border border-zinc-200 bg-white p-3 text-base leading-relaxed">
+      <p
+        onCopy={(e) => e.preventDefault()}
+        className="flex select-none flex-wrap items-start gap-x-1 gap-y-2 rounded-xl border border-zinc-200 bg-white p-3 text-base leading-relaxed"
+      >
         {wordResults.map((r, i) => (
           <Word key={i} r={r} youWrote={actualLabel} nearMiss={t("nearMiss", "gần đúng")} />
         ))}

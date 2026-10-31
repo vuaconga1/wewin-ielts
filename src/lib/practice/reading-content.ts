@@ -136,17 +136,17 @@ function removeQuestionHeadingLines(
 function isBareParagraphLabel(line: string): boolean {
   const t = line.trim();
   return (
-    /^[A-I]$/i.test(t) ||
-    /^[A-I][.)]$/.test(t) ||
-    /^paragraph\s+[A-I]$/i.test(t)
+    /^[A-L]$/.test(t) ||
+    /^[A-L][.)]$/.test(t) ||
+    /^paragraph\s+[A-L]$/i.test(t)
   );
 }
 
 function isParagraphOpener(line: string): boolean {
   const t = line.trim();
   if (isBareParagraphLabel(t)) return true;
-  if (/^paragraph\s+[A-I]\b/i.test(t)) return true;
-  if (/^[A-I][.)]\s+\S/.test(t)) return true;
+  if (/^paragraph\s+[A-L]\b/i.test(t)) return true;
+  if (/^[A-L][.)]\s+\S/.test(t)) return true;
   // Loose check used only to tell a short title ("A Brief History of Tea")
   // from body text. Visual labels use matchParagraphLabel, which rejects
   // an ordinary article ("A new study").
@@ -168,7 +168,7 @@ function findPassageTitle(
   const marked = first.match(/^\[\[title\]\]([\s\S]*)\[\[\/title\]\]$/i);
   if (marked) return { index: firstIndex, title: marked[1]!.trim() };
   if (first.includes("[[") || first.length > TITLE_MAX) return null;
-  if (isBareParagraphLabel(first) || /^[A-I][.)]\s+\S/.test(first)) return null;
+  if (isBareParagraphLabel(first) || /^[A-L][.)]\s+\S/.test(first)) return null;
 
   const secondIndex = contentIdx[1];
   if (secondIndex == null) return null;
@@ -223,7 +223,7 @@ function matchParagraphLabel(line: string): ParagraphLabel | null {
   if (!t || t.includes("[[")) return null;
 
   const paragraph = t.match(
-    /^(paragraph\s+)([A-I])([.)])?(?:\s+([\s\S]+))?$/i,
+    /^(paragraph\s+)([A-L])([.)])?(?:\s+([\s\S]+))?$/i,
   );
   if (paragraph) {
     return {
@@ -233,7 +233,8 @@ function matchParagraphLabel(line: string): ParagraphLabel | null {
     };
   }
 
-  const punctuated = t.match(/^([A-I])([.)])\s+(\S[\s\S]*)$/i);
+  // Uppercase only: "i) The closed nose yawn" is a roman-numeral item, not paragraph I.
+  const punctuated = t.match(/^([A-L])([.)])\s+(\S[\s\S]*)$/);
   if (punctuated) {
     return {
       before: "",
@@ -242,7 +243,7 @@ function matchParagraphLabel(line: string): ParagraphLabel | null {
     };
   }
 
-  const bare = t.match(/^([A-I])([.)])?$/i);
+  const bare = t.match(/^([A-L])([.)])?$/);
   if (bare) {
     return {
       before: "",
@@ -251,7 +252,7 @@ function matchParagraphLabel(line: string): ParagraphLabel | null {
     };
   }
 
-  const spaced = t.match(/^([A-I])\s+(\S[\s\S]*)$/i);
+  const spaced = t.match(/^([A-L])\s+(\S[\s\S]*)$/);
   if (spaced) {
     const rest = spaced[2]!.trim();
     const sameLetter = rest[0]?.toLowerCase() === spaced[1]!.toLowerCase();
@@ -269,7 +270,7 @@ function formatParagraphLabel(label: ParagraphLabel): string {
 }
 
 function isBareLabelMarker(block: string): boolean {
-  return /^\[\[plabel\]\][A-I][.)]?\[\[\/plabel\]\]$/i.test(block.trim());
+  return /^\[\[plabel\]\][A-L][.)]?\[\[\/plabel\]\]$/i.test(block.trim());
 }
 
 /** A short in-passage heading such as "Schools respond" or "The melatonin shift". */
@@ -547,7 +548,7 @@ function matchRomanHeading(
 function paragraphStartAt(lines: string[], index: number): string | null {
   const inline = longLetterParagraph(lines[index] ?? "");
   if (inline) return inline;
-  const bare = (lines[index] ?? "").trim().match(/^([A-I])[.)]?$/i);
+  const bare = (lines[index] ?? "").trim().match(/^([A-L])[.)]?$/);
   if (!bare) return null;
   for (let j = index + 1; j < lines.length && j <= index + 3; j += 1) {
     const next = lines[j]!.trim();
@@ -564,7 +565,7 @@ function longLetterParagraph(line: string): string | null {
   const label = matchParagraphLabel(line);
   if (!label || label.before) return null;
   const letter = label.mark.replace(/[.)]/g, "").toUpperCase();
-  if (!/^[A-I]$/.test(letter)) return null;
+  if (!/^[A-L]$/.test(letter)) return null;
   if (label.rest.length < 80) return null;
   return letter;
 }
@@ -573,8 +574,8 @@ function isTaskBoundaryLine(line: string): boolean {
   const t = line.trim();
   if (!t) return false;
   if (/^Questions?\s+\d+/i.test(t)) return true;
-  if (/^\d{1,2}[.)]?\s+(?:Section|Paragraph)\s+[A-I]\b/i.test(t)) return true;
-  if (/^example\s+(?:section|paragraph)\s+[A-I]\b/i.test(t)) return true;
+  if (/^\d{1,2}[.)]?\s+(?:Section|Paragraph)\s+[A-L]\b/i.test(t)) return true;
+  if (/^example\s+(?:section|paragraph)\s+[A-L]\b/i.test(t)) return true;
   if (/^list of headings\b/i.test(t)) return true;
   if (matchRomanHeading(t)) return true;
   if (/^(choose|write|match|complete|reading passage \d+)/i.test(t)) return true;
@@ -588,7 +589,7 @@ type LetteredSlice = {
 };
 
 /**
- * Title plus paragraphs A–I. Question stems and a List of Headings that
+ * Title plus paragraphs A–L. Question stems and a List of Headings that
  * sit above the title stay in `before`.
  */
 function findLetteredPassage(source: string): LetteredSlice | null {
@@ -652,7 +653,7 @@ function isHeadingTaskPreamble(text: string): boolean {
   return (
     /list of headings/i.test(text) ||
     /^choose the correct heading\b/im.test(text) ||
-    /^\d{1,2}[.)]?\s+(?:section|paragraph)\s+[A-I]\b/im.test(text)
+    /^\d{1,2}[.)]?\s+(?:section|paragraph)\s+[A-L]\b/im.test(text)
   );
 }
 
@@ -716,7 +717,7 @@ export function headingSectionStems(tasks: string): Map<number, string> {
     }
     if (!sawHeading) continue;
     const section = t.match(
-      /^(\d{1,2})[.)]?\s+(section|paragraph)\s+([A-I])\b/i,
+      /^(\d{1,2})[.)]?\s+(section|paragraph)\s+([A-L])\b/i,
     );
     if (section) {
       const kind =
@@ -838,12 +839,12 @@ export function withHeadingBank<T extends HeadingQuestion>(
     const sectionStem = sectionStems.get(question.number);
     const options = question.content.options ?? [];
     const passageOption = (opt: { label: string; text: string }) =>
-      /^[A-I]$/i.test(opt.label.trim()) && opt.text.trim().length > 80;
+      /^[A-L]$/i.test(opt.label.trim()) && opt.text.trim().length > 80;
     const romanOption = (opt: { label: string; text: string }) =>
       /^(?:xii|xi|x|ix|viii|vii|vi|v|iv|iii|ii|i)$/i.test(opt.label.trim());
     const headingStem =
       question.type === "MATCHING" &&
-      /^(?:paragraph|section)\s+[A-I]$/i.test(
+      /^(?:paragraph|section)\s+[A-L]$/i.test(
         (question.content.stem ?? "").trim(),
       );
     const copiedPassage =
@@ -1699,7 +1700,7 @@ function isInstructionLine(line: string): boolean {
   if (!t) return false;
   if (/^Questions?\s+\d+/i.test(t)) return false;
   if (lineHasInlineBlank(t)) return false;
-  if (/^example\s+(?:paragraph|section)\s+[A-I]\b/i.test(t)) return true;
+  if (/^example\s+(?:paragraph|section)\s+[A-L]\b/i.test(t)) return true;
   if (/^White your answers\b/i.test(t)) return true;
   if (/^(NB|Note)\b/i.test(t)) return true;
   if (

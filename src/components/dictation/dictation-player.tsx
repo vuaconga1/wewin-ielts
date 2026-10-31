@@ -64,6 +64,11 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
   const [result, setResult] = useState<SubmitResult | null>(null);
   const [historyKey, setHistoryKey] = useState(0);
   const filledCount = itemIds.filter((id) => session.answers[id]?.trim()).length;
+  /** Answers must be typed from the audio: pasting the revealed key would score 100%. */
+  const blockPaste = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+    setError(t("pasteBlocked", "Hãy tự gõ lại những gì bạn nghe được — không dán (paste) nội dung."));
+  };
 
   useEffect(() => {
     leftRef.current = false;
@@ -371,6 +376,7 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
             onChange={(gapId, value) =>
               setSession((s) => ({ ...s, answers: { ...s.answers, [gapId]: value } }))
             }
+            onBlockedInput={blockPaste}
             disabled={submitting}
           />
           {error ? (
@@ -408,6 +414,7 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
             onChange={(questionId, value) =>
               setSession((s) => ({ ...s, answers: { ...s.answers, [questionId]: value } }))
             }
+            onBlockedInput={blockPaste}
             disabled={submitting}
           />
           {error ? (
@@ -436,6 +443,8 @@ export function DictationPlayer({ exercise }: { exercise: PublicDictationExercis
               const text = e.target.value;
               setSession((s) => ({ ...s, text }));
             }}
+            onPaste={blockPaste}
+            onDrop={blockPaste}
             rows={6}
             spellCheck={false}
             autoCorrect="off"

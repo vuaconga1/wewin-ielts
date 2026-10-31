@@ -8,10 +8,12 @@ type Props = {
   questions: PublicListenQuestion[];
   answers: Record<string, string>;
   onChange: (questionId: string, value: string) => void;
+  /** Called instead of accepting pasted / dropped text. */
+  onBlockedInput?: (e: React.SyntheticEvent) => void;
   disabled?: boolean;
 };
 
-export function ListenAnswerInputs({ questions, answers, onChange, disabled }: Props) {
+export function ListenAnswerInputs({ questions, answers, onChange, onBlockedInput, disabled }: Props) {
   const { t } = useTranslations("dictation");
   return (
     <ol className="space-y-3">
@@ -31,6 +33,8 @@ export function ListenAnswerInputs({ questions, answers, onChange, disabled }: P
               id={inputId}
               value={value}
               onChange={(e) => onChange(q.id, e.target.value)}
+              onPaste={onBlockedInput}
+              onDrop={onBlockedInput}
               disabled={disabled}
               maxLength={MAX_QA_ANSWER_CHARS}
               autoComplete="off"

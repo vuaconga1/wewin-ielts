@@ -77,7 +77,22 @@ const multi = "The centre opens at eight thirty every morning.";
 const multiGaps = validateGaps([{ id: "t", startToken: 4, endToken: 6 }], multi);
 assert(gradeFillBlank(multi, multiGaps, { t: "eight thirty" }).score === 100, "multi-word correct");
 assert(gradeFillBlank(multi, multiGaps, { t: "eight thirteen" }).score === 0, "one wrong word fails the gap");
-assert(gradeFillBlank(multi, multiGaps, { t: "8:30" }).score === 0, "no implicit number equivalence");
+assert(gradeFillBlank(multi, multiGaps, { t: "8:30" }).score === 100, "number words ≡ digits (8:30)");
+assert(gradeFillBlank(multi, multiGaps, { t: "8 30" }).score === 100, "number words ≡ digits (8 30)");
+
+// Number words ↔ digits
+const years = "I have been here for twenty-five years.";
+const yearsGap = validateGaps([{ id: "y", startToken: 5, endToken: 7 }], years);
+assert(gradeFillBlank(years, yearsGap, { y: "25 years" }).score === 100, "25 years ≡ twenty-five years");
+assert(gradeFillBlank(years, yearsGap, { y: "twenty five years" }).score === 100, "unhyphenated words");
+assert(gradeFillBlank(years, yearsGap, { y: "52 years" }).score === 0, "wrong number still wrong");
+assert(normalizeAnswer("one hundred and twenty") === normalizeAnswer("120"), "hundreds with and");
+assert(normalizeAnswer("a hundred candles") === normalizeAnswer("100 candles"), "a hundred");
+assert(normalizeAnswer("two thousand and five") === normalizeAnswer("2005"), "thousands");
+assert(normalizeAnswer("the twenty-first century") === normalizeAnswer("the 21st century"), "ordinals");
+assert(normalizeAnswer("1,000 people") === normalizeAnswer("one thousand people"), "thousand separator");
+assert(normalizeAnswer("one two three") === normalizeAnswer("1 2 3"), "digit sequence stays split");
+assert(normalizeAnswer("Hundreds of people") === "hundreds of people", "non-number words untouched");
 const withAccepted = validateGaps(
   [{ id: "t", startToken: 4, endToken: 6, acceptedAnswers: ["8:30", " 8.30 ", ""] }],
   multi,

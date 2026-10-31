@@ -6,6 +6,7 @@ import {
   buildMultiSelectPairMap,
   type MultiSelectContent,
 } from "@/lib/practice/multi-select";
+import { canonicalizeNumberWords } from "@/lib/number-words";
 import { canonicalizeSpelling } from "@/lib/spelling-variants";
 
 export function normalizeForCompare(value: unknown): string {
@@ -14,7 +15,7 @@ export function normalizeForCompare(value: unknown): string {
     .toLowerCase()
     .replace(/\s+/g, " ")
     .replace(/[’']/g, "'");
-  return canonicalizeSpelling(base);
+  return canonicalizeSpelling(canonicalizeNumberWords(base));
 }
 
 /** Map sheet abbreviations ↔ full forms */

@@ -10,6 +10,11 @@ import { describeDevice } from "@/lib/audit-device";
 import { getAdminUserReport, type UserReportRow } from "@/lib/admin/reports";
 import { practicePath } from "@/lib/practice/paths";
 import { toPublic } from "@/lib/admin/users";
+import {
+  attemptDurationSeconds,
+  combineTestAttempts,
+  type CombinedTestResult,
+} from "@/lib/admin/test-progress";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -36,38 +41,28 @@ export type UserAttemptEntry = {
   finishedAt: string | null;
   /** Duration in seconds (null if not finished or invalid timestamps). */
   durationSeconds: number | null;
-  durationLabel: string;
   status: "FINISHED" | "UNFINISHED";
   resultHref: string;
+  /** Parts / passages in this attempt; empty = whole test. */
+  sectionOrders: number[];
+  /** Redo-wrong-answers attempt (subset of questions). */
+  partial: boolean;
 };
 
 export type UserTestSummary = {
   testSlug: string;
   testTitle: string;
   skill: string | null;
-  /** Total number of attempts. */
-  totalAttempts: number;
-  /** Number of finished attempts. */
-  finishedAttempts: number;
-  /** Latest attempt info. */
-  latestAttemptId: string;
-  latestStatus: "FINISHED" | "UNFINISHED";
-  latestStartedAt: string;
-  latestFinishedAt: string | null;
-  latestDurationLabel: string;
-  latestCorrect: number | null;
-  latestTotal: number | null;
-  latestPercent: number | null;
-  latestBand: number | null;
+  /** All part orders of the test (catalog). */
+  sectionOrders: number[];
+  /** Latest submission per part combined into one result for the test. */
+  final: CombinedTestResult;
   latestResultHref: string;
-  /** Best score across all finished attempts. */
+  /** Best single-attempt score (whole-test attempts only). */
   bestCorrect: number | null;
   bestTotal: number | null;
   bestPercent: number | null;
   bestBand: number | null;
-  /** Total time spent across all attempts on this test. */
-  totalTimeSeconds: number;
-  totalTimeLabel: string;
 };
 
 export type UserDetailReport = {
@@ -84,34 +79,8 @@ export type UserDetailReport = {
     totalLogins: number;
     lastLoginAt: string | null;
     totalPracticeTimeSeconds: number;
-    totalPracticeTimeLabel: string;
   };
 };
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-export function formatDurationVi(seconds: number | null | undefined): string {
-  if (seconds == null || !Number.isFinite(seconds) || seconds <= 0) return "—";
-  const hours = Math.floor(seconds / 3600);
-  const minutes = Math.floor((seconds % 3600) / 60);
-  const remainingSeconds = Math.floor(seconds % 60);
-
-  const parts: string[] = [];
-  if (hours > 0) parts.push(`${hours} giờ`);
-  if (minutes > 0) parts.push(`${minutes} phút`);
-  if (remainingSeconds > 0 && hours === 0) parts.push(`${remainingSeconds} giây`);
-  return parts.length > 0 ? parts.join(" ") : "0 giây";
-}
-
-function computeDurationSeconds(startedAt: string, finishedAt: string | null): number | null {
-  if (!finishedAt) return null;
-  const start = Date.parse(startedAt);
-  const end = Date.parse(finishedAt);
-  if (Number.isNaN(start) || Number.isNaN(end) || end < start) return null;
-  return Math.round((end - start) / 1000);
-}
 
 // ---------------------------------------------------------------------------
 // Data loaders
@@ -154,7 +123,6 @@ async function loadUserAttempts(
   return attempts.map((a) => {
     const test = testBySlug.get(a.testSlug);
     const finished = Boolean(a.finishedAt);
-    const duration = computeDurationSeconds(a.startedAt, a.finishedAt);
 
     return {
       id: a.id,
@@ -168,16 +136,19 @@ async function loadUserAttempts(
       scoreBand: a.aiScore?.overallBand ?? null,
       startedAt: a.startedAt,
       finishedAt: a.finishedAt,
-      durationSeconds: duration,
-      durationLabel: formatDurationVi(duration),
+      durationSeconds: attemptDurationSeconds(a.startedAt, a.finishedAt),
       status: finished ? "FINISHED" : "UNFINISHED",
       resultHref: practicePath(a.testSlug, a.id, finished),
+      sectionOrders: a.sectionOrders ?? [],
+      partial: Boolean(a.questionNumbers?.length),
     };
   });
 }
 
-function buildTestSummaries(attempts: UserAttemptEntry[]): UserTestSummary[] {
-  // Group by testSlug
+function buildTestSummaries(
+  attempts: UserAttemptEntry[],
+  testBySlug: Map<string, StoredTest>,
+): UserTestSummary[] {
   const byTest = new Map<string, UserAttemptEntry[]>();
   for (const a of attempts) {
     const list = byTest.get(a.testSlug) ?? [];
@@ -188,22 +159,42 @@ function buildTestSummaries(attempts: UserAttemptEntry[]): UserTestSummary[] {
   const summaries: UserTestSummary[] = [];
 
   for (const [testSlug, testAttempts] of byTest) {
-    // Already sorted desc by startedAt
-    const latestAttempt = testAttempts[0]!;
+    const head = testAttempts[0]!;
+    const sectionOrders =
+      testBySlug.get(testSlug)?.parts.map((p) => p.order) ?? [];
+    const final = combineTestAttempts(
+      testAttempts.map((a) => ({
+        id: a.id,
+        status: a.status,
+        startedAt: a.startedAt,
+        finishedAt: a.finishedAt,
+        sectionOrders: a.sectionOrders,
+        partial: a.partial,
+        scoreCorrect: a.scoreCorrect,
+        scoreTotal: a.scoreTotal,
+        scoreBand: a.scoreBand,
+      })),
+      head.skill,
+      sectionOrders,
+    );
+    if (!final) continue;
+    const latest =
+      testAttempts.find((a) => a.id === final.latestAttemptId) ?? head;
 
-    const finished = testAttempts.filter((a) => a.finishedAt);
-    // Find latest finished attempt (if any)
-    const latestFinished = finished.length > 0 ? finished[0]! : null;
-
-    // Use latest finished attempt for latest score if available, otherwise latest attempt
-    const targetForLatest = latestFinished ?? latestAttempt;
-
-    // Best score among finished attempts
+    // Best single attempt that covered the whole test
     let bestCorrect: number | null = null;
     let bestTotal: number | null = null;
     let bestPercent: number | null = null;
     let bestBand: number | null = null;
 
+    const allSections = new Set(sectionOrders);
+    const finished = testAttempts.filter(
+      (a) =>
+        a.finishedAt &&
+        !a.partial &&
+        (!a.sectionOrders.length ||
+          [...allSections].every((o) => a.sectionOrders.includes(o))),
+    );
     for (const f of finished) {
       if (f.scorePercent != null) {
         if (bestPercent == null || f.scorePercent > bestPercent) {
@@ -224,45 +215,23 @@ function buildTestSummaries(attempts: UserAttemptEntry[]): UserTestSummary[] {
       }
     }
 
-    // Total practice time across attempts
-    let totalTimeSeconds = 0;
-    for (const a of testAttempts) {
-      if (a.durationSeconds != null) {
-        totalTimeSeconds += a.durationSeconds;
-      }
-    }
-
     summaries.push({
       testSlug,
-      testTitle: testAttempts[0]?.testTitle ?? testSlug,
-      skill: testAttempts[0]?.skill ?? null,
-      totalAttempts: testAttempts.length,
-      finishedAttempts: finished.length,
-      latestAttemptId: targetForLatest.id,
-      latestStatus: targetForLatest.status,
-      latestStartedAt: targetForLatest.startedAt,
-      latestFinishedAt: targetForLatest.finishedAt,
-      latestDurationLabel: targetForLatest.durationLabel,
-      latestCorrect: targetForLatest.scoreCorrect,
-      latestTotal: targetForLatest.scoreTotal,
-      latestPercent: targetForLatest.scorePercent,
-      latestBand: targetForLatest.scoreBand,
-      latestResultHref: targetForLatest.resultHref,
+      testTitle: head.testTitle,
+      skill: head.skill,
+      sectionOrders,
+      final,
+      latestResultHref: latest.resultHref,
       bestCorrect,
       bestTotal,
       bestPercent,
       bestBand,
-      totalTimeSeconds,
-      totalTimeLabel: formatDurationVi(totalTimeSeconds),
     });
   }
 
-  // Sort by most recently active test
-  summaries.sort((a, b) => {
-    const aTime = a.latestFinishedAt || a.latestStartedAt;
-    const bTime = b.latestFinishedAt || b.latestStartedAt;
-    return bTime.localeCompare(aTime);
-  });
+  summaries.sort((a, b) =>
+    b.final.lastActivityAt.localeCompare(a.final.lastActivityAt),
+  );
 
   return summaries;
 }
@@ -314,7 +283,7 @@ export async function getUserDetailReport(
   ]);
 
   // 4. Build summaries
-  const testSummaries = buildTestSummaries(attempts);
+  const testSummaries = buildTestSummaries(attempts, testBySlug);
 
   // 5. Compute global statistics
   const finishedAttempts = attempts.filter((a) => a.status === "FINISHED").length;
@@ -338,7 +307,6 @@ export async function getUserDetailReport(
       totalLogins: logins.length,
       lastLoginAt: logins[0]?.createdAt ?? null,
       totalPracticeTimeSeconds,
-      totalPracticeTimeLabel: formatDurationVi(totalPracticeTimeSeconds),
     },
   };
 }

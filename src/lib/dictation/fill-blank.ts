@@ -4,6 +4,7 @@
  * Client-safe (no server imports) so the admin editor can share the tokenizer.
  */
 
+import { canonicalizeNumberWords } from "@/lib/number-words";
 import { canonicalizeSpelling } from "@/lib/spelling-variants";
 import type {
   FillBlankGap,
@@ -48,17 +49,21 @@ export function tokenizeTranscript(transcript: string): TranscriptToken[] {
   return out;
 }
 
-/** Case, surrounding spaces, common punctuation and US/UK spelling variants are normalized; contractions are not expanded. */
+/**
+ * Case, surrounding spaces, common punctuation, number words ("twenty-five" ≡ "25",
+ * "eight thirty" ≡ "8:30") and US/UK spelling variants are normalized; contractions are not expanded.
+ */
 export function normalizeAnswer(text: string): string {
   const cleaned = text
     .normalize("NFKC")
     .toLowerCase()
     .replace(/[’‘`´']/g, "")
+    .replace(/(\d)[:.](\d)/g, "$1 $2")
     .replace(/[-–—]/g, " ")
     .replace(/[.,!?:;"“”«»()[\]{}…]/g, "")
     .replace(/\s+/g, " ")
     .trim();
-  return canonicalizeSpelling(cleaned);
+  return canonicalizeSpelling(canonicalizeNumberWords(cleaned));
 }
 
 export function gapExpected(

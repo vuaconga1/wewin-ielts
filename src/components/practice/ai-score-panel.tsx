@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "@/i18n/provider";
+import { overallBand, roundIeltsBand, taskBand } from "@/lib/ai/band";
 import type { StoredAiScore } from "@/lib/ai/types";
 
 type Props = {
@@ -36,7 +37,8 @@ function StatusCard({
 
 function formatBand(n: number | null | undefined): string {
   if (n == null || !Number.isFinite(n)) return "—";
-  return Number.isInteger(n) ? String(n) : n.toFixed(1);
+  const band = roundIeltsBand(n);
+  return Number.isInteger(band) ? String(band) : band.toFixed(1);
 }
 
 export function AiScorePanel({ attemptId, skill, initial }: Props) {
@@ -191,6 +193,9 @@ export function AiScorePanel({ attemptId, skill, initial }: Props) {
     );
   }
 
+  const tasks = aiScore.tasks.map((task) => ({ ...task, band: taskBand(task) }));
+  const overall = overallBand(skill, tasks) ?? aiScore.overallBand;
+
   // Scores only — no feedback / transcript / criterion comments
   return (
     <section className="overflow-hidden rounded-xl border border-wewin-navy/15 bg-white shadow-sm shadow-wewin-navy/5">
@@ -199,10 +204,10 @@ export function AiScorePanel({ attemptId, skill, initial }: Props) {
           <div className="min-w-0">
             <p className="text-sm font-medium text-wewin-navy/70">{title}</p>
             <p className="mt-0.5 text-3xl font-bold tracking-tight text-wewin-navy">
-              {aiScore.overallBand != null
+              {overall != null
                 ? t(
                     "aiScoreBand",
-                    { n: formatBand(aiScore.overallBand) },
+                    { n: formatBand(overall) },
                     "Band {n}",
                   )
                 : t("aiScoreNoBand", "Chưa có band tổng")}
@@ -215,9 +220,9 @@ export function AiScorePanel({ attemptId, skill, initial }: Props) {
           ) : null}
         </div>
 
-        {aiScore.tasks.length > 0 ? (
+        {tasks.length > 0 ? (
           <ul className="mt-5 space-y-4 border-t border-wewin-navy/10 pt-5">
-            {aiScore.tasks.map((task) => (
+            {tasks.map((task) => (
               <li key={task.number} className="min-w-0">
                 <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                   <p className="text-sm font-semibold text-wewin-navy">

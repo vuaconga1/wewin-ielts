@@ -179,6 +179,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
   const ielts34 = ieltsCourses.find((c) => c.course === "ielts-3-4");
   const ielts45 = ieltsCourses.find((c) => c.course === "ielts-4-5");
   const ielts56 = ieltsCourses.find((c) => c.course === "ielts-5-6");
+  const ieltsSpeaking = ieltsCourses.find((c) => c.course === "ielts-speaking");
 
   // Calculate overall learning progress
   const totalLessons = useMemo(() => {
@@ -299,7 +300,29 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       priceVnd: coursePriceVnd("ielts-5-6"),
     });
 
-    // 4. Essential Vocabulary & Grammar
+    // 4. IELTS Speaking Toàn diện
+    list.push({
+      id: "ielts-speaking",
+      key: "ielts-speaking",
+      title: "IELTS Speaking Toàn diện",
+      description: "Chiến thuật trả lời Part 1, 2, 3 và lý thuyết chuyên sâu WeWIN.",
+      category: "ielts",
+      level: "All levels",
+      metaInfo: "11 bài học · Slide & Lý thuyết",
+      instructor: "Đội ngũ WeWIN",
+      materials: "WeWIN Speaking",
+      badgeLabel: "IELTS Speaking",
+      accentColor: "bg-[#0284c7]",
+      badgeBg: "bg-sky-50 text-sky-700 border-sky-200",
+      badgeText: "text-sky-700",
+      href: learnIeltsCourseHref("ielts-speaking"),
+      completed: ieltsSpeaking?.completed || 0,
+      total: ieltsSpeaking?.total || 11,
+      percent: ieltsSpeaking?.percent || 0,
+      actionLabel: "Vào khóa học →",
+    });
+
+    // 5. Essential Vocabulary & Grammar
     list.push({
       id: "vocab-grammar",
       key: "vocab-grammar",
@@ -307,7 +330,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       description: "Nền tảng từ vựng và ngữ pháp học thuật.",
       category: "vocab-grammar",
       level: "All levels",
-      metaInfo: "3 khóa học · 36 bài học",
+      metaInfo: "2 khóa học · 36 bài học",
       instructor: "Đội ngũ WeWIN",
       materials: "WeWIN + Cambridge",
       badgeLabel: "Từ vựng & ngữ pháp",
@@ -321,7 +344,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       actionLabel: "Xem lộ trình →",
     });
 
-    // 5. Listening & Reading Practice
+    // 6. Listening & Reading Practice
     list.push({
       id: "practice-listen-read",
       key: "practice-listen-read",
@@ -390,7 +413,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
     });
 
     return list;
-  }, [courses, ielts34, ielts45, ielts56, vocabGrammar]);
+  }, [courses, ielts34, ielts45, ielts56, ieltsSpeaking, vocabGrammar]);
 
   // Filtered and sorted items
   const filteredItems = useMemo(() => {
@@ -579,9 +602,8 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                   <Link
                     key={lab.key}
                     href={lab.href()}
-                    className="group relative flex min-w-0 items-center gap-4 overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 pl-5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
+                    className="wewin-card-3d wewin-card-3d-hover group relative flex min-w-0 items-center gap-4 overflow-hidden !rounded-2xl border-b-2 border-b-slate-200/80 p-4.5 sm:p-5 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl active:translate-y-0"
                   >
-                    <span className={`absolute inset-y-0 left-0 w-1 ${lab.accentColor}`} aria-hidden />
                     <span
                       className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-transform group-hover:scale-105 ${lab.iconClass}`}
                     >
@@ -728,53 +750,50 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                   return (
                     <div
                       key={item.key}
-                      className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
+                      className="wewin-card-3d wewin-card-3d-hover group flex min-w-0 flex-col overflow-hidden !rounded-2xl border-b-2 border-b-slate-200/80 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
                     >
                       {/* Card Body */}
                       <div className="flex flex-1 flex-col p-4 sm:p-5">
                         {/* Header: category icon + badge/level + title */}
-                        <div className="flex items-start gap-3">
+                        <div className="flex items-start gap-3.5">
                           <span
                             className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-xs ${item.accentColor}`}
                           >
                             <CategoryIcon className="h-5 w-5" />
                           </span>
                           <div className="min-w-0 flex-1">
-                            <div className="flex flex-wrap items-center gap-1.5">
+                            <div className="flex items-center gap-1.5">
                               <span
                                 className={`rounded-md border px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${item.badgeBg}`}
                               >
                                 {item.badgeLabel}
                               </span>
-                              <span className="text-[11px] font-medium text-zinc-500">{item.level}</span>
+                              <span className="text-zinc-300">•</span>
+                              <span className="text-[11px] font-medium text-zinc-500 truncate">{item.level}</span>
                             </div>
-                            <h3 className="mt-1 break-words text-base font-bold leading-snug text-zinc-900 transition-colors group-hover:text-wewin-navy">
+                            <h3 className="mt-1 line-clamp-2 min-h-[2.625rem] text-base font-bold leading-snug text-zinc-900 transition-colors group-hover:text-wewin-navy">
                               {item.title}
                             </h3>
                           </div>
                         </div>
 
-                        <p className="mt-3 line-clamp-2 text-xs leading-relaxed text-zinc-600">
-                          {item.description}
-                        </p>
-
-                        {/* Meta */}
-                        <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-zinc-500">
-                          <span className="inline-flex items-center gap-1">
-                            <BookOpen className="h-3.5 w-3.5 text-zinc-400" />
-                            {item.metaInfo}
-                          </span>
-                          <span className="inline-flex min-w-0 items-center gap-1">
-                            <FileText className="h-3.5 w-3.5 shrink-0 text-zinc-400" />
+                        {/* Meta strip */}
+                        <div className="mt-3.5 flex items-center justify-between gap-2 rounded-xl border border-slate-100 bg-slate-50/80 px-3 py-2 text-xs">
+                          <div className="flex items-center gap-1.5 font-medium text-slate-700 min-w-0">
+                            <BookOpen className="h-3.5 w-3.5 shrink-0 text-slate-400" />
+                            <span className="truncate">{item.metaInfo}</span>
+                          </div>
+                          <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 min-w-0 shrink-0">
+                            <FileText className="h-3 w-3 shrink-0 text-slate-400" />
                             <span className="truncate">{item.materials}</span>
-                          </span>
+                          </div>
                         </div>
 
                         {/* Progress */}
                         {hasProgress ? (
-                          <div className="mt-auto pt-4">
-                            <div className="mb-1.5 flex items-center justify-between text-[11px]">
-                              <span className={started ? "font-semibold text-wewin-navy" : "text-zinc-400"}>
+                          <div className="mt-4 pt-3.5 border-t border-slate-100/80">
+                            <div className="mb-1.5 flex items-center justify-between text-xs">
+                              <span className={started ? "font-semibold text-slate-800" : "font-normal text-slate-400"}>
                                 {started
                                   ? t(
                                       "cardLessonsDone",
@@ -783,7 +802,9 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                                     )
                                   : t("cardNotStarted", "Chưa bắt đầu")}
                               </span>
-                              <span className="font-semibold tabular-nums text-zinc-500">{Math.round(item.percent)}%</span>
+                              <span className={`tabular-nums ${started ? "font-bold text-slate-800" : "font-medium text-slate-400"}`}>
+                                {Math.round(item.percent)}%
+                              </span>
                             </div>
                             <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
                               <div
@@ -823,20 +844,20 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                         ) : (
                           <div className="flex items-center justify-between gap-2">
                             {locked ? (
-                              <span className="inline-flex min-w-0 items-center gap-1 text-[11px] font-bold text-amber-800">
-                                <Lock className="h-3 w-3 shrink-0" aria-hidden />
+                              <span className="inline-flex min-w-0 items-center gap-1 text-xs font-bold text-amber-800">
+                                <Lock className="h-3.5 w-3.5 shrink-0" aria-hidden />
                                 <span className="truncate">{t("studentOnly", "Chỉ dành cho học viên")}</span>
                               </span>
                             ) : (
-                              <span className="inline-flex min-w-0 items-center gap-1.5 text-[11px] text-zinc-500">
-                                <Users className="h-3.5 w-3.5 shrink-0 text-zinc-400" />
+                              <span className="inline-flex min-w-0 items-center gap-1.5 text-xs font-medium text-slate-500">
+                                <Users className="h-3.5 w-3.5 shrink-0 text-slate-400" />
                                 <span className="truncate">{item.instructor}</span>
                               </span>
                             )}
                             <Link
                               href={item.href}
                               prefetch={false}
-                              className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-wewin-navy px-3.5 py-1.5 text-xs font-semibold text-white shadow-xs transition hover:gap-1.5 hover:bg-wewin-navy-hover"
+                              className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-wewin-navy px-3.5 py-1.5 text-xs font-semibold text-white shadow-xs transition hover:gap-1.5 hover:bg-wewin-navy-hover active:scale-95"
                             >
                               {locked ? <Lock className="h-3 w-3" aria-hidden /> : null}
                               <span>{isDone ? "Ôn lại →" : item.actionLabel}</span>
@@ -857,7 +878,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
         {/* ========================================================= */}
         <aside className="space-y-6 lg:col-span-4 xl:col-span-3">
           {/* Card 1: Lộ trình của tôi */}
-          <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs">
+          <div className="wewin-card-3d !rounded-2xl border-b-2 border-b-slate-200/80 p-5">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2">
                 <Compass className="h-4 w-4 text-wewin-navy" />
@@ -941,7 +962,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
           </div>
 
           {/* Card 2: Gợi ý theo mục tiêu */}
-          <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs space-y-3">
+          <div className="wewin-card-3d !rounded-2xl border-b-2 border-b-slate-200/80 p-5 space-y-3">
             <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
               <Target className="h-4 w-4 text-amber-600" />
               <h3 className="text-sm font-bold text-wewin-navy">Gợi ý theo mục tiêu</h3>
