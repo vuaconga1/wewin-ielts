@@ -93,7 +93,7 @@ export function I18nProvider({
       setLocaleState(stored);
       setMessages(getMessages(stored));
       document.documentElement.lang = localeToHtmlLang(stored);
-      if (router) router.refresh();
+      router?.refresh();
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-only bootstrap
   }, [router]);
@@ -106,7 +106,7 @@ export function I18nProvider({
     startTransition(() => {
       setLocaleState(next);
       setMessages(getMessages(next));
-      if (router) router.refresh();
+      router?.refresh();
     });
   }, [router]);
 
