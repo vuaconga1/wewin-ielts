@@ -33,10 +33,12 @@ export default async function AdminShadowingNewPage() {
           level: "",
           instructions: "",
           audioUrl: "",
+          videoUrl: "",
           transcript: "",
           maxRecordSeconds: DEFAULT_MAX_RECORD_SECONDS,
           status: "PUBLISHED",
           order: nextOrder,
+          annotations: [],
         }}
       />
     </SiteShell>

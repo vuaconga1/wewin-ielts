@@ -22,16 +22,26 @@ export function useSentencePlayback({
   timings,
   audioRef,
   disabled,
+  onSentenceEnd,
+  onRecordToggle,
 }: {
   lines: TranscriptLine[];
   timings: CueTiming[] | null;
-  audioRef: React.RefObject<HTMLAudioElement | null>;
+  audioRef: React.RefObject<HTMLMediaElement | null>;
   disabled: boolean;
+  onSentenceEnd?: (index: number) => void;
+  onRecordToggle?: () => void;
 }) {
   const [duration, setDuration] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [index, setIndex] = useState(0);
   const stopAtRef = useRef<number | null>(null);
+  const indexRef = useRef(index);
+  indexRef.current = index;
+  const onSentenceEndRef = useRef(onSentenceEnd);
+  onSentenceEndRef.current = onSentenceEnd;
+  const onRecordToggleRef = useRef(onRecordToggle);
+  onRecordToggleRef.current = onRecordToggle;
 
   const aligned = useMemo(() => (timings ? applyTimings(lines, timings) : null), [lines, timings]);
   const cues = useMemo(() => aligned ?? estimateCues(lines, duration), [aligned, lines, duration]);
@@ -45,18 +55,22 @@ export function useSentencePlayback({
     };
     const onPlay = () => setPlaying(true);
     const onPause = () => setPlaying(false);
+    const onEnded = () => {
+      onPause();
+      onSentenceEndRef.current?.(indexRef.current);
+    };
     syncDuration();
     el.addEventListener("loadedmetadata", syncDuration);
     el.addEventListener("durationchange", syncDuration);
     el.addEventListener("play", onPlay);
     el.addEventListener("pause", onPause);
-    el.addEventListener("ended", onPause);
+    el.addEventListener("ended", onEnded);
     return () => {
       el.removeEventListener("loadedmetadata", syncDuration);
       el.removeEventListener("durationchange", syncDuration);
       el.removeEventListener("play", onPlay);
       el.removeEventListener("pause", onPause);
-      el.removeEventListener("ended", onPause);
+      el.removeEventListener("ended", onEnded);
     };
   }, [audioRef]);
 
@@ -68,6 +82,7 @@ export function useSentencePlayback({
       if (stopAt != null && el.currentTime >= stopAt) {
         stopAtRef.current = null;
         el.pause();
+        onSentenceEndRef.current?.(indexRef.current);
         return;
       }
       setIndex(Math.max(0, cueIndexAt(cues, el.currentTime + SEEK_SLACK_SEC)));
@@ -124,11 +139,24 @@ export function useSentencePlayback({
       } else if (e.key === "r" || e.key === "R") {
         e.preventDefault();
         replay();
+      } else if (e.key === "m" || e.key === "M") {
+        e.preventDefault();
+        onRecordToggleRef.current?.();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [disabled, goTo, index, replay, togglePlay]);
 
-  return { index, playing, timed, aligned: Boolean(aligned), goTo, replay, togglePlay };
+  return {
+    index,
+    playing,
+    timed,
+    aligned: Boolean(aligned),
+    cues,
+    currentCue: cues[index],
+    goTo,
+    replay,
+    togglePlay,
+  };
 }

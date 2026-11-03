@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Video } from "lucide-react";
 import { learnShadowingHref } from "@/lib/learn/hrefs";
 import { useTranslations } from "@/i18n/provider";
 
@@ -14,6 +15,7 @@ export type ShadowingAdminListRow = {
   status: "DRAFT" | "PUBLISHED" | "ARCHIVED";
   order: number;
   attempts: number;
+  hasVideo?: boolean;
 };
 
 export function ShadowingAdminList({ rows }: { rows: ShadowingAdminListRow[] }) {
@@ -59,7 +61,15 @@ export function ShadowingAdminList({ rows }: { rows: ShadowingAdminListRow[] }) 
         {rows.map((row) => (
           <li key={row.id} className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:gap-4">
             <div className="min-w-0 flex-1">
-              <p className="break-words font-semibold text-zinc-900">{row.title}</p>
+              <div className="flex items-center gap-2">
+                <p className="break-words font-semibold text-zinc-900">{row.title}</p>
+                {row.hasVideo ? (
+                  <span className="inline-flex items-center gap-1 rounded bg-purple-50 px-1.5 py-0.5 text-[11px] font-bold text-purple-700 border border-purple-200/80">
+                    <Video className="h-3 w-3" />
+                    <span>Video</span>
+                  </span>
+                ) : null}
+              </div>
               <p className="mt-0.5 flex flex-wrap gap-x-3 gap-y-1 text-xs text-zinc-500">
                 <span>
                   {t("colOrder", "Thứ tự")}: {row.order}

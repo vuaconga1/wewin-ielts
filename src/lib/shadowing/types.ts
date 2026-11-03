@@ -1,5 +1,6 @@
 import type { DictationErrorSummary, DictationWordResult } from "@/lib/dictation/types";
 import type { CueTiming } from "@/lib/shadowing/cues";
+import type { LineAnnotation } from "@/lib/shadowing/annotations";
 
 export type ShadowingWordResult = DictationWordResult;
 export type ShadowingErrorSummary = DictationErrorSummary;
@@ -25,6 +26,19 @@ export type ShadowingGrade = {
   errorSummary: ShadowingErrorSummary;
 };
 
+export type SentenceResult = {
+  score: number;
+  wer: number;
+  totalWords: number;
+  correctCount: number;
+  substitutionCount: number;
+  deletionCount: number;
+  insertionCount: number;
+  recognizedText: string;
+  wordResults: ShadowingWordResult[];
+  recordingUrl?: string;
+};
+
 /** Sent to the browser; the transcript is shown so learners can read along while shadowing. */
 export type PublicShadowingExercise = {
   id: string;
@@ -33,10 +47,14 @@ export type PublicShadowingExercise = {
   level: string | null;
   instructions: string | null;
   audioUrl: string;
+  /** Model video; when set it replaces the audio player and its sound track is `audioUrl`. */
+  videoUrl: string | null;
   maxRecordSeconds: number;
   transcript: string;
   /** Aligned sentence timings matching `transcriptLines(transcript)`; null → estimated in the browser. */
   cues: CueTiming[] | null;
+  /** Per-sentence IPA / translation aligned with `transcriptLines(transcript)`; null → none. */
+  annotations: LineAnnotation[] | null;
 };
 
 export type ShadowingCatalogItem = {
@@ -44,6 +62,7 @@ export type ShadowingCatalogItem = {
   slug: string;
   title: string;
   level: string | null;
+  hasVideo?: boolean;
 };
 
 export type ShadowingAttemptResult = ShadowingGrade & {

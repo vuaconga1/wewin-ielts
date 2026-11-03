@@ -513,7 +513,10 @@
     "loginCta": "Đăng nhập",
     "unranked": "Chưa xếp hạng",
     "unrankedHint": "Hoàn thành Listening/Reading trong kỳ này để ghi điểm.",
-    "pointsSuffix": "điểm"
+    "pointsSuffix": "điểm",
+    "subtitle": "Luyện đề mỗi ngày, tích điểm và leo top cùng WEWIN!",
+    "mascotCheer": "Cố lên! Top 1 đang chờ bạn đó 🚀",
+    "othersTitle": "Bảng vàng chiến binh"
   },
   "locale": {
     "vi": "VI",
@@ -1951,6 +1954,10 @@
       "intermediate": {
         "title": "Trình độ Intermediate",
         "desc": "Đoạn dài hơn, hội thoại tự nhiên và tốc độ nói gần thực tế — nâng cao phản xạ nghe."
+      },
+      "tedtalk": {
+        "title": "Video TED Talks",
+        "desc": "Luyện nói Shadowing qua các bài diễn thuyết TED Talks truyền cảm hứng từ các diễn giả hàng đầu."
       }
     },
     "shadowingTips": {
@@ -1969,7 +1976,8 @@
     "shortFillBlank": "Nghe điền từ",
     "shortListenAnswer": "Nghe & Trả lời",
     "levelBasic": "Basic",
-    "levelIntermediate": "Intermediate"
+    "levelIntermediate": "Intermediate",
+    "levelTedTalk": "TED Talks"
   },
   "shadowing": {
     "catalogTitle": "Shadowing — Nghe và đọc lại",
@@ -1984,6 +1992,28 @@
     "start": "Luyện →",
     "defaultInstructions": "Nghe câu mẫu, sau đó ghi âm và đọc lại thật giống.",
     "sampleAudio": "Audio mẫu",
+    "sampleVideo": "Video mẫu",
+    "showSubtitle": "Hiện phụ đề",
+    "hideSubtitle": "Ẩn phụ đề",
+    "showIpa": "Hiện IPA",
+    "hideIpa": "Ẩn IPA",
+    "showTranslation": "Hiện dịch",
+    "hideTranslation": "Ẩn dịch",
+    "revealTranslation": "Xem nghĩa",
+    "sentencesCount": "{n} câu",
+    "wordsCountShort": "{n} từ",
+    "fontSmaller": "Thu nhỏ chữ",
+    "fontLarger": "Phóng to chữ",
+    "modeSentence": "Luyện từng câu",
+    "modeFull": "Đọc cả bài",
+    "autoShadow": "Shadow tự động",
+    "autoShadowHint": "Tự động phát câu, ghi âm và chuyển sang câu tiếp theo",
+    "autoShadowActive": "Đang bật Shadow tự động",
+    "headphoneTip": "Nên đeo tai nghe để tránh tiếng loa lọt vào micro.",
+    "progressSummary": "Đã luyện {done}/{total} câu · Điểm TB: {avg}",
+    "reviewWeak": "Luyện câu < 60 điểm",
+    "recordSentence": "Ghi âm câu này",
+    "stopSentence": "Dừng ghi âm",
     "recordTitle": "Ghi âm giọng đọc của bạn",
     "readAlongTitle": "Transcript",
     "readAlongHint": "Đọc theo nội dung bên dưới. Không cần đọc tên người nói.",
@@ -1994,7 +2024,7 @@
     "nextSentence": "Câu sau",
     "play": "Phát",
     "pause": "Tạm dừng",
-    "shortcutsHint": "Space phát / dừng · ←/→ đổi câu · R nghe lại câu",
+    "shortcutsHint": "Space phát / dừng · ←/→ đổi câu · R nghe lại · M micro",
     "estimatedTiming": "Thời điểm từng câu được ước lượng theo độ dài, có thể lệch vài giây.",
     "record": "Ghi âm",
     "stop": "Dừng",
@@ -2083,7 +2113,10 @@
     "playAgain": "Nghe lại",
     "historyNoAttempts": "Chưa có lần nộp bài nào",
     "hasRecordingTooltip": "Có kèm bản ghi âm",
-    "attemptCountBadge": "{n} lần"
+    "attemptCountBadge": "{n} lần",
+    "karaokeSubtitles": "Phụ đề Karaoke",
+    "karaokeHint": "Chạm vào từ bất kỳ để nghe lại",
+    "clickToPlayWord": "Bấm để nghe từ này"
   },
   "shadowingAdmin": {
     "title": "Bài Shadowing",
@@ -2108,8 +2141,26 @@
     "audioUrlPlaceholder": "URL audio (https://… hoặc /uploads/…)",
     "uploadAudio": "Tải file audio",
     "uploading": "Đang tải lên…",
+    "fieldVideo": "Video mẫu (không bắt buộc)",
+    "videoUrlPlaceholder": "URL video (.mp4) trên R2",
+    "videoHint": "Có video thì học viên xem video thay cho audio; audio phía trên phải là âm thanh của chính video này. Dùng script npm run shadowing:import-video để tạo cả hai từ link YouTube.",
     "fieldTranscript": "Câu mẫu (transcript)",
-    "transcriptHint": "Dùng làm đáp án chuẩn khi chấm; học viên chỉ thấy sau khi nộp bài.",
+    "transcriptHint": "Mỗi dòng một câu. Sửa transcript xong cần chạy lại căn mốc thời gian.",
+    "cuesStaleWarning": "Mốc thời gian (cues) của video đã hết hạn hoặc chưa khớp transcript. Chạy lệnh sau để căn lại:",
+    "videoBadge": "Video",
+    "annotationsTitle": "IPA & Bản dịch câu",
+    "annotationsHint": "Điền phiên âm IPA và bản dịch tiếng Việt cho từng câu. Học viên có thể xem IPA và bật/tắt bản dịch khi luyện nói.",
+    "fillIpa": "Điền IPA tự động",
+    "fillingIpa": "Đang điền IPA…",
+    "pasteTranslations": "Dán bản dịch hàng loạt",
+    "pasteTranslationsHint": "Dán các câu dịch tiếng Việt vào đây (mỗi dòng một câu ứng với một câu tiếng Anh theo thứ tự).",
+    "applyPaste": "Áp dụng bản dịch",
+    "close": "Đóng",
+    "translationCount": "Đã có bản dịch: {n}/{total} câu",
+    "colSentence": "Câu tiếng Anh",
+    "colIpa": "Phiên âm IPA",
+    "colTranslation": "Bản dịch tiếng Việt",
+    "pasteCountMismatch": "Số dòng dán ({lines}) không khớp với số câu ({total}). Các dòng khớp vẫn được áp dụng.",
     "fieldMaxSeconds": "Thời lượng ghi âm tối đa (giây)",
     "fieldStatus": "Trạng thái",
     "fieldOrder": "Thứ tự hiển thị",
@@ -2137,6 +2188,7 @@
       "DB_UNAVAILABLE": "Cơ sở dữ liệu chưa sẵn sàng. Thử lại sau ít phút.",
       "NOT_FOUND": "Không tìm thấy bài.",
       "saveFailed": "Không lưu được bài. Thử lại.",
+      "ipaFailed": "Không tạo được IPA tự động. Thử lại.",
       "uploadFailed": "Không tải được audio lên. Thử lại.",
       "deleteFailed": "Không xóa được bài. Thử lại."
     }

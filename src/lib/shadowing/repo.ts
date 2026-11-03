@@ -22,18 +22,21 @@ export type ExerciseRecord = {
   level: string | null;
   instructions: string | null;
   audioUrl: string;
+  videoUrl: string | null;
   transcript: string;
   maxRecordSeconds: number;
   status: ShadowingStatus;
   order: number;
   /** Raw stored cue set; validate with `validCueTimings` before use. */
   cues: unknown;
+  /** Raw stored annotations; validate with `annotationsFor` before use. */
+  annotations: unknown;
 };
 
 export type ExerciseListRow = Pick<
   ExerciseRecord,
   "id" | "slug" | "title" | "level" | "status" | "order"
-> & { attempts: number };
+> & { attempts: number; hasVideo: boolean };
 
 export type ExerciseData = Omit<ExerciseRecord, "id" | "slug" | "cues">;
 
@@ -103,11 +106,13 @@ const exerciseSelect = {
   level: true,
   instructions: true,
   audioUrl: true,
+  videoUrl: true,
   transcript: true,
   maxRecordSeconds: true,
   status: true,
   order: true,
   cues: true,
+  annotations: true,
 } as const;
 
 const attemptListSelect = {
@@ -137,20 +142,38 @@ const prismaRepo: ShadowingRepo = {
   kind: "prisma",
   async listExercises(publishedOnly) {
     const orderBy = [{ order: "asc" as const }, { createdAt: "asc" as const }];
-    const select = { id: true, slug: true, title: true, level: true, status: true, order: true } as const;
+    const select = { id: true, slug: true, title: true, level: true, status: true, order: true, videoUrl: true } as const;
     if (publishedOnly) {
       const rows = await prisma.shadowingExercise.findMany({
         where: { status: "PUBLISHED" },
         orderBy,
         select,
       });
-      return rows.map((r) => ({ ...r, attempts: 0 }));
+      return rows.map((r) => ({
+        id: r.id,
+        slug: r.slug,
+        title: r.title,
+        level: r.level,
+        status: r.status,
+        order: r.order,
+        hasVideo: Boolean(r.videoUrl),
+        attempts: 0,
+      }));
     }
     const rows = await prisma.shadowingExercise.findMany({
       orderBy,
       select: { ...select, _count: { select: { attempts: true } } },
     });
-    return rows.map(({ _count, ...r }) => ({ ...r, attempts: _count.attempts }));
+    return rows.map(({ _count, ...r }) => ({
+      id: r.id,
+      slug: r.slug,
+      title: r.title,
+      level: r.level,
+      status: r.status,
+      order: r.order,
+      hasVideo: Boolean(r.videoUrl),
+      attempts: _count.attempts,
+    }));
   },
   async findExercise(where) {
     if (!where.id && !where.slug) return null;
@@ -164,10 +187,28 @@ const prismaRepo: ShadowingRepo = {
     return Boolean(row);
   },
   async createExercise(slug, data) {
-    return prisma.shadowingExercise.create({ data: { ...data, slug }, select: { id: true, slug: true } });
+    const { annotations, ...rest } = data;
+    return prisma.shadowingExercise.create({
+      data: {
+        ...rest,
+        slug,
+        annotations: (annotations ?? Prisma.DbNull) as Prisma.InputJsonValue,
+      },
+      select: { id: true, slug: true },
+    });
   },
   async updateExercise(id, data) {
-    return prisma.shadowingExercise.update({ where: { id }, data, select: { id: true, slug: true } });
+    const { annotations, ...rest } = data;
+    return prisma.shadowingExercise.update({
+      where: { id },
+      data: {
+        ...rest,
+        ...(annotations !== undefined
+          ? { annotations: (annotations ?? Prisma.DbNull) as Prisma.InputJsonValue }
+          : {}),
+      },
+      select: { id: true, slug: true },
+    });
   },
   async setCues(id, cues) {
     await prisma.shadowingExercise.update({
@@ -260,11 +301,13 @@ function toExerciseRecord(e: StoredExercise): ExerciseRecord {
     level: e.level,
     instructions: e.instructions,
     audioUrl: e.audioUrl,
+    videoUrl: e.videoUrl ?? null,
     transcript: e.transcript,
     maxRecordSeconds: e.maxRecordSeconds,
     status: e.status,
     order: e.order,
     cues: e.cues ?? null,
+    annotations: e.annotations ?? null,
   };
 }
 
@@ -285,6 +328,7 @@ const fileRepo: ShadowingRepo = {
         level: e.level,
         status: e.status,
         order: e.order,
+        hasVideo: Boolean(e.videoUrl),
         attempts: attempts.filter((a) => a.exerciseId === e.id).length,
       }));
   },

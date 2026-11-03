@@ -3,10 +3,23 @@ const SPEAKER = /^([A-Z][A-Za-z.'’]*(?: [A-Z][A-Za-z.'’]*){0,2}):\s+/;
 
 export type TranscriptLine = { speaker: string | null; text: string };
 
+/** Abbreviations ending in period that should not be treated as a sentence end. */
+const ABBREVIATION = /\b(?:Mr|Mrs|Ms|Dr|Prof|Sr|Jr|vs|etc|e\.g|i\.e)\.$/i;
+
 function splitSentences(t: string): string[] {
   const matches = t.match(/[^.!?]+(?:[.!?]+["'”’]?|$)/g);
   if (!matches) return [t.trim()];
-  return matches.map((s) => s.trim()).filter(Boolean);
+  const merged: string[] = [];
+  for (const raw of matches) {
+    const trimmed = raw.trim();
+    if (!trimmed) continue;
+    if (merged.length > 0 && ABBREVIATION.test(merged[merged.length - 1])) {
+      merged[merged.length - 1] += " " + trimmed;
+    } else {
+      merged.push(trimmed);
+    }
+  }
+  return merged;
 }
 
 /** Splits a reading transcript into sentence-level lines, separating the speaker label of dialogue turns. */

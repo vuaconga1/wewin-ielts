@@ -2,24 +2,32 @@
 
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Loader2, Upload } from "lucide-react";
+import { AlertTriangle, Loader2, Upload } from "lucide-react";
 import { startNavProgress } from "@/lib/client/nav-progress";
 import { MAX_RECORD_SECONDS, MIN_RECORD_SECONDS } from "@/lib/shadowing/types";
 import { useTranslations } from "@/i18n/provider";
 import { friendlyError } from "@/lib/ui/friendly-error";
+import {
+  ShadowingAnnotationsEditor,
+  type AnnotationRow,
+} from "@/components/admin/shadowing-annotations-editor";
 
 type Status = "DRAFT" | "PUBLISHED" | "ARCHIVED";
 
 export type ShadowingFormValues = {
   id?: string;
+  slug?: string;
+  cuesValid?: boolean;
   title: string;
   level: string;
   instructions: string;
   audioUrl: string;
+  videoUrl: string;
   transcript: string;
   maxRecordSeconds: number;
   status: Status;
   order: number;
+  annotations?: AnnotationRow[];
 };
 
 const STATUSES: Status[] = ["PUBLISHED", "DRAFT", "ARCHIVED"];
@@ -38,10 +46,12 @@ export function ShadowingAdminForm({ initial }: { initial: ShadowingFormValues }
   const [level, setLevel] = useState(initial.level);
   const [instructions, setInstructions] = useState(initial.instructions);
   const [audioUrl, setAudioUrl] = useState(initial.audioUrl);
+  const [videoUrl, setVideoUrl] = useState(initial.videoUrl);
   const [transcript, setTranscript] = useState(initial.transcript);
   const [maxSeconds, setMaxSeconds] = useState(String(initial.maxRecordSeconds));
   const [status, setStatus] = useState<Status>(initial.status);
   const [order, setOrder] = useState(String(initial.order));
+  const [annotations, setAnnotations] = useState<AnnotationRow[]>(initial.annotations ?? []);
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -84,10 +94,12 @@ export function ShadowingAdminForm({ initial }: { initial: ShadowingFormValues }
         level,
         instructions,
         audioUrl,
+        videoUrl,
         transcript,
         maxRecordSeconds: Number(maxSeconds),
         status,
         order: Number(order) || 0,
+        annotations,
       };
       const res = await fetch(isEdit ? `/api/admin/shadowing/${initial.id}` : "/api/admin/shadowing", {
         method: isEdit ? "PUT" : "POST",
@@ -165,12 +177,51 @@ export function ShadowingAdminForm({ initial }: { initial: ShadowingFormValues }
       </div>
 
       <label className="block space-y-1">
+        <span className="text-sm font-semibold text-zinc-800">{t("fieldVideo", "Video mẫu (không bắt buộc)")}</span>
+        <input
+          value={videoUrl}
+          onChange={(e) => setVideoUrl(e.target.value)}
+          placeholder={t("videoUrlPlaceholder", "URL video (.mp4) trên R2")}
+          className={inputCls}
+        />
+        <span className="block text-xs text-zinc-500">
+          {t(
+            "videoHint",
+            "Có video thì học viên xem video thay cho audio; audio phía trên phải là âm thanh của chính video này. Dùng script npm run shadowing:import-video để tạo cả hai từ link YouTube.",
+          )}
+        </span>
+        {videoUrl ? (
+          <video src={videoUrl} controls preload="none" playsInline className="aspect-video w-full rounded-xl bg-black" />
+        ) : null}
+      </label>
+
+      {/* Cues expired or missing warning for video exercises */}
+      {isEdit && initial.videoUrl && initial.cuesValid === false ? (
+        <div className="rounded-xl border border-amber-300 bg-amber-50 p-4 text-xs sm:text-sm text-amber-950 space-y-1.5 shadow-2xs">
+          <div className="flex items-center gap-2 font-bold text-amber-900">
+            <AlertTriangle className="h-4.5 w-4.5 text-amber-600 shrink-0" />
+            <span>{t("cuesStaleWarning", "Mốc thời gian (cues) của video đã hết hạn hoặc chưa khớp transcript. Chạy lệnh sau để căn lại:")}</span>
+          </div>
+          <pre className="overflow-x-auto rounded-lg bg-amber-100/90 p-2.5 font-mono text-xs font-semibold text-amber-950 select-all border border-amber-200">
+            npx tsx scripts/shadowing-cues.ts --slug {initial.slug}
+          </pre>
+        </div>
+      ) : null}
+
+      <label className="block space-y-1">
         <span className="text-sm font-semibold text-zinc-800">{t("fieldTranscript", "Câu mẫu (transcript)")}</span>
         <textarea required rows={4} value={transcript} onChange={(e) => setTranscript(e.target.value)} className={inputCls} />
         <span className="block text-xs text-zinc-500">
           {t("transcriptHint", "Dùng làm đáp án chuẩn khi chấm; học viên chỉ thấy sau khi nộp bài.")}
         </span>
       </label>
+
+      {/* Per-sentence IPA & translation editor */}
+      <ShadowingAnnotationsEditor
+        transcript={transcript}
+        value={annotations}
+        onChange={setAnnotations}
+      />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <label className="block min-w-0 space-y-1">

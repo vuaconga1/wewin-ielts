@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useState } from "react";
 import {
   BookOpen,
   CalendarDays,
@@ -81,14 +81,14 @@ function navClass(active: boolean, compact: boolean) {
   if (compact) {
     return `sidebar-nav-item mx-1 flex items-center justify-center rounded-full p-2.5 text-sm font-medium transition ${
       active
-        ? "bg-wewin-navy text-white"
-        : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"
+        ? "wewin-nav-active text-white"
+        : "text-zinc-600 hover:bg-white/70 hover:text-zinc-900"
     }`;
   }
   return `sidebar-nav-item mx-1 flex items-center gap-3 rounded-full px-3 py-2.5 text-sm font-medium transition ${
     active
-      ? "bg-wewin-navy text-white"
-      : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"
+      ? "wewin-nav-active text-white"
+      : "text-zinc-600 hover:bg-white/70 hover:text-zinc-900"
   }`;
 }
 
@@ -345,8 +345,8 @@ export function DashboardShell({
       onPrepareStep={prepareTourStep}
     >
       <div
-        className={`relative min-h-screen overflow-x-hidden ${
-          showCampusBackground ? "" : "bg-wewin-bg"
+        className={`relative flex min-h-screen flex-col overflow-x-hidden ${
+          fitScreen ? "h-screen overflow-hidden" : ""
         }`}
       >
         {showCampusBackground ? (
@@ -354,7 +354,25 @@ export function DashboardShell({
             <div className="wewin-campus-scene__photo" />
             <div className="wewin-campus-scene__frost" />
           </div>
-        ) : null}
+        ) : (
+          <div
+            className="wewin-hero-scene"
+            data-collapsed={collapsed ? "true" : "false"}
+            aria-hidden="true"
+          >
+            <div className="wewin-hero-scene__ticker">
+              {/* Two identical halves so the -50% loop is seamless */}
+              <div className="wewin-hero-scene__track">
+                {Array.from({ length: 8 }).map((_, idx) => (
+                  <Fragment key={idx}>
+                    <span className="wewin-hero-scene__word">WEWIN</span>
+                    <span className="wewin-hero-scene__star">★</span>
+                  </Fragment>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         <header className="wewin-site-header fixed inset-x-0 top-0 z-[108] flex min-w-0 items-center bg-wewin-navy text-white">
           <div className="flex h-full min-w-0 shrink-0 items-center gap-1 border-white/15 px-2 sm:gap-1.5 sm:px-3 lg:w-[var(--wewin-sidebar-width)] lg:justify-center lg:border-r lg:px-4">
@@ -398,39 +416,6 @@ export function DashboardShell({
           </div>
         </header>
 
-        <aside
-          className={`wewin-sidebar-rail fixed bottom-0 left-0 z-30 hidden border-r border-wewin-border bg-wewin-white py-5 lg:block ${
-            collapsed ? "px-2" : "px-4"
-          }`}
-          data-collapsed={collapsed ? "true" : "false"}
-        >
-          <div className="h-full min-h-0 overflow-x-hidden overflow-y-auto">
-            {renderSidebar(collapsed)}
-          </div>
-          <button
-            type="button"
-            onClick={toggleCollapsed}
-            className="absolute top-1/2 -right-3 z-40 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border border-wewin-border bg-wewin-white text-wewin-navy shadow-sm transition hover:bg-wewin-navy hover:text-white hover:border-wewin-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wewin-navy/40"
-            aria-label={
-              collapsed
-                ? t("sidebar.expand", "Mở rộng thanh bên")
-                : t("sidebar.collapse", "Thu gọn thanh bên")
-            }
-            aria-expanded={!collapsed}
-            title={
-              collapsed
-                ? t("sidebar.expand", "Mở rộng thanh bên")
-                : t("sidebar.collapse", "Thu gọn thanh bên")
-            }
-          >
-            {collapsed ? (
-              <ChevronRight className="h-3.5 w-3.5" aria-hidden />
-            ) : (
-              <ChevronLeft className="h-3.5 w-3.5" aria-hidden />
-            )}
-          </button>
-        </aside>
-
         {open ? (
           <div className="fixed inset-0 z-50 lg:hidden">
             <button
@@ -439,7 +424,7 @@ export function DashboardShell({
               className="absolute inset-0 bg-zinc-900/40"
               onClick={() => setOpen(false)}
             />
-            <aside className="absolute inset-y-0 left-0 flex w-[min(var(--wewin-sidebar-width),88vw)] flex-col overflow-y-auto border-r border-wewin-border bg-wewin-white px-4 py-5 shadow-xl">
+            <aside className="absolute inset-y-0 left-0 flex w-[min(var(--wewin-sidebar-width),88vw)] flex-col overflow-y-auto wewin-sidebar-surface px-4 py-5 shadow-xl">
               <button
                 type="button"
                 className="mb-3 ml-auto flex rounded-lg border border-wewin-border p-1.5 text-zinc-500 hover:bg-zinc-50"
@@ -454,26 +439,70 @@ export function DashboardShell({
         ) : null}
 
         <div
-          className={`wewin-sidebar-inset relative z-10 flex min-w-0 flex-col ${
+          className={`relative z-10 flex flex-1 min-w-0 pt-16 ${
             fitScreen
-              ? "min-h-screen lg:h-screen lg:max-h-screen lg:overflow-hidden"
-              : "min-h-screen"
+              ? "h-[calc(100vh-4rem)] max-h-[calc(100vh-4rem)] overflow-hidden"
+              : ""
           }`}
-          data-collapsed={collapsed ? "true" : "false"}
         >
-          <main
-            className={`mx-auto w-full min-w-0 flex-1 ${
-              fitScreen
-                ? "p-2 sm:p-3 lg:p-3 flex flex-col min-h-0 lg:overflow-hidden"
-                : "px-4 py-6 sm:px-6 sm:py-8 lg:px-8"
-            } ${wide ? "max-w-none" : "max-w-[1400px]"}`}
+          <aside
+            className={`wewin-sidebar-rail sticky top-16 z-30 hidden shrink-0 self-start wewin-sidebar-surface py-5 lg:flex lg:flex-col h-[calc(100vh-4rem)] ${
+              collapsed ? "px-2" : "px-4"
+            }`}
+            data-collapsed={collapsed ? "true" : "false"}
           >
-            {children}
-          </main>
-          {footer && !noFooter && !fitScreen ? (
-            <div className="mt-auto w-full shrink-0">{footer}</div>
-          ) : null}
+            <div className="min-h-0 flex-1 overflow-x-hidden overflow-y-auto">
+              {renderSidebar(collapsed)}
+            </div>
+            <button
+              type="button"
+              onClick={toggleCollapsed}
+              className="absolute top-1/2 -right-3 z-40 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border border-wewin-border bg-wewin-white text-wewin-navy shadow-sm transition hover:bg-wewin-navy hover:text-white hover:border-wewin-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wewin-navy/40"
+              aria-label={
+                collapsed
+                  ? t("sidebar.expand", "Mở rộng thanh bên")
+                  : t("sidebar.collapse", "Thu gọn thanh bên")
+              }
+              aria-expanded={!collapsed}
+              title={
+                collapsed
+                  ? t("sidebar.expand", "Mở rộng thanh bên")
+                  : t("sidebar.collapse", "Thu gọn thanh bên")
+              }
+            >
+              {collapsed ? (
+                <ChevronRight className="h-3.5 w-3.5" aria-hidden />
+              ) : (
+                <ChevronLeft className="h-3.5 w-3.5" aria-hidden />
+              )}
+            </button>
+          </aside>
+
+          <div
+            className={`wewin-sidebar-inset relative flex flex-1 min-w-0 flex-col ${
+              fitScreen
+                ? "h-full max-h-full overflow-hidden"
+                : "min-h-[calc(100vh-4rem)]"
+            }`}
+            data-collapsed={collapsed ? "true" : "false"}
+          >
+            <main
+              className={`mx-auto w-full min-w-0 flex-1 ${
+                fitScreen
+                  ? "p-2 sm:p-3 lg:p-3 flex flex-col min-h-0 lg:overflow-hidden"
+                  : "px-4 py-6 sm:px-6 sm:py-8 lg:px-8"
+              } ${wide ? "max-w-none" : "max-w-[1400px]"} ${
+                showCampusBackground ? "" : "wewin-on-hero"
+              }`}
+            >
+              {children}
+            </main>
+          </div>
         </div>
+
+        {footer && !noFooter && !fitScreen ? (
+          <div className="relative z-20 mt-auto w-full shrink-0">{footer}</div>
+        ) : null}
       </div>
     </TourProvider>
   );

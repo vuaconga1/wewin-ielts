@@ -86,9 +86,11 @@ export function VocabTopicOverview({
         </nav>
       </div>
 
-      <header className="min-w-0 rounded-xl border border-zinc-200 bg-white overflow-hidden">
-        <div className="flex items-start gap-3 bg-wewin-navy px-4 py-4 text-white sm:px-5">
-          <BookOpen className="mt-0.5 h-6 w-6 shrink-0 opacity-90" />
+      <header className="min-w-0 rounded-2xl border border-slate-200/90 bg-white shadow-xs overflow-hidden">
+        <div className="flex items-start gap-3.5 bg-gradient-to-r from-[#001233] via-indigo-900 to-purple-950 px-4 py-4 text-white sm:px-5">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-400/20 text-amber-300">
+            <BookOpen className="h-5 w-5 opacity-95" />
+          </div>
           <div className="min-w-0">
             <h1 className="break-words text-xl font-bold leading-tight sm:text-2xl">
               {displayTitle}

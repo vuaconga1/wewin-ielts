@@ -38,7 +38,11 @@ export function gameLevelStaticParams() {
 
 async function levelStartSlugs(game: PracticeGame): Promise<Record<GameLevel, string | null>> {
   const summary = await summarizePracticeGameLevels(game);
-  return { basic: summary.basic.firstSlug, intermediate: summary.intermediate.firstSlug };
+  return {
+    basic: summary.basic?.firstSlug ?? null,
+    intermediate: summary.intermediate?.firstSlug ?? null,
+    tedtalk: summary.tedtalk?.firstSlug ?? null,
+  };
 }
 
 export async function PracticeGameHubPage({ game }: { game: PracticeGame }) {
@@ -56,10 +60,11 @@ export async function PracticeGameExerciseFrame({
   children,
 }: {
   game: PracticeGame;
-  exercise: { slug: string; title: string; level: string | null };
+  exercise: { slug: string; title: string; level: string | null; videoUrl?: string | null };
   children: ReactNode;
 }) {
-  const level = gameLevelOf(exercise.level);
+  const hasVideo = Boolean((exercise as { videoUrl?: string | null }).videoUrl);
+  const level = gameLevelOf(exercise.level, hasVideo);
   const [items, startSlugs] = await Promise.all([
     level ? listPracticeGameLevelItems(game, level) : listPracticeGameItems(game),
     levelStartSlugs(game),

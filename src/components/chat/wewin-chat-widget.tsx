@@ -12,8 +12,8 @@ const MASCOT_SRC = "/branding/wewin-mascot-hero.png";
 
 export const OPEN_CHAT_EVENT = "wewin:open-chat";
 
-/** Never cover a running test, a live class, or auth screens. */
-const HIDDEN_PATHS = ["/practice/", "/classroom", "/login"];
+/** Never cover a running test, a live class, auth screens, or shadowing practice deck. */
+const HIDDEN_PATHS = ["/practice/", "/classroom", "/login", "/learn/shadowing"];
 
 const POS_KEY = "wewin-chat-pos-v1";
 const GREETING_KEY = "wewin-chat-greeting-dismissed";

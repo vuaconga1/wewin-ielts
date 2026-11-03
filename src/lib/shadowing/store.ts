@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { tokenize } from "@/lib/dictation/scoring";
 import { clampRecordSeconds, gradeShadowing, pickClosestAlternatives } from "@/lib/shadowing/scoring";
 import { validCueTimings } from "@/lib/shadowing/cues";
+import { annotationsFor, normalizeAnnotations } from "@/lib/shadowing/annotations";
 import {
   deleteRecording,
   readRecording,
@@ -90,9 +91,15 @@ export const listPublishedShadowing = unstable_cache(
   async (): Promise<ShadowingCatalogItem[]> => {
     const repo = await requireRepo();
     const rows = await repo.listExercises(true);
-    return rows.map(({ id, slug, title, level }) => ({ id, slug, title, level }));
+    return rows.map(({ id, slug, title, level, hasVideo }) => ({
+      id,
+      slug,
+      title,
+      level,
+      hasVideo: Boolean(hasVideo),
+    }));
   },
-  ["shadowing-catalog-v1"],
+  ["shadowing-catalog-v2"],
   { revalidate: 300, tags: [CATALOG_TAG] },
 );
 
@@ -108,18 +115,22 @@ const getPublishedShadowingRow = unstable_cache(
       level: row.level,
       instructions: row.instructions,
       audioUrl: row.audioUrl,
+      videoUrl: row.videoUrl,
       maxRecordSeconds: row.maxRecordSeconds,
       transcript: row.transcript,
       cues: validCueTimings(row.cues, row.transcript, row.audioUrl),
+      annotations: annotationsFor(row.annotations, row.transcript),
     };
   },
-  ["shadowing-exercise-v3"],
+  ["shadowing-exercise-v6"],
   { revalidate: 300, tags: [CATALOG_TAG] },
 );
 
 export async function getPublicShadowing(slug: string): Promise<PublicShadowingExercise | null> {
   const row = await getPublishedShadowingRow(slug);
-  return row ? { ...row, audioUrl: mediaUrl(row.audioUrl) } : null;
+  return row
+    ? { ...row, audioUrl: mediaUrl(row.audioUrl), videoUrl: row.videoUrl ? mediaUrl(row.videoUrl) : null }
+    : null;
 }
 
 function toResult(attempt: AttemptRecord, transcript: string): ShadowingAttemptResult {
@@ -295,10 +306,13 @@ export type ShadowingAdminDetail = {
   level: string | null;
   instructions: string | null;
   audioUrl: string;
+  videoUrl: string | null;
   transcript: string;
   maxRecordSeconds: number;
   status: ShadowingStatus;
   order: number;
+  annotations: unknown;
+  cuesValid: boolean;
 };
 
 export type ShadowingInput = {
@@ -306,10 +320,12 @@ export type ShadowingInput = {
   level?: string | null;
   instructions?: string | null;
   audioUrl: string;
+  videoUrl?: string | null;
   transcript: string;
   maxRecordSeconds?: number;
   status?: string;
   order?: number;
+  annotations?: unknown;
 };
 
 export async function listShadowingForAdmin(): Promise<ShadowingAdminRow[]> {
@@ -319,7 +335,13 @@ export async function listShadowingForAdmin(): Promise<ShadowingAdminRow[]> {
 
 export async function getShadowingForAdmin(id: string): Promise<ShadowingAdminDetail | null> {
   const repo = await getShadowingRepo();
-  return repo ? repo.findExercise({ id }) : null;
+  if (!repo) return null;
+  const ex = await repo.findExercise({ id });
+  if (!ex) return null;
+  return {
+    ...ex,
+    cuesValid: validCueTimings(ex.cues, ex.transcript, ex.audioUrl) !== null,
+  };
 }
 
 async function userLabels(ids: string[]): Promise<Map<string, string>> {
@@ -391,6 +413,7 @@ function normalizeInput(input: ShadowingInput): ExerciseData {
     level: String(input.level ?? "").trim() || null,
     instructions: String(input.instructions ?? "").trim() || null,
     audioUrl,
+    videoUrl: String(input.videoUrl ?? "").trim() || null,
     transcript,
     maxRecordSeconds: clampRecordSeconds(
       input.maxRecordSeconds,
@@ -400,6 +423,7 @@ function normalizeInput(input: ShadowingInput): ExerciseData {
     ),
     status,
     order: Number.isFinite(order) ? Math.max(0, Math.floor(order)) : 0,
+    annotations: normalizeAnnotations(input.annotations),
   };
 }
 

@@ -22,6 +22,27 @@ const ICONS = {
   grammar: BookMarked,
 } as const;
 
+const TRACK_THEMES = {
+  vocabulary: {
+    headerClass: "bg-gradient-to-r from-[#001233] via-[#06423b] to-[#047857]",
+    iconBoxClass: "bg-emerald-400/20 text-emerald-300 ring-1 ring-emerald-300/30",
+    borderHoverClass: "hover:border-emerald-400/50",
+    countClass: "text-emerald-100/90",
+    ctaClass:
+      "bg-emerald-50 border-emerald-200/70 text-emerald-800 group-hover:bg-[#06423b] group-hover:text-white group-hover:border-[#06423b]",
+    progressClass: "bg-gradient-to-r from-emerald-600 to-teal-600",
+  },
+  grammar: {
+    headerClass: "bg-gradient-to-r from-[#001233] via-[#0d2a6b] to-[#1e40af]",
+    iconBoxClass: "bg-blue-400/20 text-blue-200 ring-1 ring-blue-300/30",
+    borderHoverClass: "hover:border-blue-400/50",
+    countClass: "text-blue-100/90",
+    ctaClass:
+      "bg-blue-50 border-blue-200/70 text-blue-800 group-hover:bg-[#001233] group-hover:text-white group-hover:border-[#001233]",
+    progressClass: "bg-gradient-to-r from-blue-600 to-indigo-600",
+  },
+} as const;
+
 export function VocabGrammarHub({ tracks }: Props) {
   const { t } = useTranslations("learn");
 
@@ -55,6 +76,7 @@ export function VocabGrammarHub({ tracks }: Props) {
         {tracks.map((row) => {
           const Icon = ICONS[row.track];
           const isVocabulary = row.track === "vocabulary";
+          const theme = TRACK_THEMES[row.track];
           const label = isVocabulary
             ? t("vocabularyTrack", "Từ vựng")
             : t("grammarTrack", "Ngữ pháp");
@@ -76,18 +98,24 @@ export function VocabGrammarHub({ tracks }: Props) {
               key={row.track}
               href={href}
               onClick={markSkillChallengeDoneToday}
-              className="card-outline-hover group flex flex-col overflow-hidden border-zinc-300"
+              className={`card-outline-hover group flex flex-col overflow-hidden rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all ${theme.borderHoverClass}`}
             >
-              <div className="flex items-center gap-3 bg-wewin-navy px-4 py-3 text-white">
-                <Icon className="h-5 w-5 shrink-0 opacity-90" />
+              <div
+                className={`flex items-center gap-3 px-4 py-3.5 text-white ${theme.headerClass}`}
+              >
+                <span
+                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${theme.iconBoxClass}`}
+                >
+                  <Icon className="h-5 w-5 opacity-95" />
+                </span>
                 <div className="min-w-0">
                   <h2 className="text-base font-bold leading-tight">{label}</h2>
-                  <p className="text-xs text-white/85">
-                    {t("lessonCount", { n: row.total }, "{n} bài")}
+                  <p className={`text-xs mt-0.5 ${theme.countClass}`}>
+                    {t("lessonCount", { n: row.total }, `${row.total} bài`)}
                   </p>
                 </div>
               </div>
-              <div className="flex flex-1 flex-col gap-2.5 border-t border-zinc-200 px-4 py-3">
+              <div className="flex flex-1 flex-col gap-2.5 bg-white p-4">
                 <p className="text-sm leading-snug text-zinc-600">{desc}</p>
                 <div className="mt-auto space-y-2">
                   <div className="flex items-center justify-between gap-2">
@@ -97,13 +125,15 @@ export function VocabGrammarHub({ tracks }: Props) {
                         {t("completed", "hoàn thành")}
                       </span>
                     </span>
-                    <span className="shrink-0 rounded-md bg-wewin-accent-blue-bg px-2 py-1 text-xs font-bold text-wewin-navy group-hover:bg-wewin-navy group-hover:text-white">
+                    <span
+                      className={`inline-flex items-center gap-1 shrink-0 rounded-lg border px-3 py-1.5 text-xs font-bold transition-colors ${theme.ctaClass}`}
+                    >
                       {cta}
                     </span>
                   </div>
                   <div className="h-1.5 overflow-hidden rounded-full bg-zinc-200">
                     <div
-                      className="h-full rounded-full bg-wewin-navy"
+                      className={`h-full rounded-full ${theme.progressClass}`}
                       style={{ width: `${row.percent}%` }}
                     />
                   </div>

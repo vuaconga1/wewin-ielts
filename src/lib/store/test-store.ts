@@ -6,7 +6,7 @@ import type { PassageHighlight } from "@/lib/practice/passage-highlights";
 import type { StoredAiScore } from "@/lib/ai/types";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
-import { revalidatePath, revalidateTag, unstable_cache } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { canUsePrisma, isDbConfigured } from "@/lib/db";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
@@ -54,6 +54,7 @@ export type StoredAttempt = {
 const TESTS_CACHE_TTL_MS = 300_000;
 
 let testsCache: { data: StoredTest[]; expiresAt: number } | null = null;
+let testsInflight: Promise<StoredTest[]> | null = null;
 
 const PRODUCTION_HIDDEN_LISTENING_SERIES = new Set(["11", "12", "18"]);
 
@@ -324,23 +325,34 @@ export async function saveTestDraft(draft: ParsedTestDraft): Promise<StoredTest>
   return stored;
 }
 
+async function loadTestCatalog(): Promise<StoredTest[]> {
+  if (!(await isDbConfigured())) return listTestsFromFs();
+  const fromDb = await listTestsFromPrisma();
+  return fromDb.length ? fromDb : listTestsFromFs();
+}
+
+/**
+ * The full catalog (~2.6 MB) exceeds Next's 2 MB data-cache item limit, so it
+ * lives in process memory only; concurrent misses share one load.
+ */
 export async function listTests(): Promise<StoredTest[]> {
-  const now = Date.now();
-  if (testsCache && now < testsCache.expiresAt) {
+  if (testsCache && Date.now() < testsCache.expiresAt) {
     return structuredClone(testsCache.data);
   }
 
-  let tests: StoredTest[];
+  if (!testsInflight) {
+    testsInflight = loadTestCatalog()
+      .then((tests) => {
+        testsCache = { data: tests, expiresAt: Date.now() + TESTS_CACHE_TTL_MS };
+        return tests;
+      })
+      .finally(() => {
+        testsInflight = null;
+      });
+  }
+
   try {
-    tests = await unstable_cache(
-      async () => {
-        if (!(await isDbConfigured())) return listTestsFromFs();
-        const fromDb = await listTestsFromPrisma();
-        return fromDb.length ? fromDb : listTestsFromFs();
-      },
-      ["tests-catalog-list-v8"],
-      { revalidate: 300, tags: ["tests-catalog"] },
-    )();
+    return structuredClone(await testsInflight);
   } catch (error) {
     if (testsCache) return structuredClone(testsCache.data);
     if (process.env.NEXT_PHASE === "phase-production-build") {
@@ -348,12 +360,6 @@ export async function listTests(): Promise<StoredTest[]> {
     }
     throw error;
   }
-
-  testsCache = {
-    data: structuredClone(tests),
-    expiresAt: now + TESTS_CACHE_TTL_MS,
-  };
-  return tests;
 }
 
 /** Public catalog tests; keeps unfinished papers available to admins and old attempts. */

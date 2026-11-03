@@ -8,6 +8,8 @@ import {
   getShadowingForAdmin,
   listShadowingAttemptsForAdmin,
 } from "@/lib/shadowing/store";
+import { transcriptLines } from "@/lib/shadowing/transcript";
+import { annotationsFor } from "@/lib/shadowing/annotations";
 import { getTranslations } from "@/i18n/server";
 import { requireAdminPage } from "@/lib/auth/page-guards";
 
@@ -30,6 +32,14 @@ export default async function AdminShadowingEditPage({ params }: Props) {
   if (!exercise) notFound();
   const { t } = await getTranslations("shadowingAdmin");
 
+  const lines = transcriptLines(exercise.transcript);
+  const annList = annotationsFor(exercise.annotations, exercise.transcript);
+  const annotations = lines.map((l, i) => ({
+    text: l.text,
+    ipa: annList?.[i]?.ipa ?? "",
+    translation: annList?.[i]?.translation ?? "",
+  }));
+
   return (
     <SiteShell active="admin-shadowing">
       <div className="mb-6">
@@ -44,14 +54,18 @@ export default async function AdminShadowingEditPage({ params }: Props) {
         <ShadowingAdminForm
           initial={{
             id: exercise.id,
+            slug: exercise.slug,
+            cuesValid: exercise.cuesValid,
             title: exercise.title,
             level: exercise.level ?? "",
             instructions: exercise.instructions ?? "",
             audioUrl: exercise.audioUrl,
+            videoUrl: exercise.videoUrl ?? "",
             transcript: exercise.transcript,
             maxRecordSeconds: exercise.maxRecordSeconds,
             status: exercise.status,
             order: exercise.order,
+            annotations,
           }}
         />
         <ShadowingAdminAttempts attempts={attempts} retentionDays={RECORDING_RETENTION_DAYS} />

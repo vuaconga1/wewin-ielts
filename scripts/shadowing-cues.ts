@@ -127,7 +127,7 @@ async function main() {
     const ex = await repo.findExercise({ id: r.id });
     if (!ex) continue;
     const cueSet: StoredCueSet = {
-      version: 1,
+      version: 2,
       aligner: `stable-ts/${r.engine ?? engine}/${model}`,
       audioUrl: ex.audioUrl,
       lines: r.lines,

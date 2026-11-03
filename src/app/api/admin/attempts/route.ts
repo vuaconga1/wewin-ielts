@@ -30,7 +30,12 @@ export async function GET(request: Request) {
     });
 
     const result = await listAdminAttempts(filters);
-    return NextResponse.json(result, {
+    // options=0: the viewer already has the user/test/class dropdowns.
+    const body =
+      searchParams.get("options") === "0"
+        ? { attempts: result.attempts, total: result.total, source: result.source }
+        : result;
+    return NextResponse.json(body, {
       headers: {
         // Auth-scoped; short private cache softens remount storms in admin UI.
         "Cache-Control": "private, max-age=15, stale-while-revalidate=60",

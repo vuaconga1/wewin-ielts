@@ -513,7 +513,10 @@
     "loginCta": "Sign in",
     "unranked": "Unranked",
     "unrankedHint": "Finish Listening/Reading in this period to earn points.",
-    "pointsSuffix": "pts"
+    "pointsSuffix": "pts",
+    "subtitle": "Practice every day, earn points and climb the board with WEWIN!",
+    "mascotCheer": "Keep going! The #1 spot is waiting for you 🚀",
+    "othersTitle": "Hall of champions"
   },
   "locale": {
     "vi": "VI",
@@ -1951,6 +1954,10 @@
       "intermediate": {
         "title": "Intermediate level",
         "desc": "Longer clips, natural conversations and near real-life speed — sharpen your listening reflexes."
+      },
+      "tedtalk": {
+        "title": "TED Talks Video",
+        "desc": "Practice shadowing with inspiring TED Talks from world-renowned speakers."
       }
     },
     "shadowingTips": {
@@ -1969,7 +1976,8 @@
     "shortFillBlank": "Fill in Blanks",
     "shortListenAnswer": "Listen & Answer",
     "levelBasic": "Basic",
-    "levelIntermediate": "Intermediate"
+    "levelIntermediate": "Intermediate",
+    "levelTedTalk": "TED Talks"
   },
   "shadowing": {
     "catalogTitle": "Shadowing — Listen and repeat",
@@ -1984,6 +1992,28 @@
     "start": "Practise →",
     "defaultInstructions": "Listen to the model, then record yourself repeating it as closely as you can.",
     "sampleAudio": "Model audio",
+    "sampleVideo": "Model video",
+    "showSubtitle": "Show subtitles",
+    "hideSubtitle": "Hide subtitles",
+    "showIpa": "Show IPA",
+    "hideIpa": "Hide IPA",
+    "showTranslation": "Show translation",
+    "hideTranslation": "Hide translation",
+    "revealTranslation": "Show meaning",
+    "sentencesCount": "{n} sentences",
+    "wordsCountShort": "{n} words",
+    "fontSmaller": "Smaller text",
+    "fontLarger": "Larger text",
+    "modeSentence": "Sentence by sentence",
+    "modeFull": "Full passage",
+    "autoShadow": "Auto-shadow",
+    "autoShadowHint": "Auto-play sentence, record, and advance to next sentence",
+    "autoShadowActive": "Auto-shadow active",
+    "headphoneTip": "Headphones recommended to avoid audio echo into the mic.",
+    "progressSummary": "Practised {done}/{total} sentences · Avg: {avg}",
+    "reviewWeak": "Practise score < 60",
+    "recordSentence": "Record sentence",
+    "stopSentence": "Stop recording",
     "recordTitle": "Record your voice",
     "readAlongTitle": "Transcript",
     "readAlongHint": "Read along with the text below. Speaker names are not read aloud.",
@@ -1994,7 +2024,7 @@
     "nextSentence": "Next sentence",
     "play": "Play",
     "pause": "Pause",
-    "shortcutsHint": "Space play / pause · ←/→ change sentence · R replay sentence",
+    "shortcutsHint": "Space play / pause · ←/→ change · R replay · M mic",
     "estimatedTiming": "Sentence timings are estimated from text length and may be a few seconds off.",
     "record": "Record",
     "stop": "Stop",
@@ -2083,7 +2113,10 @@
     "playAgain": "Play again",
     "historyNoAttempts": "No attempts yet",
     "hasRecordingTooltip": "Audio recording included",
-    "attemptCountBadge": "{n} attempts"
+    "attemptCountBadge": "{n} attempts",
+    "karaokeSubtitles": "Karaoke Subtitles",
+    "karaokeHint": "Click any word to replay from there",
+    "clickToPlayWord": "Click to play this word"
   },
   "shadowingAdmin": {
     "title": "Shadowing exercises",
@@ -2108,8 +2141,26 @@
     "audioUrlPlaceholder": "Audio URL (https://… or /uploads/…)",
     "uploadAudio": "Upload audio file",
     "uploading": "Uploading…",
+    "fieldVideo": "Model video (optional)",
+    "videoUrlPlaceholder": "Video URL (.mp4) on R2",
+    "videoHint": "With a video, learners watch it instead of the audio; the audio above must be this video's own sound track. Run npm run shadowing:import-video to create both from a YouTube link.",
     "fieldTranscript": "Model sentence (transcript)",
-    "transcriptHint": "Used as the reference when scoring; students only see it after submitting.",
+    "transcriptHint": "One sentence per line. Re-align timings after modifying transcript.",
+    "cuesStaleWarning": "Sentence timings (cues) are stale or do not match transcript. Run this command to re-align:",
+    "videoBadge": "Video",
+    "annotationsTitle": "Sentence IPA & Translations",
+    "annotationsHint": "Add IPA phonetic transcriptions and Vietnamese translations for each sentence. Learners can view IPA and toggle translations while practicing.",
+    "fillIpa": "Auto-fill IPA",
+    "fillingIpa": "Filling IPA…",
+    "pasteTranslations": "Batch paste translations",
+    "pasteTranslationsHint": "Paste Vietnamese translations here (one line per sentence, matching English sentence order).",
+    "applyPaste": "Apply translations",
+    "close": "Close",
+    "translationCount": "Translated: {n}/{total} sentences",
+    "colSentence": "English sentence",
+    "colIpa": "IPA",
+    "colTranslation": "Vietnamese translation",
+    "pasteCountMismatch": "Pasted line count ({lines}) does not match sentence count ({total}). Matching lines were still applied.",
     "fieldMaxSeconds": "Maximum recording length (seconds)",
     "fieldStatus": "Status",
     "fieldOrder": "Display order",
@@ -2137,6 +2188,7 @@
       "DB_UNAVAILABLE": "The database is not ready. Please try again shortly.",
       "NOT_FOUND": "Exercise not found.",
       "saveFailed": "Could not save the exercise. Please try again.",
+      "ipaFailed": "Failed to auto-generate IPA. Please try again.",
       "uploadFailed": "Could not upload the audio. Please try again.",
       "deleteFailed": "Could not delete the exercise. Please try again."
     }

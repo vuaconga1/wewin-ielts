@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -99,6 +100,22 @@ const CATEGORY_ICONS: Record<"ielts" | "vocab-grammar" | "skills" | "general", L
   general: Layers,
 };
 
+/** Single blue palette for every card on this page. */
+const CARD_HUE = {
+  header: "bg-gradient-to-br from-[#1e40af] to-[#0b1a4a]",
+  accent: "text-[#bfdbfe]",
+  chip: "bg-white/15 text-[#bfdbfe] ring-1 ring-white/25",
+  body: "bg-gradient-to-b from-[#eef3ff] to-white",
+  text: "text-[#0b1a4a]/80",
+  strong: "text-[#0b1a4a]",
+  bar: "bg-[#1e40af]",
+  track: "bg-[#1e40af]/10",
+  pill: "bg-[#1e40af]/10 text-[#1e40af] ring-1 ring-[#1e40af]/20 hover:bg-[#1e40af]/15",
+  cta: "bg-[#1e40af] text-white hover:bg-[#0b1a4a]",
+  groupCta: "bg-[#1e40af] text-white group-hover:bg-[#0b1a4a]",
+  border: "hover:border-[#1e40af]",
+};
+
 const PRACTICE_LABS: {
   key: string;
   href: () => string;
@@ -109,6 +126,11 @@ const PRACTICE_LABS: {
   tagClass: string;
   title: string;
   description: string;
+  borderHoverClass: string;
+  tintClass: string;
+  chipClass: string;
+  arrowHoverClass: string;
+  meta: string[];
 }[] = [
   {
     key: "dictation",
@@ -120,6 +142,11 @@ const PRACTICE_LABS: {
     tagClass: "text-blue-600",
     title: "Nghe chép chính tả",
     description: "Nghe audio ngắn, gõ lại nội dung và kiểm tra độ chính xác từng từ.",
+    borderHoverClass: "hover:border-blue-400/60",
+    tintClass: "from-blue-50/90 via-white/80 to-white/60",
+    chipClass: "bg-gradient-to-br from-blue-500 to-blue-700 shadow-blue-500/30",
+    arrowHoverClass: "group-hover:bg-blue-600",
+    meta: ["Audio ngắn", "~10 phút"],
   },
   {
     key: "fill-blank",
@@ -131,6 +158,11 @@ const PRACTICE_LABS: {
     tagClass: "text-emerald-600",
     title: "Nghe điền từ",
     description: "Bắt trọn từ khóa, số liệu và tên riêng trong bài nghe Cambridge.",
+    borderHoverClass: "hover:border-emerald-400/60",
+    tintClass: "from-emerald-50/90 via-white/80 to-white/60",
+    chipClass: "bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-emerald-500/30",
+    arrowHoverClass: "group-hover:bg-emerald-600",
+    meta: ["Cambridge", "Từ khóa & số liệu"],
   },
   {
     key: "listen-answer",
@@ -142,6 +174,11 @@ const PRACTICE_LABS: {
     tagClass: "text-purple-600",
     title: "Nghe & trả lời",
     description: "Nghe đoạn văn ngắn và trả lời câu hỏi bằng câu ngắn tiếng Anh.",
+    borderHoverClass: "hover:border-purple-400/60",
+    tintClass: "from-purple-50/90 via-white/80 to-white/60",
+    chipClass: "bg-gradient-to-br from-purple-500 to-purple-700 shadow-purple-500/30",
+    arrowHoverClass: "group-hover:bg-purple-600",
+    meta: ["Trả lời ngắn", "~10 phút"],
   },
   {
     key: "shadowing",
@@ -153,6 +190,11 @@ const PRACTICE_LABS: {
     tagClass: "text-amber-600",
     title: "Shadowing — Luyện nói",
     description: "Ghi âm giọng đọc, so sánh ngữ điệu chuẩn người bản xứ với AI.",
+    borderHoverClass: "hover:border-amber-400/60",
+    tintClass: "from-amber-50/90 via-white/80 to-white/60",
+    chipClass: "bg-gradient-to-br from-amber-400 to-orange-600 shadow-amber-500/30",
+    arrowHoverClass: "group-hover:bg-amber-500",
+    meta: ["Ghi âm", "Chấm bằng AI"],
   },
 ];
 
@@ -470,28 +512,34 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             {/* Soft background accents */}
             <div className="pointer-events-none absolute -right-12 -top-12 h-44 w-44 rounded-full bg-blue-100/50 blur-2xl" />
             <div className="pointer-events-none absolute -bottom-12 right-48 h-36 w-36 rounded-full bg-amber-100/40 blur-2xl" />
+            <span
+              className="pointer-events-none absolute -bottom-6 right-4 select-none text-[96px] font-black leading-none tracking-wider text-slate-900/[0.03]"
+              aria-hidden
+            >
+              WEWIN
+            </span>
 
             <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               {/* Left Side: Title + Stepper + Stats */}
               <div className="space-y-4 max-w-2xl min-w-0">
                 <div>
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-100/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-wewin-accent-blue">
-                    LỘ TRÌNH NỔI BẬT
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-700 ring-1 ring-amber-200/80">
+                    ⭐ LỘ TRÌNH NỔI BẬT
                   </span>
-                  <h2 className="mt-1.5 text-xl font-bold tracking-tight text-wewin-navy sm:text-2xl">
+                  <h2 className="mt-1.5 text-xl font-extrabold tracking-tight text-wewin-navy sm:text-2xl lg:text-3xl">
                     Lộ trình IELTS toàn diện
                   </h2>
-                  <p className="mt-0.5 text-xs sm:text-sm text-zinc-600">
-                    Từ nền tảng đến mục tiêu 6.5+
+                  <p className="mt-0.5 text-xs text-zinc-600 sm:text-sm">
+                    Từ nền tảng đến mục tiêu 6.5+ 🚀
                   </p>
                 </div>
 
                 {/* Horizontal Stepper */}
                 <div className="flex items-center gap-1.5 sm:gap-2.5 overflow-x-auto py-1 scrollbar-none">
                   {/* Step 1 */}
-                  <div className="flex shrink-0 items-center gap-1.5 rounded-lg border border-blue-200 bg-white/90 px-3 py-1.5 shadow-xs">
+                  <div className="flex shrink-0 items-center gap-1.5 rounded-lg border border-sky-300 bg-white px-3 py-1.5 shadow-xs ring-2 ring-sky-100">
                     <span className="text-xs font-bold text-wewin-navy">3.0 – 4.0</span>
-                    <span className="text-[10px] font-medium text-zinc-500">Pre-IELTS</span>
+                    <span className="text-[10px] font-medium text-slate-500">Pre-IELTS</span>
                   </div>
                   <ChevronRight className="h-3.5 w-3.5 shrink-0 text-zinc-400" />
 
@@ -512,12 +560,12 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                   {/* Step 4 */}
                   <div className="flex shrink-0 items-center gap-1.5 rounded-lg border border-emerald-200 bg-white/90 px-3 py-1.5 shadow-xs">
                     <span className="text-xs font-bold text-emerald-700">6.0 – 6.5+</span>
-                    <span className="text-[10px] font-medium text-zinc-500">Advanced</span>
+                    <span className="text-[10px] font-medium text-zinc-500">Advanced 🏆</span>
                   </div>
                 </div>
 
                 {/* Quick Meta Stats */}
-                <div className="flex flex-wrap items-center gap-4 text-xs font-medium text-zinc-600 pt-1">
+                <div className="flex flex-wrap items-center gap-4 pt-1 text-xs font-medium text-zinc-600">
                   <div className="flex items-center gap-1.5">
                     <Layers className="h-3.5 w-3.5 text-wewin-navy" />
                     <span>4 khóa học chính</span>
@@ -536,7 +584,8 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
               </div>
 
               {/* Right Side: Circular Progress + CTA Button */}
-              <div className="flex shrink-0 items-center justify-between gap-4 border-t border-blue-100/80 pt-4 md:border-t-0 md:pt-0 md:flex-col md:items-end md:justify-center">
+              <div className="flex shrink-0 items-center gap-4">
+              <div className="flex flex-1 items-center justify-between gap-4 border-t border-blue-100/80 pt-4 md:flex-none md:flex-col md:items-end md:justify-center md:border-t-0 md:pt-0">
                 <div className="flex items-center gap-3">
                   {/* Circular Progress Gauge */}
                   <div className="relative flex h-14 w-14 shrink-0 items-center justify-center">
@@ -575,11 +624,19 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                 <button
                   type="button"
                   onClick={() => setShowRoadmapModal(true)}
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-wewin-navy/20 bg-white px-3.5 py-2 text-xs font-semibold text-wewin-navy shadow-xs transition hover:bg-wewin-navy hover:text-white"
+                  className="group/cta inline-flex items-center gap-1.5 rounded-xl bg-wewin-navy px-4 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-wewin-navy-hover active:scale-95"
                 >
                   <span>Xem chi tiết</span>
-                  <ArrowRight className="h-3.5 w-3.5" />
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/cta:translate-x-0.5" />
                 </button>
+              </div>
+              <Image
+                src="/branding/wewin-mascot-hero.png"
+                alt=""
+                width={220}
+                height={260}
+                className="animate-wewin-float -my-4 hidden h-auto w-28 shrink-0 drop-shadow-xl 2xl:block"
+              />
               </div>
             </div>
           </section>
@@ -598,35 +655,38 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
               {PRACTICE_LABS.map((lab) => {
                 const Icon = lab.icon;
+                const h = CARD_HUE;
                 return (
                   <Link
                     key={lab.key}
                     href={lab.href()}
-                    className="wewin-card-3d wewin-card-3d-hover group relative flex min-w-0 items-center gap-4 overflow-hidden !rounded-2xl border-b-2 border-b-slate-200/80 p-4.5 sm:p-5 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl active:translate-y-0"
+                    className={`card-outline-hover group flex min-w-0 flex-col overflow-hidden !rounded-2xl border border-slate-200/90 shadow-xs transition-all hover:shadow-md ${h.border}`}
                   >
-                    <span
-                      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-transform group-hover:scale-105 ${lab.iconClass}`}
-                    >
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <span className={`text-[10px] font-bold uppercase tracking-wider ${lab.tagClass}`}>
+                    <div className={`flex items-center gap-3 px-4 py-3.5 text-white sm:px-5 ${h.header}`}>
+                      <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${h.chip}`}>
+                        <Icon className="h-5 w-5" aria-hidden />
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <h3 className="break-words text-base font-bold leading-tight text-white sm:text-lg">
+                          {lab.title}
+                        </h3>
+                        <p className={`text-xs font-medium ${h.accent}`}>{lab.meta.join(" · ")}</p>
+                      </div>
+                      <span
+                        className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ${h.chip}`}
+                      >
                         {lab.tag}
                       </span>
-                      <h3 className="break-words text-sm font-bold text-zinc-900 transition-colors group-hover:text-wewin-navy sm:text-base">
-                        {lab.title}
-                      </h3>
-                      <p className="mt-0.5 line-clamp-2 text-xs leading-relaxed text-zinc-600">
-                        {lab.description}
-                      </p>
                     </div>
-                    <span
-                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-slate-100 text-wewin-navy transition-colors group-hover:bg-wewin-navy group-hover:text-white"
-                      title={t("cardPracticeNow", "Luyện ngay")}
-                    >
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                      <span className="sr-only">{t("cardPracticeNow", "Luyện ngay")}</span>
-                    </span>
+                    <div className={`flex flex-1 flex-col gap-3 px-4 py-4 sm:px-5 ${h.body}`}>
+                      <p className={`text-sm leading-snug break-words ${h.text}`}>{lab.description}</p>
+                      <span
+                        className={`mt-auto inline-flex w-fit items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-bold transition-colors ${h.groupCta}`}
+                      >
+                        {t("cardPracticeNow", "Luyện ngay")}
+                        <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden />
+                      </span>
+                    </div>
                   </Link>
                 );
               })}
@@ -746,54 +806,53 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
 
                   const CategoryIcon = CATEGORY_ICONS[item.category];
                   const started = hasProgress && item.completed > 0;
+                  const h = CARD_HUE;
 
                   return (
                     <div
                       key={item.key}
-                      className="wewin-card-3d wewin-card-3d-hover group flex min-w-0 flex-col overflow-hidden !rounded-2xl border-b-2 border-b-slate-200/80 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+                      className={`card-outline-hover group flex min-w-0 flex-col overflow-hidden !rounded-2xl border border-slate-200/90 shadow-xs transition-all hover:shadow-md ${h.border}`}
                     >
-                      {/* Card Body */}
-                      <div className="flex flex-1 flex-col p-4 sm:p-5">
-                        {/* Header: category icon + badge/level + title */}
-                        <div className="flex items-start gap-3.5">
-                          <span
-                            className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-xs ${item.accentColor}`}
-                          >
-                            <CategoryIcon className="h-5 w-5" />
-                          </span>
-                          <div className="min-w-0 flex-1">
-                            <div className="flex items-center gap-1.5">
-                              <span
-                                className={`rounded-md border px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${item.badgeBg}`}
-                              >
-                                {item.badgeLabel}
-                              </span>
-                              <span className="text-zinc-300">•</span>
-                              <span className="text-[11px] font-medium text-zinc-500 truncate">{item.level}</span>
-                            </div>
-                            <h3 className="mt-1 line-clamp-2 min-h-[2.625rem] text-base font-bold leading-snug text-zinc-900 transition-colors group-hover:text-wewin-navy">
-                              {item.title}
-                            </h3>
+                      {/* Header: category icon + title, badge chip + level */}
+                      <div className={`flex items-start gap-3 px-4 py-3.5 text-white sm:px-5 ${h.header}`}>
+                        <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${h.chip}`}>
+                          <CategoryIcon className="h-5 w-5" aria-hidden />
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="line-clamp-2 text-base font-bold leading-tight text-white">
+                            {item.title}
+                          </h3>
+                          <div className="mt-1 flex min-w-0 items-center gap-1.5">
+                            <span
+                              className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ${h.chip}`}
+                            >
+                              {item.badgeLabel}
+                            </span>
+                            <span className={`truncate text-xs font-medium ${h.accent}`}>{item.level}</span>
                           </div>
                         </div>
+                      </div>
 
+                      {/* Card Body */}
+                      <div className={`flex flex-1 flex-col ${h.body}`}>
+                      <div className="flex flex-1 flex-col px-4 py-4 sm:px-5">
                         {/* Meta strip */}
-                        <div className="mt-3.5 flex items-center justify-between gap-2 rounded-xl border border-slate-100 bg-slate-50/80 px-3 py-2 text-xs">
-                          <div className="flex items-center gap-1.5 font-medium text-slate-700 min-w-0">
-                            <BookOpen className="h-3.5 w-3.5 shrink-0 text-slate-400" />
+                        <div className={`flex items-center justify-between gap-2 text-xs ${h.text}`}>
+                          <div className="flex min-w-0 items-center gap-1.5 font-semibold">
+                            <BookOpen className="h-3.5 w-3.5 shrink-0" />
                             <span className="truncate">{item.metaInfo}</span>
                           </div>
-                          <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 min-w-0 shrink-0">
-                            <FileText className="h-3 w-3 shrink-0 text-slate-400" />
+                          <div className="flex min-w-0 shrink-0 items-center gap-1.5 text-[11px] font-medium">
+                            <FileText className="h-3 w-3 shrink-0" />
                             <span className="truncate">{item.materials}</span>
                           </div>
                         </div>
 
                         {/* Progress */}
                         {hasProgress ? (
-                          <div className="mt-4 pt-3.5 border-t border-slate-100/80">
+                          <div className="mt-4">
                             <div className="mb-1.5 flex items-center justify-between text-xs">
-                              <span className={started ? "font-semibold text-slate-800" : "font-normal text-slate-400"}>
+                              <span className={started ? `font-semibold ${h.strong}` : `font-normal ${h.text}`}>
                                 {started
                                   ? t(
                                       "cardLessonsDone",
@@ -802,13 +861,13 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                                     )
                                   : t("cardNotStarted", "Chưa bắt đầu")}
                               </span>
-                              <span className={`tabular-nums ${started ? "font-bold text-slate-800" : "font-medium text-slate-400"}`}>
+                              <span className={`tabular-nums ${started ? `font-bold ${h.strong}` : `font-medium ${h.text}`}`}>
                                 {Math.round(item.percent)}%
                               </span>
                             </div>
-                            <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+                            <div className={`h-1.5 w-full overflow-hidden rounded-full ${h.track}`}>
                               <div
-                                className={`h-full rounded-full transition-all duration-500 ${item.accentColor}`}
+                                className={`h-full rounded-full transition-all duration-500 ${h.bar}`}
                                 style={{ width: `${item.percent}%` }}
                               />
                             </div>
@@ -817,11 +876,11 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                       </div>
 
                       {/* Footer */}
-                      <div className="border-t border-slate-100 bg-slate-50/60 px-4 py-3 sm:px-5">
+                      <div className="border-t border-black/5 px-4 py-3 sm:px-5">
                         {buyPrice ? (
                           <div className="flex flex-wrap items-center justify-between gap-2">
                             <div className="min-w-0">
-                              <p className="inline-flex items-center gap-1 text-[10px] font-bold text-amber-800">
+                              <p className={`inline-flex items-center gap-1 text-[10px] font-bold ${h.strong}`}>
                                 <Lock className="h-3 w-3 shrink-0" aria-hidden />
                                 {t("studentOnly", "Chỉ dành cho học viên")}
                               </p>
@@ -834,7 +893,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                               <Link
                                 href={item.href}
                                 prefetch={false}
-                                className="inline-flex items-center rounded-xl border border-wewin-navy/20 bg-white px-3 py-1.5 text-xs font-semibold text-wewin-navy transition hover:bg-slate-50"
+                                className={`inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-bold transition ${h.pill}`}
                               >
                                 {item.actionLabel}
                               </Link>
@@ -844,26 +903,27 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                         ) : (
                           <div className="flex items-center justify-between gap-2">
                             {locked ? (
-                              <span className="inline-flex min-w-0 items-center gap-1 text-xs font-bold text-amber-800">
+                              <span className={`inline-flex min-w-0 items-center gap-1 text-xs font-bold ${h.strong}`}>
                                 <Lock className="h-3.5 w-3.5 shrink-0" aria-hidden />
                                 <span className="truncate">{t("studentOnly", "Chỉ dành cho học viên")}</span>
                               </span>
                             ) : (
-                              <span className="inline-flex min-w-0 items-center gap-1.5 text-xs font-medium text-slate-500">
-                                <Users className="h-3.5 w-3.5 shrink-0 text-slate-400" />
+                              <span className={`inline-flex min-w-0 items-center gap-1.5 text-xs font-medium ${h.text}`}>
+                                <Users className="h-3.5 w-3.5 shrink-0" />
                                 <span className="truncate">{item.instructor}</span>
                               </span>
                             )}
                             <Link
                               href={item.href}
                               prefetch={false}
-                              className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-wewin-navy px-3.5 py-1.5 text-xs font-semibold text-white shadow-xs transition hover:gap-1.5 hover:bg-wewin-navy-hover active:scale-95"
+                              className={`inline-flex shrink-0 items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-bold transition hover:gap-1.5 active:scale-95 ${h.cta}`}
                             >
                               {locked ? <Lock className="h-3 w-3" aria-hidden /> : null}
                               <span>{isDone ? "Ôn lại →" : item.actionLabel}</span>
                             </Link>
                           </div>
                         )}
+                      </div>
                       </div>
                     </div>
                   );
@@ -894,7 +954,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             </div>
 
             {/* Vertical Stepper Timeline */}
-            <div className="relative mt-4 space-y-4 pl-6 before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200">
+            <div className="relative mt-4 space-y-4 pl-6 before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-gradient-to-b before:from-blue-500 before:via-blue-300 before:to-slate-200">
               {/* Milestone 1: 3.0 – 4.0 */}
               <div className="relative group cursor-pointer" onClick={() => setActiveCategory("ielts")}>
                 <div className="absolute -left-6 top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-white ring-4 ring-white">
@@ -911,11 +971,20 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                     ? `Đang học · ${ielts34.completed}/${ielts34.total} khóa học`
                     : "Đang học · 2/4 khóa học"}
                 </p>
+                <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-blue-500 to-sky-400"
+                    style={{ width: `${ielts34 && ielts34.completed > 0 ? ielts34.percent : 50}%` }}
+                  />
+                </div>
               </div>
 
               {/* Milestone 2: 4.0 – 5.0 */}
-              <div className="relative group cursor-pointer" onClick={() => setActiveCategory("ielts")}>
-                <div className="absolute -left-6 top-0.5 flex h-5 w-5 items-center justify-center rounded-full border-2 border-blue-600 bg-white ring-4 ring-white">
+              <div
+                className="relative group -mx-2 cursor-pointer rounded-xl bg-blue-50/80 px-2 py-2 ring-1 ring-blue-100"
+                onClick={() => setActiveCategory("ielts")}
+              >
+                <div className="absolute -left-4 top-2.5 flex h-5 w-5 items-center justify-center rounded-full border-2 border-blue-600 bg-white ring-4 ring-white">
                   <div className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
                 </div>
                 <div className="flex items-center justify-between">
@@ -929,10 +998,16 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
                     ? `Đang học · ${ielts45.completed}/${ielts45.total} khóa học`
                     : "Sắp học · 0/4 khóa học"}
                 </p>
+                <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-white">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-amber-400 to-amber-500"
+                    style={{ width: `${Math.max(4, ielts45?.percent ?? 0)}%` }}
+                  />
+                </div>
               </div>
 
               {/* Milestone 3: 5.0 – 6.0 */}
-              <div className="relative group cursor-pointer" onClick={() => setActiveCategory("ielts")}>
+              <div className="relative group cursor-pointer opacity-60 transition-opacity hover:opacity-100" onClick={() => setActiveCategory("ielts")}>
                 <div className="absolute -left-6 top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-slate-100 text-zinc-400 ring-4 ring-white">
                   <Lock className="h-2.5 w-2.5" />
                 </div>
@@ -946,7 +1021,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
               </div>
 
               {/* Milestone 4: 6.0+ */}
-              <div className="relative group cursor-pointer" onClick={() => setShowRoadmapModal(true)}>
+              <div className="relative group cursor-pointer opacity-60 transition-opacity hover:opacity-100" onClick={() => setShowRoadmapModal(true)}>
                 <div className="absolute -left-6 top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-slate-100 text-zinc-400 ring-4 ring-white">
                   <Lock className="h-2.5 w-2.5" />
                 </div>
@@ -971,9 +1046,12 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             {/* Target 1 */}
             <Link
               href={learnIeltsCourseHref("ielts-5-6")}
-              className="group flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/60 p-3 transition hover:border-blue-200 hover:bg-blue-50/40"
+              className="group flex items-center gap-3 rounded-xl border border-slate-100 bg-slate-50/60 p-3 transition hover:-translate-y-0.5 hover:border-blue-200 hover:bg-blue-50/60 hover:shadow-sm"
             >
-              <div className="min-w-0 pr-2">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-lg transition-transform group-hover:scale-110" aria-hidden>
+                🎓
+              </span>
+              <div className="min-w-0 flex-1 pr-2">
                 <p className="text-xs font-bold text-zinc-900 group-hover:text-wewin-accent-blue transition-colors">
                   Đạt 6.5+ để du học
                 </p>
@@ -987,9 +1065,12 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             {/* Target 2 */}
             <Link
               href={learnShadowingHref()}
-              className="group flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/60 p-3 transition hover:border-blue-200 hover:bg-blue-50/40"
+              className="group flex items-center gap-3 rounded-xl border border-slate-100 bg-slate-50/60 p-3 transition hover:-translate-y-0.5 hover:border-amber-200 hover:bg-amber-50/60 hover:shadow-sm"
             >
-              <div className="min-w-0 pr-2">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-lg transition-transform group-hover:scale-110" aria-hidden>
+                🎤
+              </span>
+              <div className="min-w-0 flex-1 pr-2">
                 <p className="text-xs font-bold text-zinc-900 group-hover:text-wewin-accent-blue transition-colors">
                   Cải thiện kỹ năng Speaking
                 </p>
@@ -1003,9 +1084,12 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             {/* Target 3 */}
             <Link
               href={learnVocabGrammarHref()}
-              className="group flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/60 p-3 transition hover:border-blue-200 hover:bg-blue-50/40"
+              className="group flex items-center gap-3 rounded-xl border border-slate-100 bg-slate-50/60 p-3 transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50/60 hover:shadow-sm"
             >
-              <div className="min-w-0 pr-2">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-lg transition-transform group-hover:scale-110" aria-hidden>
+                ⚡
+              </span>
+              <div className="min-w-0 flex-1 pr-2">
                 <p className="text-xs font-bold text-zinc-900 group-hover:text-wewin-accent-blue transition-colors">
                   Tăng điểm nhanh
                 </p>

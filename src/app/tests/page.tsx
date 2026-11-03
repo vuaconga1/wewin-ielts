@@ -36,7 +36,10 @@ export default async function TestsPage() {
         >
           {t("common.backHome")}
         </Link>
-        <h1 className="text-3xl font-bold text-zinc-900">{t("tests.title")}</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-zinc-900">{t("tests.title")}</h1>
+        <p className="mt-1 text-sm text-zinc-600 sm:text-base">
+          {t("tests.subtitle")}
+        </p>
    
       </div>
 
@@ -45,6 +48,35 @@ export default async function TestsPage() {
         generalCount={generalCount}
         placementCount={placementCount}
       />
+
+      <section className="mt-8 rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs sm:p-6">
+        <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-wewin-navy">
+          <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-wewin-accent-blue-bg text-wewin-navy text-xs">
+            💡
+          </span>
+          Hướng dẫn luyện đề IELTS hiệu quả
+        </h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
+          <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-4">
+            <h3 className="text-xs font-bold text-wewin-navy">1. Chọn Module phù hợp</h3>
+            <p className="mt-1.5 text-xs leading-relaxed text-zinc-600">
+              Chọn Academic để xét tuyển đại học / du học, General Training để định cư & làm việc, hoặc Placement Test để kiểm tra trình độ khởi điểm.
+            </p>
+          </div>
+          <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-4">
+            <h3 className="text-xs font-bold text-wewin-navy">2. Luyện tập có bấm giờ</h3>
+            <p className="mt-1.5 text-xs leading-relaxed text-zinc-600">
+              Rèn luyện từng kỹ năng Nghe, Đọc, Viết, Nói hoặc làm Full Test có đếm ngược thời gian để làm quen với áp lực phòng thi thực tế.
+            </p>
+          </div>
+          <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-4">
+            <h3 className="text-xs font-bold text-wewin-navy">3. Đối chiếu và phân tích</h3>
+            <p className="mt-1.5 text-xs leading-relaxed text-zinc-600">
+              Xem giải thích đáp án chi tiết, nhận diện điểm yếu cần cải thiện và theo dõi tiến độ điểm số trong mục Lịch sử làm bài.
+            </p>
+          </div>
+        </div>
+      </section>
     </SiteShell>
   );
 }

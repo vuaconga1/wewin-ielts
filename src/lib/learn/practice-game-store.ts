@@ -22,7 +22,7 @@ export async function summarizePracticeGameLevels(
     GAME_LEVELS.map((l) => [l, { count: 0, firstSlug: null }]),
   ) as Record<GameLevel, GameLevelSummary>;
   for (const item of await listPracticeGameItems(game)) {
-    const level = gameLevelOf(item.level);
+    const level = gameLevelOf(item.level, item.hasVideo);
     if (!level) continue;
     summary[level].count += 1;
     summary[level].firstSlug ??= item.slug;
@@ -35,5 +35,5 @@ export async function listPracticeGameLevelItems(
   level: GameLevel,
 ): Promise<PracticeGameItem[]> {
   const items = await listPracticeGameItems(game);
-  return items.filter((item) => gameLevelOf(item.level) === level);
+  return items.filter((item) => gameLevelOf(item.level, item.hasVideo) === level);
 }

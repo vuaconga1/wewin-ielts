@@ -575,9 +575,13 @@ model ShadowingExercise {
   level            String?
   instructions     String?    @db.Text
   audioUrl         String
+  /// Optional model video (R2/CDN path); audioUrl then holds its extracted audio track, used for alignment
+  videoUrl         String?
   transcript       String     @db.Text
   /// Sentence timings from forced alignment (scripts/shadowing-cues.ts); ignored once transcript/audio change
   cues             Json?
+  /// Per-sentence IPA + Vietnamese translation, matched to transcript sentences by text (see lib/shadowing/annotations.ts)
+  annotations      Json?
   maxRecordSeconds Int        @default(30)
   status           TestStatus @default(PUBLISHED)
   order            Int        @default(0)

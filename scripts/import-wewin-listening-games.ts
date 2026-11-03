@@ -127,17 +127,19 @@ async function main() {
 
     if (wants("shadowing")) {
       const seconds = await mp3DurationSeconds(lesson.audioFile);
+      const existing = await shadowing.findExercise({ slug: lesson.slug });
       const data = {
         title: lesson.title,
         level: lesson.level,
         instructions: SHADOWING_INSTRUCTIONS,
         audioUrl,
+        videoUrl: existing?.videoUrl ?? null,
         transcript: lesson.transcript.replace(/\s+([.,!?;:])/g, "$1"),
         maxRecordSeconds: Math.min(MAX_RECORD_SECONDS, Math.ceil(seconds * 1.2 + 15)),
         status: "PUBLISHED" as const,
         order: lesson.order,
+        annotations: existing?.annotations ?? null,
       };
-      const existing = await shadowing.findExercise({ slug: lesson.slug });
       if (existing) await shadowing.updateExercise(existing.id, data);
       else await shadowing.createExercise(lesson.slug, data);
       done.push(`shadowing(${data.maxRecordSeconds}s)`);

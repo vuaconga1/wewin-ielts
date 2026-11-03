@@ -2,21 +2,33 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
+  Captions,
+  CaptionsOff,
   Headphones,
   Pause,
   Play,
   RotateCcw,
   RotateCw,
+  Video,
   Volume2,
   VolumeX,
 } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
+import type { CueWord } from "@/lib/shadowing/cues";
+import { KaraokeLine } from "@/components/shadowing/shadowing-karaoke-line";
+
+const SPEEDS = [0.5, 0.75, 1, 1.25];
 
 type Props = {
   src: string;
+  /** Plays this video instead of the audio `src` (which is then its sound track). */
+  videoSrc?: string | null;
+  /** Current sentence, drawn over the video as a subtitle. */
+  caption?: string;
+  captionWords?: CueWord[];
   title?: string;
   badge?: string;
-  audioRef?: React.RefObject<HTMLAudioElement | null>;
+  audioRef?: React.RefObject<HTMLMediaElement | null>;
   className?: string;
   onPlayChange?: (playing: boolean) => void;
 };
@@ -30,6 +42,9 @@ function formatTime(sec: number): string {
 
 export function ShadowingAudioPlayer({
   src,
+  videoSrc,
+  caption,
+  captionWords,
   title,
   badge,
   audioRef: externalRef,
@@ -39,8 +54,9 @@ export function ShadowingAudioPlayer({
   const { t } = useTranslations("shadowing");
   const displayTitle = title ?? t("sampleAudio", "Audio mẫu");
   const displayBadge = badge ?? t("listenStep", "Bước 1: Lắng nghe");
-  const internalRef = useRef<HTMLAudioElement | null>(null);
+  const internalRef = useRef<HTMLMediaElement | null>(null);
   const ref = externalRef ?? internalRef;
+  const [showCaption, setShowCaption] = useState(true);
 
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -97,7 +113,7 @@ export function ShadowingAudioPlayer({
       el.removeEventListener("loadedmetadata", onLoadedMetadata);
       el.removeEventListener("durationchange", onDurationChange);
     };
-  }, [ref, onPlayChange]);
+  }, [ref, onPlayChange, videoSrc]);
 
   const togglePlay = () => {
     const el = ref.current;
@@ -152,13 +168,13 @@ export function ShadowingAudioPlayer({
     <div
       className={`relative overflow-hidden rounded-2xl border border-indigo-100 bg-gradient-to-b from-indigo-50/20 via-white to-white p-4 sm:p-5 shadow-xs transition-shadow hover:shadow-md ${className}`}
     >
-      <audio ref={ref} src={src} preload="metadata" />
+      {videoSrc ? null : <audio ref={ref as React.RefObject<HTMLAudioElement | null>} src={src} preload="metadata" />}
 
       {/* Header bar of audio player */}
       <div className="flex items-center justify-between gap-3 border-b border-slate-100 pb-2.5">
         <div className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-100 text-indigo-700">
-            <Headphones className="h-4.5 w-4.5" />
+            {videoSrc ? <Video className="h-4.5 w-4.5" /> : <Headphones className="h-4.5 w-4.5" />}
           </span>
           <h2 className="text-sm sm:text-base font-bold uppercase tracking-wider text-slate-800">
             {displayTitle}
@@ -171,6 +187,58 @@ export function ShadowingAudioPlayer({
           </span>
         )}
       </div>
+
+      {videoSrc ? (
+        <div className="relative mt-4 overflow-hidden rounded-xl bg-black">
+          <video
+            ref={ref as React.RefObject<HTMLVideoElement | null>}
+            src={videoSrc}
+            preload="metadata"
+            playsInline
+            onClick={togglePlay}
+            className="aspect-video w-full cursor-pointer"
+          />
+          {showCaption && caption ? (
+            <p className="pointer-events-none absolute inset-x-0 bottom-0 px-3 pb-3 text-center sm:px-6 sm:pb-5">
+              <span className="box-decoration-clone rounded-md bg-black/75 px-2.5 py-1 text-sm font-semibold leading-relaxed text-white sm:text-lg pointer-events-auto">
+                {captionWords && captionWords.length > 0 ? (
+                  <KaraokeLine
+                    text={caption}
+                    words={captionWords}
+                    audioRef={ref}
+                    isPlaying={playing}
+                    variant="video"
+                    onWordClick={(time) => seek(time)}
+                  />
+                ) : (
+                  caption
+                )}
+              </span>
+            </p>
+          ) : null}
+        </div>
+      ) : showCaption && caption ? (
+        <div className="mt-4 rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50/40 via-white to-indigo-50/40 p-3.5 sm:p-4 text-center shadow-2xs">
+          <div className="mb-1 flex items-center justify-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-indigo-600">
+            <span className="inline-block h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
+            <span>{t("karaokeSubtitles", "Phụ đề Karaoke")}</span>
+          </div>
+          <div className="text-base sm:text-lg font-semibold leading-relaxed text-slate-800">
+            {captionWords && captionWords.length > 0 ? (
+              <KaraokeLine
+                text={caption}
+                words={captionWords}
+                audioRef={ref}
+                isPlaying={playing}
+                variant="card"
+                onWordClick={(time) => seek(time)}
+              />
+            ) : (
+              caption
+            )}
+          </div>
+        </div>
+      ) : null}
 
       {/* Main interactive controls */}
       <div className="mt-4 space-y-3">
@@ -245,7 +313,7 @@ export function ShadowingAudioPlayer({
           <div className="flex items-center gap-2 sm:gap-3">
             {/* Speed selection pills */}
             <div className="flex items-center rounded-xl border border-slate-200 bg-slate-100/80 p-0.5">
-              {[0.75, 1, 1.25].map((rate) => (
+              {SPEEDS.map((rate) => (
                 <button
                   key={rate}
                   type="button"
@@ -259,6 +327,23 @@ export function ShadowingAudioPlayer({
                 </button>
               ))}
             </div>
+
+            {Boolean(videoSrc || caption) ? (
+              <button
+                type="button"
+                onClick={() => setShowCaption((v) => !v)}
+                aria-pressed={showCaption}
+                aria-label={showCaption ? t("hideSubtitle", "Ẩn phụ đề") : t("showSubtitle", "Hiện phụ đề")}
+                title={showCaption ? t("hideSubtitle", "Ẩn phụ đề") : t("showSubtitle", "Hiện phụ đề")}
+                className={`flex h-9 w-9 items-center justify-center rounded-xl border transition-all ${
+                  showCaption
+                    ? "border-wewin-navy/30 bg-wewin-navy/10 text-wewin-navy"
+                    : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                }`}
+              >
+                {showCaption ? <Captions className="h-4 w-4" /> : <CaptionsOff className="h-4 w-4" />}
+              </button>
+            ) : null}
 
             {/* Volume toggle */}
             <div

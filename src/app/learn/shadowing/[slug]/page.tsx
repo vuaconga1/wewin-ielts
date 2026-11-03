@@ -6,6 +6,7 @@ import { getTranslationsStatic } from "@/i18n/server";
 
 export const revalidate = 300;
 
+
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronDown, ChevronRight, Loader2, Search } from "lucide-react";
 import type {
@@ -44,9 +44,10 @@ const EMPTY_FILTERS: FiltersState = {
 
 type ApiResponse = {
   attempts: AdminAttemptRow[];
-  users: AdminUserOption[];
-  tests: AdminTestOption[];
-  classes: AdminClassOption[];
+  /** Omitted when the request sends options=0. */
+  users?: AdminUserOption[];
+  tests?: AdminTestOption[];
+  classes?: AdminClassOption[];
   total: number;
   source: "prisma" | "local" | "mixed";
   error?: string;
@@ -360,6 +361,8 @@ export function AttemptsViewer({
           ? t("sourceLocal")
           : null;
 
+  const optionsLoadedRef = useRef(false);
+
   const load = useCallback(async (filters: FiltersState) => {
     setLoading(true);
     setError(null);
@@ -373,6 +376,7 @@ export function AttemptsViewer({
       if (filters.from) params.set("from", filters.from);
       if (filters.to) params.set("to", filters.to);
       params.set("limit", "200");
+      if (optionsLoadedRef.current) params.set("options", "0");
 
       const res = await fetch(`/api/admin/attempts?${params.toString()}`);
       const data = (await res.json()) as ApiResponse;
@@ -392,9 +396,12 @@ export function AttemptsViewer({
         })),
       );
       setPage(1);
-      setUsers(data.users);
-      setTests(data.tests ?? []);
-      setClasses(data.classes ?? []);
+      if (data.users) {
+        setUsers(data.users);
+        setTests(data.tests ?? []);
+        setClasses(data.classes ?? []);
+        optionsLoadedRef.current = true;
+      }
       setTotal(data.total);
       setSource(data.source);
     } catch {

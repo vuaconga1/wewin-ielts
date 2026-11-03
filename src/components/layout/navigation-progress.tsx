@@ -37,11 +37,11 @@ function isTrackedLinkClick(e: MouseEvent): boolean {
 /** Cover only the page content area: below the fixed header, right of the sidebar. */
 function contentInset(): Inset {
   const inset = document.querySelector<HTMLElement>(".wewin-sidebar-inset");
-  if (!inset) return { top: 0, left: 0 };
-  const style = getComputedStyle(inset);
+  if (!inset) return { top: 64, left: 0 };
+  const rect = inset.getBoundingClientRect();
   return {
-    top: parseFloat(style.paddingTop) || 0,
-    left: parseFloat(style.paddingLeft) || 0,
+    top: Math.max(0, rect.top),
+    left: Math.max(0, rect.left),
   };
 }
 

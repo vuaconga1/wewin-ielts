@@ -87,14 +87,75 @@ body {
     -webkit-backdrop-filter: blur(2.5px);
   }
 
+  /* Fixed hero backdrop for app pages — same gradient + watermark as the About hero */
+  .wewin-hero-scene {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background: linear-gradient(180deg, #a6baff 0%, #d6dff9 45%, #ffffff 100%);
+  }
+
+  /* Infinite "WEWIN" ticker, same motion as the About "our mission" marquee */
+  .wewin-hero-scene__ticker {
+    position: absolute;
+    top: calc(4rem + 40px);
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    user-select: none;
+    transition: left 250ms ease;
+  }
+
+  .wewin-hero-scene__track {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: max-content;
+    animation: wewin-marquee 35s linear infinite;
+  }
+
+  .wewin-hero-scene__word {
+    font-weight: 900;
+    font-size: clamp(60px, 11vw, 180px);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    background-image: linear-gradient(180deg, #e2eeffb3 0%, #e2eeff00 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .wewin-hero-scene__star {
+    font-size: clamp(24px, 3vw, 40px);
+    line-height: 1;
+    color: #ffffff66;
+  }
+
+  @media (min-width: 1024px) {
+    .wewin-hero-scene__ticker {
+      left: var(--wewin-sidebar-width);
+    }
+
+    .wewin-hero-scene[data-collapsed="true"] .wewin-hero-scene__ticker {
+      left: var(--wewin-sidebar-collapsed-width);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wewin-hero-scene__track {
+      animation: none;
+    }
+  }
   /* Fixed navy top bar height (paired with dashboard-shell) */
   .wewin-site-header {
     height: 4rem; /* 64px — fits stacked logo + icon/label chrome */
   }
 
-  /* Desktop sidebar width + content inset (paired with dashboard-shell) */
+  /* Desktop sidebar width (paired with dashboard-shell) */
   .wewin-sidebar-rail {
-    top: 4rem;
     width: var(--wewin-sidebar-width);
     transition: width 250ms ease;
   }
@@ -104,18 +165,28 @@ body {
   }
 
   .wewin-sidebar-inset {
-    padding-top: 4rem;
-    transition: padding-left 250ms ease;
+    transition: width 250ms ease;
   }
 
-  @media (min-width: 1024px) {
-    .wewin-sidebar-inset {
-      padding-left: var(--wewin-sidebar-width);
-    }
+  /* Frosted sidebar tinted to blend with the blue hero backdrop */
+  .wewin-sidebar-surface {
+    border-right: 1px solid rgb(255 255 255 / 0.7);
+    background:
+      radial-gradient(120% 40% at 0% 100%, rgb(212 175 55 / 0.14), transparent 70%),
+      linear-gradient(180deg, rgb(255 255 255 / 0.88) 0%, rgb(236 241 255 / 0.85) 45%, rgb(214 223 249 / 0.88) 100%);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(16px) saturate(1.4);
+    box-shadow:
+      inset -1px 0 0 rgb(37 64 160 / 0.08),
+      6px 0 24px rgb(37 64 160 / 0.08);
+  }
 
-    .wewin-sidebar-inset[data-collapsed="true"] {
-      padding-left: var(--wewin-sidebar-collapsed-width);
-    }
+  /* Active nav pill: same navy → gold gradient as the featured roadmap card */
+  .wewin-nav-active {
+    background: linear-gradient(120deg, #0a1530 0%, #1a2b55 55%, #b8902f 100%);
+    box-shadow:
+      0 4px 12px rgb(26 43 85 / 0.3),
+      inset 0 1px 0 rgb(255 255 255 / 0.12);
   }
 
   /* Top bar while a page transition is pending (NavigationProgress) */
@@ -148,12 +219,14 @@ body {
   .card-outline,
   .card-outline-hover {
     border-radius: var(--radius-panel);
-    border: 1px solid color-mix(in srgb, var(--wewin-border) 70%, var(--wewin-navy) 12%);
-    background: rgb(255 255 255 / 0.94);
+    border: 1px solid rgb(255 255 255 / 0.7);
+    background: rgb(255 255 255 / 0.82);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
     box-shadow:
-      0 1px 1px rgb(15 40 94 / 0.04),
-      0 4px 10px rgb(15 40 94 / 0.07),
-      0 14px 28px rgb(15 40 94 / 0.08);
+      0 1px 1px rgb(37 64 160 / 0.05),
+      0 6px 14px rgb(37 64 160 / 0.08),
+      0 18px 36px rgb(37 64 160 / 0.1);
     transform: translateZ(0);
   }
 
@@ -167,11 +240,11 @@ body {
 
   .card-outline-hover:hover,
   .wewin-card-3d-hover:hover {
-    border-color: color-mix(in srgb, var(--wewin-navy) 28%, white);
+    border-color: color-mix(in srgb, var(--wewin-accent-blue, #2563eb) 30%, white);
     box-shadow:
-      0 2px 4px rgb(15 40 94 / 0.06),
-      0 10px 20px rgb(15 40 94 / 0.1),
-      0 22px 40px rgb(15 40 94 / 0.1);
+      0 2px 4px rgb(37 64 160 / 0.08),
+      0 12px 24px rgb(37 64 160 / 0.14),
+      0 26px 48px rgb(37 64 160 / 0.14);
     transform: translateY(-2px) translateZ(0);
   }
 
@@ -447,5 +520,40 @@ body {
       animation: none;
     }
   }
+}
+
+/* Keep text legible on top of the blue hero backdrop and WEWIN watermark.
+   Unlayered so it can override Tailwind utility colors. */
+.wewin-on-hero :is(h1, h2):not(:where(a, [class*="bg-"], [class*="card"]) *) {
+  text-shadow:
+    0 1px 0 #ffffff,
+    0 0 14px rgb(255 255 255 / 0.95),
+    0 0 28px rgb(255 255 255 / 0.7);
+}
+
+.wewin-on-hero :is(h1, h2):not(:where(a, [class*="bg-"], [class*="card"]) *) svg,
+.wewin-on-hero :is(h1, h2):not(:where(a, [class*="bg-"], [class*="card"]) *) span[aria-hidden] {
+  filter: drop-shadow(0 0 6px rgb(255 255 255 / 0.9));
+}
+
+.wewin-on-hero .text-zinc-500 {
+  color: #3f4a63;
+}
+
+.wewin-on-hero .text-zinc-600 {
+  color: #2b3550;
+}
+
+.wewin-on-hero :is(h1, h2):not(:where(a, [class*="bg-"], [class*="card"]) *) + p,
+.wewin-on-hero :is(.text-zinc-500, .text-zinc-600) {
+  text-shadow: 0 0 10px rgb(255 255 255 / 0.85);
+}
+
+.wewin-on-hero :is(h1, h2):not(:where(a, [class*="bg-"], [class*="card"]) *) + p {
+  font-weight: 500;
+}
+
+.wewin-on-hero .wewin-dark-surface :is(h1, h2, h1 + p, h2 + p) {
+  text-shadow: none;
 }
 

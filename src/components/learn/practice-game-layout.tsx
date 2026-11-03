@@ -2,10 +2,11 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, Circle, PlayCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, Circle, PlayCircle, Video } from "lucide-react";
 import { learnCatalogHref, learnGameHref } from "@/lib/learn/hrefs";
 import {
   GAME_LEVELS,
+  gameLevelsFor,
   type GameLevel,
   type PracticeGame,
   type PracticeGameItem,
@@ -42,8 +43,12 @@ export function PracticeGameLayout({
   const { t } = useTranslations("practiceGames");
   const copy = usePracticeGameCopy(game);
 
-  const levelTitle = (l: GameLevel) =>
-    l === "basic" ? t("levelBasic", "Basic") : t("levelIntermediate", "Intermediate");
+  const levelTitle = (l: GameLevel) => {
+    if (l === "basic") return t("levelBasic", "Basic");
+    if (l === "intermediate") return t("levelIntermediate", "Intermediate");
+    if (l === "tedtalk") return t("levelTedTalk", "TED Talks");
+    return l;
+  };
 
   const idx = items.findIndex((item) => item.slug === currentSlug);
   const prev = idx > 0 ? items[idx - 1] : null;
@@ -136,14 +141,14 @@ export function PracticeGameLayout({
                 aria-label={t("levelSwitch", "Chọn trình độ")}
                 className="mt-3.5 flex rounded-xl bg-slate-100 p-1 gap-1 border border-slate-200/60"
               >
-                {GAME_LEVELS.map((l) => {
+                {gameLevelsFor(game).map((l) => {
                   const active = l === level;
                   return (
                     <Link
                       key={l}
                       href={levelHref(l)}
                       aria-current={active ? "true" : undefined}
-                      className={`flex-1 rounded-lg py-1.5 px-3 text-center text-xs sm:text-sm font-bold transition-all duration-150 ${
+                      className={`flex-1 rounded-lg py-1.5 px-2 text-center text-xs font-bold transition-all duration-150 whitespace-nowrap ${
                         active
                           ? "bg-white text-slate-900 shadow-sm shadow-slate-200/80 ring-1 ring-slate-900/5"
                           : "text-slate-500 hover:text-slate-900 hover:bg-white/60"
@@ -184,6 +189,18 @@ export function PracticeGameLayout({
                       <span className="min-w-0 flex-1 truncate">
                         {formattedTitle}
                       </span>
+                      {item.hasVideo ? (
+                        <span
+                          className={`inline-flex shrink-0 items-center gap-1 rounded px-1.5 py-0.5 text-[10px] font-bold ${
+                            active
+                              ? "bg-white/20 text-white"
+                              : "border border-purple-200/80 bg-purple-50 text-purple-700"
+                          }`}
+                        >
+                          <Video className="h-2.5 w-2.5" />
+                          <span>Video</span>
+                        </span>
+                      ) : null}
                     </Link>
                   </li>
                 );

@@ -58,6 +58,7 @@ def timings_for(lines: list[str], words, duration: float) -> list[dict]:
     ends = line_spans(lines)
     starts: list[float | None] = [None] * len(lines)
     stops: list[float | None] = [None] * len(lines)
+    line_words: list[list[dict]] = [[] for _ in range(len(lines))]
 
     cursor, li = 0, 0
     for w in words:
@@ -69,6 +70,13 @@ def timings_for(lines: list[str], words, duration: float) -> list[dict]:
             continue
         starts[li] = w.start if starts[li] is None else min(starts[li], w.start)
         stops[li] = w.end if stops[li] is None else max(stops[li], w.end)
+        w_clean = w.word.strip()
+        if w_clean:
+            line_words[li].append({
+                "w": w_clean,
+                "s": round(float(w.start), 3),
+                "e": round(float(w.end), 3),
+            })
 
     out, prev_end = [], 0.0
     for i, text in enumerate(lines):
@@ -76,7 +84,7 @@ def timings_for(lines: list[str], words, duration: float) -> list[dict]:
         end = stops[i] if stops[i] is not None else start
         start = max(start, prev_end)
         end = max(end, start)
-        out.append({"text": text, "start": start, "end": end})
+        out.append({"text": text, "start": start, "end": end, "words": line_words[i]})
         prev_end = end
 
     for i, cue in enumerate(out):
