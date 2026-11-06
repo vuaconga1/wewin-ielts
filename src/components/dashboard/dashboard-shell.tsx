@@ -31,6 +31,8 @@ import {
 import { ProductSwitcher } from "@/components/dashboard/product-switcher";
 import { LanguageSwitcher } from "@/components/i18n/language-switcher";
 import { HeaderAuthButton } from "@/components/layout/header-auth-button";
+import { HomeworkBell } from "@/components/homework/homework-popup";
+import { isLearnerRole } from "@/lib/auth/roles";
 import { TourButton } from "@/components/tour/tour-button";
 import { TourProvider } from "@/components/tour/tour-provider";
 import { useTranslations } from "@/i18n/provider";
@@ -410,6 +412,7 @@ export function DashboardShell({
           <div className="min-w-0 flex-1" aria-hidden="true" />
 
           <div className="mr-2 flex shrink-0 items-center gap-0.5 rounded-xl bg-white/[0.06] px-1 py-0.5 sm:mr-3 sm:gap-1 sm:px-1.5 lg:mr-5">
+            {isLearnerRole(user?.role) ? <HomeworkBell /> : null}
             <TourButton variant="chrome" />
             <LanguageSwitcher variant="chrome" className="shrink-0" />
             <HeaderAuthButton loggedIn={Boolean(user)} />

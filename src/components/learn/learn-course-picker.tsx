@@ -86,12 +86,16 @@ type Props = {
 type FilterCategory = "all" | "ielts" | "vocab-grammar" | "skills";
 type SortOption = "default" | "progress" | "name";
 
-const CATEGORY_FILTERS: { id: FilterCategory; label: string; icon?: LucideIcon }[] = [
-  { id: "all", label: "Tất cả" },
-  { id: "ielts", label: "IELTS", icon: GraduationCap },
-  { id: "vocab-grammar", label: "Từ vựng & ngữ pháp", icon: BookMarked },
-  { id: "skills", label: "Kỹ năng", icon: Headphones },
-];
+type CategoryFilter = { id: FilterCategory; label: string; icon?: LucideIcon };
+
+function getCategoryFilters(t: (key: string, fallback?: string) => string): CategoryFilter[] {
+  return [
+    { id: "all", label: t("catAll", "Tất cả") },
+    { id: "ielts", label: t("catIelts", "IELTS"), icon: GraduationCap },
+    { id: "vocab-grammar", label: t("catVocabGrammar", "Từ vựng & ngữ pháp"), icon: BookMarked },
+    { id: "skills", label: t("catSkills", "Kỹ năng"), icon: Headphones },
+  ];
+}
 
 const CATEGORY_ICONS: Record<"ielts" | "vocab-grammar" | "skills" | "general", LucideIcon> = {
   ielts: GraduationCap,
@@ -116,7 +120,7 @@ const CARD_HUE = {
   border: "hover:border-[#1e40af]",
 };
 
-const PRACTICE_LABS: {
+type PracticeLabItem = {
   key: string;
   href: () => string;
   icon: LucideIcon;
@@ -131,72 +135,76 @@ const PRACTICE_LABS: {
   chipClass: string;
   arrowHoverClass: string;
   meta: string[];
-}[] = [
-  {
-    key: "dictation",
-    href: learnDictationHref,
-    icon: Headphones,
-    iconClass: "bg-blue-50 text-blue-600",
-    accentColor: "bg-blue-600",
-    tag: "Listening",
-    tagClass: "text-blue-600",
-    title: "Nghe chép chính tả",
-    description: "Nghe audio ngắn, gõ lại nội dung và kiểm tra độ chính xác từng từ.",
-    borderHoverClass: "hover:border-blue-400/60",
-    tintClass: "from-blue-50/90 via-white/80 to-white/60",
-    chipClass: "bg-gradient-to-br from-blue-500 to-blue-700 shadow-blue-500/30",
-    arrowHoverClass: "group-hover:bg-blue-600",
-    meta: ["Audio ngắn", "~10 phút"],
-  },
-  {
-    key: "fill-blank",
-    href: learnFillBlankHref,
-    icon: TextCursorInput,
-    iconClass: "bg-emerald-50 text-emerald-600",
-    accentColor: "bg-emerald-600",
-    tag: "Gap Fill",
-    tagClass: "text-emerald-600",
-    title: "Nghe điền từ",
-    description: "Bắt trọn từ khóa, số liệu và tên riêng trong bài nghe Cambridge.",
-    borderHoverClass: "hover:border-emerald-400/60",
-    tintClass: "from-emerald-50/90 via-white/80 to-white/60",
-    chipClass: "bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-emerald-500/30",
-    arrowHoverClass: "group-hover:bg-emerald-600",
-    meta: ["Cambridge", "Từ khóa & số liệu"],
-  },
-  {
-    key: "listen-answer",
-    href: learnListenAnswerHref,
-    icon: MessageCircleQuestion,
-    iconClass: "bg-purple-50 text-purple-600",
-    accentColor: "bg-purple-600",
-    tag: "Q&A",
-    tagClass: "text-purple-600",
-    title: "Nghe & trả lời",
-    description: "Nghe đoạn văn ngắn và trả lời câu hỏi bằng câu ngắn tiếng Anh.",
-    borderHoverClass: "hover:border-purple-400/60",
-    tintClass: "from-purple-50/90 via-white/80 to-white/60",
-    chipClass: "bg-gradient-to-br from-purple-500 to-purple-700 shadow-purple-500/30",
-    arrowHoverClass: "group-hover:bg-purple-600",
-    meta: ["Trả lời ngắn", "~10 phút"],
-  },
-  {
-    key: "shadowing",
-    href: learnShadowingHref,
-    icon: Mic,
-    iconClass: "bg-amber-50 text-amber-600",
-    accentColor: "bg-amber-500",
-    tag: "Speaking",
-    tagClass: "text-amber-600",
-    title: "Shadowing — Luyện nói",
-    description: "Ghi âm giọng đọc, so sánh ngữ điệu chuẩn người bản xứ với AI.",
-    borderHoverClass: "hover:border-amber-400/60",
-    tintClass: "from-amber-50/90 via-white/80 to-white/60",
-    chipClass: "bg-gradient-to-br from-amber-400 to-orange-600 shadow-amber-500/30",
-    arrowHoverClass: "group-hover:bg-amber-500",
-    meta: ["Ghi âm", "Chấm bằng AI"],
-  },
-];
+};
+
+function getPracticeLabs(t: (key: string, fallback?: string) => string): PracticeLabItem[] {
+  return [
+    {
+      key: "dictation",
+      href: learnDictationHref,
+      icon: Headphones,
+      iconClass: "bg-blue-50 text-blue-600",
+      accentColor: "bg-blue-600",
+      tag: t("practiceDictationTag", "Listening"),
+      tagClass: "text-blue-600",
+      title: t("practiceDictationTitle", "Nghe chép chính tả"),
+      description: t("practiceDictationDesc", "Nghe audio ngắn, gõ lại nội dung và kiểm tra độ chính xác từng từ."),
+      borderHoverClass: "hover:border-blue-400/60",
+      tintClass: "from-blue-50/90 via-white/80 to-white/60",
+      chipClass: "bg-gradient-to-br from-blue-500 to-blue-700 shadow-blue-500/30",
+      arrowHoverClass: "group-hover:bg-blue-600",
+      meta: [t("metaShortAudio", "Audio ngắn"), t("meta10Mins", "~10 phút")],
+    },
+    {
+      key: "fill-blank",
+      href: learnFillBlankHref,
+      icon: TextCursorInput,
+      iconClass: "bg-emerald-50 text-emerald-600",
+      accentColor: "bg-emerald-600",
+      tag: t("practiceFillBlankTag", "Gap Fill"),
+      tagClass: "text-emerald-600",
+      title: t("practiceFillBlankTitle", "Nghe điền từ"),
+      description: t("practiceFillBlankDesc", "Bắt trọn từ khóa, số liệu và tên riêng trong bài nghe Cambridge."),
+      borderHoverClass: "hover:border-emerald-400/60",
+      tintClass: "from-emerald-50/90 via-white/80 to-white/60",
+      chipClass: "bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-emerald-500/30",
+      arrowHoverClass: "group-hover:bg-emerald-600",
+      meta: [t("metaCambridge", "Cambridge"), t("metaKeywordsNumbers", "Từ khóa & số liệu")],
+    },
+    {
+      key: "listen-answer",
+      href: learnListenAnswerHref,
+      icon: MessageCircleQuestion,
+      iconClass: "bg-purple-50 text-purple-600",
+      accentColor: "bg-purple-600",
+      tag: t("practiceListenAnswerTag", "Q&A"),
+      tagClass: "text-purple-600",
+      title: t("practiceListenAnswerTitle", "Nghe & trả lời"),
+      description: t("practiceListenAnswerDesc", "Nghe đoạn văn ngắn và trả lời câu hỏi bằng câu ngắn tiếng Anh."),
+      borderHoverClass: "hover:border-purple-400/60",
+      tintClass: "from-purple-50/90 via-white/80 to-white/60",
+      chipClass: "bg-gradient-to-br from-purple-500 to-purple-700 shadow-purple-500/30",
+      arrowHoverClass: "group-hover:bg-purple-600",
+      meta: [t("metaShortAnswer", "Trả lời ngắn"), t("meta10Mins", "~10 phút")],
+    },
+    {
+      key: "shadowing",
+      href: learnShadowingHref,
+      icon: Mic,
+      iconClass: "bg-amber-50 text-amber-600",
+      accentColor: "bg-amber-500",
+      tag: t("practiceShadowingTag", "Speaking"),
+      tagClass: "text-amber-600",
+      title: t("practiceShadowingTitle", "Shadowing — Luyện nói"),
+      description: t("practiceShadowingDesc", "Ghi âm giọng đọc, so sánh ngữ điệu chuẩn người bản xứ với AI."),
+      borderHoverClass: "hover:border-amber-400/60",
+      tintClass: "from-amber-50/90 via-white/80 to-white/60",
+      chipClass: "bg-gradient-to-br from-amber-400 to-orange-600 shadow-amber-500/30",
+      arrowHoverClass: "group-hover:bg-amber-500",
+      meta: [t("metaRecording", "Ghi âm"), t("metaAiScored", "Chấm bằng AI")],
+    },
+  ];
+}
 
 export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props) {
   const { t } = useTranslations("learn");
@@ -275,11 +283,11 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       id: "ielts-3-4",
       key: "ielts-3-4",
       title: "IELTS 3.0 – 4.0",
-      description: "Xây dựng nền tảng, làm quen cấu trúc bài thi.",
+      description: t("ielts34Desc", "Xây dựng nền tảng, làm quen cấu trúc bài thi."),
       category: "ielts",
       level: "Beginner",
-      metaInfo: "4 khóa học · 48 bài học",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("ielts34Meta", "4 khóa học · 48 bài học"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "Cambridge + WeWIN",
       badgeLabel: "IELTS",
       accentColor: "bg-[#2563eb]", // WeWin blue
@@ -289,7 +297,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: ielts34?.completed || 0,
       total: ielts34?.total || 48,
       percent: ielts34?.percent || 0,
-      actionLabel: "Xem lộ trình →",
+      actionLabel: t("actionViewRoadmap", "Xem lộ trình →"),
       studentOnly: true,
       priceVnd: coursePriceVnd("ielts-3-4"),
     });
@@ -299,11 +307,11 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       id: "ielts-4-5",
       key: "ielts-4-5",
       title: "IELTS 4.0 – 5.0",
-      description: "Phát triển kỹ năng, tăng tốc điểm số.",
+      description: t("ielts45Desc", "Phát triển kỹ năng, tăng tốc điểm số."),
       category: "ielts",
       level: "Pre-Intermediate",
-      metaInfo: "4 khóa học · 60 bài học",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("ielts45Meta", "4 khóa học · 60 bài học"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "Cambridge + WeWIN",
       badgeLabel: "IELTS",
       accentColor: "bg-[#d4af37]", // WeWin Gold
@@ -313,7 +321,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: ielts45?.completed || 0,
       total: ielts45?.total || 60,
       percent: ielts45?.percent || 0,
-      actionLabel: "Xem lộ trình →",
+      actionLabel: t("actionViewRoadmap", "Xem lộ trình →"),
       studentOnly: true,
       priceVnd: coursePriceVnd("ielts-4-5"),
     });
@@ -323,11 +331,11 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       id: "ielts-5-6",
       key: "ielts-5-6",
       title: "IELTS 5.0 – 6.0",
-      description: "Nâng cao chiến thuật, chinh phục mục tiêu.",
+      description: t("ielts56Desc", "Nâng cao chiến thuật, chinh phục mục tiêu."),
       category: "ielts",
       level: "Intermediate",
-      metaInfo: "4 khóa học · 72 bài học",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("ielts56Meta", "4 khóa học · 72 bài học"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "Cambridge + WeWIN",
       badgeLabel: "IELTS",
       accentColor: "bg-[#0d1b3e]", // WeWin Navy
@@ -337,7 +345,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: ielts56?.completed || 0,
       total: ielts56?.total || 72,
       percent: ielts56?.percent || 0,
-      actionLabel: "Xem lộ trình →",
+      actionLabel: t("actionViewRoadmap", "Xem lộ trình →"),
       studentOnly: true,
       priceVnd: coursePriceVnd("ielts-5-6"),
     });
@@ -346,12 +354,12 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
     list.push({
       id: "ielts-speaking",
       key: "ielts-speaking",
-      title: "IELTS Speaking Toàn diện",
-      description: "Chiến thuật trả lời Part 1, 2, 3 và lý thuyết chuyên sâu WeWIN.",
+      title: t("ieltsSpeakingTitle", "IELTS Speaking Toàn diện"),
+      description: t("ieltsSpeakingDesc", "Chiến thuật trả lời Part 1, 2, 3 và lý thuyết chuyên sâu WeWIN."),
       category: "ielts",
       level: "All levels",
-      metaInfo: "11 bài học · Slide & Lý thuyết",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("ieltsSpeakingMeta", "11 bài học · Slide & Lý thuyết"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "WeWIN Speaking",
       badgeLabel: "IELTS Speaking",
       accentColor: "bg-[#0284c7]",
@@ -361,7 +369,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: ieltsSpeaking?.completed || 0,
       total: ieltsSpeaking?.total || 11,
       percent: ieltsSpeaking?.percent || 0,
-      actionLabel: "Vào khóa học →",
+      actionLabel: t("actionEnterCourse", "Vào khóa học →"),
     });
 
     // 5. Essential Vocabulary & Grammar
@@ -369,13 +377,13 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       id: "vocab-grammar",
       key: "vocab-grammar",
       title: "Essential Vocabulary & Grammar",
-      description: "Nền tảng từ vựng và ngữ pháp học thuật.",
+      description: t("vocabGrammarDescShort", "Nền tảng từ vựng và ngữ pháp học thuật."),
       category: "vocab-grammar",
       level: "All levels",
-      metaInfo: "2 khóa học · 36 bài học",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("vocabGrammarMeta", "2 khóa học · 36 bài học"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "WeWIN + Cambridge",
-      badgeLabel: "Từ vựng & ngữ pháp",
+      badgeLabel: t("catVocabGrammar", "Từ vựng & ngữ pháp"),
       accentColor: "bg-[#059669]", // Emerald
       badgeBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
       badgeText: "text-emerald-700",
@@ -383,7 +391,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: vocabGrammar.completed,
       total: vocabGrammar.total || 36,
       percent: vocabGrammar.percent,
-      actionLabel: "Xem lộ trình →",
+      actionLabel: t("actionViewRoadmap", "Xem lộ trình →"),
     });
 
     // 6. Listening & Reading Practice
@@ -391,13 +399,13 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       id: "practice-listen-read",
       key: "practice-listen-read",
       title: "Listening & Reading Practice",
-      description: "Luyện kỹ năng nghe - đọc theo chủ đề thực tế.",
+      description: t("practiceListenReadDesc", "Luyện kỹ năng nghe - đọc theo chủ đề thực tế."),
       category: "skills",
       level: "All levels",
-      metaInfo: "3 khóa học · 42 bài học",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("practiceListenReadMeta", "3 khóa học · 42 bài học"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "Cambridge + WeWIN",
-      badgeLabel: "Kỹ năng",
+      badgeLabel: t("catSkills", "Kỹ năng"),
       accentColor: "bg-[#7c3aed]", // Purple
       badgeBg: "bg-purple-50 text-purple-700 border-purple-200",
       badgeText: "text-purple-700",
@@ -405,7 +413,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: 0,
       total: 42,
       percent: 0,
-      actionLabel: "Xem lộ trình →",
+      actionLabel: t("actionViewRoadmap", "Xem lộ trình →"),
     });
 
     // 6. Speaking & Writing Practice
@@ -413,13 +421,13 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       id: "practice-speak-write",
       key: "practice-speak-write",
       title: "Speaking & Writing Practice",
-      description: "Tự tin giao tiếp, viết bài chuẩn band.",
+      description: t("practiceSpeakWriteDesc", "Tự tin giao tiếp, viết bài chuẩn band."),
       category: "skills",
       level: "All levels",
-      metaInfo: "3 khóa học · 42 bài học",
-      instructor: "Đội ngũ WeWIN",
+      metaInfo: t("practiceSpeakWriteMeta", "3 khóa học · 42 bài học"),
+      instructor: t("instructorWewin", "Đội ngũ WeWIN"),
       materials: "Cambridge + WeWIN",
-      badgeLabel: "Kỹ năng",
+      badgeLabel: t("catSkills", "Kỹ năng"),
       accentColor: "bg-[#0284c7]", // Sky blue
       badgeBg: "bg-sky-50 text-sky-700 border-sky-200",
       badgeText: "text-sky-700",
@@ -427,7 +435,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
       completed: 0,
       total: 42,
       percent: 0,
-      actionLabel: "Xem lộ trình →",
+      actionLabel: t("actionViewRoadmap", "Xem lộ trình →"),
     });
 
     // 7. Extra courses from DB/seed (e.g. IELTS 4 kỹ năng)
@@ -439,10 +447,10 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
         description: course.description,
         category: "ielts",
         level: course.level || "Foundation",
-        metaInfo: `${course.total} bài học`,
-        instructor: "Đội ngũ WeWIN",
+        metaInfo: t("courseLessonsCount", { n: course.total }, `${course.total} bài học`),
+        instructor: t("instructorWewin", "Đội ngũ WeWIN"),
         materials: "WeWIN System",
-        badgeLabel: "Khóa học",
+        badgeLabel: t("badgeCourse", "Khóa học"),
         accentColor: "bg-[#d4af37]",
         badgeBg: "bg-amber-50 text-amber-800 border-amber-200",
         badgeText: "text-amber-800",
@@ -450,12 +458,12 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
         completed: course.completed,
         total: course.total,
         percent: course.percent,
-        actionLabel: "Vào khóa học →",
+        actionLabel: t("actionEnterCourse", "Vào khóa học →"),
       });
     });
 
     return list;
-  }, [courses, ielts34, ielts45, ielts56, ieltsSpeaking, vocabGrammar]);
+  }, [courses, ielts34, ielts45, ielts56, ieltsSpeaking, vocabGrammar, t]);
 
   // Filtered and sorted items
   const filteredItems = useMemo(() => {
@@ -653,7 +661,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
-              {PRACTICE_LABS.map((lab) => {
+              {getPracticeLabs(t).map((lab) => {
                 const Icon = lab.icon;
                 const h = CARD_HUE;
                 return (
@@ -755,7 +763,7 @@ export function LearnCoursePicker({ courses, ieltsCourses, vocabGrammar }: Props
               </div>
 
               <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-                {CATEGORY_FILTERS.map((filter) => {
+                {getCategoryFilters(t).map((filter) => {
                   const Icon = filter.icon;
                   return (
                     <button

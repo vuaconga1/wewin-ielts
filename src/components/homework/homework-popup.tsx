@@ -1,23 +1,52 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { ClipboardList, X } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
 import type { IncompleteHomeworkItem } from "@/lib/classroom/homework";
 
 type Payload = { displayName: string; items: IncompleteHomeworkItem[] };
+type State = { data: Payload | null; open: boolean };
 
 const CACHE_TTL_MS = 60_000;
 const DISMISS_PREFIX = "wewin-homework-dismissed:";
-/** Never interrupt a running test, a live class, or auth screens. */
-const HIDDEN_PATHS = ["/practice/", "/classroom", "/login"];
+/** Never interrupt a running test, a live class session, or auth screens. */
+const HIDDEN_PATHS = ["/practice/", "/classroom/", "/login"];
 
-let cache: { data: Payload; fetchedAt: number } | null = null;
+let state: State = { data: null, open: false };
+const SERVER_STATE: State = { data: null, open: false };
+const listeners = new Set<() => void>();
+let fetchedAt = 0;
 let inflight: Promise<Payload | null> | null = null;
-/** "Làm bài" hides the popup until the next full page load. */
-let hiddenThisLoad = false;
+/** Auto-open at most once per full page load; the header button can still reopen it. */
+let autoOpenedThisLoad = false;
+
+function setState(next: Partial<State>) {
+  state = { ...state, ...next };
+  listeners.forEach((listener) => listener());
+}
+
+function subscribe(listener: () => void) {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+}
+
+function useHomeworkState() {
+  return useSyncExternalStore(
+    subscribe,
+    () => state,
+    () => SERVER_STATE,
+  );
+}
+
+function isHiddenPath(pathname: string) {
+  return HIDDEN_PATHS.some((prefix) => pathname.startsWith(prefix));
+}
 
 function todayKey() {
   const day = new Intl.DateTimeFormat("en-CA", {
@@ -50,14 +79,15 @@ function dismissForToday() {
 }
 
 function loadIncomplete(): Promise<Payload | null> {
-  if (cache && Date.now() - cache.fetchedAt < CACHE_TTL_MS) return Promise.resolve(cache.data);
+  if (state.data && Date.now() - fetchedAt < CACHE_TTL_MS) return Promise.resolve(state.data);
   if (inflight) return inflight;
   inflight = (async () => {
     try {
       const res = await fetch("/api/homework/incomplete");
       if (!res.ok) return null;
       const data = (await res.json()) as Payload;
-      cache = { data, fetchedAt: Date.now() };
+      fetchedAt = Date.now();
+      setState({ data });
       return data;
     } catch {
       return null;
@@ -68,25 +98,69 @@ function loadIncomplete(): Promise<Payload | null> {
   return inflight;
 }
 
+/** Header entry point: unfinished-homework count; opens the popup even after "hide for today". */
+export function HomeworkBell() {
+  const { t } = useTranslations("homework");
+  const pathname = usePathname() ?? "";
+  const hiddenHere = isHiddenPath(pathname);
+  const { data } = useHomeworkState();
+
+  useEffect(() => {
+    if (!hiddenHere) void loadIncomplete();
+  }, [hiddenHere, pathname]);
+
+  const count = data?.items.length ?? 0;
+  if (hiddenHere || count === 0) return null;
+  const label = t("bell", { n: count }, "Bài tập chưa làm ({n})");
+
+  return (
+    <button
+      type="button"
+      onClick={() => setState({ open: true })}
+      className="relative flex min-w-0 shrink-0 flex-col items-center gap-0.5 rounded-lg px-1.5 py-1 text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wewin-gold/70 sm:px-2"
+      aria-label={label}
+      title={label}
+    >
+      <span className="relative">
+        <ClipboardList className="h-5 w-5 shrink-0 text-wewin-gold" strokeWidth={1.75} aria-hidden />
+        <span className="absolute -right-2 -top-1.5 min-w-[1.1rem] rounded-full bg-rose-600 px-1 text-center text-[10px] font-bold leading-[1.1rem] text-white">
+          {count > 99 ? "99+" : count}
+        </span>
+      </span>
+      <span className="hidden text-center text-[11px] font-medium leading-tight text-white sm:block">
+        {t("bellShort", "Bài tập")}
+      </span>
+    </button>
+  );
+}
+
 export function HomeworkPopup() {
   const { t, locale } = useTranslations("homework");
   const pathname = usePathname() ?? "";
-  const hiddenHere = HIDDEN_PATHS.some((prefix) => pathname.startsWith(prefix));
-  const [data, setData] = useState<Payload | null>(null);
-  const [open, setOpen] = useState(false);
+  const hiddenHere = isHiddenPath(pathname);
+  const { data, open } = useHomeworkState();
 
   useEffect(() => {
-    if (hiddenHere || hiddenThisLoad || dismissedToday()) return;
+    if (hiddenHere || autoOpenedThisLoad || dismissedToday()) return;
     let alive = true;
     void loadIncomplete().then((payload) => {
-      if (!alive || !payload?.items.length) return;
-      setData(payload);
-      setOpen(true);
+      if (!alive || autoOpenedThisLoad || !payload?.items.length) return;
+      autoOpenedThisLoad = true;
+      setState({ open: true });
     });
     return () => {
       alive = false;
     };
   }, [hiddenHere]);
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setState({ open: false });
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
   const formatters = useMemo(() => new Map<string, Intl.DateTimeFormat>(), []);
   function fmt(iso: string, timeZone: string) {
@@ -107,13 +181,13 @@ export function HomeworkPopup() {
     return formatter.format(new Date(iso));
   }
 
-  if (!open || !data || hiddenHere) return null;
+  if (!open || !data?.items.length || hiddenHere || typeof document === "undefined") return null;
   const overdue = data.items.filter((item) => item.isOverdue);
   const upcoming = data.items.filter((item) => !item.isOverdue);
 
   function close() {
     dismissForToday();
-    setOpen(false);
+    setState({ open: false });
   }
 
   function renderItem(item: IncompleteHomeworkItem) {
@@ -140,10 +214,7 @@ export function HomeworkPopup() {
         </div>
         <Link
           href={item.href}
-          onClick={() => {
-            hiddenThisLoad = true;
-            setOpen(false);
-          }}
+          onClick={() => setState({ open: false })}
           className="inline-flex min-h-10 shrink-0 items-center justify-center rounded-xl bg-wewin-navy px-4 py-2 text-sm font-semibold text-white hover:bg-wewin-navy-hover"
         >
           {t("start", "Làm bài")}
@@ -152,16 +223,14 @@ export function HomeworkPopup() {
     );
   }
 
-  return (
+  return createPortal(
     <div
-      className="fixed inset-0 z-[70] flex items-end justify-center bg-black/40 p-3 sm:items-center sm:p-6"
+      className="fixed inset-0 z-[120] flex items-end justify-center bg-black/40 p-3 sm:items-center sm:p-6"
       role="dialog"
       aria-modal="true"
       aria-labelledby="homework-popup-title"
       onClick={(e) => {
-        if (e.target !== e.currentTarget) return;
-        hiddenThisLoad = true;
-        setOpen(false);
+        if (e.target === e.currentTarget) setState({ open: false });
       }}
     >
       <div className="flex max-h-[85vh] w-full max-w-lg min-w-0 flex-col overflow-hidden rounded-2xl bg-white shadow-xl">
@@ -205,6 +274,7 @@ export function HomeworkPopup() {
           ) : null}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
