@@ -1,0 +1,546 @@
+{
+  "id": "ws-19",
+  "order": 19,
+  "part": 2,
+  "slug": "ws-19-future-forms",
+  "title": "WORKSHEET 19",
+  "subject": "Future Forms",
+  "subjectVi": "Ngữ pháp bài 19: Future Forms",
+  "level": "A2",
+  "pageRange": "Part 2 (WS 19)",
+  "sections": [
+    {
+      "id": "ws-19-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with the correct FUTURE forms:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-19-sec-a-q01",
+          "order": 1,
+          "prompt": "A: What [gap] you [gap] (do) when you grow up? B: I [gap] (be) an acrobat in a circus.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q09",
+          "order": 9,
+          "prompt": "I haven’t seen him for a long time but I think I [gap] (recognize) him.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q03",
+          "order": 3,
+          "prompt": "A: I need some tokens to telephone my friend. [gap] B: I [gap] (give) you some.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q04",
+          "order": 4,
+          "prompt": "I got the plane tickets. I [gap] (fly) on Sunday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q05",
+          "order": 5,
+          "prompt": "A: Have you got any plans for the summer? [gap] B: Yes, we [gap] (go) to Italy in June.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q06",
+          "order": 6,
+          "prompt": "Don’t play with those matches; you [gap] burn yourself.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q07",
+          "order": 7,
+          "prompt": "A: Whose is that night dress? [gap] B : It’s mine. I [gap] (wear) it at John’s graduation party.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q08",
+          "order": 8,
+          "prompt": "A: Why did you call your grandma? [gap] B: I [gap] (visit) her at the weekend.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q09",
+          "order": 9,
+          "prompt": "If your passport isn’t valid any more, you [gap] (not / be able to) go abroad this month.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q10",
+          "order": 10,
+          "prompt": "A: What are you doing with that brush? [gap] B: I [gap] (paint) my room.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q11",
+          "order": 11,
+          "prompt": "A: Why are you wearing your anorak? [gap] B: I [gap] (go) out.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q12",
+          "order": 12,
+          "prompt": "I don’t know the meaning of this word so I [gap] (look) it up in the dictionary.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q13",
+          "order": 13,
+          "prompt": "Look out! You [gap] (hurt) yourself with that knife.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q14",
+          "order": 14,
+          "prompt": "A: I’ve got a terrible headache. [gap] B: Have you? Wait there and I [gap] (get) an aspirin for you.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q15",
+          "order": 15,
+          "prompt": "Mother: Your face is dirty. [gap] Child : All right. I [gap] (wash) it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q16",
+          "order": 16,
+          "prompt": "A: What time [gap] the next bus [gap] (arrive)? B: 13 minutes later.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q17",
+          "order": 17,
+          "prompt": "[gap] you [gap] (open) the door for me, please?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q18",
+          "order": 18,
+          "prompt": "We’re early. The film [gap] (start) at 2:30. Why don’t we go and have something to drink?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q19",
+          "order": 19,
+          "prompt": "He [gap] (call) the police as soon as he gets home.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-a-q20",
+          "order": 20,
+          "prompt": "A: What [gap] you [gap] (do) with that dress? B: I [gap] (shorten) the skirt.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-19-sec-b",
+      "sectionKey": "B",
+      "instruction": "Use the correct form of the FUTURE TENSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-19-sec-b-q01",
+          "order": 1,
+          "prompt": "A: Oh! You’ve got a ticket for the party. [gap] B: Yes. I [gap] (see) it on Friday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q02",
+          "order": 2,
+          "prompt": "A: Tea or coffee? [gap] B: I [gap] (have) coffee, please. There isn’t any cloud in the sky. It [gap] (be) a lovely day. We [gap] (win) the match. We’re playing really well. The festival [gap] (last) for ten days. I [gap] (have) a meal with a few friends. There [gap] (be) about ten of us.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q07",
+          "order": 7,
+          "prompt": "Phil [gap] (come) round us tomorrow. We [gap] (be) at the airport at 9:30.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q08",
+          "order": 8,
+          "prompt": "Why don’t you come with us. I’m sure you [gap] (enjoy) the show.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q09",
+          "order": 9,
+          "prompt": "That [gap] (not / cost) more than $50.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q10",
+          "order": 10,
+          "prompt": "The museum [gap] (open) at 9:00 everyday but tomorrow it [gap] (not / be) opened at 9:00.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q11",
+          "order": 11,
+          "prompt": "I [gap] (pay) it back to you as soon as I get my salary.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q12",
+          "order": 12,
+          "prompt": "The manager said,”We [gap] (have) the meeting on Thursday.”",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-b-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-19-sec-c",
+      "sectionKey": "C",
+      "instruction": "Look at Tom and Sally’s diary below. Then, use the PRESENT CONTINUOUS form to",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-19-sec-c-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-c-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-c-q07",
+          "order": 7,
+          "prompt": " [gap] They’re going to the cinema on Monday [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-19-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in WILL or BE GOING TO:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-19-sec-d-q01",
+          "order": 1,
+          "prompt": "A: Why do you need so much sugar? [gap] B: I [gap] make a cake.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q02",
+          "order": 2,
+          "prompt": "A: Oh no! I’ve left my purse at home and I haven’t got any money on me! [gap] B: Don’y worry. I [gap] lend you some.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q03",
+          "order": 3,
+          "prompt": "A: I don’t know how to use this mixer. [gap] B: That’s OK. I [gap] show you.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q04",
+          "order": 4,
+          "prompt": "A: Why are all these people gathered here? [gap] B: The Prime Minister [gap] open the new hospital ward.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q05",
+          "order": 5,
+          "prompt": "A: Did you remember to buy the magazine I asked for? [gap] B: Sorry, I didn’t. I [gap] buy it when I go out again.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q06",
+          "order": 6,
+          "prompt": "A: What’s that on your curtains? [gap] B: It’s a stain. I [gap] take them to the dry cleaner’s tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q07",
+          "order": 7,
+          "prompt": "A: These bags are very heavy. I can’t lift them. [gap] B: I [gap] carry them for you.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q08",
+          "order": 8,
+          "prompt": "A: I hear you’re going to Leeds University in September. [gap] B: Yes, I [gap] study French and German.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q09",
+          "order": 9,
+          "prompt": "A: Why don’t you tidy your room? [gap] B: I [gap] play football in ten minutes, so I haven’t got time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q10",
+          "order": 10,
+          "prompt": "A: How can we get all this home? [gap] B: I [gap] ask James to come and help.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q11",
+          "order": 11,
+          "prompt": "She has bought some wool. She [gap] knit a sweater.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q12",
+          "order": 12,
+          "prompt": "A: This problem is very difficult. [gap] B: I [gap] help you to solve it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q13",
+          "order": 13,
+          "prompt": "A: Why are you taking down all the pictures? [gap] B: I [gap] paint the room.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q14",
+          "order": 14,
+          "prompt": "I [gap] climb that mountain one day.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q15",
+          "order": 15,
+          "prompt": "Look at that young man. He looks very pale. He [gap] faint.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q16",
+          "order": 16,
+          "prompt": "A: Why are buying that spade? [gap] B: I [gap] plant some trees in my garden at the back of the house.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q17",
+          "order": 17,
+          "prompt": "She [gap] get better. There are positive signs.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q18",
+          "order": 18,
+          "prompt": "I’m hungry. I [gap] have something to eat.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-d-q19",
+          "order": 19,
+          "prompt": "I [gap] be 38 years old next week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-19-sec-e",
+      "sectionKey": "E",
+      "instruction": "Put the verb in to the correct from using WILL or GOING TO:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-19-sec-e-q01",
+          "order": 1,
+          "prompt": "A: Why are you turning on the television? [gap] B: I [gap] (watch) the news.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q02",
+          "order": 2,
+          "prompt": "A: Oh, I’ve just realized. I haven’t got any money. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) you"
+          ]
+        },
+        {
+          "id": "ws-19-sec-e-q03",
+          "order": 3,
+          "prompt": "Those clouds are very black, aren’t they? I think it [gap] (rain).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q04",
+          "order": 4,
+          "prompt": "A: I’ve got a terrible headache. [gap] B: Have you? Wait here and I [gap] (get) an aspirin for you.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q05",
+          "order": 5,
+          "prompt": "A: Why are you filling that bucket with water? [gap] B: I [gap] (wash) the car.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q06",
+          "order": 6,
+          "prompt": "A: I’ve decided to re-paint this room. [gap] B: Oh, have you? What colour [gap] (you / paint) it?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q07",
+          "order": 7,
+          "prompt": "A: Look! There’s smoke coming out of that house. It’s on fire! [gap] B: Good heavens! I [gap] call the fire-brigade immediately.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q08",
+          "order": 8,
+          "prompt": "A: The ceiling in this room doesn’t look very safe, does it? [gap] B: No, it looks as if it [gap] (fall) down.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q09",
+          "order": 9,
+          "prompt": "A: Where are you going? Are you going shopping? [gap] B: Yes, I [gap] (buy) something for dinner.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q10",
+          "order": 10,
+          "prompt": "A: I can’t work out how to use this camera. [gap] B: It’s quite easy. I [gap] (show) you.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q11",
+          "order": 11,
+          "prompt": "A: What would you like to drink – tea or coffee? [gap] B: I [gap] (have) tea, please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-19-sec-e-q12",
+          "order": 12,
+          "prompt": "A: Has George decided on what to do when he leaves school? [gap] B: Oh yes. Everything is planned. He [gap] (have) a holiday for a few weeks and then he [gap] (start) a computer programming course.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

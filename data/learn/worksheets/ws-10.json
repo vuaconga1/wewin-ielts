@@ -1,0 +1,812 @@
+{
+  "id": "ws-10",
+  "order": 11,
+  "part": 1,
+  "slug": "ws-10-present-perfect-tense",
+  "title": "WORKSHEET 10",
+  "subject": "Present Perfect Tense",
+  "subjectVi": "Ngữ pháp bài 10: Present Perfect Tense",
+  "level": "A2",
+  "pageRange": "Part 1 (WS 10)",
+  "sections": [
+    {
+      "id": "ws-10-sec-a",
+      "sectionKey": "A",
+      "instruction": "Write a suitable sentence using the PRESENT PERFECT TENSE :",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-a-q01",
+          "order": 1,
+          "prompt": "Ann’s hair was dirty. Now it’s clean. (wash) [gap] Ann has washed her hair [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q02",
+          "order": 2,
+          "prompt": "Tom was 80 kg. Now he’s 70. (lose weight) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q03",
+          "order": 3,
+          "prompt": "Bill played football yesterday. Now he can’t walk; his leg is in plaster. (break) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q04",
+          "order": 4,
+          "prompt": "My sister is looking for her pen. (lose) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q05",
+          "order": 5,
+          "prompt": "Mary is on holiday in France. (go) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q06",
+          "order": 6,
+          "prompt": "Mr. Hill was in Canada last week. He’s back in London now. (be) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q07",
+          "order": 7,
+          "prompt": "Look! Mrs. Smith has got a lot of packages. (buy) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q08",
+          "order": 8,
+          "prompt": "I can’t eat anything now. (eat too much) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q09",
+          "order": 9,
+          "prompt": "Mrs. Jenkins is very tired. (clean / house) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-a-q10",
+          "order": 10,
+          "prompt": "Tony needs a holiday. (work / hard / this year) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-b",
+      "sectionKey": "B",
+      "instruction": "Use PRESENT PERFECT TENSE after BECAUSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-b-q01",
+          "order": 1,
+          "prompt": "He can’t walk very fast. (hurt / leg) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q02",
+          "order": 2,
+          "prompt": "I can’t get in. (lose / key) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q03",
+          "order": 3,
+          "prompt": "I know this story very well. (see the film) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q04",
+          "order": 4,
+          "prompt": "I can’t post the letter. (not put / stamp / on it) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q05",
+          "order": 5,
+          "prompt": "He can’t stand up. (eat too much) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q06",
+          "order": 6,
+          "prompt": "They can’t go on holiday. (not save / money) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q07",
+          "order": 7,
+          "prompt": "I know him. (meet him before) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q08",
+          "order": 8,
+          "prompt": "We don’t know how he is. (not hear from him) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q09",
+          "order": 9,
+          "prompt": "He won’t take a cigarette. (give up smoking) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-b-q10",
+          "order": 10,
+          "prompt": "She can’t get in. (he / lock the door) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-c",
+      "sectionKey": "C",
+      "instruction": "Follow the example and do the same using ALREADY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-c-q01",
+          "order": 1,
+          "prompt": "You must find the tickets soon. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q02",
+          "order": 2,
+          "prompt": "Turn the radio down, please. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q03",
+          "order": 3,
+          "prompt": "Tidy your room. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q04",
+          "order": 4,
+          "prompt": "Could you post the letters, please? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q05",
+          "order": 5,
+          "prompt": "Why don’t you see a doctor? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q06",
+          "order": 6,
+          "prompt": "You have a bad cough. I think you should stop smoking. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q07",
+          "order": 7,
+          "prompt": "Why don’t you clean your shoes? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q08",
+          "order": 8,
+          "prompt": "Brush your teeth, will you? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q09",
+          "order": 9,
+          "prompt": "We have guests today. Shall we make a cake? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-c-q10",
+          "order": 10,
+          "prompt": "We should invite Mary to the party [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-d",
+      "sectionKey": "D",
+      "instruction": "Follow the example and do the same using YET:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-d-q01",
+          "order": 1,
+          "prompt": "I’ve written to them three times. (not reply) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q02",
+          "order": 2,
+          "prompt": "I’ve asked you again and again. (not do it) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q03",
+          "order": 3,
+          "prompt": "I lent him $10 last month. (not give it back) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q04",
+          "order": 4,
+          "prompt": "He lost his pen a week ago. (not find it) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q05",
+          "order": 5,
+          "prompt": "He borrowed my book last year. (not give it back) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q06",
+          "order": 6,
+          "prompt": "She went to New York six months ago. (not return it) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q07",
+          "order": 7,
+          "prompt": "She gave me $2 a week ago. (not return it) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q08",
+          "order": 8,
+          "prompt": "I finished reading my library books a long time ago. (not change them) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q09",
+          "order": 9,
+          "prompt": "She went to the bus-stop half an hour ago. (the bus / not come) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q10",
+          "order": 10,
+          "prompt": "He’s still studying that lesson. (not learn it) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks with ALREADY or YET:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-d-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q08",
+          "order": 8,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q09",
+          "order": 9,
+          "prompt": " [gap] He hasn’t called us [gap] They have [gap] sent the letter. John has [gap] bought the tickets for the football match. We have [gap] been to Mexico three times. You haven’t visited Tokyo [gap] Has John bought a new car [gap] ? The plane has [gap] left. Has she done it [gap] ? No, not [gap] A: Haven’t they arrived [gap] ? B: Oh, yes. They have [gap] arrived.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q10",
+          "order": 10,
+          "prompt": "Hurry up! The class has [gap] started.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q11",
+          "order": 11,
+          "prompt": "Be careful! They have [gap] painted the door.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-d-q12",
+          "order": 12,
+          "prompt": "Haven’t you read the book [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-e",
+      "sectionKey": "E",
+      "instruction": "Follow the example and do the same using JUST:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-e-q01",
+          "order": 1,
+          "prompt": "She / leave the room [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q02",
+          "order": 2,
+          "prompt": "they / watch the news [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q03",
+          "order": 3,
+          "prompt": "I / finish homework [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q04",
+          "order": 4,
+          "prompt": "he / put on the jacket [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q05",
+          "order": 5,
+          "prompt": "she / catch a fish [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q06",
+          "order": 6,
+          "prompt": "he / call a taxi [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q07",
+          "order": 7,
+          "prompt": "you / write a letter [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q08",
+          "order": 8,
+          "prompt": "the girl / burn the cake [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q09",
+          "order": 9,
+          "prompt": "the teacher / walk out [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q10",
+          "order": 10,
+          "prompt": "the dog / see the cat [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q11",
+          "order": 11,
+          "prompt": "Jane / turn the TV off [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-e-q12",
+          "order": 12,
+          "prompt": "the boys / eat dinner [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-f",
+      "sectionKey": "F",
+      "instruction": "Put the verbs in the correct tense. Use the SIMPLE PAST or the PRESENT PERFECT:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-10-sec-f-q01",
+          "order": 1,
+          "prompt": "[gap] Tim [gap] (finish) his work yet?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q02",
+          "order": 2,
+          "prompt": "[gap] he [gap] (finish) it ywsterday?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q03",
+          "order": 3,
+          "prompt": "They [gap] (just / go) out.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q04",
+          "order": 4,
+          "prompt": "They [gap] (go) out a minute ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q05",
+          "order": 5,
+          "prompt": "[gap] Ann [gap] (study) yesterday afternoon?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q06",
+          "order": 6,
+          "prompt": "[gap] you [gap] (send) the letters yet?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q07",
+          "order": 7,
+          "prompt": "[gap] she [gap] (call) him a week ago?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q08",
+          "order": 8,
+          "prompt": "They [gap] (not / see) the film yet.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q09",
+          "order": 9,
+          "prompt": "The train [gap] (just / arrive).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q10",
+          "order": 10,
+          "prompt": "[gap] you [gap] (ever / be) in a TV studio?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q11",
+          "order": 11,
+          "prompt": "[gap] you and Tom [gap] (enjoy) the party last night?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q12",
+          "order": 12,
+          "prompt": "[gap] you [gap] (not / finish) school last year?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q13",
+          "order": 13,
+          "prompt": "I [gap] (lose) my dictionary. I can’t find it anywhere.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q14",
+          "order": 14,
+          "prompt": "His hair looks short. He [gap] (have) a haircut.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q15",
+          "order": 15,
+          "prompt": "When [gap] (he / give up) smoking?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q16",
+          "order": 16,
+          "prompt": "Jane [gap] (buy) her car two weeks ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q17",
+          "order": 17,
+          "prompt": "My bicycle isn’t here. Somebody [gap] (take) it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q18",
+          "order": 18,
+          "prompt": "Why [gap] (Jim / not want) to play tennis last Friday?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q19",
+          "order": 19,
+          "prompt": "The car looks clean [gap] you [gap] (wash) it?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-f-q20",
+          "order": 20,
+          "prompt": "When we were on holiday, the weather [gap] (be) terrible.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-g",
+      "sectionKey": "G",
+      "instruction": "Ask questions with HOW LONG:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-10-sec-g-q01",
+          "order": 1,
+          "prompt": "I know Bob.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q02",
+          "order": 2,
+          "prompt": "Sue and Alan are married.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q03",
+          "order": 3,
+          "prompt": "George is unemployed.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q04",
+          "order": 4,
+          "prompt": "Those books are here.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q05",
+          "order": 5,
+          "prompt": "Mary is at the airport.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q06",
+          "order": 6,
+          "prompt": "My sister is ill.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q07",
+          "order": 7,
+          "prompt": "She has got a bad cold.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q08",
+          "order": 8,
+          "prompt": "Jan has long hair.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q09",
+          "order": 9,
+          "prompt": "I have a yacht.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q10",
+          "order": 10,
+          "prompt": "They are in the restaurant.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q11",
+          "order": 11,
+          "prompt": "My parents are in London.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-10-sec-g-q12",
+          "order": 12,
+          "prompt": "The cat is under the table.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-10-sec-h",
+      "sectionKey": "H",
+      "instruction": "Rewrite the following sentences twice, using SINCE and FOR:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-10-sec-h-q01",
+          "order": 1,
+          "prompt": "We’ve been here. (an hour / 4 o’clock)",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………………………",
+            "b) …………………………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-10-sec-h-q02",
+          "order": 2,
+          "prompt": "She hasn’t spoken to me. (2 weeks / last week)",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………………………",
+            "b) …………………………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-10-sec-h-q03",
+          "order": 3,
+          "prompt": "They’ve lived in this street. (1970 / a long time)",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………………………",
+            "b) …………………………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-10-sec-h-q04",
+          "order": 4,
+          "prompt": "I haven’t had time to do it. (last Monday / a few days)",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………………………",
+            "b) …………………………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-10-sec-h-q05",
+          "order": 5,
+          "prompt": "We haven’t bought a new one. (ages / many years)",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………………………",
+            "b) …………………………………………………………………………"
+          ]
+        }
+      ]
+    }
+  ]
+}

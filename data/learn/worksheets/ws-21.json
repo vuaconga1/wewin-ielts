@@ -1,0 +1,461 @@
+{
+  "id": "ws-21",
+  "order": 21,
+  "part": 2,
+  "slug": "ws-21-tenses-rewrite-or-combine",
+  "title": "WORKSHEET 21",
+  "subject": "Tenses (Rewrite or Combine)",
+  "subjectVi": "Ngữ pháp bài 21: Tenses (Rewrite or Combine)",
+  "level": "B1",
+  "pageRange": "Part 2 (WS 21)",
+  "sections": [
+    {
+      "id": "ws-21-sec-a",
+      "sectionKey": "A",
+      "instruction": "Change the tense of the following:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-21-sec-a-q01",
+          "order": 1,
+          "prompt": "They often play cards. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) When",
+            "b) for",
+            "c) While",
+            "d) three"
+          ]
+        },
+        {
+          "id": "ws-21-sec-a-q02",
+          "order": 2,
+          "prompt": "John copies two cassettes everyday. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) since",
+            "b) at",
+            "c) next",
+            "d) already"
+          ]
+        },
+        {
+          "id": "ws-21-sec-a-q03",
+          "order": 3,
+          "prompt": "Kathy is writing a letter now. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) every",
+            "b) while",
+            "c) when",
+            "d) just"
+          ]
+        },
+        {
+          "id": "ws-21-sec-a-q04",
+          "order": 4,
+          "prompt": "He usually reads magazines. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) for",
+            "b) when",
+            "c) every",
+            "d) now"
+          ]
+        },
+        {
+          "id": "ws-21-sec-a-q05",
+          "order": 5,
+          "prompt": "The children are doing their homework. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) yet",
+            "b) just",
+            "c) every",
+            "d) when"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws-21-sec-b",
+      "sectionKey": "B",
+      "instruction": "Read the passage and ask questions:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-21-sec-b-q01",
+          "order": 1,
+          "prompt": "[gap] ? Janet went to Africa seven years ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-b-q02",
+          "order": 2,
+          "prompt": "[gap] ? Janet was making a film in Tanzania.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-b-q03",
+          "order": 3,
+          "prompt": "[gap] ? The elephants were playing when they arrived.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-b-q04",
+          "order": 4,
+          "prompt": "[gap] ? Because Hekima was an intelligent elephant.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-b-q05",
+          "order": 5,
+          "prompt": "[gap] ? It means “wisdom”.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-b-q06",
+          "order": 6,
+          "prompt": "[gap] ? Hekima was in a zoo in the USA while Janet was working in New York.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-b-q07",
+          "order": 7,
+          "prompt": "[gap] ? Hekima was playing when Janet went to see her.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-21-sec-c",
+      "sectionKey": "C",
+      "instruction": "Match the sentences using WHILE and PAST CONTINUOUS / PAST SIMPLE:",
+      "type": "matching",
+      "questions": [
+        {
+          "id": "ws-21-sec-c-q01",
+          "order": 1,
+          "prompt": "I (burn) my finger.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q02",
+          "order": 2,
+          "prompt": "I (break) a cup.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q03",
+          "order": 3,
+          "prompt": "My car (break down).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q04",
+          "order": 4,
+          "prompt": "I (see) a shark.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q05",
+          "order": 5,
+          "prompt": "My clothes (get) dirty.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q06",
+          "order": 6,
+          "prompt": "I (break) a tooth.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q01",
+          "order": 1,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q02",
+          "order": 2,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q03",
+          "order": 3,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q04",
+          "order": 4,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q05",
+          "order": 5,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-c-q06",
+          "order": 6,
+          "prompt": " [gap] B [gap] I (drive) to work. I (eat) a nut. I (cook) the dinner. I (do) the washing up. I (swim) in the sea. I (clean) my room. [gap] I burnt my finger while I was cooking the dinner [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-21-sec-d",
+      "sectionKey": "D",
+      "instruction": "Use the correct form of the verbs:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-21-sec-d-q01",
+          "order": 1,
+          "prompt": "The Bartons [gap] (go) to the mountains last weekend. While they [gap] (have) lunch, a man [gap] (fall) down the tree. They [gap] (take) him to the hospital in their car. They [gap] (visit) him twice in the hospital since that time. The man [gap] (be) better now and the doctors say he [gap] (leave) the hospital soon. When The Bartons [gap] (visit) him yesterday, they [gap] (take) him a bunch of flowers. The man [gap] (be) very happy and [gap] (thank) them. Mr. Barton now",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) the"
+          ]
+        },
+        {
+          "id": "ws-21-sec-d-q02",
+          "order": 2,
+          "prompt": "I [gap] (finish) school last month and I [gap] (not / have) a job yet, but fortunately I [gap] (have) a job interview tomorrow. I usually [gap] (get) up early so often [gap] (sleep) at around half past ten. I [gap] (be) a little excited last night and because of this I [gap] [gap] (want / watch) TV before I [gap] (go) to bed. There [gap] (be) a film about birds on TV and while I [gap] (sit) on the sofa, I [gap] (fall) asleep [gap] you [gap] (have) a terrible dream? Well, I [gap] (have) one last night. In my dream I [gap] (be) a parrot and my apartment flat [gap] (be) on the tenth floor of a big building. A big cat [gap] (want / catch) me so I [gap] (begin / fly). I [gap] (have) nowhere [gap] (go) because the door [gap] (be) locked. Suddenly the cat [gap] (attack) me. It nearly [gap] (kill) me. While I [gap] (shout) in pain,a voice [gap] (say), “ [gap] you [gap] (see) my books? I can’t find them.” When I [gap] (open) my eyes, I [gap] (feel) very happy [gap] (see) my sister. Of course she [gap] (not /",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) the"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws-21-sec-e",
+      "sectionKey": "E",
+      "instruction": "REWRITE or COMBINE the following:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-21-sec-e-q01",
+          "order": 1,
+          "prompt": "It rained this morning. The children played in the garden. (while)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q02",
+          "order": 2,
+          "prompt": "What did you do? The doorbell rang. (when)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q03",
+          "order": 3,
+          "prompt": "I walked along Main Street. I realized a man behind me. (when)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q04",
+          "order": 4,
+          "prompt": "I started to play football when I was five. (since)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q05",
+          "order": 5,
+          "prompt": "The windows are dirty. I last cleaned them last month. (since)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q06",
+          "order": 6,
+          "prompt": "He last shaved a week ago. (for)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q07",
+          "order": 7,
+          "prompt": "Maybe the train leaves at six. I don’t catch it. (If)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q08",
+          "order": 8,
+          "prompt": "We slept last night. The robber stole all the jewellery. (as)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q09",
+          "order": 9,
+          "prompt": "Tom prefers learning French to learning Japanese. (would rather)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q10",
+          "order": 10,
+          "prompt": "Angela looks after many children. It keeps her busy. (Gerund)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q11",
+          "order": 11,
+          "prompt": "He went to London. He wanted to work there. (to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q12",
+          "order": 12,
+          "prompt": "They had a picnic. The forest caught fire. (as)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q13",
+          "order": 13,
+          "prompt": "No sound could be heard. The walls were very thick. (because)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q14",
+          "order": 14,
+          "prompt": "My bed is terribly hard. I can’t sleep well. (so [gap] that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q15",
+          "order": 15,
+          "prompt": "The shopkeeper doesn’t let the children put their fingers on the glass while they are looking at the sweets. (be allowed to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q16",
+          "order": 16,
+          "prompt": "My mother would rather cook than iron. (prefer)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q17",
+          "order": 17,
+          "prompt": "We bought this house in 1990. (since)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q18",
+          "order": 18,
+          "prompt": "He may come late. He will call us. (If)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q19",
+          "order": 19,
+          "prompt": "Paris isn’t as crowded as New York. (comparison)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-e-q20",
+          "order": 20,
+          "prompt": "My father would rather read newspaper than watch TV. (prefer)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-21-sec-f",
+      "sectionKey": "F",
+      "instruction": "Look at the chart and make sentences as in the examples:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-21-sec-f-q01",
+          "order": 1,
+          "prompt": "People traveled on horseback yesterday. [gap] People are traveling by plane today. People will travel in spaceships tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-f-q02",
+          "order": 2,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-f-q03",
+          "order": 3,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-f-q04",
+          "order": 4,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-f-q05",
+          "order": 5,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-21-sec-f-q06",
+          "order": 6,
+          "prompt": "[gap] TOMORROW in spaceships with robots galaxies undersea cities intelligent robots water / electricity",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

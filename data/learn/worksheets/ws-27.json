@@ -1,0 +1,614 @@
+{
+  "id": "ws-27",
+  "order": 27,
+  "part": 3,
+  "slug": "ws-27-reported-speech",
+  "title": "WORKSHEET 27",
+  "subject": "Reported Speech",
+  "subjectVi": "Ngữ pháp bài 27: Reported Speech",
+  "level": "B1",
+  "pageRange": "Part 3 (WS 27)",
+  "sections": [
+    {
+      "id": "ws-27-sec-a",
+      "sectionKey": "A",
+      "instruction": "Statements:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-27-sec-a-q01",
+          "order": 1,
+          "prompt": "Mary said, “I like Turkish pop music.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q02",
+          "order": 2,
+          "prompt": "The woman said, “It’s not my umbrella, mine is red.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q03",
+          "order": 3,
+          "prompt": "Tom said, “I have a sports car. It is red.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q04",
+          "order": 4,
+          "prompt": "Mr. Brown said, “I don’t drive a car in the rush hour.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q05",
+          "order": 5,
+          "prompt": "Terry said, “I eat toasts for breakfast. They are made by my mother.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q06",
+          "order": 6,
+          "prompt": "Sue said, “The boy is looking at us. I don’t know him.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q07",
+          "order": 7,
+          "prompt": "John said, “I can swim well but I don’t have enough time to swim.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q08",
+          "order": 8,
+          "prompt": "My brother said to me, “I don’t want to carry your books!” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q09",
+          "order": 9,
+          "prompt": "The teacher said, “If you don’t study regularly, you’ll fail.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q10",
+          "order": 10,
+          "prompt": "Mr. Green said, “I have to water my flowers twice a week.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q11",
+          "order": 11,
+          "prompt": "Alice said, “I used to swim well but now I don’t.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-a-q12",
+          "order": 12,
+          "prompt": "Mr. Miller said, “I know your parents. I’ve met them in the meeting.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-27-sec-b",
+      "sectionKey": "B",
+      "instruction": "Imperatives:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-27-sec-b-q01",
+          "order": 1,
+          "prompt": "Woman to the porter: “Carry my suitcases.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q02",
+          "order": 2,
+          "prompt": "Policeman to a man: “Describe your car.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q03",
+          "order": 3,
+          "prompt": "Mother to the boy: “Don’t hurt yourself.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q04",
+          "order": 4,
+          "prompt": "The robber to the man: “Give me your money.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q05",
+          "order": 5,
+          "prompt": "Teacher to the student: “Give me your book.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q06",
+          "order": 6,
+          "prompt": "The man to us: “Don’t park here.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q07",
+          "order": 7,
+          "prompt": "Woman to her husband: “Don’t forget to take your key.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q08",
+          "order": 8,
+          "prompt": "Mr. Smith to her son: “Don’t put your books on this desk.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q09",
+          "order": 9,
+          "prompt": "Young man to the young woman: “Give me one of your photographs.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q10",
+          "order": 10,
+          "prompt": "The man to his son: “Hurry up! Don’t miss the bus!” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-b-q11",
+          "order": 11,
+          "prompt": "The woman to her daughter: “Tidy your room, don’t waste your time.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-27-sec-c",
+      "sectionKey": "C",
+      "instruction": "Wh- questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-27-sec-c-q01",
+          "order": 1,
+          "prompt": "He asked, “How long does it take you to have lunch?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q02",
+          "order": 2,
+          "prompt": "He asked me, “What are you doing at the weekend?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q03",
+          "order": 3,
+          "prompt": "She asked, “Why are you late, Tom?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q04",
+          "order": 4,
+          "prompt": "My mother asked me, “Where is your umbrella?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q05",
+          "order": 5,
+          "prompt": "The secretary asked the man, “Who do you want to see, sir?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q06",
+          "order": 6,
+          "prompt": "The students asked, “What time does the bell ring?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q07",
+          "order": 7,
+          "prompt": "He asked Tom, “What kind of films do you like watching?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q08",
+          "order": 8,
+          "prompt": "The teacher asked the girl, “When do you have to be home?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q09",
+          "order": 9,
+          "prompt": "They always asked, “Why don’t you let my cat in?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q10",
+          "order": 10,
+          "prompt": "The passengers asked, “When did the last train leave?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-c-q11",
+          "order": 11,
+          "prompt": "He asked, “What will you do tomorrow, Jane?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-27-sec-d",
+      "sectionKey": "D",
+      "instruction": "Yes / No questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-27-sec-d-q01",
+          "order": 1,
+          "prompt": "She asked, “Do you live with your family, Helen?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q02",
+          "order": 2,
+          "prompt": "He asked, “Can I borrow your pen, Linda?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q03",
+          "order": 3,
+          "prompt": "He asked me, “Does your uncle live in England?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q04",
+          "order": 4,
+          "prompt": "Mary asked Lucy, “Will you come to my party tomorrow?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q05",
+          "order": 5,
+          "prompt": "Mark asked, “Did you phone me last night, John?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q06",
+          "order": 6,
+          "prompt": "He asked, “Is this yours or mine, David?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q07",
+          "order": 7,
+          "prompt": "She always asked me, “Must you always ask me what I’m doing?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q08",
+          "order": 8,
+          "prompt": "The teacher asked, “Are you listening to me?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q09",
+          "order": 9,
+          "prompt": "Mary asked, “Do you want me to help you, Larry?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-d-q10",
+          "order": 10,
+          "prompt": "The officer asked, “Are you a foreigner? Can you spell your name?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-27-sec-e",
+      "sectionKey": "E",
+      "instruction": "Change into INDIRECT SPEECH:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-27-sec-e-q01",
+          "order": 1,
+          "prompt": "Bob says, “I want to play tennis this afternoon.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q02",
+          "order": 2,
+          "prompt": "John says, “I haven’t seen my grandmother for a long time.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q03",
+          "order": 3,
+          "prompt": "Cindy says to Alan, “Don’t come in with your dirty shoes.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q04",
+          "order": 4,
+          "prompt": "My father says, “Please, help me in the garden.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q05",
+          "order": 5,
+          "prompt": "“Don’t wipe your dirty fingers on my clean table cloth.” says his mother. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q06",
+          "order": 6,
+          "prompt": "“When does the bell ring?” asks John. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q07",
+          "order": 7,
+          "prompt": "Sandy asks Danny, “Why didn’t you tell her the truth?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q08",
+          "order": 8,
+          "prompt": "“How long have you waited for me?” [gap] What does Charles ask Fiona?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q09",
+          "order": 9,
+          "prompt": "“Does it rain in winter in Somali?” [gap] What does the teacher ask?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-e-q10",
+          "order": 10,
+          "prompt": "“Did you post the letter?” asks Rachel. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-27-sec-f",
+      "sectionKey": "F",
+      "instruction": "Change into INDIRECT SPEECH:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-27-sec-f-q01",
+          "order": 1,
+          "prompt": "Brenda said to Jimmy, “Please, turn off the TV. The film is boring.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q02",
+          "order": 2,
+          "prompt": "“Wash your face and say GOOD MORNING to everybody.” says his mother. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q03",
+          "order": 3,
+          "prompt": "“Do your homework again. There are a lot of mistakes.” says the teacher to Kate. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q04",
+          "order": 4,
+          "prompt": "“Don’t waste your time! Finish studying.” says Mrs. Dawson to Barbara. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q05",
+          "order": 5,
+          "prompt": "“Brush your teeth. They look very dirty.” Her mother says to her. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q06",
+          "order": 6,
+          "prompt": "“Look out! There is a truck coming.” Kevin said to his daughter. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q07",
+          "order": 7,
+          "prompt": "Janet told David, “This book looks boring. Give me another, please.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q08",
+          "order": 8,
+          "prompt": "Mrs. Abbot told Jack, “Your hair is very long. Go and have a hair cut.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q09",
+          "order": 9,
+          "prompt": "Mrs. Denman says to her son, “It is very hot. Don’t play in the sun.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q10",
+          "order": 10,
+          "prompt": "Mr. Newman said to Nicky, “Don’t make a lot of noise. I want to listen to the news.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q11",
+          "order": 11,
+          "prompt": "“Don’t turn it up. I have a headache.” says the mother. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q12",
+          "order": 12,
+          "prompt": "Sue told Andy, “Don’t shout! I’m not a deaf.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q13",
+          "order": 13,
+          "prompt": "Terry said to Ashley, “Don’t speak German. Speak English. They can’t understand you.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q14",
+          "order": 14,
+          "prompt": "“Please, be quiet! The baby is sleeping.” says Mrs. Newton to the children. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q15",
+          "order": 15,
+          "prompt": "“Will you please move aisde? I can’t watch television.” says John. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q16",
+          "order": 16,
+          "prompt": "Mark said, “I want to buy a new car. Ours is very old and spends a lot of petrol.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q17",
+          "order": 17,
+          "prompt": "Tom said to Carol, “Can I borrow your dictionary. Mine is at home.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q18",
+          "order": 18,
+          "prompt": "“Your hands are very dirty. Go to the bathroom and wash them.” says her mother. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q19",
+          "order": 19,
+          "prompt": "Sandy said to Danny, “Does your mother work? I see her on the bus everyday.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q20",
+          "order": 20,
+          "prompt": "Tom told Jane, “I’m bored. Can we go to the cinema?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q21",
+          "order": 21,
+          "prompt": "Sam said to Kate, “I’m broke. Can you lend me some money?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q22",
+          "order": 22,
+          "prompt": "Mother said to her son, “Your friends are playing in the garden. Don’t you want to [gap] play with them?”",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q23",
+          "order": 23,
+          "prompt": "Jim says to his son, “When will you go? You are very late for school.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q24",
+          "order": 24,
+          "prompt": "“What have you cooked? I feel very hungry.” Tony said to his mother. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-27-sec-f-q25",
+          "order": 25,
+          "prompt": "“Why don’t you wash your car? It looks very dirty.” Mrs. Dawson said to John. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

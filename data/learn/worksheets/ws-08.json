@@ -1,0 +1,474 @@
+{
+  "id": "ws-08",
+  "order": 9,
+  "part": 1,
+  "slug": "ws-08-simple-past-and-past-continuous",
+  "title": "WORKSHEET 8",
+  "subject": "Simple Past and Past Continuous",
+  "subjectVi": "Ngữ pháp bài 8: Simple Past and Past Continuous",
+  "level": "A2",
+  "pageRange": "Part 1 (WS 8)",
+  "sections": [
+    {
+      "id": "ws-08-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with a correct form of PAST CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-08-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q07",
+          "order": 7,
+          "prompt": " [gap] Alice hurt herself while she [gap] (skate). I met my neighbor while I [gap] (walk) home from work. Sally saw a friend while she [gap] (ride) her bicycle along Park St. Peter fell asleep while he [gap] (study). Bob stepped on Jane’s feet while they [gap] (dance) together. I cut myself while I [gap] (shave). Mr. and Mrs. Brown burned themselves while they [gap] (bake) cookies.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-a-q08",
+          "order": 8,
+          "prompt": "Tommy had a nightmare while he [gap] (sleep) at a friend’s house.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-08-sec-b",
+      "sectionKey": "B",
+      "instruction": "How did it happen?",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-08-sec-b-q01",
+          "order": 1,
+          "prompt": "How did Alice hurt herself? (play soccer) [gap] [gap] She hurt herself while she was playing soccer [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q02",
+          "order": 2,
+          "prompt": "How did Martin burn himself? (iron his clothes) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q03",
+          "order": 3,
+          "prompt": "How did Helen cut herself? (slice onions) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q04",
+          "order": 4,
+          "prompt": "How did Jennifer meet her husband? (fix a flat tire) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q05",
+          "order": 5,
+          "prompt": "How did Marvin break his arm? (skate) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q06",
+          "order": 6,
+          "prompt": "How did you lose your wallet? (ride my bicycle) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q07",
+          "order": 7,
+          "prompt": "How did Jeff meet his wife? (swim at the beach) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q08",
+          "order": 8,
+          "prompt": "How did Bob get a black eye? (fight with his brother) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q09",
+          "order": 9,
+          "prompt": "How did your children burn themselves? (make breakfast) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-b-q10",
+          "order": 10,
+          "prompt": "How did Martha fall? (dance) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-08-sec-c",
+      "sectionKey": "C",
+      "instruction": "What’s the matter?",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-08-sec-c-q01",
+          "order": 1,
+          "prompt": "You : [gap] ? Jack : [gap] You : [gap] ? Jack : [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-c-q02",
+          "order": 2,
+          "prompt": "You : [gap] ? Bob : [gap] You : [gap] ? Bob : [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-c-q03",
+          "order": 3,
+          "prompt": "You [gap] Ann You Ann : [gap] ? : [gap] : [gap] ? : [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-c-q04",
+          "order": 4,
+          "prompt": "You : [gap] ? Alice : [gap] You : [gap] ? Alice : [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-08-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks with a correct form, the PAST SIMPLE or the PAST CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-08-sec-d-q01",
+          "order": 1,
+          "prompt": "He [gap] (talk) with Mary, when Mrs. Smith came in.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q02",
+          "order": 2,
+          "prompt": "They [gap] (study) two hours last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q03",
+          "order": 3,
+          "prompt": "Jane [gap] (sleep) when the telephone rang.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q04",
+          "order": 4,
+          "prompt": "As I [gap] (walk) to the lab, I met my friend.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q05",
+          "order": 5,
+          "prompt": "We [gap] (watch) TV last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q06",
+          "order": 6,
+          "prompt": "The customer [gap] (pay) his cheque when he dropped his credit card.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q07",
+          "order": 7,
+          "prompt": "The barber [gap] (cut) my hair yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q08",
+          "order": 8,
+          "prompt": "She [gap] (dance) when she hurt her ankle.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q09",
+          "order": 9,
+          "prompt": "It [gap] (rain) hard when I got up.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-d-q10",
+          "order": 10,
+          "prompt": "It [gap] (rain) hard last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-08-sec-e",
+      "sectionKey": "E",
+      "instruction": "Complete the sentences with the words in parentheses using the SIMPLE PAST or",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-08-sec-e-q01",
+          "order": 1,
+          "prompt": "Sally [gap] (eat) dinner last night when someone [gap] (knock) on the door.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q02",
+          "order": 2,
+          "prompt": "I began to study at seven last night. Fred [gap] (come) at seventhirty. I [gap] (study) when Fred [gap] (come).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q03",
+          "order": 3,
+          "prompt": "While I [gap] (study) last night, Fred [gap] (drop by) to visit me.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q04",
+          "order": 4,
+          "prompt": "My roommate’s parents [gap] (call) him last night while we [gap] (watch) TV.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q05",
+          "order": 5,
+          "prompt": "My mother called me around five. My husband came home a little after five. When he [gap] [gap] (come) home, I [gap] (talk) to my mother on the phone.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q06",
+          "order": 6,
+          "prompt": "Yesterday Tom and Janice [gap] (go) to the zoo around one. They [gap] (see) many kinds of animals. They stayed at the zoo for two hours. While they [gap] (walk) home, it [gap] (begin) to rain, so they [gap] (stop) at a small café and [gap] (have) a cup of coffee.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q07",
+          "order": 7,
+          "prompt": "Yesterday afternoon I [gap] (go) to visit the Parker family. When I [gap] (get) there around two o’clock, Mrs. Parker [gap] (be) in the yard. She [gap] (plant) flowers in her garden. Mr. Parker [gap] (be) in the garage. He [gap] (work) on their car. He [gap] (change) the oil.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-08-sec-e",
+      "sectionKey": "E",
+      "instruction": "What’s the question?",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-08-sec-e-q01",
+          "order": 1,
+          "prompt": "[gap] Who did you visit [gap] ? I visited my cousin.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q02",
+          "order": 2,
+          "prompt": "[gap] ? We talked about my job.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q03",
+          "order": 3,
+          "prompt": "[gap] ? She went to the beach.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q04",
+          "order": 4,
+          "prompt": "[gap] ? She met her friend.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q05",
+          "order": 5,
+          "prompt": "[gap] ? They spoke Russian.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q06",
+          "order": 6,
+          "prompt": "[gap] ? They swam in the ocean.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q07",
+          "order": 7,
+          "prompt": "[gap] ? He had dinner at 8:00.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q08",
+          "order": 8,
+          "prompt": "[gap] ? I baked an apple pie.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q09",
+          "order": 9,
+          "prompt": "[gap] ? She cried because her dog ran away.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q10",
+          "order": 10,
+          "prompt": "[gap] ? I stayed for a week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q11",
+          "order": 11,
+          "prompt": "[gap] ? I came home by train.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q12",
+          "order": 12,
+          "prompt": "[gap] ? He ate three hamburgers.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q13",
+          "order": 13,
+          "prompt": "[gap] ? He left the restaurant at 9:00.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q14",
+          "order": 14,
+          "prompt": "[gap] ? She wrote a letter to her mother.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q15",
+          "order": 15,
+          "prompt": "[gap] ? They studied all morning.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q16",
+          "order": 16,
+          "prompt": "[gap] ? We took a lot of photographs.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q17",
+          "order": 17,
+          "prompt": "[gap] ? We sent a postcard to our teacher.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q18",
+          "order": 18,
+          "prompt": "[gap] ? He fell asleep during the lecture.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q19",
+          "order": 19,
+          "prompt": "[gap] ? I lost my wallet while I was skating.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-08-sec-e-q20",
+          "order": 20,
+          "prompt": "[gap] ? They covered their eyes because they were scared.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

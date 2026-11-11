@@ -1,0 +1,410 @@
+{
+  "id": "ws-45",
+  "order": 45,
+  "part": 4,
+  "slug": "ws-45-both-and-either-or-neither-nor-not-only-but-also",
+  "title": "WORKSHEET 45",
+  "subject": "Both ….and…. / Either …. or …. / Neither …. nor …. / Not only …. but also ….",
+  "subjectVi": "Ngữ pháp bài 45: Both ….and…. / Either …. or …. / Neither …. nor …. / Not only …. but also ….",
+  "level": "B1",
+  "pageRange": "Part 4 (WS 45)",
+  "sections": [
+    {
+      "id": "ws-45-sec-a",
+      "sectionKey": "A",
+      "instruction": "Make sentences BOTH ….AND…. / EITHER ….OR …. / NEITHER …. NOR …. :",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-45-sec-a-q01",
+          "order": 1,
+          "prompt": "The hotel wasn’t clean. And it wasn’t comfortable. [gap] The hotel was [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q02",
+          "order": 2,
+          "prompt": "It was a very boring movie. It was very long too. [gap] The movie was [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q03",
+          "order": 3,
+          "prompt": "Is that man’s name Richard? Or is it Robert? It’s one of the two. [gap] That man’s name [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q04",
+          "order": 4,
+          "prompt": "I don’t have the time to take a vacation. And I don’t have the money. [gap] I have [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q05",
+          "order": 5,
+          "prompt": "We can leave today or we can leave tomorrow- whichever you prefer. [gap] We [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q06",
+          "order": 6,
+          "prompt": "He gave up his job because he needed a change. Also because the pay was low. [gap] He gave up his job both [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q07",
+          "order": 7,
+          "prompt": "Laura doesn’t smoke. And she doesn’t eat meat. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-a-q08",
+          "order": 8,
+          "prompt": "The front of the house needs painting. The back needs painting too. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-45-sec-b",
+      "sectionKey": "B",
+      "instruction": "Answer the questions. Use paired conjunctions.",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-45-sec-b-q01",
+          "order": 1,
+          "prompt": "You have met his father. Have you met his mother? [gap] Yes, I have met both his father and his mother.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q02",
+          "order": 2,
+          "prompt": "The driver was injured in the accident. Was the passenger injured in the accident? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q03",
+          "order": 3,
+          "prompt": "Wheat is grown in Kansas. Is corn grown in Kansas? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q04",
+          "order": 4,
+          "prompt": "He buys used cars. Does he sell used cars? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q05",
+          "order": 5,
+          "prompt": "You had lunch with your friends. Did you have dinner with them? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q06",
+          "order": 6,
+          "prompt": "The city suffers from air pollution. Does it suffer from water pollution? [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "b) Use"
+          ]
+        },
+        {
+          "id": "ws-45-sec-b-q01",
+          "order": 1,
+          "prompt": "I know you are studying math. Are you studying chemistry too? [gap] Yes, I’m studying not only math but also chemistry.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q02",
+          "order": 2,
+          "prompt": "I know his cousin is living with him. Is his mother-in-low living with him too? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q03",
+          "order": 3,
+          "prompt": "I know your country has good universities. Does the United States have good [gap] universities too?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q04",
+          "order": 4,
+          "prompt": "I know you lost your wallet. Did you lose your keys too? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q05",
+          "order": 5,
+          "prompt": "I know she goes to school. Does she have a full-time job too? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q06",
+          "order": 6,
+          "prompt": "I know he bought a coat. Did he buy a new pair of shoes too? [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "c) Use"
+          ]
+        },
+        {
+          "id": "ws-45-sec-b-q01",
+          "order": 1,
+          "prompt": "John has your book, or Mary has your book. Is that right? [gap] Yes, either John or Mary has my book.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q02",
+          "order": 2,
+          "prompt": "You’re going to give your friend a book for her birthday, or you’re going to give her [gap] a pen. Is that right?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q03",
+          "order": 3,
+          "prompt": "Your sister will meet you at the airport, or your brother will meet you there. Right? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q04",
+          "order": 4,
+          "prompt": "They can go swimming, or they can play tennis. Is that right? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q05",
+          "order": 5,
+          "prompt": "You’re going to vote for Mr. Smith, or you’re going to vote for Mr. Jones. Right? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q06",
+          "order": 6,
+          "prompt": "You’ll go to New Orleans for your vacation, or you’ll go to Miami. Right? [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) Use"
+          ]
+        },
+        {
+          "id": "ws-45-sec-b-q01",
+          "order": 1,
+          "prompt": "He doesn’t like coffee. Does he like tea? [gap] No, he likes neither coffee nor tea.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q02",
+          "order": 2,
+          "prompt": "Her husband doesn’t speak English. Do her children speak English? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q03",
+          "order": 3,
+          "prompt": "The students aren’t wide awake today. Is the reacher wide awake today? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q04",
+          "order": 4,
+          "prompt": "They don’t have a refrigerator for their new apartment. Do they have a stove? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q05",
+          "order": 5,
+          "prompt": "She doesn’t enjoy hunting. Does she enjoy fishing? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q06",
+          "order": 6,
+          "prompt": "The result wasn’t good. Was the result bad? [gap] e) Combine the following into sentences that contain parallel structure. Used appropriate paired conjunctions: BOTH…AND / NOT ONLY… BUT ALSO / EITHER… OR / NEITHER… NOR:",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q01",
+          "order": 1,
+          "prompt": "He does not have a pen. He does not have paper. [gap] He has neither a pen nor paper.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q02",
+          "order": 2,
+          "prompt": "Ron enjoys horseback riding. Bob enjoys horseback riding. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q03",
+          "order": 3,
+          "prompt": "You can have tea, or you can have coffee. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q04",
+          "order": 4,
+          "prompt": "Arthur is not in class today. Ricardo is not in class today. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q05",
+          "order": 5,
+          "prompt": "Arthur is absent. Ricardo is absent. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q06",
+          "order": 6,
+          "prompt": "We can fix dinner for them here, or we can take them to a restaurant. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q07",
+          "order": 7,
+          "prompt": "She wants to buy a Chevrolet, or she wants to buy a Toyota. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q08",
+          "order": 8,
+          "prompt": "The leopard faces extinction. The tiger faces extinction. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q09",
+          "order": 9,
+          "prompt": "The library does not have the book I need. The bookstore does not have the book [gap] I need.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-b-q10",
+          "order": 10,
+          "prompt": "We could fly, or we could take the train. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-45-sec-c",
+      "sectionKey": "C",
+      "instruction": "Combine the following using BOTH…AND / NOT ONLY… BUT ALSO /",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-c-q01",
+          "order": 1,
+          "prompt": "Paul must go to class. Jean must go to class. Both Paul and Jean must go to class.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q02",
+          "order": 2,
+          "prompt": "Paul speaks English. Jean speaks English.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q03",
+          "order": 3,
+          "prompt": "Paul hasn’t left yet. Jean hasn’t left yet.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q04",
+          "order": 4,
+          "prompt": "Shall I go to by air, or shall I go by sea?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q05",
+          "order": 5,
+          "prompt": "Paul didn’t stay long. Jean didn’t stay long.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q06",
+          "order": 6,
+          "prompt": "Paul has a two-car garage. Jean has a two-car garage.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q07",
+          "order": 7,
+          "prompt": "Shall I work tonight, or shall I go out?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q08",
+          "order": 8,
+          "prompt": "Paul’s house is very central. Jean’s house is very central.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q09",
+          "order": 9,
+          "prompt": "Paul recognized the man. Jean recognized the man.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-45-sec-c-q10",
+          "order": 10,
+          "prompt": "Shall I have a swim, or shall I go by bus?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

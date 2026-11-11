@@ -1,0 +1,293 @@
+{
+  "id": "ws-17",
+  "order": 17,
+  "part": 2,
+  "slug": "ws-17-future-perfect-future-perfect-continuous",
+  "title": "WORKSHEET 17",
+  "subject": "Future Perfect / Future Perfect Continuous",
+  "subjectVi": "Ngữ pháp bài 17: Future Perfect / Future Perfect Continuous",
+  "level": "A2",
+  "pageRange": "Part 2 (WS 17)",
+  "sections": [
+    {
+      "id": "ws-17-sec-a",
+      "sectionKey": "A",
+      "instruction": "What will life be like in the year 2100? Complete the sentences using WILL HAVE +",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-17-sec-a-q01",
+          "order": 1,
+          "prompt": "Life [gap] (become) more automated by then.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-a-q02",
+          "order": 2,
+          "prompt": "Computers [gap] (take over) many of the jobs that people do today.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-a-q03",
+          "order": 3,
+          "prompt": "The earth’s supplies of oil, coal and gas [gap] (run out).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-a-q04",
+          "order": 4,
+          "prompt": "[gap] (scientists / find) other sources of energy?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-a-q05",
+          "order": 5,
+          "prompt": "How [gap] education [gap] (change)?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-a-q06",
+          "order": 6,
+          "prompt": "[gap] (we / find) a way to feed all the people in the world?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-17-sec-b",
+      "sectionKey": "B",
+      "instruction": "Use WILL HAVE + PAST PARTICIPLE form:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-17-sec-b-q01",
+          "order": 1,
+          "prompt": "Tom and Ann are going to the cinema. The film begins at 7.30 and it is already 7.20. And [gap] it will take them 20 minutes to get there. When they get there, [gap] (the film / already / start)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-b-q02",
+          "order": 2,
+          "prompt": "Jim always goes to bed at 11 o’clock. Tom is going to visit him at 11.30 this evening. [gap] When Tom arrives, [gap] (Jim / go / to bed)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-b-q03",
+          "order": 3,
+          "prompt": "Tom is on holiday. He has very little money and he is spending too much too quickly. [gap] Before the end of his holiday, [gap] (he / spend / all his money)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-b-q05",
+          "order": 5,
+          "prompt": "Chuck came to Britain from the US nearly three years ago. Next Monday it will be [gap] exactly three years since he arrived. Next Monday [gap] (he / be / here / exactly three years)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-b-q06",
+          "order": 6,
+          "prompt": "Next year is Ted and Amy’s 25th wedding anniversary. They [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) for"
+          ]
+        },
+        {
+          "id": "ws-17-sec-b-q07",
+          "order": 7,
+          "prompt": "Jane is from New Zealand. She is traveling around Europe at the moment. So far she has [gap] traveled about 1.000 miles. By the end of the trip, [gap] (she / travel) more than 3.000 miles.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-17-sec-c",
+      "sectionKey": "C",
+      "instruction": "Use FUTURE PERFECT TENSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-17-sec-c-q01",
+          "order": 1,
+          "prompt": "By next February I [gap] (write) my third book.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q02",
+          "order": 2,
+          "prompt": "I hope you [gap] (not / forget) my name by tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q03",
+          "order": 3,
+          "prompt": "By next week we [gap] (redecorate) the house.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q04",
+          "order": 4,
+          "prompt": "Next July she [gap] (be) dead for ten years.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q05",
+          "order": 5,
+          "prompt": "I hope I [gap] (not / make) a lot of mistakes in this exam when I finish it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q06",
+          "order": 6,
+          "prompt": "By the end of this year I [gap] (drive) more than one hundred thousand kilometers with this car.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q07",
+          "order": 7,
+          "prompt": "I hope it [gap] (stop) raining before the match starts.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q08",
+          "order": 8,
+          "prompt": "I [gap] (have) an operation when you turn back.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q09",
+          "order": 9,
+          "prompt": "By this time next week I [gap] (marry).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q10",
+          "order": 10,
+          "prompt": "If nothing is done one million species that are alive today [gap] (become) extinct in twenty years.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-c-q11",
+          "order": 11,
+          "prompt": "The tropical rain forests [gap] (disappear) in thirty years.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-17-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks using FUTURE PERFECT CONTINUOUS TENSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-17-sec-d-q01",
+          "order": 1,
+          "prompt": "By the end of June I [gap] (live) in this flat for thirteen years.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q02",
+          "order": 2,
+          "prompt": "I [gap] (fly) to London for an hour at this time tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q03",
+          "order": 3,
+          "prompt": "At this time next week I [gap] (work) for this company for 20 years.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q04",
+          "order": 4,
+          "prompt": "When the bell rings I [gap] (teach) for eight hours today.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q05",
+          "order": 5,
+          "prompt": "I [gap] (wear) these glasses for five years next week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q06",
+          "order": 6,
+          "prompt": "I [gap] (drive) this car for six years tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q07",
+          "order": 7,
+          "prompt": "At this time tomorrow I [gap] (take) a test for an hour.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q08",
+          "order": 8,
+          "prompt": "At this time next year I [gap] (have) a holiday in Antalya for a week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q09",
+          "order": 9,
+          "prompt": "At this time next year I [gap] (live) in Istanbul for ten years.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q10",
+          "order": 10,
+          "prompt": "By the time we get home they [gap] (play) football for half an hour.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q11",
+          "order": 11,
+          "prompt": "She [gap] (dance) for an hour at nine o’clock.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-17-sec-d-q12",
+          "order": 12,
+          "prompt": "I [gap] (learn) English for ten years by the end of this year.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

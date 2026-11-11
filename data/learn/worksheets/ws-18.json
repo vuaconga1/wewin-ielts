@@ -1,0 +1,210 @@
+{
+  "id": "ws-18",
+  "order": 18,
+  "part": 2,
+  "slug": "ws-18-future-in-the-past",
+  "title": "WORKSHEET 18",
+  "subject": "Future in the Past",
+  "subjectVi": "Ngữ pháp bài 18: Future in the Past",
+  "level": "A2",
+  "pageRange": "Part 2 (WS 18)",
+  "sections": [
+    {
+      "id": "ws-18-sec-a",
+      "sectionKey": "A",
+      "instruction": "Join each idea in A with an idea from B. Make sentences using WAS / WERE GOING",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-18-sec-a-q01",
+          "order": 1,
+          "prompt": "I (take) a taxi home last night, [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) but"
+          ]
+        },
+        {
+          "id": "ws-18-sec-a-q02",
+          "order": 2,
+          "prompt": "We (write) to them when we were [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "b) but"
+          ]
+        },
+        {
+          "id": "ws-18-sec-a-q03",
+          "order": 3,
+          "prompt": "She (drive) to Scotland last weekend, [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "c) but"
+          ]
+        },
+        {
+          "id": "ws-18-sec-a-q04",
+          "order": 4,
+          "prompt": "We (play) tennis yesterday afternoon, [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) but"
+          ]
+        },
+        {
+          "id": "ws-18-sec-a-q05",
+          "order": 5,
+          "prompt": "She (watch) the film on TV last night, [gap] e) but her car broke down, so she went by train.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q06",
+          "order": 6,
+          "prompt": "I (change) my job last year. [gap] f) but we changed our minds and phoned them instead.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q01",
+          "order": 1,
+          "prompt": "[gap] I was going to take a taxi home last night, but I didn’t have enough money, so I had to walk…",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q02",
+          "order": 2,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q03",
+          "order": 3,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q04",
+          "order": 4,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q05",
+          "order": 5,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-a-q06",
+          "order": 6,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-18-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the sentences. Use WAS / WERE GOING TO and these verbs: drive / get / go",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-18-sec-b-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-b-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-b-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-b-q04",
+          "order": 4,
+          "prompt": " [gap] The train left just as Harold [gap] on it. The shop closed as I [gap] in it. The phone stopped ringing just as I [gap] it up. We went to the cinema, where we [gap] a film about the Mafia, but it was so popular we couldn’t get in.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-b-q05",
+          "order": 5,
+          "prompt": "Bob had trouble parking. A car took the last place in the car park just when he [gap] [gap] into it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-18-sec-c",
+      "sectionKey": "C",
+      "instruction": "Use WAS / WERE GOING TO:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-18-sec-c-q01",
+          "order": 1,
+          "prompt": "Did you travel by train? [gap] No, I was going to travel by train but I changed my mind [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-c-q02",
+          "order": 2,
+          "prompt": "Did you buy that jacket you saw in the shop window? [gap] No, I [gap] but I changed my mind.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-c-q03",
+          "order": 3,
+          "prompt": "Did Sue get married? [gap] No, she [gap] but she [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-c-q04",
+          "order": 4,
+          "prompt": "Did Wayne and Sharon go to Greece for their holidays? [gap] No, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-c-q05",
+          "order": 5,
+          "prompt": "Did you play tennis yesterday? [gap] No, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-18-sec-c-q06",
+          "order": 6,
+          "prompt": "Did you invite Ann to the party? [gap] No, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

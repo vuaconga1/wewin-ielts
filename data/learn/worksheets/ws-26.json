@@ -1,0 +1,729 @@
+{
+  "id": "ws-26",
+  "order": 26,
+  "part": 3,
+  "slug": "ws-26-reported-speech",
+  "title": "WORKSHEET 26",
+  "subject": "Reported Speech",
+  "subjectVi": "Ngữ pháp bài 26: Reported Speech",
+  "level": "B1",
+  "pageRange": "Part 3 (WS 26)",
+  "sections": [
+    {
+      "id": "ws-26-sec-a",
+      "sectionKey": "A",
+      "instruction": "Change the following sentences from DIRECT to INDIRECT SPEECH:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-a-q01",
+          "order": 1,
+          "prompt": "He said, “I will be here at noon.” [gap] He said that he would be here at noon.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q02",
+          "order": 2,
+          "prompt": "Mary said, “The train will probably arrive on time.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q03",
+          "order": 3,
+          "prompt": "He said, “I have to finish this report by five o’clock.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q04",
+          "order": 4,
+          "prompt": "The doctor said, “Mr. Smith will improve quickly.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q05",
+          "order": 5,
+          "prompt": "William said to me, “I am leaving in the morning.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q06",
+          "order": 6,
+          "prompt": "The teacher said, “Everyone has to write a composition.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q07",
+          "order": 7,
+          "prompt": "John said, “I saw that movie on Wednesday.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q08",
+          "order": 8,
+          "prompt": "Helen said, “I have read that book.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q09",
+          "order": 9,
+          "prompt": "Mary said to John, “I cannot go to the movie with you.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q10",
+          "order": 10,
+          "prompt": "John said, “I have finished studying my lesson.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q11",
+          "order": 11,
+          "prompt": "Mary remarked, “John speaks English well.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q12",
+          "order": 12,
+          "prompt": "William said to me, “I will not see Mr. Jones until Tuesday.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q13",
+          "order": 13,
+          "prompt": "Mr. Smith said, “I will refuse their offer.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q14",
+          "order": 14,
+          "prompt": "John said, “I certainly hope it won’t rain tomorrow.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q15",
+          "order": 15,
+          "prompt": "Henry said, “I can meet them later.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q16",
+          "order": 16,
+          "prompt": "The boy said, “I am only eight years old.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q17",
+          "order": 17,
+          "prompt": "She said to me, “The lights have gone out.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q18",
+          "order": 18,
+          "prompt": "The man said, “The telephone is out of order.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q19",
+          "order": 19,
+          "prompt": "He said, “I will never speak to her again.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-a-q20",
+          "order": 20,
+          "prompt": "I said to the clerk clearly, “I have already paid that bill.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-b",
+      "sectionKey": "B",
+      "instruction": "REPORT what the guests said at a wedding last Saturday:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-b-q01",
+          "order": 1,
+          "prompt": "Miss Moore: “They’ll make a lovely couple.” [gap] Miss Moore said (that) they would make a lovely couple.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-b-q02",
+          "order": 2,
+          "prompt": "Mr. Smith: “They’re going to live in Brighton.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-b-q03",
+          "order": 3,
+          "prompt": "Mrs.Jones: “The bride and the groom are very nice young people.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-b-q04",
+          "order": 4,
+          "prompt": "Mr. Roberts: “The bride is wearing a beautiful wedding dress.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-b-q05",
+          "order": 5,
+          "prompt": "Mr. Clarke: “The couple’s parents look happy.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-b-q06",
+          "order": 6,
+          "prompt": "Miss Mayall: “The bride’s father has bought them a big flat.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-c",
+      "sectionKey": "C",
+      "instruction": "Write sentences about Jane’s trip to Paris:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-c-q01",
+          "order": 1,
+          "prompt": "We’re taking the nine o’clock plane. [gap] Jane told me they were taking the nine o’clock plane.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q02",
+          "order": 2,
+          "prompt": "I’ll have to get up early. [gap] She said [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q03",
+          "order": 3,
+          "prompt": "I don’t really like traveling by air. [gap] She told me [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q04",
+          "order": 4,
+          "prompt": "But it’s the easiest way to travel. [gap] But she decided [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q05",
+          "order": 5,
+          "prompt": "We’re going to spend a week in Paris. [gap] She told me [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q06",
+          "order": 6,
+          "prompt": "I want to go up the Eiffel Tower. [gap] She said [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q07",
+          "order": 7,
+          "prompt": "We’ve been to Paris before. [gap] She told me [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q08",
+          "order": 8,
+          "prompt": "But we didn’t see everything. [gap] But she said [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q09",
+          "order": 9,
+          "prompt": "I’ll send you a postcard. [gap] She said [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q10",
+          "order": 10,
+          "prompt": "But I won’t write you a letter. [gap] But she told me [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q11",
+          "order": 11,
+          "prompt": "I’m very excited! [gap] She said [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-c-q12",
+          "order": 12,
+          "prompt": "We’ll be in Paris tomorrow! [gap] The last thing she said was that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-d",
+      "sectionKey": "D",
+      "instruction": "REPORT the police-officer’s questions to the shop owner:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-d-q01",
+          "order": 1,
+          "prompt": "What’s your name? [gap] The police-officer asked him what was his name was.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q02",
+          "order": 2,
+          "prompt": "Did you see the robbers? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q03",
+          "order": 3,
+          "prompt": "What were they wearing? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q04",
+          "order": 4,
+          "prompt": "How do you think they got in? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q05",
+          "order": 5,
+          "prompt": "What did they take? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q06",
+          "order": 6,
+          "prompt": "Has this ever happened before? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-d",
+      "sectionKey": "D",
+      "instruction": "Turn the following dialogue into REPORTED SPEECH:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-d-q01",
+          "order": 1,
+          "prompt": "Sally: Have you applied for the job? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q02",
+          "order": 2,
+          "prompt": "Diane: Yes, I had an interview yesterday. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q03",
+          "order": 3,
+          "prompt": "Sally: How did it go? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q04",
+          "order": 4,
+          "prompt": "Diane: Fine, but I’m wondering if I want [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q05",
+          "order": 5,
+          "prompt": "the job because I will have to move [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q06",
+          "order": 6,
+          "prompt": "to Manchester. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q07",
+          "order": 7,
+          "prompt": "Sally: What will you do then? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q08",
+          "order": 8,
+          "prompt": "Diane: If they offer me the job, I can’t [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q09",
+          "order": 9,
+          "prompt": "accept it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q10",
+          "order": 10,
+          "prompt": "Sally asked Diane if she had applied for the job [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-d-q11",
+          "order": 11,
+          "prompt": "Diane told her [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-e",
+      "sectionKey": "E",
+      "instruction": "Write what the family said at the dinner table:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-e-q01",
+          "order": 1,
+          "prompt": "Mother: “Does anyone want some more potatoes?” [gap] Mother asked if anyone wanted some more potatoes.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q02",
+          "order": 2,
+          "prompt": "Father: “Pass me the wine, Beth.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q03",
+          "order": 3,
+          "prompt": "Beth: “The chicken is very nice.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q04",
+          "order": 4,
+          "prompt": "Grandfather: “I’m going to start my diet tomorrow.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q05",
+          "order": 5,
+          "prompt": "Grandmother: “Don’t eat with your mouth open, Sam!” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q06",
+          "order": 6,
+          "prompt": "Tim: “This is the best dinner I’ve had!” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q07",
+          "order": 7,
+          "prompt": "Jean: “Is there any more salad, Mum?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q08",
+          "order": 8,
+          "prompt": "Sam: “I’m very hungry because I only had a sandwich for lunch today.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q09",
+          "order": 9,
+          "prompt": "Helen: “What are we having for dessert, Mum?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-e-q10",
+          "order": 10,
+          "prompt": "Bob: “I don’t want anything else to eat.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-f",
+      "sectionKey": "F",
+      "instruction": "Gavin has worked for Bisco Supermarkets for thirty years. He can still remember his",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-f-q01",
+          "order": 1,
+          "prompt": "“Why do you want the job?” [gap] She asked him [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q02",
+          "order": 2,
+          "prompt": "“How did you hear about it?” [gap] She asked him [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q03",
+          "order": 3,
+          "prompt": "“Are you fit?” [gap] She asked him [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q04",
+          "order": 4,
+          "prompt": "“Can you work on Saturdays?” [gap] She asked him [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q05",
+          "order": 5,
+          "prompt": "“How will you travel to work?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q06",
+          "order": 6,
+          "prompt": "“Have you got a bicycle?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q07",
+          "order": 7,
+          "prompt": "“How much do you expect to earn?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-f-q08",
+          "order": 8,
+          "prompt": "“When can you start?” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-g",
+      "sectionKey": "G",
+      "instruction": "What does the policeman want to know?",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-g-q01",
+          "order": 1,
+          "prompt": "What’s your name? [gap] The policeman wants to know what my name is.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q02",
+          "order": 2,
+          "prompt": "What’s your job? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q03",
+          "order": 3,
+          "prompt": "Where do you work? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q04",
+          "order": 4,
+          "prompt": "Where do you live? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q05",
+          "order": 5,
+          "prompt": "Where were you yesterday? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q06",
+          "order": 6,
+          "prompt": "Why are you in London? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q07",
+          "order": 7,
+          "prompt": "When did you come? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q08",
+          "order": 8,
+          "prompt": "How did you come? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q09",
+          "order": 9,
+          "prompt": "Where’s your ticket? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q10",
+          "order": 10,
+          "prompt": "Have you ever been in London? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q11",
+          "order": 11,
+          "prompt": "Do you know anyone in London? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q12",
+          "order": 12,
+          "prompt": "Were you in London last month? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-g-q13",
+          "order": 13,
+          "prompt": "Are you telling the truth? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-26-sec-h",
+      "sectionKey": "H",
+      "instruction": "Tell your family what the doctor said:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-26-sec-h-q01",
+          "order": 1,
+          "prompt": "“You really ought to stay in bed.” [gap] He said I ought to stay in bed.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-h-q02",
+          "order": 2,
+          "prompt": "“But you can get up for half an hour.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-h-q03",
+          "order": 3,
+          "prompt": "“You can leave here on Thursday.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-h-q04",
+          "order": 4,
+          "prompt": "“You ought to take some exercise.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-h-q05",
+          "order": 5,
+          "prompt": "“But you shouldn’t walk too much.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-26-sec-h-q06",
+          "order": 6,
+          "prompt": "“You mustn’t run at all.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

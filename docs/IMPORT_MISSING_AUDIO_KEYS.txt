@@ -151,3 +151,26 @@ Tổng cộng: 70 sections (40 Listening + 30 Reading), 800 câu hỏi, 800 đá
   + 20/20 file JSON draft lưu tại data/tests/real-ielts-vol-5-test-{1..10}-{listening,reading}.json.
   + Đã persist toàn bộ 20 đề vào Database qua Prisma (20 tests, 70 sections, 800 questions, status: DRAFT, examType: ACADEMIC).
   + Đã verify toàn diện qua .tmp-import/vol5/verify-db.ts: 100% test đều đạt 40/40 questions.
+
+
+----------------------------------------------------
+[2026-11-10] Real IELTS VOL 2 — bổ sung audio (không import mới)
+----------------------------------------------------
+real-ielts-vol-2-test-1-listening : THIẾU AUDIO -> đã bổ sung 4 section (part 1..4.mp3, 160kbps 44.1kHz stereo, giữ nguyên bản gốc)
+                   tại /uploads/audio/real-ielts-vol-2-test-1/section-{1..4}.mp3 (khớp đường dẫn sẵn có trong DB, không sửa DB).
+                   Chưa upload R2 (.env local không có R2_*) -> cần chạy npm run media:upload-r2 ở môi trường có key.
+
+----------------------------------------------------
+[2026-11-10] Real IELTS VOL 2 — bổ sung audio lượt 2 (nguồn audio-20261110T100017Z-1-001.zip, không import mới, không sửa DB)
+----------------------------------------------------
+Đã gắn audio 4 section, đúng đường dẫn sẵn có trong DB /uploads/audio/real-ielts-vol-2-test-N/section-{1..4}.*:
+real-ielts-vol-2-test-2/3/4/5-listening : bản gốc .mp3, giữ nguyên.
+real-ielts-vol-2-test-7-listening       : bản gốc .m4a (AAC), giữ nguyên; section-4 cắt bỏ ~10 phút im lặng ở cuối (17:15 -> 7:06).
+real-ielts-vol-2-test-10-listening      : section-1 gốc là WMA đặt đuôi .mp3 (trình duyệt không phát được) -> chuyển sang MP3 160kbps
+                                          bằng ffmpeg local. Metadata file gốc ghi "海外版剑桥13 Test1" -> CẦN NGHE LẠI xem có khớp
+                                          đề "Theatre booking" (Q1-10) không; chưa có công cụ chép lời local để đối chiếu.
+real-ielts-vol-2-test-1-listening       : zip trùng bản đã gắn ngày 2026-11-10 (cùng md5), không đổi.
+Toàn bộ đã upload R2 (npm run media:upload-r2), kiểm tra URL public 200 OK.
+THIẾU AUDIO     : Test 6 không có trong zip (DB cũng chưa có đề Listening Test 6).
+KHÔNG GẮN ĐƯỢC  : Test 8 (part 1, 2, 4 — thiếu part 3) và Test 9 (part 1-3 — thiếu part 4) có audio trong zip
+                  nhưng DB chưa có đề Listening Test 8/9 -> chưa dùng.

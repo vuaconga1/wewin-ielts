@@ -1,0 +1,191 @@
+{
+  "id": "ws-53",
+  "order": 53,
+  "part": 5,
+  "slug": "ws-53-pronouns",
+  "title": "WORKSHEET 53",
+  "subject": "Pronouns",
+  "subjectVi": "Ngữ pháp bài 53: Pronouns",
+  "level": "B2",
+  "pageRange": "Part 5 (WS 53)",
+  "sections": [
+    {
+      "id": "ws-53-sec-a",
+      "sectionKey": "A",
+      "instruction": "Choose the correct answers:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-53-sec-a-q06",
+          "order": 6,
+          "prompt": "A: What did those people want? [gap] B: They / Them asked I / me to help they / them.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-53-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the sentences using the pronouns in the box:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-53-sec-b-q01",
+          "order": 1,
+          "prompt": "Peter and I are going out this evening [gap] ’re going to the cinema. Would you like to come with [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q02",
+          "order": 2,
+          "prompt": "Where are my keys? I put [gap] on the table a moment ago, but now [gap] ’ve disappeared.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q03",
+          "order": 3,
+          "prompt": "[gap] ’s usually quite cold in New York in the winter.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q04",
+          "order": 4,
+          "prompt": "A: What did you think of the film, Simon? [gap] B: [gap] enjoyed [gap] very much.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q05",
+          "order": 5,
+          "prompt": "[gap] ’s strange that Kate didn’t come to the meeting.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q06",
+          "order": 6,
+          "prompt": "A: What do the government plan to do about education? [gap] B: [gap] say that [gap] ’re going to build more schools.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q07",
+          "order": 7,
+          "prompt": "[gap] aren’t allowed to drive a car in Britain until [gap] ’re 17 years old.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q08",
+          "order": 8,
+          "prompt": "If you have any problems, just tell someone and they [gap] ’ll help you.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q09",
+          "order": 9,
+          "prompt": "How far is [gap] from Madrid to Paris?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-b-q10",
+          "order": 10,
+          "prompt": "My sister and I are quite different [gap] ’s much more serious than [gap] am.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-53-sec-c",
+      "sectionKey": "C",
+      "instruction": "Choose the correct answers:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-53-sec-c-q01",
+          "order": 1,
+          "prompt": "We know their / theirs telephone number, but they don’t know our / ours. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-c-q02",
+          "order": 2,
+          "prompt": "My / Mine car wasn’t as expensive as her / hers. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-c-q03",
+          "order": 3,
+          "prompt": "A: How are your / yours children? [gap] B: Fine, thanks. How are your / yours?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-c-q04",
+          "order": 4,
+          "prompt": "Maria has got her / hers suitcase, but her / hers friends haven’t got their / theirs. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-c-q05",
+          "order": 5,
+          "prompt": "Our / Ours flat isn’t as big as their / theirs, but our / ours is much more comfortable. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-53-sec-c-q06",
+          "order": 6,
+          "prompt": "Have you seen my / mine coat? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

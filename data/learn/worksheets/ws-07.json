@@ -1,0 +1,453 @@
+{
+  "id": "ws-07",
+  "order": 8,
+  "part": 1,
+  "slug": "ws-07-simple-past-tense",
+  "title": "WORKSHEET 7",
+  "subject": "Simple Past Tense",
+  "subjectVi": "Ngữ pháp bài 7: Simple Past Tense",
+  "level": "A2",
+  "pageRange": "Part 1 (WS 7)",
+  "sections": [
+    {
+      "id": "ws-07-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with a verb from the box in the SIMPLE PAST:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-07-sec-a-q01",
+          "order": 1,
+          "prompt": "She [gap] a cake an hour ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q02",
+          "order": 2,
+          "prompt": "She [gap] a hat last week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q03",
+          "order": 3,
+          "prompt": "The boy [gap] a letter yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q04",
+          "order": 4,
+          "prompt": "They [gap] in the sea for an hour.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q05",
+          "order": 5,
+          "prompt": "They [gap] a lot of Coke last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q06",
+          "order": 6,
+          "prompt": "She [gap] her arm last week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q07",
+          "order": 7,
+          "prompt": "He [gap] all his money last week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q08",
+          "order": 8,
+          "prompt": "She [gap] a bath two minutes ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q09",
+          "order": 9,
+          "prompt": "He [gap] his wallet last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q10",
+          "order": 10,
+          "prompt": "She [gap] on the old chair a minute ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-a-q11",
+          "order": 11,
+          "prompt": "She [gap] the clothes yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-07-sec-b",
+      "sectionKey": "B",
+      "instruction": "Fill in the blanks with the SIMPLE PAST of the verbs in brackets:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-07-sec-b-q01",
+          "order": 1,
+          "prompt": "Last Saturday my father [gap] took [gap] (take) my friends and me to the circus. We [gap] (see)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-b-q02",
+          "order": 2,
+          "prompt": "lots of things. My father [gap] (buy) us some popcorn and orange juice. We",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-b-q03",
+          "order": 3,
+          "prompt": "[gap] (eat) the popcorn and [gap] (drink) the orange juice.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-b-q04",
+          "order": 4,
+          "prompt": "We [gap] (laugh) at the funny clowns. There [gap] (be) a lion-tamer.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-b-q05",
+          "order": 5,
+          "prompt": "The lions [gap] (do) tricks; they [gap] (jump) through hoops.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-b-q06",
+          "order": 6,
+          "prompt": "A girl [gap] (ride) an elephant around the ring. We all [gap] (have)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-b-q07",
+          "order": 7,
+          "prompt": "a wonderful time. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-07-sec-c",
+      "sectionKey": "C",
+      "instruction": "Write what Jean DID or DIDN’T do yesterday:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-07-sec-c-q01",
+          "order": 1,
+          "prompt": "go shopping ( - ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q02",
+          "order": 2,
+          "prompt": "clean the house ( + ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q03",
+          "order": 3,
+          "prompt": "feed the cat ( + ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q04",
+          "order": 4,
+          "prompt": "telephone Mary ( - ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q05",
+          "order": 5,
+          "prompt": "watch a film on TV ( - ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q06",
+          "order": 6,
+          "prompt": "visit her grandparents ( + ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q07",
+          "order": 7,
+          "prompt": "take them a cake ( + ) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-c-q08",
+          "order": 8,
+          "prompt": "[gap] Jean didn’t go shopping yesterday [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-07-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks with the PAST form of the verbs:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-07-sec-d-q01",
+          "order": 1,
+          "prompt": "Benjamin Franklin [gap] was born [gap] (be born) in Boston in 1706. He [gap] (be)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q02",
+          "order": 2,
+          "prompt": "the fifteenth of the seventeen children of a poor candlemaker. He [gap] (go ) to",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q03",
+          "order": 3,
+          "prompt": "school only one year. He [gap] (begin) to work when he was twelve. At",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q04",
+          "order": 4,
+          "prompt": "the age of fourteen he [gap] (decide) to be a writer. He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q05",
+          "order": 5,
+          "prompt": "(copy) the great stories of famous writers and later he [gap] (become) the",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q06",
+          "order": 6,
+          "prompt": "best known writer in his time. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q07",
+          "order": 7,
+          "prompt": "When he [gap] (be) seventeen, he [gap] (leave) Boston and",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q08",
+          "order": 8,
+          "prompt": "[gap] (arrive) in Philadelphia with only a few pennies in his pocket. He",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q09",
+          "order": 9,
+          "prompt": "[gap] (get) a job as a publisher of a newspaper and [gap] (retire)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q10",
+          "order": 10,
+          "prompt": "from business as a very rich man at forty-two. Then he [gap] (spend) the next",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q11",
+          "order": 11,
+          "prompt": "forty years for his government. He [gap] (play) an important role in the",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q12",
+          "order": 12,
+          "prompt": "founding of the USA. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q13",
+          "order": 13,
+          "prompt": "Franklin [gap] (be) also an important scientist and inventor. He [gap] (draw)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q14",
+          "order": 14,
+          "prompt": "electricity from a cloud on a kite string. He [gap] (write) one of the first text",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q15",
+          "order": 15,
+          "prompt": "books on electricity. He [gap] (invent) a simple lightning rod and many other",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q16",
+          "order": 16,
+          "prompt": "practical tools. He [gap] (make) a study of water and [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q17",
+          "order": 17,
+          "prompt": "(discover) many principles of hydrodynamics. He even [gap] (invent) bifocal",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q18",
+          "order": 18,
+          "prompt": "glasses when he was seventy-eight and [gap] (need) them himself.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q19",
+          "order": 19,
+          "prompt": "Franklin [gap] (do) all these things and many more because he [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-d-q20",
+          "order": 20,
+          "prompt": "(believe) he [gap] (can).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-07-sec-e",
+      "sectionKey": "E",
+      "instruction": "Read the following story:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-07-sec-e-q01",
+          "order": 1,
+          "prompt": "What was Bob? [gap] He was a young sailor.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q02",
+          "order": 2,
+          "prompt": "What change did he find when he was back home? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q03",
+          "order": 3,
+          "prompt": "How was their daughter? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q04",
+          "order": 4,
+          "prompt": "How did Bob feel about the girl? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q05",
+          "order": 5,
+          "prompt": "What did Bob tell the girl? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q06",
+          "order": 6,
+          "prompt": "What did Bob send the girl from Capetown? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q07",
+          "order": 7,
+          "prompt": "Where is Capetown? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q08",
+          "order": 8,
+          "prompt": "How many languages did the parrot speak? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-07-sec-e-q09",
+          "order": 9,
+          "prompt": "What did the girl do with the parrot? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-07-sec-g",
+      "sectionKey": "G",
+      "instruction": "Rewrite the sentences using the word and signs in parenthesis:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-07-sec-g-q01",
+          "order": 1,
+          "prompt": "We ate lunch at the cafeteria last night. (-) 2. He didn’t eat lunch at the cafeteria last night. (?) 3 [gap] (-?) 4 [gap] (-) 5 [gap] (+) 6 [gap] (-) 7 [gap] (+) 8 [gap] (-?) 9 [gap] (?) 10 [gap] (-) 11 [gap] (+) 12 [gap] (?) 13 [gap] (-?) 14 [gap] (-) 15 [gap] (+) 16 [gap] (?) 17 [gap] (-?) 18 [gap] (?) 19 [gap] (+) 20 [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

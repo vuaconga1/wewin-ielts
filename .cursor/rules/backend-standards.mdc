@@ -1,0 +1,56 @@
+---
+description: Backend standards — Route Handlers, auth guards, validation, error codes, audit, caching
+globs: src/app/api/**/*.ts,src/lib/**/*.ts
+alwaysApply: false
+---
+
+# Backend (Next.js Route Handlers + `src/lib`)
+
+## Phân lớp
+- `src/app/api/<area>/.../route.ts`: **mỏng** — auth → parse/validate → gọi service → trả JSON. Không viết query Prisma dài ở đây.
+- `src/lib/<feature>/`: service / store / types. File chạm DB hoặc secret phải `import "server-only";`.
+- API admin đặt dưới `/api/admin/**`; API học viên theo tính năng (`/api/<feature>/**`).
+- Mỗi route khai báo `export const runtime = "nodejs";` khi dùng Prisma / crypto / SDK Node.
+
+## Xác thực & phân quyền (BẮT BUỘC mọi route ghi dữ liệu)
+- Lấy user bằng `getSessionUser()` (`@/lib/auth`); không tin `userId` gửi từ client.
+- Admin: `requireAdminResponse(getSessionUser)`; staff (ADMIN/TEACHER): `requireStaffResponse` hoặc `requireClassStaff()`.
+- Quyền theo vai trò dùng helper trong `src/lib/auth/permissions.ts` / `roles.ts`, không so sánh chuỗi role rải rác.
+- Tài nguyên thuộc user: luôn lọc `where: { id, userId: user.id }` để chặn truy cập chéo.
+- Hết hạn gói: `expiredAccessResponse(user)` trước khi cho làm bài trả phí.
+
+## Validate input
+- Dùng **zod** (`z.object(...)`) cho body/query; schema đặt cạnh service trong `src/lib/<feature>/types.ts`.
+- `await request.json().catch(() => null)` rồi `schema.safeParse` → lỗi trả `400 INVALID_INPUT`.
+- Giới hạn độ dài chuỗi, số phần tử mảng, kích thước file upload.
+
+## Response & lỗi
+- Lỗi trả dạng `{ code: "SCREAMING_CODE", detail? }` + HTTP status đúng (400/401/403/404/409/429/500) — dùng `jsonCode()` trong `src/lib/classroom/manage-http.ts` làm mẫu.
+- Lỗi nghiệp vụ: class `XxxError { code, status }` trong service → map ở route. Lỗi không lường trước: `console.error("[scope]", e)` rồi `500 SERVER_ERROR`; **không** trả stack/message DB cho client.
+- Dữ liệu riêng tư: header `NO_STORE` (`Cache-Control: private, no-store`). Không bao giờ trả secret, `passwordHash`, ciphertext.
+
+```ts
+export const runtime = "nodejs";
+export async function POST(request: Request) {
+  const user = await getSessionUser();
+  if (!user) return jsonCode("LOGIN_REQUIRED", 401);
+  const parsed = createSchema.safeParse(await request.json().catch(() => null));
+  if (!parsed.success) return jsonCode("INVALID_INPUT", 400);
+  try {
+    const item = await createItem(user.id, parsed.data);
+    return NextResponse.json({ item }, { status: 201, headers: NO_STORE });
+  } catch (error) {
+    return manageErrorResponse(error, "items");
+  }
+}
+```
+
+## Audit, rate limit, chi phí
+- Hành động admin/staff thay đổi dữ liệu → `recordAuditEvent({ actor, action: "FEATURE_VERB", request, metadata })`.
+- Endpoint public / tốn tài nguyên (login, AI, upload) → `consumeRateLimit()` (`src/lib/classroom/rate-limit.ts`), trả `429`.
+- Gọi dịch vụ trả phí (OpenAI…) phải tuân `paid-services-consent.mdc`.
+
+## Cache & hiệu năng
+- Dữ liệu bán tĩnh (catalog): `unstable_cache` + tag; sau khi admin sửa gọi `revalidateTag` / `revalidatePath` (mẫu: `src/lib/shadowing/store.ts`).
+- Không gọi DB/auth trong layout dùng chung; xem `runtime-performance.mdc`.
+- Biến môi trường mới: thêm vào `.env.example` (giá trị giả), đọc qua `process.env` ở server, không hardcode.

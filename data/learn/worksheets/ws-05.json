@@ -1,0 +1,831 @@
+{
+  "id": "ws-05",
+  "order": 5,
+  "part": 1,
+  "slug": "ws-05-past-form-of-verb-to-be",
+  "title": "WORKSHEET 5",
+  "subject": "Past form of Verb “To Be “",
+  "subjectVi": "Ngữ pháp bài 5: Past form of Verb “To Be “",
+  "level": "A2",
+  "pageRange": "Part 1 (WS 5)",
+  "sections": [
+    {
+      "id": "ws-05-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks. Use WAS / WERE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-a-q06",
+          "order": 6,
+          "prompt": " [gap] Mary and Susan [gap] were [gap] ill yesterday. The weather [gap] very hot last Saturday. The students [gap] at the theater last night. Betty [gap] in Germany last summer. My brother and I [gap] at the football stadium on Saturday. [gap] it cold yesterday?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-b",
+      "sectionKey": "B",
+      "instruction": "Put these sentences into the PAST. Use past form of verb “ TO BE “:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-b-q01",
+          "order": 1,
+          "prompt": "Jane and Michael are tired. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q02",
+          "order": 2,
+          "prompt": "She’s in the park. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q03",
+          "order": 3,
+          "prompt": "It’s a sunny day. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q04",
+          "order": 4,
+          "prompt": "You’re late. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q05",
+          "order": 5,
+          "prompt": "They aren’t hungry. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q06",
+          "order": 6,
+          "prompt": "We aren’t at work. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q07",
+          "order": 7,
+          "prompt": "I’m thirsty. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q08",
+          "order": 8,
+          "prompt": "You aren’t at school. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q09",
+          "order": 9,
+          "prompt": "We’re at the cinema. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q10",
+          "order": 10,
+          "prompt": "Paula isn’t happy. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q11",
+          "order": 11,
+          "prompt": "Everyone is excited. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-b-q12",
+          "order": 12,
+          "prompt": "I’m not afraid. [gap] YESTERDAY [gap] I was at home [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-c",
+      "sectionKey": "C",
+      "instruction": "Choose WAS or WERE and circle it:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-05-sec-c-q01",
+          "order": 1,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-c-q02",
+          "order": 2,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-c-q03",
+          "order": 3,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-c-q04",
+          "order": 4,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-c-q05",
+          "order": 5,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-c-q06",
+          "order": 6,
+          "prompt": "",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-c-q07",
+          "order": 7,
+          "prompt": " He was / were a policeman. We was / were very happy. Was / Were you happy? They wasn’t / weren’t interested in. I was / were at school. It wasn’t / weren’t expensive. Was / Were she your teacher?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-d",
+      "sectionKey": "D",
+      "instruction": "Complete the text with WAS or WERE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-d-q01",
+          "order": 1,
+          "prompt": "Interviewer: What [gap] it like during the First World War, Bill?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q02",
+          "order": 2,
+          "prompt": "Bill [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q03",
+          "order": 3,
+          "prompt": ": It [gap] a terrible time. I [gap] a young man, so I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q04",
+          "order": 4,
+          "prompt": "in the army. We [gap] in Italy.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q05",
+          "order": 5,
+          "prompt": "Interviewer: Where [gap] your wife and children?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q06",
+          "order": 6,
+          "prompt": "Bill [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q07",
+          "order": 7,
+          "prompt": ": They [gap] in London. That [gap] dangerous too. There [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q08",
+          "order": 8,
+          "prompt": "bombs and there [gap] not a lot of food. The children [gap] very",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-d-q09",
+          "order": 9,
+          "prompt": "young and they [gap] very frightened.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-e",
+      "sectionKey": "E",
+      "instruction": "Are these statements TRUE or FALSE? Correct the FALSE statements using WASN’T",
+      "type": "error_correction",
+      "questions": [
+        {
+          "id": "ws-05-sec-e-q01",
+          "order": 1,
+          "prompt": "or WEREN’T:",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q02",
+          "order": 2,
+          "prompt": "Example: a) Bill was an old man during the First World War.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q03",
+          "order": 3,
+          "prompt": "FALSE- Bill wasn’t an old man during the First World War.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q04",
+          "order": 4,
+          "prompt": "b) Bill was in the army. TRUE",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q05",
+          "order": 5,
+          "prompt": "c) Bill was in Poland [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q06",
+          "order": 6,
+          "prompt": "d) Bill’s wife and children were in Italy [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q07",
+          "order": 7,
+          "prompt": "e) It was dangerous in London [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q08",
+          "order": 8,
+          "prompt": "f) There was a lot of food in London [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q09",
+          "order": 9,
+          "prompt": "g) The children were quite old [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-e-q10",
+          "order": 10,
+          "prompt": "h) The children were frightened [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-f",
+      "sectionKey": "F",
+      "instruction": "Make questions about the text using WAS or WERE:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-05-sec-f-q01",
+          "order": 1,
+          "prompt": "Example: a) How old / Bill / during the First World War?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q02",
+          "order": 2,
+          "prompt": "How old was Bill during the First World War?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q03",
+          "order": 3,
+          "prompt": "b) / Bill / in the army? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q04",
+          "order": 4,
+          "prompt": "c) Where / Bill? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q05",
+          "order": 5,
+          "prompt": "d) Where / Bill’s wife and children? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q06",
+          "order": 6,
+          "prompt": "e) / It dangerous in London? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q07",
+          "order": 7,
+          "prompt": "f) / there bombs? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q08",
+          "order": 8,
+          "prompt": "g) / there a lot of food? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-f-q09",
+          "order": 9,
+          "prompt": "h) How old / the children? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-i",
+      "sectionKey": "I",
+      "instruction": "/ the children frightened? ……………………………………………………….. ?",
+      "type": "inline_gap_fill",
+      "questions": []
+    },
+    {
+      "id": "ws-05-sec-g",
+      "sectionKey": "G",
+      "instruction": "Read the interview and answer the questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-g-q01",
+          "order": 1,
+          "prompt": "Were there any cars when he was a boy? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-g-q02",
+          "order": 2,
+          "prompt": "Was he happy or sad when he was a child? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-g-q03",
+          "order": 3,
+          "prompt": "What was his mother’s job? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-g-q04",
+          "order": 4,
+          "prompt": "How many children were there in his family? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-g-q05",
+          "order": 5,
+          "prompt": "How old is Bill Jenkins? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-h",
+      "sectionKey": "H",
+      "instruction": "Mary spent last weekend in Madrid. Ask her some questions using WAS or WERE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-h-q01",
+          "order": 1,
+          "prompt": "(your room / comfortable?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q02",
+          "order": 2,
+          "prompt": "(the weather / nice?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q03",
+          "order": 3,
+          "prompt": "(the streets / full of people?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q04",
+          "order": 4,
+          "prompt": "(the shops / expensive?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q05",
+          "order": 5,
+          "prompt": "(the city / exciting at night?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q06",
+          "order": 6,
+          "prompt": "(the museums / interesting?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q07",
+          "order": 7,
+          "prompt": "(the people / friendly?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-h-q08",
+          "order": 8,
+          "prompt": "(your flight / OK?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-i",
+      "sectionKey": "I",
+      "instruction": "George and Sally have been married for 50 years. They are talking about their first",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-i-q01",
+          "order": 1,
+          "prompt": "George: The garden was small. [gap] Sally : No, it [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-i-q02",
+          "order": 2,
+          "prompt": "Sally : The neighbors were French. [gap] George: No, they [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-i-q03",
+          "order": 3,
+          "prompt": "George: The living-room was red. [gap] Sally : No, it [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-i-q04",
+          "order": 4,
+          "prompt": "Sally : Our first chairs were expensive. [gap] George: No, they [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-i-q05",
+          "order": 5,
+          "prompt": "George: The kitchen was old. [gap] Sally : No, it [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-i-q06",
+          "order": 6,
+          "prompt": "George: The local shops were good. [gap] Sally : No, they [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-j",
+      "sectionKey": "J",
+      "instruction": "Put WAS, WASN’T, WERE or WEREN’T in the gaps in these conversations:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-j-q01",
+          "order": 1,
+          "prompt": "Peter : [gap] Was [gap] Paul at work today? Julie : No, he [gap] in the office. I think he’s sick.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-j-q02",
+          "order": 2,
+          "prompt": "Henry : [gap] you in South America last year? Steve : Yes. I [gap] in Bolivia on business, and then my wife and I [gap] in Brazil for a holiday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-j-q03",
+          "order": 3,
+          "prompt": "Paula : Philip and I [gap] at home in London last week. We [gap] at Mike’s house in Cornwall. It was lovely there. Do you know Mike? Jane : Yes, I [gap] at Mike’s party in Oxford in the summer. [gap] you there? Paula : No, we weren’t there. Philip and I [gap] in Portugal in the summer.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-k",
+      "sectionKey": "K",
+      "instruction": "Make questions using WAS / WERE:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-05-sec-k-q01",
+          "order": 1,
+          "prompt": "Jim / at home / last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q02",
+          "order": 2,
+          "prompt": "You / at school / on Monday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q03",
+          "order": 3,
+          "prompt": "David / here / yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q04",
+          "order": 4,
+          "prompt": "the cinema / open / on Sunday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q05",
+          "order": 5,
+          "prompt": "Kate and Jane / late / yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q06",
+          "order": 6,
+          "prompt": "you / in the football team / last year.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q07",
+          "order": 7,
+          "prompt": "all your friends / at your party.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-k-q08",
+          "order": 8,
+          "prompt": "it / hot / last week. [gap] Was Jim at home last night?…? [gap] ? [gap] ? [gap] ? [gap] ? [gap] ? [gap] ? [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-l",
+      "sectionKey": "L",
+      "instruction": "Make negative sentences using WAS / WERE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-l-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-l-q08",
+          "order": 8,
+          "prompt": " [gap] Kevin / at my party. Nick / in class yesterday. It / warm / yesterday. Tina and Jim / late. Etty / on the bus. We / at the match / yesterday. Our teachers / pleased with us. I / at the restaurant. [gap] Kevin wasn’t at my party [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-05-sec-n",
+      "sectionKey": "N",
+      "instruction": "Fill in the blanks using WAS (NOT) / WERE (NOT):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-05-sec-n-q01",
+          "order": 1,
+          "prompt": "I’m here today but I [gap] wasn’t [gap] here yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q02",
+          "order": 2,
+          "prompt": "Jennifer is tall now but she [gap] tall two years ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q03",
+          "order": 3,
+          "prompt": "It is rainy today but it [gap] yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q04",
+          "order": 4,
+          "prompt": "Mr. Smith is angry now but he [gap] an hour ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q05",
+          "order": 5,
+          "prompt": "The shops are open today but they [gap] on Sunday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q06",
+          "order": 6,
+          "prompt": "My car is clean today but it [gap] yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q07",
+          "order": 7,
+          "prompt": "My father isn’t at home now but he [gap] an hour ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q08",
+          "order": 8,
+          "prompt": "The students are in class today but they [gap] last week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q09",
+          "order": 9,
+          "prompt": "It isn’t sunny now but it [gap] an hour ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-05-sec-n-q10",
+          "order": 10,
+          "prompt": "We aren’t hungry now but we [gap] twenty minutes ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "id": "ws-29",
+  "order": 29,
+  "part": 3,
+  "slug": "ws-29-adjectives-ending-ing-or-ed",
+  "title": "WORKSHEET 29",
+  "subject": "Adjectives ending –ing or -ed",
+  "subjectVi": "Ngữ pháp bài 29: Adjectives ending –ing or -ed",
+  "level": "B1",
+  "pageRange": "Part 3 (WS 29)",
+  "sections": [
+    {
+      "id": "ws-29-sec-a",
+      "sectionKey": "A",
+      "instruction": "Choose the correct form:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-a-q08",
+          "order": 8,
+          "prompt": " [gap] I enjoyed the book. It was very interested / interesting. Are you interested / interesting in art? I thought the story was quite amused / amusing. They were shocked / shocking when they heard the news. We were all very worried / worrying when he didn’t come home. It was surprised / surprising that she didn’t come to the meeting. I usually find football rather bored / boring. Are you frightened / frightening of spiders?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-29-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the sentences. Use adjectives formed by adding –ING or –ED to the words in",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-b-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-b-q08",
+          "order": 8,
+          "prompt": " [gap] I find it quite [gap] to talk in front of a group of people. (embarrass) I think reading newspapers is [gap] (depress) I’m [gap] in all kinds of sport. (interest) I find walking in the countryside very [gap] (relax) I think learning a language is very [gap] (interest) I get [gap] when people smoke in restaurants. (annoy) I don’t normally get [gap] when I watch horror films. (frighten) I don’t get [gap] very easily. (embarrass)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-29-sec-c",
+      "sectionKey": "C",
+      "instruction": "Complete the sentences for each situation. Use the word given + the ending –ING or",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-c-q01",
+          "order": 1,
+          "prompt": "The film wasn’t as good as we had expected. (disappoint-) [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) The",
+            "b) We"
+          ]
+        },
+        {
+          "id": "ws-29-sec-c-q02",
+          "order": 2,
+          "prompt": "Diana teaches young children. It’s a very hard job but she enjoys it. (exhaust-) [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) She",
+            "b) At"
+          ]
+        },
+        {
+          "id": "ws-29-sec-c-q03",
+          "order": 3,
+          "prompt": "It’s been raining all day. I hate this weather. (depress-) [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) This",
+            "b) This",
+            "c) It’s"
+          ]
+        },
+        {
+          "id": "ws-29-sec-c-q04",
+          "order": 4,
+          "prompt": "Clare is going to the United States next month. She has never been there before. (excit-) [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Going",
+            "c) She"
+          ]
+        },
+        {
+          "id": "ws-29-sec-c-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap] I was disappointing / disappointed with the film. I had expected it to be better. Are you interesting / interested in football? The football match was quite exciting / excited. I enjoyed it. It’s sometimes embarrassing / embarrassed when you have to ask people for money. Do you easily get embarrassing / embarrassed ? I had never expected to get the job. I was really amazing / amazed when I was offered it. She has really learnt very fast. She has made astonishing / astonished progress. I didn’t find the situation funny. I was not amusing / amused. It was a really terrifying / terrified experience. Afterwards everybody was very shocking / shocked.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q10",
+          "order": 10,
+          "prompt": "Why do you always look so boring / bored? Is your life really so boring / bored? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q11",
+          "order": 11,
+          "prompt": "He’s one of the most boring / bored people I’ve ever met. He never stops talking and he [gap] never says anything interesting / interested.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q08",
+          "order": 8,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-c-q09",
+          "order": 9,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-29-sec-e",
+      "sectionKey": "E",
+      "instruction": "Complete the sentences using one of the words in the box:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-e-q01",
+          "order": 1,
+          "prompt": "He works very hard. It’s not [gap] surprising [gap] that he’s always tired.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q02",
+          "order": 2,
+          "prompt": "I’ve got nothing to do. I’m [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q03",
+          "order": 3,
+          "prompt": "The teacher’s explanation was [gap] Most of the students didn’t understand it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q04",
+          "order": 4,
+          "prompt": "The kitchen hadn’t been cleaned for ages. It was really [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q05",
+          "order": 5,
+          "prompt": "I seldom visit art galleries. I’m not particularly [gap] in art.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q06",
+          "order": 6,
+          "prompt": "There’s no need to get [gap] just because I’m a few minutes late.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q07",
+          "order": 7,
+          "prompt": "The lecture was [gap] I fell asleep.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q08",
+          "order": 8,
+          "prompt": "I asked Emily if she wanted to come out with us but she wasn’t [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q09",
+          "order": 9,
+          "prompt": "I’ve been working very hard all day and now I’m [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q10",
+          "order": 10,
+          "prompt": "I’m starting a new job next week. I’m quite [gap] about it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q11",
+          "order": 11,
+          "prompt": "Tom is very good at telling funny stories. He can be very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-29-sec-e-q12",
+          "order": 12,
+          "prompt": "Liz is a very [gap] person. She knows a lot, she’s traveled a lot and she’s done lots of different things.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

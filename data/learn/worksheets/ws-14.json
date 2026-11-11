@@ -1,0 +1,432 @@
+{
+  "id": "ws-14",
+  "order": 14,
+  "part": 2,
+  "slug": "ws-14-past-perfect-tense-past-perfect-continuous",
+  "title": "WORKSHEET 14",
+  "subject": "Past Perfect Tense & Past Perfect Continuous",
+  "subjectVi": "Ngữ pháp bài 14: Past Perfect Tense & Past Perfect Continuous",
+  "level": "A2",
+  "pageRange": "Part 2 (WS 14)",
+  "sections": [
+    {
+      "id": "ws-14-sec-a",
+      "sectionKey": "A",
+      "instruction": "Supply a suitable SIMPLE PAST or PAST PERFECT TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-14-sec-a-q01",
+          "order": 1,
+          "prompt": "They [gap] (go) home after they [gap] (finish) their work.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q02",
+          "order": 2,
+          "prompt": "She [gap] (just / go) out when I called her.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q03",
+          "order": 3,
+          "prompt": "My brother [gap] (eat) all the pie before we got back.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q04",
+          "order": 4,
+          "prompt": "He wondered why I [gap] (not / visit) him before.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q05",
+          "order": 5,
+          "prompt": "She said that she [gap] (already / see) the Pyramids.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q06",
+          "order": 6,
+          "prompt": "The fire [gap] (spread) to the next building before the firemen [gap] (arrive).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q07",
+          "order": 7,
+          "prompt": "They drank small cups of coffee, after they [gap] (finish) dinner.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q08",
+          "order": 8,
+          "prompt": "He told me he [gap] (catch) a young lion.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q09",
+          "order": 9,
+          "prompt": "His mother [gap] (worry) a lot about him before she [gap] (hear) that he was asfe.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q10",
+          "order": 10,
+          "prompt": "He [gap] (already / learn) English before he [gap] (leave) for England, but before he arrived in England, he [gap] (forget) some.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q11",
+          "order": 11,
+          "prompt": "Mary [gap] (go) swimming after she [gap] (come) home. After she [gap] (swim), she [gap] (call) her friend Judy.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q12",
+          "order": 12,
+          "prompt": "I [gap] (go) to the theatre with my friends yesterday. I [gap] (not / go) to the theatre for a year. We [gap] (have) a very good time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q13",
+          "order": 13,
+          "prompt": "After they [gap] (finish) their breakfast, they [gap] (leave) for school.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q14",
+          "order": 14,
+          "prompt": "Linda [gap] (play) tennis after she [gap] (do) her homework.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-a-q15",
+          "order": 15,
+          "prompt": "My father [gap] (water) the flowers after he [gap] (clean) the car. After he [gap] (water) the flowers, he [gap] (have) dinner.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-14-sec-b",
+      "sectionKey": "B",
+      "instruction": "Combine the following sentences by using AFTER / BEFORE:",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-14-sec-b-q01",
+          "order": 1,
+          "prompt": "My mother took her umbrella. She went out.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q02",
+          "order": 2,
+          "prompt": "Frank called me. I went to school.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q03",
+          "order": 3,
+          "prompt": "I washed the dishes. I watched TV.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q04",
+          "order": 4,
+          "prompt": "She washed her hands. She had lunch.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q05",
+          "order": 5,
+          "prompt": "The boys bought a ball. They played football.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q06",
+          "order": 6,
+          "prompt": "My mother made a cake. The guests came.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q07",
+          "order": 7,
+          "prompt": "He put sugar in his tea. He drank it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q08",
+          "order": 8,
+          "prompt": "I got up. I had breakfast.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q09",
+          "order": 9,
+          "prompt": "The children ran away. They broke the window.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-b-q10",
+          "order": 10,
+          "prompt": "I fastened my seat belt. The plane took off.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-14-sec-c",
+      "sectionKey": "C",
+      "instruction": "Complete the following sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-14-sec-c-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap] After I had watched that horror film, I [gap] She finished her homework after [gap] When I came home, my sister [gap] already [gap] Before he went out, [gap] They had telephoned me before [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-14-sec-d",
+      "sectionKey": "D",
+      "instruction": "Read the passage and answer the questions:",
+      "type": "reading_qa",
+      "questions": [
+        {
+          "id": "ws-14-sec-d-q01",
+          "order": 1,
+          "prompt": "When did the writer drive on to the next town?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-d-q02",
+          "order": 2,
+          "prompt": "When did he say good morning to the man in French?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-d-q03",
+          "order": 3,
+          "prompt": "When did the young man say, “Do you speak English?”",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-14-sec-e",
+      "sectionKey": "E",
+      "instruction": "Fill in the following sentences by using PAST PERFECT CONTINUOUS TENSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-14-sec-e-q01",
+          "order": 1,
+          "prompt": "We [gap] (play) football for half an hour when it started to rain.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q02",
+          "order": 2,
+          "prompt": "I [gap] (study) English for a short time when the electricity went off.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q03",
+          "order": 3,
+          "prompt": "She [gap] (do) her homework before you came in.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q04",
+          "order": 4,
+          "prompt": "His knees and hands were very dirty. He [gap] (crawl) in the garden.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q05",
+          "order": 5,
+          "prompt": "I [gap] (drive) the car for five years when I sold it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q06",
+          "order": 6,
+          "prompt": "We were very tired. We [gap] (travel) for about sixteen hours.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q07",
+          "order": 7,
+          "prompt": "They were out of breath. They [gap] (run) for a long time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q08",
+          "order": 8,
+          "prompt": "He [gap] (live) in London for ten years when he had an accident.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q09",
+          "order": 9,
+          "prompt": "He was tired because he [gap] (write) letters all morning.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-e-q10",
+          "order": 10,
+          "prompt": "He [gap] (repair) the radio for an hour when you arrived.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-14-sec-f",
+      "sectionKey": "F",
+      "instruction": "Fill in the following sentences by using PAST PERFECT CONTINUOUS TENSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-14-sec-f-q01",
+          "order": 1,
+          "prompt": "I was tired because I [gap] (type) for a long time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q02",
+          "order": 2,
+          "prompt": "Her boss was very angry with her because she [gap] (come) to work very late.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q03",
+          "order": 3,
+          "prompt": "I didn’t know about the earthquake because I [gap] (not / watch) television.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q04",
+          "order": 4,
+          "prompt": "She was too fat because she [gap] (not / keep) her doctor’s advice.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q05",
+          "order": 5,
+          "prompt": "I took my car to the garage because the brakes [gap] (not / work).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q06",
+          "order": 6,
+          "prompt": "She had to go to the dentist because she [gap] (not / clean) her teeth.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q07",
+          "order": 7,
+          "prompt": "He got bad marks because he [gap] (not / study) hard.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q08",
+          "order": 8,
+          "prompt": "She wasn’t at home. She [gap] (go) out with her boyfriend.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q09",
+          "order": 9,
+          "prompt": "I thought I [gap] (behave) like an ididot.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-14-sec-f-q10",
+          "order": 10,
+          "prompt": "He [gap] (study) English) very hard for the last few days.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

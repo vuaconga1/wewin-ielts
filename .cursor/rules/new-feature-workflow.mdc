@@ -1,0 +1,33 @@
+---
+description: Checklist to follow when designing and building a new feature (frontend, backend, database)
+alwaysApply: true
+---
+
+# Quy trình làm tính năng mới (WEWIN IELTS)
+
+Áp dụng mỗi khi thêm tính năng / trang / API mới. Chi tiết từng tầng:
+- Frontend: `frontend-standards.mdc` + `ui-i18n-responsive.mdc`
+- Backend: `backend-standards.mdc`
+- Database: `database-standards.mdc`
+- Hiệu năng: `runtime-performance.mdc` · Dịch vụ trả phí: `paid-services-consent.mdc`
+
+## 1. Thiết kế (trước khi code)
+- Xác định: ai dùng (vai trò `Role`), luồng chính, dữ liệu cần lưu, quyền truy cập, có gọi dịch vụ trả phí không.
+- Tính năng lớn: viết spec ngắn trong `docs/<FEATURE>_PLAN.md` (mục tiêu, màn hình, API, model, rủi ro).
+
+## 2. Thứ tự triển khai
+1. **Database** — model/enum/index trong `prisma/schema.prisma` → migration có tên rõ ràng.
+2. **Service** — `src/lib/<feature>/` (types + zod schema, store/service, `server-only`).
+3. **API** — `src/app/api/<feature>/.../route.ts`: auth → validate → service → `{ code }` lỗi chuẩn.
+4. **UI** — `src/app/<route>/page.tsx` + `src/components/<feature>/`; dùng token `wewin-*`, i18n vi + en.
+5. **Điều hướng** — thêm vào sidebar/menu nếu cần, kiểm tra quyền hiển thị theo vai trò.
+
+## 3. Definition of Done
+- [ ] Màu sắc theo theme WEWIN (navy/gold/accent-blue), không `dark:`, không palette lạ.
+- [ ] Mọi chuỗi UI qua i18n (`vi.json` + `en.json`), không lộ key/enum thô.
+- [ ] Responsive mobile → desktop, không tràn ngang.
+- [ ] Có loading / empty / error state.
+- [ ] API kiểm tra đăng nhập + quyền, validate bằng zod, không lộ dữ liệu nhạy cảm.
+- [ ] Query có `select` gọn, phân trang, index phù hợp; migration đã tạo.
+- [ ] Hành động admin có audit log; endpoint public có rate limit.
+- [ ] `npm run lint` và `npx tsc --noEmit` sạch; logic chấm điểm/parse có script test trong `scripts/test-*.ts`.

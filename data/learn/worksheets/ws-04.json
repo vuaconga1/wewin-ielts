@@ -1,0 +1,950 @@
+{
+  "id": "ws-04",
+  "order": 4,
+  "part": 1,
+  "slug": "ws-04-present-simple-present-continuous-simple-past",
+  "title": "WORKSHEET 4",
+  "subject": "Present Simple, Present Continuous, Simple Past",
+  "subjectVi": "Ngữ pháp bài 4: Present Simple, Present Continuous, Simple Past",
+  "level": "A1",
+  "pageRange": "Part 1 (WS 4)",
+  "sections": [
+    {
+      "id": "ws-04-sec-a",
+      "sectionKey": "A",
+      "instruction": "Chilli’s friend Della was on holiday in Jamaica. Read her letter to Chilli and complete it",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-a-q01",
+          "order": 1,
+          "prompt": "with the correct verbs.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q02",
+          "order": 2,
+          "prompt": "* invited",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q03",
+          "order": 3,
+          "prompt": "* stopped",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q04",
+          "order": 4,
+          "prompt": "* didn’t sleep",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q05",
+          "order": 5,
+          "prompt": "* talked",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q06",
+          "order": 6,
+          "prompt": "* didn’t get",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q07",
+          "order": 7,
+          "prompt": "* stayed",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q08",
+          "order": 8,
+          "prompt": "* watched",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q09",
+          "order": 9,
+          "prompt": "* travelled",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q10",
+          "order": 10,
+          "prompt": "* enjoyed",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q11",
+          "order": 11,
+          "prompt": "* was",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q12",
+          "order": 12,
+          "prompt": "* listened",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q13",
+          "order": 13,
+          "prompt": "Dear Chilli,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q14",
+          "order": 14,
+          "prompt": "I had a fantastic holiday in Jamaica. It was hot and the sea was blue and lovely.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q15",
+          "order": 15,
+          "prompt": "I [gap] by plane from London to Kingston. I really [gap] the flight. It was",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q16",
+          "order": 16,
+          "prompt": "eight hours long but I [gap] at all because I [gap] so excited. During",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q17",
+          "order": 17,
+          "prompt": "the flight I [gap] to music, [gap] a film and [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q18",
+          "order": 18,
+          "prompt": "to the girl in the seat next to me.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q19",
+          "order": 19,
+          "prompt": "I [gap] with my aunt and uncle in Kingston. They [gap] me",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q20",
+          "order": 20,
+          "prompt": "on a trip to Montego Bay. We [gap] at an Orchid Farm. It was brilliant. On my",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q21",
+          "order": 21,
+          "prompt": "last night there I [gap] to bed until there o’clock in the morning!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q22",
+          "order": 22,
+          "prompt": "See you soon!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q23",
+          "order": 23,
+          "prompt": "Love,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-a-q24",
+          "order": 24,
+          "prompt": "Della",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-b",
+      "sectionKey": "B",
+      "instruction": "Answer the questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-b-q01",
+          "order": 1,
+          "prompt": "Did she go to Jamaica? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q02",
+          "order": 2,
+          "prompt": "How did she go to Kingston? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q03",
+          "order": 3,
+          "prompt": "How was the weather? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q04",
+          "order": 4,
+          "prompt": "What did she do on the plane? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q05",
+          "order": 5,
+          "prompt": "Did she visit her grandparents? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q06",
+          "order": 6,
+          "prompt": "Did she like the Orchid Farm? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q07",
+          "order": 7,
+          "prompt": "When did she go to bed on her last night? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q08",
+          "order": 8,
+          "prompt": "Where is Jamaica? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q09",
+          "order": 9,
+          "prompt": "What do the tourists do in Jamaica? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-b-q10",
+          "order": 10,
+          "prompt": "How is the life for Jamaican people? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-c",
+      "sectionKey": "C",
+      "instruction": "Complete these sentences in the PAST TENSE, using the correct verb:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-c-q01",
+          "order": 1,
+          "prompt": "We really [gap] the concert last night. It was great!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q02",
+          "order": 2,
+          "prompt": "She [gap] with friends in Brighton last summer.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q03",
+          "order": 3,
+          "prompt": "Italy [gap] very well in the last World Cup.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q04",
+          "order": 4,
+          "prompt": "Her parents [gap] by train from Shanghai to Moscow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q05",
+          "order": 5,
+          "prompt": "I [gap] you four times last night but you were out.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q06",
+          "order": 6,
+          "prompt": "We [gap] along the beach yesterday. It was lovely.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q07",
+          "order": 7,
+          "prompt": "She [gap] the film but she didn’t like the music.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q08",
+          "order": 8,
+          "prompt": "The men [gap] work at exactly one o’clock.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q09",
+          "order": 9,
+          "prompt": "I [gap] to the new Sting album yesterday. It’s great.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-c-q10",
+          "order": 10,
+          "prompt": "They [gap] to us about their trip to Madagaskar. It was very interesting.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-d",
+      "sectionKey": "D",
+      "instruction": "Complete the conversation with WAS / WASN’T / WERE / WEREN’T.",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-d-q01",
+          "order": 1,
+          "prompt": "A: Where were you last night? I phoned you but you [gap] at home.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q02",
+          "order": 2,
+          "prompt": "B: I [gap] out with friends. We [gap] at the Bluenote Café.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q03",
+          "order": 3,
+          "prompt": "A: [gap] Julia there?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q04",
+          "order": 4,
+          "prompt": "B: No, she [gap] Why?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q05",
+          "order": 5,
+          "prompt": "A: Oh, I just wondered. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q06",
+          "order": 6,
+          "prompt": "B: She [gap] out with Nick. They [gap] at the Oasis. I think.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q07",
+          "order": 7,
+          "prompt": "A: No, they [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q08",
+          "order": 8,
+          "prompt": "B: How do you know? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-d-q09",
+          "order": 9,
+          "prompt": "A: Because I [gap] there!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-e",
+      "sectionKey": "E",
+      "instruction": "Complete the man’s statement with the PAST SIMPLE form of the verbs in brackets:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-e-q01",
+          "order": 1,
+          "prompt": "Last night I [gap] (go) to my favorite restaurant in West Street. I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q02",
+          "order": 2,
+          "prompt": "(leave) the restaurant at about 11 o’clock. It [gap] (be) a warm evening and I",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q03",
+          "order": 3,
+          "prompt": "[gap] (decide) to walk along the beach.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q04",
+          "order": 4,
+          "prompt": "Suddenly, I [gap] (hear) a noise. I [gap] (turn) and [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q05",
+          "order": 5,
+          "prompt": "(see) three boys aged about eighteen. One boy [gap] (come) up to me and",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q06",
+          "order": 6,
+          "prompt": "[gap] (ask) me the time. When I [gap] (look) down at my watch,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q07",
+          "order": 7,
+          "prompt": "he [gap] (hit) me and I [gap] (fall) to the ground. Another boy",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q08",
+          "order": 8,
+          "prompt": "[gap] (take) my wallet. I [gap] (shout) for help. Then they",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-e-q09",
+          "order": 9,
+          "prompt": "[gap] (run) away.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-f",
+      "sectionKey": "F",
+      "instruction": "Complete the story. Use the verbs in the brackets:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-f-q01",
+          "order": 1,
+          "prompt": "Last year I went (go) on holiday. I [gap] (drive) to the sea with my friend. On",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-f-q02",
+          "order": 2,
+          "prompt": "the first day we [gap] (look) at the beautiful buildings and [gap] (eat) in lots of",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-f-q03",
+          "order": 3,
+          "prompt": "restaurants. The next day [gap] (be) very hot so we [gap] (drive) to the sea. We",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-f-q04",
+          "order": 4,
+          "prompt": "[gap] (leave) our clothes in the car and [gap] (sunbathe) and [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-f-q05",
+          "order": 5,
+          "prompt": "(swim) all day. At six o’clock we [gap] (walk) to our car, but the car [gap] (be)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-f-q06",
+          "order": 6,
+          "prompt": "there. We [gap] (buy) some clothes and [gap] (go) to the Police Station. The",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-f-q07",
+          "order": 7,
+          "prompt": "police [gap] (be) nice and we [gap] (sleep) in the police station.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-g",
+      "sectionKey": "G",
+      "instruction": "Make negative sentences (x) or questions (?) using the PAST TENSE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-g-q01",
+          "order": 1,
+          "prompt": "she / like (x) the film [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-g-q02",
+          "order": 2,
+          "prompt": "I / use / (x) the school computer yesterday [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-g-q03",
+          "order": 3,
+          "prompt": "they / arrive (?) home late yesterday [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-g-q04",
+          "order": 4,
+          "prompt": "you / ask (?) her for Caroline’s address [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-g-q05",
+          "order": 5,
+          "prompt": "he / enjoy (x) the concert in the park [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-g-q06",
+          "order": 6,
+          "prompt": "we / talk (x) about school at all [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-h",
+      "sectionKey": "H",
+      "instruction": "Read the text. Write the questions below about Tamsin’s holiday:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-h-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-h-q08",
+          "order": 8,
+          "prompt": " [gap] Where did she go? [gap] Bali. [gap] Last September. [gap] By plane. [gap] In a big hotel. [gap] It was very hot. [gap] She swam. [gap] It was very good. [gap] Some nice people.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-i",
+      "sectionKey": "I",
+      "instruction": "Match the questions with the answers:",
+      "type": "matching",
+      "questions": [
+        {
+          "id": "ws-04-sec-i-q01",
+          "order": 1,
+          "prompt": "When did you learn to drive a car?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q02",
+          "order": 2,
+          "prompt": "What did you watch on television last night?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q03",
+          "order": 3,
+          "prompt": "What did you do last weekend?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q04",
+          "order": 4,
+          "prompt": "Who were you with at 4pm today? a. By bus. b. The news.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q05",
+          "order": 5,
+          "prompt": "When was the beginning of term?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q06",
+          "order": 6,
+          "prompt": "How did you come to class?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q07",
+          "order": 7,
+          "prompt": "What did you eat for breakfast this morning?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-i-q08",
+          "order": 8,
+          "prompt": "What was the month before last? c. 6th September. d. On Saturday I played tennis and on Sunday I slept. e. January. f. Three years ago. g. John. h. Toast and coffee.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-j",
+      "sectionKey": "J",
+      "instruction": "Read about Lucian and Estelle and write the questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-j-q01",
+          "order": 1,
+          "prompt": "live / they / do / London? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-j-q02",
+          "order": 2,
+          "prompt": "Madrid / do / live / they? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-j-q03",
+          "order": 3,
+          "prompt": "Ferrari / they / work / do? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-j-q04",
+          "order": 4,
+          "prompt": "work / Renault / do / they? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-j-q05",
+          "order": 5,
+          "prompt": "swimming / like / cooking / they / do? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-j-q06",
+          "order": 6,
+          "prompt": "swimming / they / like / traveling / do? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-j-q07",
+          "order": 7,
+          "prompt": "like / do / driving / they ? [gap] Do they live in London? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-k",
+      "sectionKey": "K",
+      "instruction": "What does Ellie ask Carsten? Put the words in order to make questions:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-04-sec-k-q01",
+          "order": 1,
+          "prompt": "Ellie: Sunday time What do get you up on?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q02",
+          "order": 2,
+          "prompt": "What time do you get up on Sunday? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q03",
+          "order": 3,
+          "prompt": "Carsten: Ten o’clock.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q04",
+          "order": 4,
+          "prompt": "Ellie: you breakfast What do have for?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q05",
+          "order": 5,
+          "prompt": "Carsten: Coffee, cheese and bread.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q06",
+          "order": 6,
+          "prompt": "Ellie: morning you in do the What do?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q07",
+          "order": 7,
+          "prompt": "Carsten: I play football in the park.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q08",
+          "order": 8,
+          "prompt": "Ellie: do lunch When have you?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q09",
+          "order": 9,
+          "prompt": "Carsten: At two o’clock.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q10",
+          "order": 10,
+          "prompt": "Ellie: with Who lunch you do have?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q11",
+          "order": 11,
+          "prompt": "Carsten: My parents.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q12",
+          "order": 12,
+          "prompt": "Ellie: you afternoon What do do in the?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-k-q13",
+          "order": 13,
+          "prompt": "Carsten: I watch football on TV.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-l",
+      "sectionKey": "L",
+      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-l-q01",
+          "order": 1,
+          "prompt": "Father: Alice, what are you doing (you / do)? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-l-q02",
+          "order": 2,
+          "prompt": "Alice: I [gap] (clean) the house. I usually [gap] (do) my",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-l-q03",
+          "order": 3,
+          "prompt": "homework but today I [gap] (not / go) to school.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-l-q04",
+          "order": 4,
+          "prompt": "Father: Where’s your mum? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-l-q05",
+          "order": 5,
+          "prompt": "Alice: She [gap] (make) a cake. She usually [gap] (go) to",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-l-q06",
+          "order": 6,
+          "prompt": "the market but today my friends [gap] (come).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-04-sec-m",
+      "sectionKey": "M",
+      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-m-q01",
+          "order": 1,
+          "prompt": "Sarah Star is a singer. She sings [gap] (sing) and [gap] (dance) on TV. She [gap] (drive) a red Mercedes. At the moment she is with Nick Pear. They [gap] (eat) in a restaurant. Sarah [gap] (drink) a cocktail and Nick [gap] (talk) to the waiter.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-04-sec-m-q02",
+          "order": 2,
+          "prompt": "Ann is a doctor. She [gap] (work) in a hospital but today she [gap] (stay) at home. Now she [gap] (cook) dinner. Her friends [gap] (visit) her today. It [gap] (be) her birthday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

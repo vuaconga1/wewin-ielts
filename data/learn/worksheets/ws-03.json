@@ -1,0 +1,637 @@
+{
+  "id": "ws-03",
+  "order": 3,
+  "part": 1,
+  "slug": "ws-03-present-simple-and-present-continuous",
+  "title": "WORKSHEET 3",
+  "subject": "Present Simple and Present Continuous",
+  "subjectVi": "Ngữ pháp bài 3: Present Simple and Present Continuous",
+  "level": "A1",
+  "pageRange": "Part 1 (WS 3)",
+  "sections": [
+    {
+      "id": "ws-03-sec-a",
+      "sectionKey": "A",
+      "instruction": "Read the paragraphs and answer the questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap] What is his name? What does he do? What is he doing now? What is his favorite sport? He is Gordon Lester. He is a champion jockey. He rides racehorses, but he isn’t riding a racehorse now. He is dancing with his wife.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q06",
+          "order": 6,
+          "prompt": " [gap] What is his name? What does he do? Is he a good jockey? Where is he now? What is he doing? Who is he with? They are Bob and Michael. They teach English in a school. They aren’t teaching now. They are in the pub. They’re talking and laughing.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap] Who are they? Do they teach? What do they teach? Where are they now? What are they doing now? She is Rosalind Graham. She is a ballet dancer. She dances for Royal Ballet. She isn’t dancing now. She is having a bath.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q01",
+          "order": 1,
+          "prompt": "What is her name? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q02",
+          "order": 2,
+          "prompt": "What does she do? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q03",
+          "order": 3,
+          "prompt": "Is she dancing now? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-a-q04",
+          "order": 4,
+          "prompt": "What is she doing? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-b",
+      "sectionKey": "B",
+      "instruction": "Write DON’T, DOESN’T, ISN’T, AREN’T or AM NOT in the blank space in each",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-b-q01",
+          "order": 1,
+          "prompt": "sentence: [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q02",
+          "order": 2,
+          "prompt": "He isn’t listening to the radio right now. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q03",
+          "order": 3,
+          "prompt": "He doesn’t listen to the radio every evening. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q04",
+          "order": 4,
+          "prompt": "We [gap] watching a television program now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q05",
+          "order": 5,
+          "prompt": "We [gap] watch television every day.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q06",
+          "order": 6,
+          "prompt": "They [gap] study their lessons after class.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q07",
+          "order": 7,
+          "prompt": "They [gap] studying their lessons right now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q08",
+          "order": 8,
+          "prompt": "It [gap] raining very hard right at the moment.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q09",
+          "order": 9,
+          "prompt": "It [gap] rain very much during the summer.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q10",
+          "order": 10,
+          "prompt": "Mr. Johnson [gap] eating his lunch now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q11",
+          "order": 11,
+          "prompt": "Mr. Johnson [gap] always eat at that place.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q12",
+          "order": 12,
+          "prompt": "I [gap] see any students in that room.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-b-q13",
+          "order": 13,
+          "prompt": "I [gap] hear anyone in the hall now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-c",
+      "sectionKey": "C",
+      "instruction": "Complete the sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-c-q01",
+          "order": 1,
+          "prompt": "Every Monday my father [gap] because",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-c-q02",
+          "order": 2,
+          "prompt": "Linda usually [gap] but she [gap] [gap] today.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-c-q03",
+          "order": 3,
+          "prompt": "I want to buy a [gap] because [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-c-q04",
+          "order": 4,
+          "prompt": "My teacher often [gap] but today [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-c-q05",
+          "order": 5,
+          "prompt": "At the moment the children [gap] they often",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-d",
+      "sectionKey": "D",
+      "instruction": "Read the following text and answer the questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-d-q01",
+          "order": 1,
+          "prompt": "Where does Kate live? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q02",
+          "order": 2,
+          "prompt": "What time does she get up every morning? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q03",
+          "order": 3,
+          "prompt": "Who makes breakfast every morning? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q04",
+          "order": 4,
+          "prompt": "Why isn’t she late for breakfast? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q05",
+          "order": 5,
+          "prompt": "When does she have a shower? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q06",
+          "order": 6,
+          "prompt": "What time does she catch the school bus? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q07",
+          "order": 7,
+          "prompt": "How long can she watch TV? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q08",
+          "order": 8,
+          "prompt": "What do they have for dinner? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q09",
+          "order": 9,
+          "prompt": "When does she do her homework? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q10",
+          "order": 10,
+          "prompt": "Why does she go to bed early? [gap] True or False:",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-d-q05",
+          "order": 5,
+          "prompt": " [gap] She doesn’t like the farm. Kate doesn’t work very hard. Kate has a shower before 8:15. Kate’s mother doesn’t like chicken. After dinner Kate feeds the horses.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-e",
+      "sectionKey": "E",
+      "instruction": "Complete the sentences using DO / DOES / AM / IS / ARE / HAVE GOT /HAS GOT:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-e-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-e-q08",
+          "order": 8,
+          "prompt": " [gap] [gap] the children want toy for their birthday? Dazzle [gap] a new dress for the party. When [gap] your brother’s birthday? How much [gap] these glasses? “ 80. “ Mr. and Mrs. Jackson [gap] two children. [gap] your uncle like chocolate? [gap] I your friend? How much [gap] your new tennis racket?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-f",
+      "sectionKey": "F",
+      "instruction": "Circle the correct answer:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-03-sec-f-q01",
+          "order": 1,
+          "prompt": "Look! Thomas is bringing / brings his little sister to class.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q02",
+          "order": 2,
+          "prompt": "My older sister is often listening / often listens to pop music.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q03",
+          "order": 3,
+          "prompt": "We are writing / write an exercise now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q04",
+          "order": 4,
+          "prompt": "Mmmm! Mum is making / makes a cake.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q05",
+          "order": 5,
+          "prompt": "Our teacher is giving / gives us a test every month.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q06",
+          "order": 6,
+          "prompt": "Listen! Dad is reading / reads a story to Ricky.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q07",
+          "order": 7,
+          "prompt": "Mr. Michael usually is growing / grows roses in his garden.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q08",
+          "order": 8,
+          "prompt": "They are building / build a new house on the hill now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q09",
+          "order": 9,
+          "prompt": "Maria is drinking / drinks milk every morning.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-f-q10",
+          "order": 10,
+          "prompt": "Look! Nick is running / runs down the hill.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-g",
+      "sectionKey": "G",
+      "instruction": "Change the following sentences into POSITIVE, NEGATIVE and QUESTION form:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-g-q01",
+          "order": 1,
+          "prompt": "You know the answer. [gap] (-) [gap] (?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-g-q02",
+          "order": 2,
+          "prompt": "He has breakfast at 8 o’clock. [gap] (-) [gap] (?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-g-q03",
+          "order": 3,
+          "prompt": "Some schoolgirls don’t wear uniforms. [gap] (+) [gap] (?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-g-q04",
+          "order": 4,
+          "prompt": "Does she cut her husband’s hair? [gap] (+) [gap] (-) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-g-q05",
+          "order": 5,
+          "prompt": "She does her homework everyday. [gap] (-) [gap] (?) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-03-sec-h",
+      "sectionKey": "H",
+      "instruction": "Supply PRESENT CONTINUOUS TENSE in the blanks:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-03-sec-h-q01",
+          "order": 1,
+          "prompt": "He [gap] (teach) his son to ride a bike.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-h-q02",
+          "order": 2,
+          "prompt": "A: Why [gap] Ann [gap] (wear) her new dress? B: Because she [gap] (have) a party tonight.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-h-q03",
+          "order": 3,
+          "prompt": "Cindy usually does the shopping, but I [gap] (do) it today because she is ill.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-h-q04",
+          "order": 4,
+          "prompt": "She [gap] (not / work), she [gap] (swim) in the river.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-03-sec-h-q05",
+          "order": 5,
+          "prompt": "A: [gap] Tom [gap] (clean) his shoes now? B: No, he [gap] He [gap] (tidy) his room. A: Where is his brother? B: He is in the garden, he [gap] (water) the flowers.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

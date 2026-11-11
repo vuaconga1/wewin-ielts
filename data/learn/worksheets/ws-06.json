@@ -1,0 +1,170 @@
+{
+  "id": "ws-06",
+  "order": 6,
+  "part": 1,
+  "slug": "ws-06-past-form-of-verb-to-be",
+  "title": "WORKSHEET 6",
+  "subject": "Past form of Verb “ To Be “",
+  "subjectVi": "Ngữ pháp bài 6: Past form of Verb “ To Be “",
+  "level": "A2",
+  "pageRange": "Part 1 (WS 6)",
+  "sections": [
+    {
+      "id": "ws-06-sec-a",
+      "sectionKey": "A",
+      "instruction": "Complete the text with the correct form of TO BE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-06-sec-a-q01",
+          "order": 1,
+          "prompt": "Stan Laurel and Oliver Hardy …were [gap] two of the most popular film comedians of all",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q02",
+          "order": 2,
+          "prompt": "time. They were born in 1890 and 1892 respectively. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q03",
+          "order": 3,
+          "prompt": "Stan Laurel’s real name [gap] Arthur Jefferson. He [gap] form England.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q04",
+          "order": 4,
+          "prompt": "Oliver Hardy [gap] English, he was from Georgia, USA.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q05",
+          "order": 5,
+          "prompt": "Laurel and Hardy [gap] in their late 30s when they met. Their first film together",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q06",
+          "order": 6,
+          "prompt": "[gap] Putting Pants on Philip (1927). They [gap] funny because they were so",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q07",
+          "order": 7,
+          "prompt": "different. Laurel [gap] small and thin. Hardy [gap] big and fat. Their most",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q08",
+          "order": 8,
+          "prompt": "famous films [gap] Way Out West (1937) and Blockheads (1938). They [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-a-q09",
+          "order": 9,
+          "prompt": "in any serious films, only comedies. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-06-sec-b",
+      "sectionKey": "B",
+      "instruction": "Use the text to help you write questions for the answers:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-06-sec-b-q01",
+          "order": 1,
+          "prompt": "[gap] In 1890 and 1892 respectively.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-b-q02",
+          "order": 2,
+          "prompt": "[gap] Arthur Jefferson.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-b-q03",
+          "order": 3,
+          "prompt": "[gap] England.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-b-q04",
+          "order": 4,
+          "prompt": "[gap] No, he wasn’t. He was American.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-b-q05",
+          "order": 5,
+          "prompt": "[gap] Putting Pants on Philip.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-b-q06",
+          "order": 6,
+          "prompt": "[gap] Because they were so different.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-06-sec-c",
+      "sectionKey": "C",
+      "instruction": "Write questions and answers. Use the past tense of BE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-06-sec-c-q01",
+          "order": 1,
+          "prompt": "A: We had a nice holiday. [gap] B: (you / with your whole family?) A: (no / my daughter / in Montreal) [gap] Were you with your whole family?… [gap] No, my daughter was in Montreal [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-c-q02",
+          "order": 2,
+          "prompt": "A: I bought these new shoes yesterday. [gap] B: (they / on sale ?) A: (yes / they / only $25)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-c-q03",
+          "order": 3,
+          "prompt": "A: (you / at home / last night ?) [gap] B: (no / I / at the library)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-06-sec-c-q04",
+          "order": 4,
+          "prompt": "A: (the guests / late for the party ?) [gap] B: (no / they / all on time)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

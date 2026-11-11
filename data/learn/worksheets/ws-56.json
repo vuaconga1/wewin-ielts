@@ -1,0 +1,304 @@
+{
+  "id": "ws-56",
+  "order": 56,
+  "part": 5,
+  "slug": "ws-56-perfect-modals",
+  "title": "WORKSHEET 56",
+  "subject": "Perfect Modals",
+  "subjectVi": "Ngữ pháp bài 56: Perfect Modals",
+  "level": "B2",
+  "pageRange": "Part 5 (WS 56)",
+  "sections": [
+    {
+      "id": "ws-56-sec-a",
+      "sectionKey": "A",
+      "instruction": "Complete the sentences using PERFECT MODALS:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-56-sec-a-q01",
+          "order": 1,
+          "prompt": "We didn’t go out last night. We [gap] (go) to the cinema but we decided to stay at home.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q02",
+          "order": 2,
+          "prompt": "Jerry passed the examination. He didn’t study very much for it. The exam [gap] [gap] (be) very difficult.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q03",
+          "order": 3,
+          "prompt": "A: I wonder where Tom was going when you saw him. [gap] B: He [gap] (go) to work.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q04",
+          "order": 4,
+          "prompt": "Thank you for doing the washing-up but you [gap] (do) it really. I was going to do it later.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q05",
+          "order": 5,
+          "prompt": "The driver in front stopped suddenly without warning and I drove in to the back of his car. [gap] It wasn’t my fault. He [gap] (give) warning that he was going to stop.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q06",
+          "order": 6,
+          "prompt": "A: How do you think the fire started? [gap] B: Well, I suppose someone [gap] (drop) a cigarette.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q07",
+          "order": 7,
+          "prompt": "A: What time is it? [gap] B: Well, we came at seven, and I’m sure we’ve been here for at least an hour. So it [gap] (be) around eight o’clock.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q08",
+          "order": 8,
+          "prompt": "A: Jack was absent yesterday afternoon. Where was he? [gap] B: I don’t know. He [gap] (go) to a movie or he [gap] (be) at home.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-a-q09",
+          "order": 9,
+          "prompt": "I had a test this morning. I didn’t do well on the test because I didn’t study for it last night. [gap] I [gap] (study) it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-56-sec-b",
+      "sectionKey": "B",
+      "instruction": "Fill in the blanks using MUST (HAVE), CAN’T (HAVE), MAY-MIGHT-COULD",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-56-sec-b-q01",
+          "order": 1,
+          "prompt": "She knew everything about our plans. She [gap] (listen) to our conversation.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q02",
+          "order": 2,
+          "prompt": "He [gap] (eat) the roasted beef when we were out. He is a vegeterian.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q03",
+          "order": 3,
+          "prompt": "Mrs. White bought a new fur coat! She [gap] (win) a lottery.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q04",
+          "order": 4,
+          "prompt": "John said he would ring, but he hasn’t. He [gap] (forget) all about it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q05",
+          "order": 5,
+          "prompt": "It is possible that he wasn’t taken to the cinema last weekend. He [gap] [gap] (not / take) to the cinema.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q06",
+          "order": 6,
+          "prompt": "The children [gap] (study) in the library now, because they have a test tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q07",
+          "order": 7,
+          "prompt": "The singer has got a sore throat, so she [gap] (sing) at the concert.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-b-q08",
+          "order": 8,
+          "prompt": "I [gap] (be) at home this evening or I [gap] (be) but I’m not sure.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-56-sec-c",
+      "sectionKey": "C",
+      "instruction": "Rewrite the following sentences using MUST / CAN’T / MAY / MIGHT with the",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-56-sec-c-q01",
+          "order": 1,
+          "prompt": "It is possible that they will not reach agreement.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q02",
+          "order": 2,
+          "prompt": "Perhaps you found you made a mistake.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q03",
+          "order": 3,
+          "prompt": "It is certain that our boss will give a rise in our salary.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q04",
+          "order": 4,
+          "prompt": "It is impossible that she won the beauty contest last year.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q05",
+          "order": 5,
+          "prompt": "Perhaps parents will find that they cannot understand the new teaching methods being introduced in primary schools.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q06",
+          "order": 6,
+          "prompt": "It is not impossible that the Government’s policy will prove to be little short of disastrous.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q07",
+          "order": 7,
+          "prompt": "I’m sure Jane got 5 in her last exam.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q08",
+          "order": 8,
+          "prompt": "I’m sure you will catch the 5 o’clock train.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q09",
+          "order": 9,
+          "prompt": "It is possible that he changed his mind after I had offered him the job.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-c-q10",
+          "order": 10,
+          "prompt": "I’m sure Tom didn’t visit his parents last year because he was abroad and very busy.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-56-sec-d",
+      "sectionKey": "D",
+      "instruction": "Complete the responses to the statements, using MUST or CAN’T to suggest what seems",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-56-sec-d-q01",
+          "order": 1,
+          "prompt": "His fiancée writes him everyday. She must [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q02",
+          "order": 2,
+          "prompt": "I don’t seem to have my key with me . I must [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q03",
+          "order": 3,
+          "prompt": "He drives a Rolls-Royce and his wife a Mercedes. They must [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q04",
+          "order": 4,
+          "prompt": "He has no idea what the book is about. He can’t [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q05",
+          "order": 5,
+          "prompt": "He talks about going to the moon next year. He must [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q06",
+          "order": 6,
+          "prompt": "She didn’t reply to his letter. She can’t [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q07",
+          "order": 7,
+          "prompt": "He wears glasses all the time. His eyesight can’t [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q08",
+          "order": 8,
+          "prompt": "He said he would ring, but he hasn’t. He must [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q09",
+          "order": 9,
+          "prompt": "The last bus has already gone. It must [gap] than I thought.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-56-sec-d-q10",
+          "order": 10,
+          "prompt": "I’m amazed that she married him so soon. She can’t [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "ws-44",
+  "order": 44,
+  "part": 4,
+  "slug": "ws-44-causatives",
+  "title": "WORKSHEET 44",
+  "subject": "Causatives",
+  "subjectVi": "Ngữ pháp bài 44: Causatives",
+  "level": "B1",
+  "pageRange": "Part 4 (WS 44)",
+  "sections": [
+    {
+      "id": "ws-44-sec-a",
+      "sectionKey": "A",
+      "instruction": "Complete the sentences with the words in parentheses:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-44-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap] The doctor made the patient [gap] stay [gap] in bed. (stay) Mrs. Crane had her house [gap] painted [gap] (paint) The teacher had the class [gap] a 2000-word research paper. (write) I made my son [gap] the windows before he could go outside to play. (wash)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q05",
+          "order": 5,
+          "prompt": "Don got some kids in the neighborhood [gap] out his garage. (clean)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q06",
+          "order": 6,
+          "prompt": "I went to the bank to have a check [gap] (cash)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q07",
+          "order": 7,
+          "prompt": "Tom had a bad headache yesterday, so he got his twin brother Tim [gap] to class for him. The teacher didn’t know the difference. (go)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q08",
+          "order": 8,
+          "prompt": "When Scott went shopping, he found a jacket he really liked. After he had the sleeves [gap] [gap] , it fit him perfectly. (shorten)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q09",
+          "order": 9,
+          "prompt": "My boss made me [gap] my report because he wasn’t satisfied with it. (redo)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q10",
+          "order": 10,
+          "prompt": "Alice stopped at the service station to have the tank [gap] (fill)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q11",
+          "order": 11,
+          "prompt": "I got Mary [gap] me some money so I could go to a movie last night. (lend)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q12",
+          "order": 12,
+          "prompt": "Mr. Fields went to a doctor to have the wart on his nose [gap] (remove)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q13",
+          "order": 13,
+          "prompt": "Peeling onions always makes me [gap] (cry)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q14",
+          "order": 14,
+          "prompt": "Tom Sawyer was supposed to paint the fence, but he didn’t want to do it. He was a very [gap] clever boy. Somehow he got his friends [gap] it for him. (do)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q15",
+          "order": 15,
+          "prompt": "We had a professional photographer [gap] pictures of everyone who participated in our wedding. (take)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-44-sec-a-q16",
+          "order": 16,
+          "prompt": "I spilled some tomato sauce on my suit coat. Now I need to get my suit [gap] (clean)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-44-sec-b",
+      "sectionKey": "B",
+      "instruction": "Circle the correct one:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-44-sec-b-q01",
+          "order": 1,
+          "prompt": "She has to get her hair [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) to",
+            "b) do",
+            "c) done",
+            "d) did"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q02",
+          "order": 2,
+          "prompt": "Our teacher is going to make us [gap] a tape.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) listen",
+            "b) listened",
+            "c) to",
+            "d) listen"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q03",
+          "order": 3,
+          "prompt": "They had to have him [gap] their summer house.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) painted",
+            "b) paint",
+            "c) to",
+            "d) painting"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q04",
+          "order": 4,
+          "prompt": "Do you know where I can get my car [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) washed",
+            "b) to",
+            "c) wash",
+            "d) washes"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q05",
+          "order": 5,
+          "prompt": "The comedian was not able to make us [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) laughing",
+            "b) to",
+            "c) laugh",
+            "d) laughed"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q06",
+          "order": 6,
+          "prompt": "You can’t get that man [gap] your radio.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) fix",
+            "b) to",
+            "c) fixed",
+            "d) fixing"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q07",
+          "order": 7,
+          "prompt": "I can never make her [gap] her mind.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) change",
+            "b) to",
+            "c) changed",
+            "d) changing"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q08",
+          "order": 8,
+          "prompt": "We had two pictures [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) take",
+            "b) taken",
+            "c) to",
+            "d) took"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q09",
+          "order": 9,
+          "prompt": "When are you going to have your father [gap] a book?",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) bought",
+            "b) to",
+            "c) buy",
+            "d) buying"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q10",
+          "order": 10,
+          "prompt": "Please have the maid [gap] my room.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) clean",
+            "b) cleaned",
+            "c) to",
+            "d) cleaning"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q11",
+          "order": 11,
+          "prompt": "I know he stole the money. We’ll get him [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) talk",
+            "b) talking",
+            "c) talked",
+            "d) to"
+          ]
+        },
+        {
+          "id": "ws-44-sec-b-q12",
+          "order": 12,
+          "prompt": "We had to hire a few men to get the trees [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) cut",
+            "b) to",
+            "c) cutting",
+            "d) cutted"
+          ]
+        }
+      ]
+    }
+  ]
+}

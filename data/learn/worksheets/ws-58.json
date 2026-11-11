@@ -1,0 +1,212 @@
+{
+  "id": "ws-58",
+  "order": 58,
+  "part": 5,
+  "slug": "ws-58-so-do-i-neither-do-i",
+  "title": "WORKSHEET 58",
+  "subject": "SO do I / NEITHER do I",
+  "subjectVi": "Ngữ pháp bài 58: SO do I / NEITHER do I",
+  "level": "B2",
+  "pageRange": "Part 5 (WS 58)",
+  "sections": [
+    {
+      "id": "ws-58-sec-a",
+      "sectionKey": "A",
+      "instruction": "Use SO / NEITHER Auxiliary verb + Subject:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-58-sec-a-q01",
+          "order": 1,
+          "prompt": "I’m feeling tired [gap] So am I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q02",
+          "order": 2,
+          "prompt": "I don’t like eggs [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q03",
+          "order": 3,
+          "prompt": "I need a holiday [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q04",
+          "order": 4,
+          "prompt": "I don’t like milk [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q05",
+          "order": 5,
+          "prompt": "I couldn’t get up this morning [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q06",
+          "order": 6,
+          "prompt": "I’d love a cup of tea [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q07",
+          "order": 7,
+          "prompt": "I’ve never been to Africa [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q08",
+          "order": 8,
+          "prompt": "I was ill yesterday [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q09",
+          "order": 9,
+          "prompt": "I should smoke less [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q10",
+          "order": 10,
+          "prompt": "I spent the whole evening watching television [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-a-q11",
+          "order": 11,
+          "prompt": "I didn’t know that Ann was in hospital [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-58-sec-b",
+      "sectionKey": "B",
+      "instruction": "Felix has just met Vicky at a party. They are finding out that they have a lot in",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-58-sec-b-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-b-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-b-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-b-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-b-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-b-q06",
+          "order": 6,
+          "prompt": " [gap] Vicky: [gap] I can’t make conversation. Felix : [gap] I’m a quiet sort of person. Vicky: [gap] I live alone in a bedsitter. Felix : [gap] I haven’t got many friends. Vicky: [gap] And I would really like a good friend. Felix : Oh, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-58-sec-c",
+      "sectionKey": "C",
+      "instruction": "Look at the table and complete the sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-58-sec-c-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-58-sec-c-q08",
+          "order": 8,
+          "prompt": " [gap] Mike * Lorna * * Paul Marie * * * Mike can swim, and [gap] so can Lorna [gap] Marie isn’t keen on tennis, and [gap] neither is Mike [gap] Paul doesn’t like swimming, and [gap] Marie has got a bike, and [gap] Mike can’t play chess, and [gap] Lorna isn’t keen on cycling, and [gap] Paul plays tennis, and [gap] Marie is a chess player, and [gap] * *",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

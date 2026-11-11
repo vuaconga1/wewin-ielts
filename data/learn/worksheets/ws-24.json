@@ -1,0 +1,257 @@
+{
+  "id": "ws-24",
+  "order": 24,
+  "part": 3,
+  "slug": "ws-24-passive-form",
+  "title": "WORKSHEET 24",
+  "subject": "Passive Form",
+  "subjectVi": "Ngữ pháp bài 24: Passive Form",
+  "level": "B1",
+  "pageRange": "Part 3 (WS 24)",
+  "sections": [
+    {
+      "id": "ws-24-sec-a",
+      "sectionKey": "A",
+      "instruction": "Read each sentence. Then make two new sentences in the PASSIVE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-24-sec-a-q01",
+          "order": 1,
+          "prompt": "People say Tom Cruise is the richest movie star. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Tom"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q02",
+          "order": 2,
+          "prompt": "Everybody thinks that Hakan is a good football player. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Hakan"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q03",
+          "order": 3,
+          "prompt": "They say that his books are still popular. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) His"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q04",
+          "order": 4,
+          "prompt": "They report that at least 10.000 dolphins are caught in the nets of tuna fishers every year. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) At"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q05",
+          "order": 5,
+          "prompt": "They estimate that 1500 square kilometers of rainforests is cut every year. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) 1500"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q06",
+          "order": 6,
+          "prompt": "We knew that pencil lead is made from graphite, clay, water and wax. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Pencil"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q07",
+          "order": 7,
+          "prompt": "They reported that the railway line was buried under tons of rock and earth. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q08",
+          "order": 8,
+          "prompt": "People don’t think that inflation will go down. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Inflation"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q09",
+          "order": 9,
+          "prompt": "People expect that the third bridge will be built over the Bosphorus Strait. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-a-q10",
+          "order": 10,
+          "prompt": "People believe that he is living abroad. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) He"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws-24-sec-b",
+      "sectionKey": "B",
+      "instruction": "Read each sentence. Then make two new sentences in the PASSIVE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-24-sec-b-q01",
+          "order": 1,
+          "prompt": "People expect that taxes will be reduced soon. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Taxes"
+          ]
+        },
+        {
+          "id": "ws-24-sec-b-q02",
+          "order": 2,
+          "prompt": "People say that the monument is over 2000 years old. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-b-q03",
+          "order": 3,
+          "prompt": "People expect that the president will resign. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-b-q04",
+          "order": 4,
+          "prompt": "People think the fire started at about 8 o’clock. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-b-q05",
+          "order": 5,
+          "prompt": "Journalists reported that seven people had been injured in the fire. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) Seven"
+          ]
+        },
+        {
+          "id": "ws-24-sec-b-q06",
+          "order": 6,
+          "prompt": "People say the bridge is unsafe. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws-24-sec-c",
+      "sectionKey": "C",
+      "instruction": "REPORT these rumours:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-24-sec-c-q01",
+          "order": 1,
+          "prompt": "People say that the actress Tania Revesky has refused a part in the film Volcano. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-c-q02",
+          "order": 2,
+          "prompt": "Her friends have reported that the newsreader Ann Slater is furious at losing her job. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-c-q03",
+          "order": 3,
+          "prompt": "Lots of people believe that The Prime Minister and his wife are getting divorced. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        },
+        {
+          "id": "ws-24-sec-c-q04",
+          "order": 4,
+          "prompt": "Journalists have said that The footballer Gary Johnson earns $ 1 million a year. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) It",
+            "b) The"
+          ]
+        }
+      ]
+    }
+  ]
+}

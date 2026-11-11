@@ -1,0 +1,543 @@
+{
+  "id": "ws-43",
+  "order": 43,
+  "part": 4,
+  "slug": "ws-43-tag-questions",
+  "title": "WORKSHEET 43",
+  "subject": "Tag questions",
+  "subjectVi": "Ngữ pháp bài 43: Tag questions",
+  "level": "B1",
+  "pageRange": "Part 4 (WS 43)",
+  "sections": [
+    {
+      "id": "ws-43-sec-a",
+      "sectionKey": "A",
+      "instruction": "Put A QUESTION TAG at the end of each sentence:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-a-q01",
+          "order": 1,
+          "prompt": "Tom won’t be late, [gap] will he [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q02",
+          "order": 2,
+          "prompt": "They were very angry, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q03",
+          "order": 3,
+          "prompt": "Ann’s on holiday, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q04",
+          "order": 4,
+          "prompt": "You weren’t listening, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q05",
+          "order": 5,
+          "prompt": "Sue doesn’t like onions, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q06",
+          "order": 6,
+          "prompt": "Jack’s applied for the job, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q07",
+          "order": 7,
+          "prompt": "You’ve got a camera, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q08",
+          "order": 8,
+          "prompt": "You can type, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q09",
+          "order": 9,
+          "prompt": "He won’t mind if I go early, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q10",
+          "order": 10,
+          "prompt": "Tom could help you, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q11",
+          "order": 11,
+          "prompt": "There are a lot of people here, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q12",
+          "order": 12,
+          "prompt": "Let’s have dinner, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q13",
+          "order": 13,
+          "prompt": "This isn’t very interesting, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q14",
+          "order": 14,
+          "prompt": "I’m too fat, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q15",
+          "order": 15,
+          "prompt": "You wouldn’t tell anyone, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q16",
+          "order": 16,
+          "prompt": "Listen, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q17",
+          "order": 17,
+          "prompt": "I shouldn’t have got angry, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q18",
+          "order": 18,
+          "prompt": "Don’t drop it, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q19",
+          "order": 19,
+          "prompt": "They had to go home, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-a-q20",
+          "order": 20,
+          "prompt": "He’d never seen you before, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-43-sec-b",
+      "sectionKey": "B",
+      "instruction": "Write a sentence with A QUESTION TAG:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-b-q01",
+          "order": 1,
+          "prompt": "You are with a friend outside a restaurant. You are looking at the prices. It’s very [gap] expensive. What do you say? [gap] It’s very expensive, isn’t it? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-b-q02",
+          "order": 2,
+          "prompt": "You look out of the window. It’s a beautiful day. What do you say to your friend? [gap] It’s [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-b-q03",
+          "order": 3,
+          "prompt": "You’ve just come out of the cinema with your friend. You both really enjoyed the film. [gap] You thought it was great. What do you say? The film [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-b-q04",
+          "order": 4,
+          "prompt": "Tom’s hair is much shorter. Clearly he has had his hair cut. What do you sat to him? [gap] You [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-b-q05",
+          "order": 5,
+          "prompt": "You are shopping. You are trying on a jacket. You look in the mirror: it doesn’t look very [gap] nice. What do you say to your friend? It [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-b-q06",
+          "order": 6,
+          "prompt": "You are talking about Bill. You know that Bill works very hard. Everyone knows this. [gap] What do you say about Bill? Bill [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-43-sec-c",
+      "sectionKey": "C",
+      "instruction": "Complete the conversation. Put in the QUESTION TAGS:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-c-q01",
+          "order": 1,
+          "prompt": "Mary : Let’s go out somewhere tonight, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-c-q02",
+          "order": 2,
+          "prompt": "Jeff : All right. Where? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-c-q03",
+          "order": 3,
+          "prompt": "Mary :You haven’t got a local paper, [gap] Pass it over here,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-c-q04",
+          "order": 4,
+          "prompt": "[gap] Thanks. Well, there’s a disco at the Grand Hotel.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-c-q05",
+          "order": 5,
+          "prompt": "Jeff : Fine, but I haven’t got any money. You couldn’t lend me five pounds, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-c-q06",
+          "order": 6,
+          "prompt": "Mary : OK, I’ll pay then. I’ll meet you outside at eight o’clock. Don’t be late, [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-43-sec-d",
+      "sectionKey": "D",
+      "instruction": "Put A QUESTION TAG at the end of each sentence:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-d-q01",
+          "order": 1,
+          "prompt": "You don’t like this music, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q02",
+          "order": 2,
+          "prompt": "Robert isn’t at work today, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q03",
+          "order": 3,
+          "prompt": "I’m too late, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q04",
+          "order": 4,
+          "prompt": "You haven’t seen the newspaper, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q05",
+          "order": 5,
+          "prompt": "Lynne speaks French and German, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q06",
+          "order": 6,
+          "prompt": "They didn’t go to the concert, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q07",
+          "order": 7,
+          "prompt": "You’d like to have something to eat, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q08",
+          "order": 8,
+          "prompt": "We’re leaving tomorrow, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q09",
+          "order": 9,
+          "prompt": "You couldn’t do me a favour, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q10",
+          "order": 10,
+          "prompt": "You don’t know where Sarah is, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q11",
+          "order": 11,
+          "prompt": "Switch on the light for me, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q12",
+          "order": 12,
+          "prompt": "Don’t forget to lock the door, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q13",
+          "order": 13,
+          "prompt": "Nobody was watching the TV, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q14",
+          "order": 14,
+          "prompt": "Everyone will be here soon, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q15",
+          "order": 15,
+          "prompt": "Nothing terrible has happened, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q16",
+          "order": 16,
+          "prompt": "There’s plenty of time, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q17",
+          "order": 17,
+          "prompt": "Pass me that magazine, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q18",
+          "order": 18,
+          "prompt": "Let’s have a cup of tea, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q19",
+          "order": 19,
+          "prompt": "It’s a good restaurant, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-d-q20",
+          "order": 20,
+          "prompt": "You haven’t seen my keys, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-43-sec-e",
+      "sectionKey": "E",
+      "instruction": "Add TAG QUESTIONS to the following:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-e-q01",
+          "order": 1,
+          "prompt": "They want to come, [gap] don’t they [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q02",
+          "order": 2,
+          "prompt": "Elizabeth is a dentist, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q03",
+          "order": 3,
+          "prompt": "They won’t be here, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q04",
+          "order": 4,
+          "prompt": "There aren’t any problems, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q05",
+          "order": 5,
+          "prompt": "That is your umbrella, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q06",
+          "order": 6,
+          "prompt": "George is a student, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q07",
+          "order": 7,
+          "prompt": "He’s learned a lot in the last couple of years, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q08",
+          "order": 8,
+          "prompt": "He has a bicyce, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q09",
+          "order": 9,
+          "prompt": "Joan can’t come with us, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q10",
+          "order": 10,
+          "prompt": "She’ll help us later, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q11",
+          "order": 11,
+          "prompt": "Peggy would like to come with us to the party, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q12",
+          "order": 12,
+          "prompt": "Those aren’t Fred’s books, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q13",
+          "order": 13,
+          "prompt": "You’ve never been to Paris, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q14",
+          "order": 14,
+          "prompt": "Something is wrong with Jane today, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q15",
+          "order": 15,
+          "prompt": "Everyone can learn how to swim, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q16",
+          "order": 16,
+          "prompt": "Nobody cheated on the exam, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q17",
+          "order": 17,
+          "prompt": "Nothing went wrong while I was gone, [gap] :. ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-43-sec-e-q18",
+          "order": 18,
+          "prompt": "I am invited, [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

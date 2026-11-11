@@ -1,0 +1,162 @@
+{
+  "id": "ws-09",
+  "order": 10,
+  "part": 1,
+  "slug": "ws-09-simple-past-and-past-continuous",
+  "title": "WORKSHEET 9",
+  "subject": "Simple Past and Past Continuous",
+  "subjectVi": "Ngữ pháp bài 9: Simple Past and Past Continuous",
+  "level": "A2",
+  "pageRange": "Part 1 (WS 9)",
+  "sections": [
+    {
+      "id": "ws-09-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with a correct form of PAST CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-09-sec-a-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q08",
+          "order": 8,
+          "prompt": " [gap] It was very cold. The sun [gap] was not shining [gap] (not / shine) It wasn’t a stormy night. The wind [gap] (not / blow) He wasn’t sleeping. He [gap] (look) at the ceiling. They were having a rest. They [gap] (not / work). They were very happy. They [gap] (enjoy) the party. He was at home. He [gap] (watch) a movie on TV. He was getting worse. He [gap] (not / recover). We [gap] (travel) in the north of Turkey when we were on holiday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q09",
+          "order": 9,
+          "prompt": "She [gap] (drive) so fast when the accident happened.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-a-q10",
+          "order": 10,
+          "prompt": "I [gap] (not / sleep) when you came in.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-09-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the sentences with the words in parentheses using the SIMPLE PAST or",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-09-sec-b-q01",
+          "order": 1,
+          "prompt": "While they [gap] (travel) to China, Marco [gap] (keep) a diary.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q02",
+          "order": 2,
+          "prompt": "Mrs. White [gap] (drive) past a house in Main Street when she [gap] (see) the ground floor on fire.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q03",
+          "order": 3,
+          "prompt": "While he [gap] (fly) off the Miami Coast, the pilot [gap] (see) sharks approaching the swimmers.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q04",
+          "order": 4,
+          "prompt": "The fireman [gap] (fight) the fire on a balcony below when he [gap] (hear) someone’s shouts.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q05",
+          "order": 5,
+          "prompt": "She [gap] (die) while she [gap] (run) after a bus.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q06",
+          "order": 6,
+          "prompt": "We [gap] (have) dinner when the electricity [gap] (go) off.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q07",
+          "order": 7,
+          "prompt": "She [gap] (think) of something else while you [gap] (talk) to her.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q08",
+          "order": 8,
+          "prompt": "I [gap] (see) her while I [gap] (look) out of the window.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-09-sec-b-q09",
+          "order": 9,
+          "prompt": "While the teacher [gap] (talk), the students [gap] (look) at an insect on the ceiling.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

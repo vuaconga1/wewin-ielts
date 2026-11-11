@@ -1,0 +1,332 @@
+{
+  "id": "ws-57",
+  "order": 57,
+  "part": 5,
+  "slug": "ws-57-possessive-apostrophe-s-or-of",
+  "title": "WORKSHEET 57",
+  "subject": "Possessive “apostrophe –s-“ or “of”",
+  "subjectVi": "Ngữ pháp bài 57: Possessive “apostrophe –s-“ or “of”",
+  "level": "B2",
+  "pageRange": "Part 5 (WS 57)",
+  "sections": [
+    {
+      "id": "ws-57-sec-a",
+      "sectionKey": "A",
+      "instruction": "Complete the sentences. Use the words in brackets with the POSSESSIVE ‘S or OF:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-57-sec-a-q01",
+          "order": 1,
+          "prompt": "We had to leave the cinema early so we didn’t see [gap] (the end / the film)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q02",
+          "order": 2,
+          "prompt": "We met Sue and Frank at [gap] (the party / Sarah)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q03",
+          "order": 3,
+          "prompt": "My flat is on [gap] (the top floor / the house)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q04",
+          "order": 4,
+          "prompt": "The bus crashed into [gap] (the back / my car)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q05",
+          "order": 5,
+          "prompt": "We heard the news from [gap] (a friend / the woman who works in the post office)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q06",
+          "order": 6,
+          "prompt": "There’s a hospital at [gap] (the end / this road)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q07",
+          "order": 7,
+          "prompt": "I’ve spoken to [gap] (the parents / the girls)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-a-q08",
+          "order": 8,
+          "prompt": "The police want to interview [gap] (the manager / the Black Cat Club)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-57-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the sentences using the correct form of the POSSESSIVE ‘S:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-57-sec-b-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-b-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-b-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-b-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-b-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-b-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-b-q07",
+          "order": 7,
+          "prompt": " [gap] What is your friend [gap] name? Sarah found somebody [gap] credit cards in the street. The Eiffel Tower is Paris [gap] most famous landmark. The boys [gap] bedroom has just been painted. I read about a murder in this morning [gap] newspaper. Can you borrow your parents [gap] car at the weekend? I need to get some medicine. Is there a chemist [gap] near here?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-57-sec-c",
+      "sectionKey": "C",
+      "instruction": "Rewrite the following using the correct POSSESSIVE form:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-57-sec-c-q01",
+          "order": 1,
+          "prompt": "the butterflies – the wings [gap] the butterflies’ wings [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q02",
+          "order": 2,
+          "prompt": "the students – the books",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q03",
+          "order": 3,
+          "prompt": "drive – three hours",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q04",
+          "order": 4,
+          "prompt": "the department store – the staff [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q05",
+          "order": 5,
+          "prompt": "living – the cost",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q06",
+          "order": 6,
+          "prompt": "some friends – my brother [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q07",
+          "order": 7,
+          "prompt": "bread – the price",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q08",
+          "order": 8,
+          "prompt": "the baby – the pram",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q09",
+          "order": 9,
+          "prompt": "John and Paul – the wives [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q10",
+          "order": 10,
+          "prompt": "the men – the changing rooms [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q11",
+          "order": 11,
+          "prompt": "the sea – the waves",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q12",
+          "order": 12,
+          "prompt": "a climb – two hundred metres [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q13",
+          "order": 13,
+          "prompt": "Lucy and Emily – the mother [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q14",
+          "order": 14,
+          "prompt": "the house – my father’s closest friend [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q15",
+          "order": 15,
+          "prompt": "the president – the decisison [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q16",
+          "order": 16,
+          "prompt": "my physics professor – the report [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q17",
+          "order": 17,
+          "prompt": "the park – the playground [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q18",
+          "order": 18,
+          "prompt": "the Smiths – the car [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-c-q19",
+          "order": 19,
+          "prompt": "my mother-in-law – the garden [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-57-sec-d",
+      "sectionKey": "D",
+      "instruction": "Answer the questions:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-57-sec-d-q01",
+          "order": 1,
+          "prompt": "Is this your car? [gap] No, [gap] it isn’t. It’s Ben’s [gap] (Ben)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-d-q02",
+          "order": 2,
+          "prompt": "Are these your boots? [gap] No, [gap] (Jim)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-d-q03",
+          "order": 3,
+          "prompt": "Are these Sue’s glasses? [gap] No, [gap] (Eric)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-d-q04",
+          "order": 4,
+          "prompt": "Is that your dress? [gap] No, [gap] (Karen)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-d-q05",
+          "order": 5,
+          "prompt": "Is this my jacket? [gap] No, [gap] (Mr. Jackson)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-d-q06",
+          "order": 6,
+          "prompt": "Are these your shirts? [gap] No, [gap] (Mike)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-57-sec-d-q07",
+          "order": 7,
+          "prompt": "Is that your grandmother’s dress? [gap] No, [gap] (my mother)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

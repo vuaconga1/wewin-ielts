@@ -1,0 +1,59 @@
+---
+description: Database standards — Prisma 7 + Neon Postgres schema, migrations, queries, transactions
+globs: prisma/**,src/lib/**/*.ts,scripts/**/*.ts
+alwaysApply: false
+---
+
+# Database (Prisma 7 + Neon Postgres)
+
+Schema: `prisma/schema.prisma` · Client: `import { prisma } from "@/lib/prisma"` (generated vào `src/generated/prisma`, không sửa tay).
+
+## Thiết kế model
+- Tên model **PascalCase số ít** (`ClassAssignment`), field **camelCase**, enum **SCREAMING_SNAKE**.
+- Khoá chính: `id String @id @default(cuid())`.
+- Luôn có `createdAt DateTime @default(now())`; bảng được sửa thì thêm `updatedAt DateTime @updatedAt`.
+- Mô tả field khó hiểu bằng comment `///` (hiện trong type generated).
+- Trạng thái hữu hạn → `enum` (vd `TestStatus { DRAFT PUBLISHED ARCHIVED }`), không dùng chuỗi tự do.
+- Khoá ngoại khai báo `onDelete` rõ ràng: dữ liệu con → `Cascade`; tham chiếu tuỳ chọn (user, host) → `SetNull`.
+- Ràng buộc nghiệp vụ bằng `@@unique` (vd `@@unique([classroomId, userId])`), không chỉ kiểm tra ở code.
+- `Json` chỉ cho payload linh hoạt/không cần query; dữ liệu cần lọc/sắp xếp phải là cột riêng.
+- Chuỗi dài dùng `@db.Text`; secret lưu dạng ciphertext (AES-GCM), không lưu plaintext.
+
+## Index
+- Mỗi FK hay được lọc cần `@@index`; truy vấn "theo user, mới nhất" dùng index ghép `@@index([userId, createdAt])`.
+- Catalog công khai: `@@index([status, order])`.
+- Thêm index khi thêm query mới có `where`/`orderBy` trên bảng lớn (Attempt, AuditLog, SiteVisit…).
+
+## Migration
+- Đổi schema → `npm run db:migrate -- --name <verb_noun>` (vd `add_worksheet_progress`), commit cả thư mục `prisma/migrations/<timestamp>_<name>/`.
+- **Không** sửa migration đã chạy trên production; sửa bằng migration mới.
+- `db:push` chỉ dùng thử local, không dùng cho thay đổi sẽ lên production.
+- Thay đổi phá vỡ (đổi tên/xoá cột, NOT NULL mới): tách 2 bước — thêm cột nullable + backfill script trong `scripts/` → migration sau mới siết ràng buộc.
+- Sau migration chạy `npm run db:generate` và `npx tsc --noEmit`.
+
+## Truy vấn
+- Luôn dùng `select` gọn (đặc biệt list/admin); không trả cả row có `payload`, `passwordHash`, ciphertext.
+- Không N+1: dùng `include`/`select` lồng hoặc `findMany({ where: { id: { in } } })`.
+- List phải phân trang (`take` + `skip` hoặc cursor) và có `orderBy` xác định.
+- Ghi nhiều bảng liên quan → `prisma.$transaction([...])` hoặc interactive transaction.
+- Upsert theo khoá unique thay vì find-then-create (tránh race).
+- `$queryRaw` chỉ dùng tagged template (tham số hoá); **cấm** `$queryRawUnsafe` với input người dùng.
+- Đường đọc nóng (catalog, ranking) bọc `unstable_cache`; xem `runtime-performance.mdc`.
+
+```ts
+// ❌ BAD — fat payload, no paging, N+1
+const attempts = await prisma.attempt.findMany({ where: { userId } });
+for (const a of attempts) a.test = await prisma.test.findUnique({ where: { id: a.testId } });
+
+// ✅ GOOD
+const attempts = await prisma.attempt.findMany({
+  where: { userId },
+  orderBy: { startedAt: "desc" },
+  take: 20,
+  select: { id: true, startedAt: true, scoreBand: true, test: { select: { slug: true, title: true } } },
+});
+```
+
+## Dữ liệu & script
+- Seed/backfill/import đặt trong `scripts/*.ts`, chạy bằng `tsx`, idempotent (chạy lại không nhân đôi dữ liệu), thêm npm script trong `package.json`.
+- Không chạy script ghi lên DB production khi chưa được người dùng xác nhận.

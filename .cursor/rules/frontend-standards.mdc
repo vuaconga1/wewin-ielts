@@ -1,0 +1,59 @@
+---
+description: Frontend standards — WEWIN theme tokens, components, server/client split, UI states
+globs: src/app/**/*.tsx,src/components/**/*.tsx
+alwaysApply: false
+---
+
+# Frontend (Next.js 15 App Router + Tailwind v4)
+
+Đọc kèm: `ui-i18n-responsive.mdc` (i18n + responsive), `runtime-performance.mdc` (ISR, cache).
+
+## Màu sắc & theme (BẮT BUỘC)
+Token định nghĩa trong `src/app/globals.css` → dùng class Tailwind `wewin-*`, **không tự chọn palette mới**.
+
+| Vai trò | Class |
+|---|---|
+| Màu chủ đạo (chữ tiêu đề, nút chính, tab active) | `wewin-navy`, hover `wewin-navy-hover` |
+| Nhấn / huy hiệu / CTA nổi bật | `wewin-gold`, `wewin-gold-soft`, CTA `from-amber-500 to-amber-600 text-zinc-950` |
+| Link, icon phụ, focus ring | `wewin-accent-blue`, nền nhạt `wewin-accent-blue-bg` |
+| Viền / nền trang | `wewin-border`, `wewin-bg` |
+| Chữ phụ | `text-zinc-500/600` |
+| Trạng thái đúng / sai | `emerald-*` / `rose-*` (chỉ cho feedback) |
+
+- **Không dùng `dark:`** — web chỉ có theme sáng; `dark:` kích hoạt theo OS và làm thẻ thành nền đen.
+- Không dùng `blue-600`, `indigo-*`, `purple-*`, `gray-*` thay cho token brand.
+- Banner/hero: `bg-gradient-to-br from-wewin-navy via-[#142852] to-wewin-navy-hover text-white` + blur `wewin-gold/15` (xem `components/test-practice/hero-banner.tsx`, `app/learn/worksheets/page.tsx`).
+- Bề mặt có sẵn trong `globals.css`, ưu tiên dùng lại:
+  - `card-outline-hover` / `wewin-card-3d-hover`: thẻ catalog bấm được (kính mờ, nổi khi hover)
+  - `wewin-card-3d`: thẻ thông tin tĩnh
+  - `panel` + `panel-header`: vùng đọc/làm bài cần nền đặc
+  - `wewin-nav-active`: pill active navy → vàng
+
+```tsx
+// ❌ BAD
+<div className="bg-white dark:bg-gray-900 border-gray-200"><button className="bg-blue-600">…</button></div>
+// ✅ GOOD
+<div className="card-outline-hover p-5"><button className="bg-wewin-navy hover:bg-wewin-navy-hover text-white">…</button></div>
+```
+
+## Cấu trúc file
+- Route: `src/app/<area>/.../page.tsx` — mỏng, chỉ lấy data + render component.
+- Component theo tính năng: `src/components/<feature>/<feature>-<part>.tsx` (kebab-case file, PascalCase export, named export).
+- Logic thuần / type / href: `src/lib/<feature>/` (không import React trong lib dùng chung server).
+- Component dùng chung: `src/components/ui/` (`EmptyState`, `FriendlyErrorAlert`, `PaginationControls` / `PaginationLinks`) — dùng lại trước khi viết mới.
+
+## Server vs Client
+- Mặc định **Server Component**; chỉ thêm `"use client"` cho phần có state/sự kiện, đặt càng sâu càng tốt.
+- Không import `@/lib/prisma`, `server-only` module vào client component.
+- Trang catalog/list: `export const revalidate = …` hoặc `generateStaticParams`; dữ liệu theo user lấy phía client hoặc API.
+- Bọc trang bằng `SiteShell active="…"`; trang admin dùng guard `requireAdminPage()` / `requireStaffPage()`.
+
+## Trạng thái UI (mỗi màn hình phải có)
+- Loading (skeleton hoặc `loading.tsx`), Empty (`EmptyState`), Error (`FriendlyErrorAlert` + `friendlyError(..., t)`), Disabled khi đang submit (chống bấm 2 lần).
+- Gọi API: `fetch` → kiểm tra `res.ok` → đọc `{ code }` → map sang thông điệp i18n; không hiển thị lỗi thô.
+
+## Accessibility & UX
+- Nút là `<button type="button">`, link điều hướng là `<Link>`; icon-only phải có `aria-label`.
+- Focus thấy được: `focus:ring-2 focus:ring-wewin-accent-blue/20`.
+- Animation tôn trọng `prefers-reduced-motion`; touch target ≥ 40px trên mobile.
+- Ảnh dùng `next/image`; media qua URL R2/CDN (`src/lib/media/url.ts`).

@@ -51,8 +51,13 @@ yarn-error.log*
 /data/keys/
 /data/dictation/
 /data/shadowing/
-/data/learn/*
+/data/learn/progress/
 !/data/learn/.gitkeep
+!/data/learn/curriculum.json
+!/data/learn/vocab-grammar.json
+!/data/learn/worksheets-catalog.json
+!/data/learn/worksheets/
+!/data/learn/worksheets/*
 # published tests for Vercel (file-backed catalog fallback)
 /data/tests/*
 !/data/tests/test-1-*.json
@@ -122,3 +127,6 @@ html lang=en class=min-h-full style.txt
 /stable-ts-main/
 __pycache__/
 *.pyc
+
+# DB dumps (scripts/sync-prod-db-to-local.sh)
+/backups/

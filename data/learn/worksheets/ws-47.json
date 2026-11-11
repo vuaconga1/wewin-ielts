@@ -1,0 +1,543 @@
+{
+  "id": "ws-47",
+  "order": 47,
+  "part": 4,
+  "slug": "ws-47-purpose-so-that-to-in-order-to-in-case",
+  "title": "WORKSHEET 47",
+  "subject": "Purpose: So that / to / In order to / In Case",
+  "subjectVi": "Ngữ pháp bài 47: Purpose: So that / to / In order to / In Case",
+  "level": "B2",
+  "pageRange": "Part 4 (WS 47)",
+  "sections": [
+    {
+      "id": "ws-47-sec-a",
+      "sectionKey": "A",
+      "instruction": "Combine the sentences using the words in brackets:",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-47-sec-a-q01",
+          "order": 1,
+          "prompt": "Jane gave up smoking because she wanted to save money. (in order to) [gap] Jane gave up smoking in order to save money [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q02",
+          "order": 2,
+          "prompt": "I came here so that I could see you. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q03",
+          "order": 3,
+          "prompt": "We put a fence. We want to prevent the rabbit escape.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q04",
+          "order": 4,
+          "prompt": "She went shopping so she could buy herself a television. (to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q05",
+          "order": 5,
+          "prompt": "I put the food in the fridge because I wanted it to get cold. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q06",
+          "order": 6,
+          "prompt": "Jane saved money. She wanted to buy a present for Harry. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q07",
+          "order": 7,
+          "prompt": "Harry left early because he didn’t want to miss the bus. (in order not to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q08",
+          "order": 8,
+          "prompt": "They will let the students use calculators in the exam. They don’t want them to spend a lot of time. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q09",
+          "order": 9,
+          "prompt": "The teacher tested the students. She wanted to see if they remembered the things they had learnt. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q10",
+          "order": 10,
+          "prompt": "She didn’t leave her son home alone. She thought he might have an accident. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q11",
+          "order": 11,
+          "prompt": "He tried to hide the broken vase. He didn’t want to be punished. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q12",
+          "order": 12,
+          "prompt": "She wants to sign a contact. She doesn’t want them to change their minds. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q13",
+          "order": 13,
+          "prompt": "I turned up the radio. I wanted to listen to the news. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q14",
+          "order": 14,
+          "prompt": "Sue lowered the volume on the TV set. She didn’t want to disturb her roommate. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q15",
+          "order": 15,
+          "prompt": "I’ll be in my office until late this evening. You may need to get in touch with me. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q16",
+          "order": 16,
+          "prompt": "I’ll give you my phone number. You may need to speak to me. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-a-q17",
+          "order": 17,
+          "prompt": "Tom signed his friend’s birthday on the calender. He thought he might forget it. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-47-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the following sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-47-sec-b-q01",
+          "order": 1,
+          "prompt": "He decided to take a taxi so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q02",
+          "order": 2,
+          "prompt": "Mr. Brown booked his room at the hotel in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q03",
+          "order": 3,
+          "prompt": "Betsy studies her lessons regularly so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q04",
+          "order": 4,
+          "prompt": "Mark phoned his friend in order to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q05",
+          "order": 5,
+          "prompt": "You’d better call Susan and remind her the date of the party in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q06",
+          "order": 6,
+          "prompt": "I need to buy some laundry detergent so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q07",
+          "order": 7,
+          "prompt": "I need a pen so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q08",
+          "order": 8,
+          "prompt": "I’m taking a bus instead of flying so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q09",
+          "order": 9,
+          "prompt": "Ralph borrowed some money from his friend so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q10",
+          "order": 10,
+          "prompt": "Martina is trying to improve her English so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q11",
+          "order": 11,
+          "prompt": "[gap] so that his children will have a better life.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q12",
+          "order": 12,
+          "prompt": "[gap] so that you can be ready to leave on time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q13",
+          "order": 13,
+          "prompt": "Mary hurried to get the child out of the road so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q14",
+          "order": 14,
+          "prompt": "I took off my gloves in order to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q15",
+          "order": 15,
+          "prompt": "[gap] in order to erase a mistake in his composition.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q16",
+          "order": 16,
+          "prompt": "[gap] so that I could tell him the news in person.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q17",
+          "order": 17,
+          "prompt": "I think I’d better clean up my flat in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q18",
+          "order": 18,
+          "prompt": "She locked the door before going to bed in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q19",
+          "order": 19,
+          "prompt": "The teacher reminded the students the common test dates in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-b-q20",
+          "order": 20,
+          "prompt": "He always carries his umbrella in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-47-sec-c",
+      "sectionKey": "C",
+      "instruction": "Combine each pair of sentences using “ IN CASE “:",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-47-sec-c-q01",
+          "order": 1,
+          "prompt": "You’d better take a sweater. It might get cold.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-c-q02",
+          "order": 2,
+          "prompt": "We’d better book a table. The restaurant might be full.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-c-q03",
+          "order": 3,
+          "prompt": "You ought to insure your jewellery. It might get stolen.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-c-q04",
+          "order": 4,
+          "prompt": "I’m watching this saucepan. The water might boil over.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-c-q05",
+          "order": 5,
+          "prompt": "I’ll leave you my phone number. You might want to contact me.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-47-sec-d",
+      "sectionKey": "D",
+      "instruction": "Join the sentences:",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-47-sec-d-q01",
+          "order": 1,
+          "prompt": "He tried to find a car park. He wanted to park his car. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q02",
+          "order": 2,
+          "prompt": "Mrs. Brown hid the ball. She didn’t Bill to play football. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q03",
+          "order": 3,
+          "prompt": "They got up early. They didn’t want to miss the bus. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q04",
+          "order": 4,
+          "prompt": "Mary is wearing glasses. She wants to see better. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q05",
+          "order": 5,
+          "prompt": "My father often takes his car to the mechanic. He doesn’t want it to break down. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q06",
+          "order": 6,
+          "prompt": "Molly is eating less bread. She doesn’t want to put on weight. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q07",
+          "order": 7,
+          "prompt": "Sally usually wears a thick coat. She doesn’t want to catch a cold. (in order not to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q08",
+          "order": 8,
+          "prompt": "Mr. Short used a long ladder. He wanted to reach the high ceiling. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q09",
+          "order": 9,
+          "prompt": "My father gave me extra money. He didn’t want me to borrow any from my friends. (in case)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q10",
+          "order": 10,
+          "prompt": "Andrew’s friends visited him. They wanted to congratulate him on his graduation. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q11",
+          "order": 11,
+          "prompt": "I’m learning English. I want to get a better job. (to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q12",
+          "order": 12,
+          "prompt": "The driver stopped. Then the children could cross the road. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q13",
+          "order": 13,
+          "prompt": "Tom put the cream in the fridge. That would keep it cool. (to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q14",
+          "order": 14,
+          "prompt": "Mark is going to repair the roof. Then the rain won’t come in. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q15",
+          "order": 15,
+          "prompt": "We often switch off the heating. It saves money. (in order to)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-d-q16",
+          "order": 16,
+          "prompt": "Pamela wore boots. Her feet wouldn’t get wet. (so that)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-47-sec-e",
+      "sectionKey": "E",
+      "instruction": "Complete the sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-47-sec-e-q01",
+          "order": 1,
+          "prompt": "She’ll start on a diet so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q02",
+          "order": 2,
+          "prompt": "They went to Migros so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q03",
+          "order": 3,
+          "prompt": "Shee bought a new dress so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q04",
+          "order": 4,
+          "prompt": "I’ll give you a map so that [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q05",
+          "order": 5,
+          "prompt": "Take your umbrella in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q06",
+          "order": 6,
+          "prompt": "I left the key for you in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q07",
+          "order": 7,
+          "prompt": "Take your torch with you in case [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q08",
+          "order": 8,
+          "prompt": "Ian went to the bank in order to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q09",
+          "order": 9,
+          "prompt": "Jeremy is going to wear a suit in order to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q10",
+          "order": 10,
+          "prompt": "David put on the kettle in order to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q11",
+          "order": 11,
+          "prompt": "Alec hurried in order not to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-47-sec-e-q12",
+          "order": 12,
+          "prompt": "I closed the door of my room in order not to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

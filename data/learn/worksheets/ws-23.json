@@ -1,0 +1,928 @@
+{
+  "id": "ws-23",
+  "order": 23,
+  "part": 2,
+  "slug": "ws-23-passive-form",
+  "title": "WORKSHEET 23",
+  "subject": "Passive Form",
+  "subjectVi": "Ngữ pháp bài 23: Passive Form",
+  "level": "B1",
+  "pageRange": "Part 2 (WS 23)",
+  "sections": [
+    {
+      "id": "ws-23-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in the PASSIVE in the appropriate tense:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-a-q01",
+          "order": 1,
+          "prompt": "(TV / invent / Baird) [gap] [gap] TV was invented by Baird [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q02",
+          "order": 2,
+          "prompt": "(Pyramids / build / Egyptians) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q03",
+          "order": 3,
+          "prompt": "(milk / produce / cows) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q04",
+          "order": 4,
+          "prompt": "(coffee / grow / in Brazil) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q05",
+          "order": 5,
+          "prompt": "(chopsticks / use / in China) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q06",
+          "order": 6,
+          "prompt": "(plants / water / every day) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q07",
+          "order": 7,
+          "prompt": "(the thief / arrest / policeman / yesterday) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q08",
+          "order": 8,
+          "prompt": "(the injured man / take to a hospital / now) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q09",
+          "order": 9,
+          "prompt": "(the car / repair / tomorrow) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-a-q10",
+          "order": 10,
+          "prompt": "(the letter / send / last week) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-b",
+      "sectionKey": "B",
+      "instruction": "Put the verbs in brackets into PRESENT SIMPLE PASSIVE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-23-sec-b-q01",
+          "order": 1,
+          "prompt": "There is a chimpanzee which [gap] is called [gap] (call) “Bubbles”. It [gap] (own)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-b-q02",
+          "order": 2,
+          "prompt": "by Michael Johnson. It [gap] (keep) in his home. It [gap] (feed)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-b-q03",
+          "order": 3,
+          "prompt": "every day by Michael Johnson himself. It [gap] (always / dress) in",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-b-q04",
+          "order": 4,
+          "prompt": "funny clothes. It [gap] (said) that “Bubbles” is Michael Johnson’s only",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-b-q05",
+          "order": 5,
+          "prompt": "friend. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-c",
+      "sectionKey": "C",
+      "instruction": "Look at the Hotel Information table and write sentences as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-c-q01",
+          "order": 1,
+          "prompt": "Breakfast / serve – where and when? [gap] Breakfast is served in Pierrot’s Restaurant between 7 and 9:30 am.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-c-q02",
+          "order": 2,
+          "prompt": "Dinner / serve – where and when? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-c-q03",
+          "order": 3,
+          "prompt": "Newspapers / sell – where? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-c-q04",
+          "order": 4,
+          "prompt": "Telephone calls / can make – where? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-c-q05",
+          "order": 5,
+          "prompt": "Rooms / clean – who by and how often? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-c-q06",
+          "order": 6,
+          "prompt": "Hot water / supply – when? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-c-q07",
+          "order": 7,
+          "prompt": "Films / show – where and when? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-d",
+      "sectionKey": "D",
+      "instruction": "Put the verbs in brackets into PAST SIMPLE PASSIVE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-23-sec-d-q01",
+          "order": 1,
+          "prompt": "Two men [gap] were seen [gap] (see) breaking into a house in my street last night. The police",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-d-q02",
+          "order": 2,
+          "prompt": "[gap] (call) and they arrived very quickly. One man [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-d-q03",
+          "order": 3,
+          "prompt": "(catch) immediately. The other escaped, but he [gap] (find) very soon.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-d-q04",
+          "order": 4,
+          "prompt": "Both men [gap] (take) to the police station where they [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-d-q05",
+          "order": 5,
+          "prompt": "[gap] (question) separately by a police officer. The two men [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-d-q06",
+          "order": 6,
+          "prompt": "[gap] (charge) with burglary.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-e",
+      "sectionKey": "E",
+      "instruction": "Turn from ACTIVE into PASSIVE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-e-q01",
+          "order": 1,
+          "prompt": "The gardener has planted some trees. [gap] [gap] Some trees have been planted by the gardener [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q02",
+          "order": 2,
+          "prompt": "Doctor Brown will give you some advice. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q03",
+          "order": 3,
+          "prompt": "A famous designer will redecorate the hotel. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q04",
+          "order": 4,
+          "prompt": "Steven Spielberg directed “E.T.” [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q05",
+          "order": 5,
+          "prompt": "Someone has broken the crystal vase. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q06",
+          "order": 6,
+          "prompt": "His parents have brought him up to be polite. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q07",
+          "order": 7,
+          "prompt": "Fleming discovered penicillin. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q08",
+          "order": 8,
+          "prompt": "They will advertise the product on television. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q09",
+          "order": 9,
+          "prompt": "Someone is remaking that film. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-e-q10",
+          "order": 10,
+          "prompt": "Picasso painted that picture. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-f",
+      "sectionKey": "F",
+      "instruction": "Using the PASSIVE, ask questions to which the bold type words are answers:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-23-sec-f-q01",
+          "order": 1,
+          "prompt": "Columbus discovered America. [gap] Who was America discovered by [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q02",
+          "order": 2,
+          "prompt": "We keep money in a safe. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q03",
+          "order": 3,
+          "prompt": "A bee stung him. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q04",
+          "order": 4,
+          "prompt": "They speak Italian in Italy. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q05",
+          "order": 5,
+          "prompt": "They have taken his aunt to hospital [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q06",
+          "order": 6,
+          "prompt": "The boys damaged the television. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q07",
+          "order": 7,
+          "prompt": "Da Vinci painted the Mona Lisa. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q08",
+          "order": 8,
+          "prompt": "He invited 30 people to his party. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-f-q09",
+          "order": 9,
+          "prompt": "They grow bananas in Africa. [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-g",
+      "sectionKey": "G",
+      "instruction": "Turn from ACTIVE into PASSIVE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-g-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q07",
+          "order": 7,
+          "prompt": " [gap] You must leave the bathroom tidy. [gap] The bathroom must be left tidy [gap] You should water this plant daily. Our neighbor ought to paint the garage [gap] I have to return these books to the library [gap] You must extinguish your cigarettes. You must dry-clean this shirt. Someone will pay you in ten days.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q08",
+          "order": 8,
+          "prompt": "You can improve your health with more exercise. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q09",
+          "order": 9,
+          "prompt": "People must obey the law. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-g-q10",
+          "order": 10,
+          "prompt": "The cleaner is going to mop the kitchen floor. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-h",
+      "sectionKey": "H",
+      "instruction": "Turn from ACTIVE into PASSIVE:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-h-q01",
+          "order": 1,
+          "prompt": "Someone is helping her with the hosework. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q10",
+          "order": 10,
+          "prompt": "A pickpocket robbed me. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q11",
+          "order": 11,
+          "prompt": "The mail-order company sent Mrs. Green a parcel. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q12",
+          "order": 12,
+          "prompt": "A dog is chasing the cild. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q13",
+          "order": 13,
+          "prompt": "My friend sent me an invitation. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q14",
+          "order": 14,
+          "prompt": "The farmer is building a new barn. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q15",
+          "order": 15,
+          "prompt": "The secretary has given Mrs. Jones some letters. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q16",
+          "order": 16,
+          "prompt": "The traffic warden had already given him a ticket for illegal parking. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q17",
+          "order": 17,
+          "prompt": "Someone had broken our door down. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-h-q18",
+          "order": 18,
+          "prompt": "They chose him as the best actor of the year. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-i",
+      "sectionKey": "I",
+      "instruction": "Turn form ACTIVE into PASSIVE as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-i-q01",
+          "order": 1,
+          "prompt": "He gave me a present. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) I",
+            "b) A"
+          ]
+        },
+        {
+          "id": "ws-23-sec-i-q02",
+          "order": 2,
+          "prompt": "The waiter will bring us the bill. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………",
+            "b) …………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-23-sec-i-q03",
+          "order": 3,
+          "prompt": "The Queen presented him with a medal. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………",
+            "b) …………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-23-sec-i-q04",
+          "order": 4,
+          "prompt": "Her mother bought Mary some sweets. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………",
+            "b) …………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-23-sec-i-q05",
+          "order": 5,
+          "prompt": "Bob has sold Ted a second-hand car. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………",
+            "b) …………………………………………………………"
+          ]
+        },
+        {
+          "id": "ws-23-sec-i-q06",
+          "order": 6,
+          "prompt": "Larry is going to send a letter to Tom. [gap]",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) …………………………………………………………",
+            "b) …………………………………………………………"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-j",
+      "sectionKey": "J",
+      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-23-sec-j-q01",
+          "order": 1,
+          "prompt": "Some peoplem saw a UFO in the sky above London last night. They reported it to the police.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-j-q02",
+          "order": 2,
+          "prompt": "The army sent a helicopter to look at it more closely. The UFO shot the helicopter down and",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-j-q03",
+          "order": 3,
+          "prompt": "killed both men in it. People have given photographs of the UFO to the police. Experts are",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-j-q04",
+          "order": 4,
+          "prompt": "looking ar them now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-k",
+      "sectionKey": "K",
+      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-23-sec-k-q01",
+          "order": 1,
+          "prompt": "Somebody has stolen a bus from outside the school. Some children saw the thief. The police",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-k-q02",
+          "order": 2,
+          "prompt": "are searching for the bus now. They will use the children’s descriptions to catch the thief.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-l",
+      "sectionKey": "L",
+      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-23-sec-l-q01",
+          "order": 1,
+          "prompt": "Someone broke into a local jewellery shop yesterday. The owner had just locked up the shop",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-l-q02",
+          "order": 2,
+          "prompt": "when a robber with a gun threatened him. The robber told him to unlock the shop and give him",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-l-q03",
+          "order": 3,
+          "prompt": "all the diamonds in the safe. Then the robber tied him up. The police have organized a search for",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-l-q04",
+          "order": 4,
+          "prompt": "the robber. They hope they will find him in a few days. Doctors are treating the owner of the",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-l-q05",
+          "order": 5,
+          "prompt": "shop for shock.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-m",
+      "sectionKey": "M",
+      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-23-sec-m-q01",
+          "order": 1,
+          "prompt": "My uncle painted this picture. Someone has offered him a lot of money for it. He will deliver",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-m-q02",
+          "order": 2,
+          "prompt": "the painting tomorrow. When they give him the money he will tell them the truth. He painted it",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-m-q03",
+          "order": 3,
+          "prompt": "one night while he was sleepwalking!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-n",
+      "sectionKey": "N",
+      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-23-sec-n-q01",
+          "order": 1,
+          "prompt": "Our school is organizing a contest. The teachers will choose the best project about the",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-n-q02",
+          "order": 2,
+          "prompt": "environment. The students must include pictures and drawings in their projects. The students will",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-n-q03",
+          "order": 3,
+          "prompt": "also have to do all the writing themselves. The school will give the winner a set of",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-n-q04",
+          "order": 4,
+          "prompt": "encyclopaedias.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-o",
+      "sectionKey": "O",
+      "instruction": "Make questions in the PASSIVE from these cues:",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-23-sec-o-q01",
+          "order": 1,
+          "prompt": "How many / photos / store / in the photo library [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q02",
+          "order": 2,
+          "prompt": "photographs / develop / in the photo library [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q03",
+          "order": 3,
+          "prompt": "Where / messages / receive [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q04",
+          "order": 4,
+          "prompt": "the Daily Mirror / print / in Manchester [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q05",
+          "order": 5,
+          "prompt": "this magazine / sell / in Spain [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q06",
+          "order": 6,
+          "prompt": "Why / newspapers / send abroad [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q07",
+          "order": 7,
+          "prompt": "When / the newspaper / print [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q08",
+          "order": 8,
+          "prompt": "How / newspapers / deliver [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q09",
+          "order": 9,
+          "prompt": "Where / stories / write [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-o-q10",
+          "order": 10,
+          "prompt": "a lot of paper / use / for each issue [gap] ?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-23-sec-p",
+      "sectionKey": "P",
+      "instruction": "Write sentences in the PASSIVE.Use these phrases:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-23-sec-p-q01",
+          "order": 1,
+          "prompt": "films / show [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q02",
+          "order": 2,
+          "prompt": "meals / cook [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q03",
+          "order": 3,
+          "prompt": "stamps / sell [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q04",
+          "order": 4,
+          "prompt": "pandas / find [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q05",
+          "order": 5,
+          "prompt": "Italian / speak [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q06",
+          "order": 6,
+          "prompt": "confetti / throw [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q07",
+          "order": 7,
+          "prompt": "lessons / teach [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-23-sec-p-q08",
+          "order": 8,
+          "prompt": "sharks / find [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

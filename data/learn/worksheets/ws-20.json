@@ -1,0 +1,1467 @@
+{
+  "id": "ws-20",
+  "order": 20,
+  "part": 2,
+  "slug": "ws-20-tense-review-present-simple-present-continuous-simple-past",
+  "title": "WORKSHEET 20",
+  "subject": "Tense Review (Present Simple / Present Continuous / Simple Past)",
+  "subjectVi": "Ngữ pháp bài 20: Tense Review (Present Simple / Present Continuous / Simple Past)",
+  "level": "A2",
+  "pageRange": "Part 2 (WS 20)",
+  "sections": [
+    {
+      "id": "ws-20-sec-a",
+      "sectionKey": "A",
+      "instruction": "Complete the sentences using the verbs in brackets in the PRESENT CONTINUOUS or",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-a-q01",
+          "order": 1,
+          "prompt": "Please be quiet. I [gap] (try) to read the paper.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-a-q02",
+          "order": 2,
+          "prompt": "This is a very quiet town. Where [gap] (people / go) in the evenings?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-a-q03",
+          "order": 3,
+          "prompt": "John [gap] (drink) milk every night, but now he [gap] (drink) tea.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-a-q04",
+          "order": 4,
+          "prompt": "What [gap] (you / do) with all that paper and glue?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-a-q05",
+          "order": 5,
+          "prompt": "I [gap] (not / use) the computer at the moment so you can use it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-a-q06",
+          "order": 6,
+          "prompt": "[gap] (Karen and John / ever / write) to you?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-b",
+      "sectionKey": "B",
+      "instruction": "PRESENT CONTINUOUS or PRESENT SIMPLE in context. Put in the right form of",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-b-q01",
+          "order": 1,
+          "prompt": "the verb in brackets: [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q02",
+          "order": 2,
+          "prompt": "Laura : Hello, George! What [gap] (you / do) these days?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q03",
+          "order": 3,
+          "prompt": "George : Hi, Laura. I [gap] (learn) French and Spanish at college.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q04",
+          "order": 4,
+          "prompt": "What about you? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q05",
+          "order": 5,
+          "prompt": "Laura : Me? Oh, I [gap] (work) at a Travel Agency until August.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q06",
+          "order": 6,
+          "prompt": "George : [gap] (you / like) it?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q07",
+          "order": 7,
+          "prompt": "Laura : Yes, I do. I [gap] (work) in the shop most mornings, and",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q08",
+          "order": 8,
+          "prompt": "three afternoons a week the manager [gap] (tell) me about the travel",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q09",
+          "order": 9,
+          "prompt": "business. I [gap] (work) quite long hours. I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q10",
+          "order": 10,
+          "prompt": "(not / get) home until six, but I [gap] (prefer) that to not having",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q11",
+          "order": 11,
+          "prompt": "enough to do. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q12",
+          "order": 12,
+          "prompt": "George : Yes, I [gap] (work) hard too at the moment.It [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q13",
+          "order": 13,
+          "prompt": "(become) more and more difficult to get a job using languages. They [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q14",
+          "order": 14,
+          "prompt": "(ask) for higher and higher exam grades all the time. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q15",
+          "order": 15,
+          "prompt": "Laura : You can do it, George. You [gap] (be) clever.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-b-q16",
+          "order": 16,
+          "prompt": "George : Thanks. Laura. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-c",
+      "sectionKey": "C",
+      "instruction": "Put the verbs in brackets into PRESENT CONTINUOUS or PRESENT SIMPLE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-c-q01",
+          "order": 1,
+          "prompt": "It [gap] is [gap] winter and the snow [gap] (fall). It usually [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q02",
+          "order": 2,
+          "prompt": "(snow) in January here. Betty and James [gap] (play) in the garden.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q03",
+          "order": 3,
+          "prompt": "They [gap] (build) a snowman and they [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q04",
+          "order": 4,
+          "prompt": "(throw) snowballs. They [gap] (like) the snow very much! Their mother",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q05",
+          "order": 5,
+          "prompt": "and father [gap] (not / like) it. They always [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q06",
+          "order": 6,
+          "prompt": "(stay) in the house when it is cold. Mother usually [gap] (watch) TV and",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q07",
+          "order": 7,
+          "prompt": "Father [gap] (listen) to the radio or [gap] (read) a book.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q08",
+          "order": 8,
+          "prompt": "At the moment they [gap] (sit) in the living-room. Mother [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-c-q09",
+          "order": 9,
+          "prompt": "[gap] (write) a letter and Father [gap] (read) a book.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-d",
+      "sectionKey": "D",
+      "instruction": "Complete the dialogue using the verbs in brackets in the correct form:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-d-q01",
+          "order": 1,
+          "prompt": "A: Why … don’t you finish [gap] (you / not / finish) your homework and come and watch TV?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q02",
+          "order": 2,
+          "prompt": "B: Because I [gap] (not / understand) it. It is too difficult.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q03",
+          "order": 3,
+          "prompt": "A: Why [gap] (you / not / ask) your teacher to explain it?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q04",
+          "order": 4,
+          "prompt": "B: Because I [gap] (not / like) him.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q05",
+          "order": 5,
+          "prompt": "A: And why [gap] (you / not / like) him?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q06",
+          "order": 6,
+          "prompt": "B: Well, he [gap] (always / shout) at me.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q07",
+          "order": 7,
+          "prompt": "A: Why [gap] (he / shout) at you?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q08",
+          "order": 8,
+          "prompt": "B: Well, I [gap] (not / work) in class and I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q09",
+          "order": 9,
+          "prompt": "[gap] (not / do) my homework.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q10",
+          "order": 10,
+          "prompt": "A: Well, no wonder he [gap] (shout) at you. Give me your book",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-d-q11",
+          "order": 11,
+          "prompt": "now. We’ll try and do it together. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-e",
+      "sectionKey": "E",
+      "instruction": "Put the words in brackets in the correct place in the sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-e-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q08",
+          "order": 8,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-e-q09",
+          "order": 9,
+          "prompt": " [gap] I [gap] always [gap] keep [gap] my room tidy. (always) Do you [gap] go [gap] on holiday in winter? (sometimes) [gap] he [gap] helps with the housework. (never) She [gap] plays [gap] cards. (rarely) Does she [gap] visit [gap] his friends? (often) They [gap] don’t [gap] eat sweets. (often) We [gap] eat [gap] a lot of vegetables. (usually) You [gap] must [gap] tell lies. (never) She [gap] can [gap] answer the teacher’s questions. (always)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-f",
+      "sectionKey": "F",
+      "instruction": "Put the verbs in brackets into PRESENT SIMPLE or PRESENT CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-f-q01",
+          "order": 1,
+          "prompt": "Caller: Good morning [gap] Is [gap] (be) Mr. Green there?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q02",
+          "order": 2,
+          "prompt": "Man : No, he [gap] (not / be) here. He [gap] (work)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q03",
+          "order": 3,
+          "prompt": "at the moment. He usually [gap] (work) until 4 p.m.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q04",
+          "order": 4,
+          "prompt": "Caller: What about Mrs. Green? Where [gap] (be) she?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q05",
+          "order": 5,
+          "prompt": "Man : She [gap] (do) the shopping. She always [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q06",
+          "order": 6,
+          "prompt": "(do) the shopping on Thursday afternoons. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q07",
+          "order": 7,
+          "prompt": "Caller: Where [gap] (be) the children?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q08",
+          "order": 8,
+          "prompt": "Man : They [gap] (play) football.They always [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q09",
+          "order": 9,
+          "prompt": "(play) football after school. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q10",
+          "order": 10,
+          "prompt": "Caller: How [gap] (you / know) all this? Who are you?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-f-q11",
+          "order": 11,
+          "prompt": "Man : I [gap] (be) the burglar!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-g",
+      "sectionKey": "G",
+      "instruction": "Put the verbs in brackets into the correct tense:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-g-q01",
+          "order": 1,
+          "prompt": "He often [gap] brings [gap] (bring) me flowers.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q02",
+          "order": 2,
+          "prompt": "[gap] (you / meet) Paul yesterday?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q03",
+          "order": 3,
+          "prompt": "Father [gap] (work) in the garden now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q04",
+          "order": 4,
+          "prompt": "What [gap] (you / do) at the moment?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q05",
+          "order": 5,
+          "prompt": "Mr. Jones [gap] (paint) his house last month.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q06",
+          "order": 6,
+          "prompt": "She [gap] (go) to school on foot every day.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q07",
+          "order": 7,
+          "prompt": "It [gap] (be) hot yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q08",
+          "order": 8,
+          "prompt": "The baby [gap] (not / sleep) now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q09",
+          "order": 9,
+          "prompt": "He never [gap] (drive) fast.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q10",
+          "order": 10,
+          "prompt": "She [gap] (leave) Paris in 1987.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q11",
+          "order": 11,
+          "prompt": "She always [gap] (go) to church on Sunday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q12",
+          "order": 12,
+          "prompt": "I [gap] (buy) a new bicycle last week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q13",
+          "order": 13,
+          "prompt": "My family [gap] (go) to the theatre yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q14",
+          "order": 14,
+          "prompt": "Tom [gap] (live) in London three years ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q15",
+          "order": 15,
+          "prompt": "My mother [gap] (make) some coffee now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q16",
+          "order": 16,
+          "prompt": "Sam [gap] (go) to the circus yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q17",
+          "order": 17,
+          "prompt": "I [gap] (talk) on the telephone at the moment.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q18",
+          "order": 18,
+          "prompt": "Sally always [gap] (help) her mother in the house.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q19",
+          "order": 19,
+          "prompt": "I [gap] (have) dinner in a restaurant last Friday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q20",
+          "order": 20,
+          "prompt": "Listen! The birds [gap] (sing) in the garden.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q21",
+          "order": 21,
+          "prompt": "I often [gap] (buy) fruit from the greengrocer’s.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q22",
+          "order": 22,
+          "prompt": "My mother [gap] (drink) tea now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q23",
+          "order": 23,
+          "prompt": "Look at Tom and Jim! They [gap] (walk) up the hill.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q24",
+          "order": 24,
+          "prompt": "That man [gap] (laugh) at the moment.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q25",
+          "order": 25,
+          "prompt": "The cat [gap] (play) with a ball now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q26",
+          "order": 26,
+          "prompt": "We always [gap] (wear) warm clothes in winter.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-g-q27",
+          "order": 27,
+          "prompt": "He often [gap] (eat) a sandwich at lunchtime.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-h",
+      "sectionKey": "H",
+      "instruction": "Fill in the postcard with the correct form of the verbs.:",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-h-q01",
+          "order": 1,
+          "prompt": "Dear Joe,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q02",
+          "order": 2,
+          "prompt": "Hello from Hawaii [gap] We’re having …(have) a great time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q03",
+          "order": 3,
+          "prompt": "The sun [gap] (shine) and we [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q04",
+          "order": 4,
+          "prompt": "(enjoy) every minute of our vacation. Jack [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q05",
+          "order": 5,
+          "prompt": "(sit) on the beach. He [gap] (watch) the",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q06",
+          "order": 6,
+          "prompt": "children. The water [gap] (be) warm, but I’m lazy. So",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q07",
+          "order": 7,
+          "prompt": "I [gap] (sit) on the sand and [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q08",
+          "order": 8,
+          "prompt": "(write) this postcard to you. We [gap] (get)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q09",
+          "order": 9,
+          "prompt": "very tan. Oh, and Jack [gap] (learn) to",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q10",
+          "order": 10,
+          "prompt": "surf. Are you surprised? I am.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q11",
+          "order": 11,
+          "prompt": "Wish you were here.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-h-q12",
+          "order": 12,
+          "prompt": "Love, Jane, Jack, Billy and Sue",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-i",
+      "sectionKey": "I",
+      "instruction": "Write sentences using the verbs at the right:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-i-q01",
+          "order": 1,
+          "prompt": "Harry and Jennifer are outside. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-i-q02",
+          "order": 2,
+          "prompt": "The dog’s outside too. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-i-q03",
+          "order": 3,
+          "prompt": "Larry’s in the dining room. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-i-q04",
+          "order": 4,
+          "prompt": "Sally’s in the bathroom. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-i-q05",
+          "order": 5,
+          "prompt": "Dad’s in the kitchen. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-i-q06",
+          "order": 6,
+          "prompt": "Mom’s on the phone. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-i-q07",
+          "order": 7,
+          "prompt": "I’m at my desk. [gap] * do homework * make dinner * talk to a friend * set the table * take a shower * run after the ball * play baseball",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-j",
+      "sectionKey": "J",
+      "instruction": "Fill in the blanks to complete the movie review. Use the correct tense of the verbs given:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-20-sec-j-q01",
+          "order": 1,
+          "prompt": "E.T. by JOE BERNES [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q02",
+          "order": 2,
+          "prompt": "Last night, I saw a good movie. The title of the movie was E.T. It was an excellent film. To [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q03",
+          "order": 3,
+          "prompt": "my surprise. I [gap] laughed [gap] (laugh), I [gap] (cry), and I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q04",
+          "order": 4,
+          "prompt": "(worry) about the little creature from space, and I completely [gap] (enjoy)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q05",
+          "order": 5,
+          "prompt": "the show. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q06",
+          "order": 6,
+          "prompt": "The story is about an extraterrestrial person named E.T. He [gap] (land) on",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q07",
+          "order": 7,
+          "prompt": "earth in a flying saucer. But his space ship [gap] (depart) without him. A",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q08",
+          "order": 8,
+          "prompt": "little American boy [gap] (discover) E.T. They [gap] (play)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q09",
+          "order": 9,
+          "prompt": "together and they [gap] (like) each other a lot. But E.T [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q10",
+          "order": 10,
+          "prompt": "(miss) his home. He [gap] (want) to go back. He [gap] (plan)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q11",
+          "order": 11,
+          "prompt": "his return trip, but then … [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-j-q12",
+          "order": 12,
+          "prompt": "Well, go and see this excellent summer film and find out about E.T. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-k",
+      "sectionKey": "K",
+      "instruction": "Write the questions. Use WHEN, WHERE, WHO or WHAT:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-k-q01",
+          "order": 1,
+          "prompt": "A: We went to California on our vacation. [gap] B: Really? [gap] Where did you stay [gap] (you / stay)? A: In a hotel in Santa Monica.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-k-q02",
+          "order": 2,
+          "prompt": "A: The children visited the usual tourist attractions. [gap] B: Oh, yeah? [gap] (they / see)? A: Oh, they went to Disneyland, the San Diego zoo, and a movie studio.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-k-q03",
+          "order": 3,
+          "prompt": "A: My wife played a lot of tennis. [gap] B: [gap] (she / play) with? A: She played with our oldest son.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-k-q04",
+          "order": 4,
+          "prompt": "A: I really enjoyed the trip. We even stayed a few extra days. [gap] B: [gap] (you / plan) to come home? A: Well, we planned to come home on Monday, but we didn’t get back until Friday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-l",
+      "sectionKey": "L",
+      "instruction": "Fill in the blanks to complete the postcard. Use the PAST TENSE form of the verbs",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-l-q01",
+          "order": 1,
+          "prompt": "given:",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q02",
+          "order": 2,
+          "prompt": "Dear Mom,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q03",
+          "order": 3,
+          "prompt": "I’m having a wonderful time. Last night I [gap] went … (go)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q04",
+          "order": 4,
+          "prompt": "to the Hollywood Bowl with some friends. We [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q05",
+          "order": 5,
+          "prompt": "(take) a special bus and [gap] (get) there easily. A",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q06",
+          "order": 6,
+          "prompt": "friend [gap] (buy) some wine and we also [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q07",
+          "order": 7,
+          "prompt": "(bring) a picnic basket. So we [gap] (find) our seats",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q08",
+          "order": 8,
+          "prompt": "and [gap] (eat) our picnic. Then the concert [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q09",
+          "order": 9,
+          "prompt": "(begin). It [gap] (be) excellent. What a night!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-l-q10",
+          "order": 10,
+          "prompt": "Love, Kris",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-m",
+      "sectionKey": "M",
+      "instruction": "Fill in the blanks to complete the letter:",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-m-q01",
+          "order": 1,
+          "prompt": "Dear Betty,",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q02",
+          "order": 2,
+          "prompt": "Thank you for dinner last night. We [gap] ate [gap] (eat)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q03",
+          "order": 3,
+          "prompt": "like Kings and [gap] (have) a wonderful time.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q04",
+          "order": 4,
+          "prompt": "Charles [gap] (put) so much effort into the meal.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q05",
+          "order": 5,
+          "prompt": "It [gap] (be) a wonderful way to end our vacation.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q06",
+          "order": 6,
+          "prompt": "Your directions were excellent. Unfortunately, Jim",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q07",
+          "order": 7,
+          "prompt": "[gap] (take) the wrong street and we [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q08",
+          "order": 8,
+          "prompt": "(get) lost. We finally [gap] (find) the right street",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q09",
+          "order": 9,
+          "prompt": "around 3:00 a.m. But we didn’t go home. Instead we",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q10",
+          "order": 10,
+          "prompt": "[gap] (go) to the beach and [gap] (see)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q11",
+          "order": 11,
+          "prompt": "the sunrise. It was spectacular. We [gap] (get)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q12",
+          "order": 12,
+          "prompt": "back to the hotel around 7:00.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q13",
+          "order": 13,
+          "prompt": "Again, many thanks.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-m-q14",
+          "order": 14,
+          "prompt": "Linda and Jim",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-n",
+      "sectionKey": "N",
+      "instruction": "Complete the sentences. Use the PAST TENSE form of the verbs given:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-n-q01",
+          "order": 1,
+          "prompt": "A: Tom and I [gap] (go) to see The Big Thrill yesterday. B: We [gap] (see) it last weekend. Jackie [gap] (think) it was horrible. A: So did we.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-n-q02",
+          "order": 2,
+          "prompt": "A: Look, Uncle Tom [gap] (get) me a violin. B: Last year he [gap] (buy) me a drum. A: Last Christmas he [gap] (bring) me a doll from Japan. B: Yeah, and you [gap] (break) it the day after.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-n-q03",
+          "order": 3,
+          "prompt": "A: I [gap] (have) my umbrella at home again and it’s really raining hard.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "d) one"
+          ]
+        },
+        {
+          "id": "ws-20-sec-n-q04",
+          "order": 4,
+          "prompt": "A: Mom [gap] (have) to pick up Kevin at the train station. She [gap] (take) the dog with her. B: No, she didn’t. I just [gap] (see) him. He was swimming in the lake.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-o",
+      "sectionKey": "O",
+      "instruction": "Complete the sentences. Use the words in parentheses. Use SIMPLE PRESENT,",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-o-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q08",
+          "order": 8,
+          "prompt": " [gap] I [gap] (get) up at eight o’clock yesterday morning. Mark [gap] (talk) to John on the phone last night. Mark [gap] (talk) to John on the phone right now. Mark [gap] (talk) to John on the phone every day. Jim and I [gap] (eat) lunch at the cafeteria two hours ago. We [gap] (eat) lunch at the cafeteria every day. I [gap] (go) to bed early last night. My roommate [gap] (study) Spanish last year.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q09",
+          "order": 9,
+          "prompt": "Sue [gap] (write) a letter to her parents yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q10",
+          "order": 10,
+          "prompt": "Sue [gap] (write) a letter to her parents every week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q11",
+          "order": 11,
+          "prompt": "Sue is in her room right now. She [gap] (sit) at her desk. She [gap] (write) a letter to her boyfriend.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q12",
+          "order": 12,
+          "prompt": "Marianne [gap] (do) her homework last night.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q13",
+          "order": 13,
+          "prompt": "Yesterday I [gap] (see) Dick at the library.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q14",
+          "order": 14,
+          "prompt": "I [gap] (have) a dream last night.I [gap] (dream) about my friends. I [gap] (sleep) for eight hours.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q15",
+          "order": 15,
+          "prompt": "Alice [gap] (smoke) a cigarette after class yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q16",
+          "order": 16,
+          "prompt": "My wife [gap] (come) home around five every day.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q17",
+          "order": 17,
+          "prompt": "Yesterday she [gap] (come) home at 5:15.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q18",
+          "order": 18,
+          "prompt": "Our teacher [gap] (stand) in the middle of the room right now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q19",
+          "order": 19,
+          "prompt": "Uor teacher [gap] (stand) in the front of the room yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-o-q20",
+          "order": 20,
+          "prompt": "John usually [gap] (sit) in the back of the room, but yesterday he [gap] (sit) in the front row. Today he [gap] (be) absent. He [gap] (be) absent two days ago too.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-20-sec-p",
+      "sectionKey": "P",
+      "instruction": "Complete the sentences. Use the words in parentheses. Use SIMPLE PRESENT,",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-20-sec-p-q01",
+          "order": 1,
+          "prompt": "I [gap] (go / not) to a movie last night. I [gap] (stay) home.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q02",
+          "order": 2,
+          "prompt": "Fred [gap] (come / not) to class every day.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q03",
+          "order": 3,
+          "prompt": "Sue [gap] (read) a book right now. She [gap] (watch / not) TV.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q04",
+          "order": 4,
+          "prompt": "I [gap] (finish / not) my homework last night. I [gap] (go) to bed early.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q05",
+          "order": 5,
+          "prompt": "Jane [gap] (stand / not) up right now. She [gap] (sit) down.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q06",
+          "order": 6,
+          "prompt": "It [gap] (rain / not) right now. The rain [gap] (stop) a few minutes ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q07",
+          "order": 7,
+          "prompt": "The weather [gap] (be / not) cold today, but it [gap] (be) cold yesterday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q08",
+          "order": 8,
+          "prompt": "Mary and I [gap] (go / not) shopping yesterday. We [gap] (go) shopping last Monday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q09",
+          "order": 9,
+          "prompt": "I [gap] (go) to a movie last night, but I [gap] (enjot / not) it.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q10",
+          "order": 10,
+          "prompt": "I [gap] (write) a letter to my girlfriend yesterday, but I [gap] [gap] (write / not) a letter to her last week.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q11",
+          "order": 11,
+          "prompt": "My husband [gap] (come / not) home for dinner last night. he [gap] (stay) at his office.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q12",
+          "order": 12,
+          "prompt": "The children [gap] (go) to bed a half an hour ago. They [gap] (sleep) now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q13",
+          "order": 13,
+          "prompt": "We [gap] (be) late for the movie last night. The movie [gap] (start) at 7:00, but we [gap] (arrive / not) until 7:15.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q14",
+          "order": 14,
+          "prompt": "He [gap] (dance) with Mary now.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q15",
+          "order": 15,
+          "prompt": "She usually [gap] (take) the bus to school.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q16",
+          "order": 16,
+          "prompt": "Her husband never [gap] (remember) her birthday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-20-sec-p-q17",
+          "order": 17,
+          "prompt": "We [gap] (watch) a film on televisison at the moment.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

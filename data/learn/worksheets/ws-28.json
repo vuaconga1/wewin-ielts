@@ -1,0 +1,466 @@
+{
+  "id": "ws-28",
+  "order": 28,
+  "part": 3,
+  "slug": "ws-28-adjectives-and-adverbs",
+  "title": "WORKSHEET 28",
+  "subject": "Adjectives and Adverbs",
+  "subjectVi": "Ngữ pháp bài 28: Adjectives and Adverbs",
+  "level": "B1",
+  "pageRange": "Part 3 (WS 28)",
+  "sections": [
+    {
+      "id": "ws-28-sec-a",
+      "sectionKey": "A",
+      "instruction": "Write what the underlined word is; adjective or adverb:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-a-q01",
+          "order": 1,
+          "prompt": "Fast runners win races. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q02",
+          "order": 2,
+          "prompt": "Mathematics is difficult. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q03",
+          "order": 3,
+          "prompt": "She’s a good typist. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q04",
+          "order": 4,
+          "prompt": "She behaved rudely to her boss. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q05",
+          "order": 5,
+          "prompt": "You’ve done well in your test. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q06",
+          "order": 6,
+          "prompt": "The clowns are very funny. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q07",
+          "order": 7,
+          "prompt": "She’s a pretty girl. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q08",
+          "order": 8,
+          "prompt": "He runs fast. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q09",
+          "order": 9,
+          "prompt": "Ann is very sad. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q10",
+          "order": 10,
+          "prompt": "She plays the piano beautifully. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q11",
+          "order": 11,
+          "prompt": "Father is very busy in his office. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-a-q12",
+          "order": 12,
+          "prompt": "The doctor arrived immediately. [gap] [gap] adjective [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-28-sec-b",
+      "sectionKey": "B",
+      "instruction": "Underline the correct item:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-b-q01",
+          "order": 1,
+          "prompt": "He left the room quiet / quietly. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q02",
+          "order": 2,
+          "prompt": "Jane works hard / hardly. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q03",
+          "order": 3,
+          "prompt": "He’s a very nice / nicely man. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q04",
+          "order": 4,
+          "prompt": "The sun is shining bright / brightly. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q05",
+          "order": 5,
+          "prompt": "Smoking is bad / badly for your health. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q06",
+          "order": 6,
+          "prompt": "She behaves very good / well. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q07",
+          "order": 7,
+          "prompt": "He always dresses smart / smartly. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q08",
+          "order": 8,
+          "prompt": "He shouted angry / angrily at me. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q09",
+          "order": 9,
+          "prompt": "This chair is comfortable / comfortably. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q10",
+          "order": 10,
+          "prompt": "He smiled sad / sadly. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-b-q11",
+          "order": 11,
+          "prompt": "You drive very slow / slowly. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-28-sec-c",
+      "sectionKey": "C",
+      "instruction": "Complete these sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-c-q01",
+          "order": 1,
+          "prompt": "There was some heavy rain last night. [gap] Yes, it rained very [gap] heavily [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-c-q02",
+          "order": 2,
+          "prompt": "Aren’t the children quiet! [gap] Yes, they’re working very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-c-q03",
+          "order": 3,
+          "prompt": "James has a loud voice. [gap] Yes, he always talks very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-c-q04",
+          "order": 4,
+          "prompt": "Isn’t the teacher angry! [gap] Yes, he’s shouting very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-c-q05",
+          "order": 5,
+          "prompt": "Angela’s very happy today! [gap] Yes, she’s laughing very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-c-q06",
+          "order": 6,
+          "prompt": "The telephone rang in the middle of the night. Nick was very sleepy. [gap] He answered it very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-c-q07",
+          "order": 7,
+          "prompt": "Kate likes playing slow music. [gap] Yes, she’s playing this piece very [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-28-sec-d",
+      "sectionKey": "D",
+      "instruction": "Complete the sentence with the correct word from the brackets:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-d-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q06",
+          "order": 6,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q07",
+          "order": 7,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q08",
+          "order": 8,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-d-q09",
+          "order": 9,
+          "prompt": " [gap] This exercise is [gap] (easy / easily) These people are speaking [gap] (quiet / quietly) Mr. Brown can speak English [gap] (good / well) Tigers are [gap] animals. (brave / bravely) The footballer is [gap] (tired / tiredly) Cheetahs run [gap] (quick / quickly) She is lifting the weight [gap] (easy / easily) The children are playing [gap] (happy / happily) Tony is a [gap] skier. (good / well)",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-28-sec-e",
+      "sectionKey": "E",
+      "instruction": "Supply the proper form, ADJECTIVE or ADVERB:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-28-sec-e-q01",
+          "order": 1,
+          "prompt": "He always does his homework [gap] (careful).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q02",
+          "order": 2,
+          "prompt": "He is a very [gap] (careful) student.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q03",
+          "order": 3,
+          "prompt": "Come [gap] (quick). We need your help.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q04",
+          "order": 4,
+          "prompt": "You should drive more [gap] (slow) along this road.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q05",
+          "order": 5,
+          "prompt": "The old man walks very [gap] (slow).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q06",
+          "order": 6,
+          "prompt": "Helen is a very [gap] (slow) student.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q07",
+          "order": 7,
+          "prompt": "Her brother, on the other hand, learns [gap] (rapid).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q08",
+          "order": 8,
+          "prompt": "Mr. Gonzales has a [gap] (permanent) visa.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q09",
+          "order": 9,
+          "prompt": "He hopes to remain in this country [gap] (permanent).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q10",
+          "order": 10,
+          "prompt": "This is an [gap] (easy) exercise.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q11",
+          "order": 11,
+          "prompt": "I can do all of these exercises [gap] (easy).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q12",
+          "order": 12,
+          "prompt": "Helen works very [gap] (hard) in her new job.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q13",
+          "order": 13,
+          "prompt": "You walk very [gap] (fast).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q14",
+          "order": 14,
+          "prompt": "They are both [gap] (serious) students.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q15",
+          "order": 15,
+          "prompt": "They both study English very [gap] (serious).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q16",
+          "order": 16,
+          "prompt": "I agree with you [gap] (complete) in that matter.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q17",
+          "order": 17,
+          "prompt": "This apple is very [gap] (soft).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q18",
+          "order": 18,
+          "prompt": "She always speaks [gap] (soft) to the child.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q19",
+          "order": 19,
+          "prompt": "Helen is a [gap] (beautiful) girl.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-28-sec-e-q20",
+          "order": 20,
+          "prompt": "Her sister plays the violin [gap] (beautiful).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

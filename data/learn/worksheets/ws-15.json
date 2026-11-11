@@ -1,0 +1,505 @@
+{
+  "id": "ws-15",
+  "order": 15,
+  "part": 2,
+  "slug": "ws-15-going-to",
+  "title": "WORKSHEET 15",
+  "subject": "Going to",
+  "subjectVi": "Ngữ pháp bài 15: Going to",
+  "level": "A2",
+  "pageRange": "Part 2 (WS 15)",
+  "sections": [
+    {
+      "id": "ws-15-sec-a",
+      "sectionKey": "A",
+      "instruction": "Complete each sentence. Use GOING TO and the verb in brackets:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-a-q01",
+          "order": 1,
+          "prompt": "[gap] Are you going to buy [gap] (you / buy) a new bike?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q02",
+          "order": 2,
+          "prompt": "Tom [gap] (not / be) a doctor.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q03",
+          "order": 3,
+          "prompt": "I [gap] (buy) some new shoes.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q04",
+          "order": 4,
+          "prompt": "[gap] (Helen / catch) the train?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q05",
+          "order": 5,
+          "prompt": "Who [gap] (carry) the shopping for me?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q06",
+          "order": 6,
+          "prompt": "Jim and Dinah [gap] (not / get) married.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q07",
+          "order": 7,
+          "prompt": "Sam [gap] (take) a holiday.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q08",
+          "order": 8,
+          "prompt": "What time [gap] (you / phone) me?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q09",
+          "order": 9,
+          "prompt": "Where [gap] (we / eat) tonight?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-a-q10",
+          "order": 10,
+          "prompt": "I [gap] (not /give) a birthday present!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-b",
+      "sectionKey": "B",
+      "instruction": "Rewrite each sentence or question with GOING TO:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-15-sec-b-q01",
+          "order": 1,
+          "prompt": "Joe plans to buy a new computer next year. … Joe is going to buy a new computer next year [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q02",
+          "order": 2,
+          "prompt": "We don’t plan to play tennis this weekend.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q03",
+          "order": 3,
+          "prompt": "Does Nick plan to join the sports club?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q04",
+          "order": 4,
+          "prompt": "What are your plans for next summer?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q05",
+          "order": 5,
+          "prompt": "Look! That tree is about to fall over!",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q06",
+          "order": 6,
+          "prompt": "Do you plan to work hard this year?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q07",
+          "order": 7,
+          "prompt": "I don’t intend to get a new car.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q08",
+          "order": 8,
+          "prompt": "The forecast for tomorrow is rain.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q09",
+          "order": 9,
+          "prompt": "Do Mike and Pat plan to make sandwiches for the party?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-b-q10",
+          "order": 10,
+          "prompt": "I think it’s about to snow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-c",
+      "sectionKey": "C",
+      "instruction": "What are you going to do next summer? Write sentences:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-c-q01",
+          "order": 1,
+          "prompt": "[gap] Next summer I’m going to have a great holiday. I’m going to [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-d",
+      "sectionKey": "D",
+      "instruction": "Rob Brown and Molly Gould are opera singers. A reporter has interviewed them about",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-d-q01",
+          "order": 1,
+          "prompt": "give / concerts [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q02",
+          "order": 2,
+          "prompt": "go / to India [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q03",
+          "order": 3,
+          "prompt": "appear / in a TV show [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q04",
+          "order": 4,
+          "prompt": "go on / holiday in August [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q05",
+          "order": 5,
+          "prompt": "take part / in charity events [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q06",
+          "order": 6,
+          "prompt": "sing / at the Queen’s party [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q07",
+          "order": 7,
+          "prompt": "make / a record [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q08",
+          "order": 8,
+          "prompt": "sing / in a rock opera [gap] Rob Brown * * * * Molly Gould * * * * * * Student 2: Yes, he is. Is Molly going to give any concerts in the summer? Student 1: Yes, she is.",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "sampleAnswer": "Example: 1. Student 1: Is Rob going to give any concerts in the summer?"
+        },
+        {
+          "id": "ws-15-sec-d-q02",
+          "order": 2,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q03",
+          "order": 3,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q04",
+          "order": 4,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q05",
+          "order": 5,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q06",
+          "order": 6,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q07",
+          "order": 7,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-d-q08",
+          "order": 8,
+          "prompt": "[gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-e",
+      "sectionKey": "E",
+      "instruction": "Use the words / phrases from the list to complete the sentences, as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-e-q01",
+          "order": 1,
+          "prompt": "Jane’s putting an ad in the newspaper. [gap] She is going to sell his car [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-e-q02",
+          "order": 2,
+          "prompt": "The washing machine isn’t working. [gap] My father [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-e-q03",
+          "order": 3,
+          "prompt": "I bought some flour and some eggs. [gap] I [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-e-q04",
+          "order": 4,
+          "prompt": "Robert is on a diet. [gap] He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-e-q05",
+          "order": 5,
+          "prompt": "Peter is still in bed. [gap] He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-f",
+      "sectionKey": "F",
+      "instruction": "Jonathan is not satisfied with his life as it is. He has already decided to change a number",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-f-q01",
+          "order": 1,
+          "prompt": "move to the city center [gap] He is going to move to the city center [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-f-q02",
+          "order": 2,
+          "prompt": "sell his car [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-f-q03",
+          "order": 3,
+          "prompt": "buy a bigger house [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-f-q04",
+          "order": 4,
+          "prompt": "marry Susan [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-f-q05",
+          "order": 5,
+          "prompt": "apply for a job with a law firm [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-g",
+      "sectionKey": "G",
+      "instruction": "Write questions and answers as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-g-q01",
+          "order": 1,
+          "prompt": "Fred / singer? [gap] Is Fred going to be a singer? [gap] [gap] No, he isn’t. He isn’t going to be a singer [gap] [gap] He is going to be a doctor [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-g-q02",
+          "order": 2,
+          "prompt": "Rod and Ben / teachers? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-g-q03",
+          "order": 3,
+          "prompt": "Joan / doctor? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-g-q04",
+          "order": 4,
+          "prompt": "Ted / singer? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-g-q05",
+          "order": 5,
+          "prompt": "You / teacher? [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-15-sec-h",
+      "sectionKey": "H",
+      "instruction": "Make sentences, as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-15-sec-h-q01",
+          "order": 1,
+          "prompt": "She can’t stop the car! [gap] She is going to crash [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q02",
+          "order": 2,
+          "prompt": "They are late. [gap] They [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q03",
+          "order": 3,
+          "prompt": "The headmaster looks angry! [gap] He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q04",
+          "order": 4,
+          "prompt": "Jim has got his camera. [gap] He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q05",
+          "order": 5,
+          "prompt": "Mick’s putting up a “For Sale” sign. [gap] He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q06",
+          "order": 6,
+          "prompt": "The car has got a flat tyre. [gap] He [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q07",
+          "order": 7,
+          "prompt": "Mum’s looking at a recipe. [gap] She [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q08",
+          "order": 8,
+          "prompt": "Look! The ladder is broken. [gap] Oh no, he [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q09",
+          "order": 9,
+          "prompt": "They’re putting their hats and gloves on. [gap] They [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-15-sec-h-q10",
+          "order": 10,
+          "prompt": "Kevin’s putting the kettle on. [gap] He [gap] * crash",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

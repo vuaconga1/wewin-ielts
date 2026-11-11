@@ -1,0 +1,366 @@
+{
+  "id": "ws-51",
+  "order": 51,
+  "part": 4,
+  "slug": "ws-51-gerund-or-infinitive",
+  "title": "WORKSHEET 51",
+  "subject": "Gerund or Infinitive",
+  "subjectVi": "Ngữ pháp bài 51: Gerund or Infinitive",
+  "level": "B2",
+  "pageRange": "Part 4 (WS 51)",
+  "sections": [
+    {
+      "id": "ws-51-sec-a",
+      "sectionKey": "A",
+      "instruction": "Use the GERUND to connect the following:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-51-sec-a-q01",
+          "order": 1,
+          "prompt": "Peter’s sometimes late. He can’t help it. [gap] [gap] Peter can’t help being late [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q02",
+          "order": 2,
+          "prompt": "Gordon has to get up early. He dislikes it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q03",
+          "order": 3,
+          "prompt": "Paul asked Mary to come home. He remembers it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q04",
+          "order": 4,
+          "prompt": "Jill occasionally speaks Spanish. She can’t avoid it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q05",
+          "order": 5,
+          "prompt": "Jim didn’t take his holiday until June. He delayed it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q06",
+          "order": 6,
+          "prompt": "Jim was speaking French when Bob came in. He stopped. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q07",
+          "order": 7,
+          "prompt": "Jim wanted to see the race. He didn’t want to miss it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q08",
+          "order": 8,
+          "prompt": "You may have an accident if you drive that car. You risk it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q09",
+          "order": 9,
+          "prompt": "I wouldn’t like to work in an office. I don’t fancy it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q10",
+          "order": 10,
+          "prompt": "I spent all my money. I regret it, because I’ve got none left now. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q11",
+          "order": 11,
+          "prompt": "Henry has his lunch very late. He is used to it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q12",
+          "order": 12,
+          "prompt": "John saw the girl. He denies it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q13",
+          "order": 13,
+          "prompt": "I had dinner with a film star. I’ll never forget it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q14",
+          "order": 14,
+          "prompt": "Richard took the books home with him. He admitted it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q15",
+          "order": 15,
+          "prompt": "Mary wanted to have dinner at a restaurant. She suggested it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-a-q16",
+          "order": 16,
+          "prompt": "You should speak English all the time. You should practise it. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-51-sec-b",
+      "sectionKey": "B",
+      "instruction": "Complete the sentences using the GERUND (after prepositions):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-51-sec-b-q01",
+          "order": 1,
+          "prompt": "David is studying. He’s bored. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q02",
+          "order": 2,
+          "prompt": "Gordon likes to watch football. He’s keen. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q03",
+          "order": 3,
+          "prompt": "Peter wants to learn English. He’s interested. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q04",
+          "order": 4,
+          "prompt": "Sheila keeps her own room tidy. She’s responsible. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q05",
+          "order": 5,
+          "prompt": "Sally will visit her aunt. She’s excited. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q06",
+          "order": 6,
+          "prompt": "Swan will meet Gordon. She is looking forward. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q07",
+          "order": 7,
+          "prompt": "Paul doesn’t want to be misunderstood. He’s afraid. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q08",
+          "order": 8,
+          "prompt": "Jane has to do the housework by herself. She’s tired. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q09",
+          "order": 9,
+          "prompt": "John has to get up early. He is used. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-b-q10",
+          "order": 10,
+          "prompt": "Tom passed all his exams. He succeeded. [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-51-sec-c",
+      "sectionKey": "C",
+      "instruction": "Supply an appropriate form GERUND or INFINITIVE of the verbs in parentheses:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-51-sec-c-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q06",
+          "order": 6,
+          "prompt": " [gap] Mary reminded me [gap] (be / not) late for the meeting. We went for a walk after we finished [gap] (clean) up the kitchen. When do you expect [gap] (leave) on your trip? The baby started [gap] (talk) when she was about eighteen months old. I’m getting tired. I need [gap] (take) a break. I’ve decided [gap] (stay) here over vacation and [gap] (paint) my room.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q07",
+          "order": 7,
+          "prompt": "Sometimes students avoid [gap] (look) at the teacher if they don’t want [gap] (answer) a question.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q08",
+          "order": 8,
+          "prompt": "The travel agent advised us [gap] (not / wait) until August.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q09",
+          "order": 9,
+          "prompt": "We’re going out for dinner. Would you like [gap] (join) us?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q10",
+          "order": 10,
+          "prompt": "Mrs. Allen promised [gap] (come) tomorrow.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q11",
+          "order": 11,
+          "prompt": "My boss expects me [gap] (complete) this work as soon as possible.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q12",
+          "order": 12,
+          "prompt": "Even though I asked the people in front of me at the movie [gap] (be) quiet, they kept [gap] (talk).",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q13",
+          "order": 13,
+          "prompt": "Joan and David were considering [gap] (get) married in June, but they finally decided [gap] (wait) until August.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q14",
+          "order": 14,
+          "prompt": "He doesn’t mind [gap] (be) alone.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q15",
+          "order": 15,
+          "prompt": "The teacher seems [gap] (be) in a good mood today.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q16",
+          "order": 16,
+          "prompt": "Mrs. Jackson warned her young son [gap] (not / touch) the hot stove.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q17",
+          "order": 17,
+          "prompt": "Jack advised me [gap] (rent) a new apartment.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q18",
+          "order": 18,
+          "prompt": "His teacher encourages him [gap] (study) harder.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q19",
+          "order": 19,
+          "prompt": "Lucy pretended [gap] (know) the answer to my question.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q20",
+          "order": 20,
+          "prompt": "Could you please stop [gap] (make) so much noise?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-51-sec-c-q21",
+          "order": 21,
+          "prompt": "He doesn’t let anyone [gap] (smoke) in his office.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

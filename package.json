@@ -12,6 +12,7 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
+    "db:sync-from-prod": "bash scripts/sync-prod-db-to-local.sh",
     "import:test": "tsx scripts/import-test.ts",
     "shadowing:cues": "tsx scripts/shadowing-cues.ts",
     "shadowing:import-video": "tsx scripts/shadowing-import-video.ts",
@@ -79,5 +80,11 @@
     "tailwindcss": "^4",
     "tsx": "^4.23.12",
     "typescript": "^5"
+  },
+  "allowScripts": {
+    "@prisma/engines@7.10.0": true,
+    "esbuild@0.28.2": true,
+    "prisma@7.10.0": true,
+    "unrs-resolver@1.12.2": true
   }
 }

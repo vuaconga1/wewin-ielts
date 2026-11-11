@@ -1,0 +1,211 @@
+{
+  "id": "ws-49",
+  "order": 49,
+  "part": 4,
+  "slug": "ws-49-contrast-although-even-though-though-in-spite-of",
+  "title": "WORKSHEET 49",
+  "subject": "Contrast: although, even though, though, in spite of,",
+  "subjectVi": "Ngữ pháp bài 49: Contrast: although, even though, though, in spite of,",
+  "level": "B2",
+  "pageRange": "Part 4 (WS 49)",
+  "sections": [
+    {
+      "id": "ws-49-sec-a",
+      "sectionKey": "A",
+      "instruction": "Rephrase the sentences beginning with the words in brackets:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-49-sec-a-q01",
+          "order": 1,
+          "prompt": "She has plenty of money, but she is very mean. (although) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-a-q02",
+          "order": 2,
+          "prompt": "They have a car, but they rarely use it. (though) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-a-q03",
+          "order": 3,
+          "prompt": "He was innocent, but he was sent to prison. (although) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-a-q04",
+          "order": 4,
+          "prompt": "He was a number of relatives living nearby, but he never visits them. (even though) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-a-q05",
+          "order": 5,
+          "prompt": "She never takes any kind of exercise, but she is quite fit and healthy. (even though) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-49-sec-b",
+      "sectionKey": "B",
+      "instruction": "Rephrase the sentences using the words in brackets and a noun:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-49-sec-b-q01",
+          "order": 1,
+          "prompt": "They went out for a walk, even though the weather was bad. (despite) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q02",
+          "order": 2,
+          "prompt": "She managed to write, even though her hand was injured. (in spite of) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q03",
+          "order": 3,
+          "prompt": "All the trains were on time, even though the snow was heavy. (despite) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q04",
+          "order": 4,
+          "prompt": "Our coach didn’t arrive late, even though the traffic was terrible. (in spite of) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q05",
+          "order": 5,
+          "prompt": "A lot of people buy those houses, even though the prices are high. (despite) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q06",
+          "order": 6,
+          "prompt": "He stayed up late, even though he was very tired. (despite) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q07",
+          "order": 7,
+          "prompt": "I didn’t buy the car, even though I had the money. (despite) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q08",
+          "order": 8,
+          "prompt": "He stayed outside in the cold weather, even though he felt ill. (despite) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-b-q09",
+          "order": 9,
+          "prompt": "People continue to smoke, even though they know the dangers. (in spite of) [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-49-sec-c",
+      "sectionKey": "C",
+      "instruction": "Sally and Peter are good friends, but they are very different.",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-49-sec-c-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap] A She likes hard work. She likes jazz and pop music. She likes going out a lot. She’s very practical. She’s very generous. B",
+          "acceptedAnswers": [],
+          "explanation": "",
+          "options": [
+            "a) He",
+            "b) He",
+            "c) He",
+            "d) He’s"
+          ]
+        },
+        {
+          "id": "ws-49-sec-c-q01",
+          "order": 1,
+          "prompt": "[gap] She likes hard work, while / whereas he’s quite lazy [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-49-sec-c-q05",
+          "order": 5,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

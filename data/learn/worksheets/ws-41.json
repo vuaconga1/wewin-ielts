@@ -1,0 +1,383 @@
+{
+  "id": "ws-41",
+  "order": 41,
+  "part": 4,
+  "slug": "ws-41-some-any-much-many-a-lot-of-a-few-a-little",
+  "title": "WORKSHEET 41",
+  "subject": "Some / Any / Much / Many / A lot of / (a) Few / (a) Little",
+  "subjectVi": "Ngữ pháp bài 41: Some / Any / Much / Many / A lot of / (a) Few / (a) Little",
+  "level": "B1",
+  "pageRange": "Part 4 (WS 41)",
+  "sections": [
+    {
+      "id": "ws-41-sec-a",
+      "sectionKey": "A",
+      "instruction": "Fill in SOME or ANY as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-a-q01",
+          "order": 1,
+          "prompt": "Are there [gap] any [gap] rabbits in the garden?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q02",
+          "order": 2,
+          "prompt": "Are there [gap] children in the class?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q03",
+          "order": 3,
+          "prompt": "There aren’t [gap] chairs in the room.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q04",
+          "order": 4,
+          "prompt": "Are there [gap] birds in the tree?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q05",
+          "order": 5,
+          "prompt": "There isn’t [gap] money in the bag.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q06",
+          "order": 6,
+          "prompt": "There is [gap] coffee in the cup.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q07",
+          "order": 7,
+          "prompt": "There are [gap] policemen in the police station.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q08",
+          "order": 8,
+          "prompt": "Are there [gap] fish in the water.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q09",
+          "order": 9,
+          "prompt": "Are there [gap] oranges in the basket?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q10",
+          "order": 10,
+          "prompt": "There isn’t [gap] milk in the fridge.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q11",
+          "order": 11,
+          "prompt": "I have [gap] tea, but I don’t have [gap] sugar.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q12",
+          "order": 12,
+          "prompt": "Is there [gap] meat at home?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q13",
+          "order": 13,
+          "prompt": "There were [gap] apples here a minute ago.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q14",
+          "order": 14,
+          "prompt": "There aren’t [gap] glasses on the table.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-a-q15",
+          "order": 15,
+          "prompt": "Please buy me [gap] stamps at the post office.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-41-sec-b",
+      "sectionKey": "B",
+      "instruction": "Write what they have got and what they haven’t got:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-b-q01",
+          "order": 1,
+          "prompt": "Teresa has got some tomatoes, some meat and some bread but she hasn’t got any [gap] potatoes.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-b-q02",
+          "order": 2,
+          "prompt": "Richard and Jenny [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-b-q03",
+          "order": 3,
+          "prompt": "Mark [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-b-q04",
+          "order": 4,
+          "prompt": "Sally [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-41-sec-c",
+      "sectionKey": "C",
+      "instruction": "Fill in HOW MUCH, HOW MANY, A FEW, A LITTLE, SOME or ANY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-c-q01",
+          "order": 1,
+          "prompt": "A: [gap] bananas would you like, sir? B: Just [gap] , please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q02",
+          "order": 2,
+          "prompt": "A: Can I have [gap] milk? B: Sorry, we haven’t got [gap] milk.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q03",
+          "order": 3,
+          "prompt": "A: [gap] bread would you like? B: Just [gap] , please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q04",
+          "order": 4,
+          "prompt": "A: [gap] carrots do we have? B: We have only [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q05",
+          "order": 5,
+          "prompt": "A: [gap] oranges do we need? B: We don’t need [gap] oranges.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q06",
+          "order": 6,
+          "prompt": "A: [gap] sugar would you like in your coffee? B: Just [gap] , please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q07",
+          "order": 7,
+          "prompt": "A: Could I have [gap] tea, please? B: Of course. Would you like [gap] biscuits, too?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q08",
+          "order": 8,
+          "prompt": "A: Is there [gap] wine in the fridge? B: No, we need to buy [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q09",
+          "order": 9,
+          "prompt": "A: [gap] flour does she need? B: Just [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-c-q10",
+          "order": 10,
+          "prompt": "A: Have you got [gap] potatoes? B: Yes [gap] would you like?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-41-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in SOME, ANY, MUCH or MANY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-d-q01",
+          "order": 1,
+          "prompt": "A: I’d like [gap] eggs, please. B: Of course. How [gap] would you like? A: Six, please. Are there [gap] tomatoes? B: Certainly. How [gap] do you need? A: A kilo, please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-d-q02",
+          "order": 2,
+          "prompt": "A: I’d like [gap] olive oil. B: How [gap] do you need? A: Half a bottle. Is there [gap] flour? B: Certainly. How [gap] do you need? A: A kilo, please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-41-sec-e",
+      "sectionKey": "E",
+      "instruction": "Fill in HOW MUCH or HOW MANY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-e-q01",
+          "order": 1,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-e-q02",
+          "order": 2,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-e-q03",
+          "order": 3,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-e-q04",
+          "order": 4,
+          "prompt": " [gap]",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-e-q05",
+          "order": 5,
+          "prompt": " [gap] [gap] potatoes do we need? [gap] sugar would you like? [gap] milk is there in the fridge? [gap] eggs do you want? [gap] ham do you need?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "ws-41-sec-f",
+      "sectionKey": "F",
+      "instruction": "Write ( C ) for the correct sentences, as in the example:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-f-q01",
+          "order": 1,
+          "prompt": "a. There aren’t some tomatoes in the fridge. [gap] b. There aren’t any tomatoes in the fridge.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q02",
+          "order": 2,
+          "prompt": "a. I’d like some soup, please. [gap] b. I like some soup, please.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q03",
+          "order": 3,
+          "prompt": "a. Would you like some orange juice? [gap] b. Do you like some orange juice?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q04",
+          "order": 4,
+          "prompt": "a. How much cherries do you need? [gap] b. How many cherries do you need?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q05",
+          "order": 5,
+          "prompt": "a. I’d like some rice for lunch. [gap] b. I’d like a rice for lunch.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q06",
+          "order": 6,
+          "prompt": "a. Would you like some bread? [gap] b. Do you like some bread?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q07",
+          "order": 7,
+          "prompt": "a. No thanks. I don’t want any coffee. [gap] b. No thanks. I’d like any coffee.",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q08",
+          "order": 8,
+          "prompt": "a. “Here’s your hamburger.” [gap] “How many is it?” b. “Here’s your hamburger.” “How much is it?”",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q09",
+          "order": 9,
+          "prompt": "a. How much you want? [gap] b. How much do you want?",
+          "acceptedAnswers": [],
+          "explanation": ""
+        },
+        {
+          "id": "ws-41-sec-f-q10",
+          "order": 10,
+          "prompt": "a. I’m hungry. Is there anything to eat? [gap] b. I’m hungry. Is this anything to eat? [gap] C …",
+          "acceptedAnswers": [],
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}
