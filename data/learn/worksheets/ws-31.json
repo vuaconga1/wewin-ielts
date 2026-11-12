@@ -19,210 +19,258 @@
           "id": "ws-31-sec-a-q01",
           "order": 1,
           "prompt": "He [gap] (not / live) in İstanbul if he [gap] (hate) it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wouldn't live / hated",
+            "won't live / hates"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-31-sec-a-q02",
           "order": 2,
           "prompt": "If you [gap] (write) the letters, I [gap] (post) them.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "write / will post|'ll post",
+            "wrote / would post|'d post"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q03",
           "order": 3,
           "prompt": "If you [gap] (not / leave) immediately, I [gap] (call) the police.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "don't leave / will call|'ll call"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q04",
           "order": 4,
           "prompt": "If he [gap] (not / arrive) soon, we [gap] (have to) have dinner without him.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "doesn't arrive / will have to|'ll have to"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q05",
           "order": 5,
           "prompt": "I [gap] (not / have to) borrow any money from you if I [gap] (get) my salary tomorrow.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "won't have to / get"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q06",
           "order": 6,
           "prompt": "If you [gap] (invite) her to the dance, she [gap] (be) very pleased.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "invite / will be|'ll be",
+            "invited / would be|'d be"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q07",
           "order": 7,
-          "prompt": "If you [gap] (retire) soon, you [gap] (make yourself ill.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If you [gap] (retire) soon, you [gap] (make) yourself ill.",
+          "acceptedAnswers": [
+            "don't retire / will make|'ll make",
+            "retire / will make|'ll make"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q08",
           "order": 8,
           "prompt": "If you [gap] (write) him a letter, he [gap] (know) our address.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "write / will know|'ll know",
+            "wrote / would know|'d know"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-a-q09",
           "order": 9,
           "prompt": "If the policeman had seen the thief, he [gap] (arrest) him.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would have arrested"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-a-q10",
           "order": 10,
           "prompt": "The buildings wouldn’t have burned to ashes if the firemen [gap] (come) in time.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had come"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-a-q11",
           "order": 11,
-          "prompt": "People wouldn’t cross the Bosphorus, if they [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) those"
-          ]
+          "prompt": "People wouldn’t cross the Bosphorus if they [gap] (not / build) those bridges.",
+          "acceptedAnswers": [
+            "hadn't built"
+          ],
+          "explanation": "mixed conditional: past cause, present result"
         },
         {
           "id": "ws-31-sec-a-q12",
           "order": 12,
           "prompt": "If the family had saved enough money, they [gap] (buy) a new flat.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would have bought"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-a-q13",
           "order": 13,
-          "prompt": "If I had known that he was sleeping, I [gap] (not /",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "b) him."
-          ]
+          "prompt": "If I had known that he was sleeping, I [gap] (not / disturb) him.",
+          "acceptedAnswers": [
+            "wouldn't have disturbed"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-a-q14",
           "order": 14,
           "prompt": "If I had lost all my money, I [gap] (be) very unhappy.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would have been"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-a-q15",
           "order": 15,
           "prompt": "If you had phoned me before you came, you [gap] (find) me at home.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would have found"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         }
       ]
     },
     {
       "id": "ws-31-sec-b",
       "sectionKey": "B",
-      "instruction": "Complete the following sentences in column A using the correct choice from column B.",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the sentences in column A using the correct choice from column B. Write the letter.",
+      "type": "matching",
+      "contextText": "a) if you can’t have it.\nb) if students make a lot of noise.\nc) you must take your umbrella with you.\nd) if you stand up for a long time.\ne) if you’re at home tonight.\nf) if you want to study.\ng) you won’t find a seat.\nh) if they save enough money.\ni) if he doesn’t have enough money.\nj) I’ll buy a car.\nk) we’d better go there this afternoon.\nl) I’ll come with you.",
       "questions": [
         {
           "id": "ws-31-sec-b-q01",
           "order": 1,
           "prompt": "You’ll get tired [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "tired from standing a long time"
         },
         {
           "id": "ws-31-sec-b-q02",
           "order": 2,
           "prompt": "If you go to a football match, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "l"
+          ],
+          "explanation": "I’ll come with you"
         },
         {
           "id": "ws-31-sec-b-q03",
           "order": 3,
           "prompt": "You can’t hear the teacher [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "noise stops you hearing"
         },
         {
           "id": "ws-31-sec-b-q04",
           "order": 4,
-          "prompt": "I’ll help you with your lesson, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’ll help you with your lesson [gap]",
+          "acceptedAnswers": [
+            "f"
+          ],
+          "explanation": "help if you want to study"
         },
         {
           "id": "ws-31-sec-b-q05",
           "order": 5,
           "prompt": "If the soup is too hot, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "the only remaining choice"
         },
         {
           "id": "ws-31-sec-b-q06",
           "order": 6,
           "prompt": "If it rains, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "rain → umbrella"
         },
         {
           "id": "ws-31-sec-b-q07",
           "order": 7,
           "prompt": "His family may go on holiday [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "h"
+          ],
+          "explanation": "holiday if they save money"
         },
         {
           "id": "ws-31-sec-b-q08",
           "order": 8,
           "prompt": "A man can’t buy what he needs [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "i"
+          ],
+          "explanation": "can’t buy without money"
         },
         {
           "id": "ws-31-sec-b-q09",
           "order": 9,
           "prompt": "If you’re on a crowded bus, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "g"
+          ],
+          "explanation": "crowded → no seat"
         },
         {
           "id": "ws-31-sec-b-q10",
           "order": 10,
           "prompt": "We’ll come to visit you [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "e"
+          ],
+          "explanation": "visit if you’re at home"
         },
         {
           "id": "ws-31-sec-b-q11",
           "order": 11,
-          "prompt": "If they haven’t seen Topkapý Palace, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If they haven’t seen Topkapı Palace, [gap]",
+          "acceptedAnswers": [
+            "k"
+          ],
+          "explanation": "suggestion: we’d better go there"
         },
         {
           "id": "ws-31-sec-b-q12",
           "order": 12,
-          "prompt": "If I get a driving licence, [gap] B",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) If",
-            "b) If",
-            "c) you",
-            "d) If"
-          ]
+          "prompt": "If I get a driving licence, [gap]",
+          "acceptedAnswers": [
+            "j"
+          ],
+          "explanation": "licence → buy a car"
         }
       ]
     },
@@ -237,70 +285,70 @@
           "order": 1,
           "prompt": "If you write me from England, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If you write me from England, I will write back to you."
         },
         {
           "id": "ws-31-sec-c-q02",
           "order": 2,
           "prompt": "She can learn English if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "She can learn English if she studies hard."
         },
         {
           "id": "ws-31-sec-c-q03",
           "order": 3,
           "prompt": "We can catch the bus if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "We can catch the bus if we hurry."
         },
         {
           "id": "ws-31-sec-c-q04",
           "order": 4,
           "prompt": "If it doesn’t rain this afternoon, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If it doesn’t rain this afternoon, we will go for a walk."
         },
         {
           "id": "ws-31-sec-c-q05",
           "order": 5,
           "prompt": "His family will be hungry if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "His family will be hungry if he doesn’t buy any food."
         },
         {
           "id": "ws-31-sec-c-q06",
           "order": 6,
           "prompt": "Your room will become untidy if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Your room will become untidy if you don’t clean it."
         },
         {
           "id": "ws-31-sec-c-q07",
           "order": 7,
           "prompt": "A baby cries if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "A baby cries if it is hungry."
         },
         {
           "id": "ws-31-sec-c-q08",
           "order": 8,
           "prompt": "If my girlfriend comes early, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If my girlfriend comes early, we will go to the cinema."
         },
         {
           "id": "ws-31-sec-c-q09",
           "order": 9,
           "prompt": "If he doesn’t smoke, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If he doesn’t smoke, he will be healthier."
         },
         {
           "id": "ws-31-sec-c-q10",
           "order": 10,
           "prompt": "You can’t sleep well if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "You can’t sleep well if you drink too much coffee."
         }
       ]
     },
@@ -314,85 +362,143 @@
           "id": "ws-31-sec-d-q01",
           "order": 1,
           "prompt": "If you don’t go to Venice, you will never ride in a gondola.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Unless you go to Venice, you will never ride in a gondola.",
+            "Unless you go to Venice, you'll never ride in a gondola.",
+            "You will never ride in a gondola unless you go to Venice.",
+            "You'll never ride in a gondola unless you go to Venice."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q02",
           "order": 2,
           "prompt": "If it doesn’t rain, we will go to the cinema.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Unless it rains, we will go to the cinema.",
+            "Unless it rains, we'll go to the cinema.",
+            "We will go to the cinema unless it rains.",
+            "We'll go to the cinema unless it rains."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q03",
           "order": 3,
           "prompt": "If you don’t go to a Chinese restaurant, you’ll never taste a Peking Duck.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Unless you go to a Chinese restaurant, you will never taste a Peking Duck.",
+            "Unless you go to a Chinese restaurant, you'll never taste a Peking Duck.",
+            "You will never taste a Peking Duck unless you go to a Chinese restaurant.",
+            "You'll never taste a Peking Duck unless you go to a Chinese restaurant."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q04",
           "order": 4,
-          "prompt": "If you don’t go to Bursa, you’ll never climb Uludag.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If you don’t go to Bursa, you’ll never climb Uludağ.",
+          "acceptedAnswers": [
+            "Unless you go to Bursa, you will never climb Uludağ.",
+            "Unless you go to Bursa, you'll never climb Uludağ.",
+            "Unless you go to Bursa, you will never climb Uludag.",
+            "Unless you go to Bursa, you'll never climb Uludag.",
+            "You will never climb Uludağ unless you go to Bursa.",
+            "You'll never climb Uludağ unless you go to Bursa.",
+            "You will never climb Uludag unless you go to Bursa.",
+            "You'll never climb Uludag unless you go to Bursa."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q05",
           "order": 5,
-          "prompt": "If you don’t go to India, you’ll never see Taj Mahal.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If you don’t go to India, you’ll never see the Taj Mahal.",
+          "acceptedAnswers": [
+            "Unless you go to India, you will never see the Taj Mahal.",
+            "Unless you go to India, you'll never see the Taj Mahal.",
+            "Unless you go to India, you will never see Taj Mahal.",
+            "Unless you go to India, you'll never see Taj Mahal.",
+            "You will never see the Taj Mahal unless you go to India.",
+            "You'll never see the Taj Mahal unless you go to India.",
+            "You will never see Taj Mahal unless you go to India.",
+            "You'll never see Taj Mahal unless you go to India."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q06",
           "order": 6,
           "prompt": "If you don’t answer my question, I won’t go anywhere.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Unless you answer my question, I won't go anywhere.",
+            "I won't go anywhere unless you answer my question."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q07",
           "order": 7,
           "prompt": "I won’t let you go if you don’t give me my money back.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "I won't let you go unless you give me my money back.",
+            "Unless you give me my money back, I won't let you go."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q08",
           "order": 8,
           "prompt": "I’ll call the police if you don’t go away.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "I will call the police unless you go away.",
+            "I'll call the police unless you go away.",
+            "Unless you go away, I will call the police.",
+            "Unless you go away, I'll call the police."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q09",
           "order": 9,
-          "prompt": "If you don’t complain the manager, you’ll always get bad service.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If you don’t complain to the manager, you’ll always get bad service.",
+          "acceptedAnswers": [
+            "Unless you complain to the manager, you will always get bad service.",
+            "Unless you complain to the manager, you'll always get bad service.",
+            "You will always get bad service unless you complain to the manager.",
+            "You'll always get bad service unless you complain to the manager."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q10",
           "order": 10,
           "prompt": "If you don’t have enough money, you can’t buy this car.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Unless you have enough money, you can't buy this car.",
+            "You can't buy this car unless you have enough money."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q11",
           "order": 11,
           "prompt": "If he doesn’t work hard, he can’t pass his class.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Unless he works hard, he can't pass his class.",
+            "He can't pass his class unless he works hard."
+          ],
+          "explanation": "unless = if not"
         },
         {
           "id": "ws-31-sec-d-q12",
           "order": 12,
           "prompt": "You won’t catch the bus if you don’t leave immediately.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "You won't catch the bus unless you leave immediately.",
+            "Unless you leave immediately, you won't catch the bus."
+          ],
+          "explanation": "unless = if not"
         }
       ]
     },
@@ -400,224 +506,256 @@
       "id": "ws-31-sec-e",
       "sectionKey": "E",
       "instruction": "Choose the best one:",
-      "type": "inline_gap_fill",
+      "type": "multiple_choice",
       "questions": [
         {
           "id": "ws-31-sec-e-q01",
           "order": 1,
           "prompt": "I [gap] very unhappy if my friends didn’t come to my party.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) would",
-            "b) will",
+            "a) would have been",
+            "b) will be",
             "c) would",
-            "d) would"
-          ]
+            "d) would be"
+          ],
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-31-sec-e-q02",
           "order": 2,
           "prompt": "If the old man [gap] some money, he would hire a taxi.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
             "a) have",
             "b) had",
-            "c) would",
-            "d) had"
-          ]
+            "c) would have",
+            "d) had had"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-31-sec-e-q03",
           "order": 3,
           "prompt": "If you had come in time, you [gap] the lesson.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) wouldn’t",
-            "b) would",
-            "c) would",
-            "d) wouldn’t"
-          ]
+            "a) wouldn’t miss",
+            "b) would miss",
+            "c) would have missed",
+            "d) wouldn’t have missed"
+          ],
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-e-q04",
           "order": 4,
           "prompt": "I could have heard the telephone if I [gap] so deeply.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) didn’t",
-            "b) hadn’t",
-            "c) wouldn’t",
-            "d) wouldn’t"
-          ]
+            "a) didn’t sleep",
+            "b) hadn’t been sleeping",
+            "c) wouldn’t sleep",
+            "d) wouldn’t have slept"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "third conditional: if + past perfect (continuous)"
         },
         {
           "id": "ws-31-sec-e-q05",
           "order": 5,
           "prompt": "If he doesn’t pay the bill, he [gap] into trouble.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) won’t",
-            "b) will",
-            "c) would",
-            "d) would"
-          ]
+            "a) won’t get",
+            "b) will get",
+            "c) would get",
+            "d) would have got"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-e-q06",
           "order": 6,
           "prompt": "If the weather [gap] good, we would go swimming.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
             "a) was",
-            "b) would",
+            "b) would be",
             "c) were",
             "d) is"
-          ]
+          ],
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "second conditional: if + were"
         },
         {
           "id": "ws-31-sec-e-q07",
           "order": 7,
           "prompt": "Your brother wouldn’t have found such a nice job if he [gap] a university diploma.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) didn’t",
-            "b) doesn’t",
-            "c) hadn’t",
+            "a) didn’t have",
+            "b) doesn’t have",
+            "c) hadn’t had",
             "d) hadn’t"
-          ]
+          ],
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-e-q08",
           "order": 8,
           "prompt": "You would have some money in your pocket if you [gap] it so generously.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) hadn’t",
-            "b) didn’t",
-            "c) couldn’t",
-            "d) don’t"
-          ]
+            "a) hadn’t spent",
+            "b) didn’t spend",
+            "c) couldn’t spend",
+            "d) don’t spend"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "mixed conditional: past cause, present result"
         },
         {
           "id": "ws-31-sec-e-q09",
           "order": 9,
           "prompt": "If you don’t succeed in the test, you [gap] the job.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
-            "a) were",
-            "b) wouldn’t",
-            "c) won’t",
-            "d) didn’t"
-          ]
+            "a) were not going to get",
+            "b) wouldn’t get",
+            "c) won’t get",
+            "d) didn’t get"
+          ],
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-31-sec-e-q10",
           "order": 10,
           "prompt": "We wouldn’t be here now if we [gap] in that airplane crash.",
-          "acceptedAnswers": [],
-          "explanation": "",
           "options": [
             "a) were",
-            "b) had",
+            "b) had been",
             "c) are",
-            "d) had"
-          ]
+            "d) had to be"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "mixed conditional: past cause, present result"
         }
       ]
     },
     {
       "id": "ws-31-sec-f",
       "sectionKey": "F",
-      "instruction": "Complete the following sentences in column A using the correct choice from column B.",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the sentences in column A using the correct choice from column B. Write the letter.",
+      "type": "matching",
+      "contextText": "a) if I had not been to a doctor.\nb) if you had taken him to the fun-fair.\nc) if the plane had crashed.\nd) she could have bought some expensive clothes.\ne) so many people wouldn’t have been killed.\nf) he could have built his small house in two days.\ng) if we hadn’t taken our umbrellas.\nh) they could have reached the top easily.\ni) he would have gone on a holiday.\nj) if I had had time last Sunday.",
       "questions": [
         {
           "id": "ws-31-sec-f-q01",
           "order": 1,
-          "prompt": "Everyone on board the plane would have died a) If I had not been to a doctor. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Everyone on board the plane would have died [gap]",
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q02",
           "order": 2,
           "prompt": "If the officials hadn’t stopped the poor man, [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "b) if"
-          ]
+          "acceptedAnswers": [
+            "f"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q03",
           "order": 3,
           "prompt": "If the climbers had found an easy way, [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "c) if"
-          ]
+          "acceptedAnswers": [
+            "h"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q04",
           "order": 4,
           "prompt": "I would be in a hospital now [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) she"
-          ]
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "mixed conditional: past cause, present result"
         },
         {
           "id": "ws-31-sec-f-q05",
           "order": 5,
-          "prompt": "We would have got wet [gap] e) so many people wouldn’t have been killed.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We would have got wet [gap]",
+          "acceptedAnswers": [
+            "g"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q06",
           "order": 6,
-          "prompt": "If he had had enough time last summer, [gap] f) he could have built his small house in two days.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If he had had enough time last summer, [gap]",
+          "acceptedAnswers": [
+            "i"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q07",
           "order": 7,
-          "prompt": "I might have come to your help [gap] g) if we hadn’t taken our umbrellas.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I might have come to your help [gap]",
+          "acceptedAnswers": [
+            "j"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q08",
           "order": 8,
-          "prompt": "If the driver had not slept, [gap] h) they could have reached the top easily.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If the driver had not slept, [gap]",
+          "acceptedAnswers": [
+            "e"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q09",
           "order": 9,
-          "prompt": "The young boy would have been very happy i) he would have gone on a holiday. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The young boy would have been very happy [gap]",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         },
         {
           "id": "ws-31-sec-f-q10",
           "order": 10,
-          "prompt": "If her father had been rich, [gap] j) if I had had time last Sunday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If her father had been rich, [gap]",
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "third conditional: if + past perfect, would have + V3"
         }
       ]
     }

@@ -12,149 +12,178 @@
     {
       "id": "ws-09-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in the blanks with a correct form of PAST CONTINUOUS:",
+      "instruction": "Fill in the blanks with a correct form of PAST CONTINUOUS. (Example: It was very cold. The sun was not shining. (not / shine))",
       "type": "verb_conjugation",
       "questions": [
         {
-          "id": "ws-09-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
           "id": "ws-09-sec-a-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It wasn't a stormy night. The wind [gap] (not / blow).",
+          "acceptedAnswers": [
+            "wasn't blowing"
+          ],
+          "explanation": "negative: wasn't + -ing"
         },
         {
           "id": "ws-09-sec-a-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He wasn't sleeping. He [gap] (look) at the ceiling.",
+          "acceptedAnswers": [
+            "was looking"
+          ],
+          "explanation": "past continuous: was/were + -ing"
         },
         {
           "id": "ws-09-sec-a-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They were having a rest. They [gap] (not / work).",
+          "acceptedAnswers": [
+            "weren't working"
+          ],
+          "explanation": "negative: weren't + -ing"
         },
         {
           "id": "ws-09-sec-a-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They were very happy. They [gap] (enjoy) the party.",
+          "acceptedAnswers": [
+            "were enjoying"
+          ],
+          "explanation": "past continuous: was/were + -ing"
         },
         {
           "id": "ws-09-sec-a-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He was at home. He [gap] (watch) a movie on TV.",
+          "acceptedAnswers": [
+            "was watching"
+          ],
+          "explanation": "past continuous: was/were + -ing"
         },
         {
           "id": "ws-09-sec-a-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He was getting worse. He [gap] (not / recover).",
+          "acceptedAnswers": [
+            "wasn't recovering"
+          ],
+          "explanation": "negative: wasn't + -ing"
         },
         {
           "id": "ws-09-sec-a-q08",
           "order": 8,
-          "prompt": " [gap] It was very cold. The sun [gap] was not shining [gap] (not / shine) It wasn’t a stormy night. The wind [gap] (not / blow) He wasn’t sleeping. He [gap] (look) at the ceiling. They were having a rest. They [gap] (not / work). They were very happy. They [gap] (enjoy) the party. He was at home. He [gap] (watch) a movie on TV. He was getting worse. He [gap] (not / recover). We [gap] (travel) in the north of Turkey when we were on holiday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (travel) in the north of Turkey when we were on holiday.",
+          "acceptedAnswers": [
+            "were travelling|were traveling"
+          ],
+          "explanation": "past continuous: was/were + -ing"
         },
         {
           "id": "ws-09-sec-a-q09",
           "order": 9,
           "prompt": "She [gap] (drive) so fast when the accident happened.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was driving"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
         },
         {
           "id": "ws-09-sec-a-q10",
           "order": 10,
           "prompt": "I [gap] (not / sleep) when you came in.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wasn't sleeping"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
         }
       ]
     },
     {
       "id": "ws-09-sec-b",
       "sectionKey": "B",
-      "instruction": "Complete the sentences with the words in parentheses using the SIMPLE PAST or",
+      "instruction": "Complete the sentences with the words in parentheses using the SIMPLE PAST or the PAST PROGRESSIVE.",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-09-sec-b-q01",
           "order": 1,
           "prompt": "While they [gap] (travel) to China, Marco [gap] (keep) a diary.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were travelling|were traveling / kept"
+          ],
+          "explanation": "while + past continuous; keep → kept"
         },
         {
           "id": "ws-09-sec-b-q02",
           "order": 2,
           "prompt": "Mrs. White [gap] (drive) past a house in Main Street when she [gap] (see) the ground floor on fire.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was driving / saw"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
         },
         {
           "id": "ws-09-sec-b-q03",
           "order": 3,
           "prompt": "While he [gap] (fly) off the Miami Coast, the pilot [gap] (see) sharks approaching the swimmers.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was flying / saw"
+          ],
+          "explanation": "while + past continuous"
         },
         {
           "id": "ws-09-sec-b-q04",
           "order": 4,
-          "prompt": "The fireman [gap] (fight) the fire on a balcony below when he [gap] (hear) someone’s shouts.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The fireman [gap] (fight) the fire on a balcony below when he [gap] (hear) someone's shouts.",
+          "acceptedAnswers": [
+            "was fighting / heard"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
         },
         {
           "id": "ws-09-sec-b-q05",
           "order": 5,
           "prompt": "She [gap] (die) while she [gap] (run) after a bus.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "died / was running"
+          ],
+          "explanation": "while + past continuous"
         },
         {
           "id": "ws-09-sec-b-q06",
           "order": 6,
           "prompt": "We [gap] (have) dinner when the electricity [gap] (go) off.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were having / went"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
         },
         {
           "id": "ws-09-sec-b-q07",
           "order": 7,
           "prompt": "She [gap] (think) of something else while you [gap] (talk) to her.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was thinking / were talking"
+          ],
+          "explanation": "two actions in progress: both continuous"
         },
         {
           "id": "ws-09-sec-b-q08",
           "order": 8,
           "prompt": "I [gap] (see) her while I [gap] (look) out of the window.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "saw / was looking"
+          ],
+          "explanation": "while + past continuous"
         },
         {
           "id": "ws-09-sec-b-q09",
           "order": 9,
           "prompt": "While the teacher [gap] (talk), the students [gap] (look) at an insect on the ceiling.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was talking / were looking"
+          ],
+          "explanation": "two actions in progress: both continuous"
         }
       ]
     }

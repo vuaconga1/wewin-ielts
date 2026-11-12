@@ -1,0 +1,798 @@
+{
+  "id": "card-05",
+  "order": 5,
+  "part": 1,
+  "slug": "card-05-qua-khu-hoan-thanh-tiep-dien",
+  "title": "THẺ BÀI TẬP 05",
+  "subject": "Past Perfect & Continuous",
+  "subjectVi": "Thì Quá khứ hoàn thành & Tiếp diễn",
+  "level": "A2",
+  "pageRange": "WS-13, WS-14",
+  "sections": [
+    {
+      "id": "card-05-sec-1",
+      "sectionKey": "A",
+      "instruction": "Supply a suitable SIMPLE PAST or PAST PERFECT TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-13-sec-a-q01",
+          "order": 1,
+          "prompt": "I [gap] (worry) a lot about her before I [gap] (hear) that she was safe.",
+          "acceptedAnswers": [
+            "had worried|worried / heard"
+          ],
+          "explanation": "earlier action → past perfect; later → simple past"
+        },
+        {
+          "id": "ws-13-sec-a-q02",
+          "order": 2,
+          "prompt": "I didn’t like the flat. It [gap] (be) much smaller than I [gap] (think) at first.",
+          "acceptedAnswers": [
+            "was / had thought"
+          ],
+          "explanation": "earlier opinion → past perfect"
+        },
+        {
+          "id": "ws-13-sec-a-q03",
+          "order": 3,
+          "prompt": "He told us he [gap] (shoot) a big tiger.",
+          "acceptedAnswers": [
+            "had shot"
+          ],
+          "explanation": "reported earlier action → past perfect"
+        },
+        {
+          "id": "ws-13-sec-a-q04",
+          "order": 4,
+          "prompt": "They [gap] (drink) tea after they [gap] (finish) dinner.",
+          "acceptedAnswers": [
+            "drank / had finished"
+          ],
+          "explanation": "after + past perfect (earlier action)"
+        },
+        {
+          "id": "ws-13-sec-a-q05",
+          "order": 5,
+          "prompt": "She [gap] just [gap] (fold) the pink apron and placed it in a table drawer when the door [gap] (open) and Joe [gap] (enter).",
+          "acceptedAnswers": [
+            "had / folded / opened / entered"
+          ],
+          "explanation": "had just + participle; then simple past"
+        },
+        {
+          "id": "ws-13-sec-a-q06",
+          "order": 6,
+          "prompt": "The police wanted to know why he [gap] (bring) a gun to school.",
+          "acceptedAnswers": [
+            "had brought"
+          ],
+          "explanation": "earlier action → past perfect"
+        },
+        {
+          "id": "ws-13-sec-a-q07",
+          "order": 7,
+          "prompt": "After he [gap] (work) at the hospital for two years he [gap] (decide) to give up the job.",
+          "acceptedAnswers": [
+            "had worked / decided"
+          ],
+          "explanation": "after + past perfect (earlier action)"
+        },
+        {
+          "id": "ws-13-sec-a-q08",
+          "order": 8,
+          "prompt": "When I [gap] (arrive) at the party John [gap] already [gap] (go) home.",
+          "acceptedAnswers": [
+            "arrived / had / gone"
+          ],
+          "explanation": "already finished before arrival → past perfect"
+        },
+        {
+          "id": "ws-13-sec-a-q09",
+          "order": 9,
+          "prompt": "We [gap] (wait) until the match [gap] (finish).",
+          "acceptedAnswers": [
+            "waited / had finished|finished"
+          ],
+          "explanation": "until + past perfect or simple past"
+        },
+        {
+          "id": "ws-13-sec-a-q10",
+          "order": 10,
+          "prompt": "They [gap] (leave) the room before the meeting [gap] (finish).",
+          "acceptedAnswers": [
+            "had left|left / finished"
+          ],
+          "explanation": "earlier action → past perfect; before + simple past"
+        },
+        {
+          "id": "ws-13-sec-a-q11",
+          "order": 11,
+          "prompt": "I [gap] (buy) a new camera before I [gap] (go) to London.",
+          "acceptedAnswers": [
+            "had bought|bought / went"
+          ],
+          "explanation": "earlier action → past perfect; before + simple past"
+        },
+        {
+          "id": "ws-13-sec-a-q12",
+          "order": 12,
+          "prompt": "I [gap] just [gap] (turn off) the lights when the telephone [gap] (ring).",
+          "acceptedAnswers": [
+            "had / turned off / rang"
+          ],
+          "explanation": "had just + participle; when + simple past"
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-2",
+      "sectionKey": "B",
+      "instruction": "Supply a suitable SIMPLE PAST or PAST PERFECT TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-13-sec-b-q01",
+          "order": 1,
+          "prompt": "[gap] he [gap] (know) her for a long time before they [gap] (get) married?",
+          "acceptedAnswers": [
+            "Had / known / got"
+          ],
+          "explanation": "duration before a past event → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q02",
+          "order": 2,
+          "prompt": "He [gap] (drive) down to the hotel where they [gap] (spend) their honeymoon years ago.",
+          "acceptedAnswers": [
+            "drove / had spent"
+          ],
+          "explanation": "earlier event → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q03",
+          "order": 3,
+          "prompt": "When we [gap] (get) to the station the train [gap] (already / leave).",
+          "acceptedAnswers": [
+            "got / had already left"
+          ],
+          "explanation": "already finished before arrival → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q04",
+          "order": 4,
+          "prompt": "He [gap] (sit) at a table by the window where he [gap] (have) a meal with Jane.",
+          "acceptedAnswers": [
+            "sat / had had"
+          ],
+          "explanation": "earlier event → past perfect (had had)"
+        },
+        {
+          "id": "ws-13-sec-b-q05",
+          "order": 5,
+          "prompt": "Why [gap] he [gap] (not / ask) her to wait and think again before she [gap] (leave) Paris?",
+          "acceptedAnswers": [
+            "hadn't / asked / left",
+            "had / not asked / left"
+          ],
+          "explanation": "earlier (missed) action → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q06",
+          "order": 6,
+          "prompt": "He was wondering why he [gap] (let) her leave so easily.",
+          "acceptedAnswers": [
+            "had let"
+          ],
+          "explanation": "earlier action → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q07",
+          "order": 7,
+          "prompt": "He knew he [gap] (earn) that money with a great difficulty.",
+          "acceptedAnswers": [
+            "had earned|had earnt"
+          ],
+          "explanation": "earlier action → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q08",
+          "order": 8,
+          "prompt": "After they [gap] (go), he [gap] (sit) down and [gap] (light) a cigarette.",
+          "acceptedAnswers": [
+            "had gone / sat / lit|lighted"
+          ],
+          "explanation": "after + past perfect; then simple past"
+        },
+        {
+          "id": "ws-13-sec-b-q09",
+          "order": 9,
+          "prompt": "He [gap] (have to) go to work by bus because his car [gap] (break) down.",
+          "acceptedAnswers": [
+            "had to / had broken"
+          ],
+          "explanation": "earlier cause → past perfect"
+        },
+        {
+          "id": "ws-13-sec-b-q10",
+          "order": 10,
+          "prompt": "He [gap] (be) angry before he [gap] (hear) my offer.",
+          "acceptedAnswers": [
+            "had been / heard"
+          ],
+          "explanation": "earlier state → past perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-3",
+      "sectionKey": "C",
+      "instruction": "Supply a suitable SIMPLE PAST or PAST PERFECT TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-14-sec-a-q01",
+          "order": 1,
+          "prompt": "They [gap] (go) home after they [gap] (finish) their work.",
+          "acceptedAnswers": [
+            "went / had finished"
+          ],
+          "explanation": "after + past perfect (earlier action)"
+        },
+        {
+          "id": "ws-14-sec-a-q02",
+          "order": 2,
+          "prompt": "She [gap] (just / go) out when I called her.",
+          "acceptedAnswers": [
+            "had just gone"
+          ],
+          "explanation": "finished just before a past moment → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q03",
+          "order": 3,
+          "prompt": "My brother [gap] (eat) all the pie before we got back.",
+          "acceptedAnswers": [
+            "had eaten"
+          ],
+          "explanation": "earlier action → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q04",
+          "order": 4,
+          "prompt": "He wondered why I [gap] (not / visit) him before.",
+          "acceptedAnswers": [
+            "hadn't visited"
+          ],
+          "explanation": "earlier (missing) action → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q05",
+          "order": 5,
+          "prompt": "She said that she [gap] (already / see) the Pyramids.",
+          "acceptedAnswers": [
+            "had already seen"
+          ],
+          "explanation": "reported earlier experience → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q06",
+          "order": 6,
+          "prompt": "The fire [gap] (spread) to the next building before the firemen [gap] (arrive).",
+          "acceptedAnswers": [
+            "had spread / arrived"
+          ],
+          "explanation": "earlier action → past perfect; before + simple past"
+        },
+        {
+          "id": "ws-14-sec-a-q07",
+          "order": 7,
+          "prompt": "They drank small cups of coffee, after they [gap] (finish) dinner.",
+          "acceptedAnswers": [
+            "had finished"
+          ],
+          "explanation": "after + past perfect (earlier action)"
+        },
+        {
+          "id": "ws-14-sec-a-q08",
+          "order": 8,
+          "prompt": "He told me he [gap] (catch) a young lion.",
+          "acceptedAnswers": [
+            "had caught"
+          ],
+          "explanation": "reported earlier action → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q09",
+          "order": 9,
+          "prompt": "His mother [gap] (worry) a lot about him before she [gap] (hear) that he was safe.",
+          "acceptedAnswers": [
+            "had worried|worried / heard"
+          ],
+          "explanation": "earlier action → past perfect; before + simple past"
+        },
+        {
+          "id": "ws-14-sec-a-q10",
+          "order": 10,
+          "prompt": "He [gap] (already / learn) English before he [gap] (leave) for England, but before he arrived in England, he [gap] (forget) some.",
+          "acceptedAnswers": [
+            "had already learned|had already learnt / left / had forgotten"
+          ],
+          "explanation": "actions before a past moment → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q11",
+          "order": 11,
+          "prompt": "Mary [gap] (go) swimming after she [gap] (come) home. After she [gap] (swim), she [gap] (call) her friend Judy.",
+          "acceptedAnswers": [
+            "went / had come / had swum / called"
+          ],
+          "explanation": "after + past perfect; then simple past"
+        },
+        {
+          "id": "ws-14-sec-a-q12",
+          "order": 12,
+          "prompt": "I [gap] (go) to the theatre with my friends yesterday. I [gap] (not / go) to the theatre for a year. We [gap] (have) a very good time.",
+          "acceptedAnswers": [
+            "went / hadn't been|hadn't gone / had"
+          ],
+          "explanation": "period up to a past moment → past perfect"
+        },
+        {
+          "id": "ws-14-sec-a-q13",
+          "order": 13,
+          "prompt": "After they [gap] (finish) their breakfast, they [gap] (leave) for school.",
+          "acceptedAnswers": [
+            "had finished / left"
+          ],
+          "explanation": "after + past perfect; then simple past"
+        },
+        {
+          "id": "ws-14-sec-a-q14",
+          "order": 14,
+          "prompt": "Linda [gap] (play) tennis after she [gap] (do) her homework.",
+          "acceptedAnswers": [
+            "played / had done"
+          ],
+          "explanation": "after + past perfect (earlier action)"
+        },
+        {
+          "id": "ws-14-sec-a-q15",
+          "order": 15,
+          "prompt": "My father [gap] (water) the flowers after he [gap] (clean) the car. After he [gap] (water) the flowers, he [gap] (have) dinner.",
+          "acceptedAnswers": [
+            "watered / had cleaned / had watered / had"
+          ],
+          "explanation": "after + past perfect; then simple past"
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-4",
+      "sectionKey": "D",
+      "instruction": "Combine the following sentences by using AFTER / BEFORE (use the PAST PERFECT for the earlier action):",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-14-sec-b-q01",
+          "order": 1,
+          "prompt": "My mother took her umbrella. She went out.",
+          "acceptedAnswers": [
+            "After my mother had taken her umbrella, she went out.",
+            "My mother went out after she had taken her umbrella.",
+            "My mother had taken her umbrella before she went out.",
+            "Before she went out, my mother had taken her umbrella.",
+            "My mother took her umbrella before she went out."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q02",
+          "order": 2,
+          "prompt": "Frank called me. I went to school.",
+          "acceptedAnswers": [
+            "After Frank had called me, I went to school.",
+            "I went to school after Frank had called me.",
+            "Frank had called me before I went to school.",
+            "Before I went to school, Frank had called me.",
+            "Frank called me before I went to school."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q03",
+          "order": 3,
+          "prompt": "I washed the dishes. I watched TV.",
+          "acceptedAnswers": [
+            "After I had washed the dishes, I watched TV.",
+            "I watched TV after I had washed the dishes.",
+            "I had washed the dishes before I watched TV.",
+            "Before I watched TV, I had washed the dishes.",
+            "I washed the dishes before I watched TV."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q04",
+          "order": 4,
+          "prompt": "She washed her hands. She had lunch.",
+          "acceptedAnswers": [
+            "After she had washed her hands, she had lunch.",
+            "She had lunch after she had washed her hands.",
+            "She had washed her hands before she had lunch.",
+            "Before she had lunch, she had washed her hands.",
+            "She washed her hands before she had lunch."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q05",
+          "order": 5,
+          "prompt": "The boys bought a ball. They played football.",
+          "acceptedAnswers": [
+            "After the boys had bought a ball, they played football.",
+            "The boys played football after they had bought a ball.",
+            "The boys had bought a ball before they played football.",
+            "Before they played football, the boys had bought a ball.",
+            "The boys bought a ball before they played football."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q06",
+          "order": 6,
+          "prompt": "My mother made a cake. The guests came.",
+          "acceptedAnswers": [
+            "After my mother had made a cake, the guests came.",
+            "The guests came after my mother had made a cake.",
+            "My mother had made a cake before the guests came.",
+            "Before the guests came, my mother had made a cake.",
+            "My mother made a cake before the guests came."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q07",
+          "order": 7,
+          "prompt": "He put sugar in his tea. He drank it.",
+          "acceptedAnswers": [
+            "After he had put sugar in his tea, he drank it.",
+            "He drank his tea after he had put sugar in it.",
+            "He had put sugar in his tea before he drank it.",
+            "Before he drank his tea, he had put sugar in it.",
+            "He put sugar in his tea before he drank it."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q08",
+          "order": 8,
+          "prompt": "I got up. I had breakfast.",
+          "acceptedAnswers": [
+            "After I had got up, I had breakfast.",
+            "I had breakfast after I had got up.",
+            "I had got up before I had breakfast.",
+            "Before I had breakfast, I had got up.",
+            "After I had gotten up, I had breakfast."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        },
+        {
+          "id": "ws-14-sec-b-q09",
+          "order": 9,
+          "prompt": "The children ran away. They broke the window.",
+          "acceptedAnswers": [
+            "After the children had broken the window, they ran away.",
+            "The children ran away after they had broken the window.",
+            "The children had broken the window before they ran away.",
+            "Before they ran away, the children had broken the window.",
+            "The children broke the window before they ran away."
+          ],
+          "explanation": "they broke the window first, then ran away"
+        },
+        {
+          "id": "ws-14-sec-b-q10",
+          "order": 10,
+          "prompt": "I fastened my seat belt. The plane took off.",
+          "acceptedAnswers": [
+            "After I had fastened my seat belt, the plane took off.",
+            "The plane took off after I had fastened my seat belt.",
+            "I had fastened my seat belt before the plane took off.",
+            "Before the plane took off, I had fastened my seat belt.",
+            "I fastened my seat belt before the plane took off."
+          ],
+          "explanation": "earlier action → past perfect; after/before links the two"
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-5",
+      "sectionKey": "E",
+      "instruction": "Complete the following sentences:",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-14-sec-c-q01",
+          "order": 1,
+          "prompt": "After I had watched that horror film, I",
+          "acceptedAnswers": [],
+          "explanation": "after + past perfect, then simple past",
+          "modelAnswer": "After I had watched that horror film, I couldn't sleep."
+        },
+        {
+          "id": "ws-14-sec-c-q02",
+          "order": 2,
+          "prompt": "She finished her homework after",
+          "acceptedAnswers": [],
+          "explanation": "after + past perfect (earlier action)",
+          "modelAnswer": "She finished her homework after she had had dinner."
+        },
+        {
+          "id": "ws-14-sec-c-q03",
+          "order": 3,
+          "prompt": "When I came home, my sister (already)",
+          "acceptedAnswers": [],
+          "explanation": "had already + past participle",
+          "modelAnswer": "When I came home, my sister had already gone to bed."
+        },
+        {
+          "id": "ws-14-sec-c-q04",
+          "order": 4,
+          "prompt": "Before he went out,",
+          "acceptedAnswers": [],
+          "explanation": "earlier action → past perfect",
+          "modelAnswer": "Before he went out, he had locked all the windows."
+        },
+        {
+          "id": "ws-14-sec-c-q05",
+          "order": 5,
+          "prompt": "They had telephoned me before",
+          "acceptedAnswers": [],
+          "explanation": "before + simple past (later action)",
+          "modelAnswer": "They had telephoned me before they came to visit me."
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-6",
+      "sectionKey": "F",
+      "instruction": "Read the passage and answer the questions:",
+      "type": "reading_qa",
+      "contextText": "I had an amusing experience last year. After I had left a small village in the south of France, I drove on to the next town. On the way a young man waved to me. I stopped and he asked me for a lift. After he had got into the car, I said good morning to him in French and he replied in the same language.\nExcept a few words, I do not know any French at all. Neither of us spoke during the journey.\nI had nearly reached the town, when the young man suddenly said, very slowly, “Do you speak English?”\nAs I soon learned, he was English himself!",
+      "questions": [
+        {
+          "id": "ws-14-sec-d-q01",
+          "order": 1,
+          "prompt": "When did the writer drive on to the next town?",
+          "acceptedAnswers": [
+            "After he had left a small village in the south of France.",
+            "He drove on to the next town after he had left a small village in the south of France.",
+            "After he had left a small village in the south of France, he drove on to the next town.",
+            "After the writer had left a small village in the south of France."
+          ],
+          "explanation": "after + past perfect"
+        },
+        {
+          "id": "ws-14-sec-d-q02",
+          "order": 2,
+          "prompt": "When did he say good morning to the man in French?",
+          "acceptedAnswers": [
+            "After the young man had got into the car.",
+            "After he had got into the car.",
+            "He said good morning to him in French after the young man had got into the car.",
+            "He said good morning to the man in French after he had got into the car."
+          ],
+          "explanation": "after + past perfect"
+        },
+        {
+          "id": "ws-14-sec-d-q03",
+          "order": 3,
+          "prompt": "When did the young man say, “Do you speak English?”",
+          "acceptedAnswers": [
+            "When the writer had nearly reached the town.",
+            "When he had nearly reached the town.",
+            "He said it when the writer had nearly reached the town.",
+            "When they had nearly reached the town."
+          ],
+          "explanation": "when + past perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-7",
+      "sectionKey": "G",
+      "instruction": "Fill in the following sentences by using the PAST PERFECT CONTINUOUS TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-14-sec-e-q01",
+          "order": 1,
+          "prompt": "We [gap] (play) football for half an hour when it started to rain.",
+          "acceptedAnswers": [
+            "had been playing"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q02",
+          "order": 2,
+          "prompt": "I [gap] (study) English for a short time when the electricity went off.",
+          "acceptedAnswers": [
+            "had been studying"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q03",
+          "order": 3,
+          "prompt": "She [gap] (do) her homework before you came in.",
+          "acceptedAnswers": [
+            "had been doing"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q04",
+          "order": 4,
+          "prompt": "His knees and hands were very dirty. He [gap] (crawl) in the garden.",
+          "acceptedAnswers": [
+            "had been crawling"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q05",
+          "order": 5,
+          "prompt": "I [gap] (drive) the car for five years when I sold it.",
+          "acceptedAnswers": [
+            "had been driving"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q06",
+          "order": 6,
+          "prompt": "We were very tired. We [gap] (travel) for about sixteen hours.",
+          "acceptedAnswers": [
+            "had been travelling|had been traveling"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q07",
+          "order": 7,
+          "prompt": "They were out of breath. They [gap] (run) for a long time.",
+          "acceptedAnswers": [
+            "had been running"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q08",
+          "order": 8,
+          "prompt": "He [gap] (live) in London for ten years when he had an accident.",
+          "acceptedAnswers": [
+            "had been living"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q09",
+          "order": 9,
+          "prompt": "He was tired because he [gap] (write) letters all morning.",
+          "acceptedAnswers": [
+            "had been writing"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-e-q10",
+          "order": 10,
+          "prompt": "He [gap] (repair) the radio for an hour when you arrived.",
+          "acceptedAnswers": [
+            "had been repairing"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-05-sec-8",
+      "sectionKey": "H",
+      "instruction": "Fill in the following sentences by using the PAST PERFECT CONTINUOUS TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-14-sec-f-q01",
+          "order": 1,
+          "prompt": "I was tired because I [gap] (type) for a long time.",
+          "acceptedAnswers": [
+            "had been typing"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q02",
+          "order": 2,
+          "prompt": "Her boss was very angry with her because she [gap] (come) to work very late.",
+          "acceptedAnswers": [
+            "had been coming"
+          ],
+          "explanation": "repeated past habit → past perfect continuous"
+        },
+        {
+          "id": "ws-14-sec-f-q03",
+          "order": 3,
+          "prompt": "I didn’t know about the earthquake because I [gap] (not / watch) television.",
+          "acceptedAnswers": [
+            "hadn't been watching"
+          ],
+          "explanation": "negative: hadn't been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q04",
+          "order": 4,
+          "prompt": "She was too fat because she [gap] (not / keep) her doctor’s advice.",
+          "acceptedAnswers": [
+            "hadn't been keeping"
+          ],
+          "explanation": "negative: hadn't been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q05",
+          "order": 5,
+          "prompt": "I took my car to the garage because the brakes [gap] (not / work).",
+          "acceptedAnswers": [
+            "hadn't been working"
+          ],
+          "explanation": "negative: hadn't been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q06",
+          "order": 6,
+          "prompt": "She had to go to the dentist because she [gap] (not / clean) her teeth.",
+          "acceptedAnswers": [
+            "hadn't been cleaning"
+          ],
+          "explanation": "negative: hadn't been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q07",
+          "order": 7,
+          "prompt": "He got bad marks because he [gap] (not / study) hard.",
+          "acceptedAnswers": [
+            "hadn't been studying"
+          ],
+          "explanation": "negative: hadn't been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q08",
+          "order": 8,
+          "prompt": "She wasn’t at home. She [gap] (go) out with her boyfriend.",
+          "acceptedAnswers": [
+            "had been going|had gone"
+          ],
+          "explanation": "had been going out with = dating"
+        },
+        {
+          "id": "ws-14-sec-f-q09",
+          "order": 9,
+          "prompt": "I thought I [gap] (behave) like an idiot.",
+          "acceptedAnswers": [
+            "had been behaving"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        },
+        {
+          "id": "ws-14-sec-f-q10",
+          "order": 10,
+          "prompt": "He [gap] (study) English very hard for the last few days.",
+          "acceptedAnswers": [
+            "had been studying"
+          ],
+          "explanation": "past perfect continuous: had been + -ing"
+        }
+      ]
+    }
+  ]
+}

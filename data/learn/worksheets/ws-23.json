@@ -12,455 +12,595 @@
     {
       "id": "ws-23-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in the PASSIVE in the appropriate tense:",
-      "type": "inline_gap_fill",
+      "instruction": "Fill in the PASSIVE in the appropriate tense: (Example: TV / invent / Baird → TV was invented by Baird.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-23-sec-a-q01",
-          "order": 1,
-          "prompt": "(TV / invent / Baird) [gap] [gap] TV was invented by Baird [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-23-sec-a-q02",
           "order": 2,
-          "prompt": "(Pyramids / build / Egyptians) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Pyramids / build / Egyptians",
+          "acceptedAnswers": [
+            "The Pyramids were built by the Egyptians.",
+            "The Pyramids were built by Egyptians.",
+            "Pyramids were built by the Egyptians.",
+            "Pyramids were built by Egyptians."
+          ],
+          "explanation": "past simple passive: was/were + V3 + by"
         },
         {
           "id": "ws-23-sec-a-q03",
           "order": 3,
-          "prompt": "(milk / produce / cows) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "milk / produce / cows",
+          "acceptedAnswers": [
+            "Milk is produced by cows."
+          ],
+          "explanation": "present simple passive: general fact"
         },
         {
           "id": "ws-23-sec-a-q04",
           "order": 4,
-          "prompt": "(coffee / grow / in Brazil) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "coffee / grow / in Brazil",
+          "acceptedAnswers": [
+            "Coffee is grown in Brazil."
+          ],
+          "explanation": "present simple passive: general fact"
         },
         {
           "id": "ws-23-sec-a-q05",
           "order": 5,
-          "prompt": "(chopsticks / use / in China) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "chopsticks / use / in China",
+          "acceptedAnswers": [
+            "Chopsticks are used in China."
+          ],
+          "explanation": "present simple passive: general fact"
         },
         {
           "id": "ws-23-sec-a-q06",
           "order": 6,
-          "prompt": "(plants / water / every day) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "plants / water / every day",
+          "acceptedAnswers": [
+            "The plants are watered every day.",
+            "The Plants are watered every day.",
+            "plants are watered every day.",
+            "Plants are watered every day."
+          ],
+          "explanation": "present simple passive: routine"
         },
         {
           "id": "ws-23-sec-a-q07",
           "order": 7,
-          "prompt": "(the thief / arrest / policeman / yesterday) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the thief / arrest / policeman / yesterday",
+          "acceptedAnswers": [
+            "The thief was arrested by a policeman yesterday.",
+            "The thief was arrested by the policeman yesterday.",
+            "Yesterday the thief was arrested by a policeman.",
+            "Yesterday the thief was arrested by the policeman.",
+            "The thief was arrested yesterday by a policeman.",
+            "The thief was arrested yesterday by the policeman."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-a-q08",
           "order": 8,
-          "prompt": "(the injured man / take to a hospital / now) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the injured man / take to a hospital / now",
+          "acceptedAnswers": [
+            "The injured man is being taken to a hospital now.",
+            "The injured man is being taken to hospital now."
+          ],
+          "explanation": "present continuous passive: is being + V3"
         },
         {
           "id": "ws-23-sec-a-q09",
           "order": 9,
-          "prompt": "(the car / repair / tomorrow) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the car / repair / tomorrow",
+          "acceptedAnswers": [
+            "The car will be repaired tomorrow.",
+            "The car is going to be repaired tomorrow.",
+            "The car is being repaired tomorrow."
+          ],
+          "explanation": "future passive: will be + V3"
         },
         {
           "id": "ws-23-sec-a-q10",
           "order": 10,
-          "prompt": "(the letter / send / last week) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the letter / send / last week",
+          "acceptedAnswers": [
+            "The letter was sent last week."
+          ],
+          "explanation": "past simple passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-b",
       "sectionKey": "B",
-      "instruction": "Put the verbs in brackets into PRESENT SIMPLE PASSIVE:",
+      "instruction": "Put the verbs in brackets into PRESENT SIMPLE PASSIVE: (Example: There is a chimpanzee which is called “Bubbles”.)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-23-sec-b-q01",
           "order": 1,
-          "prompt": "There is a chimpanzee which [gap] is called [gap] (call) “Bubbles”. It [gap] (own)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] (own) by Michael Johnson.",
+          "acceptedAnswers": [
+            "is owned"
+          ],
+          "explanation": "present simple passive: am/is/are + V3"
         },
         {
           "id": "ws-23-sec-b-q02",
           "order": 2,
-          "prompt": "by Michael Johnson. It [gap] (keep) in his home. It [gap] (feed)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] (keep) in his home.",
+          "acceptedAnswers": [
+            "is kept"
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-b-q03",
           "order": 3,
-          "prompt": "every day by Michael Johnson himself. It [gap] (always / dress) in",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] (feed) every day by Michael Johnson himself.",
+          "acceptedAnswers": [
+            "is fed"
+          ],
+          "explanation": "present simple passive (feed – fed – fed)"
         },
         {
           "id": "ws-23-sec-b-q04",
           "order": 4,
-          "prompt": "funny clothes. It [gap] (said) that “Bubbles” is Michael Johnson’s only",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] (always / dress) in funny clothes.",
+          "acceptedAnswers": [
+            "is always dressed"
+          ],
+          "explanation": "adverb of frequency after is"
         },
         {
           "id": "ws-23-sec-b-q05",
           "order": 5,
-          "prompt": "friend. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] (say) that “Bubbles” is Michael Johnson’s only friend.",
+          "acceptedAnswers": [
+            "is said"
+          ],
+          "explanation": "it is said that ..."
         }
       ]
     },
     {
       "id": "ws-23-sec-c",
       "sectionKey": "C",
-      "instruction": "Look at the Hotel Information table and write sentences as in the example:",
-      "type": "inline_gap_fill",
+      "instruction": "Look at the Hotel Information table and write sentences as in the example: (Example: Breakfast / serve – where and when? → Breakfast is served in Pierrot’s Restaurant between 7 and 9:30 am.)",
+      "type": "sentence_building",
+      "contextText": "Hotel Information\nBreakfast: in Pierrot’s Restaurant, 7–9:30 am\nRooms: maid service daily\nDinner: in Main Restaurant, 8–10 pm\nHot water: 24 hours a day\nNewspapers – Telephone calls: at the Reception Desk\nHotel Cinema: film every night at 10 pm",
       "questions": [
-        {
-          "id": "ws-23-sec-c-q01",
-          "order": 1,
-          "prompt": "Breakfast / serve – where and when? [gap] Breakfast is served in Pierrot’s Restaurant between 7 and 9:30 am.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-23-sec-c-q02",
           "order": 2,
-          "prompt": "Dinner / serve – where and when? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Dinner / serve – where and when?",
+          "acceptedAnswers": [
+            "Dinner is served in the Main Restaurant between 8 and 10 pm.",
+            "Dinner is served in the Main Restaurant from 8 to 10 pm.",
+            "Dinner is served in Main Restaurant between 8 and 10 pm.",
+            "Dinner is served in Main Restaurant from 8 to 10 pm."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-c-q03",
           "order": 3,
-          "prompt": "Newspapers / sell – where? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Newspapers / sell – where?",
+          "acceptedAnswers": [
+            "Newspapers are sold at the Reception Desk.",
+            "Newspapers are sold at Reception."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-c-q04",
           "order": 4,
-          "prompt": "Telephone calls / can make – where? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Telephone calls / can make – where?",
+          "acceptedAnswers": [
+            "Telephone calls can be made at the Reception Desk.",
+            "Telephone calls can be made at Reception."
+          ],
+          "explanation": "modal passive: can be + V3"
         },
         {
           "id": "ws-23-sec-c-q05",
           "order": 5,
-          "prompt": "Rooms / clean – who by and how often? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Rooms / clean – who by and how often?",
+          "acceptedAnswers": [
+            "Rooms are cleaned by the maid service daily.",
+            "Rooms are cleaned by the maid service every day.",
+            "Rooms are cleaned by the maids daily.",
+            "Rooms are cleaned by the maids every day.",
+            "Rooms are cleaned by maid service daily.",
+            "Rooms are cleaned by maid service every day.",
+            "Rooms are cleaned by maids daily.",
+            "Rooms are cleaned by maids every day.",
+            "Rooms are cleaned daily by the maid service.",
+            "Rooms are cleaned daily by the maids.",
+            "Rooms are cleaned daily by maid service.",
+            "Rooms are cleaned daily by maids.",
+            "Rooms are cleaned every day by the maid service.",
+            "Rooms are cleaned every day by the maids.",
+            "Rooms are cleaned every day by maid service.",
+            "Rooms are cleaned every day by maids.",
+            "The rooms are cleaned by the maid service daily.",
+            "The rooms are cleaned by the maid service every day.",
+            "The rooms are cleaned by the maids daily.",
+            "The rooms are cleaned by the maids every day.",
+            "The rooms are cleaned by maid service daily.",
+            "The rooms are cleaned by maid service every day.",
+            "The rooms are cleaned by maids daily.",
+            "The rooms are cleaned by maids every day.",
+            "The rooms are cleaned daily by the maid service.",
+            "The rooms are cleaned daily by the maids.",
+            "The rooms are cleaned daily by maid service.",
+            "The rooms are cleaned daily by maids.",
+            "The rooms are cleaned every day by the maid service.",
+            "The rooms are cleaned every day by the maids.",
+            "The rooms are cleaned every day by maid service.",
+            "The rooms are cleaned every day by maids."
+          ],
+          "explanation": "present simple passive + by"
         },
         {
           "id": "ws-23-sec-c-q06",
           "order": 6,
-          "prompt": "Hot water / supply – when? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Hot water / supply – when?",
+          "acceptedAnswers": [
+            "Hot water is supplied 24 hours a day."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-c-q07",
           "order": 7,
-          "prompt": "Films / show – where and when? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Films / show – where and when?",
+          "acceptedAnswers": [
+            "Films are shown in the hotel cinema every night at 10 pm.",
+            "Films are shown in the hotel cinema at 10 pm every night.",
+            "Films are shown in the hotel Cinema every night at 10 pm.",
+            "Films are shown in the hotel Cinema at 10 pm every night.",
+            "Films are shown in the Hotel cinema every night at 10 pm.",
+            "Films are shown in the Hotel cinema at 10 pm every night.",
+            "Films are shown in the Hotel Cinema every night at 10 pm.",
+            "Films are shown in the Hotel Cinema at 10 pm every night."
+          ],
+          "explanation": "present simple passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-d",
       "sectionKey": "D",
-      "instruction": "Put the verbs in brackets into PAST SIMPLE PASSIVE:",
+      "instruction": "Put the verbs in brackets into PAST SIMPLE PASSIVE: (Example: Two men were seen breaking into a house in my street last night.)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-23-sec-d-q01",
           "order": 1,
-          "prompt": "Two men [gap] were seen [gap] (see) breaking into a house in my street last night. The police",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The police [gap] (call) and they arrived very quickly.",
+          "acceptedAnswers": [
+            "were called"
+          ],
+          "explanation": "past simple passive: was/were + V3"
         },
         {
           "id": "ws-23-sec-d-q02",
           "order": 2,
-          "prompt": "[gap] (call) and they arrived very quickly. One man [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "One man [gap] (catch) immediately.",
+          "acceptedAnswers": [
+            "was caught"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-d-q03",
           "order": 3,
-          "prompt": "(catch) immediately. The other escaped, but he [gap] (find) very soon.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The other escaped, but he [gap] (find) very soon.",
+          "acceptedAnswers": [
+            "was found"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-d-q04",
           "order": 4,
-          "prompt": "Both men [gap] (take) to the police station where they [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Both men [gap] (take) to the police station where they [gap] (question) separately by a police officer.",
+          "acceptedAnswers": [
+            "were taken / were questioned"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-d-q05",
           "order": 5,
-          "prompt": "[gap] (question) separately by a police officer. The two men [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-23-sec-d-q06",
-          "order": 6,
-          "prompt": "[gap] (charge) with burglary.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The two men [gap] (charge) with burglary.",
+          "acceptedAnswers": [
+            "were charged"
+          ],
+          "explanation": "past simple passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-e",
       "sectionKey": "E",
-      "instruction": "Turn from ACTIVE into PASSIVE:",
-      "type": "inline_gap_fill",
+      "instruction": "Turn from ACTIVE into PASSIVE: (Example: The gardener has planted some trees. → Some trees have been planted by the gardener.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-23-sec-e-q01",
-          "order": 1,
-          "prompt": "The gardener has planted some trees. [gap] [gap] Some trees have been planted by the gardener [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-23-sec-e-q02",
           "order": 2,
-          "prompt": "Doctor Brown will give you some advice. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Doctor Brown will give you some advice.",
+          "acceptedAnswers": [
+            "You will be given some advice by Doctor Brown.",
+            "Some advice will be given to you by Doctor Brown."
+          ],
+          "explanation": "future passive: will be + V3"
         },
         {
           "id": "ws-23-sec-e-q03",
           "order": 3,
-          "prompt": "A famous designer will redecorate the hotel. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A famous designer will redecorate the hotel.",
+          "acceptedAnswers": [
+            "The hotel will be redecorated by a famous designer."
+          ],
+          "explanation": "future passive"
         },
         {
           "id": "ws-23-sec-e-q04",
           "order": 4,
-          "prompt": "Steven Spielberg directed “E.T.” [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steven Spielberg directed “E.T.”",
+          "acceptedAnswers": [
+            "“E.T.” was directed by Steven Spielberg."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-e-q05",
           "order": 5,
-          "prompt": "Someone has broken the crystal vase. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone has broken the crystal vase.",
+          "acceptedAnswers": [
+            "The crystal vase has been broken.",
+            "The crystal vase has been broken by someone."
+          ],
+          "explanation": "present perfect passive; omit 'someone'"
         },
         {
           "id": "ws-23-sec-e-q06",
           "order": 6,
-          "prompt": "His parents have brought him up to be polite. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "His parents have brought him up to be polite.",
+          "acceptedAnswers": [
+            "He has been brought up by his parents to be polite.",
+            "He has been brought up to be polite by his parents."
+          ],
+          "explanation": "present perfect passive (phrasal verb)"
         },
         {
           "id": "ws-23-sec-e-q07",
           "order": 7,
-          "prompt": "Fleming discovered penicillin. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Fleming discovered penicillin.",
+          "acceptedAnswers": [
+            "Penicillin was discovered by Fleming."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-e-q08",
           "order": 8,
-          "prompt": "They will advertise the product on television. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They will advertise the product on television.",
+          "acceptedAnswers": [
+            "The product will be advertised on television.",
+            "The product will be advertised on television by them."
+          ],
+          "explanation": "future passive; omit 'they'"
         },
         {
           "id": "ws-23-sec-e-q09",
           "order": 9,
-          "prompt": "Someone is remaking that film. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone is remaking that film.",
+          "acceptedAnswers": [
+            "That film is being remade.",
+            "That film is being remade by someone."
+          ],
+          "explanation": "present continuous passive"
         },
         {
           "id": "ws-23-sec-e-q10",
           "order": 10,
-          "prompt": "Picasso painted that picture. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Picasso painted that picture.",
+          "acceptedAnswers": [
+            "That picture was painted by Picasso."
+          ],
+          "explanation": "past simple passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-f",
       "sectionKey": "F",
-      "instruction": "Using the PASSIVE, ask questions to which the bold type words are answers:",
+      "instruction": "Using the PASSIVE, ask questions to which the bold type words are answers: (Example: Columbus discovered America. → Who was America discovered by?)",
       "type": "question_formation",
       "questions": [
         {
-          "id": "ws-23-sec-f-q01",
-          "order": 1,
-          "prompt": "Columbus discovered America. [gap] Who was America discovered by [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
           "id": "ws-23-sec-f-q02",
           "order": 2,
-          "prompt": "We keep money in a safe. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We keep money in a safe.",
+          "acceptedAnswers": [
+            "Where is the money kept?",
+            "Where is money kept?"
+          ],
+          "explanation": "Where + is + subject + V3?"
         },
         {
           "id": "ws-23-sec-f-q03",
           "order": 3,
-          "prompt": "A bee stung him. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A bee stung him.",
+          "acceptedAnswers": [
+            "What was he stung by?",
+            "By what was he stung?"
+          ],
+          "explanation": "question about the agent: What ... by?"
         },
         {
           "id": "ws-23-sec-f-q04",
           "order": 4,
-          "prompt": "They speak Italian in Italy. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They speak Italian in Italy.",
+          "acceptedAnswers": [
+            "Where is Italian spoken?",
+            "What language is spoken in Italy?"
+          ],
+          "explanation": "present simple passive question"
         },
         {
           "id": "ws-23-sec-f-q05",
           "order": 5,
-          "prompt": "They have taken his aunt to hospital [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They have taken his aunt to hospital.",
+          "acceptedAnswers": [
+            "Where has his aunt been taken?",
+            "Who has been taken to hospital?"
+          ],
+          "explanation": "present perfect passive question"
         },
         {
           "id": "ws-23-sec-f-q06",
           "order": 6,
-          "prompt": "The boys damaged the television. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The boys damaged the television.",
+          "acceptedAnswers": [
+            "Who was the television damaged by?",
+            "By whom was the television damaged?",
+            "What was damaged by the boys?"
+          ],
+          "explanation": "past simple passive question"
         },
         {
           "id": "ws-23-sec-f-q07",
           "order": 7,
-          "prompt": "Da Vinci painted the Mona Lisa. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Da Vinci painted the Mona Lisa.",
+          "acceptedAnswers": [
+            "Who was the Mona Lisa painted by?",
+            "By whom was the Mona Lisa painted?"
+          ],
+          "explanation": "question about the agent: Who ... by?"
         },
         {
           "id": "ws-23-sec-f-q08",
           "order": 8,
-          "prompt": "He invited 30 people to his party. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He invited 30 people to his party.",
+          "acceptedAnswers": [
+            "How many people were invited to his party?"
+          ],
+          "explanation": "How many + plural noun + were + V3?"
         },
         {
           "id": "ws-23-sec-f-q09",
           "order": 9,
-          "prompt": "They grow bananas in Africa. [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They grow bananas in Africa.",
+          "acceptedAnswers": [
+            "Where are bananas grown?",
+            "What is grown in Africa?"
+          ],
+          "explanation": "present simple passive question"
         }
       ]
     },
     {
       "id": "ws-23-sec-g",
       "sectionKey": "G",
-      "instruction": "Turn from ACTIVE into PASSIVE:",
-      "type": "inline_gap_fill",
+      "instruction": "Turn from ACTIVE into PASSIVE: (Example: You must leave the bathroom tidy. → The bathroom must be left tidy.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-23-sec-g-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-23-sec-g-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You should water this plant daily.",
+          "acceptedAnswers": [
+            "This plant should be watered daily.",
+            "This plant should be watered every day."
+          ],
+          "explanation": "modal passive: should be + V3"
         },
         {
           "id": "ws-23-sec-g-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Our neighbor ought to paint the garage.",
+          "acceptedAnswers": [
+            "The garage ought to be painted by our neighbor.",
+            "The garage ought to be painted by our neighbour."
+          ],
+          "explanation": "ought to be + V3"
         },
         {
           "id": "ws-23-sec-g-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I have to return these books to the library.",
+          "acceptedAnswers": [
+            "These books have to be returned to the library.",
+            "These books have to be returned to the library by me."
+          ],
+          "explanation": "have to be + V3"
         },
         {
           "id": "ws-23-sec-g-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You must extinguish your cigarettes.",
+          "acceptedAnswers": [
+            "Your cigarettes must be extinguished.",
+            "Your Cigarettes must be extinguished.",
+            "cigarettes must be extinguished.",
+            "Cigarettes must be extinguished."
+          ],
+          "explanation": "must be + V3"
         },
         {
           "id": "ws-23-sec-g-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You must dry-clean this shirt.",
+          "acceptedAnswers": [
+            "This shirt must be dry-cleaned.",
+            "This shirt must be dry cleaned."
+          ],
+          "explanation": "must be + V3"
         },
         {
           "id": "ws-23-sec-g-q07",
           "order": 7,
-          "prompt": " [gap] You must leave the bathroom tidy. [gap] The bathroom must be left tidy [gap] You should water this plant daily. Our neighbor ought to paint the garage [gap] I have to return these books to the library [gap] You must extinguish your cigarettes. You must dry-clean this shirt. Someone will pay you in ten days.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone will pay you in ten days.",
+          "acceptedAnswers": [
+            "You will be paid in ten days."
+          ],
+          "explanation": "will be + V3"
         },
         {
           "id": "ws-23-sec-g-q08",
           "order": 8,
-          "prompt": "You can improve your health with more exercise. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You can improve your health with more exercise.",
+          "acceptedAnswers": [
+            "Your health can be improved with more exercise."
+          ],
+          "explanation": "can be + V3"
         },
         {
           "id": "ws-23-sec-g-q09",
           "order": 9,
-          "prompt": "People must obey the law. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "People must obey the law.",
+          "acceptedAnswers": [
+            "The law must be obeyed.",
+            "The law must be obeyed by people."
+          ],
+          "explanation": "must be + V3; omit 'people'"
         },
         {
           "id": "ws-23-sec-g-q10",
           "order": 10,
-          "prompt": "The cleaner is going to mop the kitchen floor. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The cleaner is going to mop the kitchen floor.",
+          "acceptedAnswers": [
+            "The kitchen floor is going to be mopped by the cleaner.",
+            "The kitchen floor is going to be mopped."
+          ],
+          "explanation": "be going to be + V3"
         }
       ]
     },
@@ -468,459 +608,740 @@
       "id": "ws-23-sec-h",
       "sectionKey": "H",
       "instruction": "Turn from ACTIVE into PASSIVE:",
-      "type": "inline_gap_fill",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-23-sec-h-q01",
           "order": 1,
-          "prompt": "Someone is helping her with the hosework. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone is helping her with the housework.",
+          "acceptedAnswers": [
+            "She is being helped with the housework.",
+            "She is being helped with the housework by someone."
+          ],
+          "explanation": "present continuous passive"
         },
         {
           "id": "ws-23-sec-h-q10",
           "order": 10,
-          "prompt": "A pickpocket robbed me. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A pickpocket robbed me.",
+          "acceptedAnswers": [
+            "I was robbed by a pickpocket."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-h-q11",
           "order": 11,
-          "prompt": "The mail-order company sent Mrs. Green a parcel. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The mail-order company sent Mrs. Green a parcel.",
+          "acceptedAnswers": [
+            "Mrs. Green was sent a parcel by the mail-order company.",
+            "A parcel was sent to Mrs. Green by the mail-order company."
+          ],
+          "explanation": "two objects: either can be the subject"
         },
         {
           "id": "ws-23-sec-h-q12",
           "order": 12,
-          "prompt": "A dog is chasing the cild. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A dog is chasing the child.",
+          "acceptedAnswers": [
+            "The child is being chased by a dog."
+          ],
+          "explanation": "present continuous passive"
         },
         {
           "id": "ws-23-sec-h-q13",
           "order": 13,
-          "prompt": "My friend sent me an invitation. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My friend sent me an invitation.",
+          "acceptedAnswers": [
+            "I was sent an invitation by my friend.",
+            "An invitation was sent to me by my friend."
+          ],
+          "explanation": "two objects: either can be the subject"
         },
         {
           "id": "ws-23-sec-h-q14",
           "order": 14,
-          "prompt": "The farmer is building a new barn. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The farmer is building a new barn.",
+          "acceptedAnswers": [
+            "A new barn is being built by the farmer."
+          ],
+          "explanation": "present continuous passive"
         },
         {
           "id": "ws-23-sec-h-q15",
           "order": 15,
-          "prompt": "The secretary has given Mrs. Jones some letters. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The secretary has given Mrs. Jones some letters.",
+          "acceptedAnswers": [
+            "Mrs. Jones has been given some letters by the secretary.",
+            "Some letters have been given to Mrs. Jones by the secretary."
+          ],
+          "explanation": "present perfect passive"
         },
         {
           "id": "ws-23-sec-h-q16",
           "order": 16,
-          "prompt": "The traffic warden had already given him a ticket for illegal parking. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The traffic warden had already given him a ticket for illegal parking.",
+          "acceptedAnswers": [
+            "He had already been given a ticket for illegal parking by the traffic warden.",
+            "A ticket for illegal parking had already been given to him by the traffic warden."
+          ],
+          "explanation": "past perfect passive"
         },
         {
           "id": "ws-23-sec-h-q17",
           "order": 17,
-          "prompt": "Someone had broken our door down. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone had broken our door down.",
+          "acceptedAnswers": [
+            "Our door had been broken down.",
+            "Our door had been broken down by someone."
+          ],
+          "explanation": "past perfect passive"
         },
         {
           "id": "ws-23-sec-h-q18",
           "order": 18,
-          "prompt": "They chose him as the best actor of the year. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They chose him as the best actor of the year.",
+          "acceptedAnswers": [
+            "He was chosen as the best actor of the year.",
+            "He was chosen as the best actor of the year by them."
+          ],
+          "explanation": "past simple passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-i",
       "sectionKey": "I",
-      "instruction": "Turn form ACTIVE into PASSIVE as in the example:",
-      "type": "inline_gap_fill",
+      "instruction": "Turn from ACTIVE into PASSIVE as in the example: (Example: He gave me a present. → a) I was given a present. b) A present was given to me.)",
+      "type": "sentence_rewrite",
       "questions": [
         {
-          "id": "ws-23-sec-i-q01",
-          "order": 1,
-          "prompt": "He gave me a present. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) I",
-            "b) A"
-          ]
-        },
-        {
-          "id": "ws-23-sec-i-q02",
+          "id": "ws-23-sec-i-q02a",
           "order": 2,
-          "prompt": "The waiter will bring us the bill. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………",
-            "b) …………………………………………………………"
-          ]
+          "prompt": "The waiter will bring us the bill. → a) We",
+          "acceptedAnswers": [
+            "We will be brought the bill by the waiter.",
+            "We will be brought the bill."
+          ],
+          "explanation": "indirect object as subject"
         },
         {
-          "id": "ws-23-sec-i-q03",
+          "id": "ws-23-sec-i-q02b",
+          "order": 2,
+          "prompt": "The waiter will bring us the bill. → b) The bill",
+          "acceptedAnswers": [
+            "The bill will be brought to us by the waiter.",
+            "The bill will be brought to us."
+          ],
+          "explanation": "direct object as subject + to"
+        },
+        {
+          "id": "ws-23-sec-i-q03a",
           "order": 3,
-          "prompt": "The Queen presented him with a medal. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………",
-            "b) …………………………………………………………"
-          ]
+          "prompt": "The Queen presented him with a medal. → a) He",
+          "acceptedAnswers": [
+            "He was presented with a medal by the Queen.",
+            "He was presented with a medal."
+          ],
+          "explanation": "person as subject"
         },
         {
-          "id": "ws-23-sec-i-q04",
+          "id": "ws-23-sec-i-q03b",
+          "order": 3,
+          "prompt": "The Queen presented him with a medal. → b) A medal",
+          "acceptedAnswers": [
+            "A medal was presented to him by the Queen.",
+            "A medal was presented to him."
+          ],
+          "explanation": "thing as subject + to"
+        },
+        {
+          "id": "ws-23-sec-i-q04a",
           "order": 4,
-          "prompt": "Her mother bought Mary some sweets. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………",
-            "b) …………………………………………………………"
-          ]
+          "prompt": "Her mother bought Mary some sweets. → a) Mary",
+          "acceptedAnswers": [
+            "Mary was bought some sweets by her mother.",
+            "Mary was bought some sweets."
+          ],
+          "explanation": "indirect object as subject"
         },
         {
-          "id": "ws-23-sec-i-q05",
+          "id": "ws-23-sec-i-q04b",
+          "order": 4,
+          "prompt": "Her mother bought Mary some sweets. → b) Some sweets",
+          "acceptedAnswers": [
+            "Some sweets were bought for Mary by her mother.",
+            "Some sweets were bought for Mary."
+          ],
+          "explanation": "buy something for someone"
+        },
+        {
+          "id": "ws-23-sec-i-q05a",
           "order": 5,
-          "prompt": "Bob has sold Ted a second-hand car. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………",
-            "b) …………………………………………………………"
-          ]
+          "prompt": "Bob has sold Ted a second-hand car. → a) Ted",
+          "acceptedAnswers": [
+            "Ted has been sold a second-hand car by Bob.",
+            "Ted has been sold a second-hand car."
+          ],
+          "explanation": "present perfect passive"
         },
         {
-          "id": "ws-23-sec-i-q06",
+          "id": "ws-23-sec-i-q05b",
+          "order": 5,
+          "prompt": "Bob has sold Ted a second-hand car. → b) A second-hand car",
+          "acceptedAnswers": [
+            "A second-hand car has been sold to Ted by Bob.",
+            "A second-hand car has been sold to Ted."
+          ],
+          "explanation": "present perfect passive + to"
+        },
+        {
+          "id": "ws-23-sec-i-q06a",
           "order": 6,
-          "prompt": "Larry is going to send a letter to Tom. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………",
-            "b) …………………………………………………………"
-          ]
+          "prompt": "Larry is going to send a letter to Tom. → a) Tom",
+          "acceptedAnswers": [
+            "Tom is going to be sent a letter by Larry.",
+            "Tom is going to be sent a letter."
+          ],
+          "explanation": "be going to be + V3"
+        },
+        {
+          "id": "ws-23-sec-i-q06b",
+          "order": 6,
+          "prompt": "Larry is going to send a letter to Tom. → b) A letter",
+          "acceptedAnswers": [
+            "A letter is going to be sent to Tom by Larry.",
+            "A letter is going to be sent to Tom."
+          ],
+          "explanation": "be going to be + V3"
         }
       ]
     },
     {
       "id": "ws-23-sec-j",
       "sectionKey": "J",
-      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "instruction": "Rewrite the following passage in the PASSIVE (one sentence at a time):",
       "type": "sentence_rewrite",
+      "contextText": "Some people saw a UFO in the sky above London last night. They reported it to the police. The army sent a helicopter to look at it more closely. The UFO shot the helicopter down and killed both men in it. People have given photographs of the UFO to the police. Experts are looking at them now.",
       "questions": [
         {
           "id": "ws-23-sec-j-q01",
           "order": 1,
-          "prompt": "Some peoplem saw a UFO in the sky above London last night. They reported it to the police.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Some people saw a UFO in the sky above London last night.",
+          "acceptedAnswers": [
+            "A UFO was seen in the sky above London last night.",
+            "A UFO was seen in the sky above London last night by some people."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-j-q02",
           "order": 2,
-          "prompt": "The army sent a helicopter to look at it more closely. The UFO shot the helicopter down and",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They reported it to the police.",
+          "acceptedAnswers": [
+            "It was reported to the police."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-j-q03",
           "order": 3,
-          "prompt": "killed both men in it. People have given photographs of the UFO to the police. Experts are",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The army sent a helicopter to look at it more closely.",
+          "acceptedAnswers": [
+            "A helicopter was sent by the army to look at it more closely.",
+            "A helicopter was sent to look at it more closely.",
+            "A helicopter was sent to look at it more closely by the army."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-j-q04",
           "order": 4,
-          "prompt": "looking ar them now.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The UFO shot the helicopter down and killed both men in it.",
+          "acceptedAnswers": [
+            "The helicopter was shot down by the UFO and both men in it were killed.",
+            "The helicopter was shot down and both men in it were killed.",
+            "The helicopter was shot down and both men in it were killed by the UFO.",
+            "The helicopter was shot down by the UFO and both men in it were killed by the UFO."
+          ],
+          "explanation": "past simple passive"
+        },
+        {
+          "id": "ws-23-sec-j-q05",
+          "order": 5,
+          "prompt": "People have given photographs of the UFO to the police.",
+          "acceptedAnswers": [
+            "Photographs of the UFO have been given to the police.",
+            "The police have been given photographs of the UFO."
+          ],
+          "explanation": "present perfect passive"
+        },
+        {
+          "id": "ws-23-sec-j-q06",
+          "order": 6,
+          "prompt": "Experts are looking at them now.",
+          "acceptedAnswers": [
+            "They are being looked at by experts now.",
+            "They are being looked at now by experts.",
+            "They are now being looked at by experts."
+          ],
+          "explanation": "present continuous passive (look at)"
         }
       ]
     },
     {
       "id": "ws-23-sec-k",
       "sectionKey": "K",
-      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "instruction": "Rewrite the following passage in the PASSIVE (one sentence at a time):",
       "type": "sentence_rewrite",
+      "contextText": "Somebody has stolen a bus from outside the school. Some children saw the thief. The police are searching for the bus now. They will use the children’s descriptions to catch the thief.",
       "questions": [
         {
           "id": "ws-23-sec-k-q01",
           "order": 1,
-          "prompt": "Somebody has stolen a bus from outside the school. Some children saw the thief. The police",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Somebody has stolen a bus from outside the school.",
+          "acceptedAnswers": [
+            "A bus has been stolen from outside the school."
+          ],
+          "explanation": "present perfect passive"
         },
         {
           "id": "ws-23-sec-k-q02",
           "order": 2,
-          "prompt": "are searching for the bus now. They will use the children’s descriptions to catch the thief.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Some children saw the thief.",
+          "acceptedAnswers": [
+            "The thief was seen by some children."
+          ],
+          "explanation": "past simple passive"
+        },
+        {
+          "id": "ws-23-sec-k-q03",
+          "order": 3,
+          "prompt": "The police are searching for the bus now.",
+          "acceptedAnswers": [
+            "The bus is being searched for by the police now.",
+            "The bus is being searched for now by the police.",
+            "The bus is being searched for now.",
+            "The bus is now being searched for.",
+            "The bus is now being searched for by the police."
+          ],
+          "explanation": "present continuous passive (search for)"
+        },
+        {
+          "id": "ws-23-sec-k-q04",
+          "order": 4,
+          "prompt": "They will use the children’s descriptions to catch the thief.",
+          "acceptedAnswers": [
+            "The children's descriptions will be used to catch the thief."
+          ],
+          "explanation": "future passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-l",
       "sectionKey": "L",
-      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "instruction": "Rewrite the following passage in the PASSIVE (one sentence at a time):",
       "type": "sentence_rewrite",
+      "contextText": "Someone broke into a local jewellery shop yesterday. The owner had just locked up the shop when a robber with a gun threatened him. The robber told him to unlock the shop and give him all the diamonds in the safe. Then the robber tied him up. The police have organized a search for the robber. They hope they will find him in a few days. Doctors are treating the owner of the shop for shock.",
       "questions": [
         {
           "id": "ws-23-sec-l-q01",
           "order": 1,
-          "prompt": "Someone broke into a local jewellery shop yesterday. The owner had just locked up the shop",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone broke into a local jewellery shop yesterday.",
+          "acceptedAnswers": [
+            "A local jewellery shop was broken into yesterday."
+          ],
+          "explanation": "past simple passive (break into)"
         },
         {
           "id": "ws-23-sec-l-q02",
           "order": 2,
-          "prompt": "when a robber with a gun threatened him. The robber told him to unlock the shop and give him",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The owner had just locked up the shop when a robber with a gun threatened him.",
+          "acceptedAnswers": [
+            "The shop had just been locked up by the owner when he was threatened by a robber with a gun.",
+            "The shop had just been locked up when he was threatened by a robber with a gun.",
+            "The shop had just been locked up when the owner was threatened by a robber with a gun."
+          ],
+          "explanation": "past perfect passive + past simple passive"
         },
         {
           "id": "ws-23-sec-l-q03",
           "order": 3,
-          "prompt": "all the diamonds in the safe. Then the robber tied him up. The police have organized a search for",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The robber told him to unlock the shop and give him all the diamonds in the safe.",
+          "acceptedAnswers": [
+            "He was told by the robber to unlock the shop and give him all the diamonds in the safe.",
+            "He was told to unlock the shop and give him all the diamonds in the safe."
+          ],
+          "explanation": "past simple passive: be told to"
         },
         {
           "id": "ws-23-sec-l-q04",
           "order": 4,
-          "prompt": "the robber. They hope they will find him in a few days. Doctors are treating the owner of the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Then the robber tied him up.",
+          "acceptedAnswers": [
+            "Then he was tied up.",
+            "Then he was tied up by the robber."
+          ],
+          "explanation": "past simple passive (tie up)"
         },
         {
           "id": "ws-23-sec-l-q05",
           "order": 5,
-          "prompt": "shop for shock.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The police have organized a search for the robber.",
+          "acceptedAnswers": [
+            "A search for the robber has been organized.",
+            "A search for the robber has been organized by the police.",
+            "A search for the robber has been organized for the robber.",
+            "A search for the robber has been organized for the robber by the police.",
+            "A search for the robber has been organised.",
+            "A search for the robber has been organised by the police.",
+            "A search for the robber has been organised for the robber.",
+            "A search for the robber has been organised for the robber by the police.",
+            "A search has been organized.",
+            "A search has been organized by the police.",
+            "A search has been organized for the robber.",
+            "A search has been organized for the robber by the police.",
+            "A search has been organised.",
+            "A search has been organised by the police.",
+            "A search has been organised for the robber.",
+            "A search has been organised for the robber by the police."
+          ],
+          "explanation": "present perfect passive"
+        },
+        {
+          "id": "ws-23-sec-l-q06",
+          "order": 6,
+          "prompt": "They hope they will find him in a few days.",
+          "acceptedAnswers": [
+            "They hope that he will be found in a few days.",
+            "They hope he will be found in a few days.",
+            "It is hoped that he will be found in a few days."
+          ],
+          "explanation": "future passive: will be + V3"
+        },
+        {
+          "id": "ws-23-sec-l-q07",
+          "order": 7,
+          "prompt": "Doctors are treating the owner of the shop for shock.",
+          "acceptedAnswers": [
+            "The owner of the shop is being treated for shock.",
+            "The owner of the shop is being treated for shock by doctors."
+          ],
+          "explanation": "present continuous passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-m",
       "sectionKey": "M",
-      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "instruction": "Rewrite the following passage in the PASSIVE (one sentence at a time):",
       "type": "sentence_rewrite",
+      "contextText": "My uncle painted this picture. Someone has offered him a lot of money for it. He will deliver the painting tomorrow. When they give him the money he will tell them the truth. He painted it one night while he was sleepwalking!",
       "questions": [
         {
           "id": "ws-23-sec-m-q01",
           "order": 1,
-          "prompt": "My uncle painted this picture. Someone has offered him a lot of money for it. He will deliver",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My uncle painted this picture.",
+          "acceptedAnswers": [
+            "This picture was painted by my uncle."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-23-sec-m-q02",
           "order": 2,
-          "prompt": "the painting tomorrow. When they give him the money he will tell them the truth. He painted it",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone has offered him a lot of money for it.",
+          "acceptedAnswers": [
+            "He has been offered a lot of money for it.",
+            "A lot of money has been offered to him for it."
+          ],
+          "explanation": "present perfect passive"
         },
         {
           "id": "ws-23-sec-m-q03",
           "order": 3,
-          "prompt": "one night while he was sleepwalking!",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He will deliver the painting tomorrow.",
+          "acceptedAnswers": [
+            "The painting will be delivered tomorrow.",
+            "The painting will be delivered tomorrow by him."
+          ],
+          "explanation": "future passive"
+        },
+        {
+          "id": "ws-23-sec-m-q04",
+          "order": 4,
+          "prompt": "When they give him the money he will tell them the truth.",
+          "acceptedAnswers": [
+            "When he is given the money, they will be told the truth.",
+            "When he is given the money, they will be told the truth by him.",
+            "When he is given the money they will be told the truth.",
+            "When he is given the money they will be told the truth by him.",
+            "When he is given the money, the truth will be told to them.",
+            "When he is given the money the truth will be told to them."
+          ],
+          "explanation": "present passive in time clause; future passive"
+        },
+        {
+          "id": "ws-23-sec-m-q05",
+          "order": 5,
+          "prompt": "He painted it one night while he was sleepwalking!",
+          "acceptedAnswers": [
+            "It was painted one night while he was sleepwalking!"
+          ],
+          "explanation": "past simple passive"
         }
       ]
     },
     {
       "id": "ws-23-sec-n",
       "sectionKey": "N",
-      "instruction": "Rewrite the following passage in the PASSIVE:",
+      "instruction": "Rewrite the following passage in the PASSIVE (one sentence at a time):",
       "type": "sentence_rewrite",
+      "contextText": "Our school is organizing a contest. The teachers will choose the best project about the environment. The students must include pictures and drawings in their projects. The students will also have to do all the writing themselves. The school will give the winner a set of encyclopaedias.",
       "questions": [
         {
           "id": "ws-23-sec-n-q01",
           "order": 1,
-          "prompt": "Our school is organizing a contest. The teachers will choose the best project about the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Our school is organizing a contest.",
+          "acceptedAnswers": [
+            "A contest is being organized by our school.",
+            "A contest is being organised by our school."
+          ],
+          "explanation": "present continuous passive"
         },
         {
           "id": "ws-23-sec-n-q02",
           "order": 2,
-          "prompt": "environment. The students must include pictures and drawings in their projects. The students will",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The teachers will choose the best project about the environment.",
+          "acceptedAnswers": [
+            "The best project about the environment will be chosen by the teachers."
+          ],
+          "explanation": "future passive"
         },
         {
           "id": "ws-23-sec-n-q03",
           "order": 3,
-          "prompt": "also have to do all the writing themselves. The school will give the winner a set of",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The students must include pictures and drawings in their projects.",
+          "acceptedAnswers": [
+            "Pictures and drawings must be included in their projects.",
+            "Pictures and drawings must be included in their projects by the students.",
+            "Pictures and drawings must be included in the students' projects.",
+            "Pictures and drawings must be included in the students' projects by the students."
+          ],
+          "explanation": "modal passive: must be + V3"
         },
         {
           "id": "ws-23-sec-n-q04",
           "order": 4,
-          "prompt": "encyclopaedias.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The students will also have to do all the writing themselves.",
+          "acceptedAnswers": [
+            "All the writing will also have to be done by the students themselves."
+          ],
+          "explanation": "will have to be + V3"
+        },
+        {
+          "id": "ws-23-sec-n-q05",
+          "order": 5,
+          "prompt": "The school will give the winner a set of encyclopaedias.",
+          "acceptedAnswers": [
+            "The winner will be given a set of encyclopaedias.",
+            "The winner will be given a set of encyclopaedias by the school.",
+            "A set of encyclopaedias will be given to the winner.",
+            "A set of encyclopaedias will be given to the winner by the school."
+          ],
+          "explanation": "future passive with two objects"
         }
       ]
     },
     {
       "id": "ws-23-sec-o",
       "sectionKey": "O",
-      "instruction": "Make questions in the PASSIVE from these cues:",
+      "instruction": "Make questions in the PASSIVE from these cues: (Example: Where / our local newspaper / print → Where is our local newspaper printed?)",
       "type": "question_formation",
       "questions": [
         {
           "id": "ws-23-sec-o-q01",
           "order": 1,
-          "prompt": "How many / photos / store / in the photo library [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How many / photos / store / in the photo library",
+          "acceptedAnswers": [
+            "How many photos are stored in the photo library?"
+          ],
+          "explanation": "How many + noun + are + V3?"
         },
         {
           "id": "ws-23-sec-o-q02",
           "order": 2,
-          "prompt": "photographs / develop / in the photo library [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "photographs / develop / in the photo library",
+          "acceptedAnswers": [
+            "Are photographs developed in the photo library?"
+          ],
+          "explanation": "yes/no question: Are + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q03",
           "order": 3,
-          "prompt": "Where / messages / receive [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where / messages / receive",
+          "acceptedAnswers": [
+            "Where are messages received?"
+          ],
+          "explanation": "Wh- + are + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q04",
           "order": 4,
-          "prompt": "the Daily Mirror / print / in Manchester [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the Daily Mirror / print / in Manchester",
+          "acceptedAnswers": [
+            "Is the Daily Mirror printed in Manchester?"
+          ],
+          "explanation": "yes/no question: Is + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q05",
           "order": 5,
-          "prompt": "this magazine / sell / in Spain [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "this magazine / sell / in Spain",
+          "acceptedAnswers": [
+            "Is this magazine sold in Spain?"
+          ],
+          "explanation": "yes/no question"
         },
         {
           "id": "ws-23-sec-o-q06",
           "order": 6,
-          "prompt": "Why / newspapers / send abroad [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Why / newspapers / send abroad",
+          "acceptedAnswers": [
+            "Why are newspapers sent abroad?"
+          ],
+          "explanation": "Wh- + are + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q07",
           "order": 7,
-          "prompt": "When / the newspaper / print [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When / the newspaper / print",
+          "acceptedAnswers": [
+            "When is the newspaper printed?"
+          ],
+          "explanation": "Wh- + is + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q08",
           "order": 8,
-          "prompt": "How / newspapers / deliver [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How / newspapers / deliver",
+          "acceptedAnswers": [
+            "How are newspapers delivered?"
+          ],
+          "explanation": "Wh- + are + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q09",
           "order": 9,
-          "prompt": "Where / stories / write [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where / stories / write",
+          "acceptedAnswers": [
+            "Where are the stories written?",
+            "Where are stories written?"
+          ],
+          "explanation": "Wh- + are + subject + V3?"
         },
         {
           "id": "ws-23-sec-o-q10",
           "order": 10,
-          "prompt": "a lot of paper / use / for each issue [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "a lot of paper / use / for each issue",
+          "acceptedAnswers": [
+            "Is a lot of paper used for each issue?"
+          ],
+          "explanation": "uncountable subject: Is ...?"
         }
       ]
     },
     {
       "id": "ws-23-sec-p",
       "sectionKey": "P",
-      "instruction": "Write sentences in the PASSIVE.Use these phrases:",
-      "type": "inline_gap_fill",
+      "instruction": "Write sentences in the PASSIVE. Use these phrases: (Example: olives / grow → Olives are grown in Mediterranean countries.)",
+      "type": "sentence_building",
+      "wordBank": [
+        "in the sea",
+        "at school",
+        "in the kitchen",
+        "at the post office",
+        "in Australia",
+        "in Italy",
+        "at weddings",
+        "in Mediterranean countries",
+        "in the cinema"
+      ],
       "questions": [
         {
           "id": "ws-23-sec-p-q01",
           "order": 1,
-          "prompt": "films / show [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "films / show",
+          "acceptedAnswers": [
+            "Films are shown in the cinema."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-p-q02",
           "order": 2,
-          "prompt": "meals / cook [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "meals / cook",
+          "acceptedAnswers": [
+            "Meals are cooked in the kitchen."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-p-q03",
           "order": 3,
-          "prompt": "stamps / sell [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "stamps / sell",
+          "acceptedAnswers": [
+            "Stamps are sold at the post office."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-p-q04",
           "order": 4,
-          "prompt": "pandas / find [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "pandas / find",
+          "acceptedAnswers": [
+            "Pandas are found in Australia.",
+            "Pandas are found in China."
+          ],
+          "explanation": "present simple passive (only remaining phrase: in Australia)"
         },
         {
           "id": "ws-23-sec-p-q05",
           "order": 5,
-          "prompt": "Italian / speak [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Italian / speak",
+          "acceptedAnswers": [
+            "Italian is spoken in Italy."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-p-q06",
           "order": 6,
-          "prompt": "confetti / throw [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "confetti / throw",
+          "acceptedAnswers": [
+            "Confetti is thrown at weddings."
+          ],
+          "explanation": "uncountable subject: is + V3"
         },
         {
           "id": "ws-23-sec-p-q07",
           "order": 7,
-          "prompt": "lessons / teach [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "lessons / teach",
+          "acceptedAnswers": [
+            "Lessons are taught at school."
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-23-sec-p-q08",
           "order": 8,
-          "prompt": "sharks / find [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "sharks / find",
+          "acceptedAnswers": [
+            "Sharks are found in the sea."
+          ],
+          "explanation": "present simple passive"
         }
       ]
     }

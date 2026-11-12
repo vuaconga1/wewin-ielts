@@ -12,800 +12,173 @@
     {
       "id": "ws-10-sec-a",
       "sectionKey": "A",
-      "instruction": "Write a suitable sentence using the PRESENT PERFECT TENSE :",
-      "type": "inline_gap_fill",
+      "instruction": "Write a suitable sentence using the PRESENT PERFECT TENSE: (Example: Ann’s hair was dirty. Now it’s clean. (wash) → Ann has washed her hair.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-10-sec-a-q01",
-          "order": 1,
-          "prompt": "Ann’s hair was dirty. Now it’s clean. (wash) [gap] Ann has washed her hair [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q02",
-          "order": 2,
-          "prompt": "Tom was 80 kg. Now he’s 70. (lose weight) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q03",
-          "order": 3,
-          "prompt": "Bill played football yesterday. Now he can’t walk; his leg is in plaster. (break) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q04",
-          "order": 4,
-          "prompt": "My sister is looking for her pen. (lose) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q05",
-          "order": 5,
-          "prompt": "Mary is on holiday in France. (go) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q06",
-          "order": 6,
-          "prompt": "Mr. Hill was in Canada last week. He’s back in London now. (be) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q07",
-          "order": 7,
-          "prompt": "Look! Mrs. Smith has got a lot of packages. (buy) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q08",
-          "order": 8,
-          "prompt": "I can’t eat anything now. (eat too much) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q09",
-          "order": 9,
-          "prompt": "Mrs. Jenkins is very tired. (clean / house) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-a-q10",
-          "order": 10,
-          "prompt": "Tony needs a holiday. (work / hard / this year) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-a-q02", "order": 2, "prompt": "Tom was 80 kg. Now he’s 70. (lose weight)", "acceptedAnswers": ["Tom has lost weight.","He has lost weight.","He's lost weight.","Tom has lost 10 kg."], "explanation": "present perfect: past action with a result now" },
+        { "id": "ws-10-sec-a-q03", "order": 3, "prompt": "Bill played football yesterday. Now he can’t walk; his leg is in plaster. (break)", "acceptedAnswers": ["Bill has broken his leg.","He has broken his leg.","He's broken his leg."], "explanation": "present perfect: has + past participle (broken)" },
+        { "id": "ws-10-sec-a-q04", "order": 4, "prompt": "My sister is looking for her pen. (lose)", "acceptedAnswers": ["My sister has lost her pen.","She has lost her pen.","She's lost her pen."], "explanation": "present perfect: has + past participle (lost)" },
+        { "id": "ws-10-sec-a-q05", "order": 5, "prompt": "Mary is on holiday in France. (go)", "acceptedAnswers": ["Mary has gone to France.","She has gone to France.","She's gone to France.","Mary has gone on holiday to France.","She has gone on holiday to France.","She's gone on holiday to France."], "explanation": "has gone = went and is still there" },
+        { "id": "ws-10-sec-a-q06", "order": 6, "prompt": "Mr. Hill was in Canada last week. He’s back in London now. (be)", "acceptedAnswers": ["Mr. Hill has been to Canada.","He has been to Canada.","He's been to Canada."], "explanation": "has been to = went and came back" },
+        { "id": "ws-10-sec-a-q07", "order": 7, "prompt": "Look! Mrs. Smith has got a lot of packages. (buy)", "acceptedAnswers": ["Mrs. Smith has bought a lot of packages.","She has bought a lot of packages.","She's bought a lot of packages.","Mrs. Smith has bought a lot of things.","She has bought a lot of things.","She's bought a lot of things."], "explanation": "present perfect: has + past participle (bought)" },
+        { "id": "ws-10-sec-a-q08", "order": 8, "prompt": "I can’t eat anything now. (eat too much)", "acceptedAnswers": ["I have eaten too much.","I've eaten too much."], "explanation": "present perfect: have + past participle (eaten)" },
+        { "id": "ws-10-sec-a-q09", "order": 9, "prompt": "Mrs. Jenkins is very tired. (clean / house)", "acceptedAnswers": ["Mrs. Jenkins has cleaned the house.","She has cleaned the house.","She's cleaned the house.","Mrs. Jenkins has cleaned her house.","She has cleaned her house.","She's cleaned her house."], "explanation": "present perfect: past action with a result now" },
+        { "id": "ws-10-sec-a-q10", "order": 10, "prompt": "Tony needs a holiday. (work / hard / this year)", "acceptedAnswers": ["Tony has worked hard this year.","He has worked hard this year.","He's worked hard this year.","Tony has worked very hard this year.","He has worked very hard this year.","He's worked very hard this year."], "explanation": "present perfect with unfinished time: this year" }
       ]
     },
     {
       "id": "ws-10-sec-b",
       "sectionKey": "B",
-      "instruction": "Use PRESENT PERFECT TENSE after BECAUSE:",
-      "type": "inline_gap_fill",
+      "instruction": "Use the PRESENT PERFECT TENSE after BECAUSE: (Example: She can’t go to the party. (catch a cold) → She can’t go to the party because she has caught a cold.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-10-sec-b-q01",
-          "order": 1,
-          "prompt": "He can’t walk very fast. (hurt / leg) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q02",
-          "order": 2,
-          "prompt": "I can’t get in. (lose / key) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q03",
-          "order": 3,
-          "prompt": "I know this story very well. (see the film) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q04",
-          "order": 4,
-          "prompt": "I can’t post the letter. (not put / stamp / on it) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q05",
-          "order": 5,
-          "prompt": "He can’t stand up. (eat too much) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q06",
-          "order": 6,
-          "prompt": "They can’t go on holiday. (not save / money) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q07",
-          "order": 7,
-          "prompt": "I know him. (meet him before) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q08",
-          "order": 8,
-          "prompt": "We don’t know how he is. (not hear from him) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q09",
-          "order": 9,
-          "prompt": "He won’t take a cigarette. (give up smoking) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-b-q10",
-          "order": 10,
-          "prompt": "She can’t get in. (he / lock the door) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-b-q01", "order": 1, "prompt": "He can’t walk very fast. (hurt / leg)", "acceptedAnswers": ["He can't walk very fast because he has hurt his leg.","He can't walk very fast because he's hurt his leg."], "explanation": "because + present perfect (result now)" },
+        { "id": "ws-10-sec-b-q02", "order": 2, "prompt": "I can’t get in. (lose / key)", "acceptedAnswers": ["I can't get in because I have lost my key.","I can't get in because I've lost my key.","I can't get in because I have lost my keys.","I can't get in because I've lost my keys."], "explanation": "because + present perfect (result now)" },
+        { "id": "ws-10-sec-b-q03", "order": 3, "prompt": "I know this story very well. (see the film)", "acceptedAnswers": ["I know this story very well because I have seen the film.","I know this story very well because I've seen the film."], "explanation": "because + present perfect (experience)" },
+        { "id": "ws-10-sec-b-q04", "order": 4, "prompt": "I can’t post the letter. (not put / stamp / on it)", "acceptedAnswers": ["I can't post the letter because I haven't put a stamp on it."], "explanation": "negative: haven't + past participle" },
+        { "id": "ws-10-sec-b-q05", "order": 5, "prompt": "He can’t stand up. (eat too much)", "acceptedAnswers": ["He can't stand up because he has eaten too much.","He can't stand up because he's eaten too much."], "explanation": "because + present perfect (result now)" },
+        { "id": "ws-10-sec-b-q06", "order": 6, "prompt": "They can’t go on holiday. (not save / money)", "acceptedAnswers": ["They can't go on holiday because they haven't saved any money.","They can't go on holiday because they haven't saved money.","They can't go on holiday because they haven't saved enough money."], "explanation": "negative: haven't + past participle" },
+        { "id": "ws-10-sec-b-q07", "order": 7, "prompt": "I know him. (meet him before)", "acceptedAnswers": ["I know him because I have met him before.","I know him because I've met him before."], "explanation": "because + present perfect (experience)" },
+        { "id": "ws-10-sec-b-q08", "order": 8, "prompt": "We don’t know how he is. (not hear from him)", "acceptedAnswers": ["We don't know how he is because we haven't heard from him."], "explanation": "negative: haven't + past participle" },
+        { "id": "ws-10-sec-b-q09", "order": 9, "prompt": "He won’t take a cigarette. (give up smoking)", "acceptedAnswers": ["He won't take a cigarette because he has given up smoking.","He won't take a cigarette because he's given up smoking."], "explanation": "because + present perfect (result now)" },
+        { "id": "ws-10-sec-b-q10", "order": 10, "prompt": "She can’t get in. (he / lock the door)", "acceptedAnswers": ["She can't get in because he has locked the door.","She can't get in because he's locked the door."], "explanation": "because + present perfect (result now)" }
       ]
     },
     {
       "id": "ws-10-sec-c",
       "sectionKey": "C",
-      "instruction": "Follow the example and do the same using ALREADY:",
-      "type": "inline_gap_fill",
+      "instruction": "Follow the example and do the same using ALREADY: (Example: Bring the milk in, please. → I have already brought it in.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-10-sec-c-q01",
-          "order": 1,
-          "prompt": "You must find the tickets soon. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q02",
-          "order": 2,
-          "prompt": "Turn the radio down, please. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q03",
-          "order": 3,
-          "prompt": "Tidy your room. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q04",
-          "order": 4,
-          "prompt": "Could you post the letters, please? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q05",
-          "order": 5,
-          "prompt": "Why don’t you see a doctor? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q06",
-          "order": 6,
-          "prompt": "You have a bad cough. I think you should stop smoking. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q07",
-          "order": 7,
-          "prompt": "Why don’t you clean your shoes? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q08",
-          "order": 8,
-          "prompt": "Brush your teeth, will you? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q09",
-          "order": 9,
-          "prompt": "We have guests today. Shall we make a cake? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-c-q10",
-          "order": 10,
-          "prompt": "We should invite Mary to the party [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-c-q01", "order": 1, "prompt": "You must find the tickets soon.", "acceptedAnswers": ["I have already found them.","I've already found them."], "explanation": "already goes between have and the past participle" },
+        { "id": "ws-10-sec-c-q02", "order": 2, "prompt": "Turn the radio down, please.", "acceptedAnswers": ["I have already turned it down.","I've already turned it down."], "explanation": "have already + past participle" },
+        { "id": "ws-10-sec-c-q03", "order": 3, "prompt": "Tidy your room.", "acceptedAnswers": ["I have already tidied it.","I've already tidied it."], "explanation": "have already + past participle" },
+        { "id": "ws-10-sec-c-q04", "order": 4, "prompt": "Could you post the letters, please?", "acceptedAnswers": ["I have already posted them.","I've already posted them."], "explanation": "have already + past participle" },
+        { "id": "ws-10-sec-c-q05", "order": 5, "prompt": "Why don’t you see a doctor?", "acceptedAnswers": ["I have already seen one.","I've already seen one.","I have already seen a doctor.","I've already seen a doctor."], "explanation": "have already + past participle (seen)" },
+        { "id": "ws-10-sec-c-q06", "order": 6, "prompt": "You have a bad cough. I think you should stop smoking.", "acceptedAnswers": ["I have already stopped.","I've already stopped.","I have already stopped smoking.","I've already stopped smoking."], "explanation": "have already + past participle" },
+        { "id": "ws-10-sec-c-q07", "order": 7, "prompt": "Why don’t you clean your shoes?", "acceptedAnswers": ["I have already cleaned them.","I've already cleaned them."], "explanation": "have already + past participle" },
+        { "id": "ws-10-sec-c-q08", "order": 8, "prompt": "Brush your teeth, will you?", "acceptedAnswers": ["I have already brushed them.","I've already brushed them."], "explanation": "have already + past participle" },
+        { "id": "ws-10-sec-c-q09", "order": 9, "prompt": "We have guests today. Shall we make a cake?", "acceptedAnswers": ["I have already made one.","I've already made one.","We have already made one.","We've already made one.","I have already made a cake.","I've already made a cake.","We have already made a cake.","We've already made a cake."], "explanation": "have already + past participle (made)" },
+        { "id": "ws-10-sec-c-q10", "order": 10, "prompt": "We should invite Mary to the party.", "acceptedAnswers": ["I have already invited her.","I've already invited her.","We have already invited her.","We've already invited her."], "explanation": "have already + past participle" }
       ]
     },
     {
       "id": "ws-10-sec-d",
       "sectionKey": "D",
-      "instruction": "Follow the example and do the same using YET:",
-      "type": "inline_gap_fill",
+      "instruction": "Follow the example and do the same using YET: (Example: She has been in the shop. (buy anything) → She has been in the shop but she hasn’t bought anything yet.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-10-sec-d-q01",
-          "order": 1,
-          "prompt": "I’ve written to them three times. (not reply) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q02",
-          "order": 2,
-          "prompt": "I’ve asked you again and again. (not do it) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q03",
-          "order": 3,
-          "prompt": "I lent him $10 last month. (not give it back) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q04",
-          "order": 4,
-          "prompt": "He lost his pen a week ago. (not find it) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q05",
-          "order": 5,
-          "prompt": "He borrowed my book last year. (not give it back) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q06",
-          "order": 6,
-          "prompt": "She went to New York six months ago. (not return it) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q07",
-          "order": 7,
-          "prompt": "She gave me $2 a week ago. (not return it) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q08",
-          "order": 8,
-          "prompt": "I finished reading my library books a long time ago. (not change them) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q09",
-          "order": 9,
-          "prompt": "She went to the bus-stop half an hour ago. (the bus / not come) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q10",
-          "order": 10,
-          "prompt": "He’s still studying that lesson. (not learn it) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
-      ]
-    },
-    {
-      "id": "ws-10-sec-d",
-      "sectionKey": "D",
-      "instruction": "Fill in the blanks with ALREADY or YET:",
-      "type": "inline_gap_fill",
-      "questions": [
-        {
-          "id": "ws-10-sec-d-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q08",
-          "order": 8,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q09",
-          "order": 9,
-          "prompt": " [gap] He hasn’t called us [gap] They have [gap] sent the letter. John has [gap] bought the tickets for the football match. We have [gap] been to Mexico three times. You haven’t visited Tokyo [gap] Has John bought a new car [gap] ? The plane has [gap] left. Has she done it [gap] ? No, not [gap] A: Haven’t they arrived [gap] ? B: Oh, yes. They have [gap] arrived.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q10",
-          "order": 10,
-          "prompt": "Hurry up! The class has [gap] started.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q11",
-          "order": 11,
-          "prompt": "Be careful! They have [gap] painted the door.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-d-q12",
-          "order": 12,
-          "prompt": "Haven’t you read the book [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-d-q01", "order": 1, "prompt": "I’ve written to them three times. (not reply)", "acceptedAnswers": ["I have written to them three times but they haven't replied yet.","I've written to them three times but they haven't replied yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q02", "order": 2, "prompt": "I’ve asked you again and again. (not do it)", "acceptedAnswers": ["I have asked you again and again but you haven't done it yet.","I've asked you again and again but you haven't done it yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q03", "order": 3, "prompt": "I lent him $10 last month. (not give it back)", "acceptedAnswers": ["I lent him $10 last month but he hasn't given it back yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q04", "order": 4, "prompt": "He lost his pen a week ago. (not find it)", "acceptedAnswers": ["He lost his pen a week ago but he hasn't found it yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q05", "order": 5, "prompt": "He borrowed my book last year. (not give it back)", "acceptedAnswers": ["He borrowed my book last year but he hasn't given it back yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q06", "order": 6, "prompt": "She went to New York six months ago. (not return)", "acceptedAnswers": ["She went to New York six months ago but she hasn't returned yet.","She went to New York six months ago but she hasn't come back yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q07", "order": 7, "prompt": "She gave me $2 a week ago. (not return it)", "acceptedAnswers": ["She gave me $2 a week ago but I haven't returned it yet."], "explanation": "the money must be returned by me: I haven't" },
+        { "id": "ws-10-sec-d-q08", "order": 8, "prompt": "I finished reading my library books a long time ago. (not change them)", "acceptedAnswers": ["I finished reading my library books a long time ago but I haven't changed them yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q09", "order": 9, "prompt": "She went to the bus-stop half an hour ago. (the bus / not come)", "acceptedAnswers": ["She went to the bus-stop half an hour ago but the bus hasn't come yet.","She went to the bus stop half an hour ago but the bus hasn't come yet."], "explanation": "negative present perfect + yet (at the end)" },
+        { "id": "ws-10-sec-d-q10", "order": 10, "prompt": "He’s still studying that lesson. (not learn it)", "acceptedAnswers": ["He's still studying that lesson but he hasn't learnt it yet.","He's still studying that lesson but he hasn't learned it yet."], "explanation": "negative present perfect + yet (at the end)" }
       ]
     },
     {
       "id": "ws-10-sec-e",
       "sectionKey": "E",
-      "instruction": "Follow the example and do the same using JUST:",
+      "instruction": "Fill in the blanks with ALREADY or YET:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-10-sec-e-q01",
-          "order": 1,
-          "prompt": "She / leave the room [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q02",
-          "order": 2,
-          "prompt": "they / watch the news [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q03",
-          "order": 3,
-          "prompt": "I / finish homework [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q04",
-          "order": 4,
-          "prompt": "he / put on the jacket [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q05",
-          "order": 5,
-          "prompt": "she / catch a fish [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q06",
-          "order": 6,
-          "prompt": "he / call a taxi [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q07",
-          "order": 7,
-          "prompt": "you / write a letter [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q08",
-          "order": 8,
-          "prompt": "the girl / burn the cake [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q09",
-          "order": 9,
-          "prompt": "the teacher / walk out [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q10",
-          "order": 10,
-          "prompt": "the dog / see the cat [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q11",
-          "order": 11,
-          "prompt": "Jane / turn the TV off [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-e-q12",
-          "order": 12,
-          "prompt": "the boys / eat dinner [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-e-q01", "order": 1, "prompt": "He hasn’t called us [gap].", "acceptedAnswers": ["yet"], "explanation": "yet: negatives, at the end" },
+        { "id": "ws-10-sec-e-q02", "order": 2, "prompt": "They have [gap] sent the letter.", "acceptedAnswers": ["already"], "explanation": "already: positive, between have and participle" },
+        { "id": "ws-10-sec-e-q03", "order": 3, "prompt": "John has [gap] bought the tickets for the football match.", "acceptedAnswers": ["already"], "explanation": "already: positive, between have and participle" },
+        { "id": "ws-10-sec-e-q04", "order": 4, "prompt": "We have [gap] been to Mexico three times.", "acceptedAnswers": ["already"], "explanation": "already: positive, between have and participle" },
+        { "id": "ws-10-sec-e-q05", "order": 5, "prompt": "You haven’t visited Tokyo [gap].", "acceptedAnswers": ["yet"], "explanation": "yet: negatives, at the end" },
+        { "id": "ws-10-sec-e-q06", "order": 6, "prompt": "Has John bought a new car [gap]?", "acceptedAnswers": ["yet"], "explanation": "yet: questions, at the end" },
+        { "id": "ws-10-sec-e-q07", "order": 7, "prompt": "The plane has [gap] left.", "acceptedAnswers": ["already"], "explanation": "already: positive, between has and participle" },
+        { "id": "ws-10-sec-e-q08", "order": 8, "prompt": "Has she done it [gap]? No, not [gap].", "acceptedAnswers": ["yet / yet"], "explanation": "yet in questions; short answer: not yet" },
+        { "id": "ws-10-sec-e-q09", "order": 9, "prompt": "A: Haven’t they arrived [gap]? B: Oh, yes. They have [gap] arrived.", "acceptedAnswers": ["yet / already"], "explanation": "yet in questions; already in positive sentences" },
+        { "id": "ws-10-sec-e-q10", "order": 10, "prompt": "Hurry up! The class has [gap] started.", "acceptedAnswers": ["already"], "explanation": "already: positive, between has and participle" },
+        { "id": "ws-10-sec-e-q11", "order": 11, "prompt": "Be careful! They have [gap] painted the door.", "acceptedAnswers": ["already"], "explanation": "already: positive, between have and participle" },
+        { "id": "ws-10-sec-e-q12", "order": 12, "prompt": "Haven’t you read the book [gap]?", "acceptedAnswers": ["yet"], "explanation": "yet: questions, at the end" }
       ]
     },
     {
       "id": "ws-10-sec-f",
       "sectionKey": "F",
-      "instruction": "Put the verbs in the correct tense. Use the SIMPLE PAST or the PRESENT PERFECT:",
-      "type": "verb_conjugation",
+      "instruction": "Follow the example and do the same using JUST. Write the question and the answer: (Example: he / go out → What has he just done? He has just gone out.)",
+      "type": "question_formation",
       "questions": [
-        {
-          "id": "ws-10-sec-f-q01",
-          "order": 1,
-          "prompt": "[gap] Tim [gap] (finish) his work yet?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q02",
-          "order": 2,
-          "prompt": "[gap] he [gap] (finish) it ywsterday?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q03",
-          "order": 3,
-          "prompt": "They [gap] (just / go) out.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q04",
-          "order": 4,
-          "prompt": "They [gap] (go) out a minute ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q05",
-          "order": 5,
-          "prompt": "[gap] Ann [gap] (study) yesterday afternoon?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q06",
-          "order": 6,
-          "prompt": "[gap] you [gap] (send) the letters yet?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q07",
-          "order": 7,
-          "prompt": "[gap] she [gap] (call) him a week ago?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q08",
-          "order": 8,
-          "prompt": "They [gap] (not / see) the film yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q09",
-          "order": 9,
-          "prompt": "The train [gap] (just / arrive).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q10",
-          "order": 10,
-          "prompt": "[gap] you [gap] (ever / be) in a TV studio?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q11",
-          "order": 11,
-          "prompt": "[gap] you and Tom [gap] (enjoy) the party last night?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q12",
-          "order": 12,
-          "prompt": "[gap] you [gap] (not / finish) school last year?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q13",
-          "order": 13,
-          "prompt": "I [gap] (lose) my dictionary. I can’t find it anywhere.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q14",
-          "order": 14,
-          "prompt": "His hair looks short. He [gap] (have) a haircut.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q15",
-          "order": 15,
-          "prompt": "When [gap] (he / give up) smoking?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q16",
-          "order": 16,
-          "prompt": "Jane [gap] (buy) her car two weeks ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q17",
-          "order": 17,
-          "prompt": "My bicycle isn’t here. Somebody [gap] (take) it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q18",
-          "order": 18,
-          "prompt": "Why [gap] (Jim / not want) to play tennis last Friday?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q19",
-          "order": 19,
-          "prompt": "The car looks clean [gap] you [gap] (wash) it?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-f-q20",
-          "order": 20,
-          "prompt": "When we were on holiday, the weather [gap] (be) terrible.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-f-q01", "order": 1, "prompt": "She / leave the room", "acceptedAnswers": ["What has she just done? She has just left the room.","What has she just done? She's just left the room."], "explanation": "has just + past participle (left)" },
+        { "id": "ws-10-sec-f-q02", "order": 2, "prompt": "they / watch the news", "acceptedAnswers": ["What have they just done? They have just watched the news.","What have they just done? They've just watched the news."], "explanation": "have just + past participle" },
+        { "id": "ws-10-sec-f-q03", "order": 3, "prompt": "I / finish homework", "acceptedAnswers": ["What have you just done? I have just finished my homework.","What have you just done? I've just finished my homework.","What have I just done? I have just finished my homework.","What have I just done? I've just finished my homework."], "explanation": "have just + past participle" },
+        { "id": "ws-10-sec-f-q04", "order": 4, "prompt": "he / put on the jacket", "acceptedAnswers": ["What has he just done? He has just put on the jacket.","What has he just done? He's just put on the jacket.","What has he just done? He has just put the jacket on.","What has he just done? He's just put the jacket on."], "explanation": "has just + past participle (put)" },
+        { "id": "ws-10-sec-f-q05", "order": 5, "prompt": "she / catch a fish", "acceptedAnswers": ["What has she just done? She has just caught a fish.","What has she just done? She's just caught a fish."], "explanation": "has just + past participle (caught)" },
+        { "id": "ws-10-sec-f-q06", "order": 6, "prompt": "he / call a taxi", "acceptedAnswers": ["What has he just done? He has just called a taxi.","What has he just done? He's just called a taxi."], "explanation": "has just + past participle" },
+        { "id": "ws-10-sec-f-q07", "order": 7, "prompt": "you / write a letter", "acceptedAnswers": ["What have you just done? I have just written a letter.","What have you just done? I've just written a letter.","What have you just done? You have just written a letter.","What have you just done? You've just written a letter."], "explanation": "have just + past participle (written)" },
+        { "id": "ws-10-sec-f-q08", "order": 8, "prompt": "the girl / burn the cake", "acceptedAnswers": ["What has the girl just done? She has just burnt the cake.","What has the girl just done? She's just burnt the cake.","What has the girl just done? She has just burned the cake.","What has the girl just done? She's just burned the cake.","What has the girl just done? The girl has just burnt the cake.","What has the girl just done? The girl has just burned the cake."], "explanation": "has just + past participle (burnt/burned)" },
+        { "id": "ws-10-sec-f-q09", "order": 9, "prompt": "the teacher / walk out", "acceptedAnswers": ["What has the teacher just done? He has just walked out.","What has the teacher just done? He's just walked out.","What has the teacher just done? She has just walked out.","What has the teacher just done? She's just walked out.","What has the teacher just done? The teacher has just walked out."], "explanation": "has just + past participle" },
+        { "id": "ws-10-sec-f-q10", "order": 10, "prompt": "the dog / see the cat", "acceptedAnswers": ["What has the dog just done? It has just seen the cat.","What has the dog just done? It's just seen the cat.","What has the dog just done? The dog has just seen the cat."], "explanation": "has just + past participle (seen)" },
+        { "id": "ws-10-sec-f-q11", "order": 11, "prompt": "Jane / turn the TV off", "acceptedAnswers": ["What has Jane just done? She has just turned the TV off.","What has Jane just done? She's just turned the TV off.","What has Jane just done? She has just turned off the TV.","What has Jane just done? She's just turned off the TV.","What has Jane just done? Jane has just turned the TV off."], "explanation": "has just + past participle" },
+        { "id": "ws-10-sec-f-q12", "order": 12, "prompt": "the boys / eat dinner", "acceptedAnswers": ["What have the boys just done? They have just eaten dinner.","What have the boys just done? They've just eaten dinner.","What have the boys just done? The boys have just eaten dinner.","What have the boys just done? They have just eaten their dinner.","What have the boys just done? They've just eaten their dinner."], "explanation": "have just + past participle (eaten)" }
       ]
     },
     {
       "id": "ws-10-sec-g",
       "sectionKey": "G",
-      "instruction": "Ask questions with HOW LONG:",
-      "type": "question_formation",
+      "instruction": "Put the verbs in the correct tense. Use the SIMPLE PAST or the PRESENT PERFECT:",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-10-sec-g-q01",
-          "order": 1,
-          "prompt": "I know Bob.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q02",
-          "order": 2,
-          "prompt": "Sue and Alan are married.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q03",
-          "order": 3,
-          "prompt": "George is unemployed.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q04",
-          "order": 4,
-          "prompt": "Those books are here.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q05",
-          "order": 5,
-          "prompt": "Mary is at the airport.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q06",
-          "order": 6,
-          "prompt": "My sister is ill.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q07",
-          "order": 7,
-          "prompt": "She has got a bad cold.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q08",
-          "order": 8,
-          "prompt": "Jan has long hair.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q09",
-          "order": 9,
-          "prompt": "I have a yacht.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q10",
-          "order": 10,
-          "prompt": "They are in the restaurant.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q11",
-          "order": 11,
-          "prompt": "My parents are in London.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-10-sec-g-q12",
-          "order": 12,
-          "prompt": "The cat is under the table.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-10-sec-g-q01", "order": 1, "prompt": "[gap] Tim [gap] (finish) his work yet?", "acceptedAnswers": ["Has / finished"], "explanation": "yet → present perfect question" },
+        { "id": "ws-10-sec-g-q02", "order": 2, "prompt": "[gap] he [gap] (finish) it yesterday?", "acceptedAnswers": ["Did / finish"], "explanation": "yesterday → simple past question" },
+        { "id": "ws-10-sec-g-q03", "order": 3, "prompt": "They [gap] (just / go) out.", "acceptedAnswers": ["have just gone"], "explanation": "just → present perfect" },
+        { "id": "ws-10-sec-g-q04", "order": 4, "prompt": "They [gap] (go) out a minute ago.", "acceptedAnswers": ["went"], "explanation": "ago → simple past" },
+        { "id": "ws-10-sec-g-q05", "order": 5, "prompt": "[gap] Ann [gap] (study) yesterday afternoon?", "acceptedAnswers": ["Did / study"], "explanation": "yesterday afternoon → simple past" },
+        { "id": "ws-10-sec-g-q06", "order": 6, "prompt": "[gap] you [gap] (send) the letters yet?", "acceptedAnswers": ["Have / sent"], "explanation": "yet → present perfect question" },
+        { "id": "ws-10-sec-g-q07", "order": 7, "prompt": "[gap] she [gap] (call) him a week ago?", "acceptedAnswers": ["Did / call"], "explanation": "ago → simple past" },
+        { "id": "ws-10-sec-g-q08", "order": 8, "prompt": "They [gap] (not / see) the film yet.", "acceptedAnswers": ["haven't seen"], "explanation": "yet → present perfect negative" },
+        { "id": "ws-10-sec-g-q09", "order": 9, "prompt": "The train [gap] (just / arrive).", "acceptedAnswers": ["has just arrived"], "explanation": "just → present perfect" },
+        { "id": "ws-10-sec-g-q10", "order": 10, "prompt": "[gap] you [gap] (ever / be) in a TV studio?", "acceptedAnswers": ["Have / ever been"], "explanation": "ever → present perfect (experience)" },
+        { "id": "ws-10-sec-g-q11", "order": 11, "prompt": "[gap] you and Tom [gap] (enjoy) the party last night?", "acceptedAnswers": ["Did / enjoy"], "explanation": "last night → simple past" },
+        { "id": "ws-10-sec-g-q12", "order": 12, "prompt": "[gap] you [gap] (not / finish) school last year?", "acceptedAnswers": ["Didn't / finish"], "explanation": "last year → simple past" },
+        { "id": "ws-10-sec-g-q13", "order": 13, "prompt": "I [gap] (lose) my dictionary. I can’t find it anywhere.", "acceptedAnswers": ["have lost"], "explanation": "past action with a result now → present perfect" },
+        { "id": "ws-10-sec-g-q14", "order": 14, "prompt": "His hair looks short. He [gap] (have) a haircut.", "acceptedAnswers": ["has had"], "explanation": "result now → present perfect" },
+        { "id": "ws-10-sec-g-q15", "order": 15, "prompt": "When [gap] (he / give up) smoking?", "acceptedAnswers": ["did he give up"], "explanation": "when-questions → simple past" },
+        { "id": "ws-10-sec-g-q16", "order": 16, "prompt": "Jane [gap] (buy) her car two weeks ago.", "acceptedAnswers": ["bought"], "explanation": "ago → simple past" },
+        { "id": "ws-10-sec-g-q17", "order": 17, "prompt": "My bicycle isn’t here. Somebody [gap] (take) it.", "acceptedAnswers": ["has taken"], "explanation": "result now → present perfect" },
+        { "id": "ws-10-sec-g-q18", "order": 18, "prompt": "Why [gap] (Jim / not want) to play tennis last Friday?", "acceptedAnswers": ["didn't Jim want","did Jim not want"], "explanation": "last Friday → simple past" },
+        { "id": "ws-10-sec-g-q19", "order": 19, "prompt": "The car looks clean. [gap] you [gap] (wash) it?", "acceptedAnswers": ["Have / washed"], "explanation": "result now → present perfect" },
+        { "id": "ws-10-sec-g-q20", "order": 20, "prompt": "When we were on holiday, the weather [gap] (be) terrible.", "acceptedAnswers": ["was"], "explanation": "finished past time → simple past" }
       ]
     },
     {
       "id": "ws-10-sec-h",
       "sectionKey": "H",
-      "instruction": "Rewrite the following sentences twice, using SINCE and FOR:",
+      "instruction": "Ask questions with HOW LONG: (Example: I am married. → How long have you been married?)",
+      "type": "question_formation",
+      "questions": [
+        { "id": "ws-10-sec-h-q01", "order": 1, "prompt": "I know Bob.", "acceptedAnswers": ["How long have you known Bob?"], "explanation": "how long + present perfect (known)" },
+        { "id": "ws-10-sec-h-q02", "order": 2, "prompt": "Sue and Alan are married.", "acceptedAnswers": ["How long have Sue and Alan been married?"], "explanation": "be → have/has been" },
+        { "id": "ws-10-sec-h-q03", "order": 3, "prompt": "George is unemployed.", "acceptedAnswers": ["How long has George been unemployed?"], "explanation": "be → has been" },
+        { "id": "ws-10-sec-h-q04", "order": 4, "prompt": "Those books are here.", "acceptedAnswers": ["How long have those books been here?"], "explanation": "be → have been" },
+        { "id": "ws-10-sec-h-q05", "order": 5, "prompt": "Mary is at the airport.", "acceptedAnswers": ["How long has Mary been at the airport?"], "explanation": "be → has been" },
+        { "id": "ws-10-sec-h-q06", "order": 6, "prompt": "My sister is ill.", "acceptedAnswers": ["How long has your sister been ill?"], "explanation": "my → your; be → has been" },
+        { "id": "ws-10-sec-h-q07", "order": 7, "prompt": "She has got a bad cold.", "acceptedAnswers": ["How long has she had a bad cold?"], "explanation": "have got → has had" },
+        { "id": "ws-10-sec-h-q08", "order": 8, "prompt": "Jan has long hair.", "acceptedAnswers": ["How long has Jan had long hair?"], "explanation": "have → has had" },
+        { "id": "ws-10-sec-h-q09", "order": 9, "prompt": "I have a yacht.", "acceptedAnswers": ["How long have you had a yacht?"], "explanation": "have → have had" },
+        { "id": "ws-10-sec-h-q10", "order": 10, "prompt": "They are in the restaurant.", "acceptedAnswers": ["How long have they been in the restaurant?"], "explanation": "be → have been" },
+        { "id": "ws-10-sec-h-q11", "order": 11, "prompt": "My parents are in London.", "acceptedAnswers": ["How long have your parents been in London?"], "explanation": "my → your; be → have been" },
+        { "id": "ws-10-sec-h-q12", "order": 12, "prompt": "The cat is under the table.", "acceptedAnswers": ["How long has the cat been under the table?"], "explanation": "be → has been" }
+      ]
+    },
+    {
+      "id": "ws-10-sec-i",
+      "sectionKey": "I",
+      "instruction": "Rewrite the following sentences twice, using SINCE and FOR. Write both sentences: (Example: I haven’t seen you. (Christmas / 3 days) → I haven’t seen you since Christmas. I haven’t seen you for 3 days.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-10-sec-h-q01",
-          "order": 1,
-          "prompt": "We’ve been here. (an hour / 4 o’clock)",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………………………",
-            "b) …………………………………………………………………………"
-          ]
-        },
-        {
-          "id": "ws-10-sec-h-q02",
-          "order": 2,
-          "prompt": "She hasn’t spoken to me. (2 weeks / last week)",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………………………",
-            "b) …………………………………………………………………………"
-          ]
-        },
-        {
-          "id": "ws-10-sec-h-q03",
-          "order": 3,
-          "prompt": "They’ve lived in this street. (1970 / a long time)",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………………………",
-            "b) …………………………………………………………………………"
-          ]
-        },
-        {
-          "id": "ws-10-sec-h-q04",
-          "order": 4,
-          "prompt": "I haven’t had time to do it. (last Monday / a few days)",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………………………",
-            "b) …………………………………………………………………………"
-          ]
-        },
-        {
-          "id": "ws-10-sec-h-q05",
-          "order": 5,
-          "prompt": "We haven’t bought a new one. (ages / many years)",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) …………………………………………………………………………",
-            "b) …………………………………………………………………………"
-          ]
-        }
+        { "id": "ws-10-sec-i-q01", "order": 1, "prompt": "We’ve been here. (an hour / 4 o’clock)", "acceptedAnswers": ["We have been here since 4 o'clock. We have been here for an hour.","We've been here since 4 o'clock. We've been here for an hour.","We have been here for an hour. We have been here since 4 o'clock.","We've been here for an hour. We've been here since 4 o'clock."], "explanation": "since + point in time; for + period" },
+        { "id": "ws-10-sec-i-q02", "order": 2, "prompt": "She hasn’t spoken to me. (2 weeks / last week)", "acceptedAnswers": ["She hasn't spoken to me since last week. She hasn't spoken to me for 2 weeks.","She hasn't spoken to me for 2 weeks. She hasn't spoken to me since last week."], "explanation": "since + point in time; for + period" },
+        { "id": "ws-10-sec-i-q03", "order": 3, "prompt": "They’ve lived in this street. (1970 / a long time)", "acceptedAnswers": ["They have lived in this street since 1970. They have lived in this street for a long time.","They've lived in this street since 1970. They've lived in this street for a long time.","They have lived in this street for a long time. They have lived in this street since 1970.","They've lived in this street for a long time. They've lived in this street since 1970."], "explanation": "since + point in time; for + period" },
+        { "id": "ws-10-sec-i-q04", "order": 4, "prompt": "I haven’t had time to do it. (last Monday / a few days)", "acceptedAnswers": ["I haven't had time to do it since last Monday. I haven't had time to do it for a few days.","I haven't had time to do it for a few days. I haven't had time to do it since last Monday."], "explanation": "since + point in time; for + period" },
+        { "id": "ws-10-sec-i-q05", "order": 5, "prompt": "We haven’t bought a new one. (ages / many years)", "acceptedAnswers": ["We haven't bought a new one for ages. We haven't bought a new one for many years.","We haven't bought a new one for many years. We haven't bought a new one for ages."], "explanation": "ages and many years are periods: both take for" }
       ]
     }
   ]

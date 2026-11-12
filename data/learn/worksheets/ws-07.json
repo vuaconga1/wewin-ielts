@@ -12,440 +12,777 @@
     {
       "id": "ws-07-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in the blanks with a verb from the box in the SIMPLE PAST:",
-      "type": "verb_conjugation",
+      "instruction": "Fill in the blanks with a verb from the box in the SIMPLE PAST.",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "break",
+        "swim",
+        "have",
+        "make",
+        "sit",
+        "write",
+        "spend",
+        "buy",
+        "drink",
+        "lose",
+        "wash"
+      ],
       "questions": [
         {
           "id": "ws-07-sec-a-q01",
           "order": 1,
           "prompt": "She [gap] a cake an hour ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "made"
+          ],
+          "explanation": "make → made"
         },
         {
           "id": "ws-07-sec-a-q02",
           "order": 2,
           "prompt": "She [gap] a hat last week.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "bought"
+          ],
+          "explanation": "buy → bought"
         },
         {
           "id": "ws-07-sec-a-q03",
           "order": 3,
           "prompt": "The boy [gap] a letter yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wrote"
+          ],
+          "explanation": "write → wrote"
         },
         {
           "id": "ws-07-sec-a-q04",
           "order": 4,
           "prompt": "They [gap] in the sea for an hour.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "swam"
+          ],
+          "explanation": "swim → swam"
         },
         {
           "id": "ws-07-sec-a-q05",
           "order": 5,
           "prompt": "They [gap] a lot of Coke last night.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "drank"
+          ],
+          "explanation": "drink → drank"
         },
         {
           "id": "ws-07-sec-a-q06",
           "order": 6,
           "prompt": "She [gap] her arm last week.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "broke"
+          ],
+          "explanation": "break → broke"
         },
         {
           "id": "ws-07-sec-a-q07",
           "order": 7,
           "prompt": "He [gap] all his money last week.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "spent"
+          ],
+          "explanation": "spend → spent"
         },
         {
           "id": "ws-07-sec-a-q08",
           "order": 8,
           "prompt": "She [gap] a bath two minutes ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "have a bath → had"
         },
         {
           "id": "ws-07-sec-a-q09",
           "order": 9,
           "prompt": "He [gap] his wallet last night.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "lost"
+          ],
+          "explanation": "lose → lost"
         },
         {
           "id": "ws-07-sec-a-q10",
           "order": 10,
           "prompt": "She [gap] on the old chair a minute ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "sat"
+          ],
+          "explanation": "sit → sat"
         },
         {
           "id": "ws-07-sec-a-q11",
           "order": 11,
           "prompt": "She [gap] the clothes yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "washed"
+          ],
+          "explanation": "wash → washed"
         }
       ]
     },
     {
       "id": "ws-07-sec-b",
       "sectionKey": "B",
-      "instruction": "Fill in the blanks with the SIMPLE PAST of the verbs in brackets:",
+      "instruction": "Fill in the blanks with the SIMPLE PAST of the verbs in brackets. (Example: Last Saturday my father took (take) my friends and me to the circus.)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-07-sec-b-q01",
           "order": 1,
-          "prompt": "Last Saturday my father [gap] took [gap] (take) my friends and me to the circus. We [gap] (see)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (see) lots of things.",
+          "acceptedAnswers": [
+            "saw"
+          ],
+          "explanation": "see → saw"
         },
         {
           "id": "ws-07-sec-b-q02",
           "order": 2,
-          "prompt": "lots of things. My father [gap] (buy) us some popcorn and orange juice. We",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My father [gap] (buy) us some popcorn and orange juice.",
+          "acceptedAnswers": [
+            "bought"
+          ],
+          "explanation": "buy → bought"
         },
         {
           "id": "ws-07-sec-b-q03",
           "order": 3,
-          "prompt": "[gap] (eat) the popcorn and [gap] (drink) the orange juice.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (eat) the popcorn and [gap] (drink) the orange juice.",
+          "acceptedAnswers": [
+            "ate / drank"
+          ],
+          "explanation": "eat → ate; drink → drank"
         },
         {
           "id": "ws-07-sec-b-q04",
           "order": 4,
-          "prompt": "We [gap] (laugh) at the funny clowns. There [gap] (be) a lion-tamer.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (laugh) at the funny clowns.",
+          "acceptedAnswers": [
+            "laughed"
+          ],
+          "explanation": "regular: + ed"
         },
         {
           "id": "ws-07-sec-b-q05",
           "order": 5,
-          "prompt": "The lions [gap] (do) tricks; they [gap] (jump) through hoops.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There [gap] (be) a lion-tamer.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "there was + singular"
         },
         {
           "id": "ws-07-sec-b-q06",
           "order": 6,
-          "prompt": "A girl [gap] (ride) an elephant around the ring. We all [gap] (have)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The lions [gap] (do) tricks; they [gap] (jump) through hoops.",
+          "acceptedAnswers": [
+            "did / jumped"
+          ],
+          "explanation": "do → did; jump → jumped"
         },
         {
           "id": "ws-07-sec-b-q07",
           "order": 7,
-          "prompt": "a wonderful time. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A girl [gap] (ride) an elephant around the ring.",
+          "acceptedAnswers": [
+            "rode"
+          ],
+          "explanation": "ride → rode"
+        },
+        {
+          "id": "ws-07-sec-b-q08",
+          "order": 8,
+          "prompt": "We all [gap] (have) a wonderful time.",
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "have → had"
         }
       ]
     },
     {
       "id": "ws-07-sec-c",
       "sectionKey": "C",
-      "instruction": "Write what Jean DID or DIDN’T do yesterday:",
-      "type": "inline_gap_fill",
+      "instruction": "Write what Jean DID (+) or DIDN'T (-) do yesterday. (Example: go shopping (-) → Jean didn't go shopping yesterday.)",
+      "type": "sentence_building",
       "questions": [
         {
           "id": "ws-07-sec-c-q01",
           "order": 1,
-          "prompt": "go shopping ( - ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "clean the house (+)",
+          "acceptedAnswers": [
+            "Jean cleaned the house yesterday.",
+            "Jean cleaned the house.",
+            "She cleaned the house yesterday."
+          ],
+          "explanation": "positive: verb + ed"
         },
         {
           "id": "ws-07-sec-c-q02",
           "order": 2,
-          "prompt": "clean the house ( + ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "feed the cat (+)",
+          "acceptedAnswers": [
+            "Jean fed the cat yesterday.",
+            "Jean fed the cat.",
+            "She fed the cat yesterday."
+          ],
+          "explanation": "feed → fed"
         },
         {
           "id": "ws-07-sec-c-q03",
           "order": 3,
-          "prompt": "feed the cat ( + ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "telephone Mary (-)",
+          "acceptedAnswers": [
+            "Jean didn't telephone Mary yesterday.",
+            "Jean didn't telephone Mary.",
+            "She didn't telephone Mary yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
         },
         {
           "id": "ws-07-sec-c-q04",
           "order": 4,
-          "prompt": "telephone Mary ( - ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "watch a film on TV (-)",
+          "acceptedAnswers": [
+            "Jean didn't watch a film on TV yesterday.",
+            "Jean didn't watch a film on TV.",
+            "She didn't watch a film on TV yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
         },
         {
           "id": "ws-07-sec-c-q05",
           "order": 5,
-          "prompt": "watch a film on TV ( - ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "visit her grandparents (+)",
+          "acceptedAnswers": [
+            "Jean visited her grandparents yesterday.",
+            "Jean visited her grandparents.",
+            "She visited her grandparents yesterday."
+          ],
+          "explanation": "positive: verb + ed"
         },
         {
           "id": "ws-07-sec-c-q06",
           "order": 6,
-          "prompt": "visit her grandparents ( + ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-sec-c-q07",
-          "order": 7,
-          "prompt": "take them a cake ( + ) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-sec-c-q08",
-          "order": 8,
-          "prompt": "[gap] Jean didn’t go shopping yesterday [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "take them a cake (+)",
+          "acceptedAnswers": [
+            "Jean took them a cake yesterday.",
+            "Jean took them a cake.",
+            "She took them a cake yesterday."
+          ],
+          "explanation": "take → took"
         }
       ]
     },
     {
       "id": "ws-07-sec-d",
       "sectionKey": "D",
-      "instruction": "Fill in the blanks with the PAST form of the verbs:",
-      "type": "inline_gap_fill",
+      "instruction": "Fill in the blanks with the PAST form of the verbs. (Example: Benjamin Franklin was born (be born) in Boston in 1706.)",
+      "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-07-sec-d-q01",
           "order": 1,
-          "prompt": "Benjamin Franklin [gap] was born [gap] (be born) in Boston in 1706. He [gap] (be)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (be) the fifteenth of the seventeen children of a poor candlemaker.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "he → was"
         },
         {
           "id": "ws-07-sec-d-q02",
           "order": 2,
-          "prompt": "the fifteenth of the seventeen children of a poor candlemaker. He [gap] (go ) to",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (go) to school only one year.",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "explanation": "go → went"
         },
         {
           "id": "ws-07-sec-d-q03",
           "order": 3,
-          "prompt": "school only one year. He [gap] (begin) to work when he was twelve. At",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (begin) to work when he was twelve.",
+          "acceptedAnswers": [
+            "began"
+          ],
+          "explanation": "begin → began"
         },
         {
           "id": "ws-07-sec-d-q04",
           "order": 4,
-          "prompt": "the age of fourteen he [gap] (decide) to be a writer. He [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "At the age of fourteen he [gap] (decide) to be a writer.",
+          "acceptedAnswers": [
+            "decided"
+          ],
+          "explanation": "regular: + d"
         },
         {
           "id": "ws-07-sec-d-q05",
           "order": 5,
-          "prompt": "(copy) the great stories of famous writers and later he [gap] (become) the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (copy) the great stories of famous writers and later he [gap] (become) the best known writer in his time.",
+          "acceptedAnswers": [
+            "copied / became"
+          ],
+          "explanation": "copy → copied; become → became"
         },
         {
           "id": "ws-07-sec-d-q06",
           "order": 6,
-          "prompt": "best known writer in his time. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When he [gap] (be) seventeen, he [gap] (leave) Boston and [gap] (arrive) in Philadelphia with only a few pennies in his pocket.",
+          "acceptedAnswers": [
+            "was / left / arrived"
+          ],
+          "explanation": "leave → left"
         },
         {
           "id": "ws-07-sec-d-q07",
           "order": 7,
-          "prompt": "When he [gap] (be) seventeen, he [gap] (leave) Boston and",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (get) a job as a publisher of a newspaper and [gap] (retire) from business as a very rich man at forty-two.",
+          "acceptedAnswers": [
+            "got / retired"
+          ],
+          "explanation": "get → got"
         },
         {
           "id": "ws-07-sec-d-q08",
           "order": 8,
-          "prompt": "[gap] (arrive) in Philadelphia with only a few pennies in his pocket. He",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Then he [gap] (spend) the next forty years for his government.",
+          "acceptedAnswers": [
+            "spent"
+          ],
+          "explanation": "spend → spent"
         },
         {
           "id": "ws-07-sec-d-q09",
           "order": 9,
-          "prompt": "[gap] (get) a job as a publisher of a newspaper and [gap] (retire)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (play) an important role in the founding of the USA.",
+          "acceptedAnswers": [
+            "played"
+          ],
+          "explanation": "regular: + ed"
         },
         {
           "id": "ws-07-sec-d-q10",
           "order": 10,
-          "prompt": "from business as a very rich man at forty-two. Then he [gap] (spend) the next",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Franklin [gap] (be) also an important scientist and inventor.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular → was"
         },
         {
           "id": "ws-07-sec-d-q11",
           "order": 11,
-          "prompt": "forty years for his government. He [gap] (play) an important role in the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (draw) electricity from a cloud on a kite string.",
+          "acceptedAnswers": [
+            "drew"
+          ],
+          "explanation": "draw → drew"
         },
         {
           "id": "ws-07-sec-d-q12",
           "order": 12,
-          "prompt": "founding of the USA. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (write) one of the first text books on electricity.",
+          "acceptedAnswers": [
+            "wrote"
+          ],
+          "explanation": "write → wrote"
         },
         {
           "id": "ws-07-sec-d-q13",
           "order": 13,
-          "prompt": "Franklin [gap] (be) also an important scientist and inventor. He [gap] (draw)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (invent) a simple lightning rod and many other practical tools.",
+          "acceptedAnswers": [
+            "invented"
+          ],
+          "explanation": "regular: + ed"
         },
         {
           "id": "ws-07-sec-d-q14",
           "order": 14,
-          "prompt": "electricity from a cloud on a kite string. He [gap] (write) one of the first text",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (make) a study of water and [gap] (discover) many principles of hydrodynamics.",
+          "acceptedAnswers": [
+            "made / discovered"
+          ],
+          "explanation": "make → made"
         },
         {
           "id": "ws-07-sec-d-q15",
           "order": 15,
-          "prompt": "books on electricity. He [gap] (invent) a simple lightning rod and many other",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He even [gap] (invent) bifocal glasses when he was seventy-eight and [gap] (need) them himself.",
+          "acceptedAnswers": [
+            "invented / needed"
+          ],
+          "explanation": "regular: + ed"
         },
         {
           "id": "ws-07-sec-d-q16",
           "order": 16,
-          "prompt": "practical tools. He [gap] (make) a study of water and [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-sec-d-q17",
-          "order": 17,
-          "prompt": "(discover) many principles of hydrodynamics. He even [gap] (invent) bifocal",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-sec-d-q18",
-          "order": 18,
-          "prompt": "glasses when he was seventy-eight and [gap] (need) them himself.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-sec-d-q19",
-          "order": 19,
-          "prompt": "Franklin [gap] (do) all these things and many more because he [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-sec-d-q20",
-          "order": 20,
-          "prompt": "(believe) he [gap] (can).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Franklin [gap] (do) all these things and many more because he [gap] (believe) he [gap] (can).",
+          "acceptedAnswers": [
+            "did / believed / could"
+          ],
+          "explanation": "do → did; can → could"
         }
       ]
     },
     {
       "id": "ws-07-sec-e",
       "sectionKey": "E",
-      "instruction": "Read the following story:",
-      "type": "inline_gap_fill",
+      "instruction": "Read the story. (a) Write the story again sentence by sentence. Use THE SIMPLE PAST. (Example: Bob is a young sailor. He lives in England, but he is often away with his ship. → Bob was a young sailor. He lived in England, but he was often away with his ship.)",
+      "type": "sentence_rewrite",
+      "contextText": "Bob is a young sailor. He lives in England, but he is often away with his ship.\nOne summer he comes back from a long voyage and finds new neighbors near his mother's house. They have a pretty daughter, and Bob soon loves her and he wants to marry her when he comes back. Bob promises the girl to send a present from every port.\nBob's first port is Capetown in Africa, and he sends the girl a parrot from there. The parrot speaks three languages. When Bob's ship reaches Australia, a letter comes from the girl. The letter says, “Thank you for the parrot, Bob. It tasted much better than a chicken.”",
       "questions": [
         {
           "id": "ws-07-sec-e-q01",
           "order": 1,
-          "prompt": "What was Bob? [gap] He was a young sailor.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "One summer he comes back from a long voyage and finds new neighbors near his mother's house.",
+          "acceptedAnswers": [
+            "One summer he came back from a long voyage and found new neighbors near his mother's house.",
+            "One summer he came back from a long voyage and found new neighbours near his mother's house."
+          ],
+          "explanation": "come → came; find → found"
         },
         {
           "id": "ws-07-sec-e-q02",
           "order": 2,
-          "prompt": "What change did he find when he was back home? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They have a pretty daughter, and Bob soon loves her and he wants to marry her when he comes back.",
+          "acceptedAnswers": [
+            "They had a pretty daughter, and Bob soon loved her and he wanted to marry her when he came back."
+          ],
+          "explanation": "have → had; come → came"
         },
         {
           "id": "ws-07-sec-e-q03",
           "order": 3,
-          "prompt": "How was their daughter? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bob promises the girl to send a present from every port.",
+          "acceptedAnswers": [
+            "Bob promised the girl to send a present from every port."
+          ],
+          "explanation": "regular: + d"
         },
         {
           "id": "ws-07-sec-e-q04",
           "order": 4,
-          "prompt": "How did Bob feel about the girl? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bob's first port is Capetown in Africa, and he sends the girl a parrot from there.",
+          "acceptedAnswers": [
+            "Bob's first port was Capetown in Africa, and he sent the girl a parrot from there."
+          ],
+          "explanation": "is → was; send → sent"
         },
         {
           "id": "ws-07-sec-e-q05",
           "order": 5,
-          "prompt": "What did Bob tell the girl? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The parrot speaks three languages.",
+          "acceptedAnswers": [
+            "The parrot spoke three languages."
+          ],
+          "explanation": "speak → spoke"
         },
         {
           "id": "ws-07-sec-e-q06",
           "order": 6,
-          "prompt": "What did Bob send the girl from Capetown? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When Bob's ship reaches Australia, a letter comes from the girl.",
+          "acceptedAnswers": [
+            "When Bob's ship reached Australia, a letter came from the girl."
+          ],
+          "explanation": "reach → reached; come → came"
         },
         {
           "id": "ws-07-sec-e-q07",
           "order": 7,
-          "prompt": "Where is Capetown? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The letter says, “Thank you for the parrot, Bob. It tasted much better than a chicken.”",
+          "acceptedAnswers": [
+            "The letter said, “Thank you for the parrot, Bob. It tasted much better than a chicken.”"
+          ],
+          "explanation": "say → said; quote unchanged"
+        }
+      ]
+    },
+    {
+      "id": "ws-07-sec-e2",
+      "sectionKey": "E2",
+      "instruction": "(b) Answer the questions about the story. (Example: What was Bob? → He was a young sailor.)",
+      "type": "reading_qa",
+      "contextText": "Bob was a young sailor. He lived in England, but he was often away with his ship.\nOne summer he came back from a long voyage and found new neighbors near his mother's house. They had a pretty daughter, and Bob soon loved her and he wanted to marry her when he came back. Bob promised the girl to send a present from every port.\nBob's first port was Capetown in Africa, and he sent the girl a parrot from there. The parrot spoke three languages. When Bob's ship reached Australia, a letter came from the girl. The letter said, “Thank you for the parrot, Bob. It tasted much better than a chicken.”",
+      "questions": [
+        {
+          "id": "ws-07-sec-e2-q02",
+          "order": 2,
+          "prompt": "What change did he find when he was back home?",
+          "acceptedAnswers": [
+            "He found new neighbors near his mother's house.",
+            "He found new neighbours near his mother's house.",
+            "There were new neighbors near his mother's house.",
+            "He found new neighbors."
+          ],
+          "explanation": "found new neighbors"
         },
         {
-          "id": "ws-07-sec-e-q08",
+          "id": "ws-07-sec-e2-q03",
+          "order": 3,
+          "prompt": "How was their daughter?",
+          "acceptedAnswers": [
+            "She was pretty.",
+            "She was a pretty girl.",
+            "Their daughter was pretty."
+          ],
+          "explanation": "a pretty daughter"
+        },
+        {
+          "id": "ws-07-sec-e2-q04",
+          "order": 4,
+          "prompt": "How did Bob feel about the girl?",
+          "acceptedAnswers": [
+            "He loved her.",
+            "He loved her and wanted to marry her.",
+            "He loved her and he wanted to marry her."
+          ],
+          "explanation": "Bob soon loved her"
+        },
+        {
+          "id": "ws-07-sec-e2-q05",
+          "order": 5,
+          "prompt": "What did Bob tell the girl?",
+          "acceptedAnswers": [
+            "He promised to send her a present from every port.",
+            "He promised the girl to send a present from every port.",
+            "He promised to send a present from every port.",
+            "He told her he would send a present from every port."
+          ],
+          "explanation": "promised to send a present"
+        },
+        {
+          "id": "ws-07-sec-e2-q06",
+          "order": 6,
+          "prompt": "What did Bob send the girl from Capetown?",
+          "acceptedAnswers": [
+            "He sent her a parrot.",
+            "He sent the girl a parrot.",
+            "A parrot."
+          ],
+          "explanation": "a parrot"
+        },
+        {
+          "id": "ws-07-sec-e2-q07",
+          "order": 7,
+          "prompt": "Where is Capetown?",
+          "acceptedAnswers": [
+            "It is in Africa.",
+            "Capetown is in Africa.",
+            "In Africa.",
+            "It is in South Africa."
+          ],
+          "explanation": "Capetown in Africa"
+        },
+        {
+          "id": "ws-07-sec-e2-q08",
           "order": 8,
-          "prompt": "How many languages did the parrot speak? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How many languages did the parrot speak?",
+          "acceptedAnswers": [
+            "It spoke three languages.",
+            "The parrot spoke three languages.",
+            "Three languages.",
+            "Three."
+          ],
+          "explanation": "speak → spoke"
         },
         {
-          "id": "ws-07-sec-e-q09",
+          "id": "ws-07-sec-e2-q09",
           "order": 9,
-          "prompt": "What did the girl do with the parrot? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What did the girl do with the parrot?",
+          "acceptedAnswers": [
+            "She ate it.",
+            "She cooked and ate it.",
+            "She ate the parrot."
+          ],
+          "explanation": "It tasted better than a chicken"
         }
       ]
     },
     {
       "id": "ws-07-sec-g",
       "sectionKey": "G",
-      "instruction": "Rewrite the sentences using the word and signs in parenthesis:",
+      "instruction": "Rewrite the sentences using the word and signs in parentheses. Change the previous sentence each time: (+) positive, (-) negative, (?) question, (-?) negative question. Start: We ate lunch at the cafeteria last night. (Example: (he) (-) → He didn't eat lunch at the cafeteria last night.)",
       "type": "sentence_rewrite",
       "questions": [
         {
-          "id": "ws-07-sec-g-q01",
-          "order": 1,
-          "prompt": "We ate lunch at the cafeteria last night. (-) 2. He didn’t eat lunch at the cafeteria last night. (?) 3 [gap] (-?) 4 [gap] (-) 5 [gap] (+) 6 [gap] (-) 7 [gap] (+) 8 [gap] (-?) 9 [gap] (?) 10 [gap] (-) 11 [gap] (+) 12 [gap] (?) 13 [gap] (-?) 14 [gap] (-) 15 [gap] (+) 16 [gap] (?) 17 [gap] (-?) 18 [gap] (?) 19 [gap] (+) 20 [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "id": "ws-07-sec-g-q03",
+          "order": 3,
+          "prompt": "Previous: He didn't eat lunch at the cafeteria last night. → (yesterday) (?)",
+          "acceptedAnswers": [
+            "Did he eat lunch at the cafeteria yesterday?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q04",
+          "order": 4,
+          "prompt": "Previous: Did he eat lunch at the cafeteria yesterday? → (study in the library) (-?)",
+          "acceptedAnswers": [
+            "Didn't he study in the library yesterday?",
+            "Did he not study in the library yesterday?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q05",
+          "order": 5,
+          "prompt": "Previous: Didn't he study in the library yesterday? → (we) (-)",
+          "acceptedAnswers": [
+            "We didn't study in the library yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q06",
+          "order": 6,
+          "prompt": "Previous: We didn't study in the library yesterday. → (play tennis) (+)",
+          "acceptedAnswers": [
+            "We played tennis yesterday."
+          ],
+          "explanation": "positive: verb + ed"
+        },
+        {
+          "id": "ws-07-sec-g-q07",
+          "order": 7,
+          "prompt": "Previous: We played tennis yesterday. → (I) (-)",
+          "acceptedAnswers": [
+            "I didn't play tennis yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q08",
+          "order": 8,
+          "prompt": "Previous: I didn't play tennis yesterday. → (get a present) (+)",
+          "acceptedAnswers": [
+            "I got a present yesterday."
+          ],
+          "explanation": "get → got"
+        },
+        {
+          "id": "ws-07-sec-g-q09",
+          "order": 9,
+          "prompt": "Previous: I got a present yesterday. → (you) (-?)",
+          "acceptedAnswers": [
+            "Didn't you get a present yesterday?",
+            "Did you not get a present yesterday?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q10",
+          "order": 10,
+          "prompt": "Previous: Didn't you get a present yesterday? → (go shopping) (?)",
+          "acceptedAnswers": [
+            "Did you go shopping yesterday?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q11",
+          "order": 11,
+          "prompt": "Previous: Did you go shopping yesterday? → (last week) (-)",
+          "acceptedAnswers": [
+            "You didn't go shopping last week."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q12",
+          "order": 12,
+          "prompt": "Previous: You didn't go shopping last week. → (she) (+)",
+          "acceptedAnswers": [
+            "She went shopping last week."
+          ],
+          "explanation": "go → went"
+        },
+        {
+          "id": "ws-07-sec-g-q13",
+          "order": 13,
+          "prompt": "Previous: She went shopping last week. → (stay home) (?)",
+          "acceptedAnswers": [
+            "Did she stay home last week?",
+            "Did she stay at home last week?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q14",
+          "order": 14,
+          "prompt": "Previous: Did she stay home last week? → (last night) (-?)",
+          "acceptedAnswers": [
+            "Didn't she stay home last night?",
+            "Did she not stay home last night?",
+            "Didn't she stay at home last night?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q15",
+          "order": 15,
+          "prompt": "Previous: Didn't she stay home last night? → (they) (-)",
+          "acceptedAnswers": [
+            "They didn't stay home last night.",
+            "They didn't stay at home last night."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q16",
+          "order": 16,
+          "prompt": "Previous: They didn't stay home last night. → (get into trouble) (+)",
+          "acceptedAnswers": [
+            "They got into trouble last night."
+          ],
+          "explanation": "get → got"
+        },
+        {
+          "id": "ws-07-sec-g-q17",
+          "order": 17,
+          "prompt": "Previous: They got into trouble last night. → (you) (?)",
+          "acceptedAnswers": [
+            "Did you get into trouble last night?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q18",
+          "order": 18,
+          "prompt": "Previous: Did you get into trouble last night? → (see him) (-?)",
+          "acceptedAnswers": [
+            "Didn't you see him last night?",
+            "Did you not see him last night?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q19",
+          "order": 19,
+          "prompt": "Previous: Didn't you see him last night? → (yesterday afternoon) (?)",
+          "acceptedAnswers": [
+            "Did you see him yesterday afternoon?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q20",
+          "order": 20,
+          "prompt": "Previous: Did you see him yesterday afternoon? → (I) (+)",
+          "acceptedAnswers": [
+            "I saw him yesterday afternoon."
+          ],
+          "explanation": "see → saw"
         }
       ]
     }

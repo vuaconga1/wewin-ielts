@@ -12,244 +12,48 @@
     {
       "id": "ws-11-sec-a",
       "sectionKey": "A",
-      "instruction": "Use PRESENT PERFECT CONTINUOUS TENSE to fill in the blanks:",
-      "type": "inline_gap_fill",
+      "instruction": "Use the PRESENT PERFECT CONTINUOUS TENSE to fill in the blanks: (Example: I’m tired, because I have been working (work) very hard.)",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-11-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q07",
-          "order": 7,
-          "prompt": " [gap] I’m tired, because I [gap] have been working [gap] (work) very hard. He [gap] (write) letters all morning. Catherina is getting fatter because she [gap] (eat) too much. My mother [gap] (peel) the potatoes all afternoon.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) a"
-          ]
-        },
-        {
-          "id": "ws-11-sec-a-q08",
-          "order": 8,
-          "prompt": "Charles [gap] (escape) from the police for years.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q09",
-          "order": 9,
-          "prompt": "How long [gap] you [gap] (use) a computer?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q10",
-          "order": 10,
-          "prompt": "Elizabeth [gap] (live) with Mike for three years.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q11",
-          "order": 11,
-          "prompt": "She [gap] (earn) quite a lot of money for the last two years.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-a-q12",
-          "order": 12,
-          "prompt": "It [gap] (rain) fro six hours.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-11-sec-a-q02", "order": 2, "prompt": "He [gap] (write) letters all morning.", "acceptedAnswers": ["has been writing"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q03", "order": 3, "prompt": "Catherina is getting fatter because she [gap] (eat) too much.", "acceptedAnswers": ["has been eating"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q04", "order": 4, "prompt": "My mother [gap] (peel) the potatoes all afternoon.", "acceptedAnswers": ["has been peeling"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q05", "order": 5, "prompt": "Cathy [gap] (attend) a cookery course since March.", "acceptedAnswers": ["has been attending"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q06", "order": 6, "prompt": "How long [gap] you [gap] (learn) English?", "acceptedAnswers": ["have / been learning"], "explanation": "question: have + subject + been + -ing" },
+        { "id": "ws-11-sec-a-q07", "order": 7, "prompt": "Where are my eye-glasses? I [gap] (look) for them for an hour.", "acceptedAnswers": ["have been looking"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q08", "order": 8, "prompt": "Charles [gap] (escape) from the police for years.", "acceptedAnswers": ["has been escaping"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q09", "order": 9, "prompt": "How long [gap] you [gap] (use) a computer?", "acceptedAnswers": ["have / been using"], "explanation": "question: have + subject + been + -ing" },
+        { "id": "ws-11-sec-a-q10", "order": 10, "prompt": "Elizabeth [gap] (live) with Mike for three years.", "acceptedAnswers": ["has been living"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q11", "order": 11, "prompt": "She [gap] (earn) quite a lot of money for the last two years.", "acceptedAnswers": ["has been earning"], "explanation": "present perfect continuous: have/has been + -ing" },
+        { "id": "ws-11-sec-a-q12", "order": 12, "prompt": "It [gap] (rain) for six hours.", "acceptedAnswers": ["has been raining"], "explanation": "present perfect continuous: have/has been + -ing" }
       ]
     },
     {
       "id": "ws-11-sec-b",
       "sectionKey": "B",
-      "instruction": "Use PRESENT PERFECT TENSE or PRESENT PERFECT CONTINUOUS",
-      "type": "inline_gap_fill",
+      "instruction": "Use the PRESENT PERFECT TENSE or the PRESENT PERFECT CONTINUOUS to fill in the blanks (choose the correct option):",
+      "type": "multiple_choice",
       "questions": [
-        {
-          "id": "ws-11-sec-b-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q07",
-          "order": 7,
-          "prompt": " [gap] I’ve bought / have been buying a new pair of shoes. Have you finished / Have you been finishing reading that book yet? They’ve eaten / have been eating fruit all afternoon, ever since they came from school. I’ve been reading / have read this book now, so you can have it back. I’ve been writing / have written eight pages already. Your exam paper is completely blank! What have you been doing / have you done? Oh, no! There’s nothing to eat. My sister has been eating / has eaten everything I left in the kitchen.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q08",
-          "order": 8,
-          "prompt": "Oh, no! There’s no wine to drink. They have drunk / have been drinking all the wine. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q09",
-          "order": 9,
-          "prompt": "No wonder your eyes hurt. You’ve been playing / have played computer games ever since [gap] you had your breakfast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q10",
-          "order": 10,
-          "prompt": "I haven’t seen / haven’t been seeing you for ages. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q11",
-          "order": 11,
-          "prompt": "God! Hakan has scored / has been scoring. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q12",
-          "order": 12,
-          "prompt": "They have danced / have been dancing for an hour. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q13",
-          "order": 13,
-          "prompt": "I have been waiting / have waited for you for ages. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q14",
-          "order": 14,
-          "prompt": "I’ve finished / ‘ve been finishing my work. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q15",
-          "order": 15,
-          "prompt": "I’ve been writing / have written this letter for an hour. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q16",
-          "order": 16,
-          "prompt": "He has visited / has been visiting ten museums this week. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q17",
-          "order": 17,
-          "prompt": "I’m very tired. Because I have travelled / have been travelling around Istanbul all day. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q18",
-          "order": 18,
-          "prompt": "She has found / has been finding a good job. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q19",
-          "order": 19,
-          "prompt": "I’m hot because I have been running / have run. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-11-sec-b-q20",
-          "order": 20,
-          "prompt": "I have written / have been writing letters for weeks. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-11-sec-b-q01", "order": 1, "prompt": "I [gap] a new pair of shoes.", "options": ["a) have bought","b) have been buying"], "acceptedAnswers": ["a"], "explanation": "finished action with a result → present perfect" },
+        { "id": "ws-11-sec-b-q02", "order": 2, "prompt": "[gap] reading that book yet?", "options": ["a) Have you finished","b) Have you been finishing"], "acceptedAnswers": ["a"], "explanation": "finish + yet → present perfect" },
+        { "id": "ws-11-sec-b-q03", "order": 3, "prompt": "They [gap] fruit all afternoon, ever since they came from school.", "options": ["a) have eaten","b) have been eating"], "acceptedAnswers": ["b"], "explanation": "activity over a period (all afternoon) → continuous" },
+        { "id": "ws-11-sec-b-q04", "order": 4, "prompt": "I [gap] this book now, so you can have it back.", "options": ["a) have been reading","b) have read"], "acceptedAnswers": ["b"], "explanation": "completed action → present perfect" },
+        { "id": "ws-11-sec-b-q05", "order": 5, "prompt": "I [gap] eight pages already.", "options": ["a) have been writing","b) have written"], "acceptedAnswers": ["b"], "explanation": "how many / how much done → present perfect" },
+        { "id": "ws-11-sec-b-q06", "order": 6, "prompt": "Your exam paper is completely blank! What [gap]?", "options": ["a) have you been doing","b) have you done"], "acceptedAnswers": ["a"], "explanation": "what activity filled that time → continuous" },
+        { "id": "ws-11-sec-b-q07", "order": 7, "prompt": "Oh, no! There’s nothing to eat. My sister [gap] everything I left in the kitchen.", "options": ["a) has been eating","b) has eaten"], "acceptedAnswers": ["b"], "explanation": "completed action (everything gone) → present perfect" },
+        { "id": "ws-11-sec-b-q08", "order": 8, "prompt": "Oh, no! There’s no wine to drink. They [gap] all the wine.", "options": ["a) have drunk","b) have been drinking"], "acceptedAnswers": ["a"], "explanation": "completed action (all gone) → present perfect" },
+        { "id": "ws-11-sec-b-q09", "order": 9, "prompt": "No wonder your eyes hurt. You [gap] computer games ever since you had your breakfast.", "options": ["a) have been playing","b) have played"], "acceptedAnswers": ["a"], "explanation": "activity with a visible effect → continuous" },
+        { "id": "ws-11-sec-b-q10", "order": 10, "prompt": "I [gap] you for ages.", "options": ["a) haven't seen","b) haven't been seeing"], "acceptedAnswers": ["a"], "explanation": "see is a state/short action → present perfect" },
+        { "id": "ws-11-sec-b-q11", "order": 11, "prompt": "God! Hakan [gap].", "options": ["a) has scored","b) has been scoring"], "acceptedAnswers": ["a"], "explanation": "single completed action → present perfect" },
+        { "id": "ws-11-sec-b-q12", "order": 12, "prompt": "They [gap] for an hour.", "options": ["a) have danced","b) have been dancing"], "acceptedAnswers": ["b"], "explanation": "activity over a period (for an hour) → continuous" },
+        { "id": "ws-11-sec-b-q13", "order": 13, "prompt": "I [gap] for you for ages.", "options": ["a) have been waiting","b) have waited"], "acceptedAnswers": ["a"], "explanation": "activity over a period → continuous" },
+        { "id": "ws-11-sec-b-q14", "order": 14, "prompt": "I [gap] my work.", "options": ["a) have finished","b) have been finishing"], "acceptedAnswers": ["a"], "explanation": "completed action → present perfect" },
+        { "id": "ws-11-sec-b-q15", "order": 15, "prompt": "I [gap] this letter for an hour.", "options": ["a) have been writing","b) have written"], "acceptedAnswers": ["a"], "explanation": "activity over a period (for an hour) → continuous" },
+        { "id": "ws-11-sec-b-q16", "order": 16, "prompt": "He [gap] ten museums this week.", "options": ["a) has visited","b) has been visiting"], "acceptedAnswers": ["a"], "explanation": "number of completed actions → present perfect" },
+        { "id": "ws-11-sec-b-q17", "order": 17, "prompt": "I’m very tired. Because I [gap] around Istanbul all day.", "options": ["a) have travelled","b) have been travelling"], "acceptedAnswers": ["b"], "explanation": "activity all day, effect now → continuous" },
+        { "id": "ws-11-sec-b-q18", "order": 18, "prompt": "She [gap] a good job.", "options": ["a) has found","b) has been finding"], "acceptedAnswers": ["a"], "explanation": "single completed action → present perfect" },
+        { "id": "ws-11-sec-b-q19", "order": 19, "prompt": "I’m hot because I [gap].", "options": ["a) have been running","b) have run"], "acceptedAnswers": ["a"], "explanation": "recent activity with effect now → continuous" },
+        { "id": "ws-11-sec-b-q20", "order": 20, "prompt": "I [gap] letters for weeks.", "options": ["a) have written","b) have been writing"], "acceptedAnswers": ["b"], "explanation": "activity over a period (for weeks) → continuous" }
       ]
     }
   ]

@@ -12,51 +12,15 @@
     {
       "id": "ws-53-sec-a",
       "sectionKey": "A",
-      "instruction": "Choose the correct answers:",
+      "instruction": "Choose the correct answers (write the correct pronoun in each gap):",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-53-sec-a-q06",
-          "order": 6,
-          "prompt": "A: What did those people want? [gap] B: They / Them asked I / me to help they / them.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-a-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-a-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-a-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-a-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-53-sec-a-q01", "order": 1, "prompt": "[gap] (We / Us) met Sally yesterday afternoon. [gap] (She / Her) came to the cinema with [gap] (we / us).", "acceptedAnswers": ["we / she / us"], "explanation": "subject: we, she; object after preposition: us" },
+        { "id": "ws-53-sec-a-q02", "order": 2, "prompt": "I phoned Sarah last night and gave [gap] (she / her) the message.", "acceptedAnswers": ["her"], "explanation": "object pronoun: her" },
+        { "id": "ws-53-sec-a-q03", "order": 3, "prompt": "My brother is older than [gap] (I / me), but [gap] (he / him) isn’t as tall as [gap] (I / me) am.", "acceptedAnswers": ["me|I / he / I"], "explanation": "than me (informal) / than I; subject before verb am" },
+        { "id": "ws-53-sec-a-q04", "order": 4, "prompt": "“Who wants a cup of coffee?” “[gap] (I / Me).”", "acceptedAnswers": ["me|I"], "explanation": "short answer alone: Me (informal)" },
+        { "id": "ws-53-sec-a-q05", "order": 5, "prompt": "A: Have you seen Simon today? B: Yes. [gap] (I / Me) saw [gap] (he / him) this morning. [gap] (He / Him) was going to the swimming pool.", "acceptedAnswers": ["I / him / he"], "explanation": "subject: I, he; object: him" },
+        { "id": "ws-53-sec-a-q06", "order": 6, "prompt": "A: What did those people want? B: [gap] (They / Them) asked [gap] (I / me) to help [gap] (they / them).", "acceptedAnswers": ["they / me / them"], "explanation": "subject: they; object: me, them" }
       ]
     },
     {
@@ -64,127 +28,47 @@
       "sectionKey": "B",
       "instruction": "Complete the sentences using the pronouns in the box:",
       "type": "inline_gap_fill",
+      "wordBank": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "me",
+        "you",
+        "him",
+        "her",
+        "it",
+        "us",
+        "them"
+      ],
       "questions": [
-        {
-          "id": "ws-53-sec-b-q01",
-          "order": 1,
-          "prompt": "Peter and I are going out this evening [gap] ’re going to the cinema. Would you like to come with [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q02",
-          "order": 2,
-          "prompt": "Where are my keys? I put [gap] on the table a moment ago, but now [gap] ’ve disappeared.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q03",
-          "order": 3,
-          "prompt": "[gap] ’s usually quite cold in New York in the winter.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q04",
-          "order": 4,
-          "prompt": "A: What did you think of the film, Simon? [gap] B: [gap] enjoyed [gap] very much.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q05",
-          "order": 5,
-          "prompt": "[gap] ’s strange that Kate didn’t come to the meeting.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q06",
-          "order": 6,
-          "prompt": "A: What do the government plan to do about education? [gap] B: [gap] say that [gap] ’re going to build more schools.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q07",
-          "order": 7,
-          "prompt": "[gap] aren’t allowed to drive a car in Britain until [gap] ’re 17 years old.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q08",
-          "order": 8,
-          "prompt": "If you have any problems, just tell someone and they [gap] ’ll help you.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q09",
-          "order": 9,
-          "prompt": "How far is [gap] from Madrid to Paris?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-b-q10",
-          "order": 10,
-          "prompt": "My sister and I are quite different [gap] ’s much more serious than [gap] am.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-53-sec-b-q01", "order": 1, "prompt": "Peter and I are going out this evening. [gap]’re going to the cinema. Would you like to come with [gap]?", "acceptedAnswers": ["we / us"], "explanation": "Peter and I → we; object → us" },
+        { "id": "ws-53-sec-b-q02", "order": 2, "prompt": "Where are my keys? I put [gap] on the table a moment ago, but now [gap]’ve disappeared.", "acceptedAnswers": ["them / they"], "explanation": "keys → them (object), they (subject)" },
+        { "id": "ws-53-sec-b-q03", "order": 3, "prompt": "[gap]’s usually quite cold in New York in the winter.", "acceptedAnswers": ["it"], "explanation": "it for weather" },
+        { "id": "ws-53-sec-b-q04", "order": 4, "prompt": "A: What did you think of the film, Simon? B: [gap] enjoyed [gap] very much.", "acceptedAnswers": ["I / it"], "explanation": "the film → it" },
+        { "id": "ws-53-sec-b-q05", "order": 5, "prompt": "[gap]’s strange that Kate didn’t come to the meeting.", "acceptedAnswers": ["it"], "explanation": "empty subject it + adjective + that" },
+        { "id": "ws-53-sec-b-q06", "order": 6, "prompt": "A: What do the government plan to do about education? B: [gap] say that [gap]’re going to build more schools.", "acceptedAnswers": ["they / they"], "explanation": "the government → they" },
+        { "id": "ws-53-sec-b-q07", "order": 7, "prompt": "[gap] aren’t allowed to drive a car in Britain until [gap]’re 17 years old.", "acceptedAnswers": ["you / you"], "explanation": "general you = people in general" },
+        { "id": "ws-53-sec-b-q08", "order": 8, "prompt": "If you have any problems, just tell someone and [gap]’ll help you.", "acceptedAnswers": ["they"], "explanation": "someone → they" },
+        { "id": "ws-53-sec-b-q09", "order": 9, "prompt": "How far is [gap] from Madrid to Paris?", "acceptedAnswers": ["it"], "explanation": "it for distance" },
+        { "id": "ws-53-sec-b-q10", "order": 10, "prompt": "My sister and I are quite different. [gap]’s much more serious than [gap] am.", "acceptedAnswers": ["she / I"], "explanation": "my sister → she; subject before am → I" }
       ]
     },
     {
       "id": "ws-53-sec-c",
       "sectionKey": "C",
-      "instruction": "Choose the correct answers:",
+      "instruction": "Choose the correct answers (write the correct word in each gap):",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-53-sec-c-q01",
-          "order": 1,
-          "prompt": "We know their / theirs telephone number, but they don’t know our / ours. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-c-q02",
-          "order": 2,
-          "prompt": "My / Mine car wasn’t as expensive as her / hers. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-c-q03",
-          "order": 3,
-          "prompt": "A: How are your / yours children? [gap] B: Fine, thanks. How are your / yours?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-c-q04",
-          "order": 4,
-          "prompt": "Maria has got her / hers suitcase, but her / hers friends haven’t got their / theirs. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-c-q05",
-          "order": 5,
-          "prompt": "Our / Ours flat isn’t as big as their / theirs, but our / ours is much more comfortable. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-53-sec-c-q06",
-          "order": 6,
-          "prompt": "Have you seen my / mine coat? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-53-sec-c-q01", "order": 1, "prompt": "We know [gap] (their / theirs) telephone number, but they don’t know [gap] (our / ours).", "acceptedAnswers": ["their / ours"], "explanation": "their + noun; ours stands alone" },
+        { "id": "ws-53-sec-c-q02", "order": 2, "prompt": "[gap] (My / Mine) car wasn’t as expensive as [gap] (her / hers).", "acceptedAnswers": ["my / hers"], "explanation": "my + noun; hers stands alone" },
+        { "id": "ws-53-sec-c-q03", "order": 3, "prompt": "A: How are [gap] (your / yours) children? B: Fine, thanks. How are [gap] (your / yours)?", "acceptedAnswers": ["your / yours"], "explanation": "your + noun; yours stands alone" },
+        { "id": "ws-53-sec-c-q04", "order": 4, "prompt": "Maria has got [gap] (her / hers) suitcase, but [gap] (her / hers) friends haven’t got [gap] (their / theirs).", "acceptedAnswers": ["her / her / theirs"], "explanation": "her + noun; theirs stands alone" },
+        { "id": "ws-53-sec-c-q05", "order": 5, "prompt": "[gap] (Our / Ours) flat isn’t as big as [gap] (their / theirs), but [gap] (our / ours) is much more comfortable.", "acceptedAnswers": ["our / theirs / ours"], "explanation": "our + noun; theirs/ours stand alone" },
+        { "id": "ws-53-sec-c-q06", "order": 6, "prompt": "Have you seen [gap] (my / mine) coat?", "acceptedAnswers": ["my"], "explanation": "my + noun" }
       ]
     }
   ]

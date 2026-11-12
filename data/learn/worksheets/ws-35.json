@@ -18,177 +18,227 @@
         {
           "id": "ws-35-sec-a-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Columbus discovered America [gap] 1492.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + year"
         },
         {
           "id": "ws-35-sec-a-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You can see the stars [gap] night, if the sky is clear.",
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at night"
         },
         {
           "id": "ws-35-sec-a-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom isn’t here [gap] the moment. He’ll be back [gap] five minutes.",
+          "acceptedAnswers": [
+            "at / in"
+          ],
+          "explanation": "at the moment; in + period = after that time"
         },
         {
           "id": "ws-35-sec-a-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The course begins [gap] 7 January and ends [gap] 10 March.",
+          "acceptedAnswers": [
+            "on / on"
+          ],
+          "explanation": "on + date"
         },
         {
           "id": "ws-35-sec-a-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom’s grandmother died [gap] 1977 [gap] the age of 79.",
+          "acceptedAnswers": [
+            "in / at"
+          ],
+          "explanation": "in + year; at the age of"
         },
         {
           "id": "ws-35-sec-a-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The price of electricity is going up [gap] October.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + month"
         },
         {
           "id": "ws-35-sec-a-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Ann works hard during the week, so she likes to relax [gap] weekends.",
+          "acceptedAnswers": [
+            "at|on"
+          ],
+          "explanation": "at weekends (British) / on weekends (American)"
         },
         {
           "id": "ws-35-sec-a-q08",
           "order": 8,
-          "prompt": " [gap] Columbos discovered America [gap] 1492. You can see the stars [gap] night, if the sky is clear. Tom isn’t here [gap] the moment. He’ll be back [gap] five minutes. The course begins [gap] 7 January and ends [gap] 10 March. Tom’s grandmother died [gap] 1977 [gap] the age of 79. The price of electricity is going up [gap] October. Ann works hard during the week, so she likes to relax [gap] weekends. I can’t be at home [gap] the morning. Can you phone me [gap] the afternoon instead?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can’t be at home [gap] the morning. Can you phone me [gap] the afternoon instead?",
+          "acceptedAnswers": [
+            "in / in"
+          ],
+          "explanation": "in the morning / afternoon"
         },
         {
           "id": "ws-35-sec-a-q09",
           "order": 9,
           "prompt": "Jack’s brother is an engineer but he’s out of work [gap] the moment.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at the moment"
         },
         {
           "id": "ws-35-sec-a-q10",
           "order": 10,
           "prompt": "[gap] Sunday afternoons I usually go for a walk in the country.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + day + part of day"
         },
         {
           "id": "ws-35-sec-a-q11",
           "order": 11,
-          "prompt": "Tom doesn’t see his parents very often these days- usually only [gap] Christmas and sometimes [gap] the summer for a few days.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom doesn’t see his parents very often these days – usually only [gap] Christmas and sometimes [gap] the summer for a few days.",
+          "acceptedAnswers": [
+            "at / in"
+          ],
+          "explanation": "at Christmas; in the summer"
         },
         {
           "id": "ws-35-sec-a-q12",
           "order": 12,
           "prompt": "The telephone and the doorbell rang [gap] the same time.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at the same time"
         },
         {
           "id": "ws-35-sec-a-q13",
           "order": 13,
-          "prompt": "I walk up a lot of stairs everyday. My flat is [gap] the third floor and there is no lift.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I walk up a lot of stairs every day. My flat is [gap] the third floor and there is no lift.",
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + floor"
         },
         {
           "id": "ws-35-sec-a-q14",
           "order": 14,
           "prompt": "We went to the theatre last night. We had seats [gap] the front row.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in a row"
         },
         {
           "id": "ws-35-sec-a-q15",
           "order": 15,
           "prompt": "It can be dangerous when children play football [gap] the street.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in the street"
         },
         {
           "id": "ws-35-sec-a-q16",
           "order": 16,
-          "prompt": "I can’t find Tom [gap] in this photogfaph.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can’t find Tom [gap] this photograph.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in a photograph"
         },
         {
           "id": "ws-35-sec-a-q17",
           "order": 17,
           "prompt": "Do you take sugar [gap] your coffee?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "sugar in coffee"
         },
         {
           "id": "ws-35-sec-a-q18",
           "order": 18,
-          "prompt": "You can find the sports results [gap] back page of the newspaper.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You can find the sports results [gap] the back page of the newspaper.",
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on a page"
         },
         {
           "id": "ws-35-sec-a-q19",
           "order": 19,
           "prompt": "Sue and Dave got married [gap] Manchester four years ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + city"
         },
         {
           "id": "ws-35-sec-a-q20",
           "order": 20,
           "prompt": "Paris is [gap] the river Seine.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on a river (located beside it)"
         },
         {
           "id": "ws-35-sec-a-q21",
           "order": 21,
-          "prompt": "Mr. Boyle’s office is [gap] the first floor. When you come out of the lift, it’s the third floor [gap] your left.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mr. Boyle’s office is [gap] the first floor. When you come out of the lift, it’s the third door [gap] your left.",
+          "acceptedAnswers": [
+            "on / on"
+          ],
+          "explanation": "on + floor; on your left"
         },
         {
           "id": "ws-35-sec-a-q22",
           "order": 22,
           "prompt": "Turn left [gap] the traffic lights.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at the traffic lights"
         },
         {
           "id": "ws-35-sec-a-q23",
           "order": 23,
           "prompt": "In most countries people drive [gap] the right.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "drive on the right / left"
         },
         {
           "id": "ws-35-sec-a-q24",
           "order": 24,
           "prompt": "Last year we had a lovely skiing holiday [gap] the Swiss Alps.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + mountain region"
         },
         {
           "id": "ws-35-sec-a-q25",
           "order": 25,
           "prompt": "She spends all day sitting [gap] the window and watching what is happening outside.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at|by"
+          ],
+          "explanation": "sit at / by the window"
         }
       ]
     },
@@ -199,215 +249,273 @@
       "type": "inline_gap_fill",
       "questions": [
         {
+          "id": "ws-35-sec-b-q01",
+          "order": 1,
+          "prompt": "Cenk lives [gap] 8/10 İstiklal Street.",
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at + full address with number"
+        },
+        {
+          "id": "ws-35-sec-b-q02",
+          "order": 2,
+          "prompt": "The course begins [gap] 8 June and ends [gap] October.",
+          "acceptedAnswers": [
+            "on / in"
+          ],
+          "explanation": "on + date; in + month"
+        },
+        {
+          "id": "ws-35-sec-b-q03",
+          "order": 3,
+          "prompt": "Peter is [gap] class 2B.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in a class"
+        },
+        {
+          "id": "ws-35-sec-b-q04",
+          "order": 4,
+          "prompt": "Peter goes to school [gap] Monday [gap] Friday.",
+          "acceptedAnswers": [
+            "from / to|till|until"
+          ],
+          "explanation": "from … to"
+        },
+        {
+          "id": "ws-35-sec-b-q05",
+          "order": 5,
+          "prompt": "Students haven’t got any lessons [gap] the weekends.",
+          "acceptedAnswers": [
+            "at|on|during|over"
+          ],
+          "explanation": "at the weekend (BrE) / on the weekend (AmE)"
+        },
+        {
+          "id": "ws-35-sec-b-q06",
+          "order": 6,
+          "prompt": "Sheila gets up [gap] 6.30 every morning.",
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at + clock time"
+        },
+        {
+          "id": "ws-35-sec-b-q07",
+          "order": 7,
+          "prompt": "Mike and his family go for a walk [gap] the evenings.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in the evening(s)"
+        },
+        {
+          "id": "ws-35-sec-b-q08",
+          "order": 8,
+          "prompt": "Michael has got a lot of posters and pictures [gap] cars [gap] the wall [gap] his room.",
+          "acceptedAnswers": [
+            "of / on / in"
+          ],
+          "explanation": "pictures of; on the wall; in a room"
+        },
+        {
           "id": "ws-35-sec-b-q09",
           "order": 9,
           "prompt": "I go to school [gap] bus, not [gap] foot.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "by / on"
+          ],
+          "explanation": "by bus; on foot"
         },
         {
           "id": "ws-35-sec-b-q10",
           "order": 10,
           "prompt": "I went to bed [gap] midnight and got up [gap] 10.00 [gap] the morning.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at / at / in"
+          ],
+          "explanation": "at midnight; at + time; in the morning"
         },
         {
           "id": "ws-35-sec-b-q11",
           "order": 11,
           "prompt": "Mozart was born [gap] Salzburg [gap] 1756.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in / in"
+          ],
+          "explanation": "in + city; in + year"
         },
         {
           "id": "ws-35-sec-b-q12",
           "order": 12,
-          "prompt": "There is a car in [gap] our house.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There is a car in [gap] [gap] our house.",
+          "acceptedAnswers": [
+            "front / of"
+          ],
+          "explanation": "in front of"
         },
         {
           "id": "ws-35-sec-b-q13",
           "order": 13,
           "prompt": "Who is sitting [gap] to you?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-35-sec-b-q08",
-          "order": 8,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "next"
+          ],
+          "explanation": "next to"
         },
         {
           "id": "ws-35-sec-b-q14",
           "order": 14,
           "prompt": "There is a light [gap] the table.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on|above|over"
+          ],
+          "explanation": "on / above the table"
         },
         {
           "id": "ws-35-sec-b-q15",
           "order": 15,
           "prompt": "Hurry up! We are going to the cinema [gap] five minutes.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + period = after that time"
         },
         {
           "id": "ws-35-sec-b-q16",
           "order": 16,
           "prompt": "I haven’t seen Ann for a few days. I last saw her [gap] Tuesday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + day of the week"
         },
         {
           "id": "ws-35-sec-b-q17",
           "order": 17,
           "prompt": "Jack’s brother is an engineer but he’s out of work [gap] the moment.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at the moment"
         }
       ]
     },
     {
       "id": "ws-35-sec-c",
       "sectionKey": "C",
-      "instruction": "Fill in the blanks using correct prepositions:",
+      "instruction": "Fill in the blanks using correct prepositions (write “-” if no preposition is needed):",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-35-sec-c-q01",
           "order": 1,
           "prompt": "I looked at the bookcase and saw an interesting story book [gap] the top shelf.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on a shelf"
         },
         {
           "id": "ws-35-sec-c-q02",
           "order": 2,
           "prompt": "[gap] sunny days we usually go on a picnic.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + days"
         },
         {
           "id": "ws-35-sec-c-q03",
           "order": 3,
           "prompt": "I usually listen [gap] pop music, because I’m interested [gap] it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "to / in"
+          ],
+          "explanation": "listen to; interested in"
         },
         {
           "id": "ws-35-sec-c-q04",
           "order": 4,
           "prompt": "Mary was born [gap] 20th March [gap] 1982.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on / in"
+          ],
+          "explanation": "on + date; in + year"
         },
         {
           "id": "ws-35-sec-c-q05",
           "order": 5,
-          "prompt": "We had to work everyday [gap] last summer.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We had to work every day [gap] last summer.",
+          "acceptedAnswers": [
+            "during|throughout|-|–|x|none|no preposition"
+          ],
+          "explanation": "no preposition needed before last; during also possible"
         },
         {
           "id": "ws-35-sec-c-q06",
           "order": 6,
           "prompt": "[gap] Christmas I’d like to visit my relatives.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at Christmas"
         },
         {
           "id": "ws-35-sec-c-q07",
           "order": 7,
           "prompt": "I last saw him [gap] last March.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "-|–|x|none|no preposition"
+          ],
+          "explanation": "no preposition before last / next / this"
         },
         {
           "id": "ws-35-sec-c-q08",
           "order": 8,
           "prompt": "Section 5 is [gap] the first floor of the Prep School.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + floor"
         },
         {
           "id": "ws-35-sec-c-q09",
           "order": 9,
           "prompt": "You mustn’t smoke [gap] a bus.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on|in"
+          ],
+          "explanation": "on a bus"
         },
         {
           "id": "ws-35-sec-c-q10",
           "order": 10,
           "prompt": "Ahmet’s grandmother died [gap] 1990 [gap] the age of 81.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in / at"
+          ],
+          "explanation": "in + year; at the age of"
         },
         {
           "id": "ws-35-sec-c-q11",
           "order": 11,
           "prompt": "Were there many people [gap] the concert?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at an event"
         },
         {
           "id": "ws-35-sec-c-q12",
           "order": 12,
           "prompt": "He speaks quite good French. He studied [gap] Paris for a year.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + city"
         }
       ]
     },
@@ -420,93 +528,119 @@
         {
           "id": "ws-35-sec-d-q01",
           "order": 1,
-          "prompt": "Mr. Mailer: Where’s Dr. Perez’s office? [gap] Miss King : You need to go [gap] one floor. His office is on the third floor, not the fourth floor.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mr. Mailer: Where’s Dr. Perez’s office? Miss King: You need to go [gap] one floor. His office is on the third floor, not the fourth floor.",
+          "acceptedAnswers": [
+            "down"
+          ],
+          "explanation": "go down = to a lower floor"
         },
         {
           "id": "ws-35-sec-d-q02",
           "order": 2,
-          "prompt": "Jimmy was getting ready for school. He was looking for his clothes. His mother said, [gap] “Your shirt is [gap] the chair. Your socks are [gap] the drawer. Your shoes are [gap] the bed.”",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jimmy was getting ready for school. He was looking for his clothes. His mother said, “Your shirt is [gap] the chair. Your socks are [gap] the drawer. Your shoes are [gap] the bed.”",
+          "acceptedAnswers": [
+            "on|over / in / under"
+          ],
+          "explanation": "on the chair; in the drawer; under the bed"
         },
         {
           "id": "ws-35-sec-d-q03",
           "order": 3,
           "prompt": "Get [gap] the bus! It’s about to go.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "get on a bus"
         },
         {
           "id": "ws-35-sec-d-q04",
           "order": 4,
           "prompt": "The car [gap] mine braked very hard and hit my car.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "behind"
+          ],
+          "explanation": "the car behind"
         },
         {
           "id": "ws-35-sec-d-q05",
           "order": 5,
           "prompt": "You walk very fast. You’re always five steps [gap] me.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "ahead of|in front of"
+          ],
+          "explanation": "ahead of / in front of"
         },
         {
           "id": "ws-35-sec-d-q06",
           "order": 6,
           "prompt": "There are emergency telephones all [gap] the E-5 Motorway.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "along"
+          ],
+          "explanation": "all along a road"
         },
         {
           "id": "ws-35-sec-d-q07",
           "order": 7,
           "prompt": "I will be very angry with you if I see your bicycle leaning [gap] the rose tree again.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "against"
+          ],
+          "explanation": "lean against"
         },
         {
           "id": "ws-35-sec-d-q08",
           "order": 8,
           "prompt": "There’s a big dog [gap] you. Quick! Run away!",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "behind"
+          ],
+          "explanation": "behind you"
         },
         {
           "id": "ws-35-sec-d-q09",
           "order": 9,
-          "prompt": "Someone parked his car [gap] of my gate. I can’t go out.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone parked his car [gap] [gap] of my gate. I can’t go out.",
+          "acceptedAnswers": [
+            "in / front"
+          ],
+          "explanation": "in front of"
         },
         {
           "id": "ws-35-sec-d-q10",
           "order": 10,
           "prompt": "There is a concert. A lot of people are [gap] the stadium.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in|at"
+          ],
+          "explanation": "in / at the stadium"
         },
         {
           "id": "ws-35-sec-d-q11",
           "order": 11,
           "prompt": "Mary is sitting [gap] John and Sebastian.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "between"
+          ],
+          "explanation": "between two people"
         },
         {
           "id": "ws-35-sec-d-q12",
           "order": 12,
           "prompt": "The dog is swimming [gap] the river.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "in|across"
+          ],
+          "explanation": "swim in / across a river"
         },
         {
           "id": "ws-35-sec-d-q13",
           "order": 13,
           "prompt": "Ali is next to Barış or Ali is [gap] Barış.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "beside|by"
+          ],
+          "explanation": "beside = next to"
         }
       ]
     }

@@ -12,157 +12,211 @@
     {
       "id": "ws-06-sec-a",
       "sectionKey": "A",
-      "instruction": "Complete the text with the correct form of TO BE:",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the text with the correct form of TO BE. (Example: Stan Laurel and Oliver Hardy were two of the most popular film comedians of all time.)",
+      "type": "passage_gap_fill",
+      "contextText": "Stan Laurel and Oliver Hardy were two of the most popular film comedians of all time. They were born in 1890 and 1892 respectively.",
       "questions": [
         {
           "id": "ws-06-sec-a-q01",
           "order": 1,
-          "prompt": "Stan Laurel and Oliver Hardy …were [gap] two of the most popular film comedians of all",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Stan Laurel's real name [gap] Arthur Jefferson.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular → was"
         },
         {
           "id": "ws-06-sec-a-q02",
           "order": 2,
-          "prompt": "time. They were born in 1890 and 1892 respectively. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] from England.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "he → was"
         },
         {
           "id": "ws-06-sec-a-q03",
           "order": 3,
-          "prompt": "Stan Laurel’s real name [gap] Arthur Jefferson. He [gap] form England.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Oliver Hardy [gap] English, he was from Georgia, USA.",
+          "acceptedAnswers": [
+            "wasn't"
+          ],
+          "explanation": "he was American → negative"
         },
         {
           "id": "ws-06-sec-a-q04",
           "order": 4,
-          "prompt": "Oliver Hardy [gap] English, he was from Georgia, USA.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Laurel and Hardy [gap] in their late 30s when they met.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "plural → were"
         },
         {
           "id": "ws-06-sec-a-q05",
           "order": 5,
-          "prompt": "Laurel and Hardy [gap] in their late 30s when they met. Their first film together",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Their first film together [gap] Putting Pants on Philip (1927).",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular → was"
         },
         {
           "id": "ws-06-sec-a-q06",
           "order": 6,
-          "prompt": "[gap] Putting Pants on Philip (1927). They [gap] funny because they were so",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They [gap] funny because they were so different.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "they → were"
         },
         {
           "id": "ws-06-sec-a-q07",
           "order": 7,
-          "prompt": "different. Laurel [gap] small and thin. Hardy [gap] big and fat. Their most",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Laurel [gap] small and thin.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular → was"
         },
         {
           "id": "ws-06-sec-a-q08",
           "order": 8,
-          "prompt": "famous films [gap] Way Out West (1937) and Blockheads (1938). They [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Hardy [gap] big and fat.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular → was"
         },
         {
           "id": "ws-06-sec-a-q09",
           "order": 9,
-          "prompt": "in any serious films, only comedies. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Their most famous films [gap] Way Out West (1937) and Blockheads (1938).",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "plural → were"
+        },
+        {
+          "id": "ws-06-sec-a-q10",
+          "order": 10,
+          "prompt": "They [gap] in any serious films, only comedies.",
+          "acceptedAnswers": [
+            "weren't"
+          ],
+          "explanation": "any → negative"
         }
       ]
     },
     {
       "id": "ws-06-sec-b",
       "sectionKey": "B",
-      "instruction": "Use the text to help you write questions for the answers:",
-      "type": "inline_gap_fill",
+      "instruction": "Use the text to help you write questions for the answers. (Example: Who was Oliver Hardy's famous comic partner? → Stan Laurel.)",
+      "type": "question_formation",
+      "contextText": "Stan Laurel and Oliver Hardy were two of the most popular film comedians of all time. They were born in 1890 and 1892 respectively.\nStan Laurel's real name was Arthur Jefferson. He was from England. Oliver Hardy wasn't English, he was from Georgia, USA.\nLaurel and Hardy were in their late 30s when they met. Their first film together was Putting Pants on Philip (1927). They were funny because they were so different. Laurel was small and thin. Hardy was big and fat. Their most famous films were Way Out West (1937) and Blockheads (1938). They weren't in any serious films, only comedies.",
       "questions": [
         {
           "id": "ws-06-sec-b-q01",
           "order": 1,
-          "prompt": "[gap] In 1890 and 1892 respectively.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: In 1890 and 1892 respectively.",
+          "acceptedAnswers": [
+            "When were they born?",
+            "When were Laurel and Hardy born?",
+            "When were Stan Laurel and Oliver Hardy born?"
+          ],
+          "explanation": "When + were + subject + born"
         },
         {
           "id": "ws-06-sec-b-q02",
           "order": 2,
-          "prompt": "[gap] Arthur Jefferson.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: Arthur Jefferson.",
+          "acceptedAnswers": [
+            "What was Stan Laurel's real name?",
+            "What was Laurel's real name?"
+          ],
+          "explanation": "What was … name?"
         },
         {
           "id": "ws-06-sec-b-q03",
           "order": 3,
-          "prompt": "[gap] England.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: England.",
+          "acceptedAnswers": [
+            "Where was Stan Laurel from?",
+            "Where was Laurel from?",
+            "Where was he from?"
+          ],
+          "explanation": "Where was … from?"
         },
         {
           "id": "ws-06-sec-b-q04",
           "order": 4,
-          "prompt": "[gap] No, he wasn’t. He was American.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: No, he wasn't. He was American.",
+          "acceptedAnswers": [
+            "Was Oliver Hardy English?",
+            "Was Hardy English?",
+            "Was he English?"
+          ],
+          "explanation": "Yes/No question: Was + subject"
         },
         {
           "id": "ws-06-sec-b-q05",
           "order": 5,
-          "prompt": "[gap] Putting Pants on Philip.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: Putting Pants on Philip.",
+          "acceptedAnswers": [
+            "What was their first film?",
+            "What was their first film together?",
+            "What was Laurel and Hardy's first film?",
+            "What was Laurel and Hardy's first film together?"
+          ],
+          "explanation": "What was … ?"
         },
         {
           "id": "ws-06-sec-b-q06",
           "order": 6,
-          "prompt": "[gap] Because they were so different.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: Because they were so different.",
+          "acceptedAnswers": [
+            "Why were they funny?",
+            "Why were Laurel and Hardy funny?"
+          ],
+          "explanation": "Why + were + subject"
         }
       ]
     },
     {
       "id": "ws-06-sec-c",
       "sectionKey": "C",
-      "instruction": "Write questions and answers. Use the past tense of BE:",
-      "type": "inline_gap_fill",
+      "instruction": "Write questions and answers. Use the past tense of BE. (Example: A: We had a nice holiday. B: (you / with your whole family?) → Were you with your whole family? A: (no / my daughter / in Montreal) → No, my daughter was in Montreal.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-06-sec-c-q01",
-          "order": 1,
-          "prompt": "A: We had a nice holiday. [gap] B: (you / with your whole family?) A: (no / my daughter / in Montreal) [gap] Were you with your whole family?… [gap] No, my daughter was in Montreal [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-06-sec-c-q02",
           "order": 2,
-          "prompt": "A: I bought these new shoes yesterday. [gap] B: (they / on sale ?) A: (yes / they / only $25)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: I bought these new shoes yesterday. B: (they / on sale?) A: (yes / they / only $25)",
+          "acceptedAnswers": [
+            "Were they on sale? Yes, they were only $25.",
+            "Were they on sale? Yes. They were only $25."
+          ],
+          "explanation": "Were they…? Yes, they were…"
         },
         {
           "id": "ws-06-sec-c-q03",
           "order": 3,
-          "prompt": "A: (you / at home / last night ?) [gap] B: (no / I / at the library)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: (you / at home / last night?) B: (no / I / at the library)",
+          "acceptedAnswers": [
+            "Were you at home last night? No, I was at the library.",
+            "Were you at home last night? No, I wasn't. I was at the library."
+          ],
+          "explanation": "Were you…? No, I was…"
         },
         {
           "id": "ws-06-sec-c-q04",
           "order": 4,
-          "prompt": "A: (the guests / late for the party ?) [gap] B: (no / they / all on time)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: (the guests / late for the party?) B: (no / they / all on time)",
+          "acceptedAnswers": [
+            "Were the guests late for the party? No, they were all on time.",
+            "Were the guests late for the party? No, they weren't. They were all on time."
+          ],
+          "explanation": "Were + plural…? No, they were…"
         }
       ]
     }

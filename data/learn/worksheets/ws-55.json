@@ -12,142 +12,28 @@
     {
       "id": "ws-55-sec-a",
       "sectionKey": "A",
-      "instruction": "Rewrite the sentences using the modals of CERTAINTY, IMPOSSIBILITY and",
+      "instruction": "Rewrite the sentences using the modals of CERTAINTY, IMPOSSIBILITY and POSSIBILITY:",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-55-sec-a-q01",
-          "order": 1,
-          "prompt": "Perhaps Jane will lend Tom some money.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q02",
-          "order": 2,
-          "prompt": "Perhaps Jane lent Tom some money.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q03",
-          "order": 3,
-          "prompt": "It is possible that she won’t invite you to the party.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q04",
-          "order": 4,
-          "prompt": "It is possible that she didn’t invite him to the party.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q05",
-          "order": 5,
-          "prompt": "Perhaps she is asleep.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q06",
-          "order": 6,
-          "prompt": "Perhaps she was asleep.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q07",
-          "order": 7,
-          "prompt": "I’m sure he isn’t tired.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q08",
-          "order": 8,
-          "prompt": "I’m sure he wasn’t tired.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q09",
-          "order": 9,
-          "prompt": "It is impossible that Mary knows my phone number.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q10",
-          "order": 10,
-          "prompt": "It is impossible that Mary knew his address.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q11",
-          "order": 11,
-          "prompt": "I’m sure she reads adventure books a lot.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q12",
-          "order": 12,
-          "prompt": "I’m sure she wrote to the bank.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q13",
-          "order": 13,
-          "prompt": "Maybe those children are lost.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q14",
-          "order": 14,
-          "prompt": "Maybe those children were lost.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q15",
-          "order": 15,
-          "prompt": "Perhaps Mary is feeling comfortable.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q16",
-          "order": 16,
-          "prompt": "I’m sure she is driving carefully.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q17",
-          "order": 17,
-          "prompt": "It is impossible that Lucy is studying in her room.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q18",
-          "order": 18,
-          "prompt": "I’m sure he isn’t helping his father now.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-a-q19",
-          "order": 19,
-          "prompt": "It is possible that people will be traveling between the planets.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-55-sec-a-q01", "order": 1, "prompt": "Perhaps Jane will lend Tom some money.", "acceptedAnswers": ["Jane may lend Tom some money.", "Jane might lend Tom some money.", "Jane could lend Tom some money."], "explanation": "possibility (future): may/might/could + verb" },
+        { "id": "ws-55-sec-a-q02", "order": 2, "prompt": "Perhaps Jane lent Tom some money.", "acceptedAnswers": ["Jane may have lent Tom some money.", "Jane might have lent Tom some money.", "Jane could have lent Tom some money."], "explanation": "past possibility: may/might + have + V3" },
+        { "id": "ws-55-sec-a-q03", "order": 3, "prompt": "It is possible that she won’t invite you to the party.", "acceptedAnswers": ["She may not invite you to the party.", "She might not invite you to the party."], "explanation": "negative possibility: may not / might not" },
+        { "id": "ws-55-sec-a-q04", "order": 4, "prompt": "It is possible that she didn’t invite him to the party.", "acceptedAnswers": ["She may not have invited him to the party.", "She might not have invited him to the party."], "explanation": "may not / might not + have + V3" },
+        { "id": "ws-55-sec-a-q05", "order": 5, "prompt": "Perhaps she is asleep.", "acceptedAnswers": ["She may be asleep.", "She might be asleep.", "She could be asleep."], "explanation": "present possibility: may/might/could be" },
+        { "id": "ws-55-sec-a-q06", "order": 6, "prompt": "Perhaps she was asleep.", "acceptedAnswers": ["She may have been asleep.", "She might have been asleep.", "She could have been asleep."], "explanation": "past possibility: may/might/could have been" },
+        { "id": "ws-55-sec-a-q07", "order": 7, "prompt": "I’m sure he isn’t tired.", "acceptedAnswers": ["He can't be tired.", "He couldn't be tired."], "explanation": "present impossibility: can’t be" },
+        { "id": "ws-55-sec-a-q08", "order": 8, "prompt": "I’m sure he wasn’t tired.", "acceptedAnswers": ["He can't have been tired.", "He couldn't have been tired."], "explanation": "past impossibility: can’t have been" },
+        { "id": "ws-55-sec-a-q09", "order": 9, "prompt": "It is impossible that Mary knows my phone number.", "acceptedAnswers": ["Mary can't know my phone number.", "Mary couldn't know my phone number."], "explanation": "present impossibility: can’t + verb" },
+        { "id": "ws-55-sec-a-q10", "order": 10, "prompt": "It is impossible that Mary knew his address.", "acceptedAnswers": ["Mary can't have known his address.", "Mary couldn't have known his address."], "explanation": "past impossibility: can’t have + V3" },
+        { "id": "ws-55-sec-a-q11", "order": 11, "prompt": "I’m sure she reads adventure books a lot.", "acceptedAnswers": ["She must read adventure books a lot."], "explanation": "present certainty: must + verb" },
+        { "id": "ws-55-sec-a-q12", "order": 12, "prompt": "I’m sure she wrote to the bank.", "acceptedAnswers": ["She must have written to the bank."], "explanation": "past certainty: must have + V3" },
+        { "id": "ws-55-sec-a-q13", "order": 13, "prompt": "Maybe those children are lost.", "acceptedAnswers": ["Those children may be lost.", "Those children might be lost.", "Those children could be lost."], "explanation": "present possibility: may/might be" },
+        { "id": "ws-55-sec-a-q14", "order": 14, "prompt": "Maybe those children were lost.", "acceptedAnswers": ["Those children may have been lost.", "Those children might have been lost.", "Those children could have been lost."], "explanation": "past possibility: may/might have been" },
+        { "id": "ws-55-sec-a-q15", "order": 15, "prompt": "Perhaps Mary is feeling comfortable.", "acceptedAnswers": ["Mary may be feeling comfortable.", "Mary might be feeling comfortable.", "Mary could be feeling comfortable."], "explanation": "possibility, continuous: may be + -ing" },
+        { "id": "ws-55-sec-a-q16", "order": 16, "prompt": "I’m sure she is driving carefully.", "acceptedAnswers": ["She must be driving carefully."], "explanation": "certainty, continuous: must be + -ing" },
+        { "id": "ws-55-sec-a-q17", "order": 17, "prompt": "It is impossible that Lucy is studying in her room.", "acceptedAnswers": ["Lucy can't be studying in her room.", "Lucy couldn't be studying in her room."], "explanation": "impossibility, continuous: can’t be + -ing" },
+        { "id": "ws-55-sec-a-q18", "order": 18, "prompt": "I’m sure he isn’t helping his father now.", "acceptedAnswers": ["He can't be helping his father now.", "He couldn't be helping his father now."], "explanation": "impossibility, continuous: can’t be + -ing" },
+        { "id": "ws-55-sec-a-q19", "order": 19, "prompt": "It is possible that people will be traveling between the planets.", "acceptedAnswers": ["People may be traveling between the planets.", "People may be travelling between the planets.", "People might be traveling between the planets.", "People might be travelling between the planets.", "People could be traveling between the planets.", "People could be travelling between the planets."], "explanation": "future possibility: may/might be + -ing" }
       ]
     },
     {
@@ -156,304 +42,76 @@
       "instruction": "Rewrite using modals to show CERTAINTY, POSSIBILITY, IMPOSSIBILITY:",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-55-sec-b-q01",
-          "order": 1,
-          "prompt": "Perhaps Peter lended some money to Linda.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-b-q02",
-          "order": 2,
-          "prompt": "It is impossible that Ken saw me because he wasn’t wearing his glasses.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-b-q03",
-          "order": 3,
-          "prompt": "Perhaps Martin didn’t receive my letter because he didn’t reply.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-b-q04",
-          "order": 4,
-          "prompt": "I’m sure he knows about the new project.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-b-q05",
-          "order": 5,
-          "prompt": "It’s impossible that he forgot the meeting. Because I called him this morning.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-b-q06",
-          "order": 6,
-          "prompt": "It’s possible that she will move to her new flat next week.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-55-sec-b-q01", "order": 1, "prompt": "Perhaps Peter lent some money to Linda.", "acceptedAnswers": ["Peter may have lent some money to Linda.", "Peter might have lent some money to Linda.", "Peter could have lent some money to Linda."], "explanation": "past possibility: may/might have + V3" },
+        { "id": "ws-55-sec-b-q02", "order": 2, "prompt": "It is impossible that Ken saw me because he wasn’t wearing his glasses.", "acceptedAnswers": ["Ken can't have seen me because he wasn’t wearing his glasses.", "Ken couldn't have seen me because he wasn’t wearing his glasses."], "explanation": "past impossibility: can’t have + V3" },
+        { "id": "ws-55-sec-b-q03", "order": 3, "prompt": "Perhaps Martin didn’t receive my letter because he didn’t reply.", "acceptedAnswers": ["Martin may not have received my letter because he didn’t reply.", "Martin might not have received my letter because he didn’t reply."], "explanation": "may not / might not have + V3" },
+        { "id": "ws-55-sec-b-q04", "order": 4, "prompt": "I’m sure he knows about the new project.", "acceptedAnswers": ["He must know about the new project."], "explanation": "present certainty: must + verb" },
+        { "id": "ws-55-sec-b-q05", "order": 5, "prompt": "It’s impossible that he forgot the meeting. Because I called him this morning.", "acceptedAnswers": ["He can't have forgotten the meeting I called him this morning.", "He can't have forgotten the meeting because I called him this morning.", "He couldn't have forgotten the meeting I called him this morning.", "He couldn't have forgotten the meeting because I called him this morning."], "explanation": "past impossibility: can’t have + V3" },
+        { "id": "ws-55-sec-b-q06", "order": 6, "prompt": "It’s possible that she will move to her new flat next week.", "acceptedAnswers": ["She may move to her new flat next week.", "She might move to her new flat next week.", "She could move to her new flat next week."], "explanation": "future possibility: may/might + verb" }
       ]
     },
     {
       "id": "ws-55-sec-c",
       "sectionKey": "C",
-      "instruction": "Fill in the blanks with the modal verbs to show CERTAINTY, POSSIBILITY,",
-      "type": "inline_gap_fill",
+      "instruction": "Fill in the blanks with the modal verbs to show CERTAINTY, POSSIBILITY, IMPOSSIBILITY:",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-55-sec-c-q01",
-          "order": 1,
-          "prompt": "He drank two glasses of water, he [gap] (be) thirsty.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-c-q02",
-          "order": 2,
-          "prompt": "He isn’t more than 15 years old, he [gap] (have) a driving licence.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-c-q03",
-          "order": 3,
-          "prompt": "He [gap] (watch) TV in his room, because there isn’t any noise coming.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-c-q04",
-          "order": 4,
-          "prompt": "The solution [gap] (be) correct, because I looked up the answer key.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-c-q05",
-          "order": 5,
-          "prompt": "A: Do you smell fish? [gap] B: Yes. Someone [gap] cooking fish.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-c-q06",
-          "order": 6,
-          "prompt": "I’m not sure, he [gap] (be) an actor, he is very handsome and rich.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-55-sec-c-q01", "order": 1, "prompt": "He drank two glasses of water, he [gap] (be) thirsty.", "acceptedAnswers": ["must have been"], "explanation": "past certainty: must have been" },
+        { "id": "ws-55-sec-c-q02", "order": 2, "prompt": "He isn’t more than 15 years old, he [gap] (have) a driving licence.", "acceptedAnswers": ["can't have|couldn't have"], "explanation": "impossibility: can’t + verb" },
+        { "id": "ws-55-sec-c-q03", "order": 3, "prompt": "He [gap] (watch) TV in his room, because there isn’t any noise coming.", "acceptedAnswers": ["can't be watching|couldn't be watching"], "explanation": "impossibility now: can’t be + -ing" },
+        { "id": "ws-55-sec-c-q04", "order": 4, "prompt": "The solution [gap] (be) correct, because I looked up the answer key.", "acceptedAnswers": ["must be"], "explanation": "certainty: must be" },
+        { "id": "ws-55-sec-c-q05", "order": 5, "prompt": "A: Do you smell fish? B: Yes. Someone [gap] cooking fish.", "acceptedAnswers": ["must be"], "explanation": "certainty now: must be + -ing" },
+        { "id": "ws-55-sec-c-q06", "order": 6, "prompt": "I’m not sure, he [gap] (be) an actor, he is very handsome and rich.", "acceptedAnswers": ["may be|might be|could be"], "explanation": "possibility: may/might be" }
       ]
     },
     {
       "id": "ws-55-sec-d",
       "sectionKey": "D",
-      "instruction": "Make sentences using CERTAINTY, POSSIBILITY and IMPOSSIBILTY:",
-      "type": "inline_gap_fill",
+      "instruction": "Make sentences using CERTAINTY, POSSIBILITY and IMPOSSIBILITY:",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-55-sec-d-q01",
-          "order": 1,
-          "prompt": "She / not / work / yesterday, / it / Sunday. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-d-q02",
-          "order": 2,
-          "prompt": "They / not / lose / the match. / They / play / well. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-d-q03",
-          "order": 3,
-          "prompt": "There / be / election / early / next year, / because / we / government / problems. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-d-q04",
-          "order": 4,
-          "prompt": "Betty / fail / not / last exam. / She / do / all the answers / correctly. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-55-sec-d-q01", "order": 1, "prompt": "She / not / work / yesterday, / it / Sunday.", "acceptedAnswers": ["She can't have worked yesterday, it was Sunday.", "She can't have worked yesterday because it was Sunday.", "She can't have been working yesterday, it was Sunday.", "She can't have been working yesterday because it was Sunday.", "She couldn't have worked yesterday, it was Sunday.", "She couldn't have worked yesterday because it was Sunday.", "She couldn't have been working yesterday, it was Sunday.", "She couldn't have been working yesterday because it was Sunday."], "explanation": "past impossibility: can’t have + V3" },
+        { "id": "ws-55-sec-d-q02", "order": 2, "prompt": "They / not / lose / the match. / They / play / well.", "acceptedAnswers": ["They can't have lost the match. They played well.", "They can't have lost the match. They must have played well.", "They couldn't have lost the match. They played well.", "They couldn't have lost the match. They must have played well."], "explanation": "can’t have lost; must have played" },
+        { "id": "ws-55-sec-d-q03", "order": 3, "prompt": "There / be / election / early / next year, / because / we / government / problems.", "acceptedAnswers": ["There may be an election early next year because we have government problems.", "There might be an election early next year because we have government problems.", "There could be an election early next year because we have government problems.", "There may be an election early next year because the government has problems.", "There might be an election early next year because the government has problems.", "There could be an election early next year because the government has problems."], "explanation": "future possibility: may/might be" },
+        { "id": "ws-55-sec-d-q04", "order": 4, "prompt": "Betty / fail / not / last exam. / She / do / all the answers / correctly.", "acceptedAnswers": ["Betty can't have failed her last exam. She did all the answers correctly.", "Betty can't have failed her last exam. She must have done all the answers correctly.", "Betty can't have failed the last exam. She did all the answers correctly.", "Betty can't have failed the last exam. She must have done all the answers correctly.", "Betty couldn't have failed her last exam. She did all the answers correctly.", "Betty couldn't have failed her last exam. She must have done all the answers correctly.", "Betty couldn't have failed the last exam. She did all the answers correctly.", "Betty couldn't have failed the last exam. She must have done all the answers correctly."], "explanation": "can’t have failed; must have done" }
       ]
     },
     {
       "id": "ws-55-sec-e",
       "sectionKey": "E",
-      "instruction": "Fill in the blanks using the verbs expressing CERTAINTY, POSSIBILITY and",
+      "instruction": "Fill in the blanks using the verbs expressing CERTAINTY, POSSIBILITY and IMPOSSIBILITY:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-55-sec-e-q01",
-          "order": 1,
-          "prompt": "Her face is red. She [gap] be telling a lie.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q02",
-          "order": 2,
-          "prompt": "He is working hard. He [gap] be ill.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q03",
-          "order": 3,
-          "prompt": "A: Have you done this pozzle? [gap] B: Yes, I’ve got the same answer as you. It [gap] be correct. A: Well, the answer in the book is different. So we [gap] be right.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q04",
-          "order": 4,
-          "prompt": "A: Are John and Mary married? [gap] B: They [gap] be married. They have rings on their fingers.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q05",
-          "order": 5,
-          "prompt": "You’ve been resting all day; you [gap] be tired.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q06",
-          "order": 6,
-          "prompt": "I can hear Jane speaking but she’s alone in the room. She [gap] be talking to a friend on the phone.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q07",
-          "order": 7,
-          "prompt": "A: Tom has been in his room for over an hour. What do you suppose he is doing? [gap] B: I don’t know. He [gap] be reading a book or sleeping, but he [gap] be studying because it is too late.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q08",
-          "order": 8,
-          "prompt": "A: I need to call Howard. Do you know which hotel he’s staying at in Boston? [gap] B: Well, he [gap] (stay) at the Holiday Inn, but I’m not sure. I think he [gap] (stay) at the Hilton, because it’s too far away from the city center.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q09",
-          "order": 9,
-          "prompt": "A: Do you smell smoke? [gap] B: I sure do. Something [gap] (burn).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-e-q10",
-          "order": 10,
-          "prompt": "There [gap] (not / be) a meeting on Friday because the director is ill.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-55-sec-e-q01", "order": 1, "prompt": "Her face is red. She [gap] be telling a lie.", "acceptedAnswers": ["must"], "explanation": "certainty from evidence: must" },
+        { "id": "ws-55-sec-e-q02", "order": 2, "prompt": "He is working hard. He [gap] be ill.", "acceptedAnswers": ["can't|couldn't"], "explanation": "impossibility: can’t" },
+        { "id": "ws-55-sec-e-q03", "order": 3, "prompt": "A: Have you done this puzzle? B: Yes, I’ve got the same answer as you. It [gap] be correct. A: Well, the answer in the book is different. So we [gap] be right.", "acceptedAnswers": ["must / can't|couldn't"], "explanation": "must = sure; can’t = sure it is not" },
+        { "id": "ws-55-sec-e-q04", "order": 4, "prompt": "A: Are John and Mary married? B: They [gap] be married. They have rings on their fingers.", "acceptedAnswers": ["must"], "explanation": "certainty from evidence: must" },
+        { "id": "ws-55-sec-e-q05", "order": 5, "prompt": "You’ve been resting all day; you [gap] be tired.", "acceptedAnswers": ["can't|couldn't"], "explanation": "impossibility: can’t" },
+        { "id": "ws-55-sec-e-q06", "order": 6, "prompt": "I can hear Jane speaking but she’s alone in the room. She [gap] be talking to a friend on the phone.", "acceptedAnswers": ["must"], "explanation": "certainty from evidence: must" },
+        { "id": "ws-55-sec-e-q07", "order": 7, "prompt": "A: Tom has been in his room for over an hour. What do you suppose he is doing? B: I don’t know. He [gap] be reading a book or sleeping, but he [gap] be studying because it is too late.", "acceptedAnswers": ["may|might|could / can't|couldn't"], "explanation": "possibility: may/might; impossibility: can’t" },
+        { "id": "ws-55-sec-e-q08", "order": 8, "prompt": "A: I need to call Howard. Do you know which hotel he’s staying at in Boston? B: Well, he [gap] (stay) at the Holiday Inn, but I’m not sure. I think he [gap] (stay) at the Hilton, because it’s too far away from the city center.", "acceptedAnswers": ["may be staying|might be staying|could be staying / can't be staying|couldn't be staying"], "explanation": "may be + -ing; can’t be + -ing" },
+        { "id": "ws-55-sec-e-q09", "order": 9, "prompt": "A: Do you smell smoke? B: I sure do. Something [gap] (burn).", "acceptedAnswers": ["must be burning"], "explanation": "certainty now: must be + -ing" },
+        { "id": "ws-55-sec-e-q10", "order": 10, "prompt": "There [gap] (not / be) a meeting on Friday because the director is ill.", "acceptedAnswers": ["may not be|might not be"], "explanation": "negative possibility: may not / might not" }
       ]
     },
     {
       "id": "ws-55-sec-f",
       "sectionKey": "F",
-      "instruction": "Rewrite the following sentences using modal verbs used for expressing CERTAINTY,",
+      "instruction": "Rewrite the following sentences using modal verbs used for expressing CERTAINTY, POSSIBILITY and IMPOSSIBILITY:",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-55-sec-f-q01",
-          "order": 1,
-          "prompt": "Tom gets excellent grades. I’m sure he is very intelligent.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q02",
-          "order": 2,
-          "prompt": "Perhaps Tony is in the sports center.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q03",
-          "order": 3,
-          "prompt": "It’s possible that Liz won’t come to the party.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q04",
-          "order": 4,
-          "prompt": "It’s possible that Rose is studying to be a lawyer.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q05",
-          "order": 5,
-          "prompt": "It’s impossible that he is Canadian; I’ve ever seen his identity card.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q06",
-          "order": 6,
-          "prompt": "I’m sure he goes to the theatre a lot.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q07",
-          "order": 7,
-          "prompt": "I’m sure long skirts aren’t in fashion this year.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q08",
-          "order": 8,
-          "prompt": "Perhaps she won’t be here tomorrow.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q09",
-          "order": 9,
-          "prompt": "Their baby-boy is ill. It is impossible that they are going to the party.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q10",
-          "order": 10,
-          "prompt": "I’m sure he is taking the money to the bank.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q11",
-          "order": 11,
-          "prompt": "Perhaps people will be living on the moon in the future.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-55-sec-f-q12",
-          "order": 12,
-          "prompt": "It is possible that it will rain this afternoon.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-55-sec-f-q01", "order": 1, "prompt": "Tom gets excellent grades. I’m sure he is very intelligent.", "acceptedAnswers": ["Tom gets excellent grades. He must be very intelligent.", "He must be very intelligent."], "explanation": "present certainty: must be" },
+        { "id": "ws-55-sec-f-q02", "order": 2, "prompt": "Perhaps Tony is in the sports center.", "acceptedAnswers": ["Tony may be in the sports center.", "Tony may be in the sports centre.", "Tony might be in the sports center.", "Tony might be in the sports centre.", "Tony could be in the sports center.", "Tony could be in the sports centre."], "explanation": "present possibility: may/might be" },
+        { "id": "ws-55-sec-f-q03", "order": 3, "prompt": "It’s possible that Liz won’t come to the party.", "acceptedAnswers": ["Liz may not come to the party.", "Liz might not come to the party."], "explanation": "negative possibility: may not / might not" },
+        { "id": "ws-55-sec-f-q04", "order": 4, "prompt": "It’s possible that Rose is studying to be a lawyer.", "acceptedAnswers": ["Rose may be studying to be a lawyer.", "Rose might be studying to be a lawyer.", "Rose could be studying to be a lawyer."], "explanation": "possibility, continuous: may be + -ing" },
+        { "id": "ws-55-sec-f-q05", "order": 5, "prompt": "It’s impossible that he is Canadian; I’ve seen his identity card.", "acceptedAnswers": ["He can't be Canadian.", "He can't be Canadian; I’ve seen his identity card.", "He couldn't be Canadian.", "He couldn't be Canadian; I’ve seen his identity card."], "explanation": "present impossibility: can’t be" },
+        { "id": "ws-55-sec-f-q06", "order": 6, "prompt": "I’m sure he goes to the theatre a lot.", "acceptedAnswers": ["He must go to the theatre a lot.", "He must go to the theater a lot."], "explanation": "present certainty: must + verb" },
+        { "id": "ws-55-sec-f-q07", "order": 7, "prompt": "I’m sure long skirts aren’t in fashion this year.", "acceptedAnswers": ["Long skirts can't be in fashion this year.", "Long skirts couldn't be in fashion this year."], "explanation": "present impossibility: can’t be" },
+        { "id": "ws-55-sec-f-q08", "order": 8, "prompt": "Perhaps she won’t be here tomorrow.", "acceptedAnswers": ["She may not be here tomorrow.", "She might not be here tomorrow."], "explanation": "negative possibility: may not / might not" },
+        { "id": "ws-55-sec-f-q09", "order": 9, "prompt": "Their baby-boy is ill. It is impossible that they are going to the party.", "acceptedAnswers": ["Their baby-boy is ill. They can't be going to the party.", "Their baby-boy is ill. They couldn't be going to the party.", "They can't be going to the party.", "They couldn't be going to the party."], "explanation": "impossibility, continuous: can’t be + -ing" },
+        { "id": "ws-55-sec-f-q10", "order": 10, "prompt": "I’m sure he is taking the money to the bank.", "acceptedAnswers": ["He must be taking the money to the bank."], "explanation": "certainty, continuous: must be + -ing" },
+        { "id": "ws-55-sec-f-q11", "order": 11, "prompt": "Perhaps people will be living on the moon in the future.", "acceptedAnswers": ["People may be living on the moon in the future.", "People might be living on the moon in the future.", "People could be living on the moon in the future."], "explanation": "future possibility: may/might be + -ing" },
+        { "id": "ws-55-sec-f-q12", "order": 12, "prompt": "It is possible that it will rain this afternoon.", "acceptedAnswers": ["It may rain this afternoon.", "It might rain this afternoon.", "It could rain this afternoon."], "explanation": "future possibility: may/might + verb" }
       ]
     }
   ]

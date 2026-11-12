@@ -12,321 +12,85 @@
     {
       "id": "ws-59-sec-a",
       "sectionKey": "A",
-      "instruction": "Complete the sentences. Use ENOUGH with one of these words:",
+      "instruction": "Complete the sentences. Use ENOUGH with one of these words. (Examples: Is there enough sugar in your coffee? — Is it loud enough for you?)",
       "type": "inline_gap_fill",
+      "wordBank": [
+        "big",
+        "eat",
+        "fruit",
+        "loud",
+        "old",
+        "practise",
+        "sugar",
+        "time",
+        "tired"
+      ],
       "questions": [
-        {
-          "id": "ws-59-sec-a-q01",
-          "order": 1,
-          "prompt": "A: “Is there [gap] enough sugar … in your coffee?” B: “Yes, thank you.”",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q02",
-          "order": 2,
-          "prompt": "Can you hear the radio? Is it …loud enough [gap] for you?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q03",
-          "order": 3,
-          "prompt": "He can leave school if he wants – he’s [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q04",
-          "order": 4,
-          "prompt": "Did you have [gap] to answer all the questions in the exam?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q05",
-          "order": 5,
-          "prompt": "This house isn’t [gap] for a large family.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q06",
-          "order": 6,
-          "prompt": "Tina is very thin. She doesn’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q07",
-          "order": 7,
-          "prompt": "You don’t eat [gap] You should eat more – it’s good for you.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q08",
-          "order": 8,
-          "prompt": "It’s late but I don’t want to go to bed now. I’m not [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-a-q09",
-          "order": 9,
-          "prompt": "Lisa isn’t a very good tennis player because she doesn’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-59-sec-a-q03", "order": 3, "prompt": "He can leave school if he wants – he’s [gap].", "acceptedAnswers": ["old enough"], "explanation": "adjective + enough" },
+        { "id": "ws-59-sec-a-q04", "order": 4, "prompt": "Did you have [gap] to answer all the questions in the exam?", "acceptedAnswers": ["enough time"], "explanation": "enough + noun" },
+        { "id": "ws-59-sec-a-q05", "order": 5, "prompt": "This house isn’t [gap] for a large family.", "acceptedAnswers": ["big enough"], "explanation": "adjective + enough" },
+        { "id": "ws-59-sec-a-q06", "order": 6, "prompt": "Tina is very thin. She doesn’t [gap].", "acceptedAnswers": ["eat enough"], "explanation": "verb + enough" },
+        { "id": "ws-59-sec-a-q07", "order": 7, "prompt": "You don’t eat [gap]. You should eat more – it’s good for you.", "acceptedAnswers": ["enough fruit"], "explanation": "enough + noun" },
+        { "id": "ws-59-sec-a-q08", "order": 8, "prompt": "It’s late but I don’t want to go to bed now. I’m not [gap].", "acceptedAnswers": ["tired enough"], "explanation": "adjective + enough" },
+        { "id": "ws-59-sec-a-q09", "order": 9, "prompt": "Lisa isn’t a very good tennis player because she doesn’t [gap].", "acceptedAnswers": ["practise enough|practice enough"], "explanation": "verb + enough" }
       ]
     },
     {
       "id": "ws-59-sec-b",
       "sectionKey": "B",
-      "instruction": "Complete the sentences. Use ENOUGH with the words in brackets:",
+      "instruction": "Complete the sentences. Use ENOUGH with the words in brackets. (Example: We haven’t got enough money to buy a car. (money / buy))",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-59-sec-b-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-b-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-b-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-b-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-b-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-b-q06",
-          "order": 6,
-          "prompt": " [gap] We haven’t got [gap] enough money to buy [gap] a car. This knife isn’t [gap] tomatoes. The water wasn’t [gap] a bath. Have we got [gap] sandwiches? We played well but not [gap] the game. I don’t have [gap] newspaper. (money / buy) (sharp / cut) (warm / have) (bread make) (well / win) (time / read)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-59-sec-b-q02", "order": 2, "prompt": "This knife isn’t [gap] tomatoes. (sharp / cut)", "acceptedAnswers": ["sharp enough to cut"], "explanation": "adjective + enough + to-infinitive" },
+        { "id": "ws-59-sec-b-q03", "order": 3, "prompt": "The water wasn’t [gap] a bath. (warm / have)", "acceptedAnswers": ["warm enough to have"], "explanation": "adjective + enough + to-infinitive" },
+        { "id": "ws-59-sec-b-q04", "order": 4, "prompt": "Have we got [gap] sandwiches? (bread / make)", "acceptedAnswers": ["enough bread to make"], "explanation": "enough + noun + to-infinitive" },
+        { "id": "ws-59-sec-b-q05", "order": 5, "prompt": "We played well but not [gap] the game. (well / win)", "acceptedAnswers": ["well enough to win"], "explanation": "adverb + enough + to-infinitive" },
+        { "id": "ws-59-sec-b-q06", "order": 6, "prompt": "I don’t have [gap] the newspaper. (time / read)", "acceptedAnswers": ["enough time to read"], "explanation": "enough + noun + to-infinitive" }
       ]
     },
     {
       "id": "ws-59-sec-c",
       "sectionKey": "C",
-      "instruction": "Put in TOO or ENOUGH:",
+      "instruction": "Put in TOO or ENOUGH. (Example: You’re always at home. You don’t go out enough.)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-59-sec-c-q05",
-          "order": 5,
-          "prompt": "You don’t eat [gap] vegetables. You should eat more.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q06",
-          "order": 6,
-          "prompt": "I don’t like the weather here. It’s [gap] cold.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q07",
-          "order": 7,
-          "prompt": "The radio isn’t loud [gap] Can you turn it up, please?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q08",
-          "order": 8,
-          "prompt": "She speaks [gap] fast for me to understand.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q09",
-          "order": 9,
-          "prompt": "Don’t buy that coat. It’s nice but it isn’t long [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q10",
-          "order": 10,
-          "prompt": "He can’t reach the shelf. He isn’t tall [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-c-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-59-sec-c-q02", "order": 2, "prompt": "I can’t wait for them. I haven’t got [gap] time.", "acceptedAnswers": ["enough"], "explanation": "enough + noun" },
+        { "id": "ws-59-sec-c-q03", "order": 3, "prompt": "You’re always tired. I think you work [gap] hard.", "acceptedAnswers": ["too"], "explanation": "too + adverb" },
+        { "id": "ws-59-sec-c-q04", "order": 4, "prompt": "A: Did you have [gap] to eat? B: Yes, thank you.", "acceptedAnswers": ["enough"], "explanation": "enough to eat" },
+        { "id": "ws-59-sec-c-q05", "order": 5, "prompt": "You don’t eat [gap] vegetables. You should eat more.", "acceptedAnswers": ["enough"], "explanation": "enough + noun" },
+        { "id": "ws-59-sec-c-q06", "order": 6, "prompt": "I don’t like the weather here. It’s [gap] cold.", "acceptedAnswers": ["too"], "explanation": "too + adjective" },
+        { "id": "ws-59-sec-c-q07", "order": 7, "prompt": "The radio isn’t loud [gap]. Can you turn it up, please?", "acceptedAnswers": ["enough"], "explanation": "adjective + enough" },
+        { "id": "ws-59-sec-c-q08", "order": 8, "prompt": "She speaks [gap] fast for me to understand.", "acceptedAnswers": ["too"], "explanation": "too + adverb + for … to" },
+        { "id": "ws-59-sec-c-q09", "order": 9, "prompt": "Don’t buy that coat. It’s nice but it isn’t long [gap].", "acceptedAnswers": ["enough"], "explanation": "adjective + enough" },
+        { "id": "ws-59-sec-c-q10", "order": 10, "prompt": "He can’t reach the shelf. He isn’t tall [gap].", "acceptedAnswers": ["enough"], "explanation": "adjective + enough" }
       ]
     },
     {
       "id": "ws-59-sec-d",
       "sectionKey": "D",
-      "instruction": "Complete the sentences. Use TOO or ENOUGH with the words in brackets:",
+      "instruction": "Complete the sentences. Use TOO or ENOUGH with the words in brackets. (Examples: I couldn’t work. I was too tired. — Can you turn the radio up, please? It isn’t loud enough.)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-59-sec-d-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q07",
-          "order": 7,
-          "prompt": " [gap] I couldn’t work. I [gap] was too tired [gap] Can you turn the radio up, please? It [gap] isn’t loud enough [gap] I don’t want to walk home. It’s [gap] Don’t buy anything in that shop. It [gap] You can’t put all your things in this bag. It [gap] I couldn’t do the exercise. It [gap] Your work needs to be better. It [gap] (tired) (loud) (far) (expensive) (big) (difficult) (good)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q08",
-          "order": 8,
-          "prompt": "I can’t talk to you now. I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-d-q09",
-          "order": 9,
-          "prompt": "I thought the film was boring. It [gap] (busy) (long)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-59-sec-d-q03", "order": 3, "prompt": "I don’t want to walk home. It’s [gap]. (far)", "acceptedAnswers": ["too far"], "explanation": "too + adjective" },
+        { "id": "ws-59-sec-d-q04", "order": 4, "prompt": "Don’t buy anything in that shop. It [gap]. (expensive)", "acceptedAnswers": ["is too expensive|'s too expensive"], "explanation": "too + adjective" },
+        { "id": "ws-59-sec-d-q05", "order": 5, "prompt": "You can’t put all your things in this bag. It [gap]. (big)", "acceptedAnswers": ["isn't big enough|'s not big enough"], "explanation": "not + adjective + enough" },
+        { "id": "ws-59-sec-d-q06", "order": 6, "prompt": "I couldn’t do the exercise. It [gap]. (difficult)", "acceptedAnswers": ["was too difficult"], "explanation": "too + adjective" },
+        { "id": "ws-59-sec-d-q07", "order": 7, "prompt": "Your work needs to be better. It [gap]. (good)", "acceptedAnswers": ["isn't good enough|'s not good enough"], "explanation": "not + adjective + enough" },
+        { "id": "ws-59-sec-d-q08", "order": 8, "prompt": "I can’t talk to you now. I [gap]. (busy)", "acceptedAnswers": ["am too busy|'m too busy"], "explanation": "too + adjective" },
+        { "id": "ws-59-sec-d-q09", "order": 9, "prompt": "I thought the film was boring. It [gap]. (long)", "acceptedAnswers": ["was too long"], "explanation": "too + adjective" }
       ]
     },
     {
       "id": "ws-59-sec-e",
       "sectionKey": "E",
-      "instruction": "Complete the sentences. Use TOO (+adj.) + TO (do something):",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the sentences. Use TOO (+ adjective) + TO (do something). (Example: (I’m not going out / cold) → It’s too cold to go out.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-59-sec-e-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-e-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-e-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-e-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-e-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-59-sec-e-q06",
-          "order": 6,
-          "prompt": " [gap] (I’m not going out / cold) (I’m not going to bed / early) (they’re not getting married / young) (nobody goes out at night / dangerous) (don’t phone Ann now / late (I didn’t say anything / surprised) [gap] It’s too cold to go out [gap] It’s [gap] They’re [gap] It’s [gap] It’s [gap] I was [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-59-sec-e-q02", "order": 2, "prompt": "(I’m not going to bed / early) → It’s", "acceptedAnswers": ["It's too early to go to bed."], "explanation": "too + adjective + to-infinitive" },
+        { "id": "ws-59-sec-e-q03", "order": 3, "prompt": "(they’re not getting married / young) → They’re", "acceptedAnswers": ["They're too young to get married."], "explanation": "too + adjective + to-infinitive" },
+        { "id": "ws-59-sec-e-q04", "order": 4, "prompt": "(nobody goes out at night / dangerous) → It’s", "acceptedAnswers": ["It's too dangerous to go out at night.", "It's too dangerous for anybody to go out at night.", "It's too dangerous for anyone to go out at night."], "explanation": "too + adjective + to-infinitive" },
+        { "id": "ws-59-sec-e-q05", "order": 5, "prompt": "(don’t phone Ann now / late) → It’s", "acceptedAnswers": ["It's too late to phone Ann.", "It's too late to phone Ann now."], "explanation": "too + adjective + to-infinitive" },
+        { "id": "ws-59-sec-e-q06", "order": 6, "prompt": "(I didn’t say anything / surprised) → I was", "acceptedAnswers": ["I was too surprised to say anything."], "explanation": "too + adjective + to-infinitive" }
       ]
     }
   ]

@@ -12,818 +12,1019 @@
     {
       "id": "ws-05-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in the blanks. Use WAS / WERE:",
+      "instruction": "Fill in the blanks. Use WAS / WERE. (Example: Mary and Susan were ill yesterday.)",
       "type": "inline_gap_fill",
       "questions": [
         {
-          "id": "ws-05-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
           "id": "ws-05-sec-a-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The weather [gap] very hot last Saturday.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular subject: was"
         },
         {
           "id": "ws-05-sec-a-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The students [gap] at the theater last night.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "plural subject: were"
         },
         {
           "id": "ws-05-sec-a-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Betty [gap] in Germany last summer.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular subject: was"
         },
         {
           "id": "ws-05-sec-a-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My brother and I [gap] at the football stadium on Saturday.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "plural subject: were"
         },
         {
           "id": "ws-05-sec-a-q06",
           "order": 6,
-          "prompt": " [gap] Mary and Susan [gap] were [gap] ill yesterday. The weather [gap] very hot last Saturday. The students [gap] at the theater last night. Betty [gap] in Germany last summer. My brother and I [gap] at the football stadium on Saturday. [gap] it cold yesterday?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap] it cold yesterday?",
+          "acceptedAnswers": [
+            "Was"
+          ],
+          "explanation": "question: Was it…?"
         }
       ]
     },
     {
       "id": "ws-05-sec-b",
       "sectionKey": "B",
-      "instruction": "Put these sentences into the PAST. Use past form of verb “ TO BE “:",
-      "type": "inline_gap_fill",
+      "instruction": "Put these sentences into the PAST. Use the past form of verb TO BE (today → yesterday). (Example: I'm at home. → I was at home.)",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-05-sec-b-q01",
           "order": 1,
-          "prompt": "Jane and Michael are tired. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jane and Michael are tired.",
+          "acceptedAnswers": [
+            "Jane and Michael were tired."
+          ],
+          "explanation": "are → were"
         },
         {
           "id": "ws-05-sec-b-q02",
           "order": 2,
-          "prompt": "She’s in the park. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She's in the park.",
+          "acceptedAnswers": [
+            "She was in the park."
+          ],
+          "explanation": "is → was"
         },
         {
           "id": "ws-05-sec-b-q03",
           "order": 3,
-          "prompt": "It’s a sunny day. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It's a sunny day.",
+          "acceptedAnswers": [
+            "It was a sunny day."
+          ],
+          "explanation": "is → was"
         },
         {
           "id": "ws-05-sec-b-q04",
           "order": 4,
-          "prompt": "You’re late. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You're late.",
+          "acceptedAnswers": [
+            "You were late."
+          ],
+          "explanation": "are → were"
         },
         {
           "id": "ws-05-sec-b-q05",
           "order": 5,
-          "prompt": "They aren’t hungry. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They aren't hungry.",
+          "acceptedAnswers": [
+            "They weren't hungry."
+          ],
+          "explanation": "aren't → weren't"
         },
         {
           "id": "ws-05-sec-b-q06",
           "order": 6,
-          "prompt": "We aren’t at work. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We aren't at work.",
+          "acceptedAnswers": [
+            "We weren't at work."
+          ],
+          "explanation": "aren't → weren't"
         },
         {
           "id": "ws-05-sec-b-q07",
           "order": 7,
-          "prompt": "I’m thirsty. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm thirsty.",
+          "acceptedAnswers": [
+            "I was thirsty."
+          ],
+          "explanation": "am → was"
         },
         {
           "id": "ws-05-sec-b-q08",
           "order": 8,
-          "prompt": "You aren’t at school. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You aren't at school.",
+          "acceptedAnswers": [
+            "You weren't at school."
+          ],
+          "explanation": "aren't → weren't"
         },
         {
           "id": "ws-05-sec-b-q09",
           "order": 9,
-          "prompt": "We’re at the cinema. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We're at the cinema.",
+          "acceptedAnswers": [
+            "We were at the cinema."
+          ],
+          "explanation": "are → were"
         },
         {
           "id": "ws-05-sec-b-q10",
           "order": 10,
-          "prompt": "Paula isn’t happy. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Paula isn't happy.",
+          "acceptedAnswers": [
+            "Paula wasn't happy."
+          ],
+          "explanation": "isn't → wasn't"
         },
         {
           "id": "ws-05-sec-b-q11",
           "order": 11,
-          "prompt": "Everyone is excited. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Everyone is excited.",
+          "acceptedAnswers": [
+            "Everyone was excited."
+          ],
+          "explanation": "everyone is singular: was"
         },
         {
           "id": "ws-05-sec-b-q12",
           "order": 12,
-          "prompt": "I’m not afraid. [gap] YESTERDAY [gap] I was at home [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm not afraid.",
+          "acceptedAnswers": [
+            "I wasn't afraid."
+          ],
+          "explanation": "am not → wasn't"
         }
       ]
     },
     {
       "id": "ws-05-sec-c",
       "sectionKey": "C",
-      "instruction": "Choose WAS or WERE and circle it:",
+      "instruction": "Choose WAS or WERE.",
       "type": "multiple_choice",
       "questions": [
         {
           "id": "ws-05-sec-c-q01",
           "order": 1,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] a policeman.",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "he → was",
+          "options": [
+            "a) was",
+            "b) were"
+          ]
         },
         {
           "id": "ws-05-sec-c-q02",
           "order": 2,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] very happy.",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "we → were",
+          "options": [
+            "a) was",
+            "b) were"
+          ]
         },
         {
           "id": "ws-05-sec-c-q03",
           "order": 3,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap] you happy?",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "you → were",
+          "options": [
+            "a) Was",
+            "b) Were"
+          ]
         },
         {
           "id": "ws-05-sec-c-q04",
           "order": 4,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They [gap] interested.",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "they → weren't",
+          "options": [
+            "a) wasn't",
+            "b) weren't"
+          ]
         },
         {
           "id": "ws-05-sec-c-q05",
           "order": 5,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] at school.",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "I → was",
+          "options": [
+            "a) was",
+            "b) were"
+          ]
         },
         {
           "id": "ws-05-sec-c-q06",
           "order": 6,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] expensive.",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "it → wasn't",
+          "options": [
+            "a) wasn't",
+            "b) weren't"
+          ]
         },
         {
           "id": "ws-05-sec-c-q07",
           "order": 7,
-          "prompt": " He was / were a policeman. We was / were very happy. Was / Were you happy? They wasn’t / weren’t interested in. I was / were at school. It wasn’t / weren’t expensive. Was / Were she your teacher?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap] she your teacher?",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "she → was",
+          "options": [
+            "a) Was",
+            "b) Were"
+          ]
         }
       ]
     },
     {
       "id": "ws-05-sec-d",
       "sectionKey": "D",
-      "instruction": "Complete the text with WAS or WERE:",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the text with WAS or WERE.",
+      "type": "passage_gap_fill",
       "questions": [
         {
           "id": "ws-05-sec-d-q01",
           "order": 1,
           "prompt": "Interviewer: What [gap] it like during the First World War, Bill?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "it → was"
         },
         {
           "id": "ws-05-sec-d-q02",
           "order": 2,
-          "prompt": "Bill [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bill: It [gap] a terrible time.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "it → was"
         },
         {
           "id": "ws-05-sec-d-q03",
           "order": 3,
-          "prompt": ": It [gap] a terrible time. I [gap] a young man, so I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] a young man, so I [gap] in the army.",
+          "acceptedAnswers": [
+            "was / was"
+          ],
+          "explanation": "I → was"
         },
         {
           "id": "ws-05-sec-d-q04",
           "order": 4,
-          "prompt": "in the army. We [gap] in Italy.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] in Italy.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "we → were"
         },
         {
           "id": "ws-05-sec-d-q05",
           "order": 5,
           "prompt": "Interviewer: Where [gap] your wife and children?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "plural subject → were"
         },
         {
           "id": "ws-05-sec-d-q06",
           "order": 6,
-          "prompt": "Bill [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bill: They [gap] in London.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "they → were"
         },
         {
           "id": "ws-05-sec-d-q07",
           "order": 7,
-          "prompt": ": They [gap] in London. That [gap] dangerous too. There [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "That [gap] dangerous too.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "that → was"
         },
         {
           "id": "ws-05-sec-d-q08",
           "order": 8,
-          "prompt": "bombs and there [gap] not a lot of food. The children [gap] very",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There [gap] bombs and there [gap] not a lot of food.",
+          "acceptedAnswers": [
+            "were / was"
+          ],
+          "explanation": "there were + plural; there was + uncountable"
         },
         {
           "id": "ws-05-sec-d-q09",
           "order": 9,
-          "prompt": "young and they [gap] very frightened.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The children [gap] very young and they [gap] very frightened.",
+          "acceptedAnswers": [
+            "were / were"
+          ],
+          "explanation": "plural subject → were"
         }
       ]
     },
     {
       "id": "ws-05-sec-e",
       "sectionKey": "E",
-      "instruction": "Are these statements TRUE or FALSE? Correct the FALSE statements using WASN’T",
-      "type": "error_correction",
+      "instruction": "Are these statements TRUE or FALSE? Write TRUE, or correct the FALSE statements using WASN'T or WEREN'T. (Example: Bill was an old man during the First World War. → Bill wasn't an old man during the First World War. Bill was in the army. → TRUE)",
+      "type": "sentence_rewrite",
+      "contextText": "Interviewer: What was it like during the First World War, Bill?\nBill: It was a terrible time. I was a young man, so I was in the army. We were in Italy.\nInterviewer: Where were your wife and children?\nBill: They were in London. That was dangerous too. There were bombs and there was not a lot of food. The children were very young and they were very frightened.",
       "questions": [
-        {
-          "id": "ws-05-sec-e-q01",
-          "order": 1,
-          "prompt": "or WEREN’T:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-05-sec-e-q02",
-          "order": 2,
-          "prompt": "Example: a) Bill was an old man during the First World War.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-05-sec-e-q03",
           "order": 3,
-          "prompt": "FALSE- Bill wasn’t an old man during the First World War.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bill was in Poland.",
+          "acceptedAnswers": [
+            "Bill wasn't in Poland.",
+            "FALSE. Bill wasn't in Poland.",
+            "He wasn't in Poland."
+          ],
+          "explanation": "He was in Italy"
         },
         {
           "id": "ws-05-sec-e-q04",
           "order": 4,
-          "prompt": "b) Bill was in the army. TRUE",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bill's wife and children were in Italy.",
+          "acceptedAnswers": [
+            "Bill's wife and children weren't in Italy.",
+            "FALSE. Bill's wife and children weren't in Italy.",
+            "They weren't in Italy."
+          ],
+          "explanation": "They were in London"
         },
         {
           "id": "ws-05-sec-e-q05",
           "order": 5,
-          "prompt": "c) Bill was in Poland [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It was dangerous in London.",
+          "acceptedAnswers": [
+            "TRUE"
+          ],
+          "explanation": "That was dangerous too"
         },
         {
           "id": "ws-05-sec-e-q06",
           "order": 6,
-          "prompt": "d) Bill’s wife and children were in Italy [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There was a lot of food in London.",
+          "acceptedAnswers": [
+            "There wasn't a lot of food in London.",
+            "FALSE. There wasn't a lot of food in London."
+          ],
+          "explanation": "there was not a lot of food"
         },
         {
           "id": "ws-05-sec-e-q07",
           "order": 7,
-          "prompt": "e) It was dangerous in London [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The children were quite old.",
+          "acceptedAnswers": [
+            "The children weren't quite old.",
+            "The children weren't old.",
+            "FALSE. The children weren't quite old.",
+            "FALSE. The children weren't old."
+          ],
+          "explanation": "The children were very young"
         },
         {
           "id": "ws-05-sec-e-q08",
           "order": 8,
-          "prompt": "f) There was a lot of food in London [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-05-sec-e-q09",
-          "order": 9,
-          "prompt": "g) The children were quite old [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-05-sec-e-q10",
-          "order": 10,
-          "prompt": "h) The children were frightened [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The children were frightened.",
+          "acceptedAnswers": [
+            "TRUE"
+          ],
+          "explanation": "they were very frightened"
         }
       ]
     },
     {
       "id": "ws-05-sec-f",
       "sectionKey": "F",
-      "instruction": "Make questions about the text using WAS or WERE:",
+      "instruction": "Make questions about the text using WAS or WERE. (Example: How old / Bill / during the First World War? → How old was Bill during the First World War?)",
       "type": "question_formation",
+      "contextText": "Interviewer: What was it like during the First World War, Bill?\nBill: It was a terrible time. I was a young man, so I was in the army. We were in Italy.\nInterviewer: Where were your wife and children?\nBill: They were in London. That was dangerous too. There were bombs and there was not a lot of food. The children were very young and they were very frightened.",
       "questions": [
-        {
-          "id": "ws-05-sec-f-q01",
-          "order": 1,
-          "prompt": "Example: a) How old / Bill / during the First World War?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-05-sec-f-q02",
           "order": 2,
-          "prompt": "How old was Bill during the First World War?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bill / in the army?",
+          "acceptedAnswers": [
+            "Was Bill in the army?"
+          ],
+          "explanation": "Was + singular subject"
         },
         {
           "id": "ws-05-sec-f-q03",
           "order": 3,
-          "prompt": "b) / Bill / in the army? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where / Bill?",
+          "acceptedAnswers": [
+            "Where was Bill?"
+          ],
+          "explanation": "Wh- + was + subject"
         },
         {
           "id": "ws-05-sec-f-q04",
           "order": 4,
-          "prompt": "c) Where / Bill? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where / Bill's wife and children?",
+          "acceptedAnswers": [
+            "Where were Bill's wife and children?"
+          ],
+          "explanation": "Wh- + were + plural subject"
         },
         {
           "id": "ws-05-sec-f-q05",
           "order": 5,
-          "prompt": "d) Where / Bill’s wife and children? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "it / dangerous in London?",
+          "acceptedAnswers": [
+            "Was it dangerous in London?"
+          ],
+          "explanation": "Was it…?"
         },
         {
           "id": "ws-05-sec-f-q06",
           "order": 6,
-          "prompt": "e) / It dangerous in London? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "there / bombs?",
+          "acceptedAnswers": [
+            "Were there bombs?"
+          ],
+          "explanation": "Were there + plural"
         },
         {
           "id": "ws-05-sec-f-q07",
           "order": 7,
-          "prompt": "f) / there bombs? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "there / a lot of food?",
+          "acceptedAnswers": [
+            "Was there a lot of food?"
+          ],
+          "explanation": "Was there + uncountable"
         },
         {
           "id": "ws-05-sec-f-q08",
           "order": 8,
-          "prompt": "g) / there a lot of food? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How old / the children?",
+          "acceptedAnswers": [
+            "How old were the children?"
+          ],
+          "explanation": "How old + were + plural"
         },
         {
           "id": "ws-05-sec-f-q09",
           "order": 9,
-          "prompt": "h) How old / the children? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the children / frightened?",
+          "acceptedAnswers": [
+            "Were the children frightened?"
+          ],
+          "explanation": "Were + plural subject"
         }
       ]
     },
     {
-      "id": "ws-05-sec-i",
-      "sectionKey": "I",
-      "instruction": "/ the children frightened? ……………………………………………………….. ?",
-      "type": "inline_gap_fill",
-      "questions": []
-    },
-    {
       "id": "ws-05-sec-g",
       "sectionKey": "G",
-      "instruction": "Read the interview and answer the questions:",
-      "type": "inline_gap_fill",
+      "instruction": "Read the interview and answer the questions.",
+      "type": "reading_qa",
+      "contextText": "Bill Jenkins is 100 today.\nInterviewer: Bill, I expect life is very different today than a hundred years ago. What was it like?\nBill: Yes, it is very different. Life was much quieter then. There are so many cars now. There weren't any cars when I was a boy.\nInterviewer: Were you happy as a child?\nBill: Oh yes, I was very happy, but I'm still happy now!\nInterviewer: Tell me about your family.\nBill: Well, my father was a postman and my mother was a cook. We weren't rich, but we weren't poor either. There were five children. My brothers and sisters were all younger than me but I'm the only one still here.",
       "questions": [
         {
           "id": "ws-05-sec-g-q01",
           "order": 1,
-          "prompt": "Were there any cars when he was a boy? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Were there any cars when he was a boy?",
+          "acceptedAnswers": [
+            "No, there weren't.",
+            "No, there weren't any cars.",
+            "No, there weren't any cars when he was a boy."
+          ],
+          "explanation": "There weren't any cars"
         },
         {
           "id": "ws-05-sec-g-q02",
           "order": 2,
-          "prompt": "Was he happy or sad when he was a child? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Was he happy or sad when he was a child?",
+          "acceptedAnswers": [
+            "He was happy.",
+            "He was very happy.",
+            "Happy."
+          ],
+          "explanation": "I was very happy"
         },
         {
           "id": "ws-05-sec-g-q03",
           "order": 3,
-          "prompt": "What was his mother’s job? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What was his mother's job?",
+          "acceptedAnswers": [
+            "She was a cook.",
+            "His mother was a cook.",
+            "A cook."
+          ],
+          "explanation": "my mother was a cook"
         },
         {
           "id": "ws-05-sec-g-q04",
           "order": 4,
-          "prompt": "How many children were there in his family? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How many children were there in his family?",
+          "acceptedAnswers": [
+            "There were five children.",
+            "Five.",
+            "There were five."
+          ],
+          "explanation": "There were five children"
         },
         {
           "id": "ws-05-sec-g-q05",
           "order": 5,
-          "prompt": "How old is Bill Jenkins? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How old is Bill Jenkins?",
+          "acceptedAnswers": [
+            "He is 100.",
+            "He is 100 years old.",
+            "He is a hundred years old.",
+            "He's 100 today.",
+            "100."
+          ],
+          "explanation": "Bill Jenkins is 100 today"
         }
       ]
     },
     {
       "id": "ws-05-sec-h",
       "sectionKey": "H",
-      "instruction": "Mary spent last weekend in Madrid. Ask her some questions using WAS or WERE:",
-      "type": "inline_gap_fill",
+      "instruction": "Mary spent last weekend in Madrid. Ask her some questions using WAS or WERE. (Example: your hotel / good? → Was your hotel good?)",
+      "type": "question_formation",
       "questions": [
         {
           "id": "ws-05-sec-h-q01",
           "order": 1,
-          "prompt": "(your room / comfortable?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "your room / comfortable?",
+          "acceptedAnswers": [
+            "Was your room comfortable?"
+          ],
+          "explanation": "singular → Was"
         },
         {
           "id": "ws-05-sec-h-q02",
           "order": 2,
-          "prompt": "(the weather / nice?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the weather / nice?",
+          "acceptedAnswers": [
+            "Was the weather nice?"
+          ],
+          "explanation": "uncountable → Was"
         },
         {
           "id": "ws-05-sec-h-q03",
           "order": 3,
-          "prompt": "(the streets / full of people?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the streets / full of people?",
+          "acceptedAnswers": [
+            "Were the streets full of people?"
+          ],
+          "explanation": "plural → Were"
         },
         {
           "id": "ws-05-sec-h-q04",
           "order": 4,
-          "prompt": "(the shops / expensive?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the shops / expensive?",
+          "acceptedAnswers": [
+            "Were the shops expensive?"
+          ],
+          "explanation": "plural → Were"
         },
         {
           "id": "ws-05-sec-h-q05",
           "order": 5,
-          "prompt": "(the city / exciting at night?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the city / exciting at night?",
+          "acceptedAnswers": [
+            "Was the city exciting at night?"
+          ],
+          "explanation": "singular → Was"
         },
         {
           "id": "ws-05-sec-h-q06",
           "order": 6,
-          "prompt": "(the museums / interesting?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the museums / interesting?",
+          "acceptedAnswers": [
+            "Were the museums interesting?"
+          ],
+          "explanation": "plural → Were"
         },
         {
           "id": "ws-05-sec-h-q07",
           "order": 7,
-          "prompt": "(the people / friendly?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the people / friendly?",
+          "acceptedAnswers": [
+            "Were the people friendly?"
+          ],
+          "explanation": "people is plural → Were"
         },
         {
           "id": "ws-05-sec-h-q08",
           "order": 8,
-          "prompt": "(your flight / OK?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "your flight / OK?",
+          "acceptedAnswers": [
+            "Was your flight OK?"
+          ],
+          "explanation": "singular → Was"
         }
       ]
     },
     {
       "id": "ws-05-sec-i",
       "sectionKey": "I",
-      "instruction": "George and Sally have been married for 50 years. They are talking about their first",
+      "instruction": "George and Sally have been married for 50 years. They are talking about their first house. Use WAS or WERE and a word from the box to complete their conversation. (Example: George: The house was warm. Sally: No, it was cold.)",
       "type": "inline_gap_fill",
+      "wordBank": [
+        "new",
+        "Italian",
+        "big",
+        "green",
+        "cheap",
+        "cold",
+        "bad"
+      ],
       "questions": [
         {
           "id": "ws-05-sec-i-q01",
           "order": 1,
-          "prompt": "George: The garden was small. [gap] Sally : No, it [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "George: The garden was small. Sally: No, it [gap].",
+          "acceptedAnswers": [
+            "was big"
+          ],
+          "explanation": "opposite of small"
         },
         {
           "id": "ws-05-sec-i-q02",
           "order": 2,
-          "prompt": "Sally : The neighbors were French. [gap] George: No, they [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Sally: The neighbors were French. George: No, they [gap].",
+          "acceptedAnswers": [
+            "were Italian"
+          ],
+          "explanation": "they → were"
         },
         {
           "id": "ws-05-sec-i-q03",
           "order": 3,
-          "prompt": "George: The living-room was red. [gap] Sally : No, it [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "George: The living-room was red. Sally: No, it [gap].",
+          "acceptedAnswers": [
+            "was green"
+          ],
+          "explanation": "it → was"
         },
         {
           "id": "ws-05-sec-i-q04",
           "order": 4,
-          "prompt": "Sally : Our first chairs were expensive. [gap] George: No, they [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Sally: Our first chairs were expensive. George: No, they [gap].",
+          "acceptedAnswers": [
+            "were cheap"
+          ],
+          "explanation": "opposite of expensive"
         },
         {
           "id": "ws-05-sec-i-q05",
           "order": 5,
-          "prompt": "George: The kitchen was old. [gap] Sally : No, it [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "George: The kitchen was old. Sally: No, it [gap].",
+          "acceptedAnswers": [
+            "was new"
+          ],
+          "explanation": "opposite of old"
         },
         {
           "id": "ws-05-sec-i-q06",
           "order": 6,
-          "prompt": "George: The local shops were good. [gap] Sally : No, they [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "George: The local shops were good. Sally: No, they [gap].",
+          "acceptedAnswers": [
+            "were bad"
+          ],
+          "explanation": "opposite of good"
         }
       ]
     },
     {
       "id": "ws-05-sec-j",
       "sectionKey": "J",
-      "instruction": "Put WAS, WASN’T, WERE or WEREN’T in the gaps in these conversations:",
+      "instruction": "Put WAS, WASN'T, WERE or WEREN'T in the gaps in these conversations. (Example: Peter: Was Paul at work today?)",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-05-sec-j-q01",
           "order": 1,
-          "prompt": "Peter : [gap] Was [gap] Paul at work today? Julie : No, he [gap] in the office. I think he’s sick.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Peter: Was Paul at work today? Julie: No, he [gap] in the office. I think he's sick.",
+          "acceptedAnswers": [
+            "wasn't"
+          ],
+          "explanation": "No → negative"
         },
         {
           "id": "ws-05-sec-j-q02",
           "order": 2,
-          "prompt": "Henry : [gap] you in South America last year? Steve : Yes. I [gap] in Bolivia on business, and then my wife and I [gap] in Brazil for a holiday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Henry: [gap] you in South America last year?",
+          "acceptedAnswers": [
+            "Were"
+          ],
+          "explanation": "question with you → Were"
         },
         {
           "id": "ws-05-sec-j-q03",
           "order": 3,
-          "prompt": "Paula : Philip and I [gap] at home in London last week. We [gap] at Mike’s house in Cornwall. It was lovely there. Do you know Mike? Jane : Yes, I [gap] at Mike’s party in Oxford in the summer. [gap] you there? Paula : No, we weren’t there. Philip and I [gap] in Portugal in the summer.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: Yes. I [gap] in Bolivia on business, and then my wife and I [gap] in Brazil for a holiday.",
+          "acceptedAnswers": [
+            "was / were"
+          ],
+          "explanation": "I was; my wife and I were"
+        },
+        {
+          "id": "ws-05-sec-j-q04",
+          "order": 4,
+          "prompt": "Paula: Philip and I [gap] at home in London last week. We [gap] at Mike's house in Cornwall. It was lovely there. Do you know Mike?",
+          "acceptedAnswers": [
+            "weren't / were"
+          ],
+          "explanation": "they were in Cornwall, not at home"
+        },
+        {
+          "id": "ws-05-sec-j-q05",
+          "order": 5,
+          "prompt": "Jane: Yes, I [gap] at Mike's party in Oxford in the summer. [gap] you there?",
+          "acceptedAnswers": [
+            "was / Were"
+          ],
+          "explanation": "I was; question Were you…?"
+        },
+        {
+          "id": "ws-05-sec-j-q06",
+          "order": 6,
+          "prompt": "Paula: No, we weren't there. Philip and I [gap] in Portugal in the summer.",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "plural subject → were"
         }
       ]
     },
     {
       "id": "ws-05-sec-k",
       "sectionKey": "K",
-      "instruction": "Make questions using WAS / WERE:",
+      "instruction": "Make questions using WAS / WERE. (Example: Jim / at home / last night → Was Jim at home last night?)",
       "type": "question_formation",
       "questions": [
         {
-          "id": "ws-05-sec-k-q01",
-          "order": 1,
-          "prompt": "Jim / at home / last night.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
           "id": "ws-05-sec-k-q02",
           "order": 2,
-          "prompt": "You / at school / on Monday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "you / at school / on Monday",
+          "acceptedAnswers": [
+            "Were you at school on Monday?"
+          ],
+          "explanation": "you → Were"
         },
         {
           "id": "ws-05-sec-k-q03",
           "order": 3,
-          "prompt": "David / here / yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "David / here / yesterday",
+          "acceptedAnswers": [
+            "Was David here yesterday?"
+          ],
+          "explanation": "singular → Was"
         },
         {
           "id": "ws-05-sec-k-q04",
           "order": 4,
-          "prompt": "the cinema / open / on Sunday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "the cinema / open / on Sunday",
+          "acceptedAnswers": [
+            "Was the cinema open on Sunday?"
+          ],
+          "explanation": "singular → Was"
         },
         {
           "id": "ws-05-sec-k-q05",
           "order": 5,
-          "prompt": "Kate and Jane / late / yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Kate and Jane / late / yesterday",
+          "acceptedAnswers": [
+            "Were Kate and Jane late yesterday?"
+          ],
+          "explanation": "plural → Were"
         },
         {
           "id": "ws-05-sec-k-q06",
           "order": 6,
-          "prompt": "you / in the football team / last year.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "you / in the football team / last year",
+          "acceptedAnswers": [
+            "Were you in the football team last year?"
+          ],
+          "explanation": "you → Were"
         },
         {
           "id": "ws-05-sec-k-q07",
           "order": 7,
-          "prompt": "all your friends / at your party.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "all your friends / at your party",
+          "acceptedAnswers": [
+            "Were all your friends at your party?"
+          ],
+          "explanation": "plural → Were"
         },
         {
           "id": "ws-05-sec-k-q08",
           "order": 8,
-          "prompt": "it / hot / last week. [gap] Was Jim at home last night?…? [gap] ? [gap] ? [gap] ? [gap] ? [gap] ? [gap] ? [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "it / hot / last week",
+          "acceptedAnswers": [
+            "Was it hot last week?"
+          ],
+          "explanation": "it → Was"
         }
       ]
     },
     {
       "id": "ws-05-sec-l",
       "sectionKey": "L",
-      "instruction": "Make negative sentences using WAS / WERE:",
-      "type": "inline_gap_fill",
+      "instruction": "Make negative sentences using WAS / WERE. (Example: Kevin / at my party → Kevin wasn't at my party.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-05-sec-l-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-05-sec-l-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Nick / in class yesterday",
+          "acceptedAnswers": [
+            "Nick wasn't in class yesterday."
+          ],
+          "explanation": "singular → wasn't"
         },
         {
           "id": "ws-05-sec-l-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It / warm / yesterday",
+          "acceptedAnswers": [
+            "It wasn't warm yesterday."
+          ],
+          "explanation": "it → wasn't"
         },
         {
           "id": "ws-05-sec-l-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tina and Jim / late",
+          "acceptedAnswers": [
+            "Tina and Jim weren't late."
+          ],
+          "explanation": "plural → weren't"
         },
         {
           "id": "ws-05-sec-l-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Etty / on the bus",
+          "acceptedAnswers": [
+            "Etty wasn't on the bus."
+          ],
+          "explanation": "singular → wasn't"
         },
         {
           "id": "ws-05-sec-l-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We / at the match / yesterday",
+          "acceptedAnswers": [
+            "We weren't at the match yesterday."
+          ],
+          "explanation": "we → weren't"
         },
         {
           "id": "ws-05-sec-l-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Our teachers / pleased with us",
+          "acceptedAnswers": [
+            "Our teachers weren't pleased with us."
+          ],
+          "explanation": "plural → weren't"
         },
         {
           "id": "ws-05-sec-l-q08",
           "order": 8,
-          "prompt": " [gap] Kevin / at my party. Nick / in class yesterday. It / warm / yesterday. Tina and Jim / late. Etty / on the bus. We / at the match / yesterday. Our teachers / pleased with us. I / at the restaurant. [gap] Kevin wasn’t at my party [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I / at the restaurant",
+          "acceptedAnswers": [
+            "I wasn't at the restaurant."
+          ],
+          "explanation": "I → wasn't"
         }
       ]
     },
     {
       "id": "ws-05-sec-n",
       "sectionKey": "N",
-      "instruction": "Fill in the blanks using WAS (NOT) / WERE (NOT):",
+      "instruction": "Fill in the blanks using WAS (NOT) / WERE (NOT). (Example: I'm here today but I wasn't here yesterday.)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-05-sec-n-q01",
-          "order": 1,
-          "prompt": "I’m here today but I [gap] wasn’t [gap] here yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-05-sec-n-q02",
           "order": 2,
           "prompt": "Jennifer is tall now but she [gap] tall two years ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wasn't"
+          ],
+          "explanation": "contrast → negative"
         },
         {
           "id": "ws-05-sec-n-q03",
           "order": 3,
           "prompt": "It is rainy today but it [gap] yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wasn't|wasn't rainy"
+          ],
+          "explanation": "contrast → negative"
         },
         {
           "id": "ws-05-sec-n-q04",
           "order": 4,
           "prompt": "Mr. Smith is angry now but he [gap] an hour ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wasn't|wasn't angry"
+          ],
+          "explanation": "contrast → negative"
         },
         {
           "id": "ws-05-sec-n-q05",
           "order": 5,
           "prompt": "The shops are open today but they [gap] on Sunday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "weren't|weren't open"
+          ],
+          "explanation": "plural, contrast → weren't"
         },
         {
           "id": "ws-05-sec-n-q06",
           "order": 6,
           "prompt": "My car is clean today but it [gap] yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wasn't|wasn't clean"
+          ],
+          "explanation": "contrast → negative"
         },
         {
           "id": "ws-05-sec-n-q07",
           "order": 7,
-          "prompt": "My father isn’t at home now but he [gap] an hour ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My father isn't at home now but he [gap] an hour ago.",
+          "acceptedAnswers": [
+            "was|was at home"
+          ],
+          "explanation": "contrast with negative → positive"
         },
         {
           "id": "ws-05-sec-n-q08",
           "order": 8,
           "prompt": "The students are in class today but they [gap] last week.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "weren't|weren't in class"
+          ],
+          "explanation": "plural, contrast → weren't"
         },
         {
           "id": "ws-05-sec-n-q09",
           "order": 9,
-          "prompt": "It isn’t sunny now but it [gap] an hour ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It isn't sunny now but it [gap] an hour ago.",
+          "acceptedAnswers": [
+            "was|was sunny"
+          ],
+          "explanation": "contrast with negative → positive"
         },
         {
           "id": "ws-05-sec-n-q10",
           "order": 10,
-          "prompt": "We aren’t hungry now but we [gap] twenty minutes ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We aren't hungry now but we [gap] twenty minutes ago.",
+          "acceptedAnswers": [
+            "were|were hungry"
+          ],
+          "explanation": "contrast with negative → positive"
         }
       ]
     }

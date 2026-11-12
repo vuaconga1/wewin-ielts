@@ -2751,5 +2751,19 @@
       "subtitle": "HSK 1–9 & Giao tiếp",
       "desc": "Tiếng Trung giao tiếp & luyện thi HSK 1 đến 9"
     }
+  },
+  "worksheet": {
+    "correct": "Chính xác",
+    "incorrect": "Chưa chính xác",
+    "correctAnswer": "Đáp án đúng:",
+    "noKey": "Chưa có đáp án — tự đối chiếu với giáo viên",
+    "modelAnswer": "Bài mẫu gợi ý (câu tự do, không chấm tự động):",
+    "yourAnswerPlaceholder": "Gõ câu trả lời của bạn...",
+    "scoreCorrect": "{correct} / {total} đúng",
+    "ungradedCount": "{n} câu chưa có đáp án",
+    "questionCount": "{n} câu hỏi",
+    "wordBank": "Từ vựng gợi ý (Word Bank):",
+    "resetSection": "Làm lại phần này",
+    "checkSection": "Kiểm tra đáp án phần {key}"
   }
 }

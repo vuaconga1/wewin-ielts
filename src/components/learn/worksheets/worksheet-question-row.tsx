@@ -3,6 +3,8 @@
 import React from "react";
 import { Check, X, HelpCircle } from "lucide-react";
 import type { WorksheetQuestion, WorksheetQuestionType } from "@/lib/learn/worksheet-types";
+import { formatAnswerKey, hasAnswerKey } from "@/lib/learn/worksheet-grader";
+import { useTranslations } from "@/i18n/provider";
 
 interface Props {
   question: WorksheetQuestion;
@@ -21,6 +23,15 @@ export function WorksheetQuestionRow({
   isEvaluated,
   isCorrect,
 }: Props) {
+  const { t } = useTranslations("worksheet");
+  const gradable = hasAnswerKey(question.acceptedAnswers);
+  const evalState: "correct" | "incorrect" | "ungraded" | null = !isEvaluated
+    ? null
+    : !gradable
+      ? "ungraded"
+      : isCorrect
+        ? "correct"
+        : "incorrect";
   const parts = question.prompt.split("[gap]");
   const gapCount = Math.max(0, parts.length - 1);
   const valParts = value ? value.split(" / ") : [];
@@ -53,11 +64,13 @@ export function WorksheetQuestionRow({
   return (
     <div
       className={`p-3 rounded-lg border transition-all ${
-        isEvaluated
-          ? isCorrect
-            ? "border-emerald-300 bg-emerald-50/50"
-            : "border-rose-300 bg-rose-50/50"
-          : "border-wewin-border hover:border-wewin-accent-blue/40 bg-white"
+        evalState === "correct"
+          ? "border-emerald-300 bg-emerald-50/50"
+          : evalState === "incorrect"
+            ? "border-rose-300 bg-rose-50/50"
+            : evalState === "ungraded"
+              ? "border-wewin-gold/40 bg-wewin-gold/5"
+              : "border-wewin-border hover:border-wewin-accent-blue/40 bg-white"
       }`}
     >
       <div className="flex items-start gap-2.5">
@@ -86,11 +99,11 @@ export function WorksheetQuestionRow({
                       disabled={isEvaluated}
                       className={`text-left text-sm px-3 py-2 rounded-md border transition-all ${
                         isSelected
-                          ? isEvaluated
-                            ? isCorrect
-                              ? "bg-emerald-600 text-white border-emerald-600"
-                              : "bg-rose-600 text-white border-rose-600"
-                            : "bg-wewin-navy text-white border-wewin-navy shadow-sm"
+                          ? evalState === "correct"
+                            ? "bg-emerald-600 text-white border-emerald-600"
+                            : evalState === "incorrect"
+                              ? "bg-rose-600 text-white border-rose-600"
+                              : "bg-wewin-navy text-white border-wewin-navy shadow-sm"
                           : "bg-wewin-bg hover:bg-wewin-accent-blue-bg text-zinc-700 border-wewin-border"
                       }`}
                     >
@@ -116,7 +129,7 @@ export function WorksheetQuestionRow({
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 disabled={isEvaluated}
-                placeholder="Gõ câu trả lời của bạn..."
+                placeholder={t("yourAnswerPlaceholder")}
                 className="w-full text-sm px-3 py-2 rounded-md border border-wewin-border bg-white focus:outline-none focus:border-wewin-accent-blue focus:ring-2 focus:ring-wewin-accent-blue/20"
               />
             </div>
@@ -134,11 +147,13 @@ export function WorksheetQuestionRow({
                       disabled={isEvaluated}
                       placeholder="..."
                       className={`inline-block mx-1.5 px-2.5 py-1 text-sm font-semibold rounded border text-center transition-all ${
-                        isEvaluated
-                          ? isCorrect
-                            ? "bg-emerald-100 text-emerald-800 border-emerald-400"
-                            : "bg-rose-100 text-rose-800 border-rose-400"
-                          : "bg-wewin-bg border-wewin-border text-wewin-navy hover:border-wewin-accent-blue/60 focus:border-wewin-accent-blue focus:bg-white"
+                        evalState === "correct"
+                          ? "bg-emerald-100 text-emerald-800 border-emerald-400"
+                          : evalState === "incorrect"
+                            ? "bg-rose-100 text-rose-800 border-rose-400"
+                            : evalState === "ungraded"
+                              ? "bg-white text-wewin-navy border-wewin-gold/50"
+                              : "bg-wewin-bg border-wewin-border text-wewin-navy hover:border-wewin-accent-blue/60 focus:border-wewin-accent-blue focus:bg-white"
                       } focus:outline-none focus:ring-2 focus:ring-wewin-accent-blue/20`}
                       style={{ minWidth: "120px", maxWidth: "260px" }}
                     />
@@ -150,30 +165,45 @@ export function WorksheetQuestionRow({
 
           {/* Feedback & Accepted Answers on evaluation */}
           {isEvaluated && (
-            <div className="mt-2.5 pt-2 border-t border-wewin-border flex items-center justify-between text-xs">
-              <div className="flex items-center gap-1.5">
-                {isCorrect ? (
+            <div className="mt-2.5 pt-2 border-t border-wewin-border flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 text-xs">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 min-w-0">
+                {evalState === "correct" && (
                   <span className="flex items-center gap-1 text-emerald-600 font-semibold">
-                    <Check className="w-3.5 h-3.5" /> Chính xác
-                  </span>
-                ) : (
-                  <span className="flex items-center gap-1 text-rose-600 font-semibold">
-                    <X className="w-3.5 h-3.5" /> Chưa chính xác
+                    <Check className="w-3.5 h-3.5" /> {t("correct")}
                   </span>
                 )}
-                {!isCorrect && question.acceptedAnswers.length > 0 && (
-                  <span className="text-zinc-500 ml-2">
-                    Đáp án đúng:{" "}
+                {evalState === "incorrect" && (
+                  <span className="flex items-center gap-1 text-rose-600 font-semibold">
+                    <X className="w-3.5 h-3.5" /> {t("incorrect")}
+                  </span>
+                )}
+                {evalState === "ungraded" && !question.modelAnswer && (
+                  <span className="flex items-center gap-1 text-[#7a5f12] font-semibold">
+                    <HelpCircle className="w-3.5 h-3.5" /> {t("noKey")}
+                  </span>
+                )}
+                {evalState === "ungraded" && question.modelAnswer && (
+                  <span className="text-zinc-500 break-words min-w-0">
+                    {t("modelAnswer")}{" "}
+                    <strong className="text-wewin-navy">{question.modelAnswer}</strong>
+                  </span>
+                )}
+                {evalState === "incorrect" && (
+                  <span className="text-zinc-500 break-words min-w-0">
+                    {t("correctAnswer")}{" "}
                     <strong className="text-emerald-700">
-                      {question.acceptedAnswers[0]}
+                      {question.acceptedAnswers
+                        .filter((a) => a.trim())
+                        .map(formatAnswerKey)
+                        .join("  ·  ")}
                     </strong>
                   </span>
                 )}
               </div>
 
               {question.explanation && (
-                <div className="text-zinc-500 flex items-center gap-1">
-                  <HelpCircle className="w-3.5 h-3.5 text-wewin-accent-blue" />
+                <div className="text-zinc-500 flex items-center gap-1 min-w-0 break-words">
+                  <HelpCircle className="w-3.5 h-3.5 shrink-0 text-wewin-accent-blue" />
                   <span>{question.explanation}</span>
                 </div>
               )}

@@ -1,0 +1,3363 @@
+{
+  "id": "card-12",
+  "order": 12,
+  "part": 1,
+  "slug": "card-12-dong-tu-khuyet-thieu-va-thoi-quen-qua-khu",
+  "title": "THẺ BÀI TẬP 12",
+  "subject": "Modals & Habits in the Past",
+  "subjectVi": "Động từ khuyết thiếu & Thói quen quá khứ",
+  "level": "B1",
+  "pageRange": "WS-38, WS-39, WS-40, WS-55, WS-56",
+  "sections": [
+    {
+      "id": "card-12-sec-1",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with CAN or CAN'T:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-a-q01",
+          "order": 1,
+          "prompt": "She is a small baby. She [gap] eat meat, but she [gap] drink milk.",
+          "acceptedAnswers": [
+            "can't / can"
+          ],
+          "explanation": "can = ability; can't = no ability"
+        },
+        {
+          "id": "ws-38-sec-a-q02",
+          "order": 2,
+          "prompt": "That dress is not expensive. I [gap] buy it.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = possible / able"
+        },
+        {
+          "id": "ws-38-sec-a-q03",
+          "order": 3,
+          "prompt": "A cat [gap] climb up a tree, but a dog [gap].",
+          "acceptedAnswers": [
+            "can / can't"
+          ],
+          "explanation": "can = ability; can't = no ability"
+        },
+        {
+          "id": "ws-38-sec-a-q04",
+          "order": 4,
+          "prompt": "I'm very tired today. I [gap] clean my room.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = not able"
+        },
+        {
+          "id": "ws-38-sec-a-q05",
+          "order": 5,
+          "prompt": "John is very short. He [gap] play basketball very well.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = not able"
+        },
+        {
+          "id": "ws-38-sec-a-q06",
+          "order": 6,
+          "prompt": "We are very hungry, so we [gap] eat a lot of sandwiches.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = able"
+        },
+        {
+          "id": "ws-38-sec-a-q07",
+          "order": 7,
+          "prompt": "He is very fat. He [gap] run very fast.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = not able"
+        },
+        {
+          "id": "ws-38-sec-a-q08",
+          "order": 8,
+          "prompt": "We [gap] sleep in the bedroom but we [gap] sleep in the bathroom.",
+          "acceptedAnswers": [
+            "can / can't"
+          ],
+          "explanation": "can = possible; can't = not possible"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-2",
+      "sectionKey": "B",
+      "instruction": "Fill in the blanks with CAN / CAN'T or MUST / MUSTN'T (use the verb in brackets where given):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-b-q01",
+          "order": 1,
+          "prompt": "She is ill, so she [gap] see the doctor.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        },
+        {
+          "id": "ws-38-sec-b-q02",
+          "order": 2,
+          "prompt": "It's raining heavily. You [gap] take your umbrella.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity / strong advice"
+        },
+        {
+          "id": "ws-38-sec-b-q03",
+          "order": 3,
+          "prompt": "We [gap] (not / pick) the flowers in the park.",
+          "acceptedAnswers": [
+            "mustn't pick"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-b-q04",
+          "order": 4,
+          "prompt": "Mike is nine months old. He [gap] (not / eat) nuts.",
+          "acceptedAnswers": [
+            "can't eat|mustn't eat"
+          ],
+          "explanation": "can't / mustn't: not able or not allowed"
+        },
+        {
+          "id": "ws-38-sec-b-q05",
+          "order": 5,
+          "prompt": "I am very tall. So I [gap] play basketball.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = ability"
+        },
+        {
+          "id": "ws-38-sec-b-q06",
+          "order": 6,
+          "prompt": "I'm sorry but we [gap] (not / come) to your party tomorrow.",
+          "acceptedAnswers": [
+            "can't come"
+          ],
+          "explanation": "can't = not possible"
+        },
+        {
+          "id": "ws-38-sec-b-q07",
+          "order": 7,
+          "prompt": "You are speaking very quietly. I [gap] (not / understand) you.",
+          "acceptedAnswers": [
+            "can't understand"
+          ],
+          "explanation": "can't = not able"
+        },
+        {
+          "id": "ws-38-sec-b-q08",
+          "order": 8,
+          "prompt": "[gap] I use your phone?",
+          "acceptedAnswers": [
+            "Can"
+          ],
+          "explanation": "can = asking permission"
+        },
+        {
+          "id": "ws-38-sec-b-q09",
+          "order": 9,
+          "prompt": "We [gap] go to the bank today. We haven't got any money.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        },
+        {
+          "id": "ws-38-sec-b-q10",
+          "order": 10,
+          "prompt": "My hands are dirty. I [gap] wash them.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        },
+        {
+          "id": "ws-38-sec-b-q11",
+          "order": 11,
+          "prompt": "It's late. I [gap] go now.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        },
+        {
+          "id": "ws-38-sec-b-q12",
+          "order": 12,
+          "prompt": "You [gap] stop at a red traffic light.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = rule / obligation"
+        },
+        {
+          "id": "ws-38-sec-b-q13",
+          "order": 13,
+          "prompt": "You [gap] (not / speed) in the city.",
+          "acceptedAnswers": [
+            "mustn't speed"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-b-q14",
+          "order": 14,
+          "prompt": "Tourists [gap] take their passports when they go abroad.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = obligation"
+        },
+        {
+          "id": "ws-38-sec-b-q15",
+          "order": 15,
+          "prompt": "Footballers [gap] (not / touch) the ball with their hands.",
+          "acceptedAnswers": [
+            "mustn't touch|can't touch"
+          ],
+          "explanation": "mustn't / can't = not allowed"
+        },
+        {
+          "id": "ws-38-sec-b-q16",
+          "order": 16,
+          "prompt": "[gap] you play the guitar?",
+          "acceptedAnswers": [
+            "Can"
+          ],
+          "explanation": "can = ability question"
+        },
+        {
+          "id": "ws-38-sec-b-q17",
+          "order": 17,
+          "prompt": "I [gap] (not / come) with you now, because I'm studying my lessons.",
+          "acceptedAnswers": [
+            "can't come"
+          ],
+          "explanation": "can't = not possible"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-3",
+      "sectionKey": "C",
+      "instruction": "Use MUST / MUSTN'T / HAVE TO or (NOT) HAVE TO:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-c-q01",
+          "order": 1,
+          "prompt": "I can stay in bed tomorrow morning because I [gap] work.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = no obligation"
+        },
+        {
+          "id": "ws-38-sec-c-q02",
+          "order": 2,
+          "prompt": "Whatever you do, you [gap] touch that switch. It's very dangerous.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-c-q03",
+          "order": 3,
+          "prompt": "You [gap] forget what I told you. It's very important.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-c-q04",
+          "order": 4,
+          "prompt": "We [gap] leave yet. We've got plenty of time.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = no obligation"
+        },
+        {
+          "id": "ws-38-sec-c-q05",
+          "order": 5,
+          "prompt": "Ann was feeling ill last night. She [gap] leave the party early.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
+        },
+        {
+          "id": "ws-38-sec-c-q06",
+          "order": 6,
+          "prompt": "I [gap] go to the bank yesterday to get some money.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
+        },
+        {
+          "id": "ws-38-sec-c-q07",
+          "order": 7,
+          "prompt": "The windows are very dirty. I [gap] clean them.",
+          "acceptedAnswers": [
+            "must|have to"
+          ],
+          "explanation": "must / have to = necessity"
+        },
+        {
+          "id": "ws-38-sec-c-q08",
+          "order": 8,
+          "prompt": "The windows aren't dirty. You [gap] clean them.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = not necessary"
+        },
+        {
+          "id": "ws-38-sec-c-q09",
+          "order": 9,
+          "prompt": "We arrived home very late last night. We [gap] wait half an hour for a taxi.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
+        },
+        {
+          "id": "ws-38-sec-c-q10",
+          "order": 10,
+          "prompt": "These cakes are very nice. You [gap] have one.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = strong recommendation"
+        },
+        {
+          "id": "ws-38-sec-c-q11",
+          "order": 11,
+          "prompt": "We [gap] take an umbrella. It's not going to rain.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = not necessary"
+        },
+        {
+          "id": "ws-38-sec-c-q12",
+          "order": 12,
+          "prompt": "This is a secret. You [gap] tell anybody.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-c-q13",
+          "order": 13,
+          "prompt": "You [gap] buy a newspaper. You can have mine.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = not necessary"
+        },
+        {
+          "id": "ws-38-sec-c-q14",
+          "order": 14,
+          "prompt": "This train doesn't go to London. You [gap] change at Bristol.",
+          "acceptedAnswers": [
+            "have to|must"
+          ],
+          "explanation": "have to = necessity"
+        },
+        {
+          "id": "ws-38-sec-c-q15",
+          "order": 15,
+          "prompt": "In many countries men [gap] do military service.",
+          "acceptedAnswers": [
+            "have to"
+          ],
+          "explanation": "have to = external obligation (law)"
+        },
+        {
+          "id": "ws-38-sec-c-q16",
+          "order": 16,
+          "prompt": "Sarah is a nurse. Sometimes she [gap] work at weekends.",
+          "acceptedAnswers": [
+            "has to"
+          ],
+          "explanation": "has to = obligation (he/she/it)"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-4",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks using (NOT) HAVE TO / MUST (NOT) / CAN / COULD:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-d-q01",
+          "order": 1,
+          "prompt": "George has traveled a lot. He [gap] speak four languages.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = present ability"
+        },
+        {
+          "id": "ws-38-sec-d-q02",
+          "order": 2,
+          "prompt": "I can't sing now but I [gap] sing very well when I was a child.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "explanation": "could = past ability"
+        },
+        {
+          "id": "ws-38-sec-d-q03",
+          "order": 3,
+          "prompt": "She will stay in bed till 10 o'clock this morning, because she [gap] go to work.",
+          "acceptedAnswers": [
+            "doesn't have to"
+          ],
+          "explanation": "doesn't have to = no obligation"
+        },
+        {
+          "id": "ws-38-sec-d-q04",
+          "order": 4,
+          "prompt": "Many students in Turkey [gap] wear uniform when they go to school.",
+          "acceptedAnswers": [
+            "have to"
+          ],
+          "explanation": "have to = obligation (rule)"
+        },
+        {
+          "id": "ws-38-sec-d-q05",
+          "order": 5,
+          "prompt": "I'm sorry I couldn't come yesterday. I [gap] work late.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
+        },
+        {
+          "id": "ws-38-sec-d-q06",
+          "order": 6,
+          "prompt": "You've been coughing a lot recently. You [gap] smoke so much.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = strong advice not to"
+        },
+        {
+          "id": "ws-38-sec-d-q07",
+          "order": 7,
+          "prompt": "You have a bad headache. So you [gap] go to bed early.",
+          "acceptedAnswers": [
+            "must|have to"
+          ],
+          "explanation": "must = strong advice"
+        },
+        {
+          "id": "ws-38-sec-d-q08",
+          "order": 8,
+          "prompt": "I can't swim very far these days but ten years ago I [gap] swim from one side of the lake to the other.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "explanation": "could = past ability"
+        },
+        {
+          "id": "ws-38-sec-d-q09",
+          "order": 9,
+          "prompt": "You [gap] see the sea from our bedroom window.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = possibility"
+        },
+        {
+          "id": "ws-38-sec-d-q10",
+          "order": 10,
+          "prompt": "It isn't permitted to speak Turkish during the lessons. So you [gap] speak Turkish.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-5",
+      "sectionKey": "E",
+      "instruction": "Fill in the blanks with MUST (NOT) / CAN (NOT) / (NOT) HAVE TO / NEEDN'T:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-e-q01",
+          "order": 1,
+          "prompt": "You [gap] park in that street. It is not permitted.",
+          "acceptedAnswers": [
+            "can't|mustn't"
+          ],
+          "explanation": "can't / mustn't = not allowed"
+        },
+        {
+          "id": "ws-38-sec-e-q02",
+          "order": 2,
+          "prompt": "Look at George. He is working very well. He [gap] be ill.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = logical impossibility"
+        },
+        {
+          "id": "ws-38-sec-e-q03",
+          "order": 3,
+          "prompt": "There's someone at the door. I'm expecting Paul. It [gap] be Paul.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = logical certainty"
+        },
+        {
+          "id": "ws-38-sec-e-q04",
+          "order": 4,
+          "prompt": "Ali's car is here. He [gap] be here.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = logical certainty"
+        },
+        {
+          "id": "ws-38-sec-e-q05",
+          "order": 5,
+          "prompt": "The baby is asleep. You [gap] shout.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-e-q06",
+          "order": 6,
+          "prompt": "You've got plenty of time. You [gap] hurry.",
+          "acceptedAnswers": [
+            "needn't|don't have to"
+          ],
+          "explanation": "needn't = not necessary"
+        },
+        {
+          "id": "ws-38-sec-e-q07",
+          "order": 7,
+          "prompt": "A: \"Do you want me to wait for you?\" B: \"No, it's OK. You [gap] wait.\"",
+          "acceptedAnswers": [
+            "needn't|don't have to"
+          ],
+          "explanation": "needn't = not necessary"
+        },
+        {
+          "id": "ws-38-sec-e-q08",
+          "order": 8,
+          "prompt": "I can't get any answer from my telephone. It [gap] be out of order.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = logical certainty"
+        },
+        {
+          "id": "ws-38-sec-e-q09",
+          "order": 9,
+          "prompt": "Ann stayed in bed this morning because she [gap] go to work.",
+          "acceptedAnswers": [
+            "didn't have to"
+          ],
+          "explanation": "didn't have to = no past obligation"
+        },
+        {
+          "id": "ws-38-sec-e-q10",
+          "order": 10,
+          "prompt": "Tom has just given me a letter to post. I [gap] forget to post it.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-6",
+      "sectionKey": "F",
+      "instruction": "Use a suitable present or past MODAL AUXILIARY (with the verb in brackets where given):",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-38-sec-f-q01",
+          "order": 1,
+          "prompt": "He [gap] play chess when he was young.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "explanation": "could = past ability"
+        },
+        {
+          "id": "ws-38-sec-f-q02",
+          "order": 2,
+          "prompt": "You [gap] drive a car when you are 18.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = permission / possibility"
+        },
+        {
+          "id": "ws-38-sec-f-q03",
+          "order": 3,
+          "prompt": "[gap] I ask you a question?",
+          "acceptedAnswers": [
+            "Can|May|Could"
+          ],
+          "explanation": "asking permission"
+        },
+        {
+          "id": "ws-38-sec-f-q04",
+          "order": 4,
+          "prompt": "She [gap] be 25. She looks older than that.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = logical impossibility"
+        },
+        {
+          "id": "ws-38-sec-f-q05",
+          "order": 5,
+          "prompt": "His telephone doesn't answer. He [gap] (go) to the club.",
+          "acceptedAnswers": [
+            "must have gone|may have gone|might have gone|could have gone"
+          ],
+          "explanation": "must have + past participle = past deduction"
+        },
+        {
+          "id": "ws-38-sec-f-q06",
+          "order": 6,
+          "prompt": "She entered the room carrying a wet umbrella. She [gap] (walk) in the rain.",
+          "acceptedAnswers": [
+            "must have walked|must have been walking"
+          ],
+          "explanation": "must have + past participle = past deduction"
+        },
+        {
+          "id": "ws-38-sec-f-q07",
+          "order": 7,
+          "prompt": "My car didn't work this morning. So I [gap] walk to the office.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
+        },
+        {
+          "id": "ws-38-sec-f-q08",
+          "order": 8,
+          "prompt": "He [gap] (be) home, but we didn't telephone him.",
+          "acceptedAnswers": [
+            "might have been|may have been|could have been"
+          ],
+          "explanation": "might have been = past possibility"
+        },
+        {
+          "id": "ws-38-sec-f-q09",
+          "order": 9,
+          "prompt": "She [gap] (help) me a lot by giving me a little of her time, but she preferred to go out.",
+          "acceptedAnswers": [
+            "could have helped"
+          ],
+          "explanation": "could have = possible but didn't happen"
+        },
+        {
+          "id": "ws-38-sec-f-q10",
+          "order": 10,
+          "prompt": "He doesn't know the answer. He [gap] (study).",
+          "acceptedAnswers": [
+            "can't have studied|couldn't have studied|should have studied"
+          ],
+          "explanation": "can't have + past participle = past impossibility"
+        },
+        {
+          "id": "ws-38-sec-f-q11",
+          "order": 11,
+          "prompt": "I can't find the house. I [gap] (write) down the address.",
+          "acceptedAnswers": [
+            "should have written"
+          ],
+          "explanation": "should have = past regret / criticism"
+        },
+        {
+          "id": "ws-38-sec-f-q12",
+          "order": 12,
+          "prompt": "She is very sleepy. She [gap] (stay) up very late last night.",
+          "acceptedAnswers": [
+            "must have stayed"
+          ],
+          "explanation": "must have = past deduction"
+        },
+        {
+          "id": "ws-38-sec-f-q13",
+          "order": 13,
+          "prompt": "I [gap] go for a walk later. It depends on the weather.",
+          "acceptedAnswers": [
+            "may|might"
+          ],
+          "explanation": "may / might = possibility"
+        },
+        {
+          "id": "ws-38-sec-f-q14",
+          "order": 14,
+          "prompt": "The ground is covered with snow. It [gap] (snow) last night.",
+          "acceptedAnswers": [
+            "must have snowed"
+          ],
+          "explanation": "must have = past deduction"
+        },
+        {
+          "id": "ws-38-sec-f-q15",
+          "order": 15,
+          "prompt": "She [gap] (be) in a great hurry to leave for the theater because she left all the dinner dishes on the table.",
+          "acceptedAnswers": [
+            "must have been"
+          ],
+          "explanation": "must have = past deduction"
+        },
+        {
+          "id": "ws-38-sec-f-q16",
+          "order": 16,
+          "prompt": "That store has just gone bankrupt. I believe they [gap] (have) a stricter policy about giving people credit.",
+          "acceptedAnswers": [
+            "should have had"
+          ],
+          "explanation": "should have = past advice, didn't happen"
+        },
+        {
+          "id": "ws-38-sec-f-q17",
+          "order": 17,
+          "prompt": "I'm afraid Mr. Smith is deaf. He [gap] (not / hear) what you say.",
+          "acceptedAnswers": [
+            "can't hear"
+          ],
+          "explanation": "can't = present inability"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-7",
+      "sectionKey": "G",
+      "instruction": "Fill in the blanks with suitable MODAL AUXILIARY VERBS (with the verb in brackets where given):",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-38-sec-g-q01",
+          "order": 1,
+          "prompt": "At the end of the month the Post Office will send him an enormous bill which he [gap] pay.",
+          "acceptedAnswers": [
+            "can't|won't be able to"
+          ],
+          "explanation": "can't / won't be able to = future inability"
+        },
+        {
+          "id": "ws-38-sec-g-q02",
+          "order": 2,
+          "prompt": "When I was a child, I [gap] understand adults, and now that I am an adult I [gap] understand children.",
+          "acceptedAnswers": [
+            "couldn't / can't"
+          ],
+          "explanation": "couldn't = past; can't = present inability"
+        },
+        {
+          "id": "ws-38-sec-g-q03",
+          "order": 3,
+          "prompt": "When I first went to England I [gap] read English but I [gap] understand it.",
+          "acceptedAnswers": [
+            "could|was able to / couldn't"
+          ],
+          "explanation": "could = past ability"
+        },
+        {
+          "id": "ws-38-sec-g-q04",
+          "order": 4,
+          "prompt": "[gap] I see your passport, please?",
+          "acceptedAnswers": [
+            "Can|May|Could"
+          ],
+          "explanation": "polite request"
+        },
+        {
+          "id": "ws-38-sec-g-q05",
+          "order": 5,
+          "prompt": "He sees very badly; he [gap] wear glasses all the time.",
+          "acceptedAnswers": [
+            "has to|must"
+          ],
+          "explanation": "has to = necessity"
+        },
+        {
+          "id": "ws-38-sec-g-q06",
+          "order": 6,
+          "prompt": "Pedestrians [gap] either use the crosswalk or cross the street at the traffic lights.",
+          "acceptedAnswers": [
+            "must|have to|should"
+          ],
+          "explanation": "must = rule"
+        },
+        {
+          "id": "ws-38-sec-g-q07",
+          "order": 7,
+          "prompt": "The buses were all full; I [gap] take a taxi.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past necessity"
+        },
+        {
+          "id": "ws-38-sec-g-q08",
+          "order": 8,
+          "prompt": "You [gap] drive fast; there is a speed limit here.",
+          "acceptedAnswers": [
+            "mustn't|can't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-g-q09",
+          "order": 9,
+          "prompt": "[gap] we all go to the football match tonight?",
+          "acceptedAnswers": [
+            "Shall"
+          ],
+          "explanation": "shall we = suggestion"
+        },
+        {
+          "id": "ws-38-sec-g-q10",
+          "order": 10,
+          "prompt": "You [gap] argue with your father, you [gap] obey him.",
+          "acceptedAnswers": [
+            "mustn't|shouldn't / must|should"
+          ],
+          "explanation": "mustn't = prohibition; must = obligation"
+        },
+        {
+          "id": "ws-38-sec-g-q11",
+          "order": 11,
+          "prompt": "I know she was in because I heard her radio, but she didn't open the door. She [gap] (hear) the bell.",
+          "acceptedAnswers": [
+            "can't have heard|couldn't have heard"
+          ],
+          "explanation": "can't have = past impossibility"
+        },
+        {
+          "id": "ws-38-sec-g-q12",
+          "order": 12,
+          "prompt": "A: I bought two bottles of milk. B: You [gap] (buy) milk; we have heaps in the house.",
+          "acceptedAnswers": [
+            "needn't have bought|didn't need to buy|shouldn't have bought"
+          ],
+          "explanation": "needn't have = unnecessary past action"
+        },
+        {
+          "id": "ws-38-sec-g-q13",
+          "order": 13,
+          "prompt": "I [gap] carry this heavy pack myself. I think I will ask for help.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = inability"
+        },
+        {
+          "id": "ws-38-sec-g-q14",
+          "order": 14,
+          "prompt": "When I woke up this morning, the light was on. I [gap] (forget) to turn it off.",
+          "acceptedAnswers": [
+            "must have forgotten"
+          ],
+          "explanation": "must have = past deduction"
+        },
+        {
+          "id": "ws-38-sec-g-q15",
+          "order": 15,
+          "prompt": "I saw her at the office half an hour ago. She [gap] (be) at home now. It is almost impossible.",
+          "acceptedAnswers": [
+            "can't be|couldn't be"
+          ],
+          "explanation": "can't = present impossibility"
+        },
+        {
+          "id": "ws-38-sec-g-q16",
+          "order": 16,
+          "prompt": "I can't find my keys. I [gap] (put) them somewhere in my room.",
+          "acceptedAnswers": [
+            "must have put|might have put|may have put"
+          ],
+          "explanation": "must / might have = past deduction"
+        },
+        {
+          "id": "ws-38-sec-g-q17",
+          "order": 17,
+          "prompt": "I don't know what all this noise is about. It [gap] (be) my father breaking wood in the backyard.",
+          "acceptedAnswers": [
+            "may be|might be|could be"
+          ],
+          "explanation": "may / might = present possibility"
+        },
+        {
+          "id": "ws-38-sec-g-q18",
+          "order": 18,
+          "prompt": "I can't find my mother. She [gap] (go) shopping.",
+          "acceptedAnswers": [
+            "may have gone|might have gone|must have gone|could have gone"
+          ],
+          "explanation": "may / might have = past possibility"
+        },
+        {
+          "id": "ws-38-sec-g-q19",
+          "order": 19,
+          "prompt": "The weather is overcast. It [gap] (rain) in the afternoon.",
+          "acceptedAnswers": [
+            "may rain|might rain|could rain"
+          ],
+          "explanation": "may / might = future possibility"
+        },
+        {
+          "id": "ws-38-sec-g-q20",
+          "order": 20,
+          "prompt": "If you have finished your work, you [gap] (leave).",
+          "acceptedAnswers": [
+            "can leave|may leave"
+          ],
+          "explanation": "can / may = permission"
+        },
+        {
+          "id": "ws-38-sec-g-q21",
+          "order": 21,
+          "prompt": "[gap] you like to come to the cinema with us?",
+          "acceptedAnswers": [
+            "Would"
+          ],
+          "explanation": "would you like = invitation"
+        },
+        {
+          "id": "ws-38-sec-g-q22",
+          "order": 22,
+          "prompt": "[gap] I come in?",
+          "acceptedAnswers": [
+            "May|Can|Could"
+          ],
+          "explanation": "asking permission"
+        },
+        {
+          "id": "ws-38-sec-g-q23",
+          "order": 23,
+          "prompt": "Emily [gap] (wear) glasses since she was eight.",
+          "acceptedAnswers": [
+            "has worn|has had to wear"
+          ],
+          "explanation": "present perfect with since"
+        },
+        {
+          "id": "ws-38-sec-g-q24",
+          "order": 24,
+          "prompt": "Deniz had no money, so she sold her car. A few days later she won a lot of money in a competition. She [gap] (sell) her car.",
+          "acceptedAnswers": [
+            "needn't have sold|didn't need to sell|shouldn't have sold"
+          ],
+          "explanation": "needn't have = unnecessary past action"
+        },
+        {
+          "id": "ws-38-sec-g-q25",
+          "order": 25,
+          "prompt": "The accident happened because he was driving on the wrong side of the road. He [gap] (drive) on the right.",
+          "acceptedAnswers": [
+            "should have driven|should have been driving|ought to have driven"
+          ],
+          "explanation": "should have = past criticism"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-8",
+      "sectionKey": "H",
+      "instruction": "A mysterious letter has arrived for Tom by special delivery. He is nervous about opening it. Add suitable MODAL VERBS to complete the dialogue. He is with Jill, his wife.",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-h-q01",
+          "order": 1,
+          "prompt": "Jill: [gap] I have a look at it? (permission)",
+          "acceptedAnswers": [
+            "Can|May|Could"
+          ],
+          "explanation": "permission"
+        },
+        {
+          "id": "ws-38-sec-h-q02",
+          "order": 2,
+          "prompt": "Tom: I [gap] think who it's from. (negative ability)",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = negative ability"
+        },
+        {
+          "id": "ws-38-sec-h-q03",
+          "order": 3,
+          "prompt": "Jill: It [gap] be important. (assumption)",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = assumption / deduction"
+        },
+        {
+          "id": "ws-38-sec-h-q04",
+          "order": 4,
+          "prompt": "Tom: [gap] you read the postmark? (ability)",
+          "acceptedAnswers": [
+            "Can|Could"
+          ],
+          "explanation": "can = ability"
+        },
+        {
+          "id": "ws-38-sec-h-q05",
+          "order": 5,
+          "prompt": "Jill: It [gap] be from the taxman. (possibility)",
+          "acceptedAnswers": [
+            "may|might|could"
+          ],
+          "explanation": "may / might = possibility"
+        },
+        {
+          "id": "ws-38-sec-h-q06",
+          "order": 6,
+          "prompt": "Tom: No, it [gap] be from him. He always uses a special envelope. (negative assumption)",
+          "acceptedAnswers": [
+            "can't|couldn't"
+          ],
+          "explanation": "can't = negative deduction"
+        },
+        {
+          "id": "ws-38-sec-h-q07",
+          "order": 7,
+          "prompt": "Jill: It [gap] be from your bank manager (possibility), so you [gap] open it immediately. (advice)",
+          "acceptedAnswers": [
+            "may|might|could / should|ought to"
+          ],
+          "explanation": "may = possibility; should = advice"
+        },
+        {
+          "id": "ws-38-sec-h-q08",
+          "order": 8,
+          "prompt": "Tom: Yes, I [gap] stop putting it off (obligation). Now, let's see. Is it good news or bad?",
+          "acceptedAnswers": [
+            "must|have to"
+          ],
+          "explanation": "must = obligation"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-9",
+      "sectionKey": "I",
+      "instruction": "Draw conclusions using CAN'T / MUST / MIGHT. Write the whole sentence; for items 7–10, write the completed sentence marked (?).",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-38-sec-i-q01",
+          "order": 1,
+          "prompt": "He drives a very expensive car and owns a private plane. (rich)",
+          "acceptedAnswers": [
+            "He must be rich."
+          ],
+          "explanation": "must = strong deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q02",
+          "order": 2,
+          "prompt": "He spends all day walking round the town. (job)",
+          "acceptedAnswers": [
+            "He can't have a job.",
+            "He might not have a job."
+          ],
+          "explanation": "can't = negative deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q03",
+          "order": 3,
+          "prompt": "They are asking the way to the city center. (tourist)",
+          "acceptedAnswers": [
+            "They must be tourists.",
+            "They might be tourists."
+          ],
+          "explanation": "must / might = deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q04",
+          "order": 4,
+          "prompt": "She works for a daily newspaper. She goes to the big football matches. (sports reporter)",
+          "acceptedAnswers": [
+            "She must be a sports reporter.",
+            "She might be a sports reporter."
+          ],
+          "explanation": "must / might = deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q05",
+          "order": 5,
+          "prompt": "I thought he studied medicine, but he's going to an outdoor job now. (doctor)",
+          "acceptedAnswers": [
+            "He can't be a doctor.",
+            "He might not be a doctor."
+          ],
+          "explanation": "can't = negative deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q06",
+          "order": 6,
+          "prompt": "She teaches maths at the university. (stupid)",
+          "acceptedAnswers": [
+            "She can't be stupid."
+          ],
+          "explanation": "can't = negative deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q07",
+          "order": 7,
+          "prompt": "A: What happened to your leg? B: I slipped badly on the ice and broke it. A: Oh! That (?) hurt a lot. B: It does.",
+          "acceptedAnswers": [
+            "That must hurt a lot."
+          ],
+          "explanation": "must = strong deduction"
+        },
+        {
+          "id": "ws-38-sec-i-q08",
+          "order": 8,
+          "prompt": "A: Listen! Do you hear a noise like someone shouting? B: Yes, I do. The new neighbours upstairs (?) (quarrel) again.",
+          "acceptedAnswers": [
+            "The new neighbours upstairs must be quarrelling again.",
+            "The new neighbours upstairs must be quarreling again.",
+            "The new neighbours upstairs might be quarrelling again.",
+            "The new neighbours upstairs might be quarreling again.",
+            "The new neighbors upstairs must be quarrelling again.",
+            "The new neighbors upstairs must be quarreling again.",
+            "The new neighbors upstairs might be quarrelling again.",
+            "The new neighbors upstairs might be quarreling again."
+          ],
+          "explanation": "must be + -ing = deduction about now"
+        },
+        {
+          "id": "ws-38-sec-i-q09",
+          "order": 9,
+          "prompt": "A: I (?) get a rise in my salary soon. B: What makes you think so? A: The boss seemed very pleased with my last project.",
+          "acceptedAnswers": [
+            "I might get a rise in my salary soon.",
+            "I may get a rise in my salary soon."
+          ],
+          "explanation": "might = possibility"
+        },
+        {
+          "id": "ws-38-sec-i-q10",
+          "order": 10,
+          "prompt": "A: That man over there looks like our district manager. B: No, (?) be him. He went to the USA three days ago and hasn't returned yet.",
+          "acceptedAnswers": [
+            "No, it can't be him.",
+            "No, that can't be him."
+          ],
+          "explanation": "can't = logical impossibility"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-10",
+      "sectionKey": "J",
+      "instruction": "Fill in MUST or MUSTN'T:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-38-sec-j-q01",
+          "order": 1,
+          "prompt": "It's cold. You [gap] leave without your jacket.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-j-q02",
+          "order": 2,
+          "prompt": "You [gap] eat fruit and vegetables to stay healthy.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        },
+        {
+          "id": "ws-38-sec-j-q03",
+          "order": 3,
+          "prompt": "I [gap] go to the post office. I have a letter to send.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        },
+        {
+          "id": "ws-38-sec-j-q04",
+          "order": 4,
+          "prompt": "You [gap] speak rudely to your parents.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-j-q05",
+          "order": 5,
+          "prompt": "You [gap] park here – it's illegal.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
+        },
+        {
+          "id": "ws-38-sec-j-q06",
+          "order": 6,
+          "prompt": "We [gap] hurry or we'll miss the bus.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-11",
+      "sectionKey": "K",
+      "instruction": "Use a suitable present or past MODAL AUXILIARY:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-39-sec-a-q01",
+          "order": 1,
+          "prompt": "I can’t find my book. I [gap] (leave) it on the bus.",
+          "acceptedAnswers": [
+            "must have left|may have left|might have left|could have left"
+          ],
+          "explanation": "must/may have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-a-q02",
+          "order": 2,
+          "prompt": "They don’t answer their phone; they [gap] (go) away on their vacation.",
+          "acceptedAnswers": [
+            "must have gone|may have gone|might have gone|could have gone"
+          ],
+          "explanation": "must/may have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-a-q03",
+          "order": 3,
+          "prompt": "John went to the movies last night, but he [gap] (stay) at home and [gap] (prepare) his lessons.",
+          "acceptedAnswers": [
+            "should have stayed|ought to have stayed / prepared|should have prepared|ought to have prepared"
+          ],
+          "explanation": "should have + V3: criticism of a past action"
+        },
+        {
+          "id": "ws-39-sec-a-q04",
+          "order": 4,
+          "prompt": "The lights have gone out. A fuse [gap] (blow).",
+          "acceptedAnswers": [
+            "must have blown|may have blown|might have blown|could have blown"
+          ],
+          "explanation": "must have + V3: logical conclusion about the past"
+        },
+        {
+          "id": "ws-39-sec-a-q05",
+          "order": 5,
+          "prompt": "She [gap] (go) to school. It’s Saturday.",
+          "acceptedAnswers": [
+            "doesn't have to go|needn't go|need not go|doesn't need to go|can't be going|won't go"
+          ],
+          "explanation": "doesn't have to / needn't: no obligation"
+        },
+        {
+          "id": "ws-39-sec-a-q06",
+          "order": 6,
+          "prompt": "You were stupid to go skiing here. You [gap] (break) your leg.",
+          "acceptedAnswers": [
+            "could have broken|might have broken|may have broken"
+          ],
+          "explanation": "could/might have + V3: past possibility that didn't happen"
+        },
+        {
+          "id": "ws-39-sec-a-q07",
+          "order": 7,
+          "prompt": "She [gap] (sing) like an angel when she was a kid.",
+          "acceptedAnswers": [
+            "could sing|used to sing"
+          ],
+          "explanation": "could: past ability"
+        },
+        {
+          "id": "ws-39-sec-a-q08",
+          "order": 8,
+          "prompt": "[gap] I make a suggestion?",
+          "acceptedAnswers": [
+            "may|can|could|might"
+          ],
+          "explanation": "may / can / could: asking permission"
+        },
+        {
+          "id": "ws-39-sec-a-q09",
+          "order": 9,
+          "prompt": "You [gap] go and see “Batman”. It’s a great film.",
+          "acceptedAnswers": [
+            "should|must|ought to"
+          ],
+          "explanation": "should / must: advice, strong recommendation"
+        },
+        {
+          "id": "ws-39-sec-a-q10",
+          "order": 10,
+          "prompt": "He came home alone. You [gap] (let) him do that; he [gap] (get) lost.",
+          "acceptedAnswers": [
+            "shouldn't have let|ought not to have let|oughtn't to have let / might have got|could have got|may have got|might have gotten|could have gotten|may have gotten"
+          ],
+          "explanation": "shouldn't have + V3: criticism; might have + V3: possibility"
+        },
+        {
+          "id": "ws-39-sec-a-q11",
+          "order": 11,
+          "prompt": "He read the message but he [gap] (not) understand.",
+          "acceptedAnswers": [
+            "couldn't|didn't"
+          ],
+          "explanation": "couldn't: past inability"
+        },
+        {
+          "id": "ws-39-sec-a-q12",
+          "order": 12,
+          "prompt": "I [gap] (lend) you the money. Why didn’t you ask me?",
+          "acceptedAnswers": [
+            "could have lent|would have lent"
+          ],
+          "explanation": "could have + V3: possible but didn't happen"
+        },
+        {
+          "id": "ws-39-sec-a-q13",
+          "order": 13,
+          "prompt": "A: Can I have some sweets? I am hungry. B: You [gap] hungry. You have just had dinner.",
+          "acceptedAnswers": [
+            "can't be|couldn't be"
+          ],
+          "explanation": "can't: present negative deduction"
+        },
+        {
+          "id": "ws-39-sec-a-q14",
+          "order": 14,
+          "prompt": "Tom [gap] (write) this, because it is in French and he doesn’t know French.",
+          "acceptedAnswers": [
+            "can't have written|couldn't have written"
+          ],
+          "explanation": "can't have + V3: negative deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-a-q15",
+          "order": 15,
+          "prompt": "He looked so tired. He [gap] (work) very hard.",
+          "acceptedAnswers": [
+            "must have worked|must have been working"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-a-q16",
+          "order": 16,
+          "prompt": "He [gap] be a very clever boy. He has entered the university very easily.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must: present positive deduction"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-12",
+      "sectionKey": "L",
+      "instruction": "Fill in the blanks using MUST, CAN’T, MAY, MIGHT, COULD and PAST FORMS of them:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-39-sec-b-q01",
+          "order": 1,
+          "prompt": "Sally looks sad and worried. She [gap] (have) a problem with something.",
+          "acceptedAnswers": [
+            "must have|may have|might have|could have"
+          ],
+          "explanation": "must: present deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q02",
+          "order": 2,
+          "prompt": "Bob [gap] (be) at school because I haven’t seen him today.",
+          "acceptedAnswers": [
+            "can't be|can't have been|couldn't have been|couldn't be"
+          ],
+          "explanation": "can't: negative deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q03",
+          "order": 3,
+          "prompt": "Mr. Treves hasn’t come to work yet. He has never been late for work. He [gap] (miss) the bus.",
+          "acceptedAnswers": [
+            "must have missed|may have missed|might have missed|could have missed"
+          ],
+          "explanation": "must/may have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q04",
+          "order": 4,
+          "prompt": "Timmy is a very good boy. He isn’t naughty, so he [gap] (break) that window. Someone else [gap] (break) it.",
+          "acceptedAnswers": [
+            "can't have broken|couldn't have broken / must have broken"
+          ],
+          "explanation": "can't have / must have + V3: past deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q05",
+          "order": 5,
+          "prompt": "I’m sure that I dropped my key in the car. It [gap] (be) there at the moment.",
+          "acceptedAnswers": [
+            "must be"
+          ],
+          "explanation": "must: present positive deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q06",
+          "order": 6,
+          "prompt": "The street is wet this morning. I’m not sure but it [gap] (rain) last night.",
+          "acceptedAnswers": [
+            "may have rained|might have rained|could have rained"
+          ],
+          "explanation": "may/might have + V3: uncertain past possibility"
+        },
+        {
+          "id": "ws-39-sec-b-q07",
+          "order": 7,
+          "prompt": "A: I talked to your science teacher at school yesterday. B: You [gap] (talk) to her because she wasn’t at school yesterday.",
+          "acceptedAnswers": [
+            "can't have talked|couldn't have talked"
+          ],
+          "explanation": "can't have + V3: negative past deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q08",
+          "order": 8,
+          "prompt": "A: The man was being taken to hospital. He [gap] (have) an accident. B: Yes, I’m sure he had an accident.",
+          "acceptedAnswers": [
+            "must have had"
+          ],
+          "explanation": "must have + V3: sure about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q09",
+          "order": 9,
+          "prompt": "A: Will you come to my birthday party tomorrow? B: I [gap] (come) to your party because I have to look after my little sister.",
+          "acceptedAnswers": [
+            "can't come|won't be able to come"
+          ],
+          "explanation": "can't: inability"
+        },
+        {
+          "id": "ws-39-sec-b-q10a",
+          "order": 10,
+          "prompt": "A: I’m going to do a parachute jump next week. B: You are going to jump out of an aeroplane! But you’re 73 years old! You [gap] (be) serious. You [gap] (be) mad.",
+          "acceptedAnswers": [
+            "can't be / must be"
+          ],
+          "explanation": "can't / must: present deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q10b",
+          "order": 10,
+          "prompt": "A: It really [gap] (be) wonderful looking down on everything. I’ve always wanted to try it.",
+          "acceptedAnswers": [
+            "must be"
+          ],
+          "explanation": "must: confident present deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q10c",
+          "order": 10,
+          "prompt": "B: But anything could happen. You [gap] (be) injured, or even killed. I wouldn’t take the risk.",
+          "acceptedAnswers": [
+            "could be|might be|may be"
+          ],
+          "explanation": "could / might: possibility"
+        },
+        {
+          "id": "ws-39-sec-b-q10d",
+          "order": 10,
+          "prompt": "A: Well, your life [gap] (be) much fun if you never take risks. You ought to try it, too. You never know. You [gap] (enjoy) it.",
+          "acceptedAnswers": [
+            "can't be|couldn't be / might enjoy|may enjoy|could enjoy"
+          ],
+          "explanation": "can't: negative deduction; might: possibility"
+        },
+        {
+          "id": "ws-39-sec-b-q10e",
+          "order": 10,
+          "prompt": "B: Enjoy it! You [gap] (be) joking.",
+          "acceptedAnswers": [
+            "must be"
+          ],
+          "explanation": "must be + -ing: deduction about now"
+        },
+        {
+          "id": "ws-39-sec-b-q11",
+          "order": 11,
+          "prompt": "She knew everything about our plans. She [gap] (listen) to our conversation.",
+          "acceptedAnswers": [
+            "must have listened|must have been listening"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q12",
+          "order": 12,
+          "prompt": "He [gap] (eat) the roasted beef when we were out. He is a vegetarian.",
+          "acceptedAnswers": [
+            "can't have eaten|couldn't have eaten"
+          ],
+          "explanation": "can't have + V3: negative past deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q13",
+          "order": 13,
+          "prompt": "Mrs. White bought a new fur coat! She [gap] (win) a lottery.",
+          "acceptedAnswers": [
+            "must have won|may have won|might have won"
+          ],
+          "explanation": "must/may have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q14",
+          "order": 14,
+          "prompt": "John said he would ring, but he hasn’t. He [gap] (forget) all about it.",
+          "acceptedAnswers": [
+            "must have forgotten|may have forgotten|might have forgotten"
+          ],
+          "explanation": "must/may have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q15",
+          "order": 15,
+          "prompt": "The children [gap] (study) in the library now because they have a test tomorrow.",
+          "acceptedAnswers": [
+            "must be studying|may be studying|might be studying"
+          ],
+          "explanation": "must be + -ing: deduction about now"
+        },
+        {
+          "id": "ws-39-sec-b-q16",
+          "order": 16,
+          "prompt": "The singer has got a sore throat, so she [gap] (sing) at the concert.",
+          "acceptedAnswers": [
+            "can't sing|won't be able to sing|may not sing|might not sing"
+          ],
+          "explanation": "can't: inability"
+        },
+        {
+          "id": "ws-39-sec-b-q17",
+          "order": 17,
+          "prompt": "I [gap] (be) at home this evening, or I [gap] (be) out, I’m not sure.",
+          "acceptedAnswers": [
+            "may be|might be|could be / may be|might be|could be"
+          ],
+          "explanation": "may / might: uncertain future possibility"
+        },
+        {
+          "id": "ws-39-sec-b-q18",
+          "order": 18,
+          "prompt": "He drank three glasses of water. He [gap] (be) very thirsty.",
+          "acceptedAnswers": [
+            "must have been"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q19",
+          "order": 19,
+          "prompt": "A: Where’s the cat? B: It [gap] (go) out, the door is closed.",
+          "acceptedAnswers": [
+            "can't have gone|couldn't have gone"
+          ],
+          "explanation": "can't have + V3: negative past deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q20",
+          "order": 20,
+          "prompt": "The police arrested him right away. They [gap] (find) enough evidence.",
+          "acceptedAnswers": [
+            "must have found"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q21",
+          "order": 21,
+          "prompt": "He had no money, so he [gap] (lend) you some.",
+          "acceptedAnswers": [
+            "can't have lent|couldn't have lent"
+          ],
+          "explanation": "can't have + V3: negative past deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q22",
+          "order": 22,
+          "prompt": "We can’t wait any longer. Something [gap] (do) immediately.",
+          "acceptedAnswers": [
+            "must be done"
+          ],
+          "explanation": "must + passive infinitive (be done)"
+        },
+        {
+          "id": "ws-39-sec-b-q23",
+          "order": 23,
+          "prompt": "They all shouted in fear. They [gap] (be) very afraid.",
+          "acceptedAnswers": [
+            "must have been"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q24",
+          "order": 24,
+          "prompt": "A: Your dog bit me as I was standing in the hall. B: It [gap] (be) my dog. It was with me all day.",
+          "acceptedAnswers": [
+            "can't have been|couldn't have been"
+          ],
+          "explanation": "can't have + V3: negative past deduction"
+        },
+        {
+          "id": "ws-39-sec-b-q25",
+          "order": 25,
+          "prompt": "A: I phoned you at 9 o’clock this morning and got no answer. B: I [gap] (be) in the garden. I planted some flowers this morning.",
+          "acceptedAnswers": [
+            "must have been"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        },
+        {
+          "id": "ws-39-sec-b-q26",
+          "order": 26,
+          "prompt": "My grandmother always has a rest at this time of the day, so she [gap] (take) a nap now.",
+          "acceptedAnswers": [
+            "must be taking"
+          ],
+          "explanation": "must be + -ing: deduction about now"
+        },
+        {
+          "id": "ws-39-sec-b-q27",
+          "order": 27,
+          "prompt": "Mrs. Green wasn’t good at ice-skating, but she insisted on and broke her leg. She [gap] (give) up doing that.",
+          "acceptedAnswers": [
+            "should have given|ought to have given"
+          ],
+          "explanation": "should have + V3: criticism of a past action"
+        },
+        {
+          "id": "ws-39-sec-b-q28",
+          "order": 28,
+          "prompt": "A: I’m afraid Ted is watching TV again. B: He [gap] (watch) TV, because his room is completely silent and dark. He [gap] (sleep).",
+          "acceptedAnswers": [
+            "can't be watching|couldn't be watching / must be sleeping"
+          ],
+          "explanation": "can't / must be + -ing: deduction about now"
+        },
+        {
+          "id": "ws-39-sec-b-q29",
+          "order": 29,
+          "prompt": "That carpet was made by hand. It [gap] (take) a long time to make it.",
+          "acceptedAnswers": [
+            "must have taken"
+          ],
+          "explanation": "must have + V3: deduction about the past"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-13",
+      "sectionKey": "M",
+      "instruction": "Decide what you MUST, MUSTN’T or NEEDN’T do and then write them down as in the examples: (Examples: tidy your room → I must tidy my room. / cheat on the exams → I mustn’t cheat on the exams.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-39-sec-c-q03",
+          "order": 3,
+          "prompt": "do your homework regularly",
+          "acceptedAnswers": [
+            "I must do my homework regularly."
+          ],
+          "explanation": "must: necessary / obligation"
+        },
+        {
+          "id": "ws-39-sec-c-q04",
+          "order": 4,
+          "prompt": "listen to the teacher",
+          "acceptedAnswers": [
+            "I must listen to the teacher."
+          ],
+          "explanation": "must: necessary / obligation"
+        },
+        {
+          "id": "ws-39-sec-c-q05",
+          "order": 5,
+          "prompt": "visit the teacher",
+          "acceptedAnswers": [
+            "I needn't visit the teacher.",
+            "I need not visit the teacher.",
+            "I don't need to visit the teacher.",
+            "I don't have to visit the teacher."
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-c-q06",
+          "order": 6,
+          "prompt": "run in the halls",
+          "acceptedAnswers": [
+            "I mustn't run in the halls.",
+            "I must not run in the halls."
+          ],
+          "explanation": "mustn't: prohibition"
+        },
+        {
+          "id": "ws-39-sec-c-q07",
+          "order": 7,
+          "prompt": "talk during the test",
+          "acceptedAnswers": [
+            "I mustn't talk during the test.",
+            "I must not talk during the test."
+          ],
+          "explanation": "mustn't: prohibition"
+        },
+        {
+          "id": "ws-39-sec-c-q08",
+          "order": 8,
+          "prompt": "wake up early at weekends",
+          "acceptedAnswers": [
+            "I needn't wake up early at weekends.",
+            "I need not wake up early at weekends.",
+            "I don't need to wake up early at weekends.",
+            "I don't have to wake up early at weekends."
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-c-q09",
+          "order": 9,
+          "prompt": "get to class late",
+          "acceptedAnswers": [
+            "I mustn't get to class late.",
+            "I must not get to class late."
+          ],
+          "explanation": "mustn't: prohibition"
+        },
+        {
+          "id": "ws-39-sec-c-q10",
+          "order": 10,
+          "prompt": "wash your hands before meals",
+          "acceptedAnswers": [
+            "I must wash my hands before meals.",
+            "I must wash my hands before a meal.",
+            "I must wash my hands before each meal.",
+            "I must wash my hand before meal."
+          ],
+          "explanation": "must: necessary / obligation"
+        },
+        {
+          "id": "ws-39-sec-c-q11",
+          "order": 11,
+          "prompt": "wear a tie at parties",
+          "acceptedAnswers": [
+            "I needn't wear a tie at parties.",
+            "I need not wear a tie at parties.",
+            "I needn't wear a tie at the parties.",
+            "I don't have to wear a tie at parties."
+          ],
+          "explanation": "needn't: not necessary"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-14",
+      "sectionKey": "N",
+      "instruction": "Complete the sentences with MUST / MUSTN’T or NEEDN’T: (Examples: I haven’t got much time. I must hurry. / I have got plenty of time. I needn’t hurry.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-39-sec-d-q01",
+          "order": 1,
+          "prompt": "“Do you want me to wait for you?” “No, it’s okay. You [gap] wait.”",
+          "acceptedAnswers": [
+            "needn't|need not"
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q02",
+          "order": 2,
+          "prompt": "Smith gave me a letter to post. I [gap] forget to post it.",
+          "acceptedAnswers": [
+            "mustn't|must not"
+          ],
+          "explanation": "mustn't: prohibition"
+        },
+        {
+          "id": "ws-39-sec-d-q03",
+          "order": 3,
+          "prompt": "You [gap] come if you don’t want to but I hope you will.",
+          "acceptedAnswers": [
+            "needn't|need not"
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q04",
+          "order": 4,
+          "prompt": "We have enough food at home so we [gap] go shopping today.",
+          "acceptedAnswers": [
+            "needn't|need not"
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q05",
+          "order": 5,
+          "prompt": "This book is very valuable. You [gap] look after it very carefully and you [gap] lose it.",
+          "acceptedAnswers": [
+            "must / mustn't|must not"
+          ],
+          "explanation": "must: obligation; mustn't: prohibition"
+        },
+        {
+          "id": "ws-39-sec-d-q06",
+          "order": 6,
+          "prompt": "You have got a new skirt, so you [gap] buy another.",
+          "acceptedAnswers": [
+            "needn't|need not"
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q07",
+          "order": 7,
+          "prompt": "It’s holiday tomorrow. You [gap] get up early.",
+          "acceptedAnswers": [
+            "needn't|need not"
+          ],
+          "explanation": "needn't: not necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q08",
+          "order": 8,
+          "prompt": "He’s ill, so he [gap] see the doctor.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must: necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q09",
+          "order": 9,
+          "prompt": "It’s snowing. You [gap] put on your coat.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must: necessary"
+        },
+        {
+          "id": "ws-39-sec-d-q10",
+          "order": 10,
+          "prompt": "You [gap] take too many aspirins in one day.",
+          "acceptedAnswers": [
+            "mustn't|must not"
+          ],
+          "explanation": "mustn't: prohibition"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-15",
+      "sectionKey": "O",
+      "instruction": "Complete the sentences using USED TO or BE USED TO:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-40-sec-a-q01",
+          "order": 1,
+          "prompt": "I [gap] (live) in Finland, but now I live in France.",
+          "acceptedAnswers": [
+            "used to live"
+          ],
+          "explanation": "used to + V: past state that is no longer true"
+        },
+        {
+          "id": "ws-40-sec-a-q02",
+          "order": 2,
+          "prompt": "He [gap] (sit) in the back of the classroom, but now he prefers to sit in the front row.",
+          "acceptedAnswers": [
+            "used to sit"
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-a-q03",
+          "order": 3,
+          "prompt": "When I was a child, I [gap] (play) games with my friends in a big field near my house after school every day.",
+          "acceptedAnswers": [
+            "used to play"
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-a-q04",
+          "order": 4,
+          "prompt": "It’s hard for my children to stay inside on a cold, rainy day. They [gap] (play) outside in the big field near our house. They play there almost every day.",
+          "acceptedAnswers": [
+            "are used to playing"
+          ],
+          "explanation": "be used to + V-ing: accustomed to (now)"
+        },
+        {
+          "id": "ws-40-sec-a-q05",
+          "order": 5,
+          "prompt": "People [gap] (believe) that the world was flat.",
+          "acceptedAnswers": [
+            "used to believe"
+          ],
+          "explanation": "used to + V: past belief, no longer true"
+        },
+        {
+          "id": "ws-40-sec-a-q06",
+          "order": 6,
+          "prompt": "Trains [gap] (be) the main means of cross-continental travel. Today, most people take airplanes for long-distance travel.",
+          "acceptedAnswers": [
+            "used to be"
+          ],
+          "explanation": "used to + V: past state"
+        },
+        {
+          "id": "ws-40-sec-a-q07",
+          "order": 7,
+          "prompt": "Ms. Stanton’s job requires her to travel extensively throughout the world. She [gap] (travel) by plane.",
+          "acceptedAnswers": [
+            "is used to traveling|is used to travelling"
+          ],
+          "explanation": "be used to + V-ing: accustomed to"
+        },
+        {
+          "id": "ws-40-sec-a-q08",
+          "order": 8,
+          "prompt": "You and I are from different cultures. You [gap] (have) fish for breakfast. I [gap] (have) cheese and bread for breakfast.",
+          "acceptedAnswers": [
+            "are used to having / am used to having"
+          ],
+          "explanation": "be used to + V-ing: accustomed to"
+        },
+        {
+          "id": "ws-40-sec-a-q09",
+          "order": 9,
+          "prompt": "What [gap] (do) on summer days when you were a child?",
+          "acceptedAnswers": [
+            "did you use to do"
+          ],
+          "explanation": "question: did + subject + use to + V"
+        },
+        {
+          "id": "ws-40-sec-a-q10",
+          "order": 10,
+          "prompt": "Bill lives alone. He doesn’t mind this, because he [gap] (live) alone.",
+          "acceptedAnswers": [
+            "is used to living"
+          ],
+          "explanation": "be used to + V-ing: accustomed to"
+        },
+        {
+          "id": "ws-40-sec-a-q11",
+          "order": 11,
+          "prompt": "Tom [gap] (drink) a lot of coffee. Now he prefers tea.",
+          "acceptedAnswers": [
+            "used to drink"
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-a-q12",
+          "order": 12,
+          "prompt": "I have to work hard. This is not a problem for me. I have always worked hard. So I [gap] (work) hard.",
+          "acceptedAnswers": [
+            "am used to working"
+          ],
+          "explanation": "be used to + V-ing: accustomed to"
+        },
+        {
+          "id": "ws-40-sec-a-q13",
+          "order": 13,
+          "prompt": "Some friends of yours have just moved into a flat on a busy street. It is very noisy. They will [gap] the noise.",
+          "acceptedAnswers": [
+            "get used to"
+          ],
+          "explanation": "get used to: become accustomed to"
+        },
+        {
+          "id": "ws-40-sec-a-q14",
+          "order": 14,
+          "prompt": "When we were children, we [gap] (swim) every day.",
+          "acceptedAnswers": [
+            "used to swim"
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-a-q15",
+          "order": 15,
+          "prompt": "I haven’t been to the cinema for ages now. We [gap] (go) a lot.",
+          "acceptedAnswers": [
+            "used to go"
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-a-q16",
+          "order": 16,
+          "prompt": "Dennis gave up smoking two years ago. He [gap] (smoke).",
+          "acceptedAnswers": [
+            "used to smoke"
+          ],
+          "explanation": "used to + V: past habit"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-16",
+      "sectionKey": "P",
+      "instruction": "Rewrite the sentences using USED TO: (Example: When she was a child, she lived in a small village. → When she was a child, she used to live in a small village.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-40-sec-b-q02",
+          "order": 2,
+          "prompt": "When he was a young man, he enjoyed playing basketball.",
+          "acceptedAnswers": [
+            "When he was a young man, he used to enjoy playing basketball.",
+            "He used to enjoy playing basketball when he was a young man."
+          ],
+          "explanation": "used to + V: past habit / state"
+        },
+        {
+          "id": "ws-40-sec-b-q03",
+          "order": 3,
+          "prompt": "In ancient Rome, wall paintings were a popular form of advertising.",
+          "acceptedAnswers": [
+            "In ancient Rome, wall paintings used to be a popular form of advertising.",
+            "Wall paintings used to be a popular form of advertising in ancient Rome."
+          ],
+          "explanation": "used to be: past state"
+        },
+        {
+          "id": "ws-40-sec-b-q04",
+          "order": 4,
+          "prompt": "Before she learned to read, her parents read stories to her.",
+          "acceptedAnswers": [
+            "Before she learned to read, her parents used to read stories to her.",
+            "Her parents used to read stories to her before she learned to read."
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-b-q05",
+          "order": 5,
+          "prompt": "Before he came to Ankara, life was cheap in Turkey.",
+          "acceptedAnswers": [
+            "Before he came to Ankara, life used to be cheap in Turkey.",
+            "Life used to be cheap in Turkey before he came to Ankara."
+          ],
+          "explanation": "used to be: past state"
+        },
+        {
+          "id": "ws-40-sec-b-q06",
+          "order": 6,
+          "prompt": "Jim spoke German at school, but he has now forgotten.",
+          "acceptedAnswers": [
+            "Jim used to speak German at school, but he has now forgotten.",
+            "Jim used to speak German at school, but he has now forgotten it.",
+            "Jim used to speak German at school, but now he has forgotten."
+          ],
+          "explanation": "used to + V: past habit, no longer true"
+        },
+        {
+          "id": "ws-40-sec-b-q07",
+          "order": 7,
+          "prompt": "Susan was a nurse before she got married and raised a family.",
+          "acceptedAnswers": [
+            "Susan used to be a nurse before she got married and raised a family.",
+            "Before she got married and raised a family, Susan used to be a nurse."
+          ],
+          "explanation": "used to be: past state"
+        },
+        {
+          "id": "ws-40-sec-b-q08",
+          "order": 8,
+          "prompt": "Sally played tennis when abroad, but she prefers swimming now.",
+          "acceptedAnswers": [
+            "Sally used to play tennis when abroad, but she prefers swimming now.",
+            "Sally used to play tennis when she was abroad, but she prefers swimming now.",
+            "Sally used to play tennis when abroad, but now she prefers swimming."
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-b-q09",
+          "order": 9,
+          "prompt": "Before they bought their house, they lived in an apartment.",
+          "acceptedAnswers": [
+            "Before they bought their house, they used to live in an apartment.",
+            "They used to live in an apartment before they bought their house."
+          ],
+          "explanation": "used to + V: past state"
+        },
+        {
+          "id": "ws-40-sec-b-q10",
+          "order": 10,
+          "prompt": "While she was going to university, she worked in a doctor’s office.",
+          "acceptedAnswers": [
+            "While she was going to university, she used to work in a doctor's office.",
+            "She used to work in a doctor's office while she was going to university."
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-b-q11",
+          "order": 11,
+          "prompt": "Before he married his second wife, he was quite happy.",
+          "acceptedAnswers": [
+            "Before he married his second wife, he used to be quite happy.",
+            "He used to be quite happy before he married his second wife."
+          ],
+          "explanation": "used to be: past state"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-17",
+      "sectionKey": "Q",
+      "instruction": "Complete the text about Ziggy Starr when she was a child using USED TO / DIDN’T USE TO and the verbs in brackets: (Example: I didn’t use to have (not have) many friends when I was a child.)",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-40-sec-c-q01",
+          "order": 1,
+          "prompt": "I didn’t use to have many friends when I was a child so I [gap] (play) with my toys all day.",
+          "acceptedAnswers": [
+            "used to play"
+          ],
+          "explanation": "used to + V: past habit"
+        },
+        {
+          "id": "ws-40-sec-c-q02",
+          "order": 2,
+          "prompt": "I [gap] (worry) about things a lot but I [gap] (not bite) my nails or suck my thumb.",
+          "acceptedAnswers": [
+            "used to worry / didn't use to bite"
+          ],
+          "explanation": "negative: didn't use to + V"
+        },
+        {
+          "id": "ws-40-sec-c-q03",
+          "order": 3,
+          "prompt": "I remember that I [gap] (cry) a lot and I [gap] (be) really afraid of the dark.",
+          "acceptedAnswers": [
+            "used to cry / used to be"
+          ],
+          "explanation": "used to + V: past habit / state"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-18",
+      "sectionKey": "R",
+      "instruction": "Complete the text using USED TO and the verbs in the box: (Example: We used to wear school uniform.)",
+      "type": "passage_gap_fill",
+      "contextText": "School has changed since I was a student. We used to wear school uniform and I didn’t like that very much.\n(Sentences 1–4)\nSome of them were impossible! I think school is easier now than it was 50 years ago.",
+      "wordBank": [
+        "do",
+        "give",
+        "have",
+        "learn",
+        "read",
+        "wear"
+      ],
+      "questions": [
+        {
+          "id": "ws-40-sec-d-q01",
+          "order": 1,
+          "prompt": "We [gap] a lot of lessons and most of them were difficult.",
+          "acceptedAnswers": [
+            "used to have"
+          ],
+          "explanation": "used to have lessons"
+        },
+        {
+          "id": "ws-40-sec-d-q02",
+          "order": 2,
+          "prompt": "We [gap] homework every day.",
+          "acceptedAnswers": [
+            "used to do"
+          ],
+          "explanation": "do homework"
+        },
+        {
+          "id": "ws-40-sec-d-q03",
+          "order": 3,
+          "prompt": "We [gap] lots of books and we [gap] everything by heart.",
+          "acceptedAnswers": [
+            "used to read / used to learn"
+          ],
+          "explanation": "read books; learn by heart"
+        },
+        {
+          "id": "ws-40-sec-d-q04",
+          "order": 4,
+          "prompt": "And our teachers [gap] us a lot of tests and examinations.",
+          "acceptedAnswers": [
+            "used to give"
+          ],
+          "explanation": "give someone tests"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-19",
+      "sectionKey": "S",
+      "instruction": "Use USED TO / WOULD (a repeated action in the past): (Example: I used to be very shy. Whenever a stranger came to our house, I would hide in a closet.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-40-sec-e-q02",
+          "order": 2,
+          "prompt": "I remember my Aunt Susan very well. Every time she came to our house, she [gap] (give) me a big kiss and pinch my cheek.",
+          "acceptedAnswers": [
+            "would give|used to give"
+          ],
+          "explanation": "would / used to: repeated past action"
+        },
+        {
+          "id": "ws-40-sec-e-q03",
+          "order": 3,
+          "prompt": "I [gap] (be) afraid of flying. My heart [gap] (start) pounding every time I stepped on a plane. But now I’m used to flying and enjoy it.",
+          "acceptedAnswers": [
+            "used to be / would start|used to start"
+          ],
+          "explanation": "states: used to only; actions: would / used to"
+        },
+        {
+          "id": "ws-40-sec-e-q04",
+          "order": 4,
+          "prompt": "I got a new bicycle when I was ten. My friends [gap] (ask) to ride it, but for years I [gap] (let / never) anyone else use it.",
+          "acceptedAnswers": [
+            "would ask|used to ask / would never let|never used to let|never let"
+          ],
+          "explanation": "would / used to: repeated past action"
+        },
+        {
+          "id": "ws-40-sec-e-q05",
+          "order": 5,
+          "prompt": "When my grandfather was a boy and had a cold, his mother [gap] (make) him go to bed. Then she [gap] (put) goose fat on his chest.",
+          "acceptedAnswers": [
+            "would make|used to make / would put|used to put"
+          ],
+          "explanation": "would / used to: repeated past action"
+        },
+        {
+          "id": "ws-40-sec-e-q06",
+          "order": 6,
+          "prompt": "When I was a child, I [gap] (take) a flashlight to bed with me so that I could read comic books without my parents’ knowing about it.",
+          "acceptedAnswers": [
+            "would take|used to take"
+          ],
+          "explanation": "would / used to: repeated past action"
+        },
+        {
+          "id": "ws-40-sec-e-q07",
+          "order": 7,
+          "prompt": "Last summer, my sister and I took a camping trip in the Rocky Mountains. It was a wonderful experience. Every morning, we [gap] (wake) up to the sound of singing birds. During the day, we [gap] (hike) through woods and along mountain streams.",
+          "acceptedAnswers": [
+            "would wake / would hike"
+          ],
+          "explanation": "would: repeated action during one past period"
+        },
+        {
+          "id": "ws-40-sec-e-q08a",
+          "order": 8,
+          "prompt": "I can remember Mrs. Sawyer’s fifth grade class well. When we arrived each morning, she [gap] (sit) at her desk. She [gap] (smile / always) and [gap] (say) hello to each student as he or she entered.",
+          "acceptedAnswers": [
+            "would sit|would be sitting|used to sit / would always smile|always used to smile|used to always smile / would say|used to say|say"
+          ],
+          "explanation": "would / used to: repeated past action"
+        },
+        {
+          "id": "ws-40-sec-e-q08b",
+          "order": 8,
+          "prompt": "When the bell rang, she [gap] (stand) up and [gap] (clear) her throat. That was our signal to be quiet. Class was about to begin.",
+          "acceptedAnswers": [
+            "would stand|used to stand / would clear|used to clear|clear"
+          ],
+          "explanation": "would / used to: repeated past action"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-20",
+      "sectionKey": "T",
+      "instruction": "Rewrite the sentences using the modals of CERTAINTY, IMPOSSIBILITY and POSSIBILITY:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-55-sec-a-q01",
+          "order": 1,
+          "prompt": "Perhaps Jane will lend Tom some money.",
+          "acceptedAnswers": [
+            "Jane may lend Tom some money.",
+            "Jane might lend Tom some money.",
+            "Jane could lend Tom some money."
+          ],
+          "explanation": "possibility (future): may/might/could + verb"
+        },
+        {
+          "id": "ws-55-sec-a-q02",
+          "order": 2,
+          "prompt": "Perhaps Jane lent Tom some money.",
+          "acceptedAnswers": [
+            "Jane may have lent Tom some money.",
+            "Jane might have lent Tom some money.",
+            "Jane could have lent Tom some money."
+          ],
+          "explanation": "past possibility: may/might + have + V3"
+        },
+        {
+          "id": "ws-55-sec-a-q03",
+          "order": 3,
+          "prompt": "It is possible that she won’t invite you to the party.",
+          "acceptedAnswers": [
+            "She may not invite you to the party.",
+            "She might not invite you to the party."
+          ],
+          "explanation": "negative possibility: may not / might not"
+        },
+        {
+          "id": "ws-55-sec-a-q04",
+          "order": 4,
+          "prompt": "It is possible that she didn’t invite him to the party.",
+          "acceptedAnswers": [
+            "She may not have invited him to the party.",
+            "She might not have invited him to the party."
+          ],
+          "explanation": "may not / might not + have + V3"
+        },
+        {
+          "id": "ws-55-sec-a-q05",
+          "order": 5,
+          "prompt": "Perhaps she is asleep.",
+          "acceptedAnswers": [
+            "She may be asleep.",
+            "She might be asleep.",
+            "She could be asleep."
+          ],
+          "explanation": "present possibility: may/might/could be"
+        },
+        {
+          "id": "ws-55-sec-a-q06",
+          "order": 6,
+          "prompt": "Perhaps she was asleep.",
+          "acceptedAnswers": [
+            "She may have been asleep.",
+            "She might have been asleep.",
+            "She could have been asleep."
+          ],
+          "explanation": "past possibility: may/might/could have been"
+        },
+        {
+          "id": "ws-55-sec-a-q07",
+          "order": 7,
+          "prompt": "I’m sure he isn’t tired.",
+          "acceptedAnswers": [
+            "He can't be tired.",
+            "He couldn't be tired."
+          ],
+          "explanation": "present impossibility: can’t be"
+        },
+        {
+          "id": "ws-55-sec-a-q08",
+          "order": 8,
+          "prompt": "I’m sure he wasn’t tired.",
+          "acceptedAnswers": [
+            "He can't have been tired.",
+            "He couldn't have been tired."
+          ],
+          "explanation": "past impossibility: can’t have been"
+        },
+        {
+          "id": "ws-55-sec-a-q09",
+          "order": 9,
+          "prompt": "It is impossible that Mary knows my phone number.",
+          "acceptedAnswers": [
+            "Mary can't know my phone number.",
+            "Mary couldn't know my phone number."
+          ],
+          "explanation": "present impossibility: can’t + verb"
+        },
+        {
+          "id": "ws-55-sec-a-q10",
+          "order": 10,
+          "prompt": "It is impossible that Mary knew his address.",
+          "acceptedAnswers": [
+            "Mary can't have known his address.",
+            "Mary couldn't have known his address."
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        },
+        {
+          "id": "ws-55-sec-a-q11",
+          "order": 11,
+          "prompt": "I’m sure she reads adventure books a lot.",
+          "acceptedAnswers": [
+            "She must read adventure books a lot."
+          ],
+          "explanation": "present certainty: must + verb"
+        },
+        {
+          "id": "ws-55-sec-a-q12",
+          "order": 12,
+          "prompt": "I’m sure she wrote to the bank.",
+          "acceptedAnswers": [
+            "She must have written to the bank."
+          ],
+          "explanation": "past certainty: must have + V3"
+        },
+        {
+          "id": "ws-55-sec-a-q13",
+          "order": 13,
+          "prompt": "Maybe those children are lost.",
+          "acceptedAnswers": [
+            "Those children may be lost.",
+            "Those children might be lost.",
+            "Those children could be lost."
+          ],
+          "explanation": "present possibility: may/might be"
+        },
+        {
+          "id": "ws-55-sec-a-q14",
+          "order": 14,
+          "prompt": "Maybe those children were lost.",
+          "acceptedAnswers": [
+            "Those children may have been lost.",
+            "Those children might have been lost.",
+            "Those children could have been lost."
+          ],
+          "explanation": "past possibility: may/might have been"
+        },
+        {
+          "id": "ws-55-sec-a-q15",
+          "order": 15,
+          "prompt": "Perhaps Mary is feeling comfortable.",
+          "acceptedAnswers": [
+            "Mary may be feeling comfortable.",
+            "Mary might be feeling comfortable.",
+            "Mary could be feeling comfortable."
+          ],
+          "explanation": "possibility, continuous: may be + -ing"
+        },
+        {
+          "id": "ws-55-sec-a-q16",
+          "order": 16,
+          "prompt": "I’m sure she is driving carefully.",
+          "acceptedAnswers": [
+            "She must be driving carefully."
+          ],
+          "explanation": "certainty, continuous: must be + -ing"
+        },
+        {
+          "id": "ws-55-sec-a-q17",
+          "order": 17,
+          "prompt": "It is impossible that Lucy is studying in her room.",
+          "acceptedAnswers": [
+            "Lucy can't be studying in her room.",
+            "Lucy couldn't be studying in her room."
+          ],
+          "explanation": "impossibility, continuous: can’t be + -ing"
+        },
+        {
+          "id": "ws-55-sec-a-q18",
+          "order": 18,
+          "prompt": "I’m sure he isn’t helping his father now.",
+          "acceptedAnswers": [
+            "He can't be helping his father now.",
+            "He couldn't be helping his father now."
+          ],
+          "explanation": "impossibility, continuous: can’t be + -ing"
+        },
+        {
+          "id": "ws-55-sec-a-q19",
+          "order": 19,
+          "prompt": "It is possible that people will be traveling between the planets.",
+          "acceptedAnswers": [
+            "People may be traveling between the planets.",
+            "People may be travelling between the planets.",
+            "People might be traveling between the planets.",
+            "People might be travelling between the planets.",
+            "People could be traveling between the planets.",
+            "People could be travelling between the planets."
+          ],
+          "explanation": "future possibility: may/might be + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-21",
+      "sectionKey": "U",
+      "instruction": "Rewrite using modals to show CERTAINTY, POSSIBILITY, IMPOSSIBILITY:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-55-sec-b-q01",
+          "order": 1,
+          "prompt": "Perhaps Peter lent some money to Linda.",
+          "acceptedAnswers": [
+            "Peter may have lent some money to Linda.",
+            "Peter might have lent some money to Linda.",
+            "Peter could have lent some money to Linda."
+          ],
+          "explanation": "past possibility: may/might have + V3"
+        },
+        {
+          "id": "ws-55-sec-b-q02",
+          "order": 2,
+          "prompt": "It is impossible that Ken saw me because he wasn’t wearing his glasses.",
+          "acceptedAnswers": [
+            "Ken can't have seen me because he wasn’t wearing his glasses.",
+            "Ken couldn't have seen me because he wasn’t wearing his glasses."
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        },
+        {
+          "id": "ws-55-sec-b-q03",
+          "order": 3,
+          "prompt": "Perhaps Martin didn’t receive my letter because he didn’t reply.",
+          "acceptedAnswers": [
+            "Martin may not have received my letter because he didn’t reply.",
+            "Martin might not have received my letter because he didn’t reply."
+          ],
+          "explanation": "may not / might not have + V3"
+        },
+        {
+          "id": "ws-55-sec-b-q04",
+          "order": 4,
+          "prompt": "I’m sure he knows about the new project.",
+          "acceptedAnswers": [
+            "He must know about the new project."
+          ],
+          "explanation": "present certainty: must + verb"
+        },
+        {
+          "id": "ws-55-sec-b-q05",
+          "order": 5,
+          "prompt": "It’s impossible that he forgot the meeting. Because I called him this morning.",
+          "acceptedAnswers": [
+            "He can't have forgotten the meeting I called him this morning.",
+            "He can't have forgotten the meeting because I called him this morning.",
+            "He couldn't have forgotten the meeting I called him this morning.",
+            "He couldn't have forgotten the meeting because I called him this morning."
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        },
+        {
+          "id": "ws-55-sec-b-q06",
+          "order": 6,
+          "prompt": "It’s possible that she will move to her new flat next week.",
+          "acceptedAnswers": [
+            "She may move to her new flat next week.",
+            "She might move to her new flat next week.",
+            "She could move to her new flat next week."
+          ],
+          "explanation": "future possibility: may/might + verb"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-22",
+      "sectionKey": "V",
+      "instruction": "Fill in the blanks with the modal verbs to show CERTAINTY, POSSIBILITY, IMPOSSIBILITY:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-55-sec-c-q01",
+          "order": 1,
+          "prompt": "He drank two glasses of water, he [gap] (be) thirsty.",
+          "acceptedAnswers": [
+            "must have been"
+          ],
+          "explanation": "past certainty: must have been"
+        },
+        {
+          "id": "ws-55-sec-c-q02",
+          "order": 2,
+          "prompt": "He isn’t more than 15 years old, he [gap] (have) a driving licence.",
+          "acceptedAnswers": [
+            "can't have|couldn't have"
+          ],
+          "explanation": "impossibility: can’t + verb"
+        },
+        {
+          "id": "ws-55-sec-c-q03",
+          "order": 3,
+          "prompt": "He [gap] (watch) TV in his room, because there isn’t any noise coming.",
+          "acceptedAnswers": [
+            "can't be watching|couldn't be watching"
+          ],
+          "explanation": "impossibility now: can’t be + -ing"
+        },
+        {
+          "id": "ws-55-sec-c-q04",
+          "order": 4,
+          "prompt": "The solution [gap] (be) correct, because I looked up the answer key.",
+          "acceptedAnswers": [
+            "must be"
+          ],
+          "explanation": "certainty: must be"
+        },
+        {
+          "id": "ws-55-sec-c-q05",
+          "order": 5,
+          "prompt": "A: Do you smell fish? B: Yes. Someone [gap] cooking fish.",
+          "acceptedAnswers": [
+            "must be"
+          ],
+          "explanation": "certainty now: must be + -ing"
+        },
+        {
+          "id": "ws-55-sec-c-q06",
+          "order": 6,
+          "prompt": "I’m not sure, he [gap] (be) an actor, he is very handsome and rich.",
+          "acceptedAnswers": [
+            "may be|might be|could be"
+          ],
+          "explanation": "possibility: may/might be"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-23",
+      "sectionKey": "W",
+      "instruction": "Make sentences using CERTAINTY, POSSIBILITY and IMPOSSIBILITY:",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-55-sec-d-q01",
+          "order": 1,
+          "prompt": "She / not / work / yesterday, / it / Sunday.",
+          "acceptedAnswers": [
+            "She can't have worked yesterday, it was Sunday.",
+            "She can't have worked yesterday because it was Sunday.",
+            "She can't have been working yesterday, it was Sunday.",
+            "She can't have been working yesterday because it was Sunday.",
+            "She couldn't have worked yesterday, it was Sunday.",
+            "She couldn't have worked yesterday because it was Sunday.",
+            "She couldn't have been working yesterday, it was Sunday.",
+            "She couldn't have been working yesterday because it was Sunday."
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        },
+        {
+          "id": "ws-55-sec-d-q02",
+          "order": 2,
+          "prompt": "They / not / lose / the match. / They / play / well.",
+          "acceptedAnswers": [
+            "They can't have lost the match. They played well.",
+            "They can't have lost the match. They must have played well.",
+            "They couldn't have lost the match. They played well.",
+            "They couldn't have lost the match. They must have played well."
+          ],
+          "explanation": "can’t have lost; must have played"
+        },
+        {
+          "id": "ws-55-sec-d-q03",
+          "order": 3,
+          "prompt": "There / be / election / early / next year, / because / we / government / problems.",
+          "acceptedAnswers": [
+            "There may be an election early next year because we have government problems.",
+            "There might be an election early next year because we have government problems.",
+            "There could be an election early next year because we have government problems.",
+            "There may be an election early next year because the government has problems.",
+            "There might be an election early next year because the government has problems.",
+            "There could be an election early next year because the government has problems."
+          ],
+          "explanation": "future possibility: may/might be"
+        },
+        {
+          "id": "ws-55-sec-d-q04",
+          "order": 4,
+          "prompt": "Betty / fail / not / last exam. / She / do / all the answers / correctly.",
+          "acceptedAnswers": [
+            "Betty can't have failed her last exam. She did all the answers correctly.",
+            "Betty can't have failed her last exam. She must have done all the answers correctly.",
+            "Betty can't have failed the last exam. She did all the answers correctly.",
+            "Betty can't have failed the last exam. She must have done all the answers correctly.",
+            "Betty couldn't have failed her last exam. She did all the answers correctly.",
+            "Betty couldn't have failed her last exam. She must have done all the answers correctly.",
+            "Betty couldn't have failed the last exam. She did all the answers correctly.",
+            "Betty couldn't have failed the last exam. She must have done all the answers correctly."
+          ],
+          "explanation": "can’t have failed; must have done"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-24",
+      "sectionKey": "X",
+      "instruction": "Fill in the blanks using the verbs expressing CERTAINTY, POSSIBILITY and IMPOSSIBILITY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-55-sec-e-q01",
+          "order": 1,
+          "prompt": "Her face is red. She [gap] be telling a lie.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "certainty from evidence: must"
+        },
+        {
+          "id": "ws-55-sec-e-q02",
+          "order": 2,
+          "prompt": "He is working hard. He [gap] be ill.",
+          "acceptedAnswers": [
+            "can't|couldn't"
+          ],
+          "explanation": "impossibility: can’t"
+        },
+        {
+          "id": "ws-55-sec-e-q03",
+          "order": 3,
+          "prompt": "A: Have you done this puzzle? B: Yes, I’ve got the same answer as you. It [gap] be correct. A: Well, the answer in the book is different. So we [gap] be right.",
+          "acceptedAnswers": [
+            "must / can't|couldn't"
+          ],
+          "explanation": "must = sure; can’t = sure it is not"
+        },
+        {
+          "id": "ws-55-sec-e-q04",
+          "order": 4,
+          "prompt": "A: Are John and Mary married? B: They [gap] be married. They have rings on their fingers.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "certainty from evidence: must"
+        },
+        {
+          "id": "ws-55-sec-e-q05",
+          "order": 5,
+          "prompt": "You’ve been resting all day; you [gap] be tired.",
+          "acceptedAnswers": [
+            "can't|couldn't"
+          ],
+          "explanation": "impossibility: can’t"
+        },
+        {
+          "id": "ws-55-sec-e-q06",
+          "order": 6,
+          "prompt": "I can hear Jane speaking but she’s alone in the room. She [gap] be talking to a friend on the phone.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "certainty from evidence: must"
+        },
+        {
+          "id": "ws-55-sec-e-q07",
+          "order": 7,
+          "prompt": "A: Tom has been in his room for over an hour. What do you suppose he is doing? B: I don’t know. He [gap] be reading a book or sleeping, but he [gap] be studying because it is too late.",
+          "acceptedAnswers": [
+            "may|might|could / can't|couldn't"
+          ],
+          "explanation": "possibility: may/might; impossibility: can’t"
+        },
+        {
+          "id": "ws-55-sec-e-q08",
+          "order": 8,
+          "prompt": "A: I need to call Howard. Do you know which hotel he’s staying at in Boston? B: Well, he [gap] (stay) at the Holiday Inn, but I’m not sure. I think he [gap] (stay) at the Hilton, because it’s too far away from the city center.",
+          "acceptedAnswers": [
+            "may be staying|might be staying|could be staying / can't be staying|couldn't be staying"
+          ],
+          "explanation": "may be + -ing; can’t be + -ing"
+        },
+        {
+          "id": "ws-55-sec-e-q09",
+          "order": 9,
+          "prompt": "A: Do you smell smoke? B: I sure do. Something [gap] (burn).",
+          "acceptedAnswers": [
+            "must be burning"
+          ],
+          "explanation": "certainty now: must be + -ing"
+        },
+        {
+          "id": "ws-55-sec-e-q10",
+          "order": 10,
+          "prompt": "There [gap] (not / be) a meeting on Friday because the director is ill.",
+          "acceptedAnswers": [
+            "may not be|might not be"
+          ],
+          "explanation": "negative possibility: may not / might not"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-25",
+      "sectionKey": "Y",
+      "instruction": "Rewrite the following sentences using modal verbs used for expressing CERTAINTY, POSSIBILITY and IMPOSSIBILITY:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-55-sec-f-q01",
+          "order": 1,
+          "prompt": "Tom gets excellent grades. I’m sure he is very intelligent.",
+          "acceptedAnswers": [
+            "Tom gets excellent grades. He must be very intelligent.",
+            "He must be very intelligent."
+          ],
+          "explanation": "present certainty: must be"
+        },
+        {
+          "id": "ws-55-sec-f-q02",
+          "order": 2,
+          "prompt": "Perhaps Tony is in the sports center.",
+          "acceptedAnswers": [
+            "Tony may be in the sports center.",
+            "Tony may be in the sports centre.",
+            "Tony might be in the sports center.",
+            "Tony might be in the sports centre.",
+            "Tony could be in the sports center.",
+            "Tony could be in the sports centre."
+          ],
+          "explanation": "present possibility: may/might be"
+        },
+        {
+          "id": "ws-55-sec-f-q03",
+          "order": 3,
+          "prompt": "It’s possible that Liz won’t come to the party.",
+          "acceptedAnswers": [
+            "Liz may not come to the party.",
+            "Liz might not come to the party."
+          ],
+          "explanation": "negative possibility: may not / might not"
+        },
+        {
+          "id": "ws-55-sec-f-q04",
+          "order": 4,
+          "prompt": "It’s possible that Rose is studying to be a lawyer.",
+          "acceptedAnswers": [
+            "Rose may be studying to be a lawyer.",
+            "Rose might be studying to be a lawyer.",
+            "Rose could be studying to be a lawyer."
+          ],
+          "explanation": "possibility, continuous: may be + -ing"
+        },
+        {
+          "id": "ws-55-sec-f-q05",
+          "order": 5,
+          "prompt": "It’s impossible that he is Canadian; I’ve seen his identity card.",
+          "acceptedAnswers": [
+            "He can't be Canadian.",
+            "He can't be Canadian; I’ve seen his identity card.",
+            "He couldn't be Canadian.",
+            "He couldn't be Canadian; I’ve seen his identity card."
+          ],
+          "explanation": "present impossibility: can’t be"
+        },
+        {
+          "id": "ws-55-sec-f-q06",
+          "order": 6,
+          "prompt": "I’m sure he goes to the theatre a lot.",
+          "acceptedAnswers": [
+            "He must go to the theatre a lot.",
+            "He must go to the theater a lot."
+          ],
+          "explanation": "present certainty: must + verb"
+        },
+        {
+          "id": "ws-55-sec-f-q07",
+          "order": 7,
+          "prompt": "I’m sure long skirts aren’t in fashion this year.",
+          "acceptedAnswers": [
+            "Long skirts can't be in fashion this year.",
+            "Long skirts couldn't be in fashion this year."
+          ],
+          "explanation": "present impossibility: can’t be"
+        },
+        {
+          "id": "ws-55-sec-f-q08",
+          "order": 8,
+          "prompt": "Perhaps she won’t be here tomorrow.",
+          "acceptedAnswers": [
+            "She may not be here tomorrow.",
+            "She might not be here tomorrow."
+          ],
+          "explanation": "negative possibility: may not / might not"
+        },
+        {
+          "id": "ws-55-sec-f-q09",
+          "order": 9,
+          "prompt": "Their baby-boy is ill. It is impossible that they are going to the party.",
+          "acceptedAnswers": [
+            "Their baby-boy is ill. They can't be going to the party.",
+            "Their baby-boy is ill. They couldn't be going to the party.",
+            "They can't be going to the party.",
+            "They couldn't be going to the party."
+          ],
+          "explanation": "impossibility, continuous: can’t be + -ing"
+        },
+        {
+          "id": "ws-55-sec-f-q10",
+          "order": 10,
+          "prompt": "I’m sure he is taking the money to the bank.",
+          "acceptedAnswers": [
+            "He must be taking the money to the bank."
+          ],
+          "explanation": "certainty, continuous: must be + -ing"
+        },
+        {
+          "id": "ws-55-sec-f-q11",
+          "order": 11,
+          "prompt": "Perhaps people will be living on the moon in the future.",
+          "acceptedAnswers": [
+            "People may be living on the moon in the future.",
+            "People might be living on the moon in the future.",
+            "People could be living on the moon in the future."
+          ],
+          "explanation": "future possibility: may/might be + -ing"
+        },
+        {
+          "id": "ws-55-sec-f-q12",
+          "order": 12,
+          "prompt": "It is possible that it will rain this afternoon.",
+          "acceptedAnswers": [
+            "It may rain this afternoon.",
+            "It might rain this afternoon.",
+            "It could rain this afternoon."
+          ],
+          "explanation": "future possibility: may/might + verb"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-26",
+      "sectionKey": "Z",
+      "instruction": "Complete the sentences using PERFECT MODALS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-56-sec-a-q01",
+          "order": 1,
+          "prompt": "We didn’t go out last night. We [gap] (go) to the cinema but we decided to stay at home.",
+          "acceptedAnswers": [
+            "could have gone|might have gone"
+          ],
+          "explanation": "unrealised possibility: could have + V3"
+        },
+        {
+          "id": "ws-56-sec-a-q02",
+          "order": 2,
+          "prompt": "Jerry passed the examination. He didn’t study very much for it. The exam [gap] (be) very difficult.",
+          "acceptedAnswers": [
+            "can't have been|couldn't have been"
+          ],
+          "explanation": "past impossibility: can’t have been"
+        },
+        {
+          "id": "ws-56-sec-a-q03",
+          "order": 3,
+          "prompt": "A: I wonder where Tom was going when you saw him. B: He [gap] (go) to work.",
+          "acceptedAnswers": [
+            "must have been going|may have been going|might have been going|could have been going"
+          ],
+          "explanation": "past deduction, continuous: must have been + -ing"
+        },
+        {
+          "id": "ws-56-sec-a-q04",
+          "order": 4,
+          "prompt": "Thank you for doing the washing-up but you [gap] (do) it really. I was going to do it later.",
+          "acceptedAnswers": [
+            "needn't have done|need not have done"
+          ],
+          "explanation": "unnecessary past action: needn’t have + V3"
+        },
+        {
+          "id": "ws-56-sec-a-q05",
+          "order": 5,
+          "prompt": "The driver in front stopped suddenly without warning and I drove into the back of his car. It wasn’t my fault. He [gap] (give) warning that he was going to stop.",
+          "acceptedAnswers": [
+            "should have given|ought to have given"
+          ],
+          "explanation": "past criticism: should have + V3"
+        },
+        {
+          "id": "ws-56-sec-a-q06",
+          "order": 6,
+          "prompt": "A: How do you think the fire started? B: Well, I suppose someone [gap] (drop) a cigarette.",
+          "acceptedAnswers": [
+            "might have dropped|may have dropped|must have dropped|could have dropped"
+          ],
+          "explanation": "past deduction: may/might/must have + V3"
+        },
+        {
+          "id": "ws-56-sec-a-q07",
+          "order": 7,
+          "prompt": "A: What time is it? B: Well, we came at seven, and I’m sure we’ve been here for at least an hour. So it [gap] (be) around eight o’clock.",
+          "acceptedAnswers": [
+            "must be"
+          ],
+          "explanation": "present certainty: must be"
+        },
+        {
+          "id": "ws-56-sec-a-q08",
+          "order": 8,
+          "prompt": "A: Jack was absent yesterday afternoon. Where was he? B: I don’t know. He [gap] (go) to a movie or he [gap] (be) at home.",
+          "acceptedAnswers": [
+            "may have gone|might have gone|could have gone / may have been|might have been|could have been"
+          ],
+          "explanation": "past possibility: may/might have + V3"
+        },
+        {
+          "id": "ws-56-sec-a-q09",
+          "order": 9,
+          "prompt": "I had a test this morning. I didn’t do well on the test because I didn’t study for it last night. I [gap] (study) it.",
+          "acceptedAnswers": [
+            "should have studied|ought to have studied"
+          ],
+          "explanation": "past regret: should have + V3"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-27",
+      "sectionKey": "AA",
+      "instruction": "Fill in the blanks using MUST (HAVE), CAN’T (HAVE), MAY-MIGHT-COULD (HAVE):",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-56-sec-b-q01",
+          "order": 1,
+          "prompt": "She knew everything about our plans. She [gap] (listen) to our conversation.",
+          "acceptedAnswers": [
+            "must have listened|must have been listening"
+          ],
+          "explanation": "past certainty: must have + V3"
+        },
+        {
+          "id": "ws-56-sec-b-q02",
+          "order": 2,
+          "prompt": "He [gap] (eat) the roasted beef when we were out. He is a vegetarian.",
+          "acceptedAnswers": [
+            "can't have eaten|couldn't have eaten"
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        },
+        {
+          "id": "ws-56-sec-b-q03",
+          "order": 3,
+          "prompt": "Mrs. White bought a new fur coat! She [gap] (win) a lottery.",
+          "acceptedAnswers": [
+            "must have won|may have won|might have won|could have won"
+          ],
+          "explanation": "past deduction: must/may have + V3"
+        },
+        {
+          "id": "ws-56-sec-b-q04",
+          "order": 4,
+          "prompt": "John said he would ring, but he hasn’t. He [gap] (forget) all about it.",
+          "acceptedAnswers": [
+            "must have forgotten|may have forgotten|might have forgotten|could have forgotten"
+          ],
+          "explanation": "past deduction: must/may have + V3"
+        },
+        {
+          "id": "ws-56-sec-b-q05",
+          "order": 5,
+          "prompt": "It is possible that he wasn’t taken to the cinema last weekend. He [gap] (not / take) to the cinema.",
+          "acceptedAnswers": [
+            "may not have been taken|might not have been taken"
+          ],
+          "explanation": "passive past possibility: may not have been + V3"
+        },
+        {
+          "id": "ws-56-sec-b-q06",
+          "order": 6,
+          "prompt": "The children [gap] (study) in the library now, because they have a test tomorrow.",
+          "acceptedAnswers": [
+            "must be studying|may be studying|might be studying|could be studying"
+          ],
+          "explanation": "present deduction: must be + -ing"
+        },
+        {
+          "id": "ws-56-sec-b-q07",
+          "order": 7,
+          "prompt": "The singer has got a sore throat, so she [gap] (sing) at the concert.",
+          "acceptedAnswers": [
+            "can't sing|couldn't sing|may not sing|might not sing"
+          ],
+          "explanation": "impossibility/possibility: can’t / may not + verb"
+        },
+        {
+          "id": "ws-56-sec-b-q08",
+          "order": 8,
+          "prompt": "I [gap] (be) at home this evening or I [gap] (be) but I’m not sure.",
+          "acceptedAnswers": [
+            "may be|might be|could be / may not be|might not be"
+          ],
+          "explanation": "possibility: may be / may not be"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-28",
+      "sectionKey": "AB",
+      "instruction": "Rewrite the following sentences using MUST / CAN’T / MAY / MIGHT with the suitable infinitive forms (+ infinitive or + perfect infinitive) according to their tenses:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-56-sec-c-q01",
+          "order": 1,
+          "prompt": "It is possible that they will not reach agreement.",
+          "acceptedAnswers": [
+            "They may not reach agreement.",
+            "They might not reach agreement."
+          ],
+          "explanation": "future possibility: may not + verb"
+        },
+        {
+          "id": "ws-56-sec-c-q02",
+          "order": 2,
+          "prompt": "Perhaps you found you made a mistake.",
+          "acceptedAnswers": [
+            "You may have found you made a mistake.",
+            "You may have found you had made a mistake.",
+            "You may have found that you made a mistake.",
+            "You may have found that you had made a mistake.",
+            "You might have found you made a mistake.",
+            "You might have found you had made a mistake.",
+            "You might have found that you made a mistake.",
+            "You might have found that you had made a mistake.",
+            "You could have found you made a mistake.",
+            "You could have found you had made a mistake.",
+            "You could have found that you made a mistake.",
+            "You could have found that you had made a mistake."
+          ],
+          "explanation": "past possibility: may have + V3"
+        },
+        {
+          "id": "ws-56-sec-c-q03",
+          "order": 3,
+          "prompt": "It is certain that our boss will give a rise in our salary.",
+          "acceptedAnswers": [
+            "Our boss must give a rise in our salary."
+          ],
+          "explanation": "certainty: must + verb"
+        },
+        {
+          "id": "ws-56-sec-c-q04",
+          "order": 4,
+          "prompt": "It is impossible that she won the beauty contest last year.",
+          "acceptedAnswers": [
+            "She can't have won the beauty contest last year.",
+            "She couldn't have won the beauty contest last year."
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        },
+        {
+          "id": "ws-56-sec-c-q05",
+          "order": 5,
+          "prompt": "Perhaps parents will find that they cannot understand the new teaching methods being introduced in primary schools.",
+          "acceptedAnswers": [
+            "Parents may find that they cannot understand the new teaching methods being introduced in primary schools.",
+            "Parents might find that they cannot understand the new teaching methods being introduced in primary schools.",
+            "Parents could find that they cannot understand the new teaching methods being introduced in primary schools."
+          ],
+          "explanation": "future possibility: may/might + verb"
+        },
+        {
+          "id": "ws-56-sec-c-q06",
+          "order": 6,
+          "prompt": "It is not impossible that the Government’s policy will prove to be little short of disastrous.",
+          "acceptedAnswers": [
+            "The Government’s policy may prove to be little short of disastrous.",
+            "The Government’s policy might prove to be little short of disastrous.",
+            "The Government’s policy could prove to be little short of disastrous."
+          ],
+          "explanation": "not impossible = possible: may/might + verb"
+        },
+        {
+          "id": "ws-56-sec-c-q07",
+          "order": 7,
+          "prompt": "I’m sure Jane got 5 in her last exam.",
+          "acceptedAnswers": [
+            "Jane must have got 5 in her last exam."
+          ],
+          "explanation": "past certainty: must have + V3"
+        },
+        {
+          "id": "ws-56-sec-c-q08",
+          "order": 8,
+          "prompt": "I’m sure you will catch the 5 o’clock train.",
+          "acceptedAnswers": [
+            "You must catch the 5 o’clock train."
+          ],
+          "explanation": "certainty: must + verb"
+        },
+        {
+          "id": "ws-56-sec-c-q09",
+          "order": 9,
+          "prompt": "It is possible that he changed his mind after I had offered him the job.",
+          "acceptedAnswers": [
+            "He may have changed his mind after I had offered him the job.",
+            "He might have changed his mind after I had offered him the job.",
+            "He could have changed his mind after I had offered him the job."
+          ],
+          "explanation": "past possibility: may/might have + V3"
+        },
+        {
+          "id": "ws-56-sec-c-q10",
+          "order": 10,
+          "prompt": "I’m sure Tom didn’t visit his parents last year because he was abroad and very busy.",
+          "acceptedAnswers": [
+            "Tom can't have visited his parents last year because he was abroad and very busy.",
+            "Tom couldn't have visited his parents last year because he was abroad and very busy."
+          ],
+          "explanation": "past impossibility: can’t have + V3"
+        }
+      ]
+    },
+    {
+      "id": "card-12-sec-29",
+      "sectionKey": "AC",
+      "instruction": "Complete the responses to the statements, using MUST or CAN’T to suggest what seems to be the most likely explanation. Write the whole response:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-56-sec-d-q01",
+          "order": 1,
+          "prompt": "His fiancée writes him every day. → She must",
+          "acceptedAnswers": [],
+          "explanation": "deduction: must + verb",
+          "modelAnswer": "She must love him very much."
+        },
+        {
+          "id": "ws-56-sec-d-q02",
+          "order": 2,
+          "prompt": "I don’t seem to have my key with me. → I must",
+          "acceptedAnswers": [],
+          "explanation": "past deduction: must have + V3",
+          "modelAnswer": "I must have left it at home."
+        },
+        {
+          "id": "ws-56-sec-d-q03",
+          "order": 3,
+          "prompt": "He drives a Rolls-Royce and his wife a Mercedes. → They must",
+          "acceptedAnswers": [],
+          "explanation": "deduction: must be",
+          "modelAnswer": "They must be very rich."
+        },
+        {
+          "id": "ws-56-sec-d-q04",
+          "order": 4,
+          "prompt": "He has no idea what the book is about. → He can’t",
+          "acceptedAnswers": [],
+          "explanation": "past impossibility: can’t have + V3",
+          "modelAnswer": "He can’t have read it."
+        },
+        {
+          "id": "ws-56-sec-d-q05",
+          "order": 5,
+          "prompt": "He talks about going to the moon next year. → He must",
+          "acceptedAnswers": [],
+          "explanation": "deduction: must be",
+          "modelAnswer": "He must be joking."
+        },
+        {
+          "id": "ws-56-sec-d-q06",
+          "order": 6,
+          "prompt": "She didn’t reply to his letter. → She can’t",
+          "acceptedAnswers": [],
+          "explanation": "past impossibility: can’t have + V3",
+          "modelAnswer": "She can’t have received it."
+        },
+        {
+          "id": "ws-56-sec-d-q07",
+          "order": 7,
+          "prompt": "He wears glasses all the time. → His eyesight can’t",
+          "acceptedAnswers": [
+            "His eyesight can't be very good.",
+            "His eyesight can't be good.",
+            "His eyesight couldn't be very good.",
+            "His eyesight couldn't be good."
+          ],
+          "explanation": "present impossibility: can’t be"
+        },
+        {
+          "id": "ws-56-sec-d-q08",
+          "order": 8,
+          "prompt": "He said he would ring, but he hasn’t. → He must",
+          "acceptedAnswers": [
+            "He must have forgotten.",
+            "He must have forgotten to ring.",
+            "He must have forgotten about it.",
+            "He must have forgotten all about it."
+          ],
+          "explanation": "past deduction: must have + V3"
+        },
+        {
+          "id": "ws-56-sec-d-q09",
+          "order": 9,
+          "prompt": "The last bus has already gone. → It must (+ comparative) than I thought.",
+          "acceptedAnswers": [
+            "It must be later than I thought."
+          ],
+          "explanation": "present deduction: must be"
+        },
+        {
+          "id": "ws-56-sec-d-q10",
+          "order": 10,
+          "prompt": "I’m amazed that she married him so soon. → She can’t",
+          "acceptedAnswers": [],
+          "explanation": "past impossibility: can’t have + V3",
+          "modelAnswer": "She can’t have known him very long."
+        }
+      ]
+    }
+  ]
+}

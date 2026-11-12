@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, CheckCircle, Award } from "lucide-react";
+import { ArrowLeft, BookOpen, CheckCircle, Award, CloudCheck, Loader2 } from "lucide-react";
 import type { WorksheetLesson } from "@/lib/learn/worksheet-types";
 import { WorksheetSectionCard } from "./worksheet-section-card";
 
@@ -14,6 +14,7 @@ export function WorksheetPlayer({ lesson }: Props) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [sectionScores, setSectionScores] = useState<Record<string, { correct: number; total: number }>>({});
   const [activeTab, setActiveTab] = useState<string>("all");
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
 
   const totalQuestions = lesson.sections.reduce((acc, s) => acc + s.questions.length, 0);
   const answeredCount = Object.values(answers).filter((v) => v && v.trim().length > 0).length;
@@ -21,12 +22,56 @@ export function WorksheetPlayer({ lesson }: Props) {
   const totalScore = Object.values(sectionScores).reduce((acc, s) => acc + s.correct, 0);
   const totalEvaluated = Object.values(sectionScores).reduce((acc, s) => acc + s.total, 0);
 
+  const saveAttempt = useCallback(
+    async (scores: Record<string, { correct: number; total: number }>, currentAnswers: Record<string, string>) => {
+      const evaluatedSecIds = Object.keys(scores);
+      if (!evaluatedSecIds.length) return;
+
+      const currentScore = Object.values(scores).reduce((acc, s) => acc + s.correct, 0);
+      const currentEvaluated = Object.values(scores).reduce((acc, s) => acc + s.total, 0);
+      if (currentEvaluated === 0) return;
+
+      const sectionOrders = lesson.sections
+        .map((s, idx) => (scores[s.id] ? idx + 1 : null))
+        .filter((n): n is number => n !== null);
+
+      try {
+        setSaveStatus("saving");
+        const res = await fetch("/api/learn/worksheets/attempt", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            worksheetId: lesson.id,
+            worksheetSlug: lesson.slug,
+            sectionOrders: sectionOrders.length ? sectionOrders : [1],
+            score: currentScore,
+            totalQuestions: currentEvaluated,
+            sectionScores: scores,
+            userAnswers: currentAnswers,
+          }),
+        });
+        if (res.ok) {
+          setSaveStatus("saved");
+        } else {
+          setSaveStatus("error");
+        }
+      } catch {
+        setSaveStatus("error");
+      }
+    },
+    [lesson.id, lesson.slug, lesson.sections],
+  );
+
   const handleAnswerChange = (qId: string, val: string) => {
     setAnswers((prev) => ({ ...prev, [qId]: val }));
   };
 
   const handleSectionEvaluated = (sectionId: string, correct: number, total: number) => {
-    setSectionScores((prev) => ({ ...prev, [sectionId]: { correct, total } }));
+    setSectionScores((prev) => {
+      const next = { ...prev, [sectionId]: { correct, total } };
+      void saveAttempt(next, answers);
+      return next;
+    });
   };
 
   const visibleSections =
@@ -39,18 +84,28 @@ export function WorksheetPlayer({ lesson }: Props) {
       {/* Breadcrumb & Navigation */}
       <div className="flex items-center justify-between mb-6">
         <Link
-          href="/learn/worksheets"
+          href="/learn/vocab-grammar/grammar?tab=exercises"
           className="inline-flex items-center gap-2 text-sm font-semibold text-wewin-navy hover:text-wewin-accent-blue transition-colors"
         >
-          <ArrowLeft className="w-4 h-4" /> Quay lại Thư viện Worksheets
+          <ArrowLeft className="w-4 h-4" /> Quay lại Bài tập Ngữ pháp
         </Link>
 
         <div className="flex items-center gap-2">
+          {saveStatus === "saving" && (
+            <span className="inline-flex items-center gap-1 text-xs text-zinc-400">
+              <Loader2 className="w-3.5 h-3.5 animate-spin" /> Đang lưu...
+            </span>
+          )}
+          {saveStatus === "saved" && (
+            <span className="inline-flex items-center gap-1 text-xs font-medium text-emerald-600">
+              <CheckCircle className="w-3.5 h-3.5" /> Đã lưu kết quả
+            </span>
+          )}
           <span className="text-xs font-bold px-2.5 py-1 rounded bg-wewin-gold/15 text-[#7a5f12] border border-wewin-gold/30">
             Cấp độ {lesson.level}
           </span>
           <span className="text-xs font-semibold px-2.5 py-1 rounded bg-wewin-accent-blue-bg text-wewin-navy">
-            Part {lesson.part}
+            {lesson.pageRange && lesson.pageRange.includes("WS") ? `Gồm: ${lesson.pageRange}` : `Part ${lesson.part}`}
           </span>
         </div>
       </div>
@@ -63,10 +118,10 @@ export function WorksheetPlayer({ lesson }: Props) {
               <BookOpen className="w-4 h-4" /> {lesson.title}
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-wewin-navy break-words">
-              {lesson.subject}
+              {lesson.subjectVi || lesson.subject}
             </h1>
             <p className="text-sm text-zinc-500 mt-1">
-              {lesson.subjectVi} • Tổng cộng {lesson.sections.length} phần bài tập ({totalQuestions} câu hỏi)
+              <span className="font-medium text-zinc-700 italic">{lesson.subject}</span> • Tổng cộng {lesson.sections.length} phần bài tập ({totalQuestions} câu hỏi)
             </p>
           </div>
 
@@ -140,7 +195,7 @@ export function WorksheetPlayer({ lesson }: Props) {
       </div>
 
       {/* Completion congratulations banner if all evaluated */}
-      {totalEvaluated >= totalQuestions && totalQuestions > 0 && (
+      {Object.keys(sectionScores).length >= lesson.sections.length && totalEvaluated > 0 && (
         <div className="mt-8 p-6 bg-gradient-to-br from-wewin-navy via-[#142852] to-wewin-navy-hover border border-wewin-gold/30 rounded-2xl text-white shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-wewin-gold/20 flex shrink-0 items-center justify-center">
@@ -149,13 +204,13 @@ export function WorksheetPlayer({ lesson }: Props) {
             <div>
               <h4 className="text-xl font-bold">Chúc mừng bạn đã hoàn thành bài tập!</h4>
               <p className="text-zinc-200 text-sm mt-0.5">
-                Bạn đạt được {totalScore} / {totalQuestions} câu chính xác (
-                {Math.round((totalScore / totalQuestions) * 100)}%).
+                Bạn đạt được {totalScore} / {totalEvaluated} câu chính xác (
+                {Math.round((totalScore / totalEvaluated) * 100)}%).
               </p>
             </div>
           </div>
           <Link
-            href="/learn/worksheets"
+            href="/learn/vocab-grammar/grammar?tab=exercises"
             className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-zinc-950 font-bold text-sm shadow-lg shadow-amber-500/25 transition-colors text-center"
           >
             Làm bài tiếp theo

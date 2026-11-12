@@ -1,0 +1,2147 @@
+{
+  "id": "card-06",
+  "order": 6,
+  "part": 1,
+  "slug": "card-06-cac-thi-va-cau-truc-tuong-lai",
+  "title": "THẺ BÀI TẬP 06",
+  "subject": "Future Forms & Expressions",
+  "subjectVi": "Các thì & Cấu trúc Tương lai",
+  "level": "A2",
+  "pageRange": "WS-15, WS-16, WS-17, WS-18, WS-19",
+  "sections": [
+    {
+      "id": "card-06-sec-1",
+      "sectionKey": "A",
+      "instruction": "Complete each sentence. Use GOING TO and the verb in brackets: (Example: Are you going to buy (you / buy) a new bike?)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-15-sec-a-q02",
+          "order": 2,
+          "prompt": "Tom [gap] (not / be) a doctor.",
+          "acceptedAnswers": [
+            "isn't going to be|'s not going to be"
+          ],
+          "explanation": "negative: isn't going to + verb"
+        },
+        {
+          "id": "ws-15-sec-a-q03",
+          "order": 3,
+          "prompt": "I [gap] (buy) some new shoes.",
+          "acceptedAnswers": [
+            "am going to buy|'m going to buy"
+          ],
+          "explanation": "be going to + base verb (plan or intention)"
+        },
+        {
+          "id": "ws-15-sec-a-q04",
+          "order": 4,
+          "prompt": "[gap] (Helen / catch) the train?",
+          "acceptedAnswers": [
+            "Is Helen going to catch"
+          ],
+          "explanation": "question: Is + subject + going to + verb"
+        },
+        {
+          "id": "ws-15-sec-a-q05",
+          "order": 5,
+          "prompt": "Who [gap] (carry) the shopping for me?",
+          "acceptedAnswers": [
+            "is going to carry|'s going to carry"
+          ],
+          "explanation": "who as subject: who is going to + verb"
+        },
+        {
+          "id": "ws-15-sec-a-q06",
+          "order": 6,
+          "prompt": "Jim and Dinah [gap] (not / get) married.",
+          "acceptedAnswers": [
+            "aren't going to get|'re not going to get"
+          ],
+          "explanation": "negative: aren't going to + verb"
+        },
+        {
+          "id": "ws-15-sec-a-q07",
+          "order": 7,
+          "prompt": "Sam [gap] (take) a holiday.",
+          "acceptedAnswers": [
+            "is going to take|'s going to take"
+          ],
+          "explanation": "be going to + base verb (plan or intention)"
+        },
+        {
+          "id": "ws-15-sec-a-q08",
+          "order": 8,
+          "prompt": "What time [gap] (you / phone) me?",
+          "acceptedAnswers": [
+            "are you going to phone"
+          ],
+          "explanation": "question: are + you + going to + verb"
+        },
+        {
+          "id": "ws-15-sec-a-q09",
+          "order": 9,
+          "prompt": "Where [gap] (we / eat) tonight?",
+          "acceptedAnswers": [
+            "are we going to eat"
+          ],
+          "explanation": "question: are + we + going to + verb"
+        },
+        {
+          "id": "ws-15-sec-a-q10",
+          "order": 10,
+          "prompt": "I [gap] (not / give) a birthday present!",
+          "acceptedAnswers": [
+            "am not going to give|'m not going to give"
+          ],
+          "explanation": "negative: am not going to + verb"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-2",
+      "sectionKey": "B",
+      "instruction": "Rewrite each sentence or question with GOING TO: (Example: Joe plans to buy a new computer next year. → Joe is going to buy a new computer next year.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-15-sec-b-q02",
+          "order": 2,
+          "prompt": "We don’t plan to play tennis this weekend.",
+          "acceptedAnswers": [
+            "We aren't going to play tennis this weekend."
+          ],
+          "explanation": "plan → be going to; negative: aren't going to"
+        },
+        {
+          "id": "ws-15-sec-b-q03",
+          "order": 3,
+          "prompt": "Does Nick plan to join the sports club?",
+          "acceptedAnswers": [
+            "Is Nick going to join the sports club?"
+          ],
+          "explanation": "question: Is + subject + going to"
+        },
+        {
+          "id": "ws-15-sec-b-q04",
+          "order": 4,
+          "prompt": "What are your plans for next summer?",
+          "acceptedAnswers": [
+            "What are you going to do next summer?"
+          ],
+          "explanation": "plans → What are you going to do?"
+        },
+        {
+          "id": "ws-15-sec-b-q05",
+          "order": 5,
+          "prompt": "Look! That tree is about to fall over!",
+          "acceptedAnswers": [
+            "Look! That tree is going to fall over!",
+            "That tree is going to fall over!"
+          ],
+          "explanation": "going to for a prediction from present evidence"
+        },
+        {
+          "id": "ws-15-sec-b-q06",
+          "order": 6,
+          "prompt": "Do you plan to work hard this year?",
+          "acceptedAnswers": [
+            "Are you going to work hard this year?"
+          ],
+          "explanation": "question: Are you going to + verb"
+        },
+        {
+          "id": "ws-15-sec-b-q07",
+          "order": 7,
+          "prompt": "I don’t intend to get a new car.",
+          "acceptedAnswers": [
+            "I'm not going to get a new car."
+          ],
+          "explanation": "intention → be going to"
+        },
+        {
+          "id": "ws-15-sec-b-q08",
+          "order": 8,
+          "prompt": "The forecast for tomorrow is rain.",
+          "acceptedAnswers": [
+            "It is going to rain tomorrow.",
+            "Tomorrow it is going to rain."
+          ],
+          "explanation": "going to for a prediction from evidence"
+        },
+        {
+          "id": "ws-15-sec-b-q09",
+          "order": 9,
+          "prompt": "Do Mike and Pat plan to make sandwiches for the party?",
+          "acceptedAnswers": [
+            "Are Mike and Pat going to make sandwiches for the party?"
+          ],
+          "explanation": "question: Are + subject + going to"
+        },
+        {
+          "id": "ws-15-sec-b-q10",
+          "order": 10,
+          "prompt": "I think it’s about to snow.",
+          "acceptedAnswers": [
+            "I think it is going to snow."
+          ],
+          "explanation": "going to for a prediction from evidence"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-3",
+      "sectionKey": "C",
+      "instruction": "What are you going to do next summer? Write sentences:",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-15-sec-c-q01",
+          "order": 1,
+          "prompt": "Write about your plans for next summer. Start: Next summer I’m going to have a great holiday. I’m going to",
+          "acceptedAnswers": [],
+          "explanation": "use I'm going to + base verb",
+          "modelAnswer": "Next summer I'm going to have a great holiday. I'm going to visit my grandparents in Da Lat. I'm going to swim every day and I'm going to read a lot of books. I'm not going to study!"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-4",
+      "sectionKey": "D",
+      "instruction": "Rob Brown and Molly Gould are opera singers. A reporter has interviewed them about their summer plans. Look at the table (✓ = yes) and ask and answer questions, as in the example. Write the whole dialogue: (Example: 1. Is Rob going to give any concerts in the summer? Yes, he is. Is Molly going to give any concerts in the summer? Yes, she is.)",
+      "type": "question_formation",
+      "tableData": {
+        "headers": [
+          "Plan",
+          "Rob Brown",
+          "Molly Gould"
+        ],
+        "rows": [
+          [
+            "1. give / concerts",
+            "✓",
+            "✓"
+          ],
+          [
+            "2. go / to India",
+            "✓",
+            ""
+          ],
+          [
+            "3. appear / in a TV show",
+            "",
+            "✓"
+          ],
+          [
+            "4. go on / holiday in August",
+            "✓",
+            "✓"
+          ],
+          [
+            "5. take part / in charity events",
+            "✓",
+            "✓"
+          ],
+          [
+            "6. sing / at the Queen’s party",
+            "",
+            ""
+          ],
+          [
+            "7. make / a record",
+            "✓",
+            ""
+          ],
+          [
+            "8. sing / in a rock opera",
+            "",
+            "✓"
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-15-sec-d-q02",
+          "order": 2,
+          "prompt": "go / to India",
+          "acceptedAnswers": [
+            "Is Rob going to go to India in the summer? Yes, he is. Is Molly going to go to India in the summer? No, she isn't.",
+            "Is Rob going to go to India? Yes, he is. Is Molly going to go to India? No, she isn't."
+          ],
+          "explanation": "Is + name + going to + verb? Yes, he is / No, she isn't"
+        },
+        {
+          "id": "ws-15-sec-d-q03",
+          "order": 3,
+          "prompt": "appear / in a TV show",
+          "acceptedAnswers": [
+            "Is Rob going to appear in a TV show in the summer? No, he isn't. Is Molly going to appear in a TV show in the summer? Yes, she is.",
+            "Is Rob going to appear in a TV show? No, he isn't. Is Molly going to appear in a TV show? Yes, she is."
+          ],
+          "explanation": "Is + name + going to + verb? No, he isn't / Yes, she is"
+        },
+        {
+          "id": "ws-15-sec-d-q04",
+          "order": 4,
+          "prompt": "go on / holiday in August",
+          "acceptedAnswers": [
+            "Is Rob going to go on holiday in August? Yes, he is. Is Molly going to go on holiday in August? Yes, she is."
+          ],
+          "explanation": "Is + name + going to + verb? Yes, he/she is"
+        },
+        {
+          "id": "ws-15-sec-d-q05",
+          "order": 5,
+          "prompt": "take part / in charity events",
+          "acceptedAnswers": [
+            "Is Rob going to take part in any charity events in the summer? Yes, he is. Is Molly going to take part in any charity events in the summer? Yes, she is.",
+            "Is Rob going to take part in any charity events? Yes, he is. Is Molly going to take part in any charity events? Yes, she is.",
+            "Is Rob going to take part in charity events in the summer? Yes, he is. Is Molly going to take part in charity events in the summer? Yes, she is.",
+            "Is Rob going to take part in charity events? Yes, he is. Is Molly going to take part in charity events? Yes, she is."
+          ],
+          "explanation": "Is + name + going to + verb? Yes, he/she is"
+        },
+        {
+          "id": "ws-15-sec-d-q06",
+          "order": 6,
+          "prompt": "sing / at the Queen’s party",
+          "acceptedAnswers": [
+            "Is Rob going to sing at the Queen's party in the summer? No, he isn't. Is Molly going to sing at the Queen's party in the summer? No, she isn't.",
+            "Is Rob going to sing at the Queen's party? No, he isn't. Is Molly going to sing at the Queen's party? No, she isn't."
+          ],
+          "explanation": "Is + name + going to + verb? No, he/she isn't"
+        },
+        {
+          "id": "ws-15-sec-d-q07",
+          "order": 7,
+          "prompt": "make / a record",
+          "acceptedAnswers": [
+            "Is Rob going to make a record in the summer? Yes, he is. Is Molly going to make a record in the summer? No, she isn't.",
+            "Is Rob going to make a record? Yes, he is. Is Molly going to make a record? No, she isn't."
+          ],
+          "explanation": "Is + name + going to + verb? Yes, he is / No, she isn't"
+        },
+        {
+          "id": "ws-15-sec-d-q08",
+          "order": 8,
+          "prompt": "sing / in a rock opera",
+          "acceptedAnswers": [
+            "Is Rob going to sing in a rock opera in the summer? No, he isn't. Is Molly going to sing in a rock opera in the summer? Yes, she is.",
+            "Is Rob going to sing in a rock opera? No, he isn't. Is Molly going to sing in a rock opera? Yes, she is."
+          ],
+          "explanation": "Is + name + going to + verb? No, he isn't / Yes, she is"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-5",
+      "sectionKey": "E",
+      "instruction": "Use the words / phrases from the list to complete the sentences, as in the example: (Example: Jane’s putting an ad in the newspaper. → She is going to sell her car.)",
+      "type": "sentence_building",
+      "wordBank": [
+        "sell her car",
+        "be late for school",
+        "make a cake",
+        "fix",
+        "lose weight"
+      ],
+      "questions": [
+        {
+          "id": "ws-15-sec-e-q02",
+          "order": 2,
+          "prompt": "The washing machine isn’t working. → My father",
+          "acceptedAnswers": [
+            "My father is going to fix it."
+          ],
+          "explanation": "going to: plan based on the situation"
+        },
+        {
+          "id": "ws-15-sec-e-q03",
+          "order": 3,
+          "prompt": "I bought some flour and some eggs. → I",
+          "acceptedAnswers": [
+            "I am going to make a cake."
+          ],
+          "explanation": "going to: plan based on the situation"
+        },
+        {
+          "id": "ws-15-sec-e-q04",
+          "order": 4,
+          "prompt": "Robert is on a diet. → He",
+          "acceptedAnswers": [
+            "He is going to lose weight."
+          ],
+          "explanation": "going to: plan based on the situation"
+        },
+        {
+          "id": "ws-15-sec-e-q05",
+          "order": 5,
+          "prompt": "Peter is still in bed. → He",
+          "acceptedAnswers": [
+            "He is going to be late for school."
+          ],
+          "explanation": "going to: prediction from present evidence"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-6",
+      "sectionKey": "F",
+      "instruction": "Jonathan is not satisfied with his life as it is. He has already decided to change a number of things. Look at the prompts and say what he intends to do, as in the example: (Example: move to the city center → He is going to move to the city center.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-15-sec-f-q02",
+          "order": 2,
+          "prompt": "sell his car",
+          "acceptedAnswers": [
+            "He is going to sell his car.",
+            "Jonathan is going to sell his car."
+          ],
+          "explanation": "be going to + base verb (plan or intention)"
+        },
+        {
+          "id": "ws-15-sec-f-q03",
+          "order": 3,
+          "prompt": "buy a bigger house",
+          "acceptedAnswers": [
+            "He is going to buy a bigger house.",
+            "Jonathan is going to buy a bigger house."
+          ],
+          "explanation": "be going to + base verb (plan or intention)"
+        },
+        {
+          "id": "ws-15-sec-f-q04",
+          "order": 4,
+          "prompt": "marry Susan",
+          "acceptedAnswers": [
+            "He is going to marry Susan.",
+            "Jonathan is going to marry Susan."
+          ],
+          "explanation": "be going to + base verb (plan or intention)"
+        },
+        {
+          "id": "ws-15-sec-f-q05",
+          "order": 5,
+          "prompt": "apply for a job with a law firm",
+          "acceptedAnswers": [
+            "He is going to apply for a job with a law firm.",
+            "Jonathan is going to apply for a job with a law firm."
+          ],
+          "explanation": "be going to + base verb (plan or intention)"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-7",
+      "sectionKey": "G",
+      "instruction": "Look at the table and write questions and answers, as in the example: (Example: Fred / singer? → Is Fred going to be a singer? No, he isn’t. He isn’t going to be a singer. He is going to be a doctor.)",
+      "type": "question_formation",
+      "tableData": {
+        "headers": [
+          "",
+          "teacher",
+          "doctor",
+          "singer",
+          "football player"
+        ],
+        "rows": [
+          [
+            "Fred",
+            "",
+            "✓",
+            "",
+            ""
+          ],
+          [
+            "Rod & Ben",
+            "",
+            "",
+            "✓",
+            ""
+          ],
+          [
+            "Joan",
+            "✓",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Ted",
+            "",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "You",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-15-sec-g-q02",
+          "order": 2,
+          "prompt": "Rod and Ben / teachers?",
+          "acceptedAnswers": [
+            "Are Rod and Ben going to be teachers? No, they aren't. They aren't going to be teachers. They are going to be singers."
+          ],
+          "explanation": "Are they going to be…? No, they aren't."
+        },
+        {
+          "id": "ws-15-sec-g-q03",
+          "order": 3,
+          "prompt": "Joan / doctor?",
+          "acceptedAnswers": [
+            "Is Joan going to be a doctor? No, she isn't. She isn't going to be a doctor. She is going to be a teacher."
+          ],
+          "explanation": "Is she going to be…? No, she isn't."
+        },
+        {
+          "id": "ws-15-sec-g-q04",
+          "order": 4,
+          "prompt": "Ted / singer?",
+          "acceptedAnswers": [
+            "Is Ted going to be a singer? No, he isn't. He isn't going to be a singer. He is going to be a football player."
+          ],
+          "explanation": "Is he going to be…? No, he isn't."
+        },
+        {
+          "id": "ws-15-sec-g-q05",
+          "order": 5,
+          "prompt": "You / teacher?",
+          "acceptedAnswers": [],
+          "explanation": "Are you going to be…? Yes, I am / No, I'm not.",
+          "modelAnswer": "Are you going to be a teacher? No, I'm not. I'm not going to be a teacher. I'm going to be a doctor."
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-8",
+      "sectionKey": "H",
+      "instruction": "Make sentences using the words / phrases from the list, as in the example: (Example: She can’t stop the car! → She is going to crash.)",
+      "type": "sentence_building",
+      "wordBank": [
+        "miss the train",
+        "make some tea",
+        "change it",
+        "crash",
+        "shout at us",
+        "take some photos",
+        "play in the snow",
+        "fall off",
+        "sell his house",
+        "make a cake"
+      ],
+      "questions": [
+        {
+          "id": "ws-15-sec-h-q02",
+          "order": 2,
+          "prompt": "They are late. → They",
+          "acceptedAnswers": [
+            "They are going to miss the train."
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-15-sec-h-q03",
+          "order": 3,
+          "prompt": "The headmaster looks angry! → He",
+          "acceptedAnswers": [
+            "He is going to shout at us."
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-15-sec-h-q04",
+          "order": 4,
+          "prompt": "Jim has got his camera. → He",
+          "acceptedAnswers": [
+            "He is going to take some photos."
+          ],
+          "explanation": "going to: intention"
+        },
+        {
+          "id": "ws-15-sec-h-q05",
+          "order": 5,
+          "prompt": "Mick’s putting up a “For Sale” sign. → He",
+          "acceptedAnswers": [
+            "He is going to sell his house."
+          ],
+          "explanation": "going to: intention"
+        },
+        {
+          "id": "ws-15-sec-h-q06",
+          "order": 6,
+          "prompt": "The car has got a flat tyre. → He",
+          "acceptedAnswers": [
+            "He is going to change it."
+          ],
+          "explanation": "going to: intention"
+        },
+        {
+          "id": "ws-15-sec-h-q07",
+          "order": 7,
+          "prompt": "Mum’s looking at a recipe. → She",
+          "acceptedAnswers": [
+            "She is going to make a cake."
+          ],
+          "explanation": "going to: intention"
+        },
+        {
+          "id": "ws-15-sec-h-q08",
+          "order": 8,
+          "prompt": "Look! The ladder is broken. → Oh no, he",
+          "acceptedAnswers": [
+            "Oh no, he is going to fall off.",
+            "He is going to fall off."
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-15-sec-h-q09",
+          "order": 9,
+          "prompt": "They’re putting their hats and gloves on. → They",
+          "acceptedAnswers": [
+            "They are going to play in the snow."
+          ],
+          "explanation": "going to: intention"
+        },
+        {
+          "id": "ws-15-sec-h-q10",
+          "order": 10,
+          "prompt": "Kevin’s putting the kettle on. → He",
+          "acceptedAnswers": [
+            "He is going to make some tea."
+          ],
+          "explanation": "going to: intention"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-9",
+      "sectionKey": "I",
+      "instruction": "Make sentences with WILL BE + -ING:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-16-sec-a-q01",
+          "order": 1,
+          "prompt": "I’m going to watch television from 9 until 10 o’clock this evening. So at 9.30 I [gap].",
+          "acceptedAnswers": [
+            "will be watching television|'ll be watching television|will be watching TV|'ll be watching TV"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q02",
+          "order": 2,
+          "prompt": "Tomorrow afternoon I’m going to play tennis from 3 o’clock until 4.30. So at 4 o’clock tomorrow I [gap].",
+          "acceptedAnswers": [
+            "will be playing tennis|'ll be playing tennis"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q03",
+          "order": 3,
+          "prompt": "Jim is going to study from 7 o’clock until 10 o’clock this evening. So at 8.30 this evening he [gap].",
+          "acceptedAnswers": [
+            "will be studying|'ll be studying"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q04",
+          "order": 4,
+          "prompt": "We are going to clean the flat tomorrow. It will take from 9 until 11 o’clock. So at 10 o’clock tomorrow morning [gap].",
+          "acceptedAnswers": [
+            "we will be cleaning the flat|we'll be cleaning the flat|we will be cleaning|we'll be cleaning"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q05",
+          "order": 5,
+          "prompt": "Tom is a football fan and there is a football match on television this evening. The match begins at 7.30 and ends at 9.15. So at 8.30 this evening [gap].",
+          "acceptedAnswers": [
+            "Tom will be watching the match|Tom'll be watching the match|Tom will be watching the football match|he will be watching the match|he'll be watching the match|he will be watching the football match|Tom will be watching football|Tom will be watching the match on television|Tom will be watching the football match on television"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q06",
+          "order": 6,
+          "prompt": "Don’t phone me between 7 and 8. [gap] (we / finish) dinner then.",
+          "acceptedAnswers": [
+            "We will be finishing|We'll be finishing"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q07",
+          "order": 7,
+          "prompt": "A: Can we meet tomorrow afternoon? B: Not in the afternoon. [gap] (I / work).",
+          "acceptedAnswers": [
+            "I will be working|I'll be working"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q08",
+          "order": 8,
+          "prompt": "Do you think [gap] (you / still / do) the same job in ten years’ time?",
+          "acceptedAnswers": [
+            "you will still be doing|you'll still be doing"
+          ],
+          "explanation": "will still be + -ing"
+        },
+        {
+          "id": "ws-16-sec-a-q09",
+          "order": 9,
+          "prompt": "If you need to contact me, [gap] (I / stay) at the Hilton Hotel until Friday.",
+          "acceptedAnswers": [
+            "I will be staying|I'll be staying"
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-a-q10",
+          "order": 10,
+          "prompt": "A: [gap] (you / see) Laura tomorrow? B: Yes, probably. Why? A: I borrowed this book from her. Can you give it back to her?",
+          "acceptedAnswers": [
+            "Will you be seeing"
+          ],
+          "explanation": "question: Will + subject + be + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-10",
+      "sectionKey": "J",
+      "instruction": "Ask questions with WILL YOU BE + -ING?",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-16-sec-b-q01",
+          "order": 1,
+          "prompt": "You want to borrow your friend’s bicycle this evening. (you / use / your bicycle this evening?)",
+          "acceptedAnswers": [
+            "Will you be using your bicycle this evening?"
+          ],
+          "explanation": "polite question about plans: Will you be + -ing?"
+        },
+        {
+          "id": "ws-16-sec-b-q02",
+          "order": 2,
+          "prompt": "You want your friend to give Tom a message this afternoon. (you / see / Tom this afternoon?)",
+          "acceptedAnswers": [
+            "Will you be seeing Tom this afternoon?"
+          ],
+          "explanation": "polite question about plans: Will you be + -ing?"
+        },
+        {
+          "id": "ws-16-sec-b-q03",
+          "order": 3,
+          "prompt": "You want to use your friend’s typewriter tomorrow evening. (you / use / your typewriter tomorrow evening?)",
+          "acceptedAnswers": [
+            "Will you be using your typewriter tomorrow evening?"
+          ],
+          "explanation": "polite question about plans: Will you be + -ing?"
+        },
+        {
+          "id": "ws-16-sec-b-q04",
+          "order": 4,
+          "prompt": "Your friend is going shopping. You want him/her to buy some stamps for you at the post office. (you / pass / the post office when you’re in town?)",
+          "acceptedAnswers": [
+            "Will you be passing the post office when you're in town?"
+          ],
+          "explanation": "polite question about plans: Will you be + -ing?"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-11",
+      "sectionKey": "K",
+      "instruction": "A gang of criminals have a plan to steal millions of pounds from a London bank and leave the country. They’re talking about what they will be doing a week from now, after the robbery. (Example: We / live / in luxury → We’ll be living in luxury.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-16-sec-c-q02",
+          "order": 2,
+          "prompt": "We / relax / at our villa",
+          "acceptedAnswers": [
+            "We will be relaxing at our villa.",
+            "We'll be relaxing at our villa."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-c-q03",
+          "order": 3,
+          "prompt": "I / sit / by the pool",
+          "acceptedAnswers": [
+            "I will be sitting by the pool.",
+            "I'll be sitting by the pool."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-c-q04",
+          "order": 4,
+          "prompt": "The sun / shine",
+          "acceptedAnswers": [
+            "The sun will be shining."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-c-q05",
+          "order": 5,
+          "prompt": "We / enjoy / ourselves",
+          "acceptedAnswers": [
+            "We will be enjoying ourselves.",
+            "We'll be enjoying ourselves."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-c-q06",
+          "order": 6,
+          "prompt": "The police / look for us",
+          "acceptedAnswers": [
+            "The police will be looking for us."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-c-q07",
+          "order": 7,
+          "prompt": "But / we / laugh / at them",
+          "acceptedAnswers": [
+            "But we will be laughing at them.",
+            "But we'll be laughing at them."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-12",
+      "sectionKey": "L",
+      "instruction": "Make sentences with WILL BE + -ING: (Example: I’m playing tennis now. (this afternoon) → I’ll be playing tennis this afternoon.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-16-sec-d-q02",
+          "order": 2,
+          "prompt": "He is sleeping now. (at eleven o’clock)",
+          "acceptedAnswers": [
+            "He will be sleeping at eleven o'clock.",
+            "He'll be sleeping at eleven o'clock.",
+            "At eleven o'clock he will be sleeping.",
+            "At eleven o'clock he'll be sleeping."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q03",
+          "order": 3,
+          "prompt": "We’re working very hard. (at this time next month)",
+          "acceptedAnswers": [
+            "We will be working very hard at this time next month.",
+            "We'll be working very hard at this time next month.",
+            "At this time next month we will be working very hard.",
+            "At this time next month we'll be working very hard."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q04",
+          "order": 4,
+          "prompt": "They are traveling. (all night)",
+          "acceptedAnswers": [
+            "They will be traveling all night.",
+            "They'll be traveling all night.",
+            "They will be travelling all night.",
+            "They'll be travelling all night."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q05",
+          "order": 5,
+          "prompt": "She’s doing the washing up. (in an hour’s time)",
+          "acceptedAnswers": [
+            "She will be doing the washing up in an hour's time.",
+            "She'll be doing the washing up in an hour's time.",
+            "In an hour's time she will be doing the washing up.",
+            "In an hour's time she'll be doing the washing up."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q06",
+          "order": 6,
+          "prompt": "He’s still mending his car. (at dinner time)",
+          "acceptedAnswers": [
+            "He will still be mending his car at dinner time.",
+            "He'll still be mending his car at dinner time.",
+            "At dinner time he will still be mending his car.",
+            "At dinner time he'll still be mending his car."
+          ],
+          "explanation": "will still be + -ing"
+        },
+        {
+          "id": "ws-16-sec-d-q07",
+          "order": 7,
+          "prompt": "I am driving a BMW. (in two years’ time)",
+          "acceptedAnswers": [
+            "I will be driving a BMW in two years' time.",
+            "I'll be driving a BMW in two years' time.",
+            "In two years' time I will be driving a BMW.",
+            "In two years' time I'll be driving a BMW."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q08",
+          "order": 8,
+          "prompt": "I’m studying English. (from 8 to 10)",
+          "acceptedAnswers": [
+            "I will be studying English from 8 to 10.",
+            "I'll be studying English from 8 to 10."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q09",
+          "order": 9,
+          "prompt": "I’m having an interview now. (at 2 o’clock this afternoon)",
+          "acceptedAnswers": [
+            "I will be having an interview at 2 o'clock this afternoon.",
+            "I'll be having an interview at 2 o'clock this afternoon.",
+            "At 2 o'clock this afternoon I will be having an interview.",
+            "At 2 o'clock this afternoon I'll be having an interview."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        },
+        {
+          "id": "ws-16-sec-d-q10",
+          "order": 10,
+          "prompt": "We’re listening to pop music. (at this time tomorrow)",
+          "acceptedAnswers": [
+            "We will be listening to pop music at this time tomorrow.",
+            "We'll be listening to pop music at this time tomorrow.",
+            "At this time tomorrow we will be listening to pop music.",
+            "At this time tomorrow we'll be listening to pop music."
+          ],
+          "explanation": "future continuous: will be + -ing (in progress at a future time)"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-13",
+      "sectionKey": "M",
+      "instruction": "What will life be like in the year 2100? Complete the sentences using WILL HAVE + PAST PARTICIPLE form: (Example: By 2100, the world’s population will have increased (increase) to around 30,000 million.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-17-sec-a-q01",
+          "order": 1,
+          "prompt": "Life [gap] (become) more automated by then.",
+          "acceptedAnswers": [
+            "will have become"
+          ],
+          "explanation": "future perfect: will have + past participle"
+        },
+        {
+          "id": "ws-17-sec-a-q02",
+          "order": 2,
+          "prompt": "Computers [gap] (take over) many of the jobs that people do today.",
+          "acceptedAnswers": [
+            "will have taken over"
+          ],
+          "explanation": "future perfect: will have + past participle"
+        },
+        {
+          "id": "ws-17-sec-a-q03",
+          "order": 3,
+          "prompt": "The earth’s supplies of oil, coal and gas [gap] (run out).",
+          "acceptedAnswers": [
+            "will have run out"
+          ],
+          "explanation": "future perfect: will have + past participle"
+        },
+        {
+          "id": "ws-17-sec-a-q04",
+          "order": 4,
+          "prompt": "[gap] (scientists / find) other sources of energy?",
+          "acceptedAnswers": [
+            "Will scientists have found"
+          ],
+          "explanation": "question: will + subject + have + past participle"
+        },
+        {
+          "id": "ws-17-sec-a-q05",
+          "order": 5,
+          "prompt": "How [gap] education [gap] (change)?",
+          "acceptedAnswers": [
+            "will / have changed"
+          ],
+          "explanation": "question: will + subject + have + past participle"
+        },
+        {
+          "id": "ws-17-sec-a-q06",
+          "order": 6,
+          "prompt": "[gap] (we / find) a way to feed all the people in the world?",
+          "acceptedAnswers": [
+            "Will we have found"
+          ],
+          "explanation": "question: will + subject + have + past participle"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-14",
+      "sectionKey": "N",
+      "instruction": "Use WILL HAVE + PAST PARTICIPLE form:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-17-sec-b-q01",
+          "order": 1,
+          "prompt": "Tom and Ann are going to the cinema. The film begins at 7.30 and it is already 7.20. And it will take them 20 minutes to get there. When they get there, [gap] (the film / already / start).",
+          "acceptedAnswers": [
+            "the film will already have started|the film will have already started"
+          ],
+          "explanation": "future perfect: completed before a future time"
+        },
+        {
+          "id": "ws-17-sec-b-q02",
+          "order": 2,
+          "prompt": "Jim always goes to bed at 11 o’clock. Tom is going to visit him at 11.30 this evening. When Tom arrives, [gap] (Jim / go / to bed).",
+          "acceptedAnswers": [
+            "Jim will have gone to bed"
+          ],
+          "explanation": "future perfect: completed before a future time"
+        },
+        {
+          "id": "ws-17-sec-b-q03",
+          "order": 3,
+          "prompt": "Tom is on holiday. He has very little money and he is spending too much too quickly. Before the end of his holiday, [gap] (he / spend / all his money).",
+          "acceptedAnswers": [
+            "he will have spent all his money"
+          ],
+          "explanation": "future perfect: completed before a future time"
+        },
+        {
+          "id": "ws-17-sec-b-q05",
+          "order": 5,
+          "prompt": "Chuck came to Britain from the US nearly three years ago. Next Monday it will be exactly three years since he arrived. Next Monday [gap] (he / be / here / exactly three years).",
+          "acceptedAnswers": [
+            "he will have been here for exactly three years|he will have been here exactly three years"
+          ],
+          "explanation": "future perfect + for: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-b-q06",
+          "order": 6,
+          "prompt": "Next year is Ted and Amy’s 25th wedding anniversary. They [gap] (be married) for 25 years.",
+          "acceptedAnswers": [
+            "will have been married"
+          ],
+          "explanation": "future perfect + for: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-b-q07",
+          "order": 7,
+          "prompt": "Jane is from New Zealand. She is traveling around Europe at the moment. So far she has traveled about 1,000 miles. By the end of the trip, [gap] (she / travel) more than 3,000 miles.",
+          "acceptedAnswers": [
+            "she will have traveled|she will have travelled"
+          ],
+          "explanation": "by + future time → future perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-15",
+      "sectionKey": "O",
+      "instruction": "Use FUTURE PERFECT TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-17-sec-c-q01",
+          "order": 1,
+          "prompt": "By next February I [gap] (write) my third book.",
+          "acceptedAnswers": [
+            "will have written"
+          ],
+          "explanation": "by + future time → future perfect"
+        },
+        {
+          "id": "ws-17-sec-c-q02",
+          "order": 2,
+          "prompt": "I hope you [gap] (not / forget) my name by tomorrow.",
+          "acceptedAnswers": [
+            "won't have forgotten"
+          ],
+          "explanation": "negative: won't have + past participle"
+        },
+        {
+          "id": "ws-17-sec-c-q03",
+          "order": 3,
+          "prompt": "By next week we [gap] (redecorate) the house.",
+          "acceptedAnswers": [
+            "will have redecorated"
+          ],
+          "explanation": "by + future time → future perfect"
+        },
+        {
+          "id": "ws-17-sec-c-q04",
+          "order": 4,
+          "prompt": "Next July she [gap] (be) dead for ten years.",
+          "acceptedAnswers": [
+            "will have been"
+          ],
+          "explanation": "future perfect + for: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-c-q05",
+          "order": 5,
+          "prompt": "I hope I [gap] (not / make) a lot of mistakes in this exam when I finish it.",
+          "acceptedAnswers": [
+            "won't have made"
+          ],
+          "explanation": "negative: won't have + past participle"
+        },
+        {
+          "id": "ws-17-sec-c-q06",
+          "order": 6,
+          "prompt": "By the end of this year I [gap] (drive) more than one hundred thousand kilometers with this car.",
+          "acceptedAnswers": [
+            "will have driven"
+          ],
+          "explanation": "by + future time → future perfect"
+        },
+        {
+          "id": "ws-17-sec-c-q07",
+          "order": 7,
+          "prompt": "I hope it [gap] (stop) raining before the match starts.",
+          "acceptedAnswers": [
+            "will have stopped"
+          ],
+          "explanation": "future perfect: completed before a future event"
+        },
+        {
+          "id": "ws-17-sec-c-q08",
+          "order": 8,
+          "prompt": "I [gap] (have) an operation when you come back.",
+          "acceptedAnswers": [
+            "will have had"
+          ],
+          "explanation": "future perfect: completed before a future event"
+        },
+        {
+          "id": "ws-17-sec-c-q09",
+          "order": 9,
+          "prompt": "By this time next week I [gap] (marry).",
+          "acceptedAnswers": [
+            "will have married|will have got married|will have gotten married|will have been married"
+          ],
+          "explanation": "by + future time → future perfect"
+        },
+        {
+          "id": "ws-17-sec-c-q10",
+          "order": 10,
+          "prompt": "If nothing is done one million species that are alive today [gap] (become) extinct in twenty years.",
+          "acceptedAnswers": [
+            "will have become"
+          ],
+          "explanation": "future perfect: completed within a future period"
+        },
+        {
+          "id": "ws-17-sec-c-q11",
+          "order": 11,
+          "prompt": "The tropical rain forests [gap] (disappear) in thirty years.",
+          "acceptedAnswers": [
+            "will have disappeared"
+          ],
+          "explanation": "future perfect: completed within a future period"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-16",
+      "sectionKey": "P",
+      "instruction": "Fill in the blanks using FUTURE PERFECT CONTINUOUS TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-17-sec-d-q01",
+          "order": 1,
+          "prompt": "By the end of June I [gap] (live) in this flat for thirteen years.",
+          "acceptedAnswers": [
+            "will have been living"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q02",
+          "order": 2,
+          "prompt": "I [gap] (fly) to London for an hour at this time tomorrow.",
+          "acceptedAnswers": [
+            "will have been flying"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q03",
+          "order": 3,
+          "prompt": "At this time next week I [gap] (work) for this company for 20 years.",
+          "acceptedAnswers": [
+            "will have been working"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q04",
+          "order": 4,
+          "prompt": "When the bell rings I [gap] (teach) for eight hours today.",
+          "acceptedAnswers": [
+            "will have been teaching"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q05",
+          "order": 5,
+          "prompt": "I [gap] (wear) these glasses for five years next week.",
+          "acceptedAnswers": [
+            "will have been wearing"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q06",
+          "order": 6,
+          "prompt": "I [gap] (drive) this car for six years tomorrow.",
+          "acceptedAnswers": [
+            "will have been driving"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q07",
+          "order": 7,
+          "prompt": "At this time tomorrow I [gap] (take) a test for an hour.",
+          "acceptedAnswers": [
+            "will have been taking"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q08",
+          "order": 8,
+          "prompt": "At this time next year I [gap] (have) a holiday in Antalya for a week.",
+          "acceptedAnswers": [
+            "will have been having"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q09",
+          "order": 9,
+          "prompt": "At this time next year I [gap] (live) in Istanbul for ten years.",
+          "acceptedAnswers": [
+            "will have been living"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q10",
+          "order": 10,
+          "prompt": "By the time we get home they [gap] (play) football for half an hour.",
+          "acceptedAnswers": [
+            "will have been playing"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q11",
+          "order": 11,
+          "prompt": "She [gap] (dance) for an hour at nine o’clock.",
+          "acceptedAnswers": [
+            "will have been dancing"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        },
+        {
+          "id": "ws-17-sec-d-q12",
+          "order": 12,
+          "prompt": "I [gap] (learn) English for ten years by the end of this year.",
+          "acceptedAnswers": [
+            "will have been learning"
+          ],
+          "explanation": "will have been + -ing: duration up to a future time"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-17",
+      "sectionKey": "Q",
+      "instruction": "Join each idea in A with an idea from B. Make sentences using WAS / WERE GOING TO and the verbs in brackets. (Example: I (take) a taxi home last night → I was going to take a taxi home last night, but I didn’t have enough money, so I had to walk.)",
+      "type": "sentence_combine",
+      "contextText": "B:\na) but it rained all afternoon, so we stayed at home.\nb) but my boss offered me more money, so I decided to stay.\nc) but I didn’t have enough money, so I had to walk.\nd) but she had seen it before, so she went to bed early.\ne) but her car broke down, so she went by train.\nf) but we changed our minds and phoned them instead.",
+      "questions": [
+        {
+          "id": "ws-18-sec-a-q02",
+          "order": 2,
+          "prompt": "We (write) to them when we were on holiday,",
+          "acceptedAnswers": [
+            "We were going to write to them when we were on holiday, but we changed our minds and phoned them instead."
+          ],
+          "explanation": "was/were going to: a past plan that didn’t happen (f)"
+        },
+        {
+          "id": "ws-18-sec-a-q03",
+          "order": 3,
+          "prompt": "She (drive) to Scotland last weekend,",
+          "acceptedAnswers": [
+            "She was going to drive to Scotland last weekend, but her car broke down, so she went by train."
+          ],
+          "explanation": "was/were going to: a past plan that didn’t happen (e)"
+        },
+        {
+          "id": "ws-18-sec-a-q04",
+          "order": 4,
+          "prompt": "We (play) tennis yesterday afternoon,",
+          "acceptedAnswers": [
+            "We were going to play tennis yesterday afternoon, but it rained all afternoon, so we stayed at home."
+          ],
+          "explanation": "was/were going to: a past plan that didn’t happen (a)"
+        },
+        {
+          "id": "ws-18-sec-a-q05",
+          "order": 5,
+          "prompt": "She (watch) the film on TV last night,",
+          "acceptedAnswers": [
+            "She was going to watch the film on TV last night, but she had seen it before, so she went to bed early."
+          ],
+          "explanation": "was/were going to: a past plan that didn’t happen (d)"
+        },
+        {
+          "id": "ws-18-sec-a-q06",
+          "order": 6,
+          "prompt": "I (change) my job last year.",
+          "acceptedAnswers": [
+            "I was going to change my job last year, but my boss offered me more money, so I decided to stay."
+          ],
+          "explanation": "was/were going to: a past plan that didn’t happen (b)"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-18",
+      "sectionKey": "R",
+      "instruction": "Complete the sentences. Use WAS / WERE GOING TO and these verbs: drive / get / go / pick / see",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "drive",
+        "get",
+        "go",
+        "pick",
+        "see"
+      ],
+      "questions": [
+        {
+          "id": "ws-18-sec-b-q01",
+          "order": 1,
+          "prompt": "The train left just as Harold [gap] on it.",
+          "acceptedAnswers": [
+            "was going to get"
+          ],
+          "explanation": "was going to: action about to happen in the past"
+        },
+        {
+          "id": "ws-18-sec-b-q02",
+          "order": 2,
+          "prompt": "The shop closed as I [gap] in it.",
+          "acceptedAnswers": [
+            "was going to go"
+          ],
+          "explanation": "was going to: action about to happen in the past"
+        },
+        {
+          "id": "ws-18-sec-b-q03",
+          "order": 3,
+          "prompt": "The phone stopped ringing just as I [gap] it up.",
+          "acceptedAnswers": [
+            "was going to pick"
+          ],
+          "explanation": "was going to: action about to happen in the past"
+        },
+        {
+          "id": "ws-18-sec-b-q04",
+          "order": 4,
+          "prompt": "We went to the cinema, where we [gap] a film about the Mafia, but it was so popular we couldn’t get in.",
+          "acceptedAnswers": [
+            "were going to see"
+          ],
+          "explanation": "were going to: past plan that didn’t happen"
+        },
+        {
+          "id": "ws-18-sec-b-q05",
+          "order": 5,
+          "prompt": "Bob had trouble parking. A car took the last place in the car park just when he [gap] into it.",
+          "acceptedAnswers": [
+            "was going to drive"
+          ],
+          "explanation": "was going to: action about to happen in the past"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-19",
+      "sectionKey": "S",
+      "instruction": "Use WAS / WERE GOING TO to answer the questions. (Example: Did you travel by train? → No, I was going to travel by train but I changed my mind.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-18-sec-c-q02",
+          "order": 2,
+          "prompt": "Did you buy that jacket you saw in the shop window? → No, I — but I changed my mind.",
+          "acceptedAnswers": [
+            "No, I was going to buy it but I changed my mind.",
+            "No, I was going to buy that jacket but I changed my mind.",
+            "No, I was going to buy the jacket but I changed my mind."
+          ],
+          "explanation": "was going to + verb: plan that didn’t happen"
+        },
+        {
+          "id": "ws-18-sec-c-q03",
+          "order": 3,
+          "prompt": "Did Sue get married? → No, she — but she —",
+          "acceptedAnswers": [
+            "No, she was going to get married but she changed her mind.",
+            "No, she was going to get married but she didn’t.",
+            "No, she was going to get married but she decided not to."
+          ],
+          "explanation": "was going to + verb: plan that didn’t happen"
+        },
+        {
+          "id": "ws-18-sec-c-q04",
+          "order": 4,
+          "prompt": "Did Wayne and Sharon go to Greece for their holidays? → No, —",
+          "acceptedAnswers": [
+            "No, they were going to go to Greece but they changed their minds.",
+            "No, they were going to go to Greece for their holidays but they changed their minds.",
+            "No, they were going to go to Greece but they changed their mind.",
+            "No, they were going to go to Greece but they didn’t."
+          ],
+          "explanation": "were going to + verb: plan that didn’t happen"
+        },
+        {
+          "id": "ws-18-sec-c-q05",
+          "order": 5,
+          "prompt": "Did you play tennis yesterday? → No, —",
+          "acceptedAnswers": [
+            "No, I was going to play tennis but I changed my mind.",
+            "No, we were going to play tennis but we changed our minds.",
+            "No, I was going to play tennis yesterday but I changed my mind.",
+            "No, I was going to play tennis but I didn’t."
+          ],
+          "explanation": "was going to + verb: plan that didn’t happen"
+        },
+        {
+          "id": "ws-18-sec-c-q06",
+          "order": 6,
+          "prompt": "Did you invite Ann to the party? → No, —",
+          "acceptedAnswers": [
+            "No, I was going to invite her but I changed my mind.",
+            "No, I was going to invite Ann but I changed my mind.",
+            "No, I was going to invite her to the party but I changed my mind.",
+            "No, I was going to invite her but I forgot."
+          ],
+          "explanation": "was going to + verb: plan that didn’t happen"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-20",
+      "sectionKey": "T",
+      "instruction": "Fill in the blanks with the correct FUTURE forms (Will / Going to / Present Continuous / Simple Present):",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-19-sec-a-q01",
+          "order": 1,
+          "prompt": "A: What [gap] you [gap] (do) when you grow up? B: I [gap] (be) an acrobat in a circus.",
+          "acceptedAnswers": [
+            "are / going to do / am going to be|will be",
+            "will / do / will be|am going to be"
+          ],
+          "explanation": "going to: intention / plan for the future"
+        },
+        {
+          "id": "ws-19-sec-a-q02",
+          "order": 2,
+          "prompt": "I haven’t seen him for a long time but I think I [gap] (recognize) him.",
+          "acceptedAnswers": [
+            "will recognize|will recognise"
+          ],
+          "explanation": "I think + will: prediction / opinion"
+        },
+        {
+          "id": "ws-19-sec-a-q03",
+          "order": 3,
+          "prompt": "A: I need some tokens to telephone my friend. B: I [gap] (give) you some.",
+          "acceptedAnswers": [
+            "will give"
+          ],
+          "explanation": "will: offer / decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-a-q04",
+          "order": 4,
+          "prompt": "I got the plane tickets. I [gap] (fly) on Sunday.",
+          "acceptedAnswers": [
+            "am flying|am going to fly"
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        },
+        {
+          "id": "ws-19-sec-a-q05",
+          "order": 5,
+          "prompt": "A: Have you got any plans for the summer? B: Yes, we [gap] (go) to Italy in June.",
+          "acceptedAnswers": [
+            "are going|are going to go"
+          ],
+          "explanation": "present continuous / going to: plan or arrangement"
+        },
+        {
+          "id": "ws-19-sec-a-q06",
+          "order": 6,
+          "prompt": "Don’t play with those matches; you [gap] burn yourself.",
+          "acceptedAnswers": [
+            "are going to|will"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-a-q07",
+          "order": 7,
+          "prompt": "A: Whose is that night dress? B: It’s mine. I [gap] (wear) it at John’s graduation party.",
+          "acceptedAnswers": [
+            "am going to wear|am wearing"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-a-q08",
+          "order": 8,
+          "prompt": "A: Why did you call your grandma? B: I [gap] (visit) her at the weekend.",
+          "acceptedAnswers": [
+            "am going to visit|am visiting"
+          ],
+          "explanation": "going to / present continuous: plan or arrangement"
+        },
+        {
+          "id": "ws-19-sec-a-q09",
+          "order": 9,
+          "prompt": "If your passport isn’t valid any more, you [gap] (not / be able to) go abroad this month.",
+          "acceptedAnswers": [
+            "won't be able to"
+          ],
+          "explanation": "first conditional: if + present, will"
+        },
+        {
+          "id": "ws-19-sec-a-q10",
+          "order": 10,
+          "prompt": "A: What are you doing with that brush? B: I [gap] (paint) my room.",
+          "acceptedAnswers": [
+            "am going to paint"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-a-q11",
+          "order": 11,
+          "prompt": "A: Why are you wearing your anorak? B: I [gap] (go) out.",
+          "acceptedAnswers": [
+            "am going|am going to go"
+          ],
+          "explanation": "present continuous / going to: plan"
+        },
+        {
+          "id": "ws-19-sec-a-q12",
+          "order": 12,
+          "prompt": "I don’t know the meaning of this word so I [gap] (look) it up in the dictionary.",
+          "acceptedAnswers": [
+            "will look|am going to look"
+          ],
+          "explanation": "will: decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-a-q13",
+          "order": 13,
+          "prompt": "Look out! You [gap] (hurt) yourself with that knife.",
+          "acceptedAnswers": [
+            "are going to hurt|will hurt"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-a-q14",
+          "order": 14,
+          "prompt": "A: I’ve got a terrible headache. B: Have you? Wait there and I [gap] (get) an aspirin for you.",
+          "acceptedAnswers": [
+            "will get"
+          ],
+          "explanation": "will: offer / decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-a-q15",
+          "order": 15,
+          "prompt": "Mother: Your face is dirty. Child: All right. I [gap] (wash) it.",
+          "acceptedAnswers": [
+            "will wash"
+          ],
+          "explanation": "will: promise / decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-a-q16",
+          "order": 16,
+          "prompt": "A: What time [gap] the next bus [gap] (arrive)? B: 13 minutes later.",
+          "acceptedAnswers": [
+            "does / arrive",
+            "will / arrive"
+          ],
+          "explanation": "present simple: timetables"
+        },
+        {
+          "id": "ws-19-sec-a-q17",
+          "order": 17,
+          "prompt": "[gap] you [gap] (open) the door for me, please?",
+          "acceptedAnswers": [
+            "will|would / open"
+          ],
+          "explanation": "will you…?: request"
+        },
+        {
+          "id": "ws-19-sec-a-q18",
+          "order": 18,
+          "prompt": "We’re early. The film [gap] (start) at 2:30. Why don’t we go and have something to drink?",
+          "acceptedAnswers": [
+            "starts"
+          ],
+          "explanation": "present simple: timetables / schedules"
+        },
+        {
+          "id": "ws-19-sec-a-q19",
+          "order": 19,
+          "prompt": "He [gap] (call) the police as soon as he gets home.",
+          "acceptedAnswers": [
+            "will call|is going to call"
+          ],
+          "explanation": "time clause: as soon as + present, will in main clause"
+        },
+        {
+          "id": "ws-19-sec-a-q20",
+          "order": 20,
+          "prompt": "A: What [gap] you [gap] (do) with that dress? B: I [gap] (shorten) the skirt.",
+          "acceptedAnswers": [
+            "are / going to do / am going to shorten|am shortening",
+            "are / doing / am going to shorten|am shortening"
+          ],
+          "explanation": "going to: intention already decided"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-21",
+      "sectionKey": "U",
+      "instruction": "Use the correct form of the FUTURE TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-19-sec-b-q01",
+          "order": 1,
+          "prompt": "A: Oh! You’ve got a ticket for the party. B: Yes. I [gap] (see) it on Friday.",
+          "acceptedAnswers": [
+            "am seeing|am going to see"
+          ],
+          "explanation": "present continuous / going to: arrangement (ticket bought)"
+        },
+        {
+          "id": "ws-19-sec-b-q02",
+          "order": 2,
+          "prompt": "A: Tea or coffee? B: I [gap] (have) coffee, please.",
+          "acceptedAnswers": [
+            "will have"
+          ],
+          "explanation": "will: decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-b-q03",
+          "order": 3,
+          "prompt": "There isn’t any cloud in the sky. It [gap] (be) a lovely day.",
+          "acceptedAnswers": [
+            "is going to be|will be"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-b-q04",
+          "order": 4,
+          "prompt": "We [gap] (win) the match. We’re playing really well.",
+          "acceptedAnswers": [
+            "are going to win"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-b-q05",
+          "order": 5,
+          "prompt": "The festival [gap] (last) for ten days.",
+          "acceptedAnswers": [
+            "will last|lasts|is going to last"
+          ],
+          "explanation": "future fact / programme"
+        },
+        {
+          "id": "ws-19-sec-b-q06",
+          "order": 6,
+          "prompt": "I [gap] (have) a meal with a few friends. There [gap] (be) about ten of us.",
+          "acceptedAnswers": [
+            "am having|am going to have / will be|are going to be"
+          ],
+          "explanation": "present continuous: arrangement; will: prediction"
+        },
+        {
+          "id": "ws-19-sec-b-q07",
+          "order": 7,
+          "prompt": "Phil [gap] (come) round us tomorrow. We [gap] (be) at the airport at 9:30.",
+          "acceptedAnswers": [
+            "is coming|is going to come / will be|are going to be"
+          ],
+          "explanation": "present continuous: arrangement; will be: future situation"
+        },
+        {
+          "id": "ws-19-sec-b-q08",
+          "order": 8,
+          "prompt": "Why don’t you come with us. I’m sure you [gap] (enjoy) the show.",
+          "acceptedAnswers": [
+            "will enjoy"
+          ],
+          "explanation": "I’m sure + will: prediction"
+        },
+        {
+          "id": "ws-19-sec-b-q09",
+          "order": 9,
+          "prompt": "That [gap] (not / cost) more than $50.",
+          "acceptedAnswers": [
+            "won't cost|isn't going to cost"
+          ],
+          "explanation": "will: prediction / opinion"
+        },
+        {
+          "id": "ws-19-sec-b-q10",
+          "order": 10,
+          "prompt": "The museum [gap] (open) at 9:00 every day but tomorrow it [gap] (not / be) opened at 9:00.",
+          "acceptedAnswers": [
+            "opens / won't be|isn't going to be"
+          ],
+          "explanation": "present simple: routine/timetable; will: future"
+        },
+        {
+          "id": "ws-19-sec-b-q11",
+          "order": 11,
+          "prompt": "I [gap] (pay) it back to you as soon as I get my salary.",
+          "acceptedAnswers": [
+            "will pay"
+          ],
+          "explanation": "will: promise; as soon as + present"
+        },
+        {
+          "id": "ws-19-sec-b-q12",
+          "order": 12,
+          "prompt": "The manager said, “We [gap] (have) the meeting on Thursday.”",
+          "acceptedAnswers": [
+            "are having|are going to have|will have"
+          ],
+          "explanation": "present continuous: arrangement"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-22",
+      "sectionKey": "V",
+      "instruction": "Look at Tom and Sally’s diary below. Then, use the PRESENT CONTINUOUS form to say what their arrangements are for this week, as in the example: (Example: Monday – go to the cinema → They’re going to the cinema on Monday.)",
+      "type": "sentence_building",
+      "contextText": "Monday – go to the cinema\nTuesday – visit Sally’s parents\nWednesday – take the car to a mechanic\nThursday – buy a computer\nFriday – clean the house\nSaturday – have a dinner party\nSunday – go on a picnic",
+      "questions": [
+        {
+          "id": "ws-19-sec-c-q02",
+          "order": 2,
+          "prompt": "Tuesday – visit Sally’s parents",
+          "acceptedAnswers": [
+            "They’re visiting Sally’s parents on Tuesday.",
+            "On Tuesday they’re visiting Sally’s parents."
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        },
+        {
+          "id": "ws-19-sec-c-q03",
+          "order": 3,
+          "prompt": "Wednesday – take the car to a mechanic",
+          "acceptedAnswers": [
+            "They’re taking the car to a mechanic on Wednesday.",
+            "On Wednesday they’re taking the car to a mechanic."
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        },
+        {
+          "id": "ws-19-sec-c-q04",
+          "order": 4,
+          "prompt": "Thursday – buy a computer",
+          "acceptedAnswers": [
+            "They’re buying a computer on Thursday.",
+            "On Thursday they’re buying a computer."
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        },
+        {
+          "id": "ws-19-sec-c-q05",
+          "order": 5,
+          "prompt": "Friday – clean the house",
+          "acceptedAnswers": [
+            "They’re cleaning the house on Friday.",
+            "On Friday they’re cleaning the house."
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        },
+        {
+          "id": "ws-19-sec-c-q06",
+          "order": 6,
+          "prompt": "Saturday – have a dinner party",
+          "acceptedAnswers": [
+            "They’re having a dinner party on Saturday.",
+            "On Saturday they’re having a dinner party."
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        },
+        {
+          "id": "ws-19-sec-c-q07",
+          "order": 7,
+          "prompt": "Sunday – go on a picnic",
+          "acceptedAnswers": [
+            "They’re going on a picnic on Sunday.",
+            "On Sunday they’re going on a picnic."
+          ],
+          "explanation": "present continuous: fixed arrangement"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-23",
+      "sectionKey": "W",
+      "instruction": "Fill in WILL or BE GOING TO:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-19-sec-d-q01",
+          "order": 1,
+          "prompt": "A: Why do you need so much sugar? B: I [gap] make a cake.",
+          "acceptedAnswers": [
+            "am going to"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-d-q02",
+          "order": 2,
+          "prompt": "A: Oh no! I’ve left my purse at home and I haven’t got any money on me! B: Don’t worry. I [gap] lend you some.",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q03",
+          "order": 3,
+          "prompt": "A: I don’t know how to use this mixer. B: That’s OK. I [gap] show you.",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q04",
+          "order": 4,
+          "prompt": "A: Why are all these people gathered here? B: The Prime Minister [gap] open the new hospital ward.",
+          "acceptedAnswers": [
+            "is going to"
+          ],
+          "explanation": "going to: planned event"
+        },
+        {
+          "id": "ws-19-sec-d-q05",
+          "order": 5,
+          "prompt": "A: Did you remember to buy the magazine I asked for? B: Sorry, I didn’t. I [gap] buy it when I go out again.",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "will: promise / decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q06",
+          "order": 6,
+          "prompt": "A: What’s that on your curtains? B: It’s a stain. I [gap] take them to the dry cleaner’s tomorrow.",
+          "acceptedAnswers": [
+            "am going to"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-d-q07",
+          "order": 7,
+          "prompt": "A: These bags are very heavy. I can’t lift them. B: I [gap] carry them for you.",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q08",
+          "order": 8,
+          "prompt": "A: I hear you’re going to Leeds University in September. B: Yes, I [gap] study French and German.",
+          "acceptedAnswers": [
+            "am going to"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-d-q09",
+          "order": 9,
+          "prompt": "A: Why don’t you tidy your room? B: I [gap] play football in ten minutes, so I haven’t got time.",
+          "acceptedAnswers": [
+            "am going to"
+          ],
+          "explanation": "going to: plan already made"
+        },
+        {
+          "id": "ws-19-sec-d-q10",
+          "order": 10,
+          "prompt": "A: How can we get all this home? B: I [gap] ask James to come and help.",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "will: decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q11",
+          "order": 11,
+          "prompt": "She has bought some wool. She [gap] knit a sweater.",
+          "acceptedAnswers": [
+            "is going to"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-d-q12",
+          "order": 12,
+          "prompt": "A: This problem is very difficult. B: I [gap] help you to solve it.",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q13",
+          "order": 13,
+          "prompt": "A: Why are you taking down all the pictures? B: I [gap] paint the room.",
+          "acceptedAnswers": [
+            "am going to"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-d-q14",
+          "order": 14,
+          "prompt": "I [gap] climb that mountain one day.",
+          "acceptedAnswers": [
+            "am going to|will"
+          ],
+          "explanation": "going to: ambition / intention"
+        },
+        {
+          "id": "ws-19-sec-d-q15",
+          "order": 15,
+          "prompt": "Look at that young man. He looks very pale. He [gap] faint.",
+          "acceptedAnswers": [
+            "is going to"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-d-q16",
+          "order": 16,
+          "prompt": "A: Why are you buying that spade? B: I [gap] plant some trees in my garden at the back of the house.",
+          "acceptedAnswers": [
+            "am going to"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-d-q17",
+          "order": 17,
+          "prompt": "She [gap] get better. There are positive signs.",
+          "acceptedAnswers": [
+            "is going to"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-d-q18",
+          "order": 18,
+          "prompt": "I’m hungry. I [gap] have something to eat.",
+          "acceptedAnswers": [
+            "will|am going to"
+          ],
+          "explanation": "will: decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-d-q19",
+          "order": 19,
+          "prompt": "I [gap] be 38 years old next week.",
+          "acceptedAnswers": [
+            "will|am going to"
+          ],
+          "explanation": "will: future fact"
+        }
+      ]
+    },
+    {
+      "id": "card-06-sec-24",
+      "sectionKey": "X",
+      "instruction": "Put the verb into the correct form using WILL or GOING TO:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-19-sec-e-q01",
+          "order": 1,
+          "prompt": "A: Why are you turning on the television? B: I [gap] (watch) the news.",
+          "acceptedAnswers": [
+            "am going to watch"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-e-q02",
+          "order": 2,
+          "prompt": "A: Oh, I’ve just realized. I haven’t got any money. B: Don’t worry. That’s no problem. I [gap] (lend) you some.",
+          "acceptedAnswers": [
+            "will lend"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-e-q03",
+          "order": 3,
+          "prompt": "Those clouds are very black, aren’t they? I think it [gap] (rain).",
+          "acceptedAnswers": [
+            "is going to rain"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-e-q04",
+          "order": 4,
+          "prompt": "A: I’ve got a terrible headache. B: Have you? Wait here and I [gap] (get) an aspirin for you.",
+          "acceptedAnswers": [
+            "will get"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-e-q05",
+          "order": 5,
+          "prompt": "A: Why are you filling that bucket with water? B: I [gap] (wash) the car.",
+          "acceptedAnswers": [
+            "am going to wash"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-e-q06",
+          "order": 6,
+          "prompt": "A: I’ve decided to re-paint this room. B: Oh, have you? What colour [gap] (you / paint) it?",
+          "acceptedAnswers": [
+            "are you going to paint"
+          ],
+          "explanation": "going to: asking about a decided plan"
+        },
+        {
+          "id": "ws-19-sec-e-q07",
+          "order": 7,
+          "prompt": "A: Look! There’s smoke coming out of that house. It’s on fire! B: Good heavens! I [gap] (call) the fire brigade immediately.",
+          "acceptedAnswers": [
+            "will call"
+          ],
+          "explanation": "will: decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-e-q08",
+          "order": 8,
+          "prompt": "A: The ceiling in this room doesn’t look very safe, does it? B: No, it looks as if it [gap] (fall) down.",
+          "acceptedAnswers": [
+            "is going to fall"
+          ],
+          "explanation": "going to: prediction from present evidence"
+        },
+        {
+          "id": "ws-19-sec-e-q09",
+          "order": 9,
+          "prompt": "A: Where are you going? Are you going shopping? B: Yes, I [gap] (buy) something for dinner.",
+          "acceptedAnswers": [
+            "am going to buy"
+          ],
+          "explanation": "going to: intention already decided"
+        },
+        {
+          "id": "ws-19-sec-e-q10",
+          "order": 10,
+          "prompt": "A: I can’t work out how to use this camera. B: It’s quite easy. I [gap] (show) you.",
+          "acceptedAnswers": [
+            "will show"
+          ],
+          "explanation": "will: offer at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-e-q11",
+          "order": 11,
+          "prompt": "A: What would you like to drink – tea or coffee? B: I [gap] (have) tea, please.",
+          "acceptedAnswers": [
+            "will have"
+          ],
+          "explanation": "will: decision at the moment of speaking"
+        },
+        {
+          "id": "ws-19-sec-e-q12",
+          "order": 12,
+          "prompt": "A: Has George decided on what to do when he leaves school? B: Oh yes. Everything is planned. He [gap] (have) a holiday for a few weeks and then he [gap] (start) a computer programming course.",
+          "acceptedAnswers": [
+            "is going to have / is going to start"
+          ],
+          "explanation": "going to: plans already made"
+        }
+      ]
+    }
+  ]
+}

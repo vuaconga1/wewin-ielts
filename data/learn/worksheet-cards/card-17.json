@@ -1,0 +1,1635 @@
+{
+  "id": "card-17",
+  "order": 17,
+  "part": 1,
+  "slug": "card-17-lien-tu-va-menh-de-trang-ngu",
+  "title": "THẺ BÀI TẬP 17",
+  "subject": "Conjunctions & Adverbial Clauses",
+  "subjectVi": "Liên từ & Mệnh đề trạng ngữ",
+  "level": "B1",
+  "pageRange": "WS-45, WS-47, WS-48, WS-49",
+  "sections": [
+    {
+      "id": "card-17-sec-1",
+      "sectionKey": "A",
+      "instruction": "Make sentences with BOTH … AND / EITHER … OR / NEITHER … NOR. (Examples: Tom was late. So was Ann. → Both Tom and Ann were late. He didn't write. He didn't telephone. → He neither wrote nor telephoned.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-45-sec-a-q01",
+          "order": 1,
+          "prompt": "The hotel wasn't clean. And it wasn't comfortable. → Start with: The hotel was",
+          "acceptedAnswers": [
+            "The hotel was neither clean nor comfortable."
+          ],
+          "explanation": "neither + adjective + nor + adjective"
+        },
+        {
+          "id": "ws-45-sec-a-q02",
+          "order": 2,
+          "prompt": "It was a very boring movie. It was very long too. → Start with: The movie was",
+          "acceptedAnswers": [
+            "The movie was both very boring and very long.",
+            "The movie was both boring and long.",
+            "The movie was both very boring and long."
+          ],
+          "explanation": "both + adjective + and + adjective"
+        },
+        {
+          "id": "ws-45-sec-a-q03",
+          "order": 3,
+          "prompt": "Is that man's name Richard? Or is it Robert? It's one of the two. → Start with: That man's name",
+          "acceptedAnswers": [
+            "That man's name is either Richard or Robert."
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-a-q04",
+          "order": 4,
+          "prompt": "I don't have the time to take a vacation. And I don't have the money. → Start with: I have",
+          "acceptedAnswers": [
+            "I have neither the time nor the money to take a vacation.",
+            "I have neither time nor money to take a vacation.",
+            "I have neither the time nor the money for a vacation."
+          ],
+          "explanation": "neither + noun + nor + noun"
+        },
+        {
+          "id": "ws-45-sec-a-q05",
+          "order": 5,
+          "prompt": "We can leave today or we can leave tomorrow - whichever you prefer. → Start with: We",
+          "acceptedAnswers": [
+            "We can leave either today or tomorrow.",
+            "We can either leave today or tomorrow.",
+            "We can either leave today or leave tomorrow."
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-a-q06",
+          "order": 6,
+          "prompt": "He gave up his job because he needed a change. Also because the pay was low. → Start with: He gave up his job both",
+          "acceptedAnswers": [
+            "He gave up his job both because he needed a change and because the pay was low."
+          ],
+          "explanation": "both because … and because …"
+        },
+        {
+          "id": "ws-45-sec-a-q07",
+          "order": 7,
+          "prompt": "Laura doesn't smoke. And she doesn't eat meat.",
+          "acceptedAnswers": [
+            "Laura neither smokes nor eats meat."
+          ],
+          "explanation": "neither + verb + nor + verb"
+        },
+        {
+          "id": "ws-45-sec-a-q08",
+          "order": 8,
+          "prompt": "The front of the house needs painting. The back needs painting too.",
+          "acceptedAnswers": [
+            "Both the front and the back of the house need painting.",
+            "Both the front of the house and the back need painting.",
+            "Both the front and back of the house need painting."
+          ],
+          "explanation": "both A and B + plural verb"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-2",
+      "sectionKey": "B",
+      "instruction": "Answer the questions. Use paired conjunctions: BOTH … AND. (Example: You have met his father. Have you met his mother? → Yes, I have met both his father and his mother.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-b-a-q02",
+          "order": 2,
+          "prompt": "The driver was injured in the accident. Was the passenger injured in the accident?",
+          "acceptedAnswers": [
+            "Yes, both the driver and the passenger were injured in the accident.",
+            "Yes, both the driver and the passenger were injured."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-b-a-q03",
+          "order": 3,
+          "prompt": "Wheat is grown in Kansas. Is corn grown in Kansas?",
+          "acceptedAnswers": [
+            "Yes, both wheat and corn are grown in Kansas."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-b-a-q04",
+          "order": 4,
+          "prompt": "He buys used cars. Does he sell used cars?",
+          "acceptedAnswers": [
+            "Yes, he both buys and sells used cars."
+          ],
+          "explanation": "both + verb + and + verb"
+        },
+        {
+          "id": "ws-45-sec-b-a-q05",
+          "order": 5,
+          "prompt": "You had lunch with your friends. Did you have dinner with them?",
+          "acceptedAnswers": [
+            "Yes, I had both lunch and dinner with my friends.",
+            "Yes, I had both lunch and dinner with them."
+          ],
+          "explanation": "both + noun + and + noun"
+        },
+        {
+          "id": "ws-45-sec-b-a-q06",
+          "order": 6,
+          "prompt": "The city suffers from air pollution. Does it suffer from water pollution?",
+          "acceptedAnswers": [
+            "Yes, the city suffers from both air pollution and water pollution.",
+            "Yes, it suffers from both air pollution and water pollution.",
+            "Yes, the city suffers from both air and water pollution.",
+            "Yes, it suffers from both air and water pollution."
+          ],
+          "explanation": "both + noun + and + noun"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-3",
+      "sectionKey": "C",
+      "instruction": "Answer the questions. Use paired conjunctions: NOT ONLY … BUT ALSO. (Example: I know you are studying math. Are you studying chemistry too? → Yes, I'm studying not only math but also chemistry.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-b-b-q02",
+          "order": 2,
+          "prompt": "I know his cousin is living with him. Is his mother-in-law living with him too?",
+          "acceptedAnswers": [
+            "Yes, not only his cousin but also his mother-in-law is living with him."
+          ],
+          "explanation": "not only A but also B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-b-q03",
+          "order": 3,
+          "prompt": "I know your country has good universities. Does the United States have good universities too?",
+          "acceptedAnswers": [
+            "Yes, not only my country but also the United States has good universities."
+          ],
+          "explanation": "not only A but also B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-b-q04",
+          "order": 4,
+          "prompt": "I know you lost your wallet. Did you lose your keys too?",
+          "acceptedAnswers": [
+            "Yes, I lost not only my wallet but also my keys."
+          ],
+          "explanation": "not only + noun + but also + noun"
+        },
+        {
+          "id": "ws-45-sec-b-b-q05",
+          "order": 5,
+          "prompt": "I know she goes to school. Does she have a full-time job too?",
+          "acceptedAnswers": [
+            "Yes, she not only goes to school but also has a full-time job."
+          ],
+          "explanation": "not only + verb + but also + verb"
+        },
+        {
+          "id": "ws-45-sec-b-b-q06",
+          "order": 6,
+          "prompt": "I know he bought a coat. Did he buy a new pair of shoes too?",
+          "acceptedAnswers": [
+            "Yes, he bought not only a coat but also a new pair of shoes."
+          ],
+          "explanation": "not only + noun + but also + noun"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-4",
+      "sectionKey": "D",
+      "instruction": "Answer the questions. Use paired conjunctions: EITHER … OR. (Example: John has your book, or Mary has your book. Is that right? → Yes, either John or Mary has my book.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-b-c-q02",
+          "order": 2,
+          "prompt": "You're going to give your friend a book for her birthday, or you're going to give her a pen. Is that right?",
+          "acceptedAnswers": [
+            "Yes, I'm going to give her either a book or a pen.",
+            "Yes, I'm going to give my friend either a book or a pen.",
+            "Yes, I'm going to give her either a book or a pen for her birthday.",
+            "Yes, I'm going to give my friend either a book or a pen for her birthday."
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-b-c-q03",
+          "order": 3,
+          "prompt": "Your sister will meet you at the airport, or your brother will meet you there. Right?",
+          "acceptedAnswers": [
+            "Yes, either my sister or my brother will meet me at the airport.",
+            "Yes, either my sister or my brother will meet me there."
+          ],
+          "explanation": "either A or B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-c-q04",
+          "order": 4,
+          "prompt": "They can go swimming, or they can play tennis. Is that right?",
+          "acceptedAnswers": [
+            "Yes, they can either go swimming or play tennis."
+          ],
+          "explanation": "either + verb + or + verb"
+        },
+        {
+          "id": "ws-45-sec-b-c-q05",
+          "order": 5,
+          "prompt": "You're going to vote for Mr. Smith, or you're going to vote for Mr. Jones. Right?",
+          "acceptedAnswers": [
+            "Yes, I'm going to vote for either Mr. Smith or Mr. Jones.",
+            "Yes, I'm going to vote either for Mr. Smith or for Mr. Jones."
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-b-c-q06",
+          "order": 6,
+          "prompt": "You'll go to New Orleans for your vacation, or you'll go to Miami. Right?",
+          "acceptedAnswers": [
+            "Yes, I'll go to either New Orleans or Miami for my vacation.",
+            "Yes, I'll go either to New Orleans or to Miami for my vacation.",
+            "Yes, I'll go to either New Orleans or Miami."
+          ],
+          "explanation": "either A or B: parallel structure"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-5",
+      "sectionKey": "E",
+      "instruction": "Answer the questions. Use paired conjunctions: NEITHER … NOR. (Example: He doesn't like coffee. Does he like tea? → No, he likes neither coffee nor tea.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-b-d-q02",
+          "order": 2,
+          "prompt": "Her husband doesn't speak English. Do her children speak English?",
+          "acceptedAnswers": [
+            "No, neither her husband nor her children speak English."
+          ],
+          "explanation": "neither A nor B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-d-q03",
+          "order": 3,
+          "prompt": "The students aren't wide awake today. Is the teacher wide awake today?",
+          "acceptedAnswers": [
+            "No, neither the students nor the teacher is wide awake today.",
+            "No, neither the teacher nor the students are wide awake today."
+          ],
+          "explanation": "neither A nor B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-d-q04",
+          "order": 4,
+          "prompt": "They don't have a refrigerator for their new apartment. Do they have a stove?",
+          "acceptedAnswers": [
+            "No, they have neither a refrigerator nor a stove for their new apartment.",
+            "No, they have neither a refrigerator nor a stove."
+          ],
+          "explanation": "neither + noun + nor + noun"
+        },
+        {
+          "id": "ws-45-sec-b-d-q05",
+          "order": 5,
+          "prompt": "She doesn't enjoy hunting. Does she enjoy fishing?",
+          "acceptedAnswers": [
+            "No, she enjoys neither hunting nor fishing."
+          ],
+          "explanation": "neither + gerund + nor + gerund"
+        },
+        {
+          "id": "ws-45-sec-b-d-q06",
+          "order": 6,
+          "prompt": "The result wasn't good. Was the result bad?",
+          "acceptedAnswers": [
+            "No, the result was neither good nor bad.",
+            "No, it was neither good nor bad."
+          ],
+          "explanation": "neither + adjective + nor + adjective"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-6",
+      "sectionKey": "F",
+      "instruction": "Combine the following into sentences that contain parallel structure. Use appropriate paired conjunctions: BOTH … AND / NOT ONLY … BUT ALSO / EITHER … OR / NEITHER … NOR. (Example: He does not have a pen. He does not have paper. → He has neither a pen nor paper.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-b-e-q02",
+          "order": 2,
+          "prompt": "Ron enjoys horseback riding. Bob enjoys horseback riding.",
+          "acceptedAnswers": [
+            "Both Ron and Bob enjoy horseback riding.",
+            "Not only Ron but also Bob enjoys horseback riding."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-b-e-q03",
+          "order": 3,
+          "prompt": "You can have tea, or you can have coffee.",
+          "acceptedAnswers": [
+            "You can have either tea or coffee.",
+            "You can either have tea or coffee."
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-b-e-q04",
+          "order": 4,
+          "prompt": "Arthur is not in class today. Ricardo is not in class today.",
+          "acceptedAnswers": [
+            "Neither Arthur nor Ricardo is in class today."
+          ],
+          "explanation": "neither A nor B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-e-q05",
+          "order": 5,
+          "prompt": "Arthur is absent. Ricardo is absent.",
+          "acceptedAnswers": [
+            "Both Arthur and Ricardo are absent.",
+            "Not only Arthur but also Ricardo is absent."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-b-e-q06",
+          "order": 6,
+          "prompt": "We can fix dinner for them here, or we can take them to a restaurant.",
+          "acceptedAnswers": [
+            "We can either fix dinner for them here or take them to a restaurant."
+          ],
+          "explanation": "either + verb phrase + or + verb phrase"
+        },
+        {
+          "id": "ws-45-sec-b-e-q07",
+          "order": 7,
+          "prompt": "She wants to buy a Chevrolet, or she wants to buy a Toyota.",
+          "acceptedAnswers": [
+            "She wants to buy either a Chevrolet or a Toyota."
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-b-e-q08",
+          "order": 8,
+          "prompt": "The leopard faces extinction. The tiger faces extinction.",
+          "acceptedAnswers": [
+            "Both the leopard and the tiger face extinction.",
+            "Not only the leopard but also the tiger faces extinction."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-b-e-q09",
+          "order": 9,
+          "prompt": "The library does not have the book I need. The bookstore does not have the book I need.",
+          "acceptedAnswers": [
+            "Neither the library nor the bookstore has the book I need."
+          ],
+          "explanation": "neither A nor B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-b-e-q10",
+          "order": 10,
+          "prompt": "We could fly, or we could take the train.",
+          "acceptedAnswers": [
+            "We could either fly or take the train."
+          ],
+          "explanation": "either + verb + or + verb"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-7",
+      "sectionKey": "G",
+      "instruction": "Combine the following using BOTH … AND / NOT ONLY … BUT ALSO / EITHER … OR / NEITHER … NOR: (Example: Paul must go to class. Jean must go to class. → Both Paul and Jean must go to class.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-45-sec-c-q02",
+          "order": 2,
+          "prompt": "Paul speaks English. Jean speaks English.",
+          "acceptedAnswers": [
+            "Both Paul and Jean speak English.",
+            "Not only Paul but also Jean speaks English."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-c-q03",
+          "order": 3,
+          "prompt": "Paul hasn't left yet. Jean hasn't left yet.",
+          "acceptedAnswers": [
+            "Neither Paul nor Jean has left yet."
+          ],
+          "explanation": "neither A nor B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-c-q04",
+          "order": 4,
+          "prompt": "Shall I go by air, or shall I go by sea?",
+          "acceptedAnswers": [
+            "Shall I go either by air or by sea?",
+            "Shall I go by either air or sea?",
+            "Shall I either go by air or by sea?",
+            "Shall I either go by air or go by sea?"
+          ],
+          "explanation": "either A or B: parallel structure"
+        },
+        {
+          "id": "ws-45-sec-c-q05",
+          "order": 5,
+          "prompt": "Paul didn't stay long. Jean didn't stay long.",
+          "acceptedAnswers": [
+            "Neither Paul nor Jean stayed long."
+          ],
+          "explanation": "neither A nor B: verb agrees with B"
+        },
+        {
+          "id": "ws-45-sec-c-q06",
+          "order": 6,
+          "prompt": "Paul has a two-car garage. Jean has a two-car garage.",
+          "acceptedAnswers": [
+            "Both Paul and Jean have a two-car garage.",
+            "Both Paul and Jean have two-car garages.",
+            "Not only Paul but also Jean has a two-car garage."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-c-q07",
+          "order": 7,
+          "prompt": "Shall I work tonight, or shall I go out?",
+          "acceptedAnswers": [
+            "Shall I either work tonight or go out?"
+          ],
+          "explanation": "either + verb + or + verb"
+        },
+        {
+          "id": "ws-45-sec-c-q08",
+          "order": 8,
+          "prompt": "Paul's house is very central. Jean's house is very central.",
+          "acceptedAnswers": [
+            "Both Paul's and Jean's houses are very central.",
+            "Both Paul's house and Jean's house are very central.",
+            "Both Paul's and Jean's house are very central."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-c-q09",
+          "order": 9,
+          "prompt": "Paul recognized the man. Jean recognized the man.",
+          "acceptedAnswers": [
+            "Both Paul and Jean recognized the man.",
+            "Not only Paul but also Jean recognized the man."
+          ],
+          "explanation": "both A and B + plural verb"
+        },
+        {
+          "id": "ws-45-sec-c-q10",
+          "order": 10,
+          "prompt": "Shall I have a swim, or shall I go by bus?",
+          "acceptedAnswers": [
+            "Shall I either have a swim or go by bus?"
+          ],
+          "explanation": "either + verb + or + verb"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-8",
+      "sectionKey": "H",
+      "instruction": "Combine the sentences using the words in brackets: (Example: Jane gave up smoking because she wanted to save money. (in order to) → Jane gave up smoking in order to save money.)",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-47-sec-a-q02",
+          "order": 2,
+          "prompt": "I came here so that I could see you. (in order to)",
+          "acceptedAnswers": [
+            "I came here in order to see you."
+          ],
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-a-q03",
+          "order": 3,
+          "prompt": "We put up a fence. We want to prevent the rabbit from escaping. (in order to / so that)",
+          "acceptedAnswers": [
+            "We put up a fence in order to prevent the rabbit from escaping.",
+            "We put up a fence to prevent the rabbit from escaping.",
+            "We put up a fence so that the rabbit can't escape.",
+            "We put up a fence so that the rabbit won't escape."
+          ],
+          "explanation": "purpose: in order to / so that"
+        },
+        {
+          "id": "ws-47-sec-a-q04",
+          "order": 4,
+          "prompt": "She went shopping so she could buy herself a television. (to)",
+          "acceptedAnswers": [
+            "She went shopping to buy herself a television."
+          ],
+          "explanation": "to + base verb (purpose)"
+        },
+        {
+          "id": "ws-47-sec-a-q05",
+          "order": 5,
+          "prompt": "I put the food in the fridge because I wanted it to get cold. (in order to)",
+          "acceptedAnswers": [
+            "I put the food in the fridge in order for it to get cold.",
+            "I put the food in the fridge in order to make it cold.",
+            "I put the food in the fridge in order to get it cold.",
+            "I put the food in the fridge in order to keep it cold."
+          ],
+          "explanation": "in order (for + object) to + base verb"
+        },
+        {
+          "id": "ws-47-sec-a-q06",
+          "order": 6,
+          "prompt": "Jane saved money. She wanted to buy a present for Harry. (in order to)",
+          "acceptedAnswers": [
+            "Jane saved money in order to buy a present for Harry.",
+            "Jane saved money in order to buy Harry a present."
+          ],
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-a-q07",
+          "order": 7,
+          "prompt": "Harry left early because he didn't want to miss the bus. (in order not to)",
+          "acceptedAnswers": [
+            "Harry left early in order not to miss the bus."
+          ],
+          "explanation": "in order not to + base verb"
+        },
+        {
+          "id": "ws-47-sec-a-q08",
+          "order": 8,
+          "prompt": "They will let the students use calculators in the exam. They don't want them to spend a lot of time. (so that)",
+          "acceptedAnswers": [
+            "They will let the students use calculators in the exam so that they won't spend a lot of time.",
+            "They will let the students use calculators in the exam so that they don't spend a lot of time."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-a-q09",
+          "order": 9,
+          "prompt": "The teacher tested the students. She wanted to see if they remembered the things they had learnt. (in order to)",
+          "acceptedAnswers": [
+            "The teacher tested the students in order to see if they remembered the things they had learnt.",
+            "The teacher tested the students in order to see if they remembered the things they had learned."
+          ],
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-a-q10",
+          "order": 10,
+          "prompt": "She didn't leave her son home alone. She thought he might have an accident. (in case)",
+          "acceptedAnswers": [
+            "She didn't leave her son home alone in case he had an accident.",
+            "She didn't leave her son home alone in case he might have an accident.",
+            "She didn't leave her son home alone in case he should have an accident."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-a-q11",
+          "order": 11,
+          "prompt": "He tried to hide the broken vase. He didn't want to be punished. (so that)",
+          "acceptedAnswers": [
+            "He tried to hide the broken vase so that he wouldn't be punished.",
+            "He tried to hide the broken vase so that he didn't get punished."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-a-q12",
+          "order": 12,
+          "prompt": "She wants to sign a contract. She doesn't want them to change their minds. (in case)",
+          "acceptedAnswers": [
+            "She wants to sign a contract in case they change their minds."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-a-q13",
+          "order": 13,
+          "prompt": "I turned up the radio. I wanted to listen to the news. (so that)",
+          "acceptedAnswers": [
+            "I turned up the radio so that I could listen to the news.",
+            "I turned up the radio so that I could hear the news."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-a-q14",
+          "order": 14,
+          "prompt": "Sue lowered the volume on the TV set. She didn't want to disturb her roommate. (so that)",
+          "acceptedAnswers": [
+            "Sue lowered the volume on the TV set so that she wouldn't disturb her roommate.",
+            "Sue lowered the volume on the TV set so that she didn't disturb her roommate."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-a-q15",
+          "order": 15,
+          "prompt": "I'll be in my office until late this evening. You may need to get in touch with me. (in case)",
+          "acceptedAnswers": [
+            "I'll be in my office until late this evening in case you need to get in touch with me."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-a-q16",
+          "order": 16,
+          "prompt": "I'll give you my phone number. You may need to speak to me. (in case)",
+          "acceptedAnswers": [
+            "I'll give you my phone number in case you need to speak to me."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-a-q17",
+          "order": 17,
+          "prompt": "Tom marked his friend's birthday on the calendar. He thought he might forget it. (in case)",
+          "acceptedAnswers": [
+            "Tom marked his friend's birthday on the calendar in case he forgot it.",
+            "Tom marked his friend's birthday on the calendar in case he might forget it.",
+            "Tom marked his friend's birthday on the calendar in case he forgot."
+          ],
+          "explanation": "in case + present (or past) simple"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-9",
+      "sectionKey": "I",
+      "instruction": "Complete the following sentences (your own ideas):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-47-sec-b-q01",
+          "order": 1,
+          "prompt": "He decided to take a taxi so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "He decided to take a taxi so that he wouldn't be late for the meeting.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q02",
+          "order": 2,
+          "prompt": "Mr. Brown booked his room at the hotel in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Mr. Brown booked his room at the hotel in case it was full when he arrived.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-b-q03",
+          "order": 3,
+          "prompt": "Betsy studies her lessons regularly so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Betsy studies her lessons regularly so that she can get good grades.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q04",
+          "order": 4,
+          "prompt": "Mark phoned his friend in order to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Mark phoned his friend in order to invite him to his party.",
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-b-q05",
+          "order": 5,
+          "prompt": "You'd better call Susan and remind her of the date of the party in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "You'd better call Susan and remind her of the date of the party in case she has forgotten it.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-b-q06",
+          "order": 6,
+          "prompt": "I need to buy some laundry detergent so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I need to buy some laundry detergent so that I can wash my clothes.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q07",
+          "order": 7,
+          "prompt": "I need a pen so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I need a pen so that I can write a letter.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q08",
+          "order": 8,
+          "prompt": "I'm taking a bus instead of flying so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I'm taking a bus instead of flying so that I can save some money.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q09",
+          "order": 9,
+          "prompt": "Ralph borrowed some money from his friend so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Ralph borrowed some money from his friend so that he could pay his rent.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q10",
+          "order": 10,
+          "prompt": "Martina is trying to improve her English so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Martina is trying to improve her English so that she can study at a university abroad.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q11",
+          "order": 11,
+          "prompt": "[gap] so that his children will have a better life.",
+          "acceptedAnswers": [],
+          "modelAnswer": "He works very hard so that his children will have a better life.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q12",
+          "order": 12,
+          "prompt": "[gap] so that you can be ready to leave on time.",
+          "acceptedAnswers": [],
+          "modelAnswer": "Pack your suitcase tonight so that you can be ready to leave on time.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q13",
+          "order": 13,
+          "prompt": "Mary hurried to get the child out of the road so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Mary hurried to get the child out of the road so that he wouldn't be hit by a car.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q14",
+          "order": 14,
+          "prompt": "I took off my gloves in order to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I took off my gloves in order to type a message on my phone.",
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-b-q15",
+          "order": 15,
+          "prompt": "[gap] in order to erase a mistake in his composition.",
+          "acceptedAnswers": [],
+          "modelAnswer": "He borrowed an eraser in order to erase a mistake in his composition.",
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-b-q16",
+          "order": 16,
+          "prompt": "[gap] so that I could tell him the news in person.",
+          "acceptedAnswers": [],
+          "modelAnswer": "I went to his house so that I could tell him the news in person.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-b-q17",
+          "order": 17,
+          "prompt": "I think I'd better clean up my flat in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I think I'd better clean up my flat in case my parents visit me.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-b-q18",
+          "order": 18,
+          "prompt": "She locked the door before going to bed in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "She locked the door before going to bed in case a burglar tried to get in.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-b-q19",
+          "order": 19,
+          "prompt": "The teacher reminded the students of the common test dates in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "The teacher reminded the students of the common test dates in case they had forgotten them.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-b-q20",
+          "order": 20,
+          "prompt": "He always carries his umbrella in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "He always carries his umbrella in case it rains.",
+          "explanation": "in case + present (or past) simple"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-10",
+      "sectionKey": "J",
+      "instruction": "Combine each pair of sentences using “IN CASE”:",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-47-sec-c-q01",
+          "order": 1,
+          "prompt": "You'd better take a sweater. It might get cold.",
+          "acceptedAnswers": [
+            "You'd better take a sweater in case it gets cold."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-c-q02",
+          "order": 2,
+          "prompt": "We'd better book a table. The restaurant might be full.",
+          "acceptedAnswers": [
+            "We'd better book a table in case the restaurant is full."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-c-q03",
+          "order": 3,
+          "prompt": "You ought to insure your jewellery. It might get stolen.",
+          "acceptedAnswers": [
+            "You ought to insure your jewellery in case it gets stolen.",
+            "You ought to insure your jewelry in case it gets stolen.",
+            "You ought to insure your jewellery in case it is stolen."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-c-q04",
+          "order": 4,
+          "prompt": "I'm watching this saucepan. The water might boil over.",
+          "acceptedAnswers": [
+            "I'm watching this saucepan in case the water boils over."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-c-q05",
+          "order": 5,
+          "prompt": "I'll leave you my phone number. You might want to contact me.",
+          "acceptedAnswers": [
+            "I'll leave you my phone number in case you want to contact me."
+          ],
+          "explanation": "in case + present (or past) simple"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-11",
+      "sectionKey": "K",
+      "instruction": "Join the sentences using the words in brackets:",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-47-sec-d-q01",
+          "order": 1,
+          "prompt": "He tried to find a car park. He wanted to park his car. (in order to)",
+          "acceptedAnswers": [
+            "He tried to find a car park in order to park his car."
+          ],
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-d-q02",
+          "order": 2,
+          "prompt": "Mrs. Brown hid the ball. She didn't want Bill to play football. (so that)",
+          "acceptedAnswers": [
+            "Mrs. Brown hid the ball so that Bill couldn't play football.",
+            "Mrs. Brown hid the ball so that Bill wouldn't play football."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-d-q03",
+          "order": 3,
+          "prompt": "They got up early. They didn't want to miss the bus. (in case)",
+          "acceptedAnswers": [
+            "They got up early in case they missed the bus.",
+            "They got up early in case they should miss the bus."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-d-q04",
+          "order": 4,
+          "prompt": "Mary is wearing glasses. She wants to see better. (so that)",
+          "acceptedAnswers": [
+            "Mary is wearing glasses so that she can see better."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-d-q05",
+          "order": 5,
+          "prompt": "My father often takes his car to the mechanic. He doesn't want it to break down. (in case)",
+          "acceptedAnswers": [
+            "My father often takes his car to the mechanic in case it breaks down."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-d-q06",
+          "order": 6,
+          "prompt": "Molly is eating less bread. She doesn't want to put on weight. (in case)",
+          "acceptedAnswers": [
+            "Molly is eating less bread in case she puts on weight."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-d-q07",
+          "order": 7,
+          "prompt": "Sally usually wears a thick coat. She doesn't want to catch a cold. (in order not to)",
+          "acceptedAnswers": [
+            "Sally usually wears a thick coat in order not to catch a cold."
+          ],
+          "explanation": "in order not to + base verb"
+        },
+        {
+          "id": "ws-47-sec-d-q08",
+          "order": 8,
+          "prompt": "Mr. Short used a long ladder. He wanted to reach the high ceiling. (so that)",
+          "acceptedAnswers": [
+            "Mr. Short used a long ladder so that he could reach the high ceiling."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-d-q09",
+          "order": 9,
+          "prompt": "My father gave me extra money. He didn't want me to borrow any from my friends. (in case)",
+          "acceptedAnswers": [
+            "My father gave me extra money in case I needed to borrow some from my friends.",
+            "My father gave me extra money in case I borrowed any from my friends.",
+            "My father gave me extra money in case I had to borrow some from my friends."
+          ],
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-d-q10",
+          "order": 10,
+          "prompt": "Andrew's friends visited him. They wanted to congratulate him on his graduation. (in order to)",
+          "acceptedAnswers": [
+            "Andrew's friends visited him in order to congratulate him on his graduation."
+          ],
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-d-q11",
+          "order": 11,
+          "prompt": "I'm learning English. I want to get a better job. (to)",
+          "acceptedAnswers": [
+            "I'm learning English to get a better job."
+          ],
+          "explanation": "to + base verb (purpose)"
+        },
+        {
+          "id": "ws-47-sec-d-q12",
+          "order": 12,
+          "prompt": "The driver stopped. Then the children could cross the road. (so that)",
+          "acceptedAnswers": [
+            "The driver stopped so that the children could cross the road."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-d-q13",
+          "order": 13,
+          "prompt": "Tom put the cream in the fridge. That would keep it cool. (to)",
+          "acceptedAnswers": [
+            "Tom put the cream in the fridge to keep it cool."
+          ],
+          "explanation": "to + base verb (purpose)"
+        },
+        {
+          "id": "ws-47-sec-d-q14",
+          "order": 14,
+          "prompt": "Mark is going to repair the roof. Then the rain won't come in. (so that)",
+          "acceptedAnswers": [
+            "Mark is going to repair the roof so that the rain won't come in.",
+            "Mark is going to repair the roof so that the rain doesn't come in."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-d-q15",
+          "order": 15,
+          "prompt": "We often switch off the heating. It saves money. (in order to)",
+          "acceptedAnswers": [
+            "We often switch off the heating in order to save money."
+          ],
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-d-q16",
+          "order": 16,
+          "prompt": "Pamela wore boots. Her feet wouldn't get wet. (so that)",
+          "acceptedAnswers": [
+            "Pamela wore boots so that her feet wouldn't get wet."
+          ],
+          "explanation": "so that + subject + can/could/will/would"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-12",
+      "sectionKey": "L",
+      "instruction": "Complete the sentences (your own ideas):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-47-sec-e-q01",
+          "order": 1,
+          "prompt": "She'll start on a diet so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "She'll start on a diet so that she can lose weight.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-e-q02",
+          "order": 2,
+          "prompt": "They went to Migros so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "They went to Migros so that they could buy some food.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-e-q03",
+          "order": 3,
+          "prompt": "She bought a new dress so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "She bought a new dress so that she could wear it to the party.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-e-q04",
+          "order": 4,
+          "prompt": "I'll give you a map so that [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I'll give you a map so that you won't get lost.",
+          "explanation": "so that + subject + can/could/will/would"
+        },
+        {
+          "id": "ws-47-sec-e-q05",
+          "order": 5,
+          "prompt": "Take your umbrella in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Take your umbrella in case it rains.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-e-q06",
+          "order": 6,
+          "prompt": "I left the key for you in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I left the key for you in case you came home before me.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-e-q07",
+          "order": 7,
+          "prompt": "Take your torch with you in case [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Take your torch with you in case it gets dark.",
+          "explanation": "in case + present (or past) simple"
+        },
+        {
+          "id": "ws-47-sec-e-q08",
+          "order": 8,
+          "prompt": "Ian went to the bank in order to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Ian went to the bank in order to withdraw some money.",
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-e-q09",
+          "order": 9,
+          "prompt": "Jeremy is going to wear a suit in order to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Jeremy is going to wear a suit in order to make a good impression at the interview.",
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-e-q10",
+          "order": 10,
+          "prompt": "David put on the kettle in order to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "David put on the kettle in order to make some tea.",
+          "explanation": "in order to + base verb"
+        },
+        {
+          "id": "ws-47-sec-e-q11",
+          "order": 11,
+          "prompt": "Alec hurried in order not to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Alec hurried in order not to miss the train.",
+          "explanation": "in order not to + base verb"
+        },
+        {
+          "id": "ws-47-sec-e-q12",
+          "order": 12,
+          "prompt": "I closed the door of my room in order not to [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I closed the door of my room in order not to be disturbed.",
+          "explanation": "in order not to + base verb"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-13",
+      "sectionKey": "M",
+      "instruction": "Complete the sentences in A using BECAUSE or BECAUSE OF and an idea from B. Use each idea in B only once. (Example: He phoned the police because he'd lost his wallet.)",
+      "type": "sentence_combine",
+      "contextText": "B:\na) his bad leg\nb) I thought it might rain\nc) I wasn't hungry\nd) he'd lost his wallet (used in the example)\ne) the fog\nf) he wanted to learn French",
+      "questions": [
+        {
+          "id": "ws-48-sec-a-q02",
+          "order": 2,
+          "prompt": "I didn't have any lunch",
+          "acceptedAnswers": [
+            "I didn't have any lunch because I wasn't hungry."
+          ],
+          "explanation": "because + clause"
+        },
+        {
+          "id": "ws-48-sec-a-q03",
+          "order": 3,
+          "prompt": "Our plane was delayed",
+          "acceptedAnswers": [
+            "Our plane was delayed because of the fog."
+          ],
+          "explanation": "because of + noun"
+        },
+        {
+          "id": "ws-48-sec-a-q04",
+          "order": 4,
+          "prompt": "He went to Paris",
+          "acceptedAnswers": [
+            "He went to Paris because he wanted to learn French."
+          ],
+          "explanation": "because + clause"
+        },
+        {
+          "id": "ws-48-sec-a-q05",
+          "order": 5,
+          "prompt": "I took an umbrella",
+          "acceptedAnswers": [
+            "I took an umbrella because I thought it might rain."
+          ],
+          "explanation": "because + clause"
+        },
+        {
+          "id": "ws-48-sec-a-q06",
+          "order": 6,
+          "prompt": "He couldn't run very fast",
+          "acceptedAnswers": [
+            "He couldn't run very fast because of his bad leg."
+          ],
+          "explanation": "because of + noun"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-14",
+      "sectionKey": "N",
+      "instruction": "Choose the correct answers:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-48-sec-b-q01",
+          "order": 1,
+          "prompt": "[gap] it was such a beautiful day, we decided to have a picnic.",
+          "options": [
+            "a) As",
+            "b) As a result"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "as + clause = because (reason)"
+        },
+        {
+          "id": "ws-48-sec-b-q02",
+          "order": 2,
+          "prompt": "It was his birthday [gap] we decided to buy him a present.",
+          "options": [
+            "a) because",
+            "b) so"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "so introduces the result"
+        },
+        {
+          "id": "ws-48-sec-b-q03",
+          "order": 3,
+          "prompt": "[gap] all the seats on the train were taken, we had to stand.",
+          "options": [
+            "a) As a result",
+            "b) Since"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "since + clause = because (reason)"
+        },
+        {
+          "id": "ws-48-sec-b-q04",
+          "order": 4,
+          "prompt": "The banks were closed and [gap] we couldn't get any money.",
+          "options": [
+            "a) as a result",
+            "b) because"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "and as a result + result"
+        },
+        {
+          "id": "ws-48-sec-b-q05",
+          "order": 5,
+          "prompt": "I didn't find the book very interesting and [gap] I didn't finish it.",
+          "options": [
+            "a) so",
+            "b) as"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "and so + result"
+        },
+        {
+          "id": "ws-48-sec-b-q06",
+          "order": 6,
+          "prompt": "We couldn't drive across the bridge [gap] it was closed.",
+          "options": [
+            "a) as a result",
+            "b) because"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "because + reason clause"
+        },
+        {
+          "id": "ws-48-sec-b-q07",
+          "order": 7,
+          "prompt": "She had the best qualifications and she [gap] got the job.",
+          "options": [
+            "a) so",
+            "b) therefore"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "therefore can go before the main verb"
+        },
+        {
+          "id": "ws-48-sec-b-q08",
+          "order": 8,
+          "prompt": "I haven't got much money [gap] I can't afford a new car.",
+          "options": [
+            "a) as",
+            "b) so"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "so introduces the result"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-15",
+      "sectionKey": "O",
+      "instruction": "Join each pair of sentences using SO / SUCH … (THAT):",
+      "type": "sentence_combine",
+      "questions": [
+        {
+          "id": "ws-48-sec-c-q01",
+          "order": 1,
+          "prompt": "It was a very warm evening. We had dinner outside in the garden.",
+          "acceptedAnswers": [
+            "It was such a warm evening that we had dinner outside in the garden.",
+            "It was such a warm evening we had dinner outside in the garden.",
+            "The evening was so warm that we had dinner outside in the garden.",
+            "The evening was so warm we had dinner outside in the garden."
+          ],
+          "explanation": "such + a + adjective + noun + (that)"
+        },
+        {
+          "id": "ws-48-sec-c-q02",
+          "order": 2,
+          "prompt": "He was very nervous. He couldn't eat anything.",
+          "acceptedAnswers": [
+            "He was so nervous that he couldn't eat anything.",
+            "He was so nervous he couldn't eat anything."
+          ],
+          "explanation": "so + adjective + (that)"
+        },
+        {
+          "id": "ws-48-sec-c-q03",
+          "order": 3,
+          "prompt": "Our neighbours' party was very noisy. We couldn't sleep.",
+          "acceptedAnswers": [
+            "Our neighbours' party was so noisy that we couldn't sleep.",
+            "Our neighbours' party was so noisy we couldn't sleep.",
+            "Our neighbours had such a noisy party that we couldn't sleep.",
+            "Our neighbours had such a noisy party we couldn't sleep."
+          ],
+          "explanation": "so + adjective + (that)"
+        },
+        {
+          "id": "ws-48-sec-c-q04",
+          "order": 4,
+          "prompt": "The restaurant was very crowded. They couldn't find anywhere to sit down.",
+          "acceptedAnswers": [
+            "The restaurant was so crowded that they couldn't find anywhere to sit down.",
+            "The restaurant was so crowded they couldn't find anywhere to sit down.",
+            "It was such a crowded restaurant that they couldn't find anywhere to sit down.",
+            "It was such a crowded restaurant they couldn't find anywhere to sit down."
+          ],
+          "explanation": "so + adjective + (that)"
+        },
+        {
+          "id": "ws-48-sec-c-q05",
+          "order": 5,
+          "prompt": "We were all having a good time. We didn't want to stop.",
+          "acceptedAnswers": [
+            "We were all having such a good time that we didn't want to stop.",
+            "We were all having such a good time we didn't want to stop."
+          ],
+          "explanation": "such + a + adjective + noun + (that)"
+        },
+        {
+          "id": "ws-48-sec-c-q06",
+          "order": 6,
+          "prompt": "He's got a very good memory. He never needs to write anything down.",
+          "acceptedAnswers": [
+            "He's got such a good memory that he never needs to write anything down.",
+            "He's got such a good memory he never needs to write anything down.",
+            "His memory is so good that he never needs to write anything down.",
+            "His memory is so good he never needs to write anything down."
+          ],
+          "explanation": "such + a + adjective + noun + (that)"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-16",
+      "sectionKey": "P",
+      "instruction": "Rephrase the sentences beginning with the words in brackets:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-49-sec-a-q01",
+          "order": 1,
+          "prompt": "She has plenty of money, but she is very mean. (although)",
+          "acceptedAnswers": [
+            "Although she has plenty of money, she is very mean."
+          ],
+          "explanation": "although + clause, main clause"
+        },
+        {
+          "id": "ws-49-sec-a-q02",
+          "order": 2,
+          "prompt": "They have a car, but they rarely use it. (though)",
+          "acceptedAnswers": [
+            "Though they have a car, they rarely use it."
+          ],
+          "explanation": "though + clause, main clause"
+        },
+        {
+          "id": "ws-49-sec-a-q03",
+          "order": 3,
+          "prompt": "He was innocent, but he was sent to prison. (although)",
+          "acceptedAnswers": [
+            "Although he was innocent, he was sent to prison."
+          ],
+          "explanation": "although + clause, main clause"
+        },
+        {
+          "id": "ws-49-sec-a-q04",
+          "order": 4,
+          "prompt": "He has a number of relatives living nearby, but he never visits them. (even though)",
+          "acceptedAnswers": [
+            "Even though he has a number of relatives living nearby, he never visits them."
+          ],
+          "explanation": "even though + clause, main clause"
+        },
+        {
+          "id": "ws-49-sec-a-q05",
+          "order": 5,
+          "prompt": "She never takes any kind of exercise, but she is quite fit and healthy. (even though)",
+          "acceptedAnswers": [
+            "Even though she never takes any kind of exercise, she is quite fit and healthy."
+          ],
+          "explanation": "even though + clause, main clause"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-17",
+      "sectionKey": "Q",
+      "instruction": "Rephrase the sentences using the words in brackets and a noun:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-49-sec-b-q01",
+          "order": 1,
+          "prompt": "They went out for a walk, even though the weather was bad. (despite)",
+          "acceptedAnswers": [
+            "They went out for a walk despite the bad weather."
+          ],
+          "explanation": "despite + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q02",
+          "order": 2,
+          "prompt": "She managed to write, even though her hand was injured. (in spite of)",
+          "acceptedAnswers": [
+            "She managed to write in spite of her injured hand.",
+            "She managed to write in spite of her hand injury."
+          ],
+          "explanation": "in spite of + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q03",
+          "order": 3,
+          "prompt": "All the trains were on time, even though the snow was heavy. (despite)",
+          "acceptedAnswers": [
+            "All the trains were on time despite the heavy snow."
+          ],
+          "explanation": "despite + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q04",
+          "order": 4,
+          "prompt": "Our coach didn't arrive late, even though the traffic was terrible. (in spite of)",
+          "acceptedAnswers": [
+            "Our coach didn't arrive late in spite of the terrible traffic."
+          ],
+          "explanation": "in spite of + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q05",
+          "order": 5,
+          "prompt": "A lot of people buy those houses, even though the prices are high. (despite)",
+          "acceptedAnswers": [
+            "A lot of people buy those houses despite the high prices.",
+            "A lot of people buy those houses despite their high prices."
+          ],
+          "explanation": "despite + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q06",
+          "order": 6,
+          "prompt": "He stayed up late, even though he was very tired. (despite)",
+          "acceptedAnswers": [
+            "He stayed up late despite his tiredness.",
+            "He stayed up late despite being very tired.",
+            "He stayed up late despite his great tiredness."
+          ],
+          "explanation": "despite + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q07",
+          "order": 7,
+          "prompt": "I didn't buy the car, even though I had the money. (despite)",
+          "acceptedAnswers": [
+            "I didn't buy the car despite having the money.",
+            "I didn't buy the car despite the fact that I had the money."
+          ],
+          "explanation": "despite + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q08",
+          "order": 8,
+          "prompt": "He stayed outside in the cold weather, even though he felt ill. (despite)",
+          "acceptedAnswers": [
+            "He stayed outside in the cold weather despite his illness.",
+            "He stayed outside in the cold weather despite feeling ill."
+          ],
+          "explanation": "despite + noun / -ing (no clause)"
+        },
+        {
+          "id": "ws-49-sec-b-q09",
+          "order": 9,
+          "prompt": "People continue to smoke, even though they know the dangers. (in spite of)",
+          "acceptedAnswers": [
+            "People continue to smoke in spite of the dangers.",
+            "People continue to smoke in spite of knowing the dangers."
+          ],
+          "explanation": "in spite of + noun / -ing (no clause)"
+        }
+      ]
+    },
+    {
+      "id": "card-17-sec-18",
+      "sectionKey": "R",
+      "instruction": "Sally and Peter are good friends, but they are very different. Compare Sally and Peter. Join each idea about Sally with the most suitable idea about Peter (list B). Make sentences using WHILE / WHEREAS. (Example: She likes hard work, while / whereas he's quite lazy.)",
+      "type": "sentence_combine",
+      "contextText": "B (Peter):\na) He prefers classical music.\nb) He prefers staying at home.\nc) He can be rather mean.\nd) He's quite lazy. (used in the example)\ne) He's quite idealistic.",
+      "questions": [
+        {
+          "id": "ws-49-sec-c-q02",
+          "order": 2,
+          "prompt": "She likes jazz and pop music.",
+          "acceptedAnswers": [
+            "She likes jazz and pop music, while he prefers classical music.",
+            "While she likes jazz and pop music, he prefers classical music.",
+            "She likes jazz and pop music, whereas he prefers classical music.",
+            "Whereas she likes jazz and pop music, he prefers classical music.",
+            "Sally likes jazz and pop music, while Peter prefers classical music.",
+            "While Sally likes jazz and pop music, Peter prefers classical music.",
+            "Sally likes jazz and pop music, whereas Peter prefers classical music.",
+            "Whereas Sally likes jazz and pop music, Peter prefers classical music."
+          ],
+          "explanation": "while / whereas: contrast two facts"
+        },
+        {
+          "id": "ws-49-sec-c-q03",
+          "order": 3,
+          "prompt": "She likes going out a lot.",
+          "acceptedAnswers": [
+            "She likes going out a lot, while he prefers staying at home.",
+            "While she likes going out a lot, he prefers staying at home.",
+            "She likes going out a lot, whereas he prefers staying at home.",
+            "Whereas she likes going out a lot, he prefers staying at home.",
+            "Sally likes going out a lot, while Peter prefers staying at home.",
+            "While Sally likes going out a lot, Peter prefers staying at home.",
+            "Sally likes going out a lot, whereas Peter prefers staying at home.",
+            "Whereas Sally likes going out a lot, Peter prefers staying at home."
+          ],
+          "explanation": "while / whereas: contrast two facts"
+        },
+        {
+          "id": "ws-49-sec-c-q04",
+          "order": 4,
+          "prompt": "She's very practical.",
+          "acceptedAnswers": [
+            "She's very practical, while he's quite idealistic.",
+            "While she's very practical, he's quite idealistic.",
+            "She's very practical, whereas he's quite idealistic.",
+            "Whereas she's very practical, he's quite idealistic.",
+            "Sally is very practical, while Peter is quite idealistic.",
+            "While Sally is very practical, Peter is quite idealistic.",
+            "Sally is very practical, whereas Peter is quite idealistic.",
+            "Whereas Sally is very practical, Peter is quite idealistic."
+          ],
+          "explanation": "while / whereas: contrast two facts"
+        },
+        {
+          "id": "ws-49-sec-c-q05",
+          "order": 5,
+          "prompt": "She's very generous.",
+          "acceptedAnswers": [
+            "She's very generous, while he can be rather mean.",
+            "While she's very generous, he can be rather mean.",
+            "She's very generous, whereas he can be rather mean.",
+            "Whereas she's very generous, he can be rather mean.",
+            "Sally is very generous, while Peter can be rather mean.",
+            "While Sally is very generous, Peter can be rather mean.",
+            "Sally is very generous, whereas Peter can be rather mean.",
+            "Whereas Sally is very generous, Peter can be rather mean."
+          ],
+          "explanation": "while / whereas: contrast two facts"
+        }
+      ]
+    }
+  ]
+}

@@ -12,250 +12,62 @@
     {
       "id": "ws-16-sec-a",
       "sectionKey": "A",
-      "instruction": "Make sentences with WILL BE –ING:",
+      "instruction": "Make sentences with WILL BE + -ING:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-16-sec-a-q01",
-          "order": 1,
-          "prompt": "I’m going to watch television from 9 until 10 o’clock this evening. [gap] So at 9.30 I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q02",
-          "order": 2,
-          "prompt": "Tomorrow afternoon I’m going to play tennis from 3 o’clock until 4.30. [gap] So at 4 o’clock tomorrow I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q03",
-          "order": 3,
-          "prompt": "Jim is going to study from 7 o’clock until 10 o’clock this evening. [gap] So at 8.30 this evening he [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q04",
-          "order": 4,
-          "prompt": "We are going to clean the flat tomorrow. It will take from 9 until 11 o’clock. [gap] So at 10 o’clock tomorrow morning [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q05",
-          "order": 5,
-          "prompt": "Tom is a football fan and there is a football match on television this evening. The match [gap] begins at 7.30 and ends at 9.15. So at 8.30 this evening [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q06",
-          "order": 6,
-          "prompt": "Don’t phone me between 7 and 8 [gap] (we / finish) dinner then.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q07",
-          "order": 7,
-          "prompt": "A: Can we meet tomorrow afternoon? [gap] B: Not in the afternoon [gap] (I / work).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q08",
-          "order": 8,
-          "prompt": "Do you think [gap] (you / still / do) the same job in ten years’ time?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q09",
-          "order": 9,
-          "prompt": "If you need to contact me, [gap] (I / stay) at the Hilton Hotel until Friday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-a-q10",
-          "order": 10,
-          "prompt": "A: [gap] (you / see) Laura tomorrow? B: Yes, probably. Why? A: I borrowed this book from her. Can you give it back to her?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-16-sec-a-q01", "order": 1, "prompt": "I’m going to watch television from 9 until 10 o’clock this evening. So at 9.30 I [gap].", "acceptedAnswers": ["will be watching television|'ll be watching television|will be watching TV|'ll be watching TV"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q02", "order": 2, "prompt": "Tomorrow afternoon I’m going to play tennis from 3 o’clock until 4.30. So at 4 o’clock tomorrow I [gap].", "acceptedAnswers": ["will be playing tennis|'ll be playing tennis"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q03", "order": 3, "prompt": "Jim is going to study from 7 o’clock until 10 o’clock this evening. So at 8.30 this evening he [gap].", "acceptedAnswers": ["will be studying|'ll be studying"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q04", "order": 4, "prompt": "We are going to clean the flat tomorrow. It will take from 9 until 11 o’clock. So at 10 o’clock tomorrow morning [gap].", "acceptedAnswers": ["we will be cleaning the flat|we'll be cleaning the flat|we will be cleaning|we'll be cleaning"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q05", "order": 5, "prompt": "Tom is a football fan and there is a football match on television this evening. The match begins at 7.30 and ends at 9.15. So at 8.30 this evening [gap].", "acceptedAnswers": ["Tom will be watching the match|Tom'll be watching the match|Tom will be watching the football match|he will be watching the match|he'll be watching the match|he will be watching the football match|Tom will be watching football|Tom will be watching the match on television|Tom will be watching the football match on television"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q06", "order": 6, "prompt": "Don’t phone me between 7 and 8. [gap] (we / finish) dinner then.", "acceptedAnswers": ["We will be finishing|We'll be finishing"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q07", "order": 7, "prompt": "A: Can we meet tomorrow afternoon? B: Not in the afternoon. [gap] (I / work).", "acceptedAnswers": ["I will be working|I'll be working"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q08", "order": 8, "prompt": "Do you think [gap] (you / still / do) the same job in ten years’ time?", "acceptedAnswers": ["you will still be doing|you'll still be doing"], "explanation": "will still be + -ing" },
+        { "id": "ws-16-sec-a-q09", "order": 9, "prompt": "If you need to contact me, [gap] (I / stay) at the Hilton Hotel until Friday.", "acceptedAnswers": ["I will be staying|I'll be staying"], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-a-q10", "order": 10, "prompt": "A: [gap] (you / see) Laura tomorrow? B: Yes, probably. Why? A: I borrowed this book from her. Can you give it back to her?", "acceptedAnswers": ["Will you be seeing"], "explanation": "question: Will + subject + be + -ing" }
       ]
     },
     {
       "id": "ws-16-sec-b",
       "sectionKey": "B",
-      "instruction": "Ask questions with WILL YOU BE –ING?",
+      "instruction": "Ask questions with WILL YOU BE + -ING?",
       "type": "question_formation",
       "questions": [
-        {
-          "id": "ws-16-sec-b-q01",
-          "order": 1,
-          "prompt": "You want to borrow your friend’s bicycle this evening. (you / use / your bicycle this evening?)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-b-q02",
-          "order": 2,
-          "prompt": "You want your friend to give Tom a message this afternoon. (you / see / Tom this afternoon?)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-b-q03",
-          "order": 3,
-          "prompt": "You want to use your friend’s typewriter tomorrow evening. (you / use / your typewriter tomorrow evening?)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-b-q04",
-          "order": 4,
-          "prompt": "Your friend is going shopping. You want him/her to buy some stamps for you at the post office. (you / pass / the post office when you’re in town?)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-16-sec-b-q01", "order": 1, "prompt": "You want to borrow your friend’s bicycle this evening. (you / use / your bicycle this evening?)", "acceptedAnswers": ["Will you be using your bicycle this evening?"], "explanation": "polite question about plans: Will you be + -ing?" },
+        { "id": "ws-16-sec-b-q02", "order": 2, "prompt": "You want your friend to give Tom a message this afternoon. (you / see / Tom this afternoon?)", "acceptedAnswers": ["Will you be seeing Tom this afternoon?"], "explanation": "polite question about plans: Will you be + -ing?" },
+        { "id": "ws-16-sec-b-q03", "order": 3, "prompt": "You want to use your friend’s typewriter tomorrow evening. (you / use / your typewriter tomorrow evening?)", "acceptedAnswers": ["Will you be using your typewriter tomorrow evening?"], "explanation": "polite question about plans: Will you be + -ing?" },
+        { "id": "ws-16-sec-b-q04", "order": 4, "prompt": "Your friend is going shopping. You want him/her to buy some stamps for you at the post office. (you / pass / the post office when you’re in town?)", "acceptedAnswers": ["Will you be passing the post office when you're in town?"], "explanation": "polite question about plans: Will you be + -ing?" }
       ]
     },
     {
       "id": "ws-16-sec-c",
       "sectionKey": "C",
-      "instruction": "A gang of criminals have a plan to steal millions of pounds from a London bank and",
-      "type": "inline_gap_fill",
+      "instruction": "A gang of criminals have a plan to steal millions of pounds from a London bank and leave the country. They’re talking about what they will be doing a week from now, after the robbery. (Example: We / live / in luxury → We’ll be living in luxury.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-16-sec-c-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-c-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-c-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-c-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-c-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-c-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-c-q07",
-          "order": 7,
-          "prompt": " [gap] We / live / in luxury We / relax / at our villa I / sit / by the pool The sun / shine We / enjoy / ourselves The police / look for us But / we / laugh / at them [gap] We’ll be living in luxury [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-16-sec-c-q02", "order": 2, "prompt": "We / relax / at our villa", "acceptedAnswers": ["We will be relaxing at our villa.","We'll be relaxing at our villa."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-c-q03", "order": 3, "prompt": "I / sit / by the pool", "acceptedAnswers": ["I will be sitting by the pool.","I'll be sitting by the pool."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-c-q04", "order": 4, "prompt": "The sun / shine", "acceptedAnswers": ["The sun will be shining."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-c-q05", "order": 5, "prompt": "We / enjoy / ourselves", "acceptedAnswers": ["We will be enjoying ourselves.","We'll be enjoying ourselves."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-c-q06", "order": 6, "prompt": "The police / look for us", "acceptedAnswers": ["The police will be looking for us."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-c-q07", "order": 7, "prompt": "But / we / laugh / at them", "acceptedAnswers": ["But we will be laughing at them.","But we'll be laughing at them."], "explanation": "future continuous: will be + -ing (in progress at a future time)" }
       ]
     },
     {
       "id": "ws-16-sec-d",
       "sectionKey": "D",
-      "instruction": "Make sentences with WILL BE –ING:",
-      "type": "inline_gap_fill",
+      "instruction": "Make sentences with WILL BE + -ING: (Example: I’m playing tennis now. (this afternoon) → I’ll be playing tennis this afternoon.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-16-sec-d-q01",
-          "order": 1,
-          "prompt": "I’m playing tennis now. (this afternoon) [gap] [gap] I’ll be playing tennis this afternoon [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q02",
-          "order": 2,
-          "prompt": "He is sleeping now. (at eleven o’clock) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q03",
-          "order": 3,
-          "prompt": "We’re working very hard. (at this time next month) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q04",
-          "order": 4,
-          "prompt": "They are traveling. (all night) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q05",
-          "order": 5,
-          "prompt": "She’s doing the washing up. (in an hour’s time) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q06",
-          "order": 6,
-          "prompt": "He’s still mending his car. (at dinner time) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q07",
-          "order": 7,
-          "prompt": "I am driving a BMW. (in two years’ time) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q08",
-          "order": 8,
-          "prompt": "I’m studying English. (from 8 to 10) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q09",
-          "order": 9,
-          "prompt": "I’m having an interview now. (at 2 o’clock this afternoon) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-16-sec-d-q10",
-          "order": 10,
-          "prompt": "We’re listening to pop music. (at this time tomorrow) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-16-sec-d-q02", "order": 2, "prompt": "He is sleeping now. (at eleven o’clock)", "acceptedAnswers": ["He will be sleeping at eleven o'clock.","He'll be sleeping at eleven o'clock.","At eleven o'clock he will be sleeping.","At eleven o'clock he'll be sleeping."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q03", "order": 3, "prompt": "We’re working very hard. (at this time next month)", "acceptedAnswers": ["We will be working very hard at this time next month.","We'll be working very hard at this time next month.","At this time next month we will be working very hard.","At this time next month we'll be working very hard."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q04", "order": 4, "prompt": "They are traveling. (all night)", "acceptedAnswers": ["They will be traveling all night.","They'll be traveling all night.","They will be travelling all night.","They'll be travelling all night."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q05", "order": 5, "prompt": "She’s doing the washing up. (in an hour’s time)", "acceptedAnswers": ["She will be doing the washing up in an hour's time.","She'll be doing the washing up in an hour's time.","In an hour's time she will be doing the washing up.","In an hour's time she'll be doing the washing up."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q06", "order": 6, "prompt": "He’s still mending his car. (at dinner time)", "acceptedAnswers": ["He will still be mending his car at dinner time.","He'll still be mending his car at dinner time.","At dinner time he will still be mending his car.","At dinner time he'll still be mending his car."], "explanation": "will still be + -ing" },
+        { "id": "ws-16-sec-d-q07", "order": 7, "prompt": "I am driving a BMW. (in two years’ time)", "acceptedAnswers": ["I will be driving a BMW in two years' time.","I'll be driving a BMW in two years' time.","In two years' time I will be driving a BMW.","In two years' time I'll be driving a BMW."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q08", "order": 8, "prompt": "I’m studying English. (from 8 to 10)", "acceptedAnswers": ["I will be studying English from 8 to 10.","I'll be studying English from 8 to 10."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q09", "order": 9, "prompt": "I’m having an interview now. (at 2 o’clock this afternoon)", "acceptedAnswers": ["I will be having an interview at 2 o'clock this afternoon.","I'll be having an interview at 2 o'clock this afternoon.","At 2 o'clock this afternoon I will be having an interview.","At 2 o'clock this afternoon I'll be having an interview."], "explanation": "future continuous: will be + -ing (in progress at a future time)" },
+        { "id": "ws-16-sec-d-q10", "order": 10, "prompt": "We’re listening to pop music. (at this time tomorrow)", "acceptedAnswers": ["We will be listening to pop music at this time tomorrow.","We'll be listening to pop music at this time tomorrow.","At this time tomorrow we will be listening to pop music.","At this time tomorrow we'll be listening to pop music."], "explanation": "future continuous: will be + -ing (in progress at a future time)" }
       ]
     }
   ]

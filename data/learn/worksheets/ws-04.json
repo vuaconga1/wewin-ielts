@@ -12,937 +12,1052 @@
     {
       "id": "ws-04-sec-a",
       "sectionKey": "A",
-      "instruction": "Chilli’s friend Della was on holiday in Jamaica. Read her letter to Chilli and complete it",
+      "instruction": "Chilli's friend Della was on holiday in Jamaica. Read her letter to Chilli and complete it with the correct verbs.",
       "type": "passage_gap_fill",
+      "contextText": "JAMAICA is a large island in the Caribbean Sea. Nearly a million tourists visit the island every year to relax in the sun and swim in the clear blue sea.\nFor tourists, the island is a paradise, but for most Jamaican people life is hard. There are very few jobs, except in the tourist industry.\nJamaica is also famous for reggae music.\n\nDear Chilli,\nI had a fantastic holiday in Jamaica. It was hot and the sea was blue and lovely.",
+      "wordBank": [
+        "invited",
+        "stopped",
+        "talked",
+        "stayed",
+        "travelled",
+        "enjoyed",
+        "didn't sleep",
+        "didn't get",
+        "watched",
+        "was",
+        "listened"
+      ],
       "questions": [
         {
           "id": "ws-04-sec-a-q01",
           "order": 1,
-          "prompt": "with the correct verbs.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] by plane from London to Kingston.",
+          "acceptedAnswers": [
+            "travelled|traveled"
+          ],
+          "explanation": "travel by plane"
         },
         {
           "id": "ws-04-sec-a-q02",
           "order": 2,
-          "prompt": "* invited",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I really [gap] the flight.",
+          "acceptedAnswers": [
+            "enjoyed"
+          ],
+          "explanation": "enjoy something"
         },
         {
           "id": "ws-04-sec-a-q03",
           "order": 3,
-          "prompt": "* stopped",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It was eight hours long but I [gap] at all because I [gap] so excited.",
+          "acceptedAnswers": [
+            "didn't sleep / was"
+          ],
+          "explanation": "negative past: didn't + verb; I was"
         },
         {
           "id": "ws-04-sec-a-q04",
           "order": 4,
-          "prompt": "* didn’t sleep",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "During the flight I [gap] to music, [gap] a film and [gap] to the girl in the seat next to me.",
+          "acceptedAnswers": [
+            "listened / watched / talked"
+          ],
+          "explanation": "listen to, watch a film, talk to"
         },
         {
           "id": "ws-04-sec-a-q05",
           "order": 5,
-          "prompt": "* talked",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] with my aunt and uncle in Kingston.",
+          "acceptedAnswers": [
+            "stayed"
+          ],
+          "explanation": "stay with someone"
         },
         {
           "id": "ws-04-sec-a-q06",
           "order": 6,
-          "prompt": "* didn’t get",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They [gap] me on a trip to Montego Bay.",
+          "acceptedAnswers": [
+            "invited"
+          ],
+          "explanation": "invite someone on a trip"
         },
         {
           "id": "ws-04-sec-a-q07",
           "order": 7,
-          "prompt": "* stayed",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] at an Orchid Farm. It was brilliant.",
+          "acceptedAnswers": [
+            "stopped"
+          ],
+          "explanation": "stop at a place"
         },
         {
           "id": "ws-04-sec-a-q08",
           "order": 8,
-          "prompt": "* watched",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q09",
-          "order": 9,
-          "prompt": "* travelled",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q10",
-          "order": 10,
-          "prompt": "* enjoyed",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q11",
-          "order": 11,
-          "prompt": "* was",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q12",
-          "order": 12,
-          "prompt": "* listened",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q13",
-          "order": 13,
-          "prompt": "Dear Chilli,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q14",
-          "order": 14,
-          "prompt": "I had a fantastic holiday in Jamaica. It was hot and the sea was blue and lovely.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q15",
-          "order": 15,
-          "prompt": "I [gap] by plane from London to Kingston. I really [gap] the flight. It was",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q16",
-          "order": 16,
-          "prompt": "eight hours long but I [gap] at all because I [gap] so excited. During",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q17",
-          "order": 17,
-          "prompt": "the flight I [gap] to music, [gap] a film and [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q18",
-          "order": 18,
-          "prompt": "to the girl in the seat next to me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q19",
-          "order": 19,
-          "prompt": "I [gap] with my aunt and uncle in Kingston. They [gap] me",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q20",
-          "order": 20,
-          "prompt": "on a trip to Montego Bay. We [gap] at an Orchid Farm. It was brilliant. On my",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q21",
-          "order": 21,
-          "prompt": "last night there I [gap] to bed until there o’clock in the morning!",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q22",
-          "order": 22,
-          "prompt": "See you soon!",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q23",
-          "order": 23,
-          "prompt": "Love,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-a-q24",
-          "order": 24,
-          "prompt": "Della",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "On my last night there I [gap] to bed until three o'clock in the morning!",
+          "acceptedAnswers": [
+            "didn't get"
+          ],
+          "explanation": "not get to bed until = go to bed late"
         }
       ]
     },
     {
       "id": "ws-04-sec-b",
       "sectionKey": "B",
-      "instruction": "Answer the questions:",
-      "type": "inline_gap_fill",
+      "instruction": "Answer the questions.",
+      "type": "reading_qa",
+      "contextText": "JAMAICA is a large island in the Caribbean Sea. Nearly a million tourists visit the island every year to relax in the sun and swim in the clear blue sea.\nFor tourists, the island is a paradise, but for most Jamaican people life is hard. There are very few jobs, except in the tourist industry.\nJamaica is also famous for reggae music.\n\nDear Chilli,\nI had a fantastic holiday in Jamaica. It was hot and the sea was blue and lovely.\nI travelled by plane from London to Kingston. I really enjoyed the flight. It was eight hours long but I didn't sleep at all because I was so excited. During the flight I listened to music, watched a film and talked to the girl in the seat next to me.\nI stayed with my aunt and uncle in Kingston. They invited me on a trip to Montego Bay. We stopped at an Orchid Farm. It was brilliant. On my last night there I didn't get to bed until three o'clock in the morning!\nSee you soon!\nLove,\nDella",
       "questions": [
         {
           "id": "ws-04-sec-b-q01",
           "order": 1,
-          "prompt": "Did she go to Jamaica? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did she go to Jamaica?",
+          "acceptedAnswers": [
+            "Yes, she did.",
+            "Yes, she did. She went to Jamaica."
+          ],
+          "explanation": "short answer: Yes, she did"
         },
         {
           "id": "ws-04-sec-b-q02",
           "order": 2,
-          "prompt": "How did she go to Kingston? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How did she go to Kingston?",
+          "acceptedAnswers": [
+            "She went by plane.",
+            "By plane.",
+            "She travelled by plane.",
+            "She traveled by plane."
+          ],
+          "explanation": "by plane"
         },
         {
           "id": "ws-04-sec-b-q03",
           "order": 3,
-          "prompt": "How was the weather? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How was the weather?",
+          "acceptedAnswers": [
+            "It was hot.",
+            "It was hot and the sea was blue and lovely.",
+            "Hot."
+          ],
+          "explanation": "It was hot"
         },
         {
           "id": "ws-04-sec-b-q04",
           "order": 4,
-          "prompt": "What did she do on the plane? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What did she do on the plane?",
+          "acceptedAnswers": [
+            "She listened to music, watched a film and talked to the girl in the seat next to her.",
+            "She listened to music, watched a film and talked to a girl.",
+            "She listened to music, watched a film and talked to the girl next to her."
+          ],
+          "explanation": "listened, watched, talked"
         },
         {
           "id": "ws-04-sec-b-q05",
           "order": 5,
-          "prompt": "Did she visit her grandparents? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did she visit her grandparents?",
+          "acceptedAnswers": [
+            "No, she didn't.",
+            "No, she didn't. She stayed with her aunt and uncle.",
+            "No, she didn't. She visited her aunt and uncle."
+          ],
+          "explanation": "she stayed with her aunt and uncle"
         },
         {
           "id": "ws-04-sec-b-q06",
           "order": 6,
-          "prompt": "Did she like the Orchid Farm? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did she like the Orchid Farm?",
+          "acceptedAnswers": [
+            "Yes, she did.",
+            "Yes, she did. It was brilliant."
+          ],
+          "explanation": "It was brilliant"
         },
         {
           "id": "ws-04-sec-b-q07",
           "order": 7,
-          "prompt": "When did she go to bed on her last night? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When did she go to bed on her last night?",
+          "acceptedAnswers": [
+            "She went to bed at three o'clock in the morning.",
+            "At three o'clock in the morning.",
+            "At 3 o'clock in the morning.",
+            "She went to bed at 3 o'clock in the morning."
+          ],
+          "explanation": "until three o'clock in the morning"
         },
         {
           "id": "ws-04-sec-b-q08",
           "order": 8,
-          "prompt": "Where is Jamaica? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where is Jamaica?",
+          "acceptedAnswers": [
+            "It is in the Caribbean Sea.",
+            "In the Caribbean Sea.",
+            "Jamaica is in the Caribbean Sea.",
+            "It's in the Caribbean."
+          ],
+          "explanation": "in the Caribbean Sea"
         },
         {
           "id": "ws-04-sec-b-q09",
           "order": 9,
-          "prompt": "What do the tourists do in Jamaica? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What do the tourists do in Jamaica?",
+          "acceptedAnswers": [
+            "They relax in the sun and swim in the clear blue sea.",
+            "They relax in the sun and swim in the sea.",
+            "Tourists relax in the sun and swim in the clear blue sea."
+          ],
+          "explanation": "relax in the sun and swim"
         },
         {
           "id": "ws-04-sec-b-q10",
           "order": 10,
-          "prompt": "How is the life for Jamaican people? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How is life for Jamaican people?",
+          "acceptedAnswers": [
+            "It is hard.",
+            "Life is hard.",
+            "It is hard. There are very few jobs.",
+            "Life is hard for most Jamaican people."
+          ],
+          "explanation": "for most Jamaican people life is hard"
         }
       ]
     },
     {
       "id": "ws-04-sec-c",
       "sectionKey": "C",
-      "instruction": "Complete these sentences in the PAST TENSE, using the correct verb:",
+      "instruction": "Complete these sentences in the PAST TENSE, using the correct verb. (Example: I watched the late film on TV last night.)",
       "type": "inline_gap_fill",
+      "wordBank": [
+        "play",
+        "enjoy",
+        "watch",
+        "listen",
+        "talk",
+        "phone",
+        "stop",
+        "walk",
+        "travel",
+        "like",
+        "stay"
+      ],
       "questions": [
         {
           "id": "ws-04-sec-c-q01",
           "order": 1,
           "prompt": "We really [gap] the concert last night. It was great!",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "enjoyed"
+          ],
+          "explanation": "past simple"
         },
         {
           "id": "ws-04-sec-c-q02",
           "order": 2,
           "prompt": "She [gap] with friends in Brighton last summer.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "stayed"
+          ],
+          "explanation": "stay with friends"
         },
         {
           "id": "ws-04-sec-c-q03",
           "order": 3,
           "prompt": "Italy [gap] very well in the last World Cup.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "played"
+          ],
+          "explanation": "play well"
         },
         {
           "id": "ws-04-sec-c-q04",
           "order": 4,
           "prompt": "Her parents [gap] by train from Shanghai to Moscow.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "travelled|traveled"
+          ],
+          "explanation": "travel by train"
         },
         {
           "id": "ws-04-sec-c-q05",
           "order": 5,
           "prompt": "I [gap] you four times last night but you were out.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "phoned"
+          ],
+          "explanation": "phone someone"
         },
         {
           "id": "ws-04-sec-c-q06",
           "order": 6,
           "prompt": "We [gap] along the beach yesterday. It was lovely.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "walked"
+          ],
+          "explanation": "walk along the beach"
         },
         {
           "id": "ws-04-sec-c-q07",
           "order": 7,
-          "prompt": "She [gap] the film but she didn’t like the music.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She [gap] the film but she didn't like the music.",
+          "acceptedAnswers": [
+            "liked"
+          ],
+          "explanation": "contrast with didn't like"
         },
         {
           "id": "ws-04-sec-c-q08",
           "order": 8,
-          "prompt": "The men [gap] work at exactly one o’clock.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The men [gap] work at exactly one o'clock.",
+          "acceptedAnswers": [
+            "stopped"
+          ],
+          "explanation": "stop work; double p"
         },
         {
           "id": "ws-04-sec-c-q09",
           "order": 9,
-          "prompt": "I [gap] to the new Sting album yesterday. It’s great.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] to the new Sting album yesterday. It's great.",
+          "acceptedAnswers": [
+            "listened"
+          ],
+          "explanation": "listen to"
         },
         {
           "id": "ws-04-sec-c-q10",
           "order": 10,
-          "prompt": "They [gap] to us about their trip to Madagaskar. It was very interesting.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They [gap] to us about their trip to Madagascar. It was very interesting.",
+          "acceptedAnswers": [
+            "talked"
+          ],
+          "explanation": "talk to someone about something"
         }
       ]
     },
     {
       "id": "ws-04-sec-d",
       "sectionKey": "D",
-      "instruction": "Complete the conversation with WAS / WASN’T / WERE / WEREN’T.",
+      "instruction": "Complete the conversation with WAS / WASN'T / WERE / WEREN'T.",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-04-sec-d-q01",
           "order": 1,
           "prompt": "A: Where were you last night? I phoned you but you [gap] at home.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "weren't"
+          ],
+          "explanation": "you + were; negative"
         },
         {
           "id": "ws-04-sec-d-q02",
           "order": 2,
           "prompt": "B: I [gap] out with friends. We [gap] at the Bluenote Café.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was / were"
+          ],
+          "explanation": "I was; we were"
         },
         {
           "id": "ws-04-sec-d-q03",
           "order": 3,
           "prompt": "A: [gap] Julia there?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Was"
+          ],
+          "explanation": "question: Was + she/he"
         },
         {
           "id": "ws-04-sec-d-q04",
           "order": 4,
-          "prompt": "B: No, she [gap] Why?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "B: No, she [gap]. Why?",
+          "acceptedAnswers": [
+            "wasn't"
+          ],
+          "explanation": "short answer: No, she wasn't"
         },
         {
           "id": "ws-04-sec-d-q05",
           "order": 5,
-          "prompt": "A: Oh, I just wondered. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: Oh, I just wondered. B: She [gap] out with Nick. They [gap] at the Oasis, I think.",
+          "acceptedAnswers": [
+            "was / were"
+          ],
+          "explanation": "she was; they were"
         },
         {
           "id": "ws-04-sec-d-q06",
           "order": 6,
-          "prompt": "B: She [gap] out with Nick. They [gap] at the Oasis. I think.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: No, they [gap].",
+          "acceptedAnswers": [
+            "weren't"
+          ],
+          "explanation": "short answer: No, they weren't"
         },
         {
           "id": "ws-04-sec-d-q07",
           "order": 7,
-          "prompt": "A: No, they [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-d-q08",
-          "order": 8,
-          "prompt": "B: How do you know? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-d-q09",
-          "order": 9,
-          "prompt": "A: Because I [gap] there!",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "B: How do you know? A: Because I [gap] there!",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "I was"
         }
       ]
     },
     {
       "id": "ws-04-sec-e",
       "sectionKey": "E",
-      "instruction": "Complete the man’s statement with the PAST SIMPLE form of the verbs in brackets:",
+      "instruction": "Complete the man's statement with the PAST SIMPLE form of the verbs in brackets.",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-04-sec-e-q01",
           "order": 1,
-          "prompt": "Last night I [gap] (go) to my favorite restaurant in West Street. I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Last night I [gap] (go) to my favorite restaurant in West Street.",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "explanation": "go → went (irregular)"
         },
         {
           "id": "ws-04-sec-e-q02",
           "order": 2,
-          "prompt": "(leave) the restaurant at about 11 o’clock. It [gap] (be) a warm evening and I",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] (leave) the restaurant at about 11 o'clock.",
+          "acceptedAnswers": [
+            "left"
+          ],
+          "explanation": "leave → left (irregular)"
         },
         {
           "id": "ws-04-sec-e-q03",
           "order": 3,
-          "prompt": "[gap] (decide) to walk along the beach.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It [gap] (be) a warm evening and I [gap] (decide) to walk along the beach.",
+          "acceptedAnswers": [
+            "was / decided"
+          ],
+          "explanation": "it was; decide → decided"
         },
         {
           "id": "ws-04-sec-e-q04",
           "order": 4,
-          "prompt": "Suddenly, I [gap] (hear) a noise. I [gap] (turn) and [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Suddenly, I [gap] (hear) a noise.",
+          "acceptedAnswers": [
+            "heard"
+          ],
+          "explanation": "hear → heard (irregular)"
         },
         {
           "id": "ws-04-sec-e-q05",
           "order": 5,
-          "prompt": "(see) three boys aged about eighteen. One boy [gap] (come) up to me and",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] (turn) and [gap] (see) three boys aged about eighteen.",
+          "acceptedAnswers": [
+            "turned / saw"
+          ],
+          "explanation": "turn → turned; see → saw"
         },
         {
           "id": "ws-04-sec-e-q06",
           "order": 6,
-          "prompt": "[gap] (ask) me the time. When I [gap] (look) down at my watch,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "One boy [gap] (come) up to me and [gap] (ask) me the time.",
+          "acceptedAnswers": [
+            "came / asked"
+          ],
+          "explanation": "come → came; ask → asked"
         },
         {
           "id": "ws-04-sec-e-q07",
           "order": 7,
-          "prompt": "he [gap] (hit) me and I [gap] (fall) to the ground. Another boy",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When I [gap] (look) down at my watch, he [gap] (hit) me and I [gap] (fall) to the ground.",
+          "acceptedAnswers": [
+            "looked / hit / fell"
+          ],
+          "explanation": "hit → hit; fall → fell"
         },
         {
           "id": "ws-04-sec-e-q08",
           "order": 8,
-          "prompt": "[gap] (take) my wallet. I [gap] (shout) for help. Then they",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Another boy [gap] (take) my wallet.",
+          "acceptedAnswers": [
+            "took"
+          ],
+          "explanation": "take → took (irregular)"
         },
         {
           "id": "ws-04-sec-e-q09",
           "order": 9,
-          "prompt": "[gap] (run) away.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] (shout) for help.",
+          "acceptedAnswers": [
+            "shouted"
+          ],
+          "explanation": "shout → shouted"
+        },
+        {
+          "id": "ws-04-sec-e-q10",
+          "order": 10,
+          "prompt": "Then they [gap] (run) away.",
+          "acceptedAnswers": [
+            "ran"
+          ],
+          "explanation": "run → ran (irregular)"
         }
       ]
     },
     {
       "id": "ws-04-sec-f",
       "sectionKey": "F",
-      "instruction": "Complete the story. Use the verbs in the brackets:",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the story. Use the verbs in the brackets. (Example: Last year I went (go) on holiday.)",
+      "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-04-sec-f-q01",
           "order": 1,
-          "prompt": "Last year I went (go) on holiday. I [gap] (drive) to the sea with my friend. On",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] (drive) to the sea with my friend.",
+          "acceptedAnswers": [
+            "drove"
+          ],
+          "explanation": "drive → drove"
         },
         {
           "id": "ws-04-sec-f-q02",
           "order": 2,
-          "prompt": "the first day we [gap] (look) at the beautiful buildings and [gap] (eat) in lots of",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "On the first day we [gap] (look) at the beautiful buildings and [gap] (eat) in lots of restaurants.",
+          "acceptedAnswers": [
+            "looked / ate"
+          ],
+          "explanation": "eat → ate"
         },
         {
           "id": "ws-04-sec-f-q03",
           "order": 3,
-          "prompt": "restaurants. The next day [gap] (be) very hot so we [gap] (drive) to the sea. We",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The next day [gap] (be) very hot so we [gap] (drive) to the sea.",
+          "acceptedAnswers": [
+            "was|it was / drove"
+          ],
+          "explanation": "it was; drive → drove"
         },
         {
           "id": "ws-04-sec-f-q04",
           "order": 4,
-          "prompt": "[gap] (leave) our clothes in the car and [gap] (sunbathe) and [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (leave) our clothes in the car and [gap] (sunbathe) and [gap] (swim) all day.",
+          "acceptedAnswers": [
+            "left / sunbathed / swam"
+          ],
+          "explanation": "leave → left; swim → swam"
         },
         {
           "id": "ws-04-sec-f-q05",
           "order": 5,
-          "prompt": "(swim) all day. At six o’clock we [gap] (walk) to our car, but the car [gap] (be)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "At six o'clock we [gap] (walk) to our car, but the car [gap] (be) there.",
+          "acceptedAnswers": [
+            "walked / wasn't"
+          ],
+          "explanation": "the car had gone: wasn't"
         },
         {
           "id": "ws-04-sec-f-q06",
           "order": 6,
-          "prompt": "there. We [gap] (buy) some clothes and [gap] (go) to the Police Station. The",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (buy) some clothes and [gap] (go) to the Police Station.",
+          "acceptedAnswers": [
+            "bought / went"
+          ],
+          "explanation": "buy → bought; go → went"
         },
         {
           "id": "ws-04-sec-f-q07",
           "order": 7,
-          "prompt": "police [gap] (be) nice and we [gap] (sleep) in the police station.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The police [gap] (be) nice and we [gap] (sleep) in the police station.",
+          "acceptedAnswers": [
+            "were / slept"
+          ],
+          "explanation": "police is plural: were; sleep → slept"
         }
       ]
     },
     {
       "id": "ws-04-sec-g",
       "sectionKey": "G",
-      "instruction": "Make negative sentences (x) or questions (?) using the PAST TENSE:",
-      "type": "inline_gap_fill",
+      "instruction": "Make negative sentences (x) or questions (?) using the PAST TENSE. (Example: he / stay (x) in a hotel → He didn't stay in a hotel. you / learn (?) speak Italian when you were in Italy → Did you learn to speak Italian when you were in Italy?)",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-04-sec-g-q01",
           "order": 1,
-          "prompt": "she / like (x) the film [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "she / like (x) the film",
+          "acceptedAnswers": [
+            "She didn't like the film."
+          ],
+          "explanation": "negative: didn't + base verb"
         },
         {
           "id": "ws-04-sec-g-q02",
           "order": 2,
-          "prompt": "I / use / (x) the school computer yesterday [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I / use (x) the school computer yesterday",
+          "acceptedAnswers": [
+            "I didn't use the school computer yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
         },
         {
           "id": "ws-04-sec-g-q03",
           "order": 3,
-          "prompt": "they / arrive (?) home late yesterday [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "they / arrive (?) home late yesterday",
+          "acceptedAnswers": [
+            "Did they arrive home late yesterday?"
+          ],
+          "explanation": "question: Did + subject + base verb"
         },
         {
           "id": "ws-04-sec-g-q04",
           "order": 4,
-          "prompt": "you / ask (?) her for Caroline’s address [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "you / ask (?) her for Caroline's address",
+          "acceptedAnswers": [
+            "Did you ask her for Caroline's address?"
+          ],
+          "explanation": "question: Did + subject + base verb"
         },
         {
           "id": "ws-04-sec-g-q05",
           "order": 5,
-          "prompt": "he / enjoy (x) the concert in the park [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "he / enjoy (x) the concert in the park",
+          "acceptedAnswers": [
+            "He didn't enjoy the concert in the park."
+          ],
+          "explanation": "negative: didn't + base verb"
         },
         {
           "id": "ws-04-sec-g-q06",
           "order": 6,
-          "prompt": "we / talk (x) about school at all [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "we / talk (x) about school at all",
+          "acceptedAnswers": [
+            "We didn't talk about school at all."
+          ],
+          "explanation": "negative: didn't + base verb"
         }
       ]
     },
     {
       "id": "ws-04-sec-h",
       "sectionKey": "H",
-      "instruction": "Read the text. Write the questions below about Tamsin’s holiday:",
-      "type": "inline_gap_fill",
+      "instruction": "Read the text. Write the questions about Tamsin's holiday. (Example: Where did she go? → Bali.)",
+      "type": "question_formation",
+      "contextText": "Last September Tamsin went to Bali. She went by plane and stayed in a big hotel. It was very hot, so she swam every day. In the evenings she went to different restaurants, the food was very good. She met some nice people and every night she danced with them at the disco. She was happy because she wasn't alone.",
       "questions": [
-        {
-          "id": "ws-04-sec-h-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-04-sec-h-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: Last September.",
+          "acceptedAnswers": [
+            "When did she go to Bali?",
+            "When did she go?",
+            "When did Tamsin go to Bali?",
+            "When did Tamsin go?"
+          ],
+          "explanation": "When + did + subject + verb"
         },
         {
           "id": "ws-04-sec-h-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: By plane.",
+          "acceptedAnswers": [
+            "How did she go to Bali?",
+            "How did she go?",
+            "How did she travel?",
+            "How did she travel to Bali?",
+            "How did Tamsin go to Bali?"
+          ],
+          "explanation": "How = means of transport"
         },
         {
           "id": "ws-04-sec-h-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: In a big hotel.",
+          "acceptedAnswers": [
+            "Where did she stay?",
+            "Where did Tamsin stay?",
+            "Where did she stay in Bali?"
+          ],
+          "explanation": "Where did she stay?"
         },
         {
           "id": "ws-04-sec-h-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: It was very hot.",
+          "acceptedAnswers": [
+            "What was the weather like?",
+            "How was the weather?",
+            "What was the weather like in Bali?",
+            "How was the weather in Bali?"
+          ],
+          "explanation": "What was the weather like?"
         },
         {
           "id": "ws-04-sec-h-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: She swam.",
+          "acceptedAnswers": [
+            "What did she do every day?",
+            "What did she do?",
+            "What did Tamsin do every day?"
+          ],
+          "explanation": "What did she do?"
         },
         {
           "id": "ws-04-sec-h-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: It was very good.",
+          "acceptedAnswers": [
+            "What was the food like?",
+            "How was the food?",
+            "What was the food like in the restaurants?"
+          ],
+          "explanation": "What was the food like?"
         },
         {
           "id": "ws-04-sec-h-q08",
           "order": 8,
-          "prompt": " [gap] Where did she go? [gap] Bali. [gap] Last September. [gap] By plane. [gap] In a big hotel. [gap] It was very hot. [gap] She swam. [gap] It was very good. [gap] Some nice people.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Answer: Some nice people.",
+          "acceptedAnswers": [
+            "Who did she meet?",
+            "Who did Tamsin meet?",
+            "Who did she dance with?",
+            "Who did she dance with at the disco?"
+          ],
+          "explanation": "Who did she meet?"
         }
       ]
     },
     {
       "id": "ws-04-sec-i",
       "sectionKey": "I",
-      "instruction": "Match the questions with the answers:",
+      "instruction": "Match the questions with the answers.",
       "type": "matching",
+      "contextText": "a) By bus.\nb) The news.\nc) 6th September.\nd) On Saturday I played tennis and on Sunday I slept.\ne) January.\nf) Three years ago.\ng) John.\nh) Toast and coffee.",
       "questions": [
         {
           "id": "ws-04-sec-i-q01",
           "order": 1,
-          "prompt": "When did you learn to drive a car?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When did you learn to drive a car? [gap]",
+          "acceptedAnswers": [
+            "f"
+          ],
+          "explanation": "When … learn? → time ago"
         },
         {
           "id": "ws-04-sec-i-q02",
           "order": 2,
-          "prompt": "What did you watch on television last night?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What did you watch on television last night? [gap]",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "watch → a programme"
         },
         {
           "id": "ws-04-sec-i-q03",
           "order": 3,
-          "prompt": "What did you do last weekend?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What did you do last weekend? [gap]",
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "weekend activities"
         },
         {
           "id": "ws-04-sec-i-q04",
           "order": 4,
-          "prompt": "Who were you with at 4pm today? a. By bus. b. The news.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Who were you with at 4pm today? [gap]",
+          "acceptedAnswers": [
+            "g"
+          ],
+          "explanation": "Who → a person"
         },
         {
           "id": "ws-04-sec-i-q05",
           "order": 5,
-          "prompt": "When was the beginning of term?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When was the beginning of term? [gap]",
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "When → a date"
         },
         {
           "id": "ws-04-sec-i-q06",
           "order": 6,
-          "prompt": "How did you come to class?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How did you come to class? [gap]",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "How → means of transport"
         },
         {
           "id": "ws-04-sec-i-q07",
           "order": 7,
-          "prompt": "What did you eat for breakfast this morning?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What did you eat for breakfast this morning? [gap]",
+          "acceptedAnswers": [
+            "h"
+          ],
+          "explanation": "eat → food"
         },
         {
           "id": "ws-04-sec-i-q08",
           "order": 8,
-          "prompt": "What was the month before last? c. 6th September. d. On Saturday I played tennis and on Sunday I slept. e. January. f. Three years ago. g. John. h. Toast and coffee.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "What was the month before last? [gap]",
+          "acceptedAnswers": [
+            "e"
+          ],
+          "explanation": "month → January"
         }
       ]
     },
     {
       "id": "ws-04-sec-j",
       "sectionKey": "J",
-      "instruction": "Read about Lucian and Estelle and write the questions:",
-      "type": "inline_gap_fill",
+      "instruction": "Read about Lucian and Estelle and write the questions. (Example: live / they / do / London? → Do they live in London?)",
+      "type": "sentence_building",
+      "contextText": "Lucian and Estelle are from London, but they live in Madrid. They work for Opel, the car factory. Lucian and Estelle like swimming and cooking. They don't have a car. They don't like driving!",
       "questions": [
-        {
-          "id": "ws-04-sec-j-q01",
-          "order": 1,
-          "prompt": "live / they / do / London? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-04-sec-j-q02",
           "order": 2,
-          "prompt": "Madrid / do / live / they? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Madrid / do / live / they?",
+          "acceptedAnswers": [
+            "Do they live in Madrid?",
+            "Do they live in Madrid? Yes, they do."
+          ],
+          "explanation": "Do + they + base verb"
         },
         {
           "id": "ws-04-sec-j-q03",
           "order": 3,
-          "prompt": "Ferrari / they / work / do? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Ferrari / they / work / do?",
+          "acceptedAnswers": [
+            "Do they work for Ferrari?",
+            "Do they work for Ferrari? No, they don't.",
+            "Do they work at Ferrari?"
+          ],
+          "explanation": "work for a company"
         },
         {
           "id": "ws-04-sec-j-q04",
           "order": 4,
-          "prompt": "work / Renault / do / they? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "work / Renault / do / they?",
+          "acceptedAnswers": [
+            "Do they work for Renault?",
+            "Do they work for Renault? No, they don't.",
+            "Do they work at Renault?"
+          ],
+          "explanation": "work for a company"
         },
         {
           "id": "ws-04-sec-j-q05",
           "order": 5,
-          "prompt": "swimming / like / cooking / they / do? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "swimming / like / cooking / they / do?",
+          "acceptedAnswers": [
+            "Do they like swimming and cooking?",
+            "Do they like swimming and cooking? Yes, they do.",
+            "Do they like cooking and swimming?"
+          ],
+          "explanation": "like + -ing"
         },
         {
           "id": "ws-04-sec-j-q06",
           "order": 6,
-          "prompt": "swimming / they / like / traveling / do? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "swimming / they / like / traveling / do?",
+          "acceptedAnswers": [
+            "Do they like swimming and traveling?",
+            "Do they like swimming and travelling?",
+            "Do they like traveling and swimming?",
+            "Do they like travelling and swimming?"
+          ],
+          "explanation": "like + -ing"
         },
         {
           "id": "ws-04-sec-j-q07",
           "order": 7,
-          "prompt": "like / do / driving / they ? [gap] Do they live in London? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "like / do / driving / they?",
+          "acceptedAnswers": [
+            "Do they like driving?",
+            "Do they like driving? No, they don't."
+          ],
+          "explanation": "like + -ing"
         }
       ]
     },
     {
       "id": "ws-04-sec-k",
       "sectionKey": "K",
-      "instruction": "What does Ellie ask Carsten? Put the words in order to make questions:",
-      "type": "question_formation",
+      "instruction": "What does Ellie ask Carsten? Put the words in order to make questions. (Example: Sunday / time / What / do / get / you / up / on? → What time do you get up on Sunday? Carsten: Ten o'clock.)",
+      "type": "sentence_building",
       "questions": [
         {
           "id": "ws-04-sec-k-q01",
           "order": 1,
-          "prompt": "Ellie: Sunday time What do get you up on?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "you / breakfast / What / do / have / for? (Carsten: Coffee, cheese and bread.)",
+          "acceptedAnswers": [
+            "What do you have for breakfast?"
+          ],
+          "explanation": "Wh- + do + you + verb"
         },
         {
           "id": "ws-04-sec-k-q02",
           "order": 2,
-          "prompt": "What time do you get up on Sunday? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "morning / you / in / do / the / What / do? (Carsten: I play football in the park.)",
+          "acceptedAnswers": [
+            "What do you do in the morning?"
+          ],
+          "explanation": "What do you do + time"
         },
         {
           "id": "ws-04-sec-k-q03",
           "order": 3,
-          "prompt": "Carsten: Ten o’clock.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "do / lunch / When / have / you? (Carsten: At two o'clock.)",
+          "acceptedAnswers": [
+            "When do you have lunch?"
+          ],
+          "explanation": "When do you + verb"
         },
         {
           "id": "ws-04-sec-k-q04",
           "order": 4,
-          "prompt": "Ellie: you breakfast What do have for?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "with / Who / lunch / you / do / have? (Carsten: My parents.)",
+          "acceptedAnswers": [
+            "Who do you have lunch with?",
+            "With who do you have lunch?"
+          ],
+          "explanation": "preposition at the end"
         },
         {
           "id": "ws-04-sec-k-q05",
           "order": 5,
-          "prompt": "Carsten: Coffee, cheese and bread.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q06",
-          "order": 6,
-          "prompt": "Ellie: morning you in do the What do?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q07",
-          "order": 7,
-          "prompt": "Carsten: I play football in the park.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q08",
-          "order": 8,
-          "prompt": "Ellie: do lunch When have you?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q09",
-          "order": 9,
-          "prompt": "Carsten: At two o’clock.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q10",
-          "order": 10,
-          "prompt": "Ellie: with Who lunch you do have?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q11",
-          "order": 11,
-          "prompt": "Carsten: My parents.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q12",
-          "order": 12,
-          "prompt": "Ellie: you afternoon What do do in the?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-k-q13",
-          "order": 13,
-          "prompt": "Carsten: I watch football on TV.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "you / afternoon / What / do / do / in / the? (Carsten: I watch football on TV.)",
+          "acceptedAnswers": [
+            "What do you do in the afternoon?"
+          ],
+          "explanation": "What do you do + time"
         }
       ]
     },
     {
       "id": "ws-04-sec-l",
       "sectionKey": "L",
-      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS:",
+      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS. (Example: Father: Alice, what are you doing (you / do)?)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-04-sec-l-q01",
           "order": 1,
-          "prompt": "Father: Alice, what are you doing (you / do)? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Alice: I [gap] (clean) the house.",
+          "acceptedAnswers": [
+            "am cleaning|'m cleaning"
+          ],
+          "explanation": "now: present continuous"
         },
         {
           "id": "ws-04-sec-l-q02",
           "order": 2,
-          "prompt": "Alice: I [gap] (clean) the house. I usually [gap] (do) my",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I usually [gap] (do) my homework but today I [gap] (not / go) to school.",
+          "acceptedAnswers": [
+            "do / am not going|'m not going"
+          ],
+          "explanation": "usually: simple; today: continuous"
         },
         {
           "id": "ws-04-sec-l-q03",
           "order": 3,
-          "prompt": "homework but today I [gap] (not / go) to school.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Father: Where's your mum? Alice: She [gap] (make) a cake.",
+          "acceptedAnswers": [
+            "is making|'s making"
+          ],
+          "explanation": "now: present continuous"
         },
         {
           "id": "ws-04-sec-l-q04",
           "order": 4,
-          "prompt": "Father: Where’s your mum? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-l-q05",
-          "order": 5,
-          "prompt": "Alice: She [gap] (make) a cake. She usually [gap] (go) to",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-04-sec-l-q06",
-          "order": 6,
-          "prompt": "the market but today my friends [gap] (come).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She usually [gap] (go) to the market but today my friends [gap] (come).",
+          "acceptedAnswers": [
+            "goes / are coming|'re coming"
+          ],
+          "explanation": "usually: simple; today: continuous"
         }
       ]
     },
     {
       "id": "ws-04-sec-m",
       "sectionKey": "M",
-      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS:",
+      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS. (Example: Sarah Star is a singer. She sings (sing) …)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-04-sec-m-q01",
           "order": 1,
-          "prompt": "Sarah Star is a singer. She sings [gap] (sing) and [gap] (dance) on TV. She [gap] (drive) a red Mercedes. At the moment she is with Nick Pear. They [gap] (eat) in a restaurant. Sarah [gap] (drink) a cocktail and Nick [gap] (talk) to the waiter.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Sarah Star is a singer. She sings and [gap] (dance) on TV.",
+          "acceptedAnswers": [
+            "dances"
+          ],
+          "explanation": "habit: present simple"
         },
         {
           "id": "ws-04-sec-m-q02",
           "order": 2,
-          "prompt": "Ann is a doctor. She [gap] (work) in a hospital but today she [gap] (stay) at home. Now she [gap] (cook) dinner. Her friends [gap] (visit) her today. It [gap] (be) her birthday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She [gap] (drive) a red Mercedes.",
+          "acceptedAnswers": [
+            "drives"
+          ],
+          "explanation": "fact/habit: present simple"
+        },
+        {
+          "id": "ws-04-sec-m-q03",
+          "order": 3,
+          "prompt": "At the moment she is with Nick Pear. They [gap] (eat) in a restaurant.",
+          "acceptedAnswers": [
+            "are eating|'re eating"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q04",
+          "order": 4,
+          "prompt": "Sarah [gap] (drink) a cocktail and Nick [gap] (talk) to the waiter.",
+          "acceptedAnswers": [
+            "is drinking|'s drinking / is talking|'s talking"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q05",
+          "order": 5,
+          "prompt": "Ann is a doctor. She [gap] (work) in a hospital but today she [gap] (stay) at home.",
+          "acceptedAnswers": [
+            "works / is staying|'s staying"
+          ],
+          "explanation": "routine: simple; today: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q06",
+          "order": 6,
+          "prompt": "Now she [gap] (cook) dinner.",
+          "acceptedAnswers": [
+            "is cooking|'s cooking"
+          ],
+          "explanation": "now: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q07",
+          "order": 7,
+          "prompt": "Her friends [gap] (visit) her today.",
+          "acceptedAnswers": [
+            "are visiting|'re visiting"
+          ],
+          "explanation": "today (temporary): continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q08",
+          "order": 8,
+          "prompt": "It [gap] (be) her birthday.",
+          "acceptedAnswers": [
+            "is|'s"
+          ],
+          "explanation": "be: state verb, present simple"
         }
       ]
     }

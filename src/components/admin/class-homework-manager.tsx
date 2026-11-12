@@ -37,12 +37,13 @@ const EXAM_ORDER = [
   "DICTATION",
   "FILL_BLANK",
   "LISTEN_ANSWER",
+  "WORKSHEET",
   "ACADEMIC",
   "GENERAL",
   "PLACEMENT",
 ];
 
-const GAME_EXAMS = new Set(["SHADOWING", "DICTATION", "FILL_BLANK", "LISTEN_ANSWER"]);
+const GAME_EXAMS = new Set(["SHADOWING", "DICTATION", "FILL_BLANK", "LISTEN_ANSWER", "WORKSHEET"]);
 
 export type HomeworkCategory =
   | "IELTS_LISTENING"
@@ -52,7 +53,8 @@ export type HomeworkCategory =
   | "GAME_SHADOWING"
   | "GAME_DICTATION"
   | "GAME_FILL_BLANK"
-  | "GAME_LISTEN_ANSWER";
+  | "GAME_LISTEN_ANSWER"
+  | "GRAMMAR_WORKSHEET";
 
 function examGroupLabel(exam: string) {
   switch (exam) {
@@ -64,6 +66,8 @@ function examGroupLabel(exam: string) {
       return "Nghe điền từ (Gap Fill)";
     case "LISTEN_ANSWER":
       return "Nghe & trả lời (Q&A)";
+    case "WORKSHEET":
+      return "Thẻ Bài tập Ngữ pháp Chuyên đề";
     case "ACADEMIC":
       return "Đề thi Academic";
     case "GENERAL":
@@ -249,6 +253,10 @@ export function ClassHomeworkManager({
         const tests = catalog.filter((test) => test.examType === "LISTEN_ANSWER");
         return tests.length ? [{ exam: "LISTEN_ANSWER", tests }] : [];
       }
+      case "GRAMMAR_WORKSHEET": {
+        const tests = catalog.filter((test) => test.examType === "WORKSHEET");
+        return tests.length ? [{ exam: "WORKSHEET", tests }] : [];
+      }
       default:
         return [];
     }
@@ -337,13 +345,15 @@ export function ClassHomeworkManager({
       slug.startsWith("shadowing/") ||
       slug.startsWith("dictation/") ||
       slug.startsWith("fill-blank/") ||
-      slug.startsWith("listen-answer/");
+      slug.startsWith("listen-answer/") ||
+      slug.startsWith("worksheets/");
 
     let gameBadge = "";
     if (slug.startsWith("shadowing/")) gameBadge = "Shadowing";
     else if (slug.startsWith("dictation/")) gameBadge = "Chép chính tả";
     else if (slug.startsWith("fill-blank/")) gameBadge = "Điền từ";
     else if (slug.startsWith("listen-answer/")) gameBadge = "Nghe & trả lời";
+    else if (slug.startsWith("worksheets/")) gameBadge = "Ngữ pháp";
 
     return (
       <>
@@ -369,7 +379,8 @@ export function ClassHomeworkManager({
       item.testSlug.startsWith("shadowing/") ||
       item.testSlug.startsWith("dictation/") ||
       item.testSlug.startsWith("fill-blank/") ||
-      item.testSlug.startsWith("listen-answer/")
+      item.testSlug.startsWith("listen-answer/") ||
+      item.testSlug.startsWith("worksheets/")
     ) {
       return `/learn/${item.testSlug}`;
     }
@@ -429,7 +440,11 @@ export function ClassHomeworkManager({
                 row.slug.startsWith("dictation/") ||
                 row.slug.startsWith("fill-blank/") ||
                 row.slug.startsWith("listen-answer/");
-              const canPickParts = !isSkill && test && test.skill !== "SPEAKING" && test.parts.length > 1;
+              const canPickParts =
+                (!isSkill || row.slug.startsWith("worksheets/")) &&
+                test &&
+                test.skill !== "SPEAKING" &&
+                test.parts.length > 1;
               return (
                 <div key={row.key} className="min-w-0 space-y-3 rounded-xl border border-zinc-200 bg-white p-3">
                   <div className="grid min-w-0 gap-3 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_minmax(0,13rem)]">
@@ -459,11 +474,16 @@ export function ClassHomeworkManager({
                           <option value="GAME_FILL_BLANK">Nghe điền từ (Gap Fill)</option>
                           <option value="GAME_LISTEN_ANSWER">Nghe & trả lời (Q&A)</option>
                         </optgroup>
+                        <optgroup label="Ngữ pháp chuyên đề (Worksheets)">
+                          <option value="GRAMMAR_WORKSHEET">Thẻ Bài tập Ngữ pháp Chuyên đề</option>
+                        </optgroup>
                       </select>
                     </label>
                     <label className="block min-w-0 space-y-1">
                       <span className="text-xs font-semibold text-zinc-700">
-                        {row.category.startsWith("GAME_") ? "Bài luyện tập" : "Đề thi"}
+                        {row.category.startsWith("GAME_") || row.category === "GRAMMAR_WORKSHEET"
+                          ? "Bài luyện tập"
+                          : "Đề thi"}
                       </span>
                       <select
                         value={row.slug}
@@ -472,7 +492,9 @@ export function ClassHomeworkManager({
                         className={inputCls}
                       >
                         <option value="">
-                          {row.category.startsWith("GAME_") ? "Chọn bài luyện tập…" : "Chọn đề thi…"}
+                          {row.category.startsWith("GAME_") || row.category === "GRAMMAR_WORKSHEET"
+                            ? "Chọn bài luyện tập…"
+                            : "Chọn đề thi…"}
                         </option>
                         {testsForCategory(row.category).map((group) =>
                           GAME_EXAMS.has(group.exam) ? (

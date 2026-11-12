@@ -2,103 +2,101 @@
  * Smart grading engine for Worksheet exercises with tolerant normalization.
  */
 
-const CONTRACTION_PAIRS: [RegExp, string][] = [
-  [/\bi am\b/gi, "i'm"],
-  [/\bhe is\b/gi, "he's"],
-  [/\bshe is\b/gi, "she's"],
-  [/\bit is\b/gi, "it's"],
-  [/\bwe are\b/gi, "we're"],
-  [/\bthey are\b/gi, "they're"],
-  [/\byou are\b/gi, "you're"],
-  [/\bis not\b/gi, "isn't"],
-  [/\bare not\b/gi, "aren't"],
-  [/\bwas not\b/gi, "wasn't"],
-  [/\bwere not\b/gi, "weren't"],
-  [/\bdo not\b/gi, "don't"],
-  [/\bdoes not\b/gi, "doesn't"],
-  [/\bdid not\b/gi, "didn't"],
-  [/\bhave not\b/gi, "haven't"],
-  [/\bhas not\b/gi, "hasn't"],
-  [/\bhad not\b/gi, "hadn't"],
-  [/\bwill not\b/gi, "won't"],
-  [/\bcannot\b/gi, "can't"],
-  [/\bcan not\b/gi, "can't"],
-  [/\bcould not\b/gi, "couldn't"],
-  [/\bshould not\b/gi, "shouldn't"],
-  [/\bwould not\b/gi, "wouldn't"],
-];
-
 /**
- * Standardize text by removing extra spaces, trailing punctuation, and normalizing quotes.
+ * Standardize text: lowercase, unify apostrophes, drop sentence punctuation and quotes, collapse spaces.
+ * "/" is kept because it separates gaps in multi-gap answers.
  */
 export function normalizeAnswerText(raw: string): string {
   if (!raw) return "";
 
-  let text = raw
-    .trim()
+  return raw
     .toLowerCase()
-    // normalize quotation marks and apostrophes
     .replace(/[\u2018\u2019\u0060\u00B4]/g, "'")
-    .replace(/[\u201C\u201D]/g, '"')
-    // collapse whitespace
-    .replace(/\s+/g, " ");
-
-  // remove trailing sentence punctuation
-  text = text.replace(/[.?!,;:]+$/, "").trim();
-
-  return text;
+    .replace(/[\u201C\u201D"]/g, " ")
+    .replace(/[.?!,;:…]/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\s*\/\s*/g, " / ")
+    .trim();
 }
 
+/** Split a key into gaps (" / ") and per-gap alternatives ("|"). */
+export function parseKeyGaps(key: string): string[][] {
+  return key.split(" / ").map((gap) =>
+    gap
+      .split("|")
+      .map((alt) => alt.trim())
+      .filter(Boolean),
+  );
+}
+
+/** Expand "at|on / in" into ["at / in", "on / in"]. */
+function expandKey(key: string): string[] {
+  if (!key.includes("|")) return [key];
+  return parseKeyGaps(key).reduce<string[]>(
+    (acc, alts) => acc.flatMap((prefix) => alts.map((a) => (prefix ? `${prefix} / ${a}` : a))),
+    [""],
+  );
+}
+
+/** Human-readable key: "(1) at / on  (2) in" for multi-gap, "at / on" for single gap. */
+export function formatAnswerKey(key: string): string {
+  const gaps = parseKeyGaps(key);
+  if (gaps.length <= 1) return (gaps[0] ?? []).join(" / ");
+  return gaps.map((alts, i) => `(${i + 1}) ${alts.join(" / ")}`).join("  ");
+}
+
+const NUMBER_WORDS: Record<string, string> = {
+  zero: "0", one: "1", two: "2", three: "3", four: "4", five: "5", six: "6", seven: "7",
+  eight: "8", nine: "9", ten: "10", eleven: "11", twelve: "12", thirteen: "13", fourteen: "14",
+  fifteen: "15", sixteen: "16", seventeen: "17", eighteen: "18", nineteen: "19", twenty: "20",
+  thirty: "30", forty: "40", fifty: "50", hundred: "100",
+};
+
+/** Unambiguous contractions → full forms; number words → digits. */
+function expandUnambiguous(text: string): string {
+  return text
+    .replace(/\bwon't\b/g, "will not")
+    .replace(/\bshan't\b/g, "shall not")
+    .replace(/\bcan't\b|\bcannot\b/g, "can not")
+    .replace(/\bain't\b/g, "is not")
+    .replace(/\blet's\b/g, "let us")
+    .replace(/n't\b/g, " not")
+    .replace(/'ve\b/g, " have")
+    .replace(/'ll\b/g, " will")
+    .replace(/'re\b/g, " are")
+    .replace(/\bi'm\b/g, "i am")
+    .replace(/\b[a-z]+\b/g, (w) => NUMBER_WORDS[w] ?? w)
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const MAX_AMBIGUOUS = 4;
+
 /**
- * Produce variants (with contracted and expanded forms) for flexible matching.
+ * Canonical variants for matching. "'s" may be is / has / possessive and "'d" may be would / had,
+ * so each occurrence branches into every reading (both sides are expanded the same way).
  */
 export function generateEquivalents(text: string): string[] {
   const base = normalizeAnswerText(text);
   if (!base) return [];
 
-  const variants = new Set<string>([base]);
+  const expanded = expandUnambiguous(base);
+  const parts = expanded.split(/('s|'d)\b/);
+  const ambiguous = Math.floor(parts.length / 2);
+  if (ambiguous === 0 || ambiguous > MAX_AMBIGUOUS) return [expanded];
 
-  // Apply contractions (e.g. "he is" -> "he's")
-  let contracted = base;
-  for (const [pattern, replacement] of CONTRACTION_PAIRS) {
-    contracted = contracted.replace(pattern, replacement);
-  }
-  variants.add(contracted);
+  let variants = [""];
+  parts.forEach((part, i) => {
+    const options =
+      i % 2 === 0 ? [part] : part === "'s" ? ["'s", " is", " has"] : ["'d", " would", " had"];
+    variants = variants.flatMap((v) => options.map((o) => v + o));
+  });
+  return Array.from(new Set(variants.map((v) => v.replace(/\s+/g, " ").trim())));
+}
 
-  // Apply reverse expansions for key contractions
-  let expanded = base;
-  const EXPANSION_MAP: Record<string, string> = {
-    "i'm": "i am",
-    "he's": "he is",
-    "she's": "she is",
-    "it's": "it is",
-    "we're": "we are",
-    "they're": "they are",
-    "you're": "you are",
-    "isn't": "is not",
-    "aren't": "are not",
-    "wasn't": "was not",
-    "weren't": "were not",
-    "don't": "do not",
-    "doesn't": "does not",
-    "didn't": "did not",
-    "haven't": "have not",
-    "hasn't": "has not",
-    "hadn't": "had not",
-    "won't": "will not",
-    "can't": "cannot",
-    "couldn't": "could not",
-    "shouldn't": "should not",
-    "wouldn't": "would not",
-  };
-
-  for (const [short, full] of Object.entries(EXPANSION_MAP)) {
-    const rx = new RegExp(`\\b${short}\\b`, "gi");
-    expanded = expanded.replace(rx, full);
-  }
-  variants.add(expanded);
-
-  return Array.from(variants);
+/** Questions without a usable key can't be auto-graded and must not count as wrong. */
+export function hasAnswerKey(acceptedAnswers: string[] | undefined): boolean {
+  return (acceptedAnswers ?? []).some((a) => normalizeAnswerText(a).length > 0);
 }
 
 /**
@@ -115,7 +113,7 @@ export function checkAnswer(
 
   const userVariants = generateEquivalents(normUser);
 
-  for (const accepted of acceptedAnswers) {
+  for (const accepted of acceptedAnswers.flatMap(expandKey)) {
     const acceptedVariants = generateEquivalents(accepted);
     // If any user variant matches any accepted variant
     const matched = userVariants.some((uv) => acceptedVariants.includes(uv));

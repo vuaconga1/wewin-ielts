@@ -1,0 +1,1916 @@
+{
+  "id": "card-20",
+  "order": 20,
+  "part": 1,
+  "slug": "card-20-cau-truc-dac-biet-va-viet-lai-cau-tong-hop",
+  "title": "THẺ BÀI TẬP 20",
+  "subject": "Special Structures & Master Rewrite",
+  "subjectVi": "Cấu trúc câu đặc biệt & Viết lại câu",
+  "level": "B1",
+  "pageRange": "WS-43, WS-44, WS-58, WS-59, WS-60",
+  "sections": [
+    {
+      "id": "card-20-sec-1",
+      "sectionKey": "A",
+      "instruction": "Put A QUESTION TAG at the end of each sentence: (Example: Tom won’t be late, will he?)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-a-q02",
+          "order": 2,
+          "prompt": "They were very angry, [gap]?",
+          "acceptedAnswers": [
+            "weren't they"
+          ],
+          "explanation": "positive sentence → negative tag"
+        },
+        {
+          "id": "ws-43-sec-a-q03",
+          "order": 3,
+          "prompt": "Ann’s on holiday, [gap]?",
+          "acceptedAnswers": [
+            "isn't she"
+          ],
+          "explanation": "Ann’s = Ann is → isn’t she"
+        },
+        {
+          "id": "ws-43-sec-a-q04",
+          "order": 4,
+          "prompt": "You weren’t listening, [gap]?",
+          "acceptedAnswers": [
+            "were you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-a-q05",
+          "order": 5,
+          "prompt": "Sue doesn’t like onions, [gap]?",
+          "acceptedAnswers": [
+            "does she"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-a-q06",
+          "order": 6,
+          "prompt": "Jack’s applied for the job, [gap]?",
+          "acceptedAnswers": [
+            "hasn't he"
+          ],
+          "explanation": "Jack’s applied = Jack has applied"
+        },
+        {
+          "id": "ws-43-sec-a-q07",
+          "order": 7,
+          "prompt": "You’ve got a camera, [gap]?",
+          "acceptedAnswers": [
+            "haven't you"
+          ],
+          "explanation": "have got → haven’t … ?"
+        },
+        {
+          "id": "ws-43-sec-a-q08",
+          "order": 8,
+          "prompt": "You can type, [gap]?",
+          "acceptedAnswers": [
+            "can't you"
+          ],
+          "explanation": "can → can’t"
+        },
+        {
+          "id": "ws-43-sec-a-q09",
+          "order": 9,
+          "prompt": "He won’t mind if I go early, [gap]?",
+          "acceptedAnswers": [
+            "will he"
+          ],
+          "explanation": "won’t → will"
+        },
+        {
+          "id": "ws-43-sec-a-q10",
+          "order": 10,
+          "prompt": "Tom could help you, [gap]?",
+          "acceptedAnswers": [
+            "couldn't he"
+          ],
+          "explanation": "could → couldn’t"
+        },
+        {
+          "id": "ws-43-sec-a-q11",
+          "order": 11,
+          "prompt": "There are a lot of people here, [gap]?",
+          "acceptedAnswers": [
+            "aren't there"
+          ],
+          "explanation": "there are → aren’t there"
+        },
+        {
+          "id": "ws-43-sec-a-q12",
+          "order": 12,
+          "prompt": "Let’s have dinner, [gap]?",
+          "acceptedAnswers": [
+            "shall we"
+          ],
+          "explanation": "Let’s → shall we"
+        },
+        {
+          "id": "ws-43-sec-a-q13",
+          "order": 13,
+          "prompt": "This isn’t very interesting, [gap]?",
+          "acceptedAnswers": [
+            "is it"
+          ],
+          "explanation": "this → it in the tag"
+        },
+        {
+          "id": "ws-43-sec-a-q14",
+          "order": 14,
+          "prompt": "I’m too fat, [gap]?",
+          "acceptedAnswers": [
+            "aren't I"
+          ],
+          "explanation": "I am → aren’t I"
+        },
+        {
+          "id": "ws-43-sec-a-q15",
+          "order": 15,
+          "prompt": "You wouldn’t tell anyone, [gap]?",
+          "acceptedAnswers": [
+            "would you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-a-q16",
+          "order": 16,
+          "prompt": "Listen, [gap]?",
+          "acceptedAnswers": [
+            "will you|won't you|would you|can you|could you"
+          ],
+          "explanation": "imperative → will you / won’t you"
+        },
+        {
+          "id": "ws-43-sec-a-q17",
+          "order": 17,
+          "prompt": "I shouldn’t have got angry, [gap]?",
+          "acceptedAnswers": [
+            "should I"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-a-q18",
+          "order": 18,
+          "prompt": "Don’t drop it, [gap]?",
+          "acceptedAnswers": [
+            "will you"
+          ],
+          "explanation": "negative imperative → will you"
+        },
+        {
+          "id": "ws-43-sec-a-q19",
+          "order": 19,
+          "prompt": "They had to go home, [gap]?",
+          "acceptedAnswers": [
+            "didn't they"
+          ],
+          "explanation": "had to → didn’t"
+        },
+        {
+          "id": "ws-43-sec-a-q20",
+          "order": 20,
+          "prompt": "He’d never seen you before, [gap]?",
+          "acceptedAnswers": [
+            "had he"
+          ],
+          "explanation": "never is negative → positive tag"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-2",
+      "sectionKey": "B",
+      "instruction": "Write a sentence with A QUESTION TAG: (Example: You are with a friend outside a restaurant. You are looking at the prices. It’s very expensive. What do you say? → It’s very expensive, isn’t it?)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-43-sec-b-q02",
+          "order": 2,
+          "prompt": "You look out of the window. It’s a beautiful day. What do you say to your friend? (Start with: It’s)",
+          "acceptedAnswers": [
+            "It's a beautiful day, isn't it?"
+          ],
+          "explanation": "positive sentence → negative tag"
+        },
+        {
+          "id": "ws-43-sec-b-q03",
+          "order": 3,
+          "prompt": "You’ve just come out of the cinema with your friend. You both really enjoyed the film. You thought it was great. What do you say? (Start with: The film)",
+          "acceptedAnswers": [
+            "The film was great, wasn't it?",
+            "The film was really great, wasn't it?"
+          ],
+          "explanation": "was → wasn’t it"
+        },
+        {
+          "id": "ws-43-sec-b-q04",
+          "order": 4,
+          "prompt": "Tom’s hair is much shorter. Clearly he has had his hair cut. What do you say to him? (Start with: You)",
+          "acceptedAnswers": [
+            "You've had your hair cut, haven't you?",
+            "You have had your hair cut, haven't you?"
+          ],
+          "explanation": "have had → haven’t you"
+        },
+        {
+          "id": "ws-43-sec-b-q05",
+          "order": 5,
+          "prompt": "You are shopping. You are trying on a jacket. You look in the mirror: it doesn’t look very nice. What do you say to your friend? (Start with: It)",
+          "acceptedAnswers": [
+            "It doesn't look very nice, does it?",
+            "It doesn't look nice, does it?"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-b-q06",
+          "order": 6,
+          "prompt": "You are talking about Bill. You know that Bill works very hard. Everyone knows this. What do you say about Bill? (Start with: Bill)",
+          "acceptedAnswers": [
+            "Bill works very hard, doesn't he?"
+          ],
+          "explanation": "present simple → doesn’t he"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-3",
+      "sectionKey": "C",
+      "instruction": "Complete the conversation. Put in the QUESTION TAGS:",
+      "type": "passage_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-c-q01",
+          "order": 1,
+          "prompt": "Mary: Let’s go out somewhere tonight, [gap]?",
+          "acceptedAnswers": [
+            "shall we"
+          ],
+          "explanation": "Let’s → shall we"
+        },
+        {
+          "id": "ws-43-sec-c-q02",
+          "order": 2,
+          "prompt": "Mary: You haven’t got a local paper, [gap]? Pass it over here, [gap]? Thanks. Well, there’s a disco at the Grand Hotel.",
+          "acceptedAnswers": [
+            "have you / will you|would you|could you|can you|won't you"
+          ],
+          "explanation": "negative → positive tag; imperative → will you"
+        },
+        {
+          "id": "ws-43-sec-c-q03",
+          "order": 3,
+          "prompt": "Jeff: Fine, but I haven’t got any money. You couldn’t lend me five pounds, [gap]?",
+          "acceptedAnswers": [
+            "could you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-c-q04",
+          "order": 4,
+          "prompt": "Mary: OK, I’ll pay then. I’ll meet you outside at eight o’clock. Don’t be late, [gap]?",
+          "acceptedAnswers": [
+            "will you"
+          ],
+          "explanation": "negative imperative → will you"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-4",
+      "sectionKey": "D",
+      "instruction": "Put A QUESTION TAG at the end of each sentence:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-d-q01",
+          "order": 1,
+          "prompt": "You don’t like this music, [gap]?",
+          "acceptedAnswers": [
+            "do you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-d-q02",
+          "order": 2,
+          "prompt": "Robert isn’t at work today, [gap]?",
+          "acceptedAnswers": [
+            "is he"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-d-q03",
+          "order": 3,
+          "prompt": "I’m too late, [gap]?",
+          "acceptedAnswers": [
+            "aren't I"
+          ],
+          "explanation": "I am → aren’t I"
+        },
+        {
+          "id": "ws-43-sec-d-q04",
+          "order": 4,
+          "prompt": "You haven’t seen the newspaper, [gap]?",
+          "acceptedAnswers": [
+            "have you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-d-q05",
+          "order": 5,
+          "prompt": "Lynne speaks French and German, [gap]?",
+          "acceptedAnswers": [
+            "doesn't she"
+          ],
+          "explanation": "present simple → doesn’t"
+        },
+        {
+          "id": "ws-43-sec-d-q06",
+          "order": 6,
+          "prompt": "They didn’t go to the concert, [gap]?",
+          "acceptedAnswers": [
+            "did they"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-d-q07",
+          "order": 7,
+          "prompt": "You’d like to have something to eat, [gap]?",
+          "acceptedAnswers": [
+            "wouldn't you"
+          ],
+          "explanation": "You’d like = You would like"
+        },
+        {
+          "id": "ws-43-sec-d-q08",
+          "order": 8,
+          "prompt": "We’re leaving tomorrow, [gap]?",
+          "acceptedAnswers": [
+            "aren't we"
+          ],
+          "explanation": "are → aren’t"
+        },
+        {
+          "id": "ws-43-sec-d-q09",
+          "order": 9,
+          "prompt": "You couldn’t do me a favour, [gap]?",
+          "acceptedAnswers": [
+            "could you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-d-q10",
+          "order": 10,
+          "prompt": "You don’t know where Sarah is, [gap]?",
+          "acceptedAnswers": [
+            "do you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        },
+        {
+          "id": "ws-43-sec-d-q11",
+          "order": 11,
+          "prompt": "Switch on the light for me, [gap]?",
+          "acceptedAnswers": [
+            "will you|won't you|would you|can you|could you"
+          ],
+          "explanation": "imperative → will you / would you"
+        },
+        {
+          "id": "ws-43-sec-d-q12",
+          "order": 12,
+          "prompt": "Don’t forget to lock the door, [gap]?",
+          "acceptedAnswers": [
+            "will you"
+          ],
+          "explanation": "negative imperative → will you"
+        },
+        {
+          "id": "ws-43-sec-d-q13",
+          "order": 13,
+          "prompt": "Nobody was watching the TV, [gap]?",
+          "acceptedAnswers": [
+            "were they"
+          ],
+          "explanation": "nobody → positive tag with they"
+        },
+        {
+          "id": "ws-43-sec-d-q14",
+          "order": 14,
+          "prompt": "Everyone will be here soon, [gap]?",
+          "acceptedAnswers": [
+            "won't they"
+          ],
+          "explanation": "everyone → they in the tag"
+        },
+        {
+          "id": "ws-43-sec-d-q15",
+          "order": 15,
+          "prompt": "Nothing terrible has happened, [gap]?",
+          "acceptedAnswers": [
+            "has it"
+          ],
+          "explanation": "nothing → positive tag with it"
+        },
+        {
+          "id": "ws-43-sec-d-q16",
+          "order": 16,
+          "prompt": "There’s plenty of time, [gap]?",
+          "acceptedAnswers": [
+            "isn't there"
+          ],
+          "explanation": "there is → isn’t there"
+        },
+        {
+          "id": "ws-43-sec-d-q17",
+          "order": 17,
+          "prompt": "Pass me that magazine, [gap]?",
+          "acceptedAnswers": [
+            "will you|won't you|would you|can you|could you"
+          ],
+          "explanation": "imperative → will you / would you"
+        },
+        {
+          "id": "ws-43-sec-d-q18",
+          "order": 18,
+          "prompt": "Let’s have a cup of tea, [gap]?",
+          "acceptedAnswers": [
+            "shall we"
+          ],
+          "explanation": "Let’s → shall we"
+        },
+        {
+          "id": "ws-43-sec-d-q19",
+          "order": 19,
+          "prompt": "It’s a good restaurant, [gap]?",
+          "acceptedAnswers": [
+            "isn't it"
+          ],
+          "explanation": "positive sentence → negative tag"
+        },
+        {
+          "id": "ws-43-sec-d-q20",
+          "order": 20,
+          "prompt": "You haven’t seen my keys, [gap]?",
+          "acceptedAnswers": [
+            "have you"
+          ],
+          "explanation": "negative sentence → positive tag"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-5",
+      "sectionKey": "E",
+      "instruction": "Add TAG QUESTIONS to the following: (Example: They want to come, don’t they?)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-43-sec-e-q02",
+          "order": 2,
+          "prompt": "Elizabeth is a dentist, [gap]?",
+          "acceptedAnswers": [
+            "isn't she"
+          ],
+          "explanation": "positive sentence → negative tag"
+        },
+        {
+          "id": "ws-43-sec-e-q03",
+          "order": 3,
+          "prompt": "They won’t be here, [gap]?",
+          "acceptedAnswers": [
+            "will they"
+          ],
+          "explanation": "won’t → will"
+        },
+        {
+          "id": "ws-43-sec-e-q04",
+          "order": 4,
+          "prompt": "There aren’t any problems, [gap]?",
+          "acceptedAnswers": [
+            "are there"
+          ],
+          "explanation": "there aren’t → are there"
+        },
+        {
+          "id": "ws-43-sec-e-q05",
+          "order": 5,
+          "prompt": "That is your umbrella, [gap]?",
+          "acceptedAnswers": [
+            "isn't it"
+          ],
+          "explanation": "that → it in the tag"
+        },
+        {
+          "id": "ws-43-sec-e-q06",
+          "order": 6,
+          "prompt": "George is a student, [gap]?",
+          "acceptedAnswers": [
+            "isn't he"
+          ],
+          "explanation": "positive sentence → negative tag"
+        },
+        {
+          "id": "ws-43-sec-e-q07",
+          "order": 7,
+          "prompt": "He’s learned a lot in the last couple of years, [gap]?",
+          "acceptedAnswers": [
+            "hasn't he"
+          ],
+          "explanation": "He’s learned = He has learned"
+        },
+        {
+          "id": "ws-43-sec-e-q08",
+          "order": 8,
+          "prompt": "He has a bicycle, [gap]?",
+          "acceptedAnswers": [
+            "doesn't he|hasn't he"
+          ],
+          "explanation": "have (possession) → doesn’t he"
+        },
+        {
+          "id": "ws-43-sec-e-q09",
+          "order": 9,
+          "prompt": "Joan can’t come with us, [gap]?",
+          "acceptedAnswers": [
+            "can she"
+          ],
+          "explanation": "can’t → can"
+        },
+        {
+          "id": "ws-43-sec-e-q10",
+          "order": 10,
+          "prompt": "She’ll help us later, [gap]?",
+          "acceptedAnswers": [
+            "won't she"
+          ],
+          "explanation": "will → won’t"
+        },
+        {
+          "id": "ws-43-sec-e-q11",
+          "order": 11,
+          "prompt": "Peggy would like to come with us to the party, [gap]?",
+          "acceptedAnswers": [
+            "wouldn't she"
+          ],
+          "explanation": "would → wouldn’t"
+        },
+        {
+          "id": "ws-43-sec-e-q12",
+          "order": 12,
+          "prompt": "Those aren’t Fred’s books, [gap]?",
+          "acceptedAnswers": [
+            "are they"
+          ],
+          "explanation": "those → they in the tag"
+        },
+        {
+          "id": "ws-43-sec-e-q13",
+          "order": 13,
+          "prompt": "You’ve never been to Paris, [gap]?",
+          "acceptedAnswers": [
+            "have you"
+          ],
+          "explanation": "never is negative → positive tag"
+        },
+        {
+          "id": "ws-43-sec-e-q14",
+          "order": 14,
+          "prompt": "Something is wrong with Jane today, [gap]?",
+          "acceptedAnswers": [
+            "isn't it"
+          ],
+          "explanation": "something → it in the tag"
+        },
+        {
+          "id": "ws-43-sec-e-q15",
+          "order": 15,
+          "prompt": "Everyone can learn how to swim, [gap]?",
+          "acceptedAnswers": [
+            "can't they"
+          ],
+          "explanation": "everyone → they in the tag"
+        },
+        {
+          "id": "ws-43-sec-e-q16",
+          "order": 16,
+          "prompt": "Nobody cheated on the exam, [gap]?",
+          "acceptedAnswers": [
+            "did they"
+          ],
+          "explanation": "nobody → positive tag with they"
+        },
+        {
+          "id": "ws-43-sec-e-q17",
+          "order": 17,
+          "prompt": "Nothing went wrong while I was gone, [gap]?",
+          "acceptedAnswers": [
+            "did it"
+          ],
+          "explanation": "nothing → positive tag with it"
+        },
+        {
+          "id": "ws-43-sec-e-q18",
+          "order": 18,
+          "prompt": "I am invited, [gap]?",
+          "acceptedAnswers": [
+            "aren't I"
+          ],
+          "explanation": "I am → aren’t I"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-6",
+      "sectionKey": "F",
+      "instruction": "Complete the sentences with the words in parentheses: (Example: The doctor made the patient stay in bed. Mrs. Crane had her house painted.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-44-sec-a-q03",
+          "order": 3,
+          "prompt": "The teacher had the class [gap] a 2000-word research paper. (write)",
+          "acceptedAnswers": [
+            "write"
+          ],
+          "explanation": "have + person + base verb (active causative)"
+        },
+        {
+          "id": "ws-44-sec-a-q04",
+          "order": 4,
+          "prompt": "I made my son [gap] the windows before he could go outside to play. (wash)",
+          "acceptedAnswers": [
+            "wash"
+          ],
+          "explanation": "make + object + base verb"
+        },
+        {
+          "id": "ws-44-sec-a-q05",
+          "order": 5,
+          "prompt": "Don got some kids in the neighborhood [gap] out his garage. (clean)",
+          "acceptedAnswers": [
+            "to clean"
+          ],
+          "explanation": "get + person + to-infinitive"
+        },
+        {
+          "id": "ws-44-sec-a-q06",
+          "order": 6,
+          "prompt": "I went to the bank to have a check [gap]. (cash)",
+          "acceptedAnswers": [
+            "cashed"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-a-q07",
+          "order": 7,
+          "prompt": "Tom had a bad headache yesterday, so he got his twin brother Tim [gap] to class for him. The teacher didn't know the difference. (go)",
+          "acceptedAnswers": [
+            "to go"
+          ],
+          "explanation": "get + person + to-infinitive"
+        },
+        {
+          "id": "ws-44-sec-a-q08",
+          "order": 8,
+          "prompt": "When Scott went shopping, he found a jacket he really liked. After he had the sleeves [gap], it fit him perfectly. (shorten)",
+          "acceptedAnswers": [
+            "shortened"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-a-q09",
+          "order": 9,
+          "prompt": "My boss made me [gap] my report because he wasn't satisfied with it. (redo)",
+          "acceptedAnswers": [
+            "redo"
+          ],
+          "explanation": "make + object + base verb"
+        },
+        {
+          "id": "ws-44-sec-a-q10",
+          "order": 10,
+          "prompt": "Alice stopped at the service station to have the tank [gap]. (fill)",
+          "acceptedAnswers": [
+            "filled"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-a-q11",
+          "order": 11,
+          "prompt": "I got Mary [gap] me some money so I could go to a movie last night. (lend)",
+          "acceptedAnswers": [
+            "to lend"
+          ],
+          "explanation": "get + person + to-infinitive"
+        },
+        {
+          "id": "ws-44-sec-a-q12",
+          "order": 12,
+          "prompt": "Mr. Fields went to a doctor to have the wart on his nose [gap]. (remove)",
+          "acceptedAnswers": [
+            "removed"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-a-q13",
+          "order": 13,
+          "prompt": "Peeling onions always makes me [gap]. (cry)",
+          "acceptedAnswers": [
+            "cry"
+          ],
+          "explanation": "make + object + base verb"
+        },
+        {
+          "id": "ws-44-sec-a-q14",
+          "order": 14,
+          "prompt": "Tom Sawyer was supposed to paint the fence, but he didn't want to do it. He was a very clever boy. Somehow he got his friends [gap] it for him. (do)",
+          "acceptedAnswers": [
+            "to do"
+          ],
+          "explanation": "get + person + to-infinitive"
+        },
+        {
+          "id": "ws-44-sec-a-q15",
+          "order": 15,
+          "prompt": "We had a professional photographer [gap] pictures of everyone who participated in our wedding. (take)",
+          "acceptedAnswers": [
+            "take"
+          ],
+          "explanation": "have + person + base verb (active causative)"
+        },
+        {
+          "id": "ws-44-sec-a-q16",
+          "order": 16,
+          "prompt": "I spilled some tomato sauce on my suit coat. Now I need to get my suit [gap]. (clean)",
+          "acceptedAnswers": [
+            "cleaned"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-7",
+      "sectionKey": "G",
+      "instruction": "Circle the correct one:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-44-sec-b-q01",
+          "order": 1,
+          "prompt": "She has to get her hair [gap].",
+          "options": [
+            "a) to do",
+            "b) do",
+            "c) done",
+            "d) did"
+          ],
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-b-q02",
+          "order": 2,
+          "prompt": "Our teacher is going to make us [gap] a tape.",
+          "options": [
+            "a) listen to",
+            "b) listened to",
+            "c) to listen to",
+            "d) listen"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "make + object + base verb (listen to)"
+        },
+        {
+          "id": "ws-44-sec-b-q03",
+          "order": 3,
+          "prompt": "They had to have him [gap] their summer house.",
+          "options": [
+            "a) painted",
+            "b) paint",
+            "c) to paint",
+            "d) painting"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "have + person + base verb (active causative)"
+        },
+        {
+          "id": "ws-44-sec-b-q04",
+          "order": 4,
+          "prompt": "Do you know where I can get my car [gap]?",
+          "options": [
+            "a) washed",
+            "b) to wash",
+            "c) wash",
+            "d) washes"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-b-q05",
+          "order": 5,
+          "prompt": "The comedian was not able to make us [gap].",
+          "options": [
+            "a) laughing",
+            "b) to laugh",
+            "c) laugh",
+            "d) laughed"
+          ],
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "make + object + base verb"
+        },
+        {
+          "id": "ws-44-sec-b-q06",
+          "order": 6,
+          "prompt": "You can't get that man [gap] your radio.",
+          "options": [
+            "a) fix",
+            "b) to fix",
+            "c) fixed",
+            "d) fixing"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "get + person + to-infinitive"
+        },
+        {
+          "id": "ws-44-sec-b-q07",
+          "order": 7,
+          "prompt": "I can never make her [gap] her mind.",
+          "options": [
+            "a) change",
+            "b) to change",
+            "c) changed",
+            "d) changing"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "make + object + base verb"
+        },
+        {
+          "id": "ws-44-sec-b-q08",
+          "order": 8,
+          "prompt": "We had two pictures [gap].",
+          "options": [
+            "a) take",
+            "b) taken",
+            "c) to take",
+            "d) took"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        },
+        {
+          "id": "ws-44-sec-b-q09",
+          "order": 9,
+          "prompt": "When are you going to have your father [gap] a book?",
+          "options": [
+            "a) bought",
+            "b) to buy",
+            "c) buy",
+            "d) buying"
+          ],
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "have + person + base verb (active causative)"
+        },
+        {
+          "id": "ws-44-sec-b-q10",
+          "order": 10,
+          "prompt": "Please have the maid [gap] my room.",
+          "options": [
+            "a) clean",
+            "b) cleaned",
+            "c) to clean",
+            "d) cleaning"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "have + person + base verb (active causative)"
+        },
+        {
+          "id": "ws-44-sec-b-q11",
+          "order": 11,
+          "prompt": "I know he stole the money. We'll get him [gap].",
+          "options": [
+            "a) talk",
+            "b) talking",
+            "c) talked",
+            "d) to talk"
+          ],
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "get + person + to-infinitive"
+        },
+        {
+          "id": "ws-44-sec-b-q12",
+          "order": 12,
+          "prompt": "We had to hire a few men to get the trees [gap].",
+          "options": [
+            "a) cut down",
+            "b) to cut down",
+            "c) cutting down",
+            "d) cutted down"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "have/get + object + past participle (passive causative)"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-8",
+      "sectionKey": "H",
+      "instruction": "Reply with SO / NEITHER + auxiliary verb + subject. (Example: I’m feeling tired. → So am I.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-58-sec-a-q02",
+          "order": 2,
+          "prompt": "I don’t like eggs.",
+          "acceptedAnswers": [
+            "Neither do I.",
+            "Nor do I."
+          ],
+          "explanation": "negative → Neither do I"
+        },
+        {
+          "id": "ws-58-sec-a-q03",
+          "order": 3,
+          "prompt": "I need a holiday.",
+          "acceptedAnswers": [
+            "So do I."
+          ],
+          "explanation": "present simple → So do I"
+        },
+        {
+          "id": "ws-58-sec-a-q04",
+          "order": 4,
+          "prompt": "I don’t like milk.",
+          "acceptedAnswers": [
+            "Neither do I.",
+            "Nor do I."
+          ],
+          "explanation": "negative → Neither do I"
+        },
+        {
+          "id": "ws-58-sec-a-q05",
+          "order": 5,
+          "prompt": "I couldn’t get up this morning.",
+          "acceptedAnswers": [
+            "Neither could I.",
+            "Nor could I."
+          ],
+          "explanation": "couldn’t → Neither could I"
+        },
+        {
+          "id": "ws-58-sec-a-q06",
+          "order": 6,
+          "prompt": "I’d love a cup of tea.",
+          "acceptedAnswers": [
+            "So would I."
+          ],
+          "explanation": "I’d (would) → So would I"
+        },
+        {
+          "id": "ws-58-sec-a-q07",
+          "order": 7,
+          "prompt": "I’ve never been to Africa.",
+          "acceptedAnswers": [
+            "Neither have I.",
+            "Nor have I."
+          ],
+          "explanation": "never = negative → Neither have I"
+        },
+        {
+          "id": "ws-58-sec-a-q08",
+          "order": 8,
+          "prompt": "I was ill yesterday.",
+          "acceptedAnswers": [
+            "So was I."
+          ],
+          "explanation": "was → So was I"
+        },
+        {
+          "id": "ws-58-sec-a-q09",
+          "order": 9,
+          "prompt": "I should smoke less.",
+          "acceptedAnswers": [
+            "So should I."
+          ],
+          "explanation": "should → So should I"
+        },
+        {
+          "id": "ws-58-sec-a-q10",
+          "order": 10,
+          "prompt": "I spent the whole evening watching television.",
+          "acceptedAnswers": [
+            "So did I."
+          ],
+          "explanation": "past simple → So did I"
+        },
+        {
+          "id": "ws-58-sec-a-q11",
+          "order": 11,
+          "prompt": "I didn’t know that Ann was in hospital.",
+          "acceptedAnswers": [
+            "Neither did I.",
+            "Nor did I."
+          ],
+          "explanation": "didn’t → Neither did I"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-9",
+      "sectionKey": "I",
+      "instruction": "Felix has just met Vicky at a party. They are finding out that they have a lot in common. Write each reply with SO or NEITHER. (Example: Felix: I haven’t been to a party for ages. → Vicky: Neither have I. I hate crowded rooms. → Felix: So do I. I’m not a party-goer, really.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-58-sec-b-q01",
+          "order": 1,
+          "prompt": "Vicky replies to Felix: “I’m not a party-goer, really.” (Then she says: I can’t make conversation.)",
+          "acceptedAnswers": [
+            "Neither am I.",
+            "Nor am I."
+          ],
+          "explanation": "I’m not → Neither am I"
+        },
+        {
+          "id": "ws-58-sec-b-q02",
+          "order": 2,
+          "prompt": "Felix replies to Vicky: “I can’t make conversation.” (Then he says: I’m a quiet sort of person.)",
+          "acceptedAnswers": [
+            "Neither can I.",
+            "Nor can I."
+          ],
+          "explanation": "can’t → Neither can I"
+        },
+        {
+          "id": "ws-58-sec-b-q03",
+          "order": 3,
+          "prompt": "Vicky replies to Felix: “I’m a quiet sort of person.” (Then she says: I live alone in a bedsitter.)",
+          "acceptedAnswers": [
+            "So am I."
+          ],
+          "explanation": "I’m → So am I"
+        },
+        {
+          "id": "ws-58-sec-b-q04",
+          "order": 4,
+          "prompt": "Felix replies to Vicky: “I live alone in a bedsitter.” (Then he says: I haven’t got many friends.)",
+          "acceptedAnswers": [
+            "So do I."
+          ],
+          "explanation": "present simple → So do I"
+        },
+        {
+          "id": "ws-58-sec-b-q05",
+          "order": 5,
+          "prompt": "Vicky replies to Felix: “I haven’t got many friends.” (Then she says: And I would really like a good friend.)",
+          "acceptedAnswers": [
+            "Neither have I.",
+            "Nor have I."
+          ],
+          "explanation": "haven’t got → Neither have I"
+        },
+        {
+          "id": "ws-58-sec-b-q06",
+          "order": 6,
+          "prompt": "Felix replies to Vicky: “And I would really like a good friend.” (Felix begins with “Oh,”.)",
+          "acceptedAnswers": [
+            "Oh, So would I.",
+            "So would I."
+          ],
+          "explanation": "would → So would I"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-10",
+      "sectionKey": "J",
+      "instruction": "Look at the table and complete the sentences. (Examples: Mike can swim, and so can Lorna. — Marie isn’t keen on tennis, and neither is Mike.)",
+      "type": "inline_gap_fill",
+      "tableData": {
+        "headers": [
+          "",
+          "Mike",
+          "Lorna",
+          "Paul",
+          "Marie"
+        ],
+        "rows": [
+          [
+            "Swimming",
+            "✓",
+            "✓",
+            "",
+            ""
+          ],
+          [
+            "Tennis",
+            "",
+            "✓",
+            "✓",
+            ""
+          ],
+          [
+            "Cycling",
+            "✓",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Chess",
+            "",
+            "",
+            "✓",
+            "✓"
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-58-sec-c-q03",
+          "order": 3,
+          "prompt": "Paul doesn’t like swimming, and [gap].",
+          "acceptedAnswers": [
+            "neither does Marie|nor does Marie"
+          ],
+          "explanation": "negative → neither + does + subject"
+        },
+        {
+          "id": "ws-58-sec-c-q04",
+          "order": 4,
+          "prompt": "Marie has got a bike, and [gap].",
+          "acceptedAnswers": [
+            "so has Mike"
+          ],
+          "explanation": "has got → so has + subject"
+        },
+        {
+          "id": "ws-58-sec-c-q05",
+          "order": 5,
+          "prompt": "Mike can’t play chess, and [gap].",
+          "acceptedAnswers": [
+            "neither can Lorna|nor can Lorna"
+          ],
+          "explanation": "can’t → neither can + subject"
+        },
+        {
+          "id": "ws-58-sec-c-q06",
+          "order": 6,
+          "prompt": "Lorna isn’t keen on cycling, and [gap].",
+          "acceptedAnswers": [
+            "neither is Paul|nor is Paul"
+          ],
+          "explanation": "isn’t → neither is + subject"
+        },
+        {
+          "id": "ws-58-sec-c-q07",
+          "order": 7,
+          "prompt": "Paul plays tennis, and [gap].",
+          "acceptedAnswers": [
+            "so does Lorna"
+          ],
+          "explanation": "present simple → so does + subject"
+        },
+        {
+          "id": "ws-58-sec-c-q08",
+          "order": 8,
+          "prompt": "Marie is a chess player, and [gap].",
+          "acceptedAnswers": [
+            "so is Paul"
+          ],
+          "explanation": "is → so is + subject"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-11",
+      "sectionKey": "K",
+      "instruction": "Complete the sentences. Use ENOUGH with one of these words. (Examples: Is there enough sugar in your coffee? — Is it loud enough for you?)",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "big",
+        "eat",
+        "fruit",
+        "loud",
+        "old",
+        "practise",
+        "sugar",
+        "time",
+        "tired"
+      ],
+      "questions": [
+        {
+          "id": "ws-59-sec-a-q03",
+          "order": 3,
+          "prompt": "He can leave school if he wants – he’s [gap].",
+          "acceptedAnswers": [
+            "old enough"
+          ],
+          "explanation": "adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-a-q04",
+          "order": 4,
+          "prompt": "Did you have [gap] to answer all the questions in the exam?",
+          "acceptedAnswers": [
+            "enough time"
+          ],
+          "explanation": "enough + noun"
+        },
+        {
+          "id": "ws-59-sec-a-q05",
+          "order": 5,
+          "prompt": "This house isn’t [gap] for a large family.",
+          "acceptedAnswers": [
+            "big enough"
+          ],
+          "explanation": "adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-a-q06",
+          "order": 6,
+          "prompt": "Tina is very thin. She doesn’t [gap].",
+          "acceptedAnswers": [
+            "eat enough"
+          ],
+          "explanation": "verb + enough"
+        },
+        {
+          "id": "ws-59-sec-a-q07",
+          "order": 7,
+          "prompt": "You don’t eat [gap]. You should eat more – it’s good for you.",
+          "acceptedAnswers": [
+            "enough fruit"
+          ],
+          "explanation": "enough + noun"
+        },
+        {
+          "id": "ws-59-sec-a-q08",
+          "order": 8,
+          "prompt": "It’s late but I don’t want to go to bed now. I’m not [gap].",
+          "acceptedAnswers": [
+            "tired enough"
+          ],
+          "explanation": "adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-a-q09",
+          "order": 9,
+          "prompt": "Lisa isn’t a very good tennis player because she doesn’t [gap].",
+          "acceptedAnswers": [
+            "practise enough|practice enough"
+          ],
+          "explanation": "verb + enough"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-12",
+      "sectionKey": "L",
+      "instruction": "Complete the sentences. Use ENOUGH with the words in brackets. (Example: We haven’t got enough money to buy a car. (money / buy))",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-59-sec-b-q02",
+          "order": 2,
+          "prompt": "This knife isn’t [gap] tomatoes. (sharp / cut)",
+          "acceptedAnswers": [
+            "sharp enough to cut"
+          ],
+          "explanation": "adjective + enough + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-b-q03",
+          "order": 3,
+          "prompt": "The water wasn’t [gap] a bath. (warm / have)",
+          "acceptedAnswers": [
+            "warm enough to have"
+          ],
+          "explanation": "adjective + enough + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-b-q04",
+          "order": 4,
+          "prompt": "Have we got [gap] sandwiches? (bread / make)",
+          "acceptedAnswers": [
+            "enough bread to make"
+          ],
+          "explanation": "enough + noun + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-b-q05",
+          "order": 5,
+          "prompt": "We played well but not [gap] the game. (well / win)",
+          "acceptedAnswers": [
+            "well enough to win"
+          ],
+          "explanation": "adverb + enough + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-b-q06",
+          "order": 6,
+          "prompt": "I don’t have [gap] the newspaper. (time / read)",
+          "acceptedAnswers": [
+            "enough time to read"
+          ],
+          "explanation": "enough + noun + to-infinitive"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-13",
+      "sectionKey": "M",
+      "instruction": "Put in TOO or ENOUGH. (Example: You’re always at home. You don’t go out enough.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-59-sec-c-q02",
+          "order": 2,
+          "prompt": "I can’t wait for them. I haven’t got [gap] time.",
+          "acceptedAnswers": [
+            "enough"
+          ],
+          "explanation": "enough + noun"
+        },
+        {
+          "id": "ws-59-sec-c-q03",
+          "order": 3,
+          "prompt": "You’re always tired. I think you work [gap] hard.",
+          "acceptedAnswers": [
+            "too"
+          ],
+          "explanation": "too + adverb"
+        },
+        {
+          "id": "ws-59-sec-c-q04",
+          "order": 4,
+          "prompt": "A: Did you have [gap] to eat? B: Yes, thank you.",
+          "acceptedAnswers": [
+            "enough"
+          ],
+          "explanation": "enough to eat"
+        },
+        {
+          "id": "ws-59-sec-c-q05",
+          "order": 5,
+          "prompt": "You don’t eat [gap] vegetables. You should eat more.",
+          "acceptedAnswers": [
+            "enough"
+          ],
+          "explanation": "enough + noun"
+        },
+        {
+          "id": "ws-59-sec-c-q06",
+          "order": 6,
+          "prompt": "I don’t like the weather here. It’s [gap] cold.",
+          "acceptedAnswers": [
+            "too"
+          ],
+          "explanation": "too + adjective"
+        },
+        {
+          "id": "ws-59-sec-c-q07",
+          "order": 7,
+          "prompt": "The radio isn’t loud [gap]. Can you turn it up, please?",
+          "acceptedAnswers": [
+            "enough"
+          ],
+          "explanation": "adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-c-q08",
+          "order": 8,
+          "prompt": "She speaks [gap] fast for me to understand.",
+          "acceptedAnswers": [
+            "too"
+          ],
+          "explanation": "too + adverb + for … to"
+        },
+        {
+          "id": "ws-59-sec-c-q09",
+          "order": 9,
+          "prompt": "Don’t buy that coat. It’s nice but it isn’t long [gap].",
+          "acceptedAnswers": [
+            "enough"
+          ],
+          "explanation": "adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-c-q10",
+          "order": 10,
+          "prompt": "He can’t reach the shelf. He isn’t tall [gap].",
+          "acceptedAnswers": [
+            "enough"
+          ],
+          "explanation": "adjective + enough"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-14",
+      "sectionKey": "N",
+      "instruction": "Complete the sentences. Use TOO or ENOUGH with the words in brackets. (Examples: I couldn’t work. I was too tired. — Can you turn the radio up, please? It isn’t loud enough.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-59-sec-d-q03",
+          "order": 3,
+          "prompt": "I don’t want to walk home. It’s [gap]. (far)",
+          "acceptedAnswers": [
+            "too far"
+          ],
+          "explanation": "too + adjective"
+        },
+        {
+          "id": "ws-59-sec-d-q04",
+          "order": 4,
+          "prompt": "Don’t buy anything in that shop. It [gap]. (expensive)",
+          "acceptedAnswers": [
+            "is too expensive|'s too expensive"
+          ],
+          "explanation": "too + adjective"
+        },
+        {
+          "id": "ws-59-sec-d-q05",
+          "order": 5,
+          "prompt": "You can’t put all your things in this bag. It [gap]. (big)",
+          "acceptedAnswers": [
+            "isn't big enough|'s not big enough"
+          ],
+          "explanation": "not + adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-d-q06",
+          "order": 6,
+          "prompt": "I couldn’t do the exercise. It [gap]. (difficult)",
+          "acceptedAnswers": [
+            "was too difficult"
+          ],
+          "explanation": "too + adjective"
+        },
+        {
+          "id": "ws-59-sec-d-q07",
+          "order": 7,
+          "prompt": "Your work needs to be better. It [gap]. (good)",
+          "acceptedAnswers": [
+            "isn't good enough|'s not good enough"
+          ],
+          "explanation": "not + adjective + enough"
+        },
+        {
+          "id": "ws-59-sec-d-q08",
+          "order": 8,
+          "prompt": "I can’t talk to you now. I [gap]. (busy)",
+          "acceptedAnswers": [
+            "am too busy|'m too busy"
+          ],
+          "explanation": "too + adjective"
+        },
+        {
+          "id": "ws-59-sec-d-q09",
+          "order": 9,
+          "prompt": "I thought the film was boring. It [gap]. (long)",
+          "acceptedAnswers": [
+            "was too long"
+          ],
+          "explanation": "too + adjective"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-15",
+      "sectionKey": "O",
+      "instruction": "Complete the sentences. Use TOO (+ adjective) + TO (do something). (Example: (I’m not going out / cold) → It’s too cold to go out.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-59-sec-e-q02",
+          "order": 2,
+          "prompt": "(I’m not going to bed / early) → It’s",
+          "acceptedAnswers": [
+            "It's too early to go to bed."
+          ],
+          "explanation": "too + adjective + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-e-q03",
+          "order": 3,
+          "prompt": "(they’re not getting married / young) → They’re",
+          "acceptedAnswers": [
+            "They're too young to get married."
+          ],
+          "explanation": "too + adjective + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-e-q04",
+          "order": 4,
+          "prompt": "(nobody goes out at night / dangerous) → It’s",
+          "acceptedAnswers": [
+            "It's too dangerous to go out at night.",
+            "It's too dangerous for anybody to go out at night.",
+            "It's too dangerous for anyone to go out at night."
+          ],
+          "explanation": "too + adjective + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-e-q05",
+          "order": 5,
+          "prompt": "(don’t phone Ann now / late) → It’s",
+          "acceptedAnswers": [
+            "It's too late to phone Ann.",
+            "It's too late to phone Ann now."
+          ],
+          "explanation": "too + adjective + to-infinitive"
+        },
+        {
+          "id": "ws-59-sec-e-q06",
+          "order": 6,
+          "prompt": "(I didn’t say anything / surprised) → I was",
+          "acceptedAnswers": [
+            "I was too surprised to say anything."
+          ],
+          "explanation": "too + adjective + to-infinitive"
+        }
+      ]
+    },
+    {
+      "id": "card-20-sec-16",
+      "sectionKey": "P",
+      "instruction": "Rewrite the following sentences, beginning with the words given. (Example: You aren’t allowed to park here. → You mustn’t park here.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-60-sec-a-q01",
+          "order": 1,
+          "prompt": "Perhaps I will get a high mark. → I",
+          "acceptedAnswers": [
+            "I may get a high mark.",
+            "I might get a high mark.",
+            "I could get a high mark."
+          ],
+          "explanation": "possibility: may/might + verb"
+        },
+        {
+          "id": "ws-60-sec-a-q02",
+          "order": 2,
+          "prompt": "Let’s go to the cinema tonight. → (rewrite)",
+          "acceptedAnswers": [
+            "Why don't we go to the cinema tonight?",
+            "Shall we go to the cinema tonight?",
+            "How about going to the cinema tonight?",
+            "What about going to the cinema tonight?"
+          ],
+          "explanation": "suggestions: Why don’t we / Shall we / How about + -ing"
+        },
+        {
+          "id": "ws-60-sec-a-q03",
+          "order": 3,
+          "prompt": "The last time she phoned me was three months ago. → She",
+          "acceptedAnswers": [
+            "She hasn't phoned me for three months.",
+            "She last phoned me three months ago."
+          ],
+          "explanation": "present perfect negative + for"
+        },
+        {
+          "id": "ws-60-sec-a-q04",
+          "order": 4,
+          "prompt": "No school is more successful than Hill School. → (rewrite)",
+          "acceptedAnswers": [
+            "Hill School is the most successful school.",
+            "Hill School is more successful than any other school."
+          ],
+          "explanation": "superlative"
+        },
+        {
+          "id": "ws-60-sec-a-q05",
+          "order": 5,
+          "prompt": "Don’t use this pen. → You",
+          "acceptedAnswers": [
+            "You mustn't use this pen.",
+            "You must not use this pen.",
+            "You shouldn't use this pen."
+          ],
+          "explanation": "prohibition: mustn’t"
+        },
+        {
+          "id": "ws-60-sec-a-q06",
+          "order": 6,
+          "prompt": "They grew the best vegetables. → The best vegetables",
+          "acceptedAnswers": [
+            "The best vegetables were grown.",
+            "The best vegetables were grown by them."
+          ],
+          "explanation": "passive past simple: were + V3"
+        },
+        {
+          "id": "ws-60-sec-a-q07",
+          "order": 7,
+          "prompt": "The children were happy. They saw Micky Mouse. (so) → The children",
+          "acceptedAnswers": [
+            "The children saw Micky Mouse, so they were happy.",
+            "The children saw Micky Mouse so they were happy."
+          ],
+          "explanation": "cause, so + result"
+        },
+        {
+          "id": "ws-60-sec-a-q08",
+          "order": 8,
+          "prompt": "He’ll play with his friends. At first he’ll finish watering the flowers. (Before) → (rewrite)",
+          "acceptedAnswers": [
+            "Before he plays with his friends, he'll finish watering the flowers.",
+            "Before he plays with his friends he'll finish watering the flowers.",
+            "He'll finish watering the flowers before he plays with his friends."
+          ],
+          "explanation": "time clause: before + present simple"
+        },
+        {
+          "id": "ws-60-sec-a-q09",
+          "order": 9,
+          "prompt": "There is nobody at the door. → There is",
+          "acceptedAnswers": [
+            "There isn't anybody at the door.",
+            "There isn't anyone at the door.",
+            "There is no one at the door.",
+            "There is no-one at the door."
+          ],
+          "explanation": "nobody = not anybody"
+        },
+        {
+          "id": "ws-60-sec-a-q10",
+          "order": 10,
+          "prompt": "It is a month since I visited them. → (rewrite)",
+          "acceptedAnswers": [
+            "I haven't visited them for a month.",
+            "I last visited them a month ago."
+          ],
+          "explanation": "present perfect negative + for"
+        },
+        {
+          "id": "ws-60-sec-a-q11",
+          "order": 11,
+          "prompt": "It is necessary for him to go there. → He",
+          "acceptedAnswers": [
+            "He has to go there.",
+            "He must go there.",
+            "He needs to go there."
+          ],
+          "explanation": "necessity: has to / must"
+        },
+        {
+          "id": "ws-60-sec-a-q12",
+          "order": 12,
+          "prompt": "It is possible that they’ll return on Monday. → They",
+          "acceptedAnswers": [
+            "They may return on Monday.",
+            "They might return on Monday.",
+            "They could return on Monday."
+          ],
+          "explanation": "possibility: may/might + verb"
+        },
+        {
+          "id": "ws-60-sec-a-q14",
+          "order": 14,
+          "prompt": "There isn’t much coffee in the cup. → There is",
+          "acceptedAnswers": [
+            "There is little coffee in the cup.",
+            "There is only a little coffee in the cup.",
+            "There is a little coffee in the cup."
+          ],
+          "explanation": "not much = (a) little"
+        },
+        {
+          "id": "ws-60-sec-a-q15",
+          "order": 15,
+          "prompt": "Do you want to go skiing with me? → Would",
+          "acceptedAnswers": [
+            "Would you like to go skiing with me?"
+          ],
+          "explanation": "polite offer: Would you like to …?"
+        },
+        {
+          "id": "ws-60-sec-a-q16",
+          "order": 16,
+          "prompt": "John’s marks are worse than Jane’s. → Jane’s",
+          "acceptedAnswers": [
+            "Jane's marks are better than John's."
+          ],
+          "explanation": "comparative: better than"
+        },
+        {
+          "id": "ws-60-sec-a-q17",
+          "order": 17,
+          "prompt": "Was it necessary for you to check? → (rewrite)",
+          "acceptedAnswers": [
+            "Did you have to check?",
+            "Did you need to check?"
+          ],
+          "explanation": "past necessity question: Did you have to …?"
+        },
+        {
+          "id": "ws-60-sec-a-q18",
+          "order": 18,
+          "prompt": "I have never eaten such a bad pie before. → This is",
+          "acceptedAnswers": [
+            "This is the worst pie I have ever eaten."
+          ],
+          "explanation": "superlative + present perfect + ever"
+        },
+        {
+          "id": "ws-60-sec-a-q19",
+          "order": 19,
+          "prompt": "He knows how to play the piano. → He",
+          "acceptedAnswers": [
+            "He can play the piano."
+          ],
+          "explanation": "ability: can"
+        },
+        {
+          "id": "ws-60-sec-a-q20",
+          "order": 20,
+          "prompt": "There can’t be a more popular singer than Madonna. → Madonna is",
+          "acceptedAnswers": [
+            "Madonna is the most popular singer.",
+            "Madonna is more popular than any other singer."
+          ],
+          "explanation": "superlative"
+        },
+        {
+          "id": "ws-60-sec-a-q21",
+          "order": 21,
+          "prompt": "My mother doesn’t let me go to bed late. → I’m not",
+          "acceptedAnswers": [
+            "I'm not allowed to go to bed late."
+          ],
+          "explanation": "passive of let: be allowed to"
+        },
+        {
+          "id": "ws-60-sec-a-q22",
+          "order": 22,
+          "prompt": "There aren’t many oranges in the fridge. → There are",
+          "acceptedAnswers": [
+            "There are few oranges in the fridge.",
+            "There are only a few oranges in the fridge.",
+            "There are a few oranges in the fridge."
+          ],
+          "explanation": "not many = (a) few"
+        },
+        {
+          "id": "ws-60-sec-a-q23",
+          "order": 23,
+          "prompt": "I would like to buy a new dress. → I",
+          "acceptedAnswers": [
+            "I want to buy a new dress."
+          ],
+          "explanation": "would like = want"
+        },
+        {
+          "id": "ws-60-sec-a-q24",
+          "order": 24,
+          "prompt": "Why don’t we go to the cinema? → (rewrite)",
+          "acceptedAnswers": [
+            "Let's go to the cinema.",
+            "Shall we go to the cinema?",
+            "How about going to the cinema?",
+            "What about going to the cinema?"
+          ],
+          "explanation": "suggestions: Let’s / Shall we / How about + -ing"
+        },
+        {
+          "id": "ws-60-sec-a-q25",
+          "order": 25,
+          "prompt": "I advise you to make a surprise for him. → You",
+          "acceptedAnswers": [
+            "You should make a surprise for him.",
+            "You ought to make a surprise for him.",
+            "You had better make a surprise for him.",
+            "You 'd better make a surprise for him."
+          ],
+          "explanation": "advice: should / had better"
+        },
+        {
+          "id": "ws-60-sec-a-q26",
+          "order": 26,
+          "prompt": "It is forbidden to walk on the railway. → You",
+          "acceptedAnswers": [
+            "You mustn't walk on the railway.",
+            "You must not walk on the railway.",
+            "You aren't allowed to walk on the railway."
+          ],
+          "explanation": "prohibition: mustn’t"
+        },
+        {
+          "id": "ws-60-sec-a-q27",
+          "order": 27,
+          "prompt": "I don’t know the boys. They are fighting in the street. (participle) → I don’t",
+          "acceptedAnswers": [
+            "I don't know the boys fighting in the street.",
+            "I don't know the boys who are fighting in the street."
+          ],
+          "explanation": "reduced relative clause: noun + -ing"
+        },
+        {
+          "id": "ws-60-sec-a-q28",
+          "order": 28,
+          "prompt": "I prefer to drive rather than travel by train. → I",
+          "acceptedAnswers": [
+            "I would rather drive than travel by train.",
+            "I prefer driving to travelling by train.",
+            "I prefer driving to traveling by train."
+          ],
+          "explanation": "would rather + verb + than + verb"
+        },
+        {
+          "id": "ws-60-sec-a-q29",
+          "order": 29,
+          "prompt": "We had better stop for petrol soon. The tank is almost empty. → We",
+          "acceptedAnswers": [
+            "We should stop for petrol soon.",
+            "We should stop for petrol soon. The tank is almost empty.",
+            "We ought to stop for petrol soon.",
+            "We ought to stop for petrol soon. The tank is almost empty."
+          ],
+          "explanation": "had better = should"
+        },
+        {
+          "id": "ws-60-sec-a-q30",
+          "order": 30,
+          "prompt": "Because it was raining a lot, we didn’t go out. → (rewrite)",
+          "acceptedAnswers": [
+            "It was raining a lot, so we didn't go out.",
+            "It was raining a lot so we didn't go out.",
+            "We didn't go out because it was raining a lot.",
+            "Because of the heavy rain, we didn't go out.",
+            "Because of the heavy rain we didn't go out.",
+            "We didn't go out because of the heavy rain."
+          ],
+          "explanation": "because ↔ so / because of + noun"
+        },
+        {
+          "id": "ws-60-sec-a-q31",
+          "order": 31,
+          "prompt": "Although the traffic was bad, I arrived on time. → (rewrite)",
+          "acceptedAnswers": [
+            "Despite the bad traffic, I arrived on time.",
+            "Despite the bad traffic I arrived on time.",
+            "In spite of the bad traffic, I arrived on time.",
+            "In spite of the bad traffic I arrived on time.",
+            "I arrived on time despite the bad traffic.",
+            "I arrived on time in spite of the bad traffic.",
+            "The traffic was bad, but I arrived on time.",
+            "The traffic was bad but I arrived on time.",
+            "I arrived on time although the traffic was bad."
+          ],
+          "explanation": "although ↔ despite / in spite of + noun"
+        }
+      ]
+    }
+  ]
+}

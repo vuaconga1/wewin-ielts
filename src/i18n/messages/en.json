@@ -2751,5 +2751,19 @@
       "subtitle": "HSK 1–9 & Conversation",
       "desc": "Conversational Chinese & HSK 1–9 exam preparation"
     }
+  },
+  "worksheet": {
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "correctAnswer": "Correct answer:",
+    "noKey": "No answer key yet — check with your teacher",
+    "modelAnswer": "Suggested answer (open question, not auto-graded):",
+    "yourAnswerPlaceholder": "Type your answer...",
+    "scoreCorrect": "{correct} / {total} correct",
+    "ungradedCount": "{n} without answer key",
+    "questionCount": "{n} questions",
+    "wordBank": "Word bank:",
+    "resetSection": "Redo this section",
+    "checkSection": "Check section {key} answers"
   }
 }

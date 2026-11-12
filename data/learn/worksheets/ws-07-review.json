@@ -12,474 +12,528 @@
     {
       "id": "ws-07-review-sec-a",
       "sectionKey": "A",
-      "instruction": "Make questions and answers. Use THE PRESENT CONTINUOUS:",
-      "type": "question_formation",
+      "instruction": "Make questions and answers. Use THE PRESENT CONTINUOUS. (Example: (she / work / in Peru / this year?) (No, she / study / in Mexico) → Is she working in Peru this year? No. She's studying in Mexico.)",
+      "type": "sentence_building",
       "questions": [
         {
           "id": "ws-07-review-sec-a-q01",
           "order": 1,
-          "prompt": "(you / study / English / at the moment?)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(you / study / English / at the moment?) (Yes, I / work / hard.)",
+          "acceptedAnswers": [
+            "Are you studying English at the moment? Yes, I'm working hard.",
+            "Are you studying English at the moment? Yes, I am. I'm working hard."
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-a-q02",
           "order": 2,
-          "prompt": "(they / listen / to the radio?)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(they / listen / to the radio?) (No, they / play / CDs.)",
+          "acceptedAnswers": [
+            "Are they listening to the radio? No, they're playing CDs.",
+            "Are they listening to the radio? No, they aren't. They're playing CDs."
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-a-q03",
           "order": 3,
-          "prompt": "(Peter / wash / now?)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(Peter / wash / now?) (Yes, he / have / a bath.)",
+          "acceptedAnswers": [
+            "Is Peter washing now? Yes, he's having a bath.",
+            "Is Peter washing now? Yes, he is. He's having a bath."
+          ],
+          "explanation": "have → having"
         },
         {
           "id": "ws-07-review-sec-a-q04",
           "order": 4,
-          "prompt": "(they / live / in Madrid / at the moment?)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(they / live / in Madrid / at the moment?) (Yes, they / learn / Spanish.)",
+          "acceptedAnswers": [
+            "Are they living in Madrid at the moment? Yes, they're learning Spanish.",
+            "Are they living in Madrid at the moment? Yes, they are. They're learning Spanish."
+          ],
+          "explanation": "temporary situation: continuous"
         },
         {
           "id": "ws-07-review-sec-a-q05",
           "order": 5,
-          "prompt": "(David / sing / in a group / this year?) (Yes, I / work / hard.) (No, they / play / CDs.) (Yes, he / have / a bath.) (Yes, they / learn / Spanish.) (No, he / work / in a restaurant.)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(David / sing / in a group / this year?) (No, he / work / in a restaurant.)",
+          "acceptedAnswers": [
+            "Is David singing in a group this year? No, he's working in a restaurant.",
+            "Is David singing in a group this year? No, he isn't. He's working in a restaurant."
+          ],
+          "explanation": "be + verb-ing"
         }
       ]
     },
     {
       "id": "ws-07-review-sec-b",
       "sectionKey": "B",
-      "instruction": "Write TRUE next to a correct sentence, and FALSE next to a wrong sentence:",
-      "type": "error_correction",
+      "instruction": "Choose TRUE for a correct sentence and FALSE for a wrong sentence. (Example: She's liking pop music. → FALSE; He's learning German. → TRUE)",
+      "type": "multiple_choice",
       "questions": [
         {
           "id": "ws-07-review-sec-b-q01",
           "order": 1,
-          "prompt": "They’re enjoying the film [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They're enjoying the film. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "enjoy can be continuous"
         },
         {
           "id": "ws-07-review-sec-b-q02",
           "order": 2,
-          "prompt": "We’re loving ice-cream.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We're loving ice-cream. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "love is a state verb"
         },
         {
           "id": "ws-07-review-sec-b-q03",
           "order": 3,
-          "prompt": "She’s believing he’s right [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She's believing he's right. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "believe is a state verb"
         },
         {
           "id": "ws-07-review-sec-b-q04",
           "order": 4,
-          "prompt": "John’s thinking about my idea [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "John's thinking about my idea. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "think about = action, continuous OK"
         },
         {
           "id": "ws-07-review-sec-b-q05",
           "order": 5,
-          "prompt": "He’s having lunch at the moment [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He's having lunch at the moment. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "have lunch = action, continuous OK"
         },
         {
           "id": "ws-07-review-sec-b-q06",
           "order": 6,
-          "prompt": "She’s eating a banana.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She's eating a banana. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "action verb"
         },
         {
           "id": "ws-07-review-sec-b-q07",
           "order": 7,
-          "prompt": "I’m feeling sick.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm feeling sick. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "feel (health) can be continuous"
         },
         {
           "id": "ws-07-review-sec-b-q08",
           "order": 8,
-          "prompt": "“Huge” is meaning “very big” [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“Huge” is meaning “very big”. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "mean is a state verb"
         },
         {
           "id": "ws-07-review-sec-b-q09",
           "order": 9,
-          "prompt": "Mick is knowing Jane.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mick is knowing Jane. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "know is a state verb"
         },
         {
           "id": "ws-07-review-sec-b-q10",
           "order": 10,
-          "prompt": "She’s hating classical music.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She's hating classical music. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "hate is a state verb"
         }
       ]
     },
     {
       "id": "ws-07-review-sec-c",
       "sectionKey": "C",
-      "instruction": "Complete this conversation. Use the verbs in brackets ( ) in the PRESENT",
+      "instruction": "Complete this conversation. Use the verbs in brackets in the PRESENT CONTINUOUS. (Paul: Hi Steve! What are you doing?)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-07-review-sec-c-q01",
           "order": 1,
-          "prompt": "CONTINUOUS: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: [gap] (I / go) to the bank. What are you doing?",
+          "acceptedAnswers": [
+            "I'm going"
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-c-q02",
           "order": 2,
-          "prompt": "Paul : Hi Steve! What are you doing? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Paul: [gap] (I / shop).",
+          "acceptedAnswers": [
+            "I'm shopping"
+          ],
+          "explanation": "shop → shopping (double p)"
         },
         {
           "id": "ws-07-review-sec-c-q03",
           "order": 3,
-          "prompt": "Steve : [gap] (I / go) to the bank. What are you doing?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap] (I / look) for a new tennis racquet.",
+          "acceptedAnswers": [
+            "I'm looking"
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-c-q04",
           "order": 4,
-          "prompt": "Paul : [gap] (I / shop) [gap] (I / look) for a",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap] (I / play) a lot of tennis at the moment, and I need a new racquet.",
+          "acceptedAnswers": [
+            "I'm playing"
+          ],
+          "explanation": "at the moment: continuous"
         },
         {
           "id": "ws-07-review-sec-c-q05",
           "order": 5,
-          "prompt": "new tennis racquet [gap] (I / play) a lot of tennis at the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: Where is Jackie? Do you know? Paul: Yes. She isn't in England at the moment. [gap] (She / work) in Germany for a month.",
+          "acceptedAnswers": [
+            "She's working"
+          ],
+          "explanation": "temporary: continuous"
         },
         {
           "id": "ws-07-review-sec-c-q06",
           "order": 6,
-          "prompt": "moment, and I need a new racquet. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: What [gap] (she / do) in Germany?",
+          "acceptedAnswers": [
+            "is she doing"
+          ],
+          "explanation": "question: Wh- + be + subject + -ing"
         },
         {
           "id": "ws-07-review-sec-c-q07",
           "order": 7,
-          "prompt": "Steve : Where is Jackie? Do you know? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Paul: [gap] (She / sing) in a night-club.",
+          "acceptedAnswers": [
+            "She's singing"
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-c-q08",
           "order": 8,
-          "prompt": "Paul : Yes. She isn’t in England at the moment [gap] She / work)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: Really? What about Fred and Sue? What [gap] (they / do)?",
+          "acceptedAnswers": [
+            "are they doing"
+          ],
+          "explanation": "question: Wh- + be + subject + -ing"
         },
         {
           "id": "ws-07-review-sec-c-q09",
           "order": 9,
-          "prompt": "in Germany for a month. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Paul: [gap] (They / study) for an exam. They're always in the library at the moment.",
+          "acceptedAnswers": [
+            "They're studying"
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-c-q10",
           "order": 10,
-          "prompt": "Steve : What [gap] (she / do) in Germany?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: How is your sister? Is she all right? Paul: Yes, she's fine, but she's tired. [gap] (We / paint) the living-room. It's hard work.",
+          "acceptedAnswers": [
+            "We're painting"
+          ],
+          "explanation": "be + verb-ing"
         },
         {
           "id": "ws-07-review-sec-c-q11",
           "order": 11,
-          "prompt": "Paul : [gap] (She / sing) in a night-club.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q12",
-          "order": 12,
-          "prompt": "Steve : Really? What about Fred and Sue? What [gap] (they / do)?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q13",
-          "order": 13,
-          "prompt": "Paul : [gap] (They / study) for an exam. They’re always in the",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q14",
-          "order": 14,
-          "prompt": "library at the moment. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q15",
-          "order": 15,
-          "prompt": "Steve : How is your sister? Is she all right? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q16",
-          "order": 16,
-          "prompt": "Paul : Yes, she’s fine, but she’s tired [gap] (We / paint) the",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q17",
-          "order": 17,
-          "prompt": "living-room. It’s hard work. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q18",
-          "order": 18,
-          "prompt": "Steve : Can I help you? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q19",
-          "order": 19,
-          "prompt": "Paul : No, it’s OK. My father [gap] (help).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q20",
-          "order": 20,
-          "prompt": "Steve : Well, I hope you find a good racquet. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Steve: Can I help you? Paul: No, it's OK. My father [gap] (help).",
+          "acceptedAnswers": [
+            "is helping|'s helping"
+          ],
+          "explanation": "be + verb-ing"
         }
       ]
     },
     {
-      "id": "ws-07-review-sec-c",
-      "sectionKey": "C",
-      "instruction": "This is Anna’s first letter in English to David. There are some mistakes. Rewrite wrong",
-      "type": "sentence_rewrite",
+      "id": "ws-07-review-sec-c2",
+      "sectionKey": "C2",
+      "instruction": "This is Anna's first letter in English to David. There are some mistakes. Write the correct verb form in each gap; if Anna's verb form is already correct, write it again unchanged. (Example: “I'm having two sisters.” → I have two sisters.)",
+      "type": "inline_gap_fill",
       "questions": [
         {
-          "id": "ws-07-review-sec-c-q01",
+          "id": "ws-07-review-sec-c2-q01",
           "order": 1,
-          "prompt": "verb forms .Underline if the verb form is correct:",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“I live in a large flat in Rome.” → I [gap] in a large flat in Rome.",
+          "acceptedAnswers": [
+            "live"
+          ],
+          "explanation": "correct: permanent situation"
         },
         {
-          "id": "ws-07-review-sec-c-q02",
+          "id": "ws-07-review-sec-c2-q02",
           "order": 2,
-          "prompt": "Dear David,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“We are getting up at seven o'clock every morning.” → We [gap] at seven o'clock every morning.",
+          "acceptedAnswers": [
+            "get up"
+          ],
+          "explanation": "every morning: present simple"
         },
         {
-          "id": "ws-07-review-sec-c-q03",
+          "id": "ws-07-review-sec-c2-q03",
           "order": 3,
-          "prompt": "I live [gap] in a large flat in Rome. I’m having [gap] have [gap] two sisters. They are",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“We have coffee and a small breakfast.” → We [gap] coffee and a small breakfast.",
+          "acceptedAnswers": [
+            "have"
+          ],
+          "explanation": "correct: routine"
         },
         {
-          "id": "ws-07-review-sec-c-q04",
+          "id": "ws-07-review-sec-c2-q04",
           "order": 4,
-          "prompt": "called Rosa and Maria. We are getting up [gap] at seven o’clock",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“I leave the flat at eight and walk to the university.” → I [gap] the flat at eight and walk to the university.",
+          "acceptedAnswers": [
+            "leave"
+          ],
+          "explanation": "correct: routine"
         },
         {
-          "id": "ws-07-review-sec-c-q05",
+          "id": "ws-07-review-sec-c2-q05",
           "order": 5,
-          "prompt": "every morning, and we have [gap] coffee and a small breakfast. I leave",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“I am finishing classes at five every day.” → I [gap] classes at five every day.",
+          "acceptedAnswers": [
+            "finish"
+          ],
+          "explanation": "every day: present simple"
         },
         {
-          "id": "ws-07-review-sec-c-q06",
+          "id": "ws-07-review-sec-c2-q06",
           "order": 6,
-          "prompt": "[gap] the flat at eight and walk to the university. I am finishing [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“I arrive home at six.” → I [gap] home at six.",
+          "acceptedAnswers": [
+            "arrive"
+          ],
+          "explanation": "correct: routine"
         },
         {
-          "id": "ws-07-review-sec-c-q07",
+          "id": "ws-07-review-sec-c2-q07",
           "order": 7,
-          "prompt": "classes at five every day, and I arrive [gap] home at six. This month I work",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“This month I work very hard for my exams.” → This month I [gap] very hard for my exams.",
+          "acceptedAnswers": [
+            "am working|'m working"
+          ],
+          "explanation": "this month (temporary): continuous"
         },
         {
-          "id": "ws-07-review-sec-c-q08",
+          "id": "ws-07-review-sec-c2-q08",
           "order": 8,
-          "prompt": "[gap] very hard for my exams.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“At the moment, I eat breakfast in the kitchen of our flat.” → At the moment, I [gap] breakfast in the kitchen of our flat.",
+          "acceptedAnswers": [
+            "am eating|'m eating"
+          ],
+          "explanation": "at the moment: continuous"
         },
         {
-          "id": "ws-07-review-sec-c-q09",
+          "id": "ws-07-review-sec-c2-q09",
           "order": 9,
-          "prompt": "At the moment, I eat [gap] breakfast in the kitchen of our flat, my",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“My mother drinks coffee.” → My mother [gap] coffee.",
+          "acceptedAnswers": [
+            "is drinking|'s drinking"
+          ],
+          "explanation": "at the moment: continuous"
         },
         {
-          "id": "ws-07-review-sec-c-q10",
+          "id": "ws-07-review-sec-c2-q10",
           "order": 10,
-          "prompt": "mother drinks [gap] coffee, and my sisters are reading [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“My sisters are reading magazines.” → My sisters [gap] magazines.",
+          "acceptedAnswers": [
+            "are reading"
+          ],
+          "explanation": "correct: at the moment"
         },
         {
-          "id": "ws-07-review-sec-c-q11",
+          "id": "ws-07-review-sec-c2-q11",
           "order": 11,
-          "prompt": "magazines.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“On Saturday afternoons I am playing tennis with my friends.” → On Saturday afternoons I [gap] tennis with my friends.",
+          "acceptedAnswers": [
+            "play"
+          ],
+          "explanation": "habit: present simple"
         },
         {
-          "id": "ws-07-review-sec-c-q12",
+          "id": "ws-07-review-sec-c2-q12",
           "order": 12,
-          "prompt": "On Saturday afternoons I am playing [gap] tennis with my friends, or",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“Or I go to the cinema.” → Or I [gap] to the cinema.",
+          "acceptedAnswers": [
+            "go"
+          ],
+          "explanation": "correct: habit"
         },
         {
-          "id": "ws-07-review-sec-c-q13",
+          "id": "ws-07-review-sec-c2-q13",
           "order": 13,
-          "prompt": "I go [gap] to the cinema. Today, I’m going to see a new English film.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“Sometimes I am watching American films on TV.” → Sometimes I [gap] American films on TV.",
+          "acceptedAnswers": [
+            "watch"
+          ],
+          "explanation": "sometimes: present simple"
         },
         {
-          "id": "ws-07-review-sec-c-q14",
+          "id": "ws-07-review-sec-c2-q14",
           "order": 14,
-          "prompt": "Sometimes I am watching [gap] American films on TV, but I’m not",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“But I'm not understanding the words!” → But I [gap] the words!",
+          "acceptedAnswers": [
+            "don't understand"
+          ],
+          "explanation": "understand is a state verb"
         },
         {
-          "id": "ws-07-review-sec-c-q15",
+          "id": "ws-07-review-sec-c2-q15",
           "order": 15,
-          "prompt": "understanding [gap] the words! Are you liking [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q16",
-          "order": 16,
-          "prompt": "films?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q17",
-          "order": 17,
-          "prompt": "Please write to me soon.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q18",
-          "order": 18,
-          "prompt": "With best wishes,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-07-review-sec-c-q19",
-          "order": 19,
-          "prompt": "Anna",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "“Are you liking films?” → [gap] films?",
+          "acceptedAnswers": [
+            "Do you like"
+          ],
+          "explanation": "like is a state verb"
         }
       ]
     },
     {
       "id": "ws-07-review-sec-d",
       "sectionKey": "D",
-      "instruction": "Write sentences. Use the PRESENT SIMPLE or the PRESENT CONTINUOUS:",
-      "type": "verb_conjugation",
+      "instruction": "Write sentences. Use the PRESENT SIMPLE or the PRESENT CONTINUOUS. (Example: Usually she / work / at the office, but this week she / work / at home. → Usually she works at the office, but this week she's working at home.)",
+      "type": "sentence_building",
       "questions": [
         {
           "id": "ws-07-review-sec-d-q01",
           "order": 1,
-          "prompt": "(You / not / eat / very much at the moment. Are you ill?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You / not / eat / very much at the moment. Are you ill?",
+          "acceptedAnswers": [
+            "You aren't eating very much at the moment. Are you ill?",
+            "You're not eating very much at the moment. Are you ill?"
+          ],
+          "explanation": "at the moment: continuous"
         },
         {
           "id": "ws-07-review-sec-d-q02",
           "order": 2,
-          "prompt": "(She / know / three words in Italian!) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She / know / three words in Italian!",
+          "acceptedAnswers": [
+            "She knows three words in Italian!"
+          ],
+          "explanation": "know is a state verb"
         },
         {
           "id": "ws-07-review-sec-d-q03",
           "order": 3,
-          "prompt": "(I / take / the bus to work this week, but usually I / walk) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I / take / the bus to work this week, but usually I / walk",
+          "acceptedAnswers": [
+            "I'm taking the bus to work this week, but usually I walk.",
+            "I'm taking the bus to work this week but usually I walk."
+          ],
+          "explanation": "this week: continuous; usually: simple"
         },
         {
           "id": "ws-07-review-sec-d-q04",
           "order": 4,
-          "prompt": "(I / study / Japanese this year. It’s very difficult.) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I / study / Japanese this year. It's very difficult.",
+          "acceptedAnswers": [
+            "I'm studying Japanese this year. It's very difficult."
+          ],
+          "explanation": "this year (temporary): continuous"
         },
         {
           "id": "ws-07-review-sec-d-q05",
           "order": 5,
-          "prompt": "(you / watch / the television at the moment?) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "you / watch / the television at the moment?",
+          "acceptedAnswers": [
+            "Are you watching the television at the moment?"
+          ],
+          "explanation": "at the moment: continuous"
         },
         {
           "id": "ws-07-review-sec-d-q06",
           "order": 6,
-          "prompt": "(I / not / remember / the name of the hotel.) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I / not / remember / the name of the hotel.",
+          "acceptedAnswers": [
+            "I don't remember the name of the hotel."
+          ],
+          "explanation": "remember is a state verb"
         },
         {
           "id": "ws-07-review-sec-d-q07",
           "order": 7,
-          "prompt": "(She / speak / three languages.) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She / speak / three languages.",
+          "acceptedAnswers": [
+            "She speaks three languages."
+          ],
+          "explanation": "ability/fact: present simple"
         },
         {
           "id": "ws-07-review-sec-d-q08",
           "order": 8,
-          "prompt": "(The sun / shine /. It’s a beautiful day!) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The sun / shine. It's a beautiful day!",
+          "acceptedAnswers": [
+            "The sun is shining. It's a beautiful day!"
+          ],
+          "explanation": "now: continuous"
         }
       ]
     }

@@ -12,558 +12,107 @@
     {
       "id": "ws-34-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in prepositions of time “AT / IN / ON” as in the example:",
+      "instruction": "Fill in prepositions of time “AT / IN / ON” as in the example: (Example: on Saturday)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-34-sec-a-q01",
-          "order": 1,
-          "prompt": "[gap] on … Saturday",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q02",
-          "order": 2,
-          "prompt": "[gap] July",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q03",
-          "order": 3,
-          "prompt": "[gap] 1984",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q04",
-          "order": 4,
-          "prompt": "[gap] March 25th",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q05",
-          "order": 5,
-          "prompt": "[gap] Friday",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q06",
-          "order": 6,
-          "prompt": "[gap] summer",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q07",
-          "order": 7,
-          "prompt": "[gap] the morning",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q08",
-          "order": 8,
-          "prompt": "[gap] 9 o’clock",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q15",
-          "order": 15,
-          "prompt": "[gap] autumn",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q09",
-          "order": 9,
-          "prompt": "[gap] Christmas",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q16",
-          "order": 16,
-          "prompt": "[gap] half past two",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q10",
-          "order": 10,
-          "prompt": "[gap] September 28th 17 [gap] Monday morning 11 [gap] 1991",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q18",
-          "order": 18,
-          "prompt": "[gap] Easter",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q12",
-          "order": 12,
-          "prompt": "[gap] August 29th",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q19",
-          "order": 19,
-          "prompt": "[gap] 10 o’clock",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q13",
-          "order": 13,
-          "prompt": "[gap] winter",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q20",
-          "order": 20,
-          "prompt": "[gap] Thursday afternoon",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q14",
-          "order": 14,
-          "prompt": "[gap] the evening",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-a-q21",
-          "order": 21,
-          "prompt": "[gap] noon",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-34-sec-a-q02", "order": 2, "prompt": "[gap] July", "acceptedAnswers": ["in"], "explanation": "in + month" },
+        { "id": "ws-34-sec-a-q03", "order": 3, "prompt": "[gap] 1984", "acceptedAnswers": ["in"], "explanation": "in + year" },
+        { "id": "ws-34-sec-a-q04", "order": 4, "prompt": "[gap] March 25th", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-a-q05", "order": 5, "prompt": "[gap] Friday", "acceptedAnswers": ["on"], "explanation": "on + day of the week" },
+        { "id": "ws-34-sec-a-q06", "order": 6, "prompt": "[gap] summer", "acceptedAnswers": ["in"], "explanation": "in + season" },
+        { "id": "ws-34-sec-a-q07", "order": 7, "prompt": "[gap] the morning", "acceptedAnswers": ["in"], "explanation": "in the morning / afternoon / evening" },
+        { "id": "ws-34-sec-a-q08", "order": 8, "prompt": "[gap] 9 o’clock", "acceptedAnswers": ["at"], "explanation": "at + clock time" },
+        { "id": "ws-34-sec-a-q09", "order": 9, "prompt": "[gap] Christmas", "acceptedAnswers": ["at"], "explanation": "at + holiday period (Christmas, Easter)" },
+        { "id": "ws-34-sec-a-q10", "order": 10, "prompt": "[gap] September 28th", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-a-q11", "order": 11, "prompt": "[gap] 1991", "acceptedAnswers": ["in"], "explanation": "in + year" },
+        { "id": "ws-34-sec-a-q12", "order": 12, "prompt": "[gap] August 29th", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-a-q13", "order": 13, "prompt": "[gap] winter", "acceptedAnswers": ["in"], "explanation": "in + season" },
+        { "id": "ws-34-sec-a-q14", "order": 14, "prompt": "[gap] the evening", "acceptedAnswers": ["in"], "explanation": "in the morning / afternoon / evening" },
+        { "id": "ws-34-sec-a-q15", "order": 15, "prompt": "[gap] autumn", "acceptedAnswers": ["in"], "explanation": "in + season" },
+        { "id": "ws-34-sec-a-q16", "order": 16, "prompt": "[gap] half past two", "acceptedAnswers": ["at"], "explanation": "at + clock time" },
+        { "id": "ws-34-sec-a-q17", "order": 17, "prompt": "[gap] Monday morning", "acceptedAnswers": ["on"], "explanation": "on + day + part of day" },
+        { "id": "ws-34-sec-a-q18", "order": 18, "prompt": "[gap] Easter", "acceptedAnswers": ["at"], "explanation": "at + holiday period (Christmas, Easter)" },
+        { "id": "ws-34-sec-a-q19", "order": 19, "prompt": "[gap] 10 o’clock", "acceptedAnswers": ["at"], "explanation": "at + clock time" },
+        { "id": "ws-34-sec-a-q20", "order": 20, "prompt": "[gap] Thursday afternoon", "acceptedAnswers": ["on"], "explanation": "on + day + part of day" },
+        { "id": "ws-34-sec-a-q21", "order": 21, "prompt": "[gap] noon", "acceptedAnswers": ["at"], "explanation": "at noon / midnight / night" }
       ]
     },
     {
       "id": "ws-34-sec-b",
       "sectionKey": "B",
-      "instruction": "Fill in “AT / IN / ON” as in the example:",
+      "instruction": "Fill in “AT / IN / ON” as in the example: (Example: in December)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-34-sec-b-q01",
-          "order": 1,
-          "prompt": "…in [gap] December",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q02",
-          "order": 2,
-          "prompt": "[gap] midnight",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q03",
-          "order": 3,
-          "prompt": "[gap] 1982",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q04",
-          "order": 4,
-          "prompt": "[gap] April",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q05",
-          "order": 5,
-          "prompt": "[gap] April 2nd",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q06",
-          "order": 6,
-          "prompt": "[gap] February 8th",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q07",
-          "order": 7,
-          "prompt": "[gap] noon",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q08",
-          "order": 8,
-          "prompt": "[gap] 1964",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q09",
-          "order": 9,
-          "prompt": "[gap] spring",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q10",
-          "order": 10,
-          "prompt": "[gap] night",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q11",
-          "order": 11,
-          "prompt": "[gap] a quarter past six",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q12",
-          "order": 12,
-          "prompt": "[gap] Saturday night",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q13",
-          "order": 13,
-          "prompt": "[gap] Friday evening",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q14",
-          "order": 14,
-          "prompt": "[gap] Monday",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-b-q15",
-          "order": 15,
-          "prompt": "[gap] June 26th",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-34-sec-b-q02", "order": 2, "prompt": "[gap] midnight", "acceptedAnswers": ["at"], "explanation": "at noon / midnight / night" },
+        { "id": "ws-34-sec-b-q03", "order": 3, "prompt": "[gap] 1982", "acceptedAnswers": ["in"], "explanation": "in + year" },
+        { "id": "ws-34-sec-b-q04", "order": 4, "prompt": "[gap] April", "acceptedAnswers": ["in"], "explanation": "in + month" },
+        { "id": "ws-34-sec-b-q05", "order": 5, "prompt": "[gap] April 2nd", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-b-q06", "order": 6, "prompt": "[gap] February 8th", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-b-q07", "order": 7, "prompt": "[gap] noon", "acceptedAnswers": ["at"], "explanation": "at noon / midnight / night" },
+        { "id": "ws-34-sec-b-q08", "order": 8, "prompt": "[gap] 1964", "acceptedAnswers": ["in"], "explanation": "in + year" },
+        { "id": "ws-34-sec-b-q09", "order": 9, "prompt": "[gap] spring", "acceptedAnswers": ["in"], "explanation": "in + season" },
+        { "id": "ws-34-sec-b-q10", "order": 10, "prompt": "[gap] night", "acceptedAnswers": ["at"], "explanation": "at noon / midnight / night" },
+        { "id": "ws-34-sec-b-q11", "order": 11, "prompt": "[gap] a quarter past six", "acceptedAnswers": ["at"], "explanation": "at + clock time" },
+        { "id": "ws-34-sec-b-q12", "order": 12, "prompt": "[gap] Saturday night", "acceptedAnswers": ["on"], "explanation": "on + day + part of day" },
+        { "id": "ws-34-sec-b-q13", "order": 13, "prompt": "[gap] Friday evening", "acceptedAnswers": ["on"], "explanation": "on + day + part of day" },
+        { "id": "ws-34-sec-b-q14", "order": 14, "prompt": "[gap] Monday", "acceptedAnswers": ["on"], "explanation": "on + day of the week" },
+        { "id": "ws-34-sec-b-q15", "order": 15, "prompt": "[gap] June 26th", "acceptedAnswers": ["on"], "explanation": "on + date" }
       ]
     },
     {
       "id": "ws-34-sec-c",
       "sectionKey": "C",
-      "instruction": "Fill in the blanks with “AT / IN / ON” as in the example:",
+      "instruction": "Fill in the blanks with “AT / IN / ON” as in the example: (Example: We always go on holiday in summer.)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-34-sec-c-q01",
-          "order": 1,
-          "prompt": "We always go on holiday [gap] in [gap] summer.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q02",
-          "order": 2,
-          "prompt": "My mother usually goes shopping [gap] Friday morning.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q03",
-          "order": 3,
-          "prompt": "I always do my homework [gap] the evening.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q04",
-          "order": 4,
-          "prompt": "The circus usually comes to our town [gap] spring.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q05",
-          "order": 5,
-          "prompt": "Sophia’s birthday is [gap] May 16th .",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q06",
-          "order": 6,
-          "prompt": "I usually get up [gap] seven o’clock.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q07",
-          "order": 7,
-          "prompt": "My favorite television programme begins [gap] 6:30 [gap] the evening.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q08",
-          "order": 8,
-          "prompt": "Sometimes it snows [gap] winter.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q09",
-          "order": 9,
-          "prompt": "My friend’s birthday is [gap] June.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-c-q10",
-          "order": 10,
-          "prompt": "Some birds and animals come out [gap] night.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-34-sec-c-q02", "order": 2, "prompt": "My mother usually goes shopping [gap] Friday morning.", "acceptedAnswers": ["on"], "explanation": "on + day + part of day" },
+        { "id": "ws-34-sec-c-q03", "order": 3, "prompt": "I always do my homework [gap] the evening.", "acceptedAnswers": ["in"], "explanation": "in the evening" },
+        { "id": "ws-34-sec-c-q04", "order": 4, "prompt": "The circus usually comes to our town [gap] spring.", "acceptedAnswers": ["in"], "explanation": "in + season" },
+        { "id": "ws-34-sec-c-q05", "order": 5, "prompt": "Sophia’s birthday is [gap] May 16th.", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-c-q06", "order": 6, "prompt": "I usually get up [gap] seven o’clock.", "acceptedAnswers": ["at"], "explanation": "at + clock time" },
+        { "id": "ws-34-sec-c-q07", "order": 7, "prompt": "My favorite television programme begins [gap] 6:30 [gap] the evening.", "acceptedAnswers": ["at / in"], "explanation": "at + clock time; in the evening" },
+        { "id": "ws-34-sec-c-q08", "order": 8, "prompt": "Sometimes it snows [gap] winter.", "acceptedAnswers": ["in"], "explanation": "in + season" },
+        { "id": "ws-34-sec-c-q09", "order": 9, "prompt": "My friend’s birthday is [gap] June.", "acceptedAnswers": ["in"], "explanation": "in + month" },
+        { "id": "ws-34-sec-c-q10", "order": 10, "prompt": "Some birds and animals come out [gap] night.", "acceptedAnswers": ["at"], "explanation": "at night" }
       ]
     },
     {
       "id": "ws-34-sec-d",
       "sectionKey": "D",
-      "instruction": "Choose the correct answer:",
-      "type": "inline_gap_fill",
+      "instruction": "Choose the correct answer: (Example: My lesson starts at five o’clock.)",
+      "type": "multiple_choice",
       "questions": [
-        {
-          "id": "ws-34-sec-d-q01",
-          "order": 1,
-          "prompt": "My lesson starts [gap] at [gap] five o’clock.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q02",
-          "order": 2,
-          "prompt": "My father usually buys a newspaper [gap] the morning.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q03",
-          "order": 3,
-          "prompt": "We wear warm clothes [gap] winter.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q04",
-          "order": 4,
-          "prompt": "We get presents [gap] Christmas.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q05",
-          "order": 5,
-          "prompt": "I usually visit my grandparents [gap] Sunday afternoon.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q06",
-          "order": 6,
-          "prompt": "John’s birthday is [gap] August 16th .",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q07",
-          "order": 7,
-          "prompt": "The film finishes [gap] 9:30.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        },
-        {
-          "id": "ws-34-sec-d-q08",
-          "order": 8,
-          "prompt": "The supermarket is closed [gap] Sunday.",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) on",
-            "b) at",
-            "c) in"
-          ]
-        }
+        { "id": "ws-34-sec-d-q02", "order": 2, "prompt": "My father usually buys a newspaper [gap] the morning.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["c"], "explanation": "in the morning" },
+        { "id": "ws-34-sec-d-q03", "order": 3, "prompt": "We wear warm clothes [gap] winter.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["c"], "explanation": "in + season" },
+        { "id": "ws-34-sec-d-q04", "order": 4, "prompt": "We get presents [gap] Christmas.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["b"], "explanation": "at Christmas" },
+        { "id": "ws-34-sec-d-q05", "order": 5, "prompt": "I usually visit my grandparents [gap] Sunday afternoon.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["a"], "explanation": "on + day + part of day" },
+        { "id": "ws-34-sec-d-q06", "order": 6, "prompt": "John’s birthday is [gap] August 16th.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["a"], "explanation": "on + date" },
+        { "id": "ws-34-sec-d-q07", "order": 7, "prompt": "The film finishes [gap] 9:30.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["b"], "explanation": "at + clock time" },
+        { "id": "ws-34-sec-d-q08", "order": 8, "prompt": "The supermarket is closed [gap] Sunday.", "options": ["a) on", "b) at", "c) in"], "acceptedAnswers": ["a"], "explanation": "on + day of the week" }
       ]
     },
     {
       "id": "ws-34-sec-e",
       "sectionKey": "E",
-      "instruction": "Fill in “AT“, “IN” or “ON”:",
+      "instruction": "Fill in “AT”, “IN” or “ON”: (My birthday is on the 30th of July.)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-34-sec-e-q01",
-          "order": 1,
-          "prompt": "My birthday is [gap] on [gap] the 30th of July. Last year I had a great day. I got up [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-e-q02",
-          "order": 2,
-          "prompt": "8 o’clock [gap] the morning and tidied the house. Then [gap] the afternoon I went into",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-e-q03",
-          "order": 3,
-          "prompt": "town with my friend to buy food for the party. The party started [gap] 7 o’clock [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-e-q04",
-          "order": 4,
-          "prompt": "the evening and didn’t stop until very late [gap] night! [gap] the 31st of July I was",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-e-q05",
-          "order": 5,
-          "prompt": "very tired, so I went to bed early [gap] the evening.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-34-sec-e-q01", "order": 1, "prompt": "Last year I had a great day. I got up [gap] 8 o’clock [gap] the morning and tidied the house.", "acceptedAnswers": ["at / in"], "explanation": "at + clock time; in the morning" },
+        { "id": "ws-34-sec-e-q02", "order": 2, "prompt": "Then [gap] the afternoon I went into town with my friend to buy food for the party.", "acceptedAnswers": ["in"], "explanation": "in the afternoon" },
+        { "id": "ws-34-sec-e-q03", "order": 3, "prompt": "The party started [gap] 7 o’clock [gap] the evening and didn’t stop until very late [gap] night!", "acceptedAnswers": ["at / in / at"], "explanation": "at + clock time; in the evening; at night" },
+        { "id": "ws-34-sec-e-q04", "order": 4, "prompt": "[gap] the 31st of July I was very tired, so I went to bed early [gap] the evening.", "acceptedAnswers": ["on / in"], "explanation": "on + date; in the evening" }
       ]
     },
     {
       "id": "ws-34-sec-f",
       "sectionKey": "F",
-      "instruction": "Fill in the spaces in the invitation with “IN”,”ON” or “AT”:",
+      "instruction": "Fill in the spaces in the invitation with “IN”, “ON” or “AT”: (I’m going to have a party! I hope you can come!!)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-34-sec-f-q01",
-          "order": 1,
-          "prompt": "I’m going to have a party! I hope you can come!! [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q02",
-          "order": 2,
-          "prompt": "It’s going to start [gap] 5 o’clock [gap] the afternoon",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q03",
-          "order": 3,
-          "prompt": "[gap] the secong Saturday [gap] August. We’re",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q04",
-          "order": 4,
-          "prompt": "going to have it in Tom’s house on Wilton Avenue. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q05",
-          "order": 5,
-          "prompt": "There’s a big garden and we’re going to have the party in [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q06",
-          "order": 6,
-          "prompt": "the garden. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q07",
-          "order": 7,
-          "prompt": "Did you know that my birthday is [gap] the eighth? But",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q08",
-          "order": 8,
-          "prompt": "as you can see, the party is going to be [gap] the tenth.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q09",
-          "order": 9,
-          "prompt": "Why? Parties are better [gap] the weekend!",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-34-sec-f-q10",
-          "order": 10,
-          "prompt": "BIRTHDAY PRESENTS WELCOME ANYDAY!!!! [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-34-sec-f-q01", "order": 1, "prompt": "It’s going to start [gap] 5 o’clock [gap] the afternoon [gap] the second Saturday [gap] August.", "acceptedAnswers": ["at / in / on / in"], "explanation": "at + clock time; in the afternoon; on + specific day; in + month" },
+        { "id": "ws-34-sec-f-q02", "order": 2, "prompt": "Did you know that my birthday is [gap] the eighth?", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-f-q03", "order": 3, "prompt": "But as you can see, the party is going to be [gap] the tenth.", "acceptedAnswers": ["on"], "explanation": "on + date" },
+        { "id": "ws-34-sec-f-q04", "order": 4, "prompt": "Why? Parties are better [gap] the weekend!", "acceptedAnswers": ["at", "on"], "explanation": "at the weekend (British) / on the weekend (American)" }
       ]
     }
   ]

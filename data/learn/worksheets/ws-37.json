@@ -13,316 +13,415 @@
       "id": "ws-37-sec-a",
       "sectionKey": "A",
       "instruction": "Join these sentences using suitable RELATIVE PRONOUNS:",
-      "type": "inline_gap_fill",
+      "type": "sentence_combine",
       "questions": [
         {
           "id": "ws-37-sec-a-q01",
           "order": 1,
-          "prompt": "We have a neighbour. His dog barks a lot. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We have a neighbour. His dog barks a lot.",
+          "acceptedAnswers": [
+            "We have a neighbour whose dog barks a lot.",
+            "We have a neighbor whose dog barks a lot."
+          ],
+          "explanation": "whose replaces his"
         },
         {
           "id": "ws-37-sec-a-q02",
           "order": 2,
-          "prompt": "I don’t know most of the people. You invited them for the party. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I don't know most of the people. You invited them for the party.",
+          "acceptedAnswers": [
+            "I don't know most of the people who you invited for the party.",
+            "I don't know most of the people whom you invited for the party.",
+            "I don't know most of the people that you invited for the party.",
+            "I don't know most of the people you invited for the party."
+          ],
+          "explanation": "object relative: drop 'them'"
         },
         {
           "id": "ws-37-sec-a-q03",
           "order": 3,
-          "prompt": "My cousin is a journalist. Her job is interesting. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My cousin is a journalist. Her job is interesting.",
+          "acceptedAnswers": [
+            "My cousin, whose job is interesting, is a journalist.",
+            "My cousin is a journalist whose job is interesting."
+          ],
+          "explanation": "whose replaces her"
         },
         {
           "id": "ws-37-sec-a-q04",
           "order": 4,
-          "prompt": "That’s the parcel. It came in the mail. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "That's the parcel. It came in the mail.",
+          "acceptedAnswers": [
+            "That's the parcel which came in the mail.",
+            "That's the parcel that came in the mail.",
+            "That is the parcel which came in the mail.",
+            "That is the parcel that came in the mail."
+          ],
+          "explanation": "which/that for things"
         },
         {
           "id": "ws-37-sec-a-q05",
           "order": 5,
-          "prompt": "Do you know the man? I asked him the address. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Do you know the man? I asked him the address.",
+          "acceptedAnswers": [
+            "Do you know the man who I asked the address?",
+            "Do you know the man whom I asked the address?",
+            "Do you know the man that I asked the address?",
+            "Do you know the man I asked the address?",
+            "Do you know the man who I asked for the address?",
+            "Do you know the man whom I asked for the address?",
+            "Do you know the man that I asked for the address?",
+            "Do you know the man I asked for the address?"
+          ],
+          "explanation": "object relative: drop 'him'"
         },
         {
           "id": "ws-37-sec-a-q06",
           "order": 6,
-          "prompt": "The boy is the travel agent. He is checking the tickets. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The boy is the travel agent. He is checking the tickets.",
+          "acceptedAnswers": [
+            "The boy who is checking the tickets is the travel agent.",
+            "The boy that is checking the tickets is the travel agent."
+          ],
+          "explanation": "who/that for people"
         },
         {
           "id": "ws-37-sec-a-q07",
           "order": 7,
-          "prompt": "The gardener’s wife has just had her third baby. She has been married for six years. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The gardener's wife has just had her third baby. She has been married for six years.",
+          "acceptedAnswers": [
+            "The gardener's wife, who has been married for six years, has just had her third baby.",
+            "The gardener's wife, that has been married for six years, has just had her third baby."
+          ],
+          "explanation": "who for people"
         },
         {
           "id": "ws-37-sec-a-q08",
           "order": 8,
-          "prompt": "The horse came in last. You were telling me about it. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The horse came in last. You were telling me about it.",
+          "acceptedAnswers": [
+            "The horse which you were telling me about came in last.",
+            "The horse that you were telling me about came in last.",
+            "The horse you were telling me about came in last.",
+            "The horse about which you were telling me came in last."
+          ],
+          "explanation": "object relative; preposition at the end"
         },
         {
           "id": "ws-37-sec-a-q09",
           "order": 9,
-          "prompt": "I can’t remember the town. I was born there. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't remember the town. I was born there.",
+          "acceptedAnswers": [
+            "I can't remember the town where I was born.",
+            "I can't remember the town in which I was born.",
+            "I can't remember the town which I was born in.",
+            "I can't remember the town that I was born in.",
+            "I can't remember the town I was born in."
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-a-q10",
           "order": 10,
-          "prompt": "I apologized to the woman. I spilt her coffee. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I apologized to the woman. I spilt her coffee.",
+          "acceptedAnswers": [
+            "I apologized to the woman whose coffee I spilt.",
+            "I apologized to the woman whose coffee I spilled.",
+            "I apologised to the woman whose coffee I spilt.",
+            "I apologised to the woman whose coffee I spilled."
+          ],
+          "explanation": "whose replaces her"
         },
         {
           "id": "ws-37-sec-a-q11",
           "order": 11,
-          "prompt": "Did you mail the letters? They were on my table. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did you mail the letters? They were on my table.",
+          "acceptedAnswers": [
+            "Did you mail the letters which were on my table?",
+            "Did you mail the letters that were on my table?"
+          ],
+          "explanation": "which/that for things"
         },
         {
           "id": "ws-37-sec-a-q12",
           "order": 12,
-          "prompt": "The man teaches at the university. You met his daughter last night. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The man teaches at the university. You met his daughter last night.",
+          "acceptedAnswers": [
+            "The man whose daughter you met last night teaches at the university."
+          ],
+          "explanation": "whose replaces his"
         },
         {
           "id": "ws-37-sec-a-q13",
           "order": 13,
-          "prompt": "We’re studying science. It helps us to find out a lot about the world around us. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We're studying science. It helps us to find out a lot about the world around us.",
+          "acceptedAnswers": [
+            "We're studying science, which helps us to find out a lot about the world around us."
+          ],
+          "explanation": "non-defining clause: which, not that"
         },
         {
           "id": "ws-37-sec-a-q14",
           "order": 14,
-          "prompt": "The man was very rich. He left a big tip for the waiter. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The man was very rich. He left a big tip for the waiter.",
+          "acceptedAnswers": [
+            "The man who left a big tip for the waiter was very rich.",
+            "The man that left a big tip for the waiter was very rich."
+          ],
+          "explanation": "who/that for people"
         },
         {
           "id": "ws-37-sec-a-q15",
           "order": 15,
-          "prompt": "The subject interested everyone. You wrote about it last week. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The subject interested everyone. You wrote about it last week.",
+          "acceptedAnswers": [
+            "The subject which you wrote about last week interested everyone.",
+            "The subject that you wrote about last week interested everyone.",
+            "The subject you wrote about last week interested everyone.",
+            "The subject about which you wrote last week interested everyone."
+          ],
+          "explanation": "object relative; preposition at the end"
         },
         {
           "id": "ws-37-sec-a-q16",
           "order": 16,
-          "prompt": "Mrs. Fox belongs to an organization. It assista hospitals. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mrs. Fox belongs to an organization. It assists hospitals.",
+          "acceptedAnswers": [
+            "Mrs. Fox belongs to an organization which assists hospitals.",
+            "Mrs. Fox belongs to an organization that assists hospitals.",
+            "Mrs. Fox belongs to an organisation which assists hospitals.",
+            "Mrs. Fox belongs to an organisation that assists hospitals."
+          ],
+          "explanation": "which/that for things"
         },
         {
           "id": "ws-37-sec-a-q17",
           "order": 17,
-          "prompt": "You should go to Dr. Anderson. He’ll give you a common exam. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You should go to Dr. Anderson. He'll give you a common exam.",
+          "acceptedAnswers": [
+            "You should go to Dr. Anderson, who'll give you a common exam.",
+            "You should go to Dr. Anderson, who will give you a common exam."
+          ],
+          "explanation": "non-defining clause with who"
         },
         {
           "id": "ws-37-sec-a-q18",
           "order": 18,
-          "prompt": "We met a girl. Her name was unusual. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We met a girl. Her name was unusual.",
+          "acceptedAnswers": [
+            "We met a girl whose name was unusual."
+          ],
+          "explanation": "whose replaces her"
         },
         {
           "id": "ws-37-sec-a-q19",
           "order": 19,
-          "prompt": "The story can’t possibly be true. He told it to us. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The story can't possibly be true. He told it to us.",
+          "acceptedAnswers": [
+            "The story which he told us can't possibly be true.",
+            "The story that he told us can't possibly be true.",
+            "The story he told us can't possibly be true.",
+            "The story which he told to us can't possibly be true.",
+            "The story that he told to us can't possibly be true.",
+            "The story he told to us can't possibly be true."
+          ],
+          "explanation": "object relative: drop 'it'"
         },
         {
           "id": "ws-37-sec-a-q20",
           "order": 20,
-          "prompt": "Did you buy the dress? It was very smart and expensive. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did you buy the dress? It was very smart and expensive.",
+          "acceptedAnswers": [
+            "Did you buy the dress which was very smart and expensive?",
+            "Did you buy the dress that was very smart and expensive?"
+          ],
+          "explanation": "which/that for things"
         },
         {
           "id": "ws-37-sec-a-q21",
           "order": 21,
-          "prompt": "That’s the dog. It can understand everything. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "That's the dog. It can understand everything.",
+          "acceptedAnswers": [
+            "That's the dog which can understand everything.",
+            "That's the dog that can understand everything.",
+            "That is the dog which can understand everything.",
+            "That is the dog that can understand everything."
+          ],
+          "explanation": "which/that for animals"
         },
         {
           "id": "ws-37-sec-a-q22",
           "order": 22,
-          "prompt": "My friend invited a lot of visitors. His house is very large. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My friend invited a lot of visitors. His house is very large.",
+          "acceptedAnswers": [
+            "My friend, whose house is very large, invited a lot of visitors."
+          ],
+          "explanation": "whose replaces his"
         },
         {
           "id": "ws-37-sec-a-q23",
           "order": 23,
-          "prompt": "The bus was very crowded. I took it this morning. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The bus was very crowded. I took it this morning.",
+          "acceptedAnswers": [
+            "The bus which I took this morning was very crowded.",
+            "The bus that I took this morning was very crowded.",
+            "The bus I took this morning was very crowded."
+          ],
+          "explanation": "object relative: drop 'it'"
         },
         {
           "id": "ws-37-sec-a-q24",
           "order": 24,
-          "prompt": "My girlfriend is very beautiful. Her eyes are green. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My girlfriend is very beautiful. Her eyes are green.",
+          "acceptedAnswers": [
+            "My girlfriend, whose eyes are green, is very beautiful."
+          ],
+          "explanation": "whose replaces her"
         },
         {
           "id": "ws-37-sec-a-q25",
           "order": 25,
-          "prompt": "Bring me the books. I forgot them on my table. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Bring me the books. I forgot them on my table.",
+          "acceptedAnswers": [
+            "Bring me the books which I forgot on my table.",
+            "Bring me the books that I forgot on my table.",
+            "Bring me the books I forgot on my table."
+          ],
+          "explanation": "object relative: drop 'them'"
         }
       ]
     },
     {
       "id": "ws-37-sec-b",
       "sectionKey": "B",
-      "instruction": "Complete the sentences:",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the sentences (write the whole sentence):",
+      "type": "sentence_building",
       "questions": [
         {
           "id": "ws-37-sec-b-q01",
           "order": 1,
-          "prompt": "I watched a football match which [gap]",
+          "prompt": "I watched a football match which (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I watched a football match which was very exciting."
         },
         {
           "id": "ws-37-sec-b-q02",
           "order": 2,
-          "prompt": "My friends whom [gap] brought me nice presents.",
+          "prompt": "My friends whom (?) brought me nice presents.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "My friends whom I invited to my birthday party brought me nice presents."
         },
         {
           "id": "ws-37-sec-b-q03",
           "order": 3,
-          "prompt": "Did you pass the exam which [gap] ?",
+          "prompt": "Did you pass the exam which (?)?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Did you pass the exam which you took last week?"
         },
         {
           "id": "ws-37-sec-b-q04",
           "order": 4,
-          "prompt": "Students who [gap] must study harder.",
+          "prompt": "Students who (?) must study harder.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Students who want to pass the exam must study harder."
         },
         {
           "id": "ws-37-sec-b-q05",
           "order": 5,
-          "prompt": "The postman whose [gap] is at the door.",
+          "prompt": "The postman whose (?) is at the door.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "The postman whose bag is very heavy is at the door."
         },
         {
           "id": "ws-37-sec-b-q06",
           "order": 6,
-          "prompt": "That’s the girl whose [gap]",
+          "prompt": "That's the girl whose (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "That's the girl whose brother is my best friend."
         },
         {
           "id": "ws-37-sec-b-q07",
           "order": 7,
-          "prompt": "Jim helped the old lady who [gap]",
+          "prompt": "Jim helped the old lady who (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Jim helped the old lady who couldn't carry her shopping bags."
         },
         {
           "id": "ws-37-sec-b-q08",
           "order": 8,
-          "prompt": "The police asked some questions to the boy who [gap]",
+          "prompt": "The police asked some questions to the boy who (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "The police asked some questions to the boy who saw the accident."
         },
         {
           "id": "ws-37-sec-b-q09",
           "order": 9,
-          "prompt": "I have a new camera which [gap]",
+          "prompt": "I have a new camera which (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I have a new camera which takes very good photos."
         },
         {
           "id": "ws-37-sec-b-q10",
           "order": 10,
-          "prompt": "A parrot is a bird that [gap]",
+          "prompt": "A parrot is a bird that (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "A parrot is a bird that can repeat words."
         },
         {
           "id": "ws-37-sec-b-q11",
           "order": 11,
-          "prompt": "The children whom [gap] were arguing with each other.",
+          "prompt": "The children whom (?) were arguing with each other.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "The children whom we saw in the park were arguing with each other."
         },
         {
           "id": "ws-37-sec-b-q12",
           "order": 12,
-          "prompt": "Prof. Moore who [gap] will be our guest.",
+          "prompt": "Prof. Moore who (?) will be our guest.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Prof. Moore, who teaches history at our university, will be our guest."
         },
         {
           "id": "ws-37-sec-b-q13",
           "order": 13,
-          "prompt": "The soup which [gap] was very salty.",
+          "prompt": "The soup which (?) was very salty.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "The soup which my mother cooked was very salty."
         },
         {
           "id": "ws-37-sec-b-q14",
           "order": 14,
-          "prompt": "A kangaroo is an animal which [gap]",
+          "prompt": "A kangaroo is an animal which (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "A kangaroo is an animal which carries its baby in a pouch."
         },
         {
           "id": "ws-37-sec-b-q15",
           "order": 15,
-          "prompt": "Is that the same boy who [gap] ?",
+          "prompt": "Is that the same boy who (?)?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Is that the same boy who helped us yesterday?"
         },
         {
           "id": "ws-37-sec-b-q16",
           "order": 16,
-          "prompt": "The present which [gap] was very interesting.",
+          "prompt": "The present which (?) was very interesting.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "The present which my aunt gave me was very interesting."
         },
         {
           "id": "ws-37-sec-b-q17",
           "order": 17,
-          "prompt": "I need someone who [gap]",
+          "prompt": "I need someone who (?)",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I need someone who can help me with my homework."
         },
         {
           "id": "ws-37-sec-b-q18",
           "order": 18,
-          "prompt": "The actor whom [gap] was very famous.",
+          "prompt": "The actor whom (?) was very famous.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "The actor whom we met at the party was very famous."
         }
       ]
     },
@@ -330,77 +429,89 @@
       "id": "ws-37-sec-c",
       "sectionKey": "C",
       "instruction": "Answer the questions using RELATIVE PRONOUNS:",
-      "type": "inline_gap_fill",
+      "type": "reading_qa",
       "questions": [
         {
           "id": "ws-37-sec-c-q01",
           "order": 1,
-          "prompt": "Who did she give the money to? (man / wait at the door) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Who did she give the money to? (man / wait at the door)",
+          "acceptedAnswers": [
+            "She gave the money to the man who was waiting at the door.",
+            "She gave the money to the man that was waiting at the door."
+          ],
+          "explanation": "past continuous in the relative clause"
         },
         {
           "id": "ws-37-sec-c-q02",
           "order": 2,
-          "prompt": "Where did he take her? (restaurant / serve Chinese food) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where did he take her? (restaurant / serve Chinese food)",
+          "acceptedAnswers": [
+            "He took her to a restaurant which serves Chinese food.",
+            "He took her to a restaurant which served Chinese food.",
+            "He took her to a restaurant that serves Chinese food.",
+            "He took her to a restaurant that served Chinese food."
+          ],
+          "explanation": "which/that for places as things"
         },
         {
           "id": "ws-37-sec-c-q03",
           "order": 3,
-          "prompt": "What kind of students are mostly successful? [gap]",
+          "prompt": "What kind of students are mostly successful?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Students who study regularly and work hard are mostly successful."
         },
         {
           "id": "ws-37-sec-c-q04",
           "order": 4,
-          "prompt": "What kind of people do you like? [gap]",
+          "prompt": "What kind of people do you like?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I like people who are honest and friendly."
         },
         {
           "id": "ws-37-sec-c-q05",
           "order": 5,
-          "prompt": "What kind of people don’t you like? [gap]",
+          "prompt": "What kind of people don't you like?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I don't like people who tell lies."
         },
         {
           "id": "ws-37-sec-c-q06",
           "order": 6,
-          "prompt": "Where did she live when she was a child? (big house / room for everyone) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Where did she live when she was a child? (big house / room for everyone)",
+          "acceptedAnswers": [
+            "She lived in a big house which had room for everyone.",
+            "She lived in a big house that had room for everyone.",
+            "She lived in a big house where there was room for everyone."
+          ],
+          "explanation": "which for things; where for places"
         },
         {
           "id": "ws-37-sec-c-q07",
           "order": 7,
-          "prompt": "Who is a postman? [gap]",
+          "prompt": "Who is a postman?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "A postman is a person who delivers letters and parcels."
         },
         {
           "id": "ws-37-sec-c-q08",
           "order": 8,
-          "prompt": "What is a knife? [gap]",
+          "prompt": "What is a knife?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "A knife is a tool which we use to cut things."
         },
         {
           "id": "ws-37-sec-c-q09",
           "order": 9,
-          "prompt": "What kind of place do you like? [gap]",
+          "prompt": "What kind of place do you like?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I like places where it is quiet and green."
         },
         {
           "id": "ws-37-sec-c-q10",
           "order": 10,
-          "prompt": "What is a zoo? [gap]",
+          "prompt": "What is a zoo?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "A zoo is a place where people can see wild animals."
         }
       ]
     },
@@ -408,84 +519,62 @@
       "id": "ws-37-sec-d",
       "sectionKey": "D",
       "instruction": "Complete the sentences with WHO / WHICH / WHERE / WHOSE:",
-      "type": "inline_gap_fill",
+      "type": "passage_gap_fill",
+      "contextText": "… They were being watched by a young man in uniform.\n… When my friend took the bill out of the box, he opened his eyes in surprise because he had never had to pay so much money before.",
       "questions": [
         {
           "id": "ws-37-sec-d-q01",
           "order": 1,
-          "prompt": "My friend [gap] took me to a restaurant works in a big shop [gap] sells",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My friend [gap] took me to a restaurant works in a big shop [gap] sells expensive shoes.",
+          "acceptedAnswers": [
+            "who / which"
+          ],
+          "explanation": "who for people; which for things"
         },
         {
           "id": "ws-37-sec-d-q02",
           "order": 2,
-          "prompt": "expensive shoes. The restaurant [gap] we had lunch was very modern. The food",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The restaurant [gap] we had lunch was very modern.",
+          "acceptedAnswers": [
+            "where"
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-d-q03",
           "order": 3,
-          "prompt": "[gap] they served was excellent. The waiters [gap] shirts were silk",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The food [gap] they served was excellent.",
+          "acceptedAnswers": [
+            "which"
+          ],
+          "explanation": "which for things"
         },
         {
           "id": "ws-37-sec-d-q04",
           "order": 4,
-          "prompt": "were always busy with the customers [gap] wallets were full of money.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The waiters [gap] shirts were silk were always busy with the customers [gap] wallets were full of money.",
+          "acceptedAnswers": [
+            "whose / whose"
+          ],
+          "explanation": "whose for possession"
         },
         {
           "id": "ws-37-sec-d-q05",
           "order": 5,
-          "prompt": "The table [gap] we had was near a window, so we could see the cars [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The table [gap] we had was near a window, so we could see the cars [gap] were parked by the rich customers outside the restaurant.",
+          "acceptedAnswers": [
+            "which / which"
+          ],
+          "explanation": "which for things"
         },
         {
           "id": "ws-37-sec-d-q06",
           "order": 6,
-          "prompt": "were parked by the rich customers ourside the restaurant. They were being watched by a young [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-d-q07",
-          "order": 7,
-          "prompt": "man in uniform. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-d-q08",
-          "order": 8,
-          "prompt": "After we had finished the meals, the waiter [gap] my friend called came with a",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-d-q09",
-          "order": 9,
-          "prompt": "small silver box [gap] he had already put the bill in. When my friend took the bill",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-d-q10",
-          "order": 10,
-          "prompt": "out of the box, he opened his eyes in surprise because he had never had to pay so much money [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-d-q11",
-          "order": 11,
-          "prompt": "before. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "After we had finished the meals, the waiter [gap] my friend called came with a small silver box [gap] he had already put the bill in.",
+          "acceptedAnswers": [
+            "who / which"
+          ],
+          "explanation": "who for people; which + preposition at the end"
         }
       ]
     },
@@ -494,48 +583,21 @@
       "sectionKey": "E",
       "instruction": "Rewrite the following story combining the sentences using a RELATIVE PRONOUN:",
       "type": "sentence_rewrite",
+      "contextText": "In 1956, a young sailor wrote a note. He felt very lonely. He put the note into a bottle. He threw the bottle into the ocean. In his note, he wanted any girl to write to him. A girl would find the bottle.\n\nTwo years later, a fisherman saw the sailor's bottle and picked it up. He was fishing on a shore in Sicily. As a joke, he gave it to his daughter. She wrote the sailor a letter. After more letters, the sailor married her in 1958. He visited Sicily.",
       "questions": [
         {
           "id": "ws-37-sec-e-q01",
           "order": 1,
-          "prompt": "In 1956, a young sailor wrote a note. He felt very lonely. He put the note into a bottle. He",
+          "prompt": "Paragraph 1: In 1956, a young sailor wrote a note. He felt very lonely. He put the note into a bottle. He threw the bottle into the ocean. In his note, he wanted any girl to write to him. A girl would find the bottle.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "In 1956, a young sailor who felt very lonely wrote a note which he put into a bottle. He threw the bottle into the ocean. In his note, he wanted any girl who would find the bottle to write to him."
         },
         {
           "id": "ws-37-sec-e-q02",
           "order": 2,
-          "prompt": "threw the bottle into the ocean. In his note, he wanted any girl to write to him. A girl would find",
+          "prompt": "Paragraph 2: Two years later, a fisherman saw the sailor's bottle and picked it up. He was fishing on a shore in Sicily. As a joke, he gave it to his daughter. She wrote the sailor a letter. After more letters, the sailor married her in 1958. He visited Sicily.",
           "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-e-q03",
-          "order": 3,
-          "prompt": "the bottle.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-e-q04",
-          "order": 4,
-          "prompt": "Two years later, a fisherman saw the sailor’s bottle and picked it up. He was fishing on a shore",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-e-q05",
-          "order": 5,
-          "prompt": "in Sicily. As a joke, he gave it to his daughter. She wrote the sailor a letter. After more letters,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-37-sec-e-q06",
-          "order": 6,
-          "prompt": "the sailor married her in 1958. He visited Sicily.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Two years later, a fisherman who was fishing on a shore in Sicily saw the sailor's bottle and picked it up. As a joke, he gave it to his daughter, who wrote the sailor a letter. After more letters, the sailor, who visited Sicily, married her in 1958."
         }
       ]
     },
@@ -548,72 +610,98 @@
         {
           "id": "ws-37-sec-f-q01",
           "order": 1,
-          "prompt": "Here is the shop. I bought my new camera form this shop.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Here is the shop. I bought my new camera from this shop.",
+          "acceptedAnswers": [
+            "Here is the shop where I bought my new camera.",
+            "Here's the shop where I bought my new camera."
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-f-q02",
           "order": 2,
           "prompt": "We will spend our holiday in the same village. We have had a lot of joyful days there so far.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "We will spend our holiday in the same village where we have had a lot of joyful days so far.",
+            "We'll spend our holiday in the same village where we have had a lot of joyful days so far."
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-f-q03",
           "order": 3,
           "prompt": "We enjoyed Marmaris. We spent our summer holiday there this year.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "We enjoyed Marmaris, where we spent our summer holiday this year."
+          ],
+          "explanation": "where for places (non-defining)"
         },
         {
           "id": "ws-37-sec-f-q04",
           "order": 4,
           "prompt": "The library is quite far from the city center. I go and work there twice a month.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "The library where I go and work twice a month is quite far from the city center.",
+            "The library where I go and work twice a month is quite far from the city centre."
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-f-q05",
           "order": 5,
-          "prompt": "I’ll never forget the day. I met my wife on this day.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'll never forget the day. I met my wife on this day.",
+          "acceptedAnswers": [
+            "I'll never forget the day when I met my wife.",
+            "I will never forget the day when I met my wife."
+          ],
+          "explanation": "when for times"
         },
         {
           "id": "ws-37-sec-f-q06",
           "order": 6,
-          "prompt": "I’m looking forward to the Fifteenth of next month. I’ll get married then.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm looking forward to the Fifteenth of next month. I'll get married then.",
+          "acceptedAnswers": [
+            "I'm looking forward to the Fifteenth of next month, when I'll get married.",
+            "I'm looking forward to the Fifteenth of next month, when I will get married."
+          ],
+          "explanation": "when for times (non-defining)"
         },
         {
           "id": "ws-37-sec-f-q07",
           "order": 7,
           "prompt": "Do you know the restaurant? We will meet you there tomorrow.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Do you know the restaurant where we will meet you tomorrow?",
+            "Do you know the restaurant where we'll meet you tomorrow?"
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-f-q08",
           "order": 8,
           "prompt": "John visited me last Friday. A few other friends also called me up last Friday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "John visited me last Friday, when a few other friends also called me up."
+          ],
+          "explanation": "when for times (non-defining)"
         },
         {
           "id": "ws-37-sec-f-q09",
           "order": 9,
           "prompt": "Last week I went to see the country town. I used to live in that town.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Last week I went to see the country town where I used to live."
+          ],
+          "explanation": "where for places"
         },
         {
           "id": "ws-37-sec-f-q10",
           "order": 10,
           "prompt": "Abant is a beautiful place. There are many lakes there.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Abant is a beautiful place where there are many lakes."
+          ],
+          "explanation": "where for places"
         }
       ]
     }

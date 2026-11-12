@@ -12,85 +12,130 @@
     {
       "id": "ws-32-sec-a",
       "sectionKey": "A",
-      "instruction": "Write sentences with “I WISH………” and “IF ONLY……..”:",
-      "type": "inline_gap_fill",
+      "instruction": "Write sentences with “I WISH” and “IF ONLY”, starting with the words given:",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-32-sec-a-q01",
           "order": 1,
-          "prompt": "Ayşe isn’t here. [gap] I wish [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Ayşe isn’t here. → I wish",
+          "acceptedAnswers": [
+            "I wish Ayşe were here.",
+            "I wish Ayşe was here.",
+            "I wish Ayse were here.",
+            "I wish Ayse was here.",
+            "I wish she were here.",
+            "I wish she was here."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q02",
           "order": 2,
-          "prompt": "She lives in İstanbul (and she hates it). [gap] She wishes [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She lives in İstanbul (and she hates it). → She wishes",
+          "acceptedAnswers": [
+            "She wishes she didn't live in İstanbul.",
+            "She wishes she didn't live in Istanbul."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q03",
           "order": 3,
-          "prompt": "He can’t give up smoking. [gap] He wishes [gap] If only [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He can’t give up smoking. → He wishes / If only (Write both sentences.)",
+          "acceptedAnswers": [
+            "He wishes he could give up smoking. If only he could give up smoking."
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-a-q04",
           "order": 4,
-          "prompt": "I’m not lying on a beautiful sunny beach (and that’s a pity). [gap] I wish [gap] If only [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’m not lying on a beautiful sunny beach (and that’s a pity). → I wish / If only (Write both sentences.)",
+          "acceptedAnswers": [
+            "I wish I were lying on a beautiful sunny beach. If only I were lying on a beautiful sunny beach.",
+            "I wish I were lying on a beautiful sunny beach. If only I was lying on a beautiful sunny beach.",
+            "I wish I was lying on a beautiful sunny beach. If only I were lying on a beautiful sunny beach.",
+            "I wish I was lying on a beautiful sunny beach. If only I was lying on a beautiful sunny beach."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q05",
           "order": 5,
-          "prompt": "They don’t know anything about cars (and their car has just been broken down). [gap] They wish [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They don’t know anything about cars (and their car has just broken down). → They wish",
+          "acceptedAnswers": [
+            "They wish they knew something about cars.",
+            "They wish they knew more about cars.",
+            "They wish they knew about cars."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q06",
           "order": 6,
-          "prompt": "He has pneumonia. [gap] He wishes [gap] If only [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He has pneumonia. → He wishes / If only (Write both sentences.)",
+          "acceptedAnswers": [
+            "He wishes he didn't have pneumonia. If only he didn't have pneumonia.",
+            "He wishes he hadn't got pneumonia. If only he hadn't got pneumonia."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q07",
           "order": 7,
-          "prompt": "She has to work tomorrow (but she’d like to stay in bed). [gap] She wishes [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She has to work tomorrow (but she’d like to stay in bed). → She wishes",
+          "acceptedAnswers": [
+            "She wishes she didn't have to work tomorrow."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q08",
           "order": 8,
-          "prompt": "There is going to be an examination tomorrow. [gap] If only [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There is going to be an examination tomorrow. → If only",
+          "acceptedAnswers": [
+            "If only there weren't going to be an examination tomorrow.",
+            "If only there wasn't going to be an examination tomorrow.",
+            "If only there weren't an examination tomorrow.",
+            "If only there wasn't an examination tomorrow."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-a-q09",
           "order": 9,
-          "prompt": "My brother doesn’t keep his room tidy. [gap] I wish [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My brother doesn’t keep his room tidy. → I wish",
+          "acceptedAnswers": [
+            "I wish my brother would keep his room tidy.",
+            "I wish my brother kept his room tidy."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-a-q10",
           "order": 10,
-          "prompt": "Sue doesn’t help with the housework. [gap] Sue’s mother wishes [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Sue doesn’t help with the housework. → Sue’s mother wishes",
+          "acceptedAnswers": [
+            "Sue's mother wishes Sue would help with the housework.",
+            "Sue's mother wishes she would help with the housework.",
+            "Sue's mother wishes she'd help with the housework.",
+            "Sue's mother wishes Sue helped with the housework.",
+            "Sue's mother wishes she helped with the housework."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-a-q11",
           "order": 11,
-          "prompt": "Mary often plays the piano in the middle of the night. [gap] Her neighbours wish [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mary often plays the piano in the middle of the night. → Her neighbours wish",
+          "acceptedAnswers": [
+            "Her neighbours wish Mary wouldn't play the piano in the middle of the night.",
+            "Her neighbours wish she wouldn't play the piano in the middle of the night.",
+            "Her neighbours wish Mary didn't play the piano in the middle of the night.",
+            "Her neighbours wish she didn't play the piano in the middle of the night."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         }
       ]
     },
@@ -98,554 +143,724 @@
       "id": "ws-32-sec-b",
       "sectionKey": "B",
       "instruction": "Write the correct forms of the verbs:",
-      "type": "inline_gap_fill",
+      "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-32-sec-b-q01",
           "order": 1,
           "prompt": "I wish I [gap] (have) today off. I wish I [gap] (have) yesterday off.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had / had had"
+          ],
+          "explanation": "present wish: past simple; past wish: past perfect"
         },
         {
           "id": "ws-32-sec-b-q02",
           "order": 2,
           "prompt": "If only I [gap] (know) the answer now. If only I [gap] (know) the answer a few minutes ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "knew / had known"
+          ],
+          "explanation": "present wish: past simple; past wish: past perfect"
         },
         {
           "id": "ws-32-sec-b-q03",
           "order": 3,
           "prompt": "He wishes he [gap] (visit) them, but he can’t.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "could visit"
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-b-q04",
           "order": 4,
           "prompt": "She wishes she [gap] (clean) the refrigerator today. She wishes she [gap] (clean) it yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "could clean|was cleaning|were cleaning|cleaned / had cleaned"
+          ],
+          "explanation": "present wish: could/past; past wish: past perfect"
         },
         {
           "id": "ws-32-sec-b-q05",
           "order": 5,
           "prompt": "If only he [gap] (not / eat) so much garlic! If only he [gap] (not / eat) so much garlic last night!",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "didn't eat|wouldn't eat / hadn't eaten"
+          ],
+          "explanation": "present wish: past simple; past wish: past perfect"
         },
         {
           "id": "ws-32-sec-b-q06",
           "order": 6,
           "prompt": "She has to walk up the stairs. She wishes her apartment building [gap] (have) an elevator.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "wish + past simple: unreal present"
         }
       ]
     },
     {
       "id": "ws-32-sec-c",
       "sectionKey": "C",
-      "instruction": "Ann doesn’t like her new house. Write what she WISHES:",
-      "type": "inline_gap_fill",
+      "instruction": "Ann doesn’t like her new house: “The house is so old and dirty. She has to paint it. The house doesn’t have central heating. The kitchen is small.” Write what she WISHES. (Example: I wish the house wasn’t so old and dirty.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-c-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-c-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She has to paint it.",
+          "acceptedAnswers": [
+            "I wish I didn't have to paint it.",
+            "I wish I didn't have to paint the house."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-c-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The house doesn’t have central heating.",
+          "acceptedAnswers": [
+            "I wish the house had central heating."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-c-q04",
           "order": 4,
-          "prompt": " [gap] [gap] I wish the house wasn’t so old and dirty [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The kitchen is small.",
+          "acceptedAnswers": [
+            "I wish the kitchen was bigger.",
+            "I wish the kitchen were bigger.",
+            "I wish the kitchen wasn't so small.",
+            "I wish the kitchen weren't so small.",
+            "I wish the kitchen wasn't small.",
+            "I wish the kitchen weren't small."
+          ],
+          "explanation": "wish + past simple: unreal present"
         }
       ]
     },
     {
       "id": "ws-32-sec-d",
       "sectionKey": "D",
-      "instruction": "Kate wants things to be different in the future. Write what she WISHES:",
-      "type": "inline_gap_fill",
+      "instruction": "Kate wants things to be different in the future: “I want my father to give me more pocket money. I want my brothers to stop fighting. I don’t want my mother to make me eat vegetables. I don’t want my sister to wear my clothes.” Write what she WISHES. (Example: I wish my father would give me more pocket money.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-d-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-d-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I want my brothers to stop fighting.",
+          "acceptedAnswers": [
+            "I wish my brothers would stop fighting."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-d-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I don’t want my mother to make me eat vegetables.",
+          "acceptedAnswers": [
+            "I wish my mother wouldn't make me eat vegetables."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-d-q04",
           "order": 4,
-          "prompt": " [gap] [gap] I wish my father would give me more pocket money [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I don’t want my sister to wear my clothes.",
+          "acceptedAnswers": [
+            "I wish my sister wouldn't wear my clothes."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         }
       ]
     },
     {
       "id": "ws-32-sec-e",
       "sectionKey": "E",
-      "instruction": "Ted regrets what he DID or DIDN’T DO. Write what he WISHES:",
-      "type": "inline_gap_fill",
+      "instruction": "Ted regrets what he DID or DIDN’T DO: “He left his job. He didn’t listen to his wife. He robbed a bank. He was sent to prison.” Write what he WISHES. (Example: I wish I hadn’t left my job.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-e-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-e-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He didn’t listen to his wife.",
+          "acceptedAnswers": [
+            "I wish I had listened to my wife.",
+            "I wish I'd listened to my wife."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-e-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He robbed a bank.",
+          "acceptedAnswers": [
+            "I wish I hadn't robbed a bank.",
+            "I wish I hadn't robbed the bank."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-e-q04",
           "order": 4,
-          "prompt": " [gap] [gap] I wish I hadn’t left my job [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He was sent to prison.",
+          "acceptedAnswers": [
+            "I wish I hadn't been sent to prison."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         }
       ]
     },
     {
       "id": "ws-32-sec-f",
       "sectionKey": "F",
-      "instruction": "Read what Hilda says and write what she WISHES:",
-      "type": "inline_gap_fill",
+      "instruction": "Read what Hilda says and write what she WISHES: “I didn’t go to university. I didn’t get any qualifications. I can’t find a better job. The telephone never stops ringing. My boss doesn’t like me. I’d like to be rich. I always feel tired. It was wrong of me to shout at Ann.” (Example: I wish I had gone to university.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-f-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-f-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I didn’t get any qualifications.",
+          "acceptedAnswers": [
+            "I wish I had got some qualifications.",
+            "I wish I'd got some qualifications.",
+            "I wish I had got qualifications.",
+            "I wish I'd got qualifications.",
+            "I wish I had gotten some qualifications.",
+            "I wish I'd gotten some qualifications.",
+            "I wish I had gotten qualifications.",
+            "I wish I'd gotten qualifications."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-f-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can’t find a better job.",
+          "acceptedAnswers": [
+            "I wish I could find a better job."
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-f-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The telephone never stops ringing.",
+          "acceptedAnswers": [
+            "I wish the telephone would stop ringing."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-f-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My boss doesn’t like me.",
+          "acceptedAnswers": [
+            "I wish my boss liked me."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-f-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’d like to be rich.",
+          "acceptedAnswers": [
+            "I wish I were rich.",
+            "I wish I was rich."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-f-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I always feel tired.",
+          "acceptedAnswers": [
+            "I wish I didn't always feel tired.",
+            "I wish I didn't feel tired all the time.",
+            "I wish I didn't feel tired."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-f-q08",
           "order": 8,
-          "prompt": " [gap] [gap] I wish I had gone to university [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It was wrong of me to shout at Ann.",
+          "acceptedAnswers": [
+            "I wish I hadn't shouted at Ann."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         }
       ]
     },
     {
       "id": "ws-32-sec-g",
       "sectionKey": "G",
-      "instruction": "Write what these people wish they HAD or HADN’T DONE as in the example:",
-      "type": "inline_gap_fill",
+      "instruction": "Write what these people wish they HAD or HADN’T DONE, and the result. (Example: John drove his car so fast that he had an accident. → I wish I hadn’t driven my car so fast. I wouldn’t have had an accident.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-g-q01",
-          "order": 1,
-          "prompt": "John drove his car so fast that he had an accident. [gap] John: [gap] I wish I hadn’t driven my car so fast. I wouldn’t have had an accident [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-g-q02",
           "order": 2,
-          "prompt": "Julie was late and she missed the beginning of the film. [gap] Julie: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Julie was late and she missed the beginning of the film.",
+          "acceptedAnswers": [
+            "I wish I hadn't been late. I wouldn't have missed the beginning of the film."
+          ],
+          "explanation": "wish + past perfect; would have + V3"
         },
         {
           "id": "ws-32-sec-g-q03",
           "order": 3,
-          "prompt": "Jack ate too much and he was sick. [gap] Jack: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jack ate too much and he was sick.",
+          "acceptedAnswers": [
+            "I wish I hadn't eaten so much. I wouldn't have been sick.",
+            "I wish I hadn't eaten too much. I wouldn't have been sick."
+          ],
+          "explanation": "wish + past perfect; would have + V3"
         },
         {
           "id": "ws-32-sec-g-q04",
           "order": 4,
-          "prompt": "Claire was very nervous during her driving test and she didn’t pass. [gap] Claire: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Claire was very nervous during her driving test and she didn’t pass.",
+          "acceptedAnswers": [
+            "I wish I hadn't been so nervous during my driving test. I would have passed it.",
+            "I wish I hadn't been so nervous during my driving test. I'd have passed it.",
+            "I wish I hadn't been so nervous during my driving test. I would have passed.",
+            "I wish I hadn't been so nervous during my driving test. I'd have passed.",
+            "I wish I hadn't been so nervous. I would have passed my driving test.",
+            "I wish I hadn't been so nervous. I'd have passed my driving test.",
+            "I wish I hadn't been so nervous. I would have passed.",
+            "I wish I hadn't been so nervous. I'd have passed.",
+            "I wish I hadn't been nervous. I would have passed my driving test.",
+            "I wish I hadn't been nervous. I'd have passed my driving test.",
+            "I wish I hadn't been nervous. I would have passed.",
+            "I wish I hadn't been nervous. I'd have passed."
+          ],
+          "explanation": "wish + past perfect; would have + V3"
         },
         {
           "id": "ws-32-sec-g-q05",
           "order": 5,
-          "prompt": "Susan didn’t take off her gold ring when she went swimming and she lost it in the sea. [gap] Susan: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Susan didn’t take off her gold ring when she went swimming and she lost it in the sea.",
+          "acceptedAnswers": [
+            "I wish I had taken off my gold ring when I went swimming. I wouldn't have lost it in the sea.",
+            "I wish I'd taken off my gold ring when I went swimming. I wouldn't have lost it in the sea.",
+            "I wish I had taken my gold ring off when I went swimming. I wouldn't have lost it in the sea.",
+            "I wish I'd taken my gold ring off when I went swimming. I wouldn't have lost it in the sea.",
+            "I wish I had taken off my gold ring. I wouldn't have lost it in the sea.",
+            "I wish I'd taken off my gold ring. I wouldn't have lost it in the sea."
+          ],
+          "explanation": "wish + past perfect; would have + V3"
         },
         {
           "id": "ws-32-sec-g-q06",
           "order": 6,
-          "prompt": "Terry and Jane didn’t save money so they didn’t go on holiday last summer. [gap] Terry and Jane: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Terry and Jane didn’t save money so they didn’t go on holiday last summer.",
+          "acceptedAnswers": [
+            "We wish we had saved money. We would have gone on holiday last summer.",
+            "We wish we'd saved money. We'd have gone on holiday last summer.",
+            "We wish we had saved some money. We could have gone on holiday last summer.",
+            "We wish we'd saved some money. We could have gone on holiday last summer.",
+            "We wish we had saved money. We could have gone on holiday last summer.",
+            "We wish we'd saved money. We could have gone on holiday last summer."
+          ],
+          "explanation": "wish + past perfect; would have + V3"
         }
       ]
     },
     {
       "id": "ws-32-sec-h",
       "sectionKey": "H",
-      "instruction": "Fill in the correct form of the verbs in brackets:",
+      "instruction": "Fill in the correct form of the verbs in brackets. (Example: I wish I had met (meet) that actor when he was in town.)",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-32-sec-h-q01",
-          "order": 1,
-          "prompt": "I wish I [gap] had met [gap] (meet) that actor when he was in town.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-h-q02",
           "order": 2,
           "prompt": "He wishes he [gap] (buy) that book last week – now he hasn’t got enough money.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had bought"
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-h-q03",
           "order": 3,
           "prompt": "If only I [gap] (be) older, I could have a driving licence.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were|was"
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-h-q04",
           "order": 4,
           "prompt": "I wish I [gap] (can / remember) where that book is.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "could remember"
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-h-q05",
           "order": 5,
           "prompt": "Tony wishes he [gap] (go) to Paris with his brother, but he has to work.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "could go|was going|were going"
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-h-q06",
           "order": 6,
           "prompt": "If only the dog [gap] (not / eat) the tickets – now we can’t go to the show.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "hadn't eaten"
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-h-q07",
           "order": 7,
           "prompt": "If only I [gap] (not / make) that mistake yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "hadn't made"
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-h-q08",
           "order": 8,
           "prompt": "I wish this box [gap] (not / be) so heavy – I can’t lift it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wasn't|weren't"
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-h-q09",
           "order": 9,
           "prompt": "We wish we [gap] (not / leave) the gate open. Now the dog has escaped.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "hadn't left"
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-h-q10",
           "order": 10,
           "prompt": "Paula wishes she [gap] (have) more time for gardening, but she hasn’t.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-h-q11",
           "order": 11,
           "prompt": "Mrs. Brown wishes she [gap] (write) those letters yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had written"
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         }
       ]
     },
     {
       "id": "ws-32-sec-i",
       "sectionKey": "I",
-      "instruction": "Write what the people WISH:",
-      "type": "inline_gap_fill",
+      "instruction": "Write what the people WISH. (Example: John ate too many cakes. → John: I wish I hadn’t eaten too many cakes.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-i-q01",
-          "order": 1,
-          "prompt": "John ate too many cakes. [gap] John: [gap] I wish I hadn’t eaten too many cakes [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-i-q02",
           "order": 2,
-          "prompt": "Mr. Charles is not good-looking. [gap] Mr. Charles: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mr. Charles is not good-looking. (Mr. Charles:)",
+          "acceptedAnswers": [
+            "I wish I were good-looking.",
+            "I wish I were good looking.",
+            "I wish I was good-looking.",
+            "I wish I was good looking.",
+            "I wish I were better-looking.",
+            "I wish I was better-looking."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-i-q03",
           "order": 3,
-          "prompt": "Elizabeth broke her leg. [gap] Elizabeth: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Elizabeth broke her leg. (Elizabeth:)",
+          "acceptedAnswers": [
+            "I wish I hadn't broken my leg."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-i-q04",
           "order": 4,
-          "prompt": "Alice’s students don’t work hard in her lesson. [gap] Alice: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Alice’s students don’t work hard in her lesson. (Alice:)",
+          "acceptedAnswers": [
+            "I wish my students would work hard in my lesson.",
+            "I wish my students would work hard in my lessons.",
+            "I wish my students would work harder in my lesson.",
+            "I wish my students would work harder in my lessons.",
+            "I wish my students worked hard in my lesson.",
+            "I wish my students worked hard in my lessons.",
+            "I wish my students worked harder in my lesson.",
+            "I wish my students worked harder in my lessons.",
+            "I wish my students would work hard.",
+            "I wish my students would work harder."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-i-q05",
           "order": 5,
-          "prompt": "It’s raining hard. Tom is wet and cold. [gap] Tom: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It’s raining hard. Tom is wet and cold. (Tom:)",
+          "acceptedAnswers": [
+            "I wish it wasn't raining hard.",
+            "I wish it wasn't raining so hard.",
+            "I wish it wasn't raining.",
+            "I wish it weren't raining hard.",
+            "I wish it weren't raining so hard.",
+            "I wish it weren't raining.",
+            "I wish it would stop raining."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-i-q06",
           "order": 6,
-          "prompt": "Danny is smoking and Mary doesn’t like it. [gap] Mary: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Danny is smoking and Mary doesn’t like it. (Mary:)",
+          "acceptedAnswers": [
+            "I wish Danny wouldn't smoke.",
+            "I wish Danny didn't smoke.",
+            "I wish Danny wasn't smoking.",
+            "I wish Danny weren't smoking."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-i-q07",
           "order": 7,
-          "prompt": "Tommy was rude to his boss yesterday. [gap] Tommy: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tommy was rude to his boss yesterday. (Tommy:)",
+          "acceptedAnswers": [
+            "I wish I hadn't been rude to my boss yesterday.",
+            "I wish I hadn't been rude to my boss."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-i-q08",
           "order": 8,
-          "prompt": "Mike crashed his dad’s car last night. [gap] Mike [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mike crashed his dad’s car last night. (Mike:)",
+          "acceptedAnswers": [
+            "I wish I hadn't crashed my dad's car last night.",
+            "I wish I hadn't crashed my dad's car.",
+            "I wish I hadn't crashed my father's car last night.",
+            "I wish I hadn't crashed my father's car."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-i-q09",
           "order": 9,
-          "prompt": "Barbara can’t type fast. She won’t get the job. [gap] Barbara: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Barbara can’t type fast. She won’t get the job. (Barbara:)",
+          "acceptedAnswers": [
+            "I wish I could type fast.",
+            "I wish I could type faster."
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-i-q10",
           "order": 10,
-          "prompt": "Jack’s mother shouts at him all the time. [gap] Jack: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jack’s mother shouts at him all the time. (Jack:)",
+          "acceptedAnswers": [
+            "I wish my mother wouldn't shout at me all the time.",
+            "I wish my mother wouldn't shout at me so much.",
+            "I wish my mother wouldn't shout at me.",
+            "I wish my mother didn't shout at me all the time.",
+            "I wish my mother didn't shout at me so much.",
+            "I wish my mother didn't shout at me."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-i-q11",
           "order": 11,
-          "prompt": "Smith talks too much and his wife doesn’t like it. [gap] Smith’s wife: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Smith talks too much and his wife doesn’t like it. (Smith’s wife:)",
+          "acceptedAnswers": [
+            "I wish my husband wouldn't talk so much.",
+            "I wish my husband didn't talk so much.",
+            "I wish Smith wouldn't talk so much.",
+            "I wish Smith didn't talk so much.",
+            "I wish he wouldn't talk so much.",
+            "I wish he didn't talk so much."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-i-q12",
           "order": 12,
-          "prompt": "Luis’s car is very old but he can’t buy a new one. [gap] Luis: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Luis’s car is very old but he can’t buy a new one. (Luis:)",
+          "acceptedAnswers": [
+            "I wish I could buy a new one.",
+            "I wish I could buy a new car.",
+            "I wish my car wasn't so old.",
+            "I wish my car weren't so old."
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-i-q13",
           "order": 13,
-          "prompt": "Mrs. Taylor stayed in the sun too long. [gap] Mrs. Taylor: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mrs. Taylor stayed in the sun too long. (Mrs. Taylor:)",
+          "acceptedAnswers": [
+            "I wish I hadn't stayed in the sun so long.",
+            "I wish I hadn't stayed in the sun too long."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-i-q14",
           "order": 14,
-          "prompt": "Sally is sad because she is poor. [gap] Sally: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Sally is sad because she is poor. (Sally:)",
+          "acceptedAnswers": [
+            "I wish I were rich.",
+            "I wish I was rich.",
+            "I wish I wasn't poor.",
+            "I wish I weren't poor."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-i-q15",
           "order": 15,
-          "prompt": "Jackson drank too much last night. [gap] Jackson: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jackson drank too much last night. (Jackson:)",
+          "acceptedAnswers": [
+            "I wish I hadn't drunk so much last night.",
+            "I wish I hadn't drunk so much.",
+            "I wish I hadn't drunk too much last night.",
+            "I wish I hadn't drunk too much."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         }
       ]
     },
     {
       "id": "ws-32-sec-j",
       "sectionKey": "J",
-      "instruction": "Using the bold type in the sentences, write WISHES as in the example:",
-      "type": "inline_gap_fill",
+      "instruction": "Write a WISH for each situation. (Example: You left the radio on and now the batteries don’t work. → I wish I hadn’t left the radio on.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-32-sec-j-q01",
-          "order": 1,
-          "prompt": "You left the radio on and now the batteries don’t work. [gap] You say, “ [gap] I wish I hadn’t left the radio on [gap] ”",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-32-sec-j-q02",
           "order": 2,
-          "prompt": "It’s very dark outside and you can’t find your torch. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It’s very dark outside and you can’t find your torch.",
+          "acceptedAnswers": [
+            "I wish I could find my torch.",
+            "I wish it wasn't so dark outside.",
+            "I wish it wasn't so dark.",
+            "I wish it weren't so dark outside.",
+            "I wish it weren't so dark."
+          ],
+          "explanation": "wish + could: ability you don’t have"
         },
         {
           "id": "ws-32-sec-j-q03",
           "order": 3,
-          "prompt": "You didn’t do your homework and your teacher is angry. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You didn’t do your homework and your teacher is angry.",
+          "acceptedAnswers": [
+            "I wish I had done my homework.",
+            "I wish I'd done my homework."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-j-q04",
           "order": 4,
-          "prompt": "You are looking at a beautiful flower. You don’t know what it is called. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You are looking at a beautiful flower. You don’t know what it is called.",
+          "acceptedAnswers": [
+            "I wish I knew what it is called.",
+            "I wish I knew what it was called.",
+            "I wish I knew what this flower is called.",
+            "I wish I knew what this flower was called.",
+            "I wish I knew its name."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-j-q05",
           "order": 5,
-          "prompt": "It’s raining outside and you want it to stop. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It’s raining outside and you want it to stop.",
+          "acceptedAnswers": [
+            "I wish it would stop raining."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-j-q06",
           "order": 6,
-          "prompt": "You stayed up late last night and today you’re very tired. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You stayed up late last night and today you’re very tired.",
+          "acceptedAnswers": [
+            "I wish I hadn't stayed up so late last night.",
+            "I wish I hadn't stayed up so late.",
+            "I wish I hadn't stayed up late last night.",
+            "I wish I hadn't stayed up late."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-j-q07",
           "order": 7,
-          "prompt": "You are having a party but nobody has come yet. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You are having a party but nobody has come yet.",
+          "acceptedAnswers": [
+            "I wish somebody would come.",
+            "I wish someone would come.",
+            "I wish people would come."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-j-q08",
           "order": 8,
-          "prompt": "You have short, straight hair. You would like long, curly hair. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You have short, straight hair. You would like long, curly hair.",
+          "acceptedAnswers": [
+            "I wish I had long curly hair."
+          ],
+          "explanation": "wish + past simple: unreal present"
         },
         {
           "id": "ws-32-sec-j-q09",
           "order": 9,
-          "prompt": "You have just left your house and left the keys inside. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You have just left your house and left the keys inside.",
+          "acceptedAnswers": [
+            "I wish I hadn't left the keys inside.",
+            "I wish I hadn't left my keys inside."
+          ],
+          "explanation": "wish + past perfect: regret about the past"
         },
         {
           "id": "ws-32-sec-j-q10",
           "order": 10,
-          "prompt": "It is Christmas Day and it doesn’t look like it is going to snow. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is Christmas Day and it doesn’t look like it is going to snow.",
+          "acceptedAnswers": [
+            "I wish it would snow."
+          ],
+          "explanation": "wish + would: wanting someone/something to change"
         },
         {
           "id": "ws-32-sec-j-q11",
           "order": 11,
-          "prompt": "You live in the city. You prefer the countryside. [gap] You say, “ [gap] “",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You live in the city. You prefer the countryside.",
+          "acceptedAnswers": [
+            "I wish I lived in the countryside.",
+            "I wish I didn't live in the city."
+          ],
+          "explanation": "wish + past simple: unreal present"
         }
       ]
     }

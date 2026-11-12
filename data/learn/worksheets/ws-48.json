@@ -12,213 +12,45 @@
     {
       "id": "ws-48-sec-a",
       "sectionKey": "A",
-      "instruction": "Complete the sentences in A using BECAUSE or BECAUSE OF and an idea from B.",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the sentences in A using BECAUSE or BECAUSE OF and an idea from B. Use each idea in B only once. (Example: He phoned the police because he'd lost his wallet.)",
+      "type": "sentence_combine",
+      "contextText": "B:\na) his bad leg\nb) I thought it might rain\nc) I wasn't hungry\nd) he'd lost his wallet (used in the example)\ne) the fog\nf) he wanted to learn French",
       "questions": [
-        {
-          "id": "ws-48-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q06",
-          "order": 6,
-          "prompt": " [gap] A He phoned the police I didn’t have any lunch Our plane was delayed He went to Paris I took an umbrella He couldn’t run very fast B",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) his",
-            "b) I",
-            "c) I",
-            "d) he’d"
-          ]
-        },
-        {
-          "id": "ws-48-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-a-q06",
-          "order": 6,
-          "prompt": " [gap] [gap] He phoned the police because he’d lost his wallet [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-48-sec-a-q02", "order": 2, "prompt": "I didn't have any lunch", "acceptedAnswers": ["I didn't have any lunch because I wasn't hungry."], "explanation": "because + clause" },
+        { "id": "ws-48-sec-a-q03", "order": 3, "prompt": "Our plane was delayed", "acceptedAnswers": ["Our plane was delayed because of the fog."], "explanation": "because of + noun" },
+        { "id": "ws-48-sec-a-q04", "order": 4, "prompt": "He went to Paris", "acceptedAnswers": ["He went to Paris because he wanted to learn French."], "explanation": "because + clause" },
+        { "id": "ws-48-sec-a-q05", "order": 5, "prompt": "I took an umbrella", "acceptedAnswers": ["I took an umbrella because I thought it might rain."], "explanation": "because + clause" },
+        { "id": "ws-48-sec-a-q06", "order": 6, "prompt": "He couldn't run very fast", "acceptedAnswers": ["He couldn't run very fast because of his bad leg."], "explanation": "because of + noun" }
       ]
     },
     {
       "id": "ws-48-sec-b",
       "sectionKey": "B",
       "instruction": "Choose the correct answers:",
-      "type": "inline_gap_fill",
+      "type": "multiple_choice",
       "questions": [
-        {
-          "id": "ws-48-sec-b-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-b-q08",
-          "order": 8,
-          "prompt": " [gap] As / As a result it was such a beautiful day, we decided to have a picnic. It was his birthday because / so we decided to buy him a present. As a result / Since all the seats on the train were taken, we had to stand. The banks were closed and as a result / because we couldn’t get any money. I didn’t find the book very interesting and so / as I didn’t finish it. We couldn’t drive across the bridge as a result / because it was closed. She had the best qualifications and she so / therefore got the job. I haven’t got much money as / so I can’t afford a new car.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-48-sec-b-q01", "order": 1, "prompt": "[gap] it was such a beautiful day, we decided to have a picnic.", "options": ["a) As", "b) As a result"], "acceptedAnswers": ["a"], "explanation": "as + clause = because (reason)" },
+        { "id": "ws-48-sec-b-q02", "order": 2, "prompt": "It was his birthday [gap] we decided to buy him a present.", "options": ["a) because", "b) so"], "acceptedAnswers": ["b"], "explanation": "so introduces the result" },
+        { "id": "ws-48-sec-b-q03", "order": 3, "prompt": "[gap] all the seats on the train were taken, we had to stand.", "options": ["a) As a result", "b) Since"], "acceptedAnswers": ["b"], "explanation": "since + clause = because (reason)" },
+        { "id": "ws-48-sec-b-q04", "order": 4, "prompt": "The banks were closed and [gap] we couldn't get any money.", "options": ["a) as a result", "b) because"], "acceptedAnswers": ["a"], "explanation": "and as a result + result" },
+        { "id": "ws-48-sec-b-q05", "order": 5, "prompt": "I didn't find the book very interesting and [gap] I didn't finish it.", "options": ["a) so", "b) as"], "acceptedAnswers": ["a"], "explanation": "and so + result" },
+        { "id": "ws-48-sec-b-q06", "order": 6, "prompt": "We couldn't drive across the bridge [gap] it was closed.", "options": ["a) as a result", "b) because"], "acceptedAnswers": ["b"], "explanation": "because + reason clause" },
+        { "id": "ws-48-sec-b-q07", "order": 7, "prompt": "She had the best qualifications and she [gap] got the job.", "options": ["a) so", "b) therefore"], "acceptedAnswers": ["b"], "explanation": "therefore can go before the main verb" },
+        { "id": "ws-48-sec-b-q08", "order": 8, "prompt": "I haven't got much money [gap] I can't afford a new car.", "options": ["a) as", "b) so"], "acceptedAnswers": ["b"], "explanation": "so introduces the result" }
       ]
     },
     {
       "id": "ws-48-sec-c",
       "sectionKey": "C",
-      "instruction": "Join each pair of sentences using SO / SUCH ….. (THAT):",
-      "type": "inline_gap_fill",
+      "instruction": "Join each pair of sentences using SO / SUCH … (THAT):",
+      "type": "sentence_combine",
       "questions": [
-        {
-          "id": "ws-48-sec-c-q01",
-          "order": 1,
-          "prompt": "It was a very warm evening. We had dinner outside in the garden. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-c-q02",
-          "order": 2,
-          "prompt": "He was very nervous. He couldn’t eat anything. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-c-q03",
-          "order": 3,
-          "prompt": "Our neighbours’ party was very noisy. We couldn’t sleep. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-c-q04",
-          "order": 4,
-          "prompt": "The restaurant was very crowded. They couldn’t find anywhere to sit down. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-c-q05",
-          "order": 5,
-          "prompt": "We were all having a good time. We didn’t want to stop. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-48-sec-c-q06",
-          "order": 6,
-          "prompt": "He’s got a very good memory. He never needs to write anythind down. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-48-sec-c-q01", "order": 1, "prompt": "It was a very warm evening. We had dinner outside in the garden.", "acceptedAnswers": ["It was such a warm evening that we had dinner outside in the garden.", "It was such a warm evening we had dinner outside in the garden.", "The evening was so warm that we had dinner outside in the garden.", "The evening was so warm we had dinner outside in the garden."], "explanation": "such + a + adjective + noun + (that)" },
+        { "id": "ws-48-sec-c-q02", "order": 2, "prompt": "He was very nervous. He couldn't eat anything.", "acceptedAnswers": ["He was so nervous that he couldn't eat anything.", "He was so nervous he couldn't eat anything."], "explanation": "so + adjective + (that)" },
+        { "id": "ws-48-sec-c-q03", "order": 3, "prompt": "Our neighbours' party was very noisy. We couldn't sleep.", "acceptedAnswers": ["Our neighbours' party was so noisy that we couldn't sleep.", "Our neighbours' party was so noisy we couldn't sleep.", "Our neighbours had such a noisy party that we couldn't sleep.", "Our neighbours had such a noisy party we couldn't sleep."], "explanation": "so + adjective + (that)" },
+        { "id": "ws-48-sec-c-q04", "order": 4, "prompt": "The restaurant was very crowded. They couldn't find anywhere to sit down.", "acceptedAnswers": ["The restaurant was so crowded that they couldn't find anywhere to sit down.", "The restaurant was so crowded they couldn't find anywhere to sit down.", "It was such a crowded restaurant that they couldn't find anywhere to sit down.", "It was such a crowded restaurant they couldn't find anywhere to sit down."], "explanation": "so + adjective + (that)" },
+        { "id": "ws-48-sec-c-q05", "order": 5, "prompt": "We were all having a good time. We didn't want to stop.", "acceptedAnswers": ["We were all having such a good time that we didn't want to stop.", "We were all having such a good time we didn't want to stop."], "explanation": "such + a + adjective + noun + (that)" },
+        { "id": "ws-48-sec-c-q06", "order": 6, "prompt": "He's got a very good memory. He never needs to write anything down.", "acceptedAnswers": ["He's got such a good memory that he never needs to write anything down.", "He's got such a good memory he never needs to write anything down.", "His memory is so good that he never needs to write anything down.", "His memory is so good he never needs to write anything down."], "explanation": "such + a + adjective + noun + (that)" }
       ]
     }
   ]

@@ -58,6 +58,9 @@ yarn-error.log*
 !/data/learn/worksheets-catalog.json
 !/data/learn/worksheets/
 !/data/learn/worksheets/*
+!/data/learn/worksheet-cards-catalog.json
+!/data/learn/worksheet-cards/
+!/data/learn/worksheet-cards/*
 # published tests for Vercel (file-backed catalog fallback)
 /data/tests/*
 !/data/tests/test-1-*.json

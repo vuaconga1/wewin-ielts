@@ -13,350 +13,460 @@
       "id": "ws-29-sec-a",
       "sectionKey": "A",
       "instruction": "Choose the correct form:",
-      "type": "inline_gap_fill",
+      "type": "multiple_choice",
       "questions": [
         {
           "id": "ws-29-sec-a-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I enjoyed the book. It was very [gap].",
+          "options": [
+            "a) interested",
+            "b) interesting"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-a-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Are you [gap] in art?",
+          "options": [
+            "a) interested",
+            "b) interesting"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "interested in = how you feel"
         },
         {
           "id": "ws-29-sec-a-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I thought the story was quite [gap].",
+          "options": [
+            "a) amused",
+            "b) amusing"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-a-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They were [gap] when they heard the news.",
+          "options": [
+            "a) shocked",
+            "b) shocking"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-a-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We were all very [gap] when he didn’t come home.",
+          "options": [
+            "a) worried",
+            "b) worrying"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-a-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It was [gap] that she didn’t come to the meeting.",
+          "options": [
+            "a) surprised",
+            "b) surprising"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-a-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I usually find football rather [gap].",
+          "options": [
+            "a) bored",
+            "b) boring"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "find something boring = it causes boredom"
         },
         {
           "id": "ws-29-sec-a-q08",
           "order": 8,
-          "prompt": " [gap] I enjoyed the book. It was very interested / interesting. Are you interested / interesting in art? I thought the story was quite amused / amusing. They were shocked / shocking when they heard the news. We were all very worried / worrying when he didn’t come home. It was surprised / surprising that she didn’t come to the meeting. I usually find football rather bored / boring. Are you frightened / frightening of spiders?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Are you [gap] of spiders?",
+          "options": [
+            "a) frightened",
+            "b) frightening"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "frightened of = how you feel"
         }
       ]
     },
     {
       "id": "ws-29-sec-b",
       "sectionKey": "B",
-      "instruction": "Complete the sentences. Use adjectives formed by adding –ING or –ED to the words in",
+      "instruction": "Complete the sentences. Use adjectives formed by adding -ING or -ED to the words in brackets.",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-29-sec-b-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I find it quite [gap] (embarrass) to talk in front of a group of people.",
+          "acceptedAnswers": [
+            "embarrassing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-b-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I think reading newspapers is [gap] (depress).",
+          "acceptedAnswers": [
+            "depressing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-b-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’m [gap] (interest) in all kinds of sport.",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "be interested in"
         },
         {
           "id": "ws-29-sec-b-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I find walking in the countryside very [gap] (relax).",
+          "acceptedAnswers": [
+            "relaxing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-b-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I think learning a language is very [gap] (interest).",
+          "acceptedAnswers": [
+            "interesting"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-b-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I get [gap] (annoy) when people smoke in restaurants.",
+          "acceptedAnswers": [
+            "annoyed"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-b-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I don’t normally get [gap] (frighten) when I watch horror films.",
+          "acceptedAnswers": [
+            "frightened"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-b-q08",
           "order": 8,
-          "prompt": " [gap] I find it quite [gap] to talk in front of a group of people. (embarrass) I think reading newspapers is [gap] (depress) I’m [gap] in all kinds of sport. (interest) I find walking in the countryside very [gap] (relax) I think learning a language is very [gap] (interest) I get [gap] when people smoke in restaurants. (annoy) I don’t normally get [gap] when I watch horror films. (frighten) I don’t get [gap] very easily. (embarrass)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I don’t get [gap] (embarrass) very easily.",
+          "acceptedAnswers": [
+            "embarrassed"
+          ],
+          "explanation": "-ed describes how a person feels"
         }
       ]
     },
     {
       "id": "ws-29-sec-c",
       "sectionKey": "C",
-      "instruction": "Complete the sentences for each situation. Use the word given + the ending –ING or",
+      "instruction": "Complete the sentences for each situation. Use the word given + the ending -ING or -ED:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-29-sec-c-q01",
           "order": 1,
-          "prompt": "The film wasn’t as good as we had expected. (disappoint-) [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) The",
-            "b) We"
-          ]
+          "prompt": "The film wasn’t as good as we had expected. (disappoint-) a) The film was [gap]. b) We were [gap] with the film.",
+          "acceptedAnswers": [
+            "disappointing / disappointed"
+          ],
+          "explanation": "the film disappoints (-ing); we feel (-ed)"
         },
         {
           "id": "ws-29-sec-c-q02",
           "order": 2,
-          "prompt": "Diana teaches young children. It’s a very hard job but she enjoys it. (exhaust-) [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) She",
-            "b) At"
-          ]
+          "prompt": "Diana teaches young children. It’s a very hard job but she enjoys it. (exhaust-) a) She enjoys her job but it’s often [gap]. b) At the end of a day’s work, she is often [gap].",
+          "acceptedAnswers": [
+            "exhausting / exhausted"
+          ],
+          "explanation": "the job exhausts (-ing); she feels (-ed)"
         },
         {
           "id": "ws-29-sec-c-q03",
           "order": 3,
-          "prompt": "It’s been raining all day. I hate this weather. (depress-) [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) This",
-            "b) This",
-            "c) It’s"
-          ]
+          "prompt": "It’s been raining all day. I hate this weather. (depress-) a) This weather is [gap]. b) This weather makes me [gap]. c) It’s silly to get [gap].",
+          "acceptedAnswers": [
+            "depressing / depressed / depressed"
+          ],
+          "explanation": "weather causes it (-ing); people feel it (-ed)"
         },
         {
           "id": "ws-29-sec-c-q04",
           "order": 4,
-          "prompt": "Clare is going to the United States next month. She has never been there before. (excit-) [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Going",
-            "c) She"
-          ]
-        },
+          "prompt": "Clare is going to the United States next month. She has never been there before. (excit-) a) It will be an [gap] experience for her. b) Going to new places is always [gap]. c) She is really [gap] about going to the United States.",
+          "acceptedAnswers": [
+            "exciting / exciting / excited"
+          ],
+          "explanation": "the experience excites (-ing); Clare feels (-ed)"
+        }
+      ]
+    },
+    {
+      "id": "ws-29-sec-d",
+      "sectionKey": "D",
+      "instruction": "Choose the correct word and write it in the gap:",
+      "type": "inline_gap_fill",
+      "questions": [
         {
-          "id": "ws-29-sec-c-q01",
+          "id": "ws-29-sec-d-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I was [gap] (disappointing / disappointed) with the film. I had expected it to be better.",
+          "acceptedAnswers": [
+            "disappointed"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
-          "id": "ws-29-sec-c-q02",
+          "id": "ws-29-sec-d-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Are you [gap] (interesting / interested) in football?",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "be interested in"
         },
         {
-          "id": "ws-29-sec-c-q03",
+          "id": "ws-29-sec-d-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The football match was quite [gap] (exciting / excited). I enjoyed it.",
+          "acceptedAnswers": [
+            "exciting"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
-          "id": "ws-29-sec-c-q04",
+          "id": "ws-29-sec-d-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It’s sometimes [gap] (embarrassing / embarrassed) when you have to ask people for money.",
+          "acceptedAnswers": [
+            "embarrassing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
-          "id": "ws-29-sec-c-q05",
+          "id": "ws-29-sec-d-q05",
           "order": 5,
-          "prompt": " [gap] I was disappointing / disappointed with the film. I had expected it to be better. Are you interesting / interested in football? The football match was quite exciting / excited. I enjoyed it. It’s sometimes embarrassing / embarrassed when you have to ask people for money. Do you easily get embarrassing / embarrassed ? I had never expected to get the job. I was really amazing / amazed when I was offered it. She has really learnt very fast. She has made astonishing / astonished progress. I didn’t find the situation funny. I was not amusing / amused. It was a really terrifying / terrified experience. Afterwards everybody was very shocking / shocked.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Do you easily get [gap] (embarrassing / embarrassed)?",
+          "acceptedAnswers": [
+            "embarrassed"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
-          "id": "ws-29-sec-c-q10",
-          "order": 10,
-          "prompt": "Why do you always look so boring / bored? Is your life really so boring / bored? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-29-sec-c-q11",
-          "order": 11,
-          "prompt": "He’s one of the most boring / bored people I’ve ever met. He never stops talking and he [gap] never says anything interesting / interested.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-29-sec-c-q06",
+          "id": "ws-29-sec-d-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I had never expected to get the job. I was really [gap] (amazing / amazed) when I was offered it.",
+          "acceptedAnswers": [
+            "amazed"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
-          "id": "ws-29-sec-c-q07",
+          "id": "ws-29-sec-d-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She has really learnt very fast. She has made [gap] (astonishing / astonished) progress.",
+          "acceptedAnswers": [
+            "astonishing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
-          "id": "ws-29-sec-c-q08",
+          "id": "ws-29-sec-d-q08",
           "order": 8,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I didn’t find the situation funny. I was not [gap] (amusing / amused).",
+          "acceptedAnswers": [
+            "amused"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
-          "id": "ws-29-sec-c-q09",
+          "id": "ws-29-sec-d-q09",
           "order": 9,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It was a really [gap] (terrifying / terrified) experience. Afterwards everybody was very [gap] (shocking / shocked).",
+          "acceptedAnswers": [
+            "terrifying / shocked"
+          ],
+          "explanation": "the experience terrifies (-ing); people feel shocked (-ed)"
+        },
+        {
+          "id": "ws-29-sec-d-q10",
+          "order": 10,
+          "prompt": "Why do you always look so [gap] (boring / bored)? Is your life really so [gap] (boring / bored)?",
+          "acceptedAnswers": [
+            "bored / boring"
+          ],
+          "explanation": "you feel bored; your life is boring"
+        },
+        {
+          "id": "ws-29-sec-d-q11",
+          "order": 11,
+          "prompt": "He’s one of the most [gap] (boring / bored) people I’ve ever met. He never stops talking and he never says anything [gap] (interesting / interested).",
+          "acceptedAnswers": [
+            "boring / interesting"
+          ],
+          "explanation": "he causes boredom; what he says is not interesting"
         }
       ]
     },
     {
       "id": "ws-29-sec-e",
       "sectionKey": "E",
-      "instruction": "Complete the sentences using one of the words in the box:",
+      "instruction": "Complete the sentences using one of the words in the box. (Example: He works very hard. It’s not surprising that he’s always tired.)",
       "type": "inline_gap_fill",
+      "wordBank": [
+        "amusing / amused",
+        "annoying / annoyed",
+        "boring / bored",
+        "confusing / confused",
+        "disgusting / disgusted",
+        "exciting / excited",
+        "exhausting / exhausted",
+        "interesting / interested",
+        "surprising / surprised"
+      ],
       "questions": [
-        {
-          "id": "ws-29-sec-e-q01",
-          "order": 1,
-          "prompt": "He works very hard. It’s not [gap] surprising [gap] that he’s always tired.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-29-sec-e-q02",
           "order": 2,
-          "prompt": "I’ve got nothing to do. I’m [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’ve got nothing to do. I’m [gap].",
+          "acceptedAnswers": [
+            "bored"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-e-q03",
           "order": 3,
-          "prompt": "The teacher’s explanation was [gap] Most of the students didn’t understand it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The teacher’s explanation was [gap]. Most of the students didn’t understand it.",
+          "acceptedAnswers": [
+            "confusing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-e-q04",
           "order": 4,
-          "prompt": "The kitchen hadn’t been cleaned for ages. It was really [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The kitchen hadn’t been cleaned for ages. It was really [gap].",
+          "acceptedAnswers": [
+            "disgusting"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-e-q05",
           "order": 5,
           "prompt": "I seldom visit art galleries. I’m not particularly [gap] in art.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "be interested in"
         },
         {
           "id": "ws-29-sec-e-q06",
           "order": 6,
           "prompt": "There’s no need to get [gap] just because I’m a few minutes late.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "annoyed"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-e-q07",
           "order": 7,
-          "prompt": "The lecture was [gap] I fell asleep.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The lecture was [gap]. I fell asleep.",
+          "acceptedAnswers": [
+            "boring"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
         },
         {
           "id": "ws-29-sec-e-q08",
           "order": 8,
-          "prompt": "I asked Emily if she wanted to come out with us but she wasn’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I asked Emily if she wanted to come out with us but she wasn’t [gap].",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "she didn’t feel interest"
         },
         {
           "id": "ws-29-sec-e-q09",
           "order": 9,
-          "prompt": "I’ve been working very hard all day and now I’m [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’ve been working very hard all day and now I’m [gap].",
+          "acceptedAnswers": [
+            "exhausted"
+          ],
+          "explanation": "-ed describes how a person feels"
         },
         {
           "id": "ws-29-sec-e-q10",
           "order": 10,
           "prompt": "I’m starting a new job next week. I’m quite [gap] about it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "excited"
+          ],
+          "explanation": "be excited about"
         },
         {
           "id": "ws-29-sec-e-q11",
           "order": 11,
-          "prompt": "Tom is very good at telling funny stories. He can be very [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom is very good at telling funny stories. He can be very [gap].",
+          "acceptedAnswers": [
+            "amusing"
+          ],
+          "explanation": "he makes people laugh (-ing)"
         },
         {
           "id": "ws-29-sec-e-q12",
           "order": 12,
           "prompt": "Liz is a very [gap] person. She knows a lot, she’s traveled a lot and she’s done lots of different things.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "interesting"
+          ],
+          "explanation": "she causes interest (-ing)"
         }
       ]
     }

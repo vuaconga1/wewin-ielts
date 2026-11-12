@@ -12,200 +12,86 @@
     {
       "id": "ws-58-sec-a",
       "sectionKey": "A",
-      "instruction": "Use SO / NEITHER Auxiliary verb + Subject:",
-      "type": "inline_gap_fill",
+      "instruction": "Reply with SO / NEITHER + auxiliary verb + subject. (Example: I’m feeling tired. → So am I.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-58-sec-a-q01",
-          "order": 1,
-          "prompt": "I’m feeling tired [gap] So am I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q02",
-          "order": 2,
-          "prompt": "I don’t like eggs [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q03",
-          "order": 3,
-          "prompt": "I need a holiday [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q04",
-          "order": 4,
-          "prompt": "I don’t like milk [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q05",
-          "order": 5,
-          "prompt": "I couldn’t get up this morning [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q06",
-          "order": 6,
-          "prompt": "I’d love a cup of tea [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q07",
-          "order": 7,
-          "prompt": "I’ve never been to Africa [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q08",
-          "order": 8,
-          "prompt": "I was ill yesterday [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q09",
-          "order": 9,
-          "prompt": "I should smoke less [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q10",
-          "order": 10,
-          "prompt": "I spent the whole evening watching television [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-a-q11",
-          "order": 11,
-          "prompt": "I didn’t know that Ann was in hospital [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-58-sec-a-q02", "order": 2, "prompt": "I don’t like eggs.", "acceptedAnswers": ["Neither do I.", "Nor do I."], "explanation": "negative → Neither do I" },
+        { "id": "ws-58-sec-a-q03", "order": 3, "prompt": "I need a holiday.", "acceptedAnswers": ["So do I."], "explanation": "present simple → So do I" },
+        { "id": "ws-58-sec-a-q04", "order": 4, "prompt": "I don’t like milk.", "acceptedAnswers": ["Neither do I.", "Nor do I."], "explanation": "negative → Neither do I" },
+        { "id": "ws-58-sec-a-q05", "order": 5, "prompt": "I couldn’t get up this morning.", "acceptedAnswers": ["Neither could I.", "Nor could I."], "explanation": "couldn’t → Neither could I" },
+        { "id": "ws-58-sec-a-q06", "order": 6, "prompt": "I’d love a cup of tea.", "acceptedAnswers": ["So would I."], "explanation": "I’d (would) → So would I" },
+        { "id": "ws-58-sec-a-q07", "order": 7, "prompt": "I’ve never been to Africa.", "acceptedAnswers": ["Neither have I.", "Nor have I."], "explanation": "never = negative → Neither have I" },
+        { "id": "ws-58-sec-a-q08", "order": 8, "prompt": "I was ill yesterday.", "acceptedAnswers": ["So was I."], "explanation": "was → So was I" },
+        { "id": "ws-58-sec-a-q09", "order": 9, "prompt": "I should smoke less.", "acceptedAnswers": ["So should I."], "explanation": "should → So should I" },
+        { "id": "ws-58-sec-a-q10", "order": 10, "prompt": "I spent the whole evening watching television.", "acceptedAnswers": ["So did I."], "explanation": "past simple → So did I" },
+        { "id": "ws-58-sec-a-q11", "order": 11, "prompt": "I didn’t know that Ann was in hospital.", "acceptedAnswers": ["Neither did I.", "Nor did I."], "explanation": "didn’t → Neither did I" }
       ]
     },
     {
       "id": "ws-58-sec-b",
       "sectionKey": "B",
-      "instruction": "Felix has just met Vicky at a party. They are finding out that they have a lot in",
-      "type": "inline_gap_fill",
+      "instruction": "Felix has just met Vicky at a party. They are finding out that they have a lot in common. Write each reply with SO or NEITHER. (Example: Felix: I haven’t been to a party for ages. → Vicky: Neither have I. I hate crowded rooms. → Felix: So do I. I’m not a party-goer, really.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-58-sec-b-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-b-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-b-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-b-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-b-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-b-q06",
-          "order": 6,
-          "prompt": " [gap] Vicky: [gap] I can’t make conversation. Felix : [gap] I’m a quiet sort of person. Vicky: [gap] I live alone in a bedsitter. Felix : [gap] I haven’t got many friends. Vicky: [gap] And I would really like a good friend. Felix : Oh, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-58-sec-b-q01", "order": 1, "prompt": "Vicky replies to Felix: “I’m not a party-goer, really.” (Then she says: I can’t make conversation.)", "acceptedAnswers": ["Neither am I.", "Nor am I."], "explanation": "I’m not → Neither am I" },
+        { "id": "ws-58-sec-b-q02", "order": 2, "prompt": "Felix replies to Vicky: “I can’t make conversation.” (Then he says: I’m a quiet sort of person.)", "acceptedAnswers": ["Neither can I.", "Nor can I."], "explanation": "can’t → Neither can I" },
+        { "id": "ws-58-sec-b-q03", "order": 3, "prompt": "Vicky replies to Felix: “I’m a quiet sort of person.” (Then she says: I live alone in a bedsitter.)", "acceptedAnswers": ["So am I."], "explanation": "I’m → So am I" },
+        { "id": "ws-58-sec-b-q04", "order": 4, "prompt": "Felix replies to Vicky: “I live alone in a bedsitter.” (Then he says: I haven’t got many friends.)", "acceptedAnswers": ["So do I."], "explanation": "present simple → So do I" },
+        { "id": "ws-58-sec-b-q05", "order": 5, "prompt": "Vicky replies to Felix: “I haven’t got many friends.” (Then she says: And I would really like a good friend.)", "acceptedAnswers": ["Neither have I.", "Nor have I."], "explanation": "haven’t got → Neither have I" },
+        { "id": "ws-58-sec-b-q06", "order": 6, "prompt": "Felix replies to Vicky: “And I would really like a good friend.” (Felix begins with “Oh,”.)", "acceptedAnswers": ["Oh, So would I.", "So would I."], "explanation": "would → So would I" }
       ]
     },
     {
       "id": "ws-58-sec-c",
       "sectionKey": "C",
-      "instruction": "Look at the table and complete the sentences:",
+      "instruction": "Look at the table and complete the sentences. (Examples: Mike can swim, and so can Lorna. — Marie isn’t keen on tennis, and neither is Mike.)",
       "type": "inline_gap_fill",
+      "tableData": {
+        "headers": [
+          "",
+          "Mike",
+          "Lorna",
+          "Paul",
+          "Marie"
+        ],
+        "rows": [
+          [
+            "Swimming",
+            "✓",
+            "✓",
+            "",
+            ""
+          ],
+          [
+            "Tennis",
+            "",
+            "✓",
+            "✓",
+            ""
+          ],
+          [
+            "Cycling",
+            "✓",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Chess",
+            "",
+            "",
+            "✓",
+            "✓"
+          ]
+        ]
+      },
       "questions": [
-        {
-          "id": "ws-58-sec-c-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-58-sec-c-q08",
-          "order": 8,
-          "prompt": " [gap] Mike * Lorna * * Paul Marie * * * Mike can swim, and [gap] so can Lorna [gap] Marie isn’t keen on tennis, and [gap] neither is Mike [gap] Paul doesn’t like swimming, and [gap] Marie has got a bike, and [gap] Mike can’t play chess, and [gap] Lorna isn’t keen on cycling, and [gap] Paul plays tennis, and [gap] Marie is a chess player, and [gap] * *",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-58-sec-c-q03", "order": 3, "prompt": "Paul doesn’t like swimming, and [gap].", "acceptedAnswers": ["neither does Marie|nor does Marie"], "explanation": "negative → neither + does + subject" },
+        { "id": "ws-58-sec-c-q04", "order": 4, "prompt": "Marie has got a bike, and [gap].", "acceptedAnswers": ["so has Mike"], "explanation": "has got → so has + subject" },
+        { "id": "ws-58-sec-c-q05", "order": 5, "prompt": "Mike can’t play chess, and [gap].", "acceptedAnswers": ["neither can Lorna|nor can Lorna"], "explanation": "can’t → neither can + subject" },
+        { "id": "ws-58-sec-c-q06", "order": 6, "prompt": "Lorna isn’t keen on cycling, and [gap].", "acceptedAnswers": ["neither is Paul|nor is Paul"], "explanation": "isn’t → neither is + subject" },
+        { "id": "ws-58-sec-c-q07", "order": 7, "prompt": "Paul plays tennis, and [gap].", "acceptedAnswers": ["so does Lorna"], "explanation": "present simple → so does + subject" },
+        { "id": "ws-58-sec-c-q08", "order": 8, "prompt": "Marie is a chess player, and [gap].", "acceptedAnswers": ["so is Paul"], "explanation": "is → so is + subject" }
       ]
     }
   ]

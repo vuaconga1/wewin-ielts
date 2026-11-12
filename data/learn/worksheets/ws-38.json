@@ -12,311 +12,393 @@
     {
       "id": "ws-38-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in the blanks with CAN or CAN’T:",
+      "instruction": "Fill in the blanks with CAN or CAN'T:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-38-sec-a-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She is a small baby. She [gap] eat meat, but she [gap] drink milk.",
+          "acceptedAnswers": [
+            "can't / can"
+          ],
+          "explanation": "can = ability; can't = no ability"
         },
         {
           "id": "ws-38-sec-a-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "That dress is not expensive. I [gap] buy it.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = possible / able"
         },
         {
           "id": "ws-38-sec-a-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A cat [gap] climb up a tree, but a dog [gap].",
+          "acceptedAnswers": [
+            "can / can't"
+          ],
+          "explanation": "can = ability; can't = no ability"
         },
         {
           "id": "ws-38-sec-a-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm very tired today. I [gap] clean my room.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = not able"
         },
         {
           "id": "ws-38-sec-a-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "John is very short. He [gap] play basketball very well.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = not able"
         },
         {
           "id": "ws-38-sec-a-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We are very hungry, so we [gap] eat a lot of sandwiches.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = able"
         },
         {
           "id": "ws-38-sec-a-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He is very fat. He [gap] run very fast.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = not able"
         },
         {
           "id": "ws-38-sec-a-q08",
           "order": 8,
-          "prompt": " [gap] She is a small baby. She [gap] eat meat, but she [gap] drink milk. That dress is not expensive. I [gap] buy it. A cat [gap] climb up a tree, but a dog [gap] I’m very tired today. I [gap] clean my room. John is very short. He [gap] play basketball very well. We are very hungry, so we [gap] eat a lot of sandwiches. He is very fat. He [gap] run very fast. We [gap] sleep in the bedroom but we [gap] sleep in the bathroom.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] sleep in the bedroom but we [gap] sleep in the bathroom.",
+          "acceptedAnswers": [
+            "can / can't"
+          ],
+          "explanation": "can = possible; can't = not possible"
         }
       ]
     },
     {
       "id": "ws-38-sec-b",
       "sectionKey": "B",
-      "instruction": "Fill in the blanks with CAN / CAN’T or MUST / MUSTN’T:",
+      "instruction": "Fill in the blanks with CAN / CAN'T or MUST / MUSTN'T (use the verb in brackets where given):",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-38-sec-b-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She is ill, so she [gap] see the doctor.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         },
         {
           "id": "ws-38-sec-b-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It's raining heavily. You [gap] take your umbrella.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity / strong advice"
         },
         {
           "id": "ws-38-sec-b-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] (not / pick) the flowers in the park.",
+          "acceptedAnswers": [
+            "mustn't pick"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-b-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Mike is nine months old. He [gap] (not / eat) nuts.",
+          "acceptedAnswers": [
+            "can't eat|mustn't eat"
+          ],
+          "explanation": "can't / mustn't: not able or not allowed"
         },
         {
           "id": "ws-38-sec-b-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I am very tall. So I [gap] play basketball.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = ability"
         },
         {
           "id": "ws-38-sec-b-q06",
           "order": 6,
-          "prompt": " [gap] She is ill, so she [gap] see the doctor. It’s raining heavily. You [gap] take your umbrella. We [gap] (not / pick) the flowers in the park. Mike is nine months old. He [gap] (not / eat) nuts. I am very tall. So I [gap] play basketball. I’m sorry but we [gap] (not / come) to your party tomorrow.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm sorry but we [gap] (not / come) to your party tomorrow.",
+          "acceptedAnswers": [
+            "can't come"
+          ],
+          "explanation": "can't = not possible"
         },
         {
           "id": "ws-38-sec-b-q07",
           "order": 7,
           "prompt": "You are speaking very quietly. I [gap] (not / understand) you.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "can't understand"
+          ],
+          "explanation": "can't = not able"
         },
         {
           "id": "ws-38-sec-b-q08",
           "order": 8,
           "prompt": "[gap] I use your phone?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Can"
+          ],
+          "explanation": "can = asking permission"
         },
         {
           "id": "ws-38-sec-b-q09",
           "order": 9,
-          "prompt": "We [gap] go to the bank today. We haven’t got any money.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] go to the bank today. We haven't got any money.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         },
         {
           "id": "ws-38-sec-b-q10",
           "order": 10,
           "prompt": "My hands are dirty. I [gap] wash them.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         },
         {
           "id": "ws-38-sec-b-q11",
           "order": 11,
-          "prompt": "It’s late. I [gap] go now.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It's late. I [gap] go now.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         },
         {
           "id": "ws-38-sec-b-q12",
           "order": 12,
           "prompt": "You [gap] stop at a red traffic light.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = rule / obligation"
         },
         {
           "id": "ws-38-sec-b-q13",
           "order": 13,
           "prompt": "You [gap] (not / speed) in the city.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "mustn't speed"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-b-q14",
           "order": 14,
           "prompt": "Tourists [gap] take their passports when they go abroad.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = obligation"
         },
         {
           "id": "ws-38-sec-b-q15",
           "order": 15,
           "prompt": "Footballers [gap] (not / touch) the ball with their hands.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "mustn't touch|can't touch"
+          ],
+          "explanation": "mustn't / can't = not allowed"
         },
         {
           "id": "ws-38-sec-b-q16",
           "order": 16,
           "prompt": "[gap] you play the guitar?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Can"
+          ],
+          "explanation": "can = ability question"
         },
         {
           "id": "ws-38-sec-b-q17",
           "order": 17,
-          "prompt": "I [gap] (not / come) with you now. Because I’m studying my lessons.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] (not / come) with you now, because I'm studying my lessons.",
+          "acceptedAnswers": [
+            "can't come"
+          ],
+          "explanation": "can't = not possible"
         }
       ]
     },
     {
       "id": "ws-38-sec-c",
       "sectionKey": "C",
-      "instruction": "Use MUST / MUSTN’T / HAVE TO or (NOT) HAVE TO:",
+      "instruction": "Use MUST / MUSTN'T / HAVE TO or (NOT) HAVE TO:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-38-sec-c-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can stay in bed tomorrow morning because I [gap] work.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = no obligation"
         },
         {
           "id": "ws-38-sec-c-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Whatever you do, you [gap] touch that switch. It's very dangerous.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-c-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You [gap] forget what I told you. It's very important.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-c-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] leave yet. We've got plenty of time.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = no obligation"
         },
         {
           "id": "ws-38-sec-c-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Ann was feeling ill last night. She [gap] leave the party early.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
         },
         {
           "id": "ws-38-sec-c-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] go to the bank yesterday to get some money.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
         },
         {
           "id": "ws-38-sec-c-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The windows are very dirty. I [gap] clean them.",
+          "acceptedAnswers": [
+            "must|have to"
+          ],
+          "explanation": "must / have to = necessity"
         },
         {
           "id": "ws-38-sec-c-q08",
           "order": 8,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The windows aren't dirty. You [gap] clean them.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = not necessary"
         },
         {
           "id": "ws-38-sec-c-q09",
           "order": 9,
-          "prompt": " [gap] I can stay in bed tomorrow morning because I [gap] work. Whatever you do, you [gap] touch that switch. It’s very dangerous. You [gap] forget what I told you. It’s very important. We [gap] leave yet. We’ve got plenty of time. Ann was feeling ill last night. She [gap] leave the party early. I [gap] go to the bank yesterday to get some money. The windows are very dirty. I [gap] clean them. The windows aren’t dirty. You [gap] clean them. We arrived home very late last night. We [gap] wait half an hour for a taxi.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We arrived home very late last night. We [gap] wait half an hour for a taxi.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
         },
         {
           "id": "ws-38-sec-c-q10",
           "order": 10,
           "prompt": "These cakes are very nice. You [gap] have one.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = strong recommendation"
         },
         {
           "id": "ws-38-sec-c-q11",
           "order": 11,
-          "prompt": "We [gap] take an umbrella. It’s not going to rain.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] take an umbrella. It's not going to rain.",
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = not necessary"
         },
         {
           "id": "ws-38-sec-c-q12",
           "order": 12,
           "prompt": "This is a secret. You [gap] tell anybody.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-c-q13",
           "order": 13,
           "prompt": "You [gap] buy a newspaper. You can have mine.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "don't have to"
+          ],
+          "explanation": "don't have to = not necessary"
         },
         {
           "id": "ws-38-sec-c-q14",
           "order": 14,
-          "prompt": "This train doesn’t go to London. You [gap] change at Bristol.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "This train doesn't go to London. You [gap] change at Bristol.",
+          "acceptedAnswers": [
+            "have to|must"
+          ],
+          "explanation": "have to = necessity"
         },
         {
           "id": "ws-38-sec-c-q15",
           "order": 15,
           "prompt": "In many countries men [gap] do military service.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "have to"
+          ],
+          "explanation": "have to = external obligation (law)"
         },
         {
           "id": "ws-38-sec-c-q16",
           "order": 16,
           "prompt": "Sarah is a nurse. Sometimes she [gap] work at weekends.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has to"
+          ],
+          "explanation": "has to = obligation (he/she/it)"
         }
       ]
     },
@@ -330,679 +412,836 @@
           "id": "ws-38-sec-d-q01",
           "order": 1,
           "prompt": "George has traveled a lot. He [gap] speak four languages.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = present ability"
         },
         {
           "id": "ws-38-sec-d-q02",
           "order": 2,
-          "prompt": "I can’t sing now but I [gap] sing very well when I was a child.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't sing now but I [gap] sing very well when I was a child.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "explanation": "could = past ability"
         },
         {
           "id": "ws-38-sec-d-q03",
           "order": 3,
-          "prompt": "She will stay in bed till 10 o’clock this morning. Because she [gap] go to work.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She will stay in bed till 10 o'clock this morning, because she [gap] go to work.",
+          "acceptedAnswers": [
+            "doesn't have to"
+          ],
+          "explanation": "doesn't have to = no obligation"
         },
         {
           "id": "ws-38-sec-d-q04",
           "order": 4,
           "prompt": "Many students in Turkey [gap] wear uniform when they go to school.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "have to"
+          ],
+          "explanation": "have to = obligation (rule)"
         },
         {
           "id": "ws-38-sec-d-q05",
           "order": 5,
-          "prompt": "I’m sorry I couldn’t come yesterday. I [gap] work late.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm sorry I couldn't come yesterday. I [gap] work late.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
         },
         {
           "id": "ws-38-sec-d-q06",
           "order": 6,
-          "prompt": "You’ve been coughing a lot recently. You [gap] smoke so much.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You've been coughing a lot recently. You [gap] smoke so much.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = strong advice not to"
         },
         {
           "id": "ws-38-sec-d-q07",
           "order": 7,
           "prompt": "You have a bad headache. So you [gap] go to bed early.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must|have to"
+          ],
+          "explanation": "must = strong advice"
         },
         {
           "id": "ws-38-sec-d-q08",
           "order": 8,
-          "prompt": "I can’t swim very far these days but ten years ago I [gap] swim from one side of the lake to the other.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't swim very far these days but ten years ago I [gap] swim from one side of the lake to the other.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "explanation": "could = past ability"
         },
         {
           "id": "ws-38-sec-d-q09",
           "order": 9,
           "prompt": "You [gap] see the sea from our bedroom window.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = possibility"
         },
         {
           "id": "ws-38-sec-d-q10",
           "order": 10,
-          "prompt": "It isn’t permitted to speak Turkish during the lessons. So you [gap] speak Turkish.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It isn't permitted to speak Turkish during the lessons. So you [gap] speak Turkish.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         }
       ]
     },
     {
       "id": "ws-38-sec-e",
       "sectionKey": "E",
-      "instruction": "Fill in the blanks with MUST (NOT) / CAN (NOT) / (NOT) HAVE TO / NEEDN’T:",
+      "instruction": "Fill in the blanks with MUST (NOT) / CAN (NOT) / (NOT) HAVE TO / NEEDN'T:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-38-sec-e-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You [gap] park in that street. It is not permitted.",
+          "acceptedAnswers": [
+            "can't|mustn't"
+          ],
+          "explanation": "can't / mustn't = not allowed"
         },
         {
           "id": "ws-38-sec-e-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Look at George. He is working very well. He [gap] be ill.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = logical impossibility"
         },
         {
           "id": "ws-38-sec-e-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There's someone at the door. I'm expecting Paul. It [gap] be Paul.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = logical certainty"
         },
         {
           "id": "ws-38-sec-e-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Ali's car is here. He [gap] be here.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = logical certainty"
         },
         {
           "id": "ws-38-sec-e-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The baby is asleep. You [gap] shout.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-e-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You've got plenty of time. You [gap] hurry.",
+          "acceptedAnswers": [
+            "needn't|don't have to"
+          ],
+          "explanation": "needn't = not necessary"
         },
         {
           "id": "ws-38-sec-e-q07",
           "order": 7,
-          "prompt": " [gap] You [gap] park in that street. It is not permitted. Look at George. He is working very well. He [gap] be ill. There’s someone at the door. I’m expecting Paul. It [gap] be Paul. Ali’s car is here. He [gap] be here. The baby is asleep. You [gap] shout. You’ve got plenty of time. You [gap] hurry. A: “Do you want me to wait for you?” B: “No, it’s OK. You [gap] wait.”",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: \"Do you want me to wait for you?\" B: \"No, it's OK. You [gap] wait.\"",
+          "acceptedAnswers": [
+            "needn't|don't have to"
+          ],
+          "explanation": "needn't = not necessary"
         },
         {
           "id": "ws-38-sec-e-q08",
           "order": 8,
-          "prompt": "I can’t get any answer from my telephone. It [gap] be out of order.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't get any answer from my telephone. It [gap] be out of order.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = logical certainty"
         },
         {
           "id": "ws-38-sec-e-q09",
           "order": 9,
           "prompt": "Ann stayed in bed this morning because she [gap] go to work.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "didn't have to"
+          ],
+          "explanation": "didn't have to = no past obligation"
         },
         {
           "id": "ws-38-sec-e-q10",
           "order": 10,
           "prompt": "Tom has just given me a letter to post. I [gap] forget to post it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         }
       ]
     },
     {
       "id": "ws-38-sec-f",
       "sectionKey": "F",
-      "instruction": "Use a suitable present or past MODAL AUXILIARY:",
-      "type": "inline_gap_fill",
+      "instruction": "Use a suitable present or past MODAL AUXILIARY (with the verb in brackets where given):",
+      "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-38-sec-f-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] play chess when he was young.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "explanation": "could = past ability"
         },
         {
           "id": "ws-38-sec-f-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You [gap] drive a car when you are 18.",
+          "acceptedAnswers": [
+            "can"
+          ],
+          "explanation": "can = permission / possibility"
         },
         {
           "id": "ws-38-sec-f-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap] I ask you a question?",
+          "acceptedAnswers": [
+            "Can|May|Could"
+          ],
+          "explanation": "asking permission"
         },
         {
           "id": "ws-38-sec-f-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She [gap] be 25. She looks older than that.",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = logical impossibility"
         },
         {
           "id": "ws-38-sec-f-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "His telephone doesn't answer. He [gap] (go) to the club.",
+          "acceptedAnswers": [
+            "must have gone|may have gone|might have gone|could have gone"
+          ],
+          "explanation": "must have + past participle = past deduction"
         },
         {
           "id": "ws-38-sec-f-q06",
           "order": 6,
-          "prompt": " [gap] He [gap] play chess when he was young. You [gap] drive a car when you are 18. [gap] I ask you a question? She [gap] be 25. She looks older than that. His telephone doesn’t answer. He [gap] (go) to the club. She entered the room carrying a wet umbrella. She [gap] (walk) in the rain.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She entered the room carrying a wet umbrella. She [gap] (walk) in the rain.",
+          "acceptedAnswers": [
+            "must have walked|must have been walking"
+          ],
+          "explanation": "must have + past participle = past deduction"
         },
         {
           "id": "ws-38-sec-f-q07",
           "order": 7,
-          "prompt": "My car didn’t work this morning. So I [gap] walk to the office.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My car didn't work this morning. So I [gap] walk to the office.",
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past obligation"
         },
         {
           "id": "ws-38-sec-f-q08",
           "order": 8,
-          "prompt": "He [gap] (be) home, but we didn’t telephone him.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He [gap] (be) home, but we didn't telephone him.",
+          "acceptedAnswers": [
+            "might have been|may have been|could have been"
+          ],
+          "explanation": "might have been = past possibility"
         },
         {
           "id": "ws-38-sec-f-q09",
           "order": 9,
-          "prompt": "She [gap] (help) me a lot by giving me a little of his time, but she preferred to go out.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She [gap] (help) me a lot by giving me a little of her time, but she preferred to go out.",
+          "acceptedAnswers": [
+            "could have helped"
+          ],
+          "explanation": "could have = possible but didn't happen"
         },
         {
           "id": "ws-38-sec-f-q10",
           "order": 10,
-          "prompt": "He doesn’t know the answer. He [gap] (study).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He doesn't know the answer. He [gap] (study).",
+          "acceptedAnswers": [
+            "can't have studied|couldn't have studied|should have studied"
+          ],
+          "explanation": "can't have + past participle = past impossibility"
         },
         {
           "id": "ws-38-sec-f-q11",
           "order": 11,
-          "prompt": "I can’t find the house. I [gap] (write) down the address.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't find the house. I [gap] (write) down the address.",
+          "acceptedAnswers": [
+            "should have written"
+          ],
+          "explanation": "should have = past regret / criticism"
         },
         {
           "id": "ws-38-sec-f-q12",
           "order": 12,
           "prompt": "She is very sleepy. She [gap] (stay) up very late last night.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must have stayed"
+          ],
+          "explanation": "must have = past deduction"
         },
         {
           "id": "ws-38-sec-f-q13",
           "order": 13,
           "prompt": "I [gap] go for a walk later. It depends on the weather.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "may|might"
+          ],
+          "explanation": "may / might = possibility"
         },
         {
           "id": "ws-38-sec-f-q14",
           "order": 14,
           "prompt": "The ground is covered with snow. It [gap] (snow) last night.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must have snowed"
+          ],
+          "explanation": "must have = past deduction"
         },
         {
           "id": "ws-38-sec-f-q15",
           "order": 15,
           "prompt": "She [gap] (be) in a great hurry to leave for the theater because she left all the dinner dishes on the table.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must have been"
+          ],
+          "explanation": "must have = past deduction"
         },
         {
           "id": "ws-38-sec-f-q16",
           "order": 16,
           "prompt": "That store has just gone bankrupt. I believe they [gap] (have) a stricter policy about giving people credit.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "should have had"
+          ],
+          "explanation": "should have = past advice, didn't happen"
         },
         {
           "id": "ws-38-sec-f-q17",
           "order": 17,
-          "prompt": "I’m afraid Mr. Smith is deaf. He [gap] (not / hear) what you say.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I'm afraid Mr. Smith is deaf. He [gap] (not / hear) what you say.",
+          "acceptedAnswers": [
+            "can't hear"
+          ],
+          "explanation": "can't = present inability"
         }
       ]
     },
     {
       "id": "ws-38-sec-g",
       "sectionKey": "G",
-      "instruction": "Fill in the blanks with suitable MODAL AUXILIARY VERBS:",
-      "type": "inline_gap_fill",
+      "instruction": "Fill in the blanks with suitable MODAL AUXILIARY VERBS (with the verb in brackets where given):",
+      "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-38-sec-g-q01",
           "order": 1,
-          "prompt": "At the end of the month the Post Office will send him an enormous bill which he [gap] [gap] pay.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "At the end of the month the Post Office will send him an enormous bill which he [gap] pay.",
+          "acceptedAnswers": [
+            "can't|won't be able to"
+          ],
+          "explanation": "can't / won't be able to = future inability"
         },
         {
           "id": "ws-38-sec-g-q02",
           "order": 2,
           "prompt": "When I was a child, I [gap] understand adults, and now that I am an adult I [gap] understand children.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "couldn't / can't"
+          ],
+          "explanation": "couldn't = past; can't = present inability"
         },
         {
           "id": "ws-38-sec-g-q03",
           "order": 3,
           "prompt": "When I first went to England I [gap] read English but I [gap] understand it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "could|was able to / couldn't"
+          ],
+          "explanation": "could = past ability"
         },
         {
           "id": "ws-38-sec-g-q04",
           "order": 4,
           "prompt": "[gap] I see your passport, please?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Can|May|Could"
+          ],
+          "explanation": "polite request"
         },
         {
           "id": "ws-38-sec-g-q05",
           "order": 5,
-          "prompt": "He sees very badly, he [gap] wear glasses all the time.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He sees very badly; he [gap] wear glasses all the time.",
+          "acceptedAnswers": [
+            "has to|must"
+          ],
+          "explanation": "has to = necessity"
         },
         {
           "id": "ws-38-sec-g-q06",
           "order": 6,
           "prompt": "Pedestrians [gap] either use the crosswalk or cross the street at the traffic lights.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must|have to|should"
+          ],
+          "explanation": "must = rule"
         },
         {
           "id": "ws-38-sec-g-q07",
           "order": 7,
           "prompt": "The buses were all full; I [gap] take a taxi.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had to"
+          ],
+          "explanation": "had to = past necessity"
         },
         {
           "id": "ws-38-sec-g-q08",
           "order": 8,
           "prompt": "You [gap] drive fast; there is a speed limit here.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "mustn't|can't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-g-q09",
           "order": 9,
           "prompt": "[gap] we all go to the football match tonight?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Shall"
+          ],
+          "explanation": "shall we = suggestion"
         },
         {
           "id": "ws-38-sec-g-q10",
           "order": 10,
           "prompt": "You [gap] argue with your father, you [gap] obey him.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "mustn't|shouldn't / must|should"
+          ],
+          "explanation": "mustn't = prohibition; must = obligation"
         },
         {
           "id": "ws-38-sec-g-q11",
           "order": 11,
-          "prompt": "I know she was in because I heard her radio, but she didn’t open the door. She [gap] [gap] (hear) the bell.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I know she was in because I heard her radio, but she didn't open the door. She [gap] (hear) the bell.",
+          "acceptedAnswers": [
+            "can't have heard|couldn't have heard"
+          ],
+          "explanation": "can't have = past impossibility"
         },
         {
           "id": "ws-38-sec-g-q12",
           "order": 12,
-          "prompt": "A: I bought two bottles of milk. [gap] B: You [gap] (buy) milk; we have heaps in the house.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: I bought two bottles of milk. B: You [gap] (buy) milk; we have heaps in the house.",
+          "acceptedAnswers": [
+            "needn't have bought|didn't need to buy|shouldn't have bought"
+          ],
+          "explanation": "needn't have = unnecessary past action"
         },
         {
           "id": "ws-38-sec-g-q13",
           "order": 13,
           "prompt": "I [gap] carry this heavy pack myself. I think I will ask for help.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = inability"
         },
         {
           "id": "ws-38-sec-g-q14",
           "order": 14,
           "prompt": "When I woke up this morning, the light was on. I [gap] (forget) to turn it off.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must have forgotten"
+          ],
+          "explanation": "must have = past deduction"
         },
         {
           "id": "ws-38-sec-g-q15",
           "order": 15,
           "prompt": "I saw her at the office half an hour ago. She [gap] (be) at home now. It is almost impossible.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "can't be|couldn't be"
+          ],
+          "explanation": "can't = present impossibility"
         },
         {
           "id": "ws-38-sec-g-q16",
           "order": 16,
-          "prompt": "I can’t find my keys. I [gap] (put) them somewhere in my room.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't find my keys. I [gap] (put) them somewhere in my room.",
+          "acceptedAnswers": [
+            "must have put|might have put|may have put"
+          ],
+          "explanation": "must / might have = past deduction"
         },
         {
           "id": "ws-38-sec-g-q17",
           "order": 17,
-          "prompt": "I don’t know what all this noise about. It [gap] (be) my father breaking wood in the backyard.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I don't know what all this noise is about. It [gap] (be) my father breaking wood in the backyard.",
+          "acceptedAnswers": [
+            "may be|might be|could be"
+          ],
+          "explanation": "may / might = present possibility"
         },
         {
           "id": "ws-38-sec-g-q18",
           "order": 18,
-          "prompt": "I can’t find my mother. She [gap] (go) shopping.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I can't find my mother. She [gap] (go) shopping.",
+          "acceptedAnswers": [
+            "may have gone|might have gone|must have gone|could have gone"
+          ],
+          "explanation": "may / might have = past possibility"
         },
         {
           "id": "ws-38-sec-g-q19",
           "order": 19,
           "prompt": "The weather is overcast. It [gap] (rain) in the afternoon.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "may rain|might rain|could rain"
+          ],
+          "explanation": "may / might = future possibility"
         },
         {
           "id": "ws-38-sec-g-q20",
           "order": 20,
           "prompt": "If you have finished your work, you [gap] (leave).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "can leave|may leave"
+          ],
+          "explanation": "can / may = permission"
         },
         {
           "id": "ws-38-sec-g-q21",
           "order": 21,
           "prompt": "[gap] you like to come to the cinema with us?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Would"
+          ],
+          "explanation": "would you like = invitation"
         },
         {
           "id": "ws-38-sec-g-q22",
           "order": 22,
           "prompt": "[gap] I come in?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "May|Can|Could"
+          ],
+          "explanation": "asking permission"
         },
         {
           "id": "ws-38-sec-g-q23",
           "order": 23,
           "prompt": "Emily [gap] (wear) glasses since she was eight.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has worn|has had to wear"
+          ],
+          "explanation": "present perfect with since"
         },
         {
           "id": "ws-38-sec-g-q24",
           "order": 24,
-          "prompt": "Deniz had no money, so she sold her car. A few days later she won a lot of money in a [gap] competition. She [gap] (sell) her car.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Deniz had no money, so she sold her car. A few days later she won a lot of money in a competition. She [gap] (sell) her car.",
+          "acceptedAnswers": [
+            "needn't have sold|didn't need to sell|shouldn't have sold"
+          ],
+          "explanation": "needn't have = unnecessary past action"
         },
         {
           "id": "ws-38-sec-g-q25",
           "order": 25,
-          "prompt": "The accident happened because he was driving on the wrong side of the road. He [gap] [gap] (drive)on the right.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The accident happened because he was driving on the wrong side of the road. He [gap] (drive) on the right.",
+          "acceptedAnswers": [
+            "should have driven|should have been driving|ought to have driven"
+          ],
+          "explanation": "should have = past criticism"
         }
       ]
     },
     {
       "id": "ws-38-sec-h",
       "sectionKey": "H",
-      "instruction": "A mysterious letter has arrived for Tom by special delivery. He is nervous about",
+      "instruction": "A mysterious letter has arrived for Tom by special delivery. He is nervous about opening it. Add suitable MODAL VERBS to complete the dialogue. He is with Jill, his wife.",
       "type": "passage_gap_fill",
       "questions": [
         {
           "id": "ws-38-sec-h-q01",
           "order": 1,
-          "prompt": "opening it. Add suitable MODAL VERBS to complete the dialogue. He is with Jill, his wife.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jill: [gap] I have a look at it? (permission)",
+          "acceptedAnswers": [
+            "Can|May|Could"
+          ],
+          "explanation": "permission"
         },
         {
           "id": "ws-38-sec-h-q02",
           "order": 2,
-          "prompt": "Jill : [gap] I have a look at it? (permission)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom: I [gap] think who it's from. (negative ability)",
+          "acceptedAnswers": [
+            "can't"
+          ],
+          "explanation": "can't = negative ability"
         },
         {
           "id": "ws-38-sec-h-q03",
           "order": 3,
-          "prompt": "Tom : I [gap] think who it’s from. (negative ability)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jill: It [gap] be important. (assumption)",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = assumption / deduction"
         },
         {
           "id": "ws-38-sec-h-q04",
           "order": 4,
-          "prompt": "Jill : It [gap] be important. (assumption)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom: [gap] you read the postmark? (ability)",
+          "acceptedAnswers": [
+            "Can|Could"
+          ],
+          "explanation": "can = ability"
         },
         {
           "id": "ws-38-sec-h-q05",
           "order": 5,
-          "prompt": "Tom : [gap] you read the postmark? (ability)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jill: It [gap] be from the taxman. (possibility)",
+          "acceptedAnswers": [
+            "may|might|could"
+          ],
+          "explanation": "may / might = possibility"
         },
         {
           "id": "ws-38-sec-h-q06",
           "order": 6,
-          "prompt": "Jill : It [gap] be from the taxman. (possibility)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom: No, it [gap] be from him. He always uses a special envelope. (negative assumption)",
+          "acceptedAnswers": [
+            "can't|couldn't"
+          ],
+          "explanation": "can't = negative deduction"
         },
         {
           "id": "ws-38-sec-h-q07",
           "order": 7,
-          "prompt": "Tom : No, it [gap] be from him. He always uses a special envelope. (negative",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jill: It [gap] be from your bank manager (possibility), so you [gap] open it immediately. (advice)",
+          "acceptedAnswers": [
+            "may|might|could / should|ought to"
+          ],
+          "explanation": "may = possibility; should = advice"
         },
         {
           "id": "ws-38-sec-h-q08",
           "order": 8,
-          "prompt": "(assumption)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-38-sec-h-q09",
-          "order": 9,
-          "prompt": "Jill : It [gap] be from your bank manager (possibility), so you [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-38-sec-h-q10",
-          "order": 10,
-          "prompt": "open it immediately. (advice)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-38-sec-h-q11",
-          "order": 11,
-          "prompt": "Tom : Yes, I [gap] stop putting it off (obligation). Now, let’s see. Is it",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-38-sec-h-q12",
-          "order": 12,
-          "prompt": "good news or bad?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom: Yes, I [gap] stop putting it off (obligation). Now, let's see. Is it good news or bad?",
+          "acceptedAnswers": [
+            "must|have to"
+          ],
+          "explanation": "must = obligation"
         }
       ]
     },
     {
       "id": "ws-38-sec-i",
       "sectionKey": "I",
-      "instruction": "Draw conclutions using CAN’T / MUST / MIGHT:",
-      "type": "inline_gap_fill",
+      "instruction": "Draw conclusions using CAN'T / MUST / MIGHT. Write the whole sentence; for items 7–10, write the completed sentence marked (?).",
+      "type": "sentence_building",
       "questions": [
         {
           "id": "ws-38-sec-i-q01",
           "order": 1,
-          "prompt": "He drives a very expensive car and owns a private plane. (rich) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He drives a very expensive car and owns a private plane. (rich)",
+          "acceptedAnswers": [
+            "He must be rich."
+          ],
+          "explanation": "must = strong deduction"
         },
         {
           "id": "ws-38-sec-i-q02",
           "order": 2,
-          "prompt": "He spends all day walking round the town. (job) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "He spends all day walking round the town. (job)",
+          "acceptedAnswers": [
+            "He can't have a job.",
+            "He might not have a job."
+          ],
+          "explanation": "can't = negative deduction"
         },
         {
           "id": "ws-38-sec-i-q03",
           "order": 3,
-          "prompt": "They are asking the way to the city center. (tourist) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They are asking the way to the city center. (tourist)",
+          "acceptedAnswers": [
+            "They must be tourists.",
+            "They might be tourists."
+          ],
+          "explanation": "must / might = deduction"
         },
         {
           "id": "ws-38-sec-i-q04",
           "order": 4,
-          "prompt": "She works for a daily newspaper. She goes to the big football matches. (sports reporter) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She works for a daily newspaper. She goes to the big football matches. (sports reporter)",
+          "acceptedAnswers": [
+            "She must be a sports reporter.",
+            "She might be a sports reporter."
+          ],
+          "explanation": "must / might = deduction"
         },
         {
           "id": "ws-38-sec-i-q05",
           "order": 5,
-          "prompt": "I thought he studied medicine, but she’s going to an outdoor job now. (doctor) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I thought he studied medicine, but he's going to an outdoor job now. (doctor)",
+          "acceptedAnswers": [
+            "He can't be a doctor.",
+            "He might not be a doctor."
+          ],
+          "explanation": "can't = negative deduction"
         },
         {
           "id": "ws-38-sec-i-q06",
           "order": 6,
-          "prompt": "She teaches maths at the university. (stupid) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She teaches maths at the university. (stupid)",
+          "acceptedAnswers": [
+            "She can't be stupid."
+          ],
+          "explanation": "can't = negative deduction"
         },
         {
           "id": "ws-38-sec-i-q07",
           "order": 7,
-          "prompt": "A: What happened to your leg? [gap] B: I slipped badly on the ice and broke it. A: Oh! That [gap] hurt a lot. B: It does.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: What happened to your leg? B: I slipped badly on the ice and broke it. A: Oh! That (?) hurt a lot. B: It does.",
+          "acceptedAnswers": [
+            "That must hurt a lot."
+          ],
+          "explanation": "must = strong deduction"
         },
         {
           "id": "ws-38-sec-i-q08",
           "order": 8,
-          "prompt": "A: Listen! Do you hear a noise like someone shouting? [gap] B: Yes, I do. The new neighbours upstairs [gap] quarrel again.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: Listen! Do you hear a noise like someone shouting? B: Yes, I do. The new neighbours upstairs (?) (quarrel) again.",
+          "acceptedAnswers": [
+            "The new neighbours upstairs must be quarrelling again.",
+            "The new neighbours upstairs must be quarreling again.",
+            "The new neighbours upstairs might be quarrelling again.",
+            "The new neighbours upstairs might be quarreling again.",
+            "The new neighbors upstairs must be quarrelling again.",
+            "The new neighbors upstairs must be quarreling again.",
+            "The new neighbors upstairs might be quarrelling again.",
+            "The new neighbors upstairs might be quarreling again."
+          ],
+          "explanation": "must be + -ing = deduction about now"
         },
         {
           "id": "ws-38-sec-i-q09",
           "order": 9,
-          "prompt": "A: I [gap] get a rise in my salary soon. B: What makes you think so? A: The boss seemed very pleased with my last project.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: I (?) get a rise in my salary soon. B: What makes you think so? A: The boss seemed very pleased with my last project.",
+          "acceptedAnswers": [
+            "I might get a rise in my salary soon.",
+            "I may get a rise in my salary soon."
+          ],
+          "explanation": "might = possibility"
         },
         {
           "id": "ws-38-sec-i-q10",
           "order": 10,
-          "prompt": "A: That man over there looks like our district manager. [gap] B: No, he [gap] be him. He went to the USA three days ago and hasn’t returned yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: That man over there looks like our district manager. B: No, (?) be him. He went to the USA three days ago and hasn't returned yet.",
+          "acceptedAnswers": [
+            "No, it can't be him.",
+            "No, that can't be him."
+          ],
+          "explanation": "can't = logical impossibility"
         }
       ]
     },
     {
       "id": "ws-38-sec-j",
       "sectionKey": "J",
-      "instruction": "Fill in MUST or MUSTN’T:",
+      "instruction": "Fill in MUST or MUSTN'T:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-38-sec-j-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It's cold. You [gap] leave without your jacket.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-j-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You [gap] eat fruit and vegetables to stay healthy.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         },
         {
           "id": "ws-38-sec-j-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] go to the post office. I have a letter to send.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         },
         {
           "id": "ws-38-sec-j-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You [gap] speak rudely to your parents.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-j-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You [gap] park here – it's illegal.",
+          "acceptedAnswers": [
+            "mustn't"
+          ],
+          "explanation": "mustn't = prohibition"
         },
         {
           "id": "ws-38-sec-j-q06",
           "order": 6,
-          "prompt": " [gap] It’s cold. You [gap] leave without your jacket. You [gap] eat fruit and vegetables to stay healthy. I [gap] go to the post office. I have a letter to send. You [gap] speak rudely to your parents. You [gap] park here – it’s illegal. We [gap] hurry or we’ll miss the bus.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "We [gap] hurry or we'll miss the bus.",
+          "acceptedAnswers": [
+            "must"
+          ],
+          "explanation": "must = necessity"
         }
       ]
     }

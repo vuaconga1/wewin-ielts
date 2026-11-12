@@ -19,95 +19,120 @@
           "id": "ws-22-sec-a-q01",
           "order": 1,
           "prompt": "Listen! An old tune [gap] (play) on the radio.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "is being played"
+          ],
+          "explanation": "present continuous passive: happening now"
         },
         {
           "id": "ws-22-sec-a-q02",
           "order": 2,
           "prompt": "Nobody [gap] (help) Mr. Green while the garage [gap] (paint).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "helped|was helping / was being painted"
+          ],
+          "explanation": "past simple + past continuous passive (while)"
         },
         {
           "id": "ws-22-sec-a-q03",
           "order": 3,
           "prompt": "Mary [gap] (have) a bath before she [gap] (call) by one of her friends yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had had|had / was called"
+          ],
+          "explanation": "past perfect before a past passive event"
         },
         {
           "id": "ws-22-sec-a-q04",
           "order": 4,
           "prompt": "The accountant [gap] (look) sad because the bills [gap] (pay) yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "looks / haven't been paid",
+            "looked / hadn't been paid"
+          ],
+          "explanation": "negative perfect passive with yet"
         },
         {
           "id": "ws-22-sec-a-q05",
           "order": 5,
           "prompt": "He felt sorry when he [gap] (realize) that his stamp collection [gap] (steal).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "realized|realised / had been stolen"
+          ],
+          "explanation": "past simple + earlier action: past perfect passive"
         },
         {
           "id": "ws-22-sec-a-q06",
           "order": 6,
           "prompt": "If I [gap] (be) him, I [gap] (not / treat) my father like that. He will be sorry for that in the future.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were|was / wouldn't treat"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-22-sec-a-q07",
           "order": 7,
-          "prompt": "If she [gap] (see) me, she [gap] (get) angry with me, because I had promised to call her out but I didn’t.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If she [gap] (see) me, she [gap] (get) angry with me, because I had promised to call her out but I didn't.",
+          "acceptedAnswers": [
+            "had seen / would have got|would have gotten|would get"
+          ],
+          "explanation": "third conditional: had + V3, would have + V3"
         },
         {
           "id": "ws-22-sec-a-q08",
           "order": 8,
           "prompt": "He [gap] (stop / smoke) since he [gap] (have) a heart attack.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has stopped smoking / had"
+          ],
+          "explanation": "present perfect + since + past simple"
         },
         {
           "id": "ws-22-sec-a-q09",
           "order": 9,
           "prompt": "As soon as she [gap] (finish / change) the baby’s nappy, she [gap] (take) the children to school.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had finished changing|finished changing / took",
+            "finishes changing|has finished changing / takes"
+          ],
+          "explanation": "finish + -ing; sequence of actions"
         },
         {
           "id": "ws-22-sec-a-q10",
           "order": 10,
           "prompt": "He said his car [gap] already [gap] (mend).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had / been mended"
+          ],
+          "explanation": "reported speech: past perfect passive"
         },
         {
           "id": "ws-22-sec-a-q11",
           "order": 11,
           "prompt": "She said she [gap] (open) her first exhibition the following month.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would open|was opening|was going to open"
+          ],
+          "explanation": "reported future: will → would"
         },
         {
           "id": "ws-22-sec-a-q12",
           "order": 12,
-          "prompt": "Mary and Joe want [gap] (go) to the shore which [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) like"
-          ]
+          "prompt": "Mary and Joe want [gap] (go) to the shore which [gap] (sound) like a good idea to me.",
+          "acceptedAnswers": [
+            "to go / sounds"
+          ],
+          "explanation": "want + to-infinitive; present simple"
         },
         {
           "id": "ws-22-sec-a-q13",
           "order": 13,
           "prompt": "He [gap] (not / wake up) on time unless he [gap] (use) an alarm clock.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "won't wake up|doesn't wake up / uses"
+          ],
+          "explanation": "unless + present simple"
         }
       ]
     },
@@ -121,88 +146,192 @@
           "id": "ws-22-sec-b-q01",
           "order": 1,
           "prompt": "I [gap] (play) the piano since I [gap] (be) six.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "have played|have been playing / was"
+          ],
+          "explanation": "present perfect + since + past simple"
         },
         {
           "id": "ws-22-sec-b-q02",
           "order": 2,
           "prompt": "[gap] (not / look) behind you. I think, someone [gap] (follow) us.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Don't look / is following"
+          ],
+          "explanation": "negative imperative; present continuous"
         },
         {
-          "id": "ws-22-sec-b-q03",
+          "id": "ws-22-sec-b-q03a",
           "order": 3,
-          "prompt": "A: Did you hear the accident? [gap] B: No, what [gap] (happen)? A: A cyclist [gap] (hit) by a taxi driver in front of the post office. B: OK, then? A: Someone [gap] (call) an ambulance and the cyclist [gap] (take) to the City Hospital. B: [gap] he [gap] (have) an operation? A: No, he [gap] but it [gap] (say) that he [gap] (have to / stay) in hospital about two weeks. B: [gap] his parents [gap] (inform) about the accident yet? A: They [gap] (already / phone) from the hospital. B: [gap] (be) his friends in hospital now? A: No, his friends [gap] (not / allow) [gap] (see) him. They [gap] (wait) right in front of the hospital [gap] (hear) a piece of news, at the moment.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: Did you hear the accident? B: No, what [gap] (happen)?",
+          "acceptedAnswers": [
+            "happened|has happened"
+          ],
+          "explanation": "past simple question"
+        },
+        {
+          "id": "ws-22-sec-b-q03b",
+          "order": 3,
+          "prompt": "A: A cyclist [gap] (hit) by a taxi driver in front of the post office.",
+          "acceptedAnswers": [
+            "was hit|has been hit"
+          ],
+          "explanation": "past simple passive"
+        },
+        {
+          "id": "ws-22-sec-b-q03c",
+          "order": 3,
+          "prompt": "B: OK, then? A: Someone [gap] (call) an ambulance and the cyclist [gap] (take) to the City Hospital.",
+          "acceptedAnswers": [
+            "called / was taken"
+          ],
+          "explanation": "past simple active + passive"
+        },
+        {
+          "id": "ws-22-sec-b-q03d",
+          "order": 3,
+          "prompt": "B: [gap] he [gap] (have) an operation?",
+          "acceptedAnswers": [
+            "Did / have",
+            "Has / had"
+          ],
+          "explanation": "past simple question"
+        },
+        {
+          "id": "ws-22-sec-b-q03e",
+          "order": 3,
+          "prompt": "A: No, he [gap] but it [gap] (say) that he [gap] (have to / stay) in hospital about two weeks.",
+          "acceptedAnswers": [
+            "didn't|hasn't / is said / will have to stay|has to stay",
+            "didn't|hasn't / was said / would have to stay|had to stay"
+          ],
+          "explanation": "short answer; it is said that ..."
+        },
+        {
+          "id": "ws-22-sec-b-q03f",
+          "order": 3,
+          "prompt": "B: [gap] his parents [gap] (inform) about the accident yet?",
+          "acceptedAnswers": [
+            "Have / been informed"
+          ],
+          "explanation": "present perfect passive with yet"
+        },
+        {
+          "id": "ws-22-sec-b-q03g",
+          "order": 3,
+          "prompt": "A: They [gap] (already / phone) from the hospital.",
+          "acceptedAnswers": [
+            "have already been phoned"
+          ],
+          "explanation": "present perfect passive with already"
+        },
+        {
+          "id": "ws-22-sec-b-q03h",
+          "order": 3,
+          "prompt": "B: [gap] (be) his friends in hospital now?",
+          "acceptedAnswers": [
+            "Are"
+          ],
+          "explanation": "present simple of be"
+        },
+        {
+          "id": "ws-22-sec-b-q03i",
+          "order": 3,
+          "prompt": "A: No, his friends [gap] (not / allow) [gap] (see) him.",
+          "acceptedAnswers": [
+            "aren't allowed|haven't been allowed / to see"
+          ],
+          "explanation": "be allowed + to-infinitive"
+        },
+        {
+          "id": "ws-22-sec-b-q03j",
+          "order": 3,
+          "prompt": "They [gap] (wait) right in front of the hospital [gap] (hear) a piece of news, at the moment.",
+          "acceptedAnswers": [
+            "are waiting / to hear"
+          ],
+          "explanation": "present continuous; to-infinitive of purpose"
         },
         {
           "id": "ws-22-sec-b-q04",
           "order": 4,
           "prompt": "Before Christmas all the shops and houses [gap] (decorate) with cards and Christmas trees. Presents [gap] (buy) for the relatives and friends.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "are decorated / are bought"
+          ],
+          "explanation": "present simple passive: habits"
         },
         {
           "id": "ws-22-sec-b-q05",
           "order": 5,
-          "prompt": "Linda [gap] (look) very happy now, because her boyfriend [gap] [gap] (just / give) her an engagement ring.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Linda [gap] (look) very happy now, because her boyfriend [gap] (just / give) her an engagement ring.",
+          "acceptedAnswers": [
+            "looks / has just given"
+          ],
+          "explanation": "present simple; present perfect with just"
         },
         {
           "id": "ws-22-sec-b-q06",
           "order": 6,
           "prompt": "Dinner [gap] (must / cook) before we [gap] (go) out.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must be cooked / go"
+          ],
+          "explanation": "modal passive: must be + V3"
         },
         {
           "id": "ws-22-sec-b-q07",
           "order": 7,
           "prompt": "April 23rd [gap] (give) as a holiday to the Turkish children by Mustafa Kemal Atatürk.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was given"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-22-sec-b-q08",
           "order": 8,
           "prompt": "The old man [gap] (be) in prison for twenty years, by the time he [gap] (die) last year.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had been / died"
+          ],
+          "explanation": "by the time + past: past perfect"
         },
         {
           "id": "ws-22-sec-b-q09",
           "order": 9,
           "prompt": "When Jane [gap] (arrive) late for the interview, she [gap] (realize) that the Director [gap] (leave).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "arrived / realized|realised / had left"
+          ],
+          "explanation": "earlier past action: past perfect"
         },
         {
           "id": "ws-22-sec-b-q10",
           "order": 10,
           "prompt": "[gap] you [gap] (see) Ann this morning? (It’s still morning.)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Have / seen"
+          ],
+          "explanation": "unfinished time period: present perfect"
         },
         {
           "id": "ws-22-sec-b-q11",
           "order": 11,
           "prompt": "[gap] you [gap] (see) Ann this morning? (It’s evening.)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Did / see"
+          ],
+          "explanation": "finished time period: past simple"
         },
         {
           "id": "ws-22-sec-b-q12",
           "order": 12,
-          "prompt": "I [gap] (try) to learn English for three years but I",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) ."
-          ]
+          "prompt": "I [gap] (try) to learn English for three years but I [gap] (not / succeed).",
+          "acceptedAnswers": [
+            "have been trying|have tried / haven't succeeded"
+          ],
+          "explanation": "present perfect (continuous) with for"
         }
       ]
     },
@@ -215,163 +344,236 @@
         {
           "id": "ws-22-sec-c-q01",
           "order": 1,
-          "prompt": "After he [gap] (decide / give up) smoking, he [gap] [gap] (begin / carry) a pocket of sweets in his pocket [gap] (prevent) him from smoking.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "After he [gap] (decide / give up) smoking, he [gap] (begin / carry) a packet of sweets in his pocket [gap] (prevent) him from smoking.",
+          "acceptedAnswers": [
+            "had decided to give up|decided to give up / began carrying|began to carry / to prevent"
+          ],
+          "explanation": "decide + to; begin + -ing/to; purpose: to"
         },
         {
           "id": "ws-22-sec-c-q02",
           "order": 2,
           "prompt": "He must have a break. He [gap] (drive) for hours.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has been driving"
+          ],
+          "explanation": "present perfect continuous: for hours"
         },
         {
-          "id": "ws-22-sec-c-q03",
+          "id": "ws-22-sec-c-q03a",
           "order": 3,
-          "prompt": "My cousin, Tom [gap] (just / finish) his military service. He [gap] (look) for a good job since then. Yesterday he [gap] (receive) a letter from his old boss. In his letter, he says he needs him again, but Tom [gap] (not / want / work) with him. Because they [gap] (have) some problems before he [gap] (leave) his job.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My cousin, Tom [gap] (just / finish) his military service. He [gap] (look) for a good job since then.",
+          "acceptedAnswers": [
+            "has just finished / has been looking"
+          ],
+          "explanation": "present perfect + just; since then"
+        },
+        {
+          "id": "ws-22-sec-c-q03b",
+          "order": 3,
+          "prompt": "Yesterday he [gap] (receive) a letter from his old boss.",
+          "acceptedAnswers": [
+            "received"
+          ],
+          "explanation": "past simple: yesterday"
+        },
+        {
+          "id": "ws-22-sec-c-q03c",
+          "order": 3,
+          "prompt": "In his letter, he says he needs him again, but Tom [gap] (not / want / work) with him.",
+          "acceptedAnswers": [
+            "doesn't want to work"
+          ],
+          "explanation": "want + to-infinitive"
+        },
+        {
+          "id": "ws-22-sec-c-q03d",
+          "order": 3,
+          "prompt": "Because they [gap] (have) some problems before he [gap] (leave) his job.",
+          "acceptedAnswers": [
+            "had had|had / left"
+          ],
+          "explanation": "earlier past: past perfect"
         },
         {
           "id": "ws-22-sec-c-q04",
           "order": 4,
           "prompt": "After they [gap] (learn) the new words last term, they [gap] (start) the course book.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had learned|had learnt|learned|learnt / started"
+          ],
+          "explanation": "after + past perfect, past simple"
         },
         {
           "id": "ws-22-sec-c-q05",
           "order": 5,
           "prompt": "Please don’t disturb us, we [gap] (record) the Director’s conversation.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "are recording"
+          ],
+          "explanation": "present continuous: now"
         },
         {
           "id": "ws-22-sec-c-q06",
           "order": 6,
           "prompt": "Just as I [gap] (get up) my brother [gap] (take) a photo of me.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was getting up / took"
+          ],
+          "explanation": "past continuous interrupted by past simple"
         },
         {
           "id": "ws-22-sec-c-q07",
           "order": 7,
           "prompt": "Steve [gap] (have) a lot of girlfriends by the time he [gap] (get) married.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had had / got"
+          ],
+          "explanation": "by the time + past: past perfect"
         },
         {
           "id": "ws-22-sec-c-q08",
           "order": 8,
           "prompt": "We are quite anxious about Jane now. She [gap] (leave) home a fortnight ago to spend her vacation with her friends but she [gap] (write) to us yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "left / hasn't written"
+          ],
+          "explanation": "ago: past simple; yet: present perfect negative"
         },
         {
           "id": "ws-22-sec-c-q09",
           "order": 9,
           "prompt": "They [gap] (live) in bad conditions since the war [gap] (start).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "have lived|have been living / started"
+          ],
+          "explanation": "present perfect + since + past simple"
         },
         {
           "id": "ws-22-sec-c-q10",
           "order": 10,
           "prompt": "Before I [gap] (come) to the USA, I [gap] (study) English in my own country.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "came / had studied|studied"
+          ],
+          "explanation": "earlier past: past perfect"
         },
         {
           "id": "ws-22-sec-c-q11",
           "order": 11,
           "prompt": "I [gap] (not / have) any trouble with my car so far.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "haven't had"
+          ],
+          "explanation": "so far: present perfect"
         },
         {
           "id": "ws-22-sec-c-q12",
           "order": 12,
           "prompt": "The building at the top of the hill [gap] (build) in 1920. A number of changes [gap] (make) since then.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was built / have been made"
+          ],
+          "explanation": "past passive; present perfect passive with since"
         },
         {
           "id": "ws-22-sec-c-q13",
           "order": 13,
-          "prompt": "When the boss [gap] (come) in the office, the letters [gap] [gap] (type) by the secretary.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When the boss [gap] (come) in the office, the letters [gap] (type) by the secretary.",
+          "acceptedAnswers": [
+            "came / had been typed|were being typed"
+          ],
+          "explanation": "past perfect / past continuous passive"
         },
         {
           "id": "ws-22-sec-c-q14",
           "order": 14,
           "prompt": "Barbara is a writer. She [gap] already [gap] (write) several novels. A few years ago, she [gap] (give) the Pulitzer Prize.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has / written / was given"
+          ],
+          "explanation": "present perfect; ago: past passive"
         },
         {
           "id": "ws-22-sec-c-q15",
           "order": 15,
-          "prompt": "Tom’s father [gap] (go / swim) everyday. He says swimming [gap] (be) really good to keep fit.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tom’s father [gap] (go / swim) every day. He says swimming [gap] (be) really good to keep fit.",
+          "acceptedAnswers": [
+            "goes swimming / is"
+          ],
+          "explanation": "go + -ing for activities; present simple"
         },
         {
           "id": "ws-22-sec-c-q16",
           "order": 16,
           "prompt": "Everybody [gap] (know) him as an honest man since he [gap] (start / live) here.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has known / started living|started to live"
+          ],
+          "explanation": "present perfect + since; start + -ing/to"
         },
         {
           "id": "ws-22-sec-c-q17",
           "order": 17,
-          "prompt": "A: What is the crowd? [gap] B: A little boy [gap] (kidnap) by two men and the police [gap] (look) for them along the river since then.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: What is the crowd? B: A little boy [gap] (kidnap) by two men and the police [gap] (look) for them along the river since then.",
+          "acceptedAnswers": [
+            "has been kidnapped|was kidnapped / have been looking"
+          ],
+          "explanation": "passive; present perfect continuous with since"
         },
         {
           "id": "ws-22-sec-c-q18",
           "order": 18,
-          "prompt": "All dinner [gap] (eat) before they [gap] (finish) the conersation.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "All the dinner [gap] (eat) before they [gap] (finish) the conversation.",
+          "acceptedAnswers": [
+            "had been eaten / finished"
+          ],
+          "explanation": "past perfect passive before past simple"
         },
         {
           "id": "ws-22-sec-c-q19",
           "order": 19,
           "prompt": "As it [gap] (rain), a car accident [gap] (happen) on Main Street.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was raining / happened"
+          ],
+          "explanation": "past continuous background + past simple"
         },
         {
           "id": "ws-22-sec-c-q20",
           "order": 20,
           "prompt": "The bills [gap] (pay) yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "haven't been paid"
+          ],
+          "explanation": "negative present perfect passive with yet"
         },
         {
           "id": "ws-22-sec-c-q21",
           "order": 21,
-          "prompt": "The tourits [gap] (wait) for hours at the airport by the time their plane [gap] (take off).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The tourists [gap] (wait) for hours at the airport by the time their plane [gap] (take off).",
+          "acceptedAnswers": [
+            "had been waiting|had waited / took off"
+          ],
+          "explanation": "by the time: past perfect (continuous)"
         },
         {
           "id": "ws-22-sec-c-q22",
           "order": 22,
           "prompt": "Most of the houses [gap] (pull) down last month, but they [gap] (not / touch) the old shop at the corner yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were pulled / haven't touched"
+          ],
+          "explanation": "last month: past passive; yet: present perfect"
         },
         {
           "id": "ws-22-sec-c-q23",
           "order": 23,
           "prompt": "He [gap] (be) in different countries before he [gap] (arrest) by the police.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "had been / was arrested"
+          ],
+          "explanation": "past perfect before past passive"
         }
       ]
     },
@@ -382,67 +584,157 @@
       "type": "verb_conjugation",
       "questions": [
         {
-          "id": "ws-22-sec-d-q01",
+          "id": "ws-22-sec-d-q01a",
           "order": 1,
-          "prompt": "I [gap] (never / eat) Chinese food. I [gap] (be) very excited now because tomorrow night we [gap] (go) to a Chinese Restaurant. My nother [gap] (phone) the restaurant now for reservations.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I [gap] (never / eat) Chinese food.",
+          "acceptedAnswers": [
+            "have never eaten"
+          ],
+          "explanation": "experience: present perfect with never"
+        },
+        {
+          "id": "ws-22-sec-d-q01b",
+          "order": 1,
+          "prompt": "I [gap] (be) very excited now because tomorrow night we [gap] (go) to a Chinese restaurant.",
+          "acceptedAnswers": [
+            "am / are going|are going to go"
+          ],
+          "explanation": "present continuous for arranged future"
+        },
+        {
+          "id": "ws-22-sec-d-q01c",
+          "order": 1,
+          "prompt": "My mother [gap] (phone) the restaurant now for reservations.",
+          "acceptedAnswers": [
+            "is phoning"
+          ],
+          "explanation": "present continuous: now"
         },
         {
           "id": "ws-22-sec-d-q02",
           "order": 2,
           "prompt": "David [gap] (drive) a taxi [gap] (earn) money.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "drives / to earn"
+          ],
+          "explanation": "present simple; to-infinitive of purpose"
         },
         {
           "id": "ws-22-sec-d-q03",
           "order": 3,
           "prompt": "A: Would you like [gap] (listen) to music? B: Yes, of course. I [gap] (want / hear) Sting’s latest cassette.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "to listen / want to hear"
+          ],
+          "explanation": "would like / want + to-infinitive"
         },
         {
           "id": "ws-22-sec-d-q04",
           "order": 4,
           "prompt": "Alice [gap] (be) upset last night because her father [gap] (not / let) her [gap] (give) a party at home.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was / didn't let / give"
+          ],
+          "explanation": "let + object + bare infinitive"
         },
         {
           "id": "ws-22-sec-d-q05",
           "order": 5,
           "prompt": "Tarkan [gap] (give) a concert next month.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "is giving|is going to give|will give"
+          ],
+          "explanation": "planned future arrangement"
         },
         {
           "id": "ws-22-sec-d-q06",
           "order": 6,
-          "prompt": "A: Mmm. The cake [gap] (smell) delicious. B: Yes, my mother [gap] (just / make) it. We [gap] [gap] (like / have) tea at 5:00 pm everyday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: Mmm. The cake [gap] (smell) delicious. B: Yes, my mother [gap] (just / make) it. We [gap] (like / have) tea at 5:00 pm every day.",
+          "acceptedAnswers": [
+            "smells / has just made / like having|like to have"
+          ],
+          "explanation": "stative verb; just + present perfect; like + -ing"
         },
         {
-          "id": "ws-22-sec-d-q07",
+          "id": "ws-22-sec-d-q07a",
           "order": 7,
-          "prompt": "A: [gap] your uncle [gap] (work) that compamy? B: Yes, he [gap] (work) here since he [gap] (come) back from the USA. He [gap] (stay) there for three years and [gap] (work) as an accountant. But now, he [gap] [gap] (want / change) his job. He [gap] (look for) another job at present. He [gap] (have) a job interview next Tuesday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: [gap] your uncle [gap] (work) for that company?",
+          "acceptedAnswers": [
+            "Does / work"
+          ],
+          "explanation": "present simple question"
+        },
+        {
+          "id": "ws-22-sec-d-q07b",
+          "order": 7,
+          "prompt": "B: Yes, he [gap] (work) here since he [gap] (come) back from the USA.",
+          "acceptedAnswers": [
+            "has worked|has been working / came"
+          ],
+          "explanation": "present perfect + since + past simple"
+        },
+        {
+          "id": "ws-22-sec-d-q07c",
+          "order": 7,
+          "prompt": "He [gap] (stay) there for three years and [gap] (work) as an accountant.",
+          "acceptedAnswers": [
+            "stayed|had stayed / worked|had worked"
+          ],
+          "explanation": "finished past period: past simple"
+        },
+        {
+          "id": "ws-22-sec-d-q07d",
+          "order": 7,
+          "prompt": "But now, he [gap] (want / change) his job.",
+          "acceptedAnswers": [
+            "wants to change"
+          ],
+          "explanation": "want + to-infinitive"
+        },
+        {
+          "id": "ws-22-sec-d-q07e",
+          "order": 7,
+          "prompt": "He [gap] (look for) another job at present.",
+          "acceptedAnswers": [
+            "is looking for"
+          ],
+          "explanation": "at present: present continuous"
+        },
+        {
+          "id": "ws-22-sec-d-q07f",
+          "order": 7,
+          "prompt": "He [gap] (have) a job interview next Tuesday.",
+          "acceptedAnswers": [
+            "is having|has|will have|is going to have"
+          ],
+          "explanation": "future arrangement: present continuous"
         },
         {
           "id": "ws-22-sec-d-q08",
           "order": 8,
           "prompt": "How long [gap] you [gap] (know) that teacher [gap] (wear) a white shirt and a brown jacket?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "have / known / wearing"
+          ],
+          "explanation": "how long + present perfect; reduced relative -ing"
         },
         {
-          "id": "ws-22-sec-d-q09",
+          "id": "ws-22-sec-d-q09a",
           "order": 9,
-          "prompt": "A: Where [gap] (be) your friends? B: They [gap] (sit) at the café [gap] (wait) for us.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A: Where [gap] (be) your friends?",
+          "acceptedAnswers": [
+            "are"
+          ],
+          "explanation": "present simple of be"
+        },
+        {
+          "id": "ws-22-sec-d-q09b",
+          "order": 9,
+          "prompt": "B: They [gap] (sit) at the café [gap] (wait) for us.",
+          "acceptedAnswers": [
+            "are sitting / waiting"
+          ],
+          "explanation": "present continuous; participle clause"
         }
       ]
     },
@@ -455,135 +747,173 @@
         {
           "id": "ws-22-sec-e-q01",
           "order": 1,
-          "prompt": "These magazines [gap] (read) by 1.000.000 people every week.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "These magazines [gap] (read) by 1,000,000 people every week.",
+          "acceptedAnswers": [
+            "are read"
+          ],
+          "explanation": "present simple passive"
         },
         {
           "id": "ws-22-sec-e-q02",
           "order": 2,
           "prompt": "Where [gap] the cars [gap] (sell) in this town?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "are / sold"
+          ],
+          "explanation": "present simple passive question"
         },
         {
           "id": "ws-22-sec-e-q03",
           "order": 3,
           "prompt": "The trees [gap] (must / cut) once a day.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "must be cut"
+          ],
+          "explanation": "modal passive"
         },
         {
           "id": "ws-22-sec-e-q04",
           "order": 4,
           "prompt": "Wait a minute! I [gap] (have) a bath.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "am having"
+          ],
+          "explanation": "present continuous: now"
         },
         {
           "id": "ws-22-sec-e-q05",
           "order": 5,
           "prompt": "This carpet [gap] (already / clean).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has already been cleaned"
+          ],
+          "explanation": "present perfect passive with already"
         },
         {
           "id": "ws-22-sec-e-q06",
           "order": 6,
           "prompt": "Nobody [gap] (eat) breakfast yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has eaten"
+          ],
+          "explanation": "present perfect with yet"
         },
         {
           "id": "ws-22-sec-e-q07",
           "order": 7,
           "prompt": "[gap] the car [gap] (check) by the mechanic yesterday?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Was / checked"
+          ],
+          "explanation": "past simple passive question"
         },
         {
           "id": "ws-22-sec-e-q08",
           "order": 8,
           "prompt": "The helicopter [gap] (fly) to Izmir when it suddenly [gap] (crash) last month.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was flying / crashed"
+          ],
+          "explanation": "past continuous interrupted by past simple"
         },
         {
           "id": "ws-22-sec-e-q09",
           "order": 9,
           "prompt": "How many books [gap] (sell) so far this month?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "have been sold"
+          ],
+          "explanation": "so far: present perfect passive"
         },
         {
           "id": "ws-22-sec-e-q10",
           "order": 10,
           "prompt": "Your watch [gap] (mend) at the moment.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "is being mended"
+          ],
+          "explanation": "present continuous passive"
         },
         {
           "id": "ws-22-sec-e-q11",
           "order": 11,
-          "prompt": "While Mr. Jackson [gap] (cross) the road yesterday, she [gap] (hit) by a truck.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "While Mrs. Jackson [gap] (cross) the road yesterday, she [gap] (hit) by a truck.",
+          "acceptedAnswers": [
+            "was crossing / was hit"
+          ],
+          "explanation": "past continuous + past simple passive"
         },
         {
           "id": "ws-22-sec-e-q12",
           "order": 12,
           "prompt": "A new school [gap] (build) next to the bank next month.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "will be built|is going to be built|is being built"
+          ],
+          "explanation": "future passive"
         },
         {
           "id": "ws-22-sec-e-q13",
           "order": 13,
           "prompt": "Mike [gap] (live) in the same place since he [gap] (come) to London.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "has lived|has been living / came"
+          ],
+          "explanation": "present perfect + since + past simple"
         },
         {
           "id": "ws-22-sec-e-q14",
           "order": 14,
           "prompt": "The house [gap] (paint) when it began to rain yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was being painted"
+          ],
+          "explanation": "past continuous passive"
         },
         {
           "id": "ws-22-sec-e-q15",
           "order": 15,
           "prompt": "His shirt looks dirty. I think it [gap] (not / clean) since last Tuesday.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "hasn't been cleaned"
+          ],
+          "explanation": "present perfect passive with since"
         },
         {
           "id": "ws-22-sec-e-q16",
           "order": 16,
           "prompt": "Sally [gap] (not / be) at home now. She [gap] (just / go) out.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "isn't / has just gone"
+          ],
+          "explanation": "present simple; present perfect with just"
         },
         {
           "id": "ws-22-sec-e-q17",
           "order": 17,
           "prompt": "If you took these pills, you [gap] (get) well.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would get"
+          ],
+          "explanation": "second conditional"
         },
         {
           "id": "ws-22-sec-e-q18",
           "order": 18,
           "prompt": "[gap] (Can / he / play) football when he was ten years old?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "Could he play"
+          ],
+          "explanation": "past ability: could"
         },
         {
           "id": "ws-22-sec-e-q19",
           "order": 19,
           "prompt": "This hospital [gap] (build) in 1980.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "was built"
+          ],
+          "explanation": "past simple passive"
         }
       ]
     }

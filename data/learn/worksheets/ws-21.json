@@ -12,449 +12,145 @@
     {
       "id": "ws-21-sec-a",
       "sectionKey": "A",
-      "instruction": "Change the tense of the following:",
-      "type": "inline_gap_fill",
+      "instruction": "Change the tense of the following sentences using the given time expressions. (Example: They often play cards. → a) When I saw them, they were playing cards. b) for two hours → They have been playing cards for two hours.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-21-sec-a-q01",
-          "order": 1,
-          "prompt": "They often play cards. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) When",
-            "b) for",
-            "c) While",
-            "d) three"
-          ]
-        },
-        {
-          "id": "ws-21-sec-a-q02",
-          "order": 2,
-          "prompt": "John copies two cassettes everyday. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) since",
-            "b) at",
-            "c) next",
-            "d) already"
-          ]
-        },
-        {
-          "id": "ws-21-sec-a-q03",
-          "order": 3,
-          "prompt": "Kathy is writing a letter now. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) every",
-            "b) while",
-            "c) when",
-            "d) just"
-          ]
-        },
-        {
-          "id": "ws-21-sec-a-q04",
-          "order": 4,
-          "prompt": "He usually reads magazines. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) for",
-            "b) when",
-            "c) every",
-            "d) now"
-          ]
-        },
-        {
-          "id": "ws-21-sec-a-q05",
-          "order": 5,
-          "prompt": "The children are doing their homework. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) yet",
-            "b) just",
-            "c) every",
-            "d) when"
-          ]
-        }
+        { "id": "ws-21-sec-a-q01", "order": 1, "prompt": "They often play cards. — c) While we were studying maths,", "acceptedAnswers": ["While we were studying maths, they were playing cards.", "They were playing cards while we were studying maths."], "explanation": "while + past continuous → past continuous" },
+        { "id": "ws-21-sec-a-q02", "order": 2, "prompt": "They often play cards. — d) three hours ago", "acceptedAnswers": ["They played cards three hours ago."], "explanation": "ago → past simple" },
+        { "id": "ws-21-sec-a-q03", "order": 3, "prompt": "They often play cards. — e) on Saturday nights", "acceptedAnswers": ["They play cards on Saturday nights.", "On Saturday nights they play cards."], "explanation": "routine → present simple" },
+        { "id": "ws-21-sec-a-q04", "order": 4, "prompt": "They often play cards. — f) at the moment", "acceptedAnswers": ["They are playing cards at the moment.", "At the moment they are playing cards."], "explanation": "at the moment → present continuous" },
+        { "id": "ws-21-sec-a-q05", "order": 5, "prompt": "John copies two cassettes every day. — a) since 8 o’clock", "acceptedAnswers": ["John has copied two cassettes since 8 o’clock.", "John has been copying cassettes since 8 o’clock.", "John has been copying two cassettes since 8 o’clock."], "explanation": "since → present perfect (continuous)" },
+        { "id": "ws-21-sec-a-q06", "order": 6, "prompt": "John copies two cassettes every day. — b) at present", "acceptedAnswers": ["John is copying two cassettes at present.", "At present John is copying two cassettes."], "explanation": "at present → present continuous" },
+        { "id": "ws-21-sec-a-q07", "order": 7, "prompt": "John copies two cassettes every day. — c) next Saturday", "acceptedAnswers": ["John is going to copy two cassettes next Saturday.", "John will copy two cassettes next Saturday.", "John is copying two cassettes next Saturday."], "explanation": "next Saturday → future form" },
+        { "id": "ws-21-sec-a-q08", "order": 8, "prompt": "John copies two cassettes every day. — d) already", "acceptedAnswers": ["John has already copied two cassettes."], "explanation": "already → present perfect" },
+        { "id": "ws-21-sec-a-q09", "order": 9, "prompt": "John copies two cassettes every day. — e) yesterday", "acceptedAnswers": ["John copied two cassettes yesterday.", "Yesterday John copied two cassettes."], "explanation": "yesterday → past simple" },
+        { "id": "ws-21-sec-a-q10", "order": 10, "prompt": "Kathy is writing a letter now. — a) every two weeks", "acceptedAnswers": ["Kathy writes a letter every two weeks."], "explanation": "routine → present simple" },
+        { "id": "ws-21-sec-a-q11", "order": 11, "prompt": "Kathy is writing a letter now. — b) while we were playing", "acceptedAnswers": ["Kathy was writing a letter while we were playing.", "While we were playing, Kathy was writing a letter."], "explanation": "while + past continuous → past continuous" },
+        { "id": "ws-21-sec-a-q12", "order": 12, "prompt": "Kathy is writing a letter now. — c) when she is alone", "acceptedAnswers": ["Kathy writes a letter when she is alone.", "When she is alone, Kathy writes a letter.", "Kathy writes letters when she is alone."], "explanation": "general habit → present simple" },
+        { "id": "ws-21-sec-a-q13", "order": 13, "prompt": "Kathy is writing a letter now. — d) just", "acceptedAnswers": ["Kathy has just written a letter."], "explanation": "just → present perfect" },
+        { "id": "ws-21-sec-a-q14", "order": 14, "prompt": "Kathy is writing a letter now. — e) next month", "acceptedAnswers": ["Kathy is going to write a letter next month.", "Kathy will write a letter next month."], "explanation": "next month → future form" },
+        { "id": "ws-21-sec-a-q15", "order": 15, "prompt": "Kathy is writing a letter now. — f) last week", "acceptedAnswers": ["Kathy wrote a letter last week.", "Last week Kathy wrote a letter."], "explanation": "last week → past simple" },
+        { "id": "ws-21-sec-a-q16", "order": 16, "prompt": "He usually reads magazines. — a) for an hour", "acceptedAnswers": ["He has been reading magazines for an hour.", "He has read magazines for an hour."], "explanation": "for + period → present perfect continuous" },
+        { "id": "ws-21-sec-a-q17", "order": 17, "prompt": "He usually reads magazines. — b) when I saw him", "acceptedAnswers": ["He was reading magazines when I saw him.", "When I saw him, he was reading magazines."], "explanation": "when + past simple → past continuous" },
+        { "id": "ws-21-sec-a-q18", "order": 18, "prompt": "He usually reads magazines. — c) every morning", "acceptedAnswers": ["He reads magazines every morning.", "Every morning he reads magazines."], "explanation": "routine → present simple" },
+        { "id": "ws-21-sec-a-q19", "order": 19, "prompt": "He usually reads magazines. — d) now", "acceptedAnswers": ["He is reading magazines now.", "Now he is reading magazines."], "explanation": "now → present continuous" },
+        { "id": "ws-21-sec-a-q20", "order": 20, "prompt": "He usually reads magazines. — e) yet", "acceptedAnswers": ["He hasn’t read magazines yet.", "He hasn’t read the magazines yet.", "Has he read the magazines yet?"], "explanation": "yet → present perfect (negative / question)" },
+        { "id": "ws-21-sec-a-q21", "order": 21, "prompt": "The children are doing their homework. — a) yet", "acceptedAnswers": ["The children haven’t done their homework yet.", "Have the children done their homework yet?"], "explanation": "yet → present perfect (negative / question)" },
+        { "id": "ws-21-sec-a-q22", "order": 22, "prompt": "The children are doing their homework. — b) just", "acceptedAnswers": ["The children have just done their homework."], "explanation": "just → present perfect" },
+        { "id": "ws-21-sec-a-q23", "order": 23, "prompt": "The children are doing their homework. — c) every evening", "acceptedAnswers": ["The children do their homework every evening.", "Every evening the children do their homework."], "explanation": "routine → present simple" },
+        { "id": "ws-21-sec-a-q24", "order": 24, "prompt": "The children are doing their homework. — d) when she came", "acceptedAnswers": ["The children were doing their homework when she came.", "When she came, the children were doing their homework."], "explanation": "when + past simple → past continuous" }
       ]
     },
     {
       "id": "ws-21-sec-b",
       "sectionKey": "B",
-      "instruction": "Read the passage and ask questions:",
+      "instruction": "Read the passage and ask questions for the given answers:",
       "type": "question_formation",
+      "contextText": "Janet Johnson is a film actress. She made several animal films. She is talking about an elephant called HEKIMA.\n“I met Hekima when I went to Africa seven years ago. We were in Tanzania and we were making a film about elephants. When we arrived, we saw three young elephants. They were playing together. Hekima was small, friendly and intelligent. We called her Hekima because it means ‘wisdom’. Hekima was a great actress, and the film made her famous. After we finished the film we left Africa. I thought I’d never see Hekima again. But she left Africa, too. She came to a zoo in the USA. I was working in New York when I heard about that. She was happy when she saw me. She was playing happily. I think she remembered me.”",
       "questions": [
-        {
-          "id": "ws-21-sec-b-q01",
-          "order": 1,
-          "prompt": "[gap] ? Janet went to Africa seven years ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-b-q02",
-          "order": 2,
-          "prompt": "[gap] ? Janet was making a film in Tanzania.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-b-q03",
-          "order": 3,
-          "prompt": "[gap] ? The elephants were playing when they arrived.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-b-q04",
-          "order": 4,
-          "prompt": "[gap] ? Because Hekima was an intelligent elephant.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-b-q05",
-          "order": 5,
-          "prompt": "[gap] ? It means “wisdom”.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-b-q06",
-          "order": 6,
-          "prompt": "[gap] ? Hekima was in a zoo in the USA while Janet was working in New York.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-b-q07",
-          "order": 7,
-          "prompt": "[gap] ? Hekima was playing when Janet went to see her.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-21-sec-b-q01", "order": 1, "prompt": "Janet went to Africa seven years ago.", "acceptedAnswers": ["When did Janet go to Africa?"], "explanation": "past simple question: When did + subject + verb" },
+        { "id": "ws-21-sec-b-q02", "order": 2, "prompt": "Janet was making a film in Tanzania.", "acceptedAnswers": ["What was Janet making in Tanzania?", "What was Janet doing in Tanzania?", "Where was Janet making a film?"], "explanation": "past continuous question: wh- + was + subject + -ing" },
+        { "id": "ws-21-sec-b-q03", "order": 3, "prompt": "The elephants were playing when they arrived.", "acceptedAnswers": ["What were the elephants doing when they arrived?"], "explanation": "past continuous question: wh- + were + subject + -ing" },
+        { "id": "ws-21-sec-b-q04", "order": 4, "prompt": "Because Hekima was an intelligent elephant.", "acceptedAnswers": ["Why did they call her Hekima?", "Why did they call the elephant Hekima?", "Why was she called Hekima?", "Why did Janet call her Hekima?"], "explanation": "Why did + subject + verb?" },
+        { "id": "ws-21-sec-b-q05", "order": 5, "prompt": "It means “wisdom”.", "acceptedAnswers": ["What does Hekima mean?"], "explanation": "present simple question: What does + subject + mean?" },
+        { "id": "ws-21-sec-b-q06", "order": 6, "prompt": "Hekima was in a zoo in the USA while Janet was working in New York.", "acceptedAnswers": ["Where was Hekima while Janet was working in New York?"], "explanation": "Where was + subject…?" },
+        { "id": "ws-21-sec-b-q07", "order": 7, "prompt": "Hekima was playing when Janet went to see her.", "acceptedAnswers": ["What was Hekima doing when Janet went to see her?"], "explanation": "past continuous question: What was + subject + doing?" }
       ]
     },
     {
       "id": "ws-21-sec-c",
       "sectionKey": "C",
-      "instruction": "Match the sentences using WHILE and PAST CONTINUOUS / PAST SIMPLE:",
-      "type": "matching",
+      "instruction": "Match the sentences in A and B using WHILE and PAST CONTINUOUS / PAST SIMPLE: (Example: I burnt my finger while I was cooking the dinner.)",
+      "type": "sentence_combine",
+      "contextText": "A:\n1. I (burn) my finger.\n2. I (break) a cup.\n3. My car (break down).\n4. I (see) a shark.\n5. My clothes (get) dirty.\n6. I (break) a tooth.\n\nB:\nI (drive) to work.\nI (eat) a nut.\nI (cook) the dinner.\nI (do) the washing up.\nI (swim) in the sea.\nI (clean) my room.",
       "questions": [
-        {
-          "id": "ws-21-sec-c-q01",
-          "order": 1,
-          "prompt": "I (burn) my finger.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q02",
-          "order": 2,
-          "prompt": "I (break) a cup.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q03",
-          "order": 3,
-          "prompt": "My car (break down).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q04",
-          "order": 4,
-          "prompt": "I (see) a shark.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q05",
-          "order": 5,
-          "prompt": "My clothes (get) dirty.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q06",
-          "order": 6,
-          "prompt": "I (break) a tooth.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q01",
-          "order": 1,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q02",
-          "order": 2,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q03",
-          "order": 3,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q04",
-          "order": 4,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q05",
-          "order": 5,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-c-q06",
-          "order": 6,
-          "prompt": " [gap] B [gap] I (drive) to work. I (eat) a nut. I (cook) the dinner. I (do) the washing up. I (swim) in the sea. I (clean) my room. [gap] I burnt my finger while I was cooking the dinner [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-21-sec-c-q02", "order": 2, "prompt": "I (break) a cup.", "acceptedAnswers": ["I broke a cup while I was doing the washing up.", "While I was doing the washing up, I broke a cup."], "explanation": "past simple (short action) + while + past continuous" },
+        { "id": "ws-21-sec-c-q03", "order": 3, "prompt": "My car (break down).", "acceptedAnswers": ["My car broke down while I was driving to work.", "While I was driving to work, my car broke down."], "explanation": "past simple (short action) + while + past continuous" },
+        { "id": "ws-21-sec-c-q04", "order": 4, "prompt": "I (see) a shark.", "acceptedAnswers": ["I saw a shark while I was swimming in the sea.", "While I was swimming in the sea, I saw a shark."], "explanation": "past simple (short action) + while + past continuous" },
+        { "id": "ws-21-sec-c-q05", "order": 5, "prompt": "My clothes (get) dirty.", "acceptedAnswers": ["My clothes got dirty while I was cleaning my room.", "While I was cleaning my room, my clothes got dirty."], "explanation": "past simple (short action) + while + past continuous" },
+        { "id": "ws-21-sec-c-q06", "order": 6, "prompt": "I (break) a tooth.", "acceptedAnswers": ["I broke a tooth while I was eating a nut.", "While I was eating a nut, I broke a tooth."], "explanation": "past simple (short action) + while + past continuous" }
       ]
     },
     {
       "id": "ws-21-sec-d",
       "sectionKey": "D",
       "instruction": "Use the correct form of the verbs:",
-      "type": "inline_gap_fill",
+      "type": "passage_gap_fill",
       "questions": [
-        {
-          "id": "ws-21-sec-d-q01",
-          "order": 1,
-          "prompt": "The Bartons [gap] (go) to the mountains last weekend. While they [gap] (have) lunch, a man [gap] (fall) down the tree. They [gap] (take) him to the hospital in their car. They [gap] (visit) him twice in the hospital since that time. The man [gap] (be) better now and the doctors say he [gap] (leave) the hospital soon. When The Bartons [gap] (visit) him yesterday, they [gap] (take) him a bunch of flowers. The man [gap] (be) very happy and [gap] (thank) them. Mr. Barton now",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) the"
-          ]
-        },
-        {
-          "id": "ws-21-sec-d-q02",
-          "order": 2,
-          "prompt": "I [gap] (finish) school last month and I [gap] (not / have) a job yet, but fortunately I [gap] (have) a job interview tomorrow. I usually [gap] (get) up early so often [gap] (sleep) at around half past ten. I [gap] (be) a little excited last night and because of this I [gap] [gap] (want / watch) TV before I [gap] (go) to bed. There [gap] (be) a film about birds on TV and while I [gap] (sit) on the sofa, I [gap] (fall) asleep [gap] you [gap] (have) a terrible dream? Well, I [gap] (have) one last night. In my dream I [gap] (be) a parrot and my apartment flat [gap] (be) on the tenth floor of a big building. A big cat [gap] (want / catch) me so I [gap] (begin / fly). I [gap] (have) nowhere [gap] (go) because the door [gap] (be) locked. Suddenly the cat [gap] (attack) me. It nearly [gap] (kill) me. While I [gap] (shout) in pain,a voice [gap] (say), “ [gap] you [gap] (see) my books? I can’t find them.” When I [gap] (open) my eyes, I [gap] (feel) very happy [gap] (see) my sister. Of course she [gap] (not /",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) the"
-          ]
-        }
+        { "id": "ws-21-sec-d-q01", "order": 1, "prompt": "The Bartons [gap] (go) to the mountains last weekend.", "acceptedAnswers": ["went"], "explanation": "last weekend → past simple" },
+        { "id": "ws-21-sec-d-q02", "order": 2, "prompt": "While they [gap] (have) lunch, a man [gap] (fall) down the tree.", "acceptedAnswers": ["were having / fell"], "explanation": "while + past continuous; interrupting action → past simple" },
+        { "id": "ws-21-sec-d-q03", "order": 3, "prompt": "They [gap] (take) him to the hospital in their car.", "acceptedAnswers": ["took"], "explanation": "past simple: finished past action" },
+        { "id": "ws-21-sec-d-q04", "order": 4, "prompt": "They [gap] (visit) him twice in the hospital since that time.", "acceptedAnswers": ["have visited"], "explanation": "since → present perfect" },
+        { "id": "ws-21-sec-d-q05", "order": 5, "prompt": "The man [gap] (be) better now and the doctors say he [gap] (leave) the hospital soon.", "acceptedAnswers": ["is / will leave|is going to leave|is leaving"], "explanation": "now → present; soon → future" },
+        { "id": "ws-21-sec-d-q06", "order": 6, "prompt": "When the Bartons [gap] (visit) him yesterday, they [gap] (take) him a bunch of flowers.", "acceptedAnswers": ["visited / took"], "explanation": "yesterday → past simple" },
+        { "id": "ws-21-sec-d-q07", "order": 7, "prompt": "The man [gap] (be) very happy and [gap] (thank) them.", "acceptedAnswers": ["was / thanked"], "explanation": "past simple: finished past actions" },
+        { "id": "ws-21-sec-d-q08", "order": 8, "prompt": "Mr. Barton now says he [gap] (spend) the next weekend at the seaside and he [gap] (hope) there [gap] (not / be) any more accidents.", "acceptedAnswers": ["is going to spend|will spend|is spending / hopes / won't be|aren't going to be"], "explanation": "plan → going to; hope + will (future)" },
+        { "id": "ws-21-sec-d-q09", "order": 9, "prompt": "I [gap] (finish) school last month and I [gap] (not / have) a job yet, but fortunately I [gap] (have) a job interview tomorrow.", "acceptedAnswers": ["finished / haven't got|don't have|haven't had / have|am having|have got"], "explanation": "last month → past; yet → present (perfect); tomorrow → arrangement" },
+        { "id": "ws-21-sec-d-q10", "order": 10, "prompt": "I usually [gap] (get) up early so I often [gap] (sleep) at around half past ten.", "acceptedAnswers": ["get / sleep|go to sleep"], "explanation": "usually / often → present simple" },
+        { "id": "ws-21-sec-d-q11", "order": 11, "prompt": "I [gap] (be) a little excited last night and because of this I [gap] (want / watch) TV before I [gap] (go) to bed.", "acceptedAnswers": ["was / wanted to watch / went"], "explanation": "last night → past simple; want + to-infinitive" },
+        { "id": "ws-21-sec-d-q12", "order": 12, "prompt": "There [gap] (be) a film about birds on TV and while I [gap] (sit) on the sofa, I [gap] (fall) asleep.", "acceptedAnswers": ["was / was sitting / fell"], "explanation": "while + past continuous; interrupting action → past simple" },
+        { "id": "ws-21-sec-d-q13", "order": 13, "prompt": "[gap] you [gap] (have) a terrible dream?", "acceptedAnswers": ["Have / had|ever had", "Did / have|ever have"], "explanation": "present perfect question: life experience" },
+        { "id": "ws-21-sec-d-q14", "order": 14, "prompt": "Well, I [gap] (have) one last night.", "acceptedAnswers": ["had"], "explanation": "last night → past simple" },
+        { "id": "ws-21-sec-d-q15", "order": 15, "prompt": "In my dream I [gap] (be) a parrot and my flat [gap] (be) on the tenth floor of a big building.", "acceptedAnswers": ["was / was"], "explanation": "past of be: was" },
+        { "id": "ws-21-sec-d-q16", "order": 16, "prompt": "A big cat [gap] (want / catch) me so I [gap] (begin / fly).", "acceptedAnswers": ["wanted to catch / began to fly|began flying"], "explanation": "want + to-infinitive; begin + to-infinitive / -ing" },
+        { "id": "ws-21-sec-d-q17", "order": 17, "prompt": "I [gap] (have) nowhere [gap] (go) because the door [gap] (be) locked.", "acceptedAnswers": ["had / to go / was"], "explanation": "nowhere + to-infinitive; past simple" },
+        { "id": "ws-21-sec-d-q18", "order": 18, "prompt": "Suddenly the cat [gap] (attack) me.", "acceptedAnswers": ["attacked"], "explanation": "past simple: sudden action" },
+        { "id": "ws-21-sec-d-q19", "order": 19, "prompt": "It nearly [gap] (kill) me.", "acceptedAnswers": ["killed"], "explanation": "past simple" },
+        { "id": "ws-21-sec-d-q20", "order": 20, "prompt": "While I [gap] (shout) in pain, a voice [gap] (say), “[gap] you [gap] (see) my books? I can’t find them.”", "acceptedAnswers": ["was shouting / said / Have / seen", "was shouting / said / Did / see"], "explanation": "while + past continuous; present perfect question" },
+        { "id": "ws-21-sec-d-q21", "order": 21, "prompt": "When I [gap] (open) my eyes, I [gap] (feel) very happy [gap] (see) my sister.", "acceptedAnswers": ["opened / felt / to see"], "explanation": "past simple; happy + to-infinitive" },
+        { "id": "ws-21-sec-d-q22", "order": 22, "prompt": "Of course she [gap] (not / understand) the reason but I [gap] (give) her a big kiss.", "acceptedAnswers": ["didn't understand / gave"], "explanation": "past simple" }
       ]
     },
     {
       "id": "ws-21-sec-e",
       "sectionKey": "E",
-      "instruction": "REWRITE or COMBINE the following:",
-      "type": "sentence_rewrite",
+      "instruction": "REWRITE or COMBINE the following using the word in brackets:",
+      "type": "sentence_combine",
       "questions": [
-        {
-          "id": "ws-21-sec-e-q01",
-          "order": 1,
-          "prompt": "It rained this morning. The children played in the garden. (while)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q02",
-          "order": 2,
-          "prompt": "What did you do? The doorbell rang. (when)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q03",
-          "order": 3,
-          "prompt": "I walked along Main Street. I realized a man behind me. (when)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q04",
-          "order": 4,
-          "prompt": "I started to play football when I was five. (since)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q05",
-          "order": 5,
-          "prompt": "The windows are dirty. I last cleaned them last month. (since)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q06",
-          "order": 6,
-          "prompt": "He last shaved a week ago. (for)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q07",
-          "order": 7,
-          "prompt": "Maybe the train leaves at six. I don’t catch it. (If)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q08",
-          "order": 8,
-          "prompt": "We slept last night. The robber stole all the jewellery. (as)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q09",
-          "order": 9,
-          "prompt": "Tom prefers learning French to learning Japanese. (would rather)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q10",
-          "order": 10,
-          "prompt": "Angela looks after many children. It keeps her busy. (Gerund)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q11",
-          "order": 11,
-          "prompt": "He went to London. He wanted to work there. (to)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q12",
-          "order": 12,
-          "prompt": "They had a picnic. The forest caught fire. (as)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q13",
-          "order": 13,
-          "prompt": "No sound could be heard. The walls were very thick. (because)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q14",
-          "order": 14,
-          "prompt": "My bed is terribly hard. I can’t sleep well. (so [gap] that)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q15",
-          "order": 15,
-          "prompt": "The shopkeeper doesn’t let the children put their fingers on the glass while they are looking at the sweets. (be allowed to)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q16",
-          "order": 16,
-          "prompt": "My mother would rather cook than iron. (prefer)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q17",
-          "order": 17,
-          "prompt": "We bought this house in 1990. (since)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q18",
-          "order": 18,
-          "prompt": "He may come late. He will call us. (If)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q19",
-          "order": 19,
-          "prompt": "Paris isn’t as crowded as New York. (comparison)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-e-q20",
-          "order": 20,
-          "prompt": "My father would rather read newspaper than watch TV. (prefer)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-21-sec-e-q01", "order": 1, "prompt": "It rained this morning. The children played in the garden. (while)", "acceptedAnswers": ["While it was raining this morning, the children were playing in the garden.", "The children were playing in the garden while it was raining this morning.", "The children played in the garden while it was raining this morning."], "explanation": "while + past continuous" },
+        { "id": "ws-21-sec-e-q02", "order": 2, "prompt": "What did you do? The doorbell rang. (when)", "acceptedAnswers": ["What were you doing when the doorbell rang?", "What did you do when the doorbell rang?"], "explanation": "past continuous interrupted by past simple" },
+        { "id": "ws-21-sec-e-q03", "order": 3, "prompt": "I walked along Main Street. I realized a man behind me. (when)", "acceptedAnswers": ["I was walking along Main Street when I realized a man behind me.", "When I was walking along Main Street, I realized a man behind me.", "I was walking along Main Street when I realised a man behind me."], "explanation": "past continuous interrupted by past simple" },
+        { "id": "ws-21-sec-e-q04", "order": 4, "prompt": "I started to play football when I was five. (since)", "acceptedAnswers": ["I have played football since I was five.", "I have been playing football since I was five."], "explanation": "since + past point → present perfect (continuous)" },
+        { "id": "ws-21-sec-e-q05", "order": 5, "prompt": "The windows are dirty. I last cleaned them last month. (since)", "acceptedAnswers": ["I haven’t cleaned the windows since last month.", "The windows are dirty. I haven’t cleaned them since last month.", "The windows are dirty because I haven’t cleaned them since last month.", "The windows haven’t been cleaned since last month."], "explanation": "last did… → haven’t done… since" },
+        { "id": "ws-21-sec-e-q06", "order": 6, "prompt": "He last shaved a week ago. (for)", "acceptedAnswers": ["He hasn’t shaved for a week."], "explanation": "last did… ago → haven’t done… for" },
+        { "id": "ws-21-sec-e-q07", "order": 7, "prompt": "Maybe the train leaves at six. I don’t catch it. (If)", "acceptedAnswers": ["If the train leaves at six, I won’t catch it.", "I won’t catch the train if it leaves at six."], "explanation": "first conditional: if + present, will" },
+        { "id": "ws-21-sec-e-q08", "order": 8, "prompt": "We slept last night. The robber stole all the jewellery. (as)", "acceptedAnswers": ["As we were sleeping last night, the robber stole all the jewellery.", "The robber stole all the jewellery as we were sleeping last night.", "As we were sleeping last night, the robber stole all the jewelry."], "explanation": "as (= while) + past continuous" },
+        { "id": "ws-21-sec-e-q09", "order": 9, "prompt": "Tom prefers learning French to learning Japanese. (would rather)", "acceptedAnswers": ["Tom would rather learn French than Japanese.", "Tom would rather learn French than learn Japanese."], "explanation": "would rather + bare infinitive + than" },
+        { "id": "ws-21-sec-e-q10", "order": 10, "prompt": "Angela looks after many children. It keeps her busy. (Gerund)", "acceptedAnswers": ["Looking after many children keeps Angela busy.", "Looking after many children keeps her busy."], "explanation": "gerund as subject" },
+        { "id": "ws-21-sec-e-q11", "order": 11, "prompt": "He went to London. He wanted to work there. (to)", "acceptedAnswers": ["He went to London to work there.", "He went to London to work."], "explanation": "to-infinitive of purpose" },
+        { "id": "ws-21-sec-e-q12", "order": 12, "prompt": "They had a picnic. The forest caught fire. (as)", "acceptedAnswers": ["As they were having a picnic, the forest caught fire.", "The forest caught fire as they were having a picnic."], "explanation": "as (= while) + past continuous" },
+        { "id": "ws-21-sec-e-q13", "order": 13, "prompt": "No sound could be heard. The walls were very thick. (because)", "acceptedAnswers": ["No sound could be heard because the walls were very thick.", "Because the walls were very thick, no sound could be heard."], "explanation": "because + reason clause" },
+        { "id": "ws-21-sec-e-q14", "order": 14, "prompt": "My bed is terribly hard. I can’t sleep well. (so + adjective + that)", "acceptedAnswers": ["My bed is so hard that I can’t sleep well.", "My bed is so terribly hard that I can’t sleep well."], "explanation": "so + adjective + that + result" },
+        { "id": "ws-21-sec-e-q15", "order": 15, "prompt": "The shopkeeper doesn’t let the children put their fingers on the glass while they are looking at the sweets. (be allowed to)", "acceptedAnswers": ["The children aren’t allowed to put their fingers on the glass while they are looking at the sweets."], "explanation": "let somebody do → be allowed to do" },
+        { "id": "ws-21-sec-e-q16", "order": 16, "prompt": "My mother would rather cook than iron. (prefer)", "acceptedAnswers": ["My mother prefers cooking to ironing.", "My mother prefers to cook rather than iron."], "explanation": "prefer + -ing + to + -ing" },
+        { "id": "ws-21-sec-e-q17", "order": 17, "prompt": "We bought this house in 1990. (since)", "acceptedAnswers": ["We have had this house since 1990.", "We have lived in this house since 1990.", "We have owned this house since 1990."], "explanation": "bought → have had… since" },
+        { "id": "ws-21-sec-e-q18", "order": 18, "prompt": "He may come late. He will call us. (If)", "acceptedAnswers": ["If he comes late, he will call us.", "He will call us if he comes late."], "explanation": "first conditional: if + present, will" },
+        { "id": "ws-21-sec-e-q19", "order": 19, "prompt": "Paris isn’t as crowded as New York. (comparison)", "acceptedAnswers": ["New York is more crowded than Paris.", "Paris is less crowded than New York."], "explanation": "not as… as → comparative + than" },
+        { "id": "ws-21-sec-e-q20", "order": 20, "prompt": "My father would rather read the newspaper than watch TV. (prefer)", "acceptedAnswers": ["My father prefers reading the newspaper to watching TV.", "My father prefers reading newspapers to watching TV.", "My father prefers to read the newspaper rather than watch TV."], "explanation": "prefer + -ing + to + -ing" }
       ]
     },
     {
       "id": "ws-21-sec-f",
       "sectionKey": "F",
-      "instruction": "Look at the chart and make sentences as in the examples:",
-      "type": "inline_gap_fill",
+      "instruction": "Look at the chart and make sentences (past simple for yesterday, present continuous for today, will for tomorrow) as in the example: (Example: People traveled on horseback yesterday. People are traveling by plane today. People will travel in spaceships tomorrow.)",
+      "type": "sentence_building",
+      "tableData": {
+        "headers": ["", "YESTERDAY", "TODAY", "TOMORROW"],
+        "rows": [
+          ["people / travel", "on horseback", "by plane", "in spaceships"],
+          ["children / play", "hide-and-seek", "computer games", "with robots"],
+          ["man / explore", "the poles", "the solar system", "galaxies"],
+          ["we / live", "in villages", "in modern cities", "in undersea cities"],
+          ["wives / use", "handmade tools", "electric appliances", "intelligent robots"],
+          ["vehicles / run", "by horses", "by petrol", "by water / electricity"]
+        ]
+      },
       "questions": [
-        {
-          "id": "ws-21-sec-f-q01",
-          "order": 1,
-          "prompt": "People traveled on horseback yesterday. [gap] People are traveling by plane today. People will travel in spaceships tomorrow.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-f-q02",
-          "order": 2,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-f-q03",
-          "order": 3,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-f-q04",
-          "order": 4,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-f-q05",
-          "order": 5,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-21-sec-f-q06",
-          "order": 6,
-          "prompt": "[gap] TOMORROW in spaceships with robots galaxies undersea cities intelligent robots water / electricity",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-21-sec-f-q02", "order": 2, "prompt": "children / play: hide-and-seek (yesterday) · computer games (today) · with robots (tomorrow)", "acceptedAnswers": ["Children played hide-and-seek yesterday. Children are playing computer games today. Children will play with robots tomorrow.", "Children played hide-and-seek yesterday. They are playing computer games today. They will play with robots tomorrow."], "explanation": "yesterday → past; today → present continuous; tomorrow → will" },
+        { "id": "ws-21-sec-f-q03", "order": 3, "prompt": "man / explore: the poles (yesterday) · the solar system (today) · galaxies (tomorrow)", "acceptedAnswers": ["Man explored the poles yesterday. Man is exploring the solar system today. Man will explore galaxies tomorrow.", "Man explored the poles yesterday. Man is exploring the solar system today. Man will explore the galaxies tomorrow."], "explanation": "yesterday → past; today → present continuous; tomorrow → will" },
+        { "id": "ws-21-sec-f-q04", "order": 4, "prompt": "we / live: in villages (yesterday) · in modern cities (today) · in undersea cities (tomorrow)", "acceptedAnswers": ["We lived in villages yesterday. We are living in modern cities today. We will live in undersea cities tomorrow."], "explanation": "yesterday → past; today → present continuous; tomorrow → will" },
+        { "id": "ws-21-sec-f-q05", "order": 5, "prompt": "wives / use: handmade tools (yesterday) · electric appliances (today) · intelligent robots (tomorrow)", "acceptedAnswers": ["Wives used handmade tools yesterday. Wives are using electric appliances today. Wives will use intelligent robots tomorrow.", "Wives used handmade tools yesterday. They are using electric appliances today. They will use intelligent robots tomorrow."], "explanation": "yesterday → past; today → present continuous; tomorrow → will" },
+        { "id": "ws-21-sec-f-q06", "order": 6, "prompt": "vehicles / run: by horses (yesterday) · by petrol (today) · by water or electricity (tomorrow)", "acceptedAnswers": ["Vehicles ran by horses yesterday. Vehicles are running by petrol today. Vehicles will run by water or electricity tomorrow.", "Vehicles ran by horses yesterday. Vehicles are running by petrol today. Vehicles will run by water and electricity tomorrow.", "Vehicles were run by horses yesterday. Vehicles are run by petrol today. Vehicles will be run by water or electricity tomorrow.", "Vehicles ran by horses yesterday. Vehicles run by petrol today. Vehicles will run by water or electricity tomorrow."], "explanation": "yesterday → past; today → present; tomorrow → will" }
       ]
     }
   ]

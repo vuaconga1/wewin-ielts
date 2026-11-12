@@ -13,288 +13,48 @@
       "id": "ws-50-sec-a",
       "sectionKey": "A",
       "instruction": "Use the GERUND or INFINITIVE forms of the verbs:",
-      "type": "inline_gap_fill",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-50-sec-a-q01",
-          "order": 1,
-          "prompt": "He gave up [gap] (gamble).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q02",
-          "order": 2,
-          "prompt": "He told me [gap] (try) [gap] (come) early.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q03",
-          "order": 3,
-          "prompt": "I advised him [gap] (ask) the bus conductor [gap] (tell) him where [gap] (get) off.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q04",
-          "order": 4,
-          "prompt": "We are looking forward to [gap] (read) your new book.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q05",
-          "order": 5,
-          "prompt": "I don’t enjoy [gap] (go) to the dentist.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q06",
-          "order": 6,
-          "prompt": "A: Did you remember [gap] (give) him the money? B: No, I didn’t. I still have it in my pocket; but I’ll [gap] (see) him tonight and I promise [gap] (not / forget) this time.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q07",
-          "order": 7,
-          "prompt": "I saw the plane [gap] (crash) in to the hill and [gap] (burst) into flames.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q08",
-          "order": 8,
-          "prompt": "He is said [gap] (be) the best surgeon in the country.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q09",
-          "order": 9,
-          "prompt": "We don’t want anybody [gap] (know) we are here.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q10",
-          "order": 10,
-          "prompt": "A: Why didn’t you pay the bill for him? [gap] B: I offered [gap] (pay), but he refused.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q11",
-          "order": 11,
-          "prompt": "He was accused of [gap] (steal) the valuable vase.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q12",
-          "order": 12,
-          "prompt": "I don’t feel like [gap] (work); what about [gap] (go) to a disco instead?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q13",
-          "order": 13,
-          "prompt": "Imagine [gap] (live) with someone who never stops [gap] (talk).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q14",
-          "order": 14,
-          "prompt": "A: Do the boys tidy their own rooms? [gap] B: They are supposed [gap] (tidy), but they don’t always.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q15",
-          "order": 15,
-          "prompt": "I hope the children won’t go near the water. I warned them [gap] (not / go) near it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q16",
-          "order": 16,
-          "prompt": "Try to avoid [gap] (make) him angry.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q17",
-          "order": 17,
-          "prompt": "Would you mind [gap] (write) your name and address on the back of the cheque?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q18",
-          "order": 18,
-          "prompt": "After [gap] (read) this article, will you give up [gap] (smoke)?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q19",
-          "order": 19,
-          "prompt": "I suggest [gap] (hold) another meeting next week.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q20",
-          "order": 20,
-          "prompt": "I have no intention of [gap] (go) to that film; I couldn’t bear [gap] (see) my favorite actress in such a dreadful part.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q21",
-          "order": 21,
-          "prompt": "Try [gap] (forget) it; it’s not worth [gap] (worry) about.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q22",
-          "order": 22,
-          "prompt": "I advise you [gap] (start) [gap] (look) for a flat at once.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q23",
-          "order": 23,
-          "prompt": "He hates [gap] (answer) the phone, and very often just lets it [gap] (ring).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q24",
-          "order": 24,
-          "prompt": "It is usually easier [gap] (learn) a subject by [gap] (read) books than by [gap] (listen) to lectures.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q25",
-          "order": 25,
-          "prompt": "Don’t forget [gap] (lock) the door before [gap] (go) to bed.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q26",
-          "order": 26,
-          "prompt": "I arranged [gap] (meet) them here.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q27",
-          "order": 27,
-          "prompt": "He tried [gap] (explain) but she refused [gap] (listen).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q28",
-          "order": 28,
-          "prompt": "I regret [gap] (inform) you that your application has been refused.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q29",
-          "order": 29,
-          "prompt": "Your windows need [gap] (clean); would you like me [gap] (do) them for you?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q30",
-          "order": 30,
-          "prompt": "I can’t help [gap] (sneeze); I caught a cold yesterday from [gap] (sit) in a draught.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q31",
-          "order": 31,
-          "prompt": "I absolutely remember [gap] (pay) him. I gave him $20.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q32",
-          "order": 32,
-          "prompt": "You’ll never regret [gap] (do) a kind action.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q33",
-          "order": 33,
-          "prompt": "A: Did you remember [gap] (lock) the door? B: No, I didn’t. I’d better [gap] (go) and [gap] (do) it now.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q34",
-          "order": 34,
-          "prompt": "I’m very sorry for [gap] (be) late; it was good of you [gap] (wait) for me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q35",
-          "order": 35,
-          "prompt": "You don’t need [gap] (ask) his permission every time you want [gap] (leave) the room.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q36",
-          "order": 36,
-          "prompt": "I except him [gap] (apologize) to me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q37",
-          "order": 37,
-          "prompt": "We got tired of [gap] (wait) for the weather [gap] (clear) and finally decided [gap] (set) out in the rain.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q38",
-          "order": 38,
-          "prompt": "I can hear the bell [gap] (ring), but nobody seem to be coming [gap] (open) the door.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q39",
-          "order": 39,
-          "prompt": "There are people who can’t help [gap] (laugh) when they see someone [gap] (slip) on a banana skin.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-a-q40",
-          "order": 40,
-          "prompt": "They don’t allow [gap] (smoke) here.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-50-sec-a-q01", "order": 1, "prompt": "He gave up [gap] (gamble).", "acceptedAnswers": ["gambling"], "explanation": "give up + -ing" },
+        { "id": "ws-50-sec-a-q02", "order": 2, "prompt": "He told me [gap] (try) [gap] (come) early.", "acceptedAnswers": ["to try / to come"], "explanation": "tell sb to do; try to do" },
+        { "id": "ws-50-sec-a-q03", "order": 3, "prompt": "I advised him [gap] (ask) the bus conductor [gap] (tell) him where [gap] (get) off.", "acceptedAnswers": ["to ask / to tell / to get"], "explanation": "advise sb to do; ask sb to do; where + to-infinitive" },
+        { "id": "ws-50-sec-a-q04", "order": 4, "prompt": "We are looking forward to [gap] (read) your new book.", "acceptedAnswers": ["reading"], "explanation": "look forward to + -ing" },
+        { "id": "ws-50-sec-a-q05", "order": 5, "prompt": "I don't enjoy [gap] (go) to the dentist.", "acceptedAnswers": ["going"], "explanation": "enjoy + -ing" },
+        { "id": "ws-50-sec-a-q06", "order": 6, "prompt": "A: Did you remember [gap] (give) him the money? B: No, I didn't. I still have it in my pocket; but I'll [gap] (see) him tonight and I promise [gap] (not / forget) this time.", "acceptedAnswers": ["to give / see / not to forget"], "explanation": "remember to do (a duty); will + base verb; promise not to do" },
+        { "id": "ws-50-sec-a-q07", "order": 7, "prompt": "I saw the plane [gap] (crash) into the hill and [gap] (burst) into flames.", "acceptedAnswers": ["crash|crashing / burst|bursting"], "explanation": "see + object + base verb / -ing" },
+        { "id": "ws-50-sec-a-q08", "order": 8, "prompt": "He is said [gap] (be) the best surgeon in the country.", "acceptedAnswers": ["to be"], "explanation": "be said + to-infinitive" },
+        { "id": "ws-50-sec-a-q09", "order": 9, "prompt": "We don't want anybody [gap] (know) we are here.", "acceptedAnswers": ["to know"], "explanation": "want sb to do" },
+        { "id": "ws-50-sec-a-q10", "order": 10, "prompt": "A: Why didn't you pay the bill for him? B: I offered [gap] (pay), but he refused.", "acceptedAnswers": ["to pay"], "explanation": "offer + to-infinitive" },
+        { "id": "ws-50-sec-a-q11", "order": 11, "prompt": "He was accused of [gap] (steal) the valuable vase.", "acceptedAnswers": ["stealing|having stolen"], "explanation": "preposition + -ing" },
+        { "id": "ws-50-sec-a-q12", "order": 12, "prompt": "I don't feel like [gap] (work); what about [gap] (go) to a disco instead?", "acceptedAnswers": ["working / going"], "explanation": "feel like + -ing; what about + -ing" },
+        { "id": "ws-50-sec-a-q13", "order": 13, "prompt": "Imagine [gap] (live) with someone who never stops [gap] (talk).", "acceptedAnswers": ["living / talking"], "explanation": "imagine + -ing; stop + -ing" },
+        { "id": "ws-50-sec-a-q14", "order": 14, "prompt": "A: Do the boys tidy their own rooms? B: They are supposed [gap] (tidy), but they don't always.", "acceptedAnswers": ["to tidy|to tidy them"], "explanation": "be supposed + to-infinitive" },
+        { "id": "ws-50-sec-a-q15", "order": 15, "prompt": "I hope the children won't go near the water. I warned them [gap] (not / go) near it.", "acceptedAnswers": ["not to go"], "explanation": "warn sb not to do" },
+        { "id": "ws-50-sec-a-q16", "order": 16, "prompt": "Try to avoid [gap] (make) him angry.", "acceptedAnswers": ["making"], "explanation": "avoid + -ing" },
+        { "id": "ws-50-sec-a-q17", "order": 17, "prompt": "Would you mind [gap] (write) your name and address on the back of the cheque?", "acceptedAnswers": ["writing"], "explanation": "would you mind + -ing" },
+        { "id": "ws-50-sec-a-q18", "order": 18, "prompt": "After [gap] (read) this article, will you give up [gap] (smoke)?", "acceptedAnswers": ["reading / smoking"], "explanation": "after + -ing; give up + -ing" },
+        { "id": "ws-50-sec-a-q19", "order": 19, "prompt": "I suggest [gap] (hold) another meeting next week.", "acceptedAnswers": ["holding"], "explanation": "suggest + -ing" },
+        { "id": "ws-50-sec-a-q20", "order": 20, "prompt": "I have no intention of [gap] (go) to that film; I couldn't bear [gap] (see) my favorite actress in such a dreadful part.", "acceptedAnswers": ["going / to see|seeing"], "explanation": "preposition + -ing; can't bear to do / doing" },
+        { "id": "ws-50-sec-a-q21", "order": 21, "prompt": "Try [gap] (forget) it; it's not worth [gap] (worry) about.", "acceptedAnswers": ["to forget / worrying"], "explanation": "try to do (make an effort); worth + -ing" },
+        { "id": "ws-50-sec-a-q22", "order": 22, "prompt": "I advise you [gap] (start) [gap] (look) for a flat at once.", "acceptedAnswers": ["to start / looking|to look"], "explanation": "advise sb to do; start + -ing / to do" },
+        { "id": "ws-50-sec-a-q23", "order": 23, "prompt": "He hates [gap] (answer) the phone, and very often just lets it [gap] (ring).", "acceptedAnswers": ["answering|to answer / ring"], "explanation": "hate + -ing / to do; let + object + base verb" },
+        { "id": "ws-50-sec-a-q24", "order": 24, "prompt": "It is usually easier [gap] (learn) a subject by [gap] (read) books than by [gap] (listen) to lectures.", "acceptedAnswers": ["to learn / reading / listening"], "explanation": "adjective + to-infinitive; by + -ing" },
+        { "id": "ws-50-sec-a-q25", "order": 25, "prompt": "Don't forget [gap] (lock) the door before [gap] (go) to bed.", "acceptedAnswers": ["to lock / going"], "explanation": "forget to do (a duty); before + -ing" },
+        { "id": "ws-50-sec-a-q26", "order": 26, "prompt": "I arranged [gap] (meet) them here.", "acceptedAnswers": ["to meet"], "explanation": "arrange + to-infinitive" },
+        { "id": "ws-50-sec-a-q27", "order": 27, "prompt": "He tried [gap] (explain) but she refused [gap] (listen).", "acceptedAnswers": ["to explain / to listen"], "explanation": "try to do; refuse to do" },
+        { "id": "ws-50-sec-a-q28", "order": 28, "prompt": "I regret [gap] (inform) you that your application has been refused.", "acceptedAnswers": ["to inform"], "explanation": "regret to do = be sorry to announce" },
+        { "id": "ws-50-sec-a-q29", "order": 29, "prompt": "Your windows need [gap] (clean); would you like me [gap] (do) them for you?", "acceptedAnswers": ["cleaning|to be cleaned / to do"], "explanation": "need + -ing (passive meaning); would like sb to do" },
+        { "id": "ws-50-sec-a-q30", "order": 30, "prompt": "I can't help [gap] (sneeze); I caught a cold yesterday from [gap] (sit) in a draught.", "acceptedAnswers": ["sneezing / sitting"], "explanation": "can't help + -ing; preposition + -ing" },
+        { "id": "ws-50-sec-a-q31", "order": 31, "prompt": "I absolutely remember [gap] (pay) him. I gave him $20.", "acceptedAnswers": ["paying|having paid"], "explanation": "remember + -ing = recall a past action" },
+        { "id": "ws-50-sec-a-q32", "order": 32, "prompt": "You'll never regret [gap] (do) a kind action.", "acceptedAnswers": ["doing|having done"], "explanation": "regret + -ing = be sorry about an action" },
+        { "id": "ws-50-sec-a-q33", "order": 33, "prompt": "A: Did you remember [gap] (lock) the door? B: No, I didn't. I'd better [gap] (go) and [gap] (do) it now.", "acceptedAnswers": ["to lock / go / do"], "explanation": "remember to do; had better + base verb" },
+        { "id": "ws-50-sec-a-q34", "order": 34, "prompt": "I'm very sorry for [gap] (be) late; it was good of you [gap] (wait) for me.", "acceptedAnswers": ["being / to wait"], "explanation": "preposition + -ing; it's good of you to do" },
+        { "id": "ws-50-sec-a-q35", "order": 35, "prompt": "You don't need [gap] (ask) his permission every time you want [gap] (leave) the room.", "acceptedAnswers": ["to ask / to leave"], "explanation": "need to do; want to do" },
+        { "id": "ws-50-sec-a-q36", "order": 36, "prompt": "I expect him [gap] (apologize) to me.", "acceptedAnswers": ["to apologize|to apologise"], "explanation": "expect sb to do" },
+        { "id": "ws-50-sec-a-q37", "order": 37, "prompt": "We got tired of [gap] (wait) for the weather [gap] (clear) and finally decided [gap] (set) out in the rain.", "acceptedAnswers": ["waiting / to clear / to set"], "explanation": "tired of + -ing; wait for sth to do; decide to do" },
+        { "id": "ws-50-sec-a-q38", "order": 38, "prompt": "I can hear the bell [gap] (ring), but nobody seems to be coming [gap] (open) the door.", "acceptedAnswers": ["ringing|ring / to open"], "explanation": "hear + object + -ing; to-infinitive of purpose" },
+        { "id": "ws-50-sec-a-q39", "order": 39, "prompt": "There are people who can't help [gap] (laugh) when they see someone [gap] (slip) on a banana skin.", "acceptedAnswers": ["laughing / slip|slipping"], "explanation": "can't help + -ing; see + object + base verb / -ing" },
+        { "id": "ws-50-sec-a-q40", "order": 40, "prompt": "They don't allow [gap] (smoke) here.", "acceptedAnswers": ["smoking"], "explanation": "allow + -ing (no object)" }
       ]
     },
     {
@@ -303,76 +63,16 @@
       "instruction": "Use the GERUND or INFINITIVE forms of the verbs in brackets:",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-50-sec-b-q01",
-          "order": 1,
-          "prompt": "After she had decided [gap] (stay) in Turkey, she got used to [gap] (eat) Turkish foods.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q02",
-          "order": 2,
-          "prompt": "They seem [gap] (have) plenty of money.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q03",
-          "order": 3,
-          "prompt": "I’m sorry sir, I’m late, but I promise [gap] (not / be) late again.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q04",
-          "order": 4,
-          "prompt": "I remember [gap] (go) to the cinema with my girl friend when I was a teenager.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q05",
-          "order": 5,
-          "prompt": "He is ashamed of [gap] (steal) that money.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q06",
-          "order": 6,
-          "prompt": "I think we’d better [gap] (exchange) names and addresses.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q07",
-          "order": 7,
-          "prompt": "Would you mind [gap] (show) me how [gap] (work) the new machine?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q08",
-          "order": 8,
-          "prompt": "She warned her child [gap] (not / touch) the wire.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q09",
-          "order": 9,
-          "prompt": "Can you manage [gap] (finish) [gap] (pack) these parcels alone?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-b-q10",
-          "order": 10,
-          "prompt": "His doctor advised him [gap] (give up) [gap] (sit) up late at night?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-50-sec-b-q01", "order": 1, "prompt": "After she had decided [gap] (stay) in Turkey, she got used to [gap] (eat) Turkish foods.", "acceptedAnswers": ["to stay / eating"], "explanation": "decide to do; get used to + -ing" },
+        { "id": "ws-50-sec-b-q02", "order": 2, "prompt": "They seem [gap] (have) plenty of money.", "acceptedAnswers": ["to have"], "explanation": "seem + to-infinitive" },
+        { "id": "ws-50-sec-b-q03", "order": 3, "prompt": "I'm sorry sir, I'm late, but I promise [gap] (not / be) late again.", "acceptedAnswers": ["not to be"], "explanation": "promise not to do" },
+        { "id": "ws-50-sec-b-q04", "order": 4, "prompt": "I remember [gap] (go) to the cinema with my girlfriend when I was a teenager.", "acceptedAnswers": ["going"], "explanation": "remember + -ing = recall a past action" },
+        { "id": "ws-50-sec-b-q05", "order": 5, "prompt": "He is ashamed of [gap] (steal) that money.", "acceptedAnswers": ["stealing|having stolen"], "explanation": "preposition + -ing" },
+        { "id": "ws-50-sec-b-q06", "order": 6, "prompt": "I think we'd better [gap] (exchange) names and addresses.", "acceptedAnswers": ["exchange"], "explanation": "had better + base verb" },
+        { "id": "ws-50-sec-b-q07", "order": 7, "prompt": "Would you mind [gap] (show) me how [gap] (work) the new machine?", "acceptedAnswers": ["showing / to work"], "explanation": "would you mind + -ing; how + to-infinitive" },
+        { "id": "ws-50-sec-b-q08", "order": 8, "prompt": "She warned her child [gap] (not / touch) the wire.", "acceptedAnswers": ["not to touch"], "explanation": "warn sb not to do" },
+        { "id": "ws-50-sec-b-q09", "order": 9, "prompt": "Can you manage [gap] (finish) [gap] (pack) these parcels alone?", "acceptedAnswers": ["to finish / packing"], "explanation": "manage to do; finish + -ing" },
+        { "id": "ws-50-sec-b-q10", "order": 10, "prompt": "His doctor advised him [gap] (give up) [gap] (sit) up late at night.", "acceptedAnswers": ["to give up / sitting"], "explanation": "advise sb to do; give up + -ing" }
       ]
     },
     {
@@ -381,427 +81,73 @@
       "instruction": "Supply the appropriate form of the verbs:",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-50-sec-c-q01",
-          "order": 1,
-          "prompt": "She never admits [gap] (make) mistakes.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q02",
-          "order": 2,
-          "prompt": "Please avoid [gap] (be) alone with him.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q03",
-          "order": 3,
-          "prompt": "When you finish [gap] (do) your homework, call me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q04",
-          "order": 4,
-          "prompt": "She’s considering [gap] (be) a member of T.E.D. Club.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q05",
-          "order": 5,
-          "prompt": "On Sundays I always practise [gap] (talk) English with my aunt.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q06",
-          "order": 6,
-          "prompt": "Do you fancy [gap] (play) tennis this afternoon?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q07",
-          "order": 7,
-          "prompt": "I dislike [gap] (study) history.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q08",
-          "order": 8,
-          "prompt": "Please try to escape [gap] (make) him angry.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q09",
-          "order": 9,
-          "prompt": "I enjoy [gap] (walk) in the rain.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q10",
-          "order": 10,
-          "prompt": "She can’t afford [gap] (buy) a car.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q11",
-          "order": 11,
-          "prompt": "I decided [gap] (go) on Saturday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q12",
-          "order": 12,
-          "prompt": "Don’t forget [gap] (tell) him the news.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q13",
-          "order": 13,
-          "prompt": "They managed [gap] (pass) their exams.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q14",
-          "order": 14,
-          "prompt": "He refused [gap] (see) me again.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q15",
-          "order": 15,
-          "prompt": "Remember [gap] (post) the letters.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q16",
-          "order": 16,
-          "prompt": "She seems [gap] (be) happy.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q17",
-          "order": 17,
-          "prompt": "He waited [gap] (get) his salary.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q18",
-          "order": 18,
-          "prompt": "He’ll hire a man [gap] (kill) them.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q19",
-          "order": 19,
-          "prompt": "He advised [gap] (study) hard.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q20",
-          "order": 20,
-          "prompt": "I’m sorry for [gap] (keep) you late.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q21",
-          "order": 21,
-          "prompt": "I’m interested in [gap] (play) tennis.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q22",
-          "order": 22,
-          "prompt": "Instead of [gap] (study) Alice watched TV.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q23",
-          "order": 23,
-          "prompt": "He apologized for [gap] (come) late.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q24",
-          "order": 24,
-          "prompt": "He succeeded in [gap] (pass) his exam.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q25",
-          "order": 25,
-          "prompt": "I’m looking forward to [gap] (go) to London.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q26",
-          "order": 26,
-          "prompt": "We’re thinking of [gap] (travel) by train.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q27",
-          "order": 27,
-          "prompt": "Do you feel like [gap] (go) for a swim?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q28",
-          "order": 28,
-          "prompt": "Do you have any good reason for [gap] (not / call) me?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q29",
-          "order": 29,
-          "prompt": "Thank you for [gap] (help) me carry the goods.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q30",
-          "order": 30,
-          "prompt": "The little boy’s mother warned him [gap] (not / eat) so many apples.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q31",
-          "order": 31,
-          "prompt": "They reminded me [gap] (do) my assignment.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q32",
-          "order": 32,
-          "prompt": "The children are excited about [gap] (go) to the movies.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q33",
-          "order": 33,
-          "prompt": "She always puts off [gap] (do) the laundry.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q34",
-          "order": 34,
-          "prompt": "Bob refused [gap] (talk) about his problems.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q35",
-          "order": 35,
-          "prompt": "Cindy told him [gap] (not / wait) for her.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q36",
-          "order": 36,
-          "prompt": "He suggested [gap] (go) home when he got sick.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q37",
-          "order": 37,
-          "prompt": "Who is responsible for [gap] (tidy) the room?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q38",
-          "order": 38,
-          "prompt": "Henry is quite good at [gap] (make up) stories.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q39",
-          "order": 39,
-          "prompt": "We’re planning on [gap] (go / swim) this weekend.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q40",
-          "order": 40,
-          "prompt": "I couldn’t persuade him [gap] (come) with me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q41",
-          "order": 41,
-          "prompt": "Can you touch your toes without [gap] (bend) your knees?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q42",
-          "order": 42,
-          "prompt": "I can’t help [gap] (look) at her.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q43",
-          "order": 43,
-          "prompt": "Do you have any difficulty in [gap] (speak) English?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q44",
-          "order": 44,
-          "prompt": "Please remind me [gap] (take) my photo.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q45",
-          "order": 45,
-          "prompt": "I persuaded my mother [gap] (give) me permission to go out.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q46",
-          "order": 46,
-          "prompt": "He will arrange [gap] (meet) me at the airport.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q47",
-          "order": 47,
-          "prompt": "He waited [gap] (get) his salary.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q48",
-          "order": 48,
-          "prompt": "I regret [gap] (say) you that he is ill.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q49",
-          "order": 49,
-          "prompt": "Jim can’t stand [gap] (be) interrupted.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q50",
-          "order": 50,
-          "prompt": "When Sam got tired, he stopped [gap] (work).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q51",
-          "order": 51,
-          "prompt": "I remember [gap] (play) with dolls when I was a child.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q52",
-          "order": 52,
-          "prompt": "I regret [gap] (not / listen) to my father’s advice. He was right.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-c-q53",
-          "order": 53,
-          "prompt": "The thief was accused of [gap] (steal) a woman purse.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-50-sec-c-q01", "order": 1, "prompt": "She never admits [gap] (make) mistakes.", "acceptedAnswers": ["making|having made"], "explanation": "admit + -ing" },
+        { "id": "ws-50-sec-c-q02", "order": 2, "prompt": "Please avoid [gap] (be) alone with him.", "acceptedAnswers": ["being"], "explanation": "avoid + -ing" },
+        { "id": "ws-50-sec-c-q03", "order": 3, "prompt": "When you finish [gap] (do) your homework, call me.", "acceptedAnswers": ["doing"], "explanation": "finish + -ing" },
+        { "id": "ws-50-sec-c-q04", "order": 4, "prompt": "She's considering [gap] (be) a member of T.E.D. Club.", "acceptedAnswers": ["being"], "explanation": "consider + -ing" },
+        { "id": "ws-50-sec-c-q05", "order": 5, "prompt": "On Sundays I always practise [gap] (talk) English with my aunt.", "acceptedAnswers": ["talking"], "explanation": "practise + -ing" },
+        { "id": "ws-50-sec-c-q06", "order": 6, "prompt": "Do you fancy [gap] (play) tennis this afternoon?", "acceptedAnswers": ["playing"], "explanation": "fancy + -ing" },
+        { "id": "ws-50-sec-c-q07", "order": 7, "prompt": "I dislike [gap] (study) history.", "acceptedAnswers": ["studying"], "explanation": "dislike + -ing" },
+        { "id": "ws-50-sec-c-q08", "order": 8, "prompt": "Please try to escape [gap] (make) him angry.", "acceptedAnswers": ["making"], "explanation": "escape + -ing" },
+        { "id": "ws-50-sec-c-q09", "order": 9, "prompt": "I enjoy [gap] (walk) in the rain.", "acceptedAnswers": ["walking"], "explanation": "enjoy + -ing" },
+        { "id": "ws-50-sec-c-q10", "order": 10, "prompt": "She can't afford [gap] (buy) a car.", "acceptedAnswers": ["to buy"], "explanation": "afford + to-infinitive" },
+        { "id": "ws-50-sec-c-q11", "order": 11, "prompt": "I decided [gap] (go) on Saturday.", "acceptedAnswers": ["to go"], "explanation": "decide + to-infinitive" },
+        { "id": "ws-50-sec-c-q12", "order": 12, "prompt": "Don't forget [gap] (tell) him the news.", "acceptedAnswers": ["to tell"], "explanation": "forget to do (a duty)" },
+        { "id": "ws-50-sec-c-q13", "order": 13, "prompt": "They managed [gap] (pass) their exams.", "acceptedAnswers": ["to pass"], "explanation": "manage + to-infinitive" },
+        { "id": "ws-50-sec-c-q14", "order": 14, "prompt": "He refused [gap] (see) me again.", "acceptedAnswers": ["to see"], "explanation": "refuse + to-infinitive" },
+        { "id": "ws-50-sec-c-q15", "order": 15, "prompt": "Remember [gap] (post) the letters.", "acceptedAnswers": ["to post"], "explanation": "remember to do (a duty)" },
+        { "id": "ws-50-sec-c-q16", "order": 16, "prompt": "She seems [gap] (be) happy.", "acceptedAnswers": ["to be"], "explanation": "seem + to-infinitive" },
+        { "id": "ws-50-sec-c-q17", "order": 17, "prompt": "He waited [gap] (get) his salary.", "acceptedAnswers": ["to get"], "explanation": "wait + to-infinitive" },
+        { "id": "ws-50-sec-c-q18", "order": 18, "prompt": "He'll hire a man [gap] (kill) them.", "acceptedAnswers": ["to kill"], "explanation": "to-infinitive of purpose" },
+        { "id": "ws-50-sec-c-q19", "order": 19, "prompt": "He advised [gap] (study) hard.", "acceptedAnswers": ["studying"], "explanation": "advise + -ing (no object)" },
+        { "id": "ws-50-sec-c-q20", "order": 20, "prompt": "I'm sorry for [gap] (keep) you late.", "acceptedAnswers": ["keeping|having kept"], "explanation": "preposition + -ing" },
+        { "id": "ws-50-sec-c-q21", "order": 21, "prompt": "I'm interested in [gap] (play) tennis.", "acceptedAnswers": ["playing"], "explanation": "preposition + -ing" },
+        { "id": "ws-50-sec-c-q22", "order": 22, "prompt": "Instead of [gap] (study), Alice watched TV.", "acceptedAnswers": ["studying"], "explanation": "instead of + -ing" },
+        { "id": "ws-50-sec-c-q23", "order": 23, "prompt": "He apologized for [gap] (come) late.", "acceptedAnswers": ["coming|having come"], "explanation": "apologize for + -ing" },
+        { "id": "ws-50-sec-c-q24", "order": 24, "prompt": "He succeeded in [gap] (pass) his exam.", "acceptedAnswers": ["passing"], "explanation": "succeed in + -ing" },
+        { "id": "ws-50-sec-c-q25", "order": 25, "prompt": "I'm looking forward to [gap] (go) to London.", "acceptedAnswers": ["going"], "explanation": "look forward to + -ing" },
+        { "id": "ws-50-sec-c-q26", "order": 26, "prompt": "We're thinking of [gap] (travel) by train.", "acceptedAnswers": ["travelling|traveling"], "explanation": "think of + -ing" },
+        { "id": "ws-50-sec-c-q27", "order": 27, "prompt": "Do you feel like [gap] (go) for a swim?", "acceptedAnswers": ["going"], "explanation": "feel like + -ing" },
+        { "id": "ws-50-sec-c-q28", "order": 28, "prompt": "Do you have any good reason for [gap] (not / call) me?", "acceptedAnswers": ["not calling|not having called"], "explanation": "preposition + not + -ing" },
+        { "id": "ws-50-sec-c-q29", "order": 29, "prompt": "Thank you for [gap] (help) me carry the goods.", "acceptedAnswers": ["helping"], "explanation": "thank you for + -ing" },
+        { "id": "ws-50-sec-c-q30", "order": 30, "prompt": "The little boy's mother warned him [gap] (not / eat) so many apples.", "acceptedAnswers": ["not to eat"], "explanation": "warn sb not to do" },
+        { "id": "ws-50-sec-c-q31", "order": 31, "prompt": "They reminded me [gap] (do) my assignment.", "acceptedAnswers": ["to do"], "explanation": "remind sb to do" },
+        { "id": "ws-50-sec-c-q32", "order": 32, "prompt": "The children are excited about [gap] (go) to the movies.", "acceptedAnswers": ["going"], "explanation": "preposition + -ing" },
+        { "id": "ws-50-sec-c-q33", "order": 33, "prompt": "She always puts off [gap] (do) the laundry.", "acceptedAnswers": ["doing"], "explanation": "put off + -ing" },
+        { "id": "ws-50-sec-c-q34", "order": 34, "prompt": "Bob refused [gap] (talk) about his problems.", "acceptedAnswers": ["to talk"], "explanation": "refuse + to-infinitive" },
+        { "id": "ws-50-sec-c-q35", "order": 35, "prompt": "Cindy told him [gap] (not / wait) for her.", "acceptedAnswers": ["not to wait"], "explanation": "tell sb not to do" },
+        { "id": "ws-50-sec-c-q36", "order": 36, "prompt": "He suggested [gap] (go) home when he got sick.", "acceptedAnswers": ["going"], "explanation": "suggest + -ing" },
+        { "id": "ws-50-sec-c-q37", "order": 37, "prompt": "Who is responsible for [gap] (tidy) the room?", "acceptedAnswers": ["tidying"], "explanation": "preposition + -ing" },
+        { "id": "ws-50-sec-c-q38", "order": 38, "prompt": "Henry is quite good at [gap] (make up) stories.", "acceptedAnswers": ["making up"], "explanation": "good at + -ing" },
+        { "id": "ws-50-sec-c-q39", "order": 39, "prompt": "We're planning on [gap] (go / swim) this weekend.", "acceptedAnswers": ["going swimming"], "explanation": "plan on + -ing; go + -ing for activities" },
+        { "id": "ws-50-sec-c-q40", "order": 40, "prompt": "I couldn't persuade him [gap] (come) with me.", "acceptedAnswers": ["to come"], "explanation": "persuade sb to do" },
+        { "id": "ws-50-sec-c-q41", "order": 41, "prompt": "Can you touch your toes without [gap] (bend) your knees?", "acceptedAnswers": ["bending"], "explanation": "without + -ing" },
+        { "id": "ws-50-sec-c-q42", "order": 42, "prompt": "I can't help [gap] (look) at her.", "acceptedAnswers": ["looking"], "explanation": "can't help + -ing" },
+        { "id": "ws-50-sec-c-q43", "order": 43, "prompt": "Do you have any difficulty in [gap] (speak) English?", "acceptedAnswers": ["speaking"], "explanation": "difficulty (in) + -ing" },
+        { "id": "ws-50-sec-c-q44", "order": 44, "prompt": "Please remind me [gap] (take) my photo.", "acceptedAnswers": ["to take"], "explanation": "remind sb to do" },
+        { "id": "ws-50-sec-c-q45", "order": 45, "prompt": "I persuaded my mother [gap] (give) me permission to go out.", "acceptedAnswers": ["to give"], "explanation": "persuade sb to do" },
+        { "id": "ws-50-sec-c-q46", "order": 46, "prompt": "He will arrange [gap] (meet) me at the airport.", "acceptedAnswers": ["to meet"], "explanation": "arrange + to-infinitive" },
+        { "id": "ws-50-sec-c-q47", "order": 47, "prompt": "He waited [gap] (get) his salary.", "acceptedAnswers": ["to get"], "explanation": "wait + to-infinitive" },
+        { "id": "ws-50-sec-c-q48", "order": 48, "prompt": "I regret [gap] (say) that he is ill.", "acceptedAnswers": ["to say"], "explanation": "regret to say = be sorry to announce" },
+        { "id": "ws-50-sec-c-q49", "order": 49, "prompt": "Jim can't stand [gap] (be) interrupted.", "acceptedAnswers": ["being"], "explanation": "can't stand + -ing" },
+        { "id": "ws-50-sec-c-q50", "order": 50, "prompt": "When Sam got tired, he stopped [gap] (work).", "acceptedAnswers": ["working"], "explanation": "stop + -ing = no longer do" },
+        { "id": "ws-50-sec-c-q51", "order": 51, "prompt": "I remember [gap] (play) with dolls when I was a child.", "acceptedAnswers": ["playing"], "explanation": "remember + -ing = recall a past action" },
+        { "id": "ws-50-sec-c-q52", "order": 52, "prompt": "I regret [gap] (not / listen) to my father's advice. He was right.", "acceptedAnswers": ["not listening|not having listened"], "explanation": "regret + -ing = be sorry about a past action" },
+        { "id": "ws-50-sec-c-q53", "order": 53, "prompt": "The thief was accused of [gap] (steal) a woman's purse.", "acceptedAnswers": ["stealing|having stolen"], "explanation": "accuse of + -ing" }
       ]
     },
     {
       "id": "ws-50-sec-d",
       "sectionKey": "D",
-      "instruction": "Complete with GERUND or INFINITIVE:",
+      "instruction": "Complete with a suitable verb in the GERUND or INFINITIVE:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-50-sec-d-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-d-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-d-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-d-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-d-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-50-sec-d-q06",
-          "order": 6,
-          "prompt": " [gap] He suggested [gap] dinner in a Chinese restaurant. I’ll give it back when I finish [gap] it. I remembered [gap] to the chemists for you. Here’s your medicine. I remember [gap] him last night. Would you like [gap] to some music? I regret [gap] that I won’t be able to come to the meeting.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-50-sec-d-q01", "order": 1, "prompt": "He suggested [gap] dinner in a Chinese restaurant.", "acceptedAnswers": ["having|eating"], "explanation": "suggest + -ing" },
+        { "id": "ws-50-sec-d-q02", "order": 2, "prompt": "I'll give it back when I finish [gap] it.", "acceptedAnswers": ["reading|using"], "explanation": "finish + -ing" },
+        { "id": "ws-50-sec-d-q03", "order": 3, "prompt": "I remembered [gap] to the chemist's for you. Here's your medicine.", "acceptedAnswers": ["to go"], "explanation": "remember to do (a duty)" },
+        { "id": "ws-50-sec-d-q04", "order": 4, "prompt": "I remember [gap] him last night.", "acceptedAnswers": ["seeing|meeting|phoning|calling"], "explanation": "remember + -ing = recall a past action" },
+        { "id": "ws-50-sec-d-q05", "order": 5, "prompt": "Would you like [gap] to some music?", "acceptedAnswers": ["to listen"], "explanation": "would like + to-infinitive" },
+        { "id": "ws-50-sec-d-q06", "order": 6, "prompt": "I regret [gap] that I won't be able to come to the meeting.", "acceptedAnswers": ["to say|to tell you|to inform you|to announce"], "explanation": "regret to say = be sorry to announce" }
       ]
     }
   ]

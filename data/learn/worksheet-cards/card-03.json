@@ -1,0 +1,1613 @@
+{
+  "id": "card-03",
+  "order": 3,
+  "part": 1,
+  "slug": "card-03-qua-khu-don-qua-khu-tiep-dien",
+  "title": "THẺ BÀI TẬP 03",
+  "subject": "Past Simple & Past Continuous",
+  "subjectVi": "Thì Quá khứ đơn & Quá khứ tiếp diễn",
+  "level": "A2",
+  "pageRange": "WS-07, WS-08, WS-09",
+  "sections": [
+    {
+      "id": "card-03-sec-1",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with a verb from the box in the SIMPLE PAST.",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "break",
+        "swim",
+        "have",
+        "make",
+        "sit",
+        "write",
+        "spend",
+        "buy",
+        "drink",
+        "lose",
+        "wash"
+      ],
+      "questions": [
+        {
+          "id": "ws-07-sec-a-q01",
+          "order": 1,
+          "prompt": "She [gap] a cake an hour ago.",
+          "acceptedAnswers": [
+            "made"
+          ],
+          "explanation": "make → made"
+        },
+        {
+          "id": "ws-07-sec-a-q02",
+          "order": 2,
+          "prompt": "She [gap] a hat last week.",
+          "acceptedAnswers": [
+            "bought"
+          ],
+          "explanation": "buy → bought"
+        },
+        {
+          "id": "ws-07-sec-a-q03",
+          "order": 3,
+          "prompt": "The boy [gap] a letter yesterday.",
+          "acceptedAnswers": [
+            "wrote"
+          ],
+          "explanation": "write → wrote"
+        },
+        {
+          "id": "ws-07-sec-a-q04",
+          "order": 4,
+          "prompt": "They [gap] in the sea for an hour.",
+          "acceptedAnswers": [
+            "swam"
+          ],
+          "explanation": "swim → swam"
+        },
+        {
+          "id": "ws-07-sec-a-q05",
+          "order": 5,
+          "prompt": "They [gap] a lot of Coke last night.",
+          "acceptedAnswers": [
+            "drank"
+          ],
+          "explanation": "drink → drank"
+        },
+        {
+          "id": "ws-07-sec-a-q06",
+          "order": 6,
+          "prompt": "She [gap] her arm last week.",
+          "acceptedAnswers": [
+            "broke"
+          ],
+          "explanation": "break → broke"
+        },
+        {
+          "id": "ws-07-sec-a-q07",
+          "order": 7,
+          "prompt": "He [gap] all his money last week.",
+          "acceptedAnswers": [
+            "spent"
+          ],
+          "explanation": "spend → spent"
+        },
+        {
+          "id": "ws-07-sec-a-q08",
+          "order": 8,
+          "prompt": "She [gap] a bath two minutes ago.",
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "have a bath → had"
+        },
+        {
+          "id": "ws-07-sec-a-q09",
+          "order": 9,
+          "prompt": "He [gap] his wallet last night.",
+          "acceptedAnswers": [
+            "lost"
+          ],
+          "explanation": "lose → lost"
+        },
+        {
+          "id": "ws-07-sec-a-q10",
+          "order": 10,
+          "prompt": "She [gap] on the old chair a minute ago.",
+          "acceptedAnswers": [
+            "sat"
+          ],
+          "explanation": "sit → sat"
+        },
+        {
+          "id": "ws-07-sec-a-q11",
+          "order": 11,
+          "prompt": "She [gap] the clothes yesterday.",
+          "acceptedAnswers": [
+            "washed"
+          ],
+          "explanation": "wash → washed"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-2",
+      "sectionKey": "B",
+      "instruction": "Fill in the blanks with the SIMPLE PAST of the verbs in brackets. (Example: Last Saturday my father took (take) my friends and me to the circus.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-07-sec-b-q01",
+          "order": 1,
+          "prompt": "We [gap] (see) lots of things.",
+          "acceptedAnswers": [
+            "saw"
+          ],
+          "explanation": "see → saw"
+        },
+        {
+          "id": "ws-07-sec-b-q02",
+          "order": 2,
+          "prompt": "My father [gap] (buy) us some popcorn and orange juice.",
+          "acceptedAnswers": [
+            "bought"
+          ],
+          "explanation": "buy → bought"
+        },
+        {
+          "id": "ws-07-sec-b-q03",
+          "order": 3,
+          "prompt": "We [gap] (eat) the popcorn and [gap] (drink) the orange juice.",
+          "acceptedAnswers": [
+            "ate / drank"
+          ],
+          "explanation": "eat → ate; drink → drank"
+        },
+        {
+          "id": "ws-07-sec-b-q04",
+          "order": 4,
+          "prompt": "We [gap] (laugh) at the funny clowns.",
+          "acceptedAnswers": [
+            "laughed"
+          ],
+          "explanation": "regular: + ed"
+        },
+        {
+          "id": "ws-07-sec-b-q05",
+          "order": 5,
+          "prompt": "There [gap] (be) a lion-tamer.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "there was + singular"
+        },
+        {
+          "id": "ws-07-sec-b-q06",
+          "order": 6,
+          "prompt": "The lions [gap] (do) tricks; they [gap] (jump) through hoops.",
+          "acceptedAnswers": [
+            "did / jumped"
+          ],
+          "explanation": "do → did; jump → jumped"
+        },
+        {
+          "id": "ws-07-sec-b-q07",
+          "order": 7,
+          "prompt": "A girl [gap] (ride) an elephant around the ring.",
+          "acceptedAnswers": [
+            "rode"
+          ],
+          "explanation": "ride → rode"
+        },
+        {
+          "id": "ws-07-sec-b-q08",
+          "order": 8,
+          "prompt": "We all [gap] (have) a wonderful time.",
+          "acceptedAnswers": [
+            "had"
+          ],
+          "explanation": "have → had"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-3",
+      "sectionKey": "C",
+      "instruction": "Write what Jean DID (+) or DIDN'T (-) do yesterday. (Example: go shopping (-) → Jean didn't go shopping yesterday.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-07-sec-c-q01",
+          "order": 1,
+          "prompt": "clean the house (+)",
+          "acceptedAnswers": [
+            "Jean cleaned the house yesterday.",
+            "Jean cleaned the house.",
+            "She cleaned the house yesterday."
+          ],
+          "explanation": "positive: verb + ed"
+        },
+        {
+          "id": "ws-07-sec-c-q02",
+          "order": 2,
+          "prompt": "feed the cat (+)",
+          "acceptedAnswers": [
+            "Jean fed the cat yesterday.",
+            "Jean fed the cat.",
+            "She fed the cat yesterday."
+          ],
+          "explanation": "feed → fed"
+        },
+        {
+          "id": "ws-07-sec-c-q03",
+          "order": 3,
+          "prompt": "telephone Mary (-)",
+          "acceptedAnswers": [
+            "Jean didn't telephone Mary yesterday.",
+            "Jean didn't telephone Mary.",
+            "She didn't telephone Mary yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-c-q04",
+          "order": 4,
+          "prompt": "watch a film on TV (-)",
+          "acceptedAnswers": [
+            "Jean didn't watch a film on TV yesterday.",
+            "Jean didn't watch a film on TV.",
+            "She didn't watch a film on TV yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-c-q05",
+          "order": 5,
+          "prompt": "visit her grandparents (+)",
+          "acceptedAnswers": [
+            "Jean visited her grandparents yesterday.",
+            "Jean visited her grandparents.",
+            "She visited her grandparents yesterday."
+          ],
+          "explanation": "positive: verb + ed"
+        },
+        {
+          "id": "ws-07-sec-c-q06",
+          "order": 6,
+          "prompt": "take them a cake (+)",
+          "acceptedAnswers": [
+            "Jean took them a cake yesterday.",
+            "Jean took them a cake.",
+            "She took them a cake yesterday."
+          ],
+          "explanation": "take → took"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-4",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks with the PAST form of the verbs. (Example: Benjamin Franklin was born (be born) in Boston in 1706.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-07-sec-d-q01",
+          "order": 1,
+          "prompt": "He [gap] (be) the fifteenth of the seventeen children of a poor candlemaker.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "he → was"
+        },
+        {
+          "id": "ws-07-sec-d-q02",
+          "order": 2,
+          "prompt": "He [gap] (go) to school only one year.",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "explanation": "go → went"
+        },
+        {
+          "id": "ws-07-sec-d-q03",
+          "order": 3,
+          "prompt": "He [gap] (begin) to work when he was twelve.",
+          "acceptedAnswers": [
+            "began"
+          ],
+          "explanation": "begin → began"
+        },
+        {
+          "id": "ws-07-sec-d-q04",
+          "order": 4,
+          "prompt": "At the age of fourteen he [gap] (decide) to be a writer.",
+          "acceptedAnswers": [
+            "decided"
+          ],
+          "explanation": "regular: + d"
+        },
+        {
+          "id": "ws-07-sec-d-q05",
+          "order": 5,
+          "prompt": "He [gap] (copy) the great stories of famous writers and later he [gap] (become) the best known writer in his time.",
+          "acceptedAnswers": [
+            "copied / became"
+          ],
+          "explanation": "copy → copied; become → became"
+        },
+        {
+          "id": "ws-07-sec-d-q06",
+          "order": 6,
+          "prompt": "When he [gap] (be) seventeen, he [gap] (leave) Boston and [gap] (arrive) in Philadelphia with only a few pennies in his pocket.",
+          "acceptedAnswers": [
+            "was / left / arrived"
+          ],
+          "explanation": "leave → left"
+        },
+        {
+          "id": "ws-07-sec-d-q07",
+          "order": 7,
+          "prompt": "He [gap] (get) a job as a publisher of a newspaper and [gap] (retire) from business as a very rich man at forty-two.",
+          "acceptedAnswers": [
+            "got / retired"
+          ],
+          "explanation": "get → got"
+        },
+        {
+          "id": "ws-07-sec-d-q08",
+          "order": 8,
+          "prompt": "Then he [gap] (spend) the next forty years for his government.",
+          "acceptedAnswers": [
+            "spent"
+          ],
+          "explanation": "spend → spent"
+        },
+        {
+          "id": "ws-07-sec-d-q09",
+          "order": 9,
+          "prompt": "He [gap] (play) an important role in the founding of the USA.",
+          "acceptedAnswers": [
+            "played"
+          ],
+          "explanation": "regular: + ed"
+        },
+        {
+          "id": "ws-07-sec-d-q10",
+          "order": 10,
+          "prompt": "Franklin [gap] (be) also an important scientist and inventor.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "singular → was"
+        },
+        {
+          "id": "ws-07-sec-d-q11",
+          "order": 11,
+          "prompt": "He [gap] (draw) electricity from a cloud on a kite string.",
+          "acceptedAnswers": [
+            "drew"
+          ],
+          "explanation": "draw → drew"
+        },
+        {
+          "id": "ws-07-sec-d-q12",
+          "order": 12,
+          "prompt": "He [gap] (write) one of the first text books on electricity.",
+          "acceptedAnswers": [
+            "wrote"
+          ],
+          "explanation": "write → wrote"
+        },
+        {
+          "id": "ws-07-sec-d-q13",
+          "order": 13,
+          "prompt": "He [gap] (invent) a simple lightning rod and many other practical tools.",
+          "acceptedAnswers": [
+            "invented"
+          ],
+          "explanation": "regular: + ed"
+        },
+        {
+          "id": "ws-07-sec-d-q14",
+          "order": 14,
+          "prompt": "He [gap] (make) a study of water and [gap] (discover) many principles of hydrodynamics.",
+          "acceptedAnswers": [
+            "made / discovered"
+          ],
+          "explanation": "make → made"
+        },
+        {
+          "id": "ws-07-sec-d-q15",
+          "order": 15,
+          "prompt": "He even [gap] (invent) bifocal glasses when he was seventy-eight and [gap] (need) them himself.",
+          "acceptedAnswers": [
+            "invented / needed"
+          ],
+          "explanation": "regular: + ed"
+        },
+        {
+          "id": "ws-07-sec-d-q16",
+          "order": 16,
+          "prompt": "Franklin [gap] (do) all these things and many more because he [gap] (believe) he [gap] (can).",
+          "acceptedAnswers": [
+            "did / believed / could"
+          ],
+          "explanation": "do → did; can → could"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-5",
+      "sectionKey": "E",
+      "instruction": "Read the story. (a) Write the story again sentence by sentence. Use THE SIMPLE PAST. (Example: Bob is a young sailor. He lives in England, but he is often away with his ship. → Bob was a young sailor. He lived in England, but he was often away with his ship.)",
+      "type": "sentence_rewrite",
+      "contextText": "Bob is a young sailor. He lives in England, but he is often away with his ship.\nOne summer he comes back from a long voyage and finds new neighbors near his mother's house. They have a pretty daughter, and Bob soon loves her and he wants to marry her when he comes back. Bob promises the girl to send a present from every port.\nBob's first port is Capetown in Africa, and he sends the girl a parrot from there. The parrot speaks three languages. When Bob's ship reaches Australia, a letter comes from the girl. The letter says, “Thank you for the parrot, Bob. It tasted much better than a chicken.”",
+      "questions": [
+        {
+          "id": "ws-07-sec-e-q01",
+          "order": 1,
+          "prompt": "One summer he comes back from a long voyage and finds new neighbors near his mother's house.",
+          "acceptedAnswers": [
+            "One summer he came back from a long voyage and found new neighbors near his mother's house.",
+            "One summer he came back from a long voyage and found new neighbours near his mother's house."
+          ],
+          "explanation": "come → came; find → found"
+        },
+        {
+          "id": "ws-07-sec-e-q02",
+          "order": 2,
+          "prompt": "They have a pretty daughter, and Bob soon loves her and he wants to marry her when he comes back.",
+          "acceptedAnswers": [
+            "They had a pretty daughter, and Bob soon loved her and he wanted to marry her when he came back."
+          ],
+          "explanation": "have → had; come → came"
+        },
+        {
+          "id": "ws-07-sec-e-q03",
+          "order": 3,
+          "prompt": "Bob promises the girl to send a present from every port.",
+          "acceptedAnswers": [
+            "Bob promised the girl to send a present from every port."
+          ],
+          "explanation": "regular: + d"
+        },
+        {
+          "id": "ws-07-sec-e-q04",
+          "order": 4,
+          "prompt": "Bob's first port is Capetown in Africa, and he sends the girl a parrot from there.",
+          "acceptedAnswers": [
+            "Bob's first port was Capetown in Africa, and he sent the girl a parrot from there."
+          ],
+          "explanation": "is → was; send → sent"
+        },
+        {
+          "id": "ws-07-sec-e-q05",
+          "order": 5,
+          "prompt": "The parrot speaks three languages.",
+          "acceptedAnswers": [
+            "The parrot spoke three languages."
+          ],
+          "explanation": "speak → spoke"
+        },
+        {
+          "id": "ws-07-sec-e-q06",
+          "order": 6,
+          "prompt": "When Bob's ship reaches Australia, a letter comes from the girl.",
+          "acceptedAnswers": [
+            "When Bob's ship reached Australia, a letter came from the girl."
+          ],
+          "explanation": "reach → reached; come → came"
+        },
+        {
+          "id": "ws-07-sec-e-q07",
+          "order": 7,
+          "prompt": "The letter says, “Thank you for the parrot, Bob. It tasted much better than a chicken.”",
+          "acceptedAnswers": [
+            "The letter said, “Thank you for the parrot, Bob. It tasted much better than a chicken.”"
+          ],
+          "explanation": "say → said; quote unchanged"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-6",
+      "sectionKey": "F",
+      "instruction": "(b) Answer the questions about the story. (Example: What was Bob? → He was a young sailor.)",
+      "type": "reading_qa",
+      "contextText": "Bob was a young sailor. He lived in England, but he was often away with his ship.\nOne summer he came back from a long voyage and found new neighbors near his mother's house. They had a pretty daughter, and Bob soon loved her and he wanted to marry her when he came back. Bob promised the girl to send a present from every port.\nBob's first port was Capetown in Africa, and he sent the girl a parrot from there. The parrot spoke three languages. When Bob's ship reached Australia, a letter came from the girl. The letter said, “Thank you for the parrot, Bob. It tasted much better than a chicken.”",
+      "questions": [
+        {
+          "id": "ws-07-sec-e2-q02",
+          "order": 2,
+          "prompt": "What change did he find when he was back home?",
+          "acceptedAnswers": [
+            "He found new neighbors near his mother's house.",
+            "He found new neighbours near his mother's house.",
+            "There were new neighbors near his mother's house.",
+            "He found new neighbors."
+          ],
+          "explanation": "found new neighbors"
+        },
+        {
+          "id": "ws-07-sec-e2-q03",
+          "order": 3,
+          "prompt": "How was their daughter?",
+          "acceptedAnswers": [
+            "She was pretty.",
+            "She was a pretty girl.",
+            "Their daughter was pretty."
+          ],
+          "explanation": "a pretty daughter"
+        },
+        {
+          "id": "ws-07-sec-e2-q04",
+          "order": 4,
+          "prompt": "How did Bob feel about the girl?",
+          "acceptedAnswers": [
+            "He loved her.",
+            "He loved her and wanted to marry her.",
+            "He loved her and he wanted to marry her."
+          ],
+          "explanation": "Bob soon loved her"
+        },
+        {
+          "id": "ws-07-sec-e2-q05",
+          "order": 5,
+          "prompt": "What did Bob tell the girl?",
+          "acceptedAnswers": [
+            "He promised to send her a present from every port.",
+            "He promised the girl to send a present from every port.",
+            "He promised to send a present from every port.",
+            "He told her he would send a present from every port."
+          ],
+          "explanation": "promised to send a present"
+        },
+        {
+          "id": "ws-07-sec-e2-q06",
+          "order": 6,
+          "prompt": "What did Bob send the girl from Capetown?",
+          "acceptedAnswers": [
+            "He sent her a parrot.",
+            "He sent the girl a parrot.",
+            "A parrot."
+          ],
+          "explanation": "a parrot"
+        },
+        {
+          "id": "ws-07-sec-e2-q07",
+          "order": 7,
+          "prompt": "Where is Capetown?",
+          "acceptedAnswers": [
+            "It is in Africa.",
+            "Capetown is in Africa.",
+            "In Africa.",
+            "It is in South Africa."
+          ],
+          "explanation": "Capetown in Africa"
+        },
+        {
+          "id": "ws-07-sec-e2-q08",
+          "order": 8,
+          "prompt": "How many languages did the parrot speak?",
+          "acceptedAnswers": [
+            "It spoke three languages.",
+            "The parrot spoke three languages.",
+            "Three languages.",
+            "Three."
+          ],
+          "explanation": "speak → spoke"
+        },
+        {
+          "id": "ws-07-sec-e2-q09",
+          "order": 9,
+          "prompt": "What did the girl do with the parrot?",
+          "acceptedAnswers": [
+            "She ate it.",
+            "She cooked and ate it.",
+            "She ate the parrot."
+          ],
+          "explanation": "It tasted better than a chicken"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-7",
+      "sectionKey": "G",
+      "instruction": "Rewrite the sentences using the word and signs in parentheses. Change the previous sentence each time: (+) positive, (-) negative, (?) question, (-?) negative question. Start: We ate lunch at the cafeteria last night. (Example: (he) (-) → He didn't eat lunch at the cafeteria last night.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-07-sec-g-q03",
+          "order": 3,
+          "prompt": "Previous: He didn't eat lunch at the cafeteria last night. → (yesterday) (?)",
+          "acceptedAnswers": [
+            "Did he eat lunch at the cafeteria yesterday?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q04",
+          "order": 4,
+          "prompt": "Previous: Did he eat lunch at the cafeteria yesterday? → (study in the library) (-?)",
+          "acceptedAnswers": [
+            "Didn't he study in the library yesterday?",
+            "Did he not study in the library yesterday?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q05",
+          "order": 5,
+          "prompt": "Previous: Didn't he study in the library yesterday? → (we) (-)",
+          "acceptedAnswers": [
+            "We didn't study in the library yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q06",
+          "order": 6,
+          "prompt": "Previous: We didn't study in the library yesterday. → (play tennis) (+)",
+          "acceptedAnswers": [
+            "We played tennis yesterday."
+          ],
+          "explanation": "positive: verb + ed"
+        },
+        {
+          "id": "ws-07-sec-g-q07",
+          "order": 7,
+          "prompt": "Previous: We played tennis yesterday. → (I) (-)",
+          "acceptedAnswers": [
+            "I didn't play tennis yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q08",
+          "order": 8,
+          "prompt": "Previous: I didn't play tennis yesterday. → (get a present) (+)",
+          "acceptedAnswers": [
+            "I got a present yesterday."
+          ],
+          "explanation": "get → got"
+        },
+        {
+          "id": "ws-07-sec-g-q09",
+          "order": 9,
+          "prompt": "Previous: I got a present yesterday. → (you) (-?)",
+          "acceptedAnswers": [
+            "Didn't you get a present yesterday?",
+            "Did you not get a present yesterday?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q10",
+          "order": 10,
+          "prompt": "Previous: Didn't you get a present yesterday? → (go shopping) (?)",
+          "acceptedAnswers": [
+            "Did you go shopping yesterday?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q11",
+          "order": 11,
+          "prompt": "Previous: Did you go shopping yesterday? → (last week) (-)",
+          "acceptedAnswers": [
+            "You didn't go shopping last week."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q12",
+          "order": 12,
+          "prompt": "Previous: You didn't go shopping last week. → (she) (+)",
+          "acceptedAnswers": [
+            "She went shopping last week."
+          ],
+          "explanation": "go → went"
+        },
+        {
+          "id": "ws-07-sec-g-q13",
+          "order": 13,
+          "prompt": "Previous: She went shopping last week. → (stay home) (?)",
+          "acceptedAnswers": [
+            "Did she stay home last week?",
+            "Did she stay at home last week?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q14",
+          "order": 14,
+          "prompt": "Previous: Did she stay home last week? → (last night) (-?)",
+          "acceptedAnswers": [
+            "Didn't she stay home last night?",
+            "Did she not stay home last night?",
+            "Didn't she stay at home last night?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q15",
+          "order": 15,
+          "prompt": "Previous: Didn't she stay home last night? → (they) (-)",
+          "acceptedAnswers": [
+            "They didn't stay home last night.",
+            "They didn't stay at home last night."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q16",
+          "order": 16,
+          "prompt": "Previous: They didn't stay home last night. → (get into trouble) (+)",
+          "acceptedAnswers": [
+            "They got into trouble last night."
+          ],
+          "explanation": "get → got"
+        },
+        {
+          "id": "ws-07-sec-g-q17",
+          "order": 17,
+          "prompt": "Previous: They got into trouble last night. → (you) (?)",
+          "acceptedAnswers": [
+            "Did you get into trouble last night?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q18",
+          "order": 18,
+          "prompt": "Previous: Did you get into trouble last night? → (see him) (-?)",
+          "acceptedAnswers": [
+            "Didn't you see him last night?",
+            "Did you not see him last night?"
+          ],
+          "explanation": "negative question: Didn't + subject"
+        },
+        {
+          "id": "ws-07-sec-g-q19",
+          "order": 19,
+          "prompt": "Previous: Didn't you see him last night? → (yesterday afternoon) (?)",
+          "acceptedAnswers": [
+            "Did you see him yesterday afternoon?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-07-sec-g-q20",
+          "order": 20,
+          "prompt": "Previous: Did you see him yesterday afternoon? → (I) (+)",
+          "acceptedAnswers": [
+            "I saw him yesterday afternoon."
+          ],
+          "explanation": "see → saw"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-8",
+      "sectionKey": "H",
+      "instruction": "Fill in the blanks with a correct form of PAST CONTINUOUS.",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-08-sec-a-q01",
+          "order": 1,
+          "prompt": "Alice hurt herself while she [gap] (skate).",
+          "acceptedAnswers": [
+            "was skating"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q02",
+          "order": 2,
+          "prompt": "I met my neighbor while I [gap] (walk) home from work.",
+          "acceptedAnswers": [
+            "was walking"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q03",
+          "order": 3,
+          "prompt": "Sally saw a friend while she [gap] (ride) her bicycle along Park St.",
+          "acceptedAnswers": [
+            "was riding"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q04",
+          "order": 4,
+          "prompt": "Peter fell asleep while he [gap] (study).",
+          "acceptedAnswers": [
+            "was studying"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q05",
+          "order": 5,
+          "prompt": "Bob stepped on Jane's feet while they [gap] (dance) together.",
+          "acceptedAnswers": [
+            "were dancing"
+          ],
+          "explanation": "they → were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q06",
+          "order": 6,
+          "prompt": "I cut myself while I [gap] (shave).",
+          "acceptedAnswers": [
+            "was shaving"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q07",
+          "order": 7,
+          "prompt": "Mr. and Mrs. Brown burned themselves while they [gap] (bake) cookies.",
+          "acceptedAnswers": [
+            "were baking"
+          ],
+          "explanation": "they → were + -ing"
+        },
+        {
+          "id": "ws-08-sec-a-q08",
+          "order": 8,
+          "prompt": "Tommy had a nightmare while he [gap] (sleep) at a friend's house.",
+          "acceptedAnswers": [
+            "was sleeping"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-9",
+      "sectionKey": "I",
+      "instruction": "How did it happen? (Example: How did Alice hurt herself? (play soccer) → She hurt herself while she was playing soccer.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-08-sec-b-q02",
+          "order": 2,
+          "prompt": "How did Martin burn himself? (iron his clothes)",
+          "acceptedAnswers": [
+            "He burned himself while he was ironing his clothes.",
+            "He burnt himself while he was ironing his clothes.",
+            "Martin burned himself while he was ironing his clothes."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q03",
+          "order": 3,
+          "prompt": "How did Helen cut herself? (slice onions)",
+          "acceptedAnswers": [
+            "She cut herself while she was slicing onions.",
+            "Helen cut herself while she was slicing onions."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q04",
+          "order": 4,
+          "prompt": "How did Jennifer meet her husband? (fix a flat tire)",
+          "acceptedAnswers": [
+            "She met her husband while she was fixing a flat tire.",
+            "She met her husband while she was fixing a flat tyre.",
+            "Jennifer met her husband while she was fixing a flat tire.",
+            "She met him while she was fixing a flat tire."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q05",
+          "order": 5,
+          "prompt": "How did Marvin break his arm? (skate)",
+          "acceptedAnswers": [
+            "He broke his arm while he was skating.",
+            "Marvin broke his arm while he was skating."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q06",
+          "order": 6,
+          "prompt": "How did you lose your wallet? (ride my bicycle)",
+          "acceptedAnswers": [
+            "I lost my wallet while I was riding my bicycle.",
+            "I lost it while I was riding my bicycle."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q07",
+          "order": 7,
+          "prompt": "How did Jeff meet his wife? (swim at the beach)",
+          "acceptedAnswers": [
+            "He met his wife while he was swimming at the beach.",
+            "Jeff met his wife while he was swimming at the beach.",
+            "He met her while he was swimming at the beach."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q08",
+          "order": 8,
+          "prompt": "How did Bob get a black eye? (fight with his brother)",
+          "acceptedAnswers": [
+            "He got a black eye while he was fighting with his brother.",
+            "Bob got a black eye while he was fighting with his brother."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-b-q09",
+          "order": 9,
+          "prompt": "How did your children burn themselves? (make breakfast)",
+          "acceptedAnswers": [
+            "They burned themselves while they were making breakfast.",
+            "They burnt themselves while they were making breakfast.",
+            "My children burned themselves while they were making breakfast."
+          ],
+          "explanation": "they → were + -ing"
+        },
+        {
+          "id": "ws-08-sec-b-q10",
+          "order": 10,
+          "prompt": "How did Martha fall? (dance)",
+          "acceptedAnswers": [
+            "She fell while she was dancing.",
+            "Martha fell while she was dancing."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-10",
+      "sectionKey": "J",
+      "instruction": "What's the matter? Make dialogues as in the example, using the table. Write the last line of each dialogue: what happened while the person was doing the activity. (Example: You: Hi, Tina! What's the matter with your foot? Tina: I broke it. You: How did it happen? Tina: I fell on the ice while I was ice-skating.)",
+      "type": "sentence_building",
+      "tableData": {
+        "headers": [
+          "Name",
+          "What was he / she doing?",
+          "What happened?",
+          "What's the result?"
+        ],
+        "rows": [
+          [
+            "Tina",
+            "ice-skate",
+            "fall on the ice",
+            "break foot"
+          ],
+          [
+            "Jack",
+            "play football",
+            "kick the goalpost",
+            "break leg"
+          ],
+          [
+            "Bob",
+            "cycle",
+            "fall off the bike",
+            "injure hand"
+          ],
+          [
+            "Ann",
+            "skate",
+            "fall over",
+            "break arm"
+          ],
+          [
+            "Alice",
+            "dance",
+            "trip over the carpet",
+            "sprain ankle"
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-08-sec-c-q01",
+          "order": 1,
+          "prompt": "You: Hi, Jack! What's the matter with your leg? Jack: I broke it. You: How did it happen? Jack: (kick the goalpost / play football)",
+          "acceptedAnswers": [
+            "I kicked the goalpost while I was playing football.",
+            "While I was playing football, I kicked the goalpost."
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-c-q02",
+          "order": 2,
+          "prompt": "You: Hi, Bob! What's the matter with your hand? Bob: I injured it. You: How did it happen? Bob: (fall off the bike / cycle)",
+          "acceptedAnswers": [
+            "I fell off the bike while I was cycling.",
+            "I fell off my bike while I was cycling.",
+            "While I was cycling, I fell off the bike."
+          ],
+          "explanation": "fall → fell; interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-c-q03",
+          "order": 3,
+          "prompt": "You: Hi, Ann! What's the matter with your arm? Ann: I broke it. You: How did it happen? Ann: (fall over / skate)",
+          "acceptedAnswers": [
+            "I fell over while I was skating.",
+            "While I was skating, I fell over."
+          ],
+          "explanation": "fall → fell; interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-c-q04",
+          "order": 4,
+          "prompt": "You: Hi, Alice! What's the matter with your ankle? Alice: I sprained it. You: How did it happen? Alice: (trip over the carpet / dance)",
+          "acceptedAnswers": [
+            "I tripped over the carpet while I was dancing.",
+            "While I was dancing, I tripped over the carpet."
+          ],
+          "explanation": "trip → tripped; interrupted action: past continuous + past simple"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-11",
+      "sectionKey": "K",
+      "instruction": "Fill in the blanks with a correct form, the PAST SIMPLE or the PAST CONTINUOUS.",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-08-sec-d-q01",
+          "order": 1,
+          "prompt": "He [gap] (talk) with Mary, when Mrs. Smith came in.",
+          "acceptedAnswers": [
+            "was talking"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-d-q02",
+          "order": 2,
+          "prompt": "They [gap] (study) two hours last night.",
+          "acceptedAnswers": [
+            "studied"
+          ],
+          "explanation": "finished action with duration: past simple"
+        },
+        {
+          "id": "ws-08-sec-d-q03",
+          "order": 3,
+          "prompt": "Jane [gap] (sleep) when the telephone rang.",
+          "acceptedAnswers": [
+            "was sleeping"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-d-q04",
+          "order": 4,
+          "prompt": "As I [gap] (walk) to the lab, I met my friend.",
+          "acceptedAnswers": [
+            "was walking"
+          ],
+          "explanation": "as = while: past continuous"
+        },
+        {
+          "id": "ws-08-sec-d-q05",
+          "order": 5,
+          "prompt": "We [gap] (watch) TV last night.",
+          "acceptedAnswers": [
+            "watched"
+          ],
+          "explanation": "finished past action: past simple"
+        },
+        {
+          "id": "ws-08-sec-d-q06",
+          "order": 6,
+          "prompt": "The customer [gap] (pay) his cheque when he dropped his credit card.",
+          "acceptedAnswers": [
+            "was paying"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-d-q07",
+          "order": 7,
+          "prompt": "The barber [gap] (cut) my hair yesterday.",
+          "acceptedAnswers": [
+            "cut"
+          ],
+          "explanation": "cut → cut (irregular)"
+        },
+        {
+          "id": "ws-08-sec-d-q08",
+          "order": 8,
+          "prompt": "She [gap] (dance) when she hurt her ankle.",
+          "acceptedAnswers": [
+            "was dancing"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-d-q09",
+          "order": 9,
+          "prompt": "It [gap] (rain) hard when I got up.",
+          "acceptedAnswers": [
+            "was raining"
+          ],
+          "explanation": "background action: past continuous"
+        },
+        {
+          "id": "ws-08-sec-d-q10",
+          "order": 10,
+          "prompt": "It [gap] (rain) hard last night.",
+          "acceptedAnswers": [
+            "rained"
+          ],
+          "explanation": "finished past event: past simple"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-12",
+      "sectionKey": "L",
+      "instruction": "Complete the sentences with the words in parentheses using the SIMPLE PAST or the PAST PROGRESSIVE.",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-08-sec-e-q01",
+          "order": 1,
+          "prompt": "Sally [gap] (eat) dinner last night when someone [gap] (knock) on the door.",
+          "acceptedAnswers": [
+            "was eating / knocked"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-e-q02",
+          "order": 2,
+          "prompt": "I began to study at seven last night. Fred [gap] (come) at seven-thirty. I [gap] (study) when Fred [gap] (come).",
+          "acceptedAnswers": [
+            "came / was studying / came"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-e-q03",
+          "order": 3,
+          "prompt": "While I [gap] (study) last night, Fred [gap] (drop by) to visit me.",
+          "acceptedAnswers": [
+            "was studying / dropped by"
+          ],
+          "explanation": "while + past continuous"
+        },
+        {
+          "id": "ws-08-sec-e-q04",
+          "order": 4,
+          "prompt": "My roommate's parents [gap] (call) him last night while we [gap] (watch) TV.",
+          "acceptedAnswers": [
+            "called / were watching"
+          ],
+          "explanation": "while + past continuous"
+        },
+        {
+          "id": "ws-08-sec-e-q05",
+          "order": 5,
+          "prompt": "My mother called me around five. My husband came home a little after five. When he [gap] (come) home, I [gap] (talk) to my mother on the phone.",
+          "acceptedAnswers": [
+            "came / was talking"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-08-sec-e-q06",
+          "order": 6,
+          "prompt": "Yesterday Tom and Janice [gap] (go) to the zoo around one. They [gap] (see) many kinds of animals. They stayed at the zoo for two hours. While they [gap] (walk) home, it [gap] (begin) to rain, so they [gap] (stop) at a small café and [gap] (have) a cup of coffee.",
+          "acceptedAnswers": [
+            "went / saw / were walking / began / stopped / had"
+          ],
+          "explanation": "sequence: past simple; while + past continuous"
+        },
+        {
+          "id": "ws-08-sec-e-q07",
+          "order": 7,
+          "prompt": "Yesterday afternoon I [gap] (go) to visit the Parker family. When I [gap] (get) there around two o'clock, Mrs. Parker [gap] (be) in the yard. She [gap] (plant) flowers in her garden. Mr. Parker [gap] (be) in the garage. He [gap] (work) on their car. He [gap] (change) the oil.",
+          "acceptedAnswers": [
+            "went / got / was / was planting / was / was working / was changing"
+          ],
+          "explanation": "actions in progress when I arrived: past continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-13",
+      "sectionKey": "M",
+      "instruction": "What's the question? Use the question words in the box. (Example: Who did you visit? → I visited my cousin.)",
+      "type": "question_formation",
+      "wordBank": [
+        "how",
+        "how long",
+        "how many",
+        "what",
+        "what kind of",
+        "when",
+        "where",
+        "who",
+        "why"
+      ],
+      "questions": [
+        {
+          "id": "ws-08-sec-e2-q02",
+          "order": 2,
+          "prompt": "Answer: We talked about my job.",
+          "acceptedAnswers": [
+            "What did you talk about?"
+          ],
+          "explanation": "What + did + subject + verb + preposition"
+        },
+        {
+          "id": "ws-08-sec-e2-q03",
+          "order": 3,
+          "prompt": "Answer: She went to the beach.",
+          "acceptedAnswers": [
+            "Where did she go?"
+          ],
+          "explanation": "Where did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q04",
+          "order": 4,
+          "prompt": "Answer: She met her friend.",
+          "acceptedAnswers": [
+            "Who did she meet?"
+          ],
+          "explanation": "Who did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q05",
+          "order": 5,
+          "prompt": "Answer: They spoke Russian.",
+          "acceptedAnswers": [
+            "What language did they speak?",
+            "What did they speak?",
+            "What kind of language did they speak?"
+          ],
+          "explanation": "What (language) did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q06",
+          "order": 6,
+          "prompt": "Answer: They swam in the ocean.",
+          "acceptedAnswers": [
+            "Where did they swim?"
+          ],
+          "explanation": "Where did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q07",
+          "order": 7,
+          "prompt": "Answer: He had dinner at 8:00.",
+          "acceptedAnswers": [
+            "When did he have dinner?",
+            "What time did he have dinner?"
+          ],
+          "explanation": "When / What time did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q08",
+          "order": 8,
+          "prompt": "Answer: I baked an apple pie.",
+          "acceptedAnswers": [
+            "What kind of pie did you bake?",
+            "What did you bake?"
+          ],
+          "explanation": "What kind of…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q09",
+          "order": 9,
+          "prompt": "Answer: She cried because her dog ran away.",
+          "acceptedAnswers": [
+            "Why did she cry?"
+          ],
+          "explanation": "Why did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q10",
+          "order": 10,
+          "prompt": "Answer: I stayed for a week.",
+          "acceptedAnswers": [
+            "How long did you stay?"
+          ],
+          "explanation": "How long did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q11",
+          "order": 11,
+          "prompt": "Answer: I came home by train.",
+          "acceptedAnswers": [
+            "How did you come home?",
+            "How did you get home?"
+          ],
+          "explanation": "How = means of transport"
+        },
+        {
+          "id": "ws-08-sec-e2-q12",
+          "order": 12,
+          "prompt": "Answer: He ate three hamburgers.",
+          "acceptedAnswers": [
+            "How many hamburgers did he eat?"
+          ],
+          "explanation": "How many + plural noun"
+        },
+        {
+          "id": "ws-08-sec-e2-q13",
+          "order": 13,
+          "prompt": "Answer: He left the restaurant at 9:00.",
+          "acceptedAnswers": [
+            "When did he leave the restaurant?",
+            "What time did he leave the restaurant?"
+          ],
+          "explanation": "When / What time did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q14",
+          "order": 14,
+          "prompt": "Answer: She wrote a letter to her mother.",
+          "acceptedAnswers": [
+            "Who did she write a letter to?",
+            "Who did she write to?",
+            "What did she write to her mother?"
+          ],
+          "explanation": "Who … to?"
+        },
+        {
+          "id": "ws-08-sec-e2-q15",
+          "order": 15,
+          "prompt": "Answer: They studied all morning.",
+          "acceptedAnswers": [
+            "How long did they study?",
+            "When did they study?"
+          ],
+          "explanation": "How long did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q16",
+          "order": 16,
+          "prompt": "Answer: We took a lot of photographs.",
+          "acceptedAnswers": [
+            "How many photographs did you take?",
+            "What did you take?"
+          ],
+          "explanation": "How many + plural noun"
+        },
+        {
+          "id": "ws-08-sec-e2-q17",
+          "order": 17,
+          "prompt": "Answer: We sent a postcard to our teacher.",
+          "acceptedAnswers": [
+            "Who did you send a postcard to?",
+            "Who did you send a postcard?",
+            "What did you send to your teacher?"
+          ],
+          "explanation": "Who … to?"
+        },
+        {
+          "id": "ws-08-sec-e2-q18",
+          "order": 18,
+          "prompt": "Answer: He fell asleep during the lecture.",
+          "acceptedAnswers": [
+            "When did he fall asleep?"
+          ],
+          "explanation": "When did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q19",
+          "order": 19,
+          "prompt": "Answer: I lost my wallet while I was skating.",
+          "acceptedAnswers": [
+            "When did you lose your wallet?",
+            "How did you lose your wallet?",
+            "What did you lose?"
+          ],
+          "explanation": "When / How did…?"
+        },
+        {
+          "id": "ws-08-sec-e2-q20",
+          "order": 20,
+          "prompt": "Answer: They covered their eyes because they were scared.",
+          "acceptedAnswers": [
+            "Why did they cover their eyes?"
+          ],
+          "explanation": "Why did…?"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-14",
+      "sectionKey": "N",
+      "instruction": "Fill in the blanks with a correct form of PAST CONTINUOUS. (Example: It was very cold. The sun was not shining. (not / shine))",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-09-sec-a-q02",
+          "order": 2,
+          "prompt": "It wasn't a stormy night. The wind [gap] (not / blow).",
+          "acceptedAnswers": [
+            "wasn't blowing"
+          ],
+          "explanation": "negative: wasn't + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q03",
+          "order": 3,
+          "prompt": "He wasn't sleeping. He [gap] (look) at the ceiling.",
+          "acceptedAnswers": [
+            "was looking"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q04",
+          "order": 4,
+          "prompt": "They were having a rest. They [gap] (not / work).",
+          "acceptedAnswers": [
+            "weren't working"
+          ],
+          "explanation": "negative: weren't + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q05",
+          "order": 5,
+          "prompt": "They were very happy. They [gap] (enjoy) the party.",
+          "acceptedAnswers": [
+            "were enjoying"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q06",
+          "order": 6,
+          "prompt": "He was at home. He [gap] (watch) a movie on TV.",
+          "acceptedAnswers": [
+            "was watching"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q07",
+          "order": 7,
+          "prompt": "He was getting worse. He [gap] (not / recover).",
+          "acceptedAnswers": [
+            "wasn't recovering"
+          ],
+          "explanation": "negative: wasn't + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q08",
+          "order": 8,
+          "prompt": "We [gap] (travel) in the north of Turkey when we were on holiday.",
+          "acceptedAnswers": [
+            "were travelling|were traveling"
+          ],
+          "explanation": "past continuous: was/were + -ing"
+        },
+        {
+          "id": "ws-09-sec-a-q09",
+          "order": 9,
+          "prompt": "She [gap] (drive) so fast when the accident happened.",
+          "acceptedAnswers": [
+            "was driving"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-09-sec-a-q10",
+          "order": 10,
+          "prompt": "I [gap] (not / sleep) when you came in.",
+          "acceptedAnswers": [
+            "wasn't sleeping"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        }
+      ]
+    },
+    {
+      "id": "card-03-sec-15",
+      "sectionKey": "O",
+      "instruction": "Complete the sentences with the words in parentheses using the SIMPLE PAST or the PAST PROGRESSIVE.",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-09-sec-b-q01",
+          "order": 1,
+          "prompt": "While they [gap] (travel) to China, Marco [gap] (keep) a diary.",
+          "acceptedAnswers": [
+            "were travelling|were traveling / kept"
+          ],
+          "explanation": "while + past continuous; keep → kept"
+        },
+        {
+          "id": "ws-09-sec-b-q02",
+          "order": 2,
+          "prompt": "Mrs. White [gap] (drive) past a house in Main Street when she [gap] (see) the ground floor on fire.",
+          "acceptedAnswers": [
+            "was driving / saw"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-09-sec-b-q03",
+          "order": 3,
+          "prompt": "While he [gap] (fly) off the Miami Coast, the pilot [gap] (see) sharks approaching the swimmers.",
+          "acceptedAnswers": [
+            "was flying / saw"
+          ],
+          "explanation": "while + past continuous"
+        },
+        {
+          "id": "ws-09-sec-b-q04",
+          "order": 4,
+          "prompt": "The fireman [gap] (fight) the fire on a balcony below when he [gap] (hear) someone's shouts.",
+          "acceptedAnswers": [
+            "was fighting / heard"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-09-sec-b-q05",
+          "order": 5,
+          "prompt": "She [gap] (die) while she [gap] (run) after a bus.",
+          "acceptedAnswers": [
+            "died / was running"
+          ],
+          "explanation": "while + past continuous"
+        },
+        {
+          "id": "ws-09-sec-b-q06",
+          "order": 6,
+          "prompt": "We [gap] (have) dinner when the electricity [gap] (go) off.",
+          "acceptedAnswers": [
+            "were having / went"
+          ],
+          "explanation": "interrupted action: past continuous + past simple"
+        },
+        {
+          "id": "ws-09-sec-b-q07",
+          "order": 7,
+          "prompt": "She [gap] (think) of something else while you [gap] (talk) to her.",
+          "acceptedAnswers": [
+            "was thinking / were talking"
+          ],
+          "explanation": "two actions in progress: both continuous"
+        },
+        {
+          "id": "ws-09-sec-b-q08",
+          "order": 8,
+          "prompt": "I [gap] (see) her while I [gap] (look) out of the window.",
+          "acceptedAnswers": [
+            "saw / was looking"
+          ],
+          "explanation": "while + past continuous"
+        },
+        {
+          "id": "ws-09-sec-b-q09",
+          "order": 9,
+          "prompt": "While the teacher [gap] (talk), the students [gap] (look) at an insect on the ceiling.",
+          "acceptedAnswers": [
+            "was talking / were looking"
+          ],
+          "explanation": "two actions in progress: both continuous"
+        }
+      ]
+    }
+  ]
+}

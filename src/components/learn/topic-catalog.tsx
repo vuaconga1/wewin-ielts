@@ -120,7 +120,18 @@ function themeKey(title: string) {
  * Colour lessons by theme (text before ":"), in lesson order. Within a theme the
  * header darkens as lessons get harder; themeless lessons are navy checkpoints.
  */
-function buildTopicThemes(titles: string[]) {
+function buildTopicThemes(titles: string[], track?: VocabGrammarTrack) {
+  if (track === "grammar") {
+    return titles.map((title, i) => ({
+      headerClass: `bg-gradient-to-r ${CHECKPOINT_HUE.steps[1]}`,
+      borderHoverClass: CHECKPOINT_HUE.borderHoverClass,
+      badgeClass: CHECKPOINT_HUE.badgeClass,
+      metaClass: CHECKPOINT_HUE.metaClass,
+      bodyClass: CHECKPOINT_HUE.bodyClass,
+      Icon: skillIcon(title, i),
+    }));
+  }
+
   const hueByTheme = new Map<string, TopicHue>();
   const members = new Map<string, number[]>();
   titles.forEach((title, i) => {
@@ -181,7 +192,7 @@ export function TopicCatalog({
   const titles = topics.map((topic) =>
     isVocabulary ? topic.title.en : pickLocalized(topic.title, locale),
   );
-  const themes = buildTopicThemes(titles);
+  const themes = buildTopicThemes(titles, track);
 
   return (
     <div className="space-y-4">

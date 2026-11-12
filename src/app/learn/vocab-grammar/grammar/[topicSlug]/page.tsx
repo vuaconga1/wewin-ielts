@@ -16,6 +16,8 @@ import { canViewIeltsGrammar } from "@/lib/auth/roles";
 import { SiteShell } from "@/components/layout/site-shell";
 import { TopicLessonPlayer } from "@/components/learn/topic-lesson-player";
 import { GrammarCourseLocked } from "@/components/learn/grammar-course-tabs";
+import { WorksheetPlayer } from "@/components/learn/worksheets/worksheet-player";
+import { getWorksheetBySlug } from "@/lib/learn/worksheets-store";
 import { getLocale, getTranslations } from "@/i18n/server";
 
 export const dynamic = "force-dynamic";
@@ -29,7 +31,16 @@ export async function generateMetadata({ params }: Props) {
   const locale = await getLocale();
   const { t } = await getTranslations();
   const topic = await getTopicBySlug("grammar", topicSlug);
-  if (!topic) return { title: t("meta.learn") };
+  if (!topic) {
+    const worksheet = await getWorksheetBySlug(topicSlug);
+    if (worksheet) {
+      return {
+        title: `${worksheet.title}: ${worksheet.subjectVi || worksheet.subject} | WeWIN IELTS`,
+        description: worksheet.subjectVi,
+      };
+    }
+    return { title: t("meta.learn") };
+  }
   return {
     title: `${pickLocalized(topic.title, locale)} | ${t("learn.grammarTrack", "Ngữ pháp")}`,
   };
@@ -39,7 +50,17 @@ export default async function GrammarTopicPage({ params }: Props) {
   const { topicSlug } = await params;
 
   const topic = await getTopicBySlug("grammar", topicSlug);
-  if (!topic) notFound();
+  if (!topic) {
+    const worksheet = await getWorksheetBySlug(topicSlug);
+    if (worksheet) {
+      return (
+        <SiteShell active="learn">
+          <WorksheetPlayer lesson={worksheet} />
+        </SiteShell>
+      );
+    }
+    notFound();
+  }
 
   const locale = await getLocale();
   const { t } = await getTranslations();

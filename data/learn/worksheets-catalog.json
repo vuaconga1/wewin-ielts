@@ -11,7 +11,7 @@
       "level": "A1",
       "pageRange": "Part 1 (WS 1)",
       "sectionCount": 14,
-      "questionCount": 166
+      "questionCount": 161
     },
     {
       "id": "ws-02",
@@ -23,8 +23,8 @@
       "subjectVi": "Ngữ pháp bài 2: Present Simple, Present Continuous",
       "level": "A1",
       "pageRange": "Part 1 (WS 2)",
-      "sectionCount": 15,
-      "questionCount": 187
+      "sectionCount": 14,
+      "questionCount": 150
     },
     {
       "id": "ws-03",
@@ -37,7 +37,7 @@
       "level": "A1",
       "pageRange": "Part 1 (WS 3)",
       "sectionCount": 8,
-      "questionCount": 80
+      "questionCount": 82
     },
     {
       "id": "ws-04",
@@ -50,7 +50,7 @@
       "level": "A1",
       "pageRange": "Part 1 (WS 4)",
       "sectionCount": 13,
-      "questionCount": 119
+      "questionCount": 96
     },
     {
       "id": "ws-05",
@@ -62,8 +62,8 @@
       "subjectVi": "Ngữ pháp bài 5: Past form of Verb “To Be “",
       "level": "A2",
       "pageRange": "Part 1 (WS 5)",
-      "sectionCount": 14,
-      "questionCount": 101
+      "sectionCount": 13,
+      "questionCount": 95
     },
     {
       "id": "ws-06",
@@ -89,7 +89,7 @@
       "level": "A2",
       "pageRange": "Part 1 (WS 7)",
       "sectionCount": 5,
-      "questionCount": 62
+      "questionCount": 49
     },
     {
       "id": "ws-07",
@@ -101,8 +101,8 @@
       "subjectVi": "Ngữ pháp bài 7: Simple Past Tense",
       "level": "A2",
       "pageRange": "Part 1 (WS 7)",
-      "sectionCount": 6,
-      "questionCount": 56
+      "sectionCount": 7,
+      "questionCount": 74
     },
     {
       "id": "ws-08",
@@ -115,7 +115,7 @@
       "level": "A2",
       "pageRange": "Part 1 (WS 8)",
       "sectionCount": 6,
-      "questionCount": 59
+      "questionCount": 57
     },
     {
       "id": "ws-09",
@@ -128,7 +128,7 @@
       "level": "A2",
       "pageRange": "Part 1 (WS 9)",
       "sectionCount": 2,
-      "questionCount": 19
+      "questionCount": 18
     },
     {
       "id": "ws-10",
@@ -141,7 +141,7 @@
       "level": "A2",
       "pageRange": "Part 1 (WS 10)",
       "sectionCount": 9,
-      "questionCount": 101
+      "questionCount": 100
     },
     {
       "id": "ws-11",
@@ -154,7 +154,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 11)",
       "sectionCount": 2,
-      "questionCount": 32
+      "questionCount": 31
     },
     {
       "id": "ws-12",
@@ -167,7 +167,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 12)",
       "sectionCount": 5,
-      "questionCount": 72
+      "questionCount": 71
     },
     {
       "id": "ws-13",
@@ -206,7 +206,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 15)",
       "sectionCount": 8,
-      "questionCount": 61
+      "questionCount": 47
     },
     {
       "id": "ws-16",
@@ -219,7 +219,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 16)",
       "sectionCount": 4,
-      "questionCount": 31
+      "questionCount": 29
     },
     {
       "id": "ws-17",
@@ -245,7 +245,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 18)",
       "sectionCount": 3,
-      "questionCount": 23
+      "questionCount": 15
     },
     {
       "id": "ws-19",
@@ -258,7 +258,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 19)",
       "sectionCount": 5,
-      "questionCount": 70
+      "questionCount": 69
     },
     {
       "id": "ws-20",
@@ -271,7 +271,7 @@
       "level": "A2",
       "pageRange": "Part 2 (WS 20)",
       "sectionCount": 16,
-      "questionCount": 189
+      "questionCount": 164
     },
     {
       "id": "ws-21",
@@ -284,7 +284,7 @@
       "level": "B1",
       "pageRange": "Part 2 (WS 21)",
       "sectionCount": 6,
-      "questionCount": 52
+      "questionCount": 83
     },
     {
       "id": "ws-22",
@@ -297,7 +297,7 @@
       "level": "B1",
       "pageRange": "Part 2 (WS 22)",
       "sectionCount": 5,
-      "questionCount": 76
+      "questionCount": 96
     },
     {
       "id": "ws-23",
@@ -310,7 +310,7 @@
       "level": "B1",
       "pageRange": "Part 2 (WS 23)",
       "sectionCount": 16,
-      "questionCount": 109
+      "questionCount": 116
     },
     {
       "id": "ws-24",
@@ -323,7 +323,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 24)",
       "sectionCount": 3,
-      "questionCount": 20
+      "questionCount": 38
     },
     {
       "id": "ws-25",
@@ -336,7 +336,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 25)",
       "sectionCount": 6,
-      "questionCount": 71
+      "questionCount": 68
     },
     {
       "id": "ws-26",
@@ -349,7 +349,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 26)",
       "sectionCount": 9,
-      "questionCount": 92
+      "questionCount": 79
     },
     {
       "id": "ws-27",
@@ -375,7 +375,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 28)",
       "sectionCount": 5,
-      "questionCount": 59
+      "questionCount": 57
     },
     {
       "id": "ws-29",
@@ -387,8 +387,8 @@
       "subjectVi": "Ngữ pháp bài 29: Adjectives ending –ing or -ed",
       "level": "B1",
       "pageRange": "Part 3 (WS 29)",
-      "sectionCount": 4,
-      "questionCount": 43
+      "sectionCount": 5,
+      "questionCount": 42
     },
     {
       "id": "ws-30",
@@ -401,7 +401,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 30)",
       "sectionCount": 12,
-      "questionCount": 120
+      "questionCount": 108
     },
     {
       "id": "ws-31",
@@ -427,7 +427,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 32)",
       "sectionCount": 10,
-      "questionCount": 80
+      "questionCount": 72
     },
     {
       "id": "ws-33",
@@ -440,7 +440,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 33)",
       "sectionCount": 5,
-      "questionCount": 62
+      "questionCount": 52
     },
     {
       "id": "ws-34",
@@ -453,7 +453,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 34)",
       "sectionCount": 6,
-      "questionCount": 67
+      "questionCount": 58
     },
     {
       "id": "ws-35",
@@ -479,7 +479,7 @@
       "level": "B1",
       "pageRange": "Part 3 (WS 36)",
       "sectionCount": 9,
-      "questionCount": 112
+      "questionCount": 101
     },
     {
       "id": "ws-37",
@@ -492,7 +492,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 37)",
       "sectionCount": 6,
-      "questionCount": 80
+      "questionCount": 71
     },
     {
       "id": "ws-38",
@@ -505,7 +505,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 38)",
       "sectionCount": 10,
-      "questionCount": 131
+      "questionCount": 127
     },
     {
       "id": "ws-39",
@@ -518,7 +518,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 39)",
       "sectionCount": 4,
-      "questionCount": 65
+      "questionCount": 68
     },
     {
       "id": "ws-40",
@@ -531,7 +531,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 40)",
       "sectionCount": 5,
-      "questionCount": 52
+      "questionCount": 41
     },
     {
       "id": "ws-41",
@@ -544,7 +544,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 41)",
       "sectionCount": 6,
-      "questionCount": 46
+      "questionCount": 45
     },
     {
       "id": "ws-42",
@@ -557,7 +557,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 42)",
       "sectionCount": 5,
-      "questionCount": 67
+      "questionCount": 57
     },
     {
       "id": "ws-43",
@@ -570,7 +570,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 43)",
       "sectionCount": 5,
-      "questionCount": 70
+      "questionCount": 65
     },
     {
       "id": "ws-44",
@@ -583,7 +583,7 @@
       "level": "B1",
       "pageRange": "Part 4 (WS 44)",
       "sectionCount": 2,
-      "questionCount": 28
+      "questionCount": 26
     },
     {
       "id": "ws-45",
@@ -595,8 +595,8 @@
       "subjectVi": "Ngữ pháp bài 45: Both ….and…. / Either …. or …. / Neither …. nor …. / Not only …. but also ….",
       "level": "B1",
       "pageRange": "Part 4 (WS 45)",
-      "sectionCount": 3,
-      "questionCount": 52
+      "sectionCount": 7,
+      "questionCount": 46
     },
     {
       "id": "ws-46",
@@ -609,7 +609,7 @@
       "level": "B2",
       "pageRange": "Part 4 (WS 46)",
       "sectionCount": 5,
-      "questionCount": 85
+      "questionCount": 94
     },
     {
       "id": "ws-47",
@@ -622,7 +622,7 @@
       "level": "B2",
       "pageRange": "Part 4 (WS 47)",
       "sectionCount": 5,
-      "questionCount": 70
+      "questionCount": 69
     },
     {
       "id": "ws-48",
@@ -635,7 +635,7 @@
       "level": "B2",
       "pageRange": "Part 4 (WS 48)",
       "sectionCount": 3,
-      "questionCount": 26
+      "questionCount": 19
     },
     {
       "id": "ws-49",
@@ -648,7 +648,7 @@
       "level": "B2",
       "pageRange": "Part 4 (WS 49)",
       "sectionCount": 3,
-      "questionCount": 24
+      "questionCount": 18
     },
     {
       "id": "ws-50",
@@ -674,7 +674,7 @@
       "level": "B2",
       "pageRange": "Part 4 (WS 51)",
       "sectionCount": 3,
-      "questionCount": 47
+      "questionCount": 46
     },
     {
       "id": "ws-52",
@@ -686,8 +686,8 @@
       "subjectVi": "Ngữ pháp bài 52: Pronouns",
       "level": "B2",
       "pageRange": "Part 5 (WS 52)",
-      "sectionCount": 3,
-      "questionCount": 83
+      "sectionCount": 8,
+      "questionCount": 82
     },
     {
       "id": "ws-53",
@@ -713,7 +713,7 @@
       "level": "B2",
       "pageRange": "Part 5 (WS 54)",
       "sectionCount": 5,
-      "questionCount": 31
+      "questionCount": 30
     },
     {
       "id": "ws-55",
@@ -752,7 +752,7 @@
       "level": "B2",
       "pageRange": "Part 5 (WS 57)",
       "sectionCount": 4,
-      "questionCount": 41
+      "questionCount": 39
     },
     {
       "id": "ws-58",
@@ -765,7 +765,7 @@
       "level": "B2",
       "pageRange": "Part 5 (WS 58)",
       "sectionCount": 3,
-      "questionCount": 25
+      "questionCount": 22
     },
     {
       "id": "ws-59",
@@ -778,7 +778,7 @@
       "level": "B2",
       "pageRange": "Part 5 (WS 59)",
       "sectionCount": 5,
-      "questionCount": 40
+      "questionCount": 33
     },
     {
       "id": "ws-60",
@@ -791,7 +791,7 @@
       "level": "B2",
       "pageRange": "Part 5 (WS 60)",
       "sectionCount": 1,
-      "questionCount": 31
+      "questionCount": 30
     }
   ]
 }

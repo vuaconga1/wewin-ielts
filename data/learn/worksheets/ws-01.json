@@ -15,553 +15,73 @@
       "instruction": "Fill in the blanks using “HE, SHE, IT, WE, THEY”:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws01-a-q01",
-          "order": 1,
-          "prompt": "cat and horse [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'cat and horse' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q02",
-          "order": 2,
-          "prompt": "Jack and I [gap]",
-          "acceptedAnswers": [
-            "WE"
-          ],
-          "explanation": "'Jack and I' is replaced by subject pronoun 'WE'."
-        },
-        {
-          "id": "ws01-a-q03",
-          "order": 3,
-          "prompt": "You and Dave [gap]",
-          "acceptedAnswers": [
-            "YOU",
-            "THEY"
-          ],
-          "explanation": "'You and Dave' is replaced by subject pronoun 'YOU'."
-        },
-        {
-          "id": "ws01-a-q04",
-          "order": 4,
-          "prompt": "cheese [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'cheese' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q05",
-          "order": 5,
-          "prompt": "Pamela [gap]",
-          "acceptedAnswers": [
-            "SHE"
-          ],
-          "explanation": "'Pamela' is replaced by subject pronoun 'SHE'."
-        },
-        {
-          "id": "ws01-a-q06",
-          "order": 6,
-          "prompt": "geese [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'geese' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q07",
-          "order": 7,
-          "prompt": "school [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'school' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q08",
-          "order": 8,
-          "prompt": "children [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'children' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q09",
-          "order": 9,
-          "prompt": "bicycle [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'bicycle' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q10",
-          "order": 10,
-          "prompt": "son [gap]",
-          "acceptedAnswers": [
-            "HE"
-          ],
-          "explanation": "'son' is replaced by subject pronoun 'HE'."
-        },
-        {
-          "id": "ws01-a-q11",
-          "order": 11,
-          "prompt": "shop [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'shop' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q12",
-          "order": 12,
-          "prompt": "MrGreen [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws01-a-q13",
-          "order": 13,
-          "prompt": "friendship [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'friendship' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q14",
-          "order": 14,
-          "prompt": "Mary [gap]",
-          "acceptedAnswers": [
-            "SHE"
-          ],
-          "explanation": "'Mary' is replaced by subject pronoun 'SHE'."
-        },
-        {
-          "id": "ws01-a-q15",
-          "order": 15,
-          "prompt": "books [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'books' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q16",
-          "order": 16,
-          "prompt": "plane [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'plane' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q17",
-          "order": 17,
-          "prompt": "cactus [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'cactus' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q18",
-          "order": 18,
-          "prompt": "news [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'news' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q19",
-          "order": 19,
-          "prompt": "flowers [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'flowers' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q20",
-          "order": 20,
-          "prompt": "daughter [gap]",
-          "acceptedAnswers": [
-            "SHE"
-          ],
-          "explanation": "'daughter' is replaced by subject pronoun 'SHE'."
-        },
-        {
-          "id": "ws01-a-q21",
-          "order": 21,
-          "prompt": "sugar [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'sugar' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q22",
-          "order": 22,
-          "prompt": "Ann and Kate [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'Ann and Kate' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q23",
-          "order": 23,
-          "prompt": "mice [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'mice' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q24",
-          "order": 24,
-          "prompt": "buses [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'buses' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q25",
-          "order": 25,
-          "prompt": "brother-in-law [gap]",
-          "acceptedAnswers": [
-            "HE"
-          ],
-          "explanation": "'brother-in-law' is replaced by subject pronoun 'HE'."
-        },
-        {
-          "id": "ws01-a-q26",
-          "order": 26,
-          "prompt": "dolphin [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'dolphin' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q27",
-          "order": 27,
-          "prompt": "Tom [gap]",
-          "acceptedAnswers": [
-            "HE"
-          ],
-          "explanation": "'Tom' is replaced by subject pronoun 'HE'."
-        },
-        {
-          "id": "ws01-a-q28",
-          "order": 28,
-          "prompt": "sister [gap]",
-          "acceptedAnswers": [
-            "SHE"
-          ],
-          "explanation": "'sister' is replaced by subject pronoun 'SHE'."
-        },
-        {
-          "id": "ws01-a-q29",
-          "order": 29,
-          "prompt": "sunshine [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'sunshine' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q30",
-          "order": 30,
-          "prompt": "parents [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'parents' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q31",
-          "order": 31,
-          "prompt": "scissors [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'scissors' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q32",
-          "order": 32,
-          "prompt": "piano [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'piano' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q33",
-          "order": 33,
-          "prompt": "milk [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'milk' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q34",
-          "order": 34,
-          "prompt": "feet [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'feet' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q35",
-          "order": 35,
-          "prompt": "tennis [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'tennis' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q36",
-          "order": 36,
-          "prompt": "sky [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'sky' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q37",
-          "order": 37,
-          "prompt": "papers [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'papers' is replaced by subject pronoun 'THEY'."
-        },
-        {
-          "id": "ws01-a-q38",
-          "order": 38,
-          "prompt": "picture [gap]",
-          "acceptedAnswers": [
-            "IT"
-          ],
-          "explanation": "'picture' is replaced by subject pronoun 'IT'."
-        },
-        {
-          "id": "ws01-a-q39",
-          "order": 39,
-          "prompt": "The Riggs family [gap]",
-          "acceptedAnswers": [
-            "THEY"
-          ],
-          "explanation": "'The Riggs family' is replaced by subject pronoun 'THEY'."
-        }
+        { "id": "ws-01-sec-a-q01", "order": 1, "prompt": "cat and horse [gap]", "acceptedAnswers": ["they"], "explanation": "two animals (plural) → they" },
+        { "id": "ws-01-sec-a-q02", "order": 2, "prompt": "Jack and I [gap]", "acceptedAnswers": ["we"], "explanation": "someone and I → we" },
+        { "id": "ws-01-sec-a-q03", "order": 3, "prompt": "You and Dave [gap]", "acceptedAnswers": ["you"], "explanation": "you and someone → you (plural)" },
+        { "id": "ws-01-sec-a-q04", "order": 4, "prompt": "cheese [gap]", "acceptedAnswers": ["it"], "explanation": "thing / uncountable noun → it" },
+        { "id": "ws-01-sec-a-q05", "order": 5, "prompt": "Pamela [gap]", "acceptedAnswers": ["she"], "explanation": "one woman → she" },
+        { "id": "ws-01-sec-a-q06", "order": 6, "prompt": "geese [gap]", "acceptedAnswers": ["they"], "explanation": "plural (goose → geese) → they" },
+        { "id": "ws-01-sec-a-q07", "order": 7, "prompt": "school [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q08", "order": 8, "prompt": "children [gap]", "acceptedAnswers": ["they"], "explanation": "plural (child → children) → they" },
+        { "id": "ws-01-sec-a-q09", "order": 9, "prompt": "bicycle [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q10", "order": 10, "prompt": "son [gap]", "acceptedAnswers": ["he"], "explanation": "one male → he" },
+        { "id": "ws-01-sec-a-q11", "order": 11, "prompt": "shop [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q12", "order": 12, "prompt": "Mr. Green [gap]", "acceptedAnswers": ["he"], "explanation": "Mr. = a man → he" },
+        { "id": "ws-01-sec-a-q13", "order": 13, "prompt": "friendship [gap]", "acceptedAnswers": ["it"], "explanation": "abstract noun → it" },
+        { "id": "ws-01-sec-a-q14", "order": 14, "prompt": "Mary [gap]", "acceptedAnswers": ["she"], "explanation": "one woman → she" },
+        { "id": "ws-01-sec-a-q15", "order": 15, "prompt": "books [gap]", "acceptedAnswers": ["they"], "explanation": "plural noun → they" },
+        { "id": "ws-01-sec-a-q16", "order": 16, "prompt": "plane [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q17", "order": 17, "prompt": "cactus [gap]", "acceptedAnswers": ["it"], "explanation": "one plant → it" },
+        { "id": "ws-01-sec-a-q18", "order": 18, "prompt": "news [gap]", "acceptedAnswers": ["it"], "explanation": "news is uncountable (singular) → it" },
+        { "id": "ws-01-sec-a-q19", "order": 19, "prompt": "flowers [gap]", "acceptedAnswers": ["they"], "explanation": "plural noun → they" },
+        { "id": "ws-01-sec-a-q20", "order": 20, "prompt": "daughter [gap]", "acceptedAnswers": ["she"], "explanation": "one female → she" },
+        { "id": "ws-01-sec-a-q21", "order": 21, "prompt": "sugar [gap]", "acceptedAnswers": ["it"], "explanation": "uncountable noun → it" },
+        { "id": "ws-01-sec-a-q22", "order": 22, "prompt": "Ann and Kate [gap]", "acceptedAnswers": ["they"], "explanation": "two people → they" },
+        { "id": "ws-01-sec-a-q23", "order": 23, "prompt": "mice [gap]", "acceptedAnswers": ["they"], "explanation": "plural (mouse → mice) → they" },
+        { "id": "ws-01-sec-a-q24", "order": 24, "prompt": "buses [gap]", "acceptedAnswers": ["they"], "explanation": "plural noun → they" },
+        { "id": "ws-01-sec-a-q25", "order": 25, "prompt": "brother-in-law [gap]", "acceptedAnswers": ["he"], "explanation": "one male → he" },
+        { "id": "ws-01-sec-a-q26", "order": 26, "prompt": "dolphin [gap]", "acceptedAnswers": ["it"], "explanation": "one animal → it" },
+        { "id": "ws-01-sec-a-q27", "order": 27, "prompt": "Tom [gap]", "acceptedAnswers": ["he"], "explanation": "one man → he" },
+        { "id": "ws-01-sec-a-q28", "order": 28, "prompt": "sister [gap]", "acceptedAnswers": ["she"], "explanation": "one female → she" },
+        { "id": "ws-01-sec-a-q29", "order": 29, "prompt": "sunshine [gap]", "acceptedAnswers": ["it"], "explanation": "uncountable noun → it" },
+        { "id": "ws-01-sec-a-q30", "order": 30, "prompt": "parents [gap]", "acceptedAnswers": ["they"], "explanation": "plural noun → they" },
+        { "id": "ws-01-sec-a-q31", "order": 31, "prompt": "scissors [gap]", "acceptedAnswers": ["they"], "explanation": "scissors is always plural → they" },
+        { "id": "ws-01-sec-a-q32", "order": 32, "prompt": "piano [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q33", "order": 33, "prompt": "milk [gap]", "acceptedAnswers": ["it"], "explanation": "uncountable noun → it" },
+        { "id": "ws-01-sec-a-q34", "order": 34, "prompt": "feet [gap]", "acceptedAnswers": ["they"], "explanation": "plural (foot → feet) → they" },
+        { "id": "ws-01-sec-a-q35", "order": 35, "prompt": "tennis [gap]", "acceptedAnswers": ["it"], "explanation": "a sport → it" },
+        { "id": "ws-01-sec-a-q36", "order": 36, "prompt": "sky [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q37", "order": 37, "prompt": "papers [gap]", "acceptedAnswers": ["they"], "explanation": "plural noun → they" },
+        { "id": "ws-01-sec-a-q38", "order": 38, "prompt": "picture [gap]", "acceptedAnswers": ["it"], "explanation": "one thing → it" },
+        { "id": "ws-01-sec-a-q39", "order": 39, "prompt": "The Riggs family [gap]", "acceptedAnswers": ["they"], "explanation": "a family (its members) → they" }
       ]
     },
     {
       "id": "ws-01-sec-b",
       "sectionKey": "B",
-      "instruction": "Fill in the blanks using “AM, IS, ARE, AM NOT, ISN’T, AREN’T”:",
+      "instruction": "Fill in the blanks using “AM, IS, ARE, AM NOT, ISN’T, AREN’T” (+ = positive, - = negative):",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-01-sec-b-q01",
-          "order": 1,
-          "prompt": "It [gap] an onion. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q02",
-          "order": 2,
-          "prompt": "Jasmine [gap] a student. (-)",
-          "acceptedAnswers": [
-            "isn't",
-            "is not"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q03",
-          "order": 3,
-          "prompt": "We [gap] friends. (+)",
-          "acceptedAnswers": [
-            "are"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q04",
-          "order": 4,
-          "prompt": "I [gap] hungry. (-)",
-          "acceptedAnswers": [
-            "am not",
-            "'m not"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q05",
-          "order": 5,
-          "prompt": "Mark [gap] 20 years old. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q06",
-          "order": 6,
-          "prompt": "A bee [gap] a big insect. (-)",
-          "acceptedAnswers": [
-            "isn't",
-            "is not"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q07",
-          "order": 7,
-          "prompt": "Newsweek [gap] a magazine. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q08",
-          "order": 8,
-          "prompt": "I [gap] a professional football player. (-)",
-          "acceptedAnswers": [
-            "am not",
-            "'m not"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q09",
-          "order": 9,
-          "prompt": "I know you. You [gap] in my class. (+)",
-          "acceptedAnswers": [
-            "are"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q10",
-          "order": 10,
-          "prompt": "Cows [gap] insects. They [gap] mammals. (- / +)",
-          "acceptedAnswers": [
-            "aren't / are",
-            "are not / are"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q11",
-          "order": 11,
-          "prompt": "İzmir [gap] a city. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q12",
-          "order": 12,
-          "prompt": "He [gap] a postman. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q13",
-          "order": 13,
-          "prompt": "It [gap] nine o’clock. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q14",
-          "order": 14,
-          "prompt": "Manhattan [gap] an island. (-)",
-          "acceptedAnswers": [
-            "isn't",
-            "is not"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q15",
-          "order": 15,
-          "prompt": "Mr. Richards [gap] a lawyer. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q16",
-          "order": 16,
-          "prompt": "I [gap] ill. I [gap] happy. (+ / -)",
-          "acceptedAnswers": [
-            "am / am not",
-            "'m / 'm not"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q17",
-          "order": 17,
-          "prompt": "London [gap] a big city. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q18",
-          "order": 18,
-          "prompt": "Dave and Adrian [gap] sisters. They [gap] brothers. (- / +)",
-          "acceptedAnswers": [
-            "aren't / are",
-            "are not / are"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q19",
-          "order": 19,
-          "prompt": "New York [gap] near to New Jersey. (+)",
-          "acceptedAnswers": [
-            "is"
-          ],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-b-q20",
-          "order": 20,
-          "prompt": "Susan and I [gap] teachers. We [gap] students. (- / +)",
-          "acceptedAnswers": [
-            "aren't / are",
-            "are not / are"
-          ],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-b-q01", "order": 1, "prompt": "It [gap] an onion. (+)", "acceptedAnswers": ["is"], "explanation": "it + is" },
+        { "id": "ws-01-sec-b-q02", "order": 2, "prompt": "Jasmine [gap] a student. (-)", "acceptedAnswers": ["isn't"], "explanation": "singular subject, negative → isn't" },
+        { "id": "ws-01-sec-b-q03", "order": 3, "prompt": "We [gap] friends. (+)", "acceptedAnswers": ["are"], "explanation": "we + are" },
+        { "id": "ws-01-sec-b-q04", "order": 4, "prompt": "I [gap] hungry. (-)", "acceptedAnswers": ["am not|'m not"], "explanation": "I + am not" },
+        { "id": "ws-01-sec-b-q05", "order": 5, "prompt": "Mark [gap] 20 years old. (+)", "acceptedAnswers": ["is"], "explanation": "he + is" },
+        { "id": "ws-01-sec-b-q06", "order": 6, "prompt": "A bee [gap] a big insect. (-)", "acceptedAnswers": ["isn't"], "explanation": "singular subject, negative → isn't" },
+        { "id": "ws-01-sec-b-q07", "order": 7, "prompt": "Newsweek [gap] a magazine. (+)", "acceptedAnswers": ["is"], "explanation": "it + is" },
+        { "id": "ws-01-sec-b-q08", "order": 8, "prompt": "I [gap] a professional football player. (-)", "acceptedAnswers": ["am not|'m not"], "explanation": "I + am not" },
+        { "id": "ws-01-sec-b-q09", "order": 9, "prompt": "I know you. You [gap] in my class. (+)", "acceptedAnswers": ["are"], "explanation": "you + are" },
+        { "id": "ws-01-sec-b-q10", "order": 10, "prompt": "Cows [gap] insects. They [gap] mammals. (- / +)", "acceptedAnswers": ["aren't / are"], "explanation": "plural subject → are / aren't" },
+        { "id": "ws-01-sec-b-q11", "order": 11, "prompt": "İzmir [gap] a city. (+)", "acceptedAnswers": ["is"], "explanation": "it + is" },
+        { "id": "ws-01-sec-b-q12", "order": 12, "prompt": "He [gap] a postman. (+)", "acceptedAnswers": ["is"], "explanation": "he + is" },
+        { "id": "ws-01-sec-b-q13", "order": 13, "prompt": "It [gap] nine o'clock. (+)", "acceptedAnswers": ["is"], "explanation": "it + is" },
+        { "id": "ws-01-sec-b-q14", "order": 14, "prompt": "Manhattan [gap] an island. (-)", "acceptedAnswers": ["isn't"], "explanation": "singular subject, negative → isn't" },
+        { "id": "ws-01-sec-b-q15", "order": 15, "prompt": "Mr. Richards [gap] a lawyer. (+)", "acceptedAnswers": ["is"], "explanation": "he + is" },
+        { "id": "ws-01-sec-b-q16", "order": 16, "prompt": "I [gap] ill. I [gap] happy. (+ / -)", "acceptedAnswers": ["am|'m / am not|'m not"], "explanation": "I + am / am not" },
+        { "id": "ws-01-sec-b-q17", "order": 17, "prompt": "London [gap] a big city. (+)", "acceptedAnswers": ["is"], "explanation": "it + is" },
+        { "id": "ws-01-sec-b-q18", "order": 18, "prompt": "Dave and Adrian [gap] sisters. They [gap] brothers. (- / +)", "acceptedAnswers": ["aren't / are"], "explanation": "plural subject → aren't / are" },
+        { "id": "ws-01-sec-b-q19", "order": 19, "prompt": "New York [gap] near to New Jersey. (+)", "acceptedAnswers": ["is"], "explanation": "it + is" },
+        { "id": "ws-01-sec-b-q20", "order": 20, "prompt": "Susan and I [gap] teachers. We [gap] students. (- / +)", "acceptedAnswers": ["aren't / are"], "explanation": "we → aren't / are" }
       ]
     },
     {
@@ -570,326 +90,74 @@
       "instruction": "Fill in the blanks using “AM, IS, ARE, AM NOT, ISN’T, AREN’T”:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-01-sec-c-q01",
-          "order": 1,
-          "prompt": "Germany, England, and Spain [gap] cities.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q02",
-          "order": 2,
-          "prompt": "A lemon [gap] sweet. It [gap] sour.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q03",
-          "order": 3,
-          "prompt": "Copper [gap] cheap. Diamonds [gap] expensive.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q04",
-          "order": 4,
-          "prompt": "Airplanes [gap] slow. They [gap] fast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q05",
-          "order": 5,
-          "prompt": "Ice cream and candy [gap] sweet.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q06",
-          "order": 6,
-          "prompt": "Today [gap] cloudy. It [gap] bright.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q07",
-          "order": 7,
-          "prompt": "My brother [gap] married. He [gap] single.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q08",
-          "order": 8,
-          "prompt": "I [gap] from Turkey. I [gap] from Canada.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q09",
-          "order": 9,
-          "prompt": "Maths [gap] hard. It [gap] easy.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-c-q10",
-          "order": 10,
-          "prompt": "Mariah … a beautiful girl. She [gap] ugly.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-c-q01", "order": 1, "prompt": "Germany, England, and Spain [gap] cities.", "acceptedAnswers": ["aren't"], "explanation": "they are countries, not cities → aren't" },
+        { "id": "ws-01-sec-c-q02", "order": 2, "prompt": "A lemon [gap] sweet. It [gap] sour.", "acceptedAnswers": ["isn't / is"], "explanation": "a lemon is sour, not sweet" },
+        { "id": "ws-01-sec-c-q03", "order": 3, "prompt": "Copper [gap] cheap. Diamonds [gap] expensive.", "acceptedAnswers": ["is / are"], "explanation": "singular → is; plural → are" },
+        { "id": "ws-01-sec-c-q04", "order": 4, "prompt": "Airplanes [gap] slow. They [gap] fast.", "acceptedAnswers": ["aren't / are"], "explanation": "plural subject → aren't / are" },
+        { "id": "ws-01-sec-c-q05", "order": 5, "prompt": "Ice cream and candy [gap] sweet.", "acceptedAnswers": ["are"], "explanation": "two things (plural) → are" },
+        { "id": "ws-01-sec-c-q06", "order": 6, "prompt": "Today [gap] cloudy. It [gap] bright.", "acceptedAnswers": ["is / isn't", "isn't / is"], "explanation": "cloudy and bright are opposites" },
+        { "id": "ws-01-sec-c-q07", "order": 7, "prompt": "My brother [gap] married. He [gap] single.", "acceptedAnswers": ["isn't / is", "is / isn't"], "explanation": "married and single are opposites" },
+        { "id": "ws-01-sec-c-q08", "order": 8, "prompt": "I [gap] from Turkey. I [gap] from Canada.", "acceptedAnswers": ["am|'m / am not|'m not", "am not|'m not / am|'m"], "explanation": "I + am / am not" },
+        { "id": "ws-01-sec-c-q09", "order": 9, "prompt": "Maths [gap] hard. It [gap] easy.", "acceptedAnswers": ["isn't / is", "is / isn't"], "explanation": "maths is singular → is / isn't" },
+        { "id": "ws-01-sec-c-q10", "order": 10, "prompt": "Mariah [gap] a beautiful girl. She [gap] ugly.", "acceptedAnswers": ["is / isn't"], "explanation": "beautiful, so not ugly" }
       ]
     },
     {
       "id": "ws-01-sec-d",
       "sectionKey": "D",
-      "instruction": "Rewrite the sentences by using “ IS, ISN’T, AM, AM NOT”:",
+      "instruction": "Rewrite the sentences correctly by using “IS, ISN’T, AM, AM NOT” (or ARE / AREN’T for plural subjects): (Example: London aren’t a country. → London isn’t a country.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-01-sec-d-q01",
-          "order": 1,
-          "prompt": "London aren’t a country. [gap] London isn’t a country [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q02",
-          "order": 2,
-          "prompt": "The United States aren’t a city.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q03",
-          "order": 3,
-          "prompt": "An elephant am not a small animal.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q04",
-          "order": 4,
-          "prompt": "English and Turkish isn’t sister languages [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q05",
-          "order": 5,
-          "prompt": "Mercedes aren’t a bike.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q06",
-          "order": 6,
-          "prompt": "Is I a student ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q07",
-          "order": 7,
-          "prompt": "Mrs. Stuart aren’t a poor woman.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q08",
-          "order": 8,
-          "prompt": "Cigarettes isn’t good for people.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q09",
-          "order": 9,
-          "prompt": "The North Pole am not hot.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-d-q10",
-          "order": 10,
-          "prompt": "Simon are from United Kingdom.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-d-q02", "order": 2, "prompt": "The United States aren't a city.", "acceptedAnswers": ["The United States isn't a city."], "explanation": "a country name is singular → isn't" },
+        { "id": "ws-01-sec-d-q03", "order": 3, "prompt": "An elephant am not a small animal.", "acceptedAnswers": ["An elephant isn't a small animal."], "explanation": "singular subject → isn't" },
+        { "id": "ws-01-sec-d-q04", "order": 4, "prompt": "English and Turkish isn't sister languages.", "acceptedAnswers": ["English and Turkish aren't sister languages."], "explanation": "plural subject → aren't" },
+        { "id": "ws-01-sec-d-q05", "order": 5, "prompt": "Mercedes aren't a bike.", "acceptedAnswers": ["Mercedes isn't a bike.", "A Mercedes isn't a bike."], "explanation": "singular subject → isn't" },
+        { "id": "ws-01-sec-d-q06", "order": 6, "prompt": "Is I a student?", "acceptedAnswers": ["Am I a student?"], "explanation": "I + am" },
+        { "id": "ws-01-sec-d-q07", "order": 7, "prompt": "Mrs. Stuart aren't a poor woman.", "acceptedAnswers": ["Mrs. Stuart isn't a poor woman."], "explanation": "she + isn't" },
+        { "id": "ws-01-sec-d-q08", "order": 8, "prompt": "Cigarettes isn't good for people.", "acceptedAnswers": ["Cigarettes aren't good for people."], "explanation": "plural subject → aren't" },
+        { "id": "ws-01-sec-d-q09", "order": 9, "prompt": "The North Pole am not hot.", "acceptedAnswers": ["The North Pole isn't hot."], "explanation": "singular subject → isn't" },
+        { "id": "ws-01-sec-d-q10", "order": 10, "prompt": "Simon are from United Kingdom.", "acceptedAnswers": ["Simon is from the United Kingdom.", "Simon is from United Kingdom."], "explanation": "he + is; the United Kingdom" }
       ]
     },
     {
       "id": "ws-01-sec-e",
       "sectionKey": "E",
-      "instruction": "Complete this postcard by using “AM, IS, ARE, AM NOT , ISN’T,AREN’T”:",
+      "instruction": "Complete this postcard by using “AM, IS, ARE, AM NOT, ISN’T, AREN’T”: (Example: My name is Jack, and this is Sue.)",
       "type": "passage_gap_fill",
+      "contextText": "Hello!\nMy name is Jack, and this is Sue.\n(… the rest of the postcard is in the questions below …)\nBest regards,\nJack",
       "questions": [
-        {
-          "id": "ws-01-sec-e-q01",
-          "order": 1,
-          "prompt": "Hello!",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q02",
-          "order": 2,
-          "prompt": "My name [gap] is [gap] Jack, and this [gap] is… Sue.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q03",
-          "order": 3,
-          "prompt": "She [gap] my sister. Sue [gap] twelve years old and I [gap] sixteen.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q04",
-          "order": 4,
-          "prompt": "We [gap] adults. We [gap] students. We [gap] Canadians. We [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q05",
-          "order": 5,
-          "prompt": "Americans.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q06",
-          "order": 6,
-          "prompt": "We [gap] from Chicago. Chicago [gap] in the United States.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q07",
-          "order": 7,
-          "prompt": "Best regards,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-e-q08",
-          "order": 8,
-          "prompt": "Jack",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-e-q01", "order": 1, "prompt": "She [gap] my sister.", "acceptedAnswers": ["is"], "explanation": "she + is" },
+        { "id": "ws-01-sec-e-q02", "order": 2, "prompt": "Sue [gap] twelve years old and I [gap] sixteen.", "acceptedAnswers": ["is / am|'m"], "explanation": "she + is; I + am" },
+        { "id": "ws-01-sec-e-q03", "order": 3, "prompt": "We [gap] adults.", "acceptedAnswers": ["aren't"], "explanation": "aged 12 and 16 → not adults" },
+        { "id": "ws-01-sec-e-q04", "order": 4, "prompt": "We [gap] students.", "acceptedAnswers": ["are"], "explanation": "we + are" },
+        { "id": "ws-01-sec-e-q05", "order": 5, "prompt": "We [gap] Canadians.", "acceptedAnswers": ["aren't"], "explanation": "they are from Chicago (USA) → not Canadians" },
+        { "id": "ws-01-sec-e-q06", "order": 6, "prompt": "We [gap] Americans.", "acceptedAnswers": ["are"], "explanation": "Chicago is in the United States" },
+        { "id": "ws-01-sec-e-q07", "order": 7, "prompt": "We [gap] from Chicago. Chicago [gap] in the United States.", "acceptedAnswers": ["are / is"], "explanation": "we + are; it + is" }
       ]
     },
     {
       "id": "ws-01-sec-f",
       "sectionKey": "F",
-      "instruction": "Write short sentences:",
-      "type": "inline_gap_fill",
+      "instruction": "Write short sentences: (Example: (Chris, 9, student, short, not Chinese) → Chris is nine years old. He is a student. He is short. He isn’t Chinese.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-01-sec-f-q01",
-          "order": 1,
-          "prompt": "(Leonard and Mike, 25, firemen, tall, American) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-f-q02",
-          "order": 2,
-          "prompt": "(Patty and Brian, 12, not electrician, short, not Turkish children) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-f-q03",
-          "order": 3,
-          "prompt": "(Natalie and I, nurse, not tall, French) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-f-q04",
-          "order": 4,
-          "prompt": "(Mark, 19, accountant, short, British) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-f-q05",
-          "order": 5,
-          "prompt": "(Cengiz, 23, lieutenant, not blonde, Turkish) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-f-q01", "order": 1, "prompt": "Leonard and Mike, 25, firemen, tall, American", "acceptedAnswers": ["Leonard and Mike are twenty-five years old. They are firemen. They are tall. They are American.", "Leonard and Mike are 25 years old. They are firemen. They are tall. They are American.", "Leonard and Mike are twenty-five years old. They are firemen. They are tall. They are Americans.", "Leonard and Mike are 25 years old. They are firemen. They are tall. They are Americans."], "explanation": "plural subject → they are" },
+        { "id": "ws-01-sec-f-q02", "order": 2, "prompt": "Patty and Brian, 12, not electrician, short, not Turkish children", "acceptedAnswers": ["Patty and Brian are twelve years old. They aren't electricians. They are short. They aren't Turkish children.", "Patty and Brian are 12 years old. They aren't electricians. They are short. They aren't Turkish children."], "explanation": "plural subject → they are / aren't" },
+        { "id": "ws-01-sec-f-q03", "order": 3, "prompt": "Natalie and I, nurse, not tall, French", "acceptedAnswers": ["Natalie and I are nurses. We aren't tall. We are French."], "explanation": "Natalie and I → we are / aren't" },
+        { "id": "ws-01-sec-f-q04", "order": 4, "prompt": "Mark, 19, accountant, short, British", "acceptedAnswers": ["Mark is nineteen years old. He is an accountant. He is short. He is British.", "Mark is 19 years old. He is an accountant. He is short. He is British."], "explanation": "he is; an + vowel sound" },
+        { "id": "ws-01-sec-f-q05", "order": 5, "prompt": "Cengiz, 23, lieutenant, not blonde, Turkish", "acceptedAnswers": ["Cengiz is twenty-three years old. He is a lieutenant. He isn't blonde. He is Turkish.", "Cengiz is 23 years old. He is a lieutenant. He isn't blonde. He is Turkish."], "explanation": "he is / isn't" }
       ]
     },
     {
       "id": "ws-01-sec-g",
       "sectionKey": "G",
-      "instruction": "Build up sentences:",
+      "instruction": "Build up sentences: (Example: Mike / drummer (-) → Mike isn’t a drummer.)",
       "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-01-sec-g-q01",
-          "order": 1,
-          "prompt": "Mike / drummer (-)",
-          "sampleAnswer": "Mike isn’t a drummer.",
-          "acceptedAnswers": [
-            "Mike isn’t a drummer",
-            "Mike is not a drummer",
-            "Mike isn't a drummer",
-            "Mike isn’t a drummer.",
-            "Mike is not a drummer."
-          ],
-          "explanation": "Mike là ngôi thứ 3 số ít (He) + thể phủ định (-) của to be là \"isn't\" / \"is not\"."
-        },
-        {
-          "id": "ws-01-sec-g-q02",
-          "order": 2,
-          "prompt": "Charlie and Chris / policemen (+)",
-          "acceptedAnswers": [
-            "Charlie and Chris are policemen",
-            "Charlie and Chris are policemen."
-          ],
-          "explanation": "Charlie and Chris là 2 người (They) + thể khẳng định (+) của to be là \"are\"."
-        },
-        {
-          "id": "ws-01-sec-g-q03",
-          "order": 3,
-          "prompt": "Danny and Rick / singers (-)",
-          "acceptedAnswers": [
-            "Danny and Rick aren’t singers",
-            "Danny and Rick are not singers",
-            "Danny and Rick aren't singers",
-            "Danny and Rick aren’t singers.",
-            "Danny and Rick are not singers."
-          ],
-          "explanation": "Danny and Rick là số nhiều (They) + thể phủ định (-) của to be là \"aren't\" / \"are not\"."
-        },
-        {
-          "id": "ws-01-sec-g-q04",
-          "order": 4,
-          "prompt": "Salem and Lucky / puppies (+)",
-          "acceptedAnswers": [
-            "Salem and Lucky are puppies",
-            "Salem and Lucky are puppies."
-          ],
-          "explanation": "Salem and Lucky là số nhiều (They) + thể khẳng định (+) của to be là \"are\"."
-        },
-        {
-          "id": "ws-01-sec-g-q05",
-          "order": 5,
-          "prompt": "Rome / London / cities (+)",
-          "acceptedAnswers": [
-            "Rome and London are cities",
-            "Rome and London are cities."
-          ],
-          "explanation": "Rome and London là 2 thành phố (They) + thể khẳng định (+) của to be là \"are\"."
-        }
+        { "id": "ws-01-sec-g-q02", "order": 2, "prompt": "Charlie and Chris / policemen (+)", "acceptedAnswers": ["Charlie and Chris are policemen."], "explanation": "plural subject → are" },
+        { "id": "ws-01-sec-g-q03", "order": 3, "prompt": "Danny and Rick / singers (-)", "acceptedAnswers": ["Danny and Rick aren't singers."], "explanation": "plural subject, negative → aren't" },
+        { "id": "ws-01-sec-g-q04", "order": 4, "prompt": "Salem and Lucky / puppies (+)", "acceptedAnswers": ["Salem and Lucky are puppies."], "explanation": "plural subject → are" },
+        { "id": "ws-01-sec-g-q05", "order": 5, "prompt": "Rome / London / cities (+)", "acceptedAnswers": ["Rome and London are cities.", "London and Rome are cities."], "explanation": "two cities → are" }
       ]
     },
     {
@@ -898,596 +166,122 @@
       "instruction": "Choose the best answer:",
       "type": "multiple_choice",
       "questions": [
-        {
-          "id": "ws-01-sec-h-q01",
-          "order": 1,
-          "prompt": "Maggie and Carol [gap] good friends.",
-          "acceptedAnswers": [
-            "b"
-          ],
-          "explanation": "",
-          "options": [
-            "a) am",
-            "b) are",
-            "c) is",
-            "d) isn’t"
-          ]
-        },
-        {
-          "id": "ws-01-sec-h-q02",
-          "order": 2,
-          "prompt": "Sue [gap] a science teacher.",
-          "acceptedAnswers": [
-            "b"
-          ],
-          "explanation": "",
-          "options": [
-            "a) are",
-            "b) is",
-            "d) am",
-            "c) are"
-          ]
-        },
-        {
-          "id": "ws-01-sec-h-q03",
-          "order": 3,
-          "prompt": "Mark Steven [gap] a student at Kennedy High School. It [gap] an old school.",
-          "acceptedAnswers": [
-            "d"
-          ],
-          "explanation": "",
-          "options": [
-            "a) am",
-            "b) are",
-            "c) is",
-            "d) is"
-          ]
-        },
-        {
-          "id": "ws-01-sec-h-q04",
-          "order": 4,
-          "prompt": "Margarita [gap] from Spain. I [gap] from Turkey.",
-          "acceptedAnswers": [
-            "a"
-          ],
-          "explanation": "",
-          "options": [
-            "a) is",
-            "b) are",
-            "c) am",
-            "d) is"
-          ]
-        },
-        {
-          "id": "ws-01-sec-h-q05",
-          "order": 5,
-          "prompt": "You and I [gap] at the same age.",
-          "acceptedAnswers": [
-            "c"
-          ],
-          "explanation": "",
-          "options": [
-            "a) am",
-            "c) are",
-            "d) is"
-          ]
-        }
+        { "id": "ws-01-sec-h-q01", "order": 1, "prompt": "Maggie and Carol [gap] good friends.", "options": ["a) am", "b) are", "c) is", "d) isn't"], "acceptedAnswers": ["b"], "explanation": "plural subject → are" },
+        { "id": "ws-01-sec-h-q02", "order": 2, "prompt": "Sue [gap] a science teacher.", "options": ["a) are not", "b) is", "c) are", "d) am"], "acceptedAnswers": ["b"], "explanation": "she + is" },
+        { "id": "ws-01-sec-h-q03", "order": 3, "prompt": "Mark Steven [gap] a student at Kennedy High School. It [gap] an old school.", "options": ["a) am / is", "b) are / is", "c) is / am", "d) is / is"], "acceptedAnswers": ["d"], "explanation": "he + is; it + is" },
+        { "id": "ws-01-sec-h-q04", "order": 4, "prompt": "Margarita [gap] from Spain. I [gap] from Turkey.", "options": ["a) is / am", "b) are / is", "c) am / is", "d) is / are"], "acceptedAnswers": ["a"], "explanation": "she + is; I + am" },
+        { "id": "ws-01-sec-h-q05", "order": 5, "prompt": "You and I [gap] the same age.", "options": ["a) am", "b) isn't", "c) are", "d) is"], "acceptedAnswers": ["c"], "explanation": "you and I = we → are" }
       ]
     },
     {
       "id": "ws-01-sec-i",
       "sectionKey": "I",
-      "instruction": "Change the sentences into questions:",
+      "instruction": "Change the sentences into questions: (Example: I am an engineer. → Am I an engineer?)",
       "type": "question_formation",
       "questions": [
-        {
-          "id": "ws-01-sec-i-q01",
-          "order": 1,
-          "prompt": "You are ill.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q02",
-          "order": 2,
-          "prompt": "Linda is a pretty girl.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q03",
-          "order": 3,
-          "prompt": "Belinda is a singer.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q04",
-          "order": 4,
-          "prompt": "Nick is an actor.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q05",
-          "order": 5,
-          "prompt": "We are good friends.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q06",
-          "order": 6,
-          "prompt": "He is an officer.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q07",
-          "order": 7,
-          "prompt": "It is an eraser.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q08",
-          "order": 8,
-          "prompt": "You and Eddie are partners.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q09",
-          "order": 9,
-          "prompt": "Rosie is angry.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-i-q10",
-          "order": 10,
-          "prompt": "Jack and I aren’t good swimmers. [gap] Am I an engineer? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-i-q01", "order": 1, "prompt": "You are ill.", "acceptedAnswers": ["Are you ill?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q02", "order": 2, "prompt": "Linda is a pretty girl.", "acceptedAnswers": ["Is Linda a pretty girl?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q03", "order": 3, "prompt": "Belinda is a singer.", "acceptedAnswers": ["Is Belinda a singer?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q04", "order": 4, "prompt": "Nick is an actor.", "acceptedAnswers": ["Is Nick an actor?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q05", "order": 5, "prompt": "We are good friends.", "acceptedAnswers": ["Are we good friends?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q06", "order": 6, "prompt": "He is an officer.", "acceptedAnswers": ["Is he an officer?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q07", "order": 7, "prompt": "It is an eraser.", "acceptedAnswers": ["Is it an eraser?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q08", "order": 8, "prompt": "You and Eddie are partners.", "acceptedAnswers": ["Are you and Eddie partners?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q09", "order": 9, "prompt": "Rosie is angry.", "acceptedAnswers": ["Is Rosie angry?"], "explanation": "question: be + subject" },
+        { "id": "ws-01-sec-i-q10", "order": 10, "prompt": "Jack and I aren't good swimmers.", "acceptedAnswers": ["Aren't Jack and I good swimmers?", "Are Jack and I not good swimmers?"], "explanation": "negative question: aren't + subject" }
       ]
     },
     {
       "id": "ws-01-sec-j",
       "sectionKey": "J",
-      "instruction": "Give a short and a long answer (Ví dụ: Is it a car? -> No, it isn't. What is it? -> It is a house):",
-      "type": "sentence_rewrite",
+      "instruction": "Give a short and a long answer: (Example: Is it a car? → No, it isn’t. What is it? → It is a house.) The original pictures are not available, so any sensible answer in this pattern is fine.",
+      "type": "reading_qa",
       "questions": [
-        {
-          "id": "ws-01-sec-j-q01",
-          "order": 1,
-          "prompt": "Is it a fish? What is it? (House / Fish)",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q02",
-          "order": 2,
-          "prompt": "Is it a river? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q03",
-          "order": 3,
-          "prompt": "Is it a radio? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q04",
-          "order": 4,
-          "prompt": "Are these tomatoes? What are they?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q05",
-          "order": 5,
-          "prompt": "Are these pencils? What are they?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q06",
-          "order": 6,
-          "prompt": "Is it a school bus? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q07",
-          "order": 7,
-          "prompt": "Is it a horse? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q08",
-          "order": 8,
-          "prompt": "Is it Saturn? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q09",
-          "order": 9,
-          "prompt": "Is it a mountain? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q10",
-          "order": 10,
-          "prompt": "Is it a CD player? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q11",
-          "order": 11,
-          "prompt": "Are these farms? What are they?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q12",
-          "order": 12,
-          "prompt": "Is this a motorcycle? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q13",
-          "order": 13,
-          "prompt": "Is it a bottle? What is it?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        },
-        {
-          "id": "ws-01-sec-j-q14",
-          "order": 14,
-          "prompt": "Are these tables? What are they?",
-          "acceptedAnswers": [],
-          "explanation": "Trả lời câu hỏi ngắn (Yes/No) kèm câu trả lời dài tương ứng."
-        }
+        { "id": "ws-01-sec-j-q01", "order": 1, "prompt": "Is it a fish? What is it?", "acceptedAnswers": [], "modelAnswer": "Yes, it is. It is a fish.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q02", "order": 2, "prompt": "Is it a river? What is it?", "acceptedAnswers": [], "modelAnswer": "No, it isn't. It is a lake.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q03", "order": 3, "prompt": "Is it a radio? What is it?", "acceptedAnswers": [], "modelAnswer": "Yes, it is. It is a radio.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q04", "order": 4, "prompt": "Are these tomatoes? What are they?", "acceptedAnswers": [], "modelAnswer": "Yes, they are. They are tomatoes.", "explanation": "plural: Yes, they are / No, they aren't" },
+        { "id": "ws-01-sec-j-q05", "order": 5, "prompt": "Are these pencils? What are they?", "acceptedAnswers": [], "modelAnswer": "No, they aren't. They are pens.", "explanation": "plural: Yes, they are / No, they aren't" },
+        { "id": "ws-01-sec-j-q06", "order": 6, "prompt": "Is it a school bus? What is it?", "acceptedAnswers": [], "modelAnswer": "Yes, it is. It is a school bus.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q07", "order": 7, "prompt": "Is it a horse? What is it?", "acceptedAnswers": [], "modelAnswer": "No, it isn't. It is a donkey.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q08", "order": 8, "prompt": "Is it Saturn? What is it?", "acceptedAnswers": [], "modelAnswer": "Yes, it is. It is Saturn.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q09", "order": 9, "prompt": "Is it a mountain? What is it?", "acceptedAnswers": [], "modelAnswer": "Yes, it is. It is a mountain.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q10", "order": 10, "prompt": "Is it a CD player? What is it?", "acceptedAnswers": [], "modelAnswer": "No, it isn't. It is a radio.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q11", "order": 11, "prompt": "Are these farms? What are they?", "acceptedAnswers": [], "modelAnswer": "Yes, they are. They are farms.", "explanation": "plural: Yes, they are / No, they aren't" },
+        { "id": "ws-01-sec-j-q12", "order": 12, "prompt": "Is this a motorcycle? What is it?", "acceptedAnswers": [], "modelAnswer": "No, it isn't. It is a bicycle.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q13", "order": 13, "prompt": "Is it a bottle? What is it?", "acceptedAnswers": [], "modelAnswer": "Yes, it is. It is a bottle.", "explanation": "short answer: Yes, it is / No, it isn't" },
+        { "id": "ws-01-sec-j-q14", "order": 14, "prompt": "Are these tables? What are they?", "acceptedAnswers": [], "modelAnswer": "No, they aren't. They are chairs.", "explanation": "plural: Yes, they are / No, they aren't" }
       ]
     },
     {
       "id": "ws-01-sec-k",
       "sectionKey": "K",
-      "instruction": "Give long answers:",
-      "type": "inline_gap_fill",
+      "instruction": "Give long answers: (Example: Are you a scientist? → Yes, I am a scientist.)",
+      "type": "reading_qa",
       "questions": [
-        {
-          "id": "ws-01-sec-k-q01",
-          "order": 1,
-          "prompt": "Are you a student? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q02",
-          "order": 2,
-          "prompt": "Is Tom in the park? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q03",
-          "order": 3,
-          "prompt": "Is it a poetry book? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q04",
-          "order": 4,
-          "prompt": "Are Mary and John friends? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q05",
-          "order": 5,
-          "prompt": "Am I an executive ? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q06",
-          "order": 6,
-          "prompt": "Is Thomas fifteen years old? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q07",
-          "order": 7,
-          "prompt": "Are your earrings expensive? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q08",
-          "order": 8,
-          "prompt": "Is ice cream hot ? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q09",
-          "order": 9,
-          "prompt": "Are lemons yellow and sour? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-k-q10",
-          "order": 10,
-          "prompt": "Are Andy and Jack girls? [gap] Yes, [gap] No, [gap] Yes, [gap] Yes, [gap] No, [gap] Yes, [gap] No, [gap] No, [gap] Yes, [gap] No, [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-k-q01", "order": 1, "prompt": "Are you a student? (Yes)", "acceptedAnswers": ["Yes, I am a student."], "explanation": "you → I am" },
+        { "id": "ws-01-sec-k-q02", "order": 2, "prompt": "Is Tom in the park? (No)", "acceptedAnswers": ["No, he isn't in the park.", "No, Tom isn't in the park."], "explanation": "Tom → he isn't" },
+        { "id": "ws-01-sec-k-q03", "order": 3, "prompt": "Is it a poetry book? (Yes)", "acceptedAnswers": ["Yes, it is a poetry book."], "explanation": "it is" },
+        { "id": "ws-01-sec-k-q04", "order": 4, "prompt": "Are Mary and John friends? (Yes)", "acceptedAnswers": ["Yes, they are friends.", "Yes, Mary and John are friends."], "explanation": "Mary and John → they are" },
+        { "id": "ws-01-sec-k-q05", "order": 5, "prompt": "Am I an executive? (No)", "acceptedAnswers": ["No, you aren't an executive."], "explanation": "I → you aren't" },
+        { "id": "ws-01-sec-k-q06", "order": 6, "prompt": "Is Thomas fifteen years old? (Yes)", "acceptedAnswers": ["Yes, he is fifteen years old.", "Yes, Thomas is fifteen years old.", "Yes, he is 15 years old."], "explanation": "Thomas → he is" },
+        { "id": "ws-01-sec-k-q07", "order": 7, "prompt": "Are your earrings expensive? (No)", "acceptedAnswers": ["No, they aren't expensive.", "No, my earrings aren't expensive."], "explanation": "your earrings → my earrings / they" },
+        { "id": "ws-01-sec-k-q08", "order": 8, "prompt": "Is ice cream hot? (No)", "acceptedAnswers": ["No, it isn't hot.", "No, ice cream isn't hot.", "No, it isn't hot. It is cold.", "No, ice cream isn't hot. It is cold."], "explanation": "ice cream → it isn't" },
+        { "id": "ws-01-sec-k-q09", "order": 9, "prompt": "Are lemons yellow and sour? (Yes)", "acceptedAnswers": ["Yes, they are yellow and sour.", "Yes, lemons are yellow and sour."], "explanation": "lemons → they are" },
+        { "id": "ws-01-sec-k-q10", "order": 10, "prompt": "Are Andy and Jack girls? (No)", "acceptedAnswers": ["No, they aren't girls.", "No, Andy and Jack aren't girls.", "No, they aren't girls. They are boys.", "No, Andy and Jack aren't girls. They are boys."], "explanation": "Andy and Jack → they aren't" }
       ]
     },
     {
       "id": "ws-01-sec-l",
       "sectionKey": "L",
-      "instruction": "Build up questions and give answers (Ví dụ: engineer / William -> Is William an engineer? Yes, he is an engineer):",
+      "instruction": "Build up questions and give answers: (Example: engineer / William (+) → Is William an engineer? Yes, he is an engineer.)",
       "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-01-sec-l-q01",
-          "order": 1,
-          "prompt": "good rider / Steve (+)",
-          "sampleAnswer": "Is Steve a good rider? / Yes, he is a good rider.",
-          "acceptedAnswers": [
-            "Is Steve a good rider? / Yes, he is a good rider.",
-            "Is Steve a good rider? / Yes, he is a good rider."
-          ],
-          "explanation": "Đặt câu hỏi to be và trả lời khẳng định (+) hoặc phủ định (-)."
-        },
-        {
-          "id": "ws-01-sec-l-q02",
-          "order": 2,
-          "prompt": "lazy students / Mark and Lucy (-)",
-          "sampleAnswer": "Are Mark and Lucy lazy students? / No, they aren't lazy students.",
-          "acceptedAnswers": [
-            "Are Mark and Lucy lazy students? / No, they aren't lazy students.",
-            "Are Mark and Lucy lazy students? / No, they aren’t lazy students."
-          ],
-          "explanation": "Đặt câu hỏi to be và trả lời khẳng định (+) hoặc phủ định (-)."
-        },
-        {
-          "id": "ws-01-sec-l-q03",
-          "order": 3,
-          "prompt": "soup / hot (+)",
-          "sampleAnswer": "Is the soup hot? / Yes, it is hot.",
-          "acceptedAnswers": [
-            "Is the soup hot? / Yes, it is hot.",
-            "Is the soup hot? / Yes, it is hot."
-          ],
-          "explanation": "Đặt câu hỏi to be và trả lời khẳng định (+) hoặc phủ định (-)."
-        },
-        {
-          "id": "ws-01-sec-l-q04",
-          "order": 4,
-          "prompt": "the baby / asleep (-)",
-          "sampleAnswer": "Is the baby asleep? / No, the baby isn't asleep.",
-          "acceptedAnswers": [
-            "Is the baby asleep? / No, the baby isn't asleep.",
-            "Is the baby asleep? / No, the baby isn’t asleep."
-          ],
-          "explanation": "Đặt câu hỏi to be và trả lời khẳng định (+) hoặc phủ định (-)."
-        },
-        {
-          "id": "ws-01-sec-l-q05",
-          "order": 5,
-          "prompt": "basketball team / L.A. Lakers (+)",
-          "sampleAnswer": "Is L.A. Lakers a basketball team? / Yes, it is a basketball team.",
-          "acceptedAnswers": [
-            "Is L.A. Lakers a basketball team? / Yes, it is a basketball team.",
-            "Is L.A. Lakers a basketball team? / Yes, it is a basketball team."
-          ],
-          "explanation": "Đặt câu hỏi to be và trả lời khẳng định (+) hoặc phủ định (-)."
-        }
+        { "id": "ws-01-sec-l-q01", "order": 1, "prompt": "good rider / Steve (+)", "acceptedAnswers": ["Is Steve a good rider? Yes, he is a good rider."], "explanation": "Is + singular subject …? Yes, he is …" },
+        { "id": "ws-01-sec-l-q02", "order": 2, "prompt": "lazy students / Mark and Lucy (-)", "acceptedAnswers": ["Are Mark and Lucy lazy students? No, they aren't lazy students."], "explanation": "Are + plural subject …? No, they aren't …" },
+        { "id": "ws-01-sec-l-q03", "order": 3, "prompt": "soup / hot (+)", "acceptedAnswers": ["Is the soup hot? Yes, it is hot.", "Is soup hot? Yes, it is hot."], "explanation": "Is + subject + adjective? Yes, it is …" },
+        { "id": "ws-01-sec-l-q04", "order": 4, "prompt": "the baby / asleep (-)", "acceptedAnswers": ["Is the baby asleep? No, it isn't asleep.", "Is the baby asleep? No, he isn't asleep.", "Is the baby asleep? No, she isn't asleep.", "Is the baby asleep? No, the baby isn't asleep."], "explanation": "Is + subject + adjective? No, … isn't" },
+        { "id": "ws-01-sec-l-q05", "order": 5, "prompt": "basketball team / L.A. Lakers (+)", "acceptedAnswers": ["Are the L.A. Lakers a basketball team? Yes, they are a basketball team.", "Are L.A. Lakers a basketball team? Yes, they are a basketball team.", "Is L.A. Lakers a basketball team? Yes, it is a basketball team.", "Is the L.A. Lakers a basketball team? Yes, it is a basketball team."], "explanation": "team name: they are (or it is)" }
       ]
     },
     {
       "id": "ws-01-sec-m",
       "sectionKey": "M",
       "instruction": "Answer these questions:",
-      "type": "inline_gap_fill",
+      "type": "reading_qa",
       "questions": [
-        {
-          "id": "ws-01-sec-m-q01",
-          "order": 1,
-          "prompt": "Are trees green or gray? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q02",
-          "order": 2,
-          "prompt": "Are clouds brown or white? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q03",
-          "order": 3,
-          "prompt": "Is it an English or French dictionary? (French) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q04",
-          "order": 4,
-          "prompt": "Is it a sports car or a classic car? (classic) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q05",
-          "order": 5,
-          "prompt": "Is Egypt in Europe or in Africa? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q06",
-          "order": 6,
-          "prompt": "Is it a butterfly or a bee? (butterfly) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q07",
-          "order": 7,
-          "prompt": "Are they skirts or pullovers? (pullovers) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q08",
-          "order": 8,
-          "prompt": "Is he an outlaw or a guardian? (outlaw) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q09",
-          "order": 9,
-          "prompt": "Is your father young or old? (old) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-m-q10",
-          "order": 10,
-          "prompt": "Are we army officers or police officers? (army) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-m-q01", "order": 1, "prompt": "Are trees green or gray?", "acceptedAnswers": ["They are green.", "Trees are green."], "explanation": "plural → they are" },
+        { "id": "ws-01-sec-m-q02", "order": 2, "prompt": "Are clouds brown or white?", "acceptedAnswers": ["They are white.", "Clouds are white."], "explanation": "plural → they are" },
+        { "id": "ws-01-sec-m-q03", "order": 3, "prompt": "Is it an English or French dictionary? (French)", "acceptedAnswers": ["It is a French dictionary."], "explanation": "it is + a + noun" },
+        { "id": "ws-01-sec-m-q04", "order": 4, "prompt": "Is it a sports car or a classic car? (classic)", "acceptedAnswers": ["It is a classic car."], "explanation": "it is + a + noun" },
+        { "id": "ws-01-sec-m-q05", "order": 5, "prompt": "Is Egypt in Europe or in Africa?", "acceptedAnswers": ["It is in Africa.", "Egypt is in Africa."], "explanation": "Egypt → it is" },
+        { "id": "ws-01-sec-m-q06", "order": 6, "prompt": "Is it a butterfly or a bee? (butterfly)", "acceptedAnswers": ["It is a butterfly."], "explanation": "it is + a + noun" },
+        { "id": "ws-01-sec-m-q07", "order": 7, "prompt": "Are they skirts or pullovers? (pullovers)", "acceptedAnswers": ["They are pullovers."], "explanation": "plural → they are" },
+        { "id": "ws-01-sec-m-q08", "order": 8, "prompt": "Is he an outlaw or a guardian? (outlaw)", "acceptedAnswers": ["He is an outlaw."], "explanation": "he is + an + vowel sound" },
+        { "id": "ws-01-sec-m-q09", "order": 9, "prompt": "Is your father young or old? (old)", "acceptedAnswers": ["He is old.", "My father is old."], "explanation": "your father → my father / he" },
+        { "id": "ws-01-sec-m-q10", "order": 10, "prompt": "Are we army officers or police officers? (army)", "acceptedAnswers": ["We are army officers.", "You are army officers."], "explanation": "plural → we are / you are" }
       ]
     },
     {
       "id": "ws-01-sec-n",
       "sectionKey": "N",
-      "instruction": "Read the passage and answer the questions:",
+      "instruction": "Read the passage and answer the questions. Questions 1–5: give long answers; if the answer is negative, give the right answer. (Example: Is Sophia from Paris? → No, she isn't. She is from Lyon.) Questions 6–13: write True or False. (Examples: Hector is English. → True; Sophia is from the United States. → False)",
       "type": "reading_qa",
+      "contextText": "Sophia: I am Sophia Berger. Are you Jordan Turner?\nJordan: Yes, I am. Are you English?\nSophia: Hector is. I am French. Are you from the United States?\nJordan: Yes, I am. Hector, are you from London?\nHector: Yes, I am. Are you from California?\nJordan: No, I am from New York City. Is London a big city?\nHector: Yes, it is a big city. Sophia, are you from Lyon?\nSophia: Yes, I am from Lyon.\nHector: Is Lyon near Florence?\nSophia: No, it isn't. Florence is in Italy.\nHector: Oh, isn't it in France? I am a real fool.\nJordan: No, Hector. Of course you are not a fool! Are you and Sophia students?\nHector: I am a student. She is an actress in France. We are tourists in the United States.\nSophia: Are you a student, Jordan?\nJordan: No, I am not a student. I'm a lawyer. I am on a holiday.",
       "questions": [
-        {
-          "id": "ws-01-sec-n-q01",
-          "order": 1,
-          "prompt": "Is Jordan from California? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q02",
-          "order": 2,
-          "prompt": "Is Florence in Italy?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q03",
-          "order": 3,
-          "prompt": "Are Sophia and Hector students?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q04",
-          "order": 4,
-          "prompt": "Is Hector from Manchester?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q05",
-          "order": 5,
-          "prompt": "Is Sophia a dancer? [gap] Write True or False:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q01",
-          "order": 1,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q02",
-          "order": 2,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q03",
-          "order": 3,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q04",
-          "order": 4,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q05",
-          "order": 5,
-          "prompt": " [gap] T… Hector is English. [gap] Hector isn’t from Manchester. [gap] London is not a big city. [gap] Hector is a student. [gap] Sophia is an actress in London.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q06",
-          "order": 6,
-          "prompt": "…F Sophia is from the United States.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q07",
-          "order": 7,
-          "prompt": "[gap] Jordan is from New York City.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q08",
-          "order": 8,
-          "prompt": "[gap] Florence is in Italy.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q09",
-          "order": 9,
-          "prompt": "[gap] Jordan is a teacher.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-01-sec-n-q10",
-          "order": 10,
-          "prompt": "[gap] Sophia and Hector are tourists.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-01-sec-n-q01", "order": 1, "prompt": "Is Jordan from California?", "acceptedAnswers": ["No, he isn't. He is from New York City.", "No, he isn't from California. He is from New York City.", "No, Jordan isn't from California. He is from New York City."], "explanation": "Jordan: “I am from New York City.”" },
+        { "id": "ws-01-sec-n-q02", "order": 2, "prompt": "Is Florence in Italy?", "acceptedAnswers": ["Yes, it is.", "Yes, it is in Italy.", "Yes, Florence is in Italy.", "Yes, it is. Florence is in Italy."], "explanation": "Sophia: “Florence is in Italy.”" },
+        { "id": "ws-01-sec-n-q03", "order": 3, "prompt": "Are Sophia and Hector students?", "acceptedAnswers": ["No, they aren't. Hector is a student. Sophia is an actress.", "No, they aren't. Hector is a student and Sophia is an actress.", "No, they aren't. Hector is a student. Sophia is an actress in France.", "No, they aren't. Hector is a student, but Sophia is an actress."], "explanation": "Only Hector is a student; Sophia is an actress." },
+        { "id": "ws-01-sec-n-q04", "order": 4, "prompt": "Is Hector from Manchester?", "acceptedAnswers": ["No, he isn't. He is from London.", "No, he isn't from Manchester. He is from London.", "No, Hector isn't from Manchester. He is from London."], "explanation": "Hector is from London." },
+        { "id": "ws-01-sec-n-q05", "order": 5, "prompt": "Is Sophia a dancer?", "acceptedAnswers": ["No, she isn't. She is an actress.", "No, she isn't. She is an actress in France.", "No, she isn't a dancer. She is an actress.", "No, Sophia isn't a dancer. She is an actress."], "explanation": "Sophia is an actress in France." },
+        { "id": "ws-01-sec-n-q06", "order": 6, "prompt": "Hector isn't from Manchester. (True or False?)", "acceptedAnswers": ["True", "T"], "explanation": "He is from London." },
+        { "id": "ws-01-sec-n-q07", "order": 7, "prompt": "London is not a big city. (True or False?)", "acceptedAnswers": ["False", "F"], "explanation": "Hector: “Yes, it is a big city.”" },
+        { "id": "ws-01-sec-n-q08", "order": 8, "prompt": "Hector is a student. (True or False?)", "acceptedAnswers": ["True", "T"], "explanation": "Hector: “I am a student.”" },
+        { "id": "ws-01-sec-n-q09", "order": 9, "prompt": "Sophia is an actress in London. (True or False?)", "acceptedAnswers": ["False", "F"], "explanation": "She is an actress in France." },
+        { "id": "ws-01-sec-n-q10", "order": 10, "prompt": "Jordan is from New York City. (True or False?)", "acceptedAnswers": ["True", "T"], "explanation": "Jordan: “I am from New York City.”" },
+        { "id": "ws-01-sec-n-q11", "order": 11, "prompt": "Florence is in Italy. (True or False?)", "acceptedAnswers": ["True", "T"], "explanation": "Sophia: “Florence is in Italy.”" },
+        { "id": "ws-01-sec-n-q12", "order": 12, "prompt": "Jordan is a teacher. (True or False?)", "acceptedAnswers": ["False", "F"], "explanation": "Jordan is a lawyer." },
+        { "id": "ws-01-sec-n-q13", "order": 13, "prompt": "Sophia and Hector are tourists. (True or False?)", "acceptedAnswers": ["True", "T"], "explanation": "“We are tourists in the United States.”" }
       ]
     }
   ]

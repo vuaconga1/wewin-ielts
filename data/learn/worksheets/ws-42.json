@@ -12,510 +12,102 @@
     {
       "id": "ws-42-sec-a",
       "sectionKey": "A",
-      "instruction": "Complete the sentences using SOMEONE / ANYONE / NO ONE / SOMETHING /",
+      "instruction": "Complete the sentences using SOMEONE / ANYONE / NO ONE / SOMETHING / ANYTHING / NOTHING / SOMEWHERE / ANYWHERE / NOWHERE / EVERYONE / EVERYTHING / EVERYWHERE:",
       "type": "inline_gap_fill",
+      "wordBank": ["someone", "anyone", "no one", "something", "anything", "nothing", "somewhere", "anywhere", "nowhere", "everyone", "everything", "everywhere"],
       "questions": [
-        {
-          "id": "ws-42-sec-a-q01",
-          "order": 1,
-          "prompt": "Do you have [gap] in your pocket?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q02",
-          "order": 2,
-          "prompt": "Bob doesn’t have [gap] in his pocket.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q03",
-          "order": 3,
-          "prompt": "My roommate is speaking to [gap] on the phone.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q04",
-          "order": 4,
-          "prompt": "Ann didn’t tell [gap] her secret.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q05",
-          "order": 5,
-          "prompt": "I talked to [gap] at the phone company about my bill.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q06",
-          "order": 6,
-          "prompt": "Jane gave me [gap] for my birthday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q07",
-          "order": 7,
-          "prompt": "Paul didn’t give me [gap] for my birthday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q08",
-          "order": 8,
-          "prompt": "Did Paul give you [gap] for your birthday?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q09",
-          "order": 9,
-          "prompt": "My brother is sitting at his desk, and he is writing a letter to [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q10",
-          "order": 10,
-          "prompt": "A: The room is empty. [gap] B: You’re right. There is [gap] to talk to here.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q11",
-          "order": 11,
-          "prompt": "A: What did you do last night? [gap] B: I didn’t do [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q12",
-          "order": 12,
-          "prompt": "They won’t go [gap] after dark.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q13",
-          "order": 13,
-          "prompt": "A: Does [gap] have a red pen? B: Yes. Betty does.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q14",
-          "order": 14,
-          "prompt": "If [gap] wants to leave early, he or she can.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-a-q15",
-          "order": 15,
-          "prompt": "There is [gap] at the door. Can you go and see who it is?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-42-sec-a-q01", "order": 1, "prompt": "Do you have [gap] in your pocket?", "acceptedAnswers": ["anything"], "explanation": "any- in questions" },
+        { "id": "ws-42-sec-a-q02", "order": 2, "prompt": "Bob doesn’t have [gap] in his pocket.", "acceptedAnswers": ["anything"], "explanation": "any- in negatives" },
+        { "id": "ws-42-sec-a-q03", "order": 3, "prompt": "My roommate is speaking to [gap] on the phone.", "acceptedAnswers": ["someone|somebody"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-a-q04", "order": 4, "prompt": "Ann didn’t tell [gap] her secret.", "acceptedAnswers": ["anyone|anybody"], "explanation": "any- in negatives" },
+        { "id": "ws-42-sec-a-q05", "order": 5, "prompt": "I talked to [gap] at the phone company about my bill.", "acceptedAnswers": ["someone|somebody"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-a-q06", "order": 6, "prompt": "Jane gave me [gap] for my birthday.", "acceptedAnswers": ["something"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-a-q07", "order": 7, "prompt": "Paul didn’t give me [gap] for my birthday.", "acceptedAnswers": ["anything"], "explanation": "any- in negatives" },
+        { "id": "ws-42-sec-a-q08", "order": 8, "prompt": "Did Paul give you [gap] for your birthday?", "acceptedAnswers": ["anything"], "explanation": "any- in questions" },
+        { "id": "ws-42-sec-a-q09", "order": 9, "prompt": "My brother is sitting at his desk, and he is writing a letter to [gap].", "acceptedAnswers": ["someone|somebody"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-a-q10", "order": 10, "prompt": "A: The room is empty. B: You’re right. There is [gap] to talk to here.", "acceptedAnswers": ["no one|nobody|no-one"], "explanation": "no- with a positive verb" },
+        { "id": "ws-42-sec-a-q11", "order": 11, "prompt": "A: What did you do last night? B: I didn’t do [gap].", "acceptedAnswers": ["anything"], "explanation": "any- in negatives" },
+        { "id": "ws-42-sec-a-q12", "order": 12, "prompt": "They won’t go [gap] after dark.", "acceptedAnswers": ["anywhere"], "explanation": "any- in negatives" },
+        { "id": "ws-42-sec-a-q13", "order": 13, "prompt": "A: Does [gap] have a red pen? B: Yes. Betty does.", "acceptedAnswers": ["anyone|anybody"], "explanation": "any- in questions" },
+        { "id": "ws-42-sec-a-q14", "order": 14, "prompt": "If [gap] wants to leave early, he or she can.", "acceptedAnswers": ["anyone|anybody"], "explanation": "any- after if" },
+        { "id": "ws-42-sec-a-q15", "order": 15, "prompt": "There is [gap] at the door. Can you go and see who it is?", "acceptedAnswers": ["someone|somebody"], "explanation": "some- in positive sentences" }
       ]
     },
     {
       "id": "ws-42-sec-b",
       "sectionKey": "B",
-      "instruction": "Complete the sentences using SOMEONE / ANYONE / NO ONE / SOMETHING /",
+      "instruction": "Complete the sentences using SOMEONE / ANYONE / NO ONE / SOMETHING / ANYTHING / NOTHING / SOMEWHERE / ANYWHERE / NOWHERE / EVERYONE / EVERYTHING / EVERYWHERE:",
       "type": "inline_gap_fill",
+      "wordBank": ["someone", "anyone", "no one", "something", "anything", "nothing", "somewhere", "anywhere", "nowhere", "everyone", "everything", "everywhere"],
       "questions": [
-        {
-          "id": "ws-42-sec-b-q01",
-          "order": 1,
-          "prompt": "The bus was completely empty. There was [gap] on it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q02",
-          "order": 2,
-          "prompt": "The party was very nice [gap] enjoyed it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q03",
-          "order": 3,
-          "prompt": "Tom is very popular [gap] likes him.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q04",
-          "order": 4,
-          "prompt": "[gap] was very kind to us. They helped us too much.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q05",
-          "order": 5,
-          "prompt": "[gap] can make her happy because she is very sad now.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q06",
-          "order": 6,
-          "prompt": "I opened the door but there was [gap] there.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q07",
-          "order": 7,
-          "prompt": "[gap] telephoned the police but he didn’t give his name.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q08",
-          "order": 8,
-          "prompt": "Is [gap] living in that house? It looks empty.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q09",
-          "order": 9,
-          "prompt": "I heard [gap] falling down the stairs.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q10",
-          "order": 10,
-          "prompt": "[gap] is here, no absentees.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q11",
-          "order": 11,
-          "prompt": "Jane was very hungry, so she wanted to go [gap] to eat a hamburger.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q12",
-          "order": 12,
-          "prompt": "John went [gap] exciting last week.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q13",
-          "order": 13,
-          "prompt": "She stayed in İstanbul for a month and visited [gap] in this city.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q14",
-          "order": 14,
-          "prompt": "What’s wrong? Have you got [gap] in your eye?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q15",
-          "order": 15,
-          "prompt": "Does [gap] mind if I smoke?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q16",
-          "order": 16,
-          "prompt": "A: Where did you go for your holidays? [gap] B: [gap] I stayed at home.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q17",
-          "order": 17,
-          "prompt": "The accident looked serious but fortunately [gap] was injured.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-b-q18",
-          "order": 18,
-          "prompt": "A: What did you have for breakfast? [gap] B: [gap] I don’t usually have [gap] for breakfast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-42-sec-b-q01", "order": 1, "prompt": "The bus was completely empty. There was [gap] on it.", "acceptedAnswers": ["no one|nobody|no-one"], "explanation": "no- with a positive verb" },
+        { "id": "ws-42-sec-b-q02", "order": 2, "prompt": "The party was very nice. [gap] enjoyed it.", "acceptedAnswers": ["Everyone|Everybody"], "explanation": "every-: all people" },
+        { "id": "ws-42-sec-b-q03", "order": 3, "prompt": "Tom is very popular. [gap] likes him.", "acceptedAnswers": ["Everyone|Everybody"], "explanation": "every-: all people" },
+        { "id": "ws-42-sec-b-q04", "order": 4, "prompt": "[gap] was very kind to us. They helped us too much.", "acceptedAnswers": ["Everyone|Everybody"], "explanation": "every-: all people" },
+        { "id": "ws-42-sec-b-q05", "order": 5, "prompt": "[gap] can make her happy because she is very sad now.", "acceptedAnswers": ["No one|Nobody|No-one"], "explanation": "no- with a positive verb" },
+        { "id": "ws-42-sec-b-q06", "order": 6, "prompt": "I opened the door but there was [gap] there.", "acceptedAnswers": ["no one|nobody|no-one|nothing"], "explanation": "no- with a positive verb" },
+        { "id": "ws-42-sec-b-q07", "order": 7, "prompt": "[gap] telephoned the police but he didn’t give his name.", "acceptedAnswers": ["Someone|Somebody"], "explanation": "some-: an unknown person" },
+        { "id": "ws-42-sec-b-q08", "order": 8, "prompt": "Is [gap] living in that house? It looks empty.", "acceptedAnswers": ["anyone|anybody"], "explanation": "any- in questions" },
+        { "id": "ws-42-sec-b-q09", "order": 9, "prompt": "I heard [gap] falling down the stairs.", "acceptedAnswers": ["someone|somebody|something"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-b-q10", "order": 10, "prompt": "[gap] is here, no absentees.", "acceptedAnswers": ["Everyone|Everybody"], "explanation": "every-: all people" },
+        { "id": "ws-42-sec-b-q11", "order": 11, "prompt": "Jane was very hungry, so she wanted to go [gap] to eat a hamburger.", "acceptedAnswers": ["somewhere"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-b-q12", "order": 12, "prompt": "John went [gap] exciting last week.", "acceptedAnswers": ["somewhere"], "explanation": "somewhere + adjective" },
+        { "id": "ws-42-sec-b-q13", "order": 13, "prompt": "She stayed in İstanbul for a month and visited [gap] in this city.", "acceptedAnswers": ["everywhere"], "explanation": "every-: all places" },
+        { "id": "ws-42-sec-b-q14", "order": 14, "prompt": "What’s wrong? Have you got [gap] in your eye?", "acceptedAnswers": ["something"], "explanation": "some- in questions expecting yes" },
+        { "id": "ws-42-sec-b-q15", "order": 15, "prompt": "Does [gap] mind if I smoke?", "acceptedAnswers": ["anyone|anybody"], "explanation": "any- in questions" },
+        { "id": "ws-42-sec-b-q16", "order": 16, "prompt": "A: Where did you go for your holidays? B: [gap]. I stayed at home.", "acceptedAnswers": ["Nowhere"], "explanation": "no- as a short answer" },
+        { "id": "ws-42-sec-b-q17", "order": 17, "prompt": "The accident looked serious but fortunately [gap] was injured.", "acceptedAnswers": ["no one|nobody|no-one"], "explanation": "no- with a positive verb" },
+        { "id": "ws-42-sec-b-q18", "order": 18, "prompt": "A: What did you have for breakfast? B: [gap]. I don’t usually have [gap] for breakfast.", "acceptedAnswers": ["Nothing / anything"], "explanation": "no- as short answer; any- in negatives" }
       ]
     },
     {
       "id": "ws-42-sec-c",
       "sectionKey": "C",
-      "instruction": "Rewrite the following sentences without changing the meaning:",
+      "instruction": "Rewrite the following sentences without changing the meaning: (Example: There wasn’t anyone in front of me in the cinema. → There was no one in front of me in the cinema.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-42-sec-c-q01",
-          "order": 1,
-          "prompt": "They don’t know anyone in this town. They know [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q02",
-          "order": 2,
-          "prompt": "She met no one at the bus-stop. She didn’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q03",
-          "order": 3,
-          "prompt": "You told nobody to go with you. You [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q04",
-          "order": 4,
-          "prompt": "We ate nothing until dinner. We didn’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q05",
-          "order": 5,
-          "prompt": "She told no one nothing about last night. She didn’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q06",
-          "order": 6,
-          "prompt": "She didn’t tell anybody about her plans. She told [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q07",
-          "order": 7,
-          "prompt": "I didn’t say anything. I said [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q08",
-          "order": 8,
-          "prompt": "The station isn’t anywhere near here. The station is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q09",
-          "order": 9,
-          "prompt": "I don’t want anything to drink. I want [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-c-q10",
-          "order": 10,
-          "prompt": "We did nothing during our vacation. We [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-42-sec-c-q01", "order": 1, "prompt": "They don’t know anyone in this town. → They know", "acceptedAnswers": ["They know no one in this town.", "They know nobody in this town."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-c-q02", "order": 2, "prompt": "She met no one at the bus-stop. → She didn’t", "acceptedAnswers": ["She didn't meet anyone at the bus-stop.", "She didn't meet anybody at the bus-stop.", "She didn't meet anyone at the bus stop."], "explanation": "no- = not + any-" },
+        { "id": "ws-42-sec-c-q03", "order": 3, "prompt": "You told nobody to go with you. → You", "acceptedAnswers": ["You didn't tell anybody to go with you.", "You didn't tell anyone to go with you."], "explanation": "no- = not + any-" },
+        { "id": "ws-42-sec-c-q04", "order": 4, "prompt": "We ate nothing until dinner. → We didn’t", "acceptedAnswers": ["We didn't eat anything until dinner."], "explanation": "no- = not + any-" },
+        { "id": "ws-42-sec-c-q05", "order": 5, "prompt": "She told no one anything about last night. → She didn’t", "acceptedAnswers": ["She didn't tell anyone anything about last night.", "She didn't tell anybody anything about last night."], "explanation": "no- = not + any-" },
+        { "id": "ws-42-sec-c-q06", "order": 6, "prompt": "She didn’t tell anybody about her plans. → She told", "acceptedAnswers": ["She told nobody about her plans.", "She told no one about her plans."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-c-q07", "order": 7, "prompt": "I didn’t say anything. → I said", "acceptedAnswers": ["I said nothing."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-c-q08", "order": 8, "prompt": "The station isn’t anywhere near here. → The station is", "acceptedAnswers": ["The station is nowhere near here."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-c-q09", "order": 9, "prompt": "I don’t want anything to drink. → I want", "acceptedAnswers": ["I want nothing to drink."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-c-q10", "order": 10, "prompt": "We did nothing during our vacation. → We", "acceptedAnswers": ["We didn't do anything during our vacation."], "explanation": "no- = not + any-" }
       ]
     },
     {
       "id": "ws-42-sec-d",
       "sectionKey": "D",
-      "instruction": "Complete the sentences. Use the words in the box:",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the conversations. Use the words in the box: (Example: Can I speak to somebody in the Accounts Office, please?)",
+      "type": "passage_gap_fill",
+      "contextText": "a) Woman: Hello. Can I speak to somebody in the Accounts Office, please? (questions 1–3)\nb) Mother and daughter (questions 4–7)\nc) A man looking for a hotel room (questions 8–9)",
+      "wordBank": ["somebody", "anybody", "nobody", "everybody", "something", "anything", "nothing", "everything", "somewhere", "anywhere", "nowhere", "everywhere"],
       "questions": [
-        {
-          "id": "ws-42-sec-d-q01",
-          "order": 1,
-          "prompt": "somebody anybody nobody [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q02",
-          "order": 2,
-          "prompt": "everybody [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q03",
-          "order": 3,
-          "prompt": "a) Woman : Hello. Can I speak to [gap] somebody [gap] in the Accounts Office, please?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q04",
-          "order": 4,
-          "prompt": ": I’m sorry, madam. It’s after 6:00. There isn’t [gap] in the Accounts",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q05",
-          "order": 5,
-          "prompt": "Office now [gap] has gone home.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q06",
-          "order": 6,
-          "prompt": "Woman : But I must speak to [gap] today.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q07",
-          "order": 7,
-          "prompt": ": I’m sorry. There’s [gap] here. Can you phone back in the",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q08",
-          "order": 8,
-          "prompt": "morning? There will be [gap] here then.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q09",
-          "order": 9,
-          "prompt": "something anything nothing [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q10",
-          "order": 10,
-          "prompt": "everything [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q11",
-          "order": 11,
-          "prompt": "b) Mother : Would you like [gap] to eat?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q12",
-          "order": 12,
-          "prompt": "Daughter : No, thanks. I don’t want [gap] at the moment, thank you.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q13",
-          "order": 13,
-          "prompt": "Mother : But you’ve had [gap] to eat all day. Is [gap] all right?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q14",
-          "order": 14,
-          "prompt": "Are you feeling ill? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q15",
-          "order": 15,
-          "prompt": "Daughter : No. Don’t worry [gap] is fine. I’m just not hungry. That’s all.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q16",
-          "order": 16,
-          "prompt": "somewhere anywhere nowhere everywhere [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q17",
-          "order": 17,
-          "prompt": "c) Man : I’ve got [gap] to stay. I need [gap] for two nights.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-d-q18",
-          "order": 18,
-          "prompt": "I’ve tried all the hotels near here, but [gap] is full. I can’t find a room",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-42-sec-d-q01", "order": 1, "prompt": "Man: I’m sorry, madam. It’s after 6:00. There isn’t [gap] in the Accounts Office now. [gap] has gone home.", "acceptedAnswers": ["anybody|anyone / Everybody|Everyone"], "explanation": "any- in negatives; every- = all people" },
+        { "id": "ws-42-sec-d-q02", "order": 2, "prompt": "Woman: But I must speak to [gap] today.", "acceptedAnswers": ["somebody|someone"], "explanation": "some- in positive sentences" },
+        { "id": "ws-42-sec-d-q03", "order": 3, "prompt": "Man: I’m sorry. There’s [gap] here. Can you phone back in the morning? There will be [gap] here then.", "acceptedAnswers": ["nobody|no one / somebody|someone"], "explanation": "no- with a positive verb; some- in positives" },
+        { "id": "ws-42-sec-d-q04", "order": 4, "prompt": "Mother: Would you like [gap] to eat?", "acceptedAnswers": ["something"], "explanation": "some- in offers" },
+        { "id": "ws-42-sec-d-q05", "order": 5, "prompt": "Daughter: No, thanks. I don’t want [gap] at the moment, thank you.", "acceptedAnswers": ["anything"], "explanation": "any- in negatives" },
+        { "id": "ws-42-sec-d-q06", "order": 6, "prompt": "Mother: But you’ve had [gap] to eat all day. Is [gap] all right? Are you feeling ill?", "acceptedAnswers": ["nothing / everything"], "explanation": "no- with a positive verb; every- = all" },
+        { "id": "ws-42-sec-d-q07", "order": 7, "prompt": "Daughter: No. Don’t worry. [gap] is fine. I’m just not hungry. That’s all.", "acceptedAnswers": ["Everything"], "explanation": "every- = all things" },
+        { "id": "ws-42-sec-d-q08", "order": 8, "prompt": "Man: I’ve got [gap] to stay. I need [gap] for two nights.", "acceptedAnswers": ["nowhere / somewhere"], "explanation": "no- with a positive verb; some- in positives" },
+        { "id": "ws-42-sec-d-q09", "order": 9, "prompt": "Man: I’ve tried all the hotels near here, but [gap] is full. I can’t find a room [gap].", "acceptedAnswers": ["everywhere / anywhere"], "explanation": "every- = all places; any- in negatives" }
       ]
     },
     {
       "id": "ws-42-sec-e",
       "sectionKey": "E",
-      "instruction": "Rewrite the sentences. Use the words in brackets:",
+      "instruction": "Rewrite the sentences. Use the words in brackets: (Example: There isn’t anything in the fridge. (nothing) → There’s nothing in the fridge.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-42-sec-e-q01",
-          "order": 1,
-          "prompt": "There isn’s anything in the fridge. (nothing) [gap] There’s nothing in the fridge [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-e-q02",
-          "order": 2,
-          "prompt": "I’ve got nothing to say. (anything)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-e-q03",
-          "order": 3,
-          "prompt": "There’s nobody at home. (anybody)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-e-q04",
-          "order": 4,
-          "prompt": "They haven’t got anywhere to live. (nowhere)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-e-q05",
-          "order": 5,
-          "prompt": "There isn’t anyone outside. (no one)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-42-sec-e-q06",
-          "order": 6,
-          "prompt": "We’ve got nowhere to sit down. (anywhere)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-42-sec-e-q02", "order": 2, "prompt": "I’ve got nothing to say. (anything)", "acceptedAnswers": ["I haven't got anything to say.", "I don't have anything to say."], "explanation": "no- = not + any-" },
+        { "id": "ws-42-sec-e-q03", "order": 3, "prompt": "There’s nobody at home. (anybody)", "acceptedAnswers": ["There isn't anybody at home.", "There's not anybody at home."], "explanation": "no- = not + any-" },
+        { "id": "ws-42-sec-e-q04", "order": 4, "prompt": "They haven’t got anywhere to live. (nowhere)", "acceptedAnswers": ["They've got nowhere to live.", "They have got nowhere to live.", "They have nowhere to live."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-e-q05", "order": 5, "prompt": "There isn’t anyone outside. (no one)", "acceptedAnswers": ["There's no one outside.", "There is no one outside."], "explanation": "not + any- = no-" },
+        { "id": "ws-42-sec-e-q06", "order": 6, "prompt": "We’ve got nowhere to sit down. (anywhere)", "acceptedAnswers": ["We haven't got anywhere to sit down.", "We don't have anywhere to sit down."], "explanation": "no- = not + any-" }
       ]
     }
   ]

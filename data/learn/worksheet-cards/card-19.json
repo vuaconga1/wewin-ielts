@@ -1,0 +1,1789 @@
+{
+  "id": "card-19",
+  "order": 19,
+  "part": 1,
+  "slug": "card-19-he-thong-dai-tu-va-so-huu",
+  "title": "THẺ BÀI TẬP 19",
+  "subject": "Pronouns & Possessive Forms",
+  "subjectVi": "Hệ thống Đại từ & Sở hữu",
+  "level": "B2",
+  "pageRange": "WS-52, WS-53, WS-54, WS-57",
+  "sections": [
+    {
+      "id": "card-19-sec-1",
+      "sectionKey": "A",
+      "instruction": "Fill in the blanks with MY, YOUR, HIS, HER, ITS, OUR, YOUR, THEIR:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-52-sec-a-q01",
+          "order": 1,
+          "prompt": "This is Tim. [gap] car is very fast.",
+          "acceptedAnswers": [
+            "his"
+          ],
+          "explanation": "his = belonging to a man"
+        },
+        {
+          "id": "ws-52-sec-a-q02",
+          "order": 2,
+          "prompt": "Jane and I are in the garden. [gap] books are in the classroom.",
+          "acceptedAnswers": [
+            "our"
+          ],
+          "explanation": "Jane and I = we → our"
+        },
+        {
+          "id": "ws-52-sec-a-q03",
+          "order": 3,
+          "prompt": "Are you a driver? Where is [gap] car?",
+          "acceptedAnswers": [
+            "your"
+          ],
+          "explanation": "you → your"
+        },
+        {
+          "id": "ws-52-sec-a-q04",
+          "order": 4,
+          "prompt": "I am a driver. This is [gap] school.",
+          "acceptedAnswers": [
+            "my"
+          ],
+          "explanation": "I → my"
+        },
+        {
+          "id": "ws-52-sec-a-q05",
+          "order": 5,
+          "prompt": "She is my friend. [gap] name is Meltem.",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "explanation": "she → her"
+        },
+        {
+          "id": "ws-52-sec-a-q06",
+          "order": 6,
+          "prompt": "These are Mr. and Mrs. Brown. That’s [gap] house.",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "explanation": "they → their"
+        },
+        {
+          "id": "ws-52-sec-a-q07",
+          "order": 7,
+          "prompt": "Look at that cat. [gap] eyes are green.",
+          "acceptedAnswers": [
+            "its"
+          ],
+          "explanation": "animal/thing → its"
+        },
+        {
+          "id": "ws-52-sec-a-q08",
+          "order": 8,
+          "prompt": "Your friend and you are sad today. What’s [gap] problem?",
+          "acceptedAnswers": [
+            "your"
+          ],
+          "explanation": "you (plural) → your"
+        },
+        {
+          "id": "ws-52-sec-a-q09",
+          "order": 9,
+          "prompt": "That’s Mr. Green. He is driving [gap] car.",
+          "acceptedAnswers": [
+            "his"
+          ],
+          "explanation": "he → his"
+        },
+        {
+          "id": "ws-52-sec-a-q10",
+          "order": 10,
+          "prompt": "Ali’s and Can’s bags are heavy. [gap] bags are full.",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "explanation": "they → their"
+        },
+        {
+          "id": "ws-52-sec-a-q11",
+          "order": 11,
+          "prompt": "Gökçe and Meltem are listening to pop music. [gap] mother is cooking in the kitchen.",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "explanation": "they → their"
+        },
+        {
+          "id": "ws-52-sec-a-q12",
+          "order": 12,
+          "prompt": "The dog is eating a bone. [gap] teeth are very sharp.",
+          "acceptedAnswers": [
+            "its"
+          ],
+          "explanation": "animal → its"
+        },
+        {
+          "id": "ws-52-sec-a-q13",
+          "order": 13,
+          "prompt": "Are you and your sister ready? [gap] friend is waiting for you in the car.",
+          "acceptedAnswers": [
+            "your"
+          ],
+          "explanation": "you (plural) → your"
+        },
+        {
+          "id": "ws-52-sec-a-q14",
+          "order": 14,
+          "prompt": "A: What’s [gap] job? B: I’m a mechanic.",
+          "acceptedAnswers": [
+            "your"
+          ],
+          "explanation": "asking you → your"
+        },
+        {
+          "id": "ws-52-sec-a-q15",
+          "order": 15,
+          "prompt": "Madonna is a famous singer. [gap] new records are great.",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "explanation": "she → her"
+        },
+        {
+          "id": "ws-52-sec-a-q16",
+          "order": 16,
+          "prompt": "Robert has got a dog. [gap] name is Bingo.",
+          "acceptedAnswers": [
+            "its|his"
+          ],
+          "explanation": "animal → its (his for a pet is also used)"
+        },
+        {
+          "id": "ws-52-sec-a-q17",
+          "order": 17,
+          "prompt": "We have got a new house in İzmir. [gap] new house is very large.",
+          "acceptedAnswers": [
+            "our"
+          ],
+          "explanation": "we → our"
+        },
+        {
+          "id": "ws-52-sec-a-q18",
+          "order": 18,
+          "prompt": "The boys are riding [gap] bicycles in the garden.",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "explanation": "they → their"
+        },
+        {
+          "id": "ws-52-sec-a-q19",
+          "order": 19,
+          "prompt": "Ayşegül is going to school. [gap] school is very far.",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "explanation": "she → her"
+        },
+        {
+          "id": "ws-52-sec-a-q20",
+          "order": 20,
+          "prompt": "Sue and Mary are wearing ear-rings. [gap] ear-rings are silver.",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "explanation": "they → their"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-2",
+      "sectionKey": "B",
+      "instruction": "Rewrite these sentences using HE, SHE, IT, THEY, WE, HIS, HER, THEIR, OUR, ITS:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-52-sec-b-q01",
+          "order": 1,
+          "prompt": "Jane’s father is very thin.",
+          "acceptedAnswers": [
+            "Her father is very thin."
+          ],
+          "explanation": "Jane’s → her"
+        },
+        {
+          "id": "ws-52-sec-b-q02",
+          "order": 2,
+          "prompt": "Men’s trousers are very expensive.",
+          "acceptedAnswers": [
+            "Their trousers are very expensive."
+          ],
+          "explanation": "men’s → their"
+        },
+        {
+          "id": "ws-52-sec-b-q03",
+          "order": 3,
+          "prompt": "Jim’s shirt is very long.",
+          "acceptedAnswers": [
+            "His shirt is very long."
+          ],
+          "explanation": "Jim’s → his"
+        },
+        {
+          "id": "ws-52-sec-b-q04",
+          "order": 4,
+          "prompt": "Is your brother a businessman?",
+          "acceptedAnswers": [
+            "Is he a businessman?"
+          ],
+          "explanation": "subject pronoun: he"
+        },
+        {
+          "id": "ws-52-sec-b-q05",
+          "order": 5,
+          "prompt": "My mother and I would like some tea.",
+          "acceptedAnswers": [
+            "We would like some tea."
+          ],
+          "explanation": "my mother and I → we"
+        },
+        {
+          "id": "ws-52-sec-b-q06",
+          "order": 6,
+          "prompt": "These are Ayşe’s and my books.",
+          "acceptedAnswers": [
+            "These are our books."
+          ],
+          "explanation": "Ayşe’s and my → our"
+        },
+        {
+          "id": "ws-52-sec-b-q07",
+          "order": 7,
+          "prompt": "Mrs. Brown’s daughters are in the garden.",
+          "acceptedAnswers": [
+            "Her daughters are in the garden."
+          ],
+          "explanation": "Mrs. Brown’s → her"
+        },
+        {
+          "id": "ws-52-sec-b-q08",
+          "order": 8,
+          "prompt": "Where is Gökçe’s mother?",
+          "acceptedAnswers": [
+            "Where is her mother?"
+          ],
+          "explanation": "Gökçe’s → her"
+        },
+        {
+          "id": "ws-52-sec-b-q09",
+          "order": 9,
+          "prompt": "My father’s car is blue.",
+          "acceptedAnswers": [
+            "His car is blue."
+          ],
+          "explanation": "my father’s → his"
+        },
+        {
+          "id": "ws-52-sec-b-q10",
+          "order": 10,
+          "prompt": "That rabbit is grey. The rabbit’s ears are long.",
+          "acceptedAnswers": [
+            "That rabbit is grey. Its ears are long.",
+            "It is grey. Its ears are long.",
+            "Its ears are long."
+          ],
+          "explanation": "the rabbit’s → its"
+        },
+        {
+          "id": "ws-52-sec-b-q11",
+          "order": 11,
+          "prompt": "The students’ books are in the classroom.",
+          "acceptedAnswers": [
+            "Their books are in the classroom."
+          ],
+          "explanation": "the students’ → their"
+        },
+        {
+          "id": "ws-52-sec-b-q12",
+          "order": 12,
+          "prompt": "This is Mrs. Brown’s coat, but these are the children’s coats.",
+          "acceptedAnswers": [
+            "This is her coat, but these are their coats."
+          ],
+          "explanation": "Mrs. Brown’s → her; the children’s → their"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-3",
+      "sectionKey": "C",
+      "instruction": "Rewrite the sentences using MINE, YOURS, HIS, HERS, OURS, THEIRS instead of the possessive + noun:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-52-sec-c-q01",
+          "order": 1,
+          "prompt": "This is Ayşe’s coat.",
+          "acceptedAnswers": [
+            "This is hers.",
+            "This coat is hers."
+          ],
+          "explanation": "Ayşe’s coat → hers"
+        },
+        {
+          "id": "ws-52-sec-c-q02",
+          "order": 2,
+          "prompt": "It is my chocolate. Don’t eat!",
+          "acceptedAnswers": [
+            "It is mine. Don’t eat!",
+            "It is mine. Don’t eat it!"
+          ],
+          "explanation": "my chocolate → mine"
+        },
+        {
+          "id": "ws-52-sec-c-q03",
+          "order": 3,
+          "prompt": "That red book is not Can’s book. His book is blue.",
+          "acceptedAnswers": [
+            "That red book is not his. His is blue."
+          ],
+          "explanation": "his book → his"
+        },
+        {
+          "id": "ws-52-sec-c-q04",
+          "order": 4,
+          "prompt": "A: Look at these keys. Are they our keys?",
+          "acceptedAnswers": [
+            "Look at these keys. Are they ours?",
+            "Are they ours?"
+          ],
+          "explanation": "our keys → ours"
+        },
+        {
+          "id": "ws-52-sec-c-q05",
+          "order": 5,
+          "prompt": "B: No, they are not your keys. They are my mother’s keys.",
+          "acceptedAnswers": [
+            "No, they are not yours. They are my mother’s.",
+            "No, they are not yours. They are hers."
+          ],
+          "explanation": "your keys → yours; my mother’s keys → my mother’s"
+        },
+        {
+          "id": "ws-52-sec-c-q06",
+          "order": 6,
+          "prompt": "A: Are those your glasses or my glasses on the table?",
+          "acceptedAnswers": [
+            "Are those your glasses or mine on the table?",
+            "Are those yours or mine on the table?"
+          ],
+          "explanation": "my glasses → mine"
+        },
+        {
+          "id": "ws-52-sec-c-q07",
+          "order": 7,
+          "prompt": "B: I think, they are your glasses. My glasses aren’t on the table. They are in my bag.",
+          "acceptedAnswers": [
+            "I think they are yours. Mine aren’t on the table. They are in my bag."
+          ],
+          "explanation": "your glasses → yours; my glasses → mine"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-4",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks using MINE, YOURS, HIS, HERS, OURS, THEIRS:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-52-sec-d-q01",
+          "order": 1,
+          "prompt": "A: Is this John’s tie? B: Yes, it is [gap].",
+          "acceptedAnswers": [
+            "his"
+          ],
+          "explanation": "John’s → his"
+        },
+        {
+          "id": "ws-52-sec-d-q02",
+          "order": 2,
+          "prompt": "My umbrella isn’t black. [gap] is grey.",
+          "acceptedAnswers": [
+            "mine"
+          ],
+          "explanation": "my umbrella → mine"
+        },
+        {
+          "id": "ws-52-sec-d-q03",
+          "order": 3,
+          "prompt": "There is a car near your house. Is it [gap]?",
+          "acceptedAnswers": [
+            "yours"
+          ],
+          "explanation": "your car → yours"
+        },
+        {
+          "id": "ws-52-sec-d-q04",
+          "order": 4,
+          "prompt": "That green shirt isn’t Ayşe’s. [gap] is blue.",
+          "acceptedAnswers": [
+            "hers"
+          ],
+          "explanation": "Ayşe’s shirt → hers"
+        },
+        {
+          "id": "ws-52-sec-d-q05",
+          "order": 5,
+          "prompt": "Pass this ball to us. It is [gap].",
+          "acceptedAnswers": [
+            "ours"
+          ],
+          "explanation": "our ball → ours"
+        },
+        {
+          "id": "ws-52-sec-d-q06",
+          "order": 6,
+          "prompt": "They don’t like sandwiches. These sandwiches are not [gap].",
+          "acceptedAnswers": [
+            "theirs"
+          ],
+          "explanation": "their sandwiches → theirs"
+        },
+        {
+          "id": "ws-52-sec-d-q07",
+          "order": 7,
+          "prompt": "Don’t take these keys. They are not [gap].",
+          "acceptedAnswers": [
+            "yours"
+          ],
+          "explanation": "your keys → yours"
+        },
+        {
+          "id": "ws-52-sec-d-q08",
+          "order": 8,
+          "prompt": "A: There is a pair of brown gloves here. Are they your gloves or my gloves? B: I haven’t got brown gloves. They aren’t [gap], they are [gap].",
+          "acceptedAnswers": [
+            "mine / yours"
+          ],
+          "explanation": "my gloves → mine; your gloves → yours"
+        },
+        {
+          "id": "ws-52-sec-d-q09",
+          "order": 9,
+          "prompt": "A: Is their house old? B: No, [gap] is very old.",
+          "acceptedAnswers": [
+            "ours"
+          ],
+          "explanation": "our house → ours (contrast with theirs)"
+        },
+        {
+          "id": "ws-52-sec-d-q10",
+          "order": 10,
+          "prompt": "Can I take your pen? [gap] is at home.",
+          "acceptedAnswers": [
+            "mine"
+          ],
+          "explanation": "my pen → mine"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-5",
+      "sectionKey": "E",
+      "instruction": "Fill in the blanks with ME, YOU, HIM, HER, THEM, US, IT:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-52-sec-e-q01",
+          "order": 1,
+          "prompt": "We are playing in the garden and Jim is playing with [gap].",
+          "acceptedAnswers": [
+            "us"
+          ],
+          "explanation": "object of we → us"
+        },
+        {
+          "id": "ws-52-sec-e-q02",
+          "order": 2,
+          "prompt": "Are the lights on? Turn [gap] off!",
+          "acceptedAnswers": [
+            "them"
+          ],
+          "explanation": "the lights → them"
+        },
+        {
+          "id": "ws-52-sec-e-q03",
+          "order": 3,
+          "prompt": "Where is my book? I’m looking for [gap].",
+          "acceptedAnswers": [
+            "it"
+          ],
+          "explanation": "the book → it"
+        },
+        {
+          "id": "ws-52-sec-e-q04",
+          "order": 4,
+          "prompt": "She is very tired. Help [gap].",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "explanation": "object of she → her"
+        },
+        {
+          "id": "ws-52-sec-e-q05",
+          "order": 5,
+          "prompt": "I’m very thirsty. Give [gap] a glass of water.",
+          "acceptedAnswers": [
+            "me"
+          ],
+          "explanation": "object of I → me"
+        },
+        {
+          "id": "ws-52-sec-e-q06",
+          "order": 6,
+          "prompt": "This is Ahmet’s pen. Give it to [gap].",
+          "acceptedAnswers": [
+            "him"
+          ],
+          "explanation": "Ahmet → him"
+        },
+        {
+          "id": "ws-52-sec-e-q07",
+          "order": 7,
+          "prompt": "Look at [gap]. Are they your friends?",
+          "acceptedAnswers": [
+            "them"
+          ],
+          "explanation": "they → them"
+        },
+        {
+          "id": "ws-52-sec-e-q08",
+          "order": 8,
+          "prompt": "Are you John Brown? There is a letter for [gap].",
+          "acceptedAnswers": [
+            "you"
+          ],
+          "explanation": "object of you → you"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-6",
+      "sectionKey": "F",
+      "instruction": "Fill in the blanks with MY, YOUR, HIS, HER, ITS, OUR, THEIR, ME, YOU, HIM, HER, IT, US, THEM, MINE, YOURS, HERS, HIS, OURS, THEIRS where necessary:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-52-sec-f-q01",
+          "order": 1,
+          "prompt": "Is that Jim’s tie? Show [gap] this tie.",
+          "acceptedAnswers": [
+            "him"
+          ],
+          "explanation": "object pronoun: him"
+        },
+        {
+          "id": "ws-52-sec-f-q02",
+          "order": 2,
+          "prompt": "There is a pen on the table. Give [gap] to me.",
+          "acceptedAnswers": [
+            "it"
+          ],
+          "explanation": "the pen → it"
+        },
+        {
+          "id": "ws-52-sec-f-q03",
+          "order": 3,
+          "prompt": "Pass these books to your friends. They are [gap].",
+          "acceptedAnswers": [
+            "theirs"
+          ],
+          "explanation": "their books → theirs"
+        },
+        {
+          "id": "ws-52-sec-f-q04",
+          "order": 4,
+          "prompt": "A: Is this my umbrella? B: No, it isn’t [gap] umbrella. [gap] is on the table.",
+          "acceptedAnswers": [
+            "your / yours"
+          ],
+          "explanation": "your + noun; yours stands alone"
+        },
+        {
+          "id": "ws-52-sec-f-q05",
+          "order": 5,
+          "prompt": "Gökçe and I are in the classroom. [gap] bags are under the desk over there. Could you bring [gap] to [gap]?",
+          "acceptedAnswers": [
+            "our / them / us"
+          ],
+          "explanation": "our bags; bring them to us"
+        },
+        {
+          "id": "ws-52-sec-f-q06",
+          "order": 6,
+          "prompt": "Mr. and Mrs. Brown are at the door. This is [gap] key. Please give [gap] to [gap].",
+          "acceptedAnswers": [
+            "their / it / them"
+          ],
+          "explanation": "their key; give it to them"
+        },
+        {
+          "id": "ws-52-sec-f-q07",
+          "order": 7,
+          "prompt": "A: Have you got a green pullover? B: No, [gap] isn’t green. It’s blue.",
+          "acceptedAnswers": [
+            "mine"
+          ],
+          "explanation": "my pullover → mine"
+        },
+        {
+          "id": "ws-52-sec-f-q08",
+          "order": 8,
+          "prompt": "Look at that man. [gap] name is John Brown. This passport is [gap]. Give [gap] to [gap].",
+          "acceptedAnswers": [
+            "his / his / it / him"
+          ],
+          "explanation": "his name; it is his; give it to him"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-7",
+      "sectionKey": "G",
+      "instruction": "Rewrite the sentences, replacing the object nouns with ME, HIM, HER, THEM, US, IT:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-52-sec-g-q01",
+          "order": 1,
+          "prompt": "There are some books on the desk. Look at these books.",
+          "acceptedAnswers": [
+            "There are some books on the desk. Look at them.",
+            "Look at them."
+          ],
+          "explanation": "these books → them"
+        },
+        {
+          "id": "ws-52-sec-g-q02",
+          "order": 2,
+          "prompt": "She is turning the radio on.",
+          "acceptedAnswers": [
+            "She is turning it on."
+          ],
+          "explanation": "pronoun goes between verb and particle"
+        },
+        {
+          "id": "ws-52-sec-g-q03",
+          "order": 3,
+          "prompt": "The teacher is asking Jane a question.",
+          "acceptedAnswers": [
+            "The teacher is asking her a question."
+          ],
+          "explanation": "Jane → her"
+        },
+        {
+          "id": "ws-52-sec-g-q04",
+          "order": 4,
+          "prompt": "Take your shoes off.",
+          "acceptedAnswers": [
+            "Take them off."
+          ],
+          "explanation": "pronoun goes between verb and particle"
+        },
+        {
+          "id": "ws-52-sec-g-q05",
+          "order": 5,
+          "prompt": "The man is looking at Ali and me.",
+          "acceptedAnswers": [
+            "The man is looking at us."
+          ],
+          "explanation": "Ali and me → us"
+        },
+        {
+          "id": "ws-52-sec-g-q06",
+          "order": 6,
+          "prompt": "Jim is giving his father some tea.",
+          "acceptedAnswers": [
+            "Jim is giving him some tea.",
+            "Jim is giving it to his father.",
+            "Jim is giving it to him."
+          ],
+          "explanation": "his father → him"
+        },
+        {
+          "id": "ws-52-sec-g-q07",
+          "order": 7,
+          "prompt": "This is the dog’s meat. Give the meat to the dog.",
+          "acceptedAnswers": [
+            "This is the dog’s meat. Give it to it.",
+            "Give it to it.",
+            "This is the dog’s meat. Give it to the dog.",
+            "Give it to the dog."
+          ],
+          "explanation": "the meat → it; the dog → it"
+        },
+        {
+          "id": "ws-52-sec-g-q08",
+          "order": 8,
+          "prompt": "Is Tom eating any oranges?",
+          "acceptedAnswers": [
+            "Is Tom eating them?",
+            "Is he eating them?",
+            "Is he eating any oranges?"
+          ],
+          "explanation": "the oranges → them"
+        },
+        {
+          "id": "ws-52-sec-g-q09",
+          "order": 9,
+          "prompt": "Give the milk to that cat.",
+          "acceptedAnswers": [
+            "Give it to it.",
+            "Give it to that cat.",
+            "Give the milk to it."
+          ],
+          "explanation": "the milk → it; the cat → it"
+        },
+        {
+          "id": "ws-52-sec-g-q10",
+          "order": 10,
+          "prompt": "Could you pass the salt to your mother?",
+          "acceptedAnswers": [
+            "Could you pass it to her?",
+            "Could you pass the salt to her?",
+            "Could you pass it to your mother?"
+          ],
+          "explanation": "the salt → it; your mother → her"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-8",
+      "sectionKey": "H",
+      "instruction": "Complete the passage. Use these words.",
+      "type": "passage_gap_fill",
+      "wordBank": [
+        "my",
+        "your",
+        "his",
+        "her",
+        "its",
+        "our",
+        "their",
+        "his"
+      ],
+      "questions": [
+        {
+          "id": "ws-52-sec-h-q01",
+          "order": 1,
+          "prompt": "Hello. [gap] name is Patrick. I’m nine. I have got a brother. His name is Andy and he’s eleven.",
+          "acceptedAnswers": [
+            "my"
+          ],
+          "explanation": "I → my"
+        },
+        {
+          "id": "ws-52-sec-h-q02",
+          "order": 2,
+          "prompt": "We are on holiday in Spain. The hotel is very good and [gap] swimming-pool is large.",
+          "acceptedAnswers": [
+            "its"
+          ],
+          "explanation": "the hotel → its"
+        },
+        {
+          "id": "ws-52-sec-h-q03",
+          "order": 3,
+          "prompt": "Andy and I have got a sister. [gap] name is Liz. She’s six years old.",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "explanation": "she → her"
+        },
+        {
+          "id": "ws-52-sec-h-q04",
+          "order": 4,
+          "prompt": "[gap] mother and father are in the restaurant now.",
+          "acceptedAnswers": [
+            "our"
+          ],
+          "explanation": "Andy, Liz and I → our"
+        },
+        {
+          "id": "ws-52-sec-h-q05",
+          "order": 5,
+          "prompt": "Their friends, Mr. and Mrs. Bolton, are in the restaurant, too. [gap] two sons are in the pool.",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "explanation": "Mr. and Mrs. Bolton → their"
+        },
+        {
+          "id": "ws-52-sec-h-q06",
+          "order": 6,
+          "prompt": "Andy has got a girl-friend. [gap] girl-friend’s name is Sandra. She’s in [gap] class at school.",
+          "acceptedAnswers": [
+            "his / his"
+          ],
+          "explanation": "Andy → his"
+        },
+        {
+          "id": "ws-52-sec-h-q07",
+          "order": 7,
+          "prompt": "Where is your family? Is [gap] family here, too?",
+          "acceptedAnswers": [
+            "your"
+          ],
+          "explanation": "you → your"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-9",
+      "sectionKey": "I",
+      "instruction": "Choose the correct answers (write the correct pronoun in each gap):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-53-sec-a-q01",
+          "order": 1,
+          "prompt": "[gap] (We / Us) met Sally yesterday afternoon. [gap] (She / Her) came to the cinema with [gap] (we / us).",
+          "acceptedAnswers": [
+            "we / she / us"
+          ],
+          "explanation": "subject: we, she; object after preposition: us"
+        },
+        {
+          "id": "ws-53-sec-a-q02",
+          "order": 2,
+          "prompt": "I phoned Sarah last night and gave [gap] (she / her) the message.",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "explanation": "object pronoun: her"
+        },
+        {
+          "id": "ws-53-sec-a-q03",
+          "order": 3,
+          "prompt": "My brother is older than [gap] (I / me), but [gap] (he / him) isn’t as tall as [gap] (I / me) am.",
+          "acceptedAnswers": [
+            "me|I / he / I"
+          ],
+          "explanation": "than me (informal) / than I; subject before verb am"
+        },
+        {
+          "id": "ws-53-sec-a-q04",
+          "order": 4,
+          "prompt": "“Who wants a cup of coffee?” “[gap] (I / Me).”",
+          "acceptedAnswers": [
+            "me|I"
+          ],
+          "explanation": "short answer alone: Me (informal)"
+        },
+        {
+          "id": "ws-53-sec-a-q05",
+          "order": 5,
+          "prompt": "A: Have you seen Simon today? B: Yes. [gap] (I / Me) saw [gap] (he / him) this morning. [gap] (He / Him) was going to the swimming pool.",
+          "acceptedAnswers": [
+            "I / him / he"
+          ],
+          "explanation": "subject: I, he; object: him"
+        },
+        {
+          "id": "ws-53-sec-a-q06",
+          "order": 6,
+          "prompt": "A: What did those people want? B: [gap] (They / Them) asked [gap] (I / me) to help [gap] (they / them).",
+          "acceptedAnswers": [
+            "they / me / them"
+          ],
+          "explanation": "subject: they; object: me, them"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-10",
+      "sectionKey": "J",
+      "instruction": "Complete the sentences using the pronouns in the box:",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "me",
+        "you",
+        "him",
+        "her",
+        "it",
+        "us",
+        "them"
+      ],
+      "questions": [
+        {
+          "id": "ws-53-sec-b-q01",
+          "order": 1,
+          "prompt": "Peter and I are going out this evening. [gap]’re going to the cinema. Would you like to come with [gap]?",
+          "acceptedAnswers": [
+            "we / us"
+          ],
+          "explanation": "Peter and I → we; object → us"
+        },
+        {
+          "id": "ws-53-sec-b-q02",
+          "order": 2,
+          "prompt": "Where are my keys? I put [gap] on the table a moment ago, but now [gap]’ve disappeared.",
+          "acceptedAnswers": [
+            "them / they"
+          ],
+          "explanation": "keys → them (object), they (subject)"
+        },
+        {
+          "id": "ws-53-sec-b-q03",
+          "order": 3,
+          "prompt": "[gap]’s usually quite cold in New York in the winter.",
+          "acceptedAnswers": [
+            "it"
+          ],
+          "explanation": "it for weather"
+        },
+        {
+          "id": "ws-53-sec-b-q04",
+          "order": 4,
+          "prompt": "A: What did you think of the film, Simon? B: [gap] enjoyed [gap] very much.",
+          "acceptedAnswers": [
+            "I / it"
+          ],
+          "explanation": "the film → it"
+        },
+        {
+          "id": "ws-53-sec-b-q05",
+          "order": 5,
+          "prompt": "[gap]’s strange that Kate didn’t come to the meeting.",
+          "acceptedAnswers": [
+            "it"
+          ],
+          "explanation": "empty subject it + adjective + that"
+        },
+        {
+          "id": "ws-53-sec-b-q06",
+          "order": 6,
+          "prompt": "A: What do the government plan to do about education? B: [gap] say that [gap]’re going to build more schools.",
+          "acceptedAnswers": [
+            "they / they"
+          ],
+          "explanation": "the government → they"
+        },
+        {
+          "id": "ws-53-sec-b-q07",
+          "order": 7,
+          "prompt": "[gap] aren’t allowed to drive a car in Britain until [gap]’re 17 years old.",
+          "acceptedAnswers": [
+            "you / you"
+          ],
+          "explanation": "general you = people in general"
+        },
+        {
+          "id": "ws-53-sec-b-q08",
+          "order": 8,
+          "prompt": "If you have any problems, just tell someone and [gap]’ll help you.",
+          "acceptedAnswers": [
+            "they"
+          ],
+          "explanation": "someone → they"
+        },
+        {
+          "id": "ws-53-sec-b-q09",
+          "order": 9,
+          "prompt": "How far is [gap] from Madrid to Paris?",
+          "acceptedAnswers": [
+            "it"
+          ],
+          "explanation": "it for distance"
+        },
+        {
+          "id": "ws-53-sec-b-q10",
+          "order": 10,
+          "prompt": "My sister and I are quite different. [gap]’s much more serious than [gap] am.",
+          "acceptedAnswers": [
+            "she / I"
+          ],
+          "explanation": "my sister → she; subject before am → I"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-11",
+      "sectionKey": "K",
+      "instruction": "Choose the correct answers (write the correct word in each gap):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-53-sec-c-q01",
+          "order": 1,
+          "prompt": "We know [gap] (their / theirs) telephone number, but they don’t know [gap] (our / ours).",
+          "acceptedAnswers": [
+            "their / ours"
+          ],
+          "explanation": "their + noun; ours stands alone"
+        },
+        {
+          "id": "ws-53-sec-c-q02",
+          "order": 2,
+          "prompt": "[gap] (My / Mine) car wasn’t as expensive as [gap] (her / hers).",
+          "acceptedAnswers": [
+            "my / hers"
+          ],
+          "explanation": "my + noun; hers stands alone"
+        },
+        {
+          "id": "ws-53-sec-c-q03",
+          "order": 3,
+          "prompt": "A: How are [gap] (your / yours) children? B: Fine, thanks. How are [gap] (your / yours)?",
+          "acceptedAnswers": [
+            "your / yours"
+          ],
+          "explanation": "your + noun; yours stands alone"
+        },
+        {
+          "id": "ws-53-sec-c-q04",
+          "order": 4,
+          "prompt": "Maria has got [gap] (her / hers) suitcase, but [gap] (her / hers) friends haven’t got [gap] (their / theirs).",
+          "acceptedAnswers": [
+            "her / her / theirs"
+          ],
+          "explanation": "her + noun; theirs stands alone"
+        },
+        {
+          "id": "ws-53-sec-c-q05",
+          "order": 5,
+          "prompt": "[gap] (Our / Ours) flat isn’t as big as [gap] (their / theirs), but [gap] (our / ours) is much more comfortable.",
+          "acceptedAnswers": [
+            "our / theirs / ours"
+          ],
+          "explanation": "our + noun; theirs/ours stand alone"
+        },
+        {
+          "id": "ws-53-sec-c-q06",
+          "order": 6,
+          "prompt": "Have you seen [gap] (my / mine) coat?",
+          "acceptedAnswers": [
+            "my"
+          ],
+          "explanation": "my + noun"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-12",
+      "sectionKey": "L",
+      "instruction": "Complete the sentences using MYSELF, YOURSELF, HIMSELF, HERSELF, ITSELF, OURSELVES, YOURSELVES, THEMSELVES:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-54-sec-a-q01",
+          "order": 1,
+          "prompt": "Sue’s children are too young to look after [gap].",
+          "acceptedAnswers": [
+            "themselves"
+          ],
+          "explanation": "children → themselves"
+        },
+        {
+          "id": "ws-54-sec-a-q02",
+          "order": 2,
+          "prompt": "An elephant hurt [gap] when it tried to get out of the zoo yesterday.",
+          "acceptedAnswers": [
+            "itself"
+          ],
+          "explanation": "it → itself"
+        },
+        {
+          "id": "ws-54-sec-a-q03",
+          "order": 3,
+          "prompt": "I couldn’t borrow my mother’s car last night because she was using it [gap].",
+          "acceptedAnswers": [
+            "herself"
+          ],
+          "explanation": "emphatic: she herself"
+        },
+        {
+          "id": "ws-54-sec-a-q04",
+          "order": 4,
+          "prompt": "I don’t need any help. I can take care of [gap].",
+          "acceptedAnswers": [
+            "myself"
+          ],
+          "explanation": "I → myself"
+        },
+        {
+          "id": "ws-54-sec-a-q05",
+          "order": 5,
+          "prompt": "Mr. Woods fell over and hurt [gap] when he was running for a bus.",
+          "acceptedAnswers": [
+            "himself"
+          ],
+          "explanation": "he → himself"
+        },
+        {
+          "id": "ws-54-sec-a-q06",
+          "order": 6,
+          "prompt": "Would you all like to help [gap] to sandwiches and cakes?",
+          "acceptedAnswers": [
+            "yourselves"
+          ],
+          "explanation": "you all (plural) → yourselves"
+        },
+        {
+          "id": "ws-54-sec-a-q07",
+          "order": 7,
+          "prompt": "Sarah and I didn’t really enjoy [gap] at the disco last night.",
+          "acceptedAnswers": [
+            "ourselves"
+          ],
+          "explanation": "Sarah and I → ourselves"
+        },
+        {
+          "id": "ws-54-sec-a-q08",
+          "order": 8,
+          "prompt": "I taught [gap] to play the guitar; I’ve never had lessons.",
+          "acceptedAnswers": [
+            "myself"
+          ],
+          "explanation": "I → myself"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-13",
+      "sectionKey": "M",
+      "instruction": "Complete each sentence using BY + A REFLEXIVE PRONOUN:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-54-sec-b-q01",
+          "order": 1,
+          "prompt": "A: Who did you go to the cinema with? B: Nobody, I went [gap].",
+          "acceptedAnswers": [
+            "by myself"
+          ],
+          "explanation": "by myself = alone"
+        },
+        {
+          "id": "ws-54-sec-b-q02",
+          "order": 2,
+          "prompt": "Since the old lady’s husband died, she’s been living [gap].",
+          "acceptedAnswers": [
+            "by herself"
+          ],
+          "explanation": "by herself = alone"
+        },
+        {
+          "id": "ws-54-sec-b-q03",
+          "order": 3,
+          "prompt": "Did someone help you move all the furniture, or did you do it all [gap]?",
+          "acceptedAnswers": [
+            "by yourself|by yourselves"
+          ],
+          "explanation": "by yourself = without help"
+        },
+        {
+          "id": "ws-54-sec-b-q04",
+          "order": 4,
+          "prompt": "They need some help; they can’t manage [gap].",
+          "acceptedAnswers": [
+            "by themselves"
+          ],
+          "explanation": "by themselves = without help"
+        },
+        {
+          "id": "ws-54-sec-b-q05",
+          "order": 5,
+          "prompt": "The dog opened the door [gap].",
+          "acceptedAnswers": [
+            "by itself"
+          ],
+          "explanation": "by itself = without help"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-14",
+      "sectionKey": "N",
+      "instruction": "Complete the sentences using a REFLEXIVE PRONOUN:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-54-sec-c-q01",
+          "order": 1,
+          "prompt": "I didn’t buy that cake from the shop. I made it [gap].",
+          "acceptedAnswers": [
+            "myself"
+          ],
+          "explanation": "emphatic: I made it myself"
+        },
+        {
+          "id": "ws-54-sec-c-q02",
+          "order": 2,
+          "prompt": "A: Who built your swimming pool for you? B: Nobody. We built it [gap].",
+          "acceptedAnswers": [
+            "ourselves"
+          ],
+          "explanation": "we → ourselves"
+        },
+        {
+          "id": "ws-54-sec-c-q03",
+          "order": 3,
+          "prompt": "Did someone phone the doctor for you? Or did you phone him [gap]?",
+          "acceptedAnswers": [
+            "yourself|yourselves"
+          ],
+          "explanation": "you → yourself"
+        },
+        {
+          "id": "ws-54-sec-c-q04",
+          "order": 4,
+          "prompt": "A: Who told you they were moving? B: They told me [gap].",
+          "acceptedAnswers": [
+            "themselves"
+          ],
+          "explanation": "they → themselves"
+        },
+        {
+          "id": "ws-54-sec-c-q05",
+          "order": 5,
+          "prompt": "Mr. Mason [gap] offered me the job.",
+          "acceptedAnswers": [
+            "himself"
+          ],
+          "explanation": "emphatic after subject: Mr. Mason himself"
+        },
+        {
+          "id": "ws-54-sec-c-q06",
+          "order": 6,
+          "prompt": "Sally didn’t buy that sweater, she made it [gap].",
+          "acceptedAnswers": [
+            "herself"
+          ],
+          "explanation": "she → herself"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-15",
+      "sectionKey": "O",
+      "instruction": "Finish the sentences with a REFLEXIVE PRONOUN:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-54-sec-d-q01",
+          "order": 1,
+          "prompt": "He looked at [gap] in the mirror.",
+          "acceptedAnswers": [
+            "himself"
+          ],
+          "explanation": "he → himself"
+        },
+        {
+          "id": "ws-54-sec-d-q02",
+          "order": 2,
+          "prompt": "I’m not angry with you. I’m angry with [gap].",
+          "acceptedAnswers": [
+            "myself"
+          ],
+          "explanation": "I → myself"
+        },
+        {
+          "id": "ws-54-sec-d-q03",
+          "order": 3,
+          "prompt": "Margaret had a nice time in London. She enjoyed [gap].",
+          "acceptedAnswers": [
+            "herself"
+          ],
+          "explanation": "enjoy oneself"
+        },
+        {
+          "id": "ws-54-sec-d-q04",
+          "order": 4,
+          "prompt": "My friends had a nice time in London. They enjoyed [gap].",
+          "acceptedAnswers": [
+            "themselves"
+          ],
+          "explanation": "enjoy oneself"
+        },
+        {
+          "id": "ws-54-sec-d-q05",
+          "order": 5,
+          "prompt": "I picked up a very hot plate and burnt [gap].",
+          "acceptedAnswers": [
+            "myself"
+          ],
+          "explanation": "I → myself"
+        },
+        {
+          "id": "ws-54-sec-d-q06",
+          "order": 6,
+          "prompt": "He never thinks about other people. He only thinks about [gap].",
+          "acceptedAnswers": [
+            "himself"
+          ],
+          "explanation": "he → himself"
+        },
+        {
+          "id": "ws-54-sec-d-q07",
+          "order": 7,
+          "prompt": "I want to know more about you. Tell me about [gap].",
+          "acceptedAnswers": [
+            "yourself"
+          ],
+          "explanation": "you → yourself"
+        },
+        {
+          "id": "ws-54-sec-d-q08",
+          "order": 8,
+          "prompt": "Goodbye! Have a nice holiday and look after [gap]!",
+          "acceptedAnswers": [
+            "yourself|yourselves"
+          ],
+          "explanation": "look after yourself"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-16",
+      "sectionKey": "P",
+      "instruction": "Complete the answers to the questions using MYSELF, YOURSELF, ITSELF etc. (Example: Who repaired the bicycle for you? – Nobody. I repaired it myself.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-54-sec-e-q02",
+          "order": 2,
+          "prompt": "Did Brian have his hair cut by a hairdresser? – No. He cut [gap].",
+          "acceptedAnswers": [
+            "it himself|his hair himself"
+          ],
+          "explanation": "he did it without help → himself"
+        },
+        {
+          "id": "ws-54-sec-e-q03",
+          "order": 3,
+          "prompt": "Do you want me to post that letter for you? – No, I’ll [gap].",
+          "acceptedAnswers": [
+            "post it myself|post the letter myself|do it myself"
+          ],
+          "explanation": "I’ll do it without help → myself"
+        },
+        {
+          "id": "ws-54-sec-e-q04",
+          "order": 4,
+          "prompt": "Who told you that Linda was getting married? – Linda [gap].",
+          "acceptedAnswers": [
+            "told me herself|herself told me|told me so herself"
+          ],
+          "explanation": "emphatic: Linda herself"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-17",
+      "sectionKey": "Q",
+      "instruction": "Complete the sentences. Use the words in brackets with the POSSESSIVE ’S or OF. (Example: Have you seen Steven Spielberg’s new film? (the new film / Steven Spielberg) — Have you repaired the wheel of the bicycle? (the wheel / the bicycle))",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-57-sec-a-q01",
+          "order": 1,
+          "prompt": "We had to leave the cinema early so we didn’t see [gap]. (the end / the film)",
+          "acceptedAnswers": [
+            "the end of the film"
+          ],
+          "explanation": "things: the … of …"
+        },
+        {
+          "id": "ws-57-sec-a-q02",
+          "order": 2,
+          "prompt": "We met Sue and Frank at [gap]. (the party / Sarah)",
+          "acceptedAnswers": [
+            "Sarah's party"
+          ],
+          "explanation": "person: name + ’s"
+        },
+        {
+          "id": "ws-57-sec-a-q03",
+          "order": 3,
+          "prompt": "My flat is on [gap]. (the top floor / the house)",
+          "acceptedAnswers": [
+            "the top floor of the house"
+          ],
+          "explanation": "things: the … of …"
+        },
+        {
+          "id": "ws-57-sec-a-q04",
+          "order": 4,
+          "prompt": "The bus crashed into [gap]. (the back / my car)",
+          "acceptedAnswers": [
+            "the back of my car"
+          ],
+          "explanation": "things: the … of …"
+        },
+        {
+          "id": "ws-57-sec-a-q05",
+          "order": 5,
+          "prompt": "We heard the news from [gap]. (a friend / the woman who works in the post office)",
+          "acceptedAnswers": [
+            "a friend of the woman who works in the post office"
+          ],
+          "explanation": "long phrase: use of"
+        },
+        {
+          "id": "ws-57-sec-a-q06",
+          "order": 6,
+          "prompt": "There’s a hospital at [gap]. (the end / this road)",
+          "acceptedAnswers": [
+            "the end of this road"
+          ],
+          "explanation": "the end of …"
+        },
+        {
+          "id": "ws-57-sec-a-q07",
+          "order": 7,
+          "prompt": "I’ve spoken to [gap]. (the parents / the girls)",
+          "acceptedAnswers": [
+            "the girls' parents"
+          ],
+          "explanation": "plural noun in -s: s’"
+        },
+        {
+          "id": "ws-57-sec-a-q08",
+          "order": 8,
+          "prompt": "The police want to interview [gap]. (the manager / the Black Cat Club)",
+          "acceptedAnswers": [
+            "the manager of the Black Cat Club|the Black Cat Club's manager"
+          ],
+          "explanation": "organisation: the … of … (or ’s)"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-18",
+      "sectionKey": "R",
+      "instruction": "Complete the sentences using the correct form of the POSSESSIVE ’S (write the word in brackets with ’s or ’):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-57-sec-b-q01",
+          "order": 1,
+          "prompt": "What is your [gap] name? (friend)",
+          "acceptedAnswers": [
+            "friend's"
+          ],
+          "explanation": "singular: ’s"
+        },
+        {
+          "id": "ws-57-sec-b-q02",
+          "order": 2,
+          "prompt": "Sarah found [gap] credit cards in the street. (somebody)",
+          "acceptedAnswers": [
+            "somebody's"
+          ],
+          "explanation": "somebody’s"
+        },
+        {
+          "id": "ws-57-sec-b-q03",
+          "order": 3,
+          "prompt": "The Eiffel Tower is [gap] most famous landmark. (Paris)",
+          "acceptedAnswers": [
+            "Paris's|Paris'"
+          ],
+          "explanation": "place: Paris’s"
+        },
+        {
+          "id": "ws-57-sec-b-q04",
+          "order": 4,
+          "prompt": "The [gap] bedroom has just been painted. (boys)",
+          "acceptedAnswers": [
+            "boys'"
+          ],
+          "explanation": "plural in -s: s’"
+        },
+        {
+          "id": "ws-57-sec-b-q05",
+          "order": 5,
+          "prompt": "I read about a murder in [gap] newspaper. (this morning)",
+          "acceptedAnswers": [
+            "this morning's"
+          ],
+          "explanation": "time expression: this morning’s"
+        },
+        {
+          "id": "ws-57-sec-b-q06",
+          "order": 6,
+          "prompt": "Can you borrow your [gap] car at the weekend? (parents)",
+          "acceptedAnswers": [
+            "parents'"
+          ],
+          "explanation": "plural in -s: s’"
+        },
+        {
+          "id": "ws-57-sec-b-q07",
+          "order": 7,
+          "prompt": "I need to get some medicine. Is there a [gap] near here? (chemist)",
+          "acceptedAnswers": [
+            "chemist's"
+          ],
+          "explanation": "shop: the chemist’s"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-19",
+      "sectionKey": "S",
+      "instruction": "Rewrite the following using the correct POSSESSIVE form. (Example: the butterflies – the wings → the butterflies’ wings)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-57-sec-c-q02",
+          "order": 2,
+          "prompt": "the students – the books",
+          "acceptedAnswers": [
+            "the students' books"
+          ],
+          "explanation": "plural in -s: s’"
+        },
+        {
+          "id": "ws-57-sec-c-q03",
+          "order": 3,
+          "prompt": "drive – three hours",
+          "acceptedAnswers": [
+            "three hours' drive",
+            "a three-hour drive",
+            "a three hour drive"
+          ],
+          "explanation": "time: three hours’ drive"
+        },
+        {
+          "id": "ws-57-sec-c-q04",
+          "order": 4,
+          "prompt": "the department store – the staff",
+          "acceptedAnswers": [
+            "the staff of the department store",
+            "the department store's staff"
+          ],
+          "explanation": "organisation: the … of … (or ’s)"
+        },
+        {
+          "id": "ws-57-sec-c-q05",
+          "order": 5,
+          "prompt": "living – the cost",
+          "acceptedAnswers": [
+            "the cost of living"
+          ],
+          "explanation": "fixed phrase: the cost of living"
+        },
+        {
+          "id": "ws-57-sec-c-q06",
+          "order": 6,
+          "prompt": "some friends – my brother",
+          "acceptedAnswers": [
+            "some friends of my brother's",
+            "some friends of my brother",
+            "some of my brother's friends"
+          ],
+          "explanation": "double possessive: a friend of my brother’s"
+        },
+        {
+          "id": "ws-57-sec-c-q07",
+          "order": 7,
+          "prompt": "bread – the price",
+          "acceptedAnswers": [
+            "the price of bread"
+          ],
+          "explanation": "things: the … of …"
+        },
+        {
+          "id": "ws-57-sec-c-q08",
+          "order": 8,
+          "prompt": "the baby – the pram",
+          "acceptedAnswers": [
+            "the baby's pram"
+          ],
+          "explanation": "singular: ’s"
+        },
+        {
+          "id": "ws-57-sec-c-q09",
+          "order": 9,
+          "prompt": "John and Paul – the wives",
+          "acceptedAnswers": [
+            "John's and Paul's wives",
+            "John and Paul's wives"
+          ],
+          "explanation": "separate possession: John’s and Paul’s"
+        },
+        {
+          "id": "ws-57-sec-c-q10",
+          "order": 10,
+          "prompt": "the men – the changing rooms",
+          "acceptedAnswers": [
+            "the men's changing rooms"
+          ],
+          "explanation": "irregular plural: men’s"
+        },
+        {
+          "id": "ws-57-sec-c-q11",
+          "order": 11,
+          "prompt": "the sea – the waves",
+          "acceptedAnswers": [
+            "the waves of the sea",
+            "the sea's waves"
+          ],
+          "explanation": "things: the … of …"
+        },
+        {
+          "id": "ws-57-sec-c-q12",
+          "order": 12,
+          "prompt": "a climb – two hundred metres",
+          "acceptedAnswers": [
+            "a climb of two hundred metres",
+            "a two-hundred-metre climb",
+            "a two hundred metre climb"
+          ],
+          "explanation": "measurement: a climb of …"
+        },
+        {
+          "id": "ws-57-sec-c-q13",
+          "order": 13,
+          "prompt": "Lucy and Emily – the mother",
+          "acceptedAnswers": [
+            "Lucy and Emily's mother"
+          ],
+          "explanation": "shared possession: ’s on the last name"
+        },
+        {
+          "id": "ws-57-sec-c-q14",
+          "order": 14,
+          "prompt": "the house – my father’s closest friend",
+          "acceptedAnswers": [
+            "my father's closest friend's house",
+            "the house of my father's closest friend"
+          ],
+          "explanation": "long phrase: the … of …"
+        },
+        {
+          "id": "ws-57-sec-c-q15",
+          "order": 15,
+          "prompt": "the president – the decision",
+          "acceptedAnswers": [
+            "the president's decision",
+            "the decision of the president"
+          ],
+          "explanation": "person: ’s"
+        },
+        {
+          "id": "ws-57-sec-c-q16",
+          "order": 16,
+          "prompt": "my physics professor – the report",
+          "acceptedAnswers": [
+            "my physics professor's report"
+          ],
+          "explanation": "person: ’s"
+        },
+        {
+          "id": "ws-57-sec-c-q17",
+          "order": 17,
+          "prompt": "the park – the playground",
+          "acceptedAnswers": [
+            "the playground of the park",
+            "the park's playground",
+            "the park playground"
+          ],
+          "explanation": "places: the … of …"
+        },
+        {
+          "id": "ws-57-sec-c-q18",
+          "order": 18,
+          "prompt": "the Smiths – the car",
+          "acceptedAnswers": [
+            "the Smiths' car"
+          ],
+          "explanation": "plural family name: s’"
+        },
+        {
+          "id": "ws-57-sec-c-q19",
+          "order": 19,
+          "prompt": "my mother-in-law – the garden",
+          "acceptedAnswers": [
+            "my mother-in-law's garden"
+          ],
+          "explanation": "compound noun: ’s at the end"
+        }
+      ]
+    },
+    {
+      "id": "card-19-sec-20",
+      "sectionKey": "T",
+      "instruction": "Answer the questions. (Example: Is this your car? (Ben) → No, it isn’t. It’s Ben’s.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-57-sec-d-q02",
+          "order": 2,
+          "prompt": "Are these your boots? (Jim)",
+          "acceptedAnswers": [
+            "No, they aren't. They're Jim's."
+          ],
+          "explanation": "plural: they aren’t, they’re + ’s"
+        },
+        {
+          "id": "ws-57-sec-d-q03",
+          "order": 3,
+          "prompt": "Are these Sue’s glasses? (Eric)",
+          "acceptedAnswers": [
+            "No, they aren't. They're Eric's."
+          ],
+          "explanation": "plural: they aren’t, they’re + ’s"
+        },
+        {
+          "id": "ws-57-sec-d-q04",
+          "order": 4,
+          "prompt": "Is that your dress? (Karen)",
+          "acceptedAnswers": [
+            "No, it isn't. It's Karen's."
+          ],
+          "explanation": "singular: it isn’t, it’s + ’s"
+        },
+        {
+          "id": "ws-57-sec-d-q05",
+          "order": 5,
+          "prompt": "Is this my jacket? (Mr. Jackson)",
+          "acceptedAnswers": [
+            "No, it isn't. It's Mr. Jackson's.",
+            "No, it isn't. It's Mr Jackson's."
+          ],
+          "explanation": "singular: it isn’t, it’s + ’s"
+        },
+        {
+          "id": "ws-57-sec-d-q06",
+          "order": 6,
+          "prompt": "Are these your shirts? (Mike)",
+          "acceptedAnswers": [
+            "No, they aren't. They're Mike's."
+          ],
+          "explanation": "plural: they aren’t, they’re + ’s"
+        },
+        {
+          "id": "ws-57-sec-d-q07",
+          "order": 7,
+          "prompt": "Is that your grandmother’s dress? (my mother)",
+          "acceptedAnswers": [
+            "No, it isn't. It's my mother's."
+          ],
+          "explanation": "singular: it isn’t, it’s + ’s"
+        }
+      ]
+    }
+  ]
+}

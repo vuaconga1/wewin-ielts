@@ -13,404 +13,83 @@
       "id": "ws-40-sec-a",
       "sectionKey": "A",
       "instruction": "Complete the sentences using USED TO or BE USED TO:",
-      "type": "inline_gap_fill",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-40-sec-a-q01",
-          "order": 1,
-          "prompt": "I [gap] (live) in Finland, but now I live in France.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q02",
-          "order": 2,
-          "prompt": "He [gap] (sit) in the back of the classroom, but now he prefers to sit in the front row.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q03",
-          "order": 3,
-          "prompt": "When I was a child, I [gap] (play) games with my friends in a big field near my house after school every day.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q04",
-          "order": 4,
-          "prompt": "It’s hard for my children to stay inside on a cold, rainy day. They [gap] (play) outside in the big field near our house. They play there almost every day.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q05",
-          "order": 5,
-          "prompt": "People [gap] (believe) that the world was flat.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q06",
-          "order": 6,
-          "prompt": "Trains [gap] (be) the main means of cross-continental travel. Today, most people take airplanes for long-distance travel.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q07",
-          "order": 7,
-          "prompt": "Ms. Stanton’s job requires her to travel extensively throughout the world. She [gap] [gap] (travel) by plane.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q08",
-          "order": 8,
-          "prompt": "You and I are from different cultures. You [gap] (have) fish for breakfast. I [gap] (have) cheese and bread for breakfast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q09",
-          "order": 9,
-          "prompt": "What [gap] (do) on summer days when you were a child?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q10",
-          "order": 10,
-          "prompt": "Bill lives alone. He doesn’t mind this. Because he [gap] [gap] (live) alone.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q11",
-          "order": 11,
-          "prompt": "Tom [gap] (drink) a lot of coffee. Now he prefers tea.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q12",
-          "order": 12,
-          "prompt": "I have to work hard. This is not a problem for me. I have always worked hard. So I [gap] [gap] (work) hard.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q13",
-          "order": 13,
-          "prompt": "Some friends of yours have just moved into a flat on a busy street. It is very noisy. They [gap] will [gap] noise.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q14",
-          "order": 14,
-          "prompt": "When we were children, we [gap] (swim) every day.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q15",
-          "order": 15,
-          "prompt": "I haven’t been to the cinema for ages now. We [gap] (go) a lot.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-a-q16",
-          "order": 16,
-          "prompt": "Dennis gave up smoking two years ago. He [gap] (smoke)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-40-sec-a-q01", "order": 1, "prompt": "I [gap] (live) in Finland, but now I live in France.", "acceptedAnswers": ["used to live"], "explanation": "used to + V: past state that is no longer true" },
+        { "id": "ws-40-sec-a-q02", "order": 2, "prompt": "He [gap] (sit) in the back of the classroom, but now he prefers to sit in the front row.", "acceptedAnswers": ["used to sit"], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-a-q03", "order": 3, "prompt": "When I was a child, I [gap] (play) games with my friends in a big field near my house after school every day.", "acceptedAnswers": ["used to play"], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-a-q04", "order": 4, "prompt": "It’s hard for my children to stay inside on a cold, rainy day. They [gap] (play) outside in the big field near our house. They play there almost every day.", "acceptedAnswers": ["are used to playing"], "explanation": "be used to + V-ing: accustomed to (now)" },
+        { "id": "ws-40-sec-a-q05", "order": 5, "prompt": "People [gap] (believe) that the world was flat.", "acceptedAnswers": ["used to believe"], "explanation": "used to + V: past belief, no longer true" },
+        { "id": "ws-40-sec-a-q06", "order": 6, "prompt": "Trains [gap] (be) the main means of cross-continental travel. Today, most people take airplanes for long-distance travel.", "acceptedAnswers": ["used to be"], "explanation": "used to + V: past state" },
+        { "id": "ws-40-sec-a-q07", "order": 7, "prompt": "Ms. Stanton’s job requires her to travel extensively throughout the world. She [gap] (travel) by plane.", "acceptedAnswers": ["is used to traveling|is used to travelling"], "explanation": "be used to + V-ing: accustomed to" },
+        { "id": "ws-40-sec-a-q08", "order": 8, "prompt": "You and I are from different cultures. You [gap] (have) fish for breakfast. I [gap] (have) cheese and bread for breakfast.", "acceptedAnswers": ["are used to having / am used to having"], "explanation": "be used to + V-ing: accustomed to" },
+        { "id": "ws-40-sec-a-q09", "order": 9, "prompt": "What [gap] (do) on summer days when you were a child?", "acceptedAnswers": ["did you use to do"], "explanation": "question: did + subject + use to + V" },
+        { "id": "ws-40-sec-a-q10", "order": 10, "prompt": "Bill lives alone. He doesn’t mind this, because he [gap] (live) alone.", "acceptedAnswers": ["is used to living"], "explanation": "be used to + V-ing: accustomed to" },
+        { "id": "ws-40-sec-a-q11", "order": 11, "prompt": "Tom [gap] (drink) a lot of coffee. Now he prefers tea.", "acceptedAnswers": ["used to drink"], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-a-q12", "order": 12, "prompt": "I have to work hard. This is not a problem for me. I have always worked hard. So I [gap] (work) hard.", "acceptedAnswers": ["am used to working"], "explanation": "be used to + V-ing: accustomed to" },
+        { "id": "ws-40-sec-a-q13", "order": 13, "prompt": "Some friends of yours have just moved into a flat on a busy street. It is very noisy. They will [gap] the noise.", "acceptedAnswers": ["get used to"], "explanation": "get used to: become accustomed to" },
+        { "id": "ws-40-sec-a-q14", "order": 14, "prompt": "When we were children, we [gap] (swim) every day.", "acceptedAnswers": ["used to swim"], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-a-q15", "order": 15, "prompt": "I haven’t been to the cinema for ages now. We [gap] (go) a lot.", "acceptedAnswers": ["used to go"], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-a-q16", "order": 16, "prompt": "Dennis gave up smoking two years ago. He [gap] (smoke).", "acceptedAnswers": ["used to smoke"], "explanation": "used to + V: past habit" }
       ]
     },
     {
       "id": "ws-40-sec-b",
       "sectionKey": "B",
-      "instruction": "Rewrite the sentences using USED TO:",
+      "instruction": "Rewrite the sentences using USED TO: (Example: When she was a child, she lived in a small village. → When she was a child, she used to live in a small village.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-40-sec-b-q01",
-          "order": 1,
-          "prompt": "When she was a child, she lived in a small village. [gap] When she was a child, she used to live in a small village [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q02",
-          "order": 2,
-          "prompt": "When he was a young man, he enjoyed playing basketball.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q03",
-          "order": 3,
-          "prompt": "In ancient Rome, wall paintings were a popular form of advertising.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q04",
-          "order": 4,
-          "prompt": "Before she learned to read, her parents read stories to her.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q05",
-          "order": 5,
-          "prompt": "Before he came to Ankara, life was cheap in Turkey.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q06",
-          "order": 6,
-          "prompt": "Jim spoke German ar school, but he has now forgotten.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q07",
-          "order": 7,
-          "prompt": "Susan was a nurse before she got married and raised a family.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q08",
-          "order": 8,
-          "prompt": "Sally played tennis when abroad, but she prefers swimming now.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q09",
-          "order": 9,
-          "prompt": "Before they bought their house, they lived in an apartment.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q10",
-          "order": 10,
-          "prompt": "While she was going to university, she worked in a doctor’s office.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-b-q11",
-          "order": 11,
-          "prompt": "Before he married his second wife, he was quite happy.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-40-sec-b-q02", "order": 2, "prompt": "When he was a young man, he enjoyed playing basketball.", "acceptedAnswers": ["When he was a young man, he used to enjoy playing basketball.", "He used to enjoy playing basketball when he was a young man."], "explanation": "used to + V: past habit / state" },
+        { "id": "ws-40-sec-b-q03", "order": 3, "prompt": "In ancient Rome, wall paintings were a popular form of advertising.", "acceptedAnswers": ["In ancient Rome, wall paintings used to be a popular form of advertising.", "Wall paintings used to be a popular form of advertising in ancient Rome."], "explanation": "used to be: past state" },
+        { "id": "ws-40-sec-b-q04", "order": 4, "prompt": "Before she learned to read, her parents read stories to her.", "acceptedAnswers": ["Before she learned to read, her parents used to read stories to her.", "Her parents used to read stories to her before she learned to read."], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-b-q05", "order": 5, "prompt": "Before he came to Ankara, life was cheap in Turkey.", "acceptedAnswers": ["Before he came to Ankara, life used to be cheap in Turkey.", "Life used to be cheap in Turkey before he came to Ankara."], "explanation": "used to be: past state" },
+        { "id": "ws-40-sec-b-q06", "order": 6, "prompt": "Jim spoke German at school, but he has now forgotten.", "acceptedAnswers": ["Jim used to speak German at school, but he has now forgotten.", "Jim used to speak German at school, but he has now forgotten it.", "Jim used to speak German at school, but now he has forgotten."], "explanation": "used to + V: past habit, no longer true" },
+        { "id": "ws-40-sec-b-q07", "order": 7, "prompt": "Susan was a nurse before she got married and raised a family.", "acceptedAnswers": ["Susan used to be a nurse before she got married and raised a family.", "Before she got married and raised a family, Susan used to be a nurse."], "explanation": "used to be: past state" },
+        { "id": "ws-40-sec-b-q08", "order": 8, "prompt": "Sally played tennis when abroad, but she prefers swimming now.", "acceptedAnswers": ["Sally used to play tennis when abroad, but she prefers swimming now.", "Sally used to play tennis when she was abroad, but she prefers swimming now.", "Sally used to play tennis when abroad, but now she prefers swimming."], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-b-q09", "order": 9, "prompt": "Before they bought their house, they lived in an apartment.", "acceptedAnswers": ["Before they bought their house, they used to live in an apartment.", "They used to live in an apartment before they bought their house."], "explanation": "used to + V: past state" },
+        { "id": "ws-40-sec-b-q10", "order": 10, "prompt": "While she was going to university, she worked in a doctor’s office.", "acceptedAnswers": ["While she was going to university, she used to work in a doctor's office.", "She used to work in a doctor's office while she was going to university."], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-b-q11", "order": 11, "prompt": "Before he married his second wife, he was quite happy.", "acceptedAnswers": ["Before he married his second wife, he used to be quite happy.", "He used to be quite happy before he married his second wife."], "explanation": "used to be: past state" }
       ]
     },
     {
       "id": "ws-40-sec-c",
       "sectionKey": "C",
-      "instruction": "Complete the text about Ziggy Starr when she was a child using USED TO / DIDN’T",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the text about Ziggy Starr when she was a child using USED TO / DIDN’T USE TO and the verbs in brackets: (Example: I didn’t use to have (not have) many friends when I was a child.)",
+      "type": "passage_gap_fill",
       "questions": [
-        {
-          "id": "ws-40-sec-c-q01",
-          "order": 1,
-          "prompt": "USE TO and the verbs in brackets: [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-c-q02",
-          "order": 2,
-          "prompt": "I didn’t use to have (not have) many friends when I was a child so I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-c-q03",
-          "order": 3,
-          "prompt": "(play) with my toys all day. I [gap] (worry) about things a lot but",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-c-q04",
-          "order": 4,
-          "prompt": "I [gap] (not bite) my nails or suck my thumb. I remember that I",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-c-q05",
-          "order": 5,
-          "prompt": "[gap] (cry) a lot and I [gap] (be) really afraid of",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-c-q06",
-          "order": 6,
-          "prompt": "the dark. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-40-sec-c-q01", "order": 1, "prompt": "I didn’t use to have many friends when I was a child so I [gap] (play) with my toys all day.", "acceptedAnswers": ["used to play"], "explanation": "used to + V: past habit" },
+        { "id": "ws-40-sec-c-q02", "order": 2, "prompt": "I [gap] (worry) about things a lot but I [gap] (not bite) my nails or suck my thumb.", "acceptedAnswers": ["used to worry / didn't use to bite"], "explanation": "negative: didn't use to + V" },
+        { "id": "ws-40-sec-c-q03", "order": 3, "prompt": "I remember that I [gap] (cry) a lot and I [gap] (be) really afraid of the dark.", "acceptedAnswers": ["used to cry / used to be"], "explanation": "used to + V: past habit / state" }
       ]
     },
     {
       "id": "ws-40-sec-d",
       "sectionKey": "D",
-      "instruction": "Complete the text using USED TO and the verbs in the box:",
-      "type": "inline_gap_fill",
+      "instruction": "Complete the text using USED TO and the verbs in the box: (Example: We used to wear school uniform.)",
+      "type": "passage_gap_fill",
+      "contextText": "School has changed since I was a student. We used to wear school uniform and I didn’t like that very much.\n(Sentences 1–4)\nSome of them were impossible! I think school is easier now than it was 50 years ago.",
+      "wordBank": ["do", "give", "have", "learn", "read", "wear"],
       "questions": [
-        {
-          "id": "ws-40-sec-d-q01",
-          "order": 1,
-          "prompt": "give [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q02",
-          "order": 2,
-          "prompt": "have [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q03",
-          "order": 3,
-          "prompt": "learn [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q04",
-          "order": 4,
-          "prompt": "read [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q05",
-          "order": 5,
-          "prompt": "wear [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q06",
-          "order": 6,
-          "prompt": "School has changed since I was a student. We used to wear school uniform and I didn’t like [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q07",
-          "order": 7,
-          "prompt": "that very much. We [gap] a lot of lessons and most of them were",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q08",
-          "order": 8,
-          "prompt": "difficult. We [gap] homework every day. We [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q09",
-          "order": 9,
-          "prompt": "lots of books and we [gap] everything by heart. And our teachers",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q10",
-          "order": 10,
-          "prompt": "[gap] us a lot of tests and examinations. Some of them were",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-d-q11",
-          "order": 11,
-          "prompt": "impossible! I think school is easier now than it was 50 years ago. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-40-sec-d-q01", "order": 1, "prompt": "We [gap] a lot of lessons and most of them were difficult.", "acceptedAnswers": ["used to have"], "explanation": "used to have lessons" },
+        { "id": "ws-40-sec-d-q02", "order": 2, "prompt": "We [gap] homework every day.", "acceptedAnswers": ["used to do"], "explanation": "do homework" },
+        { "id": "ws-40-sec-d-q03", "order": 3, "prompt": "We [gap] lots of books and we [gap] everything by heart.", "acceptedAnswers": ["used to read / used to learn"], "explanation": "read books; learn by heart" },
+        { "id": "ws-40-sec-d-q04", "order": 4, "prompt": "And our teachers [gap] us a lot of tests and examinations.", "acceptedAnswers": ["used to give"], "explanation": "give someone tests" }
       ]
     },
     {
       "id": "ws-40-sec-e",
       "sectionKey": "E",
-      "instruction": "Use USED TO / WOULD (a repeated action in the past:",
-      "type": "inline_gap_fill",
+      "instruction": "Use USED TO / WOULD (a repeated action in the past): (Example: I used to be very shy. Whenever a stranger came to our house, I would hide in a closet.)",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-40-sec-e-q01",
-          "order": 1,
-          "prompt": "I [gap] used to be [gap] (be) very shy. Whenever a stranger came to our house, I …would hide [gap] (hide) in a closet.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q02",
-          "order": 2,
-          "prompt": "I remember my Aunt Susan very well. Every time she came to our house, she [gap] [gap] (give) me a big kiss and pinch my cheek.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q03",
-          "order": 3,
-          "prompt": "I [gap] (be) afraid of flying. My heart [gap] (start) pounding every time I stepped on a plane. But now I’m used to flying and enjoy it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q04",
-          "order": 4,
-          "prompt": "I got a new bicycle when I was ten. My friends [gap] (ask) to ride it, but for years I [gap] (let / never) anyone else use it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q05",
-          "order": 5,
-          "prompt": "When my grandfather was a boy and had a cold, his mother [gap] (make) him go to bed. Then she [gap] (put) goose fat on his chest.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q06",
-          "order": 6,
-          "prompt": "When I was a child, I [gap] (take) a flashlight to bed with me so that I could read comic books without my parents’ knowing about it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q07",
-          "order": 7,
-          "prompt": "Last summer, my sister and I took a camping trip in the Rocky Mountains. It was a [gap] wonderful experience. Every morning, we [gap] (wake) up to the sound of singing birds. During the day, we [gap] (hike) through woods and along mountain streams.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-40-sec-e-q08",
-          "order": 8,
-          "prompt": "I can remember Mrs. Sawyer’s fifth grade class well. When we arrived each morning, she [gap] [gap] (sit) at her desk. She [gap] (smile / always) and [gap] (say) hello to each student as he or she entered. When the bell rang, she [gap] (stand) up and [gap] (clear) her throat. That was our signal to be quiet. Class was about to begin.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-40-sec-e-q02", "order": 2, "prompt": "I remember my Aunt Susan very well. Every time she came to our house, she [gap] (give) me a big kiss and pinch my cheek.", "acceptedAnswers": ["would give|used to give"], "explanation": "would / used to: repeated past action" },
+        { "id": "ws-40-sec-e-q03", "order": 3, "prompt": "I [gap] (be) afraid of flying. My heart [gap] (start) pounding every time I stepped on a plane. But now I’m used to flying and enjoy it.", "acceptedAnswers": ["used to be / would start|used to start"], "explanation": "states: used to only; actions: would / used to" },
+        { "id": "ws-40-sec-e-q04", "order": 4, "prompt": "I got a new bicycle when I was ten. My friends [gap] (ask) to ride it, but for years I [gap] (let / never) anyone else use it.", "acceptedAnswers": ["would ask|used to ask / would never let|never used to let|never let"], "explanation": "would / used to: repeated past action" },
+        { "id": "ws-40-sec-e-q05", "order": 5, "prompt": "When my grandfather was a boy and had a cold, his mother [gap] (make) him go to bed. Then she [gap] (put) goose fat on his chest.", "acceptedAnswers": ["would make|used to make / would put|used to put"], "explanation": "would / used to: repeated past action" },
+        { "id": "ws-40-sec-e-q06", "order": 6, "prompt": "When I was a child, I [gap] (take) a flashlight to bed with me so that I could read comic books without my parents’ knowing about it.", "acceptedAnswers": ["would take|used to take"], "explanation": "would / used to: repeated past action" },
+        { "id": "ws-40-sec-e-q07", "order": 7, "prompt": "Last summer, my sister and I took a camping trip in the Rocky Mountains. It was a wonderful experience. Every morning, we [gap] (wake) up to the sound of singing birds. During the day, we [gap] (hike) through woods and along mountain streams.", "acceptedAnswers": ["would wake / would hike"], "explanation": "would: repeated action during one past period" },
+        { "id": "ws-40-sec-e-q08a", "order": 8, "prompt": "I can remember Mrs. Sawyer’s fifth grade class well. When we arrived each morning, she [gap] (sit) at her desk. She [gap] (smile / always) and [gap] (say) hello to each student as he or she entered.", "acceptedAnswers": ["would sit|would be sitting|used to sit / would always smile|always used to smile|used to always smile / would say|used to say|say"], "explanation": "would / used to: repeated past action" },
+        { "id": "ws-40-sec-e-q08b", "order": 8, "prompt": "When the bell rang, she [gap] (stand) up and [gap] (clear) her throat. That was our signal to be quiet. Class was about to begin.", "acceptedAnswers": ["would stand|used to stand / would clear|used to clear|clear"], "explanation": "would / used to: repeated past action" }
       ]
     }
   ]

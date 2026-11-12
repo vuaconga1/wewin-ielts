@@ -131,6 +131,7 @@ model User {
   auditLogs         AuditLog[]
   dictationAttempts DictationAttempt[]
   shadowingAttempts ShadowingAttempt[]
+  worksheetAttempts WorksheetAttempt[]
   classEnrollments  ClassEnrollment[]
   classAssignments  ClassTeacher[]
   hostedSessions    LiveSession[]       @relation("LiveSessionHost")
@@ -625,3 +626,24 @@ model ShadowingAttempt {
   @@index([exerciseId, createdAt])
   @@index([recordingExpiresAt])
 }
+
+model WorksheetAttempt {
+  id             String   @id @default(cuid())
+  userId         String
+  worksheetId    String
+  worksheetSlug  String
+  sectionOrders  Int[]
+  score          Int
+  totalQuestions Int
+  sectionScores  Json?
+  userAnswers    Json?
+  completedAt    DateTime @default(now())
+  createdAt      DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, worksheetId])
+  @@index([userId, completedAt])
+  @@index([worksheetId])
+}
+

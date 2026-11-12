@@ -10,6 +10,7 @@ import {
   type ClassActor,
 } from "@/lib/classroom/manage";
 import { zonedWallTimeToUtc } from "@/lib/classroom/schedule-time";
+import { getWorksheetCardsCatalog, getWorksheetCardById } from "@/lib/learn/worksheets-store";
 import {
   computeHomeworkProgress,
   csvRow,
@@ -98,7 +99,8 @@ export function homeworkHref(row: { testSlug: string; wholeTest: boolean; sectio
     row.testSlug.startsWith("shadowing/") ||
     row.testSlug.startsWith("dictation/") ||
     row.testSlug.startsWith("fill-blank/") ||
-    row.testSlug.startsWith("listen-answer/")
+    row.testSlug.startsWith("listen-answer/") ||
+    row.testSlug.startsWith("worksheets/")
   ) {
     return `/learn/${row.testSlug}`;
   }
@@ -125,7 +127,7 @@ export type HomeworkCatalogTest = {
 };
 
 export async function loadHomeworkCatalog(): Promise<HomeworkCatalogTest[]> {
-  const [tests, shadowing, dictation] = await Promise.all([
+  const [tests, shadowing, dictation, worksheetCards] = await Promise.all([
     listPublicTests(),
     prisma.shadowingExercise.findMany({
       where: { status: "PUBLISHED" },
@@ -137,7 +139,12 @@ export async function loadHomeworkCatalog(): Promise<HomeworkCatalogTest[]> {
       select: { id: true, slug: true, title: true, level: true, mode: true },
       orderBy: { order: "asc" },
     }),
+    getWorksheetCardsCatalog(),
   ]);
+
+  const worksheetLessons = await Promise.all(
+    worksheetCards.map((c) => getWorksheetCardById(c.id)),
+  );
 
   const testItems: HomeworkCatalogTest[] = tests.map((test) => ({
     slug: test.slug,
@@ -183,10 +190,31 @@ export async function loadHomeworkCatalog(): Promise<HomeworkCatalogTest[]> {
     };
   });
 
+  const worksheetItems: HomeworkCatalogTest[] = worksheetCards.map((card, i) => {
+    const lesson = worksheetLessons[i];
+    const parts =
+      lesson && lesson.sections && lesson.sections.length > 0
+        ? lesson.sections.map((s, idx) => ({
+            order: idx + 1,
+            title: `Phần ${s.sectionKey}`,
+            questionCount: s.questions.length,
+          }))
+        : [{ order: 1, title: "Toàn bộ bài tập", questionCount: card.questionCount }];
+
+    return {
+      slug: `worksheets/${card.slug}`,
+      title: `${card.title} · ${card.subjectVi}${card.level ? ` (${card.level})` : ""}`,
+      skill: "READING",
+      examType: "WORKSHEET",
+      parts,
+    };
+  });
+
   return [
     ...testItems.sort((a, b) => a.title.localeCompare(b.title, "en", { numeric: true })),
     ...shadowingItems,
     ...dictationItems,
+    ...worksheetItems,
   ];
 }
 
@@ -281,6 +309,22 @@ export async function createClassAssignments(actor: ClassActor, classroomId: str
     : [];
   const dictBySlug = new Map(dictExercises.map((e) => [e.slug, e]));
 
+  // Worksheet exercises
+  const wsSlugs = skillSlugs
+    .filter((s) => s.startsWith("worksheets/"))
+    .map((s) => s.replace(/^worksheets\//, ""));
+  const allCards = wsSlugs.length ? await getWorksheetCardsCatalog() : [];
+  const cardBySlug = new Map(allCards.map((c) => [c.slug, c]));
+  for (const c of allCards) {
+    cardBySlug.set(c.id, c);
+  }
+  const wsLessons = await Promise.all(
+    allCards.map((c) => getWorksheetCardById(c.id)),
+  );
+  const lessonByCardId = new Map(
+    allCards.map((c, i) => [c.id, wsLessons[i]]),
+  );
+
   const data = parsed.data.assignments.map((item) => {
     const deadlineAt = zonedWallTimeToUtc(item.deadlineWallTime, classroom.timezone);
     if (!deadlineAt) throw new ClassroomManageError("INVALID_DEADLINE");
@@ -302,6 +346,38 @@ export async function createClassAssignments(actor: ClassActor, classroomId: str
         wholeTest: true,
         partLabel: ex.level ? `Shadowing (${ex.level})` : "Shadowing",
         questionCount: 1,
+        deadlineAt,
+        createdById: actor.id,
+      };
+    }
+
+    // Case 2.5: Grammar Worksheet Cards
+    if (item.testSlug.startsWith("worksheets/")) {
+      const slug = item.testSlug.replace(/^worksheets\//, "");
+      const card = cardBySlug.get(slug);
+      if (!card) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
+      const lesson = lessonByCardId.get(card.id);
+      if (!lesson) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
+
+      const allOrders = lesson.sections.map((_, idx) => idx + 1);
+      const requested = [...new Set(item.sectionOrders ?? [])].sort((a, b) => a - b);
+      const wholeTest = requested.length === 0 || requested.length === allOrders.length;
+      const orders = wholeTest ? allOrders : requested;
+      const picked = lesson.sections.filter((_, idx) => orders.includes(idx + 1));
+      const questionCount = picked.reduce((sum, s) => sum + s.questions.length, 0);
+
+      return {
+        classroomId,
+        testId: null,
+        exerciseType: "WORKSHEET",
+        exerciseId: card.id,
+        testSlug: item.testSlug,
+        testTitle: `${card.title} · ${card.subjectVi}`,
+        skill: "READING" as const,
+        sectionOrders: orders,
+        wholeTest,
+        partLabel: wholeTest ? null : picked.map((s) => `Phần ${s.sectionKey}`).join(", "),
+        questionCount,
         deadlineAt,
         createdById: actor.id,
       };
@@ -336,6 +412,38 @@ export async function createClassAssignments(actor: ClassActor, classroomId: str
         wholeTest: true,
         partLabel: ex.level ? `${label} (${ex.level})` : label,
         questionCount: 1,
+        deadlineAt,
+        createdById: actor.id,
+      };
+    }
+
+    // Case 2.5: Grammar Worksheet Cards
+    if (item.testSlug.startsWith("worksheets/")) {
+      const slug = item.testSlug.replace(/^worksheets\//, "");
+      const card = cardBySlug.get(slug);
+      if (!card) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
+      const lesson = lessonByCardId.get(card.id);
+      if (!lesson) throw new ClassroomManageError("TEST_NOT_FOUND", 404);
+
+      const allOrders = lesson.sections.map((_, idx) => idx + 1);
+      const requested = [...new Set(item.sectionOrders ?? [])].sort((a, b) => a - b);
+      const wholeTest = requested.length === 0 || requested.length === allOrders.length;
+      const orders = wholeTest ? allOrders : requested;
+      const picked = lesson.sections.filter((_, idx) => orders.includes(idx + 1));
+      const questionCount = picked.reduce((sum, s) => sum + s.questions.length, 0);
+
+      return {
+        classroomId,
+        testId: null,
+        exerciseType: "WORKSHEET",
+        exerciseId: card.id,
+        testSlug: item.testSlug,
+        testTitle: `${card.title} · ${card.subjectVi}`,
+        skill: "READING" as const,
+        sectionOrders: orders,
+        wholeTest,
+        partLabel: wholeTest ? null : picked.map((s) => `Phần ${s.sectionKey}`).join(", "),
+        questionCount,
         deadlineAt,
         createdById: actor.id,
       };
@@ -584,7 +692,53 @@ async function fetchHomeworkAttempts(
     }));
   }
 
-  return [...standardAttempts, ...shadowingAttempts, ...dictationAttempts];
+  const worksheetExerciseIds = [
+    ...new Set(
+      assignments
+        .filter(
+          (a) =>
+            a.exerciseType === "WORKSHEET" ||
+            a.testSlug.startsWith("worksheets/"),
+        )
+        .map((a) => a.exerciseId)
+        .filter((id): id is string => Boolean(id)),
+    ),
+  ];
+
+  let worksheetAttempts: HomeworkAttempt[] = [];
+  if (worksheetExerciseIds.length) {
+    const rows = await prisma.worksheetAttempt.findMany({
+      where: {
+        userId: { in: userIds },
+        worksheetId: { in: worksheetExerciseIds },
+        completedAt: { gte: since },
+      },
+      select: {
+        id: true,
+        userId: true,
+        worksheetId: true,
+        sectionOrders: true,
+        score: true,
+        totalQuestions: true,
+        completedAt: true,
+      },
+      orderBy: { completedAt: "asc" },
+    });
+    worksheetAttempts = rows.map((row) => ({
+      id: row.id,
+      userId: row.userId,
+      testId: row.worksheetId,
+      sectionOrders: row.sectionOrders?.length ? row.sectionOrders : [1],
+      finishedAt: row.completedAt,
+      correct: row.score,
+      total: row.totalQuestions,
+      aiBand: null,
+      partial: false,
+      speakingPartKinds: null,
+    }));
+  }
+
+  return [...standardAttempts, ...shadowingAttempts, ...dictationAttempts, ...worksheetAttempts];
 }
 
 export type ProgressRow = {

@@ -15,146 +15,26 @@
       "instruction": "Fill in the blanks with MY, YOUR, HIS, HER, ITS, OUR, YOUR, THEIR:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-52-sec-a-q01",
-          "order": 1,
-          "prompt": "This is Tim [gap] car is very fast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q02",
-          "order": 2,
-          "prompt": "Jane and I are in the garden [gap] books are in the classroom.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q03",
-          "order": 3,
-          "prompt": "Are you a driver? Where is [gap] car?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q04",
-          "order": 4,
-          "prompt": "I am a driver? This is [gap] school.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q05",
-          "order": 5,
-          "prompt": "She is my friend [gap] name is Meltem.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q06",
-          "order": 6,
-          "prompt": "These are Mr. and Mrs. Brown. That’s [gap] house.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q07",
-          "order": 7,
-          "prompt": "Look at that cat [gap] eyes are green.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q08",
-          "order": 8,
-          "prompt": "Your friend and you are sad today. What’s [gap] problem?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q09",
-          "order": 9,
-          "prompt": "That’s Mr. Green. He is driving [gap] car.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q10",
-          "order": 10,
-          "prompt": "Ali’s and Can’s bags are heavy [gap] bags are full.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q11",
-          "order": 11,
-          "prompt": "Gökçe and Meltem are listening to pop music [gap] mother is cooking in the kitchen.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q12",
-          "order": 12,
-          "prompt": "The dog is eating a bone [gap] teeth are very sharp.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q13",
-          "order": 13,
-          "prompt": "Are you and your sister ready? [gap] friend is waiting for you in the car.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q14",
-          "order": 14,
-          "prompt": "A: What’s [gap] job? B: I’m a mechanic.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q15",
-          "order": 15,
-          "prompt": "Madonna is a famous singer [gap] new records are great.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q16",
-          "order": 16,
-          "prompt": "Robert has got a dog [gap] name is Bingo.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q17",
-          "order": 17,
-          "prompt": "We have got a new house in İzmir [gap] new house is very large.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q18",
-          "order": 18,
-          "prompt": "The boys are riding [gap] bicycles in the garden.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q19",
-          "order": 19,
-          "prompt": "Ayşegül is going to school [gap] school is very far.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-a-q20",
-          "order": 20,
-          "prompt": "Sue and Mary are wearing ear-rings [gap] ear-rings are silver.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-52-sec-a-q01", "order": 1, "prompt": "This is Tim. [gap] car is very fast.", "acceptedAnswers": ["his"], "explanation": "his = belonging to a man" },
+        { "id": "ws-52-sec-a-q02", "order": 2, "prompt": "Jane and I are in the garden. [gap] books are in the classroom.", "acceptedAnswers": ["our"], "explanation": "Jane and I = we → our" },
+        { "id": "ws-52-sec-a-q03", "order": 3, "prompt": "Are you a driver? Where is [gap] car?", "acceptedAnswers": ["your"], "explanation": "you → your" },
+        { "id": "ws-52-sec-a-q04", "order": 4, "prompt": "I am a driver. This is [gap] school.", "acceptedAnswers": ["my"], "explanation": "I → my" },
+        { "id": "ws-52-sec-a-q05", "order": 5, "prompt": "She is my friend. [gap] name is Meltem.", "acceptedAnswers": ["her"], "explanation": "she → her" },
+        { "id": "ws-52-sec-a-q06", "order": 6, "prompt": "These are Mr. and Mrs. Brown. That’s [gap] house.", "acceptedAnswers": ["their"], "explanation": "they → their" },
+        { "id": "ws-52-sec-a-q07", "order": 7, "prompt": "Look at that cat. [gap] eyes are green.", "acceptedAnswers": ["its"], "explanation": "animal/thing → its" },
+        { "id": "ws-52-sec-a-q08", "order": 8, "prompt": "Your friend and you are sad today. What’s [gap] problem?", "acceptedAnswers": ["your"], "explanation": "you (plural) → your" },
+        { "id": "ws-52-sec-a-q09", "order": 9, "prompt": "That’s Mr. Green. He is driving [gap] car.", "acceptedAnswers": ["his"], "explanation": "he → his" },
+        { "id": "ws-52-sec-a-q10", "order": 10, "prompt": "Ali’s and Can’s bags are heavy. [gap] bags are full.", "acceptedAnswers": ["their"], "explanation": "they → their" },
+        { "id": "ws-52-sec-a-q11", "order": 11, "prompt": "Gökçe and Meltem are listening to pop music. [gap] mother is cooking in the kitchen.", "acceptedAnswers": ["their"], "explanation": "they → their" },
+        { "id": "ws-52-sec-a-q12", "order": 12, "prompt": "The dog is eating a bone. [gap] teeth are very sharp.", "acceptedAnswers": ["its"], "explanation": "animal → its" },
+        { "id": "ws-52-sec-a-q13", "order": 13, "prompt": "Are you and your sister ready? [gap] friend is waiting for you in the car.", "acceptedAnswers": ["your"], "explanation": "you (plural) → your" },
+        { "id": "ws-52-sec-a-q14", "order": 14, "prompt": "A: What’s [gap] job? B: I’m a mechanic.", "acceptedAnswers": ["your"], "explanation": "asking you → your" },
+        { "id": "ws-52-sec-a-q15", "order": 15, "prompt": "Madonna is a famous singer. [gap] new records are great.", "acceptedAnswers": ["her"], "explanation": "she → her" },
+        { "id": "ws-52-sec-a-q16", "order": 16, "prompt": "Robert has got a dog. [gap] name is Bingo.", "acceptedAnswers": ["its|his"], "explanation": "animal → its (his for a pet is also used)" },
+        { "id": "ws-52-sec-a-q17", "order": 17, "prompt": "We have got a new house in İzmir. [gap] new house is very large.", "acceptedAnswers": ["our"], "explanation": "we → our" },
+        { "id": "ws-52-sec-a-q18", "order": 18, "prompt": "The boys are riding [gap] bicycles in the garden.", "acceptedAnswers": ["their"], "explanation": "they → their" },
+        { "id": "ws-52-sec-a-q19", "order": 19, "prompt": "Ayşegül is going to school. [gap] school is very far.", "acceptedAnswers": ["her"], "explanation": "she → her" },
+        { "id": "ws-52-sec-a-q20", "order": 20, "prompt": "Sue and Mary are wearing ear-rings. [gap] ear-rings are silver.", "acceptedAnswers": ["their"], "explanation": "they → their" }
       ]
     },
     {
@@ -163,455 +43,126 @@
       "instruction": "Rewrite these sentences using HE, SHE, IT, THEY, WE, HIS, HER, THEIR, OUR, ITS:",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-52-sec-b-q01",
-          "order": 1,
-          "prompt": "Jane’s father is very thin.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q02",
-          "order": 2,
-          "prompt": "Men’s trousers are very expensive.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q03",
-          "order": 3,
-          "prompt": "Jim’s shirt is very long.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q04",
-          "order": 4,
-          "prompt": "Is your brother a businessman?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q05",
-          "order": 5,
-          "prompt": "My mother and I would like some tea.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q06",
-          "order": 6,
-          "prompt": "These are Ayşe’s and my books.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q07",
-          "order": 7,
-          "prompt": "Mrs. Brown’s daughters are in the garden.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q08",
-          "order": 8,
-          "prompt": "Where is Gökçe’s mother?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q09",
-          "order": 9,
-          "prompt": "My father’s car is blue.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q10",
-          "order": 10,
-          "prompt": "That rabbit is grey. The rabbit’s ears are long.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q11",
-          "order": 11,
-          "prompt": "The students’ books are in the classroom.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q12",
-          "order": 12,
-          "prompt": "This is Mrs. Brown’s coat, but these are the children’s coats. C. Rewrite the underlined words using MINE, YOURS, HIS, HERS, OURS, THEIRS:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q01",
-          "order": 1,
-          "prompt": "This is Ayşe’s coat.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q02",
-          "order": 2,
-          "prompt": "It is my chocolate. Don’t eat!",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q03",
-          "order": 3,
-          "prompt": "That red book is not Can’s book. His book is blue.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q04",
-          "order": 4,
-          "prompt": "A: Look at these keys. Are they our keys? B: No, they are not your keys. They are my mother’s keys.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q05",
-          "order": 5,
-          "prompt": "A: Are those your glasses or my glasses on the table? B: I think, they are your glasses. My glasses aren’t on the table. They are in my bag. D. Fill in the blanks using MINE, YOURS, HIS, HERS, OURS, THEIRS:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q01",
-          "order": 1,
-          "prompt": "A: Is this John’s tie? B: Yes, it is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q02",
-          "order": 2,
-          "prompt": "My umbrella isn’t black [gap] is grey.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q03",
-          "order": 3,
-          "prompt": "There is a car near your house. Is it [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q04",
-          "order": 4,
-          "prompt": "That green shirt isn’t Ayşe’s [gap] is blue.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q05",
-          "order": 5,
-          "prompt": "Pass this ball to us. It is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q06",
-          "order": 6,
-          "prompt": "They don’t like sandwiches. These sandwiches are not [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q07",
-          "order": 7,
-          "prompt": "Don’t take these keys. They are not [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q08",
-          "order": 8,
-          "prompt": "A: There is a pair of brown gloves here. Are they your gloves or my gloves? B: I haven’t got brown gloves. They aren’t [gap] , they are [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q09",
-          "order": 9,
-          "prompt": "A: Is their house old? B: No, [gap] is very old.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q10",
-          "order": 10,
-          "prompt": "Can I take your pen? [gap] is at home. E. Fill in the blanks with ME, YOU, HIM, HER, THEM, US, IT:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q01",
-          "order": 1,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q02",
-          "order": 2,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q03",
-          "order": 3,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q04",
-          "order": 4,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q05",
-          "order": 5,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q06",
-          "order": 6,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q07",
-          "order": 7,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q08",
-          "order": 8,
-          "prompt": " We are playing in the garden and Jim is playing with [gap] Are the lights on? Turn [gap] off! Where is my book? I’m looking for [gap] She is very tired. Help [gap] I’m very thirsty. Give [gap] a glass of water. This is Ahmet’s pen. Give it to [gap] Look at [gap] Are they your friends? Are you John Brown? There is a letter for [gap] F. Fill in the blanks with MY, YOUR, HIS, HER, ITS, OUR, THEIR, ME, YOU, HIM, HER, IT, US, THEM, MINE, YOURS, HERS, HIS, OURS, THEIRS where necessary:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q01",
-          "order": 1,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q02",
-          "order": 2,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q03",
-          "order": 3,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q04",
-          "order": 4,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q05",
-          "order": 5,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q06",
-          "order": 6,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q07",
-          "order": 7,
-          "prompt": "",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q08",
-          "order": 8,
-          "prompt": " Is that Jim’s tie? Show [gap] this tie. There is a pen on the table. Give [gap] to me. Pass these books to your friends. They are [gap] A: Is this my umbrella? B: No, it isn’t [gap] umbrella [gap] is on the table. Gökçe and I are in the classroom [gap] bags are under the desk over there. Could you bring [gap] to [gap] ? Mr. and Mrs. Brown are at the door. This is [gap] key. Please give [gap] to A: Have you got a green pullover? B: No, [gap] isn’t green. It’s blue. Look at that man [gap] name is John Brown. This psssport is [gap] Give [gap] to [gap] G. Rewrite the underlined parts using ME, HIM, HER, THEM, US, IT:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q01",
-          "order": 1,
-          "prompt": "There are some books on the desk. Look at these books.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q02",
-          "order": 2,
-          "prompt": "She is turning the radio on.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q03",
-          "order": 3,
-          "prompt": "The teacher is asking Jane a question.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q04",
-          "order": 4,
-          "prompt": "Take your shoes off.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q05",
-          "order": 5,
-          "prompt": "The man is looking at Ali and me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q06",
-          "order": 6,
-          "prompt": "Jim is giving his father some tea.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q07",
-          "order": 7,
-          "prompt": "This is the dog’s meat. Give the meat to the dog.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q08",
-          "order": 8,
-          "prompt": "Is Tom eating any oranges?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q09",
-          "order": 9,
-          "prompt": "Give the milk to that cat.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-b-q10",
-          "order": 10,
-          "prompt": "Could you pass the salt to your mother?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-52-sec-b-q01", "order": 1, "prompt": "Jane’s father is very thin.", "acceptedAnswers": ["Her father is very thin."], "explanation": "Jane’s → her" },
+        { "id": "ws-52-sec-b-q02", "order": 2, "prompt": "Men’s trousers are very expensive.", "acceptedAnswers": ["Their trousers are very expensive."], "explanation": "men’s → their" },
+        { "id": "ws-52-sec-b-q03", "order": 3, "prompt": "Jim’s shirt is very long.", "acceptedAnswers": ["His shirt is very long."], "explanation": "Jim’s → his" },
+        { "id": "ws-52-sec-b-q04", "order": 4, "prompt": "Is your brother a businessman?", "acceptedAnswers": ["Is he a businessman?"], "explanation": "subject pronoun: he" },
+        { "id": "ws-52-sec-b-q05", "order": 5, "prompt": "My mother and I would like some tea.", "acceptedAnswers": ["We would like some tea."], "explanation": "my mother and I → we" },
+        { "id": "ws-52-sec-b-q06", "order": 6, "prompt": "These are Ayşe’s and my books.", "acceptedAnswers": ["These are our books."], "explanation": "Ayşe’s and my → our" },
+        { "id": "ws-52-sec-b-q07", "order": 7, "prompt": "Mrs. Brown’s daughters are in the garden.", "acceptedAnswers": ["Her daughters are in the garden."], "explanation": "Mrs. Brown’s → her" },
+        { "id": "ws-52-sec-b-q08", "order": 8, "prompt": "Where is Gökçe’s mother?", "acceptedAnswers": ["Where is her mother?"], "explanation": "Gökçe’s → her" },
+        { "id": "ws-52-sec-b-q09", "order": 9, "prompt": "My father’s car is blue.", "acceptedAnswers": ["His car is blue."], "explanation": "my father’s → his" },
+        { "id": "ws-52-sec-b-q10", "order": 10, "prompt": "That rabbit is grey. The rabbit’s ears are long.", "acceptedAnswers": ["That rabbit is grey. Its ears are long.", "It is grey. Its ears are long.", "Its ears are long."], "explanation": "the rabbit’s → its" },
+        { "id": "ws-52-sec-b-q11", "order": 11, "prompt": "The students’ books are in the classroom.", "acceptedAnswers": ["Their books are in the classroom."], "explanation": "the students’ → their" },
+        { "id": "ws-52-sec-b-q12", "order": 12, "prompt": "This is Mrs. Brown’s coat, but these are the children’s coats.", "acceptedAnswers": ["This is her coat, but these are their coats."], "explanation": "Mrs. Brown’s → her; the children’s → their" }
+      ]
+    },
+    {
+      "id": "ws-52-sec-c",
+      "sectionKey": "C",
+      "instruction": "Rewrite the sentences using MINE, YOURS, HIS, HERS, OURS, THEIRS instead of the possessive + noun:",
+      "type": "sentence_rewrite",
+      "questions": [
+        { "id": "ws-52-sec-c-q01", "order": 1, "prompt": "This is Ayşe’s coat.", "acceptedAnswers": ["This is hers.", "This coat is hers."], "explanation": "Ayşe’s coat → hers" },
+        { "id": "ws-52-sec-c-q02", "order": 2, "prompt": "It is my chocolate. Don’t eat!", "acceptedAnswers": ["It is mine. Don’t eat!", "It is mine. Don’t eat it!"], "explanation": "my chocolate → mine" },
+        { "id": "ws-52-sec-c-q03", "order": 3, "prompt": "That red book is not Can’s book. His book is blue.", "acceptedAnswers": ["That red book is not his. His is blue."], "explanation": "his book → his" },
+        { "id": "ws-52-sec-c-q04", "order": 4, "prompt": "A: Look at these keys. Are they our keys?", "acceptedAnswers": ["Look at these keys. Are they ours?", "Are they ours?"], "explanation": "our keys → ours" },
+        { "id": "ws-52-sec-c-q05", "order": 5, "prompt": "B: No, they are not your keys. They are my mother’s keys.", "acceptedAnswers": ["No, they are not yours. They are my mother’s.", "No, they are not yours. They are hers."], "explanation": "your keys → yours; my mother’s keys → my mother’s" },
+        { "id": "ws-52-sec-c-q06", "order": 6, "prompt": "A: Are those your glasses or my glasses on the table?", "acceptedAnswers": ["Are those your glasses or mine on the table?", "Are those yours or mine on the table?"], "explanation": "my glasses → mine" },
+        { "id": "ws-52-sec-c-q07", "order": 7, "prompt": "B: I think, they are your glasses. My glasses aren’t on the table. They are in my bag.", "acceptedAnswers": ["I think they are yours. Mine aren’t on the table. They are in my bag."], "explanation": "your glasses → yours; my glasses → mine" }
+      ]
+    },
+    {
+      "id": "ws-52-sec-d",
+      "sectionKey": "D",
+      "instruction": "Fill in the blanks using MINE, YOURS, HIS, HERS, OURS, THEIRS:",
+      "type": "inline_gap_fill",
+      "questions": [
+        { "id": "ws-52-sec-d-q01", "order": 1, "prompt": "A: Is this John’s tie? B: Yes, it is [gap].", "acceptedAnswers": ["his"], "explanation": "John’s → his" },
+        { "id": "ws-52-sec-d-q02", "order": 2, "prompt": "My umbrella isn’t black. [gap] is grey.", "acceptedAnswers": ["mine"], "explanation": "my umbrella → mine" },
+        { "id": "ws-52-sec-d-q03", "order": 3, "prompt": "There is a car near your house. Is it [gap]?", "acceptedAnswers": ["yours"], "explanation": "your car → yours" },
+        { "id": "ws-52-sec-d-q04", "order": 4, "prompt": "That green shirt isn’t Ayşe’s. [gap] is blue.", "acceptedAnswers": ["hers"], "explanation": "Ayşe’s shirt → hers" },
+        { "id": "ws-52-sec-d-q05", "order": 5, "prompt": "Pass this ball to us. It is [gap].", "acceptedAnswers": ["ours"], "explanation": "our ball → ours" },
+        { "id": "ws-52-sec-d-q06", "order": 6, "prompt": "They don’t like sandwiches. These sandwiches are not [gap].", "acceptedAnswers": ["theirs"], "explanation": "their sandwiches → theirs" },
+        { "id": "ws-52-sec-d-q07", "order": 7, "prompt": "Don’t take these keys. They are not [gap].", "acceptedAnswers": ["yours"], "explanation": "your keys → yours" },
+        { "id": "ws-52-sec-d-q08", "order": 8, "prompt": "A: There is a pair of brown gloves here. Are they your gloves or my gloves? B: I haven’t got brown gloves. They aren’t [gap], they are [gap].", "acceptedAnswers": ["mine / yours"], "explanation": "my gloves → mine; your gloves → yours" },
+        { "id": "ws-52-sec-d-q09", "order": 9, "prompt": "A: Is their house old? B: No, [gap] is very old.", "acceptedAnswers": ["ours"], "explanation": "our house → ours (contrast with theirs)" },
+        { "id": "ws-52-sec-d-q10", "order": 10, "prompt": "Can I take your pen? [gap] is at home.", "acceptedAnswers": ["mine"], "explanation": "my pen → mine" }
+      ]
+    },
+    {
+      "id": "ws-52-sec-e",
+      "sectionKey": "E",
+      "instruction": "Fill in the blanks with ME, YOU, HIM, HER, THEM, US, IT:",
+      "type": "inline_gap_fill",
+      "questions": [
+        { "id": "ws-52-sec-e-q01", "order": 1, "prompt": "We are playing in the garden and Jim is playing with [gap].", "acceptedAnswers": ["us"], "explanation": "object of we → us" },
+        { "id": "ws-52-sec-e-q02", "order": 2, "prompt": "Are the lights on? Turn [gap] off!", "acceptedAnswers": ["them"], "explanation": "the lights → them" },
+        { "id": "ws-52-sec-e-q03", "order": 3, "prompt": "Where is my book? I’m looking for [gap].", "acceptedAnswers": ["it"], "explanation": "the book → it" },
+        { "id": "ws-52-sec-e-q04", "order": 4, "prompt": "She is very tired. Help [gap].", "acceptedAnswers": ["her"], "explanation": "object of she → her" },
+        { "id": "ws-52-sec-e-q05", "order": 5, "prompt": "I’m very thirsty. Give [gap] a glass of water.", "acceptedAnswers": ["me"], "explanation": "object of I → me" },
+        { "id": "ws-52-sec-e-q06", "order": 6, "prompt": "This is Ahmet’s pen. Give it to [gap].", "acceptedAnswers": ["him"], "explanation": "Ahmet → him" },
+        { "id": "ws-52-sec-e-q07", "order": 7, "prompt": "Look at [gap]. Are they your friends?", "acceptedAnswers": ["them"], "explanation": "they → them" },
+        { "id": "ws-52-sec-e-q08", "order": 8, "prompt": "Are you John Brown? There is a letter for [gap].", "acceptedAnswers": ["you"], "explanation": "object of you → you" }
+      ]
+    },
+    {
+      "id": "ws-52-sec-f",
+      "sectionKey": "F",
+      "instruction": "Fill in the blanks with MY, YOUR, HIS, HER, ITS, OUR, THEIR, ME, YOU, HIM, HER, IT, US, THEM, MINE, YOURS, HERS, HIS, OURS, THEIRS where necessary:",
+      "type": "inline_gap_fill",
+      "questions": [
+        { "id": "ws-52-sec-f-q01", "order": 1, "prompt": "Is that Jim’s tie? Show [gap] this tie.", "acceptedAnswers": ["him"], "explanation": "object pronoun: him" },
+        { "id": "ws-52-sec-f-q02", "order": 2, "prompt": "There is a pen on the table. Give [gap] to me.", "acceptedAnswers": ["it"], "explanation": "the pen → it" },
+        { "id": "ws-52-sec-f-q03", "order": 3, "prompt": "Pass these books to your friends. They are [gap].", "acceptedAnswers": ["theirs"], "explanation": "their books → theirs" },
+        { "id": "ws-52-sec-f-q04", "order": 4, "prompt": "A: Is this my umbrella? B: No, it isn’t [gap] umbrella. [gap] is on the table.", "acceptedAnswers": ["your / yours"], "explanation": "your + noun; yours stands alone" },
+        { "id": "ws-52-sec-f-q05", "order": 5, "prompt": "Gökçe and I are in the classroom. [gap] bags are under the desk over there. Could you bring [gap] to [gap]?", "acceptedAnswers": ["our / them / us"], "explanation": "our bags; bring them to us" },
+        { "id": "ws-52-sec-f-q06", "order": 6, "prompt": "Mr. and Mrs. Brown are at the door. This is [gap] key. Please give [gap] to [gap].", "acceptedAnswers": ["their / it / them"], "explanation": "their key; give it to them" },
+        { "id": "ws-52-sec-f-q07", "order": 7, "prompt": "A: Have you got a green pullover? B: No, [gap] isn’t green. It’s blue.", "acceptedAnswers": ["mine"], "explanation": "my pullover → mine" },
+        { "id": "ws-52-sec-f-q08", "order": 8, "prompt": "Look at that man. [gap] name is John Brown. This passport is [gap]. Give [gap] to [gap].", "acceptedAnswers": ["his / his / it / him"], "explanation": "his name; it is his; give it to him" }
+      ]
+    },
+    {
+      "id": "ws-52-sec-g",
+      "sectionKey": "G",
+      "instruction": "Rewrite the sentences, replacing the object nouns with ME, HIM, HER, THEM, US, IT:",
+      "type": "sentence_rewrite",
+      "questions": [
+        { "id": "ws-52-sec-g-q01", "order": 1, "prompt": "There are some books on the desk. Look at these books.", "acceptedAnswers": ["There are some books on the desk. Look at them.", "Look at them."], "explanation": "these books → them" },
+        { "id": "ws-52-sec-g-q02", "order": 2, "prompt": "She is turning the radio on.", "acceptedAnswers": ["She is turning it on."], "explanation": "pronoun goes between verb and particle" },
+        { "id": "ws-52-sec-g-q03", "order": 3, "prompt": "The teacher is asking Jane a question.", "acceptedAnswers": ["The teacher is asking her a question."], "explanation": "Jane → her" },
+        { "id": "ws-52-sec-g-q04", "order": 4, "prompt": "Take your shoes off.", "acceptedAnswers": ["Take them off."], "explanation": "pronoun goes between verb and particle" },
+        { "id": "ws-52-sec-g-q05", "order": 5, "prompt": "The man is looking at Ali and me.", "acceptedAnswers": ["The man is looking at us."], "explanation": "Ali and me → us" },
+        { "id": "ws-52-sec-g-q06", "order": 6, "prompt": "Jim is giving his father some tea.", "acceptedAnswers": ["Jim is giving him some tea.", "Jim is giving it to his father.", "Jim is giving it to him."], "explanation": "his father → him" },
+        { "id": "ws-52-sec-g-q07", "order": 7, "prompt": "This is the dog’s meat. Give the meat to the dog.", "acceptedAnswers": ["This is the dog’s meat. Give it to it.", "Give it to it.", "This is the dog’s meat. Give it to the dog.", "Give it to the dog."], "explanation": "the meat → it; the dog → it" },
+        { "id": "ws-52-sec-g-q08", "order": 8, "prompt": "Is Tom eating any oranges?", "acceptedAnswers": ["Is Tom eating them?", "Is he eating them?", "Is he eating any oranges?"], "explanation": "the oranges → them" },
+        { "id": "ws-52-sec-g-q09", "order": 9, "prompt": "Give the milk to that cat.", "acceptedAnswers": ["Give it to it.", "Give it to that cat.", "Give the milk to it."], "explanation": "the milk → it; the cat → it" },
+        { "id": "ws-52-sec-g-q10", "order": 10, "prompt": "Could you pass the salt to your mother?", "acceptedAnswers": ["Could you pass it to her?", "Could you pass the salt to her?", "Could you pass it to your mother?"], "explanation": "the salt → it; your mother → her" }
       ]
     },
     {
       "id": "ws-52-sec-h",
       "sectionKey": "H",
       "instruction": "Complete the passage. Use these words.",
-      "type": "inline_gap_fill",
+      "type": "passage_gap_fill",
+      "wordBank": [
+        "my",
+        "your",
+        "his",
+        "her",
+        "its",
+        "our",
+        "their",
+        "his"
+      ],
       "questions": [
-        {
-          "id": "ws-52-sec-h-q01",
-          "order": 1,
-          "prompt": "my your his her its our their his [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q02",
-          "order": 2,
-          "prompt": "Hello [gap] name is Patrick. I’m nine. I have got a brother. His name is Andy and he’s",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q03",
-          "order": 3,
-          "prompt": "eleven. We are on holiday in Spain. The hotel is very good and [gap] swimming-pool is",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q04",
-          "order": 4,
-          "prompt": "large. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q05",
-          "order": 5,
-          "prompt": "Andy and I have got a sister [gap] name is Liz. She’s six years old [gap] mother and",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q06",
-          "order": 6,
-          "prompt": "father are in the restaurant now. Their friends, Mr. and Mrs. Bolton, are in the restaurant, too. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q07",
-          "order": 7,
-          "prompt": "[gap] two sons are in the pool.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q08",
-          "order": 8,
-          "prompt": "Andy has got a girl-friend [gap] girl-friend’s name is Sandra. She’s in [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q09",
-          "order": 9,
-          "prompt": "class at school. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-52-sec-h-q10",
-          "order": 10,
-          "prompt": "Where is your family? Is [gap] family here, too?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-52-sec-h-q01", "order": 1, "prompt": "Hello. [gap] name is Patrick. I’m nine. I have got a brother. His name is Andy and he’s eleven.", "acceptedAnswers": ["my"], "explanation": "I → my" },
+        { "id": "ws-52-sec-h-q02", "order": 2, "prompt": "We are on holiday in Spain. The hotel is very good and [gap] swimming-pool is large.", "acceptedAnswers": ["its"], "explanation": "the hotel → its" },
+        { "id": "ws-52-sec-h-q03", "order": 3, "prompt": "Andy and I have got a sister. [gap] name is Liz. She’s six years old.", "acceptedAnswers": ["her"], "explanation": "she → her" },
+        { "id": "ws-52-sec-h-q04", "order": 4, "prompt": "[gap] mother and father are in the restaurant now.", "acceptedAnswers": ["our"], "explanation": "Andy, Liz and I → our" },
+        { "id": "ws-52-sec-h-q05", "order": 5, "prompt": "Their friends, Mr. and Mrs. Bolton, are in the restaurant, too. [gap] two sons are in the pool.", "acceptedAnswers": ["their"], "explanation": "Mr. and Mrs. Bolton → their" },
+        { "id": "ws-52-sec-h-q06", "order": 6, "prompt": "Andy has got a girl-friend. [gap] girl-friend’s name is Sandra. She’s in [gap] class at school.", "acceptedAnswers": ["his / his"], "explanation": "Andy → his" },
+        { "id": "ws-52-sec-h-q07", "order": 7, "prompt": "Where is your family? Is [gap] family here, too?", "acceptedAnswers": ["your"], "explanation": "you → your" }
       ]
     }
   ]

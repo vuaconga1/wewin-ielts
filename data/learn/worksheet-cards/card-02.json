@@ -1,0 +1,4082 @@
+{
+  "id": "card-02",
+  "order": 2,
+  "part": 1,
+  "slug": "card-02-hien-tai-don-hien-tai-tiep-dien",
+  "title": "THẺ BÀI TẬP 02",
+  "subject": "Present Simple & Present Continuous",
+  "subjectVi": "Thì Hiện tại đơn & Hiện tại tiếp diễn",
+  "level": "A1",
+  "pageRange": "WS-02, WS-03, WS-04, WS-07-REVIEW",
+  "sections": [
+    {
+      "id": "card-02-sec-1",
+      "sectionKey": "A",
+      "instruction": "Read the paragraph and answer the questions:",
+      "type": "reading_qa",
+      "contextText": "Brian is a doctor. He looks after sick people. He usually gets up at 6.00 o'clock. Today he is late, it is 6.30 and he is still in bed. He usually goes to work by train but today he is driving to work. He arrives at work at 6.30 every morning but it is 7.30 now and he is still driving.\nIt's 12.00 o'clock now. He always has his lunch at 12.00 but today he isn't having lunch at 12.00, he is looking after his sick patients. It is half past seven now, Brian is watching TV. He usually watches TV at half past seven because his favorite programme starts at half past seven. Brian has his dinner at 8.30 every day and he is having dinner now.\nIt is 24.00 now. Brian is going to bed. He always goes to bed at 24.00.",
+      "questions": [
+        {
+          "id": "ws-02-sec-a-q01",
+          "order": 1,
+          "prompt": "What does Brian do?",
+          "acceptedAnswers": [
+            "He is a doctor.",
+            "Brian is a doctor.",
+            "He is a doctor. He looks after sick people."
+          ],
+          "explanation": "What does he do? = What is his job?"
+        },
+        {
+          "id": "ws-02-sec-a-q02",
+          "order": 2,
+          "prompt": "What time does he usually get up?",
+          "acceptedAnswers": [
+            "He usually gets up at 6.00 o'clock.",
+            "He usually gets up at 6.00.",
+            "He usually gets up at six o'clock.",
+            "He usually gets up at 6 o'clock."
+          ],
+          "explanation": "present simple for habits: he gets up"
+        },
+        {
+          "id": "ws-02-sec-a-q03",
+          "order": 3,
+          "prompt": "How does he usually go to work?",
+          "acceptedAnswers": [
+            "He usually goes to work by train.",
+            "He goes to work by train.",
+            "By train."
+          ],
+          "explanation": "by + transport"
+        },
+        {
+          "id": "ws-02-sec-a-q04",
+          "order": 4,
+          "prompt": "Why is he driving to work today?",
+          "acceptedAnswers": [
+            "Because he is late.",
+            "Because he is late today.",
+            "He is driving to work because he is late."
+          ],
+          "explanation": "Today he is late."
+        },
+        {
+          "id": "ws-02-sec-a-q05",
+          "order": 5,
+          "prompt": "What time does he arrive at work every day?",
+          "acceptedAnswers": [
+            "He arrives at work at 6.30.",
+            "He arrives at work at 6.30 every morning.",
+            "He arrives at work at half past six.",
+            "At 6.30."
+          ],
+          "explanation": "He arrives at work at 6.30 every morning."
+        },
+        {
+          "id": "ws-02-sec-a-q06",
+          "order": 6,
+          "prompt": "When does he always have his lunch?",
+          "acceptedAnswers": [
+            "He always has his lunch at 12.00.",
+            "He always has his lunch at 12 o'clock.",
+            "He always has his lunch at twelve o'clock.",
+            "At 12.00."
+          ],
+          "explanation": "always + present simple"
+        },
+        {
+          "id": "ws-02-sec-a-q07",
+          "order": 7,
+          "prompt": "What is he doing at 12.00 today?",
+          "acceptedAnswers": [
+            "He is looking after his sick patients.",
+            "He is looking after sick patients.",
+            "He is looking after his patients."
+          ],
+          "explanation": "present continuous for now/today"
+        },
+        {
+          "id": "ws-02-sec-a-q08",
+          "order": 8,
+          "prompt": "Why does he usually watch TV at 7.30?",
+          "acceptedAnswers": [
+            "Because his favorite programme starts at half past seven.",
+            "Because his favorite programme starts at 7.30.",
+            "Because his favourite programme starts at half past seven.",
+            "Because his favourite programme starts at 7.30."
+          ],
+          "explanation": "His favorite programme starts then."
+        },
+        {
+          "id": "ws-02-sec-a-q09",
+          "order": 9,
+          "prompt": "What time does he go to bed?",
+          "acceptedAnswers": [
+            "He goes to bed at 24.00.",
+            "He always goes to bed at 24.00.",
+            "He goes to bed at midnight.",
+            "He always goes to bed at midnight."
+          ],
+          "explanation": "He always goes to bed at 24.00."
+        },
+        {
+          "id": "ws-02-sec-a-q10",
+          "order": 10,
+          "prompt": "What time is he going to bed now?",
+          "acceptedAnswers": [
+            "He is going to bed at 24.00.",
+            "He is going to bed at midnight.",
+            "At 24.00.",
+            "It is 24.00 now."
+          ],
+          "explanation": "It is 24.00 now and he is going to bed."
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-2",
+      "sectionKey": "B",
+      "instruction": "Fill in the blanks with PRESENT CONTINUOUS or SIMPLE PRESENT:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-02-sec-b-q01",
+          "order": 1,
+          "prompt": "The children [gap] (play) outside now.",
+          "acceptedAnswers": [
+            "are playing|'re playing"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q02",
+          "order": 2,
+          "prompt": "She usually [gap] (read) the newspaper in the morning.",
+          "acceptedAnswers": [
+            "reads"
+          ],
+          "explanation": "usually → present simple (he/she + -s)"
+        },
+        {
+          "id": "ws-02-sec-b-q03",
+          "order": 3,
+          "prompt": "I [gap] (do) my homework now.",
+          "acceptedAnswers": [
+            "am doing|'m doing"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q04",
+          "order": 4,
+          "prompt": "I [gap] (eat) my dinner now.",
+          "acceptedAnswers": [
+            "am eating|'m eating"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q05",
+          "order": 5,
+          "prompt": "[gap] (you / want) a pizza?",
+          "acceptedAnswers": [
+            "Do you want"
+          ],
+          "explanation": "want is a stative verb → present simple"
+        },
+        {
+          "id": "ws-02-sec-b-q06",
+          "order": 6,
+          "prompt": "They [gap] (watch) TV now.",
+          "acceptedAnswers": [
+            "are watching|'re watching"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q07",
+          "order": 7,
+          "prompt": "I [gap] (not / like) spaghetti.",
+          "acceptedAnswers": [
+            "don't like"
+          ],
+          "explanation": "like is stative → present simple negative"
+        },
+        {
+          "id": "ws-02-sec-b-q08",
+          "order": 8,
+          "prompt": "The baby [gap] (sleep) now.",
+          "acceptedAnswers": [
+            "is sleeping|'s sleeping"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q09",
+          "order": 9,
+          "prompt": "My mother usually [gap] (cook) dinner in the evening.",
+          "acceptedAnswers": [
+            "cooks"
+          ],
+          "explanation": "usually → present simple"
+        },
+        {
+          "id": "ws-02-sec-b-q10",
+          "order": 10,
+          "prompt": "He [gap] (write) a letter to his pen-friend every month.",
+          "acceptedAnswers": [
+            "writes"
+          ],
+          "explanation": "every month → present simple"
+        },
+        {
+          "id": "ws-02-sec-b-q11",
+          "order": 11,
+          "prompt": "She [gap] (not / like) football.",
+          "acceptedAnswers": [
+            "doesn't like"
+          ],
+          "explanation": "she + doesn't + base verb"
+        },
+        {
+          "id": "ws-02-sec-b-q12",
+          "order": 12,
+          "prompt": "Mary [gap] (listen) to music now.",
+          "acceptedAnswers": [
+            "is listening|'s listening"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q13",
+          "order": 13,
+          "prompt": "Tom usually [gap] (drink) coffee, but he [gap] (drink) tea now.",
+          "acceptedAnswers": [
+            "drinks / is drinking|'s drinking"
+          ],
+          "explanation": "usually → simple; now → continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q14",
+          "order": 14,
+          "prompt": "We [gap] (go) to the disco tonight.",
+          "acceptedAnswers": [
+            "are going|'re going"
+          ],
+          "explanation": "fixed plan for tonight → present continuous"
+        },
+        {
+          "id": "ws-02-sec-b-q15",
+          "order": 15,
+          "prompt": "[gap] (he / go) to work by bus every day.",
+          "acceptedAnswers": [
+            "He goes",
+            "Does he go"
+          ],
+          "explanation": "every day → present simple"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-3",
+      "sectionKey": "C",
+      "instruction": "Read the questions & answers about ALAN and ask and answer about JUDITH. Write the question and the answer.",
+      "type": "question_formation",
+      "contextText": "ALAN\n1. What does Alan do? — Alan's a lorry driver.\n2. How old is Alan? — He's twenty-five years old.\n3. How many days a week does he work? — He works five days a week.\n4. What time does he get up? — He gets up at six o'clock every day.\n5. What does he eat for breakfast? — He eats an enormous breakfast.\n6. What does he drink? — He drinks two cups of tea.\n7. What does he do after breakfast? — Then he kisses his wife.\n8. What time does he leave for work? — He leaves for work at half past six.\n9. Where does he have lunch? — He has lunch in a transport café.\n10. What time does he come home? — He comes home at five o'clock.\n11. Where does he go in the evening? — In the evening he goes to the pub.\n12. What time does he go to bed? — He goes to bed at ten o'clock.",
+      "questions": [
+        {
+          "id": "ws-02-sec-c-q01",
+          "order": 1,
+          "prompt": "Judith: secretary",
+          "acceptedAnswers": [
+            "What does Judith do? She is a secretary.",
+            "What does Judith do? Judith is a secretary.",
+            "What does she do? She is a secretary."
+          ],
+          "explanation": "What does … do? asks about a job"
+        },
+        {
+          "id": "ws-02-sec-c-q02",
+          "order": 2,
+          "prompt": "Judith: 18",
+          "acceptedAnswers": [
+            "How old is Judith? She is eighteen years old.",
+            "How old is Judith? She is 18 years old.",
+            "How old is Judith? She is eighteen.",
+            "How old is Judith? She is 18."
+          ],
+          "explanation": "How old is …? She is … years old."
+        },
+        {
+          "id": "ws-02-sec-c-q03",
+          "order": 3,
+          "prompt": "Judith: 5 days a week",
+          "acceptedAnswers": [
+            "How many days a week does she work? She works five days a week.",
+            "How many days a week does Judith work? She works five days a week.",
+            "How many days a week does she work? She works 5 days a week.",
+            "How many days a week does Judith work? She works 5 days a week."
+          ],
+          "explanation": "she works (third person -s)"
+        },
+        {
+          "id": "ws-02-sec-c-q04",
+          "order": 4,
+          "prompt": "Judith: 7.30",
+          "acceptedAnswers": [
+            "What time does she get up? She gets up at 7.30 every day.",
+            "What time does she get up? She gets up at half past seven every day.",
+            "What time does Judith get up? She gets up at 7.30 every day.",
+            "What time does she get up? She gets up at 7.30."
+          ],
+          "explanation": "What time does she …? She gets up at …"
+        },
+        {
+          "id": "ws-02-sec-c-q05",
+          "order": 5,
+          "prompt": "Judith: cornflakes",
+          "acceptedAnswers": [
+            "What does she eat for breakfast? She eats cornflakes.",
+            "What does Judith eat for breakfast? She eats cornflakes.",
+            "What does she eat for breakfast? She eats cornflakes for breakfast."
+          ],
+          "explanation": "she eats (third person -s)"
+        },
+        {
+          "id": "ws-02-sec-c-q06",
+          "order": 6,
+          "prompt": "Judith: orange-juice",
+          "acceptedAnswers": [
+            "What does she drink? She drinks orange juice.",
+            "What does she drink? She drinks orange-juice.",
+            "What does Judith drink? She drinks orange juice."
+          ],
+          "explanation": "she drinks (third person -s)"
+        },
+        {
+          "id": "ws-02-sec-c-q07",
+          "order": 7,
+          "prompt": "Judith: parents",
+          "acceptedAnswers": [
+            "What does she do after breakfast? Then she kisses her parents.",
+            "What does she do after breakfast? She kisses her parents.",
+            "What does Judith do after breakfast? Then she kisses her parents.",
+            "What does Judith do after breakfast? She kisses her parents."
+          ],
+          "explanation": "kiss → kisses (-es after ss)"
+        },
+        {
+          "id": "ws-02-sec-c-q08",
+          "order": 8,
+          "prompt": "Judith: 8.15",
+          "acceptedAnswers": [
+            "What time does she leave for work? She leaves for work at 8.15.",
+            "What time does she leave for work? She leaves for work at a quarter past eight.",
+            "What time does Judith leave for work? She leaves for work at 8.15.",
+            "What time does she leave for work? She leaves for work at quarter past eight."
+          ],
+          "explanation": "she leaves (third person -s)"
+        },
+        {
+          "id": "ws-02-sec-c-q09",
+          "order": 9,
+          "prompt": "Judith: in the canteen",
+          "acceptedAnswers": [
+            "Where does she have lunch? She has lunch in the canteen.",
+            "Where does Judith have lunch? She has lunch in the canteen."
+          ],
+          "explanation": "have → has for he/she"
+        },
+        {
+          "id": "ws-02-sec-c-q10",
+          "order": 10,
+          "prompt": "Judith: home / 5.30",
+          "acceptedAnswers": [
+            "What time does she come home? She comes home at 5.30.",
+            "What time does she come home? She comes home at half past five.",
+            "What time does Judith come home? She comes home at 5.30.",
+            "What time does Judith come home? She comes home at half past five."
+          ],
+          "explanation": "she comes (third person -s)"
+        },
+        {
+          "id": "ws-02-sec-c-q11",
+          "order": 11,
+          "prompt": "Judith: evening classes",
+          "acceptedAnswers": [
+            "Where does she go in the evening? In the evening she goes to evening classes.",
+            "Where does she go in the evening? She goes to evening classes.",
+            "Where does Judith go in the evening? In the evening she goes to evening classes.",
+            "Where does Judith go in the evening? She goes to evening classes."
+          ],
+          "explanation": "go → goes for he/she"
+        },
+        {
+          "id": "ws-02-sec-c-q12",
+          "order": 12,
+          "prompt": "Judith: eleven o'clock",
+          "acceptedAnswers": [
+            "What time does she go to bed? She goes to bed at eleven o'clock.",
+            "What time does Judith go to bed? She goes to bed at eleven o'clock.",
+            "What time does she go to bed? She goes to bed at 11 o'clock."
+          ],
+          "explanation": "go → goes for he/she"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-4",
+      "sectionKey": "D",
+      "instruction": "Look at the chart. Write sentences about Tom, then fill in the chart for yourself and write about you. (Example: Tom always drinks fizzy drinks.)",
+      "type": "sentence_building",
+      "contextText": "How often does Tom …?\n- drink fizzy drinks: always\n- buy fast food: usually\n- play tennis: sometimes\n- eat sweets: usually\n- watch TV in the evenings: always\n- save money: never\n- listen to cassettes: usually\n- play computer games: often\nYou: always / usually / often / sometimes / never — your own choice.",
+      "questions": [
+        {
+          "id": "ws-02-sec-d-q01",
+          "order": 1,
+          "prompt": "Tom / buy fast food",
+          "acceptedAnswers": [
+            "Tom usually buys fast food."
+          ],
+          "explanation": "adverb of frequency before the main verb"
+        },
+        {
+          "id": "ws-02-sec-d-q02",
+          "order": 2,
+          "prompt": "Tom / play tennis",
+          "acceptedAnswers": [
+            "Tom sometimes plays tennis.",
+            "Sometimes Tom plays tennis."
+          ],
+          "explanation": "sometimes can go before the verb or at the start"
+        },
+        {
+          "id": "ws-02-sec-d-q03",
+          "order": 3,
+          "prompt": "Tom / eat sweets",
+          "acceptedAnswers": [
+            "Tom usually eats sweets."
+          ],
+          "explanation": "adverb of frequency before the main verb"
+        },
+        {
+          "id": "ws-02-sec-d-q04",
+          "order": 4,
+          "prompt": "Tom / watch TV in the evenings",
+          "acceptedAnswers": [
+            "Tom always watches TV in the evenings."
+          ],
+          "explanation": "watch → watches (-es after ch)"
+        },
+        {
+          "id": "ws-02-sec-d-q05",
+          "order": 5,
+          "prompt": "Tom / save money",
+          "acceptedAnswers": [
+            "Tom never saves money."
+          ],
+          "explanation": "never + positive verb"
+        },
+        {
+          "id": "ws-02-sec-d-q06",
+          "order": 6,
+          "prompt": "Tom / listen to cassettes",
+          "acceptedAnswers": [
+            "Tom usually listens to cassettes."
+          ],
+          "explanation": "adverb of frequency before the main verb"
+        },
+        {
+          "id": "ws-02-sec-d-q07",
+          "order": 7,
+          "prompt": "Tom / play computer games",
+          "acceptedAnswers": [
+            "Tom often plays computer games."
+          ],
+          "explanation": "adverb of frequency before the main verb"
+        },
+        {
+          "id": "ws-02-sec-d-q08",
+          "order": 8,
+          "prompt": "You / one activity from the chart",
+          "acceptedAnswers": [],
+          "modelAnswer": "I sometimes drink fizzy drinks.",
+          "explanation": "I + adverb of frequency + base verb"
+        },
+        {
+          "id": "ws-02-sec-d-q09",
+          "order": 9,
+          "prompt": "You / another activity from the chart",
+          "acceptedAnswers": [],
+          "modelAnswer": "I often play computer games.",
+          "explanation": "I + adverb of frequency + base verb"
+        },
+        {
+          "id": "ws-02-sec-d-q10",
+          "order": 10,
+          "prompt": "You / another activity from the chart",
+          "acceptedAnswers": [],
+          "modelAnswer": "I never buy fast food.",
+          "explanation": "I + adverb of frequency + base verb"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-5",
+      "sectionKey": "E",
+      "instruction": "Now ask questions about the CHART (see section D): (Example: How often does Tom buy fast food? → He usually buys fast food. / Does Tom save money? → No, he doesn’t save money.)",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-02-sec-e-q01",
+          "order": 1,
+          "prompt": "Answer: He always watches TV.",
+          "acceptedAnswers": [
+            "How often does Tom watch TV?",
+            "How often does Tom watch TV in the evenings?",
+            "How often does he watch TV?",
+            "How often does he watch TV in the evenings?"
+          ],
+          "explanation": "How often + does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-e-q02",
+          "order": 2,
+          "prompt": "Answer: He sometimes plays tennis.",
+          "acceptedAnswers": [
+            "How often does Tom play tennis?",
+            "How often does he play tennis?"
+          ],
+          "explanation": "How often + does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-e-q03",
+          "order": 3,
+          "prompt": "Answer: No, he doesn't save money.",
+          "acceptedAnswers": [
+            "Does Tom save money?",
+            "Does he save money?"
+          ],
+          "explanation": "Yes/No question: Does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-e-q04",
+          "order": 4,
+          "prompt": "Answer: Yes, he usually listens to cassettes.",
+          "acceptedAnswers": [
+            "Does Tom listen to cassettes?",
+            "Does he listen to cassettes?"
+          ],
+          "explanation": "Yes/No question: Does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-e-q05",
+          "order": 5,
+          "prompt": "Answer: He often plays computer games.",
+          "acceptedAnswers": [
+            "How often does Tom play computer games?",
+            "How often does he play computer games?"
+          ],
+          "explanation": "How often + does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-e-q06",
+          "order": 6,
+          "prompt": "Answer: Yes, he always drinks fizzy drinks.",
+          "acceptedAnswers": [
+            "Does Tom drink fizzy drinks?",
+            "Does he drink fizzy drinks?"
+          ],
+          "explanation": "Yes/No question: Does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-e-q07",
+          "order": 7,
+          "prompt": "Answer: He usually eats sweets.",
+          "acceptedAnswers": [
+            "How often does Tom eat sweets?",
+            "How often does he eat sweets?"
+          ],
+          "explanation": "How often + does + subject + base verb?"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-6",
+      "sectionKey": "F",
+      "instruction": "Complete the sentences with SIMPLE PRESENT or PRESENT CONTINUOUS:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-02-sec-f-q01",
+          "order": 1,
+          "prompt": "Susan usually [gap] (go) to school by bus, but now she [gap] (go) to school by train.",
+          "acceptedAnswers": [
+            "goes / is going|'s going"
+          ],
+          "explanation": "usually → simple; now → continuous"
+        },
+        {
+          "id": "ws-02-sec-f-q02",
+          "order": 2,
+          "prompt": "Mary often [gap] (read) in bed, but today she is very tired and she [gap] (not / read).",
+          "acceptedAnswers": [
+            "reads / isn't reading"
+          ],
+          "explanation": "often → simple; today → continuous"
+        },
+        {
+          "id": "ws-02-sec-f-q03",
+          "order": 3,
+          "prompt": "The boys usually [gap] (ride) their bikes to school.",
+          "acceptedAnswers": [
+            "ride"
+          ],
+          "explanation": "usually → present simple (plural: no -s)"
+        },
+        {
+          "id": "ws-02-sec-f-q04",
+          "order": 4,
+          "prompt": "They [gap] (like / ride) their bikes.",
+          "acceptedAnswers": [
+            "like riding|like to ride"
+          ],
+          "explanation": "like + -ing / to-infinitive"
+        },
+        {
+          "id": "ws-02-sec-f-q05",
+          "order": 5,
+          "prompt": "They [gap] (be) very naughty boys.",
+          "acceptedAnswers": [
+            "are|'re"
+          ],
+          "explanation": "they + are"
+        },
+        {
+          "id": "ws-02-sec-f-q06",
+          "order": 6,
+          "prompt": "They always [gap] (go) to school late.",
+          "acceptedAnswers": [
+            "go"
+          ],
+          "explanation": "always → present simple"
+        },
+        {
+          "id": "ws-02-sec-f-q07",
+          "order": 7,
+          "prompt": "Today their teacher [gap] (be) very angry, because they [gap] (be) late again.",
+          "acceptedAnswers": [
+            "is / are|'re"
+          ],
+          "explanation": "teacher + is; they + are"
+        },
+        {
+          "id": "ws-02-sec-f-q08",
+          "order": 8,
+          "prompt": "Mary [gap] (like / eat) sweets.",
+          "acceptedAnswers": [
+            "likes eating|likes to eat"
+          ],
+          "explanation": "she likes + -ing / to-infinitive"
+        },
+        {
+          "id": "ws-02-sec-f-q09",
+          "order": 9,
+          "prompt": "Every morning she [gap] (have) coffee with a lot of sweets and chocolate.",
+          "acceptedAnswers": [
+            "has"
+          ],
+          "explanation": "every morning → present simple; have → has"
+        },
+        {
+          "id": "ws-02-sec-f-q10",
+          "order": 10,
+          "prompt": "For lunch she and her friends often [gap] (eat) sweets or ice-cream.",
+          "acceptedAnswers": [
+            "eat"
+          ],
+          "explanation": "plural subject → no -s"
+        },
+        {
+          "id": "ws-02-sec-f-q11",
+          "order": 11,
+          "prompt": "She [gap] (not / like / eat) fruit or vegetables.",
+          "acceptedAnswers": [
+            "doesn't like eating|doesn't like to eat"
+          ],
+          "explanation": "she + doesn't like + -ing"
+        },
+        {
+          "id": "ws-02-sec-f-q12",
+          "order": 12,
+          "prompt": "She [gap] (eat / never) eggs or cheese.",
+          "acceptedAnswers": [
+            "never eats"
+          ],
+          "explanation": "never goes before the main verb"
+        },
+        {
+          "id": "ws-02-sec-f-q13",
+          "order": 13,
+          "prompt": "Today she [gap] (be) sick.",
+          "acceptedAnswers": [
+            "is|'s"
+          ],
+          "explanation": "she + is"
+        },
+        {
+          "id": "ws-02-sec-f-q14",
+          "order": 14,
+          "prompt": "She [gap] (sleep) in her room now.",
+          "acceptedAnswers": [
+            "is sleeping|'s sleeping"
+          ],
+          "explanation": "now → present continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-7",
+      "sectionKey": "G",
+      "instruction": "Use a preposition (ON, IN, AT, BY) in each blank:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-02-sec-g-q01",
+          "order": 1,
+          "prompt": "Jane goes to work [gap] bus.",
+          "acceptedAnswers": [
+            "by"
+          ],
+          "explanation": "by + transport"
+        },
+        {
+          "id": "ws-02-sec-g-q02",
+          "order": 2,
+          "prompt": "My birthday is [gap] March.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "explanation": "in + month"
+        },
+        {
+          "id": "ws-02-sec-g-q03",
+          "order": 3,
+          "prompt": "We are going to meet [gap] 4:00 p.m.",
+          "acceptedAnswers": [
+            "at"
+          ],
+          "explanation": "at + clock time"
+        },
+        {
+          "id": "ws-02-sec-g-q04",
+          "order": 4,
+          "prompt": "Students must go to school [gap] weekdays.",
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + days"
+        },
+        {
+          "id": "ws-02-sec-g-q05",
+          "order": 5,
+          "prompt": "Do you play tennis [gap] the weekend?",
+          "acceptedAnswers": [
+            "at|on"
+          ],
+          "explanation": "at the weekend (BrE) / on the weekend (AmE)"
+        },
+        {
+          "id": "ws-02-sec-g-q06",
+          "order": 6,
+          "prompt": "His birthday is [gap] November 5th.",
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + date"
+        },
+        {
+          "id": "ws-02-sec-g-q07",
+          "order": 7,
+          "prompt": "We have art lesson [gap] Mondays.",
+          "acceptedAnswers": [
+            "on"
+          ],
+          "explanation": "on + days of the week"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-8",
+      "sectionKey": "H",
+      "instruction": "Read the text carefully and answer the questions:",
+      "type": "reading_qa",
+      "contextText": "Right now I am looking at a picture of Barbara. She is not at home in the picture. She is at the park. She is sitting on a bench. She is eating her lunch. Some boys and girls are running on a path in the park. A squirrel is sitting on the ground in front of Barbara. The squirrel is eating a nut. Barbara is watching the squirrel. She always watches squirrels when she eats her lunch in the park. Some ducks are swimming in the pond in the picture, and some birds are flying in the sky. A policeman is riding a horse. He rides a horse in the park every day. Near Barbara, a family is having a picnic. They go on a picnic every week.",
+      "questions": [
+        {
+          "id": "ws-02-sec-h-q01",
+          "order": 1,
+          "prompt": "Where is Barbara in the picture?",
+          "acceptedAnswers": [
+            "She is at the park.",
+            "She is in the park.",
+            "Barbara is at the park.",
+            "She is at the park. She is sitting on a bench."
+          ],
+          "explanation": "She is at the park."
+        },
+        {
+          "id": "ws-02-sec-h-q02",
+          "order": 2,
+          "prompt": "What is she doing?",
+          "acceptedAnswers": [
+            "She is eating her lunch.",
+            "She is sitting on a bench and eating her lunch.",
+            "She is sitting on a bench. She is eating her lunch.",
+            "She is watching the squirrel."
+          ],
+          "explanation": "present continuous: she is + -ing"
+        },
+        {
+          "id": "ws-02-sec-h-q03",
+          "order": 3,
+          "prompt": "What is the squirrel doing in the picture?",
+          "acceptedAnswers": [
+            "It is eating a nut.",
+            "The squirrel is eating a nut."
+          ],
+          "explanation": "The squirrel is eating a nut."
+        },
+        {
+          "id": "ws-02-sec-h-q04",
+          "order": 4,
+          "prompt": "What does Barbara always do when she has lunch in the park?",
+          "acceptedAnswers": [
+            "She always watches squirrels.",
+            "She watches squirrels.",
+            "She always watches squirrels when she eats her lunch in the park.",
+            "Barbara always watches squirrels."
+          ],
+          "explanation": "always → present simple: she watches"
+        },
+        {
+          "id": "ws-02-sec-h-q05",
+          "order": 5,
+          "prompt": "What are the ducks doing?",
+          "acceptedAnswers": [
+            "They are swimming in the pond.",
+            "The ducks are swimming in the pond.",
+            "They are swimming."
+          ],
+          "explanation": "present continuous: they are + -ing"
+        },
+        {
+          "id": "ws-02-sec-h-q06",
+          "order": 6,
+          "prompt": "How often does the policeman ride his horse?",
+          "acceptedAnswers": [
+            "He rides his horse every day.",
+            "He rides a horse in the park every day.",
+            "Every day.",
+            "He rides a horse every day."
+          ],
+          "explanation": "He rides a horse in the park every day."
+        },
+        {
+          "id": "ws-02-sec-h-q07",
+          "order": 7,
+          "prompt": "How often does the family have a picnic at the park?",
+          "acceptedAnswers": [
+            "They go on a picnic every week.",
+            "They have a picnic every week.",
+            "Every week.",
+            "They have a picnic at the park every week."
+          ],
+          "explanation": "They go on a picnic every week."
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-9",
+      "sectionKey": "I",
+      "instruction": "Write a verb in each blank. Use the correct forms of the VERBS:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-02-sec-i-q01",
+          "order": 1,
+          "prompt": "Can you [gap] a motorbike?",
+          "acceptedAnswers": [
+            "ride|drive"
+          ],
+          "explanation": "can + base verb; ride a motorbike"
+        },
+        {
+          "id": "ws-02-sec-i-q02",
+          "order": 2,
+          "prompt": "Tim can [gap] the guitar.",
+          "acceptedAnswers": [
+            "play"
+          ],
+          "explanation": "can + base verb; play an instrument"
+        },
+        {
+          "id": "ws-02-sec-i-q03",
+          "order": 3,
+          "prompt": "Sam is [gap] milk at the moment.",
+          "acceptedAnswers": [
+            "drinking"
+          ],
+          "explanation": "is + -ing (present continuous)"
+        },
+        {
+          "id": "ws-02-sec-i-q05",
+          "order": 5,
+          "prompt": "“Who is that lady?” “I don't [gap].”",
+          "acceptedAnswers": [
+            "know"
+          ],
+          "explanation": "don't + base verb"
+        },
+        {
+          "id": "ws-02-sec-i-q06",
+          "order": 6,
+          "prompt": "Emma can [gap] Spanish and German, but her sister can't.",
+          "acceptedAnswers": [
+            "speak"
+          ],
+          "explanation": "speak a language"
+        },
+        {
+          "id": "ws-02-sec-i-q07",
+          "order": 7,
+          "prompt": "I'm [gap] my homework now.",
+          "acceptedAnswers": [
+            "doing"
+          ],
+          "explanation": "do homework; am + -ing"
+        },
+        {
+          "id": "ws-02-sec-i-q08",
+          "order": 8,
+          "prompt": "“[gap] your name, please.” “G-A-R-R-Y.”",
+          "acceptedAnswers": [
+            "Spell"
+          ],
+          "explanation": "imperative: spell your name"
+        },
+        {
+          "id": "ws-02-sec-i-q10",
+          "order": 10,
+          "prompt": "Excuse me. Can I [gap] you a question?",
+          "acceptedAnswers": [
+            "ask"
+          ],
+          "explanation": "ask a question"
+        },
+        {
+          "id": "ws-02-sec-i-q11",
+          "order": 11,
+          "prompt": "Please go to the supermarket and [gap] some cheese.",
+          "acceptedAnswers": [
+            "buy|get"
+          ],
+          "explanation": "imperative: buy some cheese"
+        },
+        {
+          "id": "ws-02-sec-i-q12",
+          "order": 12,
+          "prompt": "He is [gap] water now because he is thirsty.",
+          "acceptedAnswers": [
+            "drinking"
+          ],
+          "explanation": "is + -ing (present continuous)"
+        },
+        {
+          "id": "ws-02-sec-i-q13",
+          "order": 13,
+          "prompt": "Every weekend they [gap] their grandparents.",
+          "acceptedAnswers": [
+            "visit|see"
+          ],
+          "explanation": "every weekend → present simple"
+        },
+        {
+          "id": "ws-02-sec-i-q14",
+          "order": 14,
+          "prompt": "Listen! Jack is [gap] a song.",
+          "acceptedAnswers": [
+            "singing"
+          ],
+          "explanation": "Listen! → present continuous"
+        },
+        {
+          "id": "ws-02-sec-i-q15",
+          "order": 15,
+          "prompt": "Can you [gap] me, please? I can't carry these bags.",
+          "acceptedAnswers": [
+            "help"
+          ],
+          "explanation": "can + base verb"
+        },
+        {
+          "id": "ws-02-sec-i-q16",
+          "order": 16,
+          "prompt": "My dog and his cat are [gap] now. My dog doesn't like cats.",
+          "acceptedAnswers": [
+            "fighting"
+          ],
+          "explanation": "are + -ing (present continuous)"
+        },
+        {
+          "id": "ws-02-sec-i-q17",
+          "order": 17,
+          "prompt": "There is a party in Ann's house. They are playing music and [gap].",
+          "acceptedAnswers": [
+            "dancing|singing"
+          ],
+          "explanation": "are playing … and dancing (same -ing form)"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-10",
+      "sectionKey": "J",
+      "instruction": "Use the CORRECT TENSE:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-02-sec-j-q01",
+          "order": 1,
+          "prompt": "Look! Jane [gap] (sing) again. She often [gap] (sing) this song.",
+          "acceptedAnswers": [
+            "is singing|'s singing / sings"
+          ],
+          "explanation": "Look! → continuous; often → simple"
+        },
+        {
+          "id": "ws-02-sec-j-q02",
+          "order": 2,
+          "prompt": "My father [gap] (have) a lot of work to do every weekend.",
+          "acceptedAnswers": [
+            "has"
+          ],
+          "explanation": "every weekend → present simple"
+        },
+        {
+          "id": "ws-02-sec-j-q03",
+          "order": 3,
+          "prompt": "The girls [gap] (not / talk) now. All of them [gap] (watch) a film.",
+          "acceptedAnswers": [
+            "aren't talking / are watching|'re watching"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-j-q04",
+          "order": 4,
+          "prompt": "[gap] you [gap] (like) watching TV?",
+          "acceptedAnswers": [
+            "Do / like"
+          ],
+          "explanation": "like is stative → Do you like …?"
+        },
+        {
+          "id": "ws-02-sec-j-q05",
+          "order": 5,
+          "prompt": "He [gap] (usually / go) at 9:00 o'clock, but this morning he [gap] (leave) home late.",
+          "acceptedAnswers": [
+            "usually goes / is leaving|'s leaving|left"
+          ],
+          "explanation": "usually → simple; this morning (exception) → continuous"
+        },
+        {
+          "id": "ws-02-sec-j-q06",
+          "order": 6,
+          "prompt": "I [gap] (visit) my grandparents every Friday. My sister [gap] (often / visit) them.",
+          "acceptedAnswers": [
+            "visit / often visits"
+          ],
+          "explanation": "routines → present simple"
+        },
+        {
+          "id": "ws-02-sec-j-q07",
+          "order": 7,
+          "prompt": "The boys [gap] (swim) in the pool now but they [gap] (usually / swim) in the sea.",
+          "acceptedAnswers": [
+            "are swimming|'re swimming / usually swim"
+          ],
+          "explanation": "now → continuous; usually → simple"
+        },
+        {
+          "id": "ws-02-sec-j-q08",
+          "order": 8,
+          "prompt": "She [gap] (write) a letter to her pen-friend at the moment.",
+          "acceptedAnswers": [
+            "is writing|'s writing"
+          ],
+          "explanation": "at the moment → present continuous"
+        },
+        {
+          "id": "ws-02-sec-j-q09",
+          "order": 9,
+          "prompt": "They [gap] (sometimes / have) lunch at work, but today they [gap] (have) at a restaurant.",
+          "acceptedAnswers": [
+            "sometimes have / are having|'re having|are having it|'re having it"
+          ],
+          "explanation": "sometimes → simple; today → continuous"
+        },
+        {
+          "id": "ws-02-sec-j-q10",
+          "order": 10,
+          "prompt": "She can't talk to you. She [gap] (have) a shower.",
+          "acceptedAnswers": [
+            "is having|'s having"
+          ],
+          "explanation": "happening now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-j-q11",
+          "order": 11,
+          "prompt": "“Where [gap] Alex [gap] (live)?” “In France.”",
+          "acceptedAnswers": [
+            "does / live"
+          ],
+          "explanation": "Where does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-j-q12",
+          "order": 12,
+          "prompt": "Tom [gap] (like / ride) a horse in his free time.",
+          "acceptedAnswers": [
+            "likes riding|likes to ride"
+          ],
+          "explanation": "likes + -ing / to-infinitive"
+        },
+        {
+          "id": "ws-02-sec-j-q13",
+          "order": 13,
+          "prompt": "The children [gap] (play) the piano and [gap] (sing) a song at the moment.",
+          "acceptedAnswers": [
+            "are playing|'re playing / singing|are singing"
+          ],
+          "explanation": "at the moment → present continuous"
+        },
+        {
+          "id": "ws-02-sec-j-q14",
+          "order": 14,
+          "prompt": "My mother [gap] (always / cook) in the morning.",
+          "acceptedAnswers": [
+            "always cooks"
+          ],
+          "explanation": "always + present simple"
+        },
+        {
+          "id": "ws-02-sec-j-q15",
+          "order": 15,
+          "prompt": "What [gap] (you / usually / do) at weekends?",
+          "acceptedAnswers": [
+            "do you usually do"
+          ],
+          "explanation": "What + do + subject + adverb + verb?"
+        },
+        {
+          "id": "ws-02-sec-j-q16",
+          "order": 16,
+          "prompt": "Jane [gap] (give) a party today because it [gap] (be) her birthday.",
+          "acceptedAnswers": [
+            "is giving|'s giving / is|'s"
+          ],
+          "explanation": "arrangement today → continuous; it is"
+        },
+        {
+          "id": "ws-02-sec-j-q17",
+          "order": 17,
+          "prompt": "The lesson [gap] (start) at 9 o'clock every morning.",
+          "acceptedAnswers": [
+            "starts"
+          ],
+          "explanation": "timetable / every morning → present simple"
+        },
+        {
+          "id": "ws-02-sec-j-q18",
+          "order": 18,
+          "prompt": "Adam is in his room now. He [gap] (write) a letter to his pen-friend. He [gap] (always / write) him a letter.",
+          "acceptedAnswers": [
+            "is writing|'s writing / always writes"
+          ],
+          "explanation": "now → continuous; always → simple"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-11",
+      "sectionKey": "K",
+      "instruction": "Answer the questions:",
+      "type": "reading_qa",
+      "questions": [
+        {
+          "id": "ws-02-sec-k-q01",
+          "order": 1,
+          "prompt": "How often do you walk to school?",
+          "acceptedAnswers": [],
+          "modelAnswer": "I usually walk to school.",
+          "explanation": "adverb of frequency + present simple"
+        },
+        {
+          "id": "ws-02-sec-k-q02",
+          "order": 2,
+          "prompt": "What do you do after school?",
+          "acceptedAnswers": [],
+          "modelAnswer": "I do my homework and play football after school.",
+          "explanation": "routine → present simple"
+        },
+        {
+          "id": "ws-02-sec-k-q03",
+          "order": 3,
+          "prompt": "What can you eat in an Italian restaurant?",
+          "acceptedAnswers": [],
+          "modelAnswer": "You can eat pizza and pasta in an Italian restaurant.",
+          "explanation": "can + base verb"
+        },
+        {
+          "id": "ws-02-sec-k-q04",
+          "order": 4,
+          "prompt": "Where does a doctor work?",
+          "acceptedAnswers": [
+            "A doctor works in a hospital.",
+            "He works in a hospital.",
+            "In a hospital.",
+            "A doctor works in a hospital or a clinic."
+          ],
+          "explanation": "a doctor works (third person -s)"
+        },
+        {
+          "id": "ws-02-sec-k-q05",
+          "order": 5,
+          "prompt": "What are you going to do next Saturday?",
+          "acceptedAnswers": [],
+          "modelAnswer": "I am going to visit my grandparents next Saturday.",
+          "explanation": "be going to + base verb for plans"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-12",
+      "sectionKey": "L",
+      "instruction": "Ask questions for the underlined words (the underlined part is shown in brackets):",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-02-sec-l-q01",
+          "order": 1,
+          "prompt": "George often has a bath. (underlined: often)",
+          "underlinedPart": "often",
+          "acceptedAnswers": [
+            "How often does George have a bath?"
+          ],
+          "explanation": "frequency → How often does …?"
+        },
+        {
+          "id": "ws-02-sec-l-q02",
+          "order": 2,
+          "prompt": "Mike eats corn-flakes for breakfast every morning. (underlined: corn-flakes)",
+          "underlinedPart": "corn-flakes",
+          "acceptedAnswers": [
+            "What does Mike eat for breakfast every morning?",
+            "What does Mike eat for breakfast?"
+          ],
+          "explanation": "thing → What does … eat?"
+        },
+        {
+          "id": "ws-02-sec-l-q03",
+          "order": 3,
+          "prompt": "The teacher is writing some examples on the board. (underlined: some examples)",
+          "underlinedPart": "some examples",
+          "acceptedAnswers": [
+            "What is the teacher writing on the board?"
+          ],
+          "explanation": "thing → What is … writing?"
+        },
+        {
+          "id": "ws-02-sec-l-q04",
+          "order": 4,
+          "prompt": "Tom is watching a film now. (underlined: watching a film)",
+          "underlinedPart": "watching a film",
+          "acceptedAnswers": [
+            "What is Tom doing now?",
+            "What is Tom doing?"
+          ],
+          "explanation": "activity → What is … doing?"
+        },
+        {
+          "id": "ws-02-sec-l-q05",
+          "order": 5,
+          "prompt": "My parents never smoke cigarettes. (underlined: never)",
+          "underlinedPart": "never",
+          "acceptedAnswers": [
+            "How often do your parents smoke cigarettes?",
+            "How often do your parents smoke?"
+          ],
+          "explanation": "frequency → How often do …?"
+        },
+        {
+          "id": "ws-02-sec-l-q06",
+          "order": 6,
+          "prompt": "Peter and Rob go to school by service bus. (underlined: by service bus)",
+          "underlinedPart": "by service bus",
+          "acceptedAnswers": [
+            "How do Peter and Rob go to school?"
+          ],
+          "explanation": "means of transport → How do …?"
+        },
+        {
+          "id": "ws-02-sec-l-q07",
+          "order": 7,
+          "prompt": "Sam is doing his homework in his room. (underlined: in his room)",
+          "underlinedPart": "in his room",
+          "acceptedAnswers": [
+            "Where is Sam doing his homework?"
+          ],
+          "explanation": "place → Where is … doing?"
+        },
+        {
+          "id": "ws-02-sec-l-q08",
+          "order": 8,
+          "prompt": "I read two books every month. (underlined: two books)",
+          "underlinedPart": "two books",
+          "acceptedAnswers": [
+            "How many books do you read every month?",
+            "How many books do you read a month?"
+          ],
+          "explanation": "number → How many + plural noun …?"
+        },
+        {
+          "id": "ws-02-sec-l-q09",
+          "order": 9,
+          "prompt": "I can't understand Hans because I don't know German. (underlined: because I don't know German)",
+          "underlinedPart": "because I don't know German",
+          "acceptedAnswers": [
+            "Why can't you understand Hans?"
+          ],
+          "explanation": "reason → Why …?"
+        },
+        {
+          "id": "ws-02-sec-l-q10",
+          "order": 10,
+          "prompt": "No, Sally isn't writing a letter now. (underlined: No)",
+          "underlinedPart": "No",
+          "acceptedAnswers": [
+            "Is Sally writing a letter now?",
+            "Is Sally writing a letter?"
+          ],
+          "explanation": "Yes/No answer → Is + subject + -ing?"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-13",
+      "sectionKey": "M",
+      "instruction": "Write a question word in each blank (for example: When, How, Why, How many …) and then match the questions with the answers. Type the question word, then the letter of the answer.",
+      "type": "inline_gap_fill",
+      "contextText": "a) Because I'm hungry.\nb) Fine.\nc) Germany.\nd) Mary.\ne) In the garden.\nf) In June.\ng) It is half past two.\nh) 5.\ni) Tuesday.\nj) Six.",
+      "questions": [
+        {
+          "id": "ws-02-sec-m-q01",
+          "order": 1,
+          "prompt": "[gap] is your music lesson? → answer [gap]",
+          "acceptedAnswers": [
+            "When / i"
+          ],
+          "explanation": "time/day → When"
+        },
+        {
+          "id": "ws-02-sec-m-q02",
+          "order": 2,
+          "prompt": "[gap] is it? → answer [gap]",
+          "acceptedAnswers": [
+            "What time / g"
+          ],
+          "explanation": "clock time → What time"
+        },
+        {
+          "id": "ws-02-sec-m-q03",
+          "order": 3,
+          "prompt": "[gap] books are there in your bag? → answer [gap]",
+          "acceptedAnswers": [
+            "How many / h|j"
+          ],
+          "explanation": "number of countable things → How many"
+        },
+        {
+          "id": "ws-02-sec-m-q04",
+          "order": 4,
+          "prompt": "[gap] likes James? → answer [gap]",
+          "acceptedAnswers": [
+            "Who / d"
+          ],
+          "explanation": "person (subject) → Who"
+        },
+        {
+          "id": "ws-02-sec-m-q05",
+          "order": 5,
+          "prompt": "[gap] is your watch? → answer [gap]",
+          "acceptedAnswers": [
+            "Where / e"
+          ],
+          "explanation": "place → Where"
+        },
+        {
+          "id": "ws-02-sec-m-q06",
+          "order": 6,
+          "prompt": "[gap] are you? → answer [gap]",
+          "acceptedAnswers": [
+            "How / b"
+          ],
+          "explanation": "How are you? → Fine."
+        },
+        {
+          "id": "ws-02-sec-m-q07",
+          "order": 7,
+          "prompt": "[gap] are the children? → answer [gap]",
+          "acceptedAnswers": [
+            "How old / j|h"
+          ],
+          "explanation": "age → How old"
+        },
+        {
+          "id": "ws-02-sec-m-q08",
+          "order": 8,
+          "prompt": "[gap] your father's birthday? → answer [gap]",
+          "acceptedAnswers": [
+            "When is|When's / f"
+          ],
+          "explanation": "When is …? (the blank needs the verb is too)"
+        },
+        {
+          "id": "ws-02-sec-m-q09",
+          "order": 9,
+          "prompt": "[gap] do you want a sandwich? → answer [gap]",
+          "acceptedAnswers": [
+            "Why / a"
+          ],
+          "explanation": "reason → Why (answer: Because …)"
+        },
+        {
+          "id": "ws-02-sec-m-q10",
+          "order": 10,
+          "prompt": "[gap] is she from? → answer [gap]",
+          "acceptedAnswers": [
+            "Where / c"
+          ],
+          "explanation": "origin → Where … from?"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-14",
+      "sectionKey": "N",
+      "instruction": "Build up sentences:",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-02-sec-n-q01",
+          "order": 1,
+          "prompt": "He / like watching TV / but / he / not / watch / at the moment / because / he / sleep",
+          "acceptedAnswers": [
+            "He likes watching TV but he isn't watching at the moment because he is sleeping.",
+            "He likes watching TV but he isn't watching it at the moment because he is sleeping.",
+            "He likes watching TV, but he isn't watching TV at the moment because he is sleeping."
+          ],
+          "explanation": "like (habit) → simple; at the moment → continuous"
+        },
+        {
+          "id": "ws-02-sec-n-q02",
+          "order": 2,
+          "prompt": "What / Wendy / do / at the moment / ? // She / clean / her teeth / bathroom",
+          "acceptedAnswers": [
+            "What is Wendy doing at the moment? She is cleaning her teeth in the bathroom."
+          ],
+          "explanation": "at the moment → present continuous"
+        },
+        {
+          "id": "ws-02-sec-n-q03",
+          "order": 3,
+          "prompt": "mother / can (-) / help me / now / because / she / cook / kitchen",
+          "acceptedAnswers": [
+            "My mother can't help me now because she is cooking in the kitchen.",
+            "Mother can't help me now because she is cooking in the kitchen.",
+            "My mother cannot help me now because she is cooking in the kitchen."
+          ],
+          "explanation": "can't + base verb; now → continuous"
+        },
+        {
+          "id": "ws-02-sec-n-q04",
+          "order": 4,
+          "prompt": "Where / your cousin / live / ? // She / live / Sydney / Australia",
+          "acceptedAnswers": [
+            "Where does your cousin live? She lives in Sydney, Australia.",
+            "Where does your cousin live? She lives in Sydney in Australia."
+          ],
+          "explanation": "permanent fact → present simple"
+        },
+        {
+          "id": "ws-02-sec-n-q05",
+          "order": 5,
+          "prompt": "Why / you / eat / sandwich / now / ? // Because / I / be / hungry",
+          "acceptedAnswers": [
+            "Why are you eating a sandwich now? Because I am hungry.",
+            "Why are you eating the sandwich now? Because I am hungry.",
+            "Why are you eating a sandwich now? Because I'm hungry."
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-02-sec-n-q06",
+          "order": 6,
+          "prompt": "Tim / usually / go / work / bicycle",
+          "acceptedAnswers": [
+            "Tim usually goes to work by bicycle."
+          ],
+          "explanation": "usually → present simple; by + transport"
+        },
+        {
+          "id": "ws-02-sec-n-q07",
+          "order": 7,
+          "prompt": "children / play / games / everyday",
+          "acceptedAnswers": [
+            "The children play games every day.",
+            "Children play games every day.",
+            "The children play games everyday.",
+            "Children play games everyday."
+          ],
+          "explanation": "every day → present simple (plural: no -s)"
+        },
+        {
+          "id": "ws-02-sec-n-q08",
+          "order": 8,
+          "prompt": "My brother / can (-) / play / tennis / because / he / not / have / racket",
+          "acceptedAnswers": [
+            "My brother can't play tennis because he doesn't have a racket.",
+            "My brother cannot play tennis because he doesn't have a racket.",
+            "My brother can't play tennis because he hasn't got a racket."
+          ],
+          "explanation": "he + doesn't have"
+        },
+        {
+          "id": "ws-02-sec-n-q09",
+          "order": 9,
+          "prompt": "How often / mother / cook / pizza / ?",
+          "acceptedAnswers": [
+            "How often does your mother cook pizza?",
+            "How often does mother cook pizza?",
+            "How often does my mother cook pizza?",
+            "How often does your mother cook pizzas?"
+          ],
+          "explanation": "How often + does + subject + base verb?"
+        },
+        {
+          "id": "ws-02-sec-n-q10",
+          "order": 10,
+          "prompt": "My parents / not / like / roller-skates / because / they / be / dangerous",
+          "acceptedAnswers": [
+            "My parents don't like roller-skates because they are dangerous.",
+            "My parents don't like roller skates because they are dangerous."
+          ],
+          "explanation": "plural subject → don't like"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-15",
+      "sectionKey": "O",
+      "instruction": "Read the paragraphs and answer the questions:",
+      "type": "reading_qa",
+      "contextText": "1) Hello! My name is Douglas Hunter. I'm a pilot for British Airlines. I fly planes. I am not working today. I am playing golf. It is my favorite sport.\n\n2) He is Gordon Lester. He is a champion jockey. He rides racehorses, but he isn't riding a racehorse now. He is dancing with his wife.\n\n3) They are Bob and Michael. They teach English in a school. They aren't teaching now. They are in the pub. They're talking and laughing.\n\n4) She is Rosalind Graham. She is a ballet dancer. She dances for Royal Ballet. She isn't dancing now. She is having a bath.",
+      "questions": [
+        {
+          "id": "ws-03-sec-a-q01",
+          "order": 1,
+          "prompt": "Douglas: What is his name?",
+          "acceptedAnswers": [
+            "His name is Douglas Hunter.",
+            "Douglas Hunter.",
+            "He is Douglas Hunter."
+          ],
+          "explanation": "Paragraph 1"
+        },
+        {
+          "id": "ws-03-sec-a-q02",
+          "order": 2,
+          "prompt": "Douglas: What does he do?",
+          "acceptedAnswers": [
+            "He is a pilot.",
+            "He is a pilot for British Airlines.",
+            "He flies planes.",
+            "He is a pilot. He flies planes."
+          ],
+          "explanation": "What does he do? = his job (present simple)"
+        },
+        {
+          "id": "ws-03-sec-a-q03",
+          "order": 3,
+          "prompt": "Douglas: What is he doing now?",
+          "acceptedAnswers": [
+            "He is playing golf.",
+            "He is playing golf now."
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-03-sec-a-q04",
+          "order": 4,
+          "prompt": "Douglas: What is his favorite sport?",
+          "acceptedAnswers": [
+            "His favorite sport is golf.",
+            "His favourite sport is golf.",
+            "It is golf.",
+            "Golf."
+          ],
+          "explanation": "Paragraph 1"
+        },
+        {
+          "id": "ws-03-sec-a-q05",
+          "order": 5,
+          "prompt": "Gordon: What is his name?",
+          "acceptedAnswers": [
+            "His name is Gordon Lester.",
+            "Gordon Lester.",
+            "He is Gordon Lester."
+          ],
+          "explanation": "Paragraph 2"
+        },
+        {
+          "id": "ws-03-sec-a-q06",
+          "order": 6,
+          "prompt": "Gordon: What does he do?",
+          "acceptedAnswers": [
+            "He is a jockey.",
+            "He is a champion jockey.",
+            "He rides racehorses.",
+            "He is a champion jockey. He rides racehorses."
+          ],
+          "explanation": "What does he do? = his job (present simple)"
+        },
+        {
+          "id": "ws-03-sec-a-q07",
+          "order": 7,
+          "prompt": "Gordon: Is he a good jockey?",
+          "acceptedAnswers": [
+            "Yes, he is.",
+            "Yes, he is. He is a champion jockey.",
+            "Yes, he is a champion jockey.",
+            "Yes, he is a good jockey."
+          ],
+          "explanation": "He is a champion jockey → yes"
+        },
+        {
+          "id": "ws-03-sec-a-q08",
+          "order": 8,
+          "prompt": "Gordon: Where is he now?",
+          "acceptedAnswers": [],
+          "modelAnswer": "He is at a dance with his wife.",
+          "explanation": "The text only says he is dancing with his wife."
+        },
+        {
+          "id": "ws-03-sec-a-q09",
+          "order": 9,
+          "prompt": "Gordon: What is he doing?",
+          "acceptedAnswers": [
+            "He is dancing with his wife.",
+            "He is dancing."
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-03-sec-a-q10",
+          "order": 10,
+          "prompt": "Gordon: Who is he with?",
+          "acceptedAnswers": [
+            "He is with his wife.",
+            "His wife.",
+            "With his wife."
+          ],
+          "explanation": "He is dancing with his wife."
+        },
+        {
+          "id": "ws-03-sec-a-q11",
+          "order": 11,
+          "prompt": "Bob and Michael: Who are they?",
+          "acceptedAnswers": [
+            "They are Bob and Michael.",
+            "They are teachers.",
+            "They are Bob and Michael. They are teachers.",
+            "They are English teachers."
+          ],
+          "explanation": "Paragraph 3"
+        },
+        {
+          "id": "ws-03-sec-a-q12",
+          "order": 12,
+          "prompt": "Bob and Michael: Do they teach?",
+          "acceptedAnswers": [
+            "Yes, they do.",
+            "Yes, they do. They teach English."
+          ],
+          "explanation": "Do …? → Yes, they do."
+        },
+        {
+          "id": "ws-03-sec-a-q13",
+          "order": 13,
+          "prompt": "Bob and Michael: What do they teach?",
+          "acceptedAnswers": [
+            "They teach English.",
+            "English.",
+            "They teach English in a school."
+          ],
+          "explanation": "present simple: they teach"
+        },
+        {
+          "id": "ws-03-sec-a-q14",
+          "order": 14,
+          "prompt": "Bob and Michael: Where are they now?",
+          "acceptedAnswers": [
+            "They are in the pub.",
+            "In the pub.",
+            "They are at the pub."
+          ],
+          "explanation": "Paragraph 3"
+        },
+        {
+          "id": "ws-03-sec-a-q15",
+          "order": 15,
+          "prompt": "Bob and Michael: What are they doing now?",
+          "acceptedAnswers": [
+            "They are talking and laughing.",
+            "They are talking and laughing in the pub."
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-03-sec-a-q16",
+          "order": 16,
+          "prompt": "Rosalind: What is her name?",
+          "acceptedAnswers": [
+            "Her name is Rosalind Graham.",
+            "Rosalind Graham.",
+            "She is Rosalind Graham."
+          ],
+          "explanation": "Paragraph 4"
+        },
+        {
+          "id": "ws-03-sec-a-q17",
+          "order": 17,
+          "prompt": "Rosalind: What does she do?",
+          "acceptedAnswers": [
+            "She is a ballet dancer.",
+            "She dances for Royal Ballet.",
+            "She dances for the Royal Ballet.",
+            "She is a ballet dancer. She dances for Royal Ballet."
+          ],
+          "explanation": "What does she do? = her job"
+        },
+        {
+          "id": "ws-03-sec-a-q18",
+          "order": 18,
+          "prompt": "Rosalind: Is she dancing now?",
+          "acceptedAnswers": [
+            "No, she isn't.",
+            "No, she isn't dancing now.",
+            "No, she isn't. She is having a bath."
+          ],
+          "explanation": "Is she …? → No, she isn't."
+        },
+        {
+          "id": "ws-03-sec-a-q19",
+          "order": 19,
+          "prompt": "Rosalind: What is she doing?",
+          "acceptedAnswers": [
+            "She is having a bath.",
+            "She is having a bath now."
+          ],
+          "explanation": "now → present continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-16",
+      "sectionKey": "P",
+      "instruction": "Write DON’T, DOESN’T, ISN’T, AREN’T or AM NOT in the blank space in each sentence: (Examples: a. He isn’t listening to the radio right now. b. He doesn’t listen to the radio every evening.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-b-q03",
+          "order": 3,
+          "prompt": "c. We [gap] watching a television program now.",
+          "acceptedAnswers": [
+            "aren't"
+          ],
+          "explanation": "we + aren't + -ing (continuous)"
+        },
+        {
+          "id": "ws-03-sec-b-q04",
+          "order": 4,
+          "prompt": "d. We [gap] watch television every day.",
+          "acceptedAnswers": [
+            "don't"
+          ],
+          "explanation": "we + don't + base verb (simple)"
+        },
+        {
+          "id": "ws-03-sec-b-q05",
+          "order": 5,
+          "prompt": "e. They [gap] study their lessons after class.",
+          "acceptedAnswers": [
+            "don't"
+          ],
+          "explanation": "they + don't + base verb"
+        },
+        {
+          "id": "ws-03-sec-b-q06",
+          "order": 6,
+          "prompt": "f. They [gap] studying their lessons right now.",
+          "acceptedAnswers": [
+            "aren't"
+          ],
+          "explanation": "they + aren't + -ing"
+        },
+        {
+          "id": "ws-03-sec-b-q07",
+          "order": 7,
+          "prompt": "g. It [gap] raining very hard right at the moment.",
+          "acceptedAnswers": [
+            "isn't"
+          ],
+          "explanation": "it + isn't + -ing"
+        },
+        {
+          "id": "ws-03-sec-b-q08",
+          "order": 8,
+          "prompt": "h. It [gap] rain very much during the summer.",
+          "acceptedAnswers": [
+            "doesn't"
+          ],
+          "explanation": "it + doesn't + base verb"
+        },
+        {
+          "id": "ws-03-sec-b-q09",
+          "order": 9,
+          "prompt": "i. Mr. Johnson [gap] eating his lunch now.",
+          "acceptedAnswers": [
+            "isn't"
+          ],
+          "explanation": "he + isn't + -ing"
+        },
+        {
+          "id": "ws-03-sec-b-q10",
+          "order": 10,
+          "prompt": "j. Mr. Johnson [gap] always eat at that place.",
+          "acceptedAnswers": [
+            "doesn't"
+          ],
+          "explanation": "he + doesn't + base verb"
+        },
+        {
+          "id": "ws-03-sec-b-q11",
+          "order": 11,
+          "prompt": "k. I [gap] see any students in that room.",
+          "acceptedAnswers": [
+            "don't"
+          ],
+          "explanation": "I + don't + base verb (see is stative)"
+        },
+        {
+          "id": "ws-03-sec-b-q12",
+          "order": 12,
+          "prompt": "l. I [gap] hear anyone in the hall now.",
+          "acceptedAnswers": [
+            "don't"
+          ],
+          "explanation": "hear is stative; base verb → don't"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-17",
+      "sectionKey": "Q",
+      "instruction": "Complete the sentences with your own ideas (present simple or present continuous):",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-c-q01",
+          "order": 1,
+          "prompt": "Every Monday my father [gap] because [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "Every Monday my father gets up early because he starts work at 7 o'clock.",
+          "explanation": "every Monday → present simple"
+        },
+        {
+          "id": "ws-03-sec-c-q02",
+          "order": 2,
+          "prompt": "Linda usually [gap] but she [gap] today.",
+          "acceptedAnswers": [],
+          "modelAnswer": "Linda usually walks to school but she is going by bus today.",
+          "explanation": "usually → simple; today → continuous"
+        },
+        {
+          "id": "ws-03-sec-c-q03",
+          "order": 3,
+          "prompt": "I want to buy a [gap] because [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "I want to buy a new bike because my old bike is broken.",
+          "explanation": "want is stative → present simple"
+        },
+        {
+          "id": "ws-03-sec-c-q04",
+          "order": 4,
+          "prompt": "My teacher often [gap] but today [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "My teacher often gives us homework but today she isn't giving us any.",
+          "explanation": "often → simple; today → continuous"
+        },
+        {
+          "id": "ws-03-sec-c-q05",
+          "order": 5,
+          "prompt": "At the moment the children [gap]. They often [gap].",
+          "acceptedAnswers": [],
+          "modelAnswer": "At the moment the children are playing in the garden. They often play there after school.",
+          "explanation": "at the moment → continuous; often → simple"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-18",
+      "sectionKey": "R",
+      "instruction": "Read the following text and answer the questions. Questions 11–15: write True or False.",
+      "type": "reading_qa",
+      "contextText": "My name is Kate O'Hara. I live on a farm with my mother and father. I like it but I work very hard. Every morning I wake up at five o'clock and feed the horses. Then I can go back to the house. Mum makes breakfast at 5:30 and I'm not late for breakfast because I don't like cold eggs. After breakfast I help dad for an hour. Then I have a shower and get ready for school. The school bus leaves at 8:15. I leave home at 8:00.\nAfter school I can watch TV for an hour. Then we have our dinner. We have chicken for dinner but I hate it. I eat it because mum gets angry. After dinner I do my homework. Then I go out and feed the horses. I go to bed early because I'm always very tired at the end of the day.",
+      "questions": [
+        {
+          "id": "ws-03-sec-d-q01",
+          "order": 1,
+          "prompt": "Where does Kate live?",
+          "acceptedAnswers": [
+            "She lives on a farm.",
+            "She lives on a farm with her mother and father.",
+            "She lives on a farm with her parents.",
+            "On a farm."
+          ],
+          "explanation": "she lives (third person -s)"
+        },
+        {
+          "id": "ws-03-sec-d-q02",
+          "order": 2,
+          "prompt": "What time does she get up every morning?",
+          "acceptedAnswers": [
+            "She gets up at five o'clock.",
+            "She wakes up at five o'clock.",
+            "She gets up at 5 o'clock.",
+            "At five o'clock."
+          ],
+          "explanation": "Every morning I wake up at five o'clock."
+        },
+        {
+          "id": "ws-03-sec-d-q03",
+          "order": 3,
+          "prompt": "Who makes breakfast every morning?",
+          "acceptedAnswers": [
+            "Her mum makes breakfast.",
+            "Her mother makes breakfast.",
+            "Mum makes breakfast.",
+            "Her mum does."
+          ],
+          "explanation": "Mum makes breakfast at 5:30."
+        },
+        {
+          "id": "ws-03-sec-d-q04",
+          "order": 4,
+          "prompt": "Why isn't she late for breakfast?",
+          "acceptedAnswers": [
+            "Because she doesn't like cold eggs.",
+            "She isn't late because she doesn't like cold eggs."
+          ],
+          "explanation": "because + reason"
+        },
+        {
+          "id": "ws-03-sec-d-q05",
+          "order": 5,
+          "prompt": "When does she have a shower?",
+          "acceptedAnswers": [
+            "She has a shower after she helps her dad.",
+            "After she helps her dad for an hour.",
+            "She has a shower after helping her dad.",
+            "She has a shower after she helps her dad for an hour."
+          ],
+          "explanation": "After breakfast she helps dad, then has a shower."
+        },
+        {
+          "id": "ws-03-sec-d-q06",
+          "order": 6,
+          "prompt": "What time does she catch the school bus?",
+          "acceptedAnswers": [
+            "She catches the school bus at 8:15.",
+            "At 8:15.",
+            "She catches the school bus at a quarter past eight.",
+            "She catches it at 8:15."
+          ],
+          "explanation": "The school bus leaves at 8:15."
+        },
+        {
+          "id": "ws-03-sec-d-q07",
+          "order": 7,
+          "prompt": "How long can she watch TV?",
+          "acceptedAnswers": [
+            "She can watch TV for an hour.",
+            "For an hour.",
+            "She can watch TV for one hour.",
+            "For one hour."
+          ],
+          "explanation": "How long → for + period"
+        },
+        {
+          "id": "ws-03-sec-d-q08",
+          "order": 8,
+          "prompt": "What do they have for dinner?",
+          "acceptedAnswers": [
+            "They have chicken for dinner.",
+            "They have chicken.",
+            "Chicken."
+          ],
+          "explanation": "We have chicken for dinner."
+        },
+        {
+          "id": "ws-03-sec-d-q09",
+          "order": 9,
+          "prompt": "When does she do her homework?",
+          "acceptedAnswers": [
+            "She does her homework after dinner.",
+            "After dinner."
+          ],
+          "explanation": "After dinner I do my homework."
+        },
+        {
+          "id": "ws-03-sec-d-q10",
+          "order": 10,
+          "prompt": "Why does she go to bed early?",
+          "acceptedAnswers": [
+            "Because she is always very tired at the end of the day.",
+            "Because she is very tired.",
+            "Because she is always very tired.",
+            "Because she is tired."
+          ],
+          "explanation": "because + reason"
+        },
+        {
+          "id": "ws-03-sec-d-q11",
+          "order": 11,
+          "prompt": "She doesn't like the farm. (True or False?)",
+          "acceptedAnswers": [
+            "False",
+            "F"
+          ],
+          "explanation": "“I like it but I work very hard.”"
+        },
+        {
+          "id": "ws-03-sec-d-q12",
+          "order": 12,
+          "prompt": "Kate doesn't work very hard. (True or False?)",
+          "acceptedAnswers": [
+            "False",
+            "F"
+          ],
+          "explanation": "“I work very hard.”"
+        },
+        {
+          "id": "ws-03-sec-d-q13",
+          "order": 13,
+          "prompt": "Kate has a shower before 8:15. (True or False?)",
+          "acceptedAnswers": [
+            "True",
+            "T"
+          ],
+          "explanation": "She showers, then leaves home at 8:00."
+        },
+        {
+          "id": "ws-03-sec-d-q14",
+          "order": 14,
+          "prompt": "Kate's mother doesn't like chicken. (True or False?)",
+          "acceptedAnswers": [
+            "False",
+            "F"
+          ],
+          "explanation": "It is Kate who hates chicken."
+        },
+        {
+          "id": "ws-03-sec-d-q15",
+          "order": 15,
+          "prompt": "After dinner Kate feeds the horses. (True or False?)",
+          "acceptedAnswers": [
+            "True",
+            "T"
+          ],
+          "explanation": "After dinner: homework, then she feeds the horses."
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-19",
+      "sectionKey": "S",
+      "instruction": "Complete the sentences using DO / DOES / AM / IS / ARE / HAVE GOT / HAS GOT:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-03-sec-e-q01",
+          "order": 1,
+          "prompt": "[gap] the children want toys for their birthday?",
+          "acceptedAnswers": [
+            "Do"
+          ],
+          "explanation": "plural subject + base verb → Do"
+        },
+        {
+          "id": "ws-03-sec-e-q02",
+          "order": 2,
+          "prompt": "Dazzle [gap] a new dress for the party.",
+          "acceptedAnswers": [
+            "has got|has"
+          ],
+          "explanation": "she → has got"
+        },
+        {
+          "id": "ws-03-sec-e-q03",
+          "order": 3,
+          "prompt": "When [gap] your brother's birthday?",
+          "acceptedAnswers": [
+            "is"
+          ],
+          "explanation": "singular noun → is"
+        },
+        {
+          "id": "ws-03-sec-e-q04",
+          "order": 4,
+          "prompt": "How much [gap] these glasses? “80.”",
+          "acceptedAnswers": [
+            "are"
+          ],
+          "explanation": "plural (these glasses) → are"
+        },
+        {
+          "id": "ws-03-sec-e-q05",
+          "order": 5,
+          "prompt": "Mr. and Mrs. Jackson [gap] two children.",
+          "acceptedAnswers": [
+            "have got|have"
+          ],
+          "explanation": "they → have got"
+        },
+        {
+          "id": "ws-03-sec-e-q06",
+          "order": 6,
+          "prompt": "[gap] your uncle like chocolate?",
+          "acceptedAnswers": [
+            "Does"
+          ],
+          "explanation": "he + base verb → Does"
+        },
+        {
+          "id": "ws-03-sec-e-q07",
+          "order": 7,
+          "prompt": "[gap] I your friend?",
+          "acceptedAnswers": [
+            "Am"
+          ],
+          "explanation": "I → am"
+        },
+        {
+          "id": "ws-03-sec-e-q08",
+          "order": 8,
+          "prompt": "How much [gap] your new tennis racket?",
+          "acceptedAnswers": [
+            "is"
+          ],
+          "explanation": "singular noun → is"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-20",
+      "sectionKey": "T",
+      "instruction": "Choose the correct answer:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-03-sec-f-q01",
+          "order": 1,
+          "prompt": "Look! Thomas [gap] his little sister to class.",
+          "options": [
+            "a) is bringing",
+            "b) brings"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "Look! → present continuous"
+        },
+        {
+          "id": "ws-03-sec-f-q02",
+          "order": 2,
+          "prompt": "My older sister [gap] to pop music.",
+          "options": [
+            "a) is often listening",
+            "b) often listens"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "often → present simple"
+        },
+        {
+          "id": "ws-03-sec-f-q03",
+          "order": 3,
+          "prompt": "We [gap] an exercise now.",
+          "options": [
+            "a) are writing",
+            "b) write"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-03-sec-f-q04",
+          "order": 4,
+          "prompt": "Mmmm! Mum [gap] a cake.",
+          "options": [
+            "a) is making",
+            "b) makes"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "happening now → present continuous"
+        },
+        {
+          "id": "ws-03-sec-f-q05",
+          "order": 5,
+          "prompt": "Our teacher [gap] us a test every month.",
+          "options": [
+            "a) is giving",
+            "b) gives"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "every month → present simple"
+        },
+        {
+          "id": "ws-03-sec-f-q06",
+          "order": 6,
+          "prompt": "Listen! Dad [gap] a story to Ricky.",
+          "options": [
+            "a) is reading",
+            "b) reads"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "Listen! → present continuous"
+        },
+        {
+          "id": "ws-03-sec-f-q07",
+          "order": 7,
+          "prompt": "Mr. Michael usually [gap] roses in his garden.",
+          "options": [
+            "a) is growing",
+            "b) grows"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "usually → present simple"
+        },
+        {
+          "id": "ws-03-sec-f-q08",
+          "order": 8,
+          "prompt": "They [gap] a new house on the hill now.",
+          "options": [
+            "a) are building",
+            "b) build"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "now → present continuous"
+        },
+        {
+          "id": "ws-03-sec-f-q09",
+          "order": 9,
+          "prompt": "Maria [gap] milk every morning.",
+          "options": [
+            "a) is drinking",
+            "b) drinks"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "every morning → present simple"
+        },
+        {
+          "id": "ws-03-sec-f-q10",
+          "order": 10,
+          "prompt": "Look! Nick [gap] down the hill.",
+          "options": [
+            "a) is running",
+            "b) runs"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "Look! → present continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-21",
+      "sectionKey": "U",
+      "instruction": "Change the following sentences into POSITIVE (+), NEGATIVE (-) and QUESTION (?) form:",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-03-sec-g-q01",
+          "order": 1,
+          "prompt": "You know the answer. → (-)",
+          "acceptedAnswers": [
+            "You don't know the answer."
+          ],
+          "explanation": "don't + base verb"
+        },
+        {
+          "id": "ws-03-sec-g-q02",
+          "order": 2,
+          "prompt": "You know the answer. → (?)",
+          "acceptedAnswers": [
+            "Do you know the answer?"
+          ],
+          "explanation": "Do + you + base verb?"
+        },
+        {
+          "id": "ws-03-sec-g-q03",
+          "order": 3,
+          "prompt": "He has breakfast at 8 o'clock. → (-)",
+          "acceptedAnswers": [
+            "He doesn't have breakfast at 8 o'clock.",
+            "He doesn't have breakfast at eight o'clock."
+          ],
+          "explanation": "doesn't + base verb (has → have)"
+        },
+        {
+          "id": "ws-03-sec-g-q04",
+          "order": 4,
+          "prompt": "He has breakfast at 8 o'clock. → (?)",
+          "acceptedAnswers": [
+            "Does he have breakfast at 8 o'clock?",
+            "Does he have breakfast at eight o'clock?"
+          ],
+          "explanation": "Does + he + base verb?"
+        },
+        {
+          "id": "ws-03-sec-g-q05",
+          "order": 5,
+          "prompt": "Some schoolgirls don't wear uniforms. → (+)",
+          "acceptedAnswers": [
+            "Some schoolgirls wear uniforms."
+          ],
+          "explanation": "remove don't"
+        },
+        {
+          "id": "ws-03-sec-g-q06",
+          "order": 6,
+          "prompt": "Some schoolgirls don't wear uniforms. → (?)",
+          "acceptedAnswers": [
+            "Do some schoolgirls wear uniforms?",
+            "Don't some schoolgirls wear uniforms?"
+          ],
+          "explanation": "Do + subject + base verb?"
+        },
+        {
+          "id": "ws-03-sec-g-q07",
+          "order": 7,
+          "prompt": "Does she cut her husband's hair? → (+)",
+          "acceptedAnswers": [
+            "She cuts her husband's hair."
+          ],
+          "explanation": "she + verb-s"
+        },
+        {
+          "id": "ws-03-sec-g-q08",
+          "order": 8,
+          "prompt": "Does she cut her husband's hair? → (-)",
+          "acceptedAnswers": [
+            "She doesn't cut her husband's hair."
+          ],
+          "explanation": "doesn't + base verb"
+        },
+        {
+          "id": "ws-03-sec-g-q09",
+          "order": 9,
+          "prompt": "She does her homework every day. → (-)",
+          "acceptedAnswers": [
+            "She doesn't do her homework every day.",
+            "She doesn't do her homework everyday."
+          ],
+          "explanation": "doesn't + do (main verb)"
+        },
+        {
+          "id": "ws-03-sec-g-q10",
+          "order": 10,
+          "prompt": "She does her homework every day. → (?)",
+          "acceptedAnswers": [
+            "Does she do her homework every day?",
+            "Does she do her homework everyday?"
+          ],
+          "explanation": "Does + she + do …?"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-22",
+      "sectionKey": "V",
+      "instruction": "Supply PRESENT CONTINUOUS TENSE in the blanks:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-03-sec-h-q01",
+          "order": 1,
+          "prompt": "He [gap] (teach) his son to ride a bike.",
+          "acceptedAnswers": [
+            "is teaching|'s teaching"
+          ],
+          "explanation": "he + is + -ing"
+        },
+        {
+          "id": "ws-03-sec-h-q02",
+          "order": 2,
+          "prompt": "A: Why [gap] Ann [gap] (wear) her new dress? B: Because she [gap] (have) a party tonight.",
+          "acceptedAnswers": [
+            "is / wearing / is having|'s having"
+          ],
+          "explanation": "Why is + subject + -ing?; plan → continuous"
+        },
+        {
+          "id": "ws-03-sec-h-q03",
+          "order": 3,
+          "prompt": "Cindy usually does the shopping, but I [gap] (do) it today because she is ill.",
+          "acceptedAnswers": [
+            "am doing|'m doing"
+          ],
+          "explanation": "I + am + -ing"
+        },
+        {
+          "id": "ws-03-sec-h-q04",
+          "order": 4,
+          "prompt": "She [gap] (not / work), she [gap] (swim) in the river.",
+          "acceptedAnswers": [
+            "isn't working / is swimming|'s swimming"
+          ],
+          "explanation": "swim → swimming (double m)"
+        },
+        {
+          "id": "ws-03-sec-h-q05",
+          "order": 5,
+          "prompt": "A: [gap] Tom [gap] (clean) his shoes now? B: No, he [gap]. He [gap] (tidy) his room. A: Where is his brother? B: He is in the garden, he [gap] (water) the flowers.",
+          "acceptedAnswers": [
+            "Is / cleaning / isn't / is tidying|'s tidying / is watering|'s watering"
+          ],
+          "explanation": "Is … -ing? No, he isn't. He is + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-23",
+      "sectionKey": "W",
+      "instruction": "Chilli's friend Della was on holiday in Jamaica. Read her letter to Chilli and complete it with the correct verbs.",
+      "type": "passage_gap_fill",
+      "contextText": "JAMAICA is a large island in the Caribbean Sea. Nearly a million tourists visit the island every year to relax in the sun and swim in the clear blue sea.\nFor tourists, the island is a paradise, but for most Jamaican people life is hard. There are very few jobs, except in the tourist industry.\nJamaica is also famous for reggae music.\n\nDear Chilli,\nI had a fantastic holiday in Jamaica. It was hot and the sea was blue and lovely.",
+      "wordBank": [
+        "invited",
+        "stopped",
+        "talked",
+        "stayed",
+        "travelled",
+        "enjoyed",
+        "didn't sleep",
+        "didn't get",
+        "watched",
+        "was",
+        "listened"
+      ],
+      "questions": [
+        {
+          "id": "ws-04-sec-a-q01",
+          "order": 1,
+          "prompt": "I [gap] by plane from London to Kingston.",
+          "acceptedAnswers": [
+            "travelled|traveled"
+          ],
+          "explanation": "travel by plane"
+        },
+        {
+          "id": "ws-04-sec-a-q02",
+          "order": 2,
+          "prompt": "I really [gap] the flight.",
+          "acceptedAnswers": [
+            "enjoyed"
+          ],
+          "explanation": "enjoy something"
+        },
+        {
+          "id": "ws-04-sec-a-q03",
+          "order": 3,
+          "prompt": "It was eight hours long but I [gap] at all because I [gap] so excited.",
+          "acceptedAnswers": [
+            "didn't sleep / was"
+          ],
+          "explanation": "negative past: didn't + verb; I was"
+        },
+        {
+          "id": "ws-04-sec-a-q04",
+          "order": 4,
+          "prompt": "During the flight I [gap] to music, [gap] a film and [gap] to the girl in the seat next to me.",
+          "acceptedAnswers": [
+            "listened / watched / talked"
+          ],
+          "explanation": "listen to, watch a film, talk to"
+        },
+        {
+          "id": "ws-04-sec-a-q05",
+          "order": 5,
+          "prompt": "I [gap] with my aunt and uncle in Kingston.",
+          "acceptedAnswers": [
+            "stayed"
+          ],
+          "explanation": "stay with someone"
+        },
+        {
+          "id": "ws-04-sec-a-q06",
+          "order": 6,
+          "prompt": "They [gap] me on a trip to Montego Bay.",
+          "acceptedAnswers": [
+            "invited"
+          ],
+          "explanation": "invite someone on a trip"
+        },
+        {
+          "id": "ws-04-sec-a-q07",
+          "order": 7,
+          "prompt": "We [gap] at an Orchid Farm. It was brilliant.",
+          "acceptedAnswers": [
+            "stopped"
+          ],
+          "explanation": "stop at a place"
+        },
+        {
+          "id": "ws-04-sec-a-q08",
+          "order": 8,
+          "prompt": "On my last night there I [gap] to bed until three o'clock in the morning!",
+          "acceptedAnswers": [
+            "didn't get"
+          ],
+          "explanation": "not get to bed until = go to bed late"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-24",
+      "sectionKey": "X",
+      "instruction": "Answer the questions.",
+      "type": "reading_qa",
+      "contextText": "JAMAICA is a large island in the Caribbean Sea. Nearly a million tourists visit the island every year to relax in the sun and swim in the clear blue sea.\nFor tourists, the island is a paradise, but for most Jamaican people life is hard. There are very few jobs, except in the tourist industry.\nJamaica is also famous for reggae music.\n\nDear Chilli,\nI had a fantastic holiday in Jamaica. It was hot and the sea was blue and lovely.\nI travelled by plane from London to Kingston. I really enjoyed the flight. It was eight hours long but I didn't sleep at all because I was so excited. During the flight I listened to music, watched a film and talked to the girl in the seat next to me.\nI stayed with my aunt and uncle in Kingston. They invited me on a trip to Montego Bay. We stopped at an Orchid Farm. It was brilliant. On my last night there I didn't get to bed until three o'clock in the morning!\nSee you soon!\nLove,\nDella",
+      "questions": [
+        {
+          "id": "ws-04-sec-b-q01",
+          "order": 1,
+          "prompt": "Did she go to Jamaica?",
+          "acceptedAnswers": [
+            "Yes, she did.",
+            "Yes, she did. She went to Jamaica."
+          ],
+          "explanation": "short answer: Yes, she did"
+        },
+        {
+          "id": "ws-04-sec-b-q02",
+          "order": 2,
+          "prompt": "How did she go to Kingston?",
+          "acceptedAnswers": [
+            "She went by plane.",
+            "By plane.",
+            "She travelled by plane.",
+            "She traveled by plane."
+          ],
+          "explanation": "by plane"
+        },
+        {
+          "id": "ws-04-sec-b-q03",
+          "order": 3,
+          "prompt": "How was the weather?",
+          "acceptedAnswers": [
+            "It was hot.",
+            "It was hot and the sea was blue and lovely.",
+            "Hot."
+          ],
+          "explanation": "It was hot"
+        },
+        {
+          "id": "ws-04-sec-b-q04",
+          "order": 4,
+          "prompt": "What did she do on the plane?",
+          "acceptedAnswers": [
+            "She listened to music, watched a film and talked to the girl in the seat next to her.",
+            "She listened to music, watched a film and talked to a girl.",
+            "She listened to music, watched a film and talked to the girl next to her."
+          ],
+          "explanation": "listened, watched, talked"
+        },
+        {
+          "id": "ws-04-sec-b-q05",
+          "order": 5,
+          "prompt": "Did she visit her grandparents?",
+          "acceptedAnswers": [
+            "No, she didn't.",
+            "No, she didn't. She stayed with her aunt and uncle.",
+            "No, she didn't. She visited her aunt and uncle."
+          ],
+          "explanation": "she stayed with her aunt and uncle"
+        },
+        {
+          "id": "ws-04-sec-b-q06",
+          "order": 6,
+          "prompt": "Did she like the Orchid Farm?",
+          "acceptedAnswers": [
+            "Yes, she did.",
+            "Yes, she did. It was brilliant."
+          ],
+          "explanation": "It was brilliant"
+        },
+        {
+          "id": "ws-04-sec-b-q07",
+          "order": 7,
+          "prompt": "When did she go to bed on her last night?",
+          "acceptedAnswers": [
+            "She went to bed at three o'clock in the morning.",
+            "At three o'clock in the morning.",
+            "At 3 o'clock in the morning.",
+            "She went to bed at 3 o'clock in the morning."
+          ],
+          "explanation": "until three o'clock in the morning"
+        },
+        {
+          "id": "ws-04-sec-b-q08",
+          "order": 8,
+          "prompt": "Where is Jamaica?",
+          "acceptedAnswers": [
+            "It is in the Caribbean Sea.",
+            "In the Caribbean Sea.",
+            "Jamaica is in the Caribbean Sea.",
+            "It's in the Caribbean."
+          ],
+          "explanation": "in the Caribbean Sea"
+        },
+        {
+          "id": "ws-04-sec-b-q09",
+          "order": 9,
+          "prompt": "What do the tourists do in Jamaica?",
+          "acceptedAnswers": [
+            "They relax in the sun and swim in the clear blue sea.",
+            "They relax in the sun and swim in the sea.",
+            "Tourists relax in the sun and swim in the clear blue sea."
+          ],
+          "explanation": "relax in the sun and swim"
+        },
+        {
+          "id": "ws-04-sec-b-q10",
+          "order": 10,
+          "prompt": "How is life for Jamaican people?",
+          "acceptedAnswers": [
+            "It is hard.",
+            "Life is hard.",
+            "It is hard. There are very few jobs.",
+            "Life is hard for most Jamaican people."
+          ],
+          "explanation": "for most Jamaican people life is hard"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-25",
+      "sectionKey": "Y",
+      "instruction": "Complete these sentences in the PAST TENSE, using the correct verb. (Example: I watched the late film on TV last night.)",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "play",
+        "enjoy",
+        "watch",
+        "listen",
+        "talk",
+        "phone",
+        "stop",
+        "walk",
+        "travel",
+        "like",
+        "stay"
+      ],
+      "questions": [
+        {
+          "id": "ws-04-sec-c-q01",
+          "order": 1,
+          "prompt": "We really [gap] the concert last night. It was great!",
+          "acceptedAnswers": [
+            "enjoyed"
+          ],
+          "explanation": "past simple"
+        },
+        {
+          "id": "ws-04-sec-c-q02",
+          "order": 2,
+          "prompt": "She [gap] with friends in Brighton last summer.",
+          "acceptedAnswers": [
+            "stayed"
+          ],
+          "explanation": "stay with friends"
+        },
+        {
+          "id": "ws-04-sec-c-q03",
+          "order": 3,
+          "prompt": "Italy [gap] very well in the last World Cup.",
+          "acceptedAnswers": [
+            "played"
+          ],
+          "explanation": "play well"
+        },
+        {
+          "id": "ws-04-sec-c-q04",
+          "order": 4,
+          "prompt": "Her parents [gap] by train from Shanghai to Moscow.",
+          "acceptedAnswers": [
+            "travelled|traveled"
+          ],
+          "explanation": "travel by train"
+        },
+        {
+          "id": "ws-04-sec-c-q05",
+          "order": 5,
+          "prompt": "I [gap] you four times last night but you were out.",
+          "acceptedAnswers": [
+            "phoned"
+          ],
+          "explanation": "phone someone"
+        },
+        {
+          "id": "ws-04-sec-c-q06",
+          "order": 6,
+          "prompt": "We [gap] along the beach yesterday. It was lovely.",
+          "acceptedAnswers": [
+            "walked"
+          ],
+          "explanation": "walk along the beach"
+        },
+        {
+          "id": "ws-04-sec-c-q07",
+          "order": 7,
+          "prompt": "She [gap] the film but she didn't like the music.",
+          "acceptedAnswers": [
+            "liked"
+          ],
+          "explanation": "contrast with didn't like"
+        },
+        {
+          "id": "ws-04-sec-c-q08",
+          "order": 8,
+          "prompt": "The men [gap] work at exactly one o'clock.",
+          "acceptedAnswers": [
+            "stopped"
+          ],
+          "explanation": "stop work; double p"
+        },
+        {
+          "id": "ws-04-sec-c-q09",
+          "order": 9,
+          "prompt": "I [gap] to the new Sting album yesterday. It's great.",
+          "acceptedAnswers": [
+            "listened"
+          ],
+          "explanation": "listen to"
+        },
+        {
+          "id": "ws-04-sec-c-q10",
+          "order": 10,
+          "prompt": "They [gap] to us about their trip to Madagascar. It was very interesting.",
+          "acceptedAnswers": [
+            "talked"
+          ],
+          "explanation": "talk to someone about something"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-26",
+      "sectionKey": "Z",
+      "instruction": "Complete the conversation with WAS / WASN'T / WERE / WEREN'T.",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-04-sec-d-q01",
+          "order": 1,
+          "prompt": "A: Where were you last night? I phoned you but you [gap] at home.",
+          "acceptedAnswers": [
+            "weren't"
+          ],
+          "explanation": "you + were; negative"
+        },
+        {
+          "id": "ws-04-sec-d-q02",
+          "order": 2,
+          "prompt": "B: I [gap] out with friends. We [gap] at the Bluenote Café.",
+          "acceptedAnswers": [
+            "was / were"
+          ],
+          "explanation": "I was; we were"
+        },
+        {
+          "id": "ws-04-sec-d-q03",
+          "order": 3,
+          "prompt": "A: [gap] Julia there?",
+          "acceptedAnswers": [
+            "Was"
+          ],
+          "explanation": "question: Was + she/he"
+        },
+        {
+          "id": "ws-04-sec-d-q04",
+          "order": 4,
+          "prompt": "B: No, she [gap]. Why?",
+          "acceptedAnswers": [
+            "wasn't"
+          ],
+          "explanation": "short answer: No, she wasn't"
+        },
+        {
+          "id": "ws-04-sec-d-q05",
+          "order": 5,
+          "prompt": "A: Oh, I just wondered. B: She [gap] out with Nick. They [gap] at the Oasis, I think.",
+          "acceptedAnswers": [
+            "was / were"
+          ],
+          "explanation": "she was; they were"
+        },
+        {
+          "id": "ws-04-sec-d-q06",
+          "order": 6,
+          "prompt": "A: No, they [gap].",
+          "acceptedAnswers": [
+            "weren't"
+          ],
+          "explanation": "short answer: No, they weren't"
+        },
+        {
+          "id": "ws-04-sec-d-q07",
+          "order": 7,
+          "prompt": "B: How do you know? A: Because I [gap] there!",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "I was"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-27",
+      "sectionKey": "AA",
+      "instruction": "Complete the man's statement with the PAST SIMPLE form of the verbs in brackets.",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-e-q01",
+          "order": 1,
+          "prompt": "Last night I [gap] (go) to my favorite restaurant in West Street.",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "explanation": "go → went (irregular)"
+        },
+        {
+          "id": "ws-04-sec-e-q02",
+          "order": 2,
+          "prompt": "I [gap] (leave) the restaurant at about 11 o'clock.",
+          "acceptedAnswers": [
+            "left"
+          ],
+          "explanation": "leave → left (irregular)"
+        },
+        {
+          "id": "ws-04-sec-e-q03",
+          "order": 3,
+          "prompt": "It [gap] (be) a warm evening and I [gap] (decide) to walk along the beach.",
+          "acceptedAnswers": [
+            "was / decided"
+          ],
+          "explanation": "it was; decide → decided"
+        },
+        {
+          "id": "ws-04-sec-e-q04",
+          "order": 4,
+          "prompt": "Suddenly, I [gap] (hear) a noise.",
+          "acceptedAnswers": [
+            "heard"
+          ],
+          "explanation": "hear → heard (irregular)"
+        },
+        {
+          "id": "ws-04-sec-e-q05",
+          "order": 5,
+          "prompt": "I [gap] (turn) and [gap] (see) three boys aged about eighteen.",
+          "acceptedAnswers": [
+            "turned / saw"
+          ],
+          "explanation": "turn → turned; see → saw"
+        },
+        {
+          "id": "ws-04-sec-e-q06",
+          "order": 6,
+          "prompt": "One boy [gap] (come) up to me and [gap] (ask) me the time.",
+          "acceptedAnswers": [
+            "came / asked"
+          ],
+          "explanation": "come → came; ask → asked"
+        },
+        {
+          "id": "ws-04-sec-e-q07",
+          "order": 7,
+          "prompt": "When I [gap] (look) down at my watch, he [gap] (hit) me and I [gap] (fall) to the ground.",
+          "acceptedAnswers": [
+            "looked / hit / fell"
+          ],
+          "explanation": "hit → hit; fall → fell"
+        },
+        {
+          "id": "ws-04-sec-e-q08",
+          "order": 8,
+          "prompt": "Another boy [gap] (take) my wallet.",
+          "acceptedAnswers": [
+            "took"
+          ],
+          "explanation": "take → took (irregular)"
+        },
+        {
+          "id": "ws-04-sec-e-q09",
+          "order": 9,
+          "prompt": "I [gap] (shout) for help.",
+          "acceptedAnswers": [
+            "shouted"
+          ],
+          "explanation": "shout → shouted"
+        },
+        {
+          "id": "ws-04-sec-e-q10",
+          "order": 10,
+          "prompt": "Then they [gap] (run) away.",
+          "acceptedAnswers": [
+            "ran"
+          ],
+          "explanation": "run → ran (irregular)"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-28",
+      "sectionKey": "AB",
+      "instruction": "Complete the story. Use the verbs in the brackets. (Example: Last year I went (go) on holiday.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-f-q01",
+          "order": 1,
+          "prompt": "I [gap] (drive) to the sea with my friend.",
+          "acceptedAnswers": [
+            "drove"
+          ],
+          "explanation": "drive → drove"
+        },
+        {
+          "id": "ws-04-sec-f-q02",
+          "order": 2,
+          "prompt": "On the first day we [gap] (look) at the beautiful buildings and [gap] (eat) in lots of restaurants.",
+          "acceptedAnswers": [
+            "looked / ate"
+          ],
+          "explanation": "eat → ate"
+        },
+        {
+          "id": "ws-04-sec-f-q03",
+          "order": 3,
+          "prompt": "The next day [gap] (be) very hot so we [gap] (drive) to the sea.",
+          "acceptedAnswers": [
+            "was|it was / drove"
+          ],
+          "explanation": "it was; drive → drove"
+        },
+        {
+          "id": "ws-04-sec-f-q04",
+          "order": 4,
+          "prompt": "We [gap] (leave) our clothes in the car and [gap] (sunbathe) and [gap] (swim) all day.",
+          "acceptedAnswers": [
+            "left / sunbathed / swam"
+          ],
+          "explanation": "leave → left; swim → swam"
+        },
+        {
+          "id": "ws-04-sec-f-q05",
+          "order": 5,
+          "prompt": "At six o'clock we [gap] (walk) to our car, but the car [gap] (be) there.",
+          "acceptedAnswers": [
+            "walked / wasn't"
+          ],
+          "explanation": "the car had gone: wasn't"
+        },
+        {
+          "id": "ws-04-sec-f-q06",
+          "order": 6,
+          "prompt": "We [gap] (buy) some clothes and [gap] (go) to the Police Station.",
+          "acceptedAnswers": [
+            "bought / went"
+          ],
+          "explanation": "buy → bought; go → went"
+        },
+        {
+          "id": "ws-04-sec-f-q07",
+          "order": 7,
+          "prompt": "The police [gap] (be) nice and we [gap] (sleep) in the police station.",
+          "acceptedAnswers": [
+            "were / slept"
+          ],
+          "explanation": "police is plural: were; sleep → slept"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-29",
+      "sectionKey": "AC",
+      "instruction": "Make negative sentences (x) or questions (?) using the PAST TENSE. (Example: he / stay (x) in a hotel → He didn't stay in a hotel. you / learn (?) speak Italian when you were in Italy → Did you learn to speak Italian when you were in Italy?)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-04-sec-g-q01",
+          "order": 1,
+          "prompt": "she / like (x) the film",
+          "acceptedAnswers": [
+            "She didn't like the film."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-04-sec-g-q02",
+          "order": 2,
+          "prompt": "I / use (x) the school computer yesterday",
+          "acceptedAnswers": [
+            "I didn't use the school computer yesterday."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-04-sec-g-q03",
+          "order": 3,
+          "prompt": "they / arrive (?) home late yesterday",
+          "acceptedAnswers": [
+            "Did they arrive home late yesterday?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-04-sec-g-q04",
+          "order": 4,
+          "prompt": "you / ask (?) her for Caroline's address",
+          "acceptedAnswers": [
+            "Did you ask her for Caroline's address?"
+          ],
+          "explanation": "question: Did + subject + base verb"
+        },
+        {
+          "id": "ws-04-sec-g-q05",
+          "order": 5,
+          "prompt": "he / enjoy (x) the concert in the park",
+          "acceptedAnswers": [
+            "He didn't enjoy the concert in the park."
+          ],
+          "explanation": "negative: didn't + base verb"
+        },
+        {
+          "id": "ws-04-sec-g-q06",
+          "order": 6,
+          "prompt": "we / talk (x) about school at all",
+          "acceptedAnswers": [
+            "We didn't talk about school at all."
+          ],
+          "explanation": "negative: didn't + base verb"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-30",
+      "sectionKey": "AD",
+      "instruction": "Read the text. Write the questions about Tamsin's holiday. (Example: Where did she go? → Bali.)",
+      "type": "question_formation",
+      "contextText": "Last September Tamsin went to Bali. She went by plane and stayed in a big hotel. It was very hot, so she swam every day. In the evenings she went to different restaurants, the food was very good. She met some nice people and every night she danced with them at the disco. She was happy because she wasn't alone.",
+      "questions": [
+        {
+          "id": "ws-04-sec-h-q02",
+          "order": 2,
+          "prompt": "Answer: Last September.",
+          "acceptedAnswers": [
+            "When did she go to Bali?",
+            "When did she go?",
+            "When did Tamsin go to Bali?",
+            "When did Tamsin go?"
+          ],
+          "explanation": "When + did + subject + verb"
+        },
+        {
+          "id": "ws-04-sec-h-q03",
+          "order": 3,
+          "prompt": "Answer: By plane.",
+          "acceptedAnswers": [
+            "How did she go to Bali?",
+            "How did she go?",
+            "How did she travel?",
+            "How did she travel to Bali?",
+            "How did Tamsin go to Bali?"
+          ],
+          "explanation": "How = means of transport"
+        },
+        {
+          "id": "ws-04-sec-h-q04",
+          "order": 4,
+          "prompt": "Answer: In a big hotel.",
+          "acceptedAnswers": [
+            "Where did she stay?",
+            "Where did Tamsin stay?",
+            "Where did she stay in Bali?"
+          ],
+          "explanation": "Where did she stay?"
+        },
+        {
+          "id": "ws-04-sec-h-q05",
+          "order": 5,
+          "prompt": "Answer: It was very hot.",
+          "acceptedAnswers": [
+            "What was the weather like?",
+            "How was the weather?",
+            "What was the weather like in Bali?",
+            "How was the weather in Bali?"
+          ],
+          "explanation": "What was the weather like?"
+        },
+        {
+          "id": "ws-04-sec-h-q06",
+          "order": 6,
+          "prompt": "Answer: She swam.",
+          "acceptedAnswers": [
+            "What did she do every day?",
+            "What did she do?",
+            "What did Tamsin do every day?"
+          ],
+          "explanation": "What did she do?"
+        },
+        {
+          "id": "ws-04-sec-h-q07",
+          "order": 7,
+          "prompt": "Answer: It was very good.",
+          "acceptedAnswers": [
+            "What was the food like?",
+            "How was the food?",
+            "What was the food like in the restaurants?"
+          ],
+          "explanation": "What was the food like?"
+        },
+        {
+          "id": "ws-04-sec-h-q08",
+          "order": 8,
+          "prompt": "Answer: Some nice people.",
+          "acceptedAnswers": [
+            "Who did she meet?",
+            "Who did Tamsin meet?",
+            "Who did she dance with?",
+            "Who did she dance with at the disco?"
+          ],
+          "explanation": "Who did she meet?"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-31",
+      "sectionKey": "AE",
+      "instruction": "Match the questions with the answers.",
+      "type": "matching",
+      "contextText": "a) By bus.\nb) The news.\nc) 6th September.\nd) On Saturday I played tennis and on Sunday I slept.\ne) January.\nf) Three years ago.\ng) John.\nh) Toast and coffee.",
+      "questions": [
+        {
+          "id": "ws-04-sec-i-q01",
+          "order": 1,
+          "prompt": "When did you learn to drive a car? [gap]",
+          "acceptedAnswers": [
+            "f"
+          ],
+          "explanation": "When … learn? → time ago"
+        },
+        {
+          "id": "ws-04-sec-i-q02",
+          "order": 2,
+          "prompt": "What did you watch on television last night? [gap]",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "watch → a programme"
+        },
+        {
+          "id": "ws-04-sec-i-q03",
+          "order": 3,
+          "prompt": "What did you do last weekend? [gap]",
+          "acceptedAnswers": [
+            "d"
+          ],
+          "explanation": "weekend activities"
+        },
+        {
+          "id": "ws-04-sec-i-q04",
+          "order": 4,
+          "prompt": "Who were you with at 4pm today? [gap]",
+          "acceptedAnswers": [
+            "g"
+          ],
+          "explanation": "Who → a person"
+        },
+        {
+          "id": "ws-04-sec-i-q05",
+          "order": 5,
+          "prompt": "When was the beginning of term? [gap]",
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "When → a date"
+        },
+        {
+          "id": "ws-04-sec-i-q06",
+          "order": 6,
+          "prompt": "How did you come to class? [gap]",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "How → means of transport"
+        },
+        {
+          "id": "ws-04-sec-i-q07",
+          "order": 7,
+          "prompt": "What did you eat for breakfast this morning? [gap]",
+          "acceptedAnswers": [
+            "h"
+          ],
+          "explanation": "eat → food"
+        },
+        {
+          "id": "ws-04-sec-i-q08",
+          "order": 8,
+          "prompt": "What was the month before last? [gap]",
+          "acceptedAnswers": [
+            "e"
+          ],
+          "explanation": "month → January"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-32",
+      "sectionKey": "AF",
+      "instruction": "Read about Lucian and Estelle and write the questions. (Example: live / they / do / London? → Do they live in London?)",
+      "type": "sentence_building",
+      "contextText": "Lucian and Estelle are from London, but they live in Madrid. They work for Opel, the car factory. Lucian and Estelle like swimming and cooking. They don't have a car. They don't like driving!",
+      "questions": [
+        {
+          "id": "ws-04-sec-j-q02",
+          "order": 2,
+          "prompt": "Madrid / do / live / they?",
+          "acceptedAnswers": [
+            "Do they live in Madrid?",
+            "Do they live in Madrid? Yes, they do."
+          ],
+          "explanation": "Do + they + base verb"
+        },
+        {
+          "id": "ws-04-sec-j-q03",
+          "order": 3,
+          "prompt": "Ferrari / they / work / do?",
+          "acceptedAnswers": [
+            "Do they work for Ferrari?",
+            "Do they work for Ferrari? No, they don't.",
+            "Do they work at Ferrari?"
+          ],
+          "explanation": "work for a company"
+        },
+        {
+          "id": "ws-04-sec-j-q04",
+          "order": 4,
+          "prompt": "work / Renault / do / they?",
+          "acceptedAnswers": [
+            "Do they work for Renault?",
+            "Do they work for Renault? No, they don't.",
+            "Do they work at Renault?"
+          ],
+          "explanation": "work for a company"
+        },
+        {
+          "id": "ws-04-sec-j-q05",
+          "order": 5,
+          "prompt": "swimming / like / cooking / they / do?",
+          "acceptedAnswers": [
+            "Do they like swimming and cooking?",
+            "Do they like swimming and cooking? Yes, they do.",
+            "Do they like cooking and swimming?"
+          ],
+          "explanation": "like + -ing"
+        },
+        {
+          "id": "ws-04-sec-j-q06",
+          "order": 6,
+          "prompt": "swimming / they / like / traveling / do?",
+          "acceptedAnswers": [
+            "Do they like swimming and traveling?",
+            "Do they like swimming and travelling?",
+            "Do they like traveling and swimming?",
+            "Do they like travelling and swimming?"
+          ],
+          "explanation": "like + -ing"
+        },
+        {
+          "id": "ws-04-sec-j-q07",
+          "order": 7,
+          "prompt": "like / do / driving / they?",
+          "acceptedAnswers": [
+            "Do they like driving?",
+            "Do they like driving? No, they don't."
+          ],
+          "explanation": "like + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-33",
+      "sectionKey": "AG",
+      "instruction": "What does Ellie ask Carsten? Put the words in order to make questions. (Example: Sunday / time / What / do / get / you / up / on? → What time do you get up on Sunday? Carsten: Ten o'clock.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-04-sec-k-q01",
+          "order": 1,
+          "prompt": "you / breakfast / What / do / have / for? (Carsten: Coffee, cheese and bread.)",
+          "acceptedAnswers": [
+            "What do you have for breakfast?"
+          ],
+          "explanation": "Wh- + do + you + verb"
+        },
+        {
+          "id": "ws-04-sec-k-q02",
+          "order": 2,
+          "prompt": "morning / you / in / do / the / What / do? (Carsten: I play football in the park.)",
+          "acceptedAnswers": [
+            "What do you do in the morning?"
+          ],
+          "explanation": "What do you do + time"
+        },
+        {
+          "id": "ws-04-sec-k-q03",
+          "order": 3,
+          "prompt": "do / lunch / When / have / you? (Carsten: At two o'clock.)",
+          "acceptedAnswers": [
+            "When do you have lunch?"
+          ],
+          "explanation": "When do you + verb"
+        },
+        {
+          "id": "ws-04-sec-k-q04",
+          "order": 4,
+          "prompt": "with / Who / lunch / you / do / have? (Carsten: My parents.)",
+          "acceptedAnswers": [
+            "Who do you have lunch with?",
+            "With who do you have lunch?"
+          ],
+          "explanation": "preposition at the end"
+        },
+        {
+          "id": "ws-04-sec-k-q05",
+          "order": 5,
+          "prompt": "you / afternoon / What / do / do / in / the? (Carsten: I watch football on TV.)",
+          "acceptedAnswers": [
+            "What do you do in the afternoon?"
+          ],
+          "explanation": "What do you do + time"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-34",
+      "sectionKey": "AH",
+      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS. (Example: Father: Alice, what are you doing (you / do)?)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-l-q01",
+          "order": 1,
+          "prompt": "Alice: I [gap] (clean) the house.",
+          "acceptedAnswers": [
+            "am cleaning|'m cleaning"
+          ],
+          "explanation": "now: present continuous"
+        },
+        {
+          "id": "ws-04-sec-l-q02",
+          "order": 2,
+          "prompt": "I usually [gap] (do) my homework but today I [gap] (not / go) to school.",
+          "acceptedAnswers": [
+            "do / am not going|'m not going"
+          ],
+          "explanation": "usually: simple; today: continuous"
+        },
+        {
+          "id": "ws-04-sec-l-q03",
+          "order": 3,
+          "prompt": "Father: Where's your mum? Alice: She [gap] (make) a cake.",
+          "acceptedAnswers": [
+            "is making|'s making"
+          ],
+          "explanation": "now: present continuous"
+        },
+        {
+          "id": "ws-04-sec-l-q04",
+          "order": 4,
+          "prompt": "She usually [gap] (go) to the market but today my friends [gap] (come).",
+          "acceptedAnswers": [
+            "goes / are coming|'re coming"
+          ],
+          "explanation": "usually: simple; today: continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-35",
+      "sectionKey": "AI",
+      "instruction": "Fill in with PRESENT SIMPLE or PRESENT CONTINUOUS. (Example: Sarah Star is a singer. She sings (sing) …)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-04-sec-m-q01",
+          "order": 1,
+          "prompt": "Sarah Star is a singer. She sings and [gap] (dance) on TV.",
+          "acceptedAnswers": [
+            "dances"
+          ],
+          "explanation": "habit: present simple"
+        },
+        {
+          "id": "ws-04-sec-m-q02",
+          "order": 2,
+          "prompt": "She [gap] (drive) a red Mercedes.",
+          "acceptedAnswers": [
+            "drives"
+          ],
+          "explanation": "fact/habit: present simple"
+        },
+        {
+          "id": "ws-04-sec-m-q03",
+          "order": 3,
+          "prompt": "At the moment she is with Nick Pear. They [gap] (eat) in a restaurant.",
+          "acceptedAnswers": [
+            "are eating|'re eating"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q04",
+          "order": 4,
+          "prompt": "Sarah [gap] (drink) a cocktail and Nick [gap] (talk) to the waiter.",
+          "acceptedAnswers": [
+            "is drinking|'s drinking / is talking|'s talking"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q05",
+          "order": 5,
+          "prompt": "Ann is a doctor. She [gap] (work) in a hospital but today she [gap] (stay) at home.",
+          "acceptedAnswers": [
+            "works / is staying|'s staying"
+          ],
+          "explanation": "routine: simple; today: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q06",
+          "order": 6,
+          "prompt": "Now she [gap] (cook) dinner.",
+          "acceptedAnswers": [
+            "is cooking|'s cooking"
+          ],
+          "explanation": "now: continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q07",
+          "order": 7,
+          "prompt": "Her friends [gap] (visit) her today.",
+          "acceptedAnswers": [
+            "are visiting|'re visiting"
+          ],
+          "explanation": "today (temporary): continuous"
+        },
+        {
+          "id": "ws-04-sec-m-q08",
+          "order": 8,
+          "prompt": "It [gap] (be) her birthday.",
+          "acceptedAnswers": [
+            "is|'s"
+          ],
+          "explanation": "be: state verb, present simple"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-36",
+      "sectionKey": "AJ",
+      "instruction": "Make questions and answers. Use THE PRESENT CONTINUOUS. (Example: (she / work / in Peru / this year?) (No, she / study / in Mexico) → Is she working in Peru this year? No. She's studying in Mexico.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-07-review-sec-a-q01",
+          "order": 1,
+          "prompt": "(you / study / English / at the moment?) (Yes, I / work / hard.)",
+          "acceptedAnswers": [
+            "Are you studying English at the moment? Yes, I'm working hard.",
+            "Are you studying English at the moment? Yes, I am. I'm working hard."
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-a-q02",
+          "order": 2,
+          "prompt": "(they / listen / to the radio?) (No, they / play / CDs.)",
+          "acceptedAnswers": [
+            "Are they listening to the radio? No, they're playing CDs.",
+            "Are they listening to the radio? No, they aren't. They're playing CDs."
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-a-q03",
+          "order": 3,
+          "prompt": "(Peter / wash / now?) (Yes, he / have / a bath.)",
+          "acceptedAnswers": [
+            "Is Peter washing now? Yes, he's having a bath.",
+            "Is Peter washing now? Yes, he is. He's having a bath."
+          ],
+          "explanation": "have → having"
+        },
+        {
+          "id": "ws-07-review-sec-a-q04",
+          "order": 4,
+          "prompt": "(they / live / in Madrid / at the moment?) (Yes, they / learn / Spanish.)",
+          "acceptedAnswers": [
+            "Are they living in Madrid at the moment? Yes, they're learning Spanish.",
+            "Are they living in Madrid at the moment? Yes, they are. They're learning Spanish."
+          ],
+          "explanation": "temporary situation: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-a-q05",
+          "order": 5,
+          "prompt": "(David / sing / in a group / this year?) (No, he / work / in a restaurant.)",
+          "acceptedAnswers": [
+            "Is David singing in a group this year? No, he's working in a restaurant.",
+            "Is David singing in a group this year? No, he isn't. He's working in a restaurant."
+          ],
+          "explanation": "be + verb-ing"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-37",
+      "sectionKey": "AK",
+      "instruction": "Choose TRUE for a correct sentence and FALSE for a wrong sentence. (Example: She's liking pop music. → FALSE; He's learning German. → TRUE)",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-07-review-sec-b-q01",
+          "order": 1,
+          "prompt": "They're enjoying the film. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "enjoy can be continuous"
+        },
+        {
+          "id": "ws-07-review-sec-b-q02",
+          "order": 2,
+          "prompt": "We're loving ice-cream. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "love is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-b-q03",
+          "order": 3,
+          "prompt": "She's believing he's right. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "believe is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-b-q04",
+          "order": 4,
+          "prompt": "John's thinking about my idea. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "think about = action, continuous OK"
+        },
+        {
+          "id": "ws-07-review-sec-b-q05",
+          "order": 5,
+          "prompt": "He's having lunch at the moment. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "have lunch = action, continuous OK"
+        },
+        {
+          "id": "ws-07-review-sec-b-q06",
+          "order": 6,
+          "prompt": "She's eating a banana. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "action verb"
+        },
+        {
+          "id": "ws-07-review-sec-b-q07",
+          "order": 7,
+          "prompt": "I'm feeling sick. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "feel (health) can be continuous"
+        },
+        {
+          "id": "ws-07-review-sec-b-q08",
+          "order": 8,
+          "prompt": "“Huge” is meaning “very big”. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "mean is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-b-q09",
+          "order": 9,
+          "prompt": "Mick is knowing Jane. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "know is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-b-q10",
+          "order": 10,
+          "prompt": "She's hating classical music. [gap]",
+          "options": [
+            "a) TRUE",
+            "b) FALSE"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "hate is a state verb"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-38",
+      "sectionKey": "AL",
+      "instruction": "Complete this conversation. Use the verbs in brackets in the PRESENT CONTINUOUS. (Paul: Hi Steve! What are you doing?)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-07-review-sec-c-q01",
+          "order": 1,
+          "prompt": "Steve: [gap] (I / go) to the bank. What are you doing?",
+          "acceptedAnswers": [
+            "I'm going"
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q02",
+          "order": 2,
+          "prompt": "Paul: [gap] (I / shop).",
+          "acceptedAnswers": [
+            "I'm shopping"
+          ],
+          "explanation": "shop → shopping (double p)"
+        },
+        {
+          "id": "ws-07-review-sec-c-q03",
+          "order": 3,
+          "prompt": "[gap] (I / look) for a new tennis racquet.",
+          "acceptedAnswers": [
+            "I'm looking"
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q04",
+          "order": 4,
+          "prompt": "[gap] (I / play) a lot of tennis at the moment, and I need a new racquet.",
+          "acceptedAnswers": [
+            "I'm playing"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-c-q05",
+          "order": 5,
+          "prompt": "Steve: Where is Jackie? Do you know? Paul: Yes. She isn't in England at the moment. [gap] (She / work) in Germany for a month.",
+          "acceptedAnswers": [
+            "She's working"
+          ],
+          "explanation": "temporary: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-c-q06",
+          "order": 6,
+          "prompt": "Steve: What [gap] (she / do) in Germany?",
+          "acceptedAnswers": [
+            "is she doing"
+          ],
+          "explanation": "question: Wh- + be + subject + -ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q07",
+          "order": 7,
+          "prompt": "Paul: [gap] (She / sing) in a night-club.",
+          "acceptedAnswers": [
+            "She's singing"
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q08",
+          "order": 8,
+          "prompt": "Steve: Really? What about Fred and Sue? What [gap] (they / do)?",
+          "acceptedAnswers": [
+            "are they doing"
+          ],
+          "explanation": "question: Wh- + be + subject + -ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q09",
+          "order": 9,
+          "prompt": "Paul: [gap] (They / study) for an exam. They're always in the library at the moment.",
+          "acceptedAnswers": [
+            "They're studying"
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q10",
+          "order": 10,
+          "prompt": "Steve: How is your sister? Is she all right? Paul: Yes, she's fine, but she's tired. [gap] (We / paint) the living-room. It's hard work.",
+          "acceptedAnswers": [
+            "We're painting"
+          ],
+          "explanation": "be + verb-ing"
+        },
+        {
+          "id": "ws-07-review-sec-c-q11",
+          "order": 11,
+          "prompt": "Steve: Can I help you? Paul: No, it's OK. My father [gap] (help).",
+          "acceptedAnswers": [
+            "is helping|'s helping"
+          ],
+          "explanation": "be + verb-ing"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-39",
+      "sectionKey": "AM",
+      "instruction": "This is Anna's first letter in English to David. There are some mistakes. Write the correct verb form in each gap; if Anna's verb form is already correct, write it again unchanged. (Example: “I'm having two sisters.” → I have two sisters.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-07-review-sec-c2-q01",
+          "order": 1,
+          "prompt": "“I live in a large flat in Rome.” → I [gap] in a large flat in Rome.",
+          "acceptedAnswers": [
+            "live"
+          ],
+          "explanation": "correct: permanent situation"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q02",
+          "order": 2,
+          "prompt": "“We are getting up at seven o'clock every morning.” → We [gap] at seven o'clock every morning.",
+          "acceptedAnswers": [
+            "get up"
+          ],
+          "explanation": "every morning: present simple"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q03",
+          "order": 3,
+          "prompt": "“We have coffee and a small breakfast.” → We [gap] coffee and a small breakfast.",
+          "acceptedAnswers": [
+            "have"
+          ],
+          "explanation": "correct: routine"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q04",
+          "order": 4,
+          "prompt": "“I leave the flat at eight and walk to the university.” → I [gap] the flat at eight and walk to the university.",
+          "acceptedAnswers": [
+            "leave"
+          ],
+          "explanation": "correct: routine"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q05",
+          "order": 5,
+          "prompt": "“I am finishing classes at five every day.” → I [gap] classes at five every day.",
+          "acceptedAnswers": [
+            "finish"
+          ],
+          "explanation": "every day: present simple"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q06",
+          "order": 6,
+          "prompt": "“I arrive home at six.” → I [gap] home at six.",
+          "acceptedAnswers": [
+            "arrive"
+          ],
+          "explanation": "correct: routine"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q07",
+          "order": 7,
+          "prompt": "“This month I work very hard for my exams.” → This month I [gap] very hard for my exams.",
+          "acceptedAnswers": [
+            "am working|'m working"
+          ],
+          "explanation": "this month (temporary): continuous"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q08",
+          "order": 8,
+          "prompt": "“At the moment, I eat breakfast in the kitchen of our flat.” → At the moment, I [gap] breakfast in the kitchen of our flat.",
+          "acceptedAnswers": [
+            "am eating|'m eating"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q09",
+          "order": 9,
+          "prompt": "“My mother drinks coffee.” → My mother [gap] coffee.",
+          "acceptedAnswers": [
+            "is drinking|'s drinking"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q10",
+          "order": 10,
+          "prompt": "“My sisters are reading magazines.” → My sisters [gap] magazines.",
+          "acceptedAnswers": [
+            "are reading"
+          ],
+          "explanation": "correct: at the moment"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q11",
+          "order": 11,
+          "prompt": "“On Saturday afternoons I am playing tennis with my friends.” → On Saturday afternoons I [gap] tennis with my friends.",
+          "acceptedAnswers": [
+            "play"
+          ],
+          "explanation": "habit: present simple"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q12",
+          "order": 12,
+          "prompt": "“Or I go to the cinema.” → Or I [gap] to the cinema.",
+          "acceptedAnswers": [
+            "go"
+          ],
+          "explanation": "correct: habit"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q13",
+          "order": 13,
+          "prompt": "“Sometimes I am watching American films on TV.” → Sometimes I [gap] American films on TV.",
+          "acceptedAnswers": [
+            "watch"
+          ],
+          "explanation": "sometimes: present simple"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q14",
+          "order": 14,
+          "prompt": "“But I'm not understanding the words!” → But I [gap] the words!",
+          "acceptedAnswers": [
+            "don't understand"
+          ],
+          "explanation": "understand is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-c2-q15",
+          "order": 15,
+          "prompt": "“Are you liking films?” → [gap] films?",
+          "acceptedAnswers": [
+            "Do you like"
+          ],
+          "explanation": "like is a state verb"
+        }
+      ]
+    },
+    {
+      "id": "card-02-sec-40",
+      "sectionKey": "AN",
+      "instruction": "Write sentences. Use the PRESENT SIMPLE or the PRESENT CONTINUOUS. (Example: Usually she / work / at the office, but this week she / work / at home. → Usually she works at the office, but this week she's working at home.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-07-review-sec-d-q01",
+          "order": 1,
+          "prompt": "You / not / eat / very much at the moment. Are you ill?",
+          "acceptedAnswers": [
+            "You aren't eating very much at the moment. Are you ill?",
+            "You're not eating very much at the moment. Are you ill?"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-d-q02",
+          "order": 2,
+          "prompt": "She / know / three words in Italian!",
+          "acceptedAnswers": [
+            "She knows three words in Italian!"
+          ],
+          "explanation": "know is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-d-q03",
+          "order": 3,
+          "prompt": "I / take / the bus to work this week, but usually I / walk",
+          "acceptedAnswers": [
+            "I'm taking the bus to work this week, but usually I walk.",
+            "I'm taking the bus to work this week but usually I walk."
+          ],
+          "explanation": "this week: continuous; usually: simple"
+        },
+        {
+          "id": "ws-07-review-sec-d-q04",
+          "order": 4,
+          "prompt": "I / study / Japanese this year. It's very difficult.",
+          "acceptedAnswers": [
+            "I'm studying Japanese this year. It's very difficult."
+          ],
+          "explanation": "this year (temporary): continuous"
+        },
+        {
+          "id": "ws-07-review-sec-d-q05",
+          "order": 5,
+          "prompt": "you / watch / the television at the moment?",
+          "acceptedAnswers": [
+            "Are you watching the television at the moment?"
+          ],
+          "explanation": "at the moment: continuous"
+        },
+        {
+          "id": "ws-07-review-sec-d-q06",
+          "order": 6,
+          "prompt": "I / not / remember / the name of the hotel.",
+          "acceptedAnswers": [
+            "I don't remember the name of the hotel."
+          ],
+          "explanation": "remember is a state verb"
+        },
+        {
+          "id": "ws-07-review-sec-d-q07",
+          "order": 7,
+          "prompt": "She / speak / three languages.",
+          "acceptedAnswers": [
+            "She speaks three languages."
+          ],
+          "explanation": "ability/fact: present simple"
+        },
+        {
+          "id": "ws-07-review-sec-d-q08",
+          "order": 8,
+          "prompt": "The sun / shine. It's a beautiful day!",
+          "acceptedAnswers": [
+            "The sun is shining. It's a beautiful day!"
+          ],
+          "explanation": "now: continuous"
+        }
+      ]
+    }
+  ]
+}

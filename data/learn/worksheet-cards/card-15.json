@@ -1,0 +1,1153 @@
+{
+  "id": "card-15",
+  "order": 15,
+  "part": 1,
+  "slug": "card-15-tu-chi-luong-va-dai-tu-bat-dinh",
+  "title": "THẺ BÀI TẬP 15",
+  "subject": "Quantifiers & Indefinite Pronouns",
+  "subjectVi": "Từ chỉ lượng & Đại từ bất định",
+  "level": "B1",
+  "pageRange": "WS-41, WS-42",
+  "sections": [
+    {
+      "id": "card-15-sec-1",
+      "sectionKey": "A",
+      "instruction": "Fill in SOME or ANY as in the example: (Example: Are there any rabbits in the garden?)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-a-q02",
+          "order": 2,
+          "prompt": "Are there [gap] children in the class?",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in questions"
+        },
+        {
+          "id": "ws-41-sec-a-q03",
+          "order": 3,
+          "prompt": "There aren’t [gap] chairs in the room.",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in negatives"
+        },
+        {
+          "id": "ws-41-sec-a-q04",
+          "order": 4,
+          "prompt": "Are there [gap] birds in the tree?",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in questions"
+        },
+        {
+          "id": "ws-41-sec-a-q05",
+          "order": 5,
+          "prompt": "There isn’t [gap] money in the bag.",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in negatives"
+        },
+        {
+          "id": "ws-41-sec-a-q06",
+          "order": 6,
+          "prompt": "There is [gap] coffee in the cup.",
+          "acceptedAnswers": [
+            "some"
+          ],
+          "explanation": "some in positive sentences"
+        },
+        {
+          "id": "ws-41-sec-a-q07",
+          "order": 7,
+          "prompt": "There are [gap] policemen in the police station.",
+          "acceptedAnswers": [
+            "some"
+          ],
+          "explanation": "some in positive sentences"
+        },
+        {
+          "id": "ws-41-sec-a-q08",
+          "order": 8,
+          "prompt": "Are there [gap] fish in the water?",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in questions"
+        },
+        {
+          "id": "ws-41-sec-a-q09",
+          "order": 9,
+          "prompt": "Are there [gap] oranges in the basket?",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in questions"
+        },
+        {
+          "id": "ws-41-sec-a-q10",
+          "order": 10,
+          "prompt": "There isn’t [gap] milk in the fridge.",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in negatives"
+        },
+        {
+          "id": "ws-41-sec-a-q11",
+          "order": 11,
+          "prompt": "I have [gap] tea, but I don’t have [gap] sugar.",
+          "acceptedAnswers": [
+            "some / any"
+          ],
+          "explanation": "some: positive; any: negative"
+        },
+        {
+          "id": "ws-41-sec-a-q12",
+          "order": 12,
+          "prompt": "Is there [gap] meat at home?",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in questions"
+        },
+        {
+          "id": "ws-41-sec-a-q13",
+          "order": 13,
+          "prompt": "There were [gap] apples here a minute ago.",
+          "acceptedAnswers": [
+            "some"
+          ],
+          "explanation": "some in positive sentences"
+        },
+        {
+          "id": "ws-41-sec-a-q14",
+          "order": 14,
+          "prompt": "There aren’t [gap] glasses on the table.",
+          "acceptedAnswers": [
+            "any"
+          ],
+          "explanation": "any in negatives"
+        },
+        {
+          "id": "ws-41-sec-a-q15",
+          "order": 15,
+          "prompt": "Please buy me [gap] stamps at the post office.",
+          "acceptedAnswers": [
+            "some"
+          ],
+          "explanation": "some in requests"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-2",
+      "sectionKey": "B",
+      "instruction": "Look at the table (* = they have got it). Write what they have got and what they haven’t got: (Example: Teresa has got some tomatoes, some meat and some bread but she hasn’t got any potatoes.)",
+      "type": "sentence_building",
+      "tableData": {
+        "headers": [
+          "",
+          "tomatoes",
+          "potatoes",
+          "meat",
+          "bread"
+        ],
+        "rows": [
+          [
+            "Teresa",
+            "*",
+            "",
+            "*",
+            "*"
+          ],
+          [
+            "Richard + Jenny",
+            "*",
+            "*",
+            "*",
+            ""
+          ],
+          [
+            "Mark",
+            "",
+            "*",
+            "*",
+            "*"
+          ],
+          [
+            "Sally",
+            "*",
+            "",
+            "*",
+            "*"
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-41-sec-b-q02",
+          "order": 2,
+          "prompt": "Richard and Jenny",
+          "acceptedAnswers": [
+            "Richard and Jenny have got some tomatoes, some potatoes and some meat but they haven't got any bread.",
+            "Richard and Jenny have got some tomatoes, potatoes and meat but they haven't got any bread.",
+            "Richard and Jenny have got some tomatoes, some potatoes and some meat, but they haven't got any bread."
+          ],
+          "explanation": "some: positive; any: negative"
+        },
+        {
+          "id": "ws-41-sec-b-q03",
+          "order": 3,
+          "prompt": "Mark",
+          "acceptedAnswers": [
+            "Mark has got some potatoes, some meat and some bread but he hasn't got any tomatoes.",
+            "Mark has got some potatoes, meat and bread but he hasn't got any tomatoes."
+          ],
+          "explanation": "some: positive; any: negative"
+        },
+        {
+          "id": "ws-41-sec-b-q04",
+          "order": 4,
+          "prompt": "Sally",
+          "acceptedAnswers": [
+            "Sally has got some tomatoes, some meat and some bread but she hasn't got any potatoes.",
+            "Sally has got some tomatoes, meat and bread but she hasn't got any potatoes."
+          ],
+          "explanation": "some: positive; any: negative"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-3",
+      "sectionKey": "C",
+      "instruction": "Fill in HOW MUCH, HOW MANY, A FEW, A LITTLE, SOME or ANY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-c-q01",
+          "order": 1,
+          "prompt": "A: [gap] bananas would you like, sir? B: Just [gap], please.",
+          "acceptedAnswers": [
+            "How many / a few"
+          ],
+          "explanation": "countable: how many, a few"
+        },
+        {
+          "id": "ws-41-sec-c-q02",
+          "order": 2,
+          "prompt": "A: Can I have [gap] milk? B: Sorry, we haven’t got [gap] milk.",
+          "acceptedAnswers": [
+            "some / any"
+          ],
+          "explanation": "some in requests; any in negatives"
+        },
+        {
+          "id": "ws-41-sec-c-q03",
+          "order": 3,
+          "prompt": "A: [gap] bread would you like? B: Just [gap], please.",
+          "acceptedAnswers": [
+            "How much / a little"
+          ],
+          "explanation": "uncountable: how much, a little"
+        },
+        {
+          "id": "ws-41-sec-c-q04",
+          "order": 4,
+          "prompt": "A: [gap] carrots do we have? B: We have only [gap].",
+          "acceptedAnswers": [
+            "How many / a few"
+          ],
+          "explanation": "countable: how many, a few"
+        },
+        {
+          "id": "ws-41-sec-c-q05",
+          "order": 5,
+          "prompt": "A: [gap] oranges do we need? B: We don’t need [gap] oranges.",
+          "acceptedAnswers": [
+            "How many / any"
+          ],
+          "explanation": "countable: how many; any in negatives"
+        },
+        {
+          "id": "ws-41-sec-c-q06",
+          "order": 6,
+          "prompt": "A: [gap] sugar would you like in your coffee? B: Just [gap], please.",
+          "acceptedAnswers": [
+            "How much / a little"
+          ],
+          "explanation": "uncountable: how much, a little"
+        },
+        {
+          "id": "ws-41-sec-c-q07",
+          "order": 7,
+          "prompt": "A: Could I have [gap] tea, please? B: Of course. Would you like [gap] biscuits, too?",
+          "acceptedAnswers": [
+            "some / some"
+          ],
+          "explanation": "some in requests and offers"
+        },
+        {
+          "id": "ws-41-sec-c-q08",
+          "order": 8,
+          "prompt": "A: Is there [gap] wine in the fridge? B: No, we need to buy [gap].",
+          "acceptedAnswers": [
+            "any / some"
+          ],
+          "explanation": "any in questions; some in positives"
+        },
+        {
+          "id": "ws-41-sec-c-q09",
+          "order": 9,
+          "prompt": "A: [gap] flour does she need? B: Just [gap].",
+          "acceptedAnswers": [
+            "How much / a little"
+          ],
+          "explanation": "uncountable: how much, a little"
+        },
+        {
+          "id": "ws-41-sec-c-q10",
+          "order": 10,
+          "prompt": "A: Have you got [gap] potatoes? B: Yes. [gap] would you like?",
+          "acceptedAnswers": [
+            "any / How many"
+          ],
+          "explanation": "any in questions; countable: how many"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-4",
+      "sectionKey": "D",
+      "instruction": "Fill in SOME, ANY, MUCH or MANY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-d-q01a",
+          "order": 1,
+          "prompt": "A: I’d like [gap] eggs, please. B: Of course. How [gap] would you like?",
+          "acceptedAnswers": [
+            "some / many"
+          ],
+          "explanation": "some in requests; how many + countable"
+        },
+        {
+          "id": "ws-41-sec-d-q01b",
+          "order": 1,
+          "prompt": "A: Six, please. Are there [gap] tomatoes? B: Certainly. How [gap] do you need? A: A kilo, please.",
+          "acceptedAnswers": [
+            "any / many"
+          ],
+          "explanation": "any in questions; how many + countable"
+        },
+        {
+          "id": "ws-41-sec-d-q02a",
+          "order": 2,
+          "prompt": "A: I’d like [gap] olive oil. B: How [gap] do you need?",
+          "acceptedAnswers": [
+            "some / much"
+          ],
+          "explanation": "some in requests; how much + uncountable"
+        },
+        {
+          "id": "ws-41-sec-d-q02b",
+          "order": 2,
+          "prompt": "A: Half a bottle. Is there [gap] flour? B: Certainly. How [gap] do you need? A: A kilo, please.",
+          "acceptedAnswers": [
+            "any / much"
+          ],
+          "explanation": "any in questions; how much + uncountable"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-5",
+      "sectionKey": "E",
+      "instruction": "Fill in HOW MUCH or HOW MANY:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-41-sec-e-q01",
+          "order": 1,
+          "prompt": "[gap] potatoes do we need?",
+          "acceptedAnswers": [
+            "How many"
+          ],
+          "explanation": "how many + countable plural"
+        },
+        {
+          "id": "ws-41-sec-e-q02",
+          "order": 2,
+          "prompt": "[gap] sugar would you like?",
+          "acceptedAnswers": [
+            "How much"
+          ],
+          "explanation": "how much + uncountable"
+        },
+        {
+          "id": "ws-41-sec-e-q03",
+          "order": 3,
+          "prompt": "[gap] milk is there in the fridge?",
+          "acceptedAnswers": [
+            "How much"
+          ],
+          "explanation": "how much + uncountable"
+        },
+        {
+          "id": "ws-41-sec-e-q04",
+          "order": 4,
+          "prompt": "[gap] eggs do you want?",
+          "acceptedAnswers": [
+            "How many"
+          ],
+          "explanation": "how many + countable plural"
+        },
+        {
+          "id": "ws-41-sec-e-q05",
+          "order": 5,
+          "prompt": "[gap] ham do you need?",
+          "acceptedAnswers": [
+            "How much"
+          ],
+          "explanation": "how much + uncountable"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-6",
+      "sectionKey": "F",
+      "instruction": "Choose the correct sentence (C), as in the example: (Example: There aren’t any tomatoes in the fridge. is correct, not “There aren’t some tomatoes in the fridge.”)",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-41-sec-f-q02",
+          "order": 2,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) I’d like some soup, please.",
+            "b) I like some soup, please."
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "I’d like = polite request"
+        },
+        {
+          "id": "ws-41-sec-f-q03",
+          "order": 3,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) Would you like some orange juice?",
+            "b) Do you like some orange juice?"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "Would you like some…? = offer"
+        },
+        {
+          "id": "ws-41-sec-f-q04",
+          "order": 4,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) How much cherries do you need?",
+            "b) How many cherries do you need?"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "how many + countable plural"
+        },
+        {
+          "id": "ws-41-sec-f-q05",
+          "order": 5,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) I’d like some rice for lunch.",
+            "b) I’d like a rice for lunch."
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "rice is uncountable: no “a”"
+        },
+        {
+          "id": "ws-41-sec-f-q06",
+          "order": 6,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) Would you like some bread?",
+            "b) Do you like some bread?"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "Would you like some…? = offer"
+        },
+        {
+          "id": "ws-41-sec-f-q07",
+          "order": 7,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) No thanks. I don’t want any coffee.",
+            "b) No thanks. I’d like any coffee."
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "any in negatives"
+        },
+        {
+          "id": "ws-41-sec-f-q08",
+          "order": 8,
+          "prompt": "“Here’s your hamburger.” Which reply is correct?",
+          "options": [
+            "a) How many is it?",
+            "b) How much is it?"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "How much is it? = asking the price"
+        },
+        {
+          "id": "ws-41-sec-f-q09",
+          "order": 9,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) How much you want?",
+            "b) How much do you want?"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "question needs auxiliary do"
+        },
+        {
+          "id": "ws-41-sec-f-q10",
+          "order": 10,
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "a) I’m hungry. Is there anything to eat?",
+            "b) I’m hungry. Is this anything to eat?"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "Is there anything…? = asking if something exists"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-7",
+      "sectionKey": "G",
+      "instruction": "Complete the sentences using SOMEONE / ANYONE / NO ONE / SOMETHING / ANYTHING / NOTHING / SOMEWHERE / ANYWHERE / NOWHERE / EVERYONE / EVERYTHING / EVERYWHERE:",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "someone",
+        "anyone",
+        "no one",
+        "something",
+        "anything",
+        "nothing",
+        "somewhere",
+        "anywhere",
+        "nowhere",
+        "everyone",
+        "everything",
+        "everywhere"
+      ],
+      "questions": [
+        {
+          "id": "ws-42-sec-a-q01",
+          "order": 1,
+          "prompt": "Do you have [gap] in your pocket?",
+          "acceptedAnswers": [
+            "anything"
+          ],
+          "explanation": "any- in questions"
+        },
+        {
+          "id": "ws-42-sec-a-q02",
+          "order": 2,
+          "prompt": "Bob doesn’t have [gap] in his pocket.",
+          "acceptedAnswers": [
+            "anything"
+          ],
+          "explanation": "any- in negatives"
+        },
+        {
+          "id": "ws-42-sec-a-q03",
+          "order": 3,
+          "prompt": "My roommate is speaking to [gap] on the phone.",
+          "acceptedAnswers": [
+            "someone|somebody"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-a-q04",
+          "order": 4,
+          "prompt": "Ann didn’t tell [gap] her secret.",
+          "acceptedAnswers": [
+            "anyone|anybody"
+          ],
+          "explanation": "any- in negatives"
+        },
+        {
+          "id": "ws-42-sec-a-q05",
+          "order": 5,
+          "prompt": "I talked to [gap] at the phone company about my bill.",
+          "acceptedAnswers": [
+            "someone|somebody"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-a-q06",
+          "order": 6,
+          "prompt": "Jane gave me [gap] for my birthday.",
+          "acceptedAnswers": [
+            "something"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-a-q07",
+          "order": 7,
+          "prompt": "Paul didn’t give me [gap] for my birthday.",
+          "acceptedAnswers": [
+            "anything"
+          ],
+          "explanation": "any- in negatives"
+        },
+        {
+          "id": "ws-42-sec-a-q08",
+          "order": 8,
+          "prompt": "Did Paul give you [gap] for your birthday?",
+          "acceptedAnswers": [
+            "anything"
+          ],
+          "explanation": "any- in questions"
+        },
+        {
+          "id": "ws-42-sec-a-q09",
+          "order": 9,
+          "prompt": "My brother is sitting at his desk, and he is writing a letter to [gap].",
+          "acceptedAnswers": [
+            "someone|somebody"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-a-q10",
+          "order": 10,
+          "prompt": "A: The room is empty. B: You’re right. There is [gap] to talk to here.",
+          "acceptedAnswers": [
+            "no one|nobody|no-one"
+          ],
+          "explanation": "no- with a positive verb"
+        },
+        {
+          "id": "ws-42-sec-a-q11",
+          "order": 11,
+          "prompt": "A: What did you do last night? B: I didn’t do [gap].",
+          "acceptedAnswers": [
+            "anything"
+          ],
+          "explanation": "any- in negatives"
+        },
+        {
+          "id": "ws-42-sec-a-q12",
+          "order": 12,
+          "prompt": "They won’t go [gap] after dark.",
+          "acceptedAnswers": [
+            "anywhere"
+          ],
+          "explanation": "any- in negatives"
+        },
+        {
+          "id": "ws-42-sec-a-q13",
+          "order": 13,
+          "prompt": "A: Does [gap] have a red pen? B: Yes. Betty does.",
+          "acceptedAnswers": [
+            "anyone|anybody"
+          ],
+          "explanation": "any- in questions"
+        },
+        {
+          "id": "ws-42-sec-a-q14",
+          "order": 14,
+          "prompt": "If [gap] wants to leave early, he or she can.",
+          "acceptedAnswers": [
+            "anyone|anybody"
+          ],
+          "explanation": "any- after if"
+        },
+        {
+          "id": "ws-42-sec-a-q15",
+          "order": 15,
+          "prompt": "There is [gap] at the door. Can you go and see who it is?",
+          "acceptedAnswers": [
+            "someone|somebody"
+          ],
+          "explanation": "some- in positive sentences"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-8",
+      "sectionKey": "H",
+      "instruction": "Complete the sentences using SOMEONE / ANYONE / NO ONE / SOMETHING / ANYTHING / NOTHING / SOMEWHERE / ANYWHERE / NOWHERE / EVERYONE / EVERYTHING / EVERYWHERE:",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "someone",
+        "anyone",
+        "no one",
+        "something",
+        "anything",
+        "nothing",
+        "somewhere",
+        "anywhere",
+        "nowhere",
+        "everyone",
+        "everything",
+        "everywhere"
+      ],
+      "questions": [
+        {
+          "id": "ws-42-sec-b-q01",
+          "order": 1,
+          "prompt": "The bus was completely empty. There was [gap] on it.",
+          "acceptedAnswers": [
+            "no one|nobody|no-one"
+          ],
+          "explanation": "no- with a positive verb"
+        },
+        {
+          "id": "ws-42-sec-b-q02",
+          "order": 2,
+          "prompt": "The party was very nice. [gap] enjoyed it.",
+          "acceptedAnswers": [
+            "Everyone|Everybody"
+          ],
+          "explanation": "every-: all people"
+        },
+        {
+          "id": "ws-42-sec-b-q03",
+          "order": 3,
+          "prompt": "Tom is very popular. [gap] likes him.",
+          "acceptedAnswers": [
+            "Everyone|Everybody"
+          ],
+          "explanation": "every-: all people"
+        },
+        {
+          "id": "ws-42-sec-b-q04",
+          "order": 4,
+          "prompt": "[gap] was very kind to us. They helped us too much.",
+          "acceptedAnswers": [
+            "Everyone|Everybody"
+          ],
+          "explanation": "every-: all people"
+        },
+        {
+          "id": "ws-42-sec-b-q05",
+          "order": 5,
+          "prompt": "[gap] can make her happy because she is very sad now.",
+          "acceptedAnswers": [
+            "No one|Nobody|No-one"
+          ],
+          "explanation": "no- with a positive verb"
+        },
+        {
+          "id": "ws-42-sec-b-q06",
+          "order": 6,
+          "prompt": "I opened the door but there was [gap] there.",
+          "acceptedAnswers": [
+            "no one|nobody|no-one|nothing"
+          ],
+          "explanation": "no- with a positive verb"
+        },
+        {
+          "id": "ws-42-sec-b-q07",
+          "order": 7,
+          "prompt": "[gap] telephoned the police but he didn’t give his name.",
+          "acceptedAnswers": [
+            "Someone|Somebody"
+          ],
+          "explanation": "some-: an unknown person"
+        },
+        {
+          "id": "ws-42-sec-b-q08",
+          "order": 8,
+          "prompt": "Is [gap] living in that house? It looks empty.",
+          "acceptedAnswers": [
+            "anyone|anybody"
+          ],
+          "explanation": "any- in questions"
+        },
+        {
+          "id": "ws-42-sec-b-q09",
+          "order": 9,
+          "prompt": "I heard [gap] falling down the stairs.",
+          "acceptedAnswers": [
+            "someone|somebody|something"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-b-q10",
+          "order": 10,
+          "prompt": "[gap] is here, no absentees.",
+          "acceptedAnswers": [
+            "Everyone|Everybody"
+          ],
+          "explanation": "every-: all people"
+        },
+        {
+          "id": "ws-42-sec-b-q11",
+          "order": 11,
+          "prompt": "Jane was very hungry, so she wanted to go [gap] to eat a hamburger.",
+          "acceptedAnswers": [
+            "somewhere"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-b-q12",
+          "order": 12,
+          "prompt": "John went [gap] exciting last week.",
+          "acceptedAnswers": [
+            "somewhere"
+          ],
+          "explanation": "somewhere + adjective"
+        },
+        {
+          "id": "ws-42-sec-b-q13",
+          "order": 13,
+          "prompt": "She stayed in İstanbul for a month and visited [gap] in this city.",
+          "acceptedAnswers": [
+            "everywhere"
+          ],
+          "explanation": "every-: all places"
+        },
+        {
+          "id": "ws-42-sec-b-q14",
+          "order": 14,
+          "prompt": "What’s wrong? Have you got [gap] in your eye?",
+          "acceptedAnswers": [
+            "something"
+          ],
+          "explanation": "some- in questions expecting yes"
+        },
+        {
+          "id": "ws-42-sec-b-q15",
+          "order": 15,
+          "prompt": "Does [gap] mind if I smoke?",
+          "acceptedAnswers": [
+            "anyone|anybody"
+          ],
+          "explanation": "any- in questions"
+        },
+        {
+          "id": "ws-42-sec-b-q16",
+          "order": 16,
+          "prompt": "A: Where did you go for your holidays? B: [gap]. I stayed at home.",
+          "acceptedAnswers": [
+            "Nowhere"
+          ],
+          "explanation": "no- as a short answer"
+        },
+        {
+          "id": "ws-42-sec-b-q17",
+          "order": 17,
+          "prompt": "The accident looked serious but fortunately [gap] was injured.",
+          "acceptedAnswers": [
+            "no one|nobody|no-one"
+          ],
+          "explanation": "no- with a positive verb"
+        },
+        {
+          "id": "ws-42-sec-b-q18",
+          "order": 18,
+          "prompt": "A: What did you have for breakfast? B: [gap]. I don’t usually have [gap] for breakfast.",
+          "acceptedAnswers": [
+            "Nothing / anything"
+          ],
+          "explanation": "no- as short answer; any- in negatives"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-9",
+      "sectionKey": "I",
+      "instruction": "Rewrite the following sentences without changing the meaning: (Example: There wasn’t anyone in front of me in the cinema. → There was no one in front of me in the cinema.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-42-sec-c-q01",
+          "order": 1,
+          "prompt": "They don’t know anyone in this town. → They know",
+          "acceptedAnswers": [
+            "They know no one in this town.",
+            "They know nobody in this town."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-c-q02",
+          "order": 2,
+          "prompt": "She met no one at the bus-stop. → She didn’t",
+          "acceptedAnswers": [
+            "She didn't meet anyone at the bus-stop.",
+            "She didn't meet anybody at the bus-stop.",
+            "She didn't meet anyone at the bus stop."
+          ],
+          "explanation": "no- = not + any-"
+        },
+        {
+          "id": "ws-42-sec-c-q03",
+          "order": 3,
+          "prompt": "You told nobody to go with you. → You",
+          "acceptedAnswers": [
+            "You didn't tell anybody to go with you.",
+            "You didn't tell anyone to go with you."
+          ],
+          "explanation": "no- = not + any-"
+        },
+        {
+          "id": "ws-42-sec-c-q04",
+          "order": 4,
+          "prompt": "We ate nothing until dinner. → We didn’t",
+          "acceptedAnswers": [
+            "We didn't eat anything until dinner."
+          ],
+          "explanation": "no- = not + any-"
+        },
+        {
+          "id": "ws-42-sec-c-q05",
+          "order": 5,
+          "prompt": "She told no one anything about last night. → She didn’t",
+          "acceptedAnswers": [
+            "She didn't tell anyone anything about last night.",
+            "She didn't tell anybody anything about last night."
+          ],
+          "explanation": "no- = not + any-"
+        },
+        {
+          "id": "ws-42-sec-c-q06",
+          "order": 6,
+          "prompt": "She didn’t tell anybody about her plans. → She told",
+          "acceptedAnswers": [
+            "She told nobody about her plans.",
+            "She told no one about her plans."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-c-q07",
+          "order": 7,
+          "prompt": "I didn’t say anything. → I said",
+          "acceptedAnswers": [
+            "I said nothing."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-c-q08",
+          "order": 8,
+          "prompt": "The station isn’t anywhere near here. → The station is",
+          "acceptedAnswers": [
+            "The station is nowhere near here."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-c-q09",
+          "order": 9,
+          "prompt": "I don’t want anything to drink. → I want",
+          "acceptedAnswers": [
+            "I want nothing to drink."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-c-q10",
+          "order": 10,
+          "prompt": "We did nothing during our vacation. → We",
+          "acceptedAnswers": [
+            "We didn't do anything during our vacation."
+          ],
+          "explanation": "no- = not + any-"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-10",
+      "sectionKey": "J",
+      "instruction": "Complete the conversations. Use the words in the box: (Example: Can I speak to somebody in the Accounts Office, please?)",
+      "type": "passage_gap_fill",
+      "contextText": "a) Woman: Hello. Can I speak to somebody in the Accounts Office, please? (questions 1–3)\nb) Mother and daughter (questions 4–7)\nc) A man looking for a hotel room (questions 8–9)",
+      "wordBank": [
+        "somebody",
+        "anybody",
+        "nobody",
+        "everybody",
+        "something",
+        "anything",
+        "nothing",
+        "everything",
+        "somewhere",
+        "anywhere",
+        "nowhere",
+        "everywhere"
+      ],
+      "questions": [
+        {
+          "id": "ws-42-sec-d-q01",
+          "order": 1,
+          "prompt": "Man: I’m sorry, madam. It’s after 6:00. There isn’t [gap] in the Accounts Office now. [gap] has gone home.",
+          "acceptedAnswers": [
+            "anybody|anyone / Everybody|Everyone"
+          ],
+          "explanation": "any- in negatives; every- = all people"
+        },
+        {
+          "id": "ws-42-sec-d-q02",
+          "order": 2,
+          "prompt": "Woman: But I must speak to [gap] today.",
+          "acceptedAnswers": [
+            "somebody|someone"
+          ],
+          "explanation": "some- in positive sentences"
+        },
+        {
+          "id": "ws-42-sec-d-q03",
+          "order": 3,
+          "prompt": "Man: I’m sorry. There’s [gap] here. Can you phone back in the morning? There will be [gap] here then.",
+          "acceptedAnswers": [
+            "nobody|no one / somebody|someone"
+          ],
+          "explanation": "no- with a positive verb; some- in positives"
+        },
+        {
+          "id": "ws-42-sec-d-q04",
+          "order": 4,
+          "prompt": "Mother: Would you like [gap] to eat?",
+          "acceptedAnswers": [
+            "something"
+          ],
+          "explanation": "some- in offers"
+        },
+        {
+          "id": "ws-42-sec-d-q05",
+          "order": 5,
+          "prompt": "Daughter: No, thanks. I don’t want [gap] at the moment, thank you.",
+          "acceptedAnswers": [
+            "anything"
+          ],
+          "explanation": "any- in negatives"
+        },
+        {
+          "id": "ws-42-sec-d-q06",
+          "order": 6,
+          "prompt": "Mother: But you’ve had [gap] to eat all day. Is [gap] all right? Are you feeling ill?",
+          "acceptedAnswers": [
+            "nothing / everything"
+          ],
+          "explanation": "no- with a positive verb; every- = all"
+        },
+        {
+          "id": "ws-42-sec-d-q07",
+          "order": 7,
+          "prompt": "Daughter: No. Don’t worry. [gap] is fine. I’m just not hungry. That’s all.",
+          "acceptedAnswers": [
+            "Everything"
+          ],
+          "explanation": "every- = all things"
+        },
+        {
+          "id": "ws-42-sec-d-q08",
+          "order": 8,
+          "prompt": "Man: I’ve got [gap] to stay. I need [gap] for two nights.",
+          "acceptedAnswers": [
+            "nowhere / somewhere"
+          ],
+          "explanation": "no- with a positive verb; some- in positives"
+        },
+        {
+          "id": "ws-42-sec-d-q09",
+          "order": 9,
+          "prompt": "Man: I’ve tried all the hotels near here, but [gap] is full. I can’t find a room [gap].",
+          "acceptedAnswers": [
+            "everywhere / anywhere"
+          ],
+          "explanation": "every- = all places; any- in negatives"
+        }
+      ]
+    },
+    {
+      "id": "card-15-sec-11",
+      "sectionKey": "K",
+      "instruction": "Rewrite the sentences. Use the words in brackets: (Example: There isn’t anything in the fridge. (nothing) → There’s nothing in the fridge.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-42-sec-e-q02",
+          "order": 2,
+          "prompt": "I’ve got nothing to say. (anything)",
+          "acceptedAnswers": [
+            "I haven't got anything to say.",
+            "I don't have anything to say."
+          ],
+          "explanation": "no- = not + any-"
+        },
+        {
+          "id": "ws-42-sec-e-q03",
+          "order": 3,
+          "prompt": "There’s nobody at home. (anybody)",
+          "acceptedAnswers": [
+            "There isn't anybody at home.",
+            "There's not anybody at home."
+          ],
+          "explanation": "no- = not + any-"
+        },
+        {
+          "id": "ws-42-sec-e-q04",
+          "order": 4,
+          "prompt": "They haven’t got anywhere to live. (nowhere)",
+          "acceptedAnswers": [
+            "They've got nowhere to live.",
+            "They have got nowhere to live.",
+            "They have nowhere to live."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-e-q05",
+          "order": 5,
+          "prompt": "There isn’t anyone outside. (no one)",
+          "acceptedAnswers": [
+            "There's no one outside.",
+            "There is no one outside."
+          ],
+          "explanation": "not + any- = no-"
+        },
+        {
+          "id": "ws-42-sec-e-q06",
+          "order": 6,
+          "prompt": "We’ve got nowhere to sit down. (anywhere)",
+          "acceptedAnswers": [
+            "We haven't got anywhere to sit down.",
+            "We don't have anywhere to sit down."
+          ],
+          "explanation": "no- = not + any-"
+        }
+      ]
+    }
+  ]
+}

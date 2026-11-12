@@ -1,0 +1,2248 @@
+{
+  "id": "card-09",
+  "order": 9,
+  "part": 1,
+  "slug": "card-09-cau-gian-tiep-tuong-thuat",
+  "title": "THẺ BÀI TẬP 09",
+  "subject": "Reported Speech",
+  "subjectVi": "Câu gián tiếp / Tường thuật",
+  "level": "B1",
+  "pageRange": "WS-26, WS-27",
+  "sections": [
+    {
+      "id": "card-09-sec-1",
+      "sectionKey": "A",
+      "instruction": "Change the following sentences from DIRECT to INDIRECT SPEECH: (Example: He said, “I will be here at noon.” → He said that he would be here at noon.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-a-q02",
+          "order": 2,
+          "prompt": "Mary said, “The train will probably arrive on time.”",
+          "acceptedAnswers": [
+            "Mary said that the train would probably arrive on time.",
+            "Mary said the train would probably arrive on time."
+          ],
+          "explanation": "will → would"
+        },
+        {
+          "id": "ws-26-sec-a-q03",
+          "order": 3,
+          "prompt": "He said, “I have to finish this report by five o’clock.”",
+          "acceptedAnswers": [
+            "He said that he had to finish that report by five o'clock.",
+            "He said that he had to finish the report by five o'clock.",
+            "He said that he had to finish this report by five o'clock.",
+            "He said that he would have to finish that report by five o'clock.",
+            "He said that he would have to finish the report by five o'clock.",
+            "He said that he would have to finish this report by five o'clock.",
+            "He said he had to finish that report by five o'clock.",
+            "He said he had to finish the report by five o'clock.",
+            "He said he had to finish this report by five o'clock.",
+            "He said he would have to finish that report by five o'clock.",
+            "He said he would have to finish the report by five o'clock.",
+            "He said he would have to finish this report by five o'clock."
+          ],
+          "explanation": "have to → had to; this → that"
+        },
+        {
+          "id": "ws-26-sec-a-q04",
+          "order": 4,
+          "prompt": "The doctor said, “Mr. Smith will improve quickly.”",
+          "acceptedAnswers": [
+            "The doctor said that Mr. Smith would improve quickly.",
+            "The doctor said Mr. Smith would improve quickly."
+          ],
+          "explanation": "will → would"
+        },
+        {
+          "id": "ws-26-sec-a-q05",
+          "order": 5,
+          "prompt": "William said to me, “I am leaving in the morning.”",
+          "acceptedAnswers": [
+            "William told me that he was leaving in the morning.",
+            "William told me that he was leaving the next morning.",
+            "William told me that he was leaving the following morning.",
+            "William told me he was leaving in the morning.",
+            "William told me he was leaving the next morning.",
+            "William told me he was leaving the following morning.",
+            "William said to me that he was leaving in the morning.",
+            "William said to me that he was leaving the next morning.",
+            "William said to me that he was leaving the following morning.",
+            "William said to me he was leaving in the morning.",
+            "William said to me he was leaving the next morning.",
+            "William said to me he was leaving the following morning."
+          ],
+          "explanation": "present continuous → past continuous"
+        },
+        {
+          "id": "ws-26-sec-a-q06",
+          "order": 6,
+          "prompt": "The teacher said, “Everyone has to write a composition.”",
+          "acceptedAnswers": [
+            "The teacher said that everyone had to write a composition.",
+            "The teacher said everyone had to write a composition."
+          ],
+          "explanation": "has to → had to"
+        },
+        {
+          "id": "ws-26-sec-a-q07",
+          "order": 7,
+          "prompt": "John said, “I saw that movie on Wednesday.”",
+          "acceptedAnswers": [
+            "John said that he had seen that movie on Wednesday.",
+            "John said that he had seen the movie on Wednesday.",
+            "John said he had seen that movie on Wednesday.",
+            "John said he had seen the movie on Wednesday.",
+            "John said that he saw that movie on Wednesday.",
+            "John said that he saw the movie on Wednesday.",
+            "John said he saw that movie on Wednesday.",
+            "John said he saw the movie on Wednesday."
+          ],
+          "explanation": "past simple → past perfect"
+        },
+        {
+          "id": "ws-26-sec-a-q08",
+          "order": 8,
+          "prompt": "Helen said, “I have read that book.”",
+          "acceptedAnswers": [
+            "Helen said that she had read that book.",
+            "Helen said that she had read the book.",
+            "Helen said she had read that book.",
+            "Helen said she had read the book."
+          ],
+          "explanation": "present perfect → past perfect"
+        },
+        {
+          "id": "ws-26-sec-a-q09",
+          "order": 9,
+          "prompt": "Mary said to John, “I cannot go to the movie with you.”",
+          "acceptedAnswers": [
+            "Mary told John that she could not go to the movie with him.",
+            "Mary told John that she couldn't go to the movie with him.",
+            "Mary told John she could not go to the movie with him.",
+            "Mary told John she couldn't go to the movie with him.",
+            "Mary said to John that she could not go to the movie with him.",
+            "Mary said to John that she couldn't go to the movie with him.",
+            "Mary said to John she could not go to the movie with him.",
+            "Mary said to John she couldn't go to the movie with him."
+          ],
+          "explanation": "can't → couldn't; you → him"
+        },
+        {
+          "id": "ws-26-sec-a-q10",
+          "order": 10,
+          "prompt": "John said, “I have finished studying my lesson.”",
+          "acceptedAnswers": [
+            "John said that he had finished studying his lesson.",
+            "John said he had finished studying his lesson."
+          ],
+          "explanation": "present perfect → past perfect"
+        },
+        {
+          "id": "ws-26-sec-a-q11",
+          "order": 11,
+          "prompt": "Mary remarked, “John speaks English well.”",
+          "acceptedAnswers": [
+            "Mary remarked that John spoke English well.",
+            "Mary remarked that John speaks English well.",
+            "Mary remarked John spoke English well.",
+            "Mary remarked John speaks English well."
+          ],
+          "explanation": "present simple → past simple"
+        },
+        {
+          "id": "ws-26-sec-a-q12",
+          "order": 12,
+          "prompt": "William said to me, “I will not see Mr. Jones until Tuesday.”",
+          "acceptedAnswers": [
+            "William told me that he would not see Mr. Jones until Tuesday.",
+            "William told me he would not see Mr. Jones until Tuesday.",
+            "William said to me that he would not see Mr. Jones until Tuesday.",
+            "William said to me he would not see Mr. Jones until Tuesday."
+          ],
+          "explanation": "won't → wouldn't"
+        },
+        {
+          "id": "ws-26-sec-a-q13",
+          "order": 13,
+          "prompt": "Mr. Smith said, “I will refuse their offer.”",
+          "acceptedAnswers": [
+            "Mr. Smith said that he would refuse their offer.",
+            "Mr. Smith said he would refuse their offer."
+          ],
+          "explanation": "will → would"
+        },
+        {
+          "id": "ws-26-sec-a-q14",
+          "order": 14,
+          "prompt": "John said, “I certainly hope it won’t rain tomorrow.”",
+          "acceptedAnswers": [
+            "John said that he certainly hoped that it wouldn't rain the next day.",
+            "John said that he certainly hoped that it wouldn't rain the following day.",
+            "John said that he certainly hoped it wouldn't rain the next day.",
+            "John said that he certainly hoped it wouldn't rain the following day.",
+            "John said he certainly hoped that it wouldn't rain the next day.",
+            "John said he certainly hoped that it wouldn't rain the following day.",
+            "John said he certainly hoped it wouldn't rain the next day.",
+            "John said he certainly hoped it wouldn't rain the following day."
+          ],
+          "explanation": "tomorrow → the next day; won't → wouldn't"
+        },
+        {
+          "id": "ws-26-sec-a-q15",
+          "order": 15,
+          "prompt": "Henry said, “I can meet them later.”",
+          "acceptedAnswers": [
+            "Henry said that he could meet them later.",
+            "Henry said he could meet them later."
+          ],
+          "explanation": "can → could"
+        },
+        {
+          "id": "ws-26-sec-a-q16",
+          "order": 16,
+          "prompt": "The boy said, “I am only eight years old.”",
+          "acceptedAnswers": [
+            "The boy said that he was only eight years old.",
+            "The boy said he was only eight years old."
+          ],
+          "explanation": "am → was"
+        },
+        {
+          "id": "ws-26-sec-a-q17",
+          "order": 17,
+          "prompt": "She said to me, “The lights have gone out.”",
+          "acceptedAnswers": [
+            "She told me that the lights had gone out.",
+            "She told me the lights had gone out.",
+            "She said to me that the lights had gone out.",
+            "She said to me the lights had gone out."
+          ],
+          "explanation": "present perfect → past perfect"
+        },
+        {
+          "id": "ws-26-sec-a-q18",
+          "order": 18,
+          "prompt": "The man said, “The telephone is out of order.”",
+          "acceptedAnswers": [
+            "The man said that the telephone was out of order.",
+            "The man said the telephone was out of order."
+          ],
+          "explanation": "is → was"
+        },
+        {
+          "id": "ws-26-sec-a-q19",
+          "order": 19,
+          "prompt": "He said, “I will never speak to her again.”",
+          "acceptedAnswers": [
+            "He said that he would never speak to her again.",
+            "He said he would never speak to her again."
+          ],
+          "explanation": "will → would"
+        },
+        {
+          "id": "ws-26-sec-a-q20",
+          "order": 20,
+          "prompt": "I said to the clerk clearly, “I have already paid that bill.”",
+          "acceptedAnswers": [
+            "I told the clerk clearly that I had already paid that bill.",
+            "I told the clerk clearly that I had already paid the bill.",
+            "I told the clerk clearly I had already paid that bill.",
+            "I told the clerk clearly I had already paid the bill.",
+            "I clearly told the clerk that I had already paid that bill.",
+            "I clearly told the clerk that I had already paid the bill.",
+            "I clearly told the clerk I had already paid that bill.",
+            "I clearly told the clerk I had already paid the bill.",
+            "I said to the clerk clearly that I had already paid that bill.",
+            "I said to the clerk clearly that I had already paid the bill.",
+            "I said to the clerk clearly I had already paid that bill.",
+            "I said to the clerk clearly I had already paid the bill."
+          ],
+          "explanation": "present perfect → past perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-2",
+      "sectionKey": "B",
+      "instruction": "REPORT what the guests said at a wedding last Saturday: (Example: Miss Moore: “They’ll make a lovely couple.” → Miss Moore said (that) they would make a lovely couple.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-b-q02",
+          "order": 2,
+          "prompt": "Mr. Smith: “They’re going to live in Brighton.”",
+          "acceptedAnswers": [
+            "Mr. Smith said that they were going to live in Brighton.",
+            "Mr. Smith said they were going to live in Brighton."
+          ],
+          "explanation": "are going to → were going to"
+        },
+        {
+          "id": "ws-26-sec-b-q03",
+          "order": 3,
+          "prompt": "Mrs. Jones: “The bride and the groom are very nice young people.”",
+          "acceptedAnswers": [
+            "Mrs. Jones said that the bride and the groom were very nice young people.",
+            "Mrs. Jones said that the bride and groom were very nice young people.",
+            "Mrs. Jones said the bride and the groom were very nice young people.",
+            "Mrs. Jones said the bride and groom were very nice young people."
+          ],
+          "explanation": "are → were"
+        },
+        {
+          "id": "ws-26-sec-b-q04",
+          "order": 4,
+          "prompt": "Mr. Roberts: “The bride is wearing a beautiful wedding dress.”",
+          "acceptedAnswers": [
+            "Mr. Roberts said that the bride was wearing a beautiful wedding dress.",
+            "Mr. Roberts said the bride was wearing a beautiful wedding dress."
+          ],
+          "explanation": "present continuous → past continuous"
+        },
+        {
+          "id": "ws-26-sec-b-q05",
+          "order": 5,
+          "prompt": "Mr. Clarke: “The couple’s parents look happy.”",
+          "acceptedAnswers": [
+            "Mr. Clarke said that the couple's parents looked happy.",
+            "Mr. Clarke said the couple's parents looked happy."
+          ],
+          "explanation": "present simple → past simple"
+        },
+        {
+          "id": "ws-26-sec-b-q06",
+          "order": 6,
+          "prompt": "Miss Mayall: “The bride’s father has bought them a big flat.”",
+          "acceptedAnswers": [
+            "Miss Mayall said that the bride's father had bought them a big flat.",
+            "Miss Mayall said the bride's father had bought them a big flat."
+          ],
+          "explanation": "present perfect → past perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-3",
+      "sectionKey": "C",
+      "instruction": "Write sentences about Jane’s trip to Paris: (Example: “We’re taking the nine o’clock plane.” → Jane told me they were taking the nine o’clock plane.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-c-q02",
+          "order": 2,
+          "prompt": "“I’ll have to get up early.” → She said",
+          "acceptedAnswers": [
+            "She said that she would have to get up early.",
+            "She said she would have to get up early."
+          ],
+          "explanation": "will have to → would have to"
+        },
+        {
+          "id": "ws-26-sec-c-q03",
+          "order": 3,
+          "prompt": "“I don’t really like traveling by air.” → She told me",
+          "acceptedAnswers": [
+            "She told me that she didn't really like traveling by air.",
+            "She told me that she didn't really like travelling by air.",
+            "She told me she didn't really like traveling by air.",
+            "She told me she didn't really like travelling by air."
+          ],
+          "explanation": "don't → didn't"
+        },
+        {
+          "id": "ws-26-sec-c-q04",
+          "order": 4,
+          "prompt": "“But it’s the easiest way to travel.” → But she decided",
+          "acceptedAnswers": [
+            "But she decided that it was the easiest way to travel.",
+            "But she decided it was the easiest way to travel."
+          ],
+          "explanation": "is → was"
+        },
+        {
+          "id": "ws-26-sec-c-q05",
+          "order": 5,
+          "prompt": "“We’re going to spend a week in Paris.” → She told me",
+          "acceptedAnswers": [
+            "She told me that they were going to spend a week in Paris.",
+            "She told me they were going to spend a week in Paris."
+          ],
+          "explanation": "are going to → were going to"
+        },
+        {
+          "id": "ws-26-sec-c-q06",
+          "order": 6,
+          "prompt": "“I want to go up the Eiffel Tower.” → She said",
+          "acceptedAnswers": [
+            "She said that she wanted to go up the Eiffel Tower.",
+            "She said she wanted to go up the Eiffel Tower."
+          ],
+          "explanation": "want → wanted"
+        },
+        {
+          "id": "ws-26-sec-c-q07",
+          "order": 7,
+          "prompt": "“We’ve been to Paris before.” → She told me",
+          "acceptedAnswers": [
+            "She told me that they had been to Paris before.",
+            "She told me they had been to Paris before."
+          ],
+          "explanation": "present perfect → past perfect"
+        },
+        {
+          "id": "ws-26-sec-c-q08",
+          "order": 8,
+          "prompt": "“But we didn’t see everything.” → But she said",
+          "acceptedAnswers": [
+            "But she said that they hadn't seen everything.",
+            "But she said that they didn't see everything.",
+            "But she said they hadn't seen everything.",
+            "But she said they didn't see everything."
+          ],
+          "explanation": "past simple → past perfect"
+        },
+        {
+          "id": "ws-26-sec-c-q09",
+          "order": 9,
+          "prompt": "“I’ll send you a postcard.” → She said",
+          "acceptedAnswers": [
+            "She said that she would send me a postcard.",
+            "She said she would send me a postcard."
+          ],
+          "explanation": "will → would; you → me"
+        },
+        {
+          "id": "ws-26-sec-c-q10",
+          "order": 10,
+          "prompt": "“But I won’t write you a letter.” → But she told me",
+          "acceptedAnswers": [
+            "But she told me that she wouldn't write me a letter.",
+            "But she told me she wouldn't write me a letter."
+          ],
+          "explanation": "won't → wouldn't"
+        },
+        {
+          "id": "ws-26-sec-c-q11",
+          "order": 11,
+          "prompt": "“I’m very excited!” → She said",
+          "acceptedAnswers": [
+            "She said that she was very excited.",
+            "She said she was very excited."
+          ],
+          "explanation": "am → was"
+        },
+        {
+          "id": "ws-26-sec-c-q12",
+          "order": 12,
+          "prompt": "“We’ll be in Paris tomorrow!” → The last thing she said was that",
+          "acceptedAnswers": [
+            "The last thing she said was that they would be in Paris the next day.",
+            "The last thing she said was that they would be in Paris the following day."
+          ],
+          "explanation": "tomorrow → the next day"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-4",
+      "sectionKey": "D",
+      "instruction": "REPORT the police-officer’s questions to the shop owner: (Example: “What’s your name?” → The police-officer asked him what his name was.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-d-q02",
+          "order": 2,
+          "prompt": "“Did you see the robbers?”",
+          "acceptedAnswers": [
+            "The police-officer asked him if he had seen the robbers.",
+            "The police-officer asked him whether he had seen the robbers.",
+            "The police officer asked him if he had seen the robbers.",
+            "The police officer asked him whether he had seen the robbers.",
+            "The police-officer asked him if he saw the robbers.",
+            "The police-officer asked him whether he saw the robbers.",
+            "The police officer asked him if he saw the robbers.",
+            "The police officer asked him whether he saw the robbers."
+          ],
+          "explanation": "yes/no question → if/whether + statement order"
+        },
+        {
+          "id": "ws-26-sec-d-q03",
+          "order": 3,
+          "prompt": "“What were they wearing?”",
+          "acceptedAnswers": [
+            "The police-officer asked him what they had been wearing.",
+            "The police-officer asked him what they were wearing.",
+            "The police officer asked him what they had been wearing.",
+            "The police officer asked him what they were wearing."
+          ],
+          "explanation": "wh- question → statement word order"
+        },
+        {
+          "id": "ws-26-sec-d-q04",
+          "order": 4,
+          "prompt": "“How do you think they got in?”",
+          "acceptedAnswers": [
+            "The police-officer asked him how he thought they had got in.",
+            "The police-officer asked him how he thought they got in.",
+            "The police-officer asked him how he thought they had gotten in.",
+            "The police officer asked him how he thought they had got in.",
+            "The police officer asked him how he thought they got in.",
+            "The police officer asked him how he thought they had gotten in."
+          ],
+          "explanation": "statement word order; past → past perfect"
+        },
+        {
+          "id": "ws-26-sec-d-q05",
+          "order": 5,
+          "prompt": "“What did they take?”",
+          "acceptedAnswers": [
+            "The police-officer asked him what they had taken.",
+            "The police-officer asked him what they took.",
+            "The police officer asked him what they had taken.",
+            "The police officer asked him what they took."
+          ],
+          "explanation": "past simple → past perfect"
+        },
+        {
+          "id": "ws-26-sec-d-q06",
+          "order": 6,
+          "prompt": "“Has this ever happened before?”",
+          "acceptedAnswers": [
+            "The police-officer asked him if this had ever happened before.",
+            "The police-officer asked him if that had ever happened before.",
+            "The police-officer asked him if it had ever happened before.",
+            "The police-officer asked him whether this had ever happened before.",
+            "The police-officer asked him whether that had ever happened before.",
+            "The police-officer asked him whether it had ever happened before.",
+            "The police officer asked him if this had ever happened before.",
+            "The police officer asked him if that had ever happened before.",
+            "The police officer asked him if it had ever happened before.",
+            "The police officer asked him whether this had ever happened before.",
+            "The police officer asked him whether that had ever happened before.",
+            "The police officer asked him whether it had ever happened before."
+          ],
+          "explanation": "if/whether; present perfect → past perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-5",
+      "sectionKey": "E",
+      "instruction": "Turn the following dialogue into REPORTED SPEECH: (Example: Sally: “Have you applied for the job?” → Sally asked Diane if she had applied for the job.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-d2-q01",
+          "order": 1,
+          "prompt": "Diane: “Yes, I had an interview yesterday.” → Diane told her",
+          "acceptedAnswers": [
+            "Diane told her that she had had an interview the day before.",
+            "Diane told her that she had had an interview the previous day.",
+            "Diane told her she had had an interview the day before.",
+            "Diane told her she had had an interview the previous day.",
+            "Diane told her that she had had an interview.",
+            "Diane told her she had had an interview."
+          ],
+          "explanation": "past → past perfect; yesterday → the day before"
+        },
+        {
+          "id": "ws-26-sec-d2-q02",
+          "order": 2,
+          "prompt": "Sally: “How did it go?”",
+          "acceptedAnswers": [
+            "Sally asked her how it had gone.",
+            "Sally asked Diane how it had gone.",
+            "Sally asked how it had gone.",
+            "Sally asked her how it went.",
+            "Sally asked Diane how it went.",
+            "Sally asked how it went."
+          ],
+          "explanation": "wh- question → statement order"
+        },
+        {
+          "id": "ws-26-sec-d2-q03",
+          "order": 3,
+          "prompt": "Diane: “Fine, but I’m wondering if I want the job because I will have to move to Manchester.”",
+          "acceptedAnswers": [
+            "Diane said that it had gone fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said that it had gone fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said that it had gone fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said that it had gone fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said it had gone fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said it had gone fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said it had gone fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said it had gone fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it had gone fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it had gone fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it had gone fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it had gone fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her it had gone fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her it had gone fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her it had gone fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her it had gone fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said that it was fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said that it was fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said that it was fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said that it was fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said it was fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said it was fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane said it was fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane said it was fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it was fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it was fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it was fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her that it was fine but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her it was fine, but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her it was fine, but she was wondering whether she wanted the job because she would have to move to Manchester.",
+            "Diane told her it was fine but she was wondering if she wanted the job because she would have to move to Manchester.",
+            "Diane told her it was fine but she was wondering whether she wanted the job because she would have to move to Manchester."
+          ],
+          "explanation": "am wondering → was wondering; will → would"
+        },
+        {
+          "id": "ws-26-sec-d2-q04",
+          "order": 4,
+          "prompt": "Sally: “What will you do then?”",
+          "acceptedAnswers": [
+            "Sally asked her what she would do then.",
+            "Sally asked Diane what she would do then."
+          ],
+          "explanation": "will → would; statement order"
+        },
+        {
+          "id": "ws-26-sec-d2-q05",
+          "order": 5,
+          "prompt": "Diane: “If they offer me the job, I can’t accept it.”",
+          "acceptedAnswers": [
+            "Diane said that if they offered her the job, she couldn't accept it.",
+            "Diane said that if they offered her the job she couldn't accept it.",
+            "Diane said if they offered her the job, she couldn't accept it.",
+            "Diane said if they offered her the job she couldn't accept it.",
+            "Diane told her that if they offered her the job, she couldn't accept it.",
+            "Diane told her that if they offered her the job she couldn't accept it.",
+            "Diane told her if they offered her the job, she couldn't accept it.",
+            "Diane told her if they offered her the job she couldn't accept it."
+          ],
+          "explanation": "present → past; can't → couldn't"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-6",
+      "sectionKey": "F",
+      "instruction": "Write what the family said at the dinner table: (Example: Mother: “Does anyone want some more potatoes?” → Mother asked if anyone wanted some more potatoes.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-e-q02",
+          "order": 2,
+          "prompt": "Father: “Pass me the wine, Beth.”",
+          "acceptedAnswers": [
+            "Father told Beth to pass him the wine.",
+            "Father asked Beth to pass him the wine."
+          ],
+          "explanation": "request → tell/ask + object + to-infinitive"
+        },
+        {
+          "id": "ws-26-sec-e-q03",
+          "order": 3,
+          "prompt": "Beth: “The chicken is very nice.”",
+          "acceptedAnswers": [
+            "Beth said that the chicken was very nice.",
+            "Beth said the chicken was very nice."
+          ],
+          "explanation": "is → was"
+        },
+        {
+          "id": "ws-26-sec-e-q04",
+          "order": 4,
+          "prompt": "Grandfather: “I’m going to start my diet tomorrow.”",
+          "acceptedAnswers": [
+            "Grandfather said that he was going to start his diet the next day.",
+            "Grandfather said that he was going to start his diet the following day.",
+            "Grandfather said he was going to start his diet the next day.",
+            "Grandfather said he was going to start his diet the following day."
+          ],
+          "explanation": "tomorrow → the next day"
+        },
+        {
+          "id": "ws-26-sec-e-q05",
+          "order": 5,
+          "prompt": "Grandmother: “Don’t eat with your mouth open, Sam!”",
+          "acceptedAnswers": [
+            "Grandmother told Sam not to eat with his mouth open."
+          ],
+          "explanation": "negative order → told + not to"
+        },
+        {
+          "id": "ws-26-sec-e-q06",
+          "order": 6,
+          "prompt": "Tim: “This is the best dinner I’ve had!”",
+          "acceptedAnswers": [
+            "Tim said that it was the best dinner he had ever had.",
+            "Tim said that it was the best dinner he had had.",
+            "Tim said that that was the best dinner he had ever had.",
+            "Tim said that that was the best dinner he had had.",
+            "Tim said that this was the best dinner he had ever had.",
+            "Tim said that this was the best dinner he had had.",
+            "Tim said it was the best dinner he had ever had.",
+            "Tim said it was the best dinner he had had.",
+            "Tim said that was the best dinner he had ever had.",
+            "Tim said that was the best dinner he had had.",
+            "Tim said this was the best dinner he had ever had.",
+            "Tim said this was the best dinner he had had."
+          ],
+          "explanation": "present perfect → past perfect"
+        },
+        {
+          "id": "ws-26-sec-e-q07",
+          "order": 7,
+          "prompt": "Jean: “Is there any more salad, Mum?”",
+          "acceptedAnswers": [
+            "Jean asked her Mum if there was any more salad.",
+            "Jean asked her Mum whether there was any more salad.",
+            "Jean asked her mother if there was any more salad.",
+            "Jean asked her mother whether there was any more salad.",
+            "Jean asked her Mother if there was any more salad.",
+            "Jean asked her Mother whether there was any more salad.",
+            "Jean asked Mum if there was any more salad.",
+            "Jean asked Mum whether there was any more salad.",
+            "Jean asked mother if there was any more salad.",
+            "Jean asked mother whether there was any more salad.",
+            "Jean asked Mother if there was any more salad.",
+            "Jean asked Mother whether there was any more salad."
+          ],
+          "explanation": "yes/no question → if + statement order"
+        },
+        {
+          "id": "ws-26-sec-e-q08",
+          "order": 8,
+          "prompt": "Sam: “I’m very hungry because I only had a sandwich for lunch today.”",
+          "acceptedAnswers": [
+            "Sam said that he was very hungry because he had only had a sandwich for lunch that day.",
+            "Sam said that he was very hungry because he had only had a sandwich for lunch today.",
+            "Sam said that he was very hungry because he only had a sandwich for lunch that day.",
+            "Sam said that he was very hungry because he only had a sandwich for lunch today.",
+            "Sam said he was very hungry because he had only had a sandwich for lunch that day.",
+            "Sam said he was very hungry because he had only had a sandwich for lunch today.",
+            "Sam said he was very hungry because he only had a sandwich for lunch that day.",
+            "Sam said he was very hungry because he only had a sandwich for lunch today."
+          ],
+          "explanation": "past → past perfect; today → that day"
+        },
+        {
+          "id": "ws-26-sec-e-q09",
+          "order": 9,
+          "prompt": "Helen: “What are we having for dessert, Mum?”",
+          "acceptedAnswers": [
+            "Helen asked her Mum what they were having for dessert.",
+            "Helen asked her mother what they were having for dessert.",
+            "Helen asked her Mother what they were having for dessert.",
+            "Helen asked Mum what they were having for dessert.",
+            "Helen asked mother what they were having for dessert.",
+            "Helen asked Mother what they were having for dessert."
+          ],
+          "explanation": "wh- question → statement order"
+        },
+        {
+          "id": "ws-26-sec-e-q10",
+          "order": 10,
+          "prompt": "Bob: “I don’t want anything else to eat.”",
+          "acceptedAnswers": [
+            "Bob said that he didn't want anything else to eat.",
+            "Bob said he didn't want anything else to eat."
+          ],
+          "explanation": "don't → didn't"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-7",
+      "sectionKey": "G",
+      "instruction": "Gavin has worked for Bisco Supermarkets for thirty years. He can still remember his job interview after leaving school and he can remember the questions that the interviewer asked him: (Examples: “Where do you live?” → She asked him where he lived. “Have you worked before?” → She asked him if he had worked before.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-f-q01",
+          "order": 1,
+          "prompt": "“Why do you want the job?” → She asked him",
+          "acceptedAnswers": [
+            "She asked him why he wanted the job."
+          ],
+          "explanation": "wh- question → statement order"
+        },
+        {
+          "id": "ws-26-sec-f-q02",
+          "order": 2,
+          "prompt": "“How did you hear about it?” → She asked him",
+          "acceptedAnswers": [
+            "She asked him how he had heard about it.",
+            "She asked him how he heard about it."
+          ],
+          "explanation": "past → past perfect"
+        },
+        {
+          "id": "ws-26-sec-f-q03",
+          "order": 3,
+          "prompt": "“Are you fit?” → She asked him",
+          "acceptedAnswers": [
+            "She asked him if he was fit.",
+            "She asked him whether he was fit."
+          ],
+          "explanation": "yes/no question → if/whether"
+        },
+        {
+          "id": "ws-26-sec-f-q04",
+          "order": 4,
+          "prompt": "“Can you work on Saturdays?” → She asked him",
+          "acceptedAnswers": [
+            "She asked him if he could work on Saturdays.",
+            "She asked him whether he could work on Saturdays."
+          ],
+          "explanation": "can → could"
+        },
+        {
+          "id": "ws-26-sec-f-q05",
+          "order": 5,
+          "prompt": "“How will you travel to work?”",
+          "acceptedAnswers": [
+            "She asked him how he would travel to work."
+          ],
+          "explanation": "will → would"
+        },
+        {
+          "id": "ws-26-sec-f-q06",
+          "order": 6,
+          "prompt": "“Have you got a bicycle?”",
+          "acceptedAnswers": [
+            "She asked him if he had got a bicycle.",
+            "She asked him if he had a bicycle.",
+            "She asked him whether he had got a bicycle.",
+            "She asked him whether he had a bicycle."
+          ],
+          "explanation": "have got → had got"
+        },
+        {
+          "id": "ws-26-sec-f-q07",
+          "order": 7,
+          "prompt": "“How much do you expect to earn?”",
+          "acceptedAnswers": [
+            "She asked him how much he expected to earn."
+          ],
+          "explanation": "present → past"
+        },
+        {
+          "id": "ws-26-sec-f-q08",
+          "order": 8,
+          "prompt": "“When can you start?”",
+          "acceptedAnswers": [
+            "She asked him when he could start."
+          ],
+          "explanation": "can → could"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-8",
+      "sectionKey": "H",
+      "instruction": "What does the policeman want to know? (Example: “What’s your name?” → The policeman wants to know what my name is.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-g-q02",
+          "order": 2,
+          "prompt": "“What’s your job?”",
+          "acceptedAnswers": [
+            "The policeman wants to know what my job is."
+          ],
+          "explanation": "present reporting verb: no backshift"
+        },
+        {
+          "id": "ws-26-sec-g-q03",
+          "order": 3,
+          "prompt": "“Where do you work?”",
+          "acceptedAnswers": [
+            "The policeman wants to know where I work."
+          ],
+          "explanation": "statement word order, no do"
+        },
+        {
+          "id": "ws-26-sec-g-q04",
+          "order": 4,
+          "prompt": "“Where do you live?”",
+          "acceptedAnswers": [
+            "The policeman wants to know where I live."
+          ],
+          "explanation": "statement word order, no do"
+        },
+        {
+          "id": "ws-26-sec-g-q05",
+          "order": 5,
+          "prompt": "“Where were you yesterday?”",
+          "acceptedAnswers": [
+            "The policeman wants to know where I was yesterday."
+          ],
+          "explanation": "statement word order"
+        },
+        {
+          "id": "ws-26-sec-g-q06",
+          "order": 6,
+          "prompt": "“Why are you in London?”",
+          "acceptedAnswers": [
+            "The policeman wants to know why I am in London."
+          ],
+          "explanation": "statement word order"
+        },
+        {
+          "id": "ws-26-sec-g-q07",
+          "order": 7,
+          "prompt": "“When did you come?”",
+          "acceptedAnswers": [
+            "The policeman wants to know when I came."
+          ],
+          "explanation": "no did; past simple"
+        },
+        {
+          "id": "ws-26-sec-g-q08",
+          "order": 8,
+          "prompt": "“How did you come?”",
+          "acceptedAnswers": [
+            "The policeman wants to know how I came."
+          ],
+          "explanation": "no did; past simple"
+        },
+        {
+          "id": "ws-26-sec-g-q09",
+          "order": 9,
+          "prompt": "“Where’s your ticket?”",
+          "acceptedAnswers": [
+            "The policeman wants to know where my ticket is."
+          ],
+          "explanation": "statement word order"
+        },
+        {
+          "id": "ws-26-sec-g-q10",
+          "order": 10,
+          "prompt": "“Have you ever been in London?”",
+          "acceptedAnswers": [
+            "The policeman wants to know if I have ever been in London.",
+            "The policeman wants to know if I have ever been to London.",
+            "The policeman wants to know whether I have ever been in London.",
+            "The policeman wants to know whether I have ever been to London."
+          ],
+          "explanation": "yes/no question → if/whether"
+        },
+        {
+          "id": "ws-26-sec-g-q11",
+          "order": 11,
+          "prompt": "“Do you know anyone in London?”",
+          "acceptedAnswers": [
+            "The policeman wants to know if I know anyone in London.",
+            "The policeman wants to know whether I know anyone in London."
+          ],
+          "explanation": "yes/no question → if/whether"
+        },
+        {
+          "id": "ws-26-sec-g-q12",
+          "order": 12,
+          "prompt": "“Were you in London last month?”",
+          "acceptedAnswers": [
+            "The policeman wants to know if I was in London last month.",
+            "The policeman wants to know whether I was in London last month."
+          ],
+          "explanation": "yes/no question → if/whether"
+        },
+        {
+          "id": "ws-26-sec-g-q13",
+          "order": 13,
+          "prompt": "“Are you telling the truth?”",
+          "acceptedAnswers": [
+            "The policeman wants to know if I am telling the truth.",
+            "The policeman wants to know whether I am telling the truth."
+          ],
+          "explanation": "yes/no question → if/whether"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-9",
+      "sectionKey": "I",
+      "instruction": "Tell your family what the doctor said: (Example: “You really ought to stay in bed.” → He said I ought to stay in bed.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-26-sec-h-q02",
+          "order": 2,
+          "prompt": "“But you can get up for half an hour.”",
+          "acceptedAnswers": [
+            "But he said that I could get up for half an hour.",
+            "But he said I could get up for half an hour.",
+            "he said that I could get up for half an hour.",
+            "he said I could get up for half an hour."
+          ],
+          "explanation": "can → could"
+        },
+        {
+          "id": "ws-26-sec-h-q03",
+          "order": 3,
+          "prompt": "“You can leave here on Thursday.”",
+          "acceptedAnswers": [
+            "He said that I could leave there on Thursday.",
+            "He said that I could leave here on Thursday.",
+            "He said I could leave there on Thursday.",
+            "He said I could leave here on Thursday."
+          ],
+          "explanation": "can → could; here → there"
+        },
+        {
+          "id": "ws-26-sec-h-q04",
+          "order": 4,
+          "prompt": "“You ought to take some exercise.”",
+          "acceptedAnswers": [
+            "He said that I ought to take some exercise.",
+            "He said I ought to take some exercise."
+          ],
+          "explanation": "ought to does not change"
+        },
+        {
+          "id": "ws-26-sec-h-q05",
+          "order": 5,
+          "prompt": "“But you shouldn’t walk too much.”",
+          "acceptedAnswers": [
+            "But he said that I shouldn't walk too much.",
+            "But he said I shouldn't walk too much.",
+            "he said that I shouldn't walk too much.",
+            "he said I shouldn't walk too much."
+          ],
+          "explanation": "should does not change"
+        },
+        {
+          "id": "ws-26-sec-h-q06",
+          "order": 6,
+          "prompt": "“You mustn’t run at all.”",
+          "acceptedAnswers": [
+            "He said that I mustn't run at all.",
+            "He said that I must not run at all.",
+            "He said that I wasn't to run at all.",
+            "He said that I couldn't run at all.",
+            "He said I mustn't run at all.",
+            "He said I must not run at all.",
+            "He said I wasn't to run at all.",
+            "He said I couldn't run at all."
+          ],
+          "explanation": "mustn't (prohibition) usually stays"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-10",
+      "sectionKey": "J",
+      "instruction": "Statements: change into reported speech. (Example: The boy said, “My name is Mark.” → The boy said (that) his name was Mark.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-27-sec-a-q01",
+          "order": 1,
+          "prompt": "Mary said, “I like Turkish pop music.”",
+          "acceptedAnswers": [
+            "Mary said that she liked Turkish pop music.",
+            "Mary said she liked Turkish pop music."
+          ],
+          "explanation": "present simple → past simple"
+        },
+        {
+          "id": "ws-27-sec-a-q02",
+          "order": 2,
+          "prompt": "The woman said, “It’s not my umbrella, mine is red.”",
+          "acceptedAnswers": [
+            "The woman said that it wasn't her umbrella, hers was red.",
+            "The woman said that it wasn't her umbrella, and hers was red.",
+            "The woman said that it wasn't her umbrella, because hers was red.",
+            "The woman said that it wasn't her umbrella hers was red.",
+            "The woman said that it wasn't her umbrella and hers was red.",
+            "The woman said that it wasn't her umbrella because hers was red.",
+            "The woman said that it was not her umbrella, hers was red.",
+            "The woman said that it was not her umbrella, and hers was red.",
+            "The woman said that it was not her umbrella, because hers was red.",
+            "The woman said that it was not her umbrella hers was red.",
+            "The woman said that it was not her umbrella and hers was red.",
+            "The woman said that it was not her umbrella because hers was red.",
+            "The woman said it wasn't her umbrella, hers was red.",
+            "The woman said it wasn't her umbrella, and hers was red.",
+            "The woman said it wasn't her umbrella, because hers was red.",
+            "The woman said it wasn't her umbrella hers was red.",
+            "The woman said it wasn't her umbrella and hers was red.",
+            "The woman said it wasn't her umbrella because hers was red.",
+            "The woman said it was not her umbrella, hers was red.",
+            "The woman said it was not her umbrella, and hers was red.",
+            "The woman said it was not her umbrella, because hers was red.",
+            "The woman said it was not her umbrella hers was red.",
+            "The woman said it was not her umbrella and hers was red.",
+            "The woman said it was not her umbrella because hers was red."
+          ],
+          "explanation": "is → was; my/mine → her/hers"
+        },
+        {
+          "id": "ws-27-sec-a-q03",
+          "order": 3,
+          "prompt": "Tom said, “I have a sports car. It is red.”",
+          "acceptedAnswers": [
+            "Tom said that he had a sports car and that it was red.",
+            "Tom said that he had a sports car and it was red.",
+            "Tom said that he had a sports car that it was red.",
+            "Tom said that he had a sports car it was red.",
+            "Tom said he had a sports car and that it was red.",
+            "Tom said he had a sports car and it was red.",
+            "Tom said he had a sports car that it was red.",
+            "Tom said he had a sports car it was red."
+          ],
+          "explanation": "have → had; is → was"
+        },
+        {
+          "id": "ws-27-sec-a-q04",
+          "order": 4,
+          "prompt": "Mr. Brown said, “I don’t drive a car in the rush hour.”",
+          "acceptedAnswers": [
+            "Mr. Brown said that he didn't drive a car in the rush hour.",
+            "Mr. Brown said he didn't drive a car in the rush hour."
+          ],
+          "explanation": "don't → didn't"
+        },
+        {
+          "id": "ws-27-sec-a-q05",
+          "order": 5,
+          "prompt": "Terry said, “I eat toasts for breakfast. They are made by my mother.”",
+          "acceptedAnswers": [
+            "Terry said that he ate toast for breakfast and that it was made by his mother.",
+            "Terry said that he ate toast for breakfast and that they were made by his mother.",
+            "Terry said that he ate toast for breakfast and it was made by his mother.",
+            "Terry said that he ate toast for breakfast and they were made by his mother.",
+            "Terry said that he ate toast for breakfast that it was made by his mother.",
+            "Terry said that he ate toast for breakfast that they were made by his mother.",
+            "Terry said that he ate toast for breakfast it was made by his mother.",
+            "Terry said that he ate toast for breakfast they were made by his mother.",
+            "Terry said that he ate toasts for breakfast and that it was made by his mother.",
+            "Terry said that he ate toasts for breakfast and that they were made by his mother.",
+            "Terry said that he ate toasts for breakfast and it was made by his mother.",
+            "Terry said that he ate toasts for breakfast and they were made by his mother.",
+            "Terry said that he ate toasts for breakfast that it was made by his mother.",
+            "Terry said that he ate toasts for breakfast that they were made by his mother.",
+            "Terry said that he ate toasts for breakfast it was made by his mother.",
+            "Terry said that he ate toasts for breakfast they were made by his mother.",
+            "Terry said he ate toast for breakfast and that it was made by his mother.",
+            "Terry said he ate toast for breakfast and that they were made by his mother.",
+            "Terry said he ate toast for breakfast and it was made by his mother.",
+            "Terry said he ate toast for breakfast and they were made by his mother.",
+            "Terry said he ate toast for breakfast that it was made by his mother.",
+            "Terry said he ate toast for breakfast that they were made by his mother.",
+            "Terry said he ate toast for breakfast it was made by his mother.",
+            "Terry said he ate toast for breakfast they were made by his mother.",
+            "Terry said he ate toasts for breakfast and that it was made by his mother.",
+            "Terry said he ate toasts for breakfast and that they were made by his mother.",
+            "Terry said he ate toasts for breakfast and it was made by his mother.",
+            "Terry said he ate toasts for breakfast and they were made by his mother.",
+            "Terry said he ate toasts for breakfast that it was made by his mother.",
+            "Terry said he ate toasts for breakfast that they were made by his mother.",
+            "Terry said he ate toasts for breakfast it was made by his mother.",
+            "Terry said he ate toasts for breakfast they were made by his mother."
+          ],
+          "explanation": "present → past; my → his"
+        },
+        {
+          "id": "ws-27-sec-a-q06",
+          "order": 6,
+          "prompt": "Sue said, “The boy is looking at us. I don’t know him.”",
+          "acceptedAnswers": [
+            "Sue said that the boy was looking at them and that she didn't know him.",
+            "Sue said that the boy was looking at them and she didn't know him.",
+            "Sue said that the boy was looking at them but that she didn't know him.",
+            "Sue said that the boy was looking at them but she didn't know him.",
+            "Sue said the boy was looking at them and that she didn't know him.",
+            "Sue said the boy was looking at them and she didn't know him.",
+            "Sue said the boy was looking at them but that she didn't know him.",
+            "Sue said the boy was looking at them but she didn't know him."
+          ],
+          "explanation": "is looking → was looking; us → them"
+        },
+        {
+          "id": "ws-27-sec-a-q07",
+          "order": 7,
+          "prompt": "John said, “I can swim well but I don’t have enough time to swim.”",
+          "acceptedAnswers": [
+            "John said that he could swim well but that he didn't have enough time to swim.",
+            "John said that he could swim well but he didn't have enough time to swim.",
+            "John said he could swim well but that he didn't have enough time to swim.",
+            "John said he could swim well but he didn't have enough time to swim."
+          ],
+          "explanation": "can → could; don't → didn't"
+        },
+        {
+          "id": "ws-27-sec-a-q08",
+          "order": 8,
+          "prompt": "My brother said to me, “I don’t want to carry your books!”",
+          "acceptedAnswers": [
+            "My brother told me that he didn't want to carry my books.",
+            "My brother told me he didn't want to carry my books.",
+            "My brother said to me that he didn't want to carry my books.",
+            "My brother said to me he didn't want to carry my books."
+          ],
+          "explanation": "don't → didn't; your → my"
+        },
+        {
+          "id": "ws-27-sec-a-q09",
+          "order": 9,
+          "prompt": "The teacher said, “If you don’t study regularly, you’ll fail.”",
+          "acceptedAnswers": [
+            "The teacher said that if we didn't study regularly, we would fail.",
+            "The teacher said that if we didn't study regularly, they would fail.",
+            "The teacher said that if we didn't study regularly, I would fail.",
+            "The teacher said that if we didn't study regularly we would fail.",
+            "The teacher said that if we didn't study regularly they would fail.",
+            "The teacher said that if we didn't study regularly I would fail.",
+            "The teacher said that if they didn't study regularly, we would fail.",
+            "The teacher said that if they didn't study regularly, they would fail.",
+            "The teacher said that if they didn't study regularly, I would fail.",
+            "The teacher said that if they didn't study regularly we would fail.",
+            "The teacher said that if they didn't study regularly they would fail.",
+            "The teacher said that if they didn't study regularly I would fail.",
+            "The teacher said that if I didn't study regularly, we would fail.",
+            "The teacher said that if I didn't study regularly, they would fail.",
+            "The teacher said that if I didn't study regularly, I would fail.",
+            "The teacher said that if I didn't study regularly we would fail.",
+            "The teacher said that if I didn't study regularly they would fail.",
+            "The teacher said that if I didn't study regularly I would fail.",
+            "The teacher said if we didn't study regularly, we would fail.",
+            "The teacher said if we didn't study regularly, they would fail.",
+            "The teacher said if we didn't study regularly, I would fail.",
+            "The teacher said if we didn't study regularly we would fail.",
+            "The teacher said if we didn't study regularly they would fail.",
+            "The teacher said if we didn't study regularly I would fail.",
+            "The teacher said if they didn't study regularly, we would fail.",
+            "The teacher said if they didn't study regularly, they would fail.",
+            "The teacher said if they didn't study regularly, I would fail.",
+            "The teacher said if they didn't study regularly we would fail.",
+            "The teacher said if they didn't study regularly they would fail.",
+            "The teacher said if they didn't study regularly I would fail.",
+            "The teacher said if I didn't study regularly, we would fail.",
+            "The teacher said if I didn't study regularly, they would fail.",
+            "The teacher said if I didn't study regularly, I would fail.",
+            "The teacher said if I didn't study regularly we would fail.",
+            "The teacher said if I didn't study regularly they would fail.",
+            "The teacher said if I didn't study regularly I would fail."
+          ],
+          "explanation": "real conditional backshifts: will → would"
+        },
+        {
+          "id": "ws-27-sec-a-q10",
+          "order": 10,
+          "prompt": "Mr. Green said, “I have to water my flowers twice a week.”",
+          "acceptedAnswers": [
+            "Mr. Green said that he had to water his flowers twice a week.",
+            "Mr. Green said he had to water his flowers twice a week."
+          ],
+          "explanation": "have to → had to"
+        },
+        {
+          "id": "ws-27-sec-a-q11",
+          "order": 11,
+          "prompt": "Alice said, “I used to swim well but now I don’t.”",
+          "acceptedAnswers": [
+            "Alice said that she used to swim well but now she didn't any more.",
+            "Alice said that she used to swim well but now she didn't anymore.",
+            "Alice said that she used to swim well but now she didn't now.",
+            "Alice said that she used to swim well but now she didn't.",
+            "Alice said that she used to swim well but she didn't any more.",
+            "Alice said that she used to swim well but she didn't anymore.",
+            "Alice said that she used to swim well but she didn't now.",
+            "Alice said that she used to swim well but she didn't.",
+            "Alice said she used to swim well but now she didn't any more.",
+            "Alice said she used to swim well but now she didn't anymore.",
+            "Alice said she used to swim well but now she didn't now.",
+            "Alice said she used to swim well but now she didn't.",
+            "Alice said she used to swim well but she didn't any more.",
+            "Alice said she used to swim well but she didn't anymore.",
+            "Alice said she used to swim well but she didn't now.",
+            "Alice said she used to swim well but she didn't."
+          ],
+          "explanation": "used to does not change"
+        },
+        {
+          "id": "ws-27-sec-a-q12",
+          "order": 12,
+          "prompt": "Mr. Miller said, “I know your parents. I’ve met them in the meeting.”",
+          "acceptedAnswers": [
+            "Mr. Miller said that he knew my parents and that he had met them in the meeting.",
+            "Mr. Miller said that he knew my parents and that he had met them at the meeting.",
+            "Mr. Miller said that he knew my parents and he had met them in the meeting.",
+            "Mr. Miller said that he knew my parents and he had met them at the meeting.",
+            "Mr. Miller said that he knew my parents that he had met them in the meeting.",
+            "Mr. Miller said that he knew my parents that he had met them at the meeting.",
+            "Mr. Miller said that he knew my parents he had met them in the meeting.",
+            "Mr. Miller said that he knew my parents he had met them at the meeting.",
+            "Mr. Miller said he knew my parents and that he had met them in the meeting.",
+            "Mr. Miller said he knew my parents and that he had met them at the meeting.",
+            "Mr. Miller said he knew my parents and he had met them in the meeting.",
+            "Mr. Miller said he knew my parents and he had met them at the meeting.",
+            "Mr. Miller said he knew my parents that he had met them in the meeting.",
+            "Mr. Miller said he knew my parents that he had met them at the meeting.",
+            "Mr. Miller said he knew my parents he had met them in the meeting.",
+            "Mr. Miller said he knew my parents he had met them at the meeting."
+          ],
+          "explanation": "present perfect → past perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-11",
+      "sectionKey": "K",
+      "instruction": "Imperatives: report with TELL + object + (NOT) TO. (Examples: The teacher always says to us, “Study very hard.” → The teacher always tells us to study hard. The teacher says, “Don’t talk in the class.” → The teacher tells us not to talk in the class.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-27-sec-b-q01",
+          "order": 1,
+          "prompt": "Woman to the porter: “Carry my suitcases.”",
+          "acceptedAnswers": [
+            "The woman told the porter to carry her suitcases.",
+            "The woman asked the porter to carry her suitcases.",
+            "The Woman told the porter to carry her suitcases.",
+            "The Woman asked the porter to carry her suitcases.",
+            "woman told the porter to carry her suitcases.",
+            "woman asked the porter to carry her suitcases.",
+            "Woman told the porter to carry her suitcases.",
+            "Woman asked the porter to carry her suitcases."
+          ],
+          "explanation": "told + object + to-infinitive"
+        },
+        {
+          "id": "ws-27-sec-b-q02",
+          "order": 2,
+          "prompt": "Policeman to a man: “Describe your car.”",
+          "acceptedAnswers": [
+            "The policeman told a man to describe his car.",
+            "The policeman told the man to describe his car.",
+            "The policeman asked a man to describe his car.",
+            "The policeman asked the man to describe his car.",
+            "The Policeman told a man to describe his car.",
+            "The Policeman told the man to describe his car.",
+            "The Policeman asked a man to describe his car.",
+            "The Policeman asked the man to describe his car.",
+            "policeman told a man to describe his car.",
+            "policeman told the man to describe his car.",
+            "policeman asked a man to describe his car.",
+            "policeman asked the man to describe his car.",
+            "Policeman told a man to describe his car.",
+            "Policeman told the man to describe his car.",
+            "Policeman asked a man to describe his car.",
+            "Policeman asked the man to describe his car."
+          ],
+          "explanation": "told + object + to-infinitive"
+        },
+        {
+          "id": "ws-27-sec-b-q03",
+          "order": 3,
+          "prompt": "Mother to the boy: “Don’t hurt yourself.”",
+          "acceptedAnswers": [
+            "The mother told the boy not to hurt himself.",
+            "The Mother told the boy not to hurt himself.",
+            "mother told the boy not to hurt himself.",
+            "Mother told the boy not to hurt himself."
+          ],
+          "explanation": "told + object + not to; yourself → himself"
+        },
+        {
+          "id": "ws-27-sec-b-q04",
+          "order": 4,
+          "prompt": "The robber to the man: “Give me your money.”",
+          "acceptedAnswers": [
+            "The robber told the man to give him his money."
+          ],
+          "explanation": "me → him; your → his"
+        },
+        {
+          "id": "ws-27-sec-b-q05",
+          "order": 5,
+          "prompt": "Teacher to the student: “Give me your book.”",
+          "acceptedAnswers": [
+            "The teacher told the student to give him his book.",
+            "The teacher told the student to give him her book.",
+            "The teacher told the student to give her his book.",
+            "The teacher told the student to give her her book.",
+            "The teacher asked the student to give him his book.",
+            "The teacher asked the student to give him her book.",
+            "The teacher asked the student to give her his book.",
+            "The teacher asked the student to give her her book.",
+            "The Teacher told the student to give him his book.",
+            "The Teacher told the student to give him her book.",
+            "The Teacher told the student to give her his book.",
+            "The Teacher told the student to give her her book.",
+            "The Teacher asked the student to give him his book.",
+            "The Teacher asked the student to give him her book.",
+            "The Teacher asked the student to give her his book.",
+            "The Teacher asked the student to give her her book.",
+            "teacher told the student to give him his book.",
+            "teacher told the student to give him her book.",
+            "teacher told the student to give her his book.",
+            "teacher told the student to give her her book.",
+            "teacher asked the student to give him his book.",
+            "teacher asked the student to give him her book.",
+            "teacher asked the student to give her his book.",
+            "teacher asked the student to give her her book.",
+            "Teacher told the student to give him his book.",
+            "Teacher told the student to give him her book.",
+            "Teacher told the student to give her his book.",
+            "Teacher told the student to give her her book.",
+            "Teacher asked the student to give him his book.",
+            "Teacher asked the student to give him her book.",
+            "Teacher asked the student to give her his book.",
+            "Teacher asked the student to give her her book."
+          ],
+          "explanation": "told + object + to-infinitive"
+        },
+        {
+          "id": "ws-27-sec-b-q06",
+          "order": 6,
+          "prompt": "The man to us: “Don’t park here.”",
+          "acceptedAnswers": [
+            "The man told us not to park there."
+          ],
+          "explanation": "not to; here → there"
+        },
+        {
+          "id": "ws-27-sec-b-q07",
+          "order": 7,
+          "prompt": "Woman to her husband: “Don’t forget to take your key.”",
+          "acceptedAnswers": [
+            "The woman told her husband not to forget to take his key.",
+            "The Woman told her husband not to forget to take his key.",
+            "woman told her husband not to forget to take his key.",
+            "Woman told her husband not to forget to take his key."
+          ],
+          "explanation": "told + object + not to"
+        },
+        {
+          "id": "ws-27-sec-b-q08",
+          "order": 8,
+          "prompt": "Mr. Smith to his son: “Don’t put your books on this desk.”",
+          "acceptedAnswers": [
+            "Mr. Smith told his son not to put his books on that desk.",
+            "Mr. Smith told his son not to put his books on the desk."
+          ],
+          "explanation": "not to; this → that"
+        },
+        {
+          "id": "ws-27-sec-b-q09",
+          "order": 9,
+          "prompt": "Young man to the young woman: “Give me one of your photographs.”",
+          "acceptedAnswers": [
+            "The young man told the young woman to give him one of her photographs.",
+            "The young man asked the young woman to give him one of her photographs.",
+            "The Young man told the young woman to give him one of her photographs.",
+            "The Young man asked the young woman to give him one of her photographs.",
+            "young man told the young woman to give him one of her photographs.",
+            "young man asked the young woman to give him one of her photographs.",
+            "Young man told the young woman to give him one of her photographs.",
+            "Young man asked the young woman to give him one of her photographs."
+          ],
+          "explanation": "asked/told + object + to-infinitive"
+        },
+        {
+          "id": "ws-27-sec-b-q10",
+          "order": 10,
+          "prompt": "The man to his son: “Hurry up! Don’t miss the bus!”",
+          "acceptedAnswers": [
+            "The man told his son to hurry up and not to miss the bus.",
+            "The man told his son to hurry up and not miss the bus."
+          ],
+          "explanation": "to ... and not to ..."
+        },
+        {
+          "id": "ws-27-sec-b-q11",
+          "order": 11,
+          "prompt": "The woman to her daughter: “Tidy your room, don’t waste your time.”",
+          "acceptedAnswers": [
+            "The woman told her daughter to tidy her room and not to waste her time.",
+            "The woman told her daughter to tidy her room and not waste her time."
+          ],
+          "explanation": "to ... and not to ..."
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-12",
+      "sectionKey": "L",
+      "instruction": "Wh- questions: change into reported speech. (Examples: “What is the time?” he asked. → He asked me what the time was. “Where do you live?” he asked Mary. → He wanted to know where Mary lived.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-27-sec-c-q01",
+          "order": 1,
+          "prompt": "He asked, “How long does it take you to have lunch?”",
+          "acceptedAnswers": [
+            "He asked me how long it took me to have lunch.",
+            "He asked how long it took me to have lunch."
+          ],
+          "explanation": "statement order; does → past simple"
+        },
+        {
+          "id": "ws-27-sec-c-q02",
+          "order": 2,
+          "prompt": "He asked me, “What are you doing at the weekend?”",
+          "acceptedAnswers": [
+            "He asked me what I was doing at the weekend."
+          ],
+          "explanation": "are doing → was doing"
+        },
+        {
+          "id": "ws-27-sec-c-q03",
+          "order": 3,
+          "prompt": "She asked, “Why are you late, Tom?”",
+          "acceptedAnswers": [
+            "She asked Tom why he was late."
+          ],
+          "explanation": "statement order; are → was"
+        },
+        {
+          "id": "ws-27-sec-c-q04",
+          "order": 4,
+          "prompt": "My mother asked me, “Where is your umbrella?”",
+          "acceptedAnswers": [
+            "My mother asked me where my umbrella was."
+          ],
+          "explanation": "statement order: subject + was"
+        },
+        {
+          "id": "ws-27-sec-c-q05",
+          "order": 5,
+          "prompt": "The secretary asked the man, “Who do you want to see, sir?”",
+          "acceptedAnswers": [
+            "The secretary asked the man who he wanted to see."
+          ],
+          "explanation": "no do; present → past"
+        },
+        {
+          "id": "ws-27-sec-c-q06",
+          "order": 6,
+          "prompt": "The students asked, “What time does the bell ring?”",
+          "acceptedAnswers": [
+            "The students asked what time the bell rang."
+          ],
+          "explanation": "no does; present → past"
+        },
+        {
+          "id": "ws-27-sec-c-q07",
+          "order": 7,
+          "prompt": "He asked Tom, “What kind of films do you like watching?”",
+          "acceptedAnswers": [
+            "He asked Tom what kind of films he liked watching."
+          ],
+          "explanation": "no do; present → past"
+        },
+        {
+          "id": "ws-27-sec-c-q08",
+          "order": 8,
+          "prompt": "The teacher asked the girl, “When do you have to be home?”",
+          "acceptedAnswers": [
+            "The teacher asked the girl when she had to be home."
+          ],
+          "explanation": "have to → had to"
+        },
+        {
+          "id": "ws-27-sec-c-q09",
+          "order": 9,
+          "prompt": "They always asked, “Why don’t you let my cat in?”",
+          "acceptedAnswers": [
+            "They always asked me why I didn't let their cat in.",
+            "They always asked me why I didn't let his cat in.",
+            "They always asked me why I didn't let her cat in.",
+            "They always asked why I didn't let their cat in.",
+            "They always asked why I didn't let his cat in.",
+            "They always asked why I didn't let her cat in."
+          ],
+          "explanation": "don't → didn't; my → their"
+        },
+        {
+          "id": "ws-27-sec-c-q10",
+          "order": 10,
+          "prompt": "The passengers asked, “When did the last train leave?”",
+          "acceptedAnswers": [
+            "The passengers asked when the last train had left.",
+            "The passengers asked when the last train left."
+          ],
+          "explanation": "past → past perfect"
+        },
+        {
+          "id": "ws-27-sec-c-q11",
+          "order": 11,
+          "prompt": "He asked, “What will you do tomorrow, Jane?”",
+          "acceptedAnswers": [
+            "He asked Jane what she would do the next day.",
+            "He asked Jane what she would do the following day."
+          ],
+          "explanation": "will → would; tomorrow → the next day"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-13",
+      "sectionKey": "M",
+      "instruction": "Yes / No questions: change into reported speech. (Examples: “Are you busy?” he asked me. → He asked me if I was busy. “Do you like bananas?” he asked his friends. → He asked his friends if they liked bananas.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-27-sec-d-q01",
+          "order": 1,
+          "prompt": "She asked, “Do you live with your family, Helen?”",
+          "acceptedAnswers": [
+            "She asked Helen if she lived with her family.",
+            "She asked Helen whether she lived with her family."
+          ],
+          "explanation": "if + statement order; present → past"
+        },
+        {
+          "id": "ws-27-sec-d-q02",
+          "order": 2,
+          "prompt": "He asked, “Can I borrow your pen, Linda?”",
+          "acceptedAnswers": [
+            "He asked Linda if he could borrow her pen.",
+            "He asked Linda whether he could borrow her pen."
+          ],
+          "explanation": "can → could"
+        },
+        {
+          "id": "ws-27-sec-d-q03",
+          "order": 3,
+          "prompt": "He asked me, “Does your uncle live in England?”",
+          "acceptedAnswers": [
+            "He asked me if my uncle lived in England.",
+            "He asked me whether my uncle lived in England."
+          ],
+          "explanation": "no does; present → past"
+        },
+        {
+          "id": "ws-27-sec-d-q04",
+          "order": 4,
+          "prompt": "Mary asked Lucy, “Will you come to my party tomorrow?”",
+          "acceptedAnswers": [
+            "Mary asked Lucy if she would come to her party the next day.",
+            "Mary asked Lucy if she would come to her party the following day.",
+            "Mary asked Lucy if she would come to Mary's party the next day.",
+            "Mary asked Lucy if she would come to Mary's party the following day.",
+            "Mary asked Lucy whether she would come to her party the next day.",
+            "Mary asked Lucy whether she would come to her party the following day.",
+            "Mary asked Lucy whether she would come to Mary's party the next day.",
+            "Mary asked Lucy whether she would come to Mary's party the following day."
+          ],
+          "explanation": "will → would; tomorrow → the next day"
+        },
+        {
+          "id": "ws-27-sec-d-q05",
+          "order": 5,
+          "prompt": "Mark asked, “Did you phone me last night, John?”",
+          "acceptedAnswers": [
+            "Mark asked John if he had phoned him the night before.",
+            "Mark asked John if he had phoned him the previous night.",
+            "Mark asked John whether he had phoned him the night before.",
+            "Mark asked John whether he had phoned him the previous night."
+          ],
+          "explanation": "past → past perfect; last night → the night before"
+        },
+        {
+          "id": "ws-27-sec-d-q06",
+          "order": 6,
+          "prompt": "He asked, “Is this yours or mine, David?”",
+          "acceptedAnswers": [
+            "He asked David if that was his or his.",
+            "He asked David if that was David's or his.",
+            "He asked David if that was his or his own.",
+            "He asked David if it was his or his.",
+            "He asked David if it was David's or his.",
+            "He asked David if it was his or his own.",
+            "He asked David whether that was his or his.",
+            "He asked David whether that was David's or his.",
+            "He asked David whether that was his or his own.",
+            "He asked David whether it was his or his.",
+            "He asked David whether it was David's or his.",
+            "He asked David whether it was his or his own."
+          ],
+          "explanation": "this → that; yours/mine → his"
+        },
+        {
+          "id": "ws-27-sec-d-q07",
+          "order": 7,
+          "prompt": "She always asked me, “Must you always ask me what I’m doing?”",
+          "acceptedAnswers": [
+            "She always asked me if I had to always ask her what she was doing.",
+            "She always asked me if I must always ask her what she was doing.",
+            "She always asked me whether I had to always ask her what she was doing.",
+            "She always asked me whether I must always ask her what she was doing."
+          ],
+          "explanation": "must → had to; am doing → was doing"
+        },
+        {
+          "id": "ws-27-sec-d-q08",
+          "order": 8,
+          "prompt": "The teacher asked, “Are you listening to me?”",
+          "acceptedAnswers": [
+            "The teacher asked us if we were listening to her.",
+            "The teacher asked us if we were listening to him.",
+            "The teacher asked us if they were listening to her.",
+            "The teacher asked us if they were listening to him.",
+            "The teacher asked us if I was listening to her.",
+            "The teacher asked us if I was listening to him.",
+            "The teacher asked us whether we were listening to her.",
+            "The teacher asked us whether we were listening to him.",
+            "The teacher asked us whether they were listening to her.",
+            "The teacher asked us whether they were listening to him.",
+            "The teacher asked us whether I was listening to her.",
+            "The teacher asked us whether I was listening to him.",
+            "The teacher asked them if we were listening to her.",
+            "The teacher asked them if we were listening to him.",
+            "The teacher asked them if they were listening to her.",
+            "The teacher asked them if they were listening to him.",
+            "The teacher asked them if I was listening to her.",
+            "The teacher asked them if I was listening to him.",
+            "The teacher asked them whether we were listening to her.",
+            "The teacher asked them whether we were listening to him.",
+            "The teacher asked them whether they were listening to her.",
+            "The teacher asked them whether they were listening to him.",
+            "The teacher asked them whether I was listening to her.",
+            "The teacher asked them whether I was listening to him.",
+            "The teacher asked me if we were listening to her.",
+            "The teacher asked me if we were listening to him.",
+            "The teacher asked me if they were listening to her.",
+            "The teacher asked me if they were listening to him.",
+            "The teacher asked me if I was listening to her.",
+            "The teacher asked me if I was listening to him.",
+            "The teacher asked me whether we were listening to her.",
+            "The teacher asked me whether we were listening to him.",
+            "The teacher asked me whether they were listening to her.",
+            "The teacher asked me whether they were listening to him.",
+            "The teacher asked me whether I was listening to her.",
+            "The teacher asked me whether I was listening to him.",
+            "The teacher asked if we were listening to her.",
+            "The teacher asked if we were listening to him.",
+            "The teacher asked if they were listening to her.",
+            "The teacher asked if they were listening to him.",
+            "The teacher asked if I was listening to her.",
+            "The teacher asked if I was listening to him.",
+            "The teacher asked whether we were listening to her.",
+            "The teacher asked whether we were listening to him.",
+            "The teacher asked whether they were listening to her.",
+            "The teacher asked whether they were listening to him.",
+            "The teacher asked whether I was listening to her.",
+            "The teacher asked whether I was listening to him."
+          ],
+          "explanation": "are → was/were; me → her/him"
+        },
+        {
+          "id": "ws-27-sec-d-q09",
+          "order": 9,
+          "prompt": "Mary asked, “Do you want me to help you, Larry?”",
+          "acceptedAnswers": [
+            "Mary asked Larry if he wanted her to help him.",
+            "Mary asked Larry whether he wanted her to help him."
+          ],
+          "explanation": "present → past; me/you → her/him"
+        },
+        {
+          "id": "ws-27-sec-d-q10",
+          "order": 10,
+          "prompt": "The officer asked, “Are you a foreigner? Can you spell your name?”",
+          "acceptedAnswers": [
+            "The officer asked me if I was a foreigner and if I could spell my name.",
+            "The officer asked me if I was a foreigner and whether I could spell my name.",
+            "The officer asked me if I was a foreigner and I could spell my name.",
+            "The officer asked me whether I was a foreigner and if I could spell my name.",
+            "The officer asked me whether I was a foreigner and whether I could spell my name.",
+            "The officer asked me whether I was a foreigner and I could spell my name.",
+            "The officer asked if I was a foreigner and if I could spell my name.",
+            "The officer asked if I was a foreigner and whether I could spell my name.",
+            "The officer asked if I was a foreigner and I could spell my name.",
+            "The officer asked whether I was a foreigner and if I could spell my name.",
+            "The officer asked whether I was a foreigner and whether I could spell my name.",
+            "The officer asked whether I was a foreigner and I could spell my name."
+          ],
+          "explanation": "two questions joined with and if"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-14",
+      "sectionKey": "N",
+      "instruction": "Change into INDIRECT SPEECH (the reporting verb is in the present, so do not change the tenses):",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-27-sec-e-q01",
+          "order": 1,
+          "prompt": "Bob says, “I want to play tennis this afternoon.”",
+          "acceptedAnswers": [
+            "Bob says that he wants to play tennis this afternoon.",
+            "Bob says he wants to play tennis this afternoon."
+          ],
+          "explanation": "present reporting verb: no backshift"
+        },
+        {
+          "id": "ws-27-sec-e-q02",
+          "order": 2,
+          "prompt": "John says, “I haven’t seen my grandmother for a long time.”",
+          "acceptedAnswers": [
+            "John says that he hasn't seen his grandmother for a long time.",
+            "John says he hasn't seen his grandmother for a long time."
+          ],
+          "explanation": "present reporting verb: no backshift"
+        },
+        {
+          "id": "ws-27-sec-e-q03",
+          "order": 3,
+          "prompt": "Cindy says to Alan, “Don’t come in with your dirty shoes.”",
+          "acceptedAnswers": [
+            "Cindy tells Alan not to come in with his dirty shoes."
+          ],
+          "explanation": "tells + object + not to"
+        },
+        {
+          "id": "ws-27-sec-e-q04",
+          "order": 4,
+          "prompt": "My father says, “Please, help me in the garden.”",
+          "acceptedAnswers": [
+            "My father asks me to help him in the garden.",
+            "My father tells me to help him in the garden."
+          ],
+          "explanation": "asks + object + to-infinitive"
+        },
+        {
+          "id": "ws-27-sec-e-q05",
+          "order": 5,
+          "prompt": "“Don’t wipe your dirty fingers on my clean table cloth,” says his mother.",
+          "acceptedAnswers": [
+            "His mother tells him not to wipe his dirty fingers on her clean table cloth.",
+            "His mother tells him not to wipe his dirty fingers on her clean tablecloth."
+          ],
+          "explanation": "tells + object + not to"
+        },
+        {
+          "id": "ws-27-sec-e-q06",
+          "order": 6,
+          "prompt": "“When does the bell ring?” asks John.",
+          "acceptedAnswers": [
+            "John asks when the bell rings."
+          ],
+          "explanation": "no does; statement order"
+        },
+        {
+          "id": "ws-27-sec-e-q07",
+          "order": 7,
+          "prompt": "Sandy asks Danny, “Why didn’t you tell her the truth?”",
+          "acceptedAnswers": [
+            "Sandy asks Danny why he didn't tell her the truth."
+          ],
+          "explanation": "statement order; no backshift"
+        },
+        {
+          "id": "ws-27-sec-e-q08",
+          "order": 8,
+          "prompt": "“How long have you waited for me?” What does Charles ask Fiona?",
+          "acceptedAnswers": [
+            "Charles asks Fiona how long she has waited for him."
+          ],
+          "explanation": "statement order: subject + has"
+        },
+        {
+          "id": "ws-27-sec-e-q09",
+          "order": 9,
+          "prompt": "“Does it rain in winter in Somalia?” What does the teacher ask?",
+          "acceptedAnswers": [
+            "The teacher asks us if it rains in winter in Somalia.",
+            "The teacher asks us if it rains in winter in Somali.",
+            "The teacher asks us whether it rains in winter in Somalia.",
+            "The teacher asks us whether it rains in winter in Somali.",
+            "The teacher asks if it rains in winter in Somalia.",
+            "The teacher asks if it rains in winter in Somali.",
+            "The teacher asks whether it rains in winter in Somalia.",
+            "The teacher asks whether it rains in winter in Somali."
+          ],
+          "explanation": "yes/no question → if"
+        },
+        {
+          "id": "ws-27-sec-e-q10",
+          "order": 10,
+          "prompt": "“Did you post the letter?” asks Rachel.",
+          "acceptedAnswers": [
+            "Rachel asks me if I posted the letter.",
+            "Rachel asks me whether I posted the letter.",
+            "Rachel asks if I posted the letter.",
+            "Rachel asks whether I posted the letter.",
+            "Rachel asks me if I have posted the letter.",
+            "Rachel asks me whether I have posted the letter.",
+            "Rachel asks if I have posted the letter.",
+            "Rachel asks whether I have posted the letter."
+          ],
+          "explanation": "yes/no question → if; no did"
+        }
+      ]
+    },
+    {
+      "id": "card-09-sec-15",
+      "sectionKey": "O",
+      "instruction": "Change into INDIRECT SPEECH. You can use AND, BUT, BECAUSE, ADD to join the sentences.",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-27-sec-f-q01",
+          "order": 1,
+          "prompt": "Brenda said to Jimmy, “Please, turn off the TV. The film is boring.”",
+          "acceptedAnswers": [
+            "Brenda told Jimmy to turn off the TV because the film was boring.",
+            "Brenda asked Jimmy to turn off the TV because the film was boring.",
+            "Brenda told Jimmy to turn off the TV and said that the film was boring.",
+            "Brenda told Jimmy to turn off the TV and said the film was boring.",
+            "Brenda told Jimmy to turn off the TV and added that the film was boring.",
+            "Brenda told Jimmy to turn off the TV and added the film was boring.",
+            "Brenda asked Jimmy to turn off the TV and said that the film was boring.",
+            "Brenda asked Jimmy to turn off the TV and said the film was boring.",
+            "Brenda asked Jimmy to turn off the TV and added that the film was boring.",
+            "Brenda asked Jimmy to turn off the TV and added the film was boring."
+          ],
+          "explanation": "asked + to; is → was"
+        },
+        {
+          "id": "ws-27-sec-f-q02",
+          "order": 2,
+          "prompt": "“Wash your face and say GOOD MORNING to everybody,” says his mother.",
+          "acceptedAnswers": [
+            "His mother tells him to wash his face and to say good morning to everybody.",
+            "His mother tells him to wash his face and say good morning to everybody."
+          ],
+          "explanation": "tells + object + to-infinitive"
+        },
+        {
+          "id": "ws-27-sec-f-q03",
+          "order": 3,
+          "prompt": "“Do your homework again. There are a lot of mistakes,” says the teacher to Kate.",
+          "acceptedAnswers": [
+            "The teacher tells Kate to do her homework again because there are a lot of mistakes.",
+            "The teacher tells Kate to do her homework again and says that there are a lot of mistakes.",
+            "The teacher tells Kate to do her homework again and says there are a lot of mistakes.",
+            "The teacher tells Kate to do her homework again and adds that there are a lot of mistakes.",
+            "The teacher tells Kate to do her homework again and adds there are a lot of mistakes."
+          ],
+          "explanation": "present reporting verb: no backshift"
+        },
+        {
+          "id": "ws-27-sec-f-q04",
+          "order": 4,
+          "prompt": "“Don’t waste your time! Finish studying,” says Mrs. Dawson to Barbara.",
+          "acceptedAnswers": [
+            "Mrs. Dawson tells Barbara not to waste her time and to finish studying.",
+            "Mrs. Dawson tells Barbara not to waste her time and finish studying."
+          ],
+          "explanation": "not to ... and to ..."
+        },
+        {
+          "id": "ws-27-sec-f-q05",
+          "order": 5,
+          "prompt": "“Brush your teeth. They look very dirty,” her mother says to her.",
+          "acceptedAnswers": [
+            "Her mother tells her to brush her teeth because they look very dirty.",
+            "Her mother tells her to brush her teeth and says that they look very dirty.",
+            "Her mother tells her to brush her teeth and says they look very dirty.",
+            "Her mother tells her to brush her teeth and adds that they look very dirty.",
+            "Her mother tells her to brush her teeth and adds they look very dirty."
+          ],
+          "explanation": "tells + to; because"
+        },
+        {
+          "id": "ws-27-sec-f-q06",
+          "order": 6,
+          "prompt": "“Look out! There is a truck coming,” Kevin said to his daughter.",
+          "acceptedAnswers": [
+            "Kevin told his daughter to look out because there was a truck coming.",
+            "Kevin warned his daughter to look out because there was a truck coming.",
+            "Kevin told his daughter to look out and said that there was a truck coming.",
+            "Kevin told his daughter to look out and said there was a truck coming.",
+            "Kevin told his daughter to look out and added that there was a truck coming.",
+            "Kevin told his daughter to look out and added there was a truck coming.",
+            "Kevin warned his daughter to look out and said that there was a truck coming.",
+            "Kevin warned his daughter to look out and said there was a truck coming.",
+            "Kevin warned his daughter to look out and added that there was a truck coming.",
+            "Kevin warned his daughter to look out and added there was a truck coming."
+          ],
+          "explanation": "told + to; is → was"
+        },
+        {
+          "id": "ws-27-sec-f-q07",
+          "order": 7,
+          "prompt": "Janet told David, “This book looks boring. Give me another, please.”",
+          "acceptedAnswers": [
+            "Janet told David that that book looked boring and asked him to give her another one.",
+            "Janet told David that that book looked boring and asked him to give her another.",
+            "Janet told David that the book looked boring and asked him to give her another one.",
+            "Janet told David that the book looked boring and asked him to give her another.",
+            "Janet told David that book looked boring and asked him to give her another one.",
+            "Janet told David that book looked boring and asked him to give her another.",
+            "Janet told David the book looked boring and asked him to give her another one.",
+            "Janet told David the book looked boring and asked him to give her another.",
+            "Janet asked David to give her another one because that book looked boring.",
+            "Janet asked David to give her another one because the book looked boring.",
+            "Janet asked David to give her another because that book looked boring.",
+            "Janet asked David to give her another because the book looked boring."
+          ],
+          "explanation": "this → that; asked + to"
+        },
+        {
+          "id": "ws-27-sec-f-q08",
+          "order": 8,
+          "prompt": "Mrs. Abbot told Jack, “Your hair is very long. Go and have a hair cut.”",
+          "acceptedAnswers": [
+            "Mrs. Abbot told Jack that his hair was very long and told him to go and have a haircut.",
+            "Mrs. Abbot told Jack that his hair was very long and told him to go and have a hair cut.",
+            "Mrs. Abbot told Jack his hair was very long and told him to go and have a haircut.",
+            "Mrs. Abbot told Jack his hair was very long and told him to go and have a hair cut.",
+            "Mrs. Abbot told Jack to go and have a haircut because his hair was very long.",
+            "Mrs. Abbot told Jack to go and have a hair cut because his hair was very long."
+          ],
+          "explanation": "is → was; told + to"
+        },
+        {
+          "id": "ws-27-sec-f-q09",
+          "order": 9,
+          "prompt": "Mrs. Denman says to her son, “It is very hot. Don’t play in the sun.”",
+          "acceptedAnswers": [
+            "Mrs. Denman tells her son not to play in the sun because it is very hot.",
+            "Mrs. Denman tells her son that it is very hot and tells him not to play in the sun.",
+            "Mrs. Denman tells her son that it is very hot and not to play in the sun.",
+            "Mrs. Denman tells her son it is very hot and tells him not to play in the sun.",
+            "Mrs. Denman tells her son it is very hot and not to play in the sun."
+          ],
+          "explanation": "not to; because"
+        },
+        {
+          "id": "ws-27-sec-f-q10",
+          "order": 10,
+          "prompt": "Mr. Newman said to Nicky, “Don’t make a lot of noise. I want to listen to the news.”",
+          "acceptedAnswers": [
+            "Mr. Newman told Nicky not to make a lot of noise because he wanted to listen to the news."
+          ],
+          "explanation": "not to; want → wanted"
+        },
+        {
+          "id": "ws-27-sec-f-q11",
+          "order": 11,
+          "prompt": "“Don’t turn it up. I have a headache,” says the mother.",
+          "acceptedAnswers": [
+            "The mother tells us not to turn it up because she has a headache.",
+            "The mother tells them not to turn it up because she has a headache.",
+            "The mother tells him not to turn it up because she has a headache.",
+            "The mother tells her not to turn it up because she has a headache.",
+            "The mother tells not to turn it up because she has a headache."
+          ],
+          "explanation": "not to; because; no backshift"
+        },
+        {
+          "id": "ws-27-sec-f-q12",
+          "order": 12,
+          "prompt": "Sue told Andy, “Don’t shout! I’m not deaf.”",
+          "acceptedAnswers": [
+            "Sue told Andy not to shout because she wasn't deaf.",
+            "Sue told Andy not to shout because she was not deaf.",
+            "Sue told Andy not to shout and said that she wasn't deaf.",
+            "Sue told Andy not to shout and said that she was not deaf.",
+            "Sue told Andy not to shout and said she wasn't deaf.",
+            "Sue told Andy not to shout and said she was not deaf.",
+            "Sue told Andy not to shout and added that she wasn't deaf.",
+            "Sue told Andy not to shout and added that she was not deaf.",
+            "Sue told Andy not to shout and added she wasn't deaf.",
+            "Sue told Andy not to shout and added she was not deaf."
+          ],
+          "explanation": "not to; am → was"
+        },
+        {
+          "id": "ws-27-sec-f-q13",
+          "order": 13,
+          "prompt": "Terry said to Ashley, “Don’t speak German. Speak English. They can’t understand you.”",
+          "acceptedAnswers": [
+            "Terry told Ashley not to speak German but to speak English because they couldn't understand her.",
+            "Terry told Ashley not to speak German but to speak English because they couldn't understand him.",
+            "Terry told Ashley not to speak German but speak English because they couldn't understand her.",
+            "Terry told Ashley not to speak German but speak English because they couldn't understand him."
+          ],
+          "explanation": "not to ... but to ...; can't → couldn't"
+        },
+        {
+          "id": "ws-27-sec-f-q14",
+          "order": 14,
+          "prompt": "“Please, be quiet! The baby is sleeping,” says Mrs. Newton to the children.",
+          "acceptedAnswers": [
+            "Mrs. Newton tells the children to be quiet because the baby is sleeping.",
+            "Mrs. Newton asks the children to be quiet because the baby is sleeping."
+          ],
+          "explanation": "tells + to; because"
+        },
+        {
+          "id": "ws-27-sec-f-q15",
+          "order": 15,
+          "prompt": "“Will you please move aside? I can’t watch television,” says John.",
+          "acceptedAnswers": [
+            "John asks me to move aside because he can't watch television.",
+            "John asks us to move aside because he can't watch television.",
+            "John asks him to move aside because he can't watch television.",
+            "John asks her to move aside because he can't watch television.",
+            "John asks them to move aside because he can't watch television.",
+            "John asks to move aside because he can't watch television."
+          ],
+          "explanation": "polite request → asks + to"
+        },
+        {
+          "id": "ws-27-sec-f-q16",
+          "order": 16,
+          "prompt": "Mark said, “I want to buy a new car. Ours is very old and uses a lot of petrol.”",
+          "acceptedAnswers": [
+            "Mark said that he wanted to buy a new car because theirs was very old and used a lot of petrol.",
+            "Mark said that he wanted to buy a new car because theirs was very old and spent a lot of petrol.",
+            "Mark said he wanted to buy a new car because theirs was very old and used a lot of petrol.",
+            "Mark said he wanted to buy a new car because theirs was very old and spent a lot of petrol."
+          ],
+          "explanation": "ours → theirs; present → past"
+        },
+        {
+          "id": "ws-27-sec-f-q17",
+          "order": 17,
+          "prompt": "Tom said to Carol, “Can I borrow your dictionary? Mine is at home.”",
+          "acceptedAnswers": [
+            "Tom asked Carol if he could borrow her dictionary because his was at home.",
+            "Tom asked Carol whether he could borrow her dictionary because his was at home."
+          ],
+          "explanation": "can → could; mine → his"
+        },
+        {
+          "id": "ws-27-sec-f-q18",
+          "order": 18,
+          "prompt": "“Your hands are very dirty. Go to the bathroom and wash them,” says her mother.",
+          "acceptedAnswers": [
+            "Her mother tells her to go to the bathroom and wash her hands because they are very dirty.",
+            "Her mother tells her that her hands are very dirty and tells her to go to the bathroom and wash them.",
+            "Her mother tells her her hands are very dirty and tells her to go to the bathroom and wash them."
+          ],
+          "explanation": "tells + to; no backshift"
+        },
+        {
+          "id": "ws-27-sec-f-q19",
+          "order": 19,
+          "prompt": "Sandy said to Danny, “Does your mother work? I see her on the bus every day.”",
+          "acceptedAnswers": [
+            "Sandy asked Danny if his mother worked because she saw her on the bus every day.",
+            "Sandy asked Danny whether his mother worked because she saw her on the bus every day.",
+            "Sandy asked Danny if his mother worked and said that she saw her on the bus every day.",
+            "Sandy asked Danny if his mother worked and said she saw her on the bus every day.",
+            "Sandy asked Danny if his mother worked and added that she saw her on the bus every day.",
+            "Sandy asked Danny if his mother worked and added she saw her on the bus every day.",
+            "Sandy asked Danny whether his mother worked and said that she saw her on the bus every day.",
+            "Sandy asked Danny whether his mother worked and said she saw her on the bus every day.",
+            "Sandy asked Danny whether his mother worked and added that she saw her on the bus every day.",
+            "Sandy asked Danny whether his mother worked and added she saw her on the bus every day."
+          ],
+          "explanation": "if + past; present → past"
+        },
+        {
+          "id": "ws-27-sec-f-q20",
+          "order": 20,
+          "prompt": "Tom told Jane, “I’m bored. Can we go to the cinema?”",
+          "acceptedAnswers": [
+            "Tom told Jane that he was bored and asked her if they could go to the cinema.",
+            "Tom told Jane that he was bored and asked her whether they could go to the cinema.",
+            "Tom told Jane that he was bored and asked if they could go to the cinema.",
+            "Tom told Jane that he was bored and asked whether they could go to the cinema.",
+            "Tom told Jane he was bored and asked her if they could go to the cinema.",
+            "Tom told Jane he was bored and asked her whether they could go to the cinema.",
+            "Tom told Jane he was bored and asked if they could go to the cinema.",
+            "Tom told Jane he was bored and asked whether they could go to the cinema."
+          ],
+          "explanation": "am → was; can → could"
+        },
+        {
+          "id": "ws-27-sec-f-q21",
+          "order": 21,
+          "prompt": "Sam said to Kate, “I’m broke. Can you lend me some money?”",
+          "acceptedAnswers": [
+            "Sam told Kate that he was broke and asked her if she could lend him some money.",
+            "Sam told Kate that he was broke and asked her whether she could lend him some money.",
+            "Sam told Kate that he was broke and asked if she could lend him some money.",
+            "Sam told Kate that he was broke and asked whether she could lend him some money.",
+            "Sam told Kate he was broke and asked her if she could lend him some money.",
+            "Sam told Kate he was broke and asked her whether she could lend him some money.",
+            "Sam told Kate he was broke and asked if she could lend him some money.",
+            "Sam told Kate he was broke and asked whether she could lend him some money."
+          ],
+          "explanation": "am → was; can → could"
+        },
+        {
+          "id": "ws-27-sec-f-q22",
+          "order": 22,
+          "prompt": "Mother said to her son, “Your friends are playing in the garden. Don’t you want to play with them?”",
+          "acceptedAnswers": [
+            "Mother told her son that his friends were playing in the garden and asked him if he didn't want to play with them.",
+            "Mother told her son that his friends were playing in the garden and asked him whether he didn't want to play with them.",
+            "Mother told her son that his friends were playing in the garden and asked if he didn't want to play with them.",
+            "Mother told her son that his friends were playing in the garden and asked whether he didn't want to play with them.",
+            "Mother told her son his friends were playing in the garden and asked him if he didn't want to play with them.",
+            "Mother told her son his friends were playing in the garden and asked him whether he didn't want to play with them.",
+            "Mother told her son his friends were playing in the garden and asked if he didn't want to play with them.",
+            "Mother told her son his friends were playing in the garden and asked whether he didn't want to play with them.",
+            "His mother told her son that his friends were playing in the garden and asked him if he didn't want to play with them.",
+            "His mother told her son that his friends were playing in the garden and asked him whether he didn't want to play with them.",
+            "His mother told her son that his friends were playing in the garden and asked if he didn't want to play with them.",
+            "His mother told her son that his friends were playing in the garden and asked whether he didn't want to play with them.",
+            "His mother told her son his friends were playing in the garden and asked him if he didn't want to play with them.",
+            "His mother told her son his friends were playing in the garden and asked him whether he didn't want to play with them.",
+            "His mother told her son his friends were playing in the garden and asked if he didn't want to play with them.",
+            "His mother told her son his friends were playing in the garden and asked whether he didn't want to play with them."
+          ],
+          "explanation": "are → were; don't → didn't"
+        },
+        {
+          "id": "ws-27-sec-f-q23",
+          "order": 23,
+          "prompt": "Jim says to his son, “When will you go? You are very late for school.”",
+          "acceptedAnswers": [
+            "Jim asks his son when he will go because he is very late for school.",
+            "Jim asks his son when he will go and says that he is very late for school.",
+            "Jim asks his son when he will go and says he is very late for school.",
+            "Jim asks his son when he will go and adds that he is very late for school.",
+            "Jim asks his son when he will go and adds he is very late for school."
+          ],
+          "explanation": "present reporting verb: no backshift"
+        },
+        {
+          "id": "ws-27-sec-f-q24",
+          "order": 24,
+          "prompt": "“What have you cooked? I feel very hungry,” Tony said to his mother.",
+          "acceptedAnswers": [
+            "Tony asked his mother what she had cooked because he felt very hungry.",
+            "Tony asked his mother what she had cooked and said that he felt very hungry.",
+            "Tony asked his mother what she had cooked and said he felt very hungry.",
+            "Tony asked his mother what she had cooked and added that he felt very hungry.",
+            "Tony asked his mother what she had cooked and added he felt very hungry."
+          ],
+          "explanation": "have cooked → had cooked; feel → felt"
+        },
+        {
+          "id": "ws-27-sec-f-q25",
+          "order": 25,
+          "prompt": "“Why don’t you wash your car? It looks very dirty,” Mrs. Dawson said to John.",
+          "acceptedAnswers": [
+            "Mrs. Dawson asked John why he didn't wash his car because it looked very dirty.",
+            "Mrs. Dawson asked John why he didn't wash his car and said that it looked very dirty.",
+            "Mrs. Dawson asked John why he didn't wash his car and said it looked very dirty.",
+            "Mrs. Dawson asked John why he didn't wash his car and added that it looked very dirty.",
+            "Mrs. Dawson asked John why he didn't wash his car and added it looked very dirty."
+          ],
+          "explanation": "don't → didn't; looks → looked"
+        }
+      ]
+    }
+  ]
+}

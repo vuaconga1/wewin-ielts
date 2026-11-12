@@ -1,0 +1,2175 @@
+{
+  "id": "card-04",
+  "order": 4,
+  "part": 1,
+  "slug": "card-04-hien-tai-hoan-thanh-tiep-dien",
+  "title": "THẺ BÀI TẬP 04",
+  "subject": "Present Perfect & Continuous",
+  "subjectVi": "Thì Hiện tại hoàn thành & Tiếp diễn",
+  "level": "A2",
+  "pageRange": "WS-10, WS-11, WS-12",
+  "sections": [
+    {
+      "id": "card-04-sec-1",
+      "sectionKey": "A",
+      "instruction": "Write a suitable sentence using the PRESENT PERFECT TENSE: (Example: Ann’s hair was dirty. Now it’s clean. (wash) → Ann has washed her hair.)",
+      "type": "sentence_building",
+      "questions": [
+        {
+          "id": "ws-10-sec-a-q02",
+          "order": 2,
+          "prompt": "Tom was 80 kg. Now he’s 70. (lose weight)",
+          "acceptedAnswers": [
+            "Tom has lost weight.",
+            "He has lost weight.",
+            "He's lost weight.",
+            "Tom has lost 10 kg."
+          ],
+          "explanation": "present perfect: past action with a result now"
+        },
+        {
+          "id": "ws-10-sec-a-q03",
+          "order": 3,
+          "prompt": "Bill played football yesterday. Now he can’t walk; his leg is in plaster. (break)",
+          "acceptedAnswers": [
+            "Bill has broken his leg.",
+            "He has broken his leg.",
+            "He's broken his leg."
+          ],
+          "explanation": "present perfect: has + past participle (broken)"
+        },
+        {
+          "id": "ws-10-sec-a-q04",
+          "order": 4,
+          "prompt": "My sister is looking for her pen. (lose)",
+          "acceptedAnswers": [
+            "My sister has lost her pen.",
+            "She has lost her pen.",
+            "She's lost her pen."
+          ],
+          "explanation": "present perfect: has + past participle (lost)"
+        },
+        {
+          "id": "ws-10-sec-a-q05",
+          "order": 5,
+          "prompt": "Mary is on holiday in France. (go)",
+          "acceptedAnswers": [
+            "Mary has gone to France.",
+            "She has gone to France.",
+            "She's gone to France.",
+            "Mary has gone on holiday to France.",
+            "She has gone on holiday to France.",
+            "She's gone on holiday to France."
+          ],
+          "explanation": "has gone = went and is still there"
+        },
+        {
+          "id": "ws-10-sec-a-q06",
+          "order": 6,
+          "prompt": "Mr. Hill was in Canada last week. He’s back in London now. (be)",
+          "acceptedAnswers": [
+            "Mr. Hill has been to Canada.",
+            "He has been to Canada.",
+            "He's been to Canada."
+          ],
+          "explanation": "has been to = went and came back"
+        },
+        {
+          "id": "ws-10-sec-a-q07",
+          "order": 7,
+          "prompt": "Look! Mrs. Smith has got a lot of packages. (buy)",
+          "acceptedAnswers": [
+            "Mrs. Smith has bought a lot of packages.",
+            "She has bought a lot of packages.",
+            "She's bought a lot of packages.",
+            "Mrs. Smith has bought a lot of things.",
+            "She has bought a lot of things.",
+            "She's bought a lot of things."
+          ],
+          "explanation": "present perfect: has + past participle (bought)"
+        },
+        {
+          "id": "ws-10-sec-a-q08",
+          "order": 8,
+          "prompt": "I can’t eat anything now. (eat too much)",
+          "acceptedAnswers": [
+            "I have eaten too much.",
+            "I've eaten too much."
+          ],
+          "explanation": "present perfect: have + past participle (eaten)"
+        },
+        {
+          "id": "ws-10-sec-a-q09",
+          "order": 9,
+          "prompt": "Mrs. Jenkins is very tired. (clean / house)",
+          "acceptedAnswers": [
+            "Mrs. Jenkins has cleaned the house.",
+            "She has cleaned the house.",
+            "She's cleaned the house.",
+            "Mrs. Jenkins has cleaned her house.",
+            "She has cleaned her house.",
+            "She's cleaned her house."
+          ],
+          "explanation": "present perfect: past action with a result now"
+        },
+        {
+          "id": "ws-10-sec-a-q10",
+          "order": 10,
+          "prompt": "Tony needs a holiday. (work / hard / this year)",
+          "acceptedAnswers": [
+            "Tony has worked hard this year.",
+            "He has worked hard this year.",
+            "He's worked hard this year.",
+            "Tony has worked very hard this year.",
+            "He has worked very hard this year.",
+            "He's worked very hard this year."
+          ],
+          "explanation": "present perfect with unfinished time: this year"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-2",
+      "sectionKey": "B",
+      "instruction": "Use the PRESENT PERFECT TENSE after BECAUSE: (Example: She can’t go to the party. (catch a cold) → She can’t go to the party because she has caught a cold.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-10-sec-b-q01",
+          "order": 1,
+          "prompt": "He can’t walk very fast. (hurt / leg)",
+          "acceptedAnswers": [
+            "He can't walk very fast because he has hurt his leg.",
+            "He can't walk very fast because he's hurt his leg."
+          ],
+          "explanation": "because + present perfect (result now)"
+        },
+        {
+          "id": "ws-10-sec-b-q02",
+          "order": 2,
+          "prompt": "I can’t get in. (lose / key)",
+          "acceptedAnswers": [
+            "I can't get in because I have lost my key.",
+            "I can't get in because I've lost my key.",
+            "I can't get in because I have lost my keys.",
+            "I can't get in because I've lost my keys."
+          ],
+          "explanation": "because + present perfect (result now)"
+        },
+        {
+          "id": "ws-10-sec-b-q03",
+          "order": 3,
+          "prompt": "I know this story very well. (see the film)",
+          "acceptedAnswers": [
+            "I know this story very well because I have seen the film.",
+            "I know this story very well because I've seen the film."
+          ],
+          "explanation": "because + present perfect (experience)"
+        },
+        {
+          "id": "ws-10-sec-b-q04",
+          "order": 4,
+          "prompt": "I can’t post the letter. (not put / stamp / on it)",
+          "acceptedAnswers": [
+            "I can't post the letter because I haven't put a stamp on it."
+          ],
+          "explanation": "negative: haven't + past participle"
+        },
+        {
+          "id": "ws-10-sec-b-q05",
+          "order": 5,
+          "prompt": "He can’t stand up. (eat too much)",
+          "acceptedAnswers": [
+            "He can't stand up because he has eaten too much.",
+            "He can't stand up because he's eaten too much."
+          ],
+          "explanation": "because + present perfect (result now)"
+        },
+        {
+          "id": "ws-10-sec-b-q06",
+          "order": 6,
+          "prompt": "They can’t go on holiday. (not save / money)",
+          "acceptedAnswers": [
+            "They can't go on holiday because they haven't saved any money.",
+            "They can't go on holiday because they haven't saved money.",
+            "They can't go on holiday because they haven't saved enough money."
+          ],
+          "explanation": "negative: haven't + past participle"
+        },
+        {
+          "id": "ws-10-sec-b-q07",
+          "order": 7,
+          "prompt": "I know him. (meet him before)",
+          "acceptedAnswers": [
+            "I know him because I have met him before.",
+            "I know him because I've met him before."
+          ],
+          "explanation": "because + present perfect (experience)"
+        },
+        {
+          "id": "ws-10-sec-b-q08",
+          "order": 8,
+          "prompt": "We don’t know how he is. (not hear from him)",
+          "acceptedAnswers": [
+            "We don't know how he is because we haven't heard from him."
+          ],
+          "explanation": "negative: haven't + past participle"
+        },
+        {
+          "id": "ws-10-sec-b-q09",
+          "order": 9,
+          "prompt": "He won’t take a cigarette. (give up smoking)",
+          "acceptedAnswers": [
+            "He won't take a cigarette because he has given up smoking.",
+            "He won't take a cigarette because he's given up smoking."
+          ],
+          "explanation": "because + present perfect (result now)"
+        },
+        {
+          "id": "ws-10-sec-b-q10",
+          "order": 10,
+          "prompt": "She can’t get in. (he / lock the door)",
+          "acceptedAnswers": [
+            "She can't get in because he has locked the door.",
+            "She can't get in because he's locked the door."
+          ],
+          "explanation": "because + present perfect (result now)"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-3",
+      "sectionKey": "C",
+      "instruction": "Follow the example and do the same using ALREADY: (Example: Bring the milk in, please. → I have already brought it in.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-10-sec-c-q01",
+          "order": 1,
+          "prompt": "You must find the tickets soon.",
+          "acceptedAnswers": [
+            "I have already found them.",
+            "I've already found them."
+          ],
+          "explanation": "already goes between have and the past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q02",
+          "order": 2,
+          "prompt": "Turn the radio down, please.",
+          "acceptedAnswers": [
+            "I have already turned it down.",
+            "I've already turned it down."
+          ],
+          "explanation": "have already + past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q03",
+          "order": 3,
+          "prompt": "Tidy your room.",
+          "acceptedAnswers": [
+            "I have already tidied it.",
+            "I've already tidied it."
+          ],
+          "explanation": "have already + past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q04",
+          "order": 4,
+          "prompt": "Could you post the letters, please?",
+          "acceptedAnswers": [
+            "I have already posted them.",
+            "I've already posted them."
+          ],
+          "explanation": "have already + past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q05",
+          "order": 5,
+          "prompt": "Why don’t you see a doctor?",
+          "acceptedAnswers": [
+            "I have already seen one.",
+            "I've already seen one.",
+            "I have already seen a doctor.",
+            "I've already seen a doctor."
+          ],
+          "explanation": "have already + past participle (seen)"
+        },
+        {
+          "id": "ws-10-sec-c-q06",
+          "order": 6,
+          "prompt": "You have a bad cough. I think you should stop smoking.",
+          "acceptedAnswers": [
+            "I have already stopped.",
+            "I've already stopped.",
+            "I have already stopped smoking.",
+            "I've already stopped smoking."
+          ],
+          "explanation": "have already + past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q07",
+          "order": 7,
+          "prompt": "Why don’t you clean your shoes?",
+          "acceptedAnswers": [
+            "I have already cleaned them.",
+            "I've already cleaned them."
+          ],
+          "explanation": "have already + past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q08",
+          "order": 8,
+          "prompt": "Brush your teeth, will you?",
+          "acceptedAnswers": [
+            "I have already brushed them.",
+            "I've already brushed them."
+          ],
+          "explanation": "have already + past participle"
+        },
+        {
+          "id": "ws-10-sec-c-q09",
+          "order": 9,
+          "prompt": "We have guests today. Shall we make a cake?",
+          "acceptedAnswers": [
+            "I have already made one.",
+            "I've already made one.",
+            "We have already made one.",
+            "We've already made one.",
+            "I have already made a cake.",
+            "I've already made a cake.",
+            "We have already made a cake.",
+            "We've already made a cake."
+          ],
+          "explanation": "have already + past participle (made)"
+        },
+        {
+          "id": "ws-10-sec-c-q10",
+          "order": 10,
+          "prompt": "We should invite Mary to the party.",
+          "acceptedAnswers": [
+            "I have already invited her.",
+            "I've already invited her.",
+            "We have already invited her.",
+            "We've already invited her."
+          ],
+          "explanation": "have already + past participle"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-4",
+      "sectionKey": "D",
+      "instruction": "Follow the example and do the same using YET: (Example: She has been in the shop. (buy anything) → She has been in the shop but she hasn’t bought anything yet.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-10-sec-d-q01",
+          "order": 1,
+          "prompt": "I’ve written to them three times. (not reply)",
+          "acceptedAnswers": [
+            "I have written to them three times but they haven't replied yet.",
+            "I've written to them three times but they haven't replied yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q02",
+          "order": 2,
+          "prompt": "I’ve asked you again and again. (not do it)",
+          "acceptedAnswers": [
+            "I have asked you again and again but you haven't done it yet.",
+            "I've asked you again and again but you haven't done it yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q03",
+          "order": 3,
+          "prompt": "I lent him $10 last month. (not give it back)",
+          "acceptedAnswers": [
+            "I lent him $10 last month but he hasn't given it back yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q04",
+          "order": 4,
+          "prompt": "He lost his pen a week ago. (not find it)",
+          "acceptedAnswers": [
+            "He lost his pen a week ago but he hasn't found it yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q05",
+          "order": 5,
+          "prompt": "He borrowed my book last year. (not give it back)",
+          "acceptedAnswers": [
+            "He borrowed my book last year but he hasn't given it back yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q06",
+          "order": 6,
+          "prompt": "She went to New York six months ago. (not return)",
+          "acceptedAnswers": [
+            "She went to New York six months ago but she hasn't returned yet.",
+            "She went to New York six months ago but she hasn't come back yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q07",
+          "order": 7,
+          "prompt": "She gave me $2 a week ago. (not return it)",
+          "acceptedAnswers": [
+            "She gave me $2 a week ago but I haven't returned it yet."
+          ],
+          "explanation": "the money must be returned by me: I haven't"
+        },
+        {
+          "id": "ws-10-sec-d-q08",
+          "order": 8,
+          "prompt": "I finished reading my library books a long time ago. (not change them)",
+          "acceptedAnswers": [
+            "I finished reading my library books a long time ago but I haven't changed them yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q09",
+          "order": 9,
+          "prompt": "She went to the bus-stop half an hour ago. (the bus / not come)",
+          "acceptedAnswers": [
+            "She went to the bus-stop half an hour ago but the bus hasn't come yet.",
+            "She went to the bus stop half an hour ago but the bus hasn't come yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        },
+        {
+          "id": "ws-10-sec-d-q10",
+          "order": 10,
+          "prompt": "He’s still studying that lesson. (not learn it)",
+          "acceptedAnswers": [
+            "He's still studying that lesson but he hasn't learnt it yet.",
+            "He's still studying that lesson but he hasn't learned it yet."
+          ],
+          "explanation": "negative present perfect + yet (at the end)"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-5",
+      "sectionKey": "E",
+      "instruction": "Fill in the blanks with ALREADY or YET:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-10-sec-e-q01",
+          "order": 1,
+          "prompt": "He hasn’t called us [gap].",
+          "acceptedAnswers": [
+            "yet"
+          ],
+          "explanation": "yet: negatives, at the end"
+        },
+        {
+          "id": "ws-10-sec-e-q02",
+          "order": 2,
+          "prompt": "They have [gap] sent the letter.",
+          "acceptedAnswers": [
+            "already"
+          ],
+          "explanation": "already: positive, between have and participle"
+        },
+        {
+          "id": "ws-10-sec-e-q03",
+          "order": 3,
+          "prompt": "John has [gap] bought the tickets for the football match.",
+          "acceptedAnswers": [
+            "already"
+          ],
+          "explanation": "already: positive, between have and participle"
+        },
+        {
+          "id": "ws-10-sec-e-q04",
+          "order": 4,
+          "prompt": "We have [gap] been to Mexico three times.",
+          "acceptedAnswers": [
+            "already"
+          ],
+          "explanation": "already: positive, between have and participle"
+        },
+        {
+          "id": "ws-10-sec-e-q05",
+          "order": 5,
+          "prompt": "You haven’t visited Tokyo [gap].",
+          "acceptedAnswers": [
+            "yet"
+          ],
+          "explanation": "yet: negatives, at the end"
+        },
+        {
+          "id": "ws-10-sec-e-q06",
+          "order": 6,
+          "prompt": "Has John bought a new car [gap]?",
+          "acceptedAnswers": [
+            "yet"
+          ],
+          "explanation": "yet: questions, at the end"
+        },
+        {
+          "id": "ws-10-sec-e-q07",
+          "order": 7,
+          "prompt": "The plane has [gap] left.",
+          "acceptedAnswers": [
+            "already"
+          ],
+          "explanation": "already: positive, between has and participle"
+        },
+        {
+          "id": "ws-10-sec-e-q08",
+          "order": 8,
+          "prompt": "Has she done it [gap]? No, not [gap].",
+          "acceptedAnswers": [
+            "yet / yet"
+          ],
+          "explanation": "yet in questions; short answer: not yet"
+        },
+        {
+          "id": "ws-10-sec-e-q09",
+          "order": 9,
+          "prompt": "A: Haven’t they arrived [gap]? B: Oh, yes. They have [gap] arrived.",
+          "acceptedAnswers": [
+            "yet / already"
+          ],
+          "explanation": "yet in questions; already in positive sentences"
+        },
+        {
+          "id": "ws-10-sec-e-q10",
+          "order": 10,
+          "prompt": "Hurry up! The class has [gap] started.",
+          "acceptedAnswers": [
+            "already"
+          ],
+          "explanation": "already: positive, between has and participle"
+        },
+        {
+          "id": "ws-10-sec-e-q11",
+          "order": 11,
+          "prompt": "Be careful! They have [gap] painted the door.",
+          "acceptedAnswers": [
+            "already"
+          ],
+          "explanation": "already: positive, between have and participle"
+        },
+        {
+          "id": "ws-10-sec-e-q12",
+          "order": 12,
+          "prompt": "Haven’t you read the book [gap]?",
+          "acceptedAnswers": [
+            "yet"
+          ],
+          "explanation": "yet: questions, at the end"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-6",
+      "sectionKey": "F",
+      "instruction": "Follow the example and do the same using JUST. Write the question and the answer: (Example: he / go out → What has he just done? He has just gone out.)",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-10-sec-f-q01",
+          "order": 1,
+          "prompt": "She / leave the room",
+          "acceptedAnswers": [
+            "What has she just done? She has just left the room.",
+            "What has she just done? She's just left the room."
+          ],
+          "explanation": "has just + past participle (left)"
+        },
+        {
+          "id": "ws-10-sec-f-q02",
+          "order": 2,
+          "prompt": "they / watch the news",
+          "acceptedAnswers": [
+            "What have they just done? They have just watched the news.",
+            "What have they just done? They've just watched the news."
+          ],
+          "explanation": "have just + past participle"
+        },
+        {
+          "id": "ws-10-sec-f-q03",
+          "order": 3,
+          "prompt": "I / finish homework",
+          "acceptedAnswers": [
+            "What have you just done? I have just finished my homework.",
+            "What have you just done? I've just finished my homework.",
+            "What have I just done? I have just finished my homework.",
+            "What have I just done? I've just finished my homework."
+          ],
+          "explanation": "have just + past participle"
+        },
+        {
+          "id": "ws-10-sec-f-q04",
+          "order": 4,
+          "prompt": "he / put on the jacket",
+          "acceptedAnswers": [
+            "What has he just done? He has just put on the jacket.",
+            "What has he just done? He's just put on the jacket.",
+            "What has he just done? He has just put the jacket on.",
+            "What has he just done? He's just put the jacket on."
+          ],
+          "explanation": "has just + past participle (put)"
+        },
+        {
+          "id": "ws-10-sec-f-q05",
+          "order": 5,
+          "prompt": "she / catch a fish",
+          "acceptedAnswers": [
+            "What has she just done? She has just caught a fish.",
+            "What has she just done? She's just caught a fish."
+          ],
+          "explanation": "has just + past participle (caught)"
+        },
+        {
+          "id": "ws-10-sec-f-q06",
+          "order": 6,
+          "prompt": "he / call a taxi",
+          "acceptedAnswers": [
+            "What has he just done? He has just called a taxi.",
+            "What has he just done? He's just called a taxi."
+          ],
+          "explanation": "has just + past participle"
+        },
+        {
+          "id": "ws-10-sec-f-q07",
+          "order": 7,
+          "prompt": "you / write a letter",
+          "acceptedAnswers": [
+            "What have you just done? I have just written a letter.",
+            "What have you just done? I've just written a letter.",
+            "What have you just done? You have just written a letter.",
+            "What have you just done? You've just written a letter."
+          ],
+          "explanation": "have just + past participle (written)"
+        },
+        {
+          "id": "ws-10-sec-f-q08",
+          "order": 8,
+          "prompt": "the girl / burn the cake",
+          "acceptedAnswers": [
+            "What has the girl just done? She has just burnt the cake.",
+            "What has the girl just done? She's just burnt the cake.",
+            "What has the girl just done? She has just burned the cake.",
+            "What has the girl just done? She's just burned the cake.",
+            "What has the girl just done? The girl has just burnt the cake.",
+            "What has the girl just done? The girl has just burned the cake."
+          ],
+          "explanation": "has just + past participle (burnt/burned)"
+        },
+        {
+          "id": "ws-10-sec-f-q09",
+          "order": 9,
+          "prompt": "the teacher / walk out",
+          "acceptedAnswers": [
+            "What has the teacher just done? He has just walked out.",
+            "What has the teacher just done? He's just walked out.",
+            "What has the teacher just done? She has just walked out.",
+            "What has the teacher just done? She's just walked out.",
+            "What has the teacher just done? The teacher has just walked out."
+          ],
+          "explanation": "has just + past participle"
+        },
+        {
+          "id": "ws-10-sec-f-q10",
+          "order": 10,
+          "prompt": "the dog / see the cat",
+          "acceptedAnswers": [
+            "What has the dog just done? It has just seen the cat.",
+            "What has the dog just done? It's just seen the cat.",
+            "What has the dog just done? The dog has just seen the cat."
+          ],
+          "explanation": "has just + past participle (seen)"
+        },
+        {
+          "id": "ws-10-sec-f-q11",
+          "order": 11,
+          "prompt": "Jane / turn the TV off",
+          "acceptedAnswers": [
+            "What has Jane just done? She has just turned the TV off.",
+            "What has Jane just done? She's just turned the TV off.",
+            "What has Jane just done? She has just turned off the TV.",
+            "What has Jane just done? She's just turned off the TV.",
+            "What has Jane just done? Jane has just turned the TV off."
+          ],
+          "explanation": "has just + past participle"
+        },
+        {
+          "id": "ws-10-sec-f-q12",
+          "order": 12,
+          "prompt": "the boys / eat dinner",
+          "acceptedAnswers": [
+            "What have the boys just done? They have just eaten dinner.",
+            "What have the boys just done? They've just eaten dinner.",
+            "What have the boys just done? The boys have just eaten dinner.",
+            "What have the boys just done? They have just eaten their dinner.",
+            "What have the boys just done? They've just eaten their dinner."
+          ],
+          "explanation": "have just + past participle (eaten)"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-7",
+      "sectionKey": "G",
+      "instruction": "Put the verbs in the correct tense. Use the SIMPLE PAST or the PRESENT PERFECT:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-10-sec-g-q01",
+          "order": 1,
+          "prompt": "[gap] Tim [gap] (finish) his work yet?",
+          "acceptedAnswers": [
+            "Has / finished"
+          ],
+          "explanation": "yet → present perfect question"
+        },
+        {
+          "id": "ws-10-sec-g-q02",
+          "order": 2,
+          "prompt": "[gap] he [gap] (finish) it yesterday?",
+          "acceptedAnswers": [
+            "Did / finish"
+          ],
+          "explanation": "yesterday → simple past question"
+        },
+        {
+          "id": "ws-10-sec-g-q03",
+          "order": 3,
+          "prompt": "They [gap] (just / go) out.",
+          "acceptedAnswers": [
+            "have just gone"
+          ],
+          "explanation": "just → present perfect"
+        },
+        {
+          "id": "ws-10-sec-g-q04",
+          "order": 4,
+          "prompt": "They [gap] (go) out a minute ago.",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "explanation": "ago → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q05",
+          "order": 5,
+          "prompt": "[gap] Ann [gap] (study) yesterday afternoon?",
+          "acceptedAnswers": [
+            "Did / study"
+          ],
+          "explanation": "yesterday afternoon → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q06",
+          "order": 6,
+          "prompt": "[gap] you [gap] (send) the letters yet?",
+          "acceptedAnswers": [
+            "Have / sent"
+          ],
+          "explanation": "yet → present perfect question"
+        },
+        {
+          "id": "ws-10-sec-g-q07",
+          "order": 7,
+          "prompt": "[gap] she [gap] (call) him a week ago?",
+          "acceptedAnswers": [
+            "Did / call"
+          ],
+          "explanation": "ago → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q08",
+          "order": 8,
+          "prompt": "They [gap] (not / see) the film yet.",
+          "acceptedAnswers": [
+            "haven't seen"
+          ],
+          "explanation": "yet → present perfect negative"
+        },
+        {
+          "id": "ws-10-sec-g-q09",
+          "order": 9,
+          "prompt": "The train [gap] (just / arrive).",
+          "acceptedAnswers": [
+            "has just arrived"
+          ],
+          "explanation": "just → present perfect"
+        },
+        {
+          "id": "ws-10-sec-g-q10",
+          "order": 10,
+          "prompt": "[gap] you [gap] (ever / be) in a TV studio?",
+          "acceptedAnswers": [
+            "Have / ever been"
+          ],
+          "explanation": "ever → present perfect (experience)"
+        },
+        {
+          "id": "ws-10-sec-g-q11",
+          "order": 11,
+          "prompt": "[gap] you and Tom [gap] (enjoy) the party last night?",
+          "acceptedAnswers": [
+            "Did / enjoy"
+          ],
+          "explanation": "last night → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q12",
+          "order": 12,
+          "prompt": "[gap] you [gap] (not / finish) school last year?",
+          "acceptedAnswers": [
+            "Didn't / finish"
+          ],
+          "explanation": "last year → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q13",
+          "order": 13,
+          "prompt": "I [gap] (lose) my dictionary. I can’t find it anywhere.",
+          "acceptedAnswers": [
+            "have lost"
+          ],
+          "explanation": "past action with a result now → present perfect"
+        },
+        {
+          "id": "ws-10-sec-g-q14",
+          "order": 14,
+          "prompt": "His hair looks short. He [gap] (have) a haircut.",
+          "acceptedAnswers": [
+            "has had"
+          ],
+          "explanation": "result now → present perfect"
+        },
+        {
+          "id": "ws-10-sec-g-q15",
+          "order": 15,
+          "prompt": "When [gap] (he / give up) smoking?",
+          "acceptedAnswers": [
+            "did he give up"
+          ],
+          "explanation": "when-questions → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q16",
+          "order": 16,
+          "prompt": "Jane [gap] (buy) her car two weeks ago.",
+          "acceptedAnswers": [
+            "bought"
+          ],
+          "explanation": "ago → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q17",
+          "order": 17,
+          "prompt": "My bicycle isn’t here. Somebody [gap] (take) it.",
+          "acceptedAnswers": [
+            "has taken"
+          ],
+          "explanation": "result now → present perfect"
+        },
+        {
+          "id": "ws-10-sec-g-q18",
+          "order": 18,
+          "prompt": "Why [gap] (Jim / not want) to play tennis last Friday?",
+          "acceptedAnswers": [
+            "didn't Jim want",
+            "did Jim not want"
+          ],
+          "explanation": "last Friday → simple past"
+        },
+        {
+          "id": "ws-10-sec-g-q19",
+          "order": 19,
+          "prompt": "The car looks clean. [gap] you [gap] (wash) it?",
+          "acceptedAnswers": [
+            "Have / washed"
+          ],
+          "explanation": "result now → present perfect"
+        },
+        {
+          "id": "ws-10-sec-g-q20",
+          "order": 20,
+          "prompt": "When we were on holiday, the weather [gap] (be) terrible.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "finished past time → simple past"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-8",
+      "sectionKey": "H",
+      "instruction": "Ask questions with HOW LONG: (Example: I am married. → How long have you been married?)",
+      "type": "question_formation",
+      "questions": [
+        {
+          "id": "ws-10-sec-h-q01",
+          "order": 1,
+          "prompt": "I know Bob.",
+          "acceptedAnswers": [
+            "How long have you known Bob?"
+          ],
+          "explanation": "how long + present perfect (known)"
+        },
+        {
+          "id": "ws-10-sec-h-q02",
+          "order": 2,
+          "prompt": "Sue and Alan are married.",
+          "acceptedAnswers": [
+            "How long have Sue and Alan been married?"
+          ],
+          "explanation": "be → have/has been"
+        },
+        {
+          "id": "ws-10-sec-h-q03",
+          "order": 3,
+          "prompt": "George is unemployed.",
+          "acceptedAnswers": [
+            "How long has George been unemployed?"
+          ],
+          "explanation": "be → has been"
+        },
+        {
+          "id": "ws-10-sec-h-q04",
+          "order": 4,
+          "prompt": "Those books are here.",
+          "acceptedAnswers": [
+            "How long have those books been here?"
+          ],
+          "explanation": "be → have been"
+        },
+        {
+          "id": "ws-10-sec-h-q05",
+          "order": 5,
+          "prompt": "Mary is at the airport.",
+          "acceptedAnswers": [
+            "How long has Mary been at the airport?"
+          ],
+          "explanation": "be → has been"
+        },
+        {
+          "id": "ws-10-sec-h-q06",
+          "order": 6,
+          "prompt": "My sister is ill.",
+          "acceptedAnswers": [
+            "How long has your sister been ill?"
+          ],
+          "explanation": "my → your; be → has been"
+        },
+        {
+          "id": "ws-10-sec-h-q07",
+          "order": 7,
+          "prompt": "She has got a bad cold.",
+          "acceptedAnswers": [
+            "How long has she had a bad cold?"
+          ],
+          "explanation": "have got → has had"
+        },
+        {
+          "id": "ws-10-sec-h-q08",
+          "order": 8,
+          "prompt": "Jan has long hair.",
+          "acceptedAnswers": [
+            "How long has Jan had long hair?"
+          ],
+          "explanation": "have → has had"
+        },
+        {
+          "id": "ws-10-sec-h-q09",
+          "order": 9,
+          "prompt": "I have a yacht.",
+          "acceptedAnswers": [
+            "How long have you had a yacht?"
+          ],
+          "explanation": "have → have had"
+        },
+        {
+          "id": "ws-10-sec-h-q10",
+          "order": 10,
+          "prompt": "They are in the restaurant.",
+          "acceptedAnswers": [
+            "How long have they been in the restaurant?"
+          ],
+          "explanation": "be → have been"
+        },
+        {
+          "id": "ws-10-sec-h-q11",
+          "order": 11,
+          "prompt": "My parents are in London.",
+          "acceptedAnswers": [
+            "How long have your parents been in London?"
+          ],
+          "explanation": "my → your; be → have been"
+        },
+        {
+          "id": "ws-10-sec-h-q12",
+          "order": 12,
+          "prompt": "The cat is under the table.",
+          "acceptedAnswers": [
+            "How long has the cat been under the table?"
+          ],
+          "explanation": "be → has been"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-9",
+      "sectionKey": "I",
+      "instruction": "Rewrite the following sentences twice, using SINCE and FOR. Write both sentences: (Example: I haven’t seen you. (Christmas / 3 days) → I haven’t seen you since Christmas. I haven’t seen you for 3 days.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-10-sec-i-q01",
+          "order": 1,
+          "prompt": "We’ve been here. (an hour / 4 o’clock)",
+          "acceptedAnswers": [
+            "We have been here since 4 o'clock. We have been here for an hour.",
+            "We've been here since 4 o'clock. We've been here for an hour.",
+            "We have been here for an hour. We have been here since 4 o'clock.",
+            "We've been here for an hour. We've been here since 4 o'clock."
+          ],
+          "explanation": "since + point in time; for + period"
+        },
+        {
+          "id": "ws-10-sec-i-q02",
+          "order": 2,
+          "prompt": "She hasn’t spoken to me. (2 weeks / last week)",
+          "acceptedAnswers": [
+            "She hasn't spoken to me since last week. She hasn't spoken to me for 2 weeks.",
+            "She hasn't spoken to me for 2 weeks. She hasn't spoken to me since last week."
+          ],
+          "explanation": "since + point in time; for + period"
+        },
+        {
+          "id": "ws-10-sec-i-q03",
+          "order": 3,
+          "prompt": "They’ve lived in this street. (1970 / a long time)",
+          "acceptedAnswers": [
+            "They have lived in this street since 1970. They have lived in this street for a long time.",
+            "They've lived in this street since 1970. They've lived in this street for a long time.",
+            "They have lived in this street for a long time. They have lived in this street since 1970.",
+            "They've lived in this street for a long time. They've lived in this street since 1970."
+          ],
+          "explanation": "since + point in time; for + period"
+        },
+        {
+          "id": "ws-10-sec-i-q04",
+          "order": 4,
+          "prompt": "I haven’t had time to do it. (last Monday / a few days)",
+          "acceptedAnswers": [
+            "I haven't had time to do it since last Monday. I haven't had time to do it for a few days.",
+            "I haven't had time to do it for a few days. I haven't had time to do it since last Monday."
+          ],
+          "explanation": "since + point in time; for + period"
+        },
+        {
+          "id": "ws-10-sec-i-q05",
+          "order": 5,
+          "prompt": "We haven’t bought a new one. (ages / many years)",
+          "acceptedAnswers": [
+            "We haven't bought a new one for ages. We haven't bought a new one for many years.",
+            "We haven't bought a new one for many years. We haven't bought a new one for ages."
+          ],
+          "explanation": "ages and many years are periods: both take for"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-10",
+      "sectionKey": "J",
+      "instruction": "Use the PRESENT PERFECT CONTINUOUS TENSE to fill in the blanks: (Example: I’m tired, because I have been working (work) very hard.)",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-11-sec-a-q02",
+          "order": 2,
+          "prompt": "He [gap] (write) letters all morning.",
+          "acceptedAnswers": [
+            "has been writing"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q03",
+          "order": 3,
+          "prompt": "Catherina is getting fatter because she [gap] (eat) too much.",
+          "acceptedAnswers": [
+            "has been eating"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q04",
+          "order": 4,
+          "prompt": "My mother [gap] (peel) the potatoes all afternoon.",
+          "acceptedAnswers": [
+            "has been peeling"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q05",
+          "order": 5,
+          "prompt": "Cathy [gap] (attend) a cookery course since March.",
+          "acceptedAnswers": [
+            "has been attending"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q06",
+          "order": 6,
+          "prompt": "How long [gap] you [gap] (learn) English?",
+          "acceptedAnswers": [
+            "have / been learning"
+          ],
+          "explanation": "question: have + subject + been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q07",
+          "order": 7,
+          "prompt": "Where are my eye-glasses? I [gap] (look) for them for an hour.",
+          "acceptedAnswers": [
+            "have been looking"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q08",
+          "order": 8,
+          "prompt": "Charles [gap] (escape) from the police for years.",
+          "acceptedAnswers": [
+            "has been escaping"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q09",
+          "order": 9,
+          "prompt": "How long [gap] you [gap] (use) a computer?",
+          "acceptedAnswers": [
+            "have / been using"
+          ],
+          "explanation": "question: have + subject + been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q10",
+          "order": 10,
+          "prompt": "Elizabeth [gap] (live) with Mike for three years.",
+          "acceptedAnswers": [
+            "has been living"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q11",
+          "order": 11,
+          "prompt": "She [gap] (earn) quite a lot of money for the last two years.",
+          "acceptedAnswers": [
+            "has been earning"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        },
+        {
+          "id": "ws-11-sec-a-q12",
+          "order": 12,
+          "prompt": "It [gap] (rain) for six hours.",
+          "acceptedAnswers": [
+            "has been raining"
+          ],
+          "explanation": "present perfect continuous: have/has been + -ing"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-11",
+      "sectionKey": "K",
+      "instruction": "Use the PRESENT PERFECT TENSE or the PRESENT PERFECT CONTINUOUS to fill in the blanks (choose the correct option):",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-11-sec-b-q01",
+          "order": 1,
+          "prompt": "I [gap] a new pair of shoes.",
+          "options": [
+            "a) have bought",
+            "b) have been buying"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "finished action with a result → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q02",
+          "order": 2,
+          "prompt": "[gap] reading that book yet?",
+          "options": [
+            "a) Have you finished",
+            "b) Have you been finishing"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "finish + yet → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q03",
+          "order": 3,
+          "prompt": "They [gap] fruit all afternoon, ever since they came from school.",
+          "options": [
+            "a) have eaten",
+            "b) have been eating"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "activity over a period (all afternoon) → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q04",
+          "order": 4,
+          "prompt": "I [gap] this book now, so you can have it back.",
+          "options": [
+            "a) have been reading",
+            "b) have read"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "completed action → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q05",
+          "order": 5,
+          "prompt": "I [gap] eight pages already.",
+          "options": [
+            "a) have been writing",
+            "b) have written"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "how many / how much done → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q06",
+          "order": 6,
+          "prompt": "Your exam paper is completely blank! What [gap]?",
+          "options": [
+            "a) have you been doing",
+            "b) have you done"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "what activity filled that time → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q07",
+          "order": 7,
+          "prompt": "Oh, no! There’s nothing to eat. My sister [gap] everything I left in the kitchen.",
+          "options": [
+            "a) has been eating",
+            "b) has eaten"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "completed action (everything gone) → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q08",
+          "order": 8,
+          "prompt": "Oh, no! There’s no wine to drink. They [gap] all the wine.",
+          "options": [
+            "a) have drunk",
+            "b) have been drinking"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "completed action (all gone) → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q09",
+          "order": 9,
+          "prompt": "No wonder your eyes hurt. You [gap] computer games ever since you had your breakfast.",
+          "options": [
+            "a) have been playing",
+            "b) have played"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "activity with a visible effect → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q10",
+          "order": 10,
+          "prompt": "I [gap] you for ages.",
+          "options": [
+            "a) haven't seen",
+            "b) haven't been seeing"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "see is a state/short action → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q11",
+          "order": 11,
+          "prompt": "God! Hakan [gap].",
+          "options": [
+            "a) has scored",
+            "b) has been scoring"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "single completed action → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q12",
+          "order": 12,
+          "prompt": "They [gap] for an hour.",
+          "options": [
+            "a) have danced",
+            "b) have been dancing"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "activity over a period (for an hour) → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q13",
+          "order": 13,
+          "prompt": "I [gap] for you for ages.",
+          "options": [
+            "a) have been waiting",
+            "b) have waited"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "activity over a period → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q14",
+          "order": 14,
+          "prompt": "I [gap] my work.",
+          "options": [
+            "a) have finished",
+            "b) have been finishing"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "completed action → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q15",
+          "order": 15,
+          "prompt": "I [gap] this letter for an hour.",
+          "options": [
+            "a) have been writing",
+            "b) have written"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "activity over a period (for an hour) → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q16",
+          "order": 16,
+          "prompt": "He [gap] ten museums this week.",
+          "options": [
+            "a) has visited",
+            "b) has been visiting"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "number of completed actions → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q17",
+          "order": 17,
+          "prompt": "I’m very tired. Because I [gap] around Istanbul all day.",
+          "options": [
+            "a) have travelled",
+            "b) have been travelling"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "activity all day, effect now → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q18",
+          "order": 18,
+          "prompt": "She [gap] a good job.",
+          "options": [
+            "a) has found",
+            "b) has been finding"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "single completed action → present perfect"
+        },
+        {
+          "id": "ws-11-sec-b-q19",
+          "order": 19,
+          "prompt": "I’m hot because I [gap].",
+          "options": [
+            "a) have been running",
+            "b) have run"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "recent activity with effect now → continuous"
+        },
+        {
+          "id": "ws-11-sec-b-q20",
+          "order": 20,
+          "prompt": "I [gap] letters for weeks.",
+          "options": [
+            "a) have written",
+            "b) have been writing"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "activity over a period (for weeks) → continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-12",
+      "sectionKey": "L",
+      "instruction": "Use the SIMPLE PAST or the PRESENT PERFECT TENSE to fill in the blanks:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-12-sec-a-q01",
+          "order": 1,
+          "prompt": "What [gap] (you / learn) since you [gap] (come) here? How many friends [gap] (you / make)? I hope you [gap] (already / meet) a lot of interesting people.",
+          "acceptedAnswers": [
+            "have you learned|have you learnt / came / have you made / have already met"
+          ],
+          "explanation": "since + past point → present perfect; since you came (past)"
+        },
+        {
+          "id": "ws-12-sec-a-q02",
+          "order": 2,
+          "prompt": "Last night my roommate and I [gap] (have) some free time, so we [gap] (go) to a show.",
+          "acceptedAnswers": [
+            "had / went"
+          ],
+          "explanation": "last night → simple past"
+        },
+        {
+          "id": "ws-12-sec-a-q03",
+          "order": 3,
+          "prompt": "I [gap] (just / have) lunch, but I [gap] (not / have) lunch yesterday.",
+          "acceptedAnswers": [
+            "have just had / didn't have"
+          ],
+          "explanation": "just → present perfect; yesterday → simple past"
+        },
+        {
+          "id": "ws-12-sec-a-q04",
+          "order": 4,
+          "prompt": "Who [gap] (write) the play “Hamlet”?",
+          "acceptedAnswers": [
+            "wrote"
+          ],
+          "explanation": "finished past event → simple past"
+        },
+        {
+          "id": "ws-12-sec-a-q05",
+          "order": 5,
+          "prompt": "How many games [gap] (the team / win) so far this season?",
+          "acceptedAnswers": [
+            "has the team won"
+          ],
+          "explanation": "so far → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q06",
+          "order": 6,
+          "prompt": "I don’t know Carol’s husband. I [gap] (never / meet) him.",
+          "acceptedAnswers": [
+            "have never met"
+          ],
+          "explanation": "never (up to now) → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q07",
+          "order": 7,
+          "prompt": "It [gap] (rain) a lot last week, but it [gap] (not / rain) much so far this week.",
+          "acceptedAnswers": [
+            "rained / hasn't rained"
+          ],
+          "explanation": "last week → past; so far → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q08",
+          "order": 8,
+          "prompt": "How many letters [gap] (you / write) since the beginning of the month?",
+          "acceptedAnswers": [
+            "have you written"
+          ],
+          "explanation": "since → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q09",
+          "order": 9,
+          "prompt": "When we were on vacation, the weather [gap] (be) terrible.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "explanation": "finished past time → simple past"
+        },
+        {
+          "id": "ws-12-sec-a-q10",
+          "order": 10,
+          "prompt": "In her whole lifetime, Mary [gap] (never / see) snow.",
+          "acceptedAnswers": [
+            "has never seen"
+          ],
+          "explanation": "life experience up to now → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q11",
+          "order": 11,
+          "prompt": "I don’t know where Ammy is. [gap] (you / see) her?",
+          "acceptedAnswers": [
+            "Have you seen"
+          ],
+          "explanation": "recent, no time given → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q12",
+          "order": 12,
+          "prompt": "When I [gap] (get) home last night, I [gap] (be) very tired and I [gap] (go) straight to bed.",
+          "acceptedAnswers": [
+            "got / was / went"
+          ],
+          "explanation": "last night → simple past"
+        },
+        {
+          "id": "ws-12-sec-a-q13",
+          "order": 13,
+          "prompt": "Your car looks very clean. [gap] (you / wash) it?",
+          "acceptedAnswers": [
+            "Have you washed"
+          ],
+          "explanation": "result now → present perfect"
+        },
+        {
+          "id": "ws-12-sec-a-q14",
+          "order": 14,
+          "prompt": "George [gap] (not / be) very well last week.",
+          "acceptedAnswers": [
+            "wasn't"
+          ],
+          "explanation": "last week → simple past"
+        },
+        {
+          "id": "ws-12-sec-a-q15",
+          "order": 15,
+          "prompt": "Mr. Clark [gap] (work) in a bank for 15 years. Then he gave it up.",
+          "acceptedAnswers": [
+            "worked"
+          ],
+          "explanation": "finished period in the past → simple past"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-13",
+      "sectionKey": "M",
+      "instruction": "Use the PRESENT PERFECT TENSE or the PRESENT PERFECT CONTINUOUS to fill in the blanks:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-12-sec-b-q01",
+          "order": 1,
+          "prompt": "I’m trying to study. I [gap] (try) to study for the last hour, but something always seems to interrupt me. I think I’d better go to the library.",
+          "acceptedAnswers": [
+            "have been trying"
+          ],
+          "explanation": "ongoing activity for a period → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q02",
+          "order": 2,
+          "prompt": "The children are playing basketball right now. They [gap] (play) for almost two hours. They must be getting tired.",
+          "acceptedAnswers": [
+            "have been playing"
+          ],
+          "explanation": "ongoing activity for a period → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q03",
+          "order": 3,
+          "prompt": "The telephone [gap] (ring) four times in the last hour, and each time it has been for my roommate.",
+          "acceptedAnswers": [
+            "has rung"
+          ],
+          "explanation": "number of times → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-b-q04",
+          "order": 4,
+          "prompt": "The telephone [gap] (ring) for almost a minute. Why doesn’t someone answer it?",
+          "acceptedAnswers": [
+            "has been ringing"
+          ],
+          "explanation": "ongoing activity for a period → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q05",
+          "order": 5,
+          "prompt": "It [gap] (rain) all day. I wonder when it will stop.",
+          "acceptedAnswers": [
+            "has been raining"
+          ],
+          "explanation": "ongoing activity all day → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q06",
+          "order": 6,
+          "prompt": "We [gap] (have) three accidents so far this week. I wonder how many more we will have if you keep using the tools carelessly.",
+          "acceptedAnswers": [
+            "have had"
+          ],
+          "explanation": "how many so far → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-b-q07",
+          "order": 7,
+          "prompt": "We [gap] (live) here since last June.",
+          "acceptedAnswers": [
+            "have been living|have lived"
+          ],
+          "explanation": "live + since: both forms possible"
+        },
+        {
+          "id": "ws-12-sec-b-q08",
+          "order": 8,
+          "prompt": "My little son is dirty from head to foot because he [gap] (play) in the mud.",
+          "acceptedAnswers": [
+            "has been playing"
+          ],
+          "explanation": "activity with a visible result → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q09",
+          "order": 9,
+          "prompt": "What’s the matter? Your eyes are red and puffy. I hope you [gap] (not / cry). Oh, now I understand. You [gap] (peel) some onions.",
+          "acceptedAnswers": [
+            "haven't been crying / have been peeling"
+          ],
+          "explanation": "recent activity with visible result → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q10",
+          "order": 10,
+          "prompt": "Hello, Rob. I’m happy to see you again. I [gap] (not / see) you for weeks. What [gap] you [gap] (do) lately?",
+          "acceptedAnswers": [
+            "haven't seen / have / been doing"
+          ],
+          "explanation": "see → simple; lately activity → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q11",
+          "order": 11,
+          "prompt": "I [gap] (not / be) able to reach my boss on the phone yet. I [gap] (try) for the last twenty minutes, but the line [gap] (be) busy.",
+          "acceptedAnswers": [
+            "haven't been / have been trying / has been"
+          ],
+          "explanation": "state verb be → simple; try for a period → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q12",
+          "order": 12,
+          "prompt": "We [gap] (have) three major snowstorms so far this winter. I wonder how many more we will have.",
+          "acceptedAnswers": [
+            "have had"
+          ],
+          "explanation": "how many so far → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-b-q13",
+          "order": 13,
+          "prompt": "I [gap] (write) them three times, but I still haven’t received a reply.",
+          "acceptedAnswers": [
+            "have written"
+          ],
+          "explanation": "number of times → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-b-q14",
+          "order": 14,
+          "prompt": "A: Dr. Harrison is a good teacher. How long [gap] he [gap] (be) at the university? B: He [gap] (teach) here for almost 25 years.",
+          "acceptedAnswers": [
+            "has / been / has been teaching|has taught"
+          ],
+          "explanation": "be (state) → simple; teach for a period → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q15",
+          "order": 15,
+          "prompt": "A: What are you going to order for dinner? B: Well, I [gap] (have / have) pizza. So I think, I’ll order that.",
+          "acceptedAnswers": [
+            "have had"
+          ],
+          "explanation": "have (eat) in present perfect: have had"
+        },
+        {
+          "id": "ws-12-sec-b-q16",
+          "order": 16,
+          "prompt": "My uncle [gap] (paint) the outside of his house for three weeks and he’s still not finished.",
+          "acceptedAnswers": [
+            "has been painting"
+          ],
+          "explanation": "unfinished activity → continuous"
+        },
+        {
+          "id": "ws-12-sec-b-q17",
+          "order": 17,
+          "prompt": "The Smiths are presently in Tunisia. They [gap] (travel) throughout North Africa since the middle of May. They’ll return home in another month.",
+          "acceptedAnswers": [
+            "have been travelling|have been traveling"
+          ],
+          "explanation": "ongoing activity since a point → continuous"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-14",
+      "sectionKey": "N",
+      "instruction": "Use the PRESENT PERFECT TENSE or the PRESENT PERFECT CONTINUOUS to fill in the blanks:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-12-sec-c-q01",
+          "order": 1,
+          "prompt": "I’m tired. We [gap] (walk) for over an hour. Let’s stop and rest for a while.",
+          "acceptedAnswers": [
+            "have been walking"
+          ],
+          "explanation": "activity for a period, effect now → continuous"
+        },
+        {
+          "id": "ws-12-sec-c-q02",
+          "order": 2,
+          "prompt": "The zoo isn’t far from here. I [gap] (walk) there many times.",
+          "acceptedAnswers": [
+            "have walked"
+          ],
+          "explanation": "many times → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-c-q03",
+          "order": 3,
+          "prompt": "I [gap] (write) my friends at least a dozen letters since I left home and came here.",
+          "acceptedAnswers": [
+            "have written"
+          ],
+          "explanation": "how many → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-c-q04",
+          "order": 4,
+          "prompt": "Sally is writing a letter to her boyfriend. She [gap] (write) it since she got home from class. It’s going to be a long letter.",
+          "acceptedAnswers": [
+            "has been writing"
+          ],
+          "explanation": "unfinished activity since a point → continuous"
+        },
+        {
+          "id": "ws-12-sec-c-q05",
+          "order": 5,
+          "prompt": "The telephone [gap] (ring) four times in the last hour, and each time it has been for my roommate.",
+          "acceptedAnswers": [
+            "has rung"
+          ],
+          "explanation": "number of times → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-c-q06",
+          "order": 6,
+          "prompt": "The telephone [gap] (ring) for almost a minute. Why doesn’t someone answer it?",
+          "acceptedAnswers": [
+            "has been ringing"
+          ],
+          "explanation": "ongoing activity for a period → continuous"
+        },
+        {
+          "id": "ws-12-sec-c-q07",
+          "order": 7,
+          "prompt": "She is 80 and she [gap] (never / read) a book in her life.",
+          "acceptedAnswers": [
+            "has never read"
+          ],
+          "explanation": "life experience → present perfect simple"
+        },
+        {
+          "id": "ws-12-sec-c-q08",
+          "order": 8,
+          "prompt": "The secretary is very tired. She [gap] (type) all morning.",
+          "acceptedAnswers": [
+            "has been typing"
+          ],
+          "explanation": "activity all morning, effect now → continuous"
+        },
+        {
+          "id": "ws-12-sec-c-q09",
+          "order": 9,
+          "prompt": "Tom is reading a book. He started two hours ago and he is on page 53. He [gap] (read) for two hours.",
+          "acceptedAnswers": [
+            "has been reading"
+          ],
+          "explanation": "how long → continuous"
+        },
+        {
+          "id": "ws-12-sec-c-q10",
+          "order": 10,
+          "prompt": "Hello! I [gap] (clean) the windows. So far I [gap] (clean) five of them and there are two more to do.",
+          "acceptedAnswers": [
+            "have been cleaning / have cleaned"
+          ],
+          "explanation": "activity → continuous; how many so far → simple"
+        },
+        {
+          "id": "ws-12-sec-c-q11",
+          "order": 11,
+          "prompt": "My grandfather [gap] (die) 30 years ago. I [gap] (never / meet) him.",
+          "acceptedAnswers": [
+            "died / never met"
+          ],
+          "explanation": "ago → simple past; his life is finished"
+        },
+        {
+          "id": "ws-12-sec-c-q12",
+          "order": 12,
+          "prompt": "A: Is your father at home? B: No, I’m afraid he [gap] (go) out. A: When exactly [gap] (he / go) out? B: About ten minutes ago.",
+          "acceptedAnswers": [
+            "has gone / did he go"
+          ],
+          "explanation": "result now → present perfect; when → simple past"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-15",
+      "sectionKey": "O",
+      "instruction": "Use the SIMPLE PAST or the PRESENT PERFECT TENSE to fill in the blanks:",
+      "type": "verb_conjugation",
+      "questions": [
+        {
+          "id": "ws-12-sec-d-q01",
+          "order": 1,
+          "prompt": "The young man [gap] (never / be) to Paris, but he [gap] (read) a book about this city last year.",
+          "acceptedAnswers": [
+            "has never been / read"
+          ],
+          "explanation": "never → present perfect; last year → simple past"
+        },
+        {
+          "id": "ws-12-sec-d-q02",
+          "order": 2,
+          "prompt": "[gap] you [gap] (decide) where to go yet?",
+          "acceptedAnswers": [
+            "Have / decided"
+          ],
+          "explanation": "yet → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q03",
+          "order": 3,
+          "prompt": "A: Have some tea, please. B: No, thank you. I [gap] (just / have) two cups of tea.",
+          "acceptedAnswers": [
+            "have just had"
+          ],
+          "explanation": "just → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q04",
+          "order": 4,
+          "prompt": "Susan [gap] (do) her homework before 10 o’clock but Jane [gap] (not / write) a word until now.",
+          "acceptedAnswers": [
+            "did|has done / hasn't written"
+          ],
+          "explanation": "until now → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q05",
+          "order": 5,
+          "prompt": "Her mother [gap] (buy) her a pair of new shoes yesterday.",
+          "acceptedAnswers": [
+            "bought"
+          ],
+          "explanation": "yesterday → simple past"
+        },
+        {
+          "id": "ws-12-sec-d-q06",
+          "order": 6,
+          "prompt": "The Prime Minister [gap] (leave) for the USA an hour ago.",
+          "acceptedAnswers": [
+            "left"
+          ],
+          "explanation": "ago → simple past"
+        },
+        {
+          "id": "ws-12-sec-d-q07",
+          "order": 7,
+          "prompt": "A: [gap] the plane [gap] (land)? B: Yes, it [gap] (land) ten minutes ago.",
+          "acceptedAnswers": [
+            "Has / landed / landed"
+          ],
+          "explanation": "no time → present perfect; ago → simple past"
+        },
+        {
+          "id": "ws-12-sec-d-q08",
+          "order": 8,
+          "prompt": "It [gap] (not / rain) for a long time.",
+          "acceptedAnswers": [
+            "hasn't rained"
+          ],
+          "explanation": "for + period up to now → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q09",
+          "order": 9,
+          "prompt": "[gap] you [gap] (see) my dog? It [gap] (run away) this morning.",
+          "acceptedAnswers": [
+            "Have / seen / ran away|has run away"
+          ],
+          "explanation": "no time → present perfect; this morning → past"
+        },
+        {
+          "id": "ws-12-sec-d-q10",
+          "order": 10,
+          "prompt": "We [gap] (meet) at a party a long time ago, but I [gap] (not / see) her since then.",
+          "acceptedAnswers": [
+            "met / haven't seen"
+          ],
+          "explanation": "ago → simple past; since then → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q11",
+          "order": 11,
+          "prompt": "I [gap] (see) an interesting book in a bookshop yesterday, but I [gap] (not / buy) it.",
+          "acceptedAnswers": [
+            "saw / didn't buy"
+          ],
+          "explanation": "yesterday → simple past"
+        },
+        {
+          "id": "ws-12-sec-d-q12",
+          "order": 12,
+          "prompt": "My friend [gap] (fall) from the bicycle because he [gap] (not / ride) one for ages.",
+          "acceptedAnswers": [
+            "fell / hadn't ridden",
+            "has fallen / hasn't ridden"
+          ],
+          "explanation": "earlier past → past perfect (or present perfect if now)"
+        },
+        {
+          "id": "ws-12-sec-d-q13",
+          "order": 13,
+          "prompt": "His father [gap] (die) in 1970, but he [gap] (never / visit) his father’s grave since that time.",
+          "acceptedAnswers": [
+            "died / has never visited"
+          ],
+          "explanation": "in 1970 → past; since that time → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q14",
+          "order": 14,
+          "prompt": "They [gap] (go) to America years ago, but none of them [gap] (come) back since then.",
+          "acceptedAnswers": [
+            "went / has come|have come"
+          ],
+          "explanation": "ago → past; since then → present perfect"
+        },
+        {
+          "id": "ws-12-sec-d-q15",
+          "order": 15,
+          "prompt": "A: [gap] you [gap] (speak) to an Englishman? B: Yes, I [gap] (have) a short conversation with one last night.",
+          "acceptedAnswers": [
+            "Have / spoken / had"
+          ],
+          "explanation": "experience → present perfect; last night → past"
+        },
+        {
+          "id": "ws-12-sec-d-q16",
+          "order": 16,
+          "prompt": "A: [gap] you ever [gap] (be) to Tatilya? B: Yes, I [gap] (go) there two years ago.",
+          "acceptedAnswers": [
+            "Have / been / went"
+          ],
+          "explanation": "ever → present perfect; ago → simple past"
+        },
+        {
+          "id": "ws-12-sec-d-q17",
+          "order": 17,
+          "prompt": "A: [gap] you [gap] (see) Jane recently? B: No, I [gap] (see) her for a long time.",
+          "acceptedAnswers": [
+            "Have / seen / haven't seen"
+          ],
+          "explanation": "recently / for a long time → present perfect"
+        }
+      ]
+    },
+    {
+      "id": "card-04-sec-16",
+      "sectionKey": "P",
+      "instruction": "Rewrite the sentences using the SIMPLE PAST or the PRESENT PERFECT TENSE: (Example: I haven’t seen her for a long time. → It’s ages since I saw her.)",
+      "type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ws-12-sec-e-q02",
+          "order": 2,
+          "prompt": "I last met George two weeks ago. → I haven’t",
+          "acceptedAnswers": [
+            "I haven't met George for two weeks.",
+            "I haven't seen George for two weeks.",
+            "I haven't met him for two weeks."
+          ],
+          "explanation": "last … ago → haven't + participle + for"
+        },
+        {
+          "id": "ws-12-sec-e-q03",
+          "order": 3,
+          "prompt": "They have been here for three months. → They arrived",
+          "acceptedAnswers": [
+            "They arrived three months ago.",
+            "They arrived here three months ago."
+          ],
+          "explanation": "for (up to now) → simple past + ago"
+        },
+        {
+          "id": "ws-12-sec-e-q04",
+          "order": 4,
+          "prompt": "We started living in Istanbul 12 years ago. → We have",
+          "acceptedAnswers": [
+            "We have lived in Istanbul for 12 years.",
+            "We've lived in Istanbul for 12 years.",
+            "We have been living in Istanbul for 12 years.",
+            "We've been living in Istanbul for 12 years.",
+            "We have lived in Istanbul for twelve years.",
+            "We've lived in Istanbul for twelve years.",
+            "We have been living in Istanbul for twelve years.",
+            "We've been living in Istanbul for twelve years."
+          ],
+          "explanation": "started … ago → have lived + for"
+        },
+        {
+          "id": "ws-12-sec-e-q05",
+          "order": 5,
+          "prompt": "I last saw my girlfriend five days ago. → I haven’t",
+          "acceptedAnswers": [
+            "I haven't seen my girlfriend for five days.",
+            "I haven't seen her for five days."
+          ],
+          "explanation": "last … ago → haven't + participle + for"
+        },
+        {
+          "id": "ws-12-sec-e-q06",
+          "order": 6,
+          "prompt": "Is this the first time you have tasted a kiwi? → Use (not) + you, and end with “one before?”",
+          "acceptedAnswers": [
+            "Haven't you tasted one before?",
+            "Have you not tasted one before?",
+            "Haven't you ever tasted one before?"
+          ],
+          "explanation": "first time → haven't … before"
+        },
+        {
+          "id": "ws-12-sec-e-q07",
+          "order": 7,
+          "prompt": "I last smoked a cigarette ten years ago. → I haven’t",
+          "acceptedAnswers": [
+            "I haven't smoked a cigarette for ten years.",
+            "I haven't smoked for ten years."
+          ],
+          "explanation": "last … ago → haven't + participle + for"
+        },
+        {
+          "id": "ws-12-sec-e-q08",
+          "order": 8,
+          "prompt": "I last drank wine two weeks ago. → Start with “It’s two weeks” and end with “wine”.",
+          "acceptedAnswers": [
+            "It's two weeks since I last drank wine.",
+            "It's two weeks since I drank wine.",
+            "It's been two weeks since I last drank wine."
+          ],
+          "explanation": "It's + period + since + simple past"
+        },
+        {
+          "id": "ws-12-sec-e-q09",
+          "order": 9,
+          "prompt": "I have lived in Istanbul since January. → I (come)",
+          "acceptedAnswers": [
+            "I came to Istanbul in January.",
+            "I came here in January."
+          ],
+          "explanation": "since + point → simple past + in"
+        },
+        {
+          "id": "ws-12-sec-e-q10",
+          "order": 10,
+          "prompt": "They moved to Ankara two years ago. → Start with “They” and end with “two years”.",
+          "acceptedAnswers": [
+            "They have lived in Ankara for two years.",
+            "They've lived in Ankara for two years.",
+            "They have been living in Ankara for two years.",
+            "They've been living in Ankara for two years.",
+            "They have been in Ankara for two years.",
+            "They've been in Ankara for two years."
+          ],
+          "explanation": "moved … ago → have lived + for"
+        },
+        {
+          "id": "ws-12-sec-e-q11",
+          "order": 11,
+          "prompt": "She hasn’t been to Rome before. → This is the first time",
+          "acceptedAnswers": [
+            "This is the first time she has been to Rome.",
+            "This is the first time she's been to Rome.",
+            "This is the first time she has ever been to Rome.",
+            "This is the first time she's ever been to Rome."
+          ],
+          "explanation": "the first time + present perfect"
+        }
+      ]
+    }
+  ]
+}

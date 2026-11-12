@@ -1,0 +1,1693 @@
+{
+  "id": "card-13",
+  "order": 13,
+  "part": 1,
+  "slug": "card-13-tinh-tu-trang-tu-cap-so-sanh",
+  "title": "THẺ BÀI TẬP 13",
+  "subject": "Adjectives, Adverbs & Comparison",
+  "subjectVi": "Tính từ, Trạng từ & Cấp so sánh",
+  "level": "B1",
+  "pageRange": "WS-28, WS-29, WS-33",
+  "sections": [
+    {
+      "id": "card-13-sec-1",
+      "sectionKey": "A",
+      "instruction": "Write what the underlined word (shown in brackets) is: adjective or adverb. (Example: Fast runners win races. (Fast) → adjective)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-a-q02",
+          "order": 2,
+          "prompt": "Mathematics is difficult. (difficult) → [gap]",
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "explanation": "describes the noun Mathematics"
+        },
+        {
+          "id": "ws-28-sec-a-q03",
+          "order": 3,
+          "prompt": "She’s a good typist. (good) → [gap]",
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "explanation": "describes the noun typist"
+        },
+        {
+          "id": "ws-28-sec-a-q04",
+          "order": 4,
+          "prompt": "She behaved rudely to her boss. (rudely) → [gap]",
+          "acceptedAnswers": [
+            "adverb"
+          ],
+          "explanation": "describes the verb behaved"
+        },
+        {
+          "id": "ws-28-sec-a-q05",
+          "order": 5,
+          "prompt": "You’ve done well in your test. (well) → [gap]",
+          "acceptedAnswers": [
+            "adverb"
+          ],
+          "explanation": "describes the verb done"
+        },
+        {
+          "id": "ws-28-sec-a-q06",
+          "order": 6,
+          "prompt": "The clowns are very funny. (funny) → [gap]",
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-a-q07",
+          "order": 7,
+          "prompt": "She’s a pretty girl. (pretty) → [gap]",
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "explanation": "describes the noun girl"
+        },
+        {
+          "id": "ws-28-sec-a-q08",
+          "order": 8,
+          "prompt": "He runs fast. (fast) → [gap]",
+          "acceptedAnswers": [
+            "adverb"
+          ],
+          "explanation": "describes the verb runs"
+        },
+        {
+          "id": "ws-28-sec-a-q09",
+          "order": 9,
+          "prompt": "Ann is very sad. (sad) → [gap]",
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-a-q10",
+          "order": 10,
+          "prompt": "She plays the piano beautifully. (beautifully) → [gap]",
+          "acceptedAnswers": [
+            "adverb"
+          ],
+          "explanation": "describes the verb plays"
+        },
+        {
+          "id": "ws-28-sec-a-q11",
+          "order": 11,
+          "prompt": "Father is very busy in his office. (busy) → [gap]",
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-a-q12",
+          "order": 12,
+          "prompt": "The doctor arrived immediately. (immediately) → [gap]",
+          "acceptedAnswers": [
+            "adverb"
+          ],
+          "explanation": "describes the verb arrived"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-2",
+      "sectionKey": "B",
+      "instruction": "Choose the correct item:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-28-sec-b-q01",
+          "order": 1,
+          "prompt": "He left the room [gap].",
+          "options": [
+            "a) quiet",
+            "b) quietly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb left"
+        },
+        {
+          "id": "ws-28-sec-b-q02",
+          "order": 2,
+          "prompt": "Jane works [gap].",
+          "options": [
+            "a) hard",
+            "b) hardly"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "hard = with effort; hardly = almost not"
+        },
+        {
+          "id": "ws-28-sec-b-q03",
+          "order": 3,
+          "prompt": "He’s a very [gap] man.",
+          "options": [
+            "a) nice",
+            "b) nicely"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-b-q04",
+          "order": 4,
+          "prompt": "The sun is shining [gap].",
+          "options": [
+            "a) bright",
+            "b) brightly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb shining"
+        },
+        {
+          "id": "ws-28-sec-b-q05",
+          "order": 5,
+          "prompt": "Smoking is [gap] for your health.",
+          "options": [
+            "a) bad",
+            "b) badly"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-b-q06",
+          "order": 6,
+          "prompt": "She behaves very [gap].",
+          "options": [
+            "a) good",
+            "b) well"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "well is the adverb of good"
+        },
+        {
+          "id": "ws-28-sec-b-q07",
+          "order": 7,
+          "prompt": "He always dresses [gap].",
+          "options": [
+            "a) smart",
+            "b) smartly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb dresses"
+        },
+        {
+          "id": "ws-28-sec-b-q08",
+          "order": 8,
+          "prompt": "He shouted [gap] at me.",
+          "options": [
+            "a) angry",
+            "b) angrily"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb shouted"
+        },
+        {
+          "id": "ws-28-sec-b-q09",
+          "order": 9,
+          "prompt": "This chair is [gap].",
+          "options": [
+            "a) comfortable",
+            "b) comfortably"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-b-q10",
+          "order": 10,
+          "prompt": "He smiled [gap].",
+          "options": [
+            "a) sad",
+            "b) sadly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb smiled"
+        },
+        {
+          "id": "ws-28-sec-b-q11",
+          "order": 11,
+          "prompt": "You drive very [gap].",
+          "options": [
+            "a) slow",
+            "b) slowly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb drive"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-3",
+      "sectionKey": "C",
+      "instruction": "Complete these sentences with an adverb. (Example: There was some heavy rain last night. Yes, it rained very heavily.)",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-c-q02",
+          "order": 2,
+          "prompt": "Aren’t the children quiet! Yes, they’re working very [gap].",
+          "acceptedAnswers": [
+            "quietly"
+          ],
+          "explanation": "quiet → quietly"
+        },
+        {
+          "id": "ws-28-sec-c-q03",
+          "order": 3,
+          "prompt": "James has a loud voice. Yes, he always talks very [gap].",
+          "acceptedAnswers": [
+            "loudly"
+          ],
+          "explanation": "loud → loudly"
+        },
+        {
+          "id": "ws-28-sec-c-q04",
+          "order": 4,
+          "prompt": "Isn’t the teacher angry! Yes, he’s shouting very [gap].",
+          "acceptedAnswers": [
+            "angrily"
+          ],
+          "explanation": "angry → angrily (y → ily)"
+        },
+        {
+          "id": "ws-28-sec-c-q05",
+          "order": 5,
+          "prompt": "Angela’s very happy today! Yes, she’s laughing very [gap].",
+          "acceptedAnswers": [
+            "happily"
+          ],
+          "explanation": "happy → happily (y → ily)"
+        },
+        {
+          "id": "ws-28-sec-c-q06",
+          "order": 6,
+          "prompt": "The telephone rang in the middle of the night. Nick was very sleepy. He answered it very [gap].",
+          "acceptedAnswers": [
+            "sleepily"
+          ],
+          "explanation": "sleepy → sleepily (y → ily)"
+        },
+        {
+          "id": "ws-28-sec-c-q07",
+          "order": 7,
+          "prompt": "Kate likes playing slow music. Yes, she’s playing this piece very [gap].",
+          "acceptedAnswers": [
+            "slowly"
+          ],
+          "explanation": "slow → slowly"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-4",
+      "sectionKey": "D",
+      "instruction": "Complete the sentence with the correct word from the brackets. (Example: Mice move quietly. (quiet / quietly))",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-28-sec-d-q01",
+          "order": 1,
+          "prompt": "This exercise is [gap].",
+          "options": [
+            "a) easy",
+            "b) easily"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-d-q02",
+          "order": 2,
+          "prompt": "These people are speaking [gap].",
+          "options": [
+            "a) quiet",
+            "b) quietly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb speaking"
+        },
+        {
+          "id": "ws-28-sec-d-q03",
+          "order": 3,
+          "prompt": "Mr. Brown can speak English [gap].",
+          "options": [
+            "a) good",
+            "b) well"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "well is the adverb of good"
+        },
+        {
+          "id": "ws-28-sec-d-q04",
+          "order": 4,
+          "prompt": "Tigers are [gap] animals.",
+          "options": [
+            "a) brave",
+            "b) bravely"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-d-q05",
+          "order": 5,
+          "prompt": "The footballer is [gap].",
+          "options": [
+            "a) tired",
+            "b) tiredly"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-d-q06",
+          "order": 6,
+          "prompt": "Cheetahs run [gap].",
+          "options": [
+            "a) quick",
+            "b) quickly"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb run"
+        },
+        {
+          "id": "ws-28-sec-d-q07",
+          "order": 7,
+          "prompt": "She is lifting the weight [gap].",
+          "options": [
+            "a) easy",
+            "b) easily"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb lifting"
+        },
+        {
+          "id": "ws-28-sec-d-q08",
+          "order": 8,
+          "prompt": "The children are playing [gap].",
+          "options": [
+            "a) happy",
+            "b) happily"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "adverb describes the verb playing"
+        },
+        {
+          "id": "ws-28-sec-d-q09",
+          "order": 9,
+          "prompt": "Tony is a [gap] skier.",
+          "options": [
+            "a) good",
+            "b) well"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "adjective before a noun"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-5",
+      "sectionKey": "E",
+      "instruction": "Supply the proper form, ADJECTIVE or ADVERB:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-28-sec-e-q01",
+          "order": 1,
+          "prompt": "He always does his homework [gap] (careful).",
+          "acceptedAnswers": [
+            "carefully"
+          ],
+          "explanation": "adverb describes the verb does"
+        },
+        {
+          "id": "ws-28-sec-e-q02",
+          "order": 2,
+          "prompt": "He is a very [gap] (careful) student.",
+          "acceptedAnswers": [
+            "careful"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-e-q03",
+          "order": 3,
+          "prompt": "Come [gap] (quick). We need your help.",
+          "acceptedAnswers": [
+            "quickly"
+          ],
+          "explanation": "adverb describes the verb come"
+        },
+        {
+          "id": "ws-28-sec-e-q04",
+          "order": 4,
+          "prompt": "You should drive more [gap] (slow) along this road.",
+          "acceptedAnswers": [
+            "slowly"
+          ],
+          "explanation": "adverb describes the verb drive"
+        },
+        {
+          "id": "ws-28-sec-e-q05",
+          "order": 5,
+          "prompt": "The old man walks very [gap] (slow).",
+          "acceptedAnswers": [
+            "slowly"
+          ],
+          "explanation": "adverb describes the verb walks"
+        },
+        {
+          "id": "ws-28-sec-e-q06",
+          "order": 6,
+          "prompt": "Helen is a very [gap] (slow) student.",
+          "acceptedAnswers": [
+            "slow"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-e-q07",
+          "order": 7,
+          "prompt": "Her brother, on the other hand, learns [gap] (rapid).",
+          "acceptedAnswers": [
+            "rapidly"
+          ],
+          "explanation": "adverb describes the verb learns"
+        },
+        {
+          "id": "ws-28-sec-e-q08",
+          "order": 8,
+          "prompt": "Mr. Gonzales has a [gap] (permanent) visa.",
+          "acceptedAnswers": [
+            "permanent"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-e-q09",
+          "order": 9,
+          "prompt": "He hopes to remain in this country [gap] (permanent).",
+          "acceptedAnswers": [
+            "permanently"
+          ],
+          "explanation": "adverb describes the verb remain"
+        },
+        {
+          "id": "ws-28-sec-e-q10",
+          "order": 10,
+          "prompt": "This is an [gap] (easy) exercise.",
+          "acceptedAnswers": [
+            "easy"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-e-q11",
+          "order": 11,
+          "prompt": "I can do all of these exercises [gap] (easy).",
+          "acceptedAnswers": [
+            "easily"
+          ],
+          "explanation": "adverb describes the verb do"
+        },
+        {
+          "id": "ws-28-sec-e-q12",
+          "order": 12,
+          "prompt": "Helen works very [gap] (hard) in her new job.",
+          "acceptedAnswers": [
+            "hard"
+          ],
+          "explanation": "hard is both adjective and adverb"
+        },
+        {
+          "id": "ws-28-sec-e-q13",
+          "order": 13,
+          "prompt": "You walk very [gap] (fast).",
+          "acceptedAnswers": [
+            "fast"
+          ],
+          "explanation": "fast is both adjective and adverb"
+        },
+        {
+          "id": "ws-28-sec-e-q14",
+          "order": 14,
+          "prompt": "They are both [gap] (serious) students.",
+          "acceptedAnswers": [
+            "serious"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-e-q15",
+          "order": 15,
+          "prompt": "They both study English very [gap] (serious).",
+          "acceptedAnswers": [
+            "seriously"
+          ],
+          "explanation": "adverb describes the verb study"
+        },
+        {
+          "id": "ws-28-sec-e-q16",
+          "order": 16,
+          "prompt": "I agree with you [gap] (complete) in that matter.",
+          "acceptedAnswers": [
+            "completely"
+          ],
+          "explanation": "adverb describes the verb agree"
+        },
+        {
+          "id": "ws-28-sec-e-q17",
+          "order": 17,
+          "prompt": "This apple is very [gap] (soft).",
+          "acceptedAnswers": [
+            "soft"
+          ],
+          "explanation": "adjective after the verb be"
+        },
+        {
+          "id": "ws-28-sec-e-q18",
+          "order": 18,
+          "prompt": "She always speaks [gap] (soft) to the child.",
+          "acceptedAnswers": [
+            "softly"
+          ],
+          "explanation": "adverb describes the verb speaks"
+        },
+        {
+          "id": "ws-28-sec-e-q19",
+          "order": 19,
+          "prompt": "Helen is a [gap] (beautiful) girl.",
+          "acceptedAnswers": [
+            "beautiful"
+          ],
+          "explanation": "adjective before a noun"
+        },
+        {
+          "id": "ws-28-sec-e-q20",
+          "order": 20,
+          "prompt": "Her sister plays the violin [gap] (beautiful).",
+          "acceptedAnswers": [
+            "beautifully"
+          ],
+          "explanation": "adverb describes the verb plays"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-6",
+      "sectionKey": "F",
+      "instruction": "Choose the correct form:",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "id": "ws-29-sec-a-q01",
+          "order": 1,
+          "prompt": "I enjoyed the book. It was very [gap].",
+          "options": [
+            "a) interested",
+            "b) interesting"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-a-q02",
+          "order": 2,
+          "prompt": "Are you [gap] in art?",
+          "options": [
+            "a) interested",
+            "b) interesting"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "interested in = how you feel"
+        },
+        {
+          "id": "ws-29-sec-a-q03",
+          "order": 3,
+          "prompt": "I thought the story was quite [gap].",
+          "options": [
+            "a) amused",
+            "b) amusing"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-a-q04",
+          "order": 4,
+          "prompt": "They were [gap] when they heard the news.",
+          "options": [
+            "a) shocked",
+            "b) shocking"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-a-q05",
+          "order": 5,
+          "prompt": "We were all very [gap] when he didn’t come home.",
+          "options": [
+            "a) worried",
+            "b) worrying"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-a-q06",
+          "order": 6,
+          "prompt": "It was [gap] that she didn’t come to the meeting.",
+          "options": [
+            "a) surprised",
+            "b) surprising"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-a-q07",
+          "order": 7,
+          "prompt": "I usually find football rather [gap].",
+          "options": [
+            "a) bored",
+            "b) boring"
+          ],
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "find something boring = it causes boredom"
+        },
+        {
+          "id": "ws-29-sec-a-q08",
+          "order": 8,
+          "prompt": "Are you [gap] of spiders?",
+          "options": [
+            "a) frightened",
+            "b) frightening"
+          ],
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "frightened of = how you feel"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-7",
+      "sectionKey": "G",
+      "instruction": "Complete the sentences. Use adjectives formed by adding -ING or -ED to the words in brackets.",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-b-q01",
+          "order": 1,
+          "prompt": "I find it quite [gap] (embarrass) to talk in front of a group of people.",
+          "acceptedAnswers": [
+            "embarrassing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-b-q02",
+          "order": 2,
+          "prompt": "I think reading newspapers is [gap] (depress).",
+          "acceptedAnswers": [
+            "depressing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-b-q03",
+          "order": 3,
+          "prompt": "I’m [gap] (interest) in all kinds of sport.",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "be interested in"
+        },
+        {
+          "id": "ws-29-sec-b-q04",
+          "order": 4,
+          "prompt": "I find walking in the countryside very [gap] (relax).",
+          "acceptedAnswers": [
+            "relaxing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-b-q05",
+          "order": 5,
+          "prompt": "I think learning a language is very [gap] (interest).",
+          "acceptedAnswers": [
+            "interesting"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-b-q06",
+          "order": 6,
+          "prompt": "I get [gap] (annoy) when people smoke in restaurants.",
+          "acceptedAnswers": [
+            "annoyed"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-b-q07",
+          "order": 7,
+          "prompt": "I don’t normally get [gap] (frighten) when I watch horror films.",
+          "acceptedAnswers": [
+            "frightened"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-b-q08",
+          "order": 8,
+          "prompt": "I don’t get [gap] (embarrass) very easily.",
+          "acceptedAnswers": [
+            "embarrassed"
+          ],
+          "explanation": "-ed describes how a person feels"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-8",
+      "sectionKey": "H",
+      "instruction": "Complete the sentences for each situation. Use the word given + the ending -ING or -ED:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-c-q01",
+          "order": 1,
+          "prompt": "The film wasn’t as good as we had expected. (disappoint-) a) The film was [gap]. b) We were [gap] with the film.",
+          "acceptedAnswers": [
+            "disappointing / disappointed"
+          ],
+          "explanation": "the film disappoints (-ing); we feel (-ed)"
+        },
+        {
+          "id": "ws-29-sec-c-q02",
+          "order": 2,
+          "prompt": "Diana teaches young children. It’s a very hard job but she enjoys it. (exhaust-) a) She enjoys her job but it’s often [gap]. b) At the end of a day’s work, she is often [gap].",
+          "acceptedAnswers": [
+            "exhausting / exhausted"
+          ],
+          "explanation": "the job exhausts (-ing); she feels (-ed)"
+        },
+        {
+          "id": "ws-29-sec-c-q03",
+          "order": 3,
+          "prompt": "It’s been raining all day. I hate this weather. (depress-) a) This weather is [gap]. b) This weather makes me [gap]. c) It’s silly to get [gap].",
+          "acceptedAnswers": [
+            "depressing / depressed / depressed"
+          ],
+          "explanation": "weather causes it (-ing); people feel it (-ed)"
+        },
+        {
+          "id": "ws-29-sec-c-q04",
+          "order": 4,
+          "prompt": "Clare is going to the United States next month. She has never been there before. (excit-) a) It will be an [gap] experience for her. b) Going to new places is always [gap]. c) She is really [gap] about going to the United States.",
+          "acceptedAnswers": [
+            "exciting / exciting / excited"
+          ],
+          "explanation": "the experience excites (-ing); Clare feels (-ed)"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-9",
+      "sectionKey": "I",
+      "instruction": "Choose the correct word and write it in the gap:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-29-sec-d-q01",
+          "order": 1,
+          "prompt": "I was [gap] (disappointing / disappointed) with the film. I had expected it to be better.",
+          "acceptedAnswers": [
+            "disappointed"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-d-q02",
+          "order": 2,
+          "prompt": "Are you [gap] (interesting / interested) in football?",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "be interested in"
+        },
+        {
+          "id": "ws-29-sec-d-q03",
+          "order": 3,
+          "prompt": "The football match was quite [gap] (exciting / excited). I enjoyed it.",
+          "acceptedAnswers": [
+            "exciting"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-d-q04",
+          "order": 4,
+          "prompt": "It’s sometimes [gap] (embarrassing / embarrassed) when you have to ask people for money.",
+          "acceptedAnswers": [
+            "embarrassing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-d-q05",
+          "order": 5,
+          "prompt": "Do you easily get [gap] (embarrassing / embarrassed)?",
+          "acceptedAnswers": [
+            "embarrassed"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-d-q06",
+          "order": 6,
+          "prompt": "I had never expected to get the job. I was really [gap] (amazing / amazed) when I was offered it.",
+          "acceptedAnswers": [
+            "amazed"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-d-q07",
+          "order": 7,
+          "prompt": "She has really learnt very fast. She has made [gap] (astonishing / astonished) progress.",
+          "acceptedAnswers": [
+            "astonishing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-d-q08",
+          "order": 8,
+          "prompt": "I didn’t find the situation funny. I was not [gap] (amusing / amused).",
+          "acceptedAnswers": [
+            "amused"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-d-q09",
+          "order": 9,
+          "prompt": "It was a really [gap] (terrifying / terrified) experience. Afterwards everybody was very [gap] (shocking / shocked).",
+          "acceptedAnswers": [
+            "terrifying / shocked"
+          ],
+          "explanation": "the experience terrifies (-ing); people feel shocked (-ed)"
+        },
+        {
+          "id": "ws-29-sec-d-q10",
+          "order": 10,
+          "prompt": "Why do you always look so [gap] (boring / bored)? Is your life really so [gap] (boring / bored)?",
+          "acceptedAnswers": [
+            "bored / boring"
+          ],
+          "explanation": "you feel bored; your life is boring"
+        },
+        {
+          "id": "ws-29-sec-d-q11",
+          "order": 11,
+          "prompt": "He’s one of the most [gap] (boring / bored) people I’ve ever met. He never stops talking and he never says anything [gap] (interesting / interested).",
+          "acceptedAnswers": [
+            "boring / interesting"
+          ],
+          "explanation": "he causes boredom; what he says is not interesting"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-10",
+      "sectionKey": "J",
+      "instruction": "Complete the sentences using one of the words in the box. (Example: He works very hard. It’s not surprising that he’s always tired.)",
+      "type": "inline_gap_fill",
+      "wordBank": [
+        "amusing / amused",
+        "annoying / annoyed",
+        "boring / bored",
+        "confusing / confused",
+        "disgusting / disgusted",
+        "exciting / excited",
+        "exhausting / exhausted",
+        "interesting / interested",
+        "surprising / surprised"
+      ],
+      "questions": [
+        {
+          "id": "ws-29-sec-e-q02",
+          "order": 2,
+          "prompt": "I’ve got nothing to do. I’m [gap].",
+          "acceptedAnswers": [
+            "bored"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-e-q03",
+          "order": 3,
+          "prompt": "The teacher’s explanation was [gap]. Most of the students didn’t understand it.",
+          "acceptedAnswers": [
+            "confusing"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-e-q04",
+          "order": 4,
+          "prompt": "The kitchen hadn’t been cleaned for ages. It was really [gap].",
+          "acceptedAnswers": [
+            "disgusting"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-e-q05",
+          "order": 5,
+          "prompt": "I seldom visit art galleries. I’m not particularly [gap] in art.",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "be interested in"
+        },
+        {
+          "id": "ws-29-sec-e-q06",
+          "order": 6,
+          "prompt": "There’s no need to get [gap] just because I’m a few minutes late.",
+          "acceptedAnswers": [
+            "annoyed"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-e-q07",
+          "order": 7,
+          "prompt": "The lecture was [gap]. I fell asleep.",
+          "acceptedAnswers": [
+            "boring"
+          ],
+          "explanation": "-ing describes the thing that causes the feeling"
+        },
+        {
+          "id": "ws-29-sec-e-q08",
+          "order": 8,
+          "prompt": "I asked Emily if she wanted to come out with us but she wasn’t [gap].",
+          "acceptedAnswers": [
+            "interested"
+          ],
+          "explanation": "she didn’t feel interest"
+        },
+        {
+          "id": "ws-29-sec-e-q09",
+          "order": 9,
+          "prompt": "I’ve been working very hard all day and now I’m [gap].",
+          "acceptedAnswers": [
+            "exhausted"
+          ],
+          "explanation": "-ed describes how a person feels"
+        },
+        {
+          "id": "ws-29-sec-e-q10",
+          "order": 10,
+          "prompt": "I’m starting a new job next week. I’m quite [gap] about it.",
+          "acceptedAnswers": [
+            "excited"
+          ],
+          "explanation": "be excited about"
+        },
+        {
+          "id": "ws-29-sec-e-q11",
+          "order": 11,
+          "prompt": "Tom is very good at telling funny stories. He can be very [gap].",
+          "acceptedAnswers": [
+            "amusing"
+          ],
+          "explanation": "he makes people laugh (-ing)"
+        },
+        {
+          "id": "ws-29-sec-e-q12",
+          "order": 12,
+          "prompt": "Liz is a very [gap] person. She knows a lot, she’s traveled a lot and she’s done lots of different things.",
+          "acceptedAnswers": [
+            "interesting"
+          ],
+          "explanation": "she causes interest (-ing)"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-11",
+      "sectionKey": "K",
+      "instruction": "Fill in the blanks with the comparative or superlative form of the adjectives in brackets:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-33-sec-a-q01",
+          "order": 1,
+          "prompt": "Tom is [gap] his brother. (old)",
+          "acceptedAnswers": [
+            "older than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-a-q02",
+          "order": 2,
+          "prompt": "This problem is [gap] that problem. (easy)",
+          "acceptedAnswers": [
+            "easier than"
+          ],
+          "explanation": "adjective ending in -y: -ier + than"
+        },
+        {
+          "id": "ws-33-sec-a-q03",
+          "order": 3,
+          "prompt": "John is [gap] boy in our class. (tall)",
+          "acceptedAnswers": [
+            "the tallest"
+          ],
+          "explanation": "short adjective: the + -est"
+        },
+        {
+          "id": "ws-33-sec-a-q04",
+          "order": 4,
+          "prompt": "My friend is [gap] my sister. (fat)",
+          "acceptedAnswers": [
+            "fatter than"
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
+        },
+        {
+          "id": "ws-33-sec-a-q05",
+          "order": 5,
+          "prompt": "My room is [gap] room in our house. (small)",
+          "acceptedAnswers": [
+            "the smallest"
+          ],
+          "explanation": "short adjective: the + -est"
+        },
+        {
+          "id": "ws-33-sec-a-q06",
+          "order": 6,
+          "prompt": "Konya is [gap] city in Turkey. (large)",
+          "acceptedAnswers": [
+            "the largest"
+          ],
+          "explanation": "adjective ending in -e: the + -st"
+        },
+        {
+          "id": "ws-33-sec-a-q07",
+          "order": 7,
+          "prompt": "The Kızılırmak is [gap] river in Turkey. (long)",
+          "acceptedAnswers": [
+            "the longest"
+          ],
+          "explanation": "short adjective: the + -est"
+        },
+        {
+          "id": "ws-33-sec-a-q08",
+          "order": 8,
+          "prompt": "Madonna is [gap] Sandra. (popular)",
+          "acceptedAnswers": [
+            "more popular than"
+          ],
+          "explanation": "long adjective: more + adjective + than"
+        },
+        {
+          "id": "ws-33-sec-a-q09",
+          "order": 9,
+          "prompt": "My English is [gap] your English. (good)",
+          "acceptedAnswers": [
+            "better than"
+          ],
+          "explanation": "irregular: good → better"
+        },
+        {
+          "id": "ws-33-sec-a-q10",
+          "order": 10,
+          "prompt": "The weather today is [gap] the weather yesterday. (bad)",
+          "acceptedAnswers": [
+            "worse than"
+          ],
+          "explanation": "irregular: bad → worse"
+        },
+        {
+          "id": "ws-33-sec-a-q11",
+          "order": 11,
+          "prompt": "This garden is [gap] that garden. (large)",
+          "acceptedAnswers": [
+            "larger than"
+          ],
+          "explanation": "adjective ending in -e: -r + than"
+        },
+        {
+          "id": "ws-33-sec-a-q12",
+          "order": 12,
+          "prompt": "Elizabeth is [gap] girl in our group. (beautiful)",
+          "acceptedAnswers": [
+            "the most beautiful"
+          ],
+          "explanation": "long adjective: the most + adjective"
+        },
+        {
+          "id": "ws-33-sec-a-q13",
+          "order": 13,
+          "prompt": "I am [gap] girl in the class. (short)",
+          "acceptedAnswers": [
+            "the shortest"
+          ],
+          "explanation": "short adjective: the + -est"
+        },
+        {
+          "id": "ws-33-sec-a-q14",
+          "order": 14,
+          "prompt": "What is [gap] film on TV today? (funny)",
+          "acceptedAnswers": [
+            "the funniest"
+          ],
+          "explanation": "adjective ending in -y: the + -iest"
+        },
+        {
+          "id": "ws-33-sec-a-q15",
+          "order": 15,
+          "prompt": "Who is [gap] girl in your class? (pretty)",
+          "acceptedAnswers": [
+            "the prettiest"
+          ],
+          "explanation": "adjective ending in -y: the + -iest"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-12",
+      "sectionKey": "L",
+      "instruction": "Fill in the blanks with the comparative or superlative form. (Example: My hotel room was smaller than (small) the one in the photograph in the brochure.)",
+      "type": "passage_gap_fill",
+      "contextText": "I went on holiday last year but it was a disaster! My hotel room was smaller than the one in the photograph in the brochure.",
+      "questions": [
+        {
+          "id": "ws-33-sec-b-q01",
+          "order": 1,
+          "prompt": "I think it was [gap] (small) room in the hotel.",
+          "acceptedAnswers": [
+            "the smallest"
+          ],
+          "explanation": "short adjective: the + -est"
+        },
+        {
+          "id": "ws-33-sec-b-q02",
+          "order": 2,
+          "prompt": "The weather was terrible too. It was [gap] (cold) in England.",
+          "acceptedAnswers": [
+            "colder than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-b-q03",
+          "order": 3,
+          "prompt": "The beach near the hotel was very dirty – it was [gap] (dirty) all the beaches on the island.",
+          "acceptedAnswers": [
+            "the dirtiest of"
+          ],
+          "explanation": "superlative + of + group"
+        },
+        {
+          "id": "ws-33-sec-b-q04",
+          "order": 4,
+          "prompt": "The food was [gap] (expensive) I expected and I didn’t have enough money.",
+          "acceptedAnswers": [
+            "more expensive than"
+          ],
+          "explanation": "long adjective: more + adjective + than"
+        },
+        {
+          "id": "ws-33-sec-b-q05",
+          "order": 5,
+          "prompt": "One day I went shopping in a big department store and I broke a vase. It was [gap] (expensive) vase in the whole shop.",
+          "acceptedAnswers": [
+            "the most expensive"
+          ],
+          "explanation": "long adjective: the most + adjective"
+        },
+        {
+          "id": "ws-33-sec-b-q06",
+          "order": 6,
+          "prompt": "But [gap] (bad) thing of all was that I lost my passport and I couldn’t go back home.",
+          "acceptedAnswers": [
+            "the worst"
+          ],
+          "explanation": "irregular: bad → the worst"
+        },
+        {
+          "id": "ws-33-sec-b-q07",
+          "order": 7,
+          "prompt": "It was [gap] (horrible) holiday of my life.",
+          "acceptedAnswers": [
+            "the most horrible"
+          ],
+          "explanation": "long adjective: the most + adjective"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-13",
+      "sectionKey": "M",
+      "instruction": "Complete the sentences using the table. (Example: (young) David is younger than Tom and George.)",
+      "type": "inline_gap_fill",
+      "tableData": {
+        "headers": [
+          "",
+          "David",
+          "Tom",
+          "George"
+        ],
+        "rows": [
+          [
+            "Age",
+            "25",
+            "30",
+            "35"
+          ],
+          [
+            "Weight",
+            "70 kg",
+            "72 kg",
+            "75 kg"
+          ],
+          [
+            "Height",
+            "1.68 m",
+            "1.72 m",
+            "1.80 m"
+          ],
+          [
+            "Salary",
+            "$800/month",
+            "$1000/month",
+            "$1500/month"
+          ],
+          [
+            "House",
+            "3 rooms",
+            "4 rooms",
+            "5 rooms"
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-33-sec-c-q02",
+          "order": 2,
+          "prompt": "(old) George and Tom are [gap] David.",
+          "acceptedAnswers": [
+            "older than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-c-q03",
+          "order": 3,
+          "prompt": "(heavy) George is the [gap] all.",
+          "acceptedAnswers": [
+            "heaviest of"
+          ],
+          "explanation": "superlative: the heaviest of all"
+        },
+        {
+          "id": "ws-33-sec-c-q04",
+          "order": 4,
+          "prompt": "(light) Tom is [gap] George.",
+          "acceptedAnswers": [
+            "lighter than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-c-q05",
+          "order": 5,
+          "prompt": "(tall) Tom is [gap] David.",
+          "acceptedAnswers": [
+            "taller than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-c-q06",
+          "order": 6,
+          "prompt": "(tall) George is [gap] all.",
+          "acceptedAnswers": [
+            "the tallest of"
+          ],
+          "explanation": "superlative: the tallest of all"
+        },
+        {
+          "id": "ws-33-sec-c-q07",
+          "order": 7,
+          "prompt": "(old) George is [gap] Tom.",
+          "acceptedAnswers": [
+            "older than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-c-q08",
+          "order": 8,
+          "prompt": "(little) David gets [gap] money [gap] Tom.",
+          "acceptedAnswers": [
+            "less / than"
+          ],
+          "explanation": "irregular: little → less"
+        },
+        {
+          "id": "ws-33-sec-c-q09",
+          "order": 9,
+          "prompt": "(much) George gets [gap] money [gap] Tom.",
+          "acceptedAnswers": [
+            "more / than"
+          ],
+          "explanation": "irregular: much → more"
+        },
+        {
+          "id": "ws-33-sec-c-q10",
+          "order": 10,
+          "prompt": "(small) David’s house is [gap] Tom’s.",
+          "acceptedAnswers": [
+            "smaller than"
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-c-q11",
+          "order": 11,
+          "prompt": "(big) George’s house is [gap] all.",
+          "acceptedAnswers": [
+            "the biggest of"
+          ],
+          "explanation": "superlative: double g, the biggest of all"
+        },
+        {
+          "id": "ws-33-sec-c-q12",
+          "order": 12,
+          "prompt": "(big) Tom’s house is [gap] David’s.",
+          "acceptedAnswers": [
+            "bigger than"
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-14",
+      "sectionKey": "N",
+      "instruction": "Read the passage and look at the chart. Compare Miss Bennet with her brother and her best friend Tina Robbins. (Example: Miss Bennet / tall / Tina Robbins → Miss Bennet is taller than Tina Robbins.)",
+      "type": "sentence_building",
+      "contextText": "Mr. and Mrs. Smith are now flying to Canada. Miss Bennet is their stewardess. She is very talkative and friendly. She is showing Mr. and Mrs. Smith some pictures of her family and her best friend.\n\nMiss Bennet: This is my best friend. Her name is Tina.\nMrs. Smith: She is very pretty. Is she older or younger than you?\nMiss Bennet: She is one year younger.\nMrs. Smith: Aren’t you thinner than she is?\nMiss Bennet: Yes, I am. Tina loves to eat very much.\nMrs. Smith: So do I. I hope it will be time for lunch soon.",
+      "tableData": {
+        "headers": [
+          "",
+          "Age",
+          "Height",
+          "Weight"
+        ],
+        "rows": [
+          [
+            "Miss Bennet",
+            "21",
+            "1.73 m",
+            "57 kg"
+          ],
+          [
+            "James Bennet",
+            "23",
+            "1.82 m",
+            "76 kg"
+          ],
+          [
+            "Tina Robbins",
+            "20",
+            "1.68 m",
+            "61 kg"
+          ]
+        ]
+      },
+      "questions": [
+        {
+          "id": "ws-33-sec-d-q01",
+          "order": 1,
+          "prompt": "Miss Bennet / short / her brother James",
+          "acceptedAnswers": [
+            "Miss Bennet is shorter than her brother James.",
+            "Miss Bennet is shorter than her brother.",
+            "Miss Bennet is shorter than James."
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-d-q02",
+          "order": 2,
+          "prompt": "James / tall / her sister",
+          "acceptedAnswers": [
+            "James is taller than his sister.",
+            "James is taller than her sister.",
+            "James is taller than Miss Bennet."
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-d-q03",
+          "order": 3,
+          "prompt": "Miss Bennet / old / her best friend",
+          "acceptedAnswers": [
+            "Miss Bennet is older than her best friend."
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-d-q04",
+          "order": 4,
+          "prompt": "Her best friend / young / Miss Bennet",
+          "acceptedAnswers": [
+            "Her best friend is younger than Miss Bennet."
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-d-q05",
+          "order": 5,
+          "prompt": "Miss Bennet / short / her brother",
+          "acceptedAnswers": [
+            "Miss Bennet is shorter than her brother."
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-d-q06",
+          "order": 6,
+          "prompt": "Her brother / tall / Miss Bennet",
+          "acceptedAnswers": [
+            "Her brother is taller than Miss Bennet."
+          ],
+          "explanation": "short adjective: -er + than"
+        },
+        {
+          "id": "ws-33-sec-d-q07",
+          "order": 7,
+          "prompt": "Miss Bennet / fat / Tina",
+          "acceptedAnswers": [
+            "Miss Bennet isn't as fat as Tina.",
+            "Miss Bennet isn't fatter than Tina.",
+            "Miss Bennet isn't so fat as Tina."
+          ],
+          "explanation": "57 kg vs 61 kg: use a negative comparison"
+        },
+        {
+          "id": "ws-33-sec-d-q08",
+          "order": 8,
+          "prompt": "Tina / slim / Miss Bennet",
+          "acceptedAnswers": [
+            "Tina isn't as slim as Miss Bennet.",
+            "Tina isn't slimmer than Miss Bennet.",
+            "Tina isn't so slim as Miss Bennet."
+          ],
+          "explanation": "61 kg vs 57 kg: use a negative comparison"
+        },
+        {
+          "id": "ws-33-sec-d-q09",
+          "order": 9,
+          "prompt": "Miss Bennet / slim / her brother",
+          "acceptedAnswers": [
+            "Miss Bennet is slimmer than her brother."
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
+        },
+        {
+          "id": "ws-33-sec-d-q10",
+          "order": 10,
+          "prompt": "Her brother / fat / Miss Bennet",
+          "acceptedAnswers": [
+            "Her brother is fatter than Miss Bennet."
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
+        }
+      ]
+    },
+    {
+      "id": "card-13-sec-15",
+      "sectionKey": "O",
+      "instruction": "Use “as … as” in the blanks:",
+      "type": "inline_gap_fill",
+      "questions": [
+        {
+          "id": "ws-33-sec-e-q01",
+          "order": 1,
+          "prompt": "Jack’s English is worse than Sonia’s. Jack’s English isn’t [gap] Sonia’s.",
+          "acceptedAnswers": [
+            "as good as|so good as"
+          ],
+          "explanation": "not as + adjective + as"
+        },
+        {
+          "id": "ws-33-sec-e-q02",
+          "order": 2,
+          "prompt": "Alper’s bag is 3 kg. Ahmet’s bag is 5 kg. Alper’s bag isn’t [gap] Ahmet’s bag.",
+          "acceptedAnswers": [
+            "as heavy as|so heavy as"
+          ],
+          "explanation": "not as + adjective + as"
+        },
+        {
+          "id": "ws-33-sec-e-q03",
+          "order": 3,
+          "prompt": "An orange is sweeter than a lemon. A lemon isn’t [gap] an orange.",
+          "acceptedAnswers": [
+            "as sweet as|so sweet as"
+          ],
+          "explanation": "not as + adjective + as"
+        },
+        {
+          "id": "ws-33-sec-e-q04",
+          "order": 4,
+          "prompt": "Terry is 1.70 m tall. Jason is 1.70 m tall too. Terry is [gap] Jason.",
+          "acceptedAnswers": [
+            "as tall as"
+          ],
+          "explanation": "as + adjective + as = equal"
+        },
+        {
+          "id": "ws-33-sec-e-q05",
+          "order": 5,
+          "prompt": "Chinese is more difficult than French. French isn’t [gap] Chinese.",
+          "acceptedAnswers": [
+            "as difficult as|so difficult as"
+          ],
+          "explanation": "not as + adjective + as"
+        },
+        {
+          "id": "ws-33-sec-e-q06",
+          "order": 6,
+          "prompt": "Science fiction films and soap operas are very exciting. Science fiction films are [gap] soap operas.",
+          "acceptedAnswers": [
+            "as exciting as"
+          ],
+          "explanation": "as + adjective + as = equal"
+        },
+        {
+          "id": "ws-33-sec-e-q07",
+          "order": 7,
+          "prompt": "Chemistry is more difficult than drawing. Chemistry isn’t [gap] drawing.",
+          "acceptedAnswers": [
+            "as easy as|so easy as"
+          ],
+          "explanation": "not as + adjective + as"
+        },
+        {
+          "id": "ws-33-sec-e-q08",
+          "order": 8,
+          "prompt": "Jane’s car is a Mercedes, but Sue’s car is an Opel. Sue’s car isn’t [gap] Jane’s car.",
+          "acceptedAnswers": [
+            "as good as|as expensive as|as luxurious as|as nice as|so good as|so expensive as"
+          ],
+          "explanation": "not as + adjective + as"
+        },
+        {
+          "id": "ws-33-sec-e-q09",
+          "order": 9,
+          "prompt": "July is hotter than May. May isn’t [gap] July.",
+          "acceptedAnswers": [
+            "as hot as|so hot as"
+          ],
+          "explanation": "not as + adjective + as"
+        }
+      ]
+    }
+  ]
+}

@@ -12,554 +12,112 @@
     {
       "id": "ws-12-sec-a",
       "sectionKey": "A",
-      "instruction": "Use THE SIMPLE PAST or THE PRESENT PERFECT TENSE to fill in the blanks:",
+      "instruction": "Use the SIMPLE PAST or the PRESENT PERFECT TENSE to fill in the blanks:",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-12-sec-a-q01",
-          "order": 1,
-          "prompt": "What [gap] (you / learn) since you [gap] (come) here? How many friends [gap] (you / make)? I hope you [gap] (already / meet) a lot of interesting people.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q02",
-          "order": 2,
-          "prompt": "Last night my roommate and I [gap] (have) some free time, so we [gap] (go) to a show.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q03",
-          "order": 3,
-          "prompt": "I [gap] (just / have) lunch, but I [gap] (not / have) lunch yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q04",
-          "order": 4,
-          "prompt": "Who [gap] (write) the play “Hamlet”?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q05",
-          "order": 5,
-          "prompt": "How many games [gap] (the team / win) so far this season?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q06",
-          "order": 6,
-          "prompt": "I don’t know Carol’s husband. I [gap] (never / meet) him.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q07",
-          "order": 7,
-          "prompt": "It [gap] (rain) a lot last week, but it [gap] (not / rain) much so far this week.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q08",
-          "order": 8,
-          "prompt": "How many letters [gap] (you / write) since the beginning of the month?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q09",
-          "order": 9,
-          "prompt": "When we were on vacation, the weather [gap] (be) terrible.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q10",
-          "order": 10,
-          "prompt": "In her whole lifetime, Mary [gap] (never / see) snow.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q11",
-          "order": 11,
-          "prompt": "I don’t know where Ammy is [gap] (you / see) her?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q12",
-          "order": 12,
-          "prompt": "When I [gap] (get) home last night, I [gap] (be) very tired and I [gap] (go) straight to bed.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q13",
-          "order": 13,
-          "prompt": "Your car looks very clean [gap] (you / wash) it?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q14",
-          "order": 14,
-          "prompt": "George [gap] (not / be) very well last week.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-a-q15",
-          "order": 15,
-          "prompt": "Mr. Clark [gap] (work) in a bank for 15 years. Then he gave it up.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-12-sec-a-q01", "order": 1, "prompt": "What [gap] (you / learn) since you [gap] (come) here? How many friends [gap] (you / make)? I hope you [gap] (already / meet) a lot of interesting people.", "acceptedAnswers": ["have you learned|have you learnt / came / have you made / have already met"], "explanation": "since + past point → present perfect; since you came (past)" },
+        { "id": "ws-12-sec-a-q02", "order": 2, "prompt": "Last night my roommate and I [gap] (have) some free time, so we [gap] (go) to a show.", "acceptedAnswers": ["had / went"], "explanation": "last night → simple past" },
+        { "id": "ws-12-sec-a-q03", "order": 3, "prompt": "I [gap] (just / have) lunch, but I [gap] (not / have) lunch yesterday.", "acceptedAnswers": ["have just had / didn't have"], "explanation": "just → present perfect; yesterday → simple past" },
+        { "id": "ws-12-sec-a-q04", "order": 4, "prompt": "Who [gap] (write) the play “Hamlet”?", "acceptedAnswers": ["wrote"], "explanation": "finished past event → simple past" },
+        { "id": "ws-12-sec-a-q05", "order": 5, "prompt": "How many games [gap] (the team / win) so far this season?", "acceptedAnswers": ["has the team won"], "explanation": "so far → present perfect" },
+        { "id": "ws-12-sec-a-q06", "order": 6, "prompt": "I don’t know Carol’s husband. I [gap] (never / meet) him.", "acceptedAnswers": ["have never met"], "explanation": "never (up to now) → present perfect" },
+        { "id": "ws-12-sec-a-q07", "order": 7, "prompt": "It [gap] (rain) a lot last week, but it [gap] (not / rain) much so far this week.", "acceptedAnswers": ["rained / hasn't rained"], "explanation": "last week → past; so far → present perfect" },
+        { "id": "ws-12-sec-a-q08", "order": 8, "prompt": "How many letters [gap] (you / write) since the beginning of the month?", "acceptedAnswers": ["have you written"], "explanation": "since → present perfect" },
+        { "id": "ws-12-sec-a-q09", "order": 9, "prompt": "When we were on vacation, the weather [gap] (be) terrible.", "acceptedAnswers": ["was"], "explanation": "finished past time → simple past" },
+        { "id": "ws-12-sec-a-q10", "order": 10, "prompt": "In her whole lifetime, Mary [gap] (never / see) snow.", "acceptedAnswers": ["has never seen"], "explanation": "life experience up to now → present perfect" },
+        { "id": "ws-12-sec-a-q11", "order": 11, "prompt": "I don’t know where Ammy is. [gap] (you / see) her?", "acceptedAnswers": ["Have you seen"], "explanation": "recent, no time given → present perfect" },
+        { "id": "ws-12-sec-a-q12", "order": 12, "prompt": "When I [gap] (get) home last night, I [gap] (be) very tired and I [gap] (go) straight to bed.", "acceptedAnswers": ["got / was / went"], "explanation": "last night → simple past" },
+        { "id": "ws-12-sec-a-q13", "order": 13, "prompt": "Your car looks very clean. [gap] (you / wash) it?", "acceptedAnswers": ["Have you washed"], "explanation": "result now → present perfect" },
+        { "id": "ws-12-sec-a-q14", "order": 14, "prompt": "George [gap] (not / be) very well last week.", "acceptedAnswers": ["wasn't"], "explanation": "last week → simple past" },
+        { "id": "ws-12-sec-a-q15", "order": 15, "prompt": "Mr. Clark [gap] (work) in a bank for 15 years. Then he gave it up.", "acceptedAnswers": ["worked"], "explanation": "finished period in the past → simple past" }
       ]
     },
     {
       "id": "ws-12-sec-b",
       "sectionKey": "B",
-      "instruction": "Use PRESENT PERFECT TENSE or PRESENT PERFECT CONTINUOUS",
-      "type": "inline_gap_fill",
+      "instruction": "Use the PRESENT PERFECT TENSE or the PRESENT PERFECT CONTINUOUS to fill in the blanks:",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-12-sec-b-q01",
-          "order": 1,
-          "prompt": "I’m trying to study. I [gap] (try) to study for the last hour, but something always seems to interrupt me. I think I’d better go to the library.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q02",
-          "order": 2,
-          "prompt": "The children are playing basketball right now. They [gap] (play) for almost two hours. They must be getting tired.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q03",
-          "order": 3,
-          "prompt": "The telephone [gap] (ring) four times in the last hour, and each time it has been for my roommate.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q04",
-          "order": 4,
-          "prompt": "The telephone [gap] (ring) for almost a minute. Why doesn’t someone answer it?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q05",
-          "order": 5,
-          "prompt": "It [gap] (rain) all day. I wonder when it will stop.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q06",
-          "order": 6,
-          "prompt": "We [gap] (have) three accidents so far this week. I wonder how many more we will have if you keep using the tools carelessly.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q07",
-          "order": 7,
-          "prompt": "We [gap] (live) here since last June.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q08",
-          "order": 8,
-          "prompt": "My little son is dirty from head to foot because he [gap] (play) in the mud.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q09",
-          "order": 9,
-          "prompt": "What’s the matter? Your eyes are red and puffy. I hope you [gap] (not / cry). Oh, now I understand. You [gap] (peel) some onions.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q10",
-          "order": 10,
-          "prompt": "Hello, Rob. I’m happy to see you again. I [gap] (not / see) you for weeks. What [gap] you [gap] (do) lately?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q11",
-          "order": 11,
-          "prompt": "I [gap] (not / be) able to reach my boss on the phone yet. I [gap] (try) for the last twenty minutes, but the line [gap] busy.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q12",
-          "order": 12,
-          "prompt": "We [gap] (have) three major snowstorms so far this winter. I wonder how many more we will have.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q13",
-          "order": 13,
-          "prompt": "I [gap] (write) them three times, but I still haven’t received a reply.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q14",
-          "order": 14,
-          "prompt": "A: Dr. Harrison is a good teacher. How long [gap] he [gap] (be) at the university? B: He [gap] (teach) here for almost 25 years.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q15",
-          "order": 15,
-          "prompt": "A: What are you going to order for dinner? [gap] B: Well, I [gap] (have / have) pizza. So I think, I’ll order that.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q16",
-          "order": 16,
-          "prompt": "My uncle [gap] (paint) the outside of his house for three weeks and he’s still not finished.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-b-q17",
-          "order": 17,
-          "prompt": "The Smiths are presently in Tunisia. They [gap] (travel) throughout North Africa since the middle of May. They’ll return home in another month.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-12-sec-b-q01", "order": 1, "prompt": "I’m trying to study. I [gap] (try) to study for the last hour, but something always seems to interrupt me. I think I’d better go to the library.", "acceptedAnswers": ["have been trying"], "explanation": "ongoing activity for a period → continuous" },
+        { "id": "ws-12-sec-b-q02", "order": 2, "prompt": "The children are playing basketball right now. They [gap] (play) for almost two hours. They must be getting tired.", "acceptedAnswers": ["have been playing"], "explanation": "ongoing activity for a period → continuous" },
+        { "id": "ws-12-sec-b-q03", "order": 3, "prompt": "The telephone [gap] (ring) four times in the last hour, and each time it has been for my roommate.", "acceptedAnswers": ["has rung"], "explanation": "number of times → present perfect simple" },
+        { "id": "ws-12-sec-b-q04", "order": 4, "prompt": "The telephone [gap] (ring) for almost a minute. Why doesn’t someone answer it?", "acceptedAnswers": ["has been ringing"], "explanation": "ongoing activity for a period → continuous" },
+        { "id": "ws-12-sec-b-q05", "order": 5, "prompt": "It [gap] (rain) all day. I wonder when it will stop.", "acceptedAnswers": ["has been raining"], "explanation": "ongoing activity all day → continuous" },
+        { "id": "ws-12-sec-b-q06", "order": 6, "prompt": "We [gap] (have) three accidents so far this week. I wonder how many more we will have if you keep using the tools carelessly.", "acceptedAnswers": ["have had"], "explanation": "how many so far → present perfect simple" },
+        { "id": "ws-12-sec-b-q07", "order": 7, "prompt": "We [gap] (live) here since last June.", "acceptedAnswers": ["have been living|have lived"], "explanation": "live + since: both forms possible" },
+        { "id": "ws-12-sec-b-q08", "order": 8, "prompt": "My little son is dirty from head to foot because he [gap] (play) in the mud.", "acceptedAnswers": ["has been playing"], "explanation": "activity with a visible result → continuous" },
+        { "id": "ws-12-sec-b-q09", "order": 9, "prompt": "What’s the matter? Your eyes are red and puffy. I hope you [gap] (not / cry). Oh, now I understand. You [gap] (peel) some onions.", "acceptedAnswers": ["haven't been crying / have been peeling"], "explanation": "recent activity with visible result → continuous" },
+        { "id": "ws-12-sec-b-q10", "order": 10, "prompt": "Hello, Rob. I’m happy to see you again. I [gap] (not / see) you for weeks. What [gap] you [gap] (do) lately?", "acceptedAnswers": ["haven't seen / have / been doing"], "explanation": "see → simple; lately activity → continuous" },
+        { "id": "ws-12-sec-b-q11", "order": 11, "prompt": "I [gap] (not / be) able to reach my boss on the phone yet. I [gap] (try) for the last twenty minutes, but the line [gap] (be) busy.", "acceptedAnswers": ["haven't been / have been trying / has been"], "explanation": "state verb be → simple; try for a period → continuous" },
+        { "id": "ws-12-sec-b-q12", "order": 12, "prompt": "We [gap] (have) three major snowstorms so far this winter. I wonder how many more we will have.", "acceptedAnswers": ["have had"], "explanation": "how many so far → present perfect simple" },
+        { "id": "ws-12-sec-b-q13", "order": 13, "prompt": "I [gap] (write) them three times, but I still haven’t received a reply.", "acceptedAnswers": ["have written"], "explanation": "number of times → present perfect simple" },
+        { "id": "ws-12-sec-b-q14", "order": 14, "prompt": "A: Dr. Harrison is a good teacher. How long [gap] he [gap] (be) at the university? B: He [gap] (teach) here for almost 25 years.", "acceptedAnswers": ["has / been / has been teaching|has taught"], "explanation": "be (state) → simple; teach for a period → continuous" },
+        { "id": "ws-12-sec-b-q15", "order": 15, "prompt": "A: What are you going to order for dinner? B: Well, I [gap] (have / have) pizza. So I think, I’ll order that.", "acceptedAnswers": ["have had"], "explanation": "have (eat) in present perfect: have had" },
+        { "id": "ws-12-sec-b-q16", "order": 16, "prompt": "My uncle [gap] (paint) the outside of his house for three weeks and he’s still not finished.", "acceptedAnswers": ["has been painting"], "explanation": "unfinished activity → continuous" },
+        { "id": "ws-12-sec-b-q17", "order": 17, "prompt": "The Smiths are presently in Tunisia. They [gap] (travel) throughout North Africa since the middle of May. They’ll return home in another month.", "acceptedAnswers": ["have been travelling|have been traveling"], "explanation": "ongoing activity since a point → continuous" }
       ]
     },
     {
       "id": "ws-12-sec-c",
       "sectionKey": "C",
-      "instruction": "Use THE PRESENT PERFECT TENSE or THE PRESENT PERFECT CONTINUOUS",
-      "type": "inline_gap_fill",
+      "instruction": "Use the PRESENT PERFECT TENSE or the PRESENT PERFECT CONTINUOUS to fill in the blanks:",
+      "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-12-sec-c-q01",
-          "order": 1,
-          "prompt": "I’m tired. We [gap] (walk) for over an hour. Let’s stop and rest for a while.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q02",
-          "order": 2,
-          "prompt": "The zoo isn’t far from here. I [gap] (walk) there many times.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q03",
-          "order": 3,
-          "prompt": "I [gap] (write) my friends at least a dozen letters since I left home and come home.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q04",
-          "order": 4,
-          "prompt": "Sally is writing a letter to her boyfriend. She [gap] (write) it since she got home from class. It’s going to be a long letter.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q05",
-          "order": 5,
-          "prompt": "The telephone [gap] (ring) four times in the last hour, and each time it has been for my roommate.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q06",
-          "order": 6,
-          "prompt": "The telephone [gap] (ring) for almost a minute. Why doesn’t someone answer it?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q07",
-          "order": 7,
-          "prompt": "She is 80 and she [gap] (never / read) a book in her life.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q08",
-          "order": 8,
-          "prompt": "The secretary is very tired. She [gap] (type) all morning.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q09",
-          "order": 9,
-          "prompt": "Tom is reading a book. He started two hours ago and he is on page 53. He [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) for"
-          ]
-        },
-        {
-          "id": "ws-12-sec-c-q10",
-          "order": 10,
-          "prompt": "Hello! I [gap] (clean) the windows. So far I [gap] (clean) five of them and there are two more to do.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q11",
-          "order": 11,
-          "prompt": "My grandfather [gap] (died) 30 years ago. I [gap] [gap] (never / meet) him.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-c-q12",
-          "order": 12,
-          "prompt": "A: Is your father at home? [gap] B: No, I’m afraid he [gap] (go) out. A: When exactly [gap] (he / go) out? B: About ten minutes ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-12-sec-c-q01", "order": 1, "prompt": "I’m tired. We [gap] (walk) for over an hour. Let’s stop and rest for a while.", "acceptedAnswers": ["have been walking"], "explanation": "activity for a period, effect now → continuous" },
+        { "id": "ws-12-sec-c-q02", "order": 2, "prompt": "The zoo isn’t far from here. I [gap] (walk) there many times.", "acceptedAnswers": ["have walked"], "explanation": "many times → present perfect simple" },
+        { "id": "ws-12-sec-c-q03", "order": 3, "prompt": "I [gap] (write) my friends at least a dozen letters since I left home and came here.", "acceptedAnswers": ["have written"], "explanation": "how many → present perfect simple" },
+        { "id": "ws-12-sec-c-q04", "order": 4, "prompt": "Sally is writing a letter to her boyfriend. She [gap] (write) it since she got home from class. It’s going to be a long letter.", "acceptedAnswers": ["has been writing"], "explanation": "unfinished activity since a point → continuous" },
+        { "id": "ws-12-sec-c-q05", "order": 5, "prompt": "The telephone [gap] (ring) four times in the last hour, and each time it has been for my roommate.", "acceptedAnswers": ["has rung"], "explanation": "number of times → present perfect simple" },
+        { "id": "ws-12-sec-c-q06", "order": 6, "prompt": "The telephone [gap] (ring) for almost a minute. Why doesn’t someone answer it?", "acceptedAnswers": ["has been ringing"], "explanation": "ongoing activity for a period → continuous" },
+        { "id": "ws-12-sec-c-q07", "order": 7, "prompt": "She is 80 and she [gap] (never / read) a book in her life.", "acceptedAnswers": ["has never read"], "explanation": "life experience → present perfect simple" },
+        { "id": "ws-12-sec-c-q08", "order": 8, "prompt": "The secretary is very tired. She [gap] (type) all morning.", "acceptedAnswers": ["has been typing"], "explanation": "activity all morning, effect now → continuous" },
+        { "id": "ws-12-sec-c-q09", "order": 9, "prompt": "Tom is reading a book. He started two hours ago and he is on page 53. He [gap] (read) for two hours.", "acceptedAnswers": ["has been reading"], "explanation": "how long → continuous" },
+        { "id": "ws-12-sec-c-q10", "order": 10, "prompt": "Hello! I [gap] (clean) the windows. So far I [gap] (clean) five of them and there are two more to do.", "acceptedAnswers": ["have been cleaning / have cleaned"], "explanation": "activity → continuous; how many so far → simple" },
+        { "id": "ws-12-sec-c-q11", "order": 11, "prompt": "My grandfather [gap] (die) 30 years ago. I [gap] (never / meet) him.", "acceptedAnswers": ["died / never met"], "explanation": "ago → simple past; his life is finished" },
+        { "id": "ws-12-sec-c-q12", "order": 12, "prompt": "A: Is your father at home? B: No, I’m afraid he [gap] (go) out. A: When exactly [gap] (he / go) out? B: About ten minutes ago.", "acceptedAnswers": ["has gone / did he go"], "explanation": "result now → present perfect; when → simple past" }
       ]
     },
     {
       "id": "ws-12-sec-d",
       "sectionKey": "D",
-      "instruction": "Use THE SIMPLE PAST or THE PRESENT PERFECT TENSE to fill in the blanks:",
+      "instruction": "Use the SIMPLE PAST or the PRESENT PERFECT TENSE to fill in the blanks:",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-12-sec-d-q01",
-          "order": 1,
-          "prompt": "The young man [gap] (never / be) to Paris, but he [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) a"
-          ]
-        },
-        {
-          "id": "ws-12-sec-d-q02",
-          "order": 2,
-          "prompt": "[gap] you [gap] (decide) where to go yet?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q03",
-          "order": 3,
-          "prompt": "A: Have some tea, please. [gap] B: No, thank you. I [gap] (just / have) two cups of tea.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q04",
-          "order": 4,
-          "prompt": "Susan [gap] (do) her homework before 10 o’clock but Jane [gap] [gap] (not /write) a word until now.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q05",
-          "order": 5,
-          "prompt": "Her mother [gap] (buy) her a pair of new shoes yesterday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q06",
-          "order": 6,
-          "prompt": "The Prime Minister [gap] (leave) for the USA an hour ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q07",
-          "order": 7,
-          "prompt": "A: [gap] the plane [gap] (land)?",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) ten"
-          ]
-        },
-        {
-          "id": "ws-12-sec-d-q08",
-          "order": 8,
-          "prompt": "It [gap] (not / rain) for a long time.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q09",
-          "order": 9,
-          "prompt": "[gap] you [gap] (see) my dog? It [gap] (run away) this morning.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q10",
-          "order": 10,
-          "prompt": "We [gap] (meet) at a party a long time ago, but I [gap] (not / see) her since then.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q11",
-          "order": 11,
-          "prompt": "I [gap] (see) an interesting book in a bookshop yesterday, but I [gap] (not / buy) it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q12",
-          "order": 12,
-          "prompt": "My friend [gap] (fall) from the bicycle because he [gap] (not / ride) one for ages.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q13",
-          "order": 13,
-          "prompt": "His father [gap] (die) in 1970, but he [gap] (never / visit) his father’s grave since that time.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q14",
-          "order": 14,
-          "prompt": "They [gap] (go) to America years ago, but none of them [gap] (come) back since then.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q15",
-          "order": 15,
-          "prompt": "A: [gap] you [gap] (speak) to an Englishman? B: Yes, I [gap] (have) a short conversation with one last night.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q16",
-          "order": 16,
-          "prompt": "A: [gap] you ever [gap] (be) to Tatilya? B: Yes, I [gap] (go) there two years ago.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-d-q17",
-          "order": 17,
-          "prompt": "A: [gap] you [gap] (see) Jane recently? B: No, I [gap] (see) her for a long time.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-12-sec-d-q01", "order": 1, "prompt": "The young man [gap] (never / be) to Paris, but he [gap] (read) a book about this city last year.", "acceptedAnswers": ["has never been / read"], "explanation": "never → present perfect; last year → simple past" },
+        { "id": "ws-12-sec-d-q02", "order": 2, "prompt": "[gap] you [gap] (decide) where to go yet?", "acceptedAnswers": ["Have / decided"], "explanation": "yet → present perfect" },
+        { "id": "ws-12-sec-d-q03", "order": 3, "prompt": "A: Have some tea, please. B: No, thank you. I [gap] (just / have) two cups of tea.", "acceptedAnswers": ["have just had"], "explanation": "just → present perfect" },
+        { "id": "ws-12-sec-d-q04", "order": 4, "prompt": "Susan [gap] (do) her homework before 10 o’clock but Jane [gap] (not / write) a word until now.", "acceptedAnswers": ["did|has done / hasn't written"], "explanation": "until now → present perfect" },
+        { "id": "ws-12-sec-d-q05", "order": 5, "prompt": "Her mother [gap] (buy) her a pair of new shoes yesterday.", "acceptedAnswers": ["bought"], "explanation": "yesterday → simple past" },
+        { "id": "ws-12-sec-d-q06", "order": 6, "prompt": "The Prime Minister [gap] (leave) for the USA an hour ago.", "acceptedAnswers": ["left"], "explanation": "ago → simple past" },
+        { "id": "ws-12-sec-d-q07", "order": 7, "prompt": "A: [gap] the plane [gap] (land)? B: Yes, it [gap] (land) ten minutes ago.", "acceptedAnswers": ["Has / landed / landed"], "explanation": "no time → present perfect; ago → simple past" },
+        { "id": "ws-12-sec-d-q08", "order": 8, "prompt": "It [gap] (not / rain) for a long time.", "acceptedAnswers": ["hasn't rained"], "explanation": "for + period up to now → present perfect" },
+        { "id": "ws-12-sec-d-q09", "order": 9, "prompt": "[gap] you [gap] (see) my dog? It [gap] (run away) this morning.", "acceptedAnswers": ["Have / seen / ran away|has run away"], "explanation": "no time → present perfect; this morning → past" },
+        { "id": "ws-12-sec-d-q10", "order": 10, "prompt": "We [gap] (meet) at a party a long time ago, but I [gap] (not / see) her since then.", "acceptedAnswers": ["met / haven't seen"], "explanation": "ago → simple past; since then → present perfect" },
+        { "id": "ws-12-sec-d-q11", "order": 11, "prompt": "I [gap] (see) an interesting book in a bookshop yesterday, but I [gap] (not / buy) it.", "acceptedAnswers": ["saw / didn't buy"], "explanation": "yesterday → simple past" },
+        { "id": "ws-12-sec-d-q12", "order": 12, "prompt": "My friend [gap] (fall) from the bicycle because he [gap] (not / ride) one for ages.", "acceptedAnswers": ["fell / hadn't ridden","has fallen / hasn't ridden"], "explanation": "earlier past → past perfect (or present perfect if now)" },
+        { "id": "ws-12-sec-d-q13", "order": 13, "prompt": "His father [gap] (die) in 1970, but he [gap] (never / visit) his father’s grave since that time.", "acceptedAnswers": ["died / has never visited"], "explanation": "in 1970 → past; since that time → present perfect" },
+        { "id": "ws-12-sec-d-q14", "order": 14, "prompt": "They [gap] (go) to America years ago, but none of them [gap] (come) back since then.", "acceptedAnswers": ["went / has come|have come"], "explanation": "ago → past; since then → present perfect" },
+        { "id": "ws-12-sec-d-q15", "order": 15, "prompt": "A: [gap] you [gap] (speak) to an Englishman? B: Yes, I [gap] (have) a short conversation with one last night.", "acceptedAnswers": ["Have / spoken / had"], "explanation": "experience → present perfect; last night → past" },
+        { "id": "ws-12-sec-d-q16", "order": 16, "prompt": "A: [gap] you ever [gap] (be) to Tatilya? B: Yes, I [gap] (go) there two years ago.", "acceptedAnswers": ["Have / been / went"], "explanation": "ever → present perfect; ago → simple past" },
+        { "id": "ws-12-sec-d-q17", "order": 17, "prompt": "A: [gap] you [gap] (see) Jane recently? B: No, I [gap] (see) her for a long time.", "acceptedAnswers": ["Have / seen / haven't seen"], "explanation": "recently / for a long time → present perfect" }
       ]
     },
     {
       "id": "ws-12-sec-e",
       "sectionKey": "E",
-      "instruction": "Rewrite the sentences using SIMPLE PAST or PRESENT PERFECT TENSE:",
+      "instruction": "Rewrite the sentences using the SIMPLE PAST or the PRESENT PERFECT TENSE: (Example: I haven’t seen her for a long time. → It’s ages since I saw her.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-12-sec-e-q01",
-          "order": 1,
-          "prompt": "I haven’t seen her for a long time. It’s ages since I saw her [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q02",
-          "order": 2,
-          "prompt": "I last met George two weeks ago. I haven’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q03",
-          "order": 3,
-          "prompt": "They have been here for three months. They arrived [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q04",
-          "order": 4,
-          "prompt": "We started living in Istanbul 12 years ago. We have [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q05",
-          "order": 5,
-          "prompt": "I last saw my girlfriend five days ago. I haven’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q06",
-          "order": 6,
-          "prompt": "Is this the first time you have tasted a kivi? [gap] (not) you [gap] one before?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q07",
-          "order": 7,
-          "prompt": "I last smoked a cigarette ten years ago. I haven’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q08",
-          "order": 8,
-          "prompt": "I last drank wine two weeks ago. It’s two weeks [gap] wine.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q09",
-          "order": 9,
-          "prompt": "I have lived in Istanbul since January. I [gap] (come)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q10",
-          "order": 10,
-          "prompt": "They moved to Ankara two years ago. They [gap] two years.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-12-sec-e-q11",
-          "order": 11,
-          "prompt": "She hasn’t been to Rome before. This is the first time [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-12-sec-e-q02", "order": 2, "prompt": "I last met George two weeks ago. → I haven’t", "acceptedAnswers": ["I haven't met George for two weeks.","I haven't seen George for two weeks.","I haven't met him for two weeks."], "explanation": "last … ago → haven't + participle + for" },
+        { "id": "ws-12-sec-e-q03", "order": 3, "prompt": "They have been here for three months. → They arrived", "acceptedAnswers": ["They arrived three months ago.","They arrived here three months ago."], "explanation": "for (up to now) → simple past + ago" },
+        { "id": "ws-12-sec-e-q04", "order": 4, "prompt": "We started living in Istanbul 12 years ago. → We have", "acceptedAnswers": ["We have lived in Istanbul for 12 years.","We've lived in Istanbul for 12 years.","We have been living in Istanbul for 12 years.","We've been living in Istanbul for 12 years.","We have lived in Istanbul for twelve years.","We've lived in Istanbul for twelve years.","We have been living in Istanbul for twelve years.","We've been living in Istanbul for twelve years."], "explanation": "started … ago → have lived + for" },
+        { "id": "ws-12-sec-e-q05", "order": 5, "prompt": "I last saw my girlfriend five days ago. → I haven’t", "acceptedAnswers": ["I haven't seen my girlfriend for five days.","I haven't seen her for five days."], "explanation": "last … ago → haven't + participle + for" },
+        { "id": "ws-12-sec-e-q06", "order": 6, "prompt": "Is this the first time you have tasted a kiwi? → Use (not) + you, and end with “one before?”", "acceptedAnswers": ["Haven't you tasted one before?","Have you not tasted one before?","Haven't you ever tasted one before?"], "explanation": "first time → haven't … before" },
+        { "id": "ws-12-sec-e-q07", "order": 7, "prompt": "I last smoked a cigarette ten years ago. → I haven’t", "acceptedAnswers": ["I haven't smoked a cigarette for ten years.","I haven't smoked for ten years."], "explanation": "last … ago → haven't + participle + for" },
+        { "id": "ws-12-sec-e-q08", "order": 8, "prompt": "I last drank wine two weeks ago. → Start with “It’s two weeks” and end with “wine”.", "acceptedAnswers": ["It's two weeks since I last drank wine.","It's two weeks since I drank wine.","It's been two weeks since I last drank wine."], "explanation": "It's + period + since + simple past" },
+        { "id": "ws-12-sec-e-q09", "order": 9, "prompt": "I have lived in Istanbul since January. → I (come)", "acceptedAnswers": ["I came to Istanbul in January.","I came here in January."], "explanation": "since + point → simple past + in" },
+        { "id": "ws-12-sec-e-q10", "order": 10, "prompt": "They moved to Ankara two years ago. → Start with “They” and end with “two years”.", "acceptedAnswers": ["They have lived in Ankara for two years.","They've lived in Ankara for two years.","They have been living in Ankara for two years.","They've been living in Ankara for two years.","They have been in Ankara for two years.","They've been in Ankara for two years."], "explanation": "moved … ago → have lived + for" },
+        { "id": "ws-12-sec-e-q11", "order": 11, "prompt": "She hasn’t been to Rome before. → This is the first time", "acceptedAnswers": ["This is the first time she has been to Rome.","This is the first time she's been to Rome.","This is the first time she has ever been to Rome.","This is the first time she's ever been to Rome."], "explanation": "the first time + present perfect" }
       ]
     }
   ]

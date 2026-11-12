@@ -12,118 +12,198 @@
     {
       "id": "ws-24-sec-a",
       "sectionKey": "A",
-      "instruction": "Read each sentence. Then make two new sentences in the PASSIVE:",
-      "type": "inline_gap_fill",
+      "instruction": "Read each sentence. Then make two new sentences in the PASSIVE: (Example: People say Tom Cruise is the richest movie star. → a) It is said that Tom Cruise is the richest movie star. b) Tom Cruise is said to be the richest movie star.)",
+      "type": "sentence_rewrite",
       "questions": [
         {
-          "id": "ws-24-sec-a-q01",
-          "order": 1,
-          "prompt": "People say Tom Cruise is the richest movie star. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Tom"
-          ]
-        },
-        {
-          "id": "ws-24-sec-a-q02",
+          "id": "ws-24-sec-a-q02a",
           "order": 2,
-          "prompt": "Everybody thinks that Hakan is a good football player. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Hakan"
-          ]
+          "prompt": "Everybody thinks that Hakan is a good football player. → a) It",
+          "acceptedAnswers": [
+            "It is thought that Hakan is a good football player.",
+            "It is thought Hakan is a good football player."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-a-q03",
+          "id": "ws-24-sec-a-q02b",
+          "order": 2,
+          "prompt": "Everybody thinks that Hakan is a good football player. → b) Hakan",
+          "acceptedAnswers": [
+            "Hakan is thought to be a good football player."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
+        },
+        {
+          "id": "ws-24-sec-a-q03a",
           "order": 3,
-          "prompt": "They say that his books are still popular. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) His"
-          ]
+          "prompt": "They say that his books are still popular. → a) It",
+          "acceptedAnswers": [
+            "It is said that his books are still popular.",
+            "It is said his books are still popular."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-a-q04",
+          "id": "ws-24-sec-a-q03b",
+          "order": 3,
+          "prompt": "They say that his books are still popular. → b) His books",
+          "acceptedAnswers": [
+            "His books are said to be still popular.",
+            "His books are said to still be popular.",
+            "His books are still said to be popular."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
+        },
+        {
+          "id": "ws-24-sec-a-q04a",
           "order": 4,
-          "prompt": "They report that at least 10.000 dolphins are caught in the nets of tuna fishers every year. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) At"
-          ]
+          "prompt": "They report that at least 10,000 dolphins are caught in the nets of tuna fishers every year. → a) It",
+          "acceptedAnswers": [
+            "It is reported that at least 10,000 dolphins are caught in the nets of tuna fishers every year.",
+            "It is reported at least 10,000 dolphins are caught in the nets of tuna fishers every year."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-a-q05",
+          "id": "ws-24-sec-a-q04b",
+          "order": 4,
+          "prompt": "They report that at least 10,000 dolphins are caught in the nets of tuna fishers every year. → b) At least 10,000 dolphins",
+          "acceptedAnswers": [
+            "At least 10,000 dolphins are reported to be caught in the nets of tuna fishers every year."
+          ],
+          "explanation": "passive infinitive: to be + V3"
+        },
+        {
+          "id": "ws-24-sec-a-q05a",
           "order": 5,
-          "prompt": "They estimate that 1500 square kilometers of rainforests is cut every year. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) 1500"
-          ]
+          "prompt": "They estimate that 1500 square kilometers of rainforests is cut every year. → a) It",
+          "acceptedAnswers": [
+            "It is estimated that 1500 square kilometers of rainforests is cut every year.",
+            "It is estimated that 1500 square kilometers of rainforests are cut every year.",
+            "It is estimated that 1500 square kilometres of rainforests is cut every year.",
+            "It is estimated that 1500 square kilometres of rainforests are cut every year.",
+            "It is estimated 1500 square kilometers of rainforests is cut every year.",
+            "It is estimated 1500 square kilometers of rainforests are cut every year.",
+            "It is estimated 1500 square kilometres of rainforests is cut every year.",
+            "It is estimated 1500 square kilometres of rainforests are cut every year."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-a-q06",
+          "id": "ws-24-sec-a-q05b",
+          "order": 5,
+          "prompt": "They estimate that 1500 square kilometers of rainforests is cut every year. → b) 1500 square kilometers of rainforests",
+          "acceptedAnswers": [
+            "1500 square kilometers of rainforests is estimated to be cut every year.",
+            "1500 square kilometers of rainforests are estimated to be cut every year.",
+            "1500 square kilometres of rainforests is estimated to be cut every year.",
+            "1500 square kilometres of rainforests are estimated to be cut every year."
+          ],
+          "explanation": "passive infinitive: to be + V3"
+        },
+        {
+          "id": "ws-24-sec-a-q06a",
           "order": 6,
-          "prompt": "We knew that pencil lead is made from graphite, clay, water and wax. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Pencil"
-          ]
+          "prompt": "We knew that pencil lead is made from graphite, clay, water and wax. → a) It",
+          "acceptedAnswers": [
+            "It was known that pencil lead is made from graphite, clay, water and wax.",
+            "It was known that pencil lead was made from graphite, clay, water and wax.",
+            "It was known pencil lead is made from graphite, clay, water and wax.",
+            "It was known pencil lead was made from graphite, clay, water and wax."
+          ],
+          "explanation": "past reporting verb: It was known that ..."
         },
         {
-          "id": "ws-24-sec-a-q07",
+          "id": "ws-24-sec-a-q06b",
+          "order": 6,
+          "prompt": "We knew that pencil lead is made from graphite, clay, water and wax. → b) Pencil lead",
+          "acceptedAnswers": [
+            "Pencil lead was known to be made from graphite, clay, water and wax."
+          ],
+          "explanation": "past reporting verb + to be + V3"
+        },
+        {
+          "id": "ws-24-sec-a-q07a",
           "order": 7,
-          "prompt": "They reported that the railway line was buried under tons of rock and earth. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "They reported that the railway line was buried under tons of rock and earth. → a) It",
+          "acceptedAnswers": [
+            "It was reported that the railway line was buried under tons of rock and earth.",
+            "It was reported that the railway line had been buried under tons of rock and earth.",
+            "It was reported the railway line was buried under tons of rock and earth.",
+            "It was reported the railway line had been buried under tons of rock and earth."
+          ],
+          "explanation": "past reporting verb: It was reported that ..."
         },
         {
-          "id": "ws-24-sec-a-q08",
+          "id": "ws-24-sec-a-q07b",
+          "order": 7,
+          "prompt": "They reported that the railway line was buried under tons of rock and earth. → b) The railway line",
+          "acceptedAnswers": [
+            "The railway line was reported to have been buried under tons of rock and earth.",
+            "The railway line was reported to be buried under tons of rock and earth."
+          ],
+          "explanation": "to have been + V3 (or state: to be + V3)"
+        },
+        {
+          "id": "ws-24-sec-a-q08a",
           "order": 8,
-          "prompt": "People don’t think that inflation will go down. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Inflation"
-          ]
+          "prompt": "People don’t think that inflation will go down. → a) It",
+          "acceptedAnswers": [
+            "It is not thought that inflation will go down.",
+            "It is not thought inflation will go down."
+          ],
+          "explanation": "negative: It is not thought that ..."
         },
         {
-          "id": "ws-24-sec-a-q09",
+          "id": "ws-24-sec-a-q08b",
+          "order": 8,
+          "prompt": "People don’t think that inflation will go down. → b) Inflation",
+          "acceptedAnswers": [
+            "Inflation is not thought to be going to go down.",
+            "Inflation is not thought to be going down.",
+            "Inflation is not thought to go down.",
+            "Inflation is thought not to go down."
+          ],
+          "explanation": "negative passive + to-infinitive"
+        },
+        {
+          "id": "ws-24-sec-a-q09a",
           "order": 9,
-          "prompt": "People expect that the third bridge will be built over the Bosphorus Strait. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "People expect that the third bridge will be built over the Bosphorus Strait. → a) It",
+          "acceptedAnswers": [
+            "It is expected that the third bridge will be built over the Bosphorus Strait.",
+            "It is expected the third bridge will be built over the Bosphorus Strait."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-a-q10",
+          "id": "ws-24-sec-a-q09b",
+          "order": 9,
+          "prompt": "People expect that the third bridge will be built over the Bosphorus Strait. → b) The third bridge",
+          "acceptedAnswers": [
+            "The third bridge is expected to be built over the Bosphorus Strait."
+          ],
+          "explanation": "passive infinitive: to be + V3"
+        },
+        {
+          "id": "ws-24-sec-a-q10a",
           "order": 10,
-          "prompt": "People believe that he is living abroad. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) He"
-          ]
+          "prompt": "People believe that he is living abroad. → a) It",
+          "acceptedAnswers": [
+            "It is believed that he is living abroad.",
+            "It is believed he is living abroad."
+          ],
+          "explanation": "It is + V3 + that + clause"
+        },
+        {
+          "id": "ws-24-sec-a-q10b",
+          "order": 10,
+          "prompt": "People believe that he is living abroad. → b) He",
+          "acceptedAnswers": [
+            "He is believed to be living abroad."
+          ],
+          "explanation": "continuous: to be + -ing"
         }
       ]
     },
@@ -131,125 +211,211 @@
       "id": "ws-24-sec-b",
       "sectionKey": "B",
       "instruction": "Read each sentence. Then make two new sentences in the PASSIVE:",
-      "type": "inline_gap_fill",
+      "type": "sentence_rewrite",
       "questions": [
         {
-          "id": "ws-24-sec-b-q01",
+          "id": "ws-24-sec-b-q01a",
           "order": 1,
-          "prompt": "People expect that taxes will be reduced soon. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Taxes"
-          ]
+          "prompt": "People expect that taxes will be reduced soon. → a) It",
+          "acceptedAnswers": [
+            "It is expected that taxes will be reduced soon.",
+            "It is expected taxes will be reduced soon."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-b-q02",
+          "id": "ws-24-sec-b-q01b",
+          "order": 1,
+          "prompt": "People expect that taxes will be reduced soon. → b) Taxes",
+          "acceptedAnswers": [
+            "Taxes are expected to be reduced soon."
+          ],
+          "explanation": "passive infinitive: to be + V3"
+        },
+        {
+          "id": "ws-24-sec-b-q02a",
           "order": 2,
-          "prompt": "People say that the monument is over 2000 years old. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "People say that the monument is over 2000 years old. → a) It",
+          "acceptedAnswers": [
+            "It is said that the monument is over 2000 years old.",
+            "It is said the monument is over 2000 years old."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-b-q03",
+          "id": "ws-24-sec-b-q02b",
+          "order": 2,
+          "prompt": "People say that the monument is over 2000 years old. → b) The monument",
+          "acceptedAnswers": [
+            "The monument is said to be over 2000 years old."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
+        },
+        {
+          "id": "ws-24-sec-b-q03a",
           "order": 3,
-          "prompt": "People expect that the president will resign. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "People expect that the president will resign. → a) It",
+          "acceptedAnswers": [
+            "It is expected that the president will resign.",
+            "It is expected the president will resign."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-b-q04",
+          "id": "ws-24-sec-b-q03b",
+          "order": 3,
+          "prompt": "People expect that the president will resign. → b) The president",
+          "acceptedAnswers": [
+            "The president is expected to resign."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
+        },
+        {
+          "id": "ws-24-sec-b-q04a",
           "order": 4,
-          "prompt": "People think the fire started at about 8 o’clock. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "People think the fire started at about 8 o’clock. → a) It",
+          "acceptedAnswers": [
+            "It is thought that the fire started at about 8 o'clock.",
+            "It is thought the fire started at about 8 o'clock."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-b-q05",
+          "id": "ws-24-sec-b-q04b",
+          "order": 4,
+          "prompt": "People think the fire started at about 8 o’clock. → b) The fire",
+          "acceptedAnswers": [
+            "The fire is thought to have started at about 8 o'clock."
+          ],
+          "explanation": "earlier action: to have + V3"
+        },
+        {
+          "id": "ws-24-sec-b-q05a",
           "order": 5,
-          "prompt": "Journalists reported that seven people had been injured in the fire. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) Seven"
-          ]
+          "prompt": "Journalists reported that seven people had been injured in the fire. → a) It",
+          "acceptedAnswers": [
+            "It was reported that seven people had been injured in the fire.",
+            "It was reported seven people had been injured in the fire."
+          ],
+          "explanation": "past reporting verb: It was reported that ..."
         },
         {
-          "id": "ws-24-sec-b-q06",
+          "id": "ws-24-sec-b-q05b",
+          "order": 5,
+          "prompt": "Journalists reported that seven people had been injured in the fire. → b) Seven people",
+          "acceptedAnswers": [
+            "Seven people were reported to have been injured in the fire."
+          ],
+          "explanation": "to have been + V3"
+        },
+        {
+          "id": "ws-24-sec-b-q06a",
           "order": 6,
-          "prompt": "People say the bridge is unsafe. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "People say the bridge is unsafe. → a) It",
+          "acceptedAnswers": [
+            "It is said that the bridge is unsafe.",
+            "It is said the bridge is unsafe."
+          ],
+          "explanation": "It is + V3 + that + clause"
+        },
+        {
+          "id": "ws-24-sec-b-q06b",
+          "order": 6,
+          "prompt": "People say the bridge is unsafe. → b) The bridge",
+          "acceptedAnswers": [
+            "The bridge is said to be unsafe."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
         }
       ]
     },
     {
       "id": "ws-24-sec-c",
       "sectionKey": "C",
-      "instruction": "REPORT these rumours:",
-      "type": "inline_gap_fill",
+      "instruction": "REPORT these rumours (make two PASSIVE sentences for each):",
+      "type": "sentence_rewrite",
       "questions": [
         {
-          "id": "ws-24-sec-c-q01",
+          "id": "ws-24-sec-c-q01a",
           "order": 1,
-          "prompt": "People say that the actress Tania Revesky has refused a part in the film Volcano. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "People say that the actress Tania Revesky has refused a part in the film Volcano. → a) It is said",
+          "acceptedAnswers": [
+            "It is said that the actress Tania Revesky has refused a part in the film Volcano.",
+            "It is said the actress Tania Revesky has refused a part in the film Volcano."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-c-q02",
+          "id": "ws-24-sec-c-q01b",
+          "order": 1,
+          "prompt": "People say that the actress Tania Revesky has refused a part in the film Volcano. → b) The actress Tania Revesky",
+          "acceptedAnswers": [
+            "The actress Tania Revesky is said to have refused a part in the film Volcano."
+          ],
+          "explanation": "earlier action: to have + V3"
+        },
+        {
+          "id": "ws-24-sec-c-q02a",
           "order": 2,
-          "prompt": "Her friends have reported that the newsreader Ann Slater is furious at losing her job. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "Her friends have reported that the newsreader Ann Slater is furious at losing her job. → a) It",
+          "acceptedAnswers": [
+            "It has been reported that the newsreader Ann Slater is furious at losing her job.",
+            "It has been reported the newsreader Ann Slater is furious at losing her job.",
+            "It is reported that the newsreader Ann Slater is furious at losing her job.",
+            "It is reported the newsreader Ann Slater is furious at losing her job."
+          ],
+          "explanation": "It has been reported that ..."
         },
         {
-          "id": "ws-24-sec-c-q03",
+          "id": "ws-24-sec-c-q02b",
+          "order": 2,
+          "prompt": "Her friends have reported that the newsreader Ann Slater is furious at losing her job. → b) The newsreader Ann Slater",
+          "acceptedAnswers": [
+            "The newsreader Ann Slater has been reported to be furious at losing her job.",
+            "The newsreader Ann Slater is reported to be furious at losing her job."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
+        },
+        {
+          "id": "ws-24-sec-c-q03a",
           "order": 3,
-          "prompt": "Lots of people believe that The Prime Minister and his wife are getting divorced. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "Lots of people believe that the Prime Minister and his wife are getting divorced. → a) It",
+          "acceptedAnswers": [
+            "It is believed that the Prime Minister and his wife are getting divorced.",
+            "It is believed the Prime Minister and his wife are getting divorced."
+          ],
+          "explanation": "It is + V3 + that + clause"
         },
         {
-          "id": "ws-24-sec-c-q04",
+          "id": "ws-24-sec-c-q03b",
+          "order": 3,
+          "prompt": "Lots of people believe that the Prime Minister and his wife are getting divorced. → b) The Prime Minister and his wife",
+          "acceptedAnswers": [
+            "The Prime Minister and his wife are believed to be getting divorced."
+          ],
+          "explanation": "continuous: to be + -ing"
+        },
+        {
+          "id": "ws-24-sec-c-q04a",
           "order": 4,
-          "prompt": "Journalists have said that The footballer Gary Johnson earns $ 1 million a year. [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) It",
-            "b) The"
-          ]
+          "prompt": "Journalists have said that the footballer Gary Johnson earns $1 million a year. → a) It",
+          "acceptedAnswers": [
+            "It has been said that the footballer Gary Johnson earns $1 million a year.",
+            "It has been said the footballer Gary Johnson earns $1 million a year.",
+            "It is said that the footballer Gary Johnson earns $1 million a year.",
+            "It is said the footballer Gary Johnson earns $1 million a year."
+          ],
+          "explanation": "It has been said that ..."
+        },
+        {
+          "id": "ws-24-sec-c-q04b",
+          "order": 4,
+          "prompt": "Journalists have said that the footballer Gary Johnson earns $1 million a year. → b) The footballer Gary Johnson",
+          "acceptedAnswers": [
+            "The footballer Gary Johnson has been said to earn $1 million a year.",
+            "The footballer Gary Johnson is said to earn $1 million a year."
+          ],
+          "explanation": "subject + be + V3 + to-infinitive"
         }
       ]
     }

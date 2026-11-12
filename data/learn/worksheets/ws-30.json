@@ -12,185 +12,218 @@
     {
       "id": "ws-30-sec-a",
       "sectionKey": "A",
-      "instruction": "Choose the correct item and underline it:",
+      "instruction": "Choose the correct item from the brackets and write it in the gap:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-30-sec-a-q01",
           "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If [gap] (I move / I’ll move) to Boston, [gap] (I live / I’ll live) on Main Street.",
+          "acceptedAnswers": [
+            "I move / I'll live|I will live"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-a-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If [gap] (you call / you’ll call) your mother, she’ll be very happy.",
+          "acceptedAnswers": [
+            "you call"
+          ],
+          "explanation": "no will in the if-clause"
         },
         {
           "id": "ws-30-sec-a-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If the mechanic fixes our car on time, [gap] (we drive / we’ll drive) to Centerville.",
+          "acceptedAnswers": [
+            "we'll drive|we will drive"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-a-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If [gap] (it rains / it’ll rain) today, we won’t go to the park.",
+          "acceptedAnswers": [
+            "it rains"
+          ],
+          "explanation": "no will in the if-clause"
         },
         {
           "id": "ws-30-sec-a-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If I’m not in a hurry tonight, [gap] (I write / I’ll write) to her.",
+          "acceptedAnswers": [
+            "I'll write|I will write"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-a-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If she [gap] (isn’t / won’t be) sick, she’ll go to school.",
+          "acceptedAnswers": [
+            "isn't"
+          ],
+          "explanation": "no will in the if-clause"
         },
         {
           "id": "ws-30-sec-a-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If [gap] (they’re / they’ll be) tired tomorrow, they [gap] (don’t go / won’t go) to work.",
+          "acceptedAnswers": [
+            "they're / won't go"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-a-q08",
           "order": 8,
-          "prompt": " [gap] If I move / I’ll move to Boston, I live / I’ll live on Main Street. If you call / you’ll call your mother, she’ll be very happy. If the mechanic fixes our car on time, we drive / we’ll drive to Center ville. If it rains / it’ll rain today, we won’t go to the park. If I’m not in a hurry tonight, I write / I’ll write to her. If she isn’t / won’t be sick, she’ll go to school. If they’re / they’ll be tired tomorrow, they don’t go / won’t go to work. If John doesn’t buy a new car, he buys / he’ll buy a motorcycle.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If John doesn’t buy a new car, [gap] (he buys / he’ll buy) a motorcycle.",
+          "acceptedAnswers": [
+            "he'll buy|he will buy"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         }
       ]
     },
     {
       "id": "ws-30-sec-b",
       "sectionKey": "B",
-      "instruction": "Find correct items and complete the following sentences:",
+      "instruction": "Find the correct items and complete the following sentences. (Example: If we go to London, we’ll visit our cousin.)",
       "type": "inline_gap_fill",
       "questions": [
         {
-          "id": "ws-30-sec-b-q09",
-          "order": 9,
-          "prompt": "If I [gap] too much coffee, [gap] get a headache.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-b-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
           "id": "ws-30-sec-b-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If they [gap] their homework tonight, their teacher [gap] happy.",
+          "acceptedAnswers": [
+            "do|finish|complete / will be|'ll be"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-b-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If the weather [gap] good, George [gap] swimming this weekend.",
+          "acceptedAnswers": [
+            "is / will go|'ll go"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-b-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If he [gap] swimming this weekend, [gap] a wonderful time.",
+          "acceptedAnswers": [
+            "goes / he'll have|he will have"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-b-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If you don’t eat your dinner tonight, [gap] hungry.",
+          "acceptedAnswers": [
+            "you'll be|you will be"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-b-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If [gap] tired, they’ll go to sleep early tonight.",
+          "acceptedAnswers": [
+            "they're|they are"
+          ],
+          "explanation": "if + present simple"
         },
         {
           "id": "ws-30-sec-b-q07",
           "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If it [gap], she’ll wear her new raincoat.",
+          "acceptedAnswers": [
+            "rains"
+          ],
+          "explanation": "if + present simple"
         },
         {
           "id": "ws-30-sec-b-q08",
           "order": 8,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If you [gap] too many cookies after dinner tonight, [gap] get a stomachache.",
+          "acceptedAnswers": [
+            "eat / you'll|you will"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
+        },
+        {
+          "id": "ws-30-sec-b-q09",
+          "order": 9,
+          "prompt": "If I [gap] too much coffee, [gap] get a headache.",
+          "acceptedAnswers": [
+            "drink|have / I'll|I will|I"
+          ],
+          "explanation": "first (or zero) conditional"
         }
       ]
     },
     {
       "id": "ws-30-sec-c",
       "sectionKey": "C",
-      "instruction": "Discramble the sentences:",
-      "type": "inline_gap_fill",
+      "instruction": "Unscramble the sentences. (Example: If / she / she’ll / misses / bus / the / the / walk → If she misses the bus, she’ll walk.)",
+      "type": "sentence_building",
       "questions": [
-        {
-          "id": "ws-30-sec-c-q01",
-          "order": 1,
-          "prompt": "If / she / she’ll / misses / bus / the / the / walk [gap] [gap] If she misses the bus, she’ll walk [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-30-sec-c-q02",
           "order": 2,
-          "prompt": "If / he / he’ll / concert / goes / his / suit / the / to / wear [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If / he / he’ll / concert / goes / his / suit / the / to / wear",
+          "acceptedAnswers": [
+            "If he goes to the concert, he will wear his suit.",
+            "If he goes to the concert, he'll wear his suit."
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-c-q03",
           "order": 3,
-          "prompt": "If / she / she’ll / cook / isn’t / dinner / tired [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If / she / she’ll / cook / isn’t / dinner / tired",
+          "acceptedAnswers": [
+            "If she isn't tired, she will cook dinner.",
+            "If she isn't tired, she'll cook dinner."
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-c-q04",
           "order": 4,
-          "prompt": "If / I’m / I’ll / busy / not / you / visit [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If / I’m / I’ll / busy / not / you / visit",
+          "acceptedAnswers": [
+            "If I'm not busy, I will visit you.",
+            "If I'm not busy, I'll visit you."
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-c-q05",
           "order": 5,
-          "prompt": "If / you / you’ll / be / don’t / school / finish / sorry [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If / you / you’ll / be / don’t / school / finish / sorry",
+          "acceptedAnswers": [
+            "If you don't finish school, you will be sorry.",
+            "If you don't finish school, you'll be sorry."
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-c-q06",
           "order": 6,
-          "prompt": "If / he / he’ll / a / get / good / hard / job / works [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If / he / he’ll / a / get / good / hard / job / works",
+          "acceptedAnswers": [
+            "If he works hard, he will get a good job.",
+            "If he works hard, he'll get a good job."
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         }
       ]
     },
@@ -203,462 +236,472 @@
         {
           "id": "ws-30-sec-d-q01",
           "order": 1,
-          "prompt": " [gap]",
+          "prompt": "If the weather is bad tomorrow, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If the weather is bad tomorrow, we will stay at home."
         },
         {
           "id": "ws-30-sec-d-q02",
           "order": 2,
-          "prompt": " [gap]",
+          "prompt": "If we hitchhike to work, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If we hitchhike to work, we will save money."
         },
         {
           "id": "ws-30-sec-d-q03",
           "order": 3,
-          "prompt": " [gap]",
+          "prompt": "If I don’t sleep well tonight, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I don’t sleep well tonight, I will be tired tomorrow."
         },
         {
           "id": "ws-30-sec-d-q04",
           "order": 4,
-          "prompt": " [gap]",
+          "prompt": "If you don’t fix the broken window, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If you don’t fix the broken window, the room will get cold."
         },
         {
           "id": "ws-30-sec-d-q05",
           "order": 5,
-          "prompt": " [gap]",
+          "prompt": "If he doesn’t cut his hair, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If he doesn’t cut his hair, he will look untidy."
         },
         {
           "id": "ws-30-sec-d-q06",
           "order": 6,
-          "prompt": " [gap]",
+          "prompt": "If [gap], they’ll go to a restaurant tonight.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If they finish work early, they’ll go to a restaurant tonight."
         },
         {
           "id": "ws-30-sec-d-q07",
           "order": 7,
-          "prompt": " [gap] If the weather is bad tomorrow, [gap] If we hitchhike to work, [gap] If I don’t sleep well tonight, [gap] If you don’t fix the broken window, [gap] If he doesn’t cut his hair, [gap] If [gap] ,they’ll go to a restaurant tonight. If [gap] , his mother will be happy.",
+          "prompt": "If [gap], his mother will be happy.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If he passes his exams, his mother will be happy."
         },
         {
           "id": "ws-30-sec-d-q08",
           "order": 8,
-          "prompt": "If [gap] , his mother will be sad.",
+          "prompt": "If [gap], his mother will be sad.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If he fails his exams, his mother will be sad."
         },
         {
           "id": "ws-30-sec-d-q09",
           "order": 9,
-          "prompt": "If [gap] , her boss will fire him.",
+          "prompt": "If [gap], her boss will fire him.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If he is late for work again, her boss will fire him."
         },
         {
           "id": "ws-30-sec-d-q10",
           "order": 10,
-          "prompt": "If [gap] , their friends will be angry.",
+          "prompt": "If [gap], their friends will be angry.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If they don’t come to the party, their friends will be angry."
         },
         {
           "id": "ws-30-sec-d-q11",
           "order": 11,
           "prompt": "If I study hard, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I study hard, I will pass the exam."
         },
         {
           "id": "ws-30-sec-d-q12",
           "order": 12,
           "prompt": "If it’s sunny at the weekend, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If it’s sunny at the weekend, we will go to the beach."
         },
         {
           "id": "ws-30-sec-d-q13",
           "order": 13,
           "prompt": "If I become rich, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I become rich, I will buy a big house."
         },
         {
           "id": "ws-30-sec-d-q14",
           "order": 14,
           "prompt": "If I go to London, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I go to London, I will visit the British Museum."
         }
       ]
     },
     {
       "id": "ws-30-sec-e",
       "sectionKey": "E",
-      "instruction": "Match the two halves of the sentences:",
+      "instruction": "Sam is thinking about his camping holiday with Andy. Match the two halves of the sentences. (Example: 1 – d: If it’s sunny, we’ll sit outside.)",
       "type": "matching",
+      "contextText": "a) we’ll make a fire.\nb) we’ll be able to see the stars.\nc) we’ll go skating.\nd) we’ll sit outside.\ne) we’ll need an umbrella.\nf) we’ll go swimming.",
       "questions": [
-        {
-          "id": "ws-30-sec-e-q01",
-          "order": 1,
-          "prompt": "If it’s sunny,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-30-sec-e-q02",
           "order": 2,
-          "prompt": "If it rains,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If it rains, [gap]",
+          "acceptedAnswers": [
+            "e"
+          ],
+          "explanation": "rain → umbrella"
         },
         {
           "id": "ws-30-sec-e-q03",
           "order": 3,
-          "prompt": "If the sky is clear,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If the sky is clear, [gap]",
+          "acceptedAnswers": [
+            "b"
+          ],
+          "explanation": "clear sky → see the stars"
         },
         {
           "id": "ws-30-sec-e-q04",
           "order": 4,
-          "prompt": "If the lake freezes,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If the lake freezes, [gap]",
+          "acceptedAnswers": [
+            "c"
+          ],
+          "explanation": "frozen lake → skating"
         },
         {
           "id": "ws-30-sec-e-q05",
           "order": 5,
-          "prompt": "If the sea is clean,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If the sea is clean, [gap]",
+          "acceptedAnswers": [
+            "f"
+          ],
+          "explanation": "clean sea → swimming"
         },
         {
           "id": "ws-30-sec-e-q06",
           "order": 6,
-          "prompt": "If we get cold,",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-e-q01",
-          "order": 1,
-          "prompt": "[gap] d…",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-e-q02",
-          "order": 2,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "a) we’ll",
-            "b) we’ll",
-            "c) we’ll",
-            "d) we’ll"
-          ]
-        },
-        {
-          "id": "ws-30-sec-e-q03",
-          "order": 3,
-          "prompt": "[gap] 4 [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-e-q05",
-          "order": 5,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-e-q06",
-          "order": 6,
-          "prompt": "[gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If we get cold, [gap]",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "explanation": "cold → make a fire"
         }
       ]
     },
     {
       "id": "ws-30-sec-f",
       "sectionKey": "F",
-      "instruction": "Complete the sentences with these phrases:",
+      "instruction": "Complete the sentences with the phrases in the box. (Example: If you practiced more, your English would improve.)",
       "type": "inline_gap_fill",
+      "wordBank": [
+        "If I had a motorbike",
+        "If I lost all my money",
+        "your English would improve",
+        "If Peter ate less",
+        "I’m sure she’d tell me",
+        "If I were a famous model",
+        "my uncle would stop too",
+        "my English teacher would be surprised"
+      ],
       "questions": [
-        {
-          "id": "ws-30-sec-f-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-30-sec-f-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap], it would be easier to go and visit my friends.",
+          "acceptedAnswers": [
+            "If I had a motorbike"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-f-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap], I would feel miserable.",
+          "acceptedAnswers": [
+            "If I lost all my money"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-f-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If I started writing poetry, [gap].",
+          "acceptedAnswers": [
+            "my English teacher would be surprised"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-f-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap], he wouldn’t be so fat.",
+          "acceptedAnswers": [
+            "If Peter ate less"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-f-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If my little sister did something wrong, [gap].",
+          "acceptedAnswers": [
+            "I'm sure she'd tell me|I'm sure she would tell me"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-f-q07",
           "order": 7,
-          "prompt": " [gap] If you practiced more, [gap] your English would improve [gap] [gap] , it would be easier to go and visit my friends. [gap] , I would feel miserable. If I started writing poetry, [gap] [gap] , he wouldn’t be so fat. If my little sister did something wrong, [gap] [gap] , people would see my photo everywhere.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "[gap], people would see my photo everywhere.",
+          "acceptedAnswers": [
+            "If I were a famous model|If I was a famous model"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         }
       ]
     },
     {
       "id": "ws-30-sec-g",
       "sectionKey": "G",
-      "instruction": "Complete the sentences. Use the correct form of the verbs in brackets:",
+      "instruction": "Complete the sentences. Use the correct form of the verbs in brackets. (Example: I’m not ill, but if I were ill, I wouldn’t go to school. (be / go))",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-30-sec-g-q01",
           "order": 1,
-          "prompt": "The weather report says there will be snow tomorrow. If it [gap] , I [gap] at home. (snow / stay)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The weather report says there will be snow tomorrow. If it [gap] (snow), I [gap] (stay) at home.",
+          "acceptedAnswers": [
+            "snows / will stay|'ll stay"
+          ],
+          "explanation": "likely future: first conditional"
         },
         {
           "id": "ws-30-sec-g-q02",
           "order": 2,
-          "prompt": "Do you need some money? Let me look in my pockets. If I [gap] some, I [gap] you some. (have / lend)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Do you need some money? Let me look in my pockets. If I [gap] (have) some, I [gap] (lend) you some.",
+          "acceptedAnswers": [
+            "have / will lend|'ll lend"
+          ],
+          "explanation": "real possibility: first conditional"
         },
         {
           "id": "ws-30-sec-g-q03",
           "order": 3,
-          "prompt": "No, sorry. I haven’t got any money with me. But you know I [gap] it to you if I [gap] any. (give / have)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "No, sorry. I haven’t got any money with me. But you know I [gap] (give) it to you if I [gap] (have) any.",
+          "acceptedAnswers": [
+            "would give|'d give / had"
+          ],
+          "explanation": "unreal present: second conditional"
         },
         {
           "id": "ws-30-sec-g-q04",
           "order": 4,
-          "prompt": "I’m sure of it. You [gap] the test next week if you [gap] [gap] hard. (pass / study)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’m sure of it. You [gap] (pass) the test next week if you [gap] (study) hard.",
+          "acceptedAnswers": [
+            "will pass|'ll pass / study"
+          ],
+          "explanation": "likely future: first conditional"
         },
         {
           "id": "ws-30-sec-g-q05",
           "order": 5,
-          "prompt": "Would you like to go to the cinema? If you [gap] to go, I [gap] with you. (want / come)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Would you like to go to the cinema? If you [gap] (want) to go, I [gap] (come) with you.",
+          "acceptedAnswers": [
+            "want / will come|'ll come"
+          ],
+          "explanation": "real possibility: first conditional"
         }
       ]
     },
     {
       "id": "ws-30-sec-h",
       "sectionKey": "H",
-      "instruction": "What would you do in each situation? Write UNREAL PRESENT situations.",
-      "type": "inline_gap_fill",
+      "instruction": "What would you do in each situation? Write UNREAL PRESENT (second conditional) sentences using the phrases in the box. (Example: You find a fly in your soup. → If I found a fly in my soup, I would complain to the manager.)",
+      "type": "sentence_rewrite",
+      "wordBank": [
+        "call an ambulance",
+        "complain to the manager",
+        "run away",
+        "try to catch it",
+        "ring the police",
+        "walk to the nearest garage to get some"
+      ],
       "questions": [
-        {
-          "id": "ws-30-sec-h-q01",
-          "order": 1,
-          "prompt": "You find a fly in your soup. If I found a fly in my soup, I would complain to the manager. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-30-sec-h-q02",
           "order": 2,
-          "prompt": "You see a burglar breaking into your house. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You see a burglar breaking into your house.",
+          "acceptedAnswers": [
+            "If I saw a burglar breaking into my house, I would ring the police.",
+            "If I saw a burglar breaking into my house, I'd ring the police.",
+            "I would ring the police if I saw a burglar breaking into my house.",
+            "I'd ring the police if I saw a burglar breaking into my house."
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-h-q03",
           "order": 3,
-          "prompt": "You see a mouse in your kitchen. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You see a mouse in your kitchen.",
+          "acceptedAnswers": [
+            "If I saw a mouse in my kitchen, I would try to catch it.",
+            "If I saw a mouse in my kitchen, I'd try to catch it.",
+            "I would try to catch it if I saw a mouse in my kitchen.",
+            "I'd try to catch it if I saw a mouse in my kitchen."
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-h-q04",
           "order": 4,
-          "prompt": "Your car runs out of petrol. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Your car runs out of petrol.",
+          "acceptedAnswers": [
+            "If my car ran out of petrol, I would walk to the nearest garage to get some.",
+            "If my car ran out of petrol, I'd walk to the nearest garage to get some.",
+            "I would walk to the nearest garage to get some if my car ran out of petrol.",
+            "I'd walk to the nearest garage to get some if my car ran out of petrol."
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-h-q05",
           "order": 5,
-          "prompt": "You see an accident. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You see an accident.",
+          "acceptedAnswers": [
+            "If I saw an accident, I would call an ambulance.",
+            "If I saw an accident, I'd call an ambulance.",
+            "I would call an ambulance if I saw an accident.",
+            "I'd call an ambulance if I saw an accident."
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-h-q06",
           "order": 6,
-          "prompt": "You see a ghost in your room. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "You see a ghost in your room.",
+          "acceptedAnswers": [
+            "If I saw a ghost in my room, I would run away.",
+            "If I saw a ghost in my room, I'd run away.",
+            "I would run away if I saw a ghost in my room.",
+            "I'd run away if I saw a ghost in my room."
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         }
       ]
     },
     {
       "id": "ws-30-sec-i",
       "sectionKey": "I",
-      "instruction": "Put the verbs in brackets into the correct tense:",
+      "instruction": "Put the verbs in brackets into the correct tense. (Example: Sarah is a bored teenager. If she (join) a club → joined)",
       "type": "verb_conjugation",
       "questions": [
         {
           "id": "ws-30-sec-i-q01",
           "order": 1,
-          "prompt": "Sarah is a bored teenager. If she [gap] joined… (join) a club, she [gap] (make)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "If she joined a club, she [gap] (make) more friends.",
+          "acceptedAnswers": [
+            "would make|'d make"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-i-q02",
           "order": 2,
-          "prompt": "more friends. She [gap] (enjoy) herself if she [gap] (go)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She [gap] (enjoy) herself if she [gap] (go) out more.",
+          "acceptedAnswers": [
+            "would enjoy|'d enjoy / went"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-i-q03",
           "order": 3,
-          "prompt": "out more. Her schoolwork is suffering too. If she [gap] (study) more,",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Her schoolwork is suffering too. If she [gap] (study) more, she [gap] (have) better marks and she [gap] (enter) university.",
+          "acceptedAnswers": [
+            "studied / would have|'d have / would enter|could enter"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-i-q04",
           "order": 4,
-          "prompt": "she [gap] (have) better marks and she [gap] (enter)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Unfortunately, she is becoming overweight. She [gap] (feel) fitter if she [gap] (start) swimming,",
+          "acceptedAnswers": [
+            "would feel|'d feel / started"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-i-q05",
           "order": 5,
-          "prompt": "university. Unfortunately, she is becoming overweight. She [gap] (feel)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-i-q06",
-          "order": 6,
-          "prompt": "fitter if she [gap] (start) swimming, and she [gap] (get)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-30-sec-i-q07",
-          "order": 7,
-          "prompt": "thinner if she [gap] (stop) eating so much chocolate.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "and she [gap] (get) thinner if she [gap] (stop) eating so much chocolate.",
+          "acceptedAnswers": [
+            "would get|'d get / stopped"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         }
       ]
     },
     {
       "id": "ws-30-sec-j",
       "sectionKey": "J",
-      "instruction": "Read these situations. Say how you would feel:",
-      "type": "inline_gap_fill",
+      "instruction": "Read these situations. Say how you would feel. (Example: your boyfriend / girlfriend leaves you → If my girlfriend left me, I would feel miserable.)",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-30-sec-j-q01",
           "order": 1,
-          "prompt": "you have nothing to do [gap]",
+          "prompt": "you have nothing to do",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I had nothing to do, I would feel bored."
         },
         {
           "id": "ws-30-sec-j-q02",
           "order": 2,
-          "prompt": "you are lost in a foreign country [gap]",
+          "prompt": "you are lost in a foreign country",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I were lost in a foreign country, I would feel frightened."
         },
         {
           "id": "ws-30-sec-j-q03",
           "order": 3,
-          "prompt": "your pet dies [gap]",
+          "prompt": "your pet dies",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If my pet died, I would feel very sad."
         },
         {
           "id": "ws-30-sec-j-q04",
           "order": 4,
-          "prompt": "you see an enormous spider in the bathroom [gap]",
+          "prompt": "you see an enormous spider in the bathroom",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I saw an enormous spider in the bathroom, I would feel terrified."
         },
         {
           "id": "ws-30-sec-j-q05",
           "order": 5,
-          "prompt": "you split your jeans in the street [gap]",
+          "prompt": "you split your jeans in the street",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I split my jeans in the street, I would feel embarrassed."
         },
         {
           "id": "ws-30-sec-j-q06",
           "order": 6,
-          "prompt": "someone steals your coat [gap]",
+          "prompt": "someone steals your coat",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If someone stole my coat, I would feel angry."
         },
         {
           "id": "ws-30-sec-j-q07",
           "order": 7,
-          "prompt": "you fail an important test [gap]",
+          "prompt": "you fail an important test",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I failed an important test, I would feel disappointed."
         },
         {
           "id": "ws-30-sec-j-q08",
           "order": 8,
-          "prompt": "you win some money in a competition [gap]",
+          "prompt": "you win some money in a competition",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I won some money in a competition, I would feel happy."
         }
       ]
     },
@@ -672,169 +715,217 @@
           "id": "ws-30-sec-k-q01",
           "order": 1,
           "prompt": "The teacher will be very angry if you [gap] (not do) your homework.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "don't do"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q02",
           "order": 2,
           "prompt": "If he [gap] (tell) me, I could help him.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "told"
+          ],
+          "explanation": "second conditional: if + past"
         },
         {
           "id": "ws-30-sec-k-q03",
           "order": 3,
           "prompt": "If you don’t water the flowers, they [gap] (die).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "will die|'ll die"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q04",
           "order": 4,
           "prompt": "If you didn’t water the flowers, they [gap] (die).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would die|'d die"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-k-q05",
           "order": 5,
           "prompt": "I [gap] (come) if I had time.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would come|'d come"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-k-q06",
           "order": 6,
           "prompt": "If you don’t hurry, you [gap] (miss) the bus.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "will miss|'ll miss"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q07",
           "order": 7,
           "prompt": "If I [gap] (be) you, I wouldn’t buy that car.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "advice: If I were you"
         },
         {
           "id": "ws-30-sec-k-q08",
           "order": 8,
           "prompt": "He will play tennis if the weather [gap] (be) good.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "is"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q09",
           "order": 9,
           "prompt": "I would be very happy if she [gap] (be) my sister.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were|was"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-k-q10",
           "order": 10,
           "prompt": "She could win the race if she [gap] (try).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "tried"
+          ],
+          "explanation": "second conditional: if + past"
         },
         {
           "id": "ws-30-sec-k-q11",
           "order": 11,
           "prompt": "If he [gap] (go) to bed early, he will get up early.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "goes"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q12",
           "order": 12,
           "prompt": "If he touches this wire, he [gap] (get) a shock.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "will get|'ll get|gets"
+          ],
+          "explanation": "first (or zero) conditional"
         },
         {
           "id": "ws-30-sec-k-q13",
           "order": 13,
           "prompt": "You will get wet if it [gap] (rain).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "rains"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q14",
           "order": 14,
           "prompt": "If I knew, I [gap] (come) earlier.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would come|'d come|would have come"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-k-q15",
           "order": 15,
           "prompt": "I wouldn’t say it if I [gap] (be) you.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "were"
+          ],
+          "explanation": "If I were you"
         },
         {
           "id": "ws-30-sec-k-q16",
           "order": 16,
           "prompt": "What will you do if you [gap] (get) a bad mark?",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "get"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q17",
           "order": 17,
           "prompt": "If she [gap] (wear) a necklace, her dress will look better.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "wears"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q18",
           "order": 18,
           "prompt": "If you go near the dog, it [gap] (bite) you.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "will bite|'ll bite"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q19",
           "order": 19,
           "prompt": "Bodrum [gap] (be) ideal for a holiday if it weren’t so crowded.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "would be"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         },
         {
           "id": "ws-30-sec-k-q20",
           "order": 20,
           "prompt": "He will be ill if he [gap] (eat) so much.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "eats"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q21",
           "order": 21,
           "prompt": "If she [gap] (read) the book carefully, she will understand it.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "reads"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q22",
           "order": 22,
           "prompt": "The children can stay up late if they [gap] (be) good.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "are"
+          ],
+          "explanation": "if + present, can + verb"
         },
         {
           "id": "ws-30-sec-k-q23",
           "order": 23,
           "prompt": "If the dinner isn’t ready, I [gap] (go) out.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "will go|'ll go"
+          ],
+          "explanation": "first conditional: if + present, will + verb"
         },
         {
           "id": "ws-30-sec-k-q24",
           "order": 24,
           "prompt": "We would die if the plane [gap] (crash).",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "crashed"
+          ],
+          "explanation": "second conditional: if + past, would + verb"
         }
       ]
     },
@@ -849,105 +940,105 @@
           "order": 1,
           "prompt": "If you drive very fast, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If you drive very fast, you will have an accident."
         },
         {
           "id": "ws-30-sec-l-q02",
           "order": 2,
-          "prompt": "Would you give me some money if [gap]",
+          "prompt": "Would you give me some money if [gap]?",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Would you give me some money if I asked you?"
         },
         {
           "id": "ws-30-sec-l-q03",
           "order": 3,
           "prompt": "If she were my sister, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If she were my sister, I would help her."
         },
         {
           "id": "ws-30-sec-l-q04",
           "order": 4,
           "prompt": "I would spend every winter in Miami if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "I would spend every winter in Miami if I had enough money."
         },
         {
           "id": "ws-30-sec-l-q05",
           "order": 5,
           "prompt": "If they have time tomorrow, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If they have time tomorrow, they will visit us."
         },
         {
           "id": "ws-30-sec-l-q06",
           "order": 6,
           "prompt": "Don’t give him anything if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "Don’t give him anything if he asks for money."
         },
         {
           "id": "ws-30-sec-l-q07",
           "order": 7,
           "prompt": "We would go to the cinema if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "We would go to the cinema if we had more time."
         },
         {
           "id": "ws-30-sec-l-q08",
           "order": 8,
           "prompt": "If John worked harder, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If John worked harder, he would pass his exams."
         },
         {
           "id": "ws-30-sec-l-q09",
           "order": 9,
           "prompt": "They would find me if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "They would find me if they looked for me."
         },
         {
           "id": "ws-30-sec-l-q10",
           "order": 10,
           "prompt": "If I had a lot of money, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I had a lot of money, I would travel around the world."
         },
         {
           "id": "ws-30-sec-l-q11",
           "order": 11,
           "prompt": "You could live more comfortably if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "You could live more comfortably if you earned more money."
         },
         {
           "id": "ws-30-sec-l-q12",
           "order": 12,
           "prompt": "If she were a good girl, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If she were a good girl, she would help her mother."
         },
         {
           "id": "ws-30-sec-l-q13",
           "order": 13,
           "prompt": "If she goes to his office, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If she goes to his office, she will see him."
         },
         {
           "id": "ws-30-sec-l-q14",
           "order": 14,
           "prompt": "She would enjoy the party if [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "She would enjoy the party if she knew more people."
         },
         {
           "id": "ws-30-sec-l-q15",
           "order": 15,
           "prompt": "If I weren’t busy, [gap]",
           "acceptedAnswers": [],
-          "explanation": ""
+          "modelAnswer": "If I weren’t busy, I would help you."
         }
       ]
     }

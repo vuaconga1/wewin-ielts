@@ -12,398 +12,103 @@
     {
       "id": "ws-45-sec-a",
       "sectionKey": "A",
-      "instruction": "Make sentences BOTH ….AND…. / EITHER ….OR …. / NEITHER …. NOR …. :",
-      "type": "inline_gap_fill",
+      "instruction": "Make sentences with BOTH … AND / EITHER … OR / NEITHER … NOR. (Examples: Tom was late. So was Ann. → Both Tom and Ann were late. He didn't write. He didn't telephone. → He neither wrote nor telephoned.)",
+      "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-45-sec-a-q01",
-          "order": 1,
-          "prompt": "The hotel wasn’t clean. And it wasn’t comfortable. [gap] The hotel was [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q02",
-          "order": 2,
-          "prompt": "It was a very boring movie. It was very long too. [gap] The movie was [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q03",
-          "order": 3,
-          "prompt": "Is that man’s name Richard? Or is it Robert? It’s one of the two. [gap] That man’s name [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q04",
-          "order": 4,
-          "prompt": "I don’t have the time to take a vacation. And I don’t have the money. [gap] I have [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q05",
-          "order": 5,
-          "prompt": "We can leave today or we can leave tomorrow- whichever you prefer. [gap] We [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q06",
-          "order": 6,
-          "prompt": "He gave up his job because he needed a change. Also because the pay was low. [gap] He gave up his job both [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q07",
-          "order": 7,
-          "prompt": "Laura doesn’t smoke. And she doesn’t eat meat. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-a-q08",
-          "order": 8,
-          "prompt": "The front of the house needs painting. The back needs painting too. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-45-sec-a-q01", "order": 1, "prompt": "The hotel wasn't clean. And it wasn't comfortable. → Start with: The hotel was", "acceptedAnswers": ["The hotel was neither clean nor comfortable."], "explanation": "neither + adjective + nor + adjective" },
+        { "id": "ws-45-sec-a-q02", "order": 2, "prompt": "It was a very boring movie. It was very long too. → Start with: The movie was", "acceptedAnswers": ["The movie was both very boring and very long.", "The movie was both boring and long.", "The movie was both very boring and long."], "explanation": "both + adjective + and + adjective" },
+        { "id": "ws-45-sec-a-q03", "order": 3, "prompt": "Is that man's name Richard? Or is it Robert? It's one of the two. → Start with: That man's name", "acceptedAnswers": ["That man's name is either Richard or Robert."], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-a-q04", "order": 4, "prompt": "I don't have the time to take a vacation. And I don't have the money. → Start with: I have", "acceptedAnswers": ["I have neither the time nor the money to take a vacation.", "I have neither time nor money to take a vacation.", "I have neither the time nor the money for a vacation."], "explanation": "neither + noun + nor + noun" },
+        { "id": "ws-45-sec-a-q05", "order": 5, "prompt": "We can leave today or we can leave tomorrow - whichever you prefer. → Start with: We", "acceptedAnswers": ["We can leave either today or tomorrow.", "We can either leave today or tomorrow.", "We can either leave today or leave tomorrow."], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-a-q06", "order": 6, "prompt": "He gave up his job because he needed a change. Also because the pay was low. → Start with: He gave up his job both", "acceptedAnswers": ["He gave up his job both because he needed a change and because the pay was low."], "explanation": "both because … and because …" },
+        { "id": "ws-45-sec-a-q07", "order": 7, "prompt": "Laura doesn't smoke. And she doesn't eat meat.", "acceptedAnswers": ["Laura neither smokes nor eats meat."], "explanation": "neither + verb + nor + verb" },
+        { "id": "ws-45-sec-a-q08", "order": 8, "prompt": "The front of the house needs painting. The back needs painting too.", "acceptedAnswers": ["Both the front and the back of the house need painting.", "Both the front of the house and the back need painting.", "Both the front and back of the house need painting."], "explanation": "both A and B + plural verb" }
       ]
     },
     {
-      "id": "ws-45-sec-b",
-      "sectionKey": "B",
-      "instruction": "Answer the questions. Use paired conjunctions.",
-      "type": "inline_gap_fill",
+      "id": "ws-45-sec-b-a",
+      "sectionKey": "B (a)",
+      "instruction": "Answer the questions. Use paired conjunctions: BOTH … AND. (Example: You have met his father. Have you met his mother? → Yes, I have met both his father and his mother.)",
+      "type": "sentence_combine",
       "questions": [
-        {
-          "id": "ws-45-sec-b-q01",
-          "order": 1,
-          "prompt": "You have met his father. Have you met his mother? [gap] Yes, I have met both his father and his mother.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q02",
-          "order": 2,
-          "prompt": "The driver was injured in the accident. Was the passenger injured in the accident? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q03",
-          "order": 3,
-          "prompt": "Wheat is grown in Kansas. Is corn grown in Kansas? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q04",
-          "order": 4,
-          "prompt": "He buys used cars. Does he sell used cars? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q05",
-          "order": 5,
-          "prompt": "You had lunch with your friends. Did you have dinner with them? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q06",
-          "order": 6,
-          "prompt": "The city suffers from air pollution. Does it suffer from water pollution? [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "b) Use"
-          ]
-        },
-        {
-          "id": "ws-45-sec-b-q01",
-          "order": 1,
-          "prompt": "I know you are studying math. Are you studying chemistry too? [gap] Yes, I’m studying not only math but also chemistry.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q02",
-          "order": 2,
-          "prompt": "I know his cousin is living with him. Is his mother-in-low living with him too? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q03",
-          "order": 3,
-          "prompt": "I know your country has good universities. Does the United States have good [gap] universities too?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q04",
-          "order": 4,
-          "prompt": "I know you lost your wallet. Did you lose your keys too? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q05",
-          "order": 5,
-          "prompt": "I know she goes to school. Does she have a full-time job too? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q06",
-          "order": 6,
-          "prompt": "I know he bought a coat. Did he buy a new pair of shoes too? [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "c) Use"
-          ]
-        },
-        {
-          "id": "ws-45-sec-b-q01",
-          "order": 1,
-          "prompt": "John has your book, or Mary has your book. Is that right? [gap] Yes, either John or Mary has my book.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q02",
-          "order": 2,
-          "prompt": "You’re going to give your friend a book for her birthday, or you’re going to give her [gap] a pen. Is that right?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q03",
-          "order": 3,
-          "prompt": "Your sister will meet you at the airport, or your brother will meet you there. Right? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q04",
-          "order": 4,
-          "prompt": "They can go swimming, or they can play tennis. Is that right? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q05",
-          "order": 5,
-          "prompt": "You’re going to vote for Mr. Smith, or you’re going to vote for Mr. Jones. Right? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q06",
-          "order": 6,
-          "prompt": "You’ll go to New Orleans for your vacation, or you’ll go to Miami. Right? [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) Use"
-          ]
-        },
-        {
-          "id": "ws-45-sec-b-q01",
-          "order": 1,
-          "prompt": "He doesn’t like coffee. Does he like tea? [gap] No, he likes neither coffee nor tea.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q02",
-          "order": 2,
-          "prompt": "Her husband doesn’t speak English. Do her children speak English? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q03",
-          "order": 3,
-          "prompt": "The students aren’t wide awake today. Is the reacher wide awake today? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q04",
-          "order": 4,
-          "prompt": "They don’t have a refrigerator for their new apartment. Do they have a stove? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q05",
-          "order": 5,
-          "prompt": "She doesn’t enjoy hunting. Does she enjoy fishing? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q06",
-          "order": 6,
-          "prompt": "The result wasn’t good. Was the result bad? [gap] e) Combine the following into sentences that contain parallel structure. Used appropriate paired conjunctions: BOTH…AND / NOT ONLY… BUT ALSO / EITHER… OR / NEITHER… NOR:",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q01",
-          "order": 1,
-          "prompt": "He does not have a pen. He does not have paper. [gap] He has neither a pen nor paper.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q02",
-          "order": 2,
-          "prompt": "Ron enjoys horseback riding. Bob enjoys horseback riding. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q03",
-          "order": 3,
-          "prompt": "You can have tea, or you can have coffee. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q04",
-          "order": 4,
-          "prompt": "Arthur is not in class today. Ricardo is not in class today. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q05",
-          "order": 5,
-          "prompt": "Arthur is absent. Ricardo is absent. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q06",
-          "order": 6,
-          "prompt": "We can fix dinner for them here, or we can take them to a restaurant. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q07",
-          "order": 7,
-          "prompt": "She wants to buy a Chevrolet, or she wants to buy a Toyota. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q08",
-          "order": 8,
-          "prompt": "The leopard faces extinction. The tiger faces extinction. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q09",
-          "order": 9,
-          "prompt": "The library does not have the book I need. The bookstore does not have the book [gap] I need.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-b-q10",
-          "order": 10,
-          "prompt": "We could fly, or we could take the train. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-45-sec-b-a-q02", "order": 2, "prompt": "The driver was injured in the accident. Was the passenger injured in the accident?", "acceptedAnswers": ["Yes, both the driver and the passenger were injured in the accident.", "Yes, both the driver and the passenger were injured."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-b-a-q03", "order": 3, "prompt": "Wheat is grown in Kansas. Is corn grown in Kansas?", "acceptedAnswers": ["Yes, both wheat and corn are grown in Kansas."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-b-a-q04", "order": 4, "prompt": "He buys used cars. Does he sell used cars?", "acceptedAnswers": ["Yes, he both buys and sells used cars."], "explanation": "both + verb + and + verb" },
+        { "id": "ws-45-sec-b-a-q05", "order": 5, "prompt": "You had lunch with your friends. Did you have dinner with them?", "acceptedAnswers": ["Yes, I had both lunch and dinner with my friends.", "Yes, I had both lunch and dinner with them."], "explanation": "both + noun + and + noun" },
+        { "id": "ws-45-sec-b-a-q06", "order": 6, "prompt": "The city suffers from air pollution. Does it suffer from water pollution?", "acceptedAnswers": ["Yes, the city suffers from both air pollution and water pollution.", "Yes, it suffers from both air pollution and water pollution.", "Yes, the city suffers from both air and water pollution.", "Yes, it suffers from both air and water pollution."], "explanation": "both + noun + and + noun" }
+      ]
+    },
+    {
+      "id": "ws-45-sec-b-b",
+      "sectionKey": "B (b)",
+      "instruction": "Answer the questions. Use paired conjunctions: NOT ONLY … BUT ALSO. (Example: I know you are studying math. Are you studying chemistry too? → Yes, I'm studying not only math but also chemistry.)",
+      "type": "sentence_combine",
+      "questions": [
+        { "id": "ws-45-sec-b-b-q02", "order": 2, "prompt": "I know his cousin is living with him. Is his mother-in-law living with him too?", "acceptedAnswers": ["Yes, not only his cousin but also his mother-in-law is living with him."], "explanation": "not only A but also B: verb agrees with B" },
+        { "id": "ws-45-sec-b-b-q03", "order": 3, "prompt": "I know your country has good universities. Does the United States have good universities too?", "acceptedAnswers": ["Yes, not only my country but also the United States has good universities."], "explanation": "not only A but also B: verb agrees with B" },
+        { "id": "ws-45-sec-b-b-q04", "order": 4, "prompt": "I know you lost your wallet. Did you lose your keys too?", "acceptedAnswers": ["Yes, I lost not only my wallet but also my keys."], "explanation": "not only + noun + but also + noun" },
+        { "id": "ws-45-sec-b-b-q05", "order": 5, "prompt": "I know she goes to school. Does she have a full-time job too?", "acceptedAnswers": ["Yes, she not only goes to school but also has a full-time job."], "explanation": "not only + verb + but also + verb" },
+        { "id": "ws-45-sec-b-b-q06", "order": 6, "prompt": "I know he bought a coat. Did he buy a new pair of shoes too?", "acceptedAnswers": ["Yes, he bought not only a coat but also a new pair of shoes."], "explanation": "not only + noun + but also + noun" }
+      ]
+    },
+    {
+      "id": "ws-45-sec-b-c",
+      "sectionKey": "B (c)",
+      "instruction": "Answer the questions. Use paired conjunctions: EITHER … OR. (Example: John has your book, or Mary has your book. Is that right? → Yes, either John or Mary has my book.)",
+      "type": "sentence_combine",
+      "questions": [
+        { "id": "ws-45-sec-b-c-q02", "order": 2, "prompt": "You're going to give your friend a book for her birthday, or you're going to give her a pen. Is that right?", "acceptedAnswers": ["Yes, I'm going to give her either a book or a pen.", "Yes, I'm going to give my friend either a book or a pen.", "Yes, I'm going to give her either a book or a pen for her birthday.", "Yes, I'm going to give my friend either a book or a pen for her birthday."], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-b-c-q03", "order": 3, "prompt": "Your sister will meet you at the airport, or your brother will meet you there. Right?", "acceptedAnswers": ["Yes, either my sister or my brother will meet me at the airport.", "Yes, either my sister or my brother will meet me there."], "explanation": "either A or B: verb agrees with B" },
+        { "id": "ws-45-sec-b-c-q04", "order": 4, "prompt": "They can go swimming, or they can play tennis. Is that right?", "acceptedAnswers": ["Yes, they can either go swimming or play tennis."], "explanation": "either + verb + or + verb" },
+        { "id": "ws-45-sec-b-c-q05", "order": 5, "prompt": "You're going to vote for Mr. Smith, or you're going to vote for Mr. Jones. Right?", "acceptedAnswers": ["Yes, I'm going to vote for either Mr. Smith or Mr. Jones.", "Yes, I'm going to vote either for Mr. Smith or for Mr. Jones."], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-b-c-q06", "order": 6, "prompt": "You'll go to New Orleans for your vacation, or you'll go to Miami. Right?", "acceptedAnswers": ["Yes, I'll go to either New Orleans or Miami for my vacation.", "Yes, I'll go either to New Orleans or to Miami for my vacation.", "Yes, I'll go to either New Orleans or Miami."], "explanation": "either A or B: parallel structure" }
+      ]
+    },
+    {
+      "id": "ws-45-sec-b-d",
+      "sectionKey": "B (d)",
+      "instruction": "Answer the questions. Use paired conjunctions: NEITHER … NOR. (Example: He doesn't like coffee. Does he like tea? → No, he likes neither coffee nor tea.)",
+      "type": "sentence_combine",
+      "questions": [
+        { "id": "ws-45-sec-b-d-q02", "order": 2, "prompt": "Her husband doesn't speak English. Do her children speak English?", "acceptedAnswers": ["No, neither her husband nor her children speak English."], "explanation": "neither A nor B: verb agrees with B" },
+        { "id": "ws-45-sec-b-d-q03", "order": 3, "prompt": "The students aren't wide awake today. Is the teacher wide awake today?", "acceptedAnswers": ["No, neither the students nor the teacher is wide awake today.", "No, neither the teacher nor the students are wide awake today."], "explanation": "neither A nor B: verb agrees with B" },
+        { "id": "ws-45-sec-b-d-q04", "order": 4, "prompt": "They don't have a refrigerator for their new apartment. Do they have a stove?", "acceptedAnswers": ["No, they have neither a refrigerator nor a stove for their new apartment.", "No, they have neither a refrigerator nor a stove."], "explanation": "neither + noun + nor + noun" },
+        { "id": "ws-45-sec-b-d-q05", "order": 5, "prompt": "She doesn't enjoy hunting. Does she enjoy fishing?", "acceptedAnswers": ["No, she enjoys neither hunting nor fishing."], "explanation": "neither + gerund + nor + gerund" },
+        { "id": "ws-45-sec-b-d-q06", "order": 6, "prompt": "The result wasn't good. Was the result bad?", "acceptedAnswers": ["No, the result was neither good nor bad.", "No, it was neither good nor bad."], "explanation": "neither + adjective + nor + adjective" }
+      ]
+    },
+    {
+      "id": "ws-45-sec-b-e",
+      "sectionKey": "B (e)",
+      "instruction": "Combine the following into sentences that contain parallel structure. Use appropriate paired conjunctions: BOTH … AND / NOT ONLY … BUT ALSO / EITHER … OR / NEITHER … NOR. (Example: He does not have a pen. He does not have paper. → He has neither a pen nor paper.)",
+      "type": "sentence_combine",
+      "questions": [
+        { "id": "ws-45-sec-b-e-q02", "order": 2, "prompt": "Ron enjoys horseback riding. Bob enjoys horseback riding.", "acceptedAnswers": ["Both Ron and Bob enjoy horseback riding.", "Not only Ron but also Bob enjoys horseback riding."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-b-e-q03", "order": 3, "prompt": "You can have tea, or you can have coffee.", "acceptedAnswers": ["You can have either tea or coffee.", "You can either have tea or coffee."], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-b-e-q04", "order": 4, "prompt": "Arthur is not in class today. Ricardo is not in class today.", "acceptedAnswers": ["Neither Arthur nor Ricardo is in class today."], "explanation": "neither A nor B: verb agrees with B" },
+        { "id": "ws-45-sec-b-e-q05", "order": 5, "prompt": "Arthur is absent. Ricardo is absent.", "acceptedAnswers": ["Both Arthur and Ricardo are absent.", "Not only Arthur but also Ricardo is absent."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-b-e-q06", "order": 6, "prompt": "We can fix dinner for them here, or we can take them to a restaurant.", "acceptedAnswers": ["We can either fix dinner for them here or take them to a restaurant."], "explanation": "either + verb phrase + or + verb phrase" },
+        { "id": "ws-45-sec-b-e-q07", "order": 7, "prompt": "She wants to buy a Chevrolet, or she wants to buy a Toyota.", "acceptedAnswers": ["She wants to buy either a Chevrolet or a Toyota."], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-b-e-q08", "order": 8, "prompt": "The leopard faces extinction. The tiger faces extinction.", "acceptedAnswers": ["Both the leopard and the tiger face extinction.", "Not only the leopard but also the tiger faces extinction."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-b-e-q09", "order": 9, "prompt": "The library does not have the book I need. The bookstore does not have the book I need.", "acceptedAnswers": ["Neither the library nor the bookstore has the book I need."], "explanation": "neither A nor B: verb agrees with B" },
+        { "id": "ws-45-sec-b-e-q10", "order": 10, "prompt": "We could fly, or we could take the train.", "acceptedAnswers": ["We could either fly or take the train."], "explanation": "either + verb + or + verb" }
       ]
     },
     {
       "id": "ws-45-sec-c",
       "sectionKey": "C",
-      "instruction": "Combine the following using BOTH…AND / NOT ONLY… BUT ALSO /",
+      "instruction": "Combine the following using BOTH … AND / NOT ONLY … BUT ALSO / EITHER … OR / NEITHER … NOR: (Example: Paul must go to class. Jean must go to class. → Both Paul and Jean must go to class.)",
       "type": "sentence_combine",
       "questions": [
-        {
-          "id": "ws-45-sec-c-q01",
-          "order": 1,
-          "prompt": "Paul must go to class. Jean must go to class. Both Paul and Jean must go to class.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q02",
-          "order": 2,
-          "prompt": "Paul speaks English. Jean speaks English.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q03",
-          "order": 3,
-          "prompt": "Paul hasn’t left yet. Jean hasn’t left yet.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q04",
-          "order": 4,
-          "prompt": "Shall I go to by air, or shall I go by sea?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q05",
-          "order": 5,
-          "prompt": "Paul didn’t stay long. Jean didn’t stay long.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q06",
-          "order": 6,
-          "prompt": "Paul has a two-car garage. Jean has a two-car garage.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q07",
-          "order": 7,
-          "prompt": "Shall I work tonight, or shall I go out?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q08",
-          "order": 8,
-          "prompt": "Paul’s house is very central. Jean’s house is very central.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q09",
-          "order": 9,
-          "prompt": "Paul recognized the man. Jean recognized the man.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-45-sec-c-q10",
-          "order": 10,
-          "prompt": "Shall I have a swim, or shall I go by bus?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-45-sec-c-q02", "order": 2, "prompt": "Paul speaks English. Jean speaks English.", "acceptedAnswers": ["Both Paul and Jean speak English.", "Not only Paul but also Jean speaks English."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-c-q03", "order": 3, "prompt": "Paul hasn't left yet. Jean hasn't left yet.", "acceptedAnswers": ["Neither Paul nor Jean has left yet."], "explanation": "neither A nor B: verb agrees with B" },
+        { "id": "ws-45-sec-c-q04", "order": 4, "prompt": "Shall I go by air, or shall I go by sea?", "acceptedAnswers": ["Shall I go either by air or by sea?", "Shall I go by either air or sea?", "Shall I either go by air or by sea?", "Shall I either go by air or go by sea?"], "explanation": "either A or B: parallel structure" },
+        { "id": "ws-45-sec-c-q05", "order": 5, "prompt": "Paul didn't stay long. Jean didn't stay long.", "acceptedAnswers": ["Neither Paul nor Jean stayed long."], "explanation": "neither A nor B: verb agrees with B" },
+        { "id": "ws-45-sec-c-q06", "order": 6, "prompt": "Paul has a two-car garage. Jean has a two-car garage.", "acceptedAnswers": ["Both Paul and Jean have a two-car garage.", "Both Paul and Jean have two-car garages.", "Not only Paul but also Jean has a two-car garage."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-c-q07", "order": 7, "prompt": "Shall I work tonight, or shall I go out?", "acceptedAnswers": ["Shall I either work tonight or go out?"], "explanation": "either + verb + or + verb" },
+        { "id": "ws-45-sec-c-q08", "order": 8, "prompt": "Paul's house is very central. Jean's house is very central.", "acceptedAnswers": ["Both Paul's and Jean's houses are very central.", "Both Paul's house and Jean's house are very central.", "Both Paul's and Jean's house are very central."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-c-q09", "order": 9, "prompt": "Paul recognized the man. Jean recognized the man.", "acceptedAnswers": ["Both Paul and Jean recognized the man.", "Not only Paul but also Jean recognized the man."], "explanation": "both A and B + plural verb" },
+        { "id": "ws-45-sec-c-q10", "order": 10, "prompt": "Shall I have a swim, or shall I go by bus?", "acceptedAnswers": ["Shall I either have a swim or go by bus?"], "explanation": "either + verb + or + verb" }
       ]
     }
   ]

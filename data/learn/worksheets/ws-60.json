@@ -12,226 +12,39 @@
     {
       "id": "ws-60-sec-a",
       "sectionKey": "A",
-      "instruction": "Rewrite the following sentences:",
+      "instruction": "Rewrite the following sentences, beginning with the words given. (Example: You aren’t allowed to park here. → You mustn’t park here.)",
       "type": "sentence_rewrite",
       "questions": [
-        {
-          "id": "ws-60-sec-a-q01",
-          "order": 1,
-          "prompt": "Perhaps I will get a high mark. I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q02",
-          "order": 2,
-          "prompt": "Let’s go to the cinema tonight.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q03",
-          "order": 3,
-          "prompt": "The last time she phoned me was three months ago. She [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q04",
-          "order": 4,
-          "prompt": "No school is more successful than Hill School.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q05",
-          "order": 5,
-          "prompt": "Don’t use this pen. You [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q06",
-          "order": 6,
-          "prompt": "They grew the best vegetables. The best vegetables [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q07",
-          "order": 7,
-          "prompt": "The children were happy. They saw Micky Mouse. (so) The children [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q08",
-          "order": 8,
-          "prompt": "He’ll play with his friends. At first he’ll finish watering the flowers. (Before)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q09",
-          "order": 9,
-          "prompt": "There is nobody at the door. There is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q10",
-          "order": 10,
-          "prompt": "It is a month since I visited them.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q11",
-          "order": 11,
-          "prompt": "It is necessary for him to go there. He [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q12",
-          "order": 12,
-          "prompt": "It is possible that they’ll return on Monday. They [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q13",
-          "order": 13,
-          "prompt": "You aren’t allowed to park here. You mustn’t park here.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q14",
-          "order": 14,
-          "prompt": "There isn’t much coffee in the cup. There is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q15",
-          "order": 15,
-          "prompt": "Do you want to go skiing with me? Would [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q16",
-          "order": 16,
-          "prompt": "John’s marks are worse than Jane’s. Jane’s [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q17",
-          "order": 17,
-          "prompt": "Was it necessary for you to check?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q18",
-          "order": 18,
-          "prompt": "I have never eaten such a bad pie before. This is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q19",
-          "order": 19,
-          "prompt": "He knows how to play the piano. He [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q20",
-          "order": 20,
-          "prompt": "There can’t be a more popular singer than Madonna. Madonna is [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q21",
-          "order": 21,
-          "prompt": "My mother doesn’t let me go to bed late. I’m not [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q22",
-          "order": 22,
-          "prompt": "There aren’t many oranges in the fridge. There are [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q23",
-          "order": 23,
-          "prompt": "I would like to buy a new dress. I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q24",
-          "order": 24,
-          "prompt": "Why don’t we go to the cinema?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q25",
-          "order": 25,
-          "prompt": "I advise you to make a surprise for him. You [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q26",
-          "order": 26,
-          "prompt": "It is forbidden to walk on the railway. You [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q27",
-          "order": 27,
-          "prompt": "I don’t know the boys. They are fighting in the street. (gerund) I don’t [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q28",
-          "order": 28,
-          "prompt": "I prefer to drive rather than travel by train. I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q29",
-          "order": 29,
-          "prompt": "We had better stop for petrol soon. The tank is almost empty. We [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q30",
-          "order": 30,
-          "prompt": "Because it was raining a lot, we didn’t go out.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-60-sec-a-q31",
-          "order": 31,
-          "prompt": "Although the traffic was bad, I arrived on time.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-60-sec-a-q01", "order": 1, "prompt": "Perhaps I will get a high mark. → I", "acceptedAnswers": ["I may get a high mark.", "I might get a high mark.", "I could get a high mark."], "explanation": "possibility: may/might + verb" },
+        { "id": "ws-60-sec-a-q02", "order": 2, "prompt": "Let’s go to the cinema tonight. → (rewrite)", "acceptedAnswers": ["Why don't we go to the cinema tonight?", "Shall we go to the cinema tonight?", "How about going to the cinema tonight?", "What about going to the cinema tonight?"], "explanation": "suggestions: Why don’t we / Shall we / How about + -ing" },
+        { "id": "ws-60-sec-a-q03", "order": 3, "prompt": "The last time she phoned me was three months ago. → She", "acceptedAnswers": ["She hasn't phoned me for three months.", "She last phoned me three months ago."], "explanation": "present perfect negative + for" },
+        { "id": "ws-60-sec-a-q04", "order": 4, "prompt": "No school is more successful than Hill School. → (rewrite)", "acceptedAnswers": ["Hill School is the most successful school.", "Hill School is more successful than any other school."], "explanation": "superlative" },
+        { "id": "ws-60-sec-a-q05", "order": 5, "prompt": "Don’t use this pen. → You", "acceptedAnswers": ["You mustn't use this pen.", "You must not use this pen.", "You shouldn't use this pen."], "explanation": "prohibition: mustn’t" },
+        { "id": "ws-60-sec-a-q06", "order": 6, "prompt": "They grew the best vegetables. → The best vegetables", "acceptedAnswers": ["The best vegetables were grown.", "The best vegetables were grown by them."], "explanation": "passive past simple: were + V3" },
+        { "id": "ws-60-sec-a-q07", "order": 7, "prompt": "The children were happy. They saw Micky Mouse. (so) → The children", "acceptedAnswers": ["The children saw Micky Mouse, so they were happy.", "The children saw Micky Mouse so they were happy."], "explanation": "cause, so + result" },
+        { "id": "ws-60-sec-a-q08", "order": 8, "prompt": "He’ll play with his friends. At first he’ll finish watering the flowers. (Before) → (rewrite)", "acceptedAnswers": ["Before he plays with his friends, he'll finish watering the flowers.", "Before he plays with his friends he'll finish watering the flowers.", "He'll finish watering the flowers before he plays with his friends."], "explanation": "time clause: before + present simple" },
+        { "id": "ws-60-sec-a-q09", "order": 9, "prompt": "There is nobody at the door. → There is", "acceptedAnswers": ["There isn't anybody at the door.", "There isn't anyone at the door.", "There is no one at the door.", "There is no-one at the door."], "explanation": "nobody = not anybody" },
+        { "id": "ws-60-sec-a-q10", "order": 10, "prompt": "It is a month since I visited them. → (rewrite)", "acceptedAnswers": ["I haven't visited them for a month.", "I last visited them a month ago."], "explanation": "present perfect negative + for" },
+        { "id": "ws-60-sec-a-q11", "order": 11, "prompt": "It is necessary for him to go there. → He", "acceptedAnswers": ["He has to go there.", "He must go there.", "He needs to go there."], "explanation": "necessity: has to / must" },
+        { "id": "ws-60-sec-a-q12", "order": 12, "prompt": "It is possible that they’ll return on Monday. → They", "acceptedAnswers": ["They may return on Monday.", "They might return on Monday.", "They could return on Monday."], "explanation": "possibility: may/might + verb" },
+        { "id": "ws-60-sec-a-q14", "order": 14, "prompt": "There isn’t much coffee in the cup. → There is", "acceptedAnswers": ["There is little coffee in the cup.", "There is only a little coffee in the cup.", "There is a little coffee in the cup."], "explanation": "not much = (a) little" },
+        { "id": "ws-60-sec-a-q15", "order": 15, "prompt": "Do you want to go skiing with me? → Would", "acceptedAnswers": ["Would you like to go skiing with me?"], "explanation": "polite offer: Would you like to …?" },
+        { "id": "ws-60-sec-a-q16", "order": 16, "prompt": "John’s marks are worse than Jane’s. → Jane’s", "acceptedAnswers": ["Jane's marks are better than John's."], "explanation": "comparative: better than" },
+        { "id": "ws-60-sec-a-q17", "order": 17, "prompt": "Was it necessary for you to check? → (rewrite)", "acceptedAnswers": ["Did you have to check?", "Did you need to check?"], "explanation": "past necessity question: Did you have to …?" },
+        { "id": "ws-60-sec-a-q18", "order": 18, "prompt": "I have never eaten such a bad pie before. → This is", "acceptedAnswers": ["This is the worst pie I have ever eaten."], "explanation": "superlative + present perfect + ever" },
+        { "id": "ws-60-sec-a-q19", "order": 19, "prompt": "He knows how to play the piano. → He", "acceptedAnswers": ["He can play the piano."], "explanation": "ability: can" },
+        { "id": "ws-60-sec-a-q20", "order": 20, "prompt": "There can’t be a more popular singer than Madonna. → Madonna is", "acceptedAnswers": ["Madonna is the most popular singer.", "Madonna is more popular than any other singer."], "explanation": "superlative" },
+        { "id": "ws-60-sec-a-q21", "order": 21, "prompt": "My mother doesn’t let me go to bed late. → I’m not", "acceptedAnswers": ["I'm not allowed to go to bed late."], "explanation": "passive of let: be allowed to" },
+        { "id": "ws-60-sec-a-q22", "order": 22, "prompt": "There aren’t many oranges in the fridge. → There are", "acceptedAnswers": ["There are few oranges in the fridge.", "There are only a few oranges in the fridge.", "There are a few oranges in the fridge."], "explanation": "not many = (a) few" },
+        { "id": "ws-60-sec-a-q23", "order": 23, "prompt": "I would like to buy a new dress. → I", "acceptedAnswers": ["I want to buy a new dress."], "explanation": "would like = want" },
+        { "id": "ws-60-sec-a-q24", "order": 24, "prompt": "Why don’t we go to the cinema? → (rewrite)", "acceptedAnswers": ["Let's go to the cinema.", "Shall we go to the cinema?", "How about going to the cinema?", "What about going to the cinema?"], "explanation": "suggestions: Let’s / Shall we / How about + -ing" },
+        { "id": "ws-60-sec-a-q25", "order": 25, "prompt": "I advise you to make a surprise for him. → You", "acceptedAnswers": ["You should make a surprise for him.", "You ought to make a surprise for him.", "You had better make a surprise for him.", "You 'd better make a surprise for him."], "explanation": "advice: should / had better" },
+        { "id": "ws-60-sec-a-q26", "order": 26, "prompt": "It is forbidden to walk on the railway. → You", "acceptedAnswers": ["You mustn't walk on the railway.", "You must not walk on the railway.", "You aren't allowed to walk on the railway."], "explanation": "prohibition: mustn’t" },
+        { "id": "ws-60-sec-a-q27", "order": 27, "prompt": "I don’t know the boys. They are fighting in the street. (participle) → I don’t", "acceptedAnswers": ["I don't know the boys fighting in the street.", "I don't know the boys who are fighting in the street."], "explanation": "reduced relative clause: noun + -ing" },
+        { "id": "ws-60-sec-a-q28", "order": 28, "prompt": "I prefer to drive rather than travel by train. → I", "acceptedAnswers": ["I would rather drive than travel by train.", "I prefer driving to travelling by train.", "I prefer driving to traveling by train."], "explanation": "would rather + verb + than + verb" },
+        { "id": "ws-60-sec-a-q29", "order": 29, "prompt": "We had better stop for petrol soon. The tank is almost empty. → We", "acceptedAnswers": ["We should stop for petrol soon.", "We should stop for petrol soon. The tank is almost empty.", "We ought to stop for petrol soon.", "We ought to stop for petrol soon. The tank is almost empty."], "explanation": "had better = should" },
+        { "id": "ws-60-sec-a-q30", "order": 30, "prompt": "Because it was raining a lot, we didn’t go out. → (rewrite)", "acceptedAnswers": ["It was raining a lot, so we didn't go out.", "It was raining a lot so we didn't go out.", "We didn't go out because it was raining a lot.", "Because of the heavy rain, we didn't go out.", "Because of the heavy rain we didn't go out.", "We didn't go out because of the heavy rain."], "explanation": "because ↔ so / because of + noun" },
+        { "id": "ws-60-sec-a-q31", "order": 31, "prompt": "Although the traffic was bad, I arrived on time. → (rewrite)", "acceptedAnswers": ["Despite the bad traffic, I arrived on time.", "Despite the bad traffic I arrived on time.", "In spite of the bad traffic, I arrived on time.", "In spite of the bad traffic I arrived on time.", "I arrived on time despite the bad traffic.", "I arrived on time in spite of the bad traffic.", "The traffic was bad, but I arrived on time.", "The traffic was bad but I arrived on time.", "I arrived on time although the traffic was bad."], "explanation": "although ↔ despite / in spite of + noun" }
       ]
     }
   ]

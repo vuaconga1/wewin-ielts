@@ -18,9 +18,13 @@ export interface WorksheetQuestion {
   underlinedPart?: string;
   verbBase?: string;
   options?: string[];
+  /** Gaps separated by " / ", per-gap alternatives by "|" (e.g. "at|on / in"). Empty = not auto-graded. */
   acceptedAnswers: string[];
   explanation?: string;
+  /** Worked example shown above the input (sentence-type sections). */
   sampleAnswer?: string;
+  /** Suggested answer for open-ended questions; shown after checking, never graded. */
+  modelAnswer?: string;
 }
 
 export interface WorksheetSection {
@@ -49,6 +53,21 @@ export interface WorksheetLesson {
   pageRange: string;
   linkedGrammarTopics?: string[];
   sections: WorksheetSection[];
+}
+
+export interface WorksheetCardCatalogItem {
+  id: string;
+  order: number;
+  slug: string;
+  title: string;
+  subject: string;
+  subjectVi: string;
+  category: "tenses_verbs" | "sentence_structures" | "parts_of_speech";
+  categoryVi: string;
+  level: string;
+  sourceWorksheets: string[];
+  sectionCount: number;
+  questionCount: number;
 }
 
 export interface WorksheetCatalogItem {

@@ -1,6 +1,7 @@
 import { getLearnOwnerKey } from "@/lib/learn/owner";
 import { getProgress } from "@/lib/learn/store";
 import { getGrammarCourseTopics } from "@/lib/learn/vocab-grammar-store";
+import { getWorksheetCardsCatalog } from "@/lib/learn/worksheets-store";
 import { toPublicTopicMeta } from "@/lib/learn/vocab-grammar-public";
 import {
   grammarCourseLabel,
@@ -13,14 +14,14 @@ import { coursePriceVnd } from "@/lib/learn/course-pricing";
 import { getViewerRole } from "@/lib/auth";
 import { canViewIeltsGrammar } from "@/lib/auth/roles";
 import { SiteShell } from "@/components/layout/site-shell";
-import { TopicCatalog } from "@/components/learn/topic-catalog";
 import { GrammarCourseLocked } from "@/components/learn/grammar-course-tabs";
+import { GrammarPageHub } from "@/components/learn/grammar-page-hub";
 import { getTranslations } from "@/i18n/server";
 
 export const dynamic = "force-dynamic";
 
 type Props = {
-  searchParams: Promise<{ course?: string | string[] }>;
+  searchParams: Promise<{ course?: string | string[]; tab?: string | string[] }>;
 };
 
 export async function generateMetadata({ searchParams }: Props) {
@@ -35,18 +36,24 @@ export async function generateMetadata({ searchParams }: Props) {
 
 export default async function GrammarCatalogPage({ searchParams }: Props) {
   const { t } = await getTranslations();
-  const raw = (await searchParams).course;
+  const resolvedParams = await searchParams;
+  const raw = resolvedParams.course;
   const course: GrammarCourse = isGrammarCourse(raw) ? raw : "basic";
   const isRestricted = isRestrictedGrammarCourse(course);
   const isStandalone = course !== "basic";
 
-  const role = isRestricted ? await getViewerRole() : null;
+  const role = await getViewerRole();
+  const isStaff = role === "ADMIN" || role === "TEACHER";
   const locked = isRestricted && !canViewIeltsGrammar(role);
 
+  const rawTab = Array.isArray(resolvedParams.tab) ? resolvedParams.tab[0] : resolvedParams.tab;
+  const initialTab = rawTab === "exercises" || rawTab === "worksheets" ? "exercises" : "grammar";
+
   const ownerKey = await getLearnOwnerKey();
-  const [progress, topics] = await Promise.all([
+  const [progress, topics, cards] = await Promise.all([
     getProgress(ownerKey),
     locked ? Promise.resolve([]) : getGrammarCourseTopics(course),
+    getWorksheetCardsCatalog(),
   ]);
 
   const loginHref = `/login?next=${encodeURIComponent(learnVocabGrammarTrackHref("grammar", course))}`;
@@ -61,12 +68,14 @@ export default async function GrammarCatalogPage({ searchParams }: Props) {
 
   return (
     <SiteShell active="learn" wide>
-      <TopicCatalog
-        track="grammar"
+      <GrammarPageHub
         trackLabel={course !== "basic" ? grammarCourseLabel(course, t) : t("learn.grammarTrack", "Ngữ pháp")}
         parent={isStandalone ? "catalog" : "vocab-grammar"}
         topics={topics.map(toPublicTopicMeta)}
         progress={progress}
+        cards={cards}
+        isStaff={isStaff}
+        initialTab={initialTab}
         lockedPanel={
           locked ? (
             <GrammarCourseLocked

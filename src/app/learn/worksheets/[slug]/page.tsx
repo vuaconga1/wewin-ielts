@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
-import { getWorksheetBySlug, getWorksheetsCatalog } from "@/lib/learn/worksheets-store";
+import {
+  getWorksheetBySlug,
+  getWorksheetsCatalog,
+  getWorksheetCardsCatalog,
+} from "@/lib/learn/worksheets-store";
 import { SiteShell } from "@/components/layout/site-shell";
 import { WorksheetPlayer } from "@/components/learn/worksheets/worksheet-player";
 
@@ -8,8 +12,13 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const worksheets = await getWorksheetsCatalog();
-  return worksheets.map((w) => ({ slug: w.slug }));
+  const [cards, worksheets] = await Promise.all([
+    getWorksheetCardsCatalog(),
+    getWorksheetsCatalog(),
+  ]);
+  const cardSlugs = cards.map((c) => ({ slug: c.slug }));
+  const wsSlugs = worksheets.map((w) => ({ slug: w.slug }));
+  return [...cardSlugs, ...wsSlugs];
 }
 
 export async function generateMetadata({ params }: Props) {

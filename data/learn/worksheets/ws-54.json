@@ -12,65 +12,17 @@
     {
       "id": "ws-54-sec-a",
       "sectionKey": "A",
-      "instruction": "Complete the sentences using MYSELF, YOURSELF, HIMSELF, HERSELF, ITSELF,",
+      "instruction": "Complete the sentences using MYSELF, YOURSELF, HIMSELF, HERSELF, ITSELF, OURSELVES, YOURSELVES, THEMSELVES:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-54-sec-a-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-a-q08",
-          "order": 8,
-          "prompt": " [gap] Sue’s children are too young to look after [gap] An elephant hurt [gap] when it tried to get out of the zoo yesterday. I couldn’t borrow my mother’s car last night because she was using it [gap] I don’t need any help. I can take care of [gap] Mr. Woods fell over and hurt [gap] when he was running for a bus. Would you all like to help [gap] to sandwiches and cakes? Sarah and I didn’t really enjoy [gap] at the disco last night? I taught [gap] to play the guitar; I’ve never had lessons.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-54-sec-a-q01", "order": 1, "prompt": "Sue’s children are too young to look after [gap].", "acceptedAnswers": ["themselves"], "explanation": "children → themselves" },
+        { "id": "ws-54-sec-a-q02", "order": 2, "prompt": "An elephant hurt [gap] when it tried to get out of the zoo yesterday.", "acceptedAnswers": ["itself"], "explanation": "it → itself" },
+        { "id": "ws-54-sec-a-q03", "order": 3, "prompt": "I couldn’t borrow my mother’s car last night because she was using it [gap].", "acceptedAnswers": ["herself"], "explanation": "emphatic: she herself" },
+        { "id": "ws-54-sec-a-q04", "order": 4, "prompt": "I don’t need any help. I can take care of [gap].", "acceptedAnswers": ["myself"], "explanation": "I → myself" },
+        { "id": "ws-54-sec-a-q05", "order": 5, "prompt": "Mr. Woods fell over and hurt [gap] when he was running for a bus.", "acceptedAnswers": ["himself"], "explanation": "he → himself" },
+        { "id": "ws-54-sec-a-q06", "order": 6, "prompt": "Would you all like to help [gap] to sandwiches and cakes?", "acceptedAnswers": ["yourselves"], "explanation": "you all (plural) → yourselves" },
+        { "id": "ws-54-sec-a-q07", "order": 7, "prompt": "Sarah and I didn’t really enjoy [gap] at the disco last night.", "acceptedAnswers": ["ourselves"], "explanation": "Sarah and I → ourselves" },
+        { "id": "ws-54-sec-a-q08", "order": 8, "prompt": "I taught [gap] to play the guitar; I’ve never had lessons.", "acceptedAnswers": ["myself"], "explanation": "I → myself" }
       ]
     },
     {
@@ -79,41 +31,11 @@
       "instruction": "Complete each sentence using BY + A REFLEXIVE PRONOUN:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-54-sec-b-q01",
-          "order": 1,
-          "prompt": "A: Who did you go to the cinema with? [gap] B: Nobody, I went [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-b-q02",
-          "order": 2,
-          "prompt": "Since the old lady’s husband died, she’s been living [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-b-q03",
-          "order": 3,
-          "prompt": "Did someone help you move all the furniture, or did you do it all [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-b-q04",
-          "order": 4,
-          "prompt": "They need some help; they can’t manage [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-b-q05",
-          "order": 5,
-          "prompt": "The dog opened the door [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-54-sec-b-q01", "order": 1, "prompt": "A: Who did you go to the cinema with? B: Nobody, I went [gap].", "acceptedAnswers": ["by myself"], "explanation": "by myself = alone" },
+        { "id": "ws-54-sec-b-q02", "order": 2, "prompt": "Since the old lady’s husband died, she’s been living [gap].", "acceptedAnswers": ["by herself"], "explanation": "by herself = alone" },
+        { "id": "ws-54-sec-b-q03", "order": 3, "prompt": "Did someone help you move all the furniture, or did you do it all [gap]?", "acceptedAnswers": ["by yourself|by yourselves"], "explanation": "by yourself = without help" },
+        { "id": "ws-54-sec-b-q04", "order": 4, "prompt": "They need some help; they can’t manage [gap].", "acceptedAnswers": ["by themselves"], "explanation": "by themselves = without help" },
+        { "id": "ws-54-sec-b-q05", "order": 5, "prompt": "The dog opened the door [gap].", "acceptedAnswers": ["by itself"], "explanation": "by itself = without help" }
       ]
     },
     {
@@ -122,148 +44,39 @@
       "instruction": "Complete the sentences using a REFLEXIVE PRONOUN:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-54-sec-c-q01",
-          "order": 1,
-          "prompt": "I didn’t buy that cake from the shop. I made it [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-c-q02",
-          "order": 2,
-          "prompt": "A: Who built your swimming pool for you? [gap] B: Nobody. We built it [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-c-q03",
-          "order": 3,
-          "prompt": "Did someone phone the doctor for you? Or did you phone him [gap] ?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-c-q04",
-          "order": 4,
-          "prompt": "A: Who told you they were moving? [gap] B: They told me [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-c-q05",
-          "order": 5,
-          "prompt": "Mr. Mason [gap] offered me the job.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-c-q06",
-          "order": 6,
-          "prompt": "Sally didn’t buy that sweater, she made it [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-54-sec-c-q01", "order": 1, "prompt": "I didn’t buy that cake from the shop. I made it [gap].", "acceptedAnswers": ["myself"], "explanation": "emphatic: I made it myself" },
+        { "id": "ws-54-sec-c-q02", "order": 2, "prompt": "A: Who built your swimming pool for you? B: Nobody. We built it [gap].", "acceptedAnswers": ["ourselves"], "explanation": "we → ourselves" },
+        { "id": "ws-54-sec-c-q03", "order": 3, "prompt": "Did someone phone the doctor for you? Or did you phone him [gap]?", "acceptedAnswers": ["yourself|yourselves"], "explanation": "you → yourself" },
+        { "id": "ws-54-sec-c-q04", "order": 4, "prompt": "A: Who told you they were moving? B: They told me [gap].", "acceptedAnswers": ["themselves"], "explanation": "they → themselves" },
+        { "id": "ws-54-sec-c-q05", "order": 5, "prompt": "Mr. Mason [gap] offered me the job.", "acceptedAnswers": ["himself"], "explanation": "emphatic after subject: Mr. Mason himself" },
+        { "id": "ws-54-sec-c-q06", "order": 6, "prompt": "Sally didn’t buy that sweater, she made it [gap].", "acceptedAnswers": ["herself"], "explanation": "she → herself" }
       ]
     },
     {
       "id": "ws-54-sec-d",
       "sectionKey": "D",
-      "instruction": "Finish th sentences with a REFLEXIVE PRONOUN:",
+      "instruction": "Finish the sentences with a REFLEXIVE PRONOUN:",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-54-sec-d-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-d-q08",
-          "order": 8,
-          "prompt": " [gap] He looked at [gap] in the mirror. I’m not angry with you. I’m angry with [gap] Margaret had a nice time in London. She enjoyed [gap] My friends had a nice time in London. They enjoyed [gap] I picked up a very hot plate and burnt [gap] He never thinks about other people. He only thinks about [gap] I want to know more about you. Tell me about [gap] Goodbye! Have a nice holiday and look after [gap] !",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-54-sec-d-q01", "order": 1, "prompt": "He looked at [gap] in the mirror.", "acceptedAnswers": ["himself"], "explanation": "he → himself" },
+        { "id": "ws-54-sec-d-q02", "order": 2, "prompt": "I’m not angry with you. I’m angry with [gap].", "acceptedAnswers": ["myself"], "explanation": "I → myself" },
+        { "id": "ws-54-sec-d-q03", "order": 3, "prompt": "Margaret had a nice time in London. She enjoyed [gap].", "acceptedAnswers": ["herself"], "explanation": "enjoy oneself" },
+        { "id": "ws-54-sec-d-q04", "order": 4, "prompt": "My friends had a nice time in London. They enjoyed [gap].", "acceptedAnswers": ["themselves"], "explanation": "enjoy oneself" },
+        { "id": "ws-54-sec-d-q05", "order": 5, "prompt": "I picked up a very hot plate and burnt [gap].", "acceptedAnswers": ["myself"], "explanation": "I → myself" },
+        { "id": "ws-54-sec-d-q06", "order": 6, "prompt": "He never thinks about other people. He only thinks about [gap].", "acceptedAnswers": ["himself"], "explanation": "he → himself" },
+        { "id": "ws-54-sec-d-q07", "order": 7, "prompt": "I want to know more about you. Tell me about [gap].", "acceptedAnswers": ["yourself"], "explanation": "you → yourself" },
+        { "id": "ws-54-sec-d-q08", "order": 8, "prompt": "Goodbye! Have a nice holiday and look after [gap]!", "acceptedAnswers": ["yourself|yourselves"], "explanation": "look after yourself" }
       ]
     },
     {
       "id": "ws-54-sec-e",
       "sectionKey": "E",
-      "instruction": "Complete the answers to the questions using MYSELF, YOURSELF, ITSELF etc.",
+      "instruction": "Complete the answers to the questions using MYSELF, YOURSELF, ITSELF etc. (Example: Who repaired the bicycle for you? – Nobody. I repaired it myself.)",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-54-sec-e-q01",
-          "order": 1,
-          "prompt": "Who repaired the bicycle for you? [gap] Nobody. I [gap] repaired it myself [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-e-q02",
-          "order": 2,
-          "prompt": "Did Brian have his hair cut by a hairdresser? [gap] No. He cut [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-e-q03",
-          "order": 3,
-          "prompt": "Do you want me to post that letter for you? [gap] No, I’ll [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-54-sec-e-q04",
-          "order": 4,
-          "prompt": "Who told you that Linda was getting married? [gap] Linda [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-54-sec-e-q02", "order": 2, "prompt": "Did Brian have his hair cut by a hairdresser? – No. He cut [gap].", "acceptedAnswers": ["it himself|his hair himself"], "explanation": "he did it without help → himself" },
+        { "id": "ws-54-sec-e-q03", "order": 3, "prompt": "Do you want me to post that letter for you? – No, I’ll [gap].", "acceptedAnswers": ["post it myself|post the letter myself|do it myself"], "explanation": "I’ll do it without help → myself" },
+        { "id": "ws-54-sec-e-q04", "order": 4, "prompt": "Who told you that Linda was getting married? – Linda [gap].", "acceptedAnswers": ["told me herself|herself told me|told me so herself"], "explanation": "emphatic: Linda herself" }
       ]
     }
   ]

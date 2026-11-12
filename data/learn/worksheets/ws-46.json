@@ -12,636 +12,135 @@
     {
       "id": "ws-46-sec-a",
       "sectionKey": "A",
-      "instruction": "Put in A / AN or THE. Sometimes you don’t need either word – you leave it blank.",
+      "instruction": "Put in A / AN or THE. Sometimes you don't need either word – you leave it blank. Type - (a dash) in a blank that needs no article.",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-46-sec-a-q01",
-          "order": 1,
-          "prompt": "There was [gap] waiter standing at [gap] entrance of [gap] restaurant. I ordered him [gap] glass of [gap] vodka with some juice in it.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q02",
-          "order": 2,
-          "prompt": "There was [gap] question I wanted to ask [gap] biology teacher about [gap] cangroo. She had said [gap] cangroo carried her baby in [gap] kind of bag in [gap] front part of [gap] her body. I wanted to know how many baby cangroos it could carry at [gap] time.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q03",
-          "order": 3,
-          "prompt": "“Is that your wife?” [gap] “No, my wife’s [gap] woman in [gap] red dress.”",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q04",
-          "order": 4,
-          "prompt": "I work with [gap] man and two women [gap] man is quite nice, but [gap] women are not very friendly.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q05",
-          "order": 5,
-          "prompt": "What’s in [gap] newspaper?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q06",
-          "order": 6,
-          "prompt": "Can you show me [gap] that book, please?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q07",
-          "order": 7,
-          "prompt": "What’s [gap] name of [gap] woman in [gap] blue dress?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q08",
-          "order": 8,
-          "prompt": "[gap] water turns into [gap] ice at 0 degree C.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q09",
-          "order": 9,
-          "prompt": "I like [gap] steak, but I don’t like [gap] eggs.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q10",
-          "order": 10,
-          "prompt": "She lives in [gap] nice flat on [gap] fifth floor of [gap] old house.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q11",
-          "order": 11,
-          "prompt": "It’s terrible - [gap] eggs are $ 2 [gap] dozen.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q12",
-          "order": 12,
-          "prompt": "There was [gap] boy and [gap] girl in the room [gap] boy was Japanese but [gap] girl looked foreign. She was wearing [gap] fur coat.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q13",
-          "order": 13,
-          "prompt": "This morning I bought [gap] newspaper and [gap] magazine [gap] newspaper is in my bag but I don’t know where [gap] magazine is.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q14",
-          "order": 14,
-          "prompt": "“Have you got [gap] car?” “No, I’ve never had [gap] car in my life.”",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q15",
-          "order": 15,
-          "prompt": "We don’t go to [gap] cinema very much these days. In fact, in [gap] town where we live there isn’t [gap] cinema.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q16",
-          "order": 16,
-          "prompt": "Don’t stay in that hotel [gap] beds are very uncomfortable.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-a-q17",
-          "order": 17,
-          "prompt": "After I leave [gap] school, I want to go to [gap] university.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-46-sec-a-q01", "order": 1, "prompt": "There was [gap] waiter standing at [gap] entrance of [gap] restaurant. I ordered him [gap] glass of [gap] vodka with some juice in it.", "acceptedAnswers": ["a / the / the / a / -|x|0"], "explanation": "a = first mention; the = known place; no article: uncountable" },
+        { "id": "ws-46-sec-a-q02", "order": 2, "prompt": "There was [gap] question I wanted to ask [gap] biology teacher about [gap] kangaroo. She had said [gap] kangaroo carried her baby in [gap] kind of bag in [gap] front part of [gap] her body. I wanted to know how many baby kangaroos it could carry at [gap] time.", "acceptedAnswers": ["a / the / the|a / the|a / a / the / -|x|0 / a"], "explanation": "no article before possessive (her); at a time" },
+        { "id": "ws-46-sec-a-q03", "order": 3, "prompt": "“Is that your wife?” “No, my wife's [gap] woman in [gap] red dress.”", "acceptedAnswers": ["the / the|a"], "explanation": "the = the specific one identified" },
+        { "id": "ws-46-sec-a-q04", "order": 4, "prompt": "I work with [gap] man and two women. [gap] man is quite nice, but [gap] women are not very friendly.", "acceptedAnswers": ["a / the / the"], "explanation": "a = first mention; the = second mention" },
+        { "id": "ws-46-sec-a-q05", "order": 5, "prompt": "What's in [gap] newspaper?", "acceptedAnswers": ["the"], "explanation": "the newspaper = today's paper we both know" },
+        { "id": "ws-46-sec-a-q06", "order": 6, "prompt": "Can you show me [gap] that book, please?", "acceptedAnswers": ["-|x|0"], "explanation": "no article before that / this" },
+        { "id": "ws-46-sec-a-q07", "order": 7, "prompt": "What's [gap] name of [gap] woman in [gap] blue dress?", "acceptedAnswers": ["the / the / the|a"], "explanation": "the name of …; the = specific person" },
+        { "id": "ws-46-sec-a-q08", "order": 8, "prompt": "[gap] water turns into [gap] ice at 0 degrees C.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "uncountable nouns in general: no article" },
+        { "id": "ws-46-sec-a-q09", "order": 9, "prompt": "I like [gap] steak, but I don't like [gap] eggs.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "things in general: no article" },
+        { "id": "ws-46-sec-a-q10", "order": 10, "prompt": "She lives in [gap] nice flat on [gap] fifth floor of [gap] old house.", "acceptedAnswers": ["a / the / an"], "explanation": "the + ordinal; an before vowel sound" },
+        { "id": "ws-46-sec-a-q11", "order": 11, "prompt": "It's terrible – [gap] eggs are $2 [gap] dozen.", "acceptedAnswers": ["-|x|0|the / a"], "explanation": "price per unit: $2 a dozen" },
+        { "id": "ws-46-sec-a-q12", "order": 12, "prompt": "There was [gap] boy and [gap] girl in the room. [gap] boy was Japanese but [gap] girl looked foreign. She was wearing [gap] fur coat.", "acceptedAnswers": ["a / a / the / the / a"], "explanation": "a = first mention; the = second mention" },
+        { "id": "ws-46-sec-a-q13", "order": 13, "prompt": "This morning I bought [gap] newspaper and [gap] magazine. [gap] newspaper is in my bag but I don't know where [gap] magazine is.", "acceptedAnswers": ["a / a / the / the"], "explanation": "a = first mention; the = second mention" },
+        { "id": "ws-46-sec-a-q14", "order": 14, "prompt": "“Have you got [gap] car?” “No, I've never had [gap] car in my life.”", "acceptedAnswers": ["a / a"], "explanation": "a + singular countable noun, not specific" },
+        { "id": "ws-46-sec-a-q15", "order": 15, "prompt": "We don't go to [gap] cinema very much these days. In fact, in [gap] town where we live there isn't [gap] cinema.", "acceptedAnswers": ["the / the / a"], "explanation": "go to the cinema; the town (defined); there isn't a" },
+        { "id": "ws-46-sec-a-q16", "order": 16, "prompt": "Don't stay in that hotel. [gap] beds are very uncomfortable.", "acceptedAnswers": ["the"], "explanation": "the = the beds of that hotel" },
+        { "id": "ws-46-sec-a-q17", "order": 17, "prompt": "After I leave [gap] school, I want to go to [gap] university.", "acceptedAnswers": ["-|x|0 / -|x|0|a"], "explanation": "school / university as institutions: no article" }
       ]
     },
     {
       "id": "ws-46-sec-b",
       "sectionKey": "B",
-      "instruction": "Put in A / AN or THE. Sometimes you don’t need either word – you leave it blank.",
+      "instruction": "Put in A / AN or THE. Sometimes you don't need either word – you leave it blank. Type - (a dash) in a blank that needs no article.",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-46-sec-b-q01",
-          "order": 1,
-          "prompt": "John Colloway is [gap] bank manager. He works in [gap] bank in [gap] center of [gap] London. Every morning he gets up at seven o’clock, has [gap] breakfast and [gap] cup of [gap] coffee, and reads [gap] ”Times”. Then he goes to [gap] work by [gap] bus. In [gap] morning, he usually makes [gap] telephone calls, sees [gap] customers and [gap] dictates [gap] letters. He has [gap] lunch at [gap] restaurant near [gap] bank. In [gap] afternoon he works until five or fivethirty, and then goes [gap] home. He doesn’t work on [gap] Saturdays or Sundays; he goes to [gap] cinema or reads. He likes [gap] novels and [gap] history. He is not married. He has [gap] sister in [gap] Oxford and [gap] brother in [gap] London.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q02",
-          "order": 2,
-          "prompt": "Have you got [gap] camera?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q03",
-          "order": 3,
-          "prompt": "You need [gap] visa to visit [gap] foreign countries, but not all of them.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q04",
-          "order": 4,
-          "prompt": "When we reached the city center, [gap] shops were still open but most of them were already closed.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q05",
-          "order": 5,
-          "prompt": "Jack has got [gap] very long legs, so he’s [gap] fast runner.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q06",
-          "order": 6,
-          "prompt": "I’m looking for [gap] job. And did Ann get [gap] job she applied for?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q07",
-          "order": 7,
-          "prompt": "Did [gap] police find [gap] person who stole your bicycle?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q08",
-          "order": 8,
-          "prompt": "We went out for [gap] meal last night [gap] restaurant we went to was excellent.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q09",
-          "order": 9,
-          "prompt": "This morning I had [gap] boiled egg and toast for breakfast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q10",
-          "order": 10,
-          "prompt": "Tom always gives Ann [gap] flowers on her birthday.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q11",
-          "order": 11,
-          "prompt": "I went into the shop and asked to speak to [gap] manager.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q12",
-          "order": 12,
-          "prompt": "There’s no need to buy any milk [gap] milkman brings it every morning.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q13",
-          "order": 13,
-          "prompt": "It was warm and sunny, so we decided to sit in [gap] garden.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q14",
-          "order": 14,
-          "prompt": "Jane is [gap] teacher. Her parents were [gap] teachers too.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q15",
-          "order": 15,
-          "prompt": "Bill’s got [gap] big feet.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-b-q16",
-          "order": 16,
-          "prompt": "Would you like to be [gap] actor?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-46-sec-b-q01a", "order": 1, "prompt": "John Colloway is [gap] bank manager.", "acceptedAnswers": ["a"], "explanation": "a + job" },
+        { "id": "ws-46-sec-b-q01b", "order": 1, "prompt": "He works in [gap] bank in [gap] center of [gap] London.", "acceptedAnswers": ["a|the / the / -|x|0"], "explanation": "the center of; no article before city names" },
+        { "id": "ws-46-sec-b-q01c", "order": 1, "prompt": "Every morning he gets up at seven o'clock, has [gap] breakfast and [gap] cup of [gap] coffee, and reads [gap] “Times”.", "acceptedAnswers": ["-|x|0 / a / -|x|0 / the"], "explanation": "no article with meals; the + newspaper name" },
+        { "id": "ws-46-sec-b-q01d", "order": 1, "prompt": "Then he goes to [gap] work by [gap] bus.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "go to work; by + transport: no article" },
+        { "id": "ws-46-sec-b-q01e", "order": 1, "prompt": "In [gap] morning, he usually makes [gap] telephone calls, sees [gap] customers and [gap] dictates [gap] letters.", "acceptedAnswers": ["the / -|x|0 / -|x|0 / -|x|0 / -|x|0"], "explanation": "in the morning; plural nouns in general: no article" },
+        { "id": "ws-46-sec-b-q01f", "order": 1, "prompt": "He has [gap] lunch at [gap] restaurant near [gap] bank.", "acceptedAnswers": ["-|x|0 / a|the / the"], "explanation": "no article with meals; the bank already mentioned" },
+        { "id": "ws-46-sec-b-q01g", "order": 1, "prompt": "In [gap] afternoon he works until five or five-thirty, and then goes [gap] home.", "acceptedAnswers": ["the / -|x|0"], "explanation": "in the afternoon; go home (no article)" },
+        { "id": "ws-46-sec-b-q01h", "order": 1, "prompt": "He doesn't work on [gap] Saturdays or Sundays; he goes to [gap] cinema or reads.", "acceptedAnswers": ["-|x|0 / the"], "explanation": "on + days: no article; go to the cinema" },
+        { "id": "ws-46-sec-b-q01i", "order": 1, "prompt": "He likes [gap] novels and [gap] history.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "things in general: no article" },
+        { "id": "ws-46-sec-b-q01j", "order": 1, "prompt": "He is not married. He has [gap] sister in [gap] Oxford and [gap] brother in [gap] London.", "acceptedAnswers": ["a / -|x|0 / a / -|x|0"], "explanation": "no article before city names" },
+        { "id": "ws-46-sec-b-q02", "order": 2, "prompt": "Have you got [gap] camera?", "acceptedAnswers": ["a"], "explanation": "a + singular countable noun" },
+        { "id": "ws-46-sec-b-q03", "order": 3, "prompt": "You need [gap] visa to visit [gap] foreign countries, but not all of them.", "acceptedAnswers": ["a / -|x|0"], "explanation": "plural nouns in general: no article" },
+        { "id": "ws-46-sec-b-q04", "order": 4, "prompt": "When we reached the city center, [gap] shops were still open but most of them were already closed.", "acceptedAnswers": ["-|x|0"], "explanation": "plural noun, not specific: no article (some shops)" },
+        { "id": "ws-46-sec-b-q05", "order": 5, "prompt": "Jack has got [gap] very long legs, so he's [gap] fast runner.", "acceptedAnswers": ["-|x|0 / a"], "explanation": "plural noun: no article; a + adjective + noun" },
+        { "id": "ws-46-sec-b-q06", "order": 6, "prompt": "I'm looking for [gap] job. And did Ann get [gap] job she applied for?", "acceptedAnswers": ["a / the"], "explanation": "the + noun defined by a clause" },
+        { "id": "ws-46-sec-b-q07", "order": 7, "prompt": "Did [gap] police find [gap] person who stole your bicycle?", "acceptedAnswers": ["the / the"], "explanation": "the police; the + defined person" },
+        { "id": "ws-46-sec-b-q08", "order": 8, "prompt": "We went out for [gap] meal last night. [gap] restaurant we went to was excellent.", "acceptedAnswers": ["a / the"], "explanation": "a meal; the + defined restaurant" },
+        { "id": "ws-46-sec-b-q09", "order": 9, "prompt": "This morning I had [gap] boiled egg and toast for breakfast.", "acceptedAnswers": ["a"], "explanation": "a + singular countable noun" },
+        { "id": "ws-46-sec-b-q10", "order": 10, "prompt": "Tom always gives Ann [gap] flowers on her birthday.", "acceptedAnswers": ["-|x|0"], "explanation": "plural noun in general: no article" },
+        { "id": "ws-46-sec-b-q11", "order": 11, "prompt": "I went into the shop and asked to speak to [gap] manager.", "acceptedAnswers": ["the"], "explanation": "the = the only manager of that shop" },
+        { "id": "ws-46-sec-b-q12", "order": 12, "prompt": "There's no need to buy any milk. [gap] milkman brings it every morning.", "acceptedAnswers": ["the"], "explanation": "the = our regular milkman" },
+        { "id": "ws-46-sec-b-q13", "order": 13, "prompt": "It was warm and sunny, so we decided to sit in [gap] garden.", "acceptedAnswers": ["the"], "explanation": "the = our garden" },
+        { "id": "ws-46-sec-b-q14", "order": 14, "prompt": "Jane is [gap] teacher. Her parents were [gap] teachers too.", "acceptedAnswers": ["a / -|x|0"], "explanation": "a + job; plural: no article" },
+        { "id": "ws-46-sec-b-q15", "order": 15, "prompt": "Bill's got [gap] big feet.", "acceptedAnswers": ["-|x|0"], "explanation": "plural noun: no article" },
+        { "id": "ws-46-sec-b-q16", "order": 16, "prompt": "Would you like to be [gap] actor?", "acceptedAnswers": ["an"], "explanation": "an before vowel sound" }
       ]
     },
     {
       "id": "ws-46-sec-c",
       "sectionKey": "C",
-      "instruction": "Put a suitable article into the blanks:",
+      "instruction": "Put a suitable article into the blanks: Type - (a dash) in a blank that needs no article.",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-46-sec-c-q01",
-          "order": 1,
-          "prompt": "My neighbour is [gap] photographer; let’s ask him for [gap] advice about colour films.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q02",
-          "order": 2,
-          "prompt": "I had [gap] very bad night; I didn’t sleep [gap] wink.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q03",
-          "order": 3,
-          "prompt": "He is [gap] vegeterian; you won’t get [gap] meat at his house.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q04",
-          "order": 4,
-          "prompt": "[gap] youngest boy has just started going to [gap] school; [gap] eldest boy is at [gap] college.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q05",
-          "order": 5,
-          "prompt": "I went to [gap] school to talk to [gap] headmistress. I persuaded her to let Ann give up [gap] gymnastics and take [gap] ballet lessons instead.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q06",
-          "order": 6,
-          "prompt": "There was [gap] knock on [gap] door. I opened it and found [gap] small dark man in [gap] check overcoat and [gap] soft hat.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q07",
-          "order": 7,
-          "prompt": "- Are John and Mary [gap] cousins? - No, they aren’t [gap] cousins; they are [gap] brother and [gap] sister.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q08",
-          "order": 8,
-          "prompt": "[gap] postman’s little boy says that he’d rather be [gap] dentist than [gap] doctor, because [gap] dentists don’t get called out at [gap] night.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q09",
-          "order": 9,
-          "prompt": "- Would you like to hear [gap] story about [gap] Englishman, [gap] Irishman and [gap] Scotsman? - No. I’ve heard [gap] stories about [gap] Englishmen, [gap] Irishmen and [gap] Scotsmen before and they are all [gap] same.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q10",
-          "order": 10,
-          "prompt": "“ [gap] modern burglars don’t hide under [gap] beds.” said her daughter.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q11",
-          "order": 11,
-          "prompt": "[gap] most of [gap] stories that [gap] people tell about [gap] Irish aren’t true.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q12",
-          "order": 12,
-          "prompt": "Like many women, she loves [gap] tea parties and [gap] gossip.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q13",
-          "order": 13,
-          "prompt": "On [gap] Sundays my father stays in [gap] bed till ten o’clock, reading [gap] Sunday papers.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q14",
-          "order": 14,
-          "prompt": "I have [gap] little money left; let’s have dinner in [gap] restaurant.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q15",
-          "order": 15,
-          "prompt": "- I hope you have [gap] lovely time and [gap] good weather. - But I’m not going for [gap] holiday; I’m going on [gap] business.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q16",
-          "order": 16,
-          "prompt": "During [gap] meal he gives her [gap] instructions about [gap] garden and she tells him [gap] village gossip.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-c-q17",
-          "order": 17,
-          "prompt": "My mother goes to [gap] church in [gap] morning, and in [gap] afternoon goes to visit [gap] friends.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-46-sec-c-q01", "order": 1, "prompt": "My neighbour is [gap] photographer; let's ask him for [gap] advice about colour films.", "acceptedAnswers": ["a / -|x|0"], "explanation": "a + job; advice is uncountable" },
+        { "id": "ws-46-sec-c-q02", "order": 2, "prompt": "I had [gap] very bad night; I didn't sleep [gap] wink.", "acceptedAnswers": ["a / a"], "explanation": "not sleep a wink (idiom)" },
+        { "id": "ws-46-sec-c-q03", "order": 3, "prompt": "He is [gap] vegetarian; you won't get [gap] meat at his house.", "acceptedAnswers": ["a / -|x|0"], "explanation": "meat is uncountable" },
+        { "id": "ws-46-sec-c-q04", "order": 4, "prompt": "[gap] youngest boy has just started going to [gap] school; [gap] eldest boy is at [gap] college.", "acceptedAnswers": ["the / -|x|0 / the / -|x|0"], "explanation": "the + superlative; school / college as institutions" },
+        { "id": "ws-46-sec-c-q05", "order": 5, "prompt": "I went to [gap] school to talk to [gap] headmistress. I persuaded her to let Ann give up [gap] gymnastics and take [gap] ballet lessons instead.", "acceptedAnswers": ["the / the / -|x|0 / -|x|0"], "explanation": "go to the school as a visitor (building)" },
+        { "id": "ws-46-sec-c-q06", "order": 6, "prompt": "There was [gap] knock on [gap] door. I opened it and found [gap] small dark man in [gap] check overcoat and [gap] soft hat.", "acceptedAnswers": ["a / the / a / a / a"], "explanation": "a = first mention; the door of the house" },
+        { "id": "ws-46-sec-c-q07", "order": 7, "prompt": "“Are John and Mary [gap] cousins?” “No, they aren't [gap] cousins; they are [gap] brother and [gap] sister.”", "acceptedAnswers": ["-|x|0 / -|x|0 / -|x|0 / -|x|0"], "explanation": "plural / paired nouns: no article" },
+        { "id": "ws-46-sec-c-q08", "order": 8, "prompt": "[gap] postman's little boy says that he'd rather be [gap] dentist than [gap] doctor, because [gap] dentists don't get called out at [gap] night.", "acceptedAnswers": ["the / a / a / -|x|0 / -|x|0"], "explanation": "a + job; dentists in general; at night" },
+        { "id": "ws-46-sec-c-q09", "order": 9, "prompt": "“Would you like to hear [gap] story about [gap] Englishman, [gap] Irishman and [gap] Scotsman?” “No. I've heard [gap] stories about [gap] Englishmen, [gap] Irishmen and [gap] Scotsmen before and they are all [gap] same.”", "acceptedAnswers": ["a / an / an / a / -|x|0 / -|x|0 / -|x|0 / -|x|0 / the"], "explanation": "an before vowel sound; plural: no article; the same" },
+        { "id": "ws-46-sec-c-q10", "order": 10, "prompt": "“[gap] modern burglars don't hide under [gap] beds,” said her daughter.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "plural nouns in general: no article" },
+        { "id": "ws-46-sec-c-q11", "order": 11, "prompt": "[gap] most of [gap] stories that [gap] people tell about [gap] Irish aren't true.", "acceptedAnswers": ["-|x|0 / the / -|x|0 / the"], "explanation": "the + nationality adjective = the people" },
+        { "id": "ws-46-sec-c-q12", "order": 12, "prompt": "Like many women, she loves [gap] tea parties and [gap] gossip.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "things in general: no article" },
+        { "id": "ws-46-sec-c-q13", "order": 13, "prompt": "On [gap] Sundays my father stays in [gap] bed till ten o'clock, reading [gap] Sunday papers.", "acceptedAnswers": ["-|x|0 / -|x|0 / the"], "explanation": "stay in bed (no article)" },
+        { "id": "ws-46-sec-c-q14", "order": 14, "prompt": "I have [gap] little money left; let's have dinner in [gap] restaurant.", "acceptedAnswers": ["a / a"], "explanation": "a little = some" },
+        { "id": "ws-46-sec-c-q15", "order": 15, "prompt": "“I hope you have [gap] lovely time and [gap] good weather.” “But I'm not going for [gap] holiday; I'm going on [gap] business.”", "acceptedAnswers": ["a / -|x|0 / a / -|x|0"], "explanation": "weather is uncountable; on business" },
+        { "id": "ws-46-sec-c-q16", "order": 16, "prompt": "During [gap] meal he gives her [gap] instructions about [gap] garden and she tells him [gap] village gossip.", "acceptedAnswers": ["the / -|x|0 / the / the"], "explanation": "the = specific, known things" },
+        { "id": "ws-46-sec-c-q17", "order": 17, "prompt": "My mother goes to [gap] church in [gap] morning, and in [gap] afternoon goes to visit [gap] friends.", "acceptedAnswers": ["-|x|0 / the / the / -|x|0"], "explanation": "go to church (worship); in the morning" }
       ]
     },
     {
       "id": "ws-46-sec-d",
       "sectionKey": "D",
-      "instruction": "Some of the blank spaces below need ARTICLES, others do not. Fill in the articles",
+      "instruction": "Some of the blank spaces below need ARTICLES, others do not. Fill in the articles where needed. Type - (a dash) in a blank that needs no article.",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-46-sec-d-q01",
-          "order": 1,
-          "prompt": "Tobacco is one of [gap] most important products of [gap] South.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q02",
-          "order": 2,
-          "prompt": "[gap] fresh air is needed by all people.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q03",
-          "order": 3,
-          "prompt": "[gap] cotton which comes from [gap] Alabama is better than [gap] cotton which comes from [gap] Oklahoma.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q04",
-          "order": 4,
-          "prompt": "[gap] air in this room is fresh.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q05",
-          "order": 5,
-          "prompt": "[gap] important products which we ger from [gap] India are [gap] tea, [gap] cotton, and [gap] rice.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q06",
-          "order": 6,
-          "prompt": "[gap] telephone seldom rings in our home.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q07",
-          "order": 7,
-          "prompt": "[gap] silver is [gap] conductor of [gap] electricity.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q08",
-          "order": 8,
-          "prompt": "I get on [gap] train at [gap] same place every day.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q09",
-          "order": 9,
-          "prompt": "[gap] rain and [gap] sun are needed for [gap] raising of [gap] vegetables.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q10",
-          "order": 10,
-          "prompt": "Mary is waving to us from across [gap] street.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q11",
-          "order": 11,
-          "prompt": "[gap] sun is shining but part of [gap] sky is still covered with clouds.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q12",
-          "order": 12,
-          "prompt": "[gap] women use much make-up.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q13",
-          "order": 13,
-          "prompt": "Sometimes everyone must take [gap] medicine.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q14",
-          "order": 14,
-          "prompt": "[gap] coffee will keep you awake all night.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q15",
-          "order": 15,
-          "prompt": "[gap] medicine which [gap] doctor prescribed helped me.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q16",
-          "order": 16,
-          "prompt": "[gap] tea seems to keep some people awake.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q17",
-          "order": 17,
-          "prompt": "He likes to study [gap] French.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q18",
-          "order": 18,
-          "prompt": "[gap] coffee is very strong.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q19",
-          "order": 19,
-          "prompt": "In that course, we study [gap] history of all [gap] important countries of Asia.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-d-q20",
-          "order": 20,
-          "prompt": "[gap] coffee which comes from Brazil is [gap] best.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-46-sec-d-q01", "order": 1, "prompt": "Tobacco is one of [gap] most important products of [gap] South.", "acceptedAnswers": ["the / the"], "explanation": "the + superlative; the South (region)" },
+        { "id": "ws-46-sec-d-q02", "order": 2, "prompt": "[gap] fresh air is needed by all people.", "acceptedAnswers": ["-|x|0"], "explanation": "uncountable noun in general: no article" },
+        { "id": "ws-46-sec-d-q03", "order": 3, "prompt": "[gap] cotton which comes from [gap] Alabama is better than [gap] cotton which comes from [gap] Oklahoma.", "acceptedAnswers": ["the / -|x|0 / the / -|x|0"], "explanation": "the + noun defined by a clause; no article with states" },
+        { "id": "ws-46-sec-d-q04", "order": 4, "prompt": "[gap] air in this room is fresh.", "acceptedAnswers": ["the"], "explanation": "specific air (in this room)" },
+        { "id": "ws-46-sec-d-q05", "order": 5, "prompt": "[gap] important products which we get from [gap] India are [gap] tea, [gap] cotton, and [gap] rice.", "acceptedAnswers": ["the / -|x|0 / -|x|0 / -|x|0 / -|x|0"], "explanation": "the + defined noun; uncountable nouns in general" },
+        { "id": "ws-46-sec-d-q06", "order": 6, "prompt": "[gap] telephone seldom rings in our home.", "acceptedAnswers": ["the"], "explanation": "the telephone in our home" },
+        { "id": "ws-46-sec-d-q07", "order": 7, "prompt": "[gap] silver is [gap] conductor of [gap] electricity.", "acceptedAnswers": ["-|x|0 / a / -|x|0"], "explanation": "uncountable nouns in general: no article" },
+        { "id": "ws-46-sec-d-q08", "order": 8, "prompt": "I get on [gap] train at [gap] same place every day.", "acceptedAnswers": ["the / the"], "explanation": "the same" },
+        { "id": "ws-46-sec-d-q09", "order": 9, "prompt": "[gap] rain and [gap] sun are needed for [gap] raising of [gap] vegetables.", "acceptedAnswers": ["-|x|0 / -|x|0|the / the / -|x|0"], "explanation": "the + noun + of; general nouns: no article" },
+        { "id": "ws-46-sec-d-q10", "order": 10, "prompt": "Mary is waving to us from across [gap] street.", "acceptedAnswers": ["the"], "explanation": "the street (specific)" },
+        { "id": "ws-46-sec-d-q11", "order": 11, "prompt": "[gap] sun is shining but part of [gap] sky is still covered with clouds.", "acceptedAnswers": ["the / the"], "explanation": "the sun, the sky (unique)" },
+        { "id": "ws-46-sec-d-q12", "order": 12, "prompt": "[gap] women use much make-up.", "acceptedAnswers": ["-|x|0"], "explanation": "people in general: no article" },
+        { "id": "ws-46-sec-d-q13", "order": 13, "prompt": "Sometimes everyone must take [gap] medicine.", "acceptedAnswers": ["-|x|0"], "explanation": "uncountable noun in general: no article" },
+        { "id": "ws-46-sec-d-q14", "order": 14, "prompt": "[gap] coffee will keep you awake all night.", "acceptedAnswers": ["-|x|0"], "explanation": "uncountable noun in general: no article" },
+        { "id": "ws-46-sec-d-q15", "order": 15, "prompt": "[gap] medicine which [gap] doctor prescribed helped me.", "acceptedAnswers": ["the / the"], "explanation": "the + noun defined by a clause" },
+        { "id": "ws-46-sec-d-q16", "order": 16, "prompt": "[gap] tea seems to keep some people awake.", "acceptedAnswers": ["-|x|0"], "explanation": "uncountable noun in general: no article" },
+        { "id": "ws-46-sec-d-q17", "order": 17, "prompt": "He likes to study [gap] French.", "acceptedAnswers": ["-|x|0"], "explanation": "no article before languages" },
+        { "id": "ws-46-sec-d-q18", "order": 18, "prompt": "[gap] coffee is very strong.", "acceptedAnswers": ["the"], "explanation": "specific coffee (this coffee)" },
+        { "id": "ws-46-sec-d-q19", "order": 19, "prompt": "In that course, we study [gap] history of all [gap] important countries of Asia.", "acceptedAnswers": ["the / the|-|x|0"], "explanation": "the history of …" },
+        { "id": "ws-46-sec-d-q20", "order": 20, "prompt": "[gap] coffee which comes from Brazil is [gap] best.", "acceptedAnswers": ["the / the"], "explanation": "the + defined noun; the + superlative" }
       ]
     },
     {
       "id": "ws-46-sec-e",
       "sectionKey": "E",
-      "instruction": "Some of the blank spaces below need ARTICLES, others do not. Fill in the articles",
+      "instruction": "Some of the blank spaces below need ARTICLES, others do not. Fill in the articles where needed. Type - (a dash) in a blank that needs no article.",
       "type": "inline_gap_fill",
       "questions": [
-        {
-          "id": "ws-46-sec-e-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q02",
-          "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q03",
-          "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q04",
-          "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q05",
-          "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q06",
-          "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q07",
-          "order": 7,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q08",
-          "order": 8,
-          "prompt": " [gap] He went to [gap] Spain last month. When you go to [gap] Spain, be sure to see [gap] Madrid. He works in [gap] building on [gap] corner of [gap] Tenth Ave. and 62nd St. [gap] Tokyo is [gap] largest city in [gap] World. [gap] traffic on [gap] Jones Avenue is heavy. [gap] Miami is [gap] center of [gap] tobacco industry. [gap] Rio Grande River forms [gap] boundary between [gap] U.S. and Mexico. [gap] rivers of [gap] eastern part of [gap] United States flow toward [gap] East Coast.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q09",
-          "order": 9,
-          "prompt": "[gap] largest river in [gap] America is [gap] Mississippi.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q10",
-          "order": 10,
-          "prompt": "[gap] New York subway trains are very comfortable.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q11",
-          "order": 11,
-          "prompt": "[gap] climate of [gap] southern Florida is very nice all year.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q12",
-          "order": 12,
-          "prompt": "[gap] capital of [gap] France is [gap] Paris, but [gap] capital of [gap] England is London.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q13",
-          "order": 13,
-          "prompt": "[gap] Tenth Street has some very nice shops.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q14",
-          "order": 14,
-          "prompt": "Some of [gap] Tenth Street shops are very inexpensive, too.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-46-sec-e-q15",
-          "order": 15,
-          "prompt": "[gap] President will be on [gap] TV tonight.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-46-sec-e-q01", "order": 1, "prompt": "He went to [gap] Spain last month.", "acceptedAnswers": ["-|x|0"], "explanation": "no article before most country names" },
+        { "id": "ws-46-sec-e-q02", "order": 2, "prompt": "When you go to [gap] Spain, be sure to see [gap] Madrid.", "acceptedAnswers": ["-|x|0 / -|x|0"], "explanation": "no article before countries / cities" },
+        { "id": "ws-46-sec-e-q03", "order": 3, "prompt": "He works in [gap] building on [gap] corner of [gap] Tenth Ave. and 62nd St.", "acceptedAnswers": ["a|the / the / -|x|0"], "explanation": "the corner of; no article before street names" },
+        { "id": "ws-46-sec-e-q04", "order": 4, "prompt": "[gap] Tokyo is [gap] largest city in [gap] world.", "acceptedAnswers": ["-|x|0 / the / the"], "explanation": "the + superlative; the world" },
+        { "id": "ws-46-sec-e-q05", "order": 5, "prompt": "[gap] traffic on [gap] Jones Avenue is heavy.", "acceptedAnswers": ["the / -|x|0"], "explanation": "no article before street names" },
+        { "id": "ws-46-sec-e-q06", "order": 6, "prompt": "[gap] Miami is [gap] center of [gap] tobacco industry.", "acceptedAnswers": ["-|x|0 / the|a / the"], "explanation": "no article before cities; the … industry" },
+        { "id": "ws-46-sec-e-q07", "order": 7, "prompt": "[gap] Rio Grande River forms [gap] boundary between [gap] U.S. and Mexico.", "acceptedAnswers": ["the / the|a / the"], "explanation": "the + river names; the U.S." },
+        { "id": "ws-46-sec-e-q08", "order": 8, "prompt": "[gap] rivers of [gap] eastern part of [gap] United States flow toward [gap] East Coast.", "acceptedAnswers": ["the / the / the / the"], "explanation": "the United States; the East Coast" },
+        { "id": "ws-46-sec-e-q09", "order": 9, "prompt": "[gap] largest river in [gap] America is [gap] Mississippi.", "acceptedAnswers": ["the / -|x|0 / the"], "explanation": "the + superlative; the + river names" },
+        { "id": "ws-46-sec-e-q10", "order": 10, "prompt": "[gap] New York subway trains are very comfortable.", "acceptedAnswers": ["the|-|x|0"], "explanation": "the = specific trains" },
+        { "id": "ws-46-sec-e-q11", "order": 11, "prompt": "[gap] climate of [gap] southern Florida is very nice all year.", "acceptedAnswers": ["the / -|x|0"], "explanation": "the climate of; no article: southern + state" },
+        { "id": "ws-46-sec-e-q12", "order": 12, "prompt": "[gap] capital of [gap] France is [gap] Paris, but [gap] capital of [gap] England is London.", "acceptedAnswers": ["the / -|x|0 / -|x|0 / the / -|x|0"], "explanation": "the capital of; no article before countries / cities" },
+        { "id": "ws-46-sec-e-q13", "order": 13, "prompt": "[gap] Tenth Street has some very nice shops.", "acceptedAnswers": ["-|x|0"], "explanation": "no article before street names" },
+        { "id": "ws-46-sec-e-q14", "order": 14, "prompt": "Some of [gap] Tenth Street shops are very inexpensive, too.", "acceptedAnswers": ["the"], "explanation": "the + specific shops" },
+        { "id": "ws-46-sec-e-q15", "order": 15, "prompt": "[gap] President will be on [gap] TV tonight.", "acceptedAnswers": ["the / -|x|0"], "explanation": "the President; on TV" }
       ]
     }
   ]

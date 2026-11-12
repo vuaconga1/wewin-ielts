@@ -12,474 +12,586 @@
     {
       "id": "ws-33-sec-a",
       "sectionKey": "A",
-      "instruction": "Fill in the blanks with the adjectives in brackets:",
+      "instruction": "Fill in the blanks with the comparative or superlative form of the adjectives in brackets:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-33-sec-a-q01",
           "order": 1,
           "prompt": "Tom is [gap] his brother. (old)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "older than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-a-q02",
           "order": 2,
           "prompt": "This problem is [gap] that problem. (easy)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "easier than"
+          ],
+          "explanation": "adjective ending in -y: -ier + than"
         },
         {
           "id": "ws-33-sec-a-q03",
           "order": 3,
           "prompt": "John is [gap] boy in our class. (tall)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the tallest"
+          ],
+          "explanation": "short adjective: the + -est"
         },
         {
           "id": "ws-33-sec-a-q04",
           "order": 4,
           "prompt": "My friend is [gap] my sister. (fat)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "fatter than"
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
         },
         {
           "id": "ws-33-sec-a-q05",
           "order": 5,
           "prompt": "My room is [gap] room in our house. (small)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the smallest"
+          ],
+          "explanation": "short adjective: the + -est"
         },
         {
           "id": "ws-33-sec-a-q06",
           "order": 6,
           "prompt": "Konya is [gap] city in Turkey. (large)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the largest"
+          ],
+          "explanation": "adjective ending in -e: the + -st"
         },
         {
           "id": "ws-33-sec-a-q07",
           "order": 7,
           "prompt": "The Kızılırmak is [gap] river in Turkey. (long)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the longest"
+          ],
+          "explanation": "short adjective: the + -est"
         },
         {
           "id": "ws-33-sec-a-q08",
           "order": 8,
           "prompt": "Madonna is [gap] Sandra. (popular)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "more popular than"
+          ],
+          "explanation": "long adjective: more + adjective + than"
         },
         {
           "id": "ws-33-sec-a-q09",
           "order": 9,
           "prompt": "My English is [gap] your English. (good)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "better than"
+          ],
+          "explanation": "irregular: good → better"
         },
         {
           "id": "ws-33-sec-a-q10",
           "order": 10,
           "prompt": "The weather today is [gap] the weather yesterday. (bad)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "worse than"
+          ],
+          "explanation": "irregular: bad → worse"
         },
         {
           "id": "ws-33-sec-a-q11",
           "order": 11,
           "prompt": "This garden is [gap] that garden. (large)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "larger than"
+          ],
+          "explanation": "adjective ending in -e: -r + than"
         },
         {
           "id": "ws-33-sec-a-q12",
           "order": 12,
           "prompt": "Elizabeth is [gap] girl in our group. (beautiful)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the most beautiful"
+          ],
+          "explanation": "long adjective: the most + adjective"
         },
         {
           "id": "ws-33-sec-a-q13",
           "order": 13,
           "prompt": "I am [gap] girl in the class. (short)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the shortest"
+          ],
+          "explanation": "short adjective: the + -est"
         },
         {
           "id": "ws-33-sec-a-q14",
           "order": 14,
           "prompt": "What is [gap] film on TV today? (funny)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the funniest"
+          ],
+          "explanation": "adjective ending in -y: the + -iest"
         },
         {
           "id": "ws-33-sec-a-q15",
           "order": 15,
           "prompt": "Who is [gap] girl in your class? (pretty)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "the prettiest"
+          ],
+          "explanation": "adjective ending in -y: the + -iest"
         }
       ]
     },
     {
       "id": "ws-33-sec-b",
       "sectionKey": "B",
-      "instruction": "Fill in the blanks as in the example:",
-      "type": "inline_gap_fill",
+      "instruction": "Fill in the blanks with the comparative or superlative form. (Example: My hotel room was smaller than (small) the one in the photograph in the brochure.)",
+      "type": "passage_gap_fill",
+      "contextText": "I went on holiday last year but it was a disaster! My hotel room was smaller than the one in the photograph in the brochure.",
       "questions": [
         {
           "id": "ws-33-sec-b-q01",
           "order": 1,
-          "prompt": "I went on holiday last year but it was a disaster! My hotel room was [gap] smaller than … (small)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I think it was [gap] (small) room in the hotel.",
+          "acceptedAnswers": [
+            "the smallest"
+          ],
+          "explanation": "short adjective: the + -est"
         },
         {
           "id": "ws-33-sec-b-q02",
           "order": 2,
-          "prompt": "the one in the photograph in the brochure. I think it was [gap] (small)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The weather was terrible too. It was [gap] (cold) in England.",
+          "acceptedAnswers": [
+            "colder than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-b-q03",
           "order": 3,
-          "prompt": "room in the hotel. The weather was terrible too. It was [gap] (cold) in",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The beach near the hotel was very dirty – it was [gap] (dirty) all the beaches on the island.",
+          "acceptedAnswers": [
+            "the dirtiest of"
+          ],
+          "explanation": "superlative + of + group"
         },
         {
           "id": "ws-33-sec-b-q04",
           "order": 4,
-          "prompt": "England. The beach near the hotel was very dirty – it was [gap] (dirty)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The food was [gap] (expensive) I expected and I didn’t have enough money.",
+          "acceptedAnswers": [
+            "more expensive than"
+          ],
+          "explanation": "long adjective: more + adjective + than"
         },
         {
           "id": "ws-33-sec-b-q05",
           "order": 5,
-          "prompt": "all the beaches on the island. The food was [gap] (expensive)",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "One day I went shopping in a big department store and I broke a vase. It was [gap] (expensive) vase in the whole shop.",
+          "acceptedAnswers": [
+            "the most expensive"
+          ],
+          "explanation": "long adjective: the most + adjective"
         },
         {
           "id": "ws-33-sec-b-q06",
           "order": 6,
-          "prompt": "I expected and I didn’t have enough money. One day I went shopping in a big department store [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "But [gap] (bad) thing of all was that I lost my passport and I couldn’t go back home.",
+          "acceptedAnswers": [
+            "the worst"
+          ],
+          "explanation": "irregular: bad → the worst"
         },
         {
           "id": "ws-33-sec-b-q07",
           "order": 7,
-          "prompt": "and I broke a vase. It was [gap] ( expensive) vase in",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-b-q08",
-          "order": 8,
-          "prompt": "the whole shop. But [gap] (bad) thing all was that I lost my",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-b-q09",
-          "order": 9,
-          "prompt": "passport and I couldn’t go back home. It was [gap] (horrible)",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-b-q10",
-          "order": 10,
-          "prompt": "holiday all my life. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It was [gap] (horrible) holiday of my life.",
+          "acceptedAnswers": [
+            "the most horrible"
+          ],
+          "explanation": "long adjective: the most + adjective"
         }
       ]
     },
     {
       "id": "ws-33-sec-c",
       "sectionKey": "C",
-      "instruction": "Complete the sentences:",
+      "instruction": "Complete the sentences using the table. (Example: (young) David is younger than Tom and George.)",
       "type": "inline_gap_fill",
+      "tableData": {
+        "headers": [
+          "",
+          "David",
+          "Tom",
+          "George"
+        ],
+        "rows": [
+          [
+            "Age",
+            "25",
+            "30",
+            "35"
+          ],
+          [
+            "Weight",
+            "70 kg",
+            "72 kg",
+            "75 kg"
+          ],
+          [
+            "Height",
+            "1.68 m",
+            "1.72 m",
+            "1.80 m"
+          ],
+          [
+            "Salary",
+            "$800/month",
+            "$1000/month",
+            "$1500/month"
+          ],
+          [
+            "House",
+            "3 rooms",
+            "4 rooms",
+            "5 rooms"
+          ]
+        ]
+      },
       "questions": [
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
         {
           "id": "ws-33-sec-c-q02",
           "order": 2,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(old) George and Tom are [gap] David.",
+          "acceptedAnswers": [
+            "older than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-c-q03",
           "order": 3,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(heavy) George is the [gap] all.",
+          "acceptedAnswers": [
+            "heaviest of"
+          ],
+          "explanation": "superlative: the heaviest of all"
         },
         {
           "id": "ws-33-sec-c-q04",
           "order": 4,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(light) Tom is [gap] George.",
+          "acceptedAnswers": [
+            "lighter than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-c-q05",
           "order": 5,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(tall) Tom is [gap] David.",
+          "acceptedAnswers": [
+            "taller than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-c-q06",
           "order": 6,
-          "prompt": " [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(tall) George is [gap] all.",
+          "acceptedAnswers": [
+            "the tallest of"
+          ],
+          "explanation": "superlative: the tallest of all"
         },
         {
           "id": "ws-33-sec-c-q07",
           "order": 7,
-          "prompt": " [gap] DAVID TOM GEORGE 25 70 kgs",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": "68 [gap] $800/month 3 rooms 30 72 kgs",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": "72 [gap] $1000/month 4 rooms 35 75 kgs",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": "80 [gap] $1500/month 5 rooms (young) David is [gap] younger than [gap] Tom and George. (old) George and Tom are [gap] David. (heavy) George is the [gap] all. (light) Tom is [gap] George. (tall) Tom is [gap] David. (tall) George is [gap] all. (old) George is [gap] Tom.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(old) George is [gap] Tom.",
+          "acceptedAnswers": [
+            "older than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-c-q08",
           "order": 8,
           "prompt": "(little) David gets [gap] money [gap] Tom.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "less / than"
+          ],
+          "explanation": "irregular: little → less"
         },
         {
           "id": "ws-33-sec-c-q09",
           "order": 9,
           "prompt": "(much) George gets [gap] money [gap] Tom.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "more / than"
+          ],
+          "explanation": "irregular: much → more"
         },
         {
           "id": "ws-33-sec-c-q10",
           "order": 10,
           "prompt": "(small) David’s house is [gap] Tom’s.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "acceptedAnswers": [
+            "smaller than"
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-c-q11",
           "order": 11,
-          "prompt": "(big) [gap] George’s house is [gap] all.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(big) George’s house is [gap] all.",
+          "acceptedAnswers": [
+            "the biggest of"
+          ],
+          "explanation": "superlative: double g, the biggest of all"
         },
         {
           "id": "ws-33-sec-c-q12",
           "order": 12,
-          "prompt": "(big) [gap] Tom’s house is [gap] David’s. Read the passage: Mr. and Mrs. Smith are now flying to Canada. Miss Bennet is their stewardess. She is very talkative and friendly. She is showing Mr. and Mrs. Smith some pictures of her family and her best friend. Miss Bennet: This is my best friend. Her name is Tina. Mrs. Smith : She is very pretty. Is she older or younger than you? Miss Bennet: She is one year younger. Mrs. Smith : Aren’t you thinner than she is? Miss Bennet: Yes, I am. Tina loves to eat very much. Mrs. Smith : So do I. I hope it will be time for lunch soon. Miss Bennet James Bennet Tina Robbins Age 21 23 20 Height",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": "73 [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": "82 [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-33-sec-c-q01",
-          "order": 1,
-          "prompt": "68 [gap] Weight 57 kg 76 kg 61 kg",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "(big) Tom’s house is [gap] David’s.",
+          "acceptedAnswers": [
+            "bigger than"
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
         }
       ]
     },
     {
       "id": "ws-33-sec-d",
       "sectionKey": "D",
-      "instruction": "Look at chart. Compare Miss Bennet with her brother and her best friend Tina",
-      "type": "inline_gap_fill",
+      "instruction": "Read the passage and look at the chart. Compare Miss Bennet with her brother and her best friend Tina Robbins. (Example: Miss Bennet / tall / Tina Robbins → Miss Bennet is taller than Tina Robbins.)",
+      "type": "sentence_building",
+      "contextText": "Mr. and Mrs. Smith are now flying to Canada. Miss Bennet is their stewardess. She is very talkative and friendly. She is showing Mr. and Mrs. Smith some pictures of her family and her best friend.\n\nMiss Bennet: This is my best friend. Her name is Tina.\nMrs. Smith: She is very pretty. Is she older or younger than you?\nMiss Bennet: She is one year younger.\nMrs. Smith: Aren’t you thinner than she is?\nMiss Bennet: Yes, I am. Tina loves to eat very much.\nMrs. Smith: So do I. I hope it will be time for lunch soon.",
+      "tableData": {
+        "headers": [
+          "",
+          "Age",
+          "Height",
+          "Weight"
+        ],
+        "rows": [
+          [
+            "Miss Bennet",
+            "21",
+            "1.73 m",
+            "57 kg"
+          ],
+          [
+            "James Bennet",
+            "23",
+            "1.82 m",
+            "76 kg"
+          ],
+          [
+            "Tina Robbins",
+            "20",
+            "1.68 m",
+            "61 kg"
+          ]
+        ]
+      },
       "questions": [
         {
           "id": "ws-33-sec-d-q01",
           "order": 1,
-          "prompt": "(Miss Bennet / short / her brother James) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Miss Bennet / short / her brother James",
+          "acceptedAnswers": [
+            "Miss Bennet is shorter than her brother James.",
+            "Miss Bennet is shorter than her brother.",
+            "Miss Bennet is shorter than James."
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-d-q02",
           "order": 2,
-          "prompt": "(James / tall / her sister) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "James / tall / her sister",
+          "acceptedAnswers": [
+            "James is taller than his sister.",
+            "James is taller than her sister.",
+            "James is taller than Miss Bennet."
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-d-q03",
           "order": 3,
-          "prompt": "(Miss Bennet / old / her best friend) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Miss Bennet / old / her best friend",
+          "acceptedAnswers": [
+            "Miss Bennet is older than her best friend."
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-d-q04",
           "order": 4,
-          "prompt": "(Her best friend / young / Miss Bennet) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Her best friend / young / Miss Bennet",
+          "acceptedAnswers": [
+            "Her best friend is younger than Miss Bennet."
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-d-q05",
           "order": 5,
-          "prompt": "(Miss Bennet / short / her brother) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Miss Bennet / short / her brother",
+          "acceptedAnswers": [
+            "Miss Bennet is shorter than her brother."
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-d-q06",
           "order": 6,
-          "prompt": "(Her brother / tall / Miss Bennet) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Her brother / tall / Miss Bennet",
+          "acceptedAnswers": [
+            "Her brother is taller than Miss Bennet."
+          ],
+          "explanation": "short adjective: -er + than"
         },
         {
           "id": "ws-33-sec-d-q07",
           "order": 7,
-          "prompt": "(Miss Bennet / fat / Tina) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Miss Bennet / fat / Tina",
+          "acceptedAnswers": [
+            "Miss Bennet isn't as fat as Tina.",
+            "Miss Bennet isn't fatter than Tina.",
+            "Miss Bennet isn't so fat as Tina."
+          ],
+          "explanation": "57 kg vs 61 kg: use a negative comparison"
         },
         {
           "id": "ws-33-sec-d-q08",
           "order": 8,
-          "prompt": "(Tina / slim / Miss Bennet) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Tina / slim / Miss Bennet",
+          "acceptedAnswers": [
+            "Tina isn't as slim as Miss Bennet.",
+            "Tina isn't slimmer than Miss Bennet.",
+            "Tina isn't so slim as Miss Bennet."
+          ],
+          "explanation": "61 kg vs 57 kg: use a negative comparison"
         },
         {
           "id": "ws-33-sec-d-q09",
           "order": 9,
-          "prompt": "(Miss Bennet / slim / her brother) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Miss Bennet / slim / her brother",
+          "acceptedAnswers": [
+            "Miss Bennet is slimmer than her brother."
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
         },
         {
           "id": "ws-33-sec-d-q10",
           "order": 10,
-          "prompt": "(Her brother / fat / Miss Bennet) [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Her brother / fat / Miss Bennet",
+          "acceptedAnswers": [
+            "Her brother is fatter than Miss Bennet."
+          ],
+          "explanation": "short adjective ending consonant-vowel-consonant: double the consonant"
         }
       ]
     },
     {
       "id": "ws-33-sec-e",
       "sectionKey": "E",
-      "instruction": "Use “as ……………………. as” in the blanks:",
+      "instruction": "Use “as … as” in the blanks:",
       "type": "inline_gap_fill",
       "questions": [
         {
           "id": "ws-33-sec-e-q01",
           "order": 1,
-          "prompt": "Jack’s English is worse than Sonia’s. [gap] Jack’s English isn’t [gap] Sonia’s.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jack’s English is worse than Sonia’s. Jack’s English isn’t [gap] Sonia’s.",
+          "acceptedAnswers": [
+            "as good as|so good as"
+          ],
+          "explanation": "not as + adjective + as"
         },
         {
           "id": "ws-33-sec-e-q02",
           "order": 2,
-          "prompt": "Alper’s bag is 3 kg. Ahmet’s bag is 5 kg. [gap] Alper’s bag isn’t [gap] Ahmet’s bag.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Alper’s bag is 3 kg. Ahmet’s bag is 5 kg. Alper’s bag isn’t [gap] Ahmet’s bag.",
+          "acceptedAnswers": [
+            "as heavy as|so heavy as"
+          ],
+          "explanation": "not as + adjective + as"
         },
         {
           "id": "ws-33-sec-e-q03",
           "order": 3,
-          "prompt": "An orange is sweeter than a lemon. [gap] A lemon isn’t [gap] an orange.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "An orange is sweeter than a lemon. A lemon isn’t [gap] an orange.",
+          "acceptedAnswers": [
+            "as sweet as|so sweet as"
+          ],
+          "explanation": "not as + adjective + as"
         },
         {
           "id": "ws-33-sec-e-q04",
           "order": 4,
-          "prompt": "Terry is 1.70 cm tall. Jason is 1.70 cm tall too. [gap] Terry is [gap] Jason.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Terry is 1.70 m tall. Jason is 1.70 m tall too. Terry is [gap] Jason.",
+          "acceptedAnswers": [
+            "as tall as"
+          ],
+          "explanation": "as + adjective + as = equal"
         },
         {
           "id": "ws-33-sec-e-q05",
           "order": 5,
-          "prompt": "Chinese is more difficult than French. [gap] French isn’t [gap] Chinese.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Chinese is more difficult than French. French isn’t [gap] Chinese.",
+          "acceptedAnswers": [
+            "as difficult as|so difficult as"
+          ],
+          "explanation": "not as + adjective + as"
         },
         {
           "id": "ws-33-sec-e-q06",
           "order": 6,
-          "prompt": "Science fiction films and soap operas are very exciting. [gap] Science fictions are [gap] soap operas.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Science fiction films and soap operas are very exciting. Science fiction films are [gap] soap operas.",
+          "acceptedAnswers": [
+            "as exciting as"
+          ],
+          "explanation": "as + adjective + as = equal"
         },
         {
           "id": "ws-33-sec-e-q07",
           "order": 7,
-          "prompt": "Chemistry is more difficult than drawing. [gap] Chemistry isn’t [gap] drawing.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Chemistry is more difficult than drawing. Chemistry isn’t [gap] drawing.",
+          "acceptedAnswers": [
+            "as easy as|so easy as"
+          ],
+          "explanation": "not as + adjective + as"
         },
         {
           "id": "ws-33-sec-e-q08",
           "order": 8,
-          "prompt": "Jane’s car is Mercedes, but Sue’s car is Opel. [gap] Sue’s car isn’t [gap] Jane’s car.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jane’s car is a Mercedes, but Sue’s car is an Opel. Sue’s car isn’t [gap] Jane’s car.",
+          "acceptedAnswers": [
+            "as good as|as expensive as|as luxurious as|as nice as|so good as|so expensive as"
+          ],
+          "explanation": "not as + adjective + as"
         },
         {
           "id": "ws-33-sec-e-q09",
           "order": 9,
-          "prompt": "July is hotter than May. [gap] May isn’t [gap] July.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "July is hotter than May. May isn’t [gap] July.",
+          "acceptedAnswers": [
+            "as hot as|so hot as"
+          ],
+          "explanation": "not as + adjective + as"
         }
       ]
     }

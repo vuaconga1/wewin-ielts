@@ -15,7 +15,7 @@ eng.traineddata
 data/attempts
 data/users.json
 data/keys
-data/learn
+data/learn/progress
 data/tests/*
 !data/tests/test-1-*.json
 !data/tests/test-2-*.json

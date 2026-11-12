@@ -15,90 +15,18 @@
       "instruction": "Supply a suitable SIMPLE PAST or PAST PERFECT TENSE:",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-13-sec-a-q01",
-          "order": 1,
-          "prompt": "I [gap] (worry) a lot about her before I [gap] (hear) that she was safe.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q02",
-          "order": 2,
-          "prompt": "I I didn’t like the flat. It [gap] (be) much smaller than I [gap] (think) at first.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q03",
-          "order": 3,
-          "prompt": "He told us he [gap] (shoot) a big tiger.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q04",
-          "order": 4,
-          "prompt": "They [gap] (drink) tea after they [gap] (finish) dinner.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q05",
-          "order": 5,
-          "prompt": "She [gap] just [gap] (fold) the pink apron and placed it in a table drawer when the door [gap] (open) and Joe [gap] (enter).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q06",
-          "order": 6,
-          "prompt": "The police wanted to know why he [gap] (bring) a gun to school.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q07",
-          "order": 7,
-          "prompt": "After he [gap] (work) at the hospital for two years he [gap] (decide) to give up the job.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q08",
-          "order": 8,
-          "prompt": "When I [gap] (arrive) at the party John [gap] already [gap] (go) home.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q09",
-          "order": 9,
-          "prompt": "We [gap] (wait) until the match [gap] (finish).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q10",
-          "order": 10,
-          "prompt": "They [gap] (leave) the room before the meeting [gap] (finish).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q11",
-          "order": 11,
-          "prompt": "I [gap] (buy) a new camera before I [gap] (go) to London.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-a-q12",
-          "order": 12,
-          "prompt": "I [gap] just [gap] (turn off) the lights when the telephone [gap] (ring).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-13-sec-a-q01", "order": 1, "prompt": "I [gap] (worry) a lot about her before I [gap] (hear) that she was safe.", "acceptedAnswers": ["had worried|worried / heard"], "explanation": "earlier action → past perfect; later → simple past" },
+        { "id": "ws-13-sec-a-q02", "order": 2, "prompt": "I didn’t like the flat. It [gap] (be) much smaller than I [gap] (think) at first.", "acceptedAnswers": ["was / had thought"], "explanation": "earlier opinion → past perfect" },
+        { "id": "ws-13-sec-a-q03", "order": 3, "prompt": "He told us he [gap] (shoot) a big tiger.", "acceptedAnswers": ["had shot"], "explanation": "reported earlier action → past perfect" },
+        { "id": "ws-13-sec-a-q04", "order": 4, "prompt": "They [gap] (drink) tea after they [gap] (finish) dinner.", "acceptedAnswers": ["drank / had finished"], "explanation": "after + past perfect (earlier action)" },
+        { "id": "ws-13-sec-a-q05", "order": 5, "prompt": "She [gap] just [gap] (fold) the pink apron and placed it in a table drawer when the door [gap] (open) and Joe [gap] (enter).", "acceptedAnswers": ["had / folded / opened / entered"], "explanation": "had just + participle; then simple past" },
+        { "id": "ws-13-sec-a-q06", "order": 6, "prompt": "The police wanted to know why he [gap] (bring) a gun to school.", "acceptedAnswers": ["had brought"], "explanation": "earlier action → past perfect" },
+        { "id": "ws-13-sec-a-q07", "order": 7, "prompt": "After he [gap] (work) at the hospital for two years he [gap] (decide) to give up the job.", "acceptedAnswers": ["had worked / decided"], "explanation": "after + past perfect (earlier action)" },
+        { "id": "ws-13-sec-a-q08", "order": 8, "prompt": "When I [gap] (arrive) at the party John [gap] already [gap] (go) home.", "acceptedAnswers": ["arrived / had / gone"], "explanation": "already finished before arrival → past perfect" },
+        { "id": "ws-13-sec-a-q09", "order": 9, "prompt": "We [gap] (wait) until the match [gap] (finish).", "acceptedAnswers": ["waited / had finished|finished"], "explanation": "until + past perfect or simple past" },
+        { "id": "ws-13-sec-a-q10", "order": 10, "prompt": "They [gap] (leave) the room before the meeting [gap] (finish).", "acceptedAnswers": ["had left|left / finished"], "explanation": "earlier action → past perfect; before + simple past" },
+        { "id": "ws-13-sec-a-q11", "order": 11, "prompt": "I [gap] (buy) a new camera before I [gap] (go) to London.", "acceptedAnswers": ["had bought|bought / went"], "explanation": "earlier action → past perfect; before + simple past" },
+        { "id": "ws-13-sec-a-q12", "order": 12, "prompt": "I [gap] just [gap] (turn off) the lights when the telephone [gap] (ring).", "acceptedAnswers": ["had / turned off / rang"], "explanation": "had just + participle; when + simple past" }
       ]
     },
     {
@@ -107,79 +35,16 @@
       "instruction": "Supply a suitable SIMPLE PAST or PAST PERFECT TENSE:",
       "type": "verb_conjugation",
       "questions": [
-        {
-          "id": "ws-13-sec-b-q01",
-          "order": 1,
-          "prompt": "[gap] he [gap] (know) her for a long time before they [gap] (get) married?",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q02",
-          "order": 2,
-          "prompt": "He [gap] (drive) down the hotel where they [gap]",
-          "acceptedAnswers": [],
-          "explanation": "",
-          "options": [
-            "d) their"
-          ]
-        },
-        {
-          "id": "ws-13-sec-b-q03",
-          "order": 3,
-          "prompt": "When we [gap] (get) to the station the train [gap] (already / leave).",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q04",
-          "order": 4,
-          "prompt": "He [gap] (sit) at a table by the window where he [gap] (have) a meal with Jane.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q05",
-          "order": 5,
-          "prompt": "Why [gap] he [gap] (not / ask) her to wait and think again before she [gap] (leave) Paris.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q06",
-          "order": 6,
-          "prompt": "He was wondering why he [gap] (let) her leave so easily.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q07",
-          "order": 7,
-          "prompt": "He knew he [gap] (earn) that money with a great difficulty.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q08",
-          "order": 8,
-          "prompt": "After they [gap] (go), he [gap] (sit) down and [gap] (light) a cigarette.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q09",
-          "order": 9,
-          "prompt": "He [gap] (have to) go to work by bus because his car [gap] (break) down.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-13-sec-b-q10",
-          "order": 10,
-          "prompt": "He [gap] (angry) before he [gap] (hear) my offer.",
-          "acceptedAnswers": [],
-          "explanation": ""
-        }
+        { "id": "ws-13-sec-b-q01", "order": 1, "prompt": "[gap] he [gap] (know) her for a long time before they [gap] (get) married?", "acceptedAnswers": ["Had / known / got"], "explanation": "duration before a past event → past perfect" },
+        { "id": "ws-13-sec-b-q02", "order": 2, "prompt": "He [gap] (drive) down to the hotel where they [gap] (spend) their honeymoon years ago.", "acceptedAnswers": ["drove / had spent"], "explanation": "earlier event → past perfect" },
+        { "id": "ws-13-sec-b-q03", "order": 3, "prompt": "When we [gap] (get) to the station the train [gap] (already / leave).", "acceptedAnswers": ["got / had already left"], "explanation": "already finished before arrival → past perfect" },
+        { "id": "ws-13-sec-b-q04", "order": 4, "prompt": "He [gap] (sit) at a table by the window where he [gap] (have) a meal with Jane.", "acceptedAnswers": ["sat / had had"], "explanation": "earlier event → past perfect (had had)" },
+        { "id": "ws-13-sec-b-q05", "order": 5, "prompt": "Why [gap] he [gap] (not / ask) her to wait and think again before she [gap] (leave) Paris?", "acceptedAnswers": ["hadn't / asked / left","had / not asked / left"], "explanation": "earlier (missed) action → past perfect" },
+        { "id": "ws-13-sec-b-q06", "order": 6, "prompt": "He was wondering why he [gap] (let) her leave so easily.", "acceptedAnswers": ["had let"], "explanation": "earlier action → past perfect" },
+        { "id": "ws-13-sec-b-q07", "order": 7, "prompt": "He knew he [gap] (earn) that money with a great difficulty.", "acceptedAnswers": ["had earned|had earnt"], "explanation": "earlier action → past perfect" },
+        { "id": "ws-13-sec-b-q08", "order": 8, "prompt": "After they [gap] (go), he [gap] (sit) down and [gap] (light) a cigarette.", "acceptedAnswers": ["had gone / sat / lit|lighted"], "explanation": "after + past perfect; then simple past" },
+        { "id": "ws-13-sec-b-q09", "order": 9, "prompt": "He [gap] (have to) go to work by bus because his car [gap] (break) down.", "acceptedAnswers": ["had to / had broken"], "explanation": "earlier cause → past perfect" },
+        { "id": "ws-13-sec-b-q10", "order": 10, "prompt": "He [gap] (be) angry before he [gap] (hear) my offer.", "acceptedAnswers": ["had been / heard"], "explanation": "earlier state → past perfect" }
       ]
     }
   ]

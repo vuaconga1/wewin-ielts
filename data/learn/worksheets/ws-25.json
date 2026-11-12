@@ -13,225 +13,315 @@
       "id": "ws-25-sec-a",
       "sectionKey": "A",
       "instruction": "Put the following sentences into the PASSIVE VOICE:",
-      "type": "inline_gap_fill",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-25-sec-a-q01",
           "order": 1,
-          "prompt": "Someone has already paid the electrician for his work. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Someone has already paid the electrician for his work.",
+          "acceptedAnswers": [
+            "The electrician has already been paid for his work."
+          ],
+          "explanation": "present perfect passive"
         },
         {
           "id": "ws-25-sec-a-q02",
           "order": 2,
-          "prompt": "They taught him French and gave him a dictionary. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They taught him French and gave him a dictionary.",
+          "acceptedAnswers": [
+            "He was taught French and was given a dictionary.",
+            "He was taught French and given a dictionary.",
+            "French was taught to him and a dictionary was given to him."
+          ],
+          "explanation": "past simple passive with two objects"
         },
         {
           "id": "ws-25-sec-a-q03",
           "order": 3,
-          "prompt": "When we first met, they had already offered me a job at the bank. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When we first met, they had already offered me a job at the bank.",
+          "acceptedAnswers": [
+            "When we first met, I had already been offered a job at the bank.",
+            "When we first met, a job at the bank had already been offered to me."
+          ],
+          "explanation": "past perfect passive"
         },
         {
           "id": "ws-25-sec-a-q04",
           "order": 4,
-          "prompt": "A man requested the stranger to leave the meeting. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A man requested the stranger to leave the meeting.",
+          "acceptedAnswers": [
+            "The stranger was requested to leave the meeting.",
+            "The stranger was requested to leave the meeting by a man."
+          ],
+          "explanation": "past simple passive + to-infinitive"
         },
         {
           "id": "ws-25-sec-a-q05",
           "order": 5,
-          "prompt": "A young woman asked the rest of us to be there at eight o’clock. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A young woman asked the rest of us to be there at eight o’clock.",
+          "acceptedAnswers": [
+            "The rest of us were asked to be there at eight o'clock.",
+            "The rest of us were asked to be there at eight o'clock by a young woman."
+          ],
+          "explanation": "be asked + to-infinitive"
         },
         {
           "id": "ws-25-sec-a-q06",
           "order": 6,
-          "prompt": "They had eaten all the dinner before they finished the conversation. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They had eaten all the dinner before they finished the conversation.",
+          "acceptedAnswers": [
+            "All the dinner had been eaten before they finished the conversation.",
+            "All the dinner had been eaten before the conversation was finished."
+          ],
+          "explanation": "past perfect passive"
         },
         {
           "id": "ws-25-sec-a-q07",
           "order": 7,
-          "prompt": "Who wrote it? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Who wrote it?",
+          "acceptedAnswers": [
+            "Who was it written by?",
+            "By whom was it written?"
+          ],
+          "explanation": "Who ... by? in passive questions"
         },
         {
           "id": "ws-25-sec-a-q08",
           "order": 8,
-          "prompt": "The author has written a special edition for children. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The author has written a special edition for children.",
+          "acceptedAnswers": [
+            "A special edition for children has been written by the author.",
+            "A special edition has been written for children by the author."
+          ],
+          "explanation": "present perfect passive"
         },
         {
           "id": "ws-25-sec-a-q09",
           "order": 9,
-          "prompt": "Did the idea interest you? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did the idea interest you?",
+          "acceptedAnswers": [
+            "Were you interested in the idea?",
+            "Were you interested by the idea?"
+          ],
+          "explanation": "be interested in"
         },
         {
           "id": "ws-25-sec-a-q10",
           "order": 10,
-          "prompt": "Why didn’t they mend the roof before it fell in? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Why didn’t they mend the roof before it fell in?",
+          "acceptedAnswers": [
+            "Why wasn't the roof mended before it fell in?",
+            "Why was the roof not mended before it fell in?"
+          ],
+          "explanation": "negative past passive question"
         },
         {
           "id": "ws-25-sec-a-q11",
           "order": 11,
-          "prompt": "The burglars had cut a huge hole in the steel door. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The burglars had cut a huge hole in the steel door.",
+          "acceptedAnswers": [
+            "A huge hole had been cut in the steel door by the burglars."
+          ],
+          "explanation": "past perfect passive"
         },
         {
           "id": "ws-25-sec-a-q12",
           "order": 12,
-          "prompt": "The organizers will exhibit the paintings till the end of the month. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "The organizers will exhibit the paintings till the end of the month.",
+          "acceptedAnswers": [
+            "The paintings will be exhibited till the end of the month.",
+            "The paintings will be exhibited till the end of the month by the organizers.",
+            "The paintings will be exhibited till the end of the month by the organisers.",
+            "The paintings will be exhibited until the end of the month.",
+            "The paintings will be exhibited until the end of the month by the organizers.",
+            "The paintings will be exhibited until the end of the month by the organisers.",
+            "The paintings will be exhibited by the organizers till the end of the month.",
+            "The paintings will be exhibited by the organizers until the end of the month.",
+            "The paintings will be exhibited by the organisers till the end of the month.",
+            "The paintings will be exhibited by the organisers until the end of the month."
+          ],
+          "explanation": "future passive"
         },
         {
           "id": "ws-25-sec-a-q13",
           "order": 13,
-          "prompt": "When did they ring the church bells? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When did they ring the church bells?",
+          "acceptedAnswers": [
+            "When were the church bells rung?"
+          ],
+          "explanation": "past passive question (ring – rang – rung)"
         },
         {
           "id": "ws-25-sec-a-q14",
           "order": 14,
-          "prompt": "Does listening to music disturb you? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Does listening to music disturb you?",
+          "acceptedAnswers": [
+            "Are you disturbed by listening to music?"
+          ],
+          "explanation": "present passive question"
         }
       ]
     },
     {
       "id": "ws-25-sec-b",
       "sectionKey": "B",
-      "instruction": "Read the following sentences and write another one with the same meaning:",
-      "type": "inline_gap_fill",
+      "instruction": "Read the following sentences and write another one with the same meaning (start with the subject of the that-clause):",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-25-sec-b-q01",
           "order": 1,
-          "prompt": "It is believed that the wanted man is living in New York. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is believed that the wanted man is living in New York.",
+          "acceptedAnswers": [
+            "The wanted man is believed to be living in New York."
+          ],
+          "explanation": "continuous: to be + -ing"
         },
         {
           "id": "ws-25-sec-b-q02",
           "order": 2,
-          "prompt": "It is said that many people are homeless after the floods. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is said that many people are homeless after the floods.",
+          "acceptedAnswers": [
+            "Many people are said to be homeless after the floods."
+          ],
+          "explanation": "subject + is said + to be"
         },
         {
           "id": "ws-25-sec-b-q03",
           "order": 3,
-          "prompt": "It is expected that the government will lose this election. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is expected that the government will lose this election.",
+          "acceptedAnswers": [
+            "The government is expected to lose this election."
+          ],
+          "explanation": "future: to + verb"
         },
         {
           "id": "ws-25-sec-b-q04",
           "order": 4,
-          "prompt": "It is known that the Prime Minister is in favour of the new law. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is known that the Prime Minister is in favour of the new law.",
+          "acceptedAnswers": [
+            "The Prime Minister is known to be in favour of the new law.",
+            "The Prime Minister is known to be in favor of the new law."
+          ],
+          "explanation": "subject + is known + to be"
         },
         {
           "id": "ws-25-sec-b-q05",
           "order": 5,
-          "prompt": "It is believed that the thieves got in through the kitchen window. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is believed that the thieves got in through the kitchen window.",
+          "acceptedAnswers": [
+            "The thieves are believed to have got in through the kitchen window.",
+            "The thieves are believed to have gotten in through the kitchen window."
+          ],
+          "explanation": "earlier action: to have + V3"
         },
         {
           "id": "ws-25-sec-b-q06",
           "order": 6,
-          "prompt": "It is thought that the prisoner escaped by climbing over the wall. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is thought that the prisoner escaped by climbing over the wall.",
+          "acceptedAnswers": [
+            "The prisoner is thought to have escaped by climbing over the wall."
+          ],
+          "explanation": "earlier action: to have + V3"
         },
         {
           "id": "ws-25-sec-b-q07",
           "order": 7,
-          "prompt": "It is claimed that he drove through the town at 90 miles an hour. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is claimed that he drove through the town at 90 miles an hour.",
+          "acceptedAnswers": [
+            "He is claimed to have driven through the town at 90 miles an hour."
+          ],
+          "explanation": "earlier action: to have + V3"
         },
         {
           "id": "ws-25-sec-b-q08",
           "order": 8,
-          "prompt": "It is reported that two people were seriously injured in the accident. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is reported that two people were seriously injured in the accident.",
+          "acceptedAnswers": [
+            "Two people are reported to have been seriously injured in the accident."
+          ],
+          "explanation": "earlier passive: to have been + V3"
         },
         {
           "id": "ws-25-sec-b-q09",
           "order": 9,
-          "prompt": "It is said that three men were arrested after the explosion. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is said that three men were arrested after the explosion.",
+          "acceptedAnswers": [
+            "Three men are said to have been arrested after the explosion."
+          ],
+          "explanation": "earlier passive: to have been + V3"
         },
         {
           "id": "ws-25-sec-b-q10",
           "order": 10,
-          "prompt": "It is believed that Maria will not win the prize. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is believed that Maria will not win the prize.",
+          "acceptedAnswers": [
+            "Maria is believed not to win the prize.",
+            "Maria is not believed to win the prize.",
+            "Maria is believed not to be going to win the prize."
+          ],
+          "explanation": "negative: believed not to + verb"
         },
         {
           "id": "ws-25-sec-b-q11",
           "order": 11,
-          "prompt": "It is considered that the 2008 Olimpic Games will be held in Turkey. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is considered that the 2008 Olympic Games will be held in Turkey.",
+          "acceptedAnswers": [
+            "The 2008 Olympic Games are considered to be held in Turkey.",
+            "The 2008 Olympic Games is considered to be held in Turkey.",
+            "The 2008 Olympic Games are considered likely to be held in Turkey.",
+            "The 2008 Olympic Games is considered likely to be held in Turkey."
+          ],
+          "explanation": "future passive: to be + V3"
         },
         {
           "id": "ws-25-sec-b-q12",
           "order": 12,
-          "prompt": "It is said that our teacher is 55 years old. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is said that our teacher is 55 years old.",
+          "acceptedAnswers": [
+            "Our teacher is said to be 55 years old."
+          ],
+          "explanation": "subject + is said + to be"
         },
         {
           "id": "ws-25-sec-b-q13",
           "order": 13,
-          "prompt": "It is thought that Tom didn’t steal their rings. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is thought that Tom didn’t steal their rings.",
+          "acceptedAnswers": [
+            "Tom is thought not to have stolen their rings.",
+            "Tom is not thought to have stolen their rings."
+          ],
+          "explanation": "negative earlier action: not to have + V3"
         },
         {
           "id": "ws-25-sec-b-q14",
           "order": 14,
-          "prompt": "It is claimed that this examination will be the most difficult one. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is claimed that this examination will be the most difficult one.",
+          "acceptedAnswers": [
+            "This examination is claimed to be the most difficult one."
+          ],
+          "explanation": "subject + is claimed + to be"
         },
         {
           "id": "ws-25-sec-b-q15",
           "order": 15,
-          "prompt": "It is believed that John will marry Ann at the end of this month. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is believed that John will marry Ann at the end of this month.",
+          "acceptedAnswers": [
+            "John is believed to marry Ann at the end of this month.",
+            "John is believed to be marrying Ann at the end of this month.",
+            "John is believed to be going to marry Ann at the end of this month."
+          ],
+          "explanation": "future: to + verb"
         },
         {
           "id": "ws-25-sec-b-q16",
           "order": 16,
-          "prompt": "It is expected that people will live in Mars in 2050. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "It is expected that people will live on Mars in 2050.",
+          "acceptedAnswers": [
+            "People are expected to live on Mars in 2050.",
+            "People are expected to live in Mars in 2050."
+          ],
+          "explanation": "future: to + verb"
         }
       ]
     },
@@ -239,105 +329,156 @@
       "id": "ws-25-sec-c",
       "sectionKey": "C",
       "instruction": "Change these sentences into PASSIVE FORM:",
-      "type": "inline_gap_fill",
+      "type": "sentence_rewrite",
       "questions": [
         {
           "id": "ws-25-sec-c-q01",
           "order": 1,
-          "prompt": "People believe that the strike will end soon. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "People believe that the strike will end soon.",
+          "acceptedAnswers": [
+            "It is believed that the strike will end soon.",
+            "It is believed the strike will end soon.",
+            "The strike is believed to end soon.",
+            "The strike is believed to be ending soon."
+          ],
+          "explanation": "It is believed that / subject + to-infinitive"
         },
         {
           "id": "ws-25-sec-c-q02",
           "order": 2,
-          "prompt": "People believe that the thieves got through the kitchen window. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "People believe that the thieves got through the kitchen window.",
+          "acceptedAnswers": [
+            "It is believed that the thieves got through the kitchen window.",
+            "It is believed the thieves got through the kitchen window.",
+            "The thieves are believed to have got through the kitchen window.",
+            "The thieves are believed to have gotten through the kitchen window."
+          ],
+          "explanation": "earlier action: to have + V3"
         },
         {
           "id": "ws-25-sec-c-q03",
           "order": 3,
-          "prompt": "People say that the company is loosing a lot of money. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "People say that the company is losing a lot of money.",
+          "acceptedAnswers": [
+            "It is said that the company is losing a lot of money.",
+            "It is said the company is losing a lot of money.",
+            "The company is said to be losing a lot of money."
+          ],
+          "explanation": "continuous: to be + -ing"
         },
         {
           "id": "ws-25-sec-c-q04",
           "order": 4,
-          "prompt": "When is he going to pay the taxes? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "When is he going to pay the taxes?",
+          "acceptedAnswers": [
+            "When are the taxes going to be paid?",
+            "When are the taxes going to be paid by him?"
+          ],
+          "explanation": "be going to be + V3 question"
         },
         {
           "id": "ws-25-sec-c-q05",
           "order": 5,
-          "prompt": "Who has designed these buildings? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Who has designed these buildings?",
+          "acceptedAnswers": [
+            "Who have these buildings been designed by?",
+            "By whom have these buildings been designed?"
+          ],
+          "explanation": "present perfect passive question"
         },
         {
           "id": "ws-25-sec-c-q06",
           "order": 6,
-          "prompt": "How much do they spend on these activities? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "How much do they spend on these activities?",
+          "acceptedAnswers": [
+            "How much is spent on these activities?"
+          ],
+          "explanation": "present passive question"
         },
         {
           "id": "ws-25-sec-c-q07",
           "order": 7,
-          "prompt": "They broke a lot of plates while they were dancing? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They broke a lot of plates while they were dancing.",
+          "acceptedAnswers": [
+            "A lot of plates were broken while they were dancing."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-25-sec-c-q08",
           "order": 8,
-          "prompt": "Who invented the electric bulb? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Who invented the electric bulb?",
+          "acceptedAnswers": [
+            "Who was the electric bulb invented by?",
+            "By whom was the electric bulb invented?"
+          ],
+          "explanation": "Who ... by? in passive questions"
         },
         {
           "id": "ws-25-sec-c-q09",
           "order": 9,
-          "prompt": "People believe that they are secret agents. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "People believe that they are secret agents.",
+          "acceptedAnswers": [
+            "It is believed that they are secret agents.",
+            "It is believed they are secret agents.",
+            "They are believed to be secret agents."
+          ],
+          "explanation": "It is believed that / to be"
         },
         {
           "id": "ws-25-sec-c-q10",
           "order": 10,
-          "prompt": "People think that he takes harmful drugs. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "People think that he takes harmful drugs.",
+          "acceptedAnswers": [
+            "It is thought that he takes harmful drugs.",
+            "It is thought he takes harmful drugs.",
+            "He is thought to take harmful drugs."
+          ],
+          "explanation": "It is thought that / to-infinitive"
         },
         {
           "id": "ws-25-sec-c-q11",
           "order": 11,
-          "prompt": "Did they give you a great reception? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did they give you a great reception?",
+          "acceptedAnswers": [
+            "Were you given a great reception?",
+            "Was a great reception given to you?"
+          ],
+          "explanation": "past passive question"
         },
         {
           "id": "ws-25-sec-c-q12",
           "order": 12,
-          "prompt": "Nobody sends her a card at Christmas. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Nobody sends her a card at Christmas.",
+          "acceptedAnswers": [
+            "She is not sent a card at Christmas.",
+            "She is not sent a card at Christmas by anybody.",
+            "She is not sent a card at Christmas by anyone.",
+            "She is sent no card at Christmas.",
+            "She is not sent a card by anybody at Christmas.",
+            "She is not sent a card by anyone at Christmas."
+          ],
+          "explanation": "nobody → negative passive"
         },
         {
           "id": "ws-25-sec-c-q13",
           "order": 13,
-          "prompt": "Did anyone call an ambulance after the accident? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Did anyone call an ambulance after the accident?",
+          "acceptedAnswers": [
+            "Was an ambulance called after the accident?",
+            "Was an ambulance called after the accident by anyone?"
+          ],
+          "explanation": "past passive question"
         },
         {
           "id": "ws-25-sec-c-q14",
           "order": 14,
-          "prompt": "Will you pay the fine? [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Will you pay the fine?",
+          "acceptedAnswers": [
+            "Will the fine be paid?",
+            "Will the fine be paid by you?"
+          ],
+          "explanation": "future passive question"
         }
       ]
     },
@@ -350,93 +491,73 @@
         {
           "id": "ws-25-sec-d-q01",
           "order": 1,
-          "prompt": "Hospitals are places where people [gap] (examine) and",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Hospitals are places where people [gap] (examine) and [gap] (bring) back to good health.",
+          "acceptedAnswers": [
+            "are examined / brought|are brought"
+          ],
+          "explanation": "present simple passive: general fact"
         },
         {
           "id": "ws-25-sec-d-q02",
           "order": 2,
-          "prompt": "[gap] (bring) back to good health. I’m lucky because I [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "I’m lucky because I [gap] (never / take) to hospital.",
+          "acceptedAnswers": [
+            "have never been taken"
+          ],
+          "explanation": "present perfect passive with never"
         },
         {
           "id": "ws-25-sec-d-q03",
           "order": 3,
-          "prompt": "[gap] (never / take) to hospital when she [gap] (hit) by a car",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "My sister was taken to hospital when she [gap] (hit) by a car last month.",
+          "acceptedAnswers": [
+            "was hit"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-25-sec-d-q04",
           "order": 4,
-          "prompt": "last month. Luckily no bones [gap] (break) but she [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Luckily no bones [gap] (break) but she [gap] (examine) carefully and x-rays [gap] (take).",
+          "acceptedAnswers": [
+            "were broken / was examined / were taken"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-25-sec-d-q05",
           "order": 5,
-          "prompt": "(examine) carefully and x-rays [gap] (take). She [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "She [gap] (keep) there for a night and she [gap] (give) permission to leave the next day.",
+          "acceptedAnswers": [
+            "was kept / was given"
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-25-sec-d-q06",
           "order": 6,
-          "prompt": "(keep) there for a night and she [gap] (give) permission to leave the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Ambulance services are also important. Patients [gap] (must / take) to hospital as quickly as possible.",
+          "acceptedAnswers": [
+            "must be taken"
+          ],
+          "explanation": "modal passive"
         },
         {
           "id": "ws-25-sec-d-q07",
           "order": 7,
-          "prompt": "next day. [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-25-sec-d-q08",
-          "order": 8,
-          "prompt": "Ambulance services are also important. Patients [gap] (must / take) to",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-25-sec-d-q09",
-          "order": 9,
-          "prompt": "hospital as quickly as possible. A lot of people [gap] (kill) in road",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-25-sec-d-q10",
-          "order": 10,
-          "prompt": "accidents and a lot more [gap] (injure) but if more ambulances",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-25-sec-d-q11",
-          "order": 11,
-          "prompt": "[gap] (put) into service, more lives [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
-        },
-        {
-          "id": "ws-25-sec-d-q12",
-          "order": 12,
-          "prompt": "(can / save). [gap]",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "A lot of people [gap] (kill) in road accidents and a lot more [gap] (injure) but if more ambulances [gap] (put) into service, more lives [gap] (can / save).",
+          "acceptedAnswers": [
+            "are killed / are injured|injured / are put / can be saved",
+            "are killed / are injured|injured / were put / could be saved"
+          ],
+          "explanation": "present passive; conditional with modal passive"
         }
       ]
     },
     {
       "id": "ws-25-sec-e",
       "sectionKey": "E",
-      "instruction": "Complete the sentences using PASSIVE FORMS:",
+      "instruction": "Complete the sentences using PASSIVE FORMS (use any suitable verb):",
       "type": "inline_gap_fill",
       "questions": [
         {
@@ -444,113 +565,155 @@
           "order": 1,
           "prompt": "The classroom [gap] an hour ago.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "past simple passive",
+          "modelAnswer": "The classroom was cleaned an hour ago."
         },
         {
           "id": "ws-25-sec-e-q02",
           "order": 2,
           "prompt": "The blackboard [gap] now.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "present continuous passive",
+          "modelAnswer": "The blackboard is being cleaned now."
         },
         {
           "id": "ws-25-sec-e-q03",
           "order": 3,
           "prompt": "English [gap] in the world.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "present simple passive",
+          "modelAnswer": "English is spoken by millions of people in the world."
         },
         {
           "id": "ws-25-sec-e-q04",
           "order": 4,
           "prompt": "This unit [gap] next week.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "future passive",
+          "modelAnswer": "This unit will be studied next week."
         },
         {
           "id": "ws-25-sec-e-q05",
           "order": 5,
-          "prompt": "No letters [gap] since [gap]",
+          "prompt": "No letters [gap] since [gap].",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "present perfect passive + since",
+          "modelAnswer": "No letters have been sent since last Monday."
         },
         {
           "id": "ws-25-sec-e-q06",
           "order": 6,
           "prompt": "His bike [gap] last week.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "past simple passive",
+          "modelAnswer": "His bike was stolen last week."
         },
         {
           "id": "ws-25-sec-e-q07",
           "order": 7,
           "prompt": "My car [gap] now.",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "present continuous passive",
+          "modelAnswer": "My car is being repaired now."
         },
         {
           "id": "ws-25-sec-e-q08",
           "order": 8,
-          "prompt": "After the meal [gap] , [gap]",
+          "prompt": "After the meal [gap], [gap].",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "past perfect passive + past passive",
+          "modelAnswer": "After the meal had been eaten, the dishes were washed."
         },
         {
           "id": "ws-25-sec-e-q09",
           "order": 9,
-          "prompt": "She is believed [gap]",
+          "prompt": "She is believed [gap].",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "be believed + to-infinitive",
+          "modelAnswer": "She is believed to be living in Paris."
         },
         {
           "id": "ws-25-sec-e-q10",
           "order": 10,
-          "prompt": "He is said [gap]",
+          "prompt": "He is said [gap].",
           "acceptedAnswers": [],
-          "explanation": ""
+          "explanation": "be said + to-infinitive",
+          "modelAnswer": "He is said to be very rich."
         }
       ]
     },
     {
       "id": "ws-25-sec-f",
       "sectionKey": "F",
-      "instruction": "Rewrite the following passage changing the suitable sentences into PASSIVE VOICE:",
+      "instruction": "Rewrite the following passage changing the suitable sentences into PASSIVE VOICE (rewrite each sentence below):",
       "type": "sentence_rewrite",
+      "contextText": "Jane Johnson has been worried all last week. Last Monday, she received a letter from the police. In the letter they asked her to call the police station. Jane wondered why the police wanted her, and nothing worried her anymore. There, they told her that they had found her bike. They picked it up in a small village a week ago. Somebody stole it 10 years ago, when she was a girl of fifteen. Now, they are sending it to her.",
       "questions": [
         {
           "id": "ws-25-sec-f-q01",
           "order": 1,
-          "prompt": "Jane Johnson has been worried all last week. Last Monday, she received a letter from the",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Last Monday, she received a letter from the police.",
+          "acceptedAnswers": [
+            "Last Monday, she was sent a letter by the police.",
+            "Last Monday, a letter was sent to her by the police.",
+            "Last Monday, a letter from the police was received by her."
+          ],
+          "explanation": "past simple passive"
         },
         {
           "id": "ws-25-sec-f-q02",
           "order": 2,
-          "prompt": "police. In the letter they asked her to call the police station. Jane wondered why the police",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "In the letter they asked her to call the police station.",
+          "acceptedAnswers": [
+            "In the letter she was asked to call the police station."
+          ],
+          "explanation": "be asked + to-infinitive"
         },
         {
           "id": "ws-25-sec-f-q03",
           "order": 3,
-          "prompt": "wanted her, and nothing worried her anymore. There, they told her that they had found her bike.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "Jane wondered why the police wanted her.",
+          "acceptedAnswers": [
+            "Jane wondered why she was wanted by the police."
+          ],
+          "explanation": "past simple passive in a wh-clause"
         },
         {
           "id": "ws-25-sec-f-q04",
           "order": 4,
-          "prompt": "They picked it up in a small village a week ago. Somebody stole it 10 years ago, when she was a",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "There, they told her that they had found her bike.",
+          "acceptedAnswers": [
+            "There, she was told that her bike had been found."
+          ],
+          "explanation": "past passive + past perfect passive"
         },
         {
           "id": "ws-25-sec-f-q05",
           "order": 5,
-          "prompt": "girl of fifteen. Now, they are sending it to her.",
-          "acceptedAnswers": [],
-          "explanation": ""
+          "prompt": "They picked it up in a small village a week ago.",
+          "acceptedAnswers": [
+            "It was picked up in a small village a week ago."
+          ],
+          "explanation": "past simple passive (phrasal verb)"
+        },
+        {
+          "id": "ws-25-sec-f-q06",
+          "order": 6,
+          "prompt": "Somebody stole it 10 years ago, when she was a girl of fifteen.",
+          "acceptedAnswers": [
+            "It was stolen 10 years ago, when she was a girl of fifteen."
+          ],
+          "explanation": "past simple passive"
+        },
+        {
+          "id": "ws-25-sec-f-q07",
+          "order": 7,
+          "prompt": "Now, they are sending it to her.",
+          "acceptedAnswers": [
+            "Now, it is being sent to her.",
+            "Now, she is being sent it."
+          ],
+          "explanation": "present continuous passive"
         }
       ]
     }
