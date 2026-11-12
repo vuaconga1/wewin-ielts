@@ -1,16 +1,18 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { DATA_DIR } from "@/lib/paths";
+import { BUNDLED_DATA_DIR } from "@/lib/paths";
 import type {
   WorksheetLesson,
   WorksheetCatalogItem,
   WorksheetCardCatalogItem,
 } from "./worksheet-types";
 
-const WORKSHEET_DIR = path.join(DATA_DIR, "learn", "worksheets");
-const CATALOG_PATH = path.join(DATA_DIR, "learn", "worksheets-catalog.json");
-const CARDS_DIR = path.join(DATA_DIR, "learn", "worksheet-cards");
-const CARDS_CATALOG_PATH = path.join(DATA_DIR, "learn", "worksheet-cards-catalog.json");
+// Read-only content shipped with the deploy; DATA_DIR is an empty /tmp on Vercel.
+const LEARN_CONTENT_DIR = path.join(BUNDLED_DATA_DIR, "learn");
+const WORKSHEET_DIR = path.join(LEARN_CONTENT_DIR, "worksheets");
+const CATALOG_PATH = path.join(LEARN_CONTENT_DIR, "worksheets-catalog.json");
+const CARDS_DIR = path.join(LEARN_CONTENT_DIR, "worksheet-cards");
+const CARDS_CATALOG_PATH = path.join(LEARN_CONTENT_DIR, "worksheet-cards-catalog.json");
 
 let catalogCache: { data: WorksheetCatalogItem[]; timestamp: number } | null = null;
 let cardsCatalogCache: { data: WorksheetCardCatalogItem[]; timestamp: number } | null = null;

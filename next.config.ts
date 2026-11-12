@@ -38,6 +38,12 @@ const nextConfig: NextConfig = {
     "@neondatabase/serverless",
     "mammoth",
   ],
+  // Worksheet JSON is read via dynamic paths, which file tracing can miss.
+  outputFileTracingIncludes: {
+    "/learn/**": ["./data/learn/worksheet*.json", "./data/learn/worksheet*/**/*.json"],
+    "/classroom/**": ["./data/learn/worksheet*.json", "./data/learn/worksheet*/**/*.json"],
+    "/api/**": ["./data/learn/worksheet*.json", "./data/learn/worksheet*/**/*.json"],
+  },
   async headers() {
     return [
       {
