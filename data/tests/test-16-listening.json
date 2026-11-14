@@ -1,0 +1,1007 @@
+{
+  "title": "Test 16.C21.02 - Listening",
+  "slug": "test-16-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-16-section-1.mp3",
+    "/uploads/audio/test-16-section-2.mp3",
+    "/uploads/audio/test-16-section-3.mp3",
+    "/uploads/audio/test-16-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nOne-day classes at Steynford College\n| Course | Date | Cost | Notes |\n| --- | --- | --- | --- |\n| Vietnamese food | 1 ............... | £59 | It provides information on the use of herbs.<br>There are no places at present. |\n| Bread making | 20 March | 2 £ ............... | There is also an extra charge for ingredients.<br>Participants make white bread, sourdough and 3 ............... |\n| Face massage | 23 February | £35 | The teacher trained in 4 ...............<br>Bring a 5 ............... |\n| Candle making | 6 ............... | £52 | Only 7 ............... ingredients are used.<br>The candles can be used as presents. |\n| Silk painting | 18 May | 8 £ ............... | Bring an apron or old 9 ............... |\n| DIY for beginners | 24 February | £125 | Learn how to:<br>• use a drill, saw and 10 ...............<br>• put up a shelf. |",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-16-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Vietnamese food date: ________",
+            "blank": true
+          },
+          "correctAnswer": "13 January",
+          "acceptableAnswers": [
+            "13 January",
+            "13th January",
+            "13.01",
+            "13/1",
+            "13.1",
+            "the 13th of January",
+            "January 13",
+            "January 13th"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Bread making cost: £ ________",
+            "blank": true
+          },
+          "correctAnswer": "48",
+          "acceptableAnswers": [
+            "48",
+            "forty-eight"
+          ]
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Participants make white bread, sourdough and ________",
+            "blank": true
+          },
+          "correctAnswer": "pizza"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Face massage teacher trained in ________",
+            "blank": true
+          },
+          "correctAnswer": "India"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Face massage: bring a ________",
+            "blank": true
+          },
+          "correctAnswer": "mirror"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Candle making date: ________",
+            "blank": true
+          },
+          "correctAnswer": "6 April",
+          "acceptableAnswers": [
+            "6 April",
+            "6th April",
+            "06.04",
+            "6.04",
+            "6.4",
+            "the 6th of April",
+            "April 6",
+            "April 6th"
+          ]
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Only ________ ingredients are used",
+            "blank": true
+          },
+          "correctAnswer": "natural"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Silk painting cost: £ ________",
+            "blank": true
+          },
+          "correctAnswer": "67.50",
+          "acceptableAnswers": [
+            "67.50",
+            "sixty-seven fifty"
+          ]
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Bring an apron or old ________",
+            "blank": true
+          },
+          "correctAnswer": "shirt"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Learn how to use a drill, saw and ________",
+            "blank": true
+          },
+          "correctAnswer": "hammer"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO pieces of advice are given about the Marsden Coastal Walk?\nA Stop for lunch in an ancient town.\nB Don't miss the ruins of a certain building.\nC Catch a boat to the start of this walk.\nD Be careful of the steep and rocky paths.\nE Don't worry about getting lost.\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO things are said about the Melby Heritage Walk?\nA This walk is mostly downhill.\nB The paths can get busy during the day.\nC This is a circular walk.\nD A tower stands on the site of an older structure.\nE There are far-reaching views the whole way.\n\nQuestions 15–20\nLabel the map below.\nWrite the correct letter, A–I, next to Questions 15–20.\n\nMelby Coal Mine\n15 Exhibition\n16 Baths\n17 Tools\n18 Vehicles\n19 Ponies\n20 Education centre",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-16-section-2.mp3",
+        "imageUrl": "/uploads/images/test-16-map.png",
+        "mediaUrl": "/uploads/images/test-16-map.png"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO pieces of advice are given about the Marsden Coastal Walk?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stop for lunch in an ancient town."
+              },
+              {
+                "label": "B",
+                "text": "Don't miss the ruins of a certain building."
+              },
+              {
+                "label": "C",
+                "text": "Catch a boat to the start of this walk."
+              },
+              {
+                "label": "D",
+                "text": "Be careful of the steep and rocky paths."
+              },
+              {
+                "label": "E",
+                "text": "Don't worry about getting lost."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              11,
+              12
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 11
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things are said about the Melby Heritage Walk?",
+            "options": [
+              {
+                "label": "A",
+                "text": "This walk is mostly downhill."
+              },
+              {
+                "label": "B",
+                "text": "The paths can get busy during the day."
+              },
+              {
+                "label": "C",
+                "text": "This is a circular walk."
+              },
+              {
+                "label": "D",
+                "text": "A tower stands on the site of an older structure."
+              },
+              {
+                "label": "E",
+                "text": "There are far-reaching views the whole way."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              13,
+              14
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 13
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MAP_LABELING",
+          "mediaUrl": "/uploads/images/test-16-map.png",
+          "content": {
+            "stem": "Exhibition",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-16-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MAP_LABELING",
+          "mediaUrl": "/uploads/images/test-16-map.png",
+          "content": {
+            "stem": "Baths",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-16-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MAP_LABELING",
+          "mediaUrl": "/uploads/images/test-16-map.png",
+          "content": {
+            "stem": "Tools",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-16-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MAP_LABELING",
+          "mediaUrl": "/uploads/images/test-16-map.png",
+          "content": {
+            "stem": "Vehicles",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-16-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MAP_LABELING",
+          "mediaUrl": "/uploads/images/test-16-map.png",
+          "content": {
+            "stem": "Ponies",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-16-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MAP_LABELING",
+          "mediaUrl": "/uploads/images/test-16-map.png",
+          "content": {
+            "stem": "Education centre",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ],
+            "imageUrl": "/uploads/images/test-16-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
+          },
+          "correctAnswer": "E"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO pieces of information surprised the students during the sessions on food safety?\nA the rise in obesity rates\nB the variety of diseases caused by food\nC the lack of control over packaging\nD the waste of out-of-date food\nE the transmission of antibiotics into humans\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO things did the students find particularly useful in the visiting lecturers' presentations?\nA learning about food fraud\nB understanding food safety laws\nC the focus on people with specific diets\nD the examples of poor labelling\nE the discussion on international standards\n\nQuestions 25 and 26\nChoose TWO letters, A–E.\nWhich TWO aspects of the nutrition project did the students think were most successful?\nA the cooperation among team members\nB the quality of the visual data\nC the relevance of the findings to local people\nD the depth of the initial research\nE the variety of age groups involved\n\nQuestions 27–30\nComplete the flow-chart below.\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 27–30.\n\nA create questions\nB analyze data\nC decide focus\nD select participants\nE test pilot survey\nF choose platform\n\nCreating an online survey\nFirst step: 27 ...............\nNext: 28 ...............\nThen: 29 ...............\nFinally: 30 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-16-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO pieces of information surprised the students during the sessions on food safety?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the rise in obesity rates"
+              },
+              {
+                "label": "B",
+                "text": "the variety of diseases caused by food"
+              },
+              {
+                "label": "C",
+                "text": "the lack of control over packaging"
+              },
+              {
+                "label": "D",
+                "text": "the waste of out-of-date food"
+              },
+              {
+                "label": "E",
+                "text": "the transmission of antibiotics into humans"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              21,
+              22
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 21
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things did the students find particularly useful in the visiting lecturers' presentations?",
+            "options": [
+              {
+                "label": "A",
+                "text": "learning about food fraud"
+              },
+              {
+                "label": "B",
+                "text": "understanding food safety laws"
+              },
+              {
+                "label": "C",
+                "text": "the focus on people with specific diets"
+              },
+              {
+                "label": "D",
+                "text": "the examples of poor labelling"
+              },
+              {
+                "label": "E",
+                "text": "the discussion on international standards"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              23,
+              24
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 23
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO aspects of the nutrition project did the students think were most successful?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the cooperation among team members"
+              },
+              {
+                "label": "B",
+                "text": "the quality of the visual data"
+              },
+              {
+                "label": "C",
+                "text": "the relevance of the findings to local people"
+              },
+              {
+                "label": "D",
+                "text": "the depth of the initial research"
+              },
+              {
+                "label": "E",
+                "text": "the variety of age groups involved"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              25,
+              26
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 25
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "First step: ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "create questions"
+              },
+              {
+                "label": "B",
+                "text": "analyze data"
+              },
+              {
+                "label": "C",
+                "text": "decide focus"
+              },
+              {
+                "label": "D",
+                "text": "select participants"
+              },
+              {
+                "label": "E",
+                "text": "test pilot survey"
+              },
+              {
+                "label": "F",
+                "text": "choose platform"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Next: ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "create questions"
+              },
+              {
+                "label": "B",
+                "text": "analyze data"
+              },
+              {
+                "label": "C",
+                "text": "decide focus"
+              },
+              {
+                "label": "D",
+                "text": "select participants"
+              },
+              {
+                "label": "E",
+                "text": "test pilot survey"
+              },
+              {
+                "label": "F",
+                "text": "choose platform"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Then: ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "create questions"
+              },
+              {
+                "label": "B",
+                "text": "analyze data"
+              },
+              {
+                "label": "C",
+                "text": "decide focus"
+              },
+              {
+                "label": "D",
+                "text": "select participants"
+              },
+              {
+                "label": "E",
+                "text": "test pilot survey"
+              },
+              {
+                "label": "F",
+                "text": "choose platform"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Finally: ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "create questions"
+              },
+              {
+                "label": "B",
+                "text": "analyze data"
+              },
+              {
+                "label": "C",
+                "text": "decide focus"
+              },
+              {
+                "label": "D",
+                "text": "select participants"
+              },
+              {
+                "label": "E",
+                "text": "test pilot survey"
+              },
+              {
+                "label": "F",
+                "text": "choose platform"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nSustainable tourism\nEnvironmental impact of mass tourism\n• 31 ............... from cruise ships is a major concern\n• Some islands have introduced a tourist 32 ............... to pay for conservation work\n\nLocal economic benefits\n• In some areas, traditional agriculture (e.g. producing 33 ...............) has received support\n• The 34 ............... of flights can affect how much money remains in local communities\n• High accommodation 35 ............... often benefits foreign hotel chains rather than residents\n\nResponsible tourist behaviour\n• Tour operators must enforce strict 36 ............... regarding wildlife observation\n• Coral reefs: tourists should avoid touching reefs during 37 ............... excursions\n• Eating locally: visitors are encouraged to choose 38 ............... options to reduce environmental footprint\n• In remote villages, free 39 ............... access should not be expected\n• Travellers are requested not to share 40 ............... showing sensitive sacred sites on social media",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-16-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ from cruise ships is a major concern",
+            "blank": true
+          },
+          "correctAnswer": "Pollution"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Some islands have introduced a tourist ________ to pay for conservation work",
+            "blank": true
+          },
+          "correctAnswer": "tax"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "traditional agriculture (e.g. producing ________) has received support",
+            "blank": true
+          },
+          "correctAnswer": "chocolate"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The ________ of flights can affect how much money remains in local communities",
+            "blank": true
+          },
+          "correctAnswer": "timing"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "High accommodation ________ often benefits foreign hotel chains",
+            "blank": true
+          },
+          "correctAnswer": "cost"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Tour operators must enforce strict ________ regarding wildlife observation",
+            "blank": true
+          },
+          "correctAnswer": "rules"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Coral reefs: tourists should avoid touching reefs during ________ excursions",
+            "blank": true
+          },
+          "correctAnswer": "diving"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "visitors are encouraged to choose ________ options",
+            "blank": true
+          },
+          "correctAnswer": "vegan"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In remote villages, free ________ access should not be expected",
+            "blank": true
+          },
+          "correctAnswer": "wifi"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Travellers are requested not to share ________ showing sensitive sacred sites",
+            "blank": true
+          },
+          "correctAnswer": "videos"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "IELTS Cô Mơ - CAMBRIDGE 21.pdf",
+  "savedAt": "2026-11-13T11:06:46.762Z"
+}

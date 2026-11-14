@@ -1,0 +1,966 @@
+{
+  "title": "Test 19.C19.01 - Listening",
+  "slug": "test-19-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-19-section-1.mp3",
+    "/uploads/audio/test-19-section-2.mp3",
+    "/uploads/audio/test-19-section-3.mp3",
+    "/uploads/audio/test-19-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nHinchingbrooke Country Park\n\nThe park\n• Area: 1 ............... hectares\n• Habitats: wetland, grassland and woodland\n• Wetland: lakes, ponds and a 2 ...............\n• Wildlife includes birds, insects and animals\n\nSubjects studied in educational visits include\n• Science: Children look at 3 ............... about plants, etc.\n• Geography: includes learning to use a 4 ............... and compass\n• History: changes in land use\n• Leisure and tourism: mostly concentrates on the park's 5 ...............\n• Music: Children make 6 ............... with natural materials, and experiment with rhythm and speed.\n\nBenefits of outdoor educational visits\n• They give children a feeling of 7 ............... that they may not have elsewhere.\n• Children learn new 8 ............... and gain self-confidence.\n\nPractical issues\n• Cost per child: 9 £...............\n• Adults, such as 10 ..............., free",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-19-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Area: ________ hectares",
+            "blank": true
+          },
+          "correctAnswer": "69",
+          "acceptableAnswers": [
+            "69",
+            "sixty-nine",
+            "sixty nine"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Wetland: lakes, ponds and a ________",
+            "blank": true
+          },
+          "correctAnswer": "stream"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Science: Children look at ________ about plants, etc.",
+            "blank": true
+          },
+          "correctAnswer": "data"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Geography: includes learning to use a ________ and compass",
+            "blank": true
+          },
+          "correctAnswer": "map"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Leisure and tourism: mostly concentrates on the park's ________",
+            "blank": true
+          },
+          "correctAnswer": "visitors"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Music: Children make ________ with natural materials",
+            "blank": true
+          },
+          "correctAnswer": "sounds"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "They give children a feeling of ________ that they may not have elsewhere.",
+            "blank": true
+          },
+          "correctAnswer": "freedom"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Children learn new ________ and gain self-confidence.",
+            "blank": true
+          },
+          "correctAnswer": "skills"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Cost per child: £________",
+            "blank": true
+          },
+          "correctAnswer": "4.95",
+          "acceptableAnswers": [
+            "4.95",
+            "£4.95"
+          ]
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Adults, such as ________, free",
+            "blank": true
+          },
+          "correctAnswer": "leaders"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–15\nChoose the correct letter, A, B or C.\n\nStanthorpe Twinning Association\n11 During the visit to Malatte, in France, members especially enjoyed\nA going to a theme park.\nB experiencing a river trip.\nC visiting a cheese factory.\n\n12 What will happen in Stanthorpe to mark the 25th anniversary of the Twinning Association?\nA A tree will be planted.\nB A garden seat will be bought.\nC A footbridge will be built.\n\n13 Which event raised most funds this year?\nA the film show\nB the pancake evening\nC the cookery demonstration\n\n14 For the first evening with the French visitors host families are advised to\nA take them for a walk round the town.\nB go to a local restaurant.\nC have a meal at home.\n\n15 On Saturday evening there will be the chance to\nA listen to a concert.\nB watch a match.\nC take part in a competition.\n\nQuestions 16–20\nLabel the map below.\nWrite the correct letter, A–H, next to Questions 16–20.\n\n![Farley House Map](/uploads/images/test-19-map.png)\n\n16 Farm shop\n17 Disabled entry\n18 Adventure playground\n19 Kitchen gardens\n20 The Temple of the Four Winds",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-19-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "During the visit to Malatte, in France, members especially enjoyed",
+            "options": [
+              {
+                "label": "A",
+                "text": "going to a theme park."
+              },
+              {
+                "label": "B",
+                "text": "experiencing a river trip."
+              },
+              {
+                "label": "C",
+                "text": "visiting a cheese factory."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What will happen in Stanthorpe to mark the 25th anniversary of the Twinning Association?",
+            "options": [
+              {
+                "label": "A",
+                "text": "A tree will be planted."
+              },
+              {
+                "label": "B",
+                "text": "A garden seat will be bought."
+              },
+              {
+                "label": "C",
+                "text": "A footbridge will be built."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which event raised most funds this year?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the film show"
+              },
+              {
+                "label": "B",
+                "text": "the pancake evening"
+              },
+              {
+                "label": "C",
+                "text": "the cookery demonstration"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "For the first evening with the French visitors host families are advised to",
+            "options": [
+              {
+                "label": "A",
+                "text": "take them for a walk round the town."
+              },
+              {
+                "label": "B",
+                "text": "go to a local restaurant."
+              },
+              {
+                "label": "C",
+                "text": "have a meal at home."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "On Saturday evening there will be the chance to",
+            "options": [
+              {
+                "label": "A",
+                "text": "listen to a concert."
+              },
+              {
+                "label": "B",
+                "text": "watch a match."
+              },
+              {
+                "label": "C",
+                "text": "take part in a competition."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Farm shop",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Disabled entry",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Adventure playground",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Kitchen gardens",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The Temple of the Four Winds",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO things did Colin find most satisfying about his bread reuse project?\nA receiving support from local restaurants\nB finding a good way to prevent waste\nC overcoming problems in a basic process\nD experimenting with designs and colours\nE learning how to apply 3-D printing\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?\nA for use on medical products\nB to show that food is no longer fit to eat\nC for use with drinks as well as foods\nD to provide applications for blind people\nE to indicate the weight of certain foods\n\nQuestions 25–30\nWhat is the students' opinion about each of the following food trends?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 25–30.\n\nOpinions\nA This is only relevant to young people.\nB This may have disappointing results.\nC This already seems to be widespread.\nD Retailers should do more to encourage this.\nE More financial support is needed for this.\nF Most people know little about this.\nG There should be stricter regulations about this.\nH This could be dangerous.\n\nFood trends\n25 Use of local products\n26 Reduction in unnecessary packaging\n27 Gluten-free and lactose-free food\n28 Use of branded products related to celebrity chefs\n29 Development of 'ghost kitchens' for takeaway food\n30 Use of mushrooms for common health concerns",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-19-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things did Colin find most satisfying about his bread reuse project?",
+            "options": [
+              {
+                "label": "A",
+                "text": "receiving support from local restaurants"
+              },
+              {
+                "label": "B",
+                "text": "finding a good way to prevent waste"
+              },
+              {
+                "label": "C",
+                "text": "overcoming problems in a basic process"
+              },
+              {
+                "label": "D",
+                "text": "experimenting with designs and colours"
+              },
+              {
+                "label": "E",
+                "text": "learning how to apply 3-D printing"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              21,
+              22
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 21
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
+            "options": [
+              {
+                "label": "A",
+                "text": "for use on medical products"
+              },
+              {
+                "label": "B",
+                "text": "to show that food is no longer fit to eat"
+              },
+              {
+                "label": "C",
+                "text": "for use with drinks as well as foods"
+              },
+              {
+                "label": "D",
+                "text": "to provide applications for blind people"
+              },
+              {
+                "label": "E",
+                "text": "to indicate the weight of certain foods"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              23,
+              24
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "E"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 23
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "A",
+            "E"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Use of local products",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is only relevant to young people."
+              },
+              {
+                "label": "B",
+                "text": "This may have disappointing results."
+              },
+              {
+                "label": "C",
+                "text": "This already seems to be widespread."
+              },
+              {
+                "label": "D",
+                "text": "Retailers should do more to encourage this."
+              },
+              {
+                "label": "E",
+                "text": "More financial support is needed for this."
+              },
+              {
+                "label": "F",
+                "text": "Most people know little about this."
+              },
+              {
+                "label": "G",
+                "text": "There should be stricter regulations about this."
+              },
+              {
+                "label": "H",
+                "text": "This could be dangerous."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Reduction in unnecessary packaging",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is only relevant to young people."
+              },
+              {
+                "label": "B",
+                "text": "This may have disappointing results."
+              },
+              {
+                "label": "C",
+                "text": "This already seems to be widespread."
+              },
+              {
+                "label": "D",
+                "text": "Retailers should do more to encourage this."
+              },
+              {
+                "label": "E",
+                "text": "More financial support is needed for this."
+              },
+              {
+                "label": "F",
+                "text": "Most people know little about this."
+              },
+              {
+                "label": "G",
+                "text": "There should be stricter regulations about this."
+              },
+              {
+                "label": "H",
+                "text": "This could be dangerous."
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Gluten-free and lactose-free food",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is only relevant to young people."
+              },
+              {
+                "label": "B",
+                "text": "This may have disappointing results."
+              },
+              {
+                "label": "C",
+                "text": "This already seems to be widespread."
+              },
+              {
+                "label": "D",
+                "text": "Retailers should do more to encourage this."
+              },
+              {
+                "label": "E",
+                "text": "More financial support is needed for this."
+              },
+              {
+                "label": "F",
+                "text": "Most people know little about this."
+              },
+              {
+                "label": "G",
+                "text": "There should be stricter regulations about this."
+              },
+              {
+                "label": "H",
+                "text": "This could be dangerous."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Use of branded products related to celebrity chefs",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is only relevant to young people."
+              },
+              {
+                "label": "B",
+                "text": "This may have disappointing results."
+              },
+              {
+                "label": "C",
+                "text": "This already seems to be widespread."
+              },
+              {
+                "label": "D",
+                "text": "Retailers should do more to encourage this."
+              },
+              {
+                "label": "E",
+                "text": "More financial support is needed for this."
+              },
+              {
+                "label": "F",
+                "text": "Most people know little about this."
+              },
+              {
+                "label": "G",
+                "text": "There should be stricter regulations about this."
+              },
+              {
+                "label": "H",
+                "text": "This could be dangerous."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Development of 'ghost kitchens' for takeaway food",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is only relevant to young people."
+              },
+              {
+                "label": "B",
+                "text": "This may have disappointing results."
+              },
+              {
+                "label": "C",
+                "text": "This already seems to be widespread."
+              },
+              {
+                "label": "D",
+                "text": "Retailers should do more to encourage this."
+              },
+              {
+                "label": "E",
+                "text": "More financial support is needed for this."
+              },
+              {
+                "label": "F",
+                "text": "Most people know little about this."
+              },
+              {
+                "label": "G",
+                "text": "There should be stricter regulations about this."
+              },
+              {
+                "label": "H",
+                "text": "This could be dangerous."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Use of mushrooms for common health concerns",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is only relevant to young people."
+              },
+              {
+                "label": "B",
+                "text": "This may have disappointing results."
+              },
+              {
+                "label": "C",
+                "text": "This already seems to be widespread."
+              },
+              {
+                "label": "D",
+                "text": "Retailers should do more to encourage this."
+              },
+              {
+                "label": "E",
+                "text": "More financial support is needed for this."
+              },
+              {
+                "label": "F",
+                "text": "Most people know little about this."
+              },
+              {
+                "label": "G",
+                "text": "There should be stricter regulations about this."
+              },
+              {
+                "label": "H",
+                "text": "This could be dangerous."
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nCéide Fields\nan important Neolithic archaeological site in the northwest of Ireland\n\nDiscovery\n• In the 1930s, a local teacher realised that stones beneath the bog surface were once 31 ...............\n• His 32 ............... became an archaeologist and undertook an investigation of the site:\n  — a traditional method used by local people to dig for 33 ............... was used to identify where stones were located\n  — carbon dating later proved the site was Neolithic.\n• Items are well preserved in the bog because of a lack of 34 ...............\n\nNeolithic farmers\n• Houses were 35 ............... in shape and had a hole in the roof.\n• Neolithic innovations include:\n  — pots used for storage and to make 36 ...............\n  — cooking indoors\n• Each field at Céide was large enough to support a big 37 ...............\n• The fields were probably used to restrict the grazing of animals — no evidence of structures to house them during 38 ...............\n\nReasons for the decline in farming\n• a decline in 39 ............... quality\n• an increase in 40 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-19-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In the 1930s, a local teacher realised that stones beneath the bog surface were once ________",
+            "blank": true
+          },
+          "correctAnswer": "walls"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "His ________ became an archaeologist and undertook an investigation of the site",
+            "blank": true
+          },
+          "correctAnswer": "son"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a traditional method used by local people to dig for ________ was used to identify where stones were located",
+            "blank": true
+          },
+          "correctAnswer": "fuel"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Items are well preserved in the bog because of a lack of ________",
+            "blank": true
+          },
+          "correctAnswer": "oxygen"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Houses were ________ in shape and had a hole in the roof.",
+            "blank": true
+          },
+          "correctAnswer": "rectangular"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "pots used for storage and to make ________",
+            "blank": true
+          },
+          "correctAnswer": "lamps"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Each field at Céide was large enough to support a big ________",
+            "blank": true
+          },
+          "correctAnswer": "family"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "no evidence of structures to house them during ________",
+            "blank": true
+          },
+          "correctAnswer": "winter"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a decline in ________ quality",
+            "blank": true
+          },
+          "correctAnswer": "soil"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "an increase in ________",
+            "blank": true
+          },
+          "correctAnswer": "rain"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "Cambridge 19.pdf",
+  "savedAt": "2026-11-14T08:37:41.772Z"
+}

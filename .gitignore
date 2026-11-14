@@ -77,11 +77,24 @@ yarn-error.log*
 !/data/tests/test-12-*.json
 !/data/tests/test-13-*.json
 !/data/tests/test-14-*.json
+!/data/tests/test-15-*.json
+!/data/tests/test-16-*.json
+!/data/tests/test-17-*.json
+!/data/tests/test-18-*.json
+!/data/tests/test-19-*.json
+!/data/tests/test-20-*.json
+!/data/tests/test-21-*.json
+!/data/tests/test-22-*.json
+!/data/tests/test-23-*.json
+!/data/tests/test-24-*.json
+!/data/tests/test-25-*.json
+!/data/tests/test-26-*.json
 
 # uploaded audio (keep folder + section mp3s needed at runtime)
 /public/uploads/audio/*
 !/public/uploads/audio/.gitkeep
 !/public/uploads/audio/test-*-section-*.mp3
+!/public/uploads/audio/test-*-section-*.m4a
 
 # learn lesson videos (keep folder)
 /public/uploads/learn/videos/*
@@ -115,6 +128,11 @@ next-env.d.ts
 *.traineddata
 
 # Raw resource packs and downloads (not part of deployment)
+*.zip
+/docs/worksheets_split/fixed_40_pages/
+/docs/cambridge_20_split/剑桥20/
+/docs/cambridge_20_split/__MACOSX/
+/docs/cambridge_19_split/audio_source/
 /DE-IELTS/
 /IELTS/
 /WEWIN_Audio_Downloader/

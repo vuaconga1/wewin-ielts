@@ -1,0 +1,934 @@
+{
+  "title": "Test 17.C21.03 - Listening",
+  "slug": "test-17-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-17-section-1.mp3",
+    "/uploads/audio/test-17-section-2.mp3",
+    "/uploads/audio/test-17-section-3.mp3",
+    "/uploads/audio/test-17-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nFerry to Shetland Islands\n• Name of ferry company: 1 ............... Ferries\n• Ferries depart seven times per 2 ............... in summer\n• Cost for four people with car: a little less than 3 £ ...............\n• Cancellation policy: receive a 4 ............... (if cancelled a month in advance)\n\nAdvice\n• Cabins:\n  book one with a 5 ...............\n  luxury cabins have a TV\n• Bring snacks and 6 ............... for the children\n• A 7 ............... is required for the dog kennels\n• Try to see 8 ............... in the morning\n• If time, visit 9 ............... Castle\n• The 10 ............... restaurant in a nearby village is recommended",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-17-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Name of ferry company: ________ Ferries",
+            "blank": true
+          },
+          "correctAnswer": "Northern"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Ferries depart seven times per ________ in summer",
+            "blank": true
+          },
+          "correctAnswer": "week"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Cost for four people with car: a little less than £ ________",
+            "blank": true
+          },
+          "correctAnswer": "250",
+          "acceptableAnswers": [
+            "250",
+            "two hundred and fifty"
+          ]
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Cancellation policy: receive a ________",
+            "blank": true
+          },
+          "correctAnswer": "voucher"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Cabins: book one with a ________",
+            "blank": true
+          },
+          "correctAnswer": "window"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Bring snacks and ________ for the children",
+            "blank": true
+          },
+          "correctAnswer": "books"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A ________ is required for the dog kennels",
+            "blank": true
+          },
+          "correctAnswer": "blanket"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Try to see ________ in the morning",
+            "blank": true
+          },
+          "correctAnswer": "dolphins"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "If time, visit ________ Castle",
+            "blank": true
+          },
+          "correctAnswer": "Drum"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The ________ restaurant in a nearby village is recommended",
+            "blank": true
+          },
+          "correctAnswer": "Italian"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO facilities are available at the newly refurbished youth hostel?\nA a climbing wall\nB a heated swimming pool\nC a bicycle repair workshop\nD a laundry room\nE a communal kitchen\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO activities are recommended for rainy days?\nA visiting the transport museum\nB exploring the underground caverns\nC touring the woollen mill\nD attending a pottery workshop\nE watching a film at the historic cinema\n\nQuestions 15 and 16\nChoose the correct letter, A, B or C.\n\n15 Why is booking recommended for the guided walk along the gorge?\nA It is only offered on certain days of the week.\nB Group sizes are strictly limited.\nC The guide is an internationally known expert.\n\n16 What does the speaker say about public transport to the coastal nature reserve?\nA Buses run every fifteen minutes.\nB Tickets must be bought in advance online.\nC The service does not operate on Sundays.\n\nQuestions 17–20\nWhat should visitors bear in mind about each of the following attractions?\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 17–20.\n\nA Sturdy footwear is essential.\nB Entry is free for children under twelve.\nC Photography is prohibited inside the building.\nD It is advisable to bring warm clothing.\nE Mobile phone reception is unavailable.\nF Food cannot be purchased on site.\n\nAttractions\n17 High Crag Lighthouse\n18 Blackwood Forest Trail\n19 Old Watermill\n20 Beacon Hill Lookout",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-17-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO facilities are available at the newly refurbished youth hostel?",
+            "options": [
+              {
+                "label": "A",
+                "text": "a climbing wall"
+              },
+              {
+                "label": "B",
+                "text": "a heated swimming pool"
+              },
+              {
+                "label": "C",
+                "text": "a bicycle repair workshop"
+              },
+              {
+                "label": "D",
+                "text": "a laundry room"
+              },
+              {
+                "label": "E",
+                "text": "a communal kitchen"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              11,
+              12
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 11
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO activities are recommended for rainy days?",
+            "options": [
+              {
+                "label": "A",
+                "text": "visiting the transport museum"
+              },
+              {
+                "label": "B",
+                "text": "exploring the underground caverns"
+              },
+              {
+                "label": "C",
+                "text": "touring the woollen mill"
+              },
+              {
+                "label": "D",
+                "text": "attending a pottery workshop"
+              },
+              {
+                "label": "E",
+                "text": "watching a film at the historic cinema"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              13,
+              14
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 13
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why is booking recommended for the guided walk along the gorge?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is only offered on certain days of the week."
+              },
+              {
+                "label": "B",
+                "text": "Group sizes are strictly limited."
+              },
+              {
+                "label": "C",
+                "text": "The guide is an internationally known expert."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker say about public transport to the coastal nature reserve?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Buses run every fifteen minutes."
+              },
+              {
+                "label": "B",
+                "text": "Tickets must be bought in advance online."
+              },
+              {
+                "label": "C",
+                "text": "The service does not operate on Sundays."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "High Crag Lighthouse",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sturdy footwear is essential."
+              },
+              {
+                "label": "B",
+                "text": "Entry is free for children under twelve."
+              },
+              {
+                "label": "C",
+                "text": "Photography is prohibited inside the building."
+              },
+              {
+                "label": "D",
+                "text": "It is advisable to bring warm clothing."
+              },
+              {
+                "label": "E",
+                "text": "Mobile phone reception is unavailable."
+              },
+              {
+                "label": "F",
+                "text": "Food cannot be purchased on site."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Blackwood Forest Trail",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sturdy footwear is essential."
+              },
+              {
+                "label": "B",
+                "text": "Entry is free for children under twelve."
+              },
+              {
+                "label": "C",
+                "text": "Photography is prohibited inside the building."
+              },
+              {
+                "label": "D",
+                "text": "It is advisable to bring warm clothing."
+              },
+              {
+                "label": "E",
+                "text": "Mobile phone reception is unavailable."
+              },
+              {
+                "label": "F",
+                "text": "Food cannot be purchased on site."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Old Watermill",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sturdy footwear is essential."
+              },
+              {
+                "label": "B",
+                "text": "Entry is free for children under twelve."
+              },
+              {
+                "label": "C",
+                "text": "Photography is prohibited inside the building."
+              },
+              {
+                "label": "D",
+                "text": "It is advisable to bring warm clothing."
+              },
+              {
+                "label": "E",
+                "text": "Mobile phone reception is unavailable."
+              },
+              {
+                "label": "F",
+                "text": "Food cannot be purchased on site."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Beacon Hill Lookout",
+            "options": [
+              {
+                "label": "A",
+                "text": "Sturdy footwear is essential."
+              },
+              {
+                "label": "B",
+                "text": "Entry is free for children under twelve."
+              },
+              {
+                "label": "C",
+                "text": "Photography is prohibited inside the building."
+              },
+              {
+                "label": "D",
+                "text": "It is advisable to bring warm clothing."
+              },
+              {
+                "label": "E",
+                "text": "Mobile phone reception is unavailable."
+              },
+              {
+                "label": "F",
+                "text": "Food cannot be purchased on site."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO properties of semi-synthetic fabrics make them popular in the fashion industry?\nA their resistance to tearing\nB their biodegradable nature\nC their ability to absorb bright dyes\nD their low manufacturing cost\nE their breathability in hot climates\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO environmental problems associated with viscose production do the students emphasize?\nA deforestation caused by harvesting raw timber\nB high energy use during spinning\nC microplastic shedding in domestic washing\nD toxic chemical release into rivers\nE excessive water consumption in processing\n\nQuestions 25–30\nWhat comment do the speakers make about each of the following semi-synthetic fibres?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 25–30.\n\nComments\nA It requires chemicals that are hard to neutralise.\nB It is made using a closed-loop solvent system.\nC It has superior fire resistance.\nD It is derived from waste agricultural products.\nE It has been banned in several European countries.\nF Its production is currently too expensive for mass markets.\nG It produces exceptionally smooth yarn.\nH It requires less land than conventional cotton.\n\nFibres\n25 Modal\n26 Lyocell (Tencel)\n27 Cupro\n28 Bamboo viscose\n29 Orange fibre\n30 Seaweed-based fabric",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-17-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO properties of semi-synthetic fabrics make them popular in the fashion industry?",
+            "options": [
+              {
+                "label": "A",
+                "text": "their resistance to tearing"
+              },
+              {
+                "label": "B",
+                "text": "their biodegradable nature"
+              },
+              {
+                "label": "C",
+                "text": "their ability to absorb bright dyes"
+              },
+              {
+                "label": "D",
+                "text": "their low manufacturing cost"
+              },
+              {
+                "label": "E",
+                "text": "their breathability in hot climates"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              21,
+              22
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 21
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO environmental problems associated with viscose production do the students emphasize?",
+            "options": [
+              {
+                "label": "A",
+                "text": "deforestation caused by harvesting raw timber"
+              },
+              {
+                "label": "B",
+                "text": "high energy use during spinning"
+              },
+              {
+                "label": "C",
+                "text": "microplastic shedding in domestic washing"
+              },
+              {
+                "label": "D",
+                "text": "toxic chemical release into rivers"
+              },
+              {
+                "label": "E",
+                "text": "excessive water consumption in processing"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              23,
+              24
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 23
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Modal",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires chemicals that are hard to neutralise."
+              },
+              {
+                "label": "B",
+                "text": "It is made using a closed-loop solvent system."
+              },
+              {
+                "label": "C",
+                "text": "It has superior fire resistance."
+              },
+              {
+                "label": "D",
+                "text": "It is derived from waste agricultural products."
+              },
+              {
+                "label": "E",
+                "text": "It has been banned in several European countries."
+              },
+              {
+                "label": "F",
+                "text": "Its production is currently too expensive for mass markets."
+              },
+              {
+                "label": "G",
+                "text": "It produces exceptionally smooth yarn."
+              },
+              {
+                "label": "H",
+                "text": "It requires less land than conventional cotton."
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Lyocell (Tencel)",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires chemicals that are hard to neutralise."
+              },
+              {
+                "label": "B",
+                "text": "It is made using a closed-loop solvent system."
+              },
+              {
+                "label": "C",
+                "text": "It has superior fire resistance."
+              },
+              {
+                "label": "D",
+                "text": "It is derived from waste agricultural products."
+              },
+              {
+                "label": "E",
+                "text": "It has been banned in several European countries."
+              },
+              {
+                "label": "F",
+                "text": "Its production is currently too expensive for mass markets."
+              },
+              {
+                "label": "G",
+                "text": "It produces exceptionally smooth yarn."
+              },
+              {
+                "label": "H",
+                "text": "It requires less land than conventional cotton."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Cupro",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires chemicals that are hard to neutralise."
+              },
+              {
+                "label": "B",
+                "text": "It is made using a closed-loop solvent system."
+              },
+              {
+                "label": "C",
+                "text": "It has superior fire resistance."
+              },
+              {
+                "label": "D",
+                "text": "It is derived from waste agricultural products."
+              },
+              {
+                "label": "E",
+                "text": "It has been banned in several European countries."
+              },
+              {
+                "label": "F",
+                "text": "Its production is currently too expensive for mass markets."
+              },
+              {
+                "label": "G",
+                "text": "It produces exceptionally smooth yarn."
+              },
+              {
+                "label": "H",
+                "text": "It requires less land than conventional cotton."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Bamboo viscose",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires chemicals that are hard to neutralise."
+              },
+              {
+                "label": "B",
+                "text": "It is made using a closed-loop solvent system."
+              },
+              {
+                "label": "C",
+                "text": "It has superior fire resistance."
+              },
+              {
+                "label": "D",
+                "text": "It is derived from waste agricultural products."
+              },
+              {
+                "label": "E",
+                "text": "It has been banned in several European countries."
+              },
+              {
+                "label": "F",
+                "text": "Its production is currently too expensive for mass markets."
+              },
+              {
+                "label": "G",
+                "text": "It produces exceptionally smooth yarn."
+              },
+              {
+                "label": "H",
+                "text": "It requires less land than conventional cotton."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Orange fibre",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires chemicals that are hard to neutralise."
+              },
+              {
+                "label": "B",
+                "text": "It is made using a closed-loop solvent system."
+              },
+              {
+                "label": "C",
+                "text": "It has superior fire resistance."
+              },
+              {
+                "label": "D",
+                "text": "It is derived from waste agricultural products."
+              },
+              {
+                "label": "E",
+                "text": "It has been banned in several European countries."
+              },
+              {
+                "label": "F",
+                "text": "Its production is currently too expensive for mass markets."
+              },
+              {
+                "label": "G",
+                "text": "It produces exceptionally smooth yarn."
+              },
+              {
+                "label": "H",
+                "text": "It requires less land than conventional cotton."
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Seaweed-based fabric",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires chemicals that are hard to neutralise."
+              },
+              {
+                "label": "B",
+                "text": "It is made using a closed-loop solvent system."
+              },
+              {
+                "label": "C",
+                "text": "It has superior fire resistance."
+              },
+              {
+                "label": "D",
+                "text": "It is derived from waste agricultural products."
+              },
+              {
+                "label": "E",
+                "text": "It has been banned in several European countries."
+              },
+              {
+                "label": "F",
+                "text": "Its production is currently too expensive for mass markets."
+              },
+              {
+                "label": "G",
+                "text": "It produces exceptionally smooth yarn."
+              },
+              {
+                "label": "H",
+                "text": "It requires less land than conventional cotton."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nInvasive marine species\nIntroduction of alien species\n• Global shipping has accelerated the introduction of non-native organisms\n• Ballast water discharged into ports is a key pathway for spreading 31 ...............\n• Alien species disrupt the balance of the local 32 ...............\n\nCase studies\n• Mediterranean Sea:\n  Caulerpa taxifolia (alga) escaped from an aquarium and covered vast underwater areas\n  Spread was aided by recreational boats during the summer 33 ............... season\n• Caribbean lionfish:\n  Likely released by private owners of exotic 34 ...............\n  Voracious predators consuming juvenile reef fish in huge numbers\n• Comb jellies in the Black Sea:\n  Fed heavily on zooplankton, starving native anchovies\n  Damaged the commercial fishing industry and reduced local 35 ............... production\n\nControl and prevention strategies\n• Ballast water treatment:\n  Using filtration, heat, or ultraviolet 36 ............... before discharge\n• Biological control:\n  Careful introduction of a specific natural predator or 37 ............... to target pests\n• Monitoring and community science:\n  Tracking changes in marine species 38 ...............\n  Encouraging divers to upload sighting data to an online 39 ...............\n  Every record should include coordinates and a clear 40 ............... for verification",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-17-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Ballast water is a key pathway for spreading ________",
+            "blank": true
+          },
+          "correctAnswer": "disease"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Alien species disrupt the balance of the local ________",
+            "blank": true
+          },
+          "correctAnswer": "ecosystem"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Spread was aided by recreational boats during the summer ________ season",
+            "blank": true
+          },
+          "correctAnswer": "holiday",
+          "acceptableAnswers": [
+            "holiday",
+            "holidays",
+            "holiday(s)"
+          ]
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Likely released by private owners of exotic ________",
+            "blank": true
+          },
+          "correctAnswer": "pets"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "reduced local ________ production",
+            "blank": true
+          },
+          "correctAnswer": "sugar"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Using filtration, heat, or ultraviolet ________ before discharge",
+            "blank": true
+          },
+          "correctAnswer": "light"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "introduction of a natural predator or ________",
+            "blank": true
+          },
+          "correctAnswer": "virus"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Tracking changes in marine species ________",
+            "blank": true
+          },
+          "correctAnswer": "behaviour",
+          "acceptableAnswers": [
+            "behaviour",
+            "behavior"
+          ]
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Encouraging divers to upload sighting data to an online ________",
+            "blank": true
+          },
+          "correctAnswer": "database"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Every record should include coordinates and a clear ________",
+            "blank": true
+          },
+          "correctAnswer": "photograph"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "IELTS Cô Mơ - CAMBRIDGE 21.pdf",
+  "savedAt": "2026-11-13T11:06:46.762Z"
+}

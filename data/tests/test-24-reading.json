@@ -1,0 +1,1000 @@
+{
+  "title": "Test 24.C20.02 - Reading",
+  "slug": "test-24-reading",
+  "skill": "READING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Reading"
+  ],
+  "parts": [
+    {
+      "title": "Passage 1",
+      "order": 0,
+      "content": "READING PASSAGE 1\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\nManatees\nManatees, also known as sea cows, are aquatic mammals that belong to a group of animals called Sirenia. They are large, slow-moving creatures that spend their lives in the warm shallow coastal waters, rivers, and estuaries of the tropics and subtropics.\n\nThere are three living species of manatees: the West Indian manatee (Trichechus manatus), the African manatee (Trichechus senegalensis), and the Amazonian manatee (Trichechus inunguis). Although they look very similar to dugongs, which belong to the same order, manatees are distinguished by their paddle-shaped tail, whereas dugongs have a fluked tail resembling that of a whale.\n\nManatees have stout, cylindrical bodies with thick wrinkled skin covered in sparsely distributed sensory hairs. These hairs allow them to sense vibrations and navigate in murky waters. They have flexible front flippers that are used for steering and bringing food to their mouths, but they have no hind limbs. Unlike most mammals, which have seven neck vertebrae, manatees have only six, meaning they must turn their entire body to look sideways.\n\nManatees are herbivores that consume a wide range of submerged, floating, and emergent vegetation, primarily seagrasses. Adult manatees can eat between four and nine percent of their body weight in wet vegetation daily. To gather their food, they rely on their flexible, muscular prehensile lips to tear plants from the riverbed or seabed.\n\nBecause they are mammals, manatees must surface to breathe air. While resting, they can remain submerged for up to twenty minutes, but during active swimming they surface every two to four minutes. Manatees regulate their buoyancy using their dense, heavy bones and large lungs that stretch along the dorsal side of their bodies, supplemented by gastrointestinal gas produced during the digestion of plant fiber.\n\nThe West Indian manatee is divided into two distinct subspecies: the Florida manatee and the Antillean manatee. The Florida manatee lives in coastal waters, rivers, and springs throughout Florida and the southeastern United States, migrating towards warm-water sources such as power plant discharge basins during winter. The Antillean manatee inhabits coastal areas of the Caribbean, Central America, and northern South America. The African manatee occurs along the western coast of Africa, from Senegal to Angola, and also moves far inland along large river systems like the Niger and Congo. All manatee species face severe threats, including boat collisions, habitat destruction, and entanglement in fishing gear.",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "look similar to dugongs, but with a differently shaped 1 ...............",
+            "blank": true
+          },
+          "correctAnswer": "tail"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "need to use their 2 ............... to help to turn their bodies around in order to look sideways",
+            "blank": true
+          },
+          "correctAnswer": "flippers"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "sense vibrations in the water by means of 3 ............... on their skin",
+            "blank": true
+          },
+          "correctAnswer": "hairs"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "eat mainly aquatic vegetation, such as 4 ...............",
+            "blank": true
+          },
+          "correctAnswer": "seagrasses",
+          "acceptableAnswers": [
+            "seagrasses",
+            "seagrass"
+          ]
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "grasp and pull up plants with their 5 ...............",
+            "blank": true
+          },
+          "correctAnswer": "lips"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "regulate their 6 ............... using dense bones and large lungs",
+            "blank": true
+          },
+          "correctAnswer": "buoyancy"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "West Indian manatees can be found in a variety of different aquatic habitats.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The Florida manatee lives in warmer waters than the Antillean manatee.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The African manatee's range is limited to coastal waters between the West African countries of Mauritania and Angola.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The extent of the Amazonian manatee's migrations depends on the season.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Accidents involving motorboats are the main cause of death for Florida manatees.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Hunting manatees has been made illegal across all of their natural ranges.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Attempts to protect manatee habitats have met with success in certain regions.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        }
+      ]
+    },
+    {
+      "title": "Passage 2",
+      "order": 1,
+      "content": "READING PASSAGE 2\nYou should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.\n\nProcrastination\nA psychologist explains why we put off important tasks and how we can break the habit\n\nA Procrastination is a near-universal human experience. At some point or another, everyone has delayed completing an urgent assignment, filing a tax return, or booking a medical check-up, opting instead for trivial diversions. While popular culture often dismisses procrastination as simple laziness or poor time management, psychological research reveals a much more complex phenomenon.\n\nB Brain scans show that procrastination is essentially an emotional struggle rather than an intellectual failing. When faced with a task that triggers feelings of boredom, anxiety, self-doubt, or resentment, our brain perceives it as a threat. The amygdala—the brain's emotional threat center—reacts by initiating an avoidance response, prompting us to seek immediate relief in tasks that deliver quick dopamine surges, such as scrolling through social media or tidying a desk.\n\nC This emotional avoidance mechanism is particularly prevalent among perfectionists. People with perfectionist tendencies frequently fear that their performance will fall short of their impossibly high standards. Consequently, delaying the task shields their self-worth from the possibility of failure: if a project is completed at the last minute and turns out poorly, they can blame lack of time rather than lack of ability.\n\nD Studies indicate that procrastination imposes severe personal and economic penalties. Chronic procrastinators experience elevated levels of stress, insomnia, and weakened immune responses. In the workplace, employees who consistently procrastinate earn lower salaries on average and have significantly shorter tenures at their companies, as employers grow impatient with missed deadlines and unpredictable output.\n\nE The emotional relief offered by procrastination is always temporary. Afterwards, people are inevitably left with feelings of guilt, shame, and panic, which further damages their mood and increases stress, triggering an even stronger compulsion to procrastinate on subsequent tasks.\n\nF Overcoming procrastination requires addressing the underlying emotional roots. Psychologists recommend practicing self-compassion rather than self-criticism; acknowledging our shared human tendency to delay difficult tasks reduces the guilt that fuels further avoidance. Additionally, breaking tasks down into tiny, non-threatening micro-actions and removing environmental distractions can help bypass the brain's initial threat response.",
+      "questions": [
+        {
+          "number": 14,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "mention of false assumptions about why people procrastinate",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "reference to the realisation that others also procrastinate",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 16,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "neurological evidence of a link between procrastination and emotion",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Many people think that procrastination is the result of 17 ...............",
+            "blank": true
+          },
+          "correctAnswer": "laziness"
+        },
+        {
+          "number": 18,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "tasks that cause us to feel 18 ...............",
+            "blank": true
+          },
+          "correctAnswer": "anxious"
+        },
+        {
+          "number": 19,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the brain perceives them as 19 ...............",
+            "blank": true
+          },
+          "correctAnswer": "threats"
+        },
+        {
+          "number": 20,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "such as preparation for 20 ...............",
+            "blank": true
+          },
+          "correctAnswer": "exams"
+        },
+        {
+          "number": 21,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "especially common among 21 ...............",
+            "blank": true
+          },
+          "correctAnswer": "perfectionists"
+        },
+        {
+          "number": 22,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "followed by a feeling of 22 ...............",
+            "blank": true
+          },
+          "correctAnswer": "guilt"
+        },
+        {
+          "number": 23,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO comparisons between employees who often procrastinate and those who do not are mentioned in the text? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Their salaries are lower."
+              },
+              {
+                "label": "B",
+                "text": "The quality of their work is inferior."
+              },
+              {
+                "label": "C",
+                "text": "They don't keep their jobs for as long."
+              },
+              {
+                "label": "D",
+                "text": "They don't enjoy their working lives as much."
+              },
+              {
+                "label": "E",
+                "text": "They have poorer relationships with colleagues."
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO comparisons between employees who often procrastinate and those who do not are mentioned in the text? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Their salaries are lower."
+              },
+              {
+                "label": "B",
+                "text": "The quality of their work is inferior."
+              },
+              {
+                "label": "C",
+                "text": "They don't keep their jobs for as long."
+              },
+              {
+                "label": "D",
+                "text": "They don't enjoy their working lives as much."
+              },
+              {
+                "label": "E",
+                "text": "They have poorer relationships with colleagues."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO recommendations for getting out of a cycle of procrastination does the writer give? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "not judging ourselves harshly"
+              },
+              {
+                "label": "B",
+                "text": "setting ourselves manageable aims"
+              },
+              {
+                "label": "C",
+                "text": "rewarding ourselves for tasks achieved"
+              },
+              {
+                "label": "D",
+                "text": "prioritising tasks according to their importance"
+              },
+              {
+                "label": "E",
+                "text": "avoiding things that stop us concentrating on our tasks"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "E"
+          ]
+        },
+        {
+          "number": 26,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO recommendations for getting out of a cycle of procrastination does the writer give? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "not judging ourselves harshly"
+              },
+              {
+                "label": "B",
+                "text": "setting ourselves manageable aims"
+              },
+              {
+                "label": "C",
+                "text": "rewarding ourselves for tasks achieved"
+              },
+              {
+                "label": "D",
+                "text": "prioritising tasks according to their importance"
+              },
+              {
+                "label": "E",
+                "text": "avoiding things that stop us concentrating on our tasks"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "A",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Passage 3",
+      "order": 2,
+      "content": "READING PASSAGE 3\nYou should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.\n\nInvasion of the Robot Umpires\nA few years ago, Fred DeJesus from Brooklyn, New York became one of the first umpires in minor league baseball to call balls and strikes using an automated ball-strike system (ABS)—popularly known as the 'robot umpire'.\n\nThe system uses high-resolution tracking cameras mounted around the stadium to track the trajectory of every pitched baseball. An algorithm reconstructs the trajectory in three dimensions and compares it against a standardized virtual strike zone, custom-tailored to the height of each individual batter. The system calculates whether the ball touched any portion of the strike zone and transmits the decision to an earpiece worn by the human umpire standing behind the catcher, who then makes the physical signal and vocal announcement.\n\nHistorically, baseball has celebrated the human element of officiating. Umpires brought personal interpretations and idiosyncrasies to the game, and legendary arguments between fiery managers and umpires over disputed strike calls formed part of baseball folklore. However, advancing television broadcasting technology—such as the on-screen digital strike box introduced in the late 1990s—exposed human fallibility to millions of viewers at home. Studies showed that human umpires missed upwards of 10% of strike zone calls, sparking intense public debate and pressure for automated assistance.\n\nMajor League Baseball (MLB) began testing ABS in minor and independent leagues with a dual objective: eliminate egregious officiating errors while speeding up the pace of play. Yet the reception among players and fans has been mixed. Some pitchers complain that the robot's three-dimensional zone rewards pitches that only graze the back tip of the strike zone—pitches that no human umpire would ever call a strike. Furthermore, during games where ABS was first tested, managers and spectators noted that strike calls were met with eerie, total silence from the dugout, draining some of the passionate tension that makes baseball captivating.\n\nPhilosophers Alva Noë and Michael Russo caution against the pursuit of sterile perfection in sports. They argue that accuracy should not be conflated with genuine athletic drama and human engagement. Baseball, they contend, is a ritual designed to cultivate community and savor suspense, not an exercise in algorithmic optimization.",
+      "questions": [
+        {
+          "number": 27,
+          "order": 0,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "When DeJesus first used ABS, he shared decision-making about strikes with it.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 28,
+          "order": 1,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "MLB considered it necessary to amend the size of the strike zone after introducing ABS.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 29,
+          "order": 2,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Batters were quicker to adapt to ABS than pitchers were.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 30,
+          "order": 3,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Television broadcasts initially led viewers to question the precision of digital strike boxes.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 31,
+          "order": 4,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Managers were generally in favour of replacing human umpires with automated systems.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 32,
+          "order": 5,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The human umpire is still required to confirm the decision transmitted to the earpiece.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 33,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Even after ABS was developed, MLB still wanted human umpires to shout out decisions as they had in their 33 ...............",
+            "options": [
+              {
+                "label": "A",
+                "text": "pitch boundary"
+              },
+              {
+                "label": "B",
+                "text": "numerous disputes"
+              },
+              {
+                "label": "C",
+                "text": "team tactics"
+              },
+              {
+                "label": "D",
+                "text": "subjective assessment"
+              },
+              {
+                "label": "E",
+                "text": "widespread approval"
+              },
+              {
+                "label": "F",
+                "text": "former roles"
+              },
+              {
+                "label": "G",
+                "text": "total silence"
+              },
+              {
+                "label": "H",
+                "text": "perceived area"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 34,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The umpire's job had, at one time, required a 34 ............... about whether a ball was a strike.",
+            "options": [
+              {
+                "label": "A",
+                "text": "pitch boundary"
+              },
+              {
+                "label": "B",
+                "text": "numerous disputes"
+              },
+              {
+                "label": "C",
+                "text": "team tactics"
+              },
+              {
+                "label": "D",
+                "text": "subjective assessment"
+              },
+              {
+                "label": "E",
+                "text": "widespread approval"
+              },
+              {
+                "label": "F",
+                "text": "former roles"
+              },
+              {
+                "label": "G",
+                "text": "total silence"
+              },
+              {
+                "label": "H",
+                "text": "perceived area"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 35,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "crosses through a 35 ............... extending approximately from the batter's knee to his chest.",
+            "options": [
+              {
+                "label": "A",
+                "text": "pitch boundary"
+              },
+              {
+                "label": "B",
+                "text": "numerous disputes"
+              },
+              {
+                "label": "C",
+                "text": "team tactics"
+              },
+              {
+                "label": "D",
+                "text": "subjective assessment"
+              },
+              {
+                "label": "E",
+                "text": "widespread approval"
+              },
+              {
+                "label": "F",
+                "text": "former roles"
+              },
+              {
+                "label": "G",
+                "text": "total silence"
+              },
+              {
+                "label": "H",
+                "text": "perceived area"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 36,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "In the past, 36 ............... over strike calls were not uncommon",
+            "options": [
+              {
+                "label": "A",
+                "text": "pitch boundary"
+              },
+              {
+                "label": "B",
+                "text": "numerous disputes"
+              },
+              {
+                "label": "C",
+                "text": "team tactics"
+              },
+              {
+                "label": "D",
+                "text": "subjective assessment"
+              },
+              {
+                "label": "E",
+                "text": "widespread approval"
+              },
+              {
+                "label": "F",
+                "text": "former roles"
+              },
+              {
+                "label": "G",
+                "text": "total silence"
+              },
+              {
+                "label": "H",
+                "text": "perceived area"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 37,
+          "order": 10,
+          "type": "MATCHING",
+          "content": {
+            "stem": "during the first game DeJesus used ABS, strike calls were met with 37 ...............",
+            "options": [
+              {
+                "label": "A",
+                "text": "pitch boundary"
+              },
+              {
+                "label": "B",
+                "text": "numerous disputes"
+              },
+              {
+                "label": "C",
+                "text": "team tactics"
+              },
+              {
+                "label": "D",
+                "text": "subjective assessment"
+              },
+              {
+                "label": "E",
+                "text": "widespread approval"
+              },
+              {
+                "label": "F",
+                "text": "former roles"
+              },
+              {
+                "label": "G",
+                "text": "total silence"
+              },
+              {
+                "label": "H",
+                "text": "perceived area"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 38,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the writer suggest about ABS in the fifth paragraph?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is bound to make key decisions that are wrong."
+              },
+              {
+                "label": "B",
+                "text": "It may reduce some of the appeal of the game."
+              },
+              {
+                "label": "C",
+                "text": "It will lead to the disappearance of human umpires."
+              },
+              {
+                "label": "D",
+                "text": "It may increase calls for the rules of baseball to be changed."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 39,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Morgan Sword says that the introduction of ABS",
+            "options": [
+              {
+                "label": "A",
+                "text": "was regarded as an experiment without a guaranteed outcome."
+              },
+              {
+                "label": "B",
+                "text": "was intended to keep up with developments in other sports."
+              },
+              {
+                "label": "C",
+                "text": "was a response to changing attitudes about the role of sport."
+              },
+              {
+                "label": "D",
+                "text": "was an attempt to ensure baseball retained a young audience."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 40,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why does the writer include the views of Noë and Russo?",
+            "options": [
+              {
+                "label": "A",
+                "text": "to show that attitudes to technology vary widely"
+              },
+              {
+                "label": "B",
+                "text": "to argue that people have unrealistic expectations of sport"
+              },
+              {
+                "label": "C",
+                "text": "to indicate that accuracy is not the same thing as enjoyment"
+              },
+              {
+                "label": "D",
+                "text": "to suggest that the number of baseball fans needs to increase."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}

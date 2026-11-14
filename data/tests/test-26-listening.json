@@ -1,0 +1,963 @@
+{
+  "title": "Test 26.C20.04 - Listening",
+  "slug": "test-26-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-26-section-1.m4a",
+    "/uploads/audio/test-26-section-2.m4a",
+    "/uploads/audio/test-26-section-3.m4a",
+    "/uploads/audio/test-26-section-4.m4a"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nAdvice on family visit\n\nAccommodation\n● 1 ............... Hotel on George Street\n● cost of a family room per night: 2 £............... (approx.)\n\nRecommended trips\n● a 3 ............... tour of the city centre (starts in Carlton Square)\n● a trip by 4 ............... to the old fort\n\nScience Museum\n● best day to visit: 5 ...............\n● see the exhibition about 6 ..............., which opens soon\n\nFood\n● Clacton Market:\n  - good for 7 ...............\n  - need to have lunch before 8 ............... p.m.\n\nTheatre tickets\n● save up to 9 ............... % on ticket prices at bargaintickets.com\n\nFree activities\n● Blakewell Gardens:\n  - Roots Music Festival\n  - climb Telegraph Hill to see a view of the 10 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-26-section-1.m4a"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Accommodation: ________ Hotel on George Street",
+            "blank": true
+          },
+          "correctAnswer": "Kings",
+          "acceptableAnswers": [
+            "Kings",
+            "King's"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "cost of a family room per night: £________ (approx.)",
+            "blank": true
+          },
+          "correctAnswer": "125",
+          "acceptableAnswers": [
+            "125",
+            "one hundred and twenty-five",
+            "one hundred and twenty five"
+          ]
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a ________ tour of the city centre (starts in Carlton Square)",
+            "blank": true
+          },
+          "correctAnswer": "walking"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a trip by ________ to the old fort",
+            "blank": true
+          },
+          "correctAnswer": "boat"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "best day to visit: ________",
+            "blank": true
+          },
+          "correctAnswer": "Tuesday"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "see the exhibition about ________, which opens soon",
+            "blank": true
+          },
+          "correctAnswer": "space"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Clacton Market: good for ________",
+            "blank": true
+          },
+          "correctAnswer": "vegetarian",
+          "acceptableAnswers": [
+            "vegetarian",
+            "vegetarians"
+          ]
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "need to have lunch before ________ p.m.",
+            "blank": true
+          },
+          "correctAnswer": "2.30",
+          "acceptableAnswers": [
+            "2.30",
+            "2:30"
+          ]
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "save up to ________ % on ticket prices at bargaintickets.com",
+            "blank": true
+          },
+          "correctAnswer": "75",
+          "acceptableAnswers": [
+            "75",
+            "seventy-five",
+            "seventy five"
+          ]
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "climb Telegraph Hill to see a view of the ________",
+            "blank": true
+          },
+          "correctAnswer": "port"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO things does the speaker say about visiting the football stadium with children?\nA Children can get their photo taken with a football player.\nB There is a competition for children today.\nC Parents must stay with their children at all times.\nD Children will need sunhats and drinks.\nE The café has a special offer on meals for children.\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO features of the stadium tour are new this year?\nA VIP tour\nB 360 cinema experience\nC audio guide\nD dressing room tour\nE tours in other languages\n\nQuestions 15–20\nWhich event in the history of football in the UK took place in each of the following years?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 15–20.\n\nEvents in the history of football\nA the introduction of pay for the players\nB a change to the design of the goal\nC the first use of lights for matches\nD the introduction of goalkeepers\nE the first international match\nF two changes to the rules of the game\nG the introduction of a fee for spectators\nH an agreement on the length of a game\n\n15 1870\n16 1874\n17 1875\n18 1877\n19 1878\n20 1880",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-26-section-2.m4a"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things does the speaker say about visiting the football stadium with children? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Children can get their photo taken with a football player."
+              },
+              {
+                "label": "B",
+                "text": "There is a competition for children today."
+              },
+              {
+                "label": "C",
+                "text": "Parents must stay with their children at all times."
+              },
+              {
+                "label": "D",
+                "text": "Children will need sunhats and drinks."
+              },
+              {
+                "label": "E",
+                "text": "The café has a special offer on meals for children."
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things does the speaker say about visiting the football stadium with children? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Children can get their photo taken with a football player."
+              },
+              {
+                "label": "B",
+                "text": "There is a competition for children today."
+              },
+              {
+                "label": "C",
+                "text": "Parents must stay with their children at all times."
+              },
+              {
+                "label": "D",
+                "text": "Children will need sunhats and drinks."
+              },
+              {
+                "label": "E",
+                "text": "The café has a special offer on meals for children."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO features of the stadium tour are new this year? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "VIP tour"
+              },
+              {
+                "label": "B",
+                "text": "360 cinema experience"
+              },
+              {
+                "label": "C",
+                "text": "audio guide"
+              },
+              {
+                "label": "D",
+                "text": "dressing room tour"
+              },
+              {
+                "label": "E",
+                "text": "tours in other languages"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO features of the stadium tour are new this year? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "VIP tour"
+              },
+              {
+                "label": "B",
+                "text": "360 cinema experience"
+              },
+              {
+                "label": "C",
+                "text": "audio guide"
+              },
+              {
+                "label": "D",
+                "text": "dressing room tour"
+              },
+              {
+                "label": "E",
+                "text": "tours in other languages"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "1870",
+            "options": [
+              {
+                "label": "A",
+                "text": "the introduction of pay for the players"
+              },
+              {
+                "label": "B",
+                "text": "a change to the design of the goal"
+              },
+              {
+                "label": "C",
+                "text": "the first use of lights for matches"
+              },
+              {
+                "label": "D",
+                "text": "the introduction of goalkeepers"
+              },
+              {
+                "label": "E",
+                "text": "the first international match"
+              },
+              {
+                "label": "F",
+                "text": "two changes to the rules of the game"
+              },
+              {
+                "label": "G",
+                "text": "the introduction of a fee for spectators"
+              },
+              {
+                "label": "H",
+                "text": "an agreement on the length of a game"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "1874",
+            "options": [
+              {
+                "label": "A",
+                "text": "the introduction of pay for the players"
+              },
+              {
+                "label": "B",
+                "text": "a change to the design of the goal"
+              },
+              {
+                "label": "C",
+                "text": "the first use of lights for matches"
+              },
+              {
+                "label": "D",
+                "text": "the introduction of goalkeepers"
+              },
+              {
+                "label": "E",
+                "text": "the first international match"
+              },
+              {
+                "label": "F",
+                "text": "two changes to the rules of the game"
+              },
+              {
+                "label": "G",
+                "text": "the introduction of a fee for spectators"
+              },
+              {
+                "label": "H",
+                "text": "an agreement on the length of a game"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "1875",
+            "options": [
+              {
+                "label": "A",
+                "text": "the introduction of pay for the players"
+              },
+              {
+                "label": "B",
+                "text": "a change to the design of the goal"
+              },
+              {
+                "label": "C",
+                "text": "the first use of lights for matches"
+              },
+              {
+                "label": "D",
+                "text": "the introduction of goalkeepers"
+              },
+              {
+                "label": "E",
+                "text": "the first international match"
+              },
+              {
+                "label": "F",
+                "text": "two changes to the rules of the game"
+              },
+              {
+                "label": "G",
+                "text": "the introduction of a fee for spectators"
+              },
+              {
+                "label": "H",
+                "text": "an agreement on the length of a game"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "1877",
+            "options": [
+              {
+                "label": "A",
+                "text": "the introduction of pay for the players"
+              },
+              {
+                "label": "B",
+                "text": "a change to the design of the goal"
+              },
+              {
+                "label": "C",
+                "text": "the first use of lights for matches"
+              },
+              {
+                "label": "D",
+                "text": "the introduction of goalkeepers"
+              },
+              {
+                "label": "E",
+                "text": "the first international match"
+              },
+              {
+                "label": "F",
+                "text": "two changes to the rules of the game"
+              },
+              {
+                "label": "G",
+                "text": "the introduction of a fee for spectators"
+              },
+              {
+                "label": "H",
+                "text": "an agreement on the length of a game"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "1878",
+            "options": [
+              {
+                "label": "A",
+                "text": "the introduction of pay for the players"
+              },
+              {
+                "label": "B",
+                "text": "a change to the design of the goal"
+              },
+              {
+                "label": "C",
+                "text": "the first use of lights for matches"
+              },
+              {
+                "label": "D",
+                "text": "the introduction of goalkeepers"
+              },
+              {
+                "label": "E",
+                "text": "the first international match"
+              },
+              {
+                "label": "F",
+                "text": "two changes to the rules of the game"
+              },
+              {
+                "label": "G",
+                "text": "the introduction of a fee for spectators"
+              },
+              {
+                "label": "H",
+                "text": "an agreement on the length of a game"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "1880",
+            "options": [
+              {
+                "label": "A",
+                "text": "the introduction of pay for the players"
+              },
+              {
+                "label": "B",
+                "text": "a change to the design of the goal"
+              },
+              {
+                "label": "C",
+                "text": "the first use of lights for matches"
+              },
+              {
+                "label": "D",
+                "text": "the introduction of goalkeepers"
+              },
+              {
+                "label": "E",
+                "text": "the first international match"
+              },
+              {
+                "label": "F",
+                "text": "two changes to the rules of the game"
+              },
+              {
+                "label": "G",
+                "text": "the introduction of a fee for spectators"
+              },
+              {
+                "label": "H",
+                "text": "an agreement on the length of a game"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO benefits for children of learning to write did both students find surprising?\nA improved fine motor skills\nB improved memory\nC improved concentration\nD improved imagination\nE improved spatial awareness\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nFor children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct?\nA not spacing letters correctly\nB not writing in a straight line\nC applying too much pressure when writing\nD confusing letter shapes\nE writing very slowly\n\nQuestions 25–30\nChoose the correct letter, A, B or C.\n\nTeaching handwriting\n25 What does the woman say about using laptops to teach writing to children with dyslexia?\nA Children often lack motivation to learn that way.\nB Children become fluent relatively quickly.\nC Children react more positively if they make a mistake.\n\n26 When discussing whether to teach cursive or print writing, the woman thinks that\nA Cursive writing disadvantages a certain group of children.\nB Print writing is associated with lower academic performance.\nC Most teachers in the UK prefer a traditional approach to handwriting.\n\n27 According to the students, what impact does poor handwriting have on exam performance?\nA There is evidence to suggest grades are affected by poor handwriting.\nB Neat handwriting is less important now than it used to be.\nC Candidates write more slowly and produce shorter answers.\n\n28 What prediction does the man make about the future of handwriting?\nA Touch typing will be taught before writing by hand.\nB Children will continue to learn to write by hand.\nC People will dislike handwriting on digital devices.\n\n29 The woman is concerned that relying on digital devices has made it difficult for her to\nA take detailed notes.\nB spell and punctuate.\nC read old documents.\n\n30 How do the students feel about their own handwriting?\nA concerned they are unable to write quickly\nB embarrassed by comments made about it\nC regretful that they have lost the habit",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-26-section-3.m4a"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO benefits for children of learning to write did both students find surprising? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "improved fine motor skills"
+              },
+              {
+                "label": "B",
+                "text": "improved memory"
+              },
+              {
+                "label": "C",
+                "text": "improved concentration"
+              },
+              {
+                "label": "D",
+                "text": "improved imagination"
+              },
+              {
+                "label": "E",
+                "text": "improved spatial awareness"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO benefits for children of learning to write did both students find surprising? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "improved fine motor skills"
+              },
+              {
+                "label": "B",
+                "text": "improved memory"
+              },
+              {
+                "label": "C",
+                "text": "improved concentration"
+              },
+              {
+                "label": "D",
+                "text": "improved imagination"
+              },
+              {
+                "label": "E",
+                "text": "improved spatial awareness"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "For children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "not spacing letters correctly"
+              },
+              {
+                "label": "B",
+                "text": "not writing in a straight line"
+              },
+              {
+                "label": "C",
+                "text": "applying too much pressure when writing"
+              },
+              {
+                "label": "D",
+                "text": "confusing letter shapes"
+              },
+              {
+                "label": "E",
+                "text": "writing very slowly"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "For children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "not spacing letters correctly"
+              },
+              {
+                "label": "B",
+                "text": "not writing in a straight line"
+              },
+              {
+                "label": "C",
+                "text": "applying too much pressure when writing"
+              },
+              {
+                "label": "D",
+                "text": "confusing letter shapes"
+              },
+              {
+                "label": "E",
+                "text": "writing very slowly"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the woman say about using laptops to teach writing to children with dyslexia?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Children often lack motivation to learn that way."
+              },
+              {
+                "label": "B",
+                "text": "Children become fluent relatively quickly."
+              },
+              {
+                "label": "C",
+                "text": "Children react more positively if they make a mistake."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When discussing whether to teach cursive or print writing, the woman thinks that",
+            "options": [
+              {
+                "label": "A",
+                "text": "Cursive writing disadvantages a certain group of children."
+              },
+              {
+                "label": "B",
+                "text": "Print writing is associated with lower academic performance."
+              },
+              {
+                "label": "C",
+                "text": "Most teachers in the UK prefer a traditional approach to handwriting."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to the students, what impact does poor handwriting have on exam performance?",
+            "options": [
+              {
+                "label": "A",
+                "text": "There is evidence to suggest grades are affected by poor handwriting."
+              },
+              {
+                "label": "B",
+                "text": "Neat handwriting is less important now than it used to be."
+              },
+              {
+                "label": "C",
+                "text": "Candidates write more slowly and produce shorter answers."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What prediction does the man make about the future of handwriting?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Touch typing will be taught before writing by hand."
+              },
+              {
+                "label": "B",
+                "text": "Children will continue to learn to write by hand."
+              },
+              {
+                "label": "C",
+                "text": "People will dislike handwriting on digital devices."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The woman is concerned that relying on digital devices has made it difficult for her to",
+            "options": [
+              {
+                "label": "A",
+                "text": "take detailed notes."
+              },
+              {
+                "label": "B",
+                "text": "spell and punctuate."
+              },
+              {
+                "label": "C",
+                "text": "read old documents."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How do the students feel about their own handwriting?",
+            "options": [
+              {
+                "label": "A",
+                "text": "concerned they are unable to write quickly"
+              },
+              {
+                "label": "B",
+                "text": "embarrassed by comments made about it"
+              },
+              {
+                "label": "C",
+                "text": "regretful that they have lost the habit"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nResearch in the area around Chembe Bird Sanctuary\n\nThe importance of birds of prey to the local communities\n● They destroy 31 ............... and other rodents.\n● They help to prevent farmers from being bitten by 32 ...............\n● They have been an important part of the local culture for many years.\n● They now support the economy by encouraging 33 ............... in the area.\n\nFalling numbers of birds of prey\n● The birds may be accidentally killed by 34 ............... when they are hunting or sleeping\n● by electrocution from contact with power lines, especially at times when there are a lot of 35 ...............\n● Local farmers may illegally shoot them or 36 ............... them.\n\nWays of protecting chickens from birds of prey\n● clearing away vegetation from the area (unhelpful)\n● providing a 37 ............... for chickens (expensive)\n● frightening birds of prey by\n  - keeping a 38 ...............\n  - making a 39 ............... - e.g. with metal objects\n● A 40 ............... of methods is usually most effective.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-26-section-4.m4a"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "They destroy 31 ________ and other rodents.",
+            "blank": true
+          },
+          "correctAnswer": "rats",
+          "acceptableAnswers": [
+            "rats",
+            "rodents"
+          ]
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "prevent farmers from being bitten by 32 ________",
+            "blank": true
+          },
+          "correctAnswer": "snakes"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "encouraging 33 ________ in the area.",
+            "blank": true
+          },
+          "correctAnswer": "tourism"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "accidentally killed by 34 ________ when they are hunting or sleeping",
+            "blank": true
+          },
+          "correctAnswer": "traffic"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "especially at times when there are a lot of 35 ________",
+            "blank": true
+          },
+          "correctAnswer": "rain"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Local farmers may illegally shoot them or 36 ________ them.",
+            "blank": true
+          },
+          "correctAnswer": "poison"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "providing a 37 ________ for chickens (expensive)",
+            "blank": true
+          },
+          "correctAnswer": "building"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "keeping a 38 ________",
+            "blank": true
+          },
+          "correctAnswer": "dog"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "making a 39 ________ - e.g. with metal objects",
+            "blank": true
+          },
+          "correctAnswer": "noise"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A 40 ________ of methods is usually most effective.",
+            "blank": true
+          },
+          "correctAnswer": "combination"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}

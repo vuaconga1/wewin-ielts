@@ -1,0 +1,962 @@
+{
+  "title": "Test 24.C20.02 - Listening",
+  "slug": "test-24-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-24-section-1.m4a",
+    "/uploads/audio/test-24-section-2.m4a",
+    "/uploads/audio/test-24-section-3.m4a",
+    "/uploads/audio/test-24-section-4.m4a"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nSupport for Carers\nLocal councils can arrange practical support to help those caring for elderly people at home.\n\nThis can give the carer:\n● time for other responsibilities\n● a 1 ...............\n\nAssessment of mother's needs\nThis may include discussion of:\n● how much 2 ............... the caring involves\n● what types of tasks are involved, e.g.\n  - help with dressing\n  - helping her have a 3 ...............\n  - shopping\n  - helping with meals\n  - dealing with 4 ...............\n● any aspects of caring that are especially difficult, e.g.\n  - loss of 5 ...............\n  - 6 ............... her\n  - preventing a 7 ...............\n\nTypes of support that may be offered to carers\n● transport costs, e.g. cost of a 8 ...............\n● car-related costs, e.g. fuel and 9 ...............\n● help with housework\n● help to reduce 10 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-24-section-1.m4a"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "This can give the carer: a ________",
+            "blank": true
+          },
+          "correctAnswer": "break"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "how much ________ the caring involves",
+            "blank": true
+          },
+          "correctAnswer": "time"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "helping her have a ________",
+            "blank": true
+          },
+          "correctAnswer": "shower"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "dealing with ________",
+            "blank": true
+          },
+          "correctAnswer": "money"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "loss of ________",
+            "blank": true
+          },
+          "correctAnswer": "memory"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ her",
+            "blank": true
+          },
+          "correctAnswer": "lifting"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "preventing a ________",
+            "blank": true
+          },
+          "correctAnswer": "fall"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "transport costs, e.g. cost of a ________",
+            "blank": true
+          },
+          "correctAnswer": "taxi"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "car-related costs, e.g. fuel and ________",
+            "blank": true
+          },
+          "correctAnswer": "insurance"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "help to reduce ________",
+            "blank": true
+          },
+          "correctAnswer": "stress"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–16\nWhat is the role of the volunteers in each of the following activities?\nChoose SIX answers from the box and write the correct letter, A–I, next to Questions 11–16.\n\nRoles\nA providing entertainment\nB providing publicity about a council service\nC contacting local businesses\nD giving advice to visitors\nE collecting feedback on events\nF selling tickets\nG introducing guest speakers at an event\nH encouraging cooperation between local organisations\nI arranging displays\n\n11 Welcome tent\n12 Exhibition tent\n13 Community tent\n14 Main entrance\n15 Children's area\n16 Town hall\n\nQuestions 17–20\nChoose the correct letter, A, B or C.\n\n17 Which event requires the largest number of volunteers?\nA the music festival\nB the science festival\nC the book festival\n\n18 What is the most important requirement for volunteers at the festivals?\nA interpersonal skills\nB personal interest in the event\nC flexibility\n\n19 New volunteers will start working in the week beginning\nA 2 September.\nB 9 September.\nC 23 September.\n\n20 What is the next annual event for volunteers?\nA a boat trip\nB a barbecue\nC a party",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-24-section-2.m4a"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Welcome tent",
+            "options": [
+              {
+                "label": "A",
+                "text": "providing entertainment"
+              },
+              {
+                "label": "B",
+                "text": "providing publicity about a council service"
+              },
+              {
+                "label": "C",
+                "text": "contacting local businesses"
+              },
+              {
+                "label": "D",
+                "text": "giving advice to visitors"
+              },
+              {
+                "label": "E",
+                "text": "collecting feedback on events"
+              },
+              {
+                "label": "F",
+                "text": "selling tickets"
+              },
+              {
+                "label": "G",
+                "text": "introducing guest speakers at an event"
+              },
+              {
+                "label": "H",
+                "text": "encouraging cooperation between local organisations"
+              },
+              {
+                "label": "I",
+                "text": "arranging displays"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Exhibition tent",
+            "options": [
+              {
+                "label": "A",
+                "text": "providing entertainment"
+              },
+              {
+                "label": "B",
+                "text": "providing publicity about a council service"
+              },
+              {
+                "label": "C",
+                "text": "contacting local businesses"
+              },
+              {
+                "label": "D",
+                "text": "giving advice to visitors"
+              },
+              {
+                "label": "E",
+                "text": "collecting feedback on events"
+              },
+              {
+                "label": "F",
+                "text": "selling tickets"
+              },
+              {
+                "label": "G",
+                "text": "introducing guest speakers at an event"
+              },
+              {
+                "label": "H",
+                "text": "encouraging cooperation between local organisations"
+              },
+              {
+                "label": "I",
+                "text": "arranging displays"
+              }
+            ]
+          },
+          "correctAnswer": "I"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Community tent",
+            "options": [
+              {
+                "label": "A",
+                "text": "providing entertainment"
+              },
+              {
+                "label": "B",
+                "text": "providing publicity about a council service"
+              },
+              {
+                "label": "C",
+                "text": "contacting local businesses"
+              },
+              {
+                "label": "D",
+                "text": "giving advice to visitors"
+              },
+              {
+                "label": "E",
+                "text": "collecting feedback on events"
+              },
+              {
+                "label": "F",
+                "text": "selling tickets"
+              },
+              {
+                "label": "G",
+                "text": "introducing guest speakers at an event"
+              },
+              {
+                "label": "H",
+                "text": "encouraging cooperation between local organisations"
+              },
+              {
+                "label": "I",
+                "text": "arranging displays"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Main entrance",
+            "options": [
+              {
+                "label": "A",
+                "text": "providing entertainment"
+              },
+              {
+                "label": "B",
+                "text": "providing publicity about a council service"
+              },
+              {
+                "label": "C",
+                "text": "contacting local businesses"
+              },
+              {
+                "label": "D",
+                "text": "giving advice to visitors"
+              },
+              {
+                "label": "E",
+                "text": "collecting feedback on events"
+              },
+              {
+                "label": "F",
+                "text": "selling tickets"
+              },
+              {
+                "label": "G",
+                "text": "introducing guest speakers at an event"
+              },
+              {
+                "label": "H",
+                "text": "encouraging cooperation between local organisations"
+              },
+              {
+                "label": "I",
+                "text": "arranging displays"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Children's area",
+            "options": [
+              {
+                "label": "A",
+                "text": "providing entertainment"
+              },
+              {
+                "label": "B",
+                "text": "providing publicity about a council service"
+              },
+              {
+                "label": "C",
+                "text": "contacting local businesses"
+              },
+              {
+                "label": "D",
+                "text": "giving advice to visitors"
+              },
+              {
+                "label": "E",
+                "text": "collecting feedback on events"
+              },
+              {
+                "label": "F",
+                "text": "selling tickets"
+              },
+              {
+                "label": "G",
+                "text": "introducing guest speakers at an event"
+              },
+              {
+                "label": "H",
+                "text": "encouraging cooperation between local organisations"
+              },
+              {
+                "label": "I",
+                "text": "arranging displays"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Town hall",
+            "options": [
+              {
+                "label": "A",
+                "text": "providing entertainment"
+              },
+              {
+                "label": "B",
+                "text": "providing publicity about a council service"
+              },
+              {
+                "label": "C",
+                "text": "contacting local businesses"
+              },
+              {
+                "label": "D",
+                "text": "giving advice to visitors"
+              },
+              {
+                "label": "E",
+                "text": "collecting feedback on events"
+              },
+              {
+                "label": "F",
+                "text": "selling tickets"
+              },
+              {
+                "label": "G",
+                "text": "introducing guest speakers at an event"
+              },
+              {
+                "label": "H",
+                "text": "encouraging cooperation between local organisations"
+              },
+              {
+                "label": "I",
+                "text": "arranging displays"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which event requires the largest number of volunteers?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the music festival"
+              },
+              {
+                "label": "B",
+                "text": "the science festival"
+              },
+              {
+                "label": "C",
+                "text": "the book festival"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the most important requirement for volunteers at the festivals?",
+            "options": [
+              {
+                "label": "A",
+                "text": "interpersonal skills"
+              },
+              {
+                "label": "B",
+                "text": "personal interest in the event"
+              },
+              {
+                "label": "C",
+                "text": "flexibility"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "New volunteers will start working in the week beginning",
+            "options": [
+              {
+                "label": "A",
+                "text": "2 September."
+              },
+              {
+                "label": "B",
+                "text": "9 September."
+              },
+              {
+                "label": "C",
+                "text": "23 September."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the next annual event for volunteers?",
+            "options": [
+              {
+                "label": "A",
+                "text": "a boat trip"
+              },
+              {
+                "label": "B",
+                "text": "a barbecue"
+              },
+              {
+                "label": "C",
+                "text": "a party"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–25\nWhat is Rosie and Colin's opinion about each of the following aspects of human geography?\nChoose FIVE answers from the box and write the correct letter, A–G, next to Questions 21–25.\n\nOpinions\nA The information given about this was too vague.\nB This may not be relevant to their course.\nC This will involve only a small number of statistics.\nD It will be easy to find facts about this.\nE The facts about this may not be reliable.\nF No useful research has been done on this.\nG The information provided about this was interesting.\n\nAspects of human geography\n21 Population\n22 Health\n23 Economies\n24 Culture\n25 Poverty\n\nQuestions 26–30\nChoose the correct letter, A, B or C.\n\n26 Rosie says that in her own city the main problem is\nA crime.\nB housing.\nC unemployment.\n\n27 What recent additions to the outskirts of their cities are both students happy about?\nA conference centres\nB sports centres\nC retail centres\n\n28 The students agree that developing disused industrial sites may\nA have unexpected costs.\nB damage the urban environment.\nC destroy valuable historical buildings.\n\n29 The students will mention Masdar City as an example of an attempt to achieve\nA daily collections for waste recycling.\nB sustainable energy use.\nC free transport for everyone.\n\n30 When discussing the ecotown of Greenhill Abbots, Colin is uncertain about\nA what its objectives were.\nB why there was opposition to it.\nC how much of it has actually been built.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-24-section-3.m4a"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Population",
+            "options": [
+              {
+                "label": "A",
+                "text": "The information given about this was too vague."
+              },
+              {
+                "label": "B",
+                "text": "This may not be relevant to their course."
+              },
+              {
+                "label": "C",
+                "text": "This will involve only a small number of statistics."
+              },
+              {
+                "label": "D",
+                "text": "It will be easy to find facts about this."
+              },
+              {
+                "label": "E",
+                "text": "The facts about this may not be reliable."
+              },
+              {
+                "label": "F",
+                "text": "No useful research has been done on this."
+              },
+              {
+                "label": "G",
+                "text": "The information provided about this was interesting."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Health",
+            "options": [
+              {
+                "label": "A",
+                "text": "The information given about this was too vague."
+              },
+              {
+                "label": "B",
+                "text": "This may not be relevant to their course."
+              },
+              {
+                "label": "C",
+                "text": "This will involve only a small number of statistics."
+              },
+              {
+                "label": "D",
+                "text": "It will be easy to find facts about this."
+              },
+              {
+                "label": "E",
+                "text": "The facts about this may not be reliable."
+              },
+              {
+                "label": "F",
+                "text": "No useful research has been done on this."
+              },
+              {
+                "label": "G",
+                "text": "The information provided about this was interesting."
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Economies",
+            "options": [
+              {
+                "label": "A",
+                "text": "The information given about this was too vague."
+              },
+              {
+                "label": "B",
+                "text": "This may not be relevant to their course."
+              },
+              {
+                "label": "C",
+                "text": "This will involve only a small number of statistics."
+              },
+              {
+                "label": "D",
+                "text": "It will be easy to find facts about this."
+              },
+              {
+                "label": "E",
+                "text": "The facts about this may not be reliable."
+              },
+              {
+                "label": "F",
+                "text": "No useful research has been done on this."
+              },
+              {
+                "label": "G",
+                "text": "The information provided about this was interesting."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Culture",
+            "options": [
+              {
+                "label": "A",
+                "text": "The information given about this was too vague."
+              },
+              {
+                "label": "B",
+                "text": "This may not be relevant to their course."
+              },
+              {
+                "label": "C",
+                "text": "This will involve only a small number of statistics."
+              },
+              {
+                "label": "D",
+                "text": "It will be easy to find facts about this."
+              },
+              {
+                "label": "E",
+                "text": "The facts about this may not be reliable."
+              },
+              {
+                "label": "F",
+                "text": "No useful research has been done on this."
+              },
+              {
+                "label": "G",
+                "text": "The information provided about this was interesting."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Poverty",
+            "options": [
+              {
+                "label": "A",
+                "text": "The information given about this was too vague."
+              },
+              {
+                "label": "B",
+                "text": "This may not be relevant to their course."
+              },
+              {
+                "label": "C",
+                "text": "This will involve only a small number of statistics."
+              },
+              {
+                "label": "D",
+                "text": "It will be easy to find facts about this."
+              },
+              {
+                "label": "E",
+                "text": "The facts about this may not be reliable."
+              },
+              {
+                "label": "F",
+                "text": "No useful research has been done on this."
+              },
+              {
+                "label": "G",
+                "text": "The information provided about this was interesting."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Rosie says that in her own city the main problem is",
+            "options": [
+              {
+                "label": "A",
+                "text": "crime."
+              },
+              {
+                "label": "B",
+                "text": "housing."
+              },
+              {
+                "label": "C",
+                "text": "unemployment."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What recent additions to the outskirts of their cities are both students happy about?",
+            "options": [
+              {
+                "label": "A",
+                "text": "conference centres"
+              },
+              {
+                "label": "B",
+                "text": "sports centres"
+              },
+              {
+                "label": "C",
+                "text": "retail centres"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students agree that developing disused industrial sites may",
+            "options": [
+              {
+                "label": "A",
+                "text": "have unexpected costs."
+              },
+              {
+                "label": "B",
+                "text": "damage the urban environment."
+              },
+              {
+                "label": "C",
+                "text": "destroy valuable historical buildings."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students will mention Masdar City as an example of an attempt to achieve",
+            "options": [
+              {
+                "label": "A",
+                "text": "daily collections for waste recycling."
+              },
+              {
+                "label": "B",
+                "text": "sustainable energy use."
+              },
+              {
+                "label": "C",
+                "text": "free transport for everyone."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When discussing the ecotown of Greenhill Abbots, Colin is uncertain about",
+            "options": [
+              {
+                "label": "A",
+                "text": "what its objectives were."
+              },
+              {
+                "label": "B",
+                "text": "why there was opposition to it."
+              },
+              {
+                "label": "C",
+                "text": "how much of it has actually been built."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nDeveloping food trends\n● The growth in interest in food fashions started with 31 ............... of food being shared on social media.\n● The UK food industry is constantly developing products which are new or different.\n● Influencers on social media become 'ambassadors' for a brand.\n  - Sales of 32 ............... food brands have grown rapidly this way.\n● Supermarkets track demand for ingredients on social media.\n  - Famous 33 ............... are influential.\n\nMarketing campaigns\n● The avocado:\n  - 34 ............... were invited to visit growers in South Africa.\n  - Advertising focused on its 35 ............... benefits.\n● Oat milk:\n  - A Swedish brand's media campaign received publicity by upsetting competitors.\n  - Promotion in the USA through 36 ............... shops reduced the need for advertising.\n  - It appealed to consumers who are concerned about the 37 ...............\n● Norwegian skrei:\n  - has helped strengthen the 38 ............... of Norwegian seafood.\n\nEthical concerns\n● Quinoa:\n  - Its success led to an increase in its 39 ...............\n  - Overuse of resources resulted in poor quality 40 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-24-section-4.m4a"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "started with ________ of food being shared on social media.",
+            "blank": true
+          },
+          "correctAnswer": "photos",
+          "acceptableAnswers": [
+            "photos",
+            "photographs",
+            "pictures"
+          ]
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Sales of ________ food brands have grown rapidly this way.",
+            "blank": true
+          },
+          "correctAnswer": "vegan"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Famous ________ are influential.",
+            "blank": true
+          },
+          "correctAnswer": "chefs",
+          "acceptableAnswers": [
+            "chefs",
+            "cooks"
+          ]
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ were invited to visit growers in South Africa.",
+            "blank": true
+          },
+          "correctAnswer": "journalists",
+          "acceptableAnswers": [
+            "journalists",
+            "reporters"
+          ]
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Advertising focused on its ________ benefits.",
+            "blank": true
+          },
+          "correctAnswer": "health"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Promotion in the USA through ________ shops reduced the need for advertising.",
+            "blank": true
+          },
+          "correctAnswer": "coffee"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "consumers who are concerned about the ________",
+            "blank": true
+          },
+          "correctAnswer": "environment"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "strengthen the ________ of Norwegian seafood.",
+            "blank": true
+          },
+          "correctAnswer": "reputation"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Its success led to an increase in its ________",
+            "blank": true
+          },
+          "correctAnswer": "price",
+          "acceptableAnswers": [
+            "price",
+            "cost"
+          ]
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "resulted in poor quality ________",
+            "blank": true
+          },
+          "correctAnswer": "soil"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}

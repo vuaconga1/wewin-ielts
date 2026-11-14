@@ -1,0 +1,838 @@
+{
+  "title": "Test 25.C20.03 - Listening",
+  "slug": "test-25-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-25-section-1.m4a",
+    "/uploads/audio/test-25-section-2.m4a",
+    "/uploads/audio/test-25-section-3.m4a",
+    "/uploads/audio/test-25-section-4.m4a"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nFurniture rental companies\n\nPeak Rentals\n● Prices range from 105 dollars to 1 ............... dollars per room per month\n● The furniture is very 2 ...............\n● Delivers in 1–2 days\n● Special offer: free 3 ............... with every living room set\n\n4 ............... and Oliver\n● Mid-range prices\n● 12% monthly fee for 5 ...............\n● Also offers a cleaning service\n\nLarch Furniture\n● Offers cheapest prices for renting furniture and 6 ............... items\n● Must have own 7 ...............\n● Minimum contract: 6 months\n\n8 ............... Co\n● Order using their 9 ...............\n● Free 10 ............... of furniture items",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-25-section-1.m4a"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Prices range from 105 dollars to ________ dollars per room per month",
+            "blank": true
+          },
+          "correctAnswer": "239",
+          "acceptableAnswers": [
+            "239",
+            "two hundred and thirty-nine",
+            "two hundred and thirty nine"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The furniture is very ________",
+            "blank": true
+          },
+          "correctAnswer": "modern"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Special offer: free ________ with every living room set",
+            "blank": true
+          },
+          "correctAnswer": "lamp"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Name of company: ________ and Oliver",
+            "blank": true
+          },
+          "correctAnswer": "Aaron"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "12% monthly fee for ________",
+            "blank": true
+          },
+          "correctAnswer": "damage"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "renting furniture and ________ items",
+            "blank": true
+          },
+          "correctAnswer": "electronic"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Must have own ________",
+            "blank": true
+          },
+          "correctAnswer": "insurance"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Name of company: ________ Co",
+            "blank": true
+          },
+          "correctAnswer": "Space"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Order using their ________",
+            "blank": true
+          },
+          "correctAnswer": "app"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Free ________ of furniture items",
+            "blank": true
+          },
+          "correctAnswer": "exchanges"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–16\nChoose the correct letter, A, B, or C.\n\nBidcaster Community Archaeology Project\n11 Who was responsible for starting the community project?\nA the castle owners\nB a national charity\nC the local council\n\n12 How was the gold coin found?\nA Heavy rain had removed some of the soil.\nB The ground was dug up by wild rabbits.\nC A person with a metal detector searched the area.\n\n13 What led the archaeologists to believe there was an ancient village on this site?\nA the lucky discovery of old records\nB the bases of several structures visible in the grass\nC the unusual stones found near the castle\n\n14 What are the team still hoping to find?\nA everyday pottery\nB animal bones\nC pieces of jewellery\n\n15 What was found on the other side of the river from the castle?\nA the remains of a large palace\nB the outline of fields\nC a number of small huts\n\n16 What do the team plan to do after work ends this summer?\nA prepare a display for a museum\nB take part in a television programme\nC start to organise school visits\n\nQuestions 17–20\nLabel the map below.\nWrite the correct letter, A–G, next to Questions 17–20.\n\n![Bidcaster Archaeological Dig](/uploads/images/test-25-map.png)\n\n17 bridge foundations\n18 rubbish pit\n19 meeting hall\n20 fish pond",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-25-section-2.m4a"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Who was responsible for starting the community project?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the castle owners"
+              },
+              {
+                "label": "B",
+                "text": "a national charity"
+              },
+              {
+                "label": "C",
+                "text": "the local council"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How was the gold coin found?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Heavy rain had removed some of the soil."
+              },
+              {
+                "label": "B",
+                "text": "The ground was dug up by wild rabbits."
+              },
+              {
+                "label": "C",
+                "text": "A person with a metal detector searched the area."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What led the archaeologists to believe there was an ancient village on this site?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the lucky discovery of old records"
+              },
+              {
+                "label": "B",
+                "text": "the bases of several structures visible in the grass"
+              },
+              {
+                "label": "C",
+                "text": "the unusual stones found near the castle"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What are the team still hoping to find?",
+            "options": [
+              {
+                "label": "A",
+                "text": "everyday pottery"
+              },
+              {
+                "label": "B",
+                "text": "animal bones"
+              },
+              {
+                "label": "C",
+                "text": "pieces of jewellery"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What was found on the other side of the river from the castle?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the remains of a large palace"
+              },
+              {
+                "label": "B",
+                "text": "the outline of fields"
+              },
+              {
+                "label": "C",
+                "text": "a number of small huts"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What do the team plan to do after work ends this summer?",
+            "options": [
+              {
+                "label": "A",
+                "text": "prepare a display for a museum"
+              },
+              {
+                "label": "B",
+                "text": "take part in a television programme"
+              },
+              {
+                "label": "C",
+                "text": "start to organise school visits"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "bridge foundations",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "rubbish pit",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "meeting hall",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "fish pond",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–26\nChoose the correct letter, A, B, or C.\n\nProject on Theatre Programmes\n21 Finn was pleased to discover that their topic\nA was not familiar to their module leader.\nB had not been chosen by other students.\nC did not prove to be difficult to research.\n\n22 Maya says a mistaken belief about theatre programmes is that\nA Theatres pay companies to produce them.\nB Few theatre-goers buy them nowadays.\nC They contain far more adverts than previously.\n\n23 Finn was surprised that, in early British theatre, programmes\nA were difficult for audiences to obtain.\nB were given out free of charge.\nC were seen as a kind of contract.\n\n24 Maya feels their project should include an explanation of why companies of actors\nA promoted their own plays.\nB performed plays outdoors.\nC had to tour with their plays.\n\n25 Finn and Maya both think that, compared to nineteenth-century programmes, those from the eighteenth century\nA were more original.\nB were more colourful.\nC were more informative.\n\n26 Maya doesn't fully understand why, in the twentieth century,\nA Very few theatre programmes were printed in the USA.\nB British theatre programmes failed to develop for so long.\nC Theatre programmes in Britain copied fashions from the USA.\n\nQuestions 27–30\nWhat comment is made about the programme for each of the following shows?\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 27–30.\n\nComments about programme\nA Its origin is somewhat controversial\nB It is historically significant for a country.\nC It was effective at attracting audiences\nD It is included in a recent project\nE It contains insights into the show\nF It resembles an artwork.\n\nShow\n27 Ruy Blas\n28 Man of La Mancha\n29 The Tragedy of Jane Shore\n30 The Sailors' Festival",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-25-section-3.m4a"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Finn was pleased to discover that their topic",
+            "options": [
+              {
+                "label": "A",
+                "text": "was not familiar to their module leader."
+              },
+              {
+                "label": "B",
+                "text": "had not been chosen by other students."
+              },
+              {
+                "label": "C",
+                "text": "did not prove to be difficult to research."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Maya says a mistaken belief about theatre programmes is that",
+            "options": [
+              {
+                "label": "A",
+                "text": "Theatres pay companies to produce them."
+              },
+              {
+                "label": "B",
+                "text": "Few theatre-goers buy them nowadays."
+              },
+              {
+                "label": "C",
+                "text": "They contain far more adverts than previously."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Finn was surprised that, in early British theatre, programmes",
+            "options": [
+              {
+                "label": "A",
+                "text": "were difficult for audiences to obtain."
+              },
+              {
+                "label": "B",
+                "text": "were given out free of charge."
+              },
+              {
+                "label": "C",
+                "text": "were seen as a kind of contract."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Maya feels their project should include an explanation of why companies of actors",
+            "options": [
+              {
+                "label": "A",
+                "text": "promoted their own plays."
+              },
+              {
+                "label": "B",
+                "text": "performed plays outdoors."
+              },
+              {
+                "label": "C",
+                "text": "had to tour with their plays."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Finn and Maya both think that, compared to nineteenth-century programmes, those from the eighteenth century",
+            "options": [
+              {
+                "label": "A",
+                "text": "were more original."
+              },
+              {
+                "label": "B",
+                "text": "were more colourful."
+              },
+              {
+                "label": "C",
+                "text": "were more informative."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Maya doesn't fully understand why, in the twentieth century,",
+            "options": [
+              {
+                "label": "A",
+                "text": "Very few theatre programmes were printed in the USA."
+              },
+              {
+                "label": "B",
+                "text": "British theatre programmes failed to develop for so long."
+              },
+              {
+                "label": "C",
+                "text": "Theatre programmes in Britain copied fashions from the USA."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Ruy Blas",
+            "options": [
+              {
+                "label": "A",
+                "text": "Its origin is somewhat controversial"
+              },
+              {
+                "label": "B",
+                "text": "It is historically significant for a country."
+              },
+              {
+                "label": "C",
+                "text": "It was effective at attracting audiences"
+              },
+              {
+                "label": "D",
+                "text": "It is included in a recent project"
+              },
+              {
+                "label": "E",
+                "text": "It contains insights into the show"
+              },
+              {
+                "label": "F",
+                "text": "It resembles an artwork."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Man of La Mancha",
+            "options": [
+              {
+                "label": "A",
+                "text": "Its origin is somewhat controversial"
+              },
+              {
+                "label": "B",
+                "text": "It is historically significant for a country."
+              },
+              {
+                "label": "C",
+                "text": "It was effective at attracting audiences"
+              },
+              {
+                "label": "D",
+                "text": "It is included in a recent project"
+              },
+              {
+                "label": "E",
+                "text": "It contains insights into the show"
+              },
+              {
+                "label": "F",
+                "text": "It resembles an artwork."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The Tragedy of Jane Shore",
+            "options": [
+              {
+                "label": "A",
+                "text": "Its origin is somewhat controversial"
+              },
+              {
+                "label": "B",
+                "text": "It is historically significant for a country."
+              },
+              {
+                "label": "C",
+                "text": "It was effective at attracting audiences"
+              },
+              {
+                "label": "D",
+                "text": "It is included in a recent project"
+              },
+              {
+                "label": "E",
+                "text": "It contains insights into the show"
+              },
+              {
+                "label": "F",
+                "text": "It resembles an artwork."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The Sailors' Festival",
+            "options": [
+              {
+                "label": "A",
+                "text": "Its origin is somewhat controversial"
+              },
+              {
+                "label": "B",
+                "text": "It is historically significant for a country."
+              },
+              {
+                "label": "C",
+                "text": "It was effective at attracting audiences"
+              },
+              {
+                "label": "D",
+                "text": "It is included in a recent project"
+              },
+              {
+                "label": "E",
+                "text": "It contains insights into the show"
+              },
+              {
+                "label": "F",
+                "text": "It resembles an artwork."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nInclusive design\n\nDefinition\n● Designing products that can be accessed by a diverse range of people without the need for any 31 ...............\n● Not the same as universal design: that is design for everyone, including catering for people with 32 ............... problems\n\nExamples of inclusive design\n● 33 ............... which are adjustable, avoiding back or neck problems\n● 34 ............... in public toilets which are easier to use\n\nTo assist the elderly:\n● Designers avoid using 35 ............... in interfaces\n● People can make commands using a mouse, keyboard or their 36 ...............\n\nImpact of non-inclusive designs\n● Access\n  - Loss of independence for disabled people.\n● Safety\n  - Seatbelts are especially problematic for 37 ............... women.\n  - PPE jackets are often unsuitable because of the size of women's 38 ...............\n  - PPE for female 39 ............... officers dealing with emergencies is the worst.\n● Comfort in the workplace\n  - The 40 ............... in offices is often too low for women.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-25-section-4.m4a"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "without the need for any ________",
+            "blank": true
+          },
+          "correctAnswer": "adaptation"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "catering for people with ________ problems",
+            "blank": true
+          },
+          "correctAnswer": "cognitive"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ which are adjustable, avoiding back or neck problems",
+            "blank": true
+          },
+          "correctAnswer": "desks"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ in public toilets which are easier to use",
+            "blank": true
+          },
+          "correctAnswer": "taps"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Designers avoid using ________ in interfaces",
+            "blank": true
+          },
+          "correctAnswer": "blue"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "People can make commands using a mouse, keyboard or their ________",
+            "blank": true
+          },
+          "correctAnswer": "voice"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Seatbelts are especially problematic for ________ women.",
+            "blank": true
+          },
+          "correctAnswer": "pregnant"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "unsuitable because of the size of women's ________",
+            "blank": true
+          },
+          "correctAnswer": "shoulders"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "PPE for female ________ officers dealing with emergencies is the worst.",
+            "blank": true
+          },
+          "correctAnswer": "police"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The ________ in offices is often too low for women.",
+            "blank": true
+          },
+          "correctAnswer": "temperature"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}

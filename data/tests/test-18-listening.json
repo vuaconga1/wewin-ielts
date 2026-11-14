@@ -1,0 +1,1025 @@
+{
+  "title": "Test 18.C21.04 - Listening",
+  "slug": "test-18-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-18-section-1.mp3",
+    "/uploads/audio/test-18-section-2.mp3",
+    "/uploads/audio/test-18-section-3.mp3",
+    "/uploads/audio/test-18-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the form below.\nWrite ONE WORD ONLY for each answer.\n\nSurvey about shopping in Broadbeach\nCustomer details\n• Name: Martyn 1 ...............\n\nToday's journey to Broadbeach town centre\n• Mode of transport: used his 2 ...............\n\nPurpose of today's trip\n• Has visited the 3 ...............\n• Looking for a new 4 ...............\n• Collecting 5 ............... (after repair)\n• Preferred day for shopping: 6 ...............\n\nOpinions about shopping in the town centre\n• Finds the service in shops is excellent\n• Thinks there are too many places selling 7 ...............\n• Would like more places to buy 8 ...............\n\nOpinions about new out-of-town Shopping Centre\n• Likes the 9 ............... best\n• Believes the 10 ............... is unnecessary",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-18-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Name: Martyn ________",
+            "blank": true
+          },
+          "correctAnswer": "Leigh"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "used his ________",
+            "blank": true
+          },
+          "correctAnswer": "motorbike"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "has visited the ________",
+            "blank": true
+          },
+          "correctAnswer": "hairdresser"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "looking for a new ________",
+            "blank": true
+          },
+          "correctAnswer": "suit"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "collecting ________ (after repair)",
+            "blank": true
+          },
+          "correctAnswer": "laptop"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Preferred day for shopping: ________",
+            "blank": true
+          },
+          "correctAnswer": "Monday"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Thinks there are too many places selling ________",
+            "blank": true
+          },
+          "correctAnswer": "coffee"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Would like more places to buy ________",
+            "blank": true
+          },
+          "correctAnswer": "books"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Likes the ________ best",
+            "blank": true
+          },
+          "correctAnswer": "plants"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Believes the ________ is unnecessary",
+            "blank": true
+          },
+          "correctAnswer": "cinema"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO pieces of information are provided about the keynote speakers at the business conference?\nA One speaker had to cancel at the last minute.\nB Both speakers founded their own companies.\nC Video recordings of the talks will be available online.\nD Questions from attendees will be answered during lunch.\nE Speaker slides can be downloaded from the conference app.\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO recommendations does the speaker make about attending afternoon workshops?\nA Arrive early to secure a seat in popular sessions.\nB Check the room number before heading to the workshop.\nC Prepare questions in advance for the presenters.\nD Attend workshops outside your usual area of work.\nE Limit participation to a maximum of two sessions.\n\nQuestions 15–20\nWhich topic will each of the following speakers focus on?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 15–20.\n\nTopics\nA Digital marketing for small businesses\nB Employee wellbeing and retention\nC Supply chain resilience\nD Cyber security essentials\nE Renewable energy in manufacturing\nF Cross-cultural team management\nG Funding opportunities for tech start-ups\nH Customer service automation\n\nSpeakers\n15 Dr Alan Vance\n16 Brenda Foster\n17 Carlos Mendez\n18 Diana Patel\n19 Ethan Moore\n20 Fiona Campbell",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-18-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO pieces of information are provided about the keynote speakers?",
+            "options": [
+              {
+                "label": "A",
+                "text": "One speaker had to cancel at the last minute."
+              },
+              {
+                "label": "B",
+                "text": "Both speakers founded their own companies."
+              },
+              {
+                "label": "C",
+                "text": "Video recordings of the talks will be available online."
+              },
+              {
+                "label": "D",
+                "text": "Questions from attendees will be answered during lunch."
+              },
+              {
+                "label": "E",
+                "text": "Speaker slides can be downloaded from the conference app."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              11,
+              12
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 11
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO recommendations does the speaker make about attending afternoon workshops?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Arrive early to secure a seat in popular sessions."
+              },
+              {
+                "label": "B",
+                "text": "Check the room number before heading to the workshop."
+              },
+              {
+                "label": "C",
+                "text": "Prepare questions in advance for the presenters."
+              },
+              {
+                "label": "D",
+                "text": "Attend workshops outside your usual area of work."
+              },
+              {
+                "label": "E",
+                "text": "Limit participation to a maximum of two sessions."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              13,
+              14
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 13
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Dr Alan Vance",
+            "options": [
+              {
+                "label": "A",
+                "text": "Digital marketing for small businesses"
+              },
+              {
+                "label": "B",
+                "text": "Employee wellbeing and retention"
+              },
+              {
+                "label": "C",
+                "text": "Supply chain resilience"
+              },
+              {
+                "label": "D",
+                "text": "Cyber security essentials"
+              },
+              {
+                "label": "E",
+                "text": "Renewable energy in manufacturing"
+              },
+              {
+                "label": "F",
+                "text": "Cross-cultural team management"
+              },
+              {
+                "label": "G",
+                "text": "Funding opportunities for tech start-ups"
+              },
+              {
+                "label": "H",
+                "text": "Customer service automation"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Brenda Foster",
+            "options": [
+              {
+                "label": "A",
+                "text": "Digital marketing for small businesses"
+              },
+              {
+                "label": "B",
+                "text": "Employee wellbeing and retention"
+              },
+              {
+                "label": "C",
+                "text": "Supply chain resilience"
+              },
+              {
+                "label": "D",
+                "text": "Cyber security essentials"
+              },
+              {
+                "label": "E",
+                "text": "Renewable energy in manufacturing"
+              },
+              {
+                "label": "F",
+                "text": "Cross-cultural team management"
+              },
+              {
+                "label": "G",
+                "text": "Funding opportunities for tech start-ups"
+              },
+              {
+                "label": "H",
+                "text": "Customer service automation"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Carlos Mendez",
+            "options": [
+              {
+                "label": "A",
+                "text": "Digital marketing for small businesses"
+              },
+              {
+                "label": "B",
+                "text": "Employee wellbeing and retention"
+              },
+              {
+                "label": "C",
+                "text": "Supply chain resilience"
+              },
+              {
+                "label": "D",
+                "text": "Cyber security essentials"
+              },
+              {
+                "label": "E",
+                "text": "Renewable energy in manufacturing"
+              },
+              {
+                "label": "F",
+                "text": "Cross-cultural team management"
+              },
+              {
+                "label": "G",
+                "text": "Funding opportunities for tech start-ups"
+              },
+              {
+                "label": "H",
+                "text": "Customer service automation"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Diana Patel",
+            "options": [
+              {
+                "label": "A",
+                "text": "Digital marketing for small businesses"
+              },
+              {
+                "label": "B",
+                "text": "Employee wellbeing and retention"
+              },
+              {
+                "label": "C",
+                "text": "Supply chain resilience"
+              },
+              {
+                "label": "D",
+                "text": "Cyber security essentials"
+              },
+              {
+                "label": "E",
+                "text": "Renewable energy in manufacturing"
+              },
+              {
+                "label": "F",
+                "text": "Cross-cultural team management"
+              },
+              {
+                "label": "G",
+                "text": "Funding opportunities for tech start-ups"
+              },
+              {
+                "label": "H",
+                "text": "Customer service automation"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Ethan Moore",
+            "options": [
+              {
+                "label": "A",
+                "text": "Digital marketing for small businesses"
+              },
+              {
+                "label": "B",
+                "text": "Employee wellbeing and retention"
+              },
+              {
+                "label": "C",
+                "text": "Supply chain resilience"
+              },
+              {
+                "label": "D",
+                "text": "Cyber security essentials"
+              },
+              {
+                "label": "E",
+                "text": "Renewable energy in manufacturing"
+              },
+              {
+                "label": "F",
+                "text": "Cross-cultural team management"
+              },
+              {
+                "label": "G",
+                "text": "Funding opportunities for tech start-ups"
+              },
+              {
+                "label": "H",
+                "text": "Customer service automation"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Fiona Campbell",
+            "options": [
+              {
+                "label": "A",
+                "text": "Digital marketing for small businesses"
+              },
+              {
+                "label": "B",
+                "text": "Employee wellbeing and retention"
+              },
+              {
+                "label": "C",
+                "text": "Supply chain resilience"
+              },
+              {
+                "label": "D",
+                "text": "Cyber security essentials"
+              },
+              {
+                "label": "E",
+                "text": "Renewable energy in manufacturing"
+              },
+              {
+                "label": "F",
+                "text": "Cross-cultural team management"
+              },
+              {
+                "label": "G",
+                "text": "Funding opportunities for tech start-ups"
+              },
+              {
+                "label": "H",
+                "text": "Customer service automation"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–23\nChoose the correct letter, A, B or C.\n\n21 What unexpected result did the students find when analyzing urban air quality data?\nA Industrial emissions had increased during the holidays.\nB Particulate matter levels were highest in suburban zones.\nC Ozone concentrations dropped significantly on windy days.\n\n22 Why did the students decide to focus on roadside vegetation?\nA It is an effective natural barrier against particulate pollution.\nB It is cheaper to monitor than mechanical air purifiers.\nC Municipal authorities requested independent evaluation.\n\n23 How do the students plan to present their findings to the council?\nA By delivering a short interactive slide show\nB By submitting an infographic report\nC By publishing their dataset online\n\nQuestions 24–30\nWhat opinion is given about each of the following environmental developments?\nChoose SEVEN answers from the box and write the correct letter, A–I, next to Questions 24–30.\n\nOpinions\nA It requires significant community consultation.\nB It provides instant benefits to residents.\nC Its installation is technically complex.\nD It is too expensive for local government.\nE It has been widely adopted across Europe.\nF It causes disruption during construction.\nG Its long-term durability is unproven.\nH It requires constant maintenance.\nI It improves urban biodiversity.\n\nDevelopments\n24 Green wall installations\n25 Rooftop gardens\n26 Permeable pavements\n27 Urban tree canopies\n28 Bioswale drainage systems\n29 Solar shading structures\n30 Rainwater recycling units",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-18-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What unexpected result did the students find when analyzing urban air quality data?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Industrial emissions had increased during the holidays."
+              },
+              {
+                "label": "B",
+                "text": "Particulate matter levels were highest in suburban zones."
+              },
+              {
+                "label": "C",
+                "text": "Ozone concentrations dropped significantly on windy days."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why did the students decide to focus on roadside vegetation?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is an effective natural barrier against particulate pollution."
+              },
+              {
+                "label": "B",
+                "text": "It is cheaper to monitor than mechanical air purifiers."
+              },
+              {
+                "label": "C",
+                "text": "Municipal authorities requested independent evaluation."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How do the students plan to present their findings to the council?",
+            "options": [
+              {
+                "label": "A",
+                "text": "By delivering a short interactive slide show"
+              },
+              {
+                "label": "B",
+                "text": "By submitting an infographic report"
+              },
+              {
+                "label": "C",
+                "text": "By publishing their dataset online"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Green wall installations",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Rooftop gardens",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Permeable pavements",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "I"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Urban tree canopies",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Bioswale drainage systems",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Solar shading structures",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Rainwater recycling units",
+            "options": [
+              {
+                "label": "A",
+                "text": "It requires significant community consultation."
+              },
+              {
+                "label": "B",
+                "text": "It provides instant benefits to residents."
+              },
+              {
+                "label": "C",
+                "text": "Its installation is technically complex."
+              },
+              {
+                "label": "D",
+                "text": "It is too expensive for local government."
+              },
+              {
+                "label": "E",
+                "text": "It has been widely adopted across Europe."
+              },
+              {
+                "label": "F",
+                "text": "It causes disruption during construction."
+              },
+              {
+                "label": "G",
+                "text": "Its long-term durability is unproven."
+              },
+              {
+                "label": "H",
+                "text": "It requires constant maintenance."
+              },
+              {
+                "label": "I",
+                "text": "It improves urban biodiversity."
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nAcoustics and sleep quality\nSound in the sleeping environment\n• Consistent bedtime 31 ............... is crucial for regulating circadian rhythms\n• Controlled clinical 32 ............... showed acoustic stimulation during deep sleep boosts memory\n• Soft pink noise produces a 33 ............... physiological effect compared to complete silence\n\nTechnological solutions\n• White noise machines:\n  Can be placed near windows or under 34 ...............\n  Help reduce nighttime awakenings caused by 35 ............... or sudden urban noise\n• Avoid reliance on sleep 36 ............... which can disrupt natural sleep architecture\n• Sudden loud noises trigger micro-arousals, keeping the brain 37 ............... even if unconscious\n\nSound masking versus sound cancellation\n• Masking introduces a gentle acoustic 38 ............... that blurs sharp external noises\n• Sounds of flowing water or wind in 39 ............... are perceived as non-threatening by the brain\n• Keep the audio 40 ............... below 50 decibels to protect hearing during sleep",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-18-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Consistent bedtime ________ is crucial for regulating circadian rhythms",
+            "blank": true
+          },
+          "correctAnswer": "routine"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Controlled clinical ________ showed acoustic stimulation boosts memory",
+            "blank": true
+          },
+          "correctAnswer": "trials"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Soft pink noise produces a ________ physiological effect",
+            "blank": true
+          },
+          "correctAnswer": "calming"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Can be placed near windows or under ________",
+            "blank": true
+          },
+          "correctAnswer": "pillows"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "reduce nighttime awakenings caused by ________ or sudden urban noise",
+            "blank": true
+          },
+          "correctAnswer": "anxiety"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Avoid reliance on sleep ________ which can disrupt natural sleep architecture",
+            "blank": true
+          },
+          "correctAnswer": "medication"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "trigger micro-arousals, keeping the brain ________ even if unconscious",
+            "blank": true
+          },
+          "correctAnswer": "awake"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Masking introduces a gentle acoustic ________ that blurs sharp external noises",
+            "blank": true
+          },
+          "correctAnswer": "distraction"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Sounds of flowing water or wind in ________ are perceived as non-threatening",
+            "blank": true
+          },
+          "correctAnswer": "nature"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Keep the audio ________ below 50 decibels",
+            "blank": true
+          },
+          "correctAnswer": "volume"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "IELTS Cô Mơ - CAMBRIDGE 21.pdf",
+  "savedAt": "2026-11-13T11:06:46.762Z"
+}

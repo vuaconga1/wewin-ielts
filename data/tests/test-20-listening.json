@@ -1,0 +1,798 @@
+{
+  "title": "Test 20.C19.02 - Listening",
+  "slug": "test-20-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-20-section-1.mp3",
+    "/uploads/audio/test-20-section-2.mp3",
+    "/uploads/audio/test-20-section-3.mp3",
+    "/uploads/audio/test-20-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–6\nComplete the form below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nGuitar Group\nCoordinator: Gary 1 ...............\nLevel: 2 ...............\nPlace: the 3 ...............\n4 ............... Street\nFirst floor, Room T347\nTime: Thursday morning at 5 ...............\nRecommended website: 'The perfect 6 ...............'\n\nQuestions 7–10\nComplete the table below.\nWrite ONE WORD ONLY for each answer.\n\nA typical 45-minute guitar lesson\n| Time | Activity | Notes |\n| --- | --- | --- |\n| 5 minutes | tuning guitars | using an app or by 7 ............... |\n| 10 minutes | strumming chords using our thumbs | keeping time while the teacher is 8 ............... |\n| 15 minutes | playing songs | often listening to a 9 ............... of a song |\n| 10 minutes | playing single notes and simple tunes | playing together, then playing 10 ............... |\n| 5 minutes | noting things to practise at home | |",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-20-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Coordinator: Gary ________",
+            "blank": true
+          },
+          "correctAnswer": "Mathieson"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Level: ________",
+            "blank": true
+          },
+          "correctAnswer": "beginners"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Place: the ________",
+            "blank": true
+          },
+          "correctAnswer": "college"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ Street",
+            "blank": true
+          },
+          "correctAnswer": "New"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Time: Thursday morning at ________",
+            "blank": true
+          },
+          "correctAnswer": "11",
+          "acceptableAnswers": [
+            "11",
+            "eleven",
+            "11 am",
+            "11am",
+            "eleven am",
+            "11 (am)",
+            "eleven (am)"
+          ]
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Recommended website: 'The perfect ________'",
+            "blank": true
+          },
+          "correctAnswer": "instrument"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "tuning guitars: using an app or by ________",
+            "blank": true
+          },
+          "correctAnswer": "ear"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "strumming chords: keeping time while the teacher is ________",
+            "blank": true
+          },
+          "correctAnswer": "clapping"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "playing songs: often listening to a ________ of a song",
+            "blank": true
+          },
+          "correctAnswer": "recording"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "playing single notes and simple tunes: playing together, then playing ________",
+            "blank": true
+          },
+          "correctAnswer": "alone"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–16\nChoose the correct letter, A, B or C.\n\nWorking as a lifeboat volunteer\n11 What made David leave London and move to Northsea?\nA He was eager to develop a hobby.\nB He wanted to work shorter hours.\nC He found his job in website design unsatisfying.\n\n12 The Lifeboat Institution in Northsea was built with money provided by\nA a local organisation.\nB a local resident.\nC the local council.\n\n13 In his health assessment, the doctor was concerned about the fact that David\nA might be colour blind.\nB was rather short-sighted.\nC had undergone eye surgery.\n\n14 After arriving at the lifeboat station, they aim to launch the boat within\nA five minutes.\nB six to eight minutes.\nC eight and a half minutes.\n\n15 As a 'helmsman', David has the responsibility of deciding\nA who will be the members of his crew.\nB what equipment it will be necessary to take.\nC if the lifeboat should be launched.\n\n16 As well as going out on the lifeboat, David\nA gives talks on safety at sea.\nB helps with fundraising.\nC recruits new volunteers.\n\nQuestions 17 and 18\nChoose TWO letters, A–E.\nWhich TWO things does David say about the lifeboat volunteer training?\nA The residential course developed his leadership skills.\nB The training in use of ropes and knots was quite brief.\nC The training exercises have built up his mental strength.\nD The casualty care activities were particularly challenging for him.\nE The wave tank activities provided practice in survival techniques.\n\nQuestions 19 and 20\nChoose TWO letters, A–E.\nWhich TWO things does David find most motivating about the work he does?\nA working as part of a team\nB experiences when working in winter\nC being thanked by those he has helped\nD the fact that it keeps him fit\nE the chance to develop new equipment",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-20-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What made David leave London and move to Northsea?",
+            "options": [
+              {
+                "label": "A",
+                "text": "He was eager to develop a hobby."
+              },
+              {
+                "label": "B",
+                "text": "He wanted to work shorter hours."
+              },
+              {
+                "label": "C",
+                "text": "He found his job in website design unsatisfying."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The Lifeboat Institution in Northsea was built with money provided by",
+            "options": [
+              {
+                "label": "A",
+                "text": "a local organisation."
+              },
+              {
+                "label": "B",
+                "text": "a local resident."
+              },
+              {
+                "label": "C",
+                "text": "the local council."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In his health assessment, the doctor was concerned about the fact that David",
+            "options": [
+              {
+                "label": "A",
+                "text": "might be colour blind."
+              },
+              {
+                "label": "B",
+                "text": "was rather short-sighted."
+              },
+              {
+                "label": "C",
+                "text": "had undergone eye surgery."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "After arriving at the lifeboat station, they aim to launch the boat within",
+            "options": [
+              {
+                "label": "A",
+                "text": "five minutes."
+              },
+              {
+                "label": "B",
+                "text": "six to eight minutes."
+              },
+              {
+                "label": "C",
+                "text": "eight and a half minutes."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "As a 'helmsman', David has the responsibility of deciding",
+            "options": [
+              {
+                "label": "A",
+                "text": "who will be the members of his crew."
+              },
+              {
+                "label": "B",
+                "text": "what equipment it will be necessary to take."
+              },
+              {
+                "label": "C",
+                "text": "if the lifeboat should be launched."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "As well as going out on the lifeboat, David",
+            "options": [
+              {
+                "label": "A",
+                "text": "gives talks on safety at sea."
+              },
+              {
+                "label": "B",
+                "text": "helps with fundraising."
+              },
+              {
+                "label": "C",
+                "text": "recruits new volunteers."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things does David say about the lifeboat volunteer training?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The residential course developed his leadership skills."
+              },
+              {
+                "label": "B",
+                "text": "The training in use of ropes and knots was quite brief."
+              },
+              {
+                "label": "C",
+                "text": "The training exercises have built up his mental strength."
+              },
+              {
+                "label": "D",
+                "text": "The casualty care activities were particularly challenging for him."
+              },
+              {
+                "label": "E",
+                "text": "The wave tank activities provided practice in survival techniques."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              17,
+              18
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 17
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things does David find most motivating about the work he does?",
+            "options": [
+              {
+                "label": "A",
+                "text": "working as part of a team"
+              },
+              {
+                "label": "B",
+                "text": "experiences when working in winter"
+              },
+              {
+                "label": "C",
+                "text": "being thanked by those he has helped"
+              },
+              {
+                "label": "D",
+                "text": "the fact that it keeps him fit"
+              },
+              {
+                "label": "E",
+                "text": "the chance to develop new equipment"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              19,
+              20
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 19
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–24\nChoose the correct letter, A, B or C.\n\n21 At first, Don thought the topic of recycling footwear might be too\nA limited in scope.\nB hard to research.\nC boring for listeners.\n\n22 When discussing trainers, Bella and Don disagree about\nA how popular they are among young people.\nB how suitable they are for school.\nC how quickly they wear out.\n\n23 Bella says that she sometimes recycles shoes because\nA they no longer fit.\nB she no longer likes them.\nC they are no longer in fashion.\n\n24 What did the article say that confused Don?\nA Public consumption of footwear has risen.\nB Less footwear is recycled now than in the past.\nC People dispose of more footwear than they used to.\n\nQuestions 25–28\nWhat reasons did the recycling manager give for rejecting footwear, according to the students?\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 25–28.\n\nReasons\nA one shoe was missing\nB the colour of one shoe had faded\nC one shoe had a hole in it\nD the shoes were brand new\nE the shoes were too dirty\nF the stitching on the shoes was broken\n\nFootwear\n25 the high-heeled shoes\n26 the ankle boots\n27 the baby shoes\n28 the trainers\n\nQuestions 29 and 30\nChoose the correct letter, A, B or C.\n\n29 Why did the project to make 'new' shoes out of old shoes fail?\nA People believed the 'new' pairs of shoes were unhygienic.\nB There were not enough good parts to use in the old shoes.\nC The shoes in the 'new' pairs were not completely alike.\n\n30 Bella and Don agree that they can present their topic\nA from a new angle.\nB with relevant images.\nC in a straightforward way.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-20-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "At first, Don thought the topic of recycling footwear might be too",
+            "options": [
+              {
+                "label": "A",
+                "text": "limited in scope."
+              },
+              {
+                "label": "B",
+                "text": "hard to research."
+              },
+              {
+                "label": "C",
+                "text": "boring for listeners."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When discussing trainers, Bella and Don disagree about",
+            "options": [
+              {
+                "label": "A",
+                "text": "how popular they are among young people."
+              },
+              {
+                "label": "B",
+                "text": "how suitable they are for school."
+              },
+              {
+                "label": "C",
+                "text": "how quickly they wear out."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Bella says that she sometimes recycles shoes because",
+            "options": [
+              {
+                "label": "A",
+                "text": "they no longer fit."
+              },
+              {
+                "label": "B",
+                "text": "she no longer likes them."
+              },
+              {
+                "label": "C",
+                "text": "they are no longer in fashion."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What did the article say that confused Don?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Public consumption of footwear has risen."
+              },
+              {
+                "label": "B",
+                "text": "Less footwear is recycled now than in the past."
+              },
+              {
+                "label": "C",
+                "text": "People dispose of more footwear than they used to."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the high-heeled shoes",
+            "options": [
+              {
+                "label": "A",
+                "text": "one shoe was missing"
+              },
+              {
+                "label": "B",
+                "text": "the colour of one shoe had faded"
+              },
+              {
+                "label": "C",
+                "text": "one shoe had a hole in it"
+              },
+              {
+                "label": "D",
+                "text": "the shoes were brand new"
+              },
+              {
+                "label": "E",
+                "text": "the shoes were too dirty"
+              },
+              {
+                "label": "F",
+                "text": "the stitching on the shoes was broken"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the ankle boots",
+            "options": [
+              {
+                "label": "A",
+                "text": "one shoe was missing"
+              },
+              {
+                "label": "B",
+                "text": "the colour of one shoe had faded"
+              },
+              {
+                "label": "C",
+                "text": "one shoe had a hole in it"
+              },
+              {
+                "label": "D",
+                "text": "the shoes were brand new"
+              },
+              {
+                "label": "E",
+                "text": "the shoes were too dirty"
+              },
+              {
+                "label": "F",
+                "text": "the stitching on the shoes was broken"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the baby shoes",
+            "options": [
+              {
+                "label": "A",
+                "text": "one shoe was missing"
+              },
+              {
+                "label": "B",
+                "text": "the colour of one shoe had faded"
+              },
+              {
+                "label": "C",
+                "text": "one shoe had a hole in it"
+              },
+              {
+                "label": "D",
+                "text": "the shoes were brand new"
+              },
+              {
+                "label": "E",
+                "text": "the shoes were too dirty"
+              },
+              {
+                "label": "F",
+                "text": "the stitching on the shoes was broken"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the trainers",
+            "options": [
+              {
+                "label": "A",
+                "text": "one shoe was missing"
+              },
+              {
+                "label": "B",
+                "text": "the colour of one shoe had faded"
+              },
+              {
+                "label": "C",
+                "text": "one shoe had a hole in it"
+              },
+              {
+                "label": "D",
+                "text": "the shoes were brand new"
+              },
+              {
+                "label": "E",
+                "text": "the shoes were too dirty"
+              },
+              {
+                "label": "F",
+                "text": "the stitching on the shoes was broken"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why did the project to make 'new' shoes out of old shoes fail?",
+            "options": [
+              {
+                "label": "A",
+                "text": "People believed the 'new' pairs of shoes were unhygienic."
+              },
+              {
+                "label": "B",
+                "text": "There were not enough good parts to use in the old shoes."
+              },
+              {
+                "label": "C",
+                "text": "The shoes in the 'new' pairs were not completely alike."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Bella and Don agree that they can present their topic",
+            "options": [
+              {
+                "label": "A",
+                "text": "from a new angle."
+              },
+              {
+                "label": "B",
+                "text": "with relevant images."
+              },
+              {
+                "label": "C",
+                "text": "in a straightforward way."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nTardigrades\n• more than 1,000 species, 0.05–1.2 millimetres long\n• also known as water 'bears' (due to how they 31 ...............) and 'moss piglets'\n\nPhysical appearance\n• a 32 ............... round body and four pairs of legs\n• claws or 33 ............... for gripping\n• absence of respiratory organs\n• body filled with a liquid that carries both 34 ............... and blood\n• mouth shaped like a 35 ............... with teeth called stylets\n\nHabitat\n• often found at the bottom of a lake or on plants\n• very resilient and can exist in very low or high 36 ...............\n\nCryptobiosis\n• In dry conditions, they roll into a ball called a 'tun'.\n• They stay alive with a much lower metabolism than usual.\n• A type of 37 ............... ensures their DNA is not damaged.\n• Research is underway to find out how many days they can stay alive in 38 ...............\n\nFeeding\n• consume liquids, e.g., those found in moss or 39 ...............\n• may eat other tardigrades\n\nConservation status\n• They are not considered to be 40 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-20-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "also known as water 'bears' (due to how they ________) and 'moss piglets'",
+            "blank": true
+          },
+          "correctAnswer": "move"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a ________ round body and four pairs of legs",
+            "blank": true
+          },
+          "correctAnswer": "short"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "claws or ________ for gripping",
+            "blank": true
+          },
+          "correctAnswer": "discs",
+          "acceptableAnswers": [
+            "discs",
+            "disks"
+          ]
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "body filled with a liquid that carries both ________ and blood",
+            "blank": true
+          },
+          "correctAnswer": "oxygen"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "mouth shaped like a ________ with teeth called stylets",
+            "blank": true
+          },
+          "correctAnswer": "tube"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "very resilient and can exist in very low or high ________",
+            "blank": true
+          },
+          "correctAnswer": "temperatures"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A type of ________ ensures their DNA is not damaged.",
+            "blank": true
+          },
+          "correctAnswer": "protein"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Research is underway to find out how many days they can stay alive in ________",
+            "blank": true
+          },
+          "correctAnswer": "space"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "consume liquids, e.g., those found in moss or ________",
+            "blank": true
+          },
+          "correctAnswer": "seaweed"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "They are not considered to be ________",
+            "blank": true
+          },
+          "correctAnswer": "endangered"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "Cambridge 19.pdf",
+  "savedAt": "2026-11-14T08:37:41.772Z"
+}

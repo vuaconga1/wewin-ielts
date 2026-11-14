@@ -1,0 +1,875 @@
+{
+  "title": "Test 15.C21.01 - Listening",
+  "slug": "test-15-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-15-section-1.mp3",
+    "/uploads/audio/test-15-section-2.mp3",
+    "/uploads/audio/test-15-section-3.mp3",
+    "/uploads/audio/test-15-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–6\nComplete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nOyster Bay Sailing Club Courses\n| Name of course | What you learn | Cost | Other information |\n| --- | --- | --- | --- |\n| Taster day | introduction to sailing | £120 if booking one place | small groups (max 1 ............... people) |\n| Level 1 | basic theory e.g. understanding the 2 ............... and tides<br>basic sailing skills including 3 ............... information | £200<br>4 ............... available for club members | a 6 ............... at the end of the course for all participants<br>all inclusive (plus a useful 5 ...............) |\n\nQuestions 7–10\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nGeneral information\n• Participants must be able to swim.\n• Bring suitable clothing, a 7 ............... and toiletries (e.g. shampoo).\n• There is a 8 ............... at the club.\n• Online training 9 ............... are recommended.\n• 10 ............... are available for course participants.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-15-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Taster day: small groups (max ________ people)",
+            "blank": true
+          },
+          "correctAnswer": "10",
+          "acceptableAnswers": [
+            "10",
+            "ten"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Level 1: understanding the ________ and tides",
+            "blank": true
+          },
+          "correctAnswer": "weather"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "basic sailing skills including ________ information",
+            "blank": true
+          },
+          "correctAnswer": "safety"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Cost: £200; ________ available for club members",
+            "blank": true
+          },
+          "correctAnswer": "discount"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "all inclusive (plus a useful ________)",
+            "blank": true
+          },
+          "correctAnswer": "dictionary"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a ________ at the end of the course for all participants",
+            "blank": true
+          },
+          "correctAnswer": "certificate"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Bring suitable clothing, a ________ and toiletries",
+            "blank": true
+          },
+          "correctAnswer": "towel"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "There is a ________ at the club",
+            "blank": true
+          },
+          "correctAnswer": "cafe",
+          "acceptableAnswers": [
+            "cafe",
+            "café",
+            "cafe / café"
+          ]
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Online training ________ are recommended",
+            "blank": true
+          },
+          "correctAnswer": "videos"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ are available for course participants",
+            "blank": true
+          },
+          "correctAnswer": "lockers",
+          "acceptableAnswers": [
+            "lockers",
+            "Lockers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–16\nChoose the correct letter, A, B or C.\n\nWorking as a makeup trainee\n11 What should trainees always expect to get when working on low budget short films?\nA travel expenses\nB a minimum wage\nC meals\n\n12 According to the speaker, on big budget films trainees may get experience of\nA makeup for special effects.\nB working with different ethnicities.\nC creating a variety of hair styles.\n\n13 The speaker says a problem for makeup artists is\nA dealing with difficult directors.\nB being shouted at by their supervisor.\nC waiting around for hours doing nothing.\n\n14 How did the speaker feel when she met famous actors for the first time?\nA very shy\nB very proud\nC very disappointed\n\n15 What advice does the speaker give about makeup kits?\nA Always carry a basic kit with you.\nB Only buy the best products for a makeup kit.\nC Ask other makeup artists to check your kit.\n\n16 What advice does the speaker give about creating a portfolio?\nA Keep print and digital photos.\nB Only include a small selection of photos.\nC Get permission to use photos.\n\nQuestions 17–20\nWhat ability is required for each of the following duties?\nWrite the correct letter, A, B, or C, next to Questions 17–20.\n\nA being well-organised\nB being flexible\nC working quickly\n\nDuties\n17 Prepping an actor\n18 Continuity\n19 General\n20 Applying makeup",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-15-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What should trainees always expect to get when working on low budget short films?",
+            "options": [
+              {
+                "label": "A",
+                "text": "travel expenses"
+              },
+              {
+                "label": "B",
+                "text": "a minimum wage"
+              },
+              {
+                "label": "C",
+                "text": "meals"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to the speaker, on big budget films trainees may get experience of",
+            "options": [
+              {
+                "label": "A",
+                "text": "makeup for special effects."
+              },
+              {
+                "label": "B",
+                "text": "working with different ethnicities."
+              },
+              {
+                "label": "C",
+                "text": "creating a variety of hair styles."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The speaker says a problem for makeup artists is",
+            "options": [
+              {
+                "label": "A",
+                "text": "dealing with difficult directors."
+              },
+              {
+                "label": "B",
+                "text": "being shouted at by their supervisor."
+              },
+              {
+                "label": "C",
+                "text": "waiting around for hours doing nothing."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How did the speaker feel when she met famous actors for the first time?",
+            "options": [
+              {
+                "label": "A",
+                "text": "very shy"
+              },
+              {
+                "label": "B",
+                "text": "very proud"
+              },
+              {
+                "label": "C",
+                "text": "very disappointed"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What advice does the speaker give about makeup kits?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Always carry a basic kit with you."
+              },
+              {
+                "label": "B",
+                "text": "Only buy the best products for a makeup kit."
+              },
+              {
+                "label": "C",
+                "text": "Ask other makeup artists to check your kit."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What advice does the speaker give about creating a portfolio?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Keep print and digital photos."
+              },
+              {
+                "label": "B",
+                "text": "Only include a small selection of photos."
+              },
+              {
+                "label": "C",
+                "text": "Get permission to use photos."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Prepping an actor",
+            "options": [
+              {
+                "label": "A",
+                "text": "being well-organised"
+              },
+              {
+                "label": "B",
+                "text": "being flexible"
+              },
+              {
+                "label": "C",
+                "text": "working quickly"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Continuity",
+            "options": [
+              {
+                "label": "A",
+                "text": "being well-organised"
+              },
+              {
+                "label": "B",
+                "text": "being flexible"
+              },
+              {
+                "label": "C",
+                "text": "working quickly"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "General",
+            "options": [
+              {
+                "label": "A",
+                "text": "being well-organised"
+              },
+              {
+                "label": "B",
+                "text": "being flexible"
+              },
+              {
+                "label": "C",
+                "text": "working quickly"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Applying makeup",
+            "options": [
+              {
+                "label": "A",
+                "text": "being well-organised"
+              },
+              {
+                "label": "B",
+                "text": "being flexible"
+              },
+              {
+                "label": "C",
+                "text": "working quickly"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO features of the lecture on ocean biodiversity had the greatest impact on the students?\nA the references to local problems\nB the broad focus of the examples\nC the practical suggestions for solutions\nD the type of issues discussed\nE the implications for government policy\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO details about the research project particularly impressed the students?\nA the team's previous successes\nB its wide geographical scale\nC the use of new technology\nD the extensive statistical evidence\nE the large range of specialists involved\n\nQuestions 25–30\nWhat is the students' opinion of each of the following resources related to ocean biodiversity?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 25–30.\n\nOpinions\nA This is aimed at a very specialist audience.\nB This is now rather outdated.\nC This was an effective description of a new danger.\nD This suggests possible ways to improve the situation.\nE This does not give a balanced account.\nF This is too predictable to be useful.\nG This gives insufficient evidence for its claims.\nH This gives a clear explanation of the problems.\n\nResources\n25 Article on invasive lionfish\n26 Documentary on microplastics\n27 Podcast on ocean pollution\n28 Book on coastal ecosystems\n29 Article on metal toxicity\n30 Podcast on floating marine cities",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-15-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO features of the lecture on ocean biodiversity had the greatest impact on the students?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the references to local problems"
+              },
+              {
+                "label": "B",
+                "text": "the broad focus of the examples"
+              },
+              {
+                "label": "C",
+                "text": "the practical suggestions for solutions"
+              },
+              {
+                "label": "D",
+                "text": "the type of issues discussed"
+              },
+              {
+                "label": "E",
+                "text": "the implications for government policy"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              21,
+              22
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 21
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO details about the research project particularly impressed the students?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the team's previous successes"
+              },
+              {
+                "label": "B",
+                "text": "its wide geographical scale"
+              },
+              {
+                "label": "C",
+                "text": "the use of new technology"
+              },
+              {
+                "label": "D",
+                "text": "the extensive statistical evidence"
+              },
+              {
+                "label": "E",
+                "text": "the large range of specialists involved"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              23,
+              24
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 23
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Article on invasive lionfish",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is aimed at a very specialist audience."
+              },
+              {
+                "label": "B",
+                "text": "This is now rather outdated."
+              },
+              {
+                "label": "C",
+                "text": "This was an effective description of a new danger."
+              },
+              {
+                "label": "D",
+                "text": "This suggests possible ways to improve the situation."
+              },
+              {
+                "label": "E",
+                "text": "This does not give a balanced account."
+              },
+              {
+                "label": "F",
+                "text": "This is too predictable to be useful."
+              },
+              {
+                "label": "G",
+                "text": "This gives insufficient evidence for its claims."
+              },
+              {
+                "label": "H",
+                "text": "This gives a clear explanation of the problems."
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Documentary on microplastics",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is aimed at a very specialist audience."
+              },
+              {
+                "label": "B",
+                "text": "This is now rather outdated."
+              },
+              {
+                "label": "C",
+                "text": "This was an effective description of a new danger."
+              },
+              {
+                "label": "D",
+                "text": "This suggests possible ways to improve the situation."
+              },
+              {
+                "label": "E",
+                "text": "This does not give a balanced account."
+              },
+              {
+                "label": "F",
+                "text": "This is too predictable to be useful."
+              },
+              {
+                "label": "G",
+                "text": "This gives insufficient evidence for its claims."
+              },
+              {
+                "label": "H",
+                "text": "This gives a clear explanation of the problems."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Podcast on ocean pollution",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is aimed at a very specialist audience."
+              },
+              {
+                "label": "B",
+                "text": "This is now rather outdated."
+              },
+              {
+                "label": "C",
+                "text": "This was an effective description of a new danger."
+              },
+              {
+                "label": "D",
+                "text": "This suggests possible ways to improve the situation."
+              },
+              {
+                "label": "E",
+                "text": "This does not give a balanced account."
+              },
+              {
+                "label": "F",
+                "text": "This is too predictable to be useful."
+              },
+              {
+                "label": "G",
+                "text": "This gives insufficient evidence for its claims."
+              },
+              {
+                "label": "H",
+                "text": "This gives a clear explanation of the problems."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Book on coastal ecosystems",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is aimed at a very specialist audience."
+              },
+              {
+                "label": "B",
+                "text": "This is now rather outdated."
+              },
+              {
+                "label": "C",
+                "text": "This was an effective description of a new danger."
+              },
+              {
+                "label": "D",
+                "text": "This suggests possible ways to improve the situation."
+              },
+              {
+                "label": "E",
+                "text": "This does not give a balanced account."
+              },
+              {
+                "label": "F",
+                "text": "This is too predictable to be useful."
+              },
+              {
+                "label": "G",
+                "text": "This gives insufficient evidence for its claims."
+              },
+              {
+                "label": "H",
+                "text": "This gives a clear explanation of the problems."
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Article on metal toxicity",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is aimed at a very specialist audience."
+              },
+              {
+                "label": "B",
+                "text": "This is now rather outdated."
+              },
+              {
+                "label": "C",
+                "text": "This was an effective description of a new danger."
+              },
+              {
+                "label": "D",
+                "text": "This suggests possible ways to improve the situation."
+              },
+              {
+                "label": "E",
+                "text": "This does not give a balanced account."
+              },
+              {
+                "label": "F",
+                "text": "This is too predictable to be useful."
+              },
+              {
+                "label": "G",
+                "text": "This gives insufficient evidence for its claims."
+              },
+              {
+                "label": "H",
+                "text": "This gives a clear explanation of the problems."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Podcast on floating marine cities",
+            "options": [
+              {
+                "label": "A",
+                "text": "This is aimed at a very specialist audience."
+              },
+              {
+                "label": "B",
+                "text": "This is now rather outdated."
+              },
+              {
+                "label": "C",
+                "text": "This was an effective description of a new danger."
+              },
+              {
+                "label": "D",
+                "text": "This suggests possible ways to improve the situation."
+              },
+              {
+                "label": "E",
+                "text": "This does not give a balanced account."
+              },
+              {
+                "label": "F",
+                "text": "This is too predictable to be useful."
+              },
+              {
+                "label": "G",
+                "text": "This gives insufficient evidence for its claims."
+              },
+              {
+                "label": "H",
+                "text": "This gives a clear explanation of the problems."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nSources of rubber\nThree resources which are essential for industrial civilisation\n• 31 ...............\n• fossil fuels\n• rubber\n\nNatural rubber\nThis mainly comes from the Para rubber tree, now cultivated in South-East Asia.\nThe supply is limited because\n• the growth of the tree is 32 ...............\n• production cannot easily be adjusted because of increasing or decreasing 33 ...............\n• the tree only grows near the 34 ...............\n• extracting the latex (rubber) is labour-intensive\n• it is very difficult to 35 ............... rubber after production.\n\nNew threats include\n• lack of genetic diversity, leading to danger of disease caused by a 36 ...............\n• a shift to the cultivation of palm oil\n• extreme 37 ............... events.\n\nSynthetic rubber\n• may be used for engine parts and cooking utensils\n• is less 38 ............... than natural rubber\n• is unsuitable for many purposes e.g. the tyres of aircraft.\n\nAn alternative source of natural rubber\n• A wild flower (a type of dandelion) has rubber in its 39 ...............\n• It can be grown in many locations and does not require good 40 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-15-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Three resources essential for industrial civilisation: ________, fossil fuels, rubber",
+            "blank": true
+          },
+          "correctAnswer": "metals",
+          "acceptableAnswers": [
+            "metal",
+            "metals",
+            "metal(s)"
+          ]
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the growth of the tree is ________",
+            "blank": true
+          },
+          "correctAnswer": "slow"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "production cannot easily be adjusted because of increasing or decreasing ________",
+            "blank": true
+          },
+          "correctAnswer": "demand"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the tree only grows near the ________",
+            "blank": true
+          },
+          "correctAnswer": "equator"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "it is very difficult to ________ rubber after production",
+            "blank": true
+          },
+          "correctAnswer": "recycle"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "danger of disease caused by a ________",
+            "blank": true
+          },
+          "correctAnswer": "fungus"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "extreme ________ events",
+            "blank": true
+          },
+          "correctAnswer": "weather"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "synthetic rubber is less ________ than natural rubber",
+            "blank": true
+          },
+          "correctAnswer": "strong"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a wild flower (dandelion) has rubber in its ________",
+            "blank": true
+          },
+          "correctAnswer": "roots"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "it can be grown in many locations and does not require good ________",
+            "blank": true
+          },
+          "correctAnswer": "soil"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "IELTS Cô Mơ - CAMBRIDGE 21.pdf",
+  "savedAt": "2026-11-13T11:06:46.762Z"
+}

@@ -1,0 +1,948 @@
+{
+  "title": "Test 26.C20.04 - Reading",
+  "slug": "test-26-reading",
+  "skill": "READING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Reading"
+  ],
+  "parts": [
+    {
+      "title": "Passage 1",
+      "order": 0,
+      "content": "READING PASSAGE 1\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\nGeorgia O'Keeffe\nFor seven decades, Georgia O'Keeffe (1887–1986) was a major figure in American art. Remarkably, as she accounted for her independence from shifting artistic fashions, she remained fiercely true to her personal vision.\n\nBorn in Sun Prairie, Wisconsin, O'Keeffe knew from a young age that she wanted to be an artist. After studying at the Art Institute of Chicago and the Art Students League of New York, she worked as an art teacher in Texas, Virginia, and South Carolina. During this period, feeling frustrated by traditional representational painting, she began producing highly original charcoal drawings exploring pure organic abstraction.\n\nWhen these charcoal drawings were shown to Alfred Stieglitz, the pioneering photographer and modern art promoter in New York, he immediately recognized her genius and exhibited them at his 291 Gallery in 1916. O'Keeffe moved to New York in 1918, beginning a professional and romantic partnership with Stieglitz, whom she later married.\n\nDuring the 1920s, O'Keeffe became famous for two distinct bodies of work: striking paintings of New York's soaring skyscrapers, capturing the city's architectural modernism, and dramatic, magnified close-up paintings of flowers. By blowing blossoms up to monumental scale, she forced hurried urban viewers to truly see and contemplate the beauty of nature.\n\nIn 1929, seeking fresh inspiration, O'Keeffe visited New Mexico for the first time. The stark high-desert landscape, vast open skies, and adobe architecture enchanted her. She collected bleached animal bones and skulls from the desert sands, juxtaposing them with vivid desert landscapes. She also painted desert rivers, cliffs, and the red hills of Ghost Ranch, where she established a permanent home in 1940. She continued working in New Mexico until her death at the age of 98, cementing her legacy as the 'Mother of American Modernism'.",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "studied art, then worked as a 1 ............... in various places in the USA",
+            "blank": true
+          },
+          "correctAnswer": "teacher"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "created drawings using 2 ............... which were exhibited in New York City",
+            "blank": true
+          },
+          "correctAnswer": "charcoal"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "moved to New York and became famous for her paintings of the city's 3 ...............",
+            "blank": true
+          },
+          "correctAnswer": "skyscrapers"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "produced a series of innovative close-up paintings of 4 ...............",
+            "blank": true
+          },
+          "correctAnswer": "flowers"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "collected sun-bleached 5 ............... from the desert",
+            "blank": true
+          },
+          "correctAnswer": "bones"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "was inspired by the stark New Mexico 6 ...............",
+            "blank": true
+          },
+          "correctAnswer": "landscape"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "captured the dramatic forms of desert 7 ............... and mountains",
+            "blank": true
+          },
+          "correctAnswer": "rivers"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Georgia O'Keeffe's style was greatly influenced by the changing fashions in art over the seven decades of her career.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "When O'Keeffe finished high school, she had already made her mind up about the profession she wanted to follow.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Stieglitz asked O'Keeffe's permission before displaying her charcoal drawings in his gallery.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The scale of O'Keeffe's flower paintings was intended to make people look at nature with greater attention.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "O'Keeffe preferred the weather in New Mexico to the weather in New York.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "O'Keeffe's late paintings of clouds were painted from photographs taken on plane flights.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        }
+      ]
+    },
+    {
+      "title": "Passage 2",
+      "order": 1,
+      "content": "READING PASSAGE 2\nYou should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.\n\nAdapting to the effects of climate change\n\nA All around the world, nations are already having to confront the physical fallout of a warming planet. While global mitigation targets aim to curb emissions, climate scientists predict it could take generations before humanity stops noticing the adverse effects of existing atmospheric carbon. As a result, cities and rural communities are urgently pioneering practical adaptation measures.\n\nB Coastal cities are particularly vulnerable to sea-level rise and heightened tidal flooding. In Miami Beach, Florida, municipal engineers have raised street elevations and installed high-capacity stormwater pumps to expel saltwater back into Biscayne Bay during astronomical 'king tides'. Similarly, in low-lying deltas across Asia, coastal communities are embracing nature-based solutions.\n\nC In Indonesia, coastal restoration teams have learned that planting dense belts of mangroves provides natural storm surge buffers that absorb wave energy far more effectively than concrete sea walls. To protect saplings from destructive currents during early growth, engineers constructed offshore brushwood permeable dams to calm incoming surf.\n\nD Elsewhere, adaptation takes innovative architectural forms. In Vietnam's flood-prone Mekong Delta, architects designed amphibious floating houses that rest on the ground in dry seasons but rise and float buoyantly when inundations occur. In Bangladesh, where saltwater intrusion spoils inland aquifers, agronomists have introduced salt-tolerant crops, allowing subsistence farmers to cultivate fertile soils that were previously abandoned.\n\nE Extreme heat is another catastrophic hazard. In densely populated urban areas, the urban heat island effect exacerbates dangerously high summer temperatures. In Los Angeles, chief heat officer Greg Spotts launched the 'cool pavement' initiative, coating asphalt streets with solar-reflective sealant and planting shade trees to cool neighborhoods by several degrees.\n\nF Modern adaptation also leverages sophisticated satellite mapping and AI-assisted geospatial modeling to identify neighborhoods most vulnerable to extreme climate impacts. Experts like Susanna Tol of Wetlands International emphasize that long-term resilience succeeds only when local communities actively participate in designing and maintaining their own adaptation strategies.",
+      "questions": [
+        {
+          "number": 14,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "how a type of plant functions as a natural protection for coastlines",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 15,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a prediction about how long it could take to stop noticing the effects of climate change",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 16,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a reference to the fact that a solution is particularly cost-effective",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 17,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a mention of a technology used to locate areas most in need of intervention",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 18,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The stormwater-management programme in Miami Beach has involved the installation of efficient 18 ...............",
+            "blank": true
+          },
+          "correctAnswer": "pumps"
+        },
+        {
+          "number": 19,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The construction of 19 ............... was the first stage of a project to ensure the success of mangroves in Indonesia.",
+            "blank": true
+          },
+          "correctAnswer": "dams"
+        },
+        {
+          "number": 20,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "As a response to rising floodwaters in the Mekong Delta, a not-for-profit organisation has been building houses that can 20 ...............",
+            "blank": true
+          },
+          "correctAnswer": "float"
+        },
+        {
+          "number": 21,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Rising sea levels in Bangladesh have made it necessary to introduce various 21 ............... that are suitable for areas of high salt content.",
+            "blank": true
+          },
+          "correctAnswer": "crops"
+        },
+        {
+          "number": 22,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A project in LA has increased the number of 22 ............... on the city's streets.",
+            "blank": true
+          },
+          "correctAnswer": "trees"
+        },
+        {
+          "number": 23,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "It is essential to adopt strategies which involve and help residents of the region.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Yanira Pineda"
+              },
+              {
+                "label": "B",
+                "text": "Susanna Tol"
+              },
+              {
+                "label": "C",
+                "text": "Elizabeth English"
+              },
+              {
+                "label": "D",
+                "text": "Jeff Goodell"
+              },
+              {
+                "label": "E",
+                "text": "Greg Spotts"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 24,
+          "order": 10,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Interventions which reduce heat are absolutely vital for our survival in this location.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Yanira Pineda"
+              },
+              {
+                "label": "B",
+                "text": "Susanna Tol"
+              },
+              {
+                "label": "C",
+                "text": "Elizabeth English"
+              },
+              {
+                "label": "D",
+                "text": "Jeff Goodell"
+              },
+              {
+                "label": "E",
+                "text": "Greg Spotts"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 25,
+          "order": 11,
+          "type": "MATCHING",
+          "content": {
+            "stem": "More work will need to be done in future decades to deal with the impact of rising water levels.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Yanira Pineda"
+              },
+              {
+                "label": "B",
+                "text": "Susanna Tol"
+              },
+              {
+                "label": "C",
+                "text": "Elizabeth English"
+              },
+              {
+                "label": "D",
+                "text": "Jeff Goodell"
+              },
+              {
+                "label": "E",
+                "text": "Greg Spotts"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 26,
+          "order": 12,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The number of locations requiring action to adapt to flooding has grown in recent years.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Yanira Pineda"
+              },
+              {
+                "label": "B",
+                "text": "Susanna Tol"
+              },
+              {
+                "label": "C",
+                "text": "Elizabeth English"
+              },
+              {
+                "label": "D",
+                "text": "Jeff Goodell"
+              },
+              {
+                "label": "E",
+                "text": "Greg Spotts"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Passage 3",
+      "order": 2,
+      "content": "READING PASSAGE 3\nYou should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.\n\nA new role for livestock guard dogs\nLivestock guard dogs, traditionally used to protect farm animals from predators, are now being used to protect the predators themselves\n\nA For thousands of years, livestock guard dogs worked alongside shepherds to protect their sheep, goats and cattle from wolves, bears, and other carnivores. Unlike herding dogs, which control livestock movements through stalking and barking, guard dogs are raised from puppyhood with the herd. They bond closely with the livestock, viewing them as family and defending them with quiet determination.\n\nB When predators approach, the guard dogs position themselves between the herd and the threat, barking loudly and displaying formidable posturing. Most wild predators avoid physical confrontation when confronted with such large, confident dogs. Consequently, carnivores move elsewhere to seek wild prey rather than risking injury attacking domestic herds.\n\nC Academic researchers have documented the remarkable success of guard dog programs across multiple continents. In studies conducted across Europe, North America, and Australia, guard dogs consistently reduced livestock losses by over 70 to 90 percent. Silvia Ribeiro of the Portuguese NGO Grupo Lobo found that guard dogs provided an effective, non-lethal deterrent that dramatically improved coexistence between ranchers and wolves.\n\nD Crucially, protecting livestock also saves the predators. In Namibia, where commercial ranchers historically shot or trapped cheetahs that preyed on goats, the Cheetah Conservation Fund introduced Anatolian Shepherd dogs. With the dogs guarding herds, livestock losses plummeted by over 80 percent. As a direct result, farmers no longer retaliated against cheetahs, transforming the world's largest wild cheetah population from imminent peril into stable recovery.\n\nE However, researchers like Julie Young and Bethany Smith point out that introducing guard dogs can sometimes cause unexpected ecological ripple effects. In Namibia, while cheetah predation declined, guard dogs sometimes killed smaller native carnivores like jackals and bat-eared foxes. Dogs can also transmit infectious diseases or outcompete wild scavengers for resources.\n\nF Furthermore, as Dan Macon, a livestock specialist, emphasizes, training a livestock guardian requires an entirely different approach from training a pet or working sheepdog. Guard dogs must operate autonomously with minimal human direction, displaying absolute fidelity to their flock.\n\nG Despite these challenges, wildlife biologists see immense potential in guard dogs as vital conservation partners. By minimizing economic conflict between rural livelihoods and apex predators, these loyal guardians prove that domestic animals can play an indispensable role in safeguarding wild biodiversity.",
+      "questions": [
+        {
+          "number": 27,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "an example of how one predator has been protected by the introduction of livestock guard dogs",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 28,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "an optimistic suggestion about the possible positive developments in the use of livestock guard dogs",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 29,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a description of how the methods used by livestock guard dogs help to keep predators away",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "claims by different academics that the use of livestock guard dogs is a successful way of protecting farmers' herds",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 31,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a reference to how livestock guard dogs gain their skills",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 32,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The use of guard dogs may save the lives of both livestock and wild animals.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Dan Macon"
+              },
+              {
+                "label": "B",
+                "text": "Silvia Ribeiro"
+              },
+              {
+                "label": "C",
+                "text": "Linda van Bommel"
+              },
+              {
+                "label": "D",
+                "text": "Julie Young"
+              },
+              {
+                "label": "E",
+                "text": "Bethany Smith"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 33,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Claims of a change in behaviour from those using livestock guard dogs may not be totally accurate.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Dan Macon"
+              },
+              {
+                "label": "B",
+                "text": "Silvia Ribeiro"
+              },
+              {
+                "label": "C",
+                "text": "Linda van Bommel"
+              },
+              {
+                "label": "D",
+                "text": "Julie Young"
+              },
+              {
+                "label": "E",
+                "text": "Bethany Smith"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 34,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "There may be negative results if the use of livestock guard dogs is not sufficiently widespread.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Dan Macon"
+              },
+              {
+                "label": "B",
+                "text": "Silvia Ribeiro"
+              },
+              {
+                "label": "C",
+                "text": "Linda van Bommel"
+              },
+              {
+                "label": "D",
+                "text": "Julie Young"
+              },
+              {
+                "label": "E",
+                "text": "Bethany Smith"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 35,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Livestock guard dogs are the best way of protecting farm animals, as long as the dogs are appropriately handled.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Dan Macon"
+              },
+              {
+                "label": "B",
+                "text": "Silvia Ribeiro"
+              },
+              {
+                "label": "C",
+                "text": "Linda van Bommel"
+              },
+              {
+                "label": "D",
+                "text": "Julie Young"
+              },
+              {
+                "label": "E",
+                "text": "Bethany Smith"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 36,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Teaching a livestock guard dog how to do its work needs a different focus from teaching a house guard dog.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Dan Macon"
+              },
+              {
+                "label": "B",
+                "text": "Silvia Ribeiro"
+              },
+              {
+                "label": "C",
+                "text": "Linda van Bommel"
+              },
+              {
+                "label": "D",
+                "text": "Julie Young"
+              },
+              {
+                "label": "E",
+                "text": "Bethany Smith"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 37,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "This has led to a rise in the deaths of other predators, particularly 37 ...............",
+            "blank": true
+          },
+          "correctAnswer": "jackals"
+        },
+        {
+          "number": 38,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "it has been suggested that the dogs could have 38 ..............., which may affect other species",
+            "blank": true
+          },
+          "correctAnswer": "diseases"
+        },
+        {
+          "number": 39,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "and that they may reduce the amount of 39 ............... available to certain wild animals.",
+            "blank": true
+          },
+          "correctAnswer": "food"
+        },
+        {
+          "number": 40,
+          "order": 13,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "These might otherwise be threatened by predators such as 40 ...............",
+            "blank": true
+          },
+          "correctAnswer": "foxes"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}

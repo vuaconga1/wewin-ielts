@@ -1,0 +1,973 @@
+{
+  "title": "Test 21.C19.03 - Listening",
+  "slug": "test-21-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-21-section-1.mp3",
+    "/uploads/audio/test-21-section-2.mp3",
+    "/uploads/audio/test-21-section-3.mp3",
+    "/uploads/audio/test-21-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–6\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nLocal food shops\n\nWhere to go\n• Kite Place — near the 1 ...............\n• Fish market\n  — cross the 2 ............... and turn right\n  — best to go before 3 ............... pm, earlier than closing time\n• Organic shop called 4 ...............\n  — below a restaurant in the large, grey building\n  — look for the large 5 ............... outside\n• Supermarket\n  — take a 6 ............... minibus, number 289\n\nQuestions 7–10\nComplete the table below.\nWrite ONE WORD ONLY for each answer.\n\nShopping\n| Shop | To buy | Other ideas |\n| --- | --- | --- |\n| Fish market | a dozen prawns | a handful of 7 ............... (type of seaweed) |\n| Organic shop | beans and a 8 ............... for dessert | spices and 9 ............... |\n| Bakery | a brown loaf | a 10 ............... tart |",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-21-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Kite Place — near the ________",
+            "blank": true
+          },
+          "correctAnswer": "harbour",
+          "acceptableAnswers": [
+            "harbour",
+            "harbor"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "cross the ________ and turn right",
+            "blank": true
+          },
+          "correctAnswer": "bridge"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "best to go before ________ pm, earlier than closing time",
+            "blank": true
+          },
+          "correctAnswer": "3.30",
+          "acceptableAnswers": [
+            "3.30",
+            "3:30"
+          ]
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Organic shop called ________",
+            "blank": true
+          },
+          "correctAnswer": "Rose",
+          "acceptableAnswers": [
+            "Rose",
+            "rose"
+          ]
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "look for the large ________ outside",
+            "blank": true
+          },
+          "correctAnswer": "sign"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "take a ________ minibus, number 289",
+            "blank": true
+          },
+          "correctAnswer": "purple"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a handful of ________ (type of seaweed)",
+            "blank": true
+          },
+          "correctAnswer": "samphire"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "beans and a ________ for dessert",
+            "blank": true
+          },
+          "correctAnswer": "melon"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "spices and ________",
+            "blank": true
+          },
+          "correctAnswer": "coconut"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a ________ tart",
+            "blank": true
+          },
+          "correctAnswer": "strawberry"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–16\nWhat information is given about each of the following festival workshops?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 11–16.\n\nInformation\nA involves painting and drawing\nB will be led by a prize-winning author\nC is aimed at children with a disability\nD involves a drama activity\nE focuses on new relationships\nF is aimed at a specific age group\nG explores an unhappy feeling\nH raises awareness of a particular culture\n\nFestival workshops\n11 Superheroes\n12 Just do it\n13 Count on me\n14 Speak up\n15 Jump for joy\n16 Sticks and stones\n\nQuestions 17 and 18\nChoose TWO letters, A–E.\nWhich TWO reasons does the speaker give for recommending Alive and Kicking?\nA It will appeal to both boys and girls.\nB The author is well known.\nC It has colourful illustrations.\nD It is funny.\nE It deals with an important topic.\n\nQuestions 19 and 20\nChoose TWO letters, A–E.\nWhich TWO pieces of advice does the speaker give to parents about reading?\nA Encourage children to write down new vocabulary.\nB Allow children to listen to audio books.\nC Get recommendations from librarians.\nD Give children a choice about what they read.\nE Only read aloud to children until they can read independently.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-21-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Superheroes",
+            "options": [
+              {
+                "label": "A",
+                "text": "involves painting and drawing"
+              },
+              {
+                "label": "B",
+                "text": "will be led by a prize-winning author"
+              },
+              {
+                "label": "C",
+                "text": "is aimed at children with a disability"
+              },
+              {
+                "label": "D",
+                "text": "involves a drama activity"
+              },
+              {
+                "label": "E",
+                "text": "focuses on new relationships"
+              },
+              {
+                "label": "F",
+                "text": "is aimed at a specific age group"
+              },
+              {
+                "label": "G",
+                "text": "explores an unhappy feeling"
+              },
+              {
+                "label": "H",
+                "text": "raises awareness of a particular culture"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Just do it",
+            "options": [
+              {
+                "label": "A",
+                "text": "involves painting and drawing"
+              },
+              {
+                "label": "B",
+                "text": "will be led by a prize-winning author"
+              },
+              {
+                "label": "C",
+                "text": "is aimed at children with a disability"
+              },
+              {
+                "label": "D",
+                "text": "involves a drama activity"
+              },
+              {
+                "label": "E",
+                "text": "focuses on new relationships"
+              },
+              {
+                "label": "F",
+                "text": "is aimed at a specific age group"
+              },
+              {
+                "label": "G",
+                "text": "explores an unhappy feeling"
+              },
+              {
+                "label": "H",
+                "text": "raises awareness of a particular culture"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Count on me",
+            "options": [
+              {
+                "label": "A",
+                "text": "involves painting and drawing"
+              },
+              {
+                "label": "B",
+                "text": "will be led by a prize-winning author"
+              },
+              {
+                "label": "C",
+                "text": "is aimed at children with a disability"
+              },
+              {
+                "label": "D",
+                "text": "involves a drama activity"
+              },
+              {
+                "label": "E",
+                "text": "focuses on new relationships"
+              },
+              {
+                "label": "F",
+                "text": "is aimed at a specific age group"
+              },
+              {
+                "label": "G",
+                "text": "explores an unhappy feeling"
+              },
+              {
+                "label": "H",
+                "text": "raises awareness of a particular culture"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Speak up",
+            "options": [
+              {
+                "label": "A",
+                "text": "involves painting and drawing"
+              },
+              {
+                "label": "B",
+                "text": "will be led by a prize-winning author"
+              },
+              {
+                "label": "C",
+                "text": "is aimed at children with a disability"
+              },
+              {
+                "label": "D",
+                "text": "involves a drama activity"
+              },
+              {
+                "label": "E",
+                "text": "focuses on new relationships"
+              },
+              {
+                "label": "F",
+                "text": "is aimed at a specific age group"
+              },
+              {
+                "label": "G",
+                "text": "explores an unhappy feeling"
+              },
+              {
+                "label": "H",
+                "text": "raises awareness of a particular culture"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Jump for joy",
+            "options": [
+              {
+                "label": "A",
+                "text": "involves painting and drawing"
+              },
+              {
+                "label": "B",
+                "text": "will be led by a prize-winning author"
+              },
+              {
+                "label": "C",
+                "text": "is aimed at children with a disability"
+              },
+              {
+                "label": "D",
+                "text": "involves a drama activity"
+              },
+              {
+                "label": "E",
+                "text": "focuses on new relationships"
+              },
+              {
+                "label": "F",
+                "text": "is aimed at a specific age group"
+              },
+              {
+                "label": "G",
+                "text": "explores an unhappy feeling"
+              },
+              {
+                "label": "H",
+                "text": "raises awareness of a particular culture"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Sticks and stones",
+            "options": [
+              {
+                "label": "A",
+                "text": "involves painting and drawing"
+              },
+              {
+                "label": "B",
+                "text": "will be led by a prize-winning author"
+              },
+              {
+                "label": "C",
+                "text": "is aimed at children with a disability"
+              },
+              {
+                "label": "D",
+                "text": "involves a drama activity"
+              },
+              {
+                "label": "E",
+                "text": "focuses on new relationships"
+              },
+              {
+                "label": "F",
+                "text": "is aimed at a specific age group"
+              },
+              {
+                "label": "G",
+                "text": "explores an unhappy feeling"
+              },
+              {
+                "label": "H",
+                "text": "raises awareness of a particular culture"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO reasons does the speaker give for recommending Alive and Kicking?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It will appeal to both boys and girls."
+              },
+              {
+                "label": "B",
+                "text": "The author is well known."
+              },
+              {
+                "label": "C",
+                "text": "It has colourful illustrations."
+              },
+              {
+                "label": "D",
+                "text": "It is funny."
+              },
+              {
+                "label": "E",
+                "text": "It deals with an important topic."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              17,
+              18
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 17
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO pieces of advice does the speaker give to parents about reading?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Encourage children to write down new vocabulary."
+              },
+              {
+                "label": "B",
+                "text": "Allow children to listen to audio books."
+              },
+              {
+                "label": "C",
+                "text": "Get recommendations from librarians."
+              },
+              {
+                "label": "D",
+                "text": "Give children a choice about what they read."
+              },
+              {
+                "label": "E",
+                "text": "Only read aloud to children until they can read independently."
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              19,
+              20
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 19
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–25\nChoose the correct letter, A, B or C.\n\nScience experiment for Year 12 students\n21 How does Clare feel about the students in her Year 12 science class?\nA worried that they are not making progress\nB challenged by their poor behaviour in class\nC frustrated at their lack of interest in the subject\n\n22 How does Jake react to Clare's suggestion about an experiment based on children's diet?\nA He is concerned that the results might not be meaningful.\nB He feels some of the data might be difficult to obtain.\nC He suspects that the conclusions might be upsetting.\n\n23 What problem do they agree may be involved in an experiment involving animals?\nA Any results may not apply to humans.\nB It may be complicated to get permission.\nC Students may not be happy about animal experiments.\n\n24 What question do they decide the experiment should address?\nA Are mice capable of controlling their food intake?\nB Does an increase in sugar lead to health problems?\nC How much do supplements of different kinds affect health?\n\n25 Clare might also consider doing another experiment involving\nA other types of food supplement.\nB different genetic strains of mice.\nC varying amounts of exercise.\n\nQuestions 26–30\nComplete the flowchart below.\nChoose FIVE answers from the box and write the correct letter, A–H, next to Questions 26–30.\n\nA size\nB escape\nC age\nD water\nE cereal\nF calculations\nG changes\nH colour\n\nExperiment on mice:\nChoose mice which are all the same 26 ...............\n↓\nDivide the mice into two groups, each with a different 27 ...............\nPut each group in a separate cage.\n↓\nFeed group A commercial mouse food.\nFeed group B the same, but also sugar contained in 28 ...............\n↓\nTake measurements using an electronic scale.\nPlace them in a weighing chamber to prevent 29 ...............\n↓\nDo all necessary 30 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-21-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does Clare feel about the students in her Year 12 science class?",
+            "options": [
+              {
+                "label": "A",
+                "text": "worried that they are not making progress"
+              },
+              {
+                "label": "B",
+                "text": "challenged by their poor behaviour in class"
+              },
+              {
+                "label": "C",
+                "text": "frustrated at their lack of interest in the subject"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does Jake react to Clare's suggestion about an experiment based on children's diet?",
+            "options": [
+              {
+                "label": "A",
+                "text": "He is concerned that the results might not be meaningful."
+              },
+              {
+                "label": "B",
+                "text": "He feels some of the data might be difficult to obtain."
+              },
+              {
+                "label": "C",
+                "text": "He suspects that the conclusions might be upsetting."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What problem do they agree may be involved in an experiment involving animals?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Any results may not apply to humans."
+              },
+              {
+                "label": "B",
+                "text": "It may be complicated to get permission."
+              },
+              {
+                "label": "C",
+                "text": "Students may not be happy about animal experiments."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What question do they decide the experiment should address?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Are mice capable of controlling their food intake?"
+              },
+              {
+                "label": "B",
+                "text": "Does an increase in sugar lead to health problems?"
+              },
+              {
+                "label": "C",
+                "text": "How much do supplements of different kinds affect health?"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Clare might also consider doing another experiment involving",
+            "options": [
+              {
+                "label": "A",
+                "text": "other types of food supplement."
+              },
+              {
+                "label": "B",
+                "text": "different genetic strains of mice."
+              },
+              {
+                "label": "C",
+                "text": "varying amounts of exercise."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Choose mice which are all the same [26]",
+            "options": [
+              {
+                "label": "A",
+                "text": "size"
+              },
+              {
+                "label": "B",
+                "text": "escape"
+              },
+              {
+                "label": "C",
+                "text": "age"
+              },
+              {
+                "label": "D",
+                "text": "water"
+              },
+              {
+                "label": "E",
+                "text": "cereal"
+              },
+              {
+                "label": "F",
+                "text": "calculations"
+              },
+              {
+                "label": "G",
+                "text": "changes"
+              },
+              {
+                "label": "H",
+                "text": "colour"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Divide the mice into two groups, each with a different [27]",
+            "options": [
+              {
+                "label": "A",
+                "text": "size"
+              },
+              {
+                "label": "B",
+                "text": "escape"
+              },
+              {
+                "label": "C",
+                "text": "age"
+              },
+              {
+                "label": "D",
+                "text": "water"
+              },
+              {
+                "label": "E",
+                "text": "cereal"
+              },
+              {
+                "label": "F",
+                "text": "calculations"
+              },
+              {
+                "label": "G",
+                "text": "changes"
+              },
+              {
+                "label": "H",
+                "text": "colour"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Feed group B the same, but also sugar contained in [28]",
+            "options": [
+              {
+                "label": "A",
+                "text": "size"
+              },
+              {
+                "label": "B",
+                "text": "escape"
+              },
+              {
+                "label": "C",
+                "text": "age"
+              },
+              {
+                "label": "D",
+                "text": "water"
+              },
+              {
+                "label": "E",
+                "text": "cereal"
+              },
+              {
+                "label": "F",
+                "text": "calculations"
+              },
+              {
+                "label": "G",
+                "text": "changes"
+              },
+              {
+                "label": "H",
+                "text": "colour"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Place them in a weighing chamber to prevent [29]",
+            "options": [
+              {
+                "label": "A",
+                "text": "size"
+              },
+              {
+                "label": "B",
+                "text": "escape"
+              },
+              {
+                "label": "C",
+                "text": "age"
+              },
+              {
+                "label": "D",
+                "text": "water"
+              },
+              {
+                "label": "E",
+                "text": "cereal"
+              },
+              {
+                "label": "F",
+                "text": "calculations"
+              },
+              {
+                "label": "G",
+                "text": "changes"
+              },
+              {
+                "label": "H",
+                "text": "colour"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Do all necessary [30]",
+            "options": [
+              {
+                "label": "A",
+                "text": "size"
+              },
+              {
+                "label": "B",
+                "text": "escape"
+              },
+              {
+                "label": "C",
+                "text": "age"
+              },
+              {
+                "label": "D",
+                "text": "water"
+              },
+              {
+                "label": "E",
+                "text": "cereal"
+              },
+              {
+                "label": "F",
+                "text": "calculations"
+              },
+              {
+                "label": "G",
+                "text": "changes"
+              },
+              {
+                "label": "H",
+                "text": "colour"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nMicroplastics\n\nWhere microplastics come from\n• fibres from some 31 ............... during washing\n• the breakdown of large pieces of plastic waste from industry\n• the action of vehicle tyres on roads\n\nEffects of microplastics\n• They cause injuries to the 32 ............... of wildlife and affect their digestive systems.\n• They enter the food chain, e.g., in bottled and tap water, 33 ............... and seafood.\n• They may not affect human health, but they are already banned in skin cleaning products and 34 ............... in some countries.\n• Microplastics enter the soil through the air, rain and 35 ...............\n\nMicroplastics in the soil — a study by Anglia Ruskin University\n• Earthworms are important because they add 36 ............... to the soil.\n• The study aimed to find whether microplastics in earthworms affect the 37 ............... of plants.\n• The study found that microplastics caused:\n  — 38 ............... loss in earthworms\n  — fewer seeds to germinate\n  — a rise in the level of 39 ............... in the soil.\n• The study concluded:\n  — soil should be seen as an important natural process.\n  — changes to soil damage both ecosystems and 40 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-21-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "fibres from some ________ during washing",
+            "blank": true
+          },
+          "correctAnswer": "clothing"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "They cause injuries to the ________ of wildlife and affect their digestive systems.",
+            "blank": true
+          },
+          "correctAnswer": "mouths"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "They enter the food chain, e.g., in bottled and tap water, ________ and seafood.",
+            "blank": true
+          },
+          "correctAnswer": "salt"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "banned in skin cleaning products and ________ in some countries.",
+            "blank": true
+          },
+          "correctAnswer": "toothpaste"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Microplastics enter the soil through the air, rain and ________",
+            "blank": true
+          },
+          "correctAnswer": "fertilizers",
+          "acceptableAnswers": [
+            "fertilizers",
+            "fertilisers"
+          ]
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Earthworms are important because they add ________ to the soil.",
+            "blank": true
+          },
+          "correctAnswer": "nutrients"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "find whether microplastics in earthworms affect the ________ of plants.",
+            "blank": true
+          },
+          "correctAnswer": "growth"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The study found that microplastics caused: ________ loss in earthworms",
+            "blank": true
+          },
+          "correctAnswer": "weight"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a rise in the level of ________ in the soil.",
+            "blank": true
+          },
+          "correctAnswer": "acid"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "changes to soil damage both ecosystems and ________",
+            "blank": true
+          },
+          "correctAnswer": "society"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "Cambridge 19.pdf",
+  "savedAt": "2026-11-14T08:37:41.772Z"
+}

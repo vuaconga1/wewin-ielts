@@ -1,0 +1,856 @@
+{
+  "title": "Test 23.C20.01 - Listening",
+  "slug": "test-23-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-23-section-1.m4a",
+    "/uploads/audio/test-23-section-2.m4a",
+    "/uploads/audio/test-23-section-3.m4a",
+    "/uploads/audio/test-23-section-4.m4a"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nRestaurant Recommendations\n\nName of restaurant | Location | Reason for recommendation | Other comments\nThe Junction | Greyson Street, near the station | Good for people who are especially keen on 1 ............... | Quite expensive; The 2 ............... is a good place for a drink\nPaloma | In Bow Street next to the cinema | 3 ............... food, good for sharing | Staff are very friendly; Need to pay 50 deposit; A limited selection of 4 ............... on the menu\nThe 5 ............... | At the top of a 6 ............... | A famous chef; All the 7 ............... are very good; Only uses 8 ............... ingredients | Set lunch cost: 9 ............... per person; Portions probably of 10 ............... size",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-23-section-1.m4a"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Good for people who are especially keen on ________",
+            "blank": true
+          },
+          "correctAnswer": "fish"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The ________ is a good place for a drink",
+            "blank": true
+          },
+          "correctAnswer": "roof"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "________ food, good for sharing",
+            "blank": true
+          },
+          "correctAnswer": "Spanish"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A limited selection of ________ on the menu",
+            "blank": true
+          },
+          "correctAnswer": "vegetarian",
+          "acceptableAnswers": [
+            "vegetarian",
+            "vegetarians"
+          ]
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Name of restaurant: The ________",
+            "blank": true
+          },
+          "correctAnswer": "Audley"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "At the top of a ________",
+            "blank": true
+          },
+          "correctAnswer": "hotel"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "All the ________ are very good",
+            "blank": true
+          },
+          "correctAnswer": "reviews",
+          "acceptableAnswers": [
+            "reviews",
+            "review"
+          ]
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Only uses ________ ingredients",
+            "blank": true
+          },
+          "correctAnswer": "local"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Set lunch cost: £________ per person",
+            "blank": true
+          },
+          "correctAnswer": "30",
+          "acceptableAnswers": [
+            "30",
+            "thirty",
+            "£30",
+            "£thirty"
+          ]
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Portions probably of ________ size",
+            "blank": true
+          },
+          "correctAnswer": "average"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–16\nChoose the correct letter, A, B or C.\n\nHeather and Edelman Pottery\n11 Heather says pottery differs from other art forms because\nA It lasts longer in the ground.\nB It is practiced by more people.\nC It can be repaired more easily.\n\n12 Archaeologists sometimes identify the use of ancient pottery from\nA the clay it was made with.\nB the marks that are on it.\nC the basic shape of it.\n\n13 Some people join Heather's pottery class because they want to\nA create an item that looks very old.\nB find something that they are good at.\nC make something that will outlive them.\n\n14 What does Heather value most about being a potter?\nA Its calming effect\nB Its messy nature\nC Its physical benefits\n\n15 Most of the visitors to Edelman Pottery\nA bring friends to join courses.\nB have never made a pot before.\nC try to learn techniques too quickly.\n\n16 Heather reminds her visitors that they should\nA put on their aprons.\nB change their clothes.\nC take off their jewellery.\n\nQuestions 17 and 18\nChoose TWO letters, A–E.\nWhich TWO things does Heather explain about kilns?\nA what their function is\nB when they were invented\nC ways of keeping them safe\nD where to put one in your home\nE what some people use instead of one\n\nQuestions 19 and 20\nChoose TWO letters, A–E.\nWhich TWO points does Heather make about a potter's tools?\nA Some are hard to hold.\nB Some are worth buying.\nC Some are essential items.\nD Some have memorable names.\nE Some are available for use by participants.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-23-section-2.m4a"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Heather says pottery differs from other art forms because",
+            "options": [
+              {
+                "label": "A",
+                "text": "It lasts longer in the ground."
+              },
+              {
+                "label": "B",
+                "text": "It is practiced by more people."
+              },
+              {
+                "label": "C",
+                "text": "It can be repaired more easily."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 12,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Archaeologists sometimes identify the use of ancient pottery from",
+            "options": [
+              {
+                "label": "A",
+                "text": "the clay it was made with."
+              },
+              {
+                "label": "B",
+                "text": "the marks that are on it."
+              },
+              {
+                "label": "C",
+                "text": "the basic shape of it."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 13,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Some people join Heather's pottery class because they want to",
+            "options": [
+              {
+                "label": "A",
+                "text": "create an item that looks very old."
+              },
+              {
+                "label": "B",
+                "text": "find something that they are good at."
+              },
+              {
+                "label": "C",
+                "text": "make something that will outlive them."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 14,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Heather value most about being a potter?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Its calming effect"
+              },
+              {
+                "label": "B",
+                "text": "Its messy nature"
+              },
+              {
+                "label": "C",
+                "text": "Its physical benefits"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 15,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Most of the visitors to Edelman Pottery",
+            "options": [
+              {
+                "label": "A",
+                "text": "bring friends to join courses."
+              },
+              {
+                "label": "B",
+                "text": "have never made a pot before."
+              },
+              {
+                "label": "C",
+                "text": "try to learn techniques too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Heather reminds her visitors that they should",
+            "options": [
+              {
+                "label": "A",
+                "text": "put on their aprons."
+              },
+              {
+                "label": "B",
+                "change": "B",
+                "text": "change their clothes."
+              },
+              {
+                "label": "C",
+                "text": "take off their jewellery."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things does Heather explain about kilns? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "what their function is"
+              },
+              {
+                "label": "B",
+                "text": "when they were invented"
+              },
+              {
+                "label": "C",
+                "text": "ways of keeping them safe"
+              },
+              {
+                "label": "D",
+                "text": "where to put one in your home"
+              },
+              {
+                "label": "E",
+                "text": "what some people use instead of one"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "E"
+          ]
+        },
+        {
+          "number": 18,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things does Heather explain about kilns? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "what their function is"
+              },
+              {
+                "label": "B",
+                "text": "when they were invented"
+              },
+              {
+                "label": "C",
+                "text": "ways of keeping them safe"
+              },
+              {
+                "label": "D",
+                "text": "where to put one in your home"
+              },
+              {
+                "label": "E",
+                "text": "what some people use instead of one"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "A",
+            "E"
+          ]
+        },
+        {
+          "number": 19,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO points does Heather make about a potter's tools? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Some are hard to hold."
+              },
+              {
+                "label": "B",
+                "text": "Some are worth buying."
+              },
+              {
+                "label": "C",
+                "text": "Some are essential items."
+              },
+              {
+                "label": "D",
+                "text": "Some have memorable names."
+              },
+              {
+                "label": "E",
+                "text": "Some are available for use by participants."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 20,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO points does Heather make about a potter's tools? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Some are hard to hold."
+              },
+              {
+                "label": "B",
+                "text": "Some are worth buying."
+              },
+              {
+                "label": "C",
+                "text": "Some are essential items."
+              },
+              {
+                "label": "D",
+                "text": "Some have memorable names."
+              },
+              {
+                "label": "E",
+                "text": "Some are available for use by participants."
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO things do the students both believe are responsible for the increase in loneliness?\nA social media\nB smaller nuclear families\nC urban design\nD longer lifespans\nE a mobile workforce\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO health risks associated with loneliness do the students agree are based on solid evidence?\nA a weakened immune system\nB dementia\nC cancer\nD obesity\nE cardiovascular disease\n\nQuestions 25 and 26\nChoose TWO letters, A–E.\nWhich TWO opinions do both the students express about the evolutionary theory of loneliness?\nA It has little practical relevance.\nB It needs further investigation.\nC It is misleading.\nD It should be more widely accepted.\nE It is difficult to understand.\n\nQuestions 27–30\nChoose the correct letter, A, B or C.\n\nLoneliness and mental health\n27 When comparing loneliness to depression, the students\nA doubt that there will ever be a medical cure for loneliness.\nB claim that the link between loneliness and mental health is overstated.\nC express frustration that loneliness is not taken more seriously.\n\n28 Why do the students decide to start their presentation with an example from their own experience?\nA to explain how difficult loneliness can be\nB to highlight a situation that most students will recognise\nC to emphasise that feeling lonely is more common for men than women\n\n29 The students agree that talking to strangers is a good strategy for dealing with loneliness because\nA it creates a sense of belonging.\nB it builds self-confidence.\nC it makes people feel more positive.\n\n30 The students find it difficult to understand why solitude is considered to be\nA similar to loneliness.\nB necessary for mental health.\nC an enjoyable experience.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-23-section-3.m4a"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do the students both believe are responsible for the increase in loneliness? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "social media"
+              },
+              {
+                "label": "B",
+                "text": "smaller nuclear families"
+              },
+              {
+                "label": "C",
+                "text": "urban design"
+              },
+              {
+                "label": "D",
+                "text": "longer lifespans"
+              },
+              {
+                "label": "E",
+                "text": "a mobile workforce"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do the students both believe are responsible for the increase in loneliness? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "social media"
+              },
+              {
+                "label": "B",
+                "text": "smaller nuclear families"
+              },
+              {
+                "label": "C",
+                "text": "urban design"
+              },
+              {
+                "label": "D",
+                "text": "longer lifespans"
+              },
+              {
+                "label": "E",
+                "text": "a mobile workforce"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO health risks associated with loneliness do the students agree are based on solid evidence? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a weakened immune system"
+              },
+              {
+                "label": "B",
+                "text": "dementia"
+              },
+              {
+                "label": "C",
+                "text": "cancer"
+              },
+              {
+                "label": "D",
+                "text": "obesity"
+              },
+              {
+                "label": "E",
+                "text": "cardiovascular disease"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 3,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO health risks associated with loneliness do the students agree are based on solid evidence? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a weakened immune system"
+              },
+              {
+                "label": "B",
+                "text": "dementia"
+              },
+              {
+                "label": "C",
+                "text": "cancer"
+              },
+              {
+                "label": "D",
+                "text": "obesity"
+              },
+              {
+                "label": "E",
+                "text": "cardiovascular disease"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 4,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO opinions do both the students express about the evolutionary theory of loneliness? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "It has little practical relevance."
+              },
+              {
+                "label": "B",
+                "text": "It needs further investigation."
+              },
+              {
+                "label": "C",
+                "text": "It is misleading."
+              },
+              {
+                "label": "D",
+                "text": "It should be more widely accepted."
+              },
+              {
+                "label": "E",
+                "text": "It is difficult to understand."
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "number": 26,
+          "order": 5,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO opinions do both the students express about the evolutionary theory of loneliness? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "It has little practical relevance."
+              },
+              {
+                "label": "B",
+                "text": "It needs further investigation."
+              },
+              {
+                "label": "C",
+                "text": "It is misleading."
+              },
+              {
+                "label": "D",
+                "text": "It should be more widely accepted."
+              },
+              {
+                "label": "E",
+                "text": "It is difficult to understand."
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "number": 27,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When comparing loneliness to depression, the students",
+            "options": [
+              {
+                "label": "A",
+                "text": "doubt that there will ever be a medical cure for loneliness."
+              },
+              {
+                "label": "B",
+                "text": "claim that the link between loneliness and mental health is overstated."
+              },
+              {
+                "label": "C",
+                "text": "express frustration that loneliness is not taken more seriously."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why do the students decide to start their presentation with an example from their own experience?",
+            "options": [
+              {
+                "label": "A",
+                "text": "to explain how difficult loneliness can be"
+              },
+              {
+                "label": "B",
+                "text": "to highlight a situation that most students will recognise"
+              },
+              {
+                "label": "C",
+                "text": "to emphasise that feeling lonely is more common for men than women"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 29,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students agree that talking to strangers is a good strategy for dealing with loneliness because",
+            "options": [
+              {
+                "label": "A",
+                "text": "it creates a sense of belonging."
+              },
+              {
+                "label": "B",
+                "text": "it builds self-confidence."
+              },
+              {
+                "label": "C",
+                "text": "it makes people feel more positive."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students find it difficult to understand why solitude is considered to be",
+            "options": [
+              {
+                "label": "A",
+                "text": "similar to loneliness."
+              },
+              {
+                "label": "B",
+                "text": "necessary for mental health."
+              },
+              {
+                "label": "C",
+                "text": "an enjoyable experience."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nReclaiming urban rivers\n\nHistorical background\n● Nearly all major cities were built on a river.\n● Rivers were traditionally used by city dwellers for transport, fishing and recreation.\n● Industrial development and rising populations later led to:\n  - more sewage from houses being discharged into the river\n  - pollution from 31 ............... on the river bank.\n● In 1957, the River Thames in London was declared biologically 32 ...............\n\nRecent improvements\n● Seals and even a 33 ............... have been seen in the River Thames.\n● Riverside warehouses are converted to restaurants and 34 ...............\n● In Los Angeles, there are plans to:\n  - build a riverside 35 ...............\n  - display 36 ............... projects\n● In Paris, 37 ............... are created on the sides of the river every summer.\n\nTransport possibilities\n● Over 2 billion passengers already travel by 38 ...............\n● Changes in shopping habits mean the number of deliveries that are made is increasing\n● Instead of road transport, goods could be transported by large freight barges and electric 39 ..............., or in the future, by 40 ...............",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-23-section-4.m4a"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "pollution from ________ on the river bank.",
+            "blank": true
+          },
+          "correctAnswer": "factories"
+        },
+        {
+          "number": 32,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In 1957, the River Thames in London was declared biologically ________",
+            "blank": true
+          },
+          "correctAnswer": "dead"
+        },
+        {
+          "number": 33,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Seals and even a ________ have been seen in the River Thames.",
+            "blank": true
+          },
+          "correctAnswer": "whale"
+        },
+        {
+          "number": 34,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Riverside warehouses are converted to restaurants and ________",
+            "blank": true
+          },
+          "correctAnswer": "apartments"
+        },
+        {
+          "number": 35,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "build a riverside ________",
+            "blank": true
+          },
+          "correctAnswer": "park"
+        },
+        {
+          "number": 36,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "display ________ projects",
+            "blank": true
+          },
+          "correctAnswer": "art"
+        },
+        {
+          "number": 37,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In Paris, ________ are created on the sides of the river every summer.",
+            "blank": true
+          },
+          "correctAnswer": "beaches"
+        },
+        {
+          "number": 38,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Over 2 billion passengers already travel by ________",
+            "blank": true
+          },
+          "correctAnswer": "ferry"
+        },
+        {
+          "number": 39,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "goods could be transported by large freight barges and electric ________",
+            "blank": true
+          },
+          "correctAnswer": "bikes"
+        },
+        {
+          "number": 40,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "or in the future, by ________",
+            "blank": true
+          },
+          "correctAnswer": "drone"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}

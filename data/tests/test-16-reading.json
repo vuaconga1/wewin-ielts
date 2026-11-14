@@ -1,0 +1,1097 @@
+{
+  "title": "Test 16.C21.02 - Reading",
+  "slug": "test-16-reading",
+  "skill": "READING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Reading"
+  ],
+  "parts": [
+    {
+      "title": "Passage 1",
+      "order": 0,
+      "content": "You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\nDo animals dream? \nStudies using electrodes attached to the heads of sleepers have shown that when we \nsleep, we do so in two ways that alternate throughout the night. The first is rapid eye \nmovement (REM) or active sleep. During this stage our eyes move, even though our \neyelids are closed. Our muscles also twitch slightly, though they are largely paralysed \nso we don't hurt ourselves. In contrast, we also engage in non-REM sleep, during \nwhich we barely move at all. Most dream states, and certainly those with the most vivid \ndreams, happen during REM sleep. \nThere's some evidence that other mammals may also dream. For example, researchers \ncompared the brain patterns of rats running through a maze when awake with their \nbrain patterns during REM sleep. They found the patterns were very similar and \nconcluded that the sleeping rats were dreaming about going through the maze. \nBut finding evidence of dreaming in non-mammals has proved more difficult. Their \nbrains are very different from those of humans, and it can often be difficult to record \ntheir activity while they are sleeping. Recently, however, researchers succeeded in \nrecording brain activity in sleeping pigeons. As in mammals, the recordings revealed \nboth REM and non-REM sleep. Intriguingly, REM sleep activity was high in brain \nregions involved in processing visual information, especially images related to physical \nactivities such as flying, which suggests that this may possibly be what the pigeons \nwere dreaming about. \nThat said, dreaming and REM sleep are unlikely to be universal in the animal kingdom. \nFor example, sponges don't have brains, so they lack the machinery for dreaming. \nThere are also some animals with unusual sleep patterns. These include whales and \ndolphins, which do not shut down their entire brain when they sleep, but only half of \nit, keeping the rest awake. They also show no sign of REM sleep, suggesting that they \nmay only experience non-REM dreams, which are less vivid. This is surprising because \nwe tend to think of whales and dolphins as having complex inner lives. It's thought \nthat they don't experience REM sleep because during REM sleep animals are more vulnerable to extremes of temperature. \n38\n\n===== PAGE 40 =====\nReading \nNevertheless, in many cases REM sleep does seem to have benefits. Growing evidence \nfrom birds and mammals suggests that REM sleep and dreaming are important for \nforming memories and learning. It is believed that when events are replayed in dreams, \nthis helps to integrate memories into longer-term storage. As soon as animals evolved \nmoderately complex lifestyles, they would have needed to dream in order to manage \nthese lifestyles. \nHowever, we still don't understand how this outward behaviour relates to internal \nexperience. It seems impossible to know what it is like to be a rat or a pigeon, let \nalone imagine their dreamscapes. We are quick to interpret the twitching limbs and \nquiet barks of sleeping dogs, but the truth is that we don't know if there is an internal \nexperience of chasing rabbits that comes along with that. \nAnother non-human dreamer offers insight here. In 2019, while making a documentary, \nDavid Scheel of Alaska Pacific University in the USA housed an octopus named Heidi \nin a tank in his living room. At one point, in the middle of the night, Heidi seemed to \ndream: her limbs and head moved, and her skin rapidly changed colour, as though she \nwas pursuing a crab. \nSimilarly, a report recently emerged of a sleeping octopus apparently having a \nnightmare. Costello, as the octopus was called, thrashed around, extended his mantle \nas if trying to make himself look bigger, and squirted ink as though he were being \nattacked by a predator. The nightmare study is intriguing, says Scheel, but is only \nbased on one animal. He argues that as well as outward behaviour, brain imaging is \nneeded to show that the octopuses are replaying sequences of activities from their \nwaking lives in dreams. \nThe trouble is that we will never be able to experience any animal's dreams. That goes \nfor other humans' dreams too. But we can try to imagine what these dreamscapes are \nlike by meeting animals on their own terms. For example, vision is the dominant sense \nfor many humans, and so our dreams are heavily visual too. Dogs primarily navigate the \nworld using smell while spiders rely much more on vibrations. \nIt is likely that dreaming has served multiple purposes since the first complex animals \nevolved. And if this is the case, it is possible that better understanding of these \npurposes might shed light on the true purpose of our own dreams. \n39\n\n===== PAGE 41 =====\nTest 2\n\nQuestions 1–5\nComplete the table below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 1–5 on your answer sheet.\n\nResearch into animal sleep and dreaming\n| Animal | Findings |\n| --- | --- |\n| 1 ............... | Studies of brain activity showed that they replayed experiences of running mazes. |\n| Zebra finches | Brain cells fired during sleep in the same sequence as when they were singing, helping to consolidate 2 ............... memory. |\n| Dolphins & Seals | Sleep with only 3 ............... of their brain at a time, allowing them to remain alert. |\n| Bearded dragons | Exhibit sleep patterns with rapid eye movement and sharp changes in brain 4 ............... |\n| Cuttlefish | Show rapid colour changes during sleep, possibly reflecting 5 ............... dreams. |\n\nQuestions 6–13\nDo the following statements agree with the information given in Reading Passage 1?\nIn boxes 6–13 on your answer sheet, write\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this\n\n6 Humans and animals share similar neural mechanisms during REM sleep.\n7 Early scientists believed that animals had more complex dreams than humans.\n8 REM sleep in reptiles is identical in length to that of mammals.\n9 Sleep deprivation has more severe consequences for marine mammals than for birds.\n10 Research suggests that dreaming may have evolved earlier than previously thought.\n11 All animals experience muscle paralysis during dreams.\n12 The primary purpose of dreaming in wild animals is predator detection.\n13 Memory consolidation during sleep is more pronounced in younger animals.",
+      "meta": {},
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Studies of brain activity in ________ showed that they replayed experiences of running mazes",
+            "blank": true
+          },
+          "correctAnswer": "rats"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Brain cells fired during sleep in the same sequence, helping to consolidate ________ memory",
+            "blank": true
+          },
+          "correctAnswer": "visual"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Sleep with only ________ of their brain at a time",
+            "blank": true
+          },
+          "correctAnswer": "half"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Exhibit sleep patterns with sharp changes in brain ________",
+            "blank": true
+          },
+          "correctAnswer": "temperature"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Show rapid colour changes during sleep, possibly reflecting ________ dreams",
+            "blank": true
+          },
+          "correctAnswer": "vivid"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Humans and animals share similar neural mechanisms during REM sleep.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Early scientists believed that animals had more complex dreams than humans.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "REM sleep in reptiles is identical in length to that of mammals.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Sleep deprivation has more severe consequences for marine mammals than for birds.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Research suggests that dreaming may have evolved earlier than previously thought.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "All animals experience muscle paralysis during dreams.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The primary purpose of dreaming in wild animals is predator detection.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Memory consolidation during sleep is more pronounced in younger animals.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        }
+      ]
+    },
+    {
+      "title": "Passage 2",
+      "order": 1,
+      "content": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.\n\nMapungubwe \nLocated in southern Africa just below the Limpopo River, the kingdom of \nMapungubwe, flourished between the 11th and 13th century CE \nA Mapungubwe, which was one of the first states in southern Africa, was formed \nby Bantu-speaking peoples who were farmers. The area controlled by the rulers \nof Mapungubwe had at its heart a large sandstone plateau, which was easily \ndefended due to its inaccessibility. As with other kingdoms in the region of \nsouthern Africa, cattle herding and other types of farming brought plenty of \nfood and a surplus that could be traded for needed goods. Archaeology has \nrevealed extensive layers of bones and manure, which indicate that from the \n9th century CE there were large cattle herds, the traditional source of political \npower in southern African communities. The archaeological record for the 10th \ncentury shows a marked increase in the number of domesticated cattle in the \narea as well as cotton cultivation and weaving, as indicated by abundant finds of \nspindle whorls. \nB The total population of Mapungubwe at its peak in the mid-13th century \nwas around 5,000 people. The chief or king of Mapungubwe was likely the \nwealthiest individual in the society, and would have owned more cattle and \nprecious materials than anyone else. The king and his advisers dwelt in a \nstone enclosure composed of stone walls and housing built on the highest level \nof the community's territory, a natural sandstone hill which is some 30 metres \nhigh and 100 metres in length. Occupation on the hill dates from the 11 th century \nand the entire complex was surrounded by a wooden palisade*, as indicated by \npostholes made in the rock. The rest of the community lived in mud and thatch \nhousing spread out below the hill, although there is one stone structure here. \nThis settlement, known as Babandyanalo, covers around 5 hectares (12.3 acres) \nand predates the hilltop structures. \nC The kings of Mapungubwe were buried at the top of the hill site in a demarcated \narea away from the dwellings, while other members of the community were \nburied at the surrounding valley level. A wooden staircase connected the \ntwo levels, the sockets for the steps being clearly visible in the sandstone cliff \nface. There were some grander residences dotted around the outskirts of \nBabandyanalo, and these probably belonged to male relatives of the king. There \nare many other smaller but still impressive sites across the Mapungubwe plateau, \n* palisade: typically a row of closely placed, high vertical wooden or iron posts used as a means of defence \n42\n\n===== PAGE 44 =====\nReading \nwhich are located anywhere from 15 to 100 kilometres from the major hill site. \nContaining stone residences and walls, they likely belonged to local chiefs who \nacted as servants to the king. \nD The Mapungubwe plateau has a very high number of carnivore animal remains \nand ivory splinters, suggesting that the skins of these large animals and ivory \nelephant tusks were accumulated, probably for trade with coastal areas reached \nby the Limpopo River. The presence of glass beads, almost certainly from India, \nindicate there was trade of some sort with other states on the coast who, in turn, \ntraded with merchants travelling from India by sea. Mapungubwe also benefitted \nfrom locally-sourced copper and the gold trade as it passed from the kingdom of \nGreat Zimbabwe (12-15th century), situated to the north of Mapungubwe, to the \ncoastal city of Kosala. It is likely that trade links led to a strengthening of political \nauthority in order to control and even monopolise these lucrative interregional \nconnections. \nE Archaeological discoveries reveal that pottery was produced on a scale large \nenough to suggest the presence of professional potters, and is another indicator \nof the prosperity of Mapungubwe society. Archaeological finds include spherical \nvessels with short necks, beakers, and bowls, many of which have decorative \nstamps. There are also ceramic discs, and whistles. In addition, cattle, sheep, \nand goat figurines, and small figures of highly stylised humans with elongated \nbodies and short limbs have been found. The figures may have been used in \nceremonies as offerings to ancestors, but their precise function is not known. \nOther discoveries include small jewellery items made from locally sourced copper. \nF Beautifully decorated artefacts made of gold have also been found at \nMapungubwe. A type of decoration, found nowhere else except Great Zimbabwe, \ninvolved the crafting of gold into small rectangular sheets and carving geometrical \npatterns into it. These sheets were then used to cover wooden objects (which \nhave not survived) using small tacks, also made of gold. One such object that \nhas been discovered may have been a sceptre, while additional evidence of local \ngold-working is a rhinoceros figurine made from small hammered sheets, and \nthousands of small gold beads. These objects were all found at the royal burial \nsite and date to c. 1150. They are the first known indicators that gold had an \nintrinsic value of its own (as opposed to that of a currency) in southern Africa. \nG The kingdom of Mapungubwe was already in decline by the late 13th century, \nprobably because overpopulation placed too much stress on local resources, a \nsituation that may have been brought to a crisis point by a series of droughts. \nTrade routes may also have shifted northwards. Certainly, the areas that now \nprospered were to the north, such as Great Zimbabwe. \n43\n\n===== PAGE 45 =====\nTest 2\n\nQuestions 14–19\nReading Passage 2 has seven paragraphs, A–G.\nWhich paragraph contains the following information?\nWrite the correct letter, A–G, in boxes 14–19 on your answer sheet.\n\n14 evidence of social hierarchy reflected in burial practices\n15 the environmental factors that contributed to the abandonment of the city\n16 how trade connections linked Mapungubwe to distant continents\n17 the rediscovery of the site by modern archaeologists\n18 architectural innovations used to adapt to the hilltop terrain\n19 the political relationship between Mapungubwe and Great Zimbabwe\n\nQuestions 20 and 21\nChoose TWO letters, A–E.\nWhich TWO items were found at Mapungubwe that demonstrate skilled gold-working?\nA a miniature crown\nB a gold rhinoceros\nC a golden spear\nD gold beads and foil\nE a sculpted golden throne\n\nQuestions 22–26\nComplete the summary below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 22–26 on your answer sheet.\n\nSociety and culture at Mapungubwe\nThe rulers of Mapungubwe derived their power not only from trade but also from their association with rainmaking and agricultural 22 ............... . Clay figurines and bone 23 ............... found at the site suggest complex ritual practices. Elite individuals were buried on top of the hill, their 24 ............... adorned with gold ornaments, signifying an enduring connection with royal 25 ............... . Craftsmen produced elaborate 26 ............... and pottery that was traded across Southern Africa.",
+      "meta": {},
+      "questions": [
+        {
+          "number": 14,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "evidence of social hierarchy reflected in burial practices",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 15,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the environmental factors that contributed to the abandonment of the city",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 16,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "how trade connections linked Mapungubwe to distant continents",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the rediscovery of the site by modern archaeologists",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 18,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "architectural innovations used to adapt to the hilltop terrain",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 19,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the political relationship between Mapungubwe and Great Zimbabwe",
+            "options": [
+              {
+                "label": "A",
+                "text": "Paragraph A"
+              },
+              {
+                "label": "B",
+                "text": "Paragraph B"
+              },
+              {
+                "label": "C",
+                "text": "Paragraph C"
+              },
+              {
+                "label": "D",
+                "text": "Paragraph D"
+              },
+              {
+                "label": "E",
+                "text": "Paragraph E"
+              },
+              {
+                "label": "F",
+                "text": "Paragraph F"
+              },
+              {
+                "label": "G",
+                "text": "Paragraph G"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 20,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO items were found at Mapungubwe that demonstrate skilled gold-working?",
+            "options": [
+              {
+                "label": "A",
+                "text": "a miniature crown"
+              },
+              {
+                "label": "B",
+                "text": "a gold rhinoceros"
+              },
+              {
+                "label": "C",
+                "text": "a golden spear"
+              },
+              {
+                "label": "D",
+                "text": "gold beads and foil"
+              },
+              {
+                "label": "E",
+                "text": "a sculpted golden throne"
+              }
+            ],
+            "selectCount": 2,
+            "covers": [
+              20,
+              21
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 21,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "",
+            "pairedFrom": 20
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "association with rainmaking and agricultural ________",
+            "blank": true
+          },
+          "correctAnswer": "prosperity"
+        },
+        {
+          "number": 23,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Clay figurines and bone ________ found at the site suggest ritual practices",
+            "blank": true
+          },
+          "correctAnswer": "whistles"
+        },
+        {
+          "number": 24,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "their ________ adorned with gold ornaments",
+            "blank": true
+          },
+          "correctAnswer": "bodies"
+        },
+        {
+          "number": 25,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "signifying an enduring connection with royal ________",
+            "blank": true
+          },
+          "correctAnswer": "ancestors"
+        },
+        {
+          "number": 26,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Craftsmen produced elaborate ________ and pottery",
+            "blank": true
+          },
+          "correctAnswer": "jewellery",
+          "acceptableAnswers": [
+            "jewellery",
+            "jewelry"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Passage 3",
+      "order": 2,
+      "content": "You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.\n\nArtificial Intelligence \nIn many countries in the West, hysteria \nabout the future of artificial intelligence (AI) \nis everywhere. There seems to be no shortage \nof sensationalist news about how AI could \ncure diseases, accelerate human innovation \nand improve human creativity. Just looking \nat the media headlines, you might think that \nwe are already living in a future where AI \nhas infiltrated every aspect of society. \nWhile it is undeniable that AI has opened up \na wealth of promising opportunities, it has \nalso led to the emergence of a mindset that \ncan be best described as 'AI solutionism'. \nThis is the philosophy that, given enough \ndata, machine learning algorithms can \nsolve all of humanity's problems. But, in \nfact, instead of supporting AI progress, \nthis mindset actually jeopardises the value \nof machine intelligence by disregarding \nimportant AI safety principles and setting \nunrealistic expectations about what AI can \nreally do for humanity. \nIn only a few years, AI solutionism has made \nits way from the technology evangelists' \nmouths in Silicon Valley in California to \nthe minds of government officials and \npolicymakers around the world. The \npendulum has swung from the dystopian \nnotion that AI will destroy humanity to the \nutopian belief that our algorithmic saviour \nis here. \nWe are now seeing governments pledge \nsupport to national AI initiatives and \ncompete in a technological race to \ndominate the burgeoning machine-learning \nsector. While many politicians proclaim \n46 \nthe transformative effects of the coming \n'AI revolution', they fail to realise the \ncomplexity around deploying advanced \nmachine learning systems in the real world. \nOne of the most promising varieties of AI \ntechnologies are neural networks. This form \nof machine learning is loosely modelled on \nthe neuronal structure of the human brain, \nbut on a much smaller scale. But what many \npoliticians do not understand is that simply \nadding a neural network to a problem will \nnot automatically mean that you'll find a \nsolution. Similarly, adding a neural network \nto a system of government does not mean it \nwill be instantaneously more inclusive or fair. \nAI systems need a lot of data to function, \nbut the public sector typically does not \nhave the appropriate data infrastructure to \nsupport advanced machine learning. Most \nof the data remains stored in offline archives. \nThe few digitised sources of data that exist \ntend to be buried in bureaucracy. More often \nthan not, data is spread across different \ngovernment departments that each require \nspecial permissions to be accessed. Above \nall, the public sector typically lacks the \nhuman talent with the right technological \ncapabilities to fully reap the benefits of \nmachine intelligence. \nFor these reasons, the sensationalism \nover AI has attracted many critics. Stuart \nRussell, a professor of computer science \nat the University of California, Berkeley, \nhas long advocated a more sensible and \nrealistic approach that focuses on simple \neveryday applications of AI instead of the\n\n===== PAGE 48 =====\nhypothetical takeover by super-intelligent \nrobots. Similarly, Rodney Brooks, professor \nof robotics at Massachusetts Institute \nof Technology, writes that 'almost all \ninnovations in robotics and AI take far, far, \nlonger to be really widely deployed than \npeople in the field and outside the field \nimagine'. \nOne of the many difficulties in deploying \nmachine learning systems is that AI is \nextremely susceptible to adversarial attacks. \nThis means that a malicious AI can target \nanother AI to make it behave in a certain \nway, such as forcing it to make wrong \npredictions. Many researchers have warned \nagainst the rolling out of AI without \nappropriate security standards and defence \nmechanisms. Still, AI security remains \nan often overlooked topic when machine \nlearning systems are installed. \nIf we are to reap the benefits and minimise \nthe potential harms of AI, we must start \nthinking about how machine learning can \nbe meaningfully applied to specific areas \nof government, business and society. This \nmeans we need to have a discussion about AI \nethics and the distrust that many people have \ntowards machine learning. \nMost importantly, we need to be aware of \nthe limitations of AI and where people still \nneed to take the lead. Instead of painting an \nunrealistic picture of the power of AI, it is \nimportant to take a step back and separate \nthe actual technological capabilities of AI \nfrom fantasy. \nReading \nThe medical profession has also recognised \nthe drawbacks to AI. The IBM Watson for \nOncology programme was a piece of AI that \nwas meant to help doctors treat cancer. Even \nthough it was developed to deliver the best \nrecommendations, human experts found \nit hard to trust the machine. As a result, \nthe AI programme was abandoned in most \nhospitals where it was trialled. \nSimilar difficulties arose in the legal domain \nwhen algorithms were used in courts in the \nUS to sentence criminals. An algorithm \ncalculated risk assessment scores and \nadvised judges on the sentencing. The system \nwas found to amplify structural racial \ndiscrimination and was later abandoned. \nThere are some crucial lessons here for \neveryone aiming to boost investments in \nnational AI programmes. These examples \ndemonstrate that there is no AI solution \nfor everything. Using AI simply for the \nsake of AI may not always be productive or \nuseful, and not every issue is best addressed \nby applying machine intelligence to it. \nAll solutions come with a cost and not \neverything that can be automated should be. \n47\n\n===== PAGE 49 =====\nTest 2\n\nQuestions 27–29\nChoose the correct letter, A, B, C or D.\nWrite the correct letter in boxes 27–29 on your answer sheet.\n\n27 What is the writer's primary criticism of super-intelligence alarmists?\nA They ignore current real-world harms in favour of distant sci-fi scenarios.\nB They lack formal training in computer science.\nC They exaggerate the computing power of quantum machines.\nD They oppose any commercial application of AI.\n\n28 The writer mentions Rodney Brooks to demonstrate that\nA not all leading roboticists share apocalyptic views of AI.\nB humanoid robots will soon replace manufacturing work.\nC intelligence requires a physical robotic body.\nD open-source software is less vulnerable to failure.\n\n29 According to the third paragraph, the greatest immediate risk from machine learning is\nA unexpected military escalation.\nB power grid blackouts.\nC automated discrimination and bias.\nD widespread white-collar unemployment.\n\nQuestions 30–35\nComplete the summary using the list of words, A–I, below.\nWrite the correct letter, A–I, in boxes 30–35 on your answer sheet.\n\nA reliability\nB funding\nC skills\nD prejudices\nE computers\nF equality\nG framework\nH confidentiality\nI approval\n\nAI in government, medicine and the law\nNeural networks are a promising area of AI technology for governments. However, many politicians overestimate their capabilities, believing that the mere addition of a neural network will produce solutions and promote 30 ............... .\nMost public sector organisations have not set up the necessary 31 ............... to manage the huge amount of data required to enable AI to function. Complex bureaucracy is another issue, as each person involved needs 32 ............... to access the relevant data, which is often spread across different departments. But the main problem is that few public sector employees have the 33 ............... to take full advantage of machine intelligence.\nThe medical profession experimented with an AI programme, but their experts had little faith in its 34 ............... , and the programme was abandoned. US courts also abandoned the use of algorithms when it was found that these reflected and magnified the existing 35 ............... within the legal profession.\n\nQuestions 36–39\nDo the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 36–39 on your answer sheet, write\nYES if the statement agrees with the claims of the writer\nNO if the statement contradicts the claims of the writer\nNOT GIVEN if it is impossible to say what the writer thinks about this\n\n36 Stuart Russell's proposals regarding the use of AI are impractical.\n37 Rodney Brooks' view has attracted unfair criticism from supporters of AI.\n38 Nowadays, the need to protect AI systems is always taken into account when they are set up.\n39 In order to benefit from AI and minimise the harms, we have to explore people's concerns about its use.\n\nQuestion 40\nChoose the correct letter, A, B, C or D.\nWrite the correct letter in box 40 on your answer sheet.\n\n40 What would be a suitable subtitle for Reading Passage 3?\nA How to make the most of what AI has to offer\nB Why AI may not be the answer to our problems\nC Why governments should not invest in AI systems\nD How AI could improve the efficiency of the public sector",
+      "meta": {},
+      "questions": [
+        {
+          "number": 27,
+          "order": 0,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the writer's primary criticism of super-intelligence alarmists?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They ignore current real-world harms in favour of distant sci-fi scenarios."
+              },
+              {
+                "label": "B",
+                "text": "They lack formal training in computer science."
+              },
+              {
+                "label": "C",
+                "text": "They exaggerate the computing power of quantum machines."
+              },
+              {
+                "label": "D",
+                "text": "They oppose any commercial application of AI."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 28,
+          "order": 1,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The writer mentions Rodney Brooks to demonstrate that",
+            "options": [
+              {
+                "label": "A",
+                "text": "not all leading roboticists share apocalyptic views of AI."
+              },
+              {
+                "label": "B",
+                "text": "humanoid robots will soon replace manufacturing work."
+              },
+              {
+                "label": "C",
+                "text": "intelligence requires a physical robotic body."
+              },
+              {
+                "label": "D",
+                "text": "open-source software is less vulnerable to failure."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 29,
+          "order": 2,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to the third paragraph, the greatest immediate risk from machine learning is",
+            "options": [
+              {
+                "label": "A",
+                "text": "unexpected military escalation."
+              },
+              {
+                "label": "B",
+                "text": "power grid blackouts."
+              },
+              {
+                "label": "C",
+                "text": "automated discrimination and bias."
+              },
+              {
+                "label": "D",
+                "text": "widespread white-collar unemployment."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 30,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "believing that the mere addition of a neural network will produce solutions and promote ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "reliability"
+              },
+              {
+                "label": "B",
+                "text": "funding"
+              },
+              {
+                "label": "C",
+                "text": "skills"
+              },
+              {
+                "label": "D",
+                "text": "prejudices"
+              },
+              {
+                "label": "E",
+                "text": "computers"
+              },
+              {
+                "label": "F",
+                "text": "equality"
+              },
+              {
+                "label": "G",
+                "text": "framework"
+              },
+              {
+                "label": "H",
+                "text": "confidentiality"
+              },
+              {
+                "label": "I",
+                "text": "approval"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 31,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Most public sector organisations have not set up the necessary ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "reliability"
+              },
+              {
+                "label": "B",
+                "text": "funding"
+              },
+              {
+                "label": "C",
+                "text": "skills"
+              },
+              {
+                "label": "D",
+                "text": "prejudices"
+              },
+              {
+                "label": "E",
+                "text": "computers"
+              },
+              {
+                "label": "F",
+                "text": "equality"
+              },
+              {
+                "label": "G",
+                "text": "framework"
+              },
+              {
+                "label": "H",
+                "text": "confidentiality"
+              },
+              {
+                "label": "I",
+                "text": "approval"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 32,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "each person involved needs ________ to access the relevant data",
+            "options": [
+              {
+                "label": "A",
+                "text": "reliability"
+              },
+              {
+                "label": "B",
+                "text": "funding"
+              },
+              {
+                "label": "C",
+                "text": "skills"
+              },
+              {
+                "label": "D",
+                "text": "prejudices"
+              },
+              {
+                "label": "E",
+                "text": "computers"
+              },
+              {
+                "label": "F",
+                "text": "equality"
+              },
+              {
+                "label": "G",
+                "text": "framework"
+              },
+              {
+                "label": "H",
+                "text": "confidentiality"
+              },
+              {
+                "label": "I",
+                "text": "approval"
+              }
+            ]
+          },
+          "correctAnswer": "I"
+        },
+        {
+          "number": 33,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "few public sector employees have the ________ to take full advantage",
+            "options": [
+              {
+                "label": "A",
+                "text": "reliability"
+              },
+              {
+                "label": "B",
+                "text": "funding"
+              },
+              {
+                "label": "C",
+                "text": "skills"
+              },
+              {
+                "label": "D",
+                "text": "prejudices"
+              },
+              {
+                "label": "E",
+                "text": "computers"
+              },
+              {
+                "label": "F",
+                "text": "equality"
+              },
+              {
+                "label": "G",
+                "text": "framework"
+              },
+              {
+                "label": "H",
+                "text": "confidentiality"
+              },
+              {
+                "label": "I",
+                "text": "approval"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 34,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "experts had little faith in its ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "reliability"
+              },
+              {
+                "label": "B",
+                "text": "funding"
+              },
+              {
+                "label": "C",
+                "text": "skills"
+              },
+              {
+                "label": "D",
+                "text": "prejudices"
+              },
+              {
+                "label": "E",
+                "text": "computers"
+              },
+              {
+                "label": "F",
+                "text": "equality"
+              },
+              {
+                "label": "G",
+                "text": "framework"
+              },
+              {
+                "label": "H",
+                "text": "confidentiality"
+              },
+              {
+                "label": "I",
+                "text": "approval"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 35,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "reflected and magnified the existing ________ within the legal profession",
+            "options": [
+              {
+                "label": "A",
+                "text": "reliability"
+              },
+              {
+                "label": "B",
+                "text": "funding"
+              },
+              {
+                "label": "C",
+                "text": "skills"
+              },
+              {
+                "label": "D",
+                "text": "prejudices"
+              },
+              {
+                "label": "E",
+                "text": "computers"
+              },
+              {
+                "label": "F",
+                "text": "equality"
+              },
+              {
+                "label": "G",
+                "text": "framework"
+              },
+              {
+                "label": "H",
+                "text": "confidentiality"
+              },
+              {
+                "label": "I",
+                "text": "approval"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 36,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Stuart Russell's proposals regarding the use of AI are impractical.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 37,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Rodney Brooks' view has attracted unfair criticism from supporters of AI.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 38,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Nowadays, the need to protect AI systems is always taken into account when they are set up.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 39,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "In order to benefit from AI and minimise the harms, we have to explore people's concerns about its use.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 40,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What would be a suitable subtitle for Reading Passage 3?",
+            "options": [
+              {
+                "label": "A",
+                "text": "How to make the most of what AI has to offer"
+              },
+              {
+                "label": "B",
+                "text": "Why AI may not be the answer to our problems"
+              },
+              {
+                "label": "C",
+                "text": "Why governments should not invest in AI systems"
+              },
+              {
+                "label": "D",
+                "text": "How AI could improve the efficiency of the public sector"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "IELTS Cô Mơ - CAMBRIDGE 21.pdf",
+  "savedAt": "2026-11-13T11:06:46.762Z"
+}

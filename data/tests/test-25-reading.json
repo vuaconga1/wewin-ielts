@@ -1,0 +1,1002 @@
+{
+  "title": "Test 25.C20.03 - Reading",
+  "slug": "test-25-reading",
+  "skill": "READING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 60,
+  "tags": [
+    "#IELTS Academic",
+    "#Reading"
+  ],
+  "parts": [
+    {
+      "title": "Passage 1",
+      "order": 0,
+      "content": "READING PASSAGE 1\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\nFrozen Food\nA US perspective on the development of the frozen food industry\n\nAt some point between 2,000 and 3,000 years ago, inhabitants of the high Andes in South America discovered that potatoes left outside on cold nights froze solid. By stomping on the thawed potatoes the next day to squeeze out moisture and leaving them to freeze again, they produced chuño—a dehydrated, freeze-dried potato that retained its nutrients and could be stored for years without spoiling.\n\nCenturies later, in 1851, the development of refrigerated railway cars in the United States revolutionized food distribution. For the first time, butter, fresh dairy products, and meats could be transported over long distances without rotting, packed in sawdust and cooled with natural ice harvested from northern lakes. By 1880, refrigeration made intercontinental shipping possible: an Australian steamship carrying frozen beef and mutton arrived successfully in London, establishing a global trade in frozen meat.\n\nHowever, early commercial freezing had major flaws. Slow freezing created large ice crystals that ruptured plant and animal cell membranes, leading to mushy textures and loss of flavor when the food thawed.\n\nThe breakthrough came from Clarence Birdseye, an American naturalist and entrepreneur. While working as a fur trader in Labrador, Canada between 1912 and 1917, Birdseye observed Inuit fishermen freezing fish through ice holes in temperatures below minus 40 degrees Celsius. When cooked months later, the rapidly frozen fish tasted virtually indistinguishable from freshly caught fish. Birdseye realized that fast freezing formed tiny ice crystals that left cell walls intact.\n\nReturning to the United States, Birdseye perfected a commercial quick-freeze machine using chilled brine. He also innovated packaging, wrapping food in moisture-proof cellophane inside cartons, and flash-freezing them between refrigerated metal plates under pressure. In 1930, Birdseye launched the first commercial line of frozen foods in Springfield, Massachusetts. Yet widespread adoption stalled because grocers lacked refrigerated display cases and consumers did not own home freezers. It was only during World War II, when tin rationing limited canned foods and affordable home refrigerators proliferated, that frozen food truly became a kitchen staple.",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "People conserved the nutritional value of 1 ............... , using a method of freezing then drying.",
+            "blank": true
+          },
+          "correctAnswer": "potatoes"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "2 ............... was kept cool by ice during transportation in specially adapted trains.",
+            "blank": true
+          },
+          "correctAnswer": "butter"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Two kinds of 3 ............... were the first frozen food shipped to England.",
+            "blank": true
+          },
+          "correctAnswer": "meat"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "fast freezing prevented large 4 ............... from forming and damaging food cells.",
+            "blank": true
+          },
+          "correctAnswer": "crystals"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Birdseye wrapped packages in 5 ...............",
+            "blank": true
+          },
+          "correctAnswer": "cellophane"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A shortage of 6 ............... during the war boosted frozen food sales.",
+            "blank": true
+          },
+          "correctAnswer": "tin"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Widespread ownership of the home 7 ............... allowed families to store frozen meals.",
+            "blank": true
+          },
+          "correctAnswer": "refrigerator"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The ice transportation business made some Boston ship owners very wealthy in the early 1800s.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "A disadvantage of the freezing process invented in Australia was that it affected the taste of food.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Clarence Birdseye had intended to work as a fisherman when he went to Labrador.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Birdseye's flash-freezing method preserved the natural texture of food.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Grocers in Massachusetts were enthusiastic about investing in new display freezers in 1930.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "World War II prompted the invention of new types of packaging for frozen products.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        }
+      ]
+    },
+    {
+      "title": "Passage 2",
+      "order": 1,
+      "content": "READING PASSAGE 2\nYou should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.\n\nCan the planet's coral reefs be saved?\n\nA Coral reefs are among the most biodiverse and economically valuable ecosystems on Earth. Often referred to as the 'rainforests of the sea', they support more than a quarter of all marine life despite occupying less than one-tenth of one percent of the ocean floor. However, rising sea temperatures caused by climate change represent an existential threat. Conservationists have launched global initiatives with two clear educational goals: to raise public awareness about reef collapse and to train community leaders in reef preservation.\n\nB Corals exist in an essential symbiotic relationship with microscopic algae called zooxanthellae that reside within their tissues. The coral animal uses its stinging tentacles to capture plankton from the water column, but the vast majority of its energy comes from the photosynthesizing algae. In return, the coral provides the algae with a protected environment and the nutrients they need for photosynthesis.\n\nC When sea temperatures climb just one or two degrees Celsius above normal summer maximums for sustained periods, this fragile partnership breaks down. Stressed corals expel their zooxanthellae, losing their vibrant color and exposing the stark white calcium carbonate skeletons underneath. Although this phenomenon is widely termed 'coral bleaching', some marine biologists argue the term is inadequate because it emphasizes the visual change rather than the underlying cellular starvation and vulnerability to disease.\n\nD In recent years, mass bleaching events have swept across the Great Barrier Reef, the Caribbean, and Southeast Asia with unprecedented frequency. Marine ecologists issue grave warnings of further destruction if carbon emissions continue unabated, predicting that over 90% of living coral reefs could disappear within several decades.\n\nE In response to this ecological crisis, scientists are working tirelessly to lessen the problems. At the Zoological Society of London and the Australian Institute of Marine Science, researchers are identifying and breeding 'super corals' that demonstrate natural tolerance to heat and acidifying oceans. By cultivating resilient strains and outplanting them onto damaged reefs, scientists hope to buy critical time for coral ecosystems.\n\nF While restoring degraded reefs is daunting, ongoing conservation efforts offer a beacon of hope. Combining emission reductions with cutting-edge selective breeding and habitat protection may allow coral reefs to persist for future generations.",
+      "questions": [
+        {
+          "number": 14,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section A",
+            "options": [
+              {
+                "label": "i",
+                "text": "Tried and tested solutions"
+              },
+              {
+                "label": "ii",
+                "text": "Cooperation beneath the waves"
+              },
+              {
+                "label": "iii",
+                "text": "Working to lessen the problems"
+              },
+              {
+                "label": "iv",
+                "text": "Disagreement about the accuracy of a certain phrase"
+              },
+              {
+                "label": "v",
+                "text": "Two clear educational goals"
+              },
+              {
+                "label": "vi",
+                "text": "Promoting hope"
+              },
+              {
+                "label": "vii",
+                "text": "A warning of further destruction"
+              }
+            ]
+          },
+          "correctAnswer": "v"
+        },
+        {
+          "number": 15,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section B",
+            "options": [
+              {
+                "label": "i",
+                "text": "Tried and tested solutions"
+              },
+              {
+                "label": "ii",
+                "text": "Cooperation beneath the waves"
+              },
+              {
+                "label": "iii",
+                "text": "Working to lessen the problems"
+              },
+              {
+                "label": "iv",
+                "text": "Disagreement about the accuracy of a certain phrase"
+              },
+              {
+                "label": "v",
+                "text": "Two clear educational goals"
+              },
+              {
+                "label": "vi",
+                "text": "Promoting hope"
+              },
+              {
+                "label": "vii",
+                "text": "A warning of further destruction"
+              }
+            ]
+          },
+          "correctAnswer": "ii"
+        },
+        {
+          "number": 16,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section C",
+            "options": [
+              {
+                "label": "i",
+                "text": "Tried and tested solutions"
+              },
+              {
+                "label": "ii",
+                "text": "Cooperation beneath the waves"
+              },
+              {
+                "label": "iii",
+                "text": "Working to lessen the problems"
+              },
+              {
+                "label": "iv",
+                "text": "Disagreement about the accuracy of a certain phrase"
+              },
+              {
+                "label": "v",
+                "text": "Two clear educational goals"
+              },
+              {
+                "label": "vi",
+                "text": "Promoting hope"
+              },
+              {
+                "label": "vii",
+                "text": "A warning of further destruction"
+              }
+            ]
+          },
+          "correctAnswer": "iv"
+        },
+        {
+          "number": 17,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section D",
+            "options": [
+              {
+                "label": "i",
+                "text": "Tried and tested solutions"
+              },
+              {
+                "label": "ii",
+                "text": "Cooperation beneath the waves"
+              },
+              {
+                "label": "iii",
+                "text": "Working to lessen the problems"
+              },
+              {
+                "label": "iv",
+                "text": "Disagreement about the accuracy of a certain phrase"
+              },
+              {
+                "label": "v",
+                "text": "Two clear educational goals"
+              },
+              {
+                "label": "vi",
+                "text": "Promoting hope"
+              },
+              {
+                "label": "vii",
+                "text": "A warning of further destruction"
+              }
+            ]
+          },
+          "correctAnswer": "vii"
+        },
+        {
+          "number": 18,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section E",
+            "options": [
+              {
+                "label": "i",
+                "text": "Tried and tested solutions"
+              },
+              {
+                "label": "ii",
+                "text": "Cooperation beneath the waves"
+              },
+              {
+                "label": "iii",
+                "text": "Working to lessen the problems"
+              },
+              {
+                "label": "iv",
+                "text": "Disagreement about the accuracy of a certain phrase"
+              },
+              {
+                "label": "v",
+                "text": "Two clear educational goals"
+              },
+              {
+                "label": "vi",
+                "text": "Promoting hope"
+              },
+              {
+                "label": "vii",
+                "text": "A warning of further destruction"
+              }
+            ]
+          },
+          "correctAnswer": "iii"
+        },
+        {
+          "number": 19,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Section F",
+            "options": [
+              {
+                "label": "i",
+                "text": "Tried and tested solutions"
+              },
+              {
+                "label": "ii",
+                "text": "Cooperation beneath the waves"
+              },
+              {
+                "label": "iii",
+                "text": "Working to lessen the problems"
+              },
+              {
+                "label": "iv",
+                "text": "Disagreement about the accuracy of a certain phrase"
+              },
+              {
+                "label": "v",
+                "text": "Two clear educational goals"
+              },
+              {
+                "label": "vi",
+                "text": "Promoting hope"
+              },
+              {
+                "label": "vii",
+                "text": "A warning of further destruction"
+              }
+            ]
+          },
+          "correctAnswer": "vi"
+        },
+        {
+          "number": 20,
+          "order": 6,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a rising number of extreme storms"
+              },
+              {
+                "label": "B",
+                "text": "the removal of too many fish from the sea"
+              },
+              {
+                "label": "C",
+                "text": "the contamination of the sea from waste"
+              },
+              {
+                "label": "D",
+                "text": "increased disease among marine species"
+              },
+              {
+                "label": "E",
+                "text": "alterations in the usual flow of water in the seas"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 21,
+          "order": 7,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a rising number of extreme storms"
+              },
+              {
+                "label": "B",
+                "text": "the removal of too many fish from the sea"
+              },
+              {
+                "label": "C",
+                "text": "the contamination of the sea from waste"
+              },
+              {
+                "label": "D",
+                "text": "increased disease among marine species"
+              },
+              {
+                "label": "E",
+                "text": "alterations in the usual flow of water in the seas"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 8,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of the following statements are true of the researchers at London Zoo? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "They are hoping to expand the numbers of different corals being bred in laboratories."
+              },
+              {
+                "label": "B",
+                "text": "They want to identify corals that can cope well with the changed sea conditions."
+              },
+              {
+                "label": "C",
+                "text": "They are looking at ways of creating artificial reefs that corals could grow on."
+              },
+              {
+                "label": "D",
+                "text": "They are trying out methods that would speed up reproduction in some corals."
+              },
+              {
+                "label": "E",
+                "text": "They are investigating materials that might protect reefs from higher temperatures."
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 9,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of the following statements are true of the researchers at London Zoo? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "They are hoping to expand the numbers of different corals being bred in laboratories."
+              },
+              {
+                "label": "B",
+                "text": "They want to identify corals that can cope well with the changed sea conditions."
+              },
+              {
+                "label": "C",
+                "text": "They are looking at ways of creating artificial reefs that corals could grow on."
+              },
+              {
+                "label": "D",
+                "text": "They are trying out methods that would speed up reproduction in some corals."
+              },
+              {
+                "label": "E",
+                "text": "They are investigating materials that might protect reefs from higher temperatures."
+              }
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Corals have a number of 24 ............... which they use to collect their food.",
+            "blank": true
+          },
+          "correctAnswer": "tentacles"
+        },
+        {
+          "number": 25,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Algae gain 25 ............... from being inside the coral.",
+            "blank": true
+          },
+          "correctAnswer": "protection"
+        },
+        {
+          "number": 26,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Increases in the warmth of the sea water can remove the 26 ............... from coral.",
+            "blank": true
+          },
+          "correctAnswer": "color",
+          "acceptableAnswers": [
+            "color",
+            "colour"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Passage 3",
+      "order": 2,
+      "content": "READING PASSAGE 3\nYou should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.\n\nRobots and us\nThree leaders in their fields answer questions about our relationships with intelligent machines\n\n* terraforming: modifying a planet's atmosphere to suit human needs\n** singularity: the point when robots will be able to start creating ever more sophisticated versions of themselves\n\nMartin Rees, Astronomer Royal and co-founder of the Centre for the Study of Existential Risk, believes that robotic intelligence will inevitably surpass human intellect. He suggests that while autonomous machines are crucial for exploring deep space and colonizing distant celestial bodies, humans on Earth will need to place strict boundaries on artificial capabilities to ensure our own security. Furthermore, Rees notes that as robots develop higher autonomy, humanity may face moral dilemmas regarding whether we are treating self-aware entities equitably.\n\nDaniel Wolpert, a neuroscientist and engineer, emphasizes that despite massive progress in computation and deep learning, today's robots remain surprisingly clumsy. A human child possesses fluid motor control and sensory integration that the most advanced robot cannot replicate. He argues that genuine general artificial intelligence—capable of human-like creative imagination and versatile physical problem-solving—remains many decades away. Wolpert views robots as far more immediately beneficial on Earth, performing hazardous manual labor, than in speculative outer-space exploration.\n\nKathleen Richardson, professor of ethics and culture of robots and AI, cautions against our tendency to anthropomorphize machines. She argues that fear of rogue robots often arises from projecting human vanity and ego onto mindless code. Richardson contends that public alarm over machine dominance is exaggerated, obscuring the tangible, immediate ways algorithmic systems already affect labor and privacy. Rather than dreading a futuristic singularity, society should focus on human responsibility in developing ethical technologies.",
+      "questions": [
+        {
+          "number": 27,
+          "order": 0,
+          "type": "MATCHING",
+          "content": {
+            "stem": "For our own safety, humans will need to restrict the abilities of robots.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 1,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The risk of robots harming us is less serious than humans believe it to be.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 29,
+          "order": 2,
+          "type": "MATCHING",
+          "content": {
+            "stem": "It will take many decades for robot intelligence to be as imaginative as human intelligence.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 3,
+          "type": "MATCHING",
+          "content": {
+            "stem": "We may have to start considering whether we are treating robots fairly.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 31,
+          "order": 4,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Robots are probably of more help to us on Earth than in space.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 32,
+          "order": 5,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The ideas in high-quality science fiction may prove to be just as accurate as those found in the work of mediocre scientists.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 33,
+          "order": 6,
+          "type": "MATCHING",
+          "content": {
+            "stem": "There are those who look forward to robots developing greater intelligence.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Martin Rees"
+              },
+              {
+                "label": "B",
+                "text": "Daniel Wolpert"
+              },
+              {
+                "label": "C",
+                "text": "Kathleen Richardson"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 34,
+          "order": 7,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Richardson and Rees express similar views regarding the ethical aspect of ...............",
+            "options": [
+              {
+                "label": "A",
+                "text": "robots to explore outer space."
+              },
+              {
+                "label": "B",
+                "text": "advances made in machine intelligence so far."
+              },
+              {
+                "label": "C",
+                "text": "changes made to other planets for our own benefit."
+              },
+              {
+                "label": "D",
+                "text": "the harm already done by artificial intelligence"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 35,
+          "order": 8,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Rees and Wolpert share an opinion about the extent of ...............",
+            "options": [
+              {
+                "label": "A",
+                "text": "robots to explore outer space."
+              },
+              {
+                "label": "B",
+                "text": "advances made in machine intelligence so far."
+              },
+              {
+                "label": "C",
+                "text": "changes made to other planets for our own benefit."
+              },
+              {
+                "label": "D",
+                "text": "the harm already done by artificial intelligence"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 36,
+          "order": 9,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Wolpert disagrees with Richardson on the question of ...............",
+            "options": [
+              {
+                "label": "A",
+                "text": "robots to explore outer space."
+              },
+              {
+                "label": "B",
+                "text": "advances made in machine intelligence so far."
+              },
+              {
+                "label": "C",
+                "text": "changes made to other planets for our own benefit."
+              },
+              {
+                "label": "D",
+                "text": "the harm already done by artificial intelligence"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 37,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What point does Richardson make about fear of machines?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It has grown alongside the development of ever more advanced robots."
+              },
+              {
+                "label": "B",
+                "text": "It is the result of our inclination to attribute human characteristics to non-human entities."
+              },
+              {
+                "label": "C",
+                "text": "It has its origins in basic misunderstandings about how inanimate objects function."
+              },
+              {
+                "label": "D",
+                "text": "It demonstrates a key difference between human intelligence and machine intelligence."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 38,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What potential advance does Rees see as a cause for concern?",
+            "options": [
+              {
+                "label": "A",
+                "text": "robots outnumbering people"
+              },
+              {
+                "label": "B",
+                "text": "robots having abilities which humans do not"
+              },
+              {
+                "label": "C",
+                "text": "artificial intelligence developing independent thought"
+              },
+              {
+                "label": "D",
+                "text": "artificial intelligence taking over every aspect of our lives"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 39,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Wolpert emphasise in his response to the question about science fiction?",
+            "options": [
+              {
+                "label": "A",
+                "text": "how science fiction influences our attitudes to robots"
+              },
+              {
+                "label": "B",
+                "text": "how fundamental robots are to the science fiction genre"
+              },
+              {
+                "label": "C",
+                "text": "how the image of robots in science fiction has changed over time"
+              },
+              {
+                "label": "D",
+                "text": "how reactions to similar portrayals of robots in science fiction may vary"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 40,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is Richardson doing in her comment about reality and fantasy?",
+            "options": [
+              {
+                "label": "A",
+                "text": "warning people not to confuse one with the other"
+              },
+              {
+                "label": "B",
+                "text": "outlining ways in which one has impacted on the other"
+              },
+              {
+                "label": "C",
+                "text": "recommending a change of approach in how people view them"
+              },
+              {
+                "label": "D",
+                "text": "explaining why scientists have a different perspective on them from other people"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
+  "savedAt": "2026-11-14T09:05:26.850Z"
+}
