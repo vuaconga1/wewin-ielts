@@ -14,7 +14,9 @@
       "title": "Section 1",
       "order": 0,
       "content": "Questions 1-6\n\nComplete the table.\n\nWrite ONE WORD ONLY for each answer.\n\n| | Example Name of new tenant: Anders | |\n| --- | --- | --- |\n| | Good Points About Him | Bad Points About Him |\n| Behaviour | He is 1 ........ | He is 2 ........ |\n| His Friends | His friends visit 3 ........ | They 4 ........ |\n| Other | He pays rent 5 ........ | He doesn’t 6 ........ |\n\nQuestions 7-10\n\nComplete the notes.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\nIssues to DiscussCommunication: 7 ........\nFriends: 8 ........\nCigarettes: 9 ........\nCleaning: must 10 ........",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-7-section-1.mp3"
+      },
       "questions": [
         {
           "number": 1,
@@ -122,7 +124,9 @@
       "title": "Section 2",
       "order": 1,
       "content": "Questions 11-17\n\nComplete the sentences.\n\nWrite ONE WORD ONLY for each answer.\n\nIt is important for everyone to know simple first aid 11 ........\n\nAfter an accident, one must firstly be aware of 12 ........\n\nAfter that, the first-aider must 13 ........\n\nClearing of airways may not happen when patients are 14 ........\n\nThe mouth must be checked for 15 ........\n\nCPR must be done if breathing is absent or 16 ........\n\nCPR must be done up to the arrival of 17 ........\n\nQuestions 18-20\n\nChoose THREE answers from the list and write the correct letter, A—G, next to the questions.\n\nWhich THREE pieces of advice does the first-aid officer say are most important?\n\nA. Have proper equipment\n\nB. Give regular first-aid training\n\nC. Have a safety officer\n\nD. Instil safe behaviour\n\nE. Put posters on walls\n\nF. Have safety meetings\n\nG. Have first-aid boxes\n\n18 ........\n\n19 ........\n\n20 ........",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-7-section-2.mp3"
+      },
       "questions": [
         {
           "number": 11,
@@ -265,7 +269,9 @@
       "title": "Section 3",
       "order": 2,
       "content": "Questions 21-25\n\nChoose the correct letter, A, B, or C.\n\n21. Nicole received the best information from the\n\nA. staff\nB. students\nC. cleaners\n\n22. The product used most wastefully was\n\nA. copying paper\nB. plastic\nC. paper plates and cups\n\n23. The proportion of interviewed people who expressed concern over waste was\n\nA. 30%\nB. 45%\nC. 55%\n\n24. The proportion who claim they take action over this problem was\n\nA. 10%\nB. one third\nC. one half\n\n25. Nicole thinks many people do nothing because they are\n\nA. lazy\nB. uncaring\nC. uninformed\n\nQuestions 26-30\n\nComplete the flowchart.\n\nWrite ONE WORD ONLY for each answer.\n\nProcedure to Reduce Copying Waste\n\n26 ........ that the staff do double-sided copying.\n\n↓\n\nUnwanted copies are 27 ........ into a special recycling tray.\n\n↓\n\n28 ........ these clearly, for easy reuse.\n\n↓\n\nStack them in a special copying tray each morning.\n\n↓\n\n29 ........ codes which allow each user to access this tray.\n\n↓\n\nGive the highest users a 30 ........ (e.g. cinema tickets).",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-7-section-3.mp3"
+      },
       "questions": [
         {
           "number": 21,
@@ -438,7 +444,9 @@
       "title": "Section 4",
       "order": 3,
       "content": "Questions 31-33\n\nChoose the correct letter, A, B, or C.\n\n31. Society cannot\n\nA. find more coal and oil.\nB. reduce waste C02.\nC. take C02 from power stations.\n\n32. Turning carbon dioxide into a solid\n\nA. is slow but practical.\nB. can be made faster.\nC. cannot happen naturally.\n\n33. Seawater\n\nA. has lots of carbonic acid.\nB. has closely connected types of life.\nC. is highly acidic.\n\nQuestions 34-40\n\nComplete the table.\n\nWrite NO MORE THAN TWO WORDS OR A NUMBER for each answer.\n\nThree Problems of Geosequestration\n\n| Risk of leaks | Cost | 34 ........ still not proven |\n| --- | --- | --- |\n| Gas would become 35 ........ | expensive, particularly the 36 ........ | Require the plant to burn 37 ........ of its coal |\n| ↓ | ↓ | ↓ |\n| risk of widespread 38 ........ | Price of electricity could 39 ........ | release of more Sulphur, ash, and 40 ........ |",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-7-section-4.mp3"
+      },
       "questions": [
         {
           "number": 31,
@@ -588,5 +596,11 @@
       ]
     }
   ],
-  "savedAt": "2026-09-22T04:04:21.842Z"
+  "savedAt": "2026-11-14T09:35:51.947Z",
+  "audioFiles": [
+    "/uploads/audio/test-7-section-1.mp3",
+    "/uploads/audio/test-7-section-2.mp3",
+    "/uploads/audio/test-7-section-3.mp3",
+    "/uploads/audio/test-7-section-4.mp3"
+  ]
 }

@@ -14,7 +14,9 @@
       "title": "Section 1",
       "order": 0,
       "content": "Questions 1-10\nComplete the table below.\nWrite ONE MORE THAN TWO WORDS AND OR A NUMBER for each answer.\nWashing Machine Warranty\nPersonal details\nName: Judie Smith\nReference number: 1 ........\nTime of purchase: 2 ........\nCurrent address: 120 3 ........, Oxford\nPostcode: 4 ........\nProblems\nThe floor was wet because of the 5 ........\nThe washing machine was out of control and the woman 6 ........ Immediately\nThe floor is made of 7 ........\nArrangement for the repair work\nAsk a 8 ........ to repair the washing machine\nThe repairman is available 9 ........\nThe woman's house is opposite the 10 ........",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-8-section-1.mp3"
+      },
       "questions": [
         {
           "number": 1,
@@ -142,7 +144,9 @@
       "title": "Section 2",
       "order": 1,
       "content": "Questions 11-15\nChoose the correct letter, A, B or C\nDriving license in UK\n11 What is the basic requirement for applying for a UK driving licence?\nA a medical report.\nB a valid licence from another country.\nC Current residency in the UK.\n12 What is true about the translation of original licences?\nA Applicants need to go to a recognised organisation.\nB It is not always necessary for foreigners when applying for a UK licence.\nC Applicants need to pay an extra fee for translation services.\n13 When applying for a UK licence, which type of photos will NOT be approved?\nA Photos in which the applicant is wearing glasses.\nB Photos with a cream background.\nC Photos that are undersized.\n14 What does the speaker think of the licence checking service?\nA The process is too slow.\nB The application form is confusing.\nC Some of the steps are unnecessary.\n15 What does the speaker recommend about making an application?\nA Choosing a quiet location.\nB Visiting the nearest branch.\nC Completing the forms online.\n\nQuestions 16-20\nWhat is the current feature of traffic management in each of the following cities\nWrite the correct letter, A-H, next to questions\n Features\nA good singnage\nB multiple access roads\nC police control points\nD ring roads\nE one- way streets\nF Effective traffic lights\nG Additional lanes\nH Pedestrianised areas\n\nCities\n16. London city\n17. Edinburgh city\n18. Cardiff city\n19. Manchester city\n20. Oxford city",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-8-section-2.mp3"
+      },
       "questions": [
         {
           "number": 11,
@@ -480,7 +484,9 @@
       "title": "Section 3",
       "order": 2,
       "content": "Questions 21-26\nWhat problem does Mona point out about each part of the hotel where she interned?\nWrite the correct letter, A-F, next to questions\nProblems\nA it is lack patience\nB it is very strict\nC it is a daily routine\nD it lacks sufficient staff\nE it is noisy\nF it is very tiring\n\nParts of the hotel\n21. reception desk\n22. restaurant area\n23. coffee bar area\n24. hotel shop\n25. personal office\n26. cleaning staff\n\nQuestions 27-30\nChoose the correct letter, A, B or C\n27 how does the experience benefit Mona?\nA It is good for her future job\nB It is good for her dissertation.\nC It can let her know something about the specific job.\n28 Why does the tutor want Mona to do the presentation?\nA Because she can do it skilfully.\nB Because she wants to do it herself\nC Because she can show other students how to do a presentation\n29 what does Mona suggest Tom do?\nA Talk to the university’s career centre\nB talk to his tutor\nC contact the hotel manager\n30 what is Tom’s plan for his own essay?\nA To study about the rise of five- star hotels\nB to use a video approach\nC To do research into how the hotel industry works",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-8-section-3.mp3"
+      },
       "questions": [
         {
           "number": 21,
@@ -790,7 +796,9 @@
       "title": "Section 4",
       "order": 3,
       "content": "Questions 31-40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\nThe Early History of Salt\nIntroduction\nSalt is essential for human 31 ........\nAncient Rome\nThe word 32 ........ comes from the Latin word's solarium argetum, which was used to describe the payment to Roman soldiers.\nAncient Sweden\nAnimals were kept in the local 33 ........ at the right time of year.\nFresh meat was only available in 34 ........\nSalt has been used widely: we can tell from the diet of the 35 ........ in Sweden.\n36 ........ Consumption increased rapidly because the food was much too salty.\nSalt source\nPeople mainly extract salt from oceans and 37 ........ in the basins.\nSalt from spring water is more 38 ........ And purer compared to that from sea water\nSalt distribution\nIn ancient Sweden\nLocals needed to protect the 39 ........ By which they imported salt.\nIn other ancient countries\nPeople carrying salt around were seen as a natural means of 40 ........",
-      "meta": {},
+      "meta": {
+        "audioUrl": "/uploads/audio/test-8-section-4.mp3"
+      },
       "questions": [
         {
           "number": 31,
@@ -895,5 +903,11 @@
       ]
     }
   ],
-  "savedAt": "2026-09-22T04:15:03.812Z"
+  "savedAt": "2026-11-14T09:35:51.951Z",
+  "audioFiles": [
+    "/uploads/audio/test-8-section-1.mp3",
+    "/uploads/audio/test-8-section-2.mp3",
+    "/uploads/audio/test-8-section-3.mp3",
+    "/uploads/audio/test-8-section-4.mp3"
+  ]
 }
