@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTranslations } from "@/i18n/provider";
+import { trackOutboundToMainSite } from "@/lib/gtag";
 import {
   ArrowRight,
   BookOpen,
@@ -647,7 +648,13 @@ function renderPopoverMenu({
               key={product.id}
               href={product.url}
               role="menuitem"
-              onClick={onSelect}
+              onClick={() => {
+                trackOutboundToMainSite({
+                  destinationUrl: product.url,
+                  linkText: product.name,
+                });
+                onSelect();
+              }}
               rel="noreferrer"
               className="group flex items-center justify-between gap-3 rounded-2xl border border-transparent p-2.5 transition hover:border-zinc-200/70 hover:bg-zinc-50 select-none"
               title={`${product.name} - ${product.description}`}

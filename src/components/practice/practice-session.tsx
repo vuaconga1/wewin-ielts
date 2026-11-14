@@ -37,6 +37,7 @@ import { friendlyError } from "@/lib/ui/friendly-error";
 import { cancelNavProgress, startNavProgress } from "@/lib/client/nav-progress";
 import { formatQuestionStem } from "@/lib/ui/question-type-label";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
+import { trackQuizComplete } from "@/lib/gtag";
 import nextDynamic from "next/dynamic";
 import type { SpeakingExamDeskHandle } from "@/components/practice/speaking-exam-desk";
 import {
@@ -687,6 +688,12 @@ export function PracticeSession({
           console.warn("[practice/ai-score]", aiErr);
         }
       }
+
+      trackQuizComplete({
+        quizId: attemptId,
+        quizTitle: testTitle,
+        skill,
+      });
 
       startNavProgress();
       router.push(data.redirect);

@@ -7,6 +7,7 @@ import { friendlyError } from "@/lib/ui/friendly-error";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
 import { useTranslations } from "@/i18n/provider";
 import type { SpeakingPartKind } from "@/lib/practice/speaking-exam";
+import { trackQuizStart } from "@/lib/gtag";
 
 type Part = {
   title: string;
@@ -126,6 +127,14 @@ export function TestStartPanel({
         setError(mapped);
         return;
       }
+      trackQuizStart({
+        quizId: slug,
+        quizTitle: slug,
+        skill,
+        mode: tab === "full" ? "FULL" : "PRACTICE",
+        questionCount: totalQuestions,
+        timeLimitMinutes: timeLimit === "" ? null : Number(timeLimit),
+      });
       startNavProgress();
       router.push(data.redirect);
     } catch (e) {

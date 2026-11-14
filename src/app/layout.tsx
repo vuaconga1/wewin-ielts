@@ -7,6 +7,7 @@ import { I18nProvider } from "@/i18n/provider";
 import { NavigationProgress } from "@/components/layout/navigation-progress";
 import { VisitTracker } from "@/components/layout/visit-tracker";
 import { WewinChatWidget } from "@/components/chat/wewin-chat-widget";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { translate } from "@/i18n/translate";
 
 const geistSans = Geist({
@@ -45,6 +46,9 @@ export default function RootLayout({
 
   return (
     <html lang={localeToHtmlLang(locale)}>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

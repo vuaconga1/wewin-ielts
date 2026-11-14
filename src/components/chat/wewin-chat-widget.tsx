@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { GripHorizontal, Minus, X } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
+import { trackChatOpen, trackLeadGeneration } from "@/lib/gtag";
 
 const FASTBOTS_BOT_ID = "cm6t5x0pl1e32svk4sez4rwwq";
 const CHAT_URL = `https://app.fastbots.ai/embed/${FASTBOTS_BOT_ID}`;
@@ -102,6 +103,8 @@ export function WewinChatWidget() {
     setLoaded(true);
     setOpen(true);
     setShowGreeting(false);
+    trackChatOpen({ botId: FASTBOTS_BOT_ID });
+    trackLeadGeneration({ formName: "Fastbots_Chat_Widget" });
   }, []);
 
   useEffect(() => {
