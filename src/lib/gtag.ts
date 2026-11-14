@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
  * Tiện ích đo lường sự kiện cho Google Analytics 4 (GA4)
  * Hệ thống Multi-Subdomain WeWIN Education
@@ -12,9 +13,9 @@ declare global {
     gtag?: (
       command: "event" | "config" | "set" | "js",
       targetIdOrAction: string | Date,
-      params?: Record<string, any>
+      params?: Record<string, unknown>
     ) => void;
-    dataLayer?: any[];
+    dataLayer?: unknown[];
   }
 }
 
@@ -23,7 +24,7 @@ declare global {
  */
 export function trackEvent(
   eventName: string,
-  params?: Record<string, string | number | boolean | undefined | null>
+  params?: Record<string, unknown>
 ) {
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
     window.gtag("event", eventName, params);
@@ -36,7 +37,7 @@ export function trackEvent(
 export function trackLeadGeneration(data?: {
   formName?: string;
   source?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) {
   trackEvent("generate_lead", {
     form_name: data?.formName || "Tu_Van_IELTS",
@@ -54,7 +55,7 @@ export function trackQuizStart(data: {
   skill?: string;
   examType?: string;
   mode?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) {
   trackEvent("quiz_start", {
     quiz_id: data.quizId,
@@ -78,7 +79,7 @@ export function trackQuizComplete(data: {
   maxScore?: number;
   percentage?: number;
   timeSpentSeconds?: number;
-  [key: string]: any;
+  [key: string]: unknown;
 }) {
   trackEvent("quiz_complete", {
     quiz_id: data.quizId,
@@ -100,7 +101,7 @@ export function trackOutboundToMainSite(data?: {
   destinationUrl?: string;
   sourcePage?: string;
   linkText?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) {
   trackEvent("click_to_main_site", {
     destination_url: data?.destinationUrl || "https://wewin.edu.vn",
@@ -117,7 +118,7 @@ export function trackOutboundToMainSite(data?: {
  */
 export function trackChatOpen(data?: {
   sourcePage?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) {
   trackEvent("open_chat_widget", {
     source_page:
