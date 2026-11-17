@@ -51,14 +51,25 @@ const USERNAME_FORMAT = /^[a-zA-Z0-9._-]+$/;
 
 export type FieldIssue = { code: string; message: string; path: string };
 
+type IssueWithParams = z.ZodIssue & { params?: Record<string, unknown> };
+
+export function zodIssueParams(
+  issue: z.ZodIssue | undefined,
+): Record<string, unknown> | undefined {
+  if (!issue || !("params" in issue)) return undefined;
+  const params = (issue as IssueWithParams).params;
+  return params && typeof params === "object" ? params : undefined;
+}
+
 export function firstIssue(
   error: z.ZodError,
 ): FieldIssue {
-  const issue = error.issues[0] as (z.ZodIssue & { params?: Record<string, unknown> }) | undefined;
+  const issue = error.issues[0];
+  const params = zodIssueParams(issue);
   const path = issue?.path?.map(String).join(".") || "";
   const code =
-    typeof issue?.params?.code === "string"
-      ? issue.params.code
+    typeof params?.code === "string"
+      ? params.code
       : typeof issue?.message === "string" && /^[A-Z][A-Z0-9_]+$/.test(issue.message)
         ? issue.message
         : "INVALID_INPUT";
@@ -219,10 +230,14 @@ export const loginIdentifierSchema = z
       const email = requiredEmailSchema.safeParse(v);
       if (!email.success) {
         const first = firstIssue(email.error);
+        const suggestion = zodIssueParams(email.error.issues[0])?.suggestion;
         ctx.addIssue({
           code: "custom",
           message: first.code,
-          params: { code: first.code, suggestion: (email.error.issues[0] as any)?.params?.suggestion },
+          params: {
+            code: first.code,
+            ...(typeof suggestion === "string" ? { suggestion } : {}),
+          },
         });
       }
       return;
@@ -238,7 +253,7 @@ export const loginIdentifierSchema = z
 
 export function validationSuggestion(error: z.ZodError): string | undefined {
   for (const issue of error.issues) {
-    const suggestion = (issue as any).params?.suggestion;
+    const suggestion = zodIssueParams(issue)?.suggestion;
     if (typeof suggestion === "string" && suggestion) return suggestion;
   }
   return undefined;

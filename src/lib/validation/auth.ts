@@ -5,6 +5,7 @@ import {
   optionalUsernameSchema,
   passwordSchema,
   requiredEmailSchema,
+  zodIssueParams,
 } from "./primitives";
 
 export const loginBodySchema = z.object({
@@ -21,7 +22,7 @@ export const loginBodySchema = z.object({
       code: "custom",
       path: ["email"],
       message: issue?.message ?? "IDENTIFIER_REQUIRED",
-      params: (issue as any)?.params,
+      params: zodIssueParams(issue),
     });
   }
 });
