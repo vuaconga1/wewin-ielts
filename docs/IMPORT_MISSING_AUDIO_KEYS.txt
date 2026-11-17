@@ -198,3 +198,27 @@ ws-34          : THIẾU KEYS -> tự soạn toàn bộ 58 câu (quy tắc at/in
                 ws-25 D (đề gốc bị lỗi, đã viết lại câu), ws-31 B5, ws-47 D3/D6/D9 ("in case" gượng),
                 ws-10 I5 (cả 2 câu đều dùng FOR).
   Nhiều câu viết lại câu (sentence_rewrite/combine/question) chỉ chấp nhận 1–4 cách diễn đạt đã liệt kê.
+
+
+----------------------------------------------------
+[2026-11-17] Cambridge IELTS 12 (Tests 5–8 in book = Tests 27–30 in system) — IELTS Academic
+----------------------------------------------------
+- Nguồn: docs/cambridge_12/Cambridge IELTS 12/ (Cambridge IELTS 12 PDF.pdf + audio test 5-8 section 1-4).
+- File PDF đã chia nhỏ thành các file <= 40 trang tại:
+  + docs/cambridge_12_split/fixed_40_pages/ (Part 1: 1-40, Part 2: 41-80, Part 3: 81-120, Part 4: 121-129)
+  + docs/cambridge_12_split/ (6 file phân đoạn logic Intro+Test1, Test2, Test3, Test4, Audioscripts, Keys+Samples)
+- Audio: 16 file audio tương ứng gán đúng tại public/uploads/audio/test-{27..30}-section-{1..4}.mp3.
+- Map hình ảnh: Test 30 (Test 8) Section 2 bản đồ "Art and History in the Sheepmarket" đã làm sạch watermark và lưu tại public/uploads/images/test-30-map.png.
+- Đáp án (Keys): Trích xuất và đối chiếu 100% từ Answer Keys gốc của sách Cambridge 12 (trang 109–116).
+  + Đã chạy test tự động đối chiếu scripts/verify_cambridge_12.py: 320/320 câu hỏi khớp 100% không sai lệch.
+- Layout và Schema: Đã kiểm tra qua scripts/validate_cambridge_12.ts (Zod ParsedTestDraftSchema + QuestionContentSchema + Question Layout Spec): 0 lỗi, 0 cảnh báo.
+- Danh sách đề trong hệ thống:
+  + Test 27.C12.01 - Listening (slug: test-27-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 27.C12.01 - Reading (slug: test-27-reading, 3 sections, 40 questions, status: DRAFT)
+  + Test 28.C12.02 - Listening (slug: test-28-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 28.C12.02 - Reading (slug: test-28-reading, 3 sections, 40 questions, status: DRAFT)
+  + Test 29.C12.03 - Listening (slug: test-29-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 29.C12.03 - Reading (slug: test-29-reading, 3 sections, 40 questions, status: DRAFT)
+  + Test 30.C12.04 - Listening (slug: test-30-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 30.C12.04 - Reading (slug: test-30-reading, 3 sections, 40 questions, status: DRAFT)
+- Database: Đã persist thành công toàn bộ 8 đề (56 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái DRAFT.

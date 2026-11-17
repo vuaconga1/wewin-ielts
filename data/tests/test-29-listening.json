@@ -1,0 +1,877 @@
+{
+  "title": "Test 29.C12.03 - Listening",
+  "slug": "test-29-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nPUBLIC LIBRARY\nExample\nThe library re-opened last month\n\nThe library now has\n• a seating area with magazines\n• an expanded section for books on 1 ...............\n• a new section on local 2 ...............\n• a community room for meetings (also possible to 3 ............... there)\n• a new section of books for 4 ...............\n\nFor younger children\n• the next Science Club meeting: experiments using things from your 5 ...............\n• Reading Challenge: read six books during the holidays\n\nFor adults\n• this Friday: a local author talks about a novel based on a real 6 ...............\n• IT support is available on Tuesdays - no 7 ............... is necessary\n• free check of blood 8 ............... and cholesterol levels (over 60s only)\n\nOther information\n• the library shop sells wall-charts, cards and 9 ...............\n• evenings and weekends: free 10 ............... is available",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "an expanded section for books on ________",
+            "blank": true
+          },
+          "correctAnswer": "travel",
+          "acceptableAnswers": [
+            "travel",
+            "travelling",
+            "traveling"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a new section on local ________",
+            "blank": true
+          },
+          "correctAnswer": "history"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a community room for meetings (also possible to ________ there)",
+            "blank": true
+          },
+          "correctAnswer": "study"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a new section of books for ________",
+            "blank": true
+          },
+          "correctAnswer": "teenagers"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the next Science Club meeting: experiments using things from your ________",
+            "blank": true
+          },
+          "correctAnswer": "kitchen"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "this Friday: a local author talks about a novel based on a real ________",
+            "blank": true
+          },
+          "correctAnswer": "crime"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "IT support is available on Tuesdays - no ________ is necessary",
+            "blank": true
+          },
+          "correctAnswer": "appointment",
+          "acceptableAnswers": [
+            "appointment",
+            "booking"
+          ]
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "free check of blood ________ and cholesterol levels (over 60s only)",
+            "blank": true
+          },
+          "correctAnswer": "sugar"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the library shop sells wall-charts, cards and ________",
+            "blank": true
+          },
+          "correctAnswer": "stamps"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "evenings and weekends: free ________ is available",
+            "blank": true
+          },
+          "correctAnswer": "parking"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-29-section-1.mp3"
+      }
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO age groups are taking increasing numbers of holidays with BC Travel?\nA 16–30 years\nB 31–42 years\nC 43–54 years\nD 55–64 years\nE over 65 years\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO are the main reasons given for the popularity of activity holidays?\nA Clients make new friends.\nB Clients learn a useful skill.\nC Clients learn about a different culture.\nD Clients are excited by the risk involved.\nE Clients find them good value for money.\n\nQuestions 15–17\nChoose the correct letter, A, B or C.\n\n15 How does BC Travel plan to expand the painting holidays?\nA by adding to the number of locations\nB by increasing the range of levels\nC by employing more teachers\n\n16 Why are BC Travel's cooking holidays unusual?\nA They only use organic foods.\nB They have an international focus.\nC They mainly involve vegetarian dishes.\n\n17 What does the speaker say about the photography holidays?\nA Clients receive individual tuition.\nB The tutors are also trained guides.\nC Advice is given on selling photographs.\n\nQuestions 18–20\nComplete the table below.\nWrite ONE WORD ONLY for each answer.\n\nFitness Holidays\nLocation | Main focus | Other comments\nIreland and Italy | general fitness | personally designed programme; also reduces 18 ...............\nGreece | 19 ............... control | includes exercise on the beach\nMorocco | mountain biking | wide variety of levels; one holiday that is specially designed for 20 ...............",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO age groups are taking increasing numbers of holidays with BC Travel? (Question 1 of 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "16–30 years"
+              },
+              {
+                "label": "B",
+                "text": "31–42 years"
+              },
+              {
+                "label": "C",
+                "text": "43–54 years"
+              },
+              {
+                "label": "D",
+                "text": "55–64 years"
+              },
+              {
+                "label": "E",
+                "text": "over 65 years"
+              }
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO age groups are taking increasing numbers of holidays with BC Travel? (Question 2 of 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "16–30 years"
+              },
+              {
+                "label": "B",
+                "text": "31–42 years"
+              },
+              {
+                "label": "C",
+                "text": "43–54 years"
+              },
+              {
+                "label": "D",
+                "text": "55–64 years"
+              },
+              {
+                "label": "E",
+                "text": "over 65 years"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO are the main reasons given for the popularity of activity holidays? (Question 1 of 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Clients make new friends."
+              },
+              {
+                "label": "B",
+                "text": "Clients learn a useful skill."
+              },
+              {
+                "label": "C",
+                "text": "Clients learn about a different culture."
+              },
+              {
+                "label": "D",
+                "text": "Clients are excited by the risk involved."
+              },
+              {
+                "label": "E",
+                "text": "Clients find them good value for money."
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO are the main reasons given for the popularity of activity holidays? (Question 2 of 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Clients make new friends."
+              },
+              {
+                "label": "B",
+                "text": "Clients learn a useful skill."
+              },
+              {
+                "label": "C",
+                "text": "Clients learn about a different culture."
+              },
+              {
+                "label": "D",
+                "text": "Clients are excited by the risk involved."
+              },
+              {
+                "label": "E",
+                "text": "Clients find them good value for money."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does BC Travel plan to expand the painting holidays?",
+            "options": [
+              {
+                "label": "A",
+                "text": "by adding to the number of locations"
+              },
+              {
+                "label": "B",
+                "text": "by increasing the range of levels"
+              },
+              {
+                "label": "C",
+                "text": "by employing more teachers"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why are BC Travel's cooking holidays unusual?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They only use organic foods."
+              },
+              {
+                "label": "B",
+                "text": "They have an international focus."
+              },
+              {
+                "label": "C",
+                "text": "They mainly involve vegetarian dishes."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker say about the photography holidays?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Clients receive individual tuition."
+              },
+              {
+                "label": "B",
+                "text": "The tutors are also trained guides."
+              },
+              {
+                "label": "C",
+                "text": "Advice is given on selling photographs."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Ireland and Italy - personally designed programme; also reduces ________",
+            "blank": true
+          },
+          "correctAnswer": "stress"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Greece - ________ control; includes exercise on the beach",
+            "blank": true
+          },
+          "correctAnswer": "weight"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Morocco - one holiday that is specially designed for ________",
+            "blank": true
+          },
+          "correctAnswer": "families"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-29-section-2.mp3"
+      }
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–26\nComplete the flow-chart below.\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 21–26.\n\nA patterns\nB names\nC sources\nD questions\nE employees\nF solutions\nG headings\nH officials\n\nSTAGES IN DOING A TOURISM CASE STUDY\nRESEARCH\nLocate and read relevant articles, noting key information and also 21 ...............\nIdentify a problem or need\nSelect interviewees – these may be site 22 ..............., visitors or city 23 ...............\nPrepare and carry out interviews. If possible, collect statistics.\nCheck whether 24 ............... of interviewees can be used\n\nANALYSIS\nSelect relevant information and try to identify 25 ...............\nDecide on the best form of visuals\n\nWRITING THE CASE STUDY\nGive some background before writing the main sections\nDo NOT end with 26 ...............\n\nQuestions 27–30\nChoose the correct letter, A, B or C.\n\nThe Horton Castle site\n27 Natalie and Dave agree one reason why so few people visit Horton Castle is that\nA the publicity is poor.\nB it is difficult to get to.\nC there is little there of interest.\n\n28 Natalie and Dave agree that the greatest problem with a visitor centre could be\nA covering the investment costs.\nB finding a big enough space for it.\nC dealing with planning restrictions.\n\n29 What does Dave say about conditions in the town of Horton?\nA There is a lot of unemployment.\nB There are few people of working age.\nC There are opportunities for skilled workers.\n\n30 According to Natalie, one way to prevent damage to the castle site would be to\nA insist visitors have a guide.\nB make visitors keep to the paths.\nC limit visitor numbers.",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Locate and read relevant articles, noting key information and also 21",
+            "options": [
+              {
+                "label": "A",
+                "text": "patterns"
+              },
+              {
+                "label": "B",
+                "text": "names"
+              },
+              {
+                "label": "C",
+                "text": "sources"
+              },
+              {
+                "label": "D",
+                "text": "questions"
+              },
+              {
+                "label": "E",
+                "text": "employees"
+              },
+              {
+                "label": "F",
+                "text": "solutions"
+              },
+              {
+                "label": "G",
+                "text": "headings"
+              },
+              {
+                "label": "H",
+                "text": "officials"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Select interviewees – these may be site 22",
+            "options": [
+              {
+                "label": "A",
+                "text": "patterns"
+              },
+              {
+                "label": "B",
+                "text": "names"
+              },
+              {
+                "label": "C",
+                "text": "sources"
+              },
+              {
+                "label": "D",
+                "text": "questions"
+              },
+              {
+                "label": "E",
+                "text": "employees"
+              },
+              {
+                "label": "F",
+                "text": "solutions"
+              },
+              {
+                "label": "G",
+                "text": "headings"
+              },
+              {
+                "label": "H",
+                "text": "officials"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MATCHING",
+          "content": {
+            "stem": "or city 23",
+            "options": [
+              {
+                "label": "A",
+                "text": "patterns"
+              },
+              {
+                "label": "B",
+                "text": "names"
+              },
+              {
+                "label": "C",
+                "text": "sources"
+              },
+              {
+                "label": "D",
+                "text": "questions"
+              },
+              {
+                "label": "E",
+                "text": "employees"
+              },
+              {
+                "label": "F",
+                "text": "solutions"
+              },
+              {
+                "label": "G",
+                "text": "headings"
+              },
+              {
+                "label": "H",
+                "text": "officials"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Check whether 24 of interviewees can be used",
+            "options": [
+              {
+                "label": "A",
+                "text": "patterns"
+              },
+              {
+                "label": "B",
+                "text": "names"
+              },
+              {
+                "label": "C",
+                "text": "sources"
+              },
+              {
+                "label": "D",
+                "text": "questions"
+              },
+              {
+                "label": "E",
+                "text": "employees"
+              },
+              {
+                "label": "F",
+                "text": "solutions"
+              },
+              {
+                "label": "G",
+                "text": "headings"
+              },
+              {
+                "label": "H",
+                "text": "officials"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Select relevant information and try to identify 25",
+            "options": [
+              {
+                "label": "A",
+                "text": "patterns"
+              },
+              {
+                "label": "B",
+                "text": "names"
+              },
+              {
+                "label": "C",
+                "text": "sources"
+              },
+              {
+                "label": "D",
+                "text": "questions"
+              },
+              {
+                "label": "E",
+                "text": "employees"
+              },
+              {
+                "label": "F",
+                "text": "solutions"
+              },
+              {
+                "label": "G",
+                "text": "headings"
+              },
+              {
+                "label": "H",
+                "text": "officials"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Do NOT end with 26",
+            "options": [
+              {
+                "label": "A",
+                "text": "patterns"
+              },
+              {
+                "label": "B",
+                "text": "names"
+              },
+              {
+                "label": "C",
+                "text": "sources"
+              },
+              {
+                "label": "D",
+                "text": "questions"
+              },
+              {
+                "label": "E",
+                "text": "employees"
+              },
+              {
+                "label": "F",
+                "text": "solutions"
+              },
+              {
+                "label": "G",
+                "text": "headings"
+              },
+              {
+                "label": "H",
+                "text": "officials"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Natalie and Dave agree one reason why so few people visit Horton Castle is that",
+            "options": [
+              {
+                "label": "A",
+                "text": "the publicity is poor."
+              },
+              {
+                "label": "B",
+                "text": "it is difficult to get to."
+              },
+              {
+                "label": "C",
+                "text": "there is little there of interest."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Natalie and Dave agree that the greatest problem with a visitor centre could be",
+            "options": [
+              {
+                "label": "A",
+                "text": "covering the investment costs."
+              },
+              {
+                "label": "B",
+                "text": "finding a big enough space for it."
+              },
+              {
+                "label": "C",
+                "text": "dealing with planning restrictions."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Dave say about conditions in the town of Horton?",
+            "options": [
+              {
+                "label": "A",
+                "text": "There is a lot of unemployment."
+              },
+              {
+                "label": "B",
+                "text": "There are few people of working age."
+              },
+              {
+                "label": "C",
+                "text": "There are opportunities for skilled workers."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to Natalie, one way to prevent damage to the castle site would be to",
+            "options": [
+              {
+                "label": "A",
+                "text": "insist visitors have a guide."
+              },
+              {
+                "label": "B",
+                "text": "make visitors keep to the paths."
+              },
+              {
+                "label": "C",
+                "text": "limit visitor numbers."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-29-section-3.mp3"
+      }
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nThe effects of environmental change on birds\n\nMercury (Hg)\n• Highly toxic\n• Released into the atmosphere from coal\n• In water it may be consumed by fish\n• It has also recently been found to affect birds which feed on 31 ...............\n\nResearch on effects of mercury on birds\n• Claire Varian-Ramos is investigating:\n  - the effects on birds' 32 ............... or mental processes, e.g. memory\n  - the effects on bird song (usually learned from a bird's 33 ...............)\n• Findings:\n  - songs learned by birds exposed to mercury are less 34 ...............\n  - this may have a negative effect on birds' 35 ...............\n• Lab-based studies:\n  - allow more 36 ............... for the experimenter\n\nImplications for humans\n• Migrating birds such as 37 ............... containing mercury may be eaten by humans\n• Mercury also causes problems in learning 38 ...............\n• Mercury in a mother's body from 39 ............... may affect the unborn child\n• New regulations for mercury emissions will affect everyone's energy 40 ...............",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "It has also recently been found to affect birds which feed on ________",
+            "blank": true
+          },
+          "correctAnswer": "insects"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the effects on birds' ________ or mental processes, e.g. memory",
+            "blank": true
+          },
+          "correctAnswer": "behaviour",
+          "acceptableAnswers": [
+            "behaviour",
+            "behavior"
+          ]
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the effects on bird song (usually learned from a bird's ________)",
+            "blank": true
+          },
+          "correctAnswer": "father"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "songs learned by birds exposed to mercury are less ________",
+            "blank": true
+          },
+          "correctAnswer": "complex",
+          "acceptableAnswers": [
+            "complex",
+            "complicated"
+          ]
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "this may have a negative effect on birds' ________",
+            "blank": true
+          },
+          "correctAnswer": "reproduction",
+          "acceptableAnswers": [
+            "reproduction",
+            "breeding"
+          ]
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "allow more ________ for the experimenter",
+            "blank": true
+          },
+          "correctAnswer": "control"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Migrating birds such as ________ containing mercury may be eaten by humans",
+            "blank": true
+          },
+          "correctAnswer": "duck",
+          "acceptableAnswers": [
+            "duck",
+            "ducks"
+          ]
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Mercury also causes problems in learning ________",
+            "blank": true
+          },
+          "correctAnswer": "language"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Mercury in a mother's body from ________ may affect the unborn child",
+            "blank": true
+          },
+          "correctAnswer": "food"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "New regulations for mercury emissions will affect everyone's energy ________",
+            "blank": true
+          },
+          "correctAnswer": "cost",
+          "acceptableAnswers": [
+            "cost",
+            "costs",
+            "price",
+            "prices",
+            "bill",
+            "bills"
+          ]
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-29-section-4.mp3"
+      }
+    }
+  ],
+  "sourceFolder": "Cambridge IELTS 12 PDF.pdf",
+  "savedAt": "2026-11-17T05:07:54.499969+00:00"
+}

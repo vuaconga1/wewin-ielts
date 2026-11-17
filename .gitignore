@@ -89,6 +89,10 @@ yarn-error.log*
 !/data/tests/test-24-*.json
 !/data/tests/test-25-*.json
 !/data/tests/test-26-*.json
+!/data/tests/test-27-*.json
+!/data/tests/test-28-*.json
+!/data/tests/test-29-*.json
+!/data/tests/test-30-*.json
 
 # uploaded audio (keep folder + section mp3s needed at runtime)
 /public/uploads/audio/*
@@ -133,6 +137,9 @@ next-env.d.ts
 /docs/cambridge_20_split/剑桥20/
 /docs/cambridge_20_split/__MACOSX/
 /docs/cambridge_19_split/audio_source/
+/docs/cambridge_12/
+/docs/cambridge_12_split/pages/
+/docs/cambridge_12_split/text/
 /DE-IELTS/
 /IELTS/
 /WEWIN_Audio_Downloader/

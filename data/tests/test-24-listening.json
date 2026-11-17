@@ -128,7 +128,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11–16\nWhat is the role of the volunteers in each of the following activities?\nChoose SIX answers from the box and write the correct letter, A–I, next to Questions 11–16.\n\nRoles\nA providing entertainment\nB providing publicity about a council service\nC contacting local businesses\nD giving advice to visitors\nE collecting feedback on events\nF selling tickets\nG introducing guest speakers at an event\nH encouraging cooperation between local organisations\nI arranging displays\n\n11 Welcome tent\n12 Exhibition tent\n13 Community tent\n14 Main entrance\n15 Children's area\n16 Town hall\n\nQuestions 17–20\nChoose the correct letter, A, B or C.\n\n17 Which event requires the largest number of volunteers?\nA the music festival\nB the science festival\nC the book festival\n\n18 What is the most important requirement for volunteers at the festivals?\nA interpersonal skills\nB personal interest in the event\nC flexibility\n\n19 New volunteers will start working in the week beginning\nA 2 September.\nB 9 September.\nC 23 September.\n\n20 What is the next annual event for volunteers?\nA a boat trip\nB a barbecue\nC a party",
+      "content": "Questions 11–16\nWhat is the role of the volunteers in each of the following activities?\nChoose SIX answers from the box and write the correct letter, A–I, next to Questions 11–16.\n\nRoles\nA providing entertainment\nB providing publicity about a council service\nC contacting local businesses\nD giving advice to visitors\nE collecting feedback on events\nF selling tickets\nG introducing guest speakers at an event\nH encouraging cooperation between local organisations\nI helping people find their seats\n\n11 walking around the town centre\n12 helping at concerts\n13 getting involved with community groups\n14 helping with a magazine\n15 participating at lunches for retired people\n16 helping with the website\n\nQuestions 17–20\nChoose the correct letter, A, B or C.\n\n17 Which event requires the largest number of volunteers?\nA the music festival\nB the science festival\nC the book festival\n\n18 What is the most important requirement for volunteers at the festivals?\nA interpersonal skills\nB personal interest in the event\nC flexibility\n\n19 New volunteers will start working in the week beginning\nA 2 September.\nB 9 September.\nC 23 September.\n\n20 What is the next annual event for volunteers?\nA a boat trip\nB a barbecue\nC a party",
       "meta": {
         "audioUrl": "/uploads/audio/test-24-section-2.m4a"
       },
@@ -138,7 +138,7 @@
           "order": 0,
           "type": "MATCHING",
           "content": {
-            "stem": "Welcome tent",
+            "stem": "walking around the town centre",
             "options": [
               {
                 "label": "A",
@@ -174,7 +174,7 @@
               },
               {
                 "label": "I",
-                "text": "arranging displays"
+                "text": "helping people find their seats"
               }
             ]
           },
@@ -185,7 +185,7 @@
           "order": 1,
           "type": "MATCHING",
           "content": {
-            "stem": "Exhibition tent",
+            "stem": "helping at concerts",
             "options": [
               {
                 "label": "A",
@@ -221,7 +221,7 @@
               },
               {
                 "label": "I",
-                "text": "arranging displays"
+                "text": "helping people find their seats"
               }
             ]
           },
@@ -232,7 +232,7 @@
           "order": 2,
           "type": "MATCHING",
           "content": {
-            "stem": "Community tent",
+            "stem": "getting involved with community groups",
             "options": [
               {
                 "label": "A",
@@ -268,7 +268,7 @@
               },
               {
                 "label": "I",
-                "text": "arranging displays"
+                "text": "helping people find their seats"
               }
             ]
           },
@@ -279,7 +279,7 @@
           "order": 3,
           "type": "MATCHING",
           "content": {
-            "stem": "Main entrance",
+            "stem": "helping with a magazine",
             "options": [
               {
                 "label": "A",
@@ -315,7 +315,7 @@
               },
               {
                 "label": "I",
-                "text": "arranging displays"
+                "text": "helping people find their seats"
               }
             ]
           },
@@ -326,7 +326,7 @@
           "order": 4,
           "type": "MATCHING",
           "content": {
-            "stem": "Children's area",
+            "stem": "participating at lunches for retired people",
             "options": [
               {
                 "label": "A",
@@ -362,7 +362,7 @@
               },
               {
                 "label": "I",
-                "text": "arranging displays"
+                "text": "helping people find their seats"
               }
             ]
           },
@@ -373,7 +373,7 @@
           "order": 5,
           "type": "MATCHING",
           "content": {
-            "stem": "Town hall",
+            "stem": "helping with the website",
             "options": [
               {
                 "label": "A",
@@ -409,7 +409,7 @@
               },
               {
                 "label": "I",
-                "text": "arranging displays"
+                "text": "helping people find their seats"
               }
             ]
           },
@@ -958,5 +958,5 @@
     }
   ],
   "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
-  "savedAt": "2026-11-14T09:05:26.850Z"
+  "savedAt": "2026-11-17T03:33:46.448Z"
 }

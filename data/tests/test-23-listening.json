@@ -18,7 +18,7 @@
     {
       "title": "Section 1",
       "order": 0,
-      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nRestaurant Recommendations\n\nName of restaurant | Location | Reason for recommendation | Other comments\nThe Junction | Greyson Street, near the station | Good for people who are especially keen on 1 ............... | Quite expensive; The 2 ............... is a good place for a drink\nPaloma | In Bow Street next to the cinema | 3 ............... food, good for sharing | Staff are very friendly; Need to pay 50 deposit; A limited selection of 4 ............... on the menu\nThe 5 ............... | At the top of a 6 ............... | A famous chef; All the 7 ............... are very good; Only uses 8 ............... ingredients | Set lunch cost: 9 ............... per person; Portions probably of 10 ............... size",
+      "content": "Questions 1–10\nComplete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nRestaurant Recommendations\n\n| Name of restaurant | Location | Reason for recommendation | Other comments |\n| --- | --- | --- | --- |\n| The Junction | Greyson Street, near the station | Good for people who are especially keen on 1 ............... | - Quite expensive<br>- The 2 ............... is a good place for a drink |\n| Paloma | In Bow Street next to the cinema | 3 ............... food, good for sharing | - Staff are very friendly<br>- Need to pay 50 deposit<br>- A limited selection of 4 ............... on the menu |\n| The 5 ............... | At the top of a 6 ............... | - A famous chef<br>- All the 7 ............... are very good<br>- Only uses 8 ............... ingredients | - Set lunch cost: 9 ............... per person<br>- Portions probably of 10 ............... size |",
       "meta": {
         "audioUrl": "/uploads/audio/test-23-section-1.m4a"
       },
@@ -852,5 +852,5 @@
     }
   ],
   "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
-  "savedAt": "2026-11-14T09:05:26.850Z"
+  "savedAt": "2026-11-17T03:33:46.448Z"
 }

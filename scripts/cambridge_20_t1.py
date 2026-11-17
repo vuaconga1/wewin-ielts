@@ -5,15 +5,16 @@ import os
 def get_test_23():
     # ==================== LISTENING ====================
     s1_content = """Questions 1–10
-Complete the notes below.
+Complete the table below.
 Write ONE WORD AND/OR A NUMBER for each answer.
 
 Restaurant Recommendations
 
-Name of restaurant | Location | Reason for recommendation | Other comments
-The Junction | Greyson Street, near the station | Good for people who are especially keen on 1 ............... | Quite expensive; The 2 ............... is a good place for a drink
-Paloma | In Bow Street next to the cinema | 3 ............... food, good for sharing | Staff are very friendly; Need to pay 50 deposit; A limited selection of 4 ............... on the menu
-The 5 ............... | At the top of a 6 ............... | A famous chef; All the 7 ............... are very good; Only uses 8 ............... ingredients | Set lunch cost: 9 ............... per person; Portions probably of 10 ............... size"""
+| Name of restaurant | Location | Reason for recommendation | Other comments |
+| --- | --- | --- | --- |
+| The Junction | Greyson Street, near the station | Good for people who are especially keen on 1 ............... | - Quite expensive<br>- The 2 ............... is a good place for a drink |
+| Paloma | In Bow Street next to the cinema | 3 ............... food, good for sharing | - Staff are very friendly<br>- Need to pay 50 deposit<br>- A limited selection of 4 ............... on the menu |
+| The 5 ............... | At the top of a 6 ............... | - A famous chef<br>- All the 7 ............... are very good<br>- Only uses 8 ............... ingredients | - Set lunch cost: 9 ............... per person<br>- Portions probably of 10 ............... size |"""
 
     s1_questions = [
         {"number": 1, "order": 0, "type": "GAP_FILL", "content": {"stem": "Good for people who are especially keen on ________", "blank": True}, "correctAnswer": "fish"},

@@ -26,7 +26,15 @@
             "stem": "",
             "blank": true
           },
-          "correctAnswer": "20.25 (am)"
+          "correctAnswer": "10.25 (am)",
+          "acceptableAnswers": [
+            "10.25",
+            "10:25",
+            "10.25am",
+            "10:25am",
+            "10.25 am",
+            "10:25 am"
+          ]
         },
         {
           "number": 2,
@@ -193,7 +201,7 @@
             "stem": "............... Main library",
             "imageUrl": "/uploads/images/test-6-listening-img2.png"
           },
-          "correctAnswer": "A",
+          "correctAnswer": "B",
           "mediaUrl": "/uploads/images/test-6-listening-img2.png"
         },
         {

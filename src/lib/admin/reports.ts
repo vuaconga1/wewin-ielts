@@ -1,4 +1,5 @@
 import { listAdminUsers, type AdminUserPublic } from "@/lib/admin/users";
+import { countAuditLogsByUserIds } from "@/lib/audit-log";
 import { isLearnerRole } from "@/lib/auth/permissions";
 import { listAttempts, listTests, type StoredAttempt, type StoredTest } from "@/lib/store/test-store";
 
@@ -24,6 +25,8 @@ export type SkillProgress = {
 export type UserReportRow = {
   user: AdminUserPublic;
   lastActivityAt: string | null;
+  /** Total AuditLog events for this user (same source as Nhật ký hoạt động). */
+  activityCount: number;
   finishedAttempts: number;
   unfinishedAttempts: number;
   skills: SkillProgress[];
@@ -61,6 +64,8 @@ function isWeak(skill: ReportSkill, average: number | null): boolean {
 
 export async function buildAdminReports(): Promise<UserReportRow[]> {
   const [users, attempts, tests] = await Promise.all([listAdminUsers(), listAttempts(), listTests()]);
+  const learners = users.filter((user) => isLearnerRole(user.role));
+  const activityCounts = await countAuditLogsByUserIds(learners.map((user) => user.id));
   const testBySlug = new Map(tests.map((test) => [test.slug, test]));
   const catalogBySkill = new Map<ReportSkill, Array<{ key: string; label: string }>>();
   for (const skill of SKILLS) catalogBySkill.set(skill, []);
@@ -69,7 +74,7 @@ export async function buildAdminReports(): Promise<UserReportRow[]> {
     catalogBySkill.get(test.skill as ReportSkill)!.push(...partKeys(test));
   }
 
-  return users.filter((user) => isLearnerRole(user.role)).map((user) => {
+  return learners.map((user) => {
     const userAttempts = attempts.filter((attempt) => attempt.userId === user.id);
     const skills = SKILLS.map((skill): SkillProgress => {
       const skillAttempts = userAttempts.filter((attempt) => testBySlug.get(attempt.testSlug)?.skill === skill);
@@ -113,6 +118,7 @@ export async function buildAdminReports(): Promise<UserReportRow[]> {
     return {
       user,
       lastActivityAt: userAttempts[0]?.updatedAt ?? userAttempts[0]?.startedAt ?? null,
+      activityCount: activityCounts.get(user.id) ?? 0,
       finishedAttempts: userAttempts.filter((attempt) => attempt.finishedAt).length,
       unfinishedAttempts: userAttempts.filter((attempt) => !attempt.finishedAt).length,
       skills,

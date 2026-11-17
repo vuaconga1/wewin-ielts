@@ -113,7 +113,7 @@ function parseParenGroups(input: string): ParenGroup[] {
  * Parentheses mark optional text, as in Cambridge keys:
  * - `camera(s)` / `10(th) September` / `multi(-)coloured`: with or without
  *   the bracketed letters.
- * - `(the) royal antelope` / `20.25 (am)`: with or without the bracketed word.
+ * - `(the) royal antelope` / `10.25 (am)`: with or without the bracketed word.
  * The bracketed text alone is never correct. Empty groups are ignored.
  * A slash inside a group is alternatives for that slot.
  */

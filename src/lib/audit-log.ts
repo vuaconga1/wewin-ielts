@@ -138,6 +138,22 @@ export async function listAuditLogs(filters: AuditLogFilters) {
   return { items, total, page, pageSize, databaseAvailable: true };
 }
 
+/** Per-user activity totals from Nhật ký hoạt động (AuditLog). */
+export async function countAuditLogsByUserIds(userIds: string[]): Promise<Map<string, number>> {
+  const counts = new Map<string, number>();
+  if (!userIds.length || !(await canUsePrisma())) return counts;
+
+  const rows = await prisma.auditLog.groupBy({
+    by: ["userId"],
+    where: { userId: { in: userIds } },
+    _count: { _all: true },
+  });
+  for (const row of rows) {
+    if (row.userId) counts.set(row.userId, row._count._all);
+  }
+  return counts;
+}
+
 export type AuditTestRef = {
   slug: string;
   title: string | null;

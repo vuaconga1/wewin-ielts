@@ -61,14 +61,14 @@ E collecting feedback on events
 F selling tickets
 G introducing guest speakers at an event
 H encouraging cooperation between local organisations
-I arranging displays
+I helping people find their seats
 
-11 Welcome tent
-12 Exhibition tent
-13 Community tent
-14 Main entrance
-15 Children's area
-16 Town hall
+11 walking around the town centre
+12 helping at concerts
+13 getting involved with community groups
+14 helping with a magazine
+15 participating at lunches for retired people
+16 helping with the website
 
 Questions 17–20
 Choose the correct letter, A, B or C.
@@ -102,16 +102,16 @@ C a party"""
         {"label": "F", "text": "selling tickets"},
         {"label": "G", "text": "introducing guest speakers at an event"},
         {"label": "H", "text": "encouraging cooperation between local organisations"},
-        {"label": "I", "text": "arranging displays"},
+        {"label": "I", "text": "helping people find their seats"},
     ]
 
     s2_questions = [
-        {"number": 11, "order": 10, "type": "MATCHING", "content": {"stem": "Welcome tent", "options": role_opts}, "correctAnswer": "D"},
-        {"number": 12, "order": 11, "type": "MATCHING", "content": {"stem": "Exhibition tent", "options": role_opts}, "correctAnswer": "I"},
-        {"number": 13, "order": 12, "type": "MATCHING", "content": {"stem": "Community tent", "options": role_opts}, "correctAnswer": "H"},
-        {"number": 14, "order": 13, "type": "MATCHING", "content": {"stem": "Main entrance", "options": role_opts}, "correctAnswer": "E"},
-        {"number": 15, "order": 14, "type": "MATCHING", "content": {"stem": "Children's area", "options": role_opts}, "correctAnswer": "A"},
-        {"number": 16, "order": 15, "type": "MATCHING", "content": {"stem": "Town hall", "options": role_opts}, "correctAnswer": "B"},
+        {"number": 11, "order": 10, "type": "MATCHING", "content": {"stem": "walking around the town centre", "options": role_opts}, "correctAnswer": "D"},
+        {"number": 12, "order": 11, "type": "MATCHING", "content": {"stem": "helping at concerts", "options": role_opts}, "correctAnswer": "I"},
+        {"number": 13, "order": 12, "type": "MATCHING", "content": {"stem": "getting involved with community groups", "options": role_opts}, "correctAnswer": "H"},
+        {"number": 14, "order": 13, "type": "MATCHING", "content": {"stem": "helping with a magazine", "options": role_opts}, "correctAnswer": "E"},
+        {"number": 15, "order": 14, "type": "MATCHING", "content": {"stem": "participating at lunches for retired people", "options": role_opts}, "correctAnswer": "A"},
+        {"number": 16, "order": 15, "type": "MATCHING", "content": {"stem": "helping with the website", "options": role_opts}, "correctAnswer": "B"},
         {"number": 17, "order": 16, "type": "MULTIPLE_CHOICE", "content": {"stem": "Which event requires the largest number of volunteers?", "options": [{"label": "A", "text": "the music festival"}, {"label": "B", "text": "the science festival"}, {"label": "C", "text": "the book festival"}]}, "correctAnswer": "B"},
         {"number": 18, "order": 17, "type": "MULTIPLE_CHOICE", "content": {"stem": "What is the most important requirement for volunteers at the festivals?", "options": [{"label": "A", "text": "interpersonal skills"}, {"label": "B", "text": "personal interest in the event"}, {"label": "C", "text": "flexibility"}]}, "correctAnswer": "A"},
         {"number": 19, "order": 18, "type": "MULTIPLE_CHOICE", "content": {"stem": "New volunteers will start working in the week beginning", "options": [{"label": "A", "text": "2 September."}, {"label": "B", "text": "9 September."}, {"label": "C", "text": "23 September."}]}, "correctAnswer": "B"},

@@ -43,6 +43,10 @@ data/tests/*
 !data/tests/test-24-*.json
 !data/tests/test-25-*.json
 !data/tests/test-26-*.json
+!data/tests/test-27-*.json
+!data/tests/test-28-*.json
+!data/tests/test-29-*.json
+!data/tests/test-30-*.json
 public/uploads/audio/*
 !public/uploads/audio/.gitkeep
 # Optional: also keep writing/images off Vercel once R2 is populated
@@ -66,3 +70,6 @@ tmp-test7-reading.txt
 tmp-test7-writing.txt
 
 backups
+docs/cambridge_*
+docs/worksheets_split
+

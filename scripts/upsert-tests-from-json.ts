@@ -87,6 +87,10 @@ async function main() {
   let ok = 0;
   let fail = 0;
 
+  const statusArg = arg("status")?.toUpperCase();
+  const targetStatus: "DRAFT" | "PUBLISHED" =
+    statusArg === "DRAFT" || statusArg === "PUBLISHED" ? statusArg : "PUBLISHED";
+
   for (const file of files) {
     const slugHint = file.replace(/\.json$/, "");
     try {
@@ -102,7 +106,7 @@ async function main() {
       const draft = parsed.data;
       const result = await persistParsedTest(draft, [], {
         force: true,
-        status: "PUBLISHED",
+        status: targetStatus,
       });
       console.log(
         `  ✓ ${draft.slug} → testId=${result.testId} job=${result.importJobId}`,

@@ -52,6 +52,23 @@ async function main() {
     where: { status: "PUBLISHED" },
   });
   console.log(`\nTotal PUBLISHED tests in DB: ${totalPublished}`);
+
+  const attempts = await prisma.attempt.findMany({
+    where: { test: { slug: { in: ["test-23-listening", "test-24-listening"] } } },
+    select: { id: true, test: { select: { slug: true } }, finishedAt: true, scoreRaw: true, payload: true }
+  });
+  console.log(`Attempts for test-23 and test-24 (${attempts.length}):`);
+  for (const a of attempts) {
+    const p = a.payload as any;
+    console.log(a.id, a.test.slug, {
+      11: p?.answers?.["11"],
+      12: p?.answers?.["12"],
+      13: p?.answers?.["13"],
+      14: p?.answers?.["14"],
+      15: p?.answers?.["15"],
+      16: p?.answers?.["16"],
+    });
+  }
 }
 
 main()

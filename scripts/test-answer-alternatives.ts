@@ -87,9 +87,9 @@ function main() {
     "optional bracket: phrase with the word",
   );
   assert(!isAnswerCorrect("the", "(the) royal antelope"), "optional bracket: word alone is not enough");
-  assert(isAnswerCorrect("20.25", "20.25 (am)"), "optional trailing bracket: number");
-  assert(isAnswerCorrect("20.25 am", "20.25 (am)"), "optional trailing bracket: number plus word");
-  assert(!isAnswerCorrect("am", "20.25 (am)"), "optional trailing bracket: word alone is not enough");
+  assert(isAnswerCorrect("10.25", "10.25 (am)"), "optional trailing bracket: number");
+  assert(isAnswerCorrect("10.25 am", "10.25 (am)"), "optional trailing bracket: number plus word");
+  assert(!isAnswerCorrect("am", "10.25 (am)"), "optional trailing bracket: word alone is not enough");
 
   assert(isAnswerCorrect("colour", "colour()"), "empty parens leave the word");
   assert(isAnswerCorrect("indoor", "indoor (staff/employees)"), "slash inside parens: without the group");

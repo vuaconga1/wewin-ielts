@@ -1,0 +1,887 @@
+{
+  "title": "Test 28.C12.02 - Listening",
+  "slug": "test-28-listening",
+  "skill": "LISTENING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 40,
+  "tags": [
+    "#IELTS Academic",
+    "#Listening"
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-28-section-1.mp3",
+    "/uploads/audio/test-28-section-2.mp3",
+    "/uploads/audio/test-28-section-3.mp3",
+    "/uploads/audio/test-28-section-4.mp3"
+  ],
+  "parts": [
+    {
+      "title": "Section 1",
+      "order": 0,
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nEvents during Kenton Festival\nExample: Start date: 16th May\n\nOpening ceremony (first day)\n• In town centre, starting at 1 ...............\n• The mayor will make a speech\n• A 2 ............... will perform\n• Performance of a 3 ............... about Helen Tungate (a 4 ...............)\n• Evening fireworks display situated across the 5 ...............\n\nOther events\n• Videos about relationships that children have with their 6 ...............\n  Venue: 7 ............... House\n• Performance of 8 ............... dances\n  Venue: the 9 ............... market in the town centre\n  Time: 2 and 5 pm every day except 1st day of festival\n• Several professional concerts and one by children\n  Venue: library\n  Time: 6.30 pm on the 18th\n\nTickets\n• Tickets available online from festival box office and from shops which have the festival 10 ............... in their windows",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-28-section-1.mp3"
+      },
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In town centre, starting at ________",
+            "blank": true
+          },
+          "correctAnswer": "2.45",
+          "acceptableAnswers": [
+            "2.45",
+            "2:45",
+            "2.45 pm",
+            "2:45 pm"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A ________ will perform",
+            "blank": true
+          },
+          "correctAnswer": "band"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Performance of a ________ about Helen Tungate",
+            "blank": true
+          },
+          "correctAnswer": "play"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "(a ________)",
+            "blank": true
+          },
+          "correctAnswer": "scientist"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Evening fireworks display situated across the ________",
+            "blank": true
+          },
+          "correctAnswer": "river"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Videos about relationships that children have with their ________",
+            "blank": true
+          },
+          "correctAnswer": "grandparents"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Venue: ________ House",
+            "blank": true
+          },
+          "correctAnswer": "Handsworth"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Performance of ________ dances",
+            "blank": true
+          },
+          "correctAnswer": "traditional"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Venue: the ________ market in the town centre",
+            "blank": true
+          },
+          "correctAnswer": "outdoor"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "shops which have the festival ________ in their windows",
+            "blank": true
+          },
+          "correctAnswer": "logo"
+        }
+      ]
+    },
+    {
+      "title": "Section 2",
+      "order": 1,
+      "content": "Questions 11–15\nChoose the correct letter, A, B or C.\n\nTheatre trip to Munich\n11 When the group meet at the airport they will have\nA breakfast.\nB coffee.\nC lunch.\n\n12 The group will be met at Munich Airport by\nA an employee at the National Theatre.\nB a theatre manager.\nC a tour operator.\n\n13 How much will they pay per night for a double room at the hotel?\nA 110 euros\nB 120 euros\nC 150 euros\n\n14 What type of restaurant will they go to on Tuesday evening?\nA an Italian restaurant\nB a Lebanese restaurant\nC a typical restaurant of the region\n\n15 Who will they meet on Wednesday afternoon?\nA an actor\nB a playwright\nC a theatre director\n\nQuestions 16–20\nWhat does the man say about the play on each of the following days?\nChoose FIVE answers from the box and write the correct letter, A–G, next to Questions 16–20.\n\nComments\nA The playwright will be present.\nB The play was written to celebrate an anniversary.\nC The play will be performed inside a historic building.\nD The play will be accompanied by live music.\nE The play will be performed outdoors.\nF The play will be performed for the first time.\nG The performance will be attended by officials from the town.\n\nDays\n16 Wednesday\n17 Thursday\n18 Friday\n19 Saturday\n20 Monday",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-28-section-2.mp3"
+      },
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When the group meet at the airport they will have",
+            "options": [
+              {
+                "label": "A",
+                "text": "breakfast."
+              },
+              {
+                "label": "B",
+                "text": "coffee."
+              },
+              {
+                "label": "C",
+                "text": "lunch."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The group will be met at Munich Airport by",
+            "options": [
+              {
+                "label": "A",
+                "text": "an employee at the National Theatre."
+              },
+              {
+                "label": "B",
+                "text": "a theatre manager."
+              },
+              {
+                "label": "C",
+                "text": "a tour operator."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How much will they pay per night for a double room at the hotel?",
+            "options": [
+              {
+                "label": "A",
+                "text": "110 euros"
+              },
+              {
+                "label": "B",
+                "text": "120 euros"
+              },
+              {
+                "label": "C",
+                "text": "150 euros"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What type of restaurant will they go to on Tuesday evening?",
+            "options": [
+              {
+                "label": "A",
+                "text": "an Italian restaurant"
+              },
+              {
+                "label": "B",
+                "text": "a Lebanese restaurant"
+              },
+              {
+                "label": "C",
+                "text": "a typical restaurant of the region"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Who will they meet on Wednesday afternoon?",
+            "options": [
+              {
+                "label": "A",
+                "text": "an actor"
+              },
+              {
+                "label": "B",
+                "text": "a playwright"
+              },
+              {
+                "label": "C",
+                "text": "a theatre director"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Wednesday",
+            "options": [
+              {
+                "label": "A",
+                "text": "The playwright will be present."
+              },
+              {
+                "label": "B",
+                "text": "The play was written to celebrate an anniversary."
+              },
+              {
+                "label": "C",
+                "text": "The play will be performed inside a historic building."
+              },
+              {
+                "label": "D",
+                "text": "The play will be accompanied by live music."
+              },
+              {
+                "label": "E",
+                "text": "The play will be performed outdoors."
+              },
+              {
+                "label": "F",
+                "text": "The play will be performed for the first time."
+              },
+              {
+                "label": "G",
+                "text": "The performance will be attended by officials from the town."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Thursday",
+            "options": [
+              {
+                "label": "A",
+                "text": "The playwright will be present."
+              },
+              {
+                "label": "B",
+                "text": "The play was written to celebrate an anniversary."
+              },
+              {
+                "label": "C",
+                "text": "The play will be performed inside a historic building."
+              },
+              {
+                "label": "D",
+                "text": "The play will be accompanied by live music."
+              },
+              {
+                "label": "E",
+                "text": "The play will be performed outdoors."
+              },
+              {
+                "label": "F",
+                "text": "The play will be performed for the first time."
+              },
+              {
+                "label": "G",
+                "text": "The performance will be attended by officials from the town."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Friday",
+            "options": [
+              {
+                "label": "A",
+                "text": "The playwright will be present."
+              },
+              {
+                "label": "B",
+                "text": "The play was written to celebrate an anniversary."
+              },
+              {
+                "label": "C",
+                "text": "The play will be performed inside a historic building."
+              },
+              {
+                "label": "D",
+                "text": "The play will be accompanied by live music."
+              },
+              {
+                "label": "E",
+                "text": "The play will be performed outdoors."
+              },
+              {
+                "label": "F",
+                "text": "The play will be performed for the first time."
+              },
+              {
+                "label": "G",
+                "text": "The performance will be attended by officials from the town."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Saturday",
+            "options": [
+              {
+                "label": "A",
+                "text": "The playwright will be present."
+              },
+              {
+                "label": "B",
+                "text": "The play was written to celebrate an anniversary."
+              },
+              {
+                "label": "C",
+                "text": "The play will be performed inside a historic building."
+              },
+              {
+                "label": "D",
+                "text": "The play will be accompanied by live music."
+              },
+              {
+                "label": "E",
+                "text": "The play will be performed outdoors."
+              },
+              {
+                "label": "F",
+                "text": "The play will be performed for the first time."
+              },
+              {
+                "label": "G",
+                "text": "The performance will be attended by officials from the town."
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Monday",
+            "options": [
+              {
+                "label": "A",
+                "text": "The playwright will be present."
+              },
+              {
+                "label": "B",
+                "text": "The play was written to celebrate an anniversary."
+              },
+              {
+                "label": "C",
+                "text": "The play will be performed inside a historic building."
+              },
+              {
+                "label": "D",
+                "text": "The play will be accompanied by live music."
+              },
+              {
+                "label": "E",
+                "text": "The play will be performed outdoors."
+              },
+              {
+                "label": "F",
+                "text": "The play will be performed for the first time."
+              },
+              {
+                "label": "G",
+                "text": "The performance will be attended by officials from the town."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "title": "Section 3",
+      "order": 2,
+      "content": "Questions 21–25\nChoose the correct letter, A, B or C.\n\nScandinavian Studies\n21 James chose to take Scandinavian Studies because when he was a child\nA he was often taken to Denmark.\nB his mother spoke to him in Danish.\nC a number of Danish people visited his family.\n\n22 When he graduates, James would like to\nA take a postgraduate course.\nB work in the media.\nC become a translator.\n\n23 Which course will end this term?\nA Swedish cinema\nB Danish television programmes\nC Scandinavian literature\n\n24 They agree that James's literature paper this term will be on\nA 19th century playwrights.\nB the Icelandic sagas.\nC modern Scandinavian novels.\n\n25 Beth recommends that James's paper should be\nA a historical overview of the genre.\nB an in-depth analysis of a single writer.\nC a study of the social background to the literature.\n\nQuestions 26–30\nComplete the flow-chart below.\nChoose FIVE answers from the box and write the correct letter, A–G, next to Questions 26–30.\n\nOptions\nA bullet points\nB film\nC notes\nD structure\nE student paper\nF textbook\nG documentary\n\nHow James will write his paper on the Vikings\nHe'll read a 26 ............... and choose his topic.\nHe'll borrow a 27 ............... from Beth.\nHe'll plan the 28 ............... of the paper.\nHe'll read some source material and write 29 ............... .\nHe'll write the paper using 30 ............... .\nHe'll write the complete paper.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-28-section-3.mp3"
+      },
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "James chose to take Scandinavian Studies because when he was a child",
+            "options": [
+              {
+                "label": "A",
+                "text": "he was often taken to Denmark."
+              },
+              {
+                "label": "B",
+                "text": "his mother spoke to him in Danish."
+              },
+              {
+                "label": "C",
+                "text": "a number of Danish people visited his family."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When he graduates, James would like to",
+            "options": [
+              {
+                "label": "A",
+                "text": "take a postgraduate course."
+              },
+              {
+                "label": "B",
+                "text": "work in the media."
+              },
+              {
+                "label": "C",
+                "text": "become a translator."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which course will end this term?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Swedish cinema"
+              },
+              {
+                "label": "B",
+                "text": "Danish television programmes"
+              },
+              {
+                "label": "C",
+                "text": "Scandinavian literature"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "They agree that James's literature paper this term will be on",
+            "options": [
+              {
+                "label": "A",
+                "text": "19th century playwrights."
+              },
+              {
+                "label": "B",
+                "text": "the Icelandic sagas."
+              },
+              {
+                "label": "C",
+                "text": "modern Scandinavian novels."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Beth recommends that James's paper should be",
+            "options": [
+              {
+                "label": "A",
+                "text": "a historical overview of the genre."
+              },
+              {
+                "label": "B",
+                "text": "an in-depth analysis of a single writer."
+              },
+              {
+                "label": "C",
+                "text": "a study of the social background to the literature."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MATCHING",
+          "content": {
+            "stem": "He'll read a ________ and choose his topic.",
+            "options": [
+              {
+                "label": "A",
+                "text": "bullet points"
+              },
+              {
+                "label": "B",
+                "text": "film"
+              },
+              {
+                "label": "C",
+                "text": "notes"
+              },
+              {
+                "label": "D",
+                "text": "structure"
+              },
+              {
+                "label": "E",
+                "text": "student paper"
+              },
+              {
+                "label": "F",
+                "text": "textbook"
+              },
+              {
+                "label": "G",
+                "text": "documentary"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MATCHING",
+          "content": {
+            "stem": "He'll borrow a ________ from Beth.",
+            "options": [
+              {
+                "label": "A",
+                "text": "bullet points"
+              },
+              {
+                "label": "B",
+                "text": "film"
+              },
+              {
+                "label": "C",
+                "text": "notes"
+              },
+              {
+                "label": "D",
+                "text": "structure"
+              },
+              {
+                "label": "E",
+                "text": "student paper"
+              },
+              {
+                "label": "F",
+                "text": "textbook"
+              },
+              {
+                "label": "G",
+                "text": "documentary"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MATCHING",
+          "content": {
+            "stem": "He'll plan the ________ of the paper.",
+            "options": [
+              {
+                "label": "A",
+                "text": "bullet points"
+              },
+              {
+                "label": "B",
+                "text": "film"
+              },
+              {
+                "label": "C",
+                "text": "notes"
+              },
+              {
+                "label": "D",
+                "text": "structure"
+              },
+              {
+                "label": "E",
+                "text": "student paper"
+              },
+              {
+                "label": "F",
+                "text": "textbook"
+              },
+              {
+                "label": "G",
+                "text": "documentary"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MATCHING",
+          "content": {
+            "stem": "He'll read some source material and write ________ .",
+            "options": [
+              {
+                "label": "A",
+                "text": "bullet points"
+              },
+              {
+                "label": "B",
+                "text": "film"
+              },
+              {
+                "label": "C",
+                "text": "notes"
+              },
+              {
+                "label": "D",
+                "text": "structure"
+              },
+              {
+                "label": "E",
+                "text": "student paper"
+              },
+              {
+                "label": "F",
+                "text": "textbook"
+              },
+              {
+                "label": "G",
+                "text": "documentary"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MATCHING",
+          "content": {
+            "stem": "He'll write the paper using ________ .",
+            "options": [
+              {
+                "label": "A",
+                "text": "bullet points"
+              },
+              {
+                "label": "B",
+                "text": "film"
+              },
+              {
+                "label": "C",
+                "text": "notes"
+              },
+              {
+                "label": "D",
+                "text": "structure"
+              },
+              {
+                "label": "E",
+                "text": "student paper"
+              },
+              {
+                "label": "F",
+                "text": "textbook"
+              },
+              {
+                "label": "G",
+                "text": "documentary"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "title": "Section 4",
+      "order": 3,
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nConflict at work\n• Conflict mostly consists of behaviour in the general category of 31 ...............\n• Often a result of people wanting to prove their 32 ...............\n• Also caused by differences in 33 ............... between people\n• 34 '...............' conflicts: people more concerned about own team than about company\n• Conflict-related stress can cause 35 ............... that may last for months\n\nChief Executives (CEOs)\n• Many have both 36 ............... and anxiety\n• May not like to have their decisions questioned\n• There may be conflict between people who have different 37 ...............\n\nOther managers\n• A structure that is more 38 ............... may create a feeling of uncertainty about who staff should report to.\n\nMinimising conflict\n• Bosses need to try hard to gain 39 ...............\n• Someone from outside the company may be given the role of 40 ............... in order to resolve conflicts.",
+      "meta": {
+        "audioUrl": "/uploads/audio/test-28-section-4.mp3"
+      },
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Conflict mostly consists of behaviour in the general category of ________",
+            "blank": true
+          },
+          "correctAnswer": "bullying"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Often a result of people wanting to prove their ________",
+            "blank": true
+          },
+          "correctAnswer": "superiority"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Also caused by differences in ________ between people",
+            "blank": true
+          },
+          "correctAnswer": "personality"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "'________' conflicts: people more concerned about own team than about company",
+            "blank": true
+          },
+          "correctAnswer": "structural"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Conflict-related stress can cause ________ that may last for months",
+            "blank": true
+          },
+          "correctAnswer": "absence"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Many have both ________ and anxiety",
+            "blank": true
+          },
+          "correctAnswer": "confidence"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "There may be conflict between people who have different ________",
+            "blank": true
+          },
+          "correctAnswer": "visions"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A structure that is more ________ may create a feeling of uncertainty about who staff should report to.",
+            "blank": true
+          },
+          "correctAnswer": "democratic"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Bosses need to try hard to gain ________",
+            "blank": true
+          },
+          "correctAnswer": "respect"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Someone from outside the company may be given the role of ________ in order to resolve conflicts.",
+            "blank": true
+          },
+          "correctAnswer": "mediator"
+        }
+      ]
+    }
+  ],
+  "sourceFolder": "Cambridge IELTS 12 PDF.pdf",
+  "savedAt": "2026-11-17T05:07:54.499969+00:00"
+}
