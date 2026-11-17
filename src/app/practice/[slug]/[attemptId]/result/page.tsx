@@ -231,6 +231,15 @@ export default async function PracticeResultPage({ params }: Props) {
     }))
     .filter((part) => part.questions.length > 0);
 
+  /** Same queue / renumbering as the Speaking practice session (answers key 1..N). */
+  const speakingQueue =
+    test.skill === "SPEAKING"
+      ? filterSpeakingExamQueue(
+          buildSpeakingExamQueue(sectionParts),
+          parseSpeakingPartKinds(attempt.speakingPartKinds),
+        ).filter((it) => (filterSet ? filterSet.has(it.number) : true))
+      : [];
+
   const questions = selectedParts.flatMap((part) =>
     part.questions.map((q) => ({
       number: q.number,
@@ -244,16 +253,14 @@ export default async function PracticeResultPage({ params }: Props) {
     })),
   );
 
-  /** Same queue / renumbering as the Speaking practice session (answers key 1..N). */
-  const speakingQueue =
-    test.skill === "SPEAKING"
-      ? filterSpeakingExamQueue(
-          buildSpeakingExamQueue(sectionParts),
-          parseSpeakingPartKinds(attempt.speakingPartKinds),
-        ).filter((it) => (filterSet ? filterSet.has(it.number) : true))
-      : [];
-
-  const grade = gradeAnswers(questions, attempt.answers);
+  const storedGrade = attempt.grade;
+  const grade =
+    storedGrade &&
+    Array.isArray(storedGrade.items) &&
+    typeof storedGrade.correct === "number" &&
+    typeof storedGrade.total === "number"
+      ? storedGrade
+      : gradeAnswers(questions, attempt.answers);
   const band = estimateBand(grade.correct, grade.total);
   const isSpeaking = test.skill === "SPEAKING";
   const isProdSkill = test.skill === "WRITING" || isSpeaking;

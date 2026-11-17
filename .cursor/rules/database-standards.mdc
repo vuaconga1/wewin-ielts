@@ -21,8 +21,9 @@ Schema: `prisma/schema.prisma` · Client: `import { prisma } from "@/lib/prisma"
 
 ## Index
 - Mỗi FK hay được lọc cần `@@index`; truy vấn "theo user, mới nhất" dùng index ghép `@@index([userId, createdAt])`.
-- Catalog công khai: `@@index([status, order])`.
+- Catalog công khai: `@@index([status, order])` hoặc `[status, updatedAt]` nếu list sort theo `updatedAt`.
 - Thêm index khi thêm query mới có `where`/`orderBy` trên bảng lớn (Attempt, AuditLog, SiteVisit…).
+- **Bắt buộc** theo checklist liên tục: `db-index-optimization.mdc` (cùng PR với model/query mới; equality → range → sort).
 
 ## Migration
 - Đổi schema → `npm run db:migrate -- --name <verb_noun>` (vd `add_worksheet_progress`), commit cả thư mục `prisma/migrations/<timestamp>_<name>/`.

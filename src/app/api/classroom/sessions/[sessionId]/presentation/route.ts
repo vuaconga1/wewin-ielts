@@ -29,7 +29,9 @@ async function authorizedAccess(context: Context) {
   const viewer = await getSessionUser();
   if (!viewer) return { error: "LOGIN_REQUIRED" as const, status: 401 };
   const { sessionId } = await context.params;
-  const access = await getClassroomAccess(sessionId, viewer.id);
+  const access = await getClassroomAccess(sessionId, viewer.id, {
+    includeSlides: false,
+  });
   if (!access) {
     return { error: "CLASSROOM_ACCESS_DENIED" as const, status: 403 };
   }

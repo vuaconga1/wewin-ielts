@@ -220,16 +220,17 @@ export async function registerStudent(input: {
   const password = input.password;
   const username = (input.username?.trim() || usernameFromEmail(email)).slice(
     0,
-    48,
+    32,
   );
 
-  if (!email || !email.includes("@")) {
+  // Defensive — API routes must already run registerBodySchema.
+  if (!email || !email.includes("@") || email.length > 254) {
     throw new AuthError("INVALID_EMAIL", "Email không hợp lệ");
   }
-  if (password.length < 6) {
+  if (password.length < 8) {
     throw new AuthError(
       "WEAK_PASSWORD",
-      "Mật khẩu cần ít nhất 6 ký tự",
+      "Mật khẩu cần ít nhất 8 ký tự",
     );
   }
 

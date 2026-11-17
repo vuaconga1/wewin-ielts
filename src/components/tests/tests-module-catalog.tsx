@@ -9,13 +9,13 @@ import { TestsCatalog, type CatalogTest } from "@/components/tests/tests-catalog
 import { SiteShell } from "@/components/layout/site-shell";
 import { TestsModuleEmpty } from "@/components/tests/tests-module-empty";
 import { getTranslationsStatic } from "@/i18n/server";
-import { buildSpeakingExamQueue } from "@/lib/practice/speaking-exam";
 import { compareTestsAscending } from "@/lib/tests/test-sort";
 
 function toCatalog(tests: Awaited<ReturnType<typeof listPublicTests>>): CatalogTest[] {
   return [...tests].sort(compareTestsAscending).map((trow) => {
-    const speakingQueue =
-      trow.skill === "SPEAKING" ? buildSpeakingExamQueue(trow.parts) : [];
+    const questionCount = trow.parts.reduce((s, p) => s + p.questions.length, 0);
+    // Catalog no longer loads question stems; Speaking uses DB question rows
+    // (one per prompt). Detail page still builds the full queue via getTestBySlug.
     return {
       slug: trow.slug,
       title: trow.title,
@@ -23,14 +23,8 @@ function toCatalog(tests: Awaited<ReturnType<typeof listPublicTests>>): CatalogT
       examType: normalizeExamType(trow.examType),
       timeLimitMinutes: trow.timeLimitMinutes ?? null,
       tags: trow.tags,
-      partsCount:
-        trow.skill === "SPEAKING" && speakingQueue.length > 0
-          ? 3
-          : trow.parts.length,
-      questionCount:
-        speakingQueue.length > 0
-          ? speakingQueue.length
-          : trow.parts.reduce((s, p) => s + p.questions.length, 0),
+      partsCount: trow.skill === "SPEAKING" ? 3 : trow.parts.length,
+      questionCount,
       hasAudio: (trow.audioFiles?.length ?? 0) > 0,
       savedAt: trow.savedAt,
     };

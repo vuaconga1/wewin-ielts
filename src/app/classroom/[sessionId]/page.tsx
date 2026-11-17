@@ -24,7 +24,9 @@ export default async function LiveClassroomPage({ params }: Props) {
       `/login?next=${encodeURIComponent(`/classroom/${sessionId}`)}`,
     );
   }
-  const access = await getClassroomAccess(sessionId, viewer.id);
+  const access = await getClassroomAccess(sessionId, viewer.id, {
+    includeSlides: true,
+  });
   if (!access) redirect("/forbidden");
 
   return (

@@ -37,7 +37,9 @@ export async function POST(_request: Request, context: Context) {
   if (!limit.allowed) {
     return jsonError("RATE_LIMITED", 429, limit.retryAfterSeconds);
   }
-  const access = await getClassroomAccess(sessionId, viewer.id);
+  const access = await getClassroomAccess(sessionId, viewer.id, {
+    includeSlides: false,
+  });
   if (!access) {
     return jsonError("CLASSROOM_ACCESS_DENIED", 403);
   }

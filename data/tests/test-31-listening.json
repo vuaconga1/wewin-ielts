@@ -1,0 +1,878 @@
+{
+  "title": "Test 31.C18.01 - Listening",
+  "slug": "test-31-listening",
+  "skill": "LISTENING",
+  "status": "DRAFT",
+  "parts": [
+    {
+      "title": "Section 1",
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nTransport survey\nName: Sadie Jones\nYear of birth: 1991\nPostcode: 1 ...............\n\nTravelling by bus\nDate of bus journey: 2 ...............\nReason for trip: shopping and visit to the 3 ...............\nTravelled by bus because cost of 4 ............... too high\nGot on bus at 5 ............... Street\nComplaints about bus service:\n- bus today was 6 ...............\n- frequency of buses in the 7 ...............\n\nTravelling by car\nGoes to the 8 ............... by car\n\nTravelling by bicycle\nDislikes travelling by bike in the city centre because of the 9 ...............\nDoesn't own a bike because of a lack of 10 ...............",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Postcode: 1 ________",
+            "blank": true
+          },
+          "correctAnswer": "DW30 7YZ",
+          "acceptableAnswers": [
+            "DW30 7YZ",
+            "DW307YZ"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Date of bus journey: 2 ________",
+            "blank": true
+          },
+          "correctAnswer": "24(th) April",
+          "acceptableAnswers": [
+            "24 April",
+            "24th April",
+            "24th of April",
+            "April 24",
+            "April 24th"
+          ]
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Reason for trip: shopping and visit to the 3 ________",
+            "blank": true
+          },
+          "correctAnswer": "dentist"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Travelled by bus because cost of 4 ________ too high",
+            "blank": true
+          },
+          "correctAnswer": "parking"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Got on bus at 5 ________ Street",
+            "blank": true
+          },
+          "correctAnswer": "Claxby"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "bus today was 6 ________",
+            "blank": true
+          },
+          "correctAnswer": "late"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "frequency of buses in the 7 ________",
+            "blank": true
+          },
+          "correctAnswer": "evening",
+          "acceptableAnswers": [
+            "evening",
+            "evenings"
+          ]
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Goes to the 8 ________ by car",
+            "blank": true
+          },
+          "correctAnswer": "supermarket"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Dislikes travelling by bike in the city centre because of the 9 ________",
+            "blank": true
+          },
+          "correctAnswer": "pollution"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Doesn't own a bike because of a lack of 10 ________",
+            "blank": true
+          },
+          "correctAnswer": "storage"
+        }
+      ],
+      "order": 0,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-31-section-1.mp3"
+      }
+    },
+    {
+      "title": "Section 2",
+      "content": "Questions 11–13\nChoose the correct letter, A, B or C.\n\nBecoming a volunteer for ACE\n11 Why does the speaker apologise about the seats?\nA They are too small.\nB There are not enough of them.\nC Some of them are very close together.\n\n12 What does the speaker say about the age of volunteers?\nA The age of volunteers is less important than other factors.\nB Young volunteers are less reliable than older ones.\nC Most volunteers are about 60 years old.\n\n13 What does the speaker say about training?\nA It is continuous.\nB It is conducted by a manager.\nC It takes place online.\n\nQuestions 14 and 15\nChoose TWO letters, A–E.\nWhich TWO issues does the speaker ask the audience to consider before they apply to be volunteers?\nA their financial situation\nB their level of commitment\nC their work experience\nD their ambition\nE their availability\n\nQuestions 16–20\nWhat does the speaker suggest would be helpful for each of the following areas of voluntary work?\nChoose FIVE answers from the box and write the correct letter, A–G, next to Questions 16–20.\n\nHelpful things volunteers might offer\nA experience on stage\nB original, new ideas\nC parenting skills\nD an understanding of food and diet\nE retail experience\nF a good memory\nG a good level of fitness\n\nArea of voluntary work\n16 Fundraising\n17 Litter collection\n18 'Playmates'\n19 Story club\n20 First aid",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why does the speaker apologise about the seats?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They are too small."
+              },
+              {
+                "label": "B",
+                "text": "There are not enough of them."
+              },
+              {
+                "label": "C",
+                "text": "Some of them are very close together."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker say about the age of volunteers?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The age of volunteers is less important than other factors."
+              },
+              {
+                "label": "B",
+                "text": "Young volunteers are less reliable than older ones."
+              },
+              {
+                "label": "C",
+                "text": "Most volunteers are about 60 years old."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker say about training?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is continuous."
+              },
+              {
+                "label": "B",
+                "text": "It is conducted by a manager."
+              },
+              {
+                "label": "C",
+                "text": "It takes place online."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "their financial situation"
+              },
+              {
+                "label": "B",
+                "text": "their level of commitment"
+              },
+              {
+                "label": "C",
+                "text": "their work experience"
+              },
+              {
+                "label": "D",
+                "text": "their ambition"
+              },
+              {
+                "label": "E",
+                "text": "their availability"
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "their financial situation"
+              },
+              {
+                "label": "B",
+                "text": "their level of commitment"
+              },
+              {
+                "label": "C",
+                "text": "their work experience"
+              },
+              {
+                "label": "D",
+                "text": "their ambition"
+              },
+              {
+                "label": "E",
+                "text": "their availability"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Fundraising",
+            "options": [
+              {
+                "label": "A",
+                "text": "experience on stage"
+              },
+              {
+                "label": "B",
+                "text": "original, new ideas"
+              },
+              {
+                "label": "C",
+                "text": "parenting skills"
+              },
+              {
+                "label": "D",
+                "text": "an understanding of food and diet"
+              },
+              {
+                "label": "E",
+                "text": "retail experience"
+              },
+              {
+                "label": "F",
+                "text": "a good memory"
+              },
+              {
+                "label": "G",
+                "text": "a good level of fitness"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Litter collection",
+            "options": [
+              {
+                "label": "A",
+                "text": "experience on stage"
+              },
+              {
+                "label": "B",
+                "text": "original, new ideas"
+              },
+              {
+                "label": "C",
+                "text": "parenting skills"
+              },
+              {
+                "label": "D",
+                "text": "an understanding of food and diet"
+              },
+              {
+                "label": "E",
+                "text": "retail experience"
+              },
+              {
+                "label": "F",
+                "text": "a good memory"
+              },
+              {
+                "label": "G",
+                "text": "a good level of fitness"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "'Playmates'",
+            "options": [
+              {
+                "label": "A",
+                "text": "experience on stage"
+              },
+              {
+                "label": "B",
+                "text": "original, new ideas"
+              },
+              {
+                "label": "C",
+                "text": "parenting skills"
+              },
+              {
+                "label": "D",
+                "text": "an understanding of food and diet"
+              },
+              {
+                "label": "E",
+                "text": "retail experience"
+              },
+              {
+                "label": "F",
+                "text": "a good memory"
+              },
+              {
+                "label": "G",
+                "text": "a good level of fitness"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Story club",
+            "options": [
+              {
+                "label": "A",
+                "text": "experience on stage"
+              },
+              {
+                "label": "B",
+                "text": "original, new ideas"
+              },
+              {
+                "label": "C",
+                "text": "parenting skills"
+              },
+              {
+                "label": "D",
+                "text": "an understanding of food and diet"
+              },
+              {
+                "label": "E",
+                "text": "retail experience"
+              },
+              {
+                "label": "F",
+                "text": "a good memory"
+              },
+              {
+                "label": "G",
+                "text": "a good level of fitness"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "First aid",
+            "options": [
+              {
+                "label": "A",
+                "text": "experience on stage"
+              },
+              {
+                "label": "B",
+                "text": "original, new ideas"
+              },
+              {
+                "label": "C",
+                "text": "parenting skills"
+              },
+              {
+                "label": "D",
+                "text": "an understanding of food and diet"
+              },
+              {
+                "label": "E",
+                "text": "retail experience"
+              },
+              {
+                "label": "F",
+                "text": "a good memory"
+              },
+              {
+                "label": "G",
+                "text": "a good level of fitness"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        }
+      ],
+      "order": 1,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-31-section-2.mp3"
+      }
+    },
+    {
+      "title": "Section 3",
+      "content": "Questions 21–26\nChoose the correct letter, A, B or C.\n\nTalk on jobs in fashion design\n21 What problem did Chantal have at the start of the talk?\nA Her view of the speaker was blocked.\nB She was unable to find an empty seat.\nC The students next to her were talking.\n\n22 What were Hugo and Chantal surprised to hear about the job market?\nA It has become more competitive than it used to be.\nB There is more variety in it than they had realised.\nC Some areas of it are more exciting than others.\n\n23 Hugo and Chantal agree that the speaker's message was\nA unfair to them at times.\nB hard for them to follow.\nC critical of the industry.\n\n24 What do Hugo and Chantal criticise about their school careers advice?\nA when they received the advice\nB how much advice was given\nC who gave the advice\n\n25 When discussing their future, Hugo and Chantal disagree on\nA which is the best career in fashion.\nB when to choose a career in fashion.\nC why they would like a career in fashion.\n\n26 How does Hugo feel about being an unpaid assistant?\nA He is realistic about the practice.\nB He feels the practice is dishonest.\nC He thinks others want to change the practice.\n\nQuestions 27 and 28\nChoose TWO letters, A–E.\nWhich TWO mistakes did the speaker admit she made in her first job?\nA being dishonest to her employer\nB paying too much attention to how she looked\nC expecting to become well known\nD trying to earn a lot of money\nE openly disliking her client\n\nQuestions 29 and 30\nChoose TWO letters, A–E.\nWhich TWO pieces of retail information do Hugo and Chantal agree would be useful?\nA the reasons people return fashion items\nB how much time people have to shop for clothes\nC fashion designs people want but can't find\nD the best time of year for fashion buying\nE the most popular fashion sizes",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What problem did Chantal have at the start of the talk?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Her view of the speaker was blocked."
+              },
+              {
+                "label": "B",
+                "text": "She was unable to find an empty seat."
+              },
+              {
+                "label": "C",
+                "text": "The students next to her were talking."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What were Hugo and Chantal surprised to hear about the job market?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It has become more competitive than it used to be."
+              },
+              {
+                "label": "B",
+                "text": "There is more variety in it than they had realised."
+              },
+              {
+                "label": "C",
+                "text": "Some areas of it are more exciting than others."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Hugo and Chantal agree that the speaker's message was",
+            "options": [
+              {
+                "label": "A",
+                "text": "unfair to them at times."
+              },
+              {
+                "label": "B",
+                "text": "hard for them to follow."
+              },
+              {
+                "label": "C",
+                "text": "critical of the industry."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What do Hugo and Chantal criticise about their school careers advice?",
+            "options": [
+              {
+                "label": "A",
+                "text": "when they received the advice"
+              },
+              {
+                "label": "B",
+                "text": "how much advice was given"
+              },
+              {
+                "label": "C",
+                "text": "who gave the advice"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "When discussing their future, Hugo and Chantal disagree on",
+            "options": [
+              {
+                "label": "A",
+                "text": "which is the best career in fashion."
+              },
+              {
+                "label": "B",
+                "text": "when to choose a career in fashion."
+              },
+              {
+                "label": "C",
+                "text": "why they would like a career in fashion."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "How does Hugo feel about being an unpaid assistant?",
+            "options": [
+              {
+                "label": "A",
+                "text": "He is realistic about the practice."
+              },
+              {
+                "label": "B",
+                "text": "He feels the practice is dishonest."
+              },
+              {
+                "label": "C",
+                "text": "He thinks others want to change the practice."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO mistakes did the speaker admit she made in her first job? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "being dishonest to her employer"
+              },
+              {
+                "label": "B",
+                "text": "paying too much attention to how she looked"
+              },
+              {
+                "label": "C",
+                "text": "expecting to become well known"
+              },
+              {
+                "label": "D",
+                "text": "trying to earn a lot of money"
+              },
+              {
+                "label": "E",
+                "text": "openly disliking her client"
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO mistakes did the speaker admit she made in her first job? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "being dishonest to her employer"
+              },
+              {
+                "label": "B",
+                "text": "paying too much attention to how she looked"
+              },
+              {
+                "label": "C",
+                "text": "expecting to become well known"
+              },
+              {
+                "label": "D",
+                "text": "trying to earn a lot of money"
+              },
+              {
+                "label": "E",
+                "text": "openly disliking her client"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO pieces of retail information do Hugo and Chantal agree would be useful? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the reasons people return fashion items"
+              },
+              {
+                "label": "B",
+                "text": "how much time people have to shop for clothes"
+              },
+              {
+                "label": "C",
+                "text": "fashion designs people want but can't find"
+              },
+              {
+                "label": "D",
+                "text": "the best time of year for fashion buying"
+              },
+              {
+                "label": "E",
+                "text": "the most popular fashion sizes"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO pieces of retail information do Hugo and Chantal agree would be useful? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the reasons people return fashion items"
+              },
+              {
+                "label": "B",
+                "text": "how much time people have to shop for clothes"
+              },
+              {
+                "label": "C",
+                "text": "fashion designs people want but can't find"
+              },
+              {
+                "label": "D",
+                "text": "the best time of year for fashion buying"
+              },
+              {
+                "label": "E",
+                "text": "the most popular fashion sizes"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        }
+      ],
+      "order": 2,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-31-section-3.mp3"
+      }
+    },
+    {
+      "title": "Section 4",
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nElephant translocation\nReasons for overpopulation at Majete National Park\n• strict enforcement of anti-poaching laws\n• successful breeding\n\nProblems caused by elephant overpopulation\n• greater competition, causing hunger for elephants\n• damage to 31 ............... in the park\n\nThe translocation process\n• a suitable group of elephants from the same 32 ............... was selected\n• vets and park staff made use of 33 ............... to help guide the elephants into an open plain\n• elephants were immobilised with tranquilisers\n  - this process had to be completed quickly to reduce 34 ...............\n  - elephants had to be turned on their 35 ............... to avoid damage to their lungs\n  - elephants' 36 ............... had to be monitored constantly\n  - tracking devices were fitted to the matriarchs\n  - data including the size of their tusks and 37 ............... was taken\n• elephants were taken by truck to their new reserve\n\nAdvantages of translocation at Nkhotakota Wildlife Park\n• 38 ............... opportunities\n• a reduction in the number of poachers and 39 ...............\n• an example of conservation that other parks can follow\n• an increase in 40 ............... as a contributor to GDP",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "damage to 31 ________ in the park",
+            "blank": true
+          },
+          "correctAnswer": "fences"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a suitable group of elephants from the same 32 ________ was selected",
+            "blank": true
+          },
+          "correctAnswer": "family"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "vets and park staff made use of 33 ________ to help guide the elephants into an open plain",
+            "blank": true
+          },
+          "correctAnswer": "helicopters"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "this process had to be completed quickly to reduce 34 ________",
+            "blank": true
+          },
+          "correctAnswer": "stress"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "elephants had to be turned on their 35 ________ to avoid damage to their lungs",
+            "blank": true
+          },
+          "correctAnswer": "sides"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "elephants' 36 ________ had to be monitored constantly",
+            "blank": true
+          },
+          "correctAnswer": "breathing"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "data including the size of their tusks and 37 ________ was taken",
+            "blank": true
+          },
+          "correctAnswer": "feet"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "38 ________ opportunities",
+            "blank": true
+          },
+          "correctAnswer": "employment"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "a reduction in the number of poachers and 39 ________",
+            "blank": true
+          },
+          "correctAnswer": "weapons"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "an increase in 40 ________ as a contributor to GDP",
+            "blank": true
+          },
+          "correctAnswer": "tourism"
+        }
+      ],
+      "order": 3,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-31-section-4.mp3"
+      }
+    }
+  ],
+  "examType": "ACADEMIC",
+  "sourceFolder": "Cambridge 18.pdf",
+  "savedAt": "2026-11-17T08:22:48.056136+00:00"
+}

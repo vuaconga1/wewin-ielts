@@ -7,6 +7,8 @@ import {
   submitExercises,
   updateVideoProgress,
 } from "@/lib/learn/store";
+import { learnProgressBodySchema } from "@/lib/validation/practice";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const dynamic = "force-dynamic";
 
@@ -16,35 +18,15 @@ export async function GET() {
   return NextResponse.json({ ownerKey, progress });
 }
 
-type Body =
-  | {
-      action: "video";
-      lessonId: string;
-      maxWatchedSec: number;
-      videoCompleted?: boolean;
-    }
-  | {
-      action: "exercises";
-      lessonId: string;
-      answers: Record<string, string>;
-    }
-  | {
-      action: "complete";
-      lessonId: string;
-    };
-
 export async function POST(request: Request) {
   try {
-    const body = (await request.json()) as Body;
+    const raw = await request.json().catch(() => null);
+    const parsed = parseJsonBody(learnProgressBodySchema, raw);
+    if (!parsed.ok) return parsed.response;
+    const body = parsed.data;
     const ownerKey = await ensureLearnOwnerKey();
 
     if (body.action === "video") {
-      if (!body.lessonId || typeof body.maxWatchedSec !== "number") {
-        return NextResponse.json(
-          { error: "Thiếu lessonId hoặc maxWatchedSec" },
-          { status: 400 },
-        );
-      }
       const progress = await updateVideoProgress({
         ownerKey,
         lessonId: body.lessonId,
@@ -55,12 +37,6 @@ export async function POST(request: Request) {
     }
 
     if (body.action === "exercises") {
-      if (!body.lessonId || !body.answers || typeof body.answers !== "object") {
-        return NextResponse.json(
-          { error: "Thiếu lessonId hoặc answers" },
-          { status: 400 },
-        );
-      }
       const result = await submitExercises({
         ownerKey,
         lessonId: body.lessonId,
@@ -69,18 +45,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true, ...result });
     }
 
-    if (body.action === "complete") {
-      if (!body.lessonId) {
-        return NextResponse.json({ error: "Thiếu lessonId" }, { status: 400 });
-      }
-      const result = await markTopicComplete({
-        ownerKey,
-        lessonId: body.lessonId,
-      });
-      return NextResponse.json({ ok: true, ...result });
-    }
-
-    return NextResponse.json({ error: "action không hợp lệ" }, { status: 400 });
+    const result = await markTopicComplete({
+      ownerKey,
+      lessonId: body.lessonId,
+    });
+    return NextResponse.json({ ok: true, ...result });
   } catch (err) {
     if (err instanceof LearnStoreError) {
       return NextResponse.json(

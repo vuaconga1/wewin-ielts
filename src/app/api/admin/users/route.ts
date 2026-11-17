@@ -10,6 +10,8 @@ import {
   listAdminUsers,
 } from "@/lib/admin/users";
 import { recordAuditEvent } from "@/lib/audit-log";
+import { createAdminUserBodySchema } from "@/lib/validation/users";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const runtime = "nodejs";
 
@@ -42,24 +44,27 @@ export async function POST(request: Request) {
   if (denied) return denied;
 
   try {
-    const body = (await request.json()) as {
-      email?: string;
-      username?: string;
-      password?: string;
-      role?: string;
-      fullName?: string | null;
-      classCode?: string | null;
-    };
+    const raw = await request.json().catch(() => null);
+    const parsed = parseJsonBody(createAdminUserBodySchema, raw);
+    if (!parsed.ok) return parsed.response;
+
     const user = await createAdminUser({
-      email: body.email ?? "",
-      username: body.username ?? "",
-      password: body.password ?? "",
-      role: body.role ?? "STUDENT",
-      fullName: body.fullName,
-      classCode: body.classCode,
+      email: parsed.data.email,
+      username: parsed.data.username,
+      password: parsed.data.password,
+      role: parsed.data.role,
+      fullName: parsed.data.fullName,
+      classCode: parsed.data.classCode,
     });
     const actor = await getSessionUser();
-    if (actor) await recordAuditEvent({ actor, action: "USER_CREATE", request, metadata: { targetUserId: user.id, targetUsername: user.username } });
+    if (actor) {
+      await recordAuditEvent({
+        actor,
+        action: "USER_CREATE",
+        request,
+        metadata: { targetUserId: user.id, targetUsername: user.username },
+      });
+    }
     return NextResponse.json({ user }, { status: 201 });
   } catch (e) {
     if (e instanceof AdminUsersError) {

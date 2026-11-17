@@ -1,9 +1,14 @@
+import { randomBytes } from "node:crypto";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
 import type { ImportIssue, ParsedTestDraft } from "./schemas";
 import { canUsePrisma } from "@/lib/db";
 import { normalizeTestMapLabelLayouts } from "@/lib/questions/map-label-layout";
 import { invalidateTestCatalogCache } from "@/lib/store/test-store";
+
+function newRowId(): string {
+  return `c${randomBytes(12).toString("hex")}`;
+}
 
 export type PersistOptions = {
   /** Persist even if there are error-level issues (not recommended) */
@@ -115,42 +120,49 @@ export async function persistParsedTest(
             },
           });
 
-          for (const q of part.questions) {
-            const question = await tx.question.create({
-              data: {
-                sectionId: section.id,
-                order: q.order,
-                number: q.number,
-                type: q.type,
-                content: q.content as Prisma.InputJsonValue,
-                mediaUrl: q.mediaUrl,
-              },
+          if (part.questions.length) {
+            const questionRows = part.questions.map((q) => ({
+              id: newRowId(),
+              sectionId: section.id,
+              order: q.order,
+              number: q.number,
+              type: q.type,
+              content: q.content as Prisma.InputJsonValue,
+              mediaUrl: q.mediaUrl,
+              draft: q,
+            }));
+            await tx.question.createMany({
+              data: questionRows.map(({ draft: _draft, ...row }) => row),
             });
-
-            if (q.correctAnswer !== undefined && q.correctAnswer !== null) {
-              await tx.answerKey.create({
-                data: {
-                  questionId: question.id,
-                  correctAnswer: q.correctAnswer as object,
-                  acceptableAnswers: q.acceptableAnswers ?? undefined,
-                  explanation: q.explanation,
-                },
-              });
+            const answerRows = questionRows
+              .filter(
+                (row) =>
+                  row.draft.correctAnswer !== undefined &&
+                  row.draft.correctAnswer !== null,
+              )
+              .map((row) => ({
+                id: newRowId(),
+                questionId: row.id,
+                correctAnswer: row.draft.correctAnswer as object,
+                acceptableAnswers: row.draft.acceptableAnswers ?? undefined,
+                explanation: row.draft.explanation,
+              }));
+            if (answerRows.length) {
+              await tx.answerKey.createMany({ data: answerRows });
             }
           }
         }
 
         if (draft.audioFiles?.length) {
-          for (const filePath of draft.audioFiles) {
-            await tx.mediaAsset.create({
-              data: {
-                testId: upserted.id,
-                type: "AUDIO",
-                path: filePath,
-                label: filePath.split(/[/\\]/).pop(),
-              },
-            });
-          }
+          await tx.mediaAsset.createMany({
+            data: draft.audioFiles.map((filePath) => ({
+              id: newRowId(),
+              testId: upserted.id,
+              type: "AUDIO" as const,
+              path: filePath,
+              label: filePath.split(/[/\\]/).pop(),
+            })),
+          });
         }
 
         return upserted;

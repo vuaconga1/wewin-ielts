@@ -9,6 +9,8 @@ import {
 import { getUserDisplayProfile } from "@/lib/user-profile";
 import { getUserAccess } from "@/lib/access";
 import { recordAuditEvent } from "@/lib/audit-log";
+import { loginBodySchema } from "@/lib/validation/auth";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const runtime = "nodejs";
 
@@ -55,7 +57,8 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const body = (await request.json()) as {
+    const raw = await request.json().catch(() => null);
+    const body = (raw ?? {}) as {
       email?: string;
       username?: string;
       password?: string;
@@ -71,16 +74,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
-    const identifier = (body.email ?? body.username ?? "").trim();
-    const password = body.password ?? "";
-    if (!identifier || !password) {
-      return NextResponse.json(
-        { error: "Nhập email/username và mật khẩu" },
-        { status: 400 },
-      );
-    }
+    const parsed = parseJsonBody(loginBodySchema, {
+      action: "login" as const,
+      email: body.email,
+      username: body.username,
+      password: body.password,
+    });
+    if (!parsed.ok) return parsed.response;
 
-    const user = await loginWithEmailPassword(identifier, password);
+    const identifier = (parsed.data.email ?? parsed.data.username ?? "").trim();
+    const user = await loginWithEmailPassword(identifier, parsed.data.password);
     await recordAuditEvent({ actor: user, action: "LOGIN", request });
     const profile = await getUserDisplayProfile(user.id);
     const access = await getUserAccess(user.id);
@@ -100,7 +103,7 @@ export async function POST(request: Request) {
     });
   } catch (e) {
     if (e instanceof AuthError) {
-      return NextResponse.json({ error: e.message }, { status: 401 });
+      return NextResponse.json({ error: e.message, code: e.code }, { status: 401 });
     }
     const message = e instanceof Error ? e.message : String(e);
     return NextResponse.json({ error: message }, { status: 500 });

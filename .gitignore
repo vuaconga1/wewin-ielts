@@ -93,6 +93,10 @@ yarn-error.log*
 !/data/tests/test-28-*.json
 !/data/tests/test-29-*.json
 !/data/tests/test-30-*.json
+!/data/tests/test-31-*.json
+!/data/tests/test-32-*.json
+!/data/tests/test-33-*.json
+!/data/tests/test-34-*.json
 
 # uploaded audio (keep folder + section mp3s needed at runtime)
 /public/uploads/audio/*
@@ -140,6 +144,8 @@ next-env.d.ts
 /docs/cambridge_12/
 /docs/cambridge_12_split/pages/
 /docs/cambridge_12_split/text/
+/docs/cambridge_18/
+/docs/cambridge_18_split/
 /DE-IELTS/
 /IELTS/
 /WEWIN_Audio_Downloader/
@@ -158,3 +164,7 @@ __pycache__/
 
 # DB dumps (scripts/sync-prod-db-to-local.sh)
 /backups/
+
+# Local Fluid CPU bench snapshots
+/scripts/.bench-fluid-cpu-*.json
+/scripts/.bench-fluid-cpu-*.json.log

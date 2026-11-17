@@ -1,4 +1,5 @@
-import { listAdminUsers, type AdminUserPublic } from "@/lib/admin/users";
+import { unstable_cache } from "next/cache";
+import { listAdminUsersUncached, type AdminUserPublic } from "@/lib/admin/users";
 import { countAuditLogsByUserIds } from "@/lib/audit-log";
 import { isLearnerRole } from "@/lib/auth/permissions";
 import { listAttempts, listTests, type StoredAttempt, type StoredTest } from "@/lib/store/test-store";
@@ -34,6 +35,7 @@ export type UserReportRow = {
 };
 
 const SKILLS: ReportSkill[] = ["LISTENING", "READING", "WRITING", "SPEAKING"];
+const REPORTS_REVALIDATE_SEC = 60;
 
 function partKeys(test: StoredTest, attempt?: StoredAttempt): Array<{ key: string; label: string }> {
   if (test.skill === "SPEAKING") {
@@ -62,22 +64,44 @@ function isWeak(skill: ReportSkill, average: number | null): boolean {
   return skill === "LISTENING" || skill === "READING" ? average < 50 : average < 5;
 }
 
-export async function buildAdminReports(): Promise<UserReportRow[]> {
-  const [users, attempts, tests] = await Promise.all([listAdminUsers(), listAttempts(), listTests()]);
+/** Uncached builder — prefer `buildAdminReports` (60s cache) in request paths. */
+export async function buildAdminReportsUncached(): Promise<UserReportRow[]> {
+  const [users, attempts, tests] = await Promise.all([
+    listAdminUsersUncached(),
+    listAttempts({ lean: true }),
+    listTests(),
+  ]);
   const learners = users.filter((user) => isLearnerRole(user.role));
   const activityCounts = await countAuditLogsByUserIds(learners.map((user) => user.id));
   const testBySlug = new Map(tests.map((test) => [test.slug, test]));
+  const catalogPartKeysByTest = new Map<string, Array<{ key: string; label: string }>>();
+  for (const test of tests) {
+    catalogPartKeysByTest.set(test.slug, partKeys(test));
+  }
+
   const catalogBySkill = new Map<ReportSkill, Array<{ key: string; label: string }>>();
   for (const skill of SKILLS) catalogBySkill.set(skill, []);
   for (const test of tests) {
     if (!SKILLS.includes(test.skill as ReportSkill)) continue;
-    catalogBySkill.get(test.skill as ReportSkill)!.push(...partKeys(test));
+    catalogBySkill.get(test.skill as ReportSkill)!.push(
+      ...(catalogPartKeysByTest.get(test.slug) ?? []),
+    );
+  }
+
+  const attemptsByUser = new Map<string, StoredAttempt[]>();
+  for (const attempt of attempts) {
+    if (!attempt.userId) continue;
+    const list = attemptsByUser.get(attempt.userId);
+    if (list) list.push(attempt);
+    else attemptsByUser.set(attempt.userId, [attempt]);
   }
 
   return learners.map((user) => {
-    const userAttempts = attempts.filter((attempt) => attempt.userId === user.id);
+    const userAttempts = attemptsByUser.get(user.id) ?? [];
     const skills = SKILLS.map((skill): SkillProgress => {
-      const skillAttempts = userAttempts.filter((attempt) => testBySlug.get(attempt.testSlug)?.skill === skill);
+      const skillAttempts = userAttempts.filter(
+        (attempt) => testBySlug.get(attempt.testSlug)?.skill === skill,
+      );
       const values = skillAttempts.flatMap((attempt) => {
         const value = attempt.finishedAt ? metric(skill, attempt) : null;
         return value == null ? [] : [{ at: attempt.finishedAt!, value }];
@@ -86,7 +110,9 @@ export async function buildAdminReports(): Promise<UserReportRow[]> {
       const parts = (catalogBySkill.get(skill) ?? []).map((part): PartProgress => {
         const related = skillAttempts.filter((attempt) => {
           const test = testBySlug.get(attempt.testSlug);
-          return Boolean(test && partKeys(test, attempt).some((item) => item.key === part.key));
+          return Boolean(
+            test && partKeys(test, attempt).some((item) => item.key === part.key),
+          );
         });
         const partAverage = averageLatestThree(related.flatMap((attempt) => {
           const value = attempt.finishedAt ? metric(skill, attempt) : null;
@@ -125,6 +151,14 @@ export async function buildAdminReports(): Promise<UserReportRow[]> {
       weakSkills: skills.filter((skill) => skill.weak).map((skill) => skill.skill),
     };
   });
+}
+
+export async function buildAdminReports(): Promise<UserReportRow[]> {
+  return unstable_cache(
+    () => buildAdminReportsUncached(),
+    ["admin-reports-v2"],
+    { revalidate: REPORTS_REVALIDATE_SEC, tags: ["admin-reports"] },
+  )();
 }
 
 export async function getAdminUserReport(userId: string) {

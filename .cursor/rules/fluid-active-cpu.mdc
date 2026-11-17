@@ -1,0 +1,51 @@
+---
+description: Giữ Vercel Fluid Active CPU thấp — catalog slim, lean attempts, không poll/re-grade/N+1 trên hot path
+alwaysApply: true
+---
+
+# Fluid Active CPU (Vercel) — WEWIN IELTS
+
+Billing metric: **Fluid Active CPU** = thời gian CPU Node trên serverless. Mỗi request nặng (hydrate JSON lớn, deep clone, vòng lồng, poll dày) làm spike. Không có cron — chi phí là **request-driven**.
+
+Chi tiết dài: `docs/FLUID_ACTIVE_CPU.md`. Rule này là **hợp đồng bắt buộc** khi sửa code.
+
+## Catalog (`listTests` / `listPublicTests`)
+- Catalog **không** hydrate Question rows / `Question.content` / section passage `content`. Dùng `TestSection.questionCount` (+ stub `questions.length` nếu cần).
+- Full stem/options/keys chỉ qua **`getTestBySlug`** (practice / submit / result / Speaking queue thật).
+- Catalog Speaking: đếm `questions.length`, `partsCount = 3` — **không** gọi `buildSpeakingExamQueue` trên list (thiếu stem).
+- Cache in-process: trả `testsCache.data.slice()` (shallow). **Cấm** `structuredClone` cả catalog. Coi `StoredTest` từ list là **immutable**.
+- Neon egress: autosave không đọc full `Attempt.payload`; poll lớp không kéo `slides` JSON.
+
+```ts
+// ❌ BAD — phình catalog (~2.5MB+), clone đắt / ~9k Question rows
+questions: { select: { content: true, /* … */ } }
+return structuredClone(testsCache.data);
+
+// ✅ GOOD
+sections: { select: { title: true, order: true, questionCount: true } }
+return testsCache.data.slice();
+```
+
+## Attempts
+- Dashboard / ranking / admin reports / history / test-detail history: **`listAttempts({ lean: true, take })`** — không answers/highlights/grade.
+- Full payload chỉ khi cần (save, getAttempt, review một bài).
+- **`findOpenAttempt`**: query Prisma `finishedAt: null` + `userId` + `test.slug` (+ `take` nhỏ). **Cấm** `listAttempts({ userId })` rồi `.find()`.
+
+## Chấm điểm / result
+- Submit: lưu `attempt.grade = gradeAnswers(...)` cùng `score`.
+- Result: dùng `attempt.grade` nếu hợp lệ; chỉ `gradeAnswers` lại cho bài cũ chưa có `grade`.
+
+## Soft-nav & polling
+- Không DB/auth trong root layout; `SiteShell` hydrate client (`session-me`, ranking, homework).
+- Homework incomplete: giữ cache theo user (~60s). Không bỏ cache khi thêm soft-nav fetch.
+- Live classroom **không** poll ≤2s khi thiếu Ably; fallback tối thiểu **10s** (Ably connected: ~30s).
+
+## Admin / import
+- `buildAdminReports`: index attempts theo `userId`; cache ngắn (`unstable_cache`); lean attempts.
+- Persist import: **`createMany`** questions / answerKeys / media — không N+1 `create` từng câu trong transaction dài nếu có thể batch.
+
+## Checklist trước khi merge path nóng
+1. Có làm `listTests` / soft-nav / autosave / poll nặng hơn không?
+2. List có lean `select` / `take` / cache không?
+3. Có deep-clone hoặc hydrate JSON lớn không cần thiết không?
+4. Đo nhanh (khi đụng catalog/attempts): `npx tsx scripts/bench-fluid-cpu-hotspots.ts`

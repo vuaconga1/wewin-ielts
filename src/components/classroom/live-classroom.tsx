@@ -131,7 +131,7 @@ export function LiveClassroom({
     let poll: ReturnType<typeof setInterval> | undefined;
     let closeRealtime: (() => void) | undefined;
 
-    const startPolling = (intervalMs = 2_000) => {
+    const startPolling = (intervalMs = 10_000) => {
       if (disposed || poll) return;
       setRealtimeStatus("polling");
       poll = setInterval(() => void refreshState(), intervalMs);

@@ -8,6 +8,8 @@ alwaysApply: true
 
 Soft-nav / click TTFB is critical: aim for **tens of ms** when warm. Hundreds of ms of server work on every click is a regression.
 
+**Fluid Active CPU (Vercel billing):** tuân `.cursor/rules/fluid-active-cpu.mdc` + `docs/FLUID_ACTIVE_CPU.md` — catalog slim, lean attempts, không deep-clone catalog / poll dày / re-grade thừa.
+
 ## Soft navigation & shells
 - Catalog/list chrome (`/tests`, `/learn`, …): prefer **static/ISR** (`export const revalidate = …`). See `src/app/tests/page.tsx`.
 - **`SiteShell`**: client-hydrate session/ranking (`session-me`, `ranking-me`) — do **not** call `cookies()` / Prisma / auth / ranking in shared layout/shell on every soft nav.

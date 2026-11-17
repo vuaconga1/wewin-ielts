@@ -222,3 +222,26 @@ ws-34          : THIẾU KEYS -> tự soạn toàn bộ 58 câu (quy tắc at/in
   + Test 30.C12.04 - Listening (slug: test-30-listening, 4 sections, 40 questions, status: DRAFT)
   + Test 30.C12.04 - Reading (slug: test-30-reading, 3 sections, 40 questions, status: DRAFT)
 - Database: Đã persist thành công toàn bộ 8 đề (56 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái DRAFT.
+
+----------------------------------------------------
+[2026-11-17] Cambridge IELTS 18 (Tests 1–4 in book = Tests 31–34 in system) — IELTS Academic
+----------------------------------------------------
+- Nguồn: docs/cambridge_18/Cambridge 18 - The IELTS Workshop/ (Cambridge 18.pdf + audio test 1-4 part 1-4).
+- File PDF đã chia nhỏ thành các file <= 40 trang tại:
+  + docs/cambridge_18_split/fixed_40_pages/ (Part 1: 1-40, Part 2: 41-80, Part 3: 81-120, Part 4: 121-147)
+  + docs/cambridge_18_split/ (6 file phân đoạn logic Intro+Test1, Test2, Test3, Test4, Audioscripts, Keys+Samples)
+- Audio: 16 file audio tương ứng gán đúng tại public/uploads/audio/test-{31..34}-section-{1..4}.mp3 (đầy đủ 16/16 section).
+- Map hình ảnh: Test 32 (Test 2 in book) Section 2 bản đồ nhà ở quy hoạch (Housing development) đã cắt và làm sạch watermark, lưu tại public/uploads/images/test-32-map.png.
+- Đáp án (Keys): Trích xuất và đối chiếu 100% từ Answer Keys gốc của sách Cambridge 18 (trang 119–126).
+  + Đã chạy test tự động đối chiếu scripts/verify_cambridge_18.py: 320/320 câu hỏi khớp 100% không sai lệch.
+- Layout và Schema: Đã kiểm tra qua scripts/validate_cambridge_18.ts (Zod ParsedTestDraftSchema + QuestionContentSchema + Question Layout Spec): 0 lỗi, 0 cảnh báo.
+- Danh sách đề trong hệ thống:
+  + Test 31.C18.01 - Listening (slug: test-31-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 31.C18.01 - Reading (slug: test-31-reading, 3 sections, 40 questions, status: DRAFT)
+  + Test 32.C18.02 - Listening (slug: test-32-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 32.C18.02 - Reading (slug: test-32-reading, 3 sections, 40 questions, status: DRAFT)
+  + Test 33.C18.03 - Listening (slug: test-33-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 33.C18.03 - Reading (slug: test-33-reading, 3 sections, 40 questions, status: DRAFT)
+  + Test 34.C18.04 - Listening (slug: test-34-listening, 4 sections, 40 questions, status: DRAFT)
+  + Test 34.C18.04 - Reading (slug: test-34-reading, 3 sections, 40 questions, status: DRAFT)
+- Database: Đã persist thành công toàn bộ 8 đề (56 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái DRAFT.

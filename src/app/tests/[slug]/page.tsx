@@ -36,7 +36,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
 
   const user = await getSessionUser();
   const attempts = user
-    ? (await listAttempts({ userId: user.id })).filter(
+    ? (await listAttempts({ userId: user.id, lean: true, take: 200 })).filter(
         (a) => a.testSlug === test.slug,
       )
     : [];

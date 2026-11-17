@@ -4,6 +4,7 @@ import type { ParsedTestDraft } from "@/lib/import/schemas";
 import { normalizeTestMapLabelLayouts } from "@/lib/questions/map-label-layout";
 import type { PassageHighlight } from "@/lib/practice/passage-highlights";
 import type { StoredAiScore } from "@/lib/ai/types";
+import type { GradeResult } from "@/lib/scoring";
 import { withPublicMediaUrls } from "@/lib/media/rewrite-test";
 import { BUNDLED_DATA_DIR, DATA_DIR, isVercel } from "@/lib/paths";
 import { revalidatePath, revalidateTag } from "next/cache";
@@ -41,6 +42,8 @@ export type StoredAttempt = {
     total: number;
     percent: number;
   };
+  /** Full grade breakdown persisted on submit — result page avoids re-grading. */
+  grade?: GradeResult;
   /** Speaking / Writing AI examiner result (Whisper + gpt-audio + gpt-4o-mini). */
   aiScore?: StoredAiScore;
   /**
@@ -48,6 +51,16 @@ export type StoredAttempt = {
    * Required to call AI scoring — prevents scoring on abandon / refresh / replay.
    */
   aiScoreNonce?: string | null;
+};
+
+export type ListAttemptsOptions = {
+  userId?: string;
+  /**
+   * Metadata + score/aiScore only (no answers/highlights/grade).
+   * Use for dashboards, ranking fallback, admin reports.
+   */
+  lean?: boolean;
+  take?: number;
 };
 
 /** In-memory TTL for catalog/home list pages (invalidated on draft save). */
@@ -112,31 +125,34 @@ const testInclude = {
 } satisfies Prisma.TestInclude;
 
 /**
- * Catalog / home list — skip answerKey and section passage `content`
- * (Reading passages are huge). Keep question content for Speaking queue sizing.
+ * Catalog / home list — section metadata + `questionCount` only.
+ * Do not hydrate Question rows (~9k) or passage/stem content; callers that
+ * need counts use `questions.length` (stubbed from questionCount).
+ * Speaking/practice detail uses `getTestBySlug`.
  */
-const testListInclude = {
+const testListSelect = {
+  title: true,
+  slug: true,
+  skill: true,
+  examType: true,
+  timeLimitMinutes: true,
+  tags: true,
+  sourceFolder: true,
+  updatedAt: true,
   sections: {
     select: {
       title: true,
       order: true,
-      questions: {
-        select: {
-          number: true,
-          order: true,
-          type: true,
-          content: true,
-          mediaUrl: true,
-        },
-      },
+      questionCount: true,
+      _count: { select: { questions: true } },
     },
   },
   media: {
     select: { type: true, path: true },
   },
-} satisfies Prisma.TestInclude;
+} satisfies Prisma.TestSelect;
 
-type PrismaTestList = Prisma.TestGetPayload<{ include: typeof testListInclude }>;
+type PrismaTestList = Prisma.TestGetPayload<{ select: typeof testListSelect }>;
 
 function tagsToStrings(tags: Prisma.JsonValue | null): string[] | undefined {
   if (!Array.isArray(tags)) return undefined;
@@ -166,12 +182,27 @@ function acceptableList(
   return out.length ? out : undefined;
 }
 
+/** Catalog-only stubs so `part.questions.length` stays valid without Neon Question rows. */
+function stubQuestionsFromCount(count: number): StoredTest["parts"][number]["questions"] {
+  const n = Number.isFinite(count) && count > 0 ? Math.floor(count) : 0;
+  return Array.from({ length: n }, (_, i) => ({
+    number: i + 1,
+    order: i + 1,
+    type: "SHORT_ANSWER" as const,
+    content: {},
+  }));
+}
+
 function prismaTestToStored(
   test: PrismaTestFull | PrismaTestList,
 ): StoredTest {
   const audioFiles = test.media
     .filter((m) => m.type === "AUDIO")
     .map((m) => m.path);
+  const description =
+    "description" in test && typeof test.description === "string"
+      ? test.description
+      : undefined;
 
   return {
     title: test.title,
@@ -181,39 +212,43 @@ function prismaTestToStored(
     timeLimitMinutes: test.timeLimitMinutes ?? undefined,
     tags: tagsToStrings(test.tags),
     sourceFolder: test.sourceFolder ?? undefined,
-    description: test.description ?? undefined,
+    description,
     parts: [...test.sections]
       .sort((a, b) => a.order - b.order)
       .map((section) => {
         const fullSection =
-          "content" in section && "meta" in section
+          "content" in section && "meta" in section && "questions" in section
             ? (section as PrismaTestFull["sections"][number])
             : null;
-        return {
-          title: section.title,
-          order: section.order,
-          content: fullSection?.content ?? undefined,
-          meta: fullSection ? metaRecord(fullSection.meta) : undefined,
-          questions: [...section.questions]
-            .sort((a, b) => a.order - b.order)
-            .map((q) => {
-              const withKey =
-                "answerKey" in q
-                  ? (q as PrismaTestFull["sections"][number]["questions"][number])
-                  : null;
-              return {
+        if (fullSection) {
+          return {
+            title: section.title,
+            order: section.order,
+            content: fullSection.content ?? undefined,
+            meta: metaRecord(fullSection.meta),
+            questions: [...fullSection.questions]
+              .sort((a, b) => a.order - b.order)
+              .map((q) => ({
                 number: q.number,
                 order: q.order,
                 type: q.type,
-                content: contentRecord(q.content),
+                content: contentRecord(q.content as Prisma.JsonValue),
                 mediaUrl: q.mediaUrl ?? undefined,
-                correctAnswer: withKey?.answerKey?.correctAnswer ?? undefined,
-                acceptableAnswers: acceptableList(
-                  withKey?.answerKey?.acceptableAnswers,
-                ),
-                explanation: withKey?.answerKey?.explanation ?? undefined,
-              };
-            }),
+                correctAnswer: q.answerKey?.correctAnswer ?? undefined,
+                acceptableAnswers: acceptableList(q.answerKey?.acceptableAnswers),
+                explanation: q.answerKey?.explanation ?? undefined,
+              })),
+          };
+        }
+        const listSection = section as PrismaTestList["sections"][number];
+        const count =
+          listSection.questionCount > 0
+            ? listSection.questionCount
+            : listSection._count.questions;
+        return {
+          title: section.title,
+          order: section.order,
+          questions: stubQuestionsFromCount(count),
         };
       }),
     audioFiles: audioFiles.length ? audioFiles : undefined,
@@ -233,7 +268,7 @@ async function listTestsFromPrisma(): Promise<StoredTest[]> {
     try {
       const rows = await prisma.test.findMany({
         where: { status: { in: ["PUBLISHED", "DRAFT"] } },
-        include: testListInclude,
+        select: testListSelect,
         orderBy: { updatedAt: "desc" },
       });
       return rows.map(prismaTestToStored);
@@ -246,7 +281,6 @@ async function listTestsFromPrisma(): Promise<StoredTest[]> {
   }
   throw lastError;
 }
-
 async function getTestFromPrisma(slug: string): Promise<StoredTest | null> {
   if (!(await canUsePrisma())) return null;
   try {
@@ -332,12 +366,12 @@ async function loadTestCatalog(): Promise<StoredTest[]> {
 }
 
 /**
- * The full catalog (~2.6 MB) exceeds Next's 2 MB data-cache item limit, so it
- * lives in process memory only; concurrent misses share one load.
+ * Catalog lives in process memory (Next data-cache 2 MB limit). Returned arrays
+ * are a shallow copy; treat StoredTest trees as immutable — do not mutate.
  */
 export async function listTests(): Promise<StoredTest[]> {
   if (testsCache && Date.now() < testsCache.expiresAt) {
-    return structuredClone(testsCache.data);
+    return testsCache.data.slice();
   }
 
   if (!testsInflight) {
@@ -352,9 +386,9 @@ export async function listTests(): Promise<StoredTest[]> {
   }
 
   try {
-    return structuredClone(await testsInflight);
+    return (await testsInflight).slice();
   } catch (error) {
-    if (testsCache) return structuredClone(testsCache.data);
+    if (testsCache) return testsCache.data.slice();
     if (process.env.NEXT_PHASE === "phase-production-build") {
       return listTestsFromFs();
     }
@@ -543,15 +577,130 @@ async function deleteAttemptFromPrisma(id: string): Promise<boolean> {
   }
 }
 
-async function listAttemptsFromPrisma(options?: {
-  userId?: string;
-}): Promise<StoredAttempt[] | null> {
+function asNumberArray(value: unknown): number[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((n): n is number => typeof n === "number");
+}
+
+function leanScoreFromJson(
+  score: unknown,
+  scoreRaw: number | null,
+): StoredAttempt["score"] {
+  if (score && typeof score === "object" && !Array.isArray(score)) {
+    const s = score as Record<string, unknown>;
+    if (typeof s.correct === "number" && typeof s.total === "number") {
+      return {
+        correct: s.correct,
+        total: s.total,
+        percent: typeof s.percent === "number" ? s.percent : 0,
+      };
+    }
+  }
+  if (scoreRaw != null) {
+    return { correct: scoreRaw, total: scoreRaw, percent: 0 };
+  }
+  return undefined;
+}
+
+function leanAiScoreFromBand(band: unknown): StoredAiScore | undefined {
+  if (typeof band !== "number" || !Number.isFinite(band)) return undefined;
+  return {
+    skill: "SPEAKING",
+    status: "ready",
+    overallBand: band,
+    summary: null,
+    tasks: [],
+    updatedAt: "",
+  };
+}
+
+async function listAttemptsLeanFromPrisma(
+  options?: ListAttemptsOptions,
+): Promise<StoredAttempt[] | null> {
   if (!(await canUsePrisma())) return null;
+  try {
+    const userId = options?.userId ?? null;
+    const take = options?.take ?? 5000;
+    const rows = await prisma.$queryRaw<
+      Array<{
+        id: string;
+        userId: string | null;
+        mode: "PRACTICE" | "FULL";
+        startedAt: Date;
+        finishedAt: Date | null;
+        scoreRaw: number | null;
+        scoreBand: number | null;
+        timeLimitMinutes: number | null;
+        testSlug: string;
+        sectionOrders: unknown;
+        speakingPartKinds: unknown;
+        questionNumbers: unknown;
+        score: unknown;
+        aiScoreBand: unknown;
+        updatedAt: string | null;
+      }>
+    >`
+      SELECT
+        a.id,
+        a."userId",
+        a.mode,
+        a."startedAt",
+        a."finishedAt",
+        a."scoreRaw",
+        a."scoreBand",
+        a."timeLimitMinutes",
+        t.slug AS "testSlug",
+        COALESCE(a.payload->'sectionOrders', a."sectionIds") AS "sectionOrders",
+        a.payload->'speakingPartKinds' AS "speakingPartKinds",
+        a.payload->'questionNumbers' AS "questionNumbers",
+        a.payload->'score' AS score,
+        (a.payload #>> '{aiScore,overallBand}')::double precision AS "aiScoreBand",
+        a.payload->>'updatedAt' AS "updatedAt"
+      FROM "Attempt" a
+      INNER JOIN "Test" t ON t.id = a."testId"
+      WHERE (${userId}::text IS NULL OR a."userId" = ${userId})
+      ORDER BY a."startedAt" DESC
+      LIMIT ${take}
+    `;
+
+    return rows.map((row) => ({
+      id: row.id,
+      testSlug: row.testSlug,
+      userId: row.userId,
+      mode: row.mode,
+      sectionOrders: asNumberArray(row.sectionOrders),
+      speakingPartKinds: (() => {
+        const kinds = asNumberArray(row.speakingPartKinds);
+        return kinds.length ? kinds : undefined;
+      })(),
+      questionNumbers: (() => {
+        const nums = asNumberArray(row.questionNumbers);
+        return nums.length ? nums : undefined;
+      })(),
+      timeLimitMinutes: row.timeLimitMinutes,
+      startedAt: row.startedAt.toISOString(),
+      updatedAt: row.updatedAt ?? undefined,
+      finishedAt: row.finishedAt ? row.finishedAt.toISOString() : null,
+      answers: {},
+      score: leanScoreFromJson(row.score, row.scoreRaw),
+      aiScore: leanAiScoreFromBand(row.aiScoreBand),
+    }));
+  } catch {
+    return null;
+  }
+}
+
+async function listAttemptsFromPrisma(
+  options?: ListAttemptsOptions,
+): Promise<StoredAttempt[] | null> {
+  if (!(await canUsePrisma())) return null;
+  if (options?.lean) return listAttemptsLeanFromPrisma(options);
   try {
     const rows = await prisma.attempt.findMany({
       where: options?.userId ? { userId: options.userId } : undefined,
       include: { test: { select: { slug: true } } },
       orderBy: { startedAt: "desc" },
+      take: options?.take,
     });
 
     const attempts: StoredAttempt[] = [];
@@ -706,6 +855,123 @@ export async function getAttempt(id: string): Promise<StoredAttempt | null> {
   return getAttemptFromFs(id);
 }
 
+/** Ownership / finished check without pulling Attempt.payload (autosave hot path). */
+export async function getAttemptAccessMeta(
+  id: string,
+): Promise<{ id: string; userId: string | null; finishedAt: string | null } | null> {
+  if (await canUsePrisma()) {
+    try {
+      const row = await prisma.attempt.findUnique({
+        where: { id },
+        select: { id: true, userId: true, finishedAt: true },
+      });
+      if (row) {
+        return {
+          id: row.id,
+          userId: row.userId,
+          finishedAt: row.finishedAt ? row.finishedAt.toISOString() : null,
+        };
+      }
+    } catch {
+      /* fall through to FS */
+    }
+  }
+  const fromFs = await getAttemptFromFs(id);
+  if (!fromFs) return null;
+  return {
+    id: fromFs.id,
+    userId: fromFs.userId ?? null,
+    finishedAt: fromFs.finishedAt,
+  };
+}
+
+/**
+ * Autosave answers/highlights via jsonb_set — no full payload read/write.
+ * Falls back to get+save on FS / when Prisma is unavailable.
+ */
+export async function patchAttemptDraft(
+  id: string,
+  input: {
+    answers?: Record<string, string>;
+    highlights?: PassageHighlight[];
+    claimUserId?: string | null;
+  },
+): Promise<{ updatedAt: string } | null> {
+  const updatedAt = new Date().toISOString();
+
+  if (await canUsePrisma()) {
+    try {
+      const meta = await prisma.attempt.findUnique({
+        where: { id },
+        select: { id: true, finishedAt: true, userId: true },
+      });
+      if (!meta) return null;
+      if (meta.finishedAt) return null;
+
+      const claimUserId =
+        input.claimUserId && !meta.userId ? input.claimUserId : null;
+      const answersJson =
+        input.answers !== undefined ? JSON.stringify(input.answers) : null;
+      const highlightsJson =
+        input.highlights !== undefined
+          ? JSON.stringify(input.highlights)
+          : null;
+
+      const result = await prisma.$executeRaw`
+        UPDATE "Attempt"
+        SET
+          "userId" = CASE
+            WHEN ${claimUserId}::text IS NOT NULL AND "userId" IS NULL
+              THEN ${claimUserId}
+            ELSE "userId"
+          END,
+          payload = jsonb_set(
+            CASE
+              WHEN ${highlightsJson}::text IS NOT NULL THEN
+                jsonb_set(
+                  CASE
+                    WHEN ${answersJson}::text IS NOT NULL THEN
+                      jsonb_set(
+                        COALESCE(payload, '{}'::jsonb),
+                        '{answers}',
+                        ${answersJson}::jsonb
+                      )
+                    ELSE COALESCE(payload, '{}'::jsonb)
+                  END,
+                  '{highlights}',
+                  ${highlightsJson}::jsonb
+                )
+              WHEN ${answersJson}::text IS NOT NULL THEN
+                jsonb_set(
+                  COALESCE(payload, '{}'::jsonb),
+                  '{answers}',
+                  ${answersJson}::jsonb
+                )
+              ELSE COALESCE(payload, '{}'::jsonb)
+            END,
+            '{updatedAt}',
+            to_jsonb(${updatedAt}::text)
+          )
+        WHERE id = ${id} AND "finishedAt" IS NULL
+      `;
+      if (typeof result === "number" && result < 1) return null;
+      return { updatedAt };
+    } catch {
+      /* fall through */
+    }
+  }
+
+  const attempt = await getAttempt(id);
+  if (!attempt || attempt.finishedAt) return null;
+  if (input.claimUserId && !attempt.userId) {
+    attempt.userId = input.claimUserId;
+  }
+  if (input.answers !== undefined) attempt.answers = input.answers;
+  if (input.highlights !== undefined) attempt.highlights = input.highlights;
+  await saveAttempt(attempt);
+  return { updatedAt: attempt.updatedAt ?? updatedAt };
+}
+
 export async function saveAttempt(attempt: StoredAttempt): Promise<void> {
   attempt.updatedAt = new Date().toISOString();
   const wroteDb = await saveAttemptInPrisma(attempt);
@@ -734,6 +1000,28 @@ function sameNumberSet(a: number[] | undefined, b: number[] | undefined): boolea
   return left.every((v, i) => v === right[i]);
 }
 
+function attemptMatchesOpen(
+  a: StoredAttempt,
+  input: {
+    testSlug: string;
+    userId: string;
+    mode: "PRACTICE" | "FULL";
+    sectionOrders: number[];
+    questionNumbers?: number[];
+    speakingPartKinds?: number[];
+  },
+): boolean {
+  return (
+    !a.finishedAt &&
+    a.testSlug === input.testSlug &&
+    a.mode === input.mode &&
+    a.userId === input.userId &&
+    sameNumberSet(a.sectionOrders, input.sectionOrders) &&
+    sameNumberSet(a.questionNumbers, input.questionNumbers) &&
+    sameNumberSet(a.speakingPartKinds, input.speakingPartKinds)
+  );
+}
+
 export async function findOpenAttempt(input: {
   testSlug: string;
   userId: string;
@@ -742,24 +1030,74 @@ export async function findOpenAttempt(input: {
   questionNumbers?: number[];
   speakingPartKinds?: number[];
 }): Promise<StoredAttempt | null> {
-  const list = await listAttempts({ userId: input.userId });
-  return (
-    list.find(
-      (a) =>
-        !a.finishedAt &&
-        a.testSlug === input.testSlug &&
-        a.mode === input.mode &&
-        a.userId === input.userId &&
-        sameNumberSet(a.sectionOrders, input.sectionOrders) &&
-        sameNumberSet(a.questionNumbers, input.questionNumbers) &&
-        sameNumberSet(a.speakingPartKinds, input.speakingPartKinds),
-    ) ?? null
-  );
-}
+  if (await canUsePrisma()) {
+    try {
+      const rows = await prisma.$queryRaw<
+        Array<{
+          id: string;
+          userId: string | null;
+          mode: "PRACTICE" | "FULL";
+          startedAt: Date;
+          timeLimitMinutes: number | null;
+          testSlug: string;
+          sectionOrders: unknown;
+          speakingPartKinds: unknown;
+          questionNumbers: unknown;
+        }>
+      >`
+        SELECT
+          a.id,
+          a."userId",
+          a.mode,
+          a."startedAt",
+          a."timeLimitMinutes",
+          t.slug AS "testSlug",
+          COALESCE(a.payload->'sectionOrders', a."sectionIds") AS "sectionOrders",
+          a.payload->'speakingPartKinds' AS "speakingPartKinds",
+          a.payload->'questionNumbers' AS "questionNumbers"
+        FROM "Attempt" a
+        INNER JOIN "Test" t ON t.id = a."testId"
+        WHERE a."userId" = ${input.userId}
+          AND a."finishedAt" IS NULL
+          AND a.mode = ${input.mode}::"AttemptMode"
+          AND t.slug = ${input.testSlug}
+        ORDER BY a."startedAt" DESC
+        LIMIT 40
+      `;
+      for (const row of rows) {
+        const attempt: StoredAttempt = {
+          id: row.id,
+          testSlug: row.testSlug,
+          userId: row.userId,
+          mode: row.mode,
+          sectionOrders: asNumberArray(row.sectionOrders),
+          speakingPartKinds: (() => {
+            const kinds = asNumberArray(row.speakingPartKinds);
+            return kinds.length ? kinds : undefined;
+          })(),
+          questionNumbers: (() => {
+            const nums = asNumberArray(row.questionNumbers);
+            return nums.length ? nums : undefined;
+          })(),
+          timeLimitMinutes: row.timeLimitMinutes,
+          startedAt: row.startedAt.toISOString(),
+          finishedAt: null,
+          answers: {},
+        };
+        if (attemptMatchesOpen(attempt, input)) return attempt;
+      }
+      return null;
+    } catch {
+      /* fall through */
+    }
+  }
 
-export async function listAttempts(options?: {
-  userId?: string;
-}): Promise<StoredAttempt[]> {
+  const list = await listAttempts({ userId: input.userId, lean: true, take: 200 });
+  return list.find((a) => attemptMatchesOpen(a, input)) ?? null;
+}
+export async function listAttempts(
+  options?: ListAttemptsOptions,
+): Promise<StoredAttempt[]> {
   const fromDb = await listAttemptsFromPrisma(options);
 
   // Prisma OK → skip scanning local attempt JSON (expensive; double work on Neon).

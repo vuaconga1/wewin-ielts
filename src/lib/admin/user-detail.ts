@@ -115,7 +115,7 @@ async function loadUserAttempts(
   userId: string,
   testBySlug: Map<string, StoredTest>,
 ): Promise<UserAttemptEntry[]> {
-  const attempts = await listAttempts({ userId });
+  const attempts = await listAttempts({ userId, lean: true, take: 500 });
 
   // Sort descending by startedAt
   attempts.sort((a, b) => b.startedAt.localeCompare(a.startedAt));

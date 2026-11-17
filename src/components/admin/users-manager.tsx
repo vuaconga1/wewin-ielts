@@ -7,6 +7,16 @@ import { friendlyError } from "@/lib/ui/friendly-error";
 import { useTranslations } from "@/i18n/provider";
 import type { AdminUserPublic, AdminUserRole } from "@/lib/admin/users";
 import { isLearnerRole } from "@/lib/auth/roles";
+import {
+  createAdminUserBodySchema,
+  updateAdminUserBodySchema,
+  firstIssue,
+  validationSuggestion,
+  formatEmailTypoMessage,
+  VALIDATION_DEFAULTS_EN,
+  VALIDATION_DEFAULTS_VI,
+  PASSWORD_MIN,
+} from "@/lib/validation";
 
 type Props = {
   currentUserId: string | null;
@@ -40,7 +50,22 @@ export function UsersManager({ currentUserId, canManage }: Props) {
   const { t } = useTranslations("usersAdmin");
   const { t: tc } = useTranslations("common");
   const { t: te } = useTranslations("errors");
+  const { t: tv } = useTranslations("validation");
   const { locale } = useTranslations();
+
+  function validationMessage(code: string, suggestion?: string): string {
+    if (code === "EMAIL_DOMAIN_TYPO") {
+      return formatEmailTypoMessage(
+        suggestion,
+        locale === "en" ? "en" : "vi",
+      );
+    }
+    const fallback =
+      locale === "en"
+        ? VALIDATION_DEFAULTS_EN[code] ?? VALIDATION_DEFAULTS_EN.INVALID_INPUT
+        : VALIDATION_DEFAULTS_VI[code] ?? VALIDATION_DEFAULTS_VI.INVALID_INPUT;
+    return tv(code, fallback);
+  }
 
   const [users, setUsers] = useState<AdminUserPublic[]>([]);
   const [loading, setLoading] = useState(true);
@@ -139,20 +164,38 @@ export function UsersManager({ currentUserId, canManage }: Props) {
     setMessage(null);
     try {
       if (mode === "create") {
+        const payload = {
+          email: form.email.trim() || null,
+          username: form.username,
+          fullName: form.fullName.trim() || null,
+          classCode: form.classCode.trim() || null,
+          password: form.password,
+          role: form.role,
+        };
+        const local = createAdminUserBodySchema.safeParse(payload);
+        if (!local.success) {
+          const issue = firstIssue(local.error);
+          setError(
+            validationMessage(issue.code, validationSuggestion(local.error)),
+          );
+          setBusy(false);
+          return;
+        }
         const res = await fetch("/api/admin/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: form.email.trim() || null,
-            username: form.username,
-            fullName: form.fullName.trim() || null,
-            classCode: form.classCode.trim() || null,
-            password: form.password,
-            role: form.role,
-          }),
+          body: JSON.stringify(payload),
         });
-        const data = (await res.json()) as { error?: string };
+        const data = (await res.json()) as {
+          error?: string;
+          code?: string;
+          suggestion?: string;
+        };
         if (!res.ok) {
+          if (data.code) {
+            setError(validationMessage(data.code, data.suggestion));
+            return;
+          }
           const mapped = friendlyError(data.error, t("createFailed"), te);
           setError(mapped.message);
           return;
@@ -176,13 +219,30 @@ export function UsersManager({ currentUserId, canManage }: Props) {
         if (form.password.trim()) {
           body.password = form.password;
         }
+        const local = updateAdminUserBodySchema.safeParse(body);
+        if (!local.success) {
+          const issue = firstIssue(local.error);
+          setError(
+            validationMessage(issue.code, validationSuggestion(local.error)),
+          );
+          setBusy(false);
+          return;
+        }
         const res = await fetch(`/api/admin/users/${editingId}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         });
-        const data = (await res.json()) as { error?: string };
+        const data = (await res.json()) as {
+          error?: string;
+          code?: string;
+          suggestion?: string;
+        };
         if (!res.ok) {
+          if (data.code) {
+            setError(validationMessage(data.code, data.suggestion));
+            return;
+          }
           const mapped = friendlyError(data.error, t("updateFailed"), te);
           setError(mapped.message);
           return;
@@ -366,7 +426,7 @@ export function UsersManager({ currentUserId, canManage }: Props) {
       ) : null}
 
       {mode && canManage ? (
-        <form onSubmit={onSubmit} className="wewin-card-3d p-4 sm:p-5">
+        <form onSubmit={onSubmit} noValidate className="wewin-card-3d p-4 sm:p-5">
           <div className="mb-4 flex items-start justify-between gap-3">
             <h2 className="text-lg font-bold text-wewin-navy">
               {mode === "create" ? t("createTitle") : t("editTitle")}
@@ -466,7 +526,12 @@ export function UsersManager({ currentUserId, canManage }: Props) {
                 }
                 className="w-full min-w-0 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm"
                 autoComplete="new-password"
-                minLength={mode === "create" ? 3 : undefined}
+                minLength={mode === "create" ? PASSWORD_MIN : undefined}
+                placeholder={
+                  mode === "create"
+                    ? t("passwordHint", "Ít nhất 8 ký tự, có chữ và số")
+                    : undefined
+                }
               />
             </label>
 

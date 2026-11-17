@@ -9,24 +9,19 @@ import { expiredAccessResponse } from "@/lib/auth/access-guard";
 import { practiceAttemptPath } from "@/lib/practice/paths";
 import { parseSpeakingPartKinds } from "@/lib/practice/speaking-exam";
 import { recordAuditEvent } from "@/lib/audit-log";
+import { practiceStartBodySchema } from "@/lib/validation/practice";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   try {
-    const body = (await request.json()) as {
-      slug?: string;
-      mode?: "PRACTICE" | "FULL";
-      sectionOrders?: number[];
-      questionNumbers?: number[];
-      speakingPartKinds?: number[];
-      timeLimitMinutes?: number | null;
-    };
+    const raw = await request.json().catch(() => null);
+    const parsed = parseJsonBody(practiceStartBodySchema, raw);
+    if (!parsed.ok) return parsed.response;
+    const body = parsed.data;
 
-    const slug = body.slug?.trim();
-    if (!slug) {
-      return NextResponse.json({ error: "Thiếu slug" }, { status: 400 });
-    }
+    const slug = body.slug.trim();
 
     const test = await getTestBySlug(slug);
     if (!test) {

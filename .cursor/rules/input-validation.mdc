@@ -1,0 +1,31 @@
+---
+description: Production input validation (Zod, client+server, auth & forms)
+alwaysApply: true
+---
+
+# Input validation (production)
+
+## Non-negotiables
+- Validate **every** write/auth request body and query with **Zod** on the server. HTML attributes are UX only.
+- Prefer shared primitives in `src/lib/validation/` over ad-hoc `includes("@")` / `length < n` checks.
+- Return machine-readable `{ code }` (e.g. `INVALID_EMAIL`, `EMAIL_DOMAIN_TYPO`, `WEAK_PASSWORD`) plus a short human `error`. Map `code` via i18n `validation.*` on the client — never show raw Zod dumps.
+- Same schema (or shared primitives) on client `safeParse` before submit and on the API. Inline field errors; `noValidate` on forms that do custom validation.
+- Bound every string/array/file (max length, max items, max upload size). Reject oversize early with 400.
+
+## Auth & users
+- Public register: **required** email + password policy (min 8, letter + digit, max 128).
+- Login: identifier is email **or** username; if it contains `@`, run full email rules (including common-domain typo block).
+- Admin create: email optional (username-only accounts allowed) but if present must pass the same email rules; password same strength as register.
+- Never weaken server checks because the UI already validated.
+
+## Email quality
+- Normalize trim + lowercase.
+- Reject invalid format and known typos (`gmai.com` → suggest `gmail.com`) via `EMAIL_DOMAIN_TYPO` + `suggestion`.
+- Do not invent DNS/MX lookups unless the product explicitly needs them.
+
+## API shape
+```ts
+const raw = await request.json().catch(() => null);
+const parsed = parseJsonBody(schema, raw);
+if (!parsed.ok) return parsed.response;
+```

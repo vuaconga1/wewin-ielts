@@ -1,0 +1,64 @@
+---
+description: Bắt buộc tối ưu @@index khi thêm model/query/dữ liệu mới (Prisma + Neon)
+alwaysApply: true
+---
+
+# Database index — tối ưu liên tục (WEWIN)
+
+Index **không đổi logic**; chỉ đổi tốc độ đọc. Mỗi lần thêm/sửa model, cột lọc, hoặc `where`/`orderBy`/`$queryRaw` trên bảng sẽ lớn → **phải** rà index trong cùng PR/task. Chi tiết schema/migration: `database-standards.mdc`.
+
+## Khi nào bắt buộc rà
+
+- Model / cột mới trong `prisma/schema.prisma`
+- Query mới hoặc đổi `where` / `orderBy` / `distinct` / raw SQL (đặc biệt Attempt, AuditLog, SiteVisit, *Attempt, ClassAssignment, ranking, homework)
+- Import/seed làm bảng lớn nhanh
+- List/admin không có `take` hoặc lọc theo thời gian (`finishedAt`, `createdAt`, `deadlineAt`, `completedAt`)
+
+## Checklist (làm trước khi coi task xong)
+
+1. Liệt kê mọi `where` + `orderBy` (+ cột `IN` / range) trên bảng mới hoặc path nóng.
+2. Map sang `@@index` / `@@unique` hiện có trong schema — thiếu thì thêm.
+3. Thứ tự cột composite: **equality → range/null → sort** (vd `[userId, testId, finishedAt, startedAt]`).
+4. Catalog/public list: `[status, order]` hoặc `[status, updatedAt]` tùy sort thật.
+5. FK hay lọc → có index (đơn hoặc nằm trái trong composite).
+6. Migration riêng (`add_*_indexes` hoặc kèm migration model); không sửa migration đã chạy production.
+7. Không thêm index “phòng hờ” trên cột không lọc; không drop index cũ trong cùng đợt trừ khi đã `EXPLAIN` xác nhận thừa.
+
+```prisma
+// ❌ BAD — lọc/sort nóng không có index hỗ trợ
+model Attempt {
+  userId     String?
+  testId     String
+  finishedAt DateTime?
+  startedAt  DateTime @default(now())
+  @@index([userId])
+  @@index([startedAt])
+}
+
+// ✅ GOOD — khớp findOpenAttempt / homework / ranking
+model Attempt {
+  userId     String?
+  testId     String
+  finishedAt DateTime?
+  startedAt  DateTime @default(now())
+  @@index([userId, startedAt])
+  @@index([userId, testId, finishedAt, startedAt])
+  @@index([finishedAt])
+}
+```
+
+```ts
+// ❌ BAD — where mới, quên schema
+await prisma.widget.findMany({
+  where: { userId, status: "OPEN" },
+  orderBy: { createdAt: "desc" },
+});
+
+// ✅ GOOD — cùng task thêm @@index([userId, status, createdAt])
+```
+
+## Definition of Done (index)
+
+- [ ] Mọi path `where`/`orderBy` mới có index khớp (hoặc `@unique` đủ dùng).
+- [ ] Migration + `db:generate` (nếu `migrate dev` lỗi shadow DB: viết SQL `CREATE INDEX` + `migrate deploy` như các migration index gần đây).
+- [ ] Không đổi kết quả query / business logic chỉ để “tối ưu index”.

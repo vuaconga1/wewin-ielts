@@ -33,10 +33,20 @@ export type ClassroomAccess = {
   canHost: boolean;
 };
 
+export type ClassroomAccessOptions = {
+  /**
+   * When false (poll / token / join), skip presentation `slides` JSON.
+   * SSR classroom page should pass true so the client can render slides.
+   */
+  includeSlides?: boolean;
+};
+
 export async function getClassroomAccess(
   liveSessionId: string,
   userId: string,
+  options?: ClassroomAccessOptions,
 ): Promise<ClassroomAccess | null> {
+  const includeSlides = options?.includeSlides !== false;
   const [actor, liveSession] = await Promise.all([
     prisma.user.findUnique({
       where: { id: userId },
@@ -77,7 +87,9 @@ export async function getClassroomAccess(
               take: 1,
             },
             presentations: {
-              select: { id: true, title: true, slides: true, slideCount: true },
+              select: includeSlides
+                ? { id: true, title: true, slides: true, slideCount: true }
+                : { id: true, title: true, slideCount: true },
               orderBy: { createdAt: "asc" },
             },
           },
@@ -111,13 +123,19 @@ export async function getClassroomAccess(
   });
   if (!privileges.allowed) return null;
   const presentations = liveSession.classroom.presentations
-    .map((presentation) => ({
-      id: presentation.id,
-      title: presentation.title,
-      slides: parseSlideManifest(presentation.slides),
-      slideCount: presentation.slideCount,
-    }))
-    .filter((presentation) => presentation.slides.length > 0);
+    .map((presentation) => {
+      const slides =
+        includeSlides && "slides" in presentation
+          ? parseSlideManifest(presentation.slides)
+          : [];
+      return {
+        id: presentation.id,
+        title: presentation.title,
+        slides,
+        slideCount: presentation.slideCount || slides.length,
+      };
+    })
+    .filter((presentation) => presentation.slideCount > 0);
   const state = liveSession.presentationState ?? {
     liveSessionId: liveSession.id,
     presentationId: presentations[0]?.id ?? null,
@@ -154,7 +172,6 @@ export async function getClassroomAccess(
     canHost: privileges.canHost,
   };
 }
-
 export async function listClassroomSessionsForUser(userId: string) {
   const actor = await prisma.user.findUnique({
     where: { id: userId },

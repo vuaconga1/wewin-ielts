@@ -62,7 +62,9 @@ export async function GET(_request: Request, context: Context) {
       401,
     );
   }
-  const access = await getClassroomAccess(sessionId, viewer.id);
+  const access = await getClassroomAccess(sessionId, viewer.id, {
+    includeSlides: false,
+  });
   if (!access) {
     return htmlResponse(
       `<!doctype html><html lang="${locale}"><meta charset="utf-8"><p>${escapeHtml(

@@ -11,6 +11,8 @@ import { estimateBand, gradeAnswers } from "@/lib/scoring";
 import { partsForSpeakingAttempt } from "@/lib/practice/speaking-exam";
 import { sanitizeHighlights } from "@/lib/practice/passage-highlights";
 import { getAttempt, getTestBySlug, saveAttempt } from "@/lib/store/test-store";
+import { practiceSaveBodySchema } from "@/lib/validation/practice";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const runtime = "nodejs";
 
@@ -20,10 +22,10 @@ export async function POST(
 ) {
   try {
     const { attemptId } = await context.params;
-    const body = (await request.json()) as {
-      answers?: Record<string, string>;
-      highlights?: unknown;
-    };
+    const raw = await request.json().catch(() => null);
+    const parsed = parseJsonBody(practiceSaveBodySchema, raw);
+    if (!parsed.ok) return parsed.response;
+    const body = parsed.data;
 
     const attempt = await getAttempt(attemptId);
     if (!attempt) {
@@ -99,6 +101,7 @@ export async function POST(
       total: grade.total,
       percent: grade.percent,
     };
+    attempt.grade = grade;
 
     // One-time AI scoring right only after this submit (Writing / Speaking)
     const needsAi = test.skill === "WRITING" || test.skill === "SPEAKING";

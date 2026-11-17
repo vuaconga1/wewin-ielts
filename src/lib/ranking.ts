@@ -146,7 +146,10 @@ async function loadUserMap(): Promise<Map<string, UserLite>> {
 }
 
 async function loadLocalScoredAttempts(): Promise<ScoredAttemptRow[]> {
-  const [attempts, tests] = await Promise.all([listAttempts(), listTests()]);
+  const [attempts, tests] = await Promise.all([
+    listAttempts({ lean: true }),
+    listTests(),
+  ]);
   const testBySlug = new Map(tests.map((t) => [t.slug, t]));
   const rows: ScoredAttemptRow[] = [];
 

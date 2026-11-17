@@ -911,7 +911,9 @@ export type IncompleteHomeworkItem = {
   href: string;
 };
 
-export async function listIncompleteHomework(userId: string): Promise<IncompleteHomeworkItem[]> {
+async function listIncompleteHomeworkUncached(
+  userId: string,
+): Promise<IncompleteHomeworkItem[]> {
   const now = Date.now();
   const rows = await prisma.classAssignment.findMany({
     where: {
@@ -951,4 +953,15 @@ export async function listIncompleteHomework(userId: string): Promise<Incomplete
       href: homeworkHref(row),
     }));
   return [...items.filter((item) => item.isOverdue), ...items.filter((item) => !item.isOverdue)];
+}
+
+/** Soft-nav popup: cache per learner for 60s to cut Fluid CPU. */
+export async function listIncompleteHomework(
+  userId: string,
+): Promise<IncompleteHomeworkItem[]> {
+  return unstable_cache(
+    () => listIncompleteHomeworkUncached(userId),
+    ["homework-incomplete-v1", userId],
+    { revalidate: 60, tags: [`homework-incomplete:${userId}`] },
+  )();
 }

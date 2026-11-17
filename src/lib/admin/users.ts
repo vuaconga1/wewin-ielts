@@ -90,16 +90,6 @@ function localToPublic(user: StoredUser): AdminUserPublic {
   return toPublic(user);
 }
 
-/** Empty / whitespace → null; otherwise trimmed lowercase. */
-function normalizeOptionalEmail(email: string | null | undefined): string | null {
-  const trimmed = (email ?? "").trim().toLowerCase();
-  return trimmed ? trimmed : null;
-}
-
-function normalizeUsername(username: string): string {
-  return username.trim().slice(0, 64);
-}
-
 function normalizeOptionalText(
   value: string | null | undefined,
   max = 120,
@@ -107,30 +97,6 @@ function normalizeOptionalText(
   const trimmed = (value ?? "").trim();
   if (!trimmed) return null;
   return trimmed.slice(0, max);
-}
-
-function assertEmail(email: string) {
-  if (!email.includes("@")) {
-    throw new AdminUsersError("INVALID_EMAIL", "Email không hợp lệ");
-  }
-}
-
-function assertUsername(username: string) {
-  if (!username || username.length < 2) {
-    throw new AdminUsersError(
-      "INVALID_USERNAME",
-      "Username cần ít nhất 2 ký tự",
-    );
-  }
-}
-
-function assertPassword(password: string) {
-  if (password.length < 3) {
-    throw new AdminUsersError(
-      "WEAK_PASSWORD",
-      "Mật khẩu cần ít nhất 3 ký tự",
-    );
-  }
 }
 
 function assertRole(role: string): asserts role is AdminUserRole {
@@ -158,24 +124,26 @@ const userPublicSelect = {
   accessExpiresAt: true,
 } as const;
 
+export async function listAdminUsersUncached(): Promise<AdminUserPublic[]> {
+  if (await canUsePrisma()) {
+    const users = await prisma.user.findMany({
+      orderBy: { createdAt: "desc" },
+      take: 2000,
+      select: userPublicSelect,
+    });
+    return users.map(toPublic);
+  }
+
+  const local = await listLocalUsers();
+  return local
+    .map(localToPublic)
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+    .slice(0, 2000);
+}
+
 export async function listAdminUsers(): Promise<AdminUserPublic[]> {
   return unstable_cache(
-    async () => {
-      if (await canUsePrisma()) {
-        const users = await prisma.user.findMany({
-          orderBy: { createdAt: "desc" },
-          take: 2000,
-          select: userPublicSelect,
-        });
-        return users.map(toPublic);
-      }
-
-      const local = await listLocalUsers();
-      return local
-        .map(localToPublic)
-        .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-        .slice(0, 2000);
-    },
+    () => listAdminUsersUncached(),
     ["admin-users-list-v2"],
     { revalidate: 15, tags: ["admin-users"] },
   )();
@@ -189,14 +157,18 @@ export async function createAdminUser(input: {
   fullName?: string | null;
   classCode?: string | null;
 }): Promise<AdminUserPublic> {
-  const email = normalizeOptionalEmail(input.email);
-  const username = normalizeUsername(input.username);
+  // Prefer createAdminUserBodySchema at the route; keep light guards here.
+  const email = input.email?.trim().toLowerCase() || null;
+  const username = input.username.trim();
   const password = input.password;
   const fullName = normalizeOptionalText(input.fullName, 120);
   const classCode = normalizeOptionalText(input.classCode, 200);
-  if (email) assertEmail(email);
-  assertUsername(username);
-  assertPassword(password);
+  if (!username || username.length < 2) {
+    throw new AdminUsersError("INVALID_USERNAME", "Username cần ít nhất 2 ký tự");
+  }
+  if (password.length < 8) {
+    throw new AdminUsersError("WEAK_PASSWORD", "Mật khẩu cần ít nhất 8 ký tự");
+  }
   assertRole(input.role);
   const role = resolveRole(input.role, classCode);
 
@@ -273,8 +245,10 @@ export async function updateAdminUser(
   } = {};
 
   if (input.username != null) {
-    const username = normalizeUsername(input.username);
-    assertUsername(username);
+    const username = input.username.trim();
+    if (!username || username.length < 2) {
+      throw new AdminUsersError("INVALID_USERNAME", "Username cần ít nhất 2 ký tự");
+    }
     patch.username = username;
   }
   if (input.role != null) {
@@ -282,7 +256,9 @@ export async function updateAdminUser(
     patch.role = input.role;
   }
   if (input.password != null && input.password !== "") {
-    assertPassword(input.password);
+    if (input.password.length < 8) {
+      throw new AdminUsersError("WEAK_PASSWORD", "Mật khẩu cần ít nhất 8 ký tự");
+    }
     patch.passwordHash = await hashPassword(input.password);
   }
   if (input.fullName !== undefined) {

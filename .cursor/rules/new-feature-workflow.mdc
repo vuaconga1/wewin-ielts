@@ -8,7 +8,7 @@ alwaysApply: true
 Áp dụng mỗi khi thêm tính năng / trang / API mới. Chi tiết từng tầng:
 - Frontend: `frontend-standards.mdc` + `ui-i18n-responsive.mdc`
 - Backend: `backend-standards.mdc`
-- Database: `database-standards.mdc`
+- Database: `database-standards.mdc` · Index nóng: `db-index-optimization.mdc`
 - Hiệu năng: `runtime-performance.mdc` · Dịch vụ trả phí: `paid-services-consent.mdc`
 
 ## 1. Thiết kế (trước khi code)
@@ -28,6 +28,6 @@ alwaysApply: true
 - [ ] Responsive mobile → desktop, không tràn ngang.
 - [ ] Có loading / empty / error state.
 - [ ] API kiểm tra đăng nhập + quyền, validate bằng zod, không lộ dữ liệu nhạy cảm.
-- [ ] Query có `select` gọn, phân trang, index phù hợp; migration đã tạo.
+- [ ] Query có `select` gọn, phân trang; mọi `where`/`orderBy` mới có `@@index` khớp (`db-index-optimization.mdc`); migration đã tạo.
 - [ ] Hành động admin có audit log; endpoint public có rate limit.
 - [ ] `npm run lint` và `npx tsc --noEmit` sạch; logic chấm điểm/parse có script test trong `scripts/test-*.ts`.

@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth";
 import { expiredAccessResponse } from "@/lib/auth/access-guard";
-import {
-  canAccessAttempt,
-  claimAttemptIfGuest,
-} from "@/lib/practice/attempt-access";
+import { canAccessAttempt } from "@/lib/practice/attempt-access";
 import { sanitizeHighlights } from "@/lib/practice/passage-highlights";
-import { getAttempt, saveAttempt } from "@/lib/store/test-store";
+import {
+  getAttemptAccessMeta,
+  patchAttemptDraft,
+} from "@/lib/store/test-store";
+import { practiceSaveBodySchema } from "@/lib/validation/practice";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const runtime = "nodejs";
 
@@ -16,44 +18,50 @@ export async function POST(
 ) {
   try {
     const { attemptId } = await context.params;
-    const body = (await request.json()) as {
-      answers?: Record<string, string>;
-      highlights?: unknown;
-    };
+    const raw = await request.json().catch(() => null);
+    const parsed = parseJsonBody(practiceSaveBodySchema, raw);
+    if (!parsed.ok) return parsed.response;
+    const body = parsed.data;
 
-    const attempt = await getAttempt(attemptId);
-    if (!attempt) {
+    const meta = await getAttemptAccessMeta(attemptId);
+    if (!meta) {
       return NextResponse.json({ error: "Không tìm thấy bài làm" }, { status: 404 });
     }
 
     const user = await getSessionUser();
     const expired = await expiredAccessResponse(user);
     if (expired) return expired;
-    if (!canAccessAttempt(attempt, user)) {
+    if (!canAccessAttempt(meta, user)) {
       return NextResponse.json(
         { error: "Không có quyền lưu bài làm này" },
         { status: 403 },
       );
     }
 
-    if (attempt.finishedAt) {
+    if (meta.finishedAt) {
       return NextResponse.json(
         { error: "Bài đã nộp, không lưu thêm được" },
         { status: 400 },
       );
     }
 
-    claimAttemptIfGuest(attempt, user);
+    const claimUserId = user && !meta.userId ? user.id : null;
+    const highlights = Array.isArray(body.highlights)
+      ? sanitizeHighlights(body.highlights)
+      : undefined;
 
-    attempt.answers = body.answers ?? attempt.answers;
-    if (Array.isArray(body.highlights)) {
-      attempt.highlights = sanitizeHighlights(body.highlights);
+    const patched = await patchAttemptDraft(attemptId, {
+      answers: body.answers,
+      highlights,
+      claimUserId,
+    });
+    if (!patched) {
+      return NextResponse.json({ error: "Không tìm thấy bài làm" }, { status: 404 });
     }
-    await saveAttempt(attempt);
 
     return NextResponse.json({
       ok: true,
-      updatedAt: attempt.updatedAt,
+      updatedAt: patched.updatedAt,
     });
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);

@@ -47,6 +47,10 @@ data/tests/*
 !data/tests/test-28-*.json
 !data/tests/test-29-*.json
 !data/tests/test-30-*.json
+!data/tests/test-31-*.json
+!data/tests/test-32-*.json
+!data/tests/test-33-*.json
+!data/tests/test-34-*.json
 public/uploads/audio/*
 !public/uploads/audio/.gitkeep
 # Optional: also keep writing/images off Vercel once R2 is populated

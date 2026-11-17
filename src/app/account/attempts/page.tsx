@@ -27,7 +27,7 @@ export default async function AccountAttemptsPage({ searchParams }: { searchPara
   const intlLocale = localeToIntl(locale);
 
   const [attempts, tests] = await Promise.all([
-    listAttempts({ userId: user.id }),
+    listAttempts({ userId: user.id, lean: true, take: 300 }),
     listTests(),
   ]);
   const testBySlug = new Map(tests.map((t) => [t.slug, t]));

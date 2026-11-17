@@ -7,6 +7,8 @@ import {
   setAdminUserAccess,
 } from "@/lib/admin/users";
 import { recordAuditEvent } from "@/lib/audit-log";
+import { updateAdminUserBodySchema } from "@/lib/validation/users";
+import { parseJsonBody } from "@/lib/validation/http";
 
 export const runtime = "nodejs";
 
@@ -22,28 +24,39 @@ export async function PATCH(request: Request, ctx: Ctx) {
 
   try {
     const { id } = await ctx.params;
-    const body = (await request.json()) as {
-      username?: string;
-      role?: string;
-      password?: string;
-      fullName?: string | null;
-      classCode?: string | null;
-      access?: { months?: number; days?: number; expiresAt?: string; unlimited?: boolean };
-    };
-    const user = body.access ? await setAdminUserAccess(id, body.access) : await updateAdminUser(id, {
-      username: body.username,
-      role: body.role,
-      password: body.password,
-      fullName: body.fullName,
-      classCode: body.classCode,
-    });
+    if (!id?.trim()) {
+      return NextResponse.json(
+        { error: "Thiếu id tài khoản", code: "INVALID_INPUT" },
+        { status: 400 },
+      );
+    }
+
+    const raw = await request.json().catch(() => null);
+    const parsed = parseJsonBody(updateAdminUserBodySchema, raw);
+    if (!parsed.ok) return parsed.response;
+
+    const user = parsed.data.access
+      ? await setAdminUserAccess(id, parsed.data.access)
+      : await updateAdminUser(id, {
+          username: parsed.data.username,
+          role: parsed.data.role,
+          password: parsed.data.password,
+          fullName: parsed.data.fullName,
+          classCode: parsed.data.classCode,
+        });
     const actor = await getSessionUser();
-    if (actor) await recordAuditEvent({
-      actor,
-      action: body.access ? "USER_ACCESS_UPDATE" : body.password ? "USER_PASSWORD_RESET" : "USER_UPDATE",
-      request,
-      metadata: { targetUserId: id, targetUsername: user.username },
-    });
+    if (actor) {
+      await recordAuditEvent({
+        actor,
+        action: parsed.data.access
+          ? "USER_ACCESS_UPDATE"
+          : parsed.data.password
+            ? "USER_PASSWORD_RESET"
+            : "USER_UPDATE",
+        request,
+        metadata: { targetUserId: id, targetUsername: user.username },
+      });
+    }
     return NextResponse.json({ user });
   } catch (e) {
     if (e instanceof AdminUsersError) {
@@ -65,7 +78,14 @@ export async function DELETE(request: Request, ctx: Ctx) {
     const { id } = await ctx.params;
     const actor = await getSessionUser();
     await deleteAdminUser(id, actor?.id ?? null);
-    if (actor) await recordAuditEvent({ actor, action: "USER_DELETE", request, metadata: { targetUserId: id } });
+    if (actor) {
+      await recordAuditEvent({
+        actor,
+        action: "USER_DELETE",
+        request,
+        metadata: { targetUserId: id },
+      });
+    }
     return NextResponse.json({ ok: true });
   } catch (e) {
     if (e instanceof AdminUsersError) {

@@ -59,7 +59,9 @@ export async function POST(request: Request, context: Context) {
     );
   }
 
-  const access = await getClassroomAccess(sessionId, viewer.id);
+  const access = await getClassroomAccess(sessionId, viewer.id, {
+    includeSlides: false,
+  });
   if (!access) return jsonError("CLASSROOM_ACCESS_DENIED", 403);
   if (access.session.status === "CANCELLED" || access.session.status === "ENDED") {
     return jsonError("SESSION_NOT_JOINABLE", 409);

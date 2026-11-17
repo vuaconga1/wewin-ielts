@@ -34,7 +34,9 @@ export default async function DashboardPage() {
   const { t } = await getTranslations();
 
   const tests = await listPublicTests();
-  const attempts = user ? await listAttempts({ userId: user.id }) : [];
+  const attempts = user
+    ? await listAttempts({ userId: user.id, lean: true, take: 500 })
+    : [];
 
   const hero = pickHero(tests, attempts);
   const progress = computeProgress(tests, attempts);

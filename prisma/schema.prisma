@@ -246,6 +246,7 @@ model ClassAssignment {
   createdBy User?     @relation("ClassAssignmentCreator", fields: [createdById], references: [id], onDelete: SetNull)
 
   @@index([classroomId, deadlineAt])
+  @@index([deadlineAt, classroomId])
   @@index([testId])
 }
 
@@ -376,6 +377,8 @@ model Test {
   attempts Attempt[]
   imports  ImportJob[]
   homework ClassAssignment[]
+
+  @@index([status, updatedAt])
 }
 
 model TestSection {
@@ -450,6 +453,8 @@ model Attempt {
   @@index([userId])
   @@index([startedAt])
   @@index([userId, startedAt])
+  @@index([userId, testId, finishedAt, startedAt])
+  @@index([finishedAt])
 }
 
 model AttemptAnswer {
@@ -567,6 +572,7 @@ model DictationAttempt {
   @@index([userId, startedAt])
   @@index([exerciseId])
   @@index([userId, exerciseId, startedAt])
+  @@index([userId, exerciseId, completedAt])
 }
 
 model ShadowingExercise {

@@ -20,9 +20,12 @@ alwaysApply: false
 - Hết hạn gói: `expiredAccessResponse(user)` trước khi cho làm bài trả phí.
 
 ## Validate input
-- Dùng **zod** (`z.object(...)`) cho body/query; schema đặt cạnh service trong `src/lib/<feature>/types.ts`.
-- `await request.json().catch(() => null)` rồi `schema.safeParse` → lỗi trả `400 INVALID_INPUT`.
+- Dùng **zod** cho mọi body/query ghi dữ liệu. Schema dùng chung / auth / users: `src/lib/validation/` (primitives + feature schemas). Schema riêng feature khác vẫn được đặt cạnh service.
+- Route: `await request.json().catch(() => null)` → `parseJsonBody(schema, raw)` (`@/lib/validation/http`) → `400` với `{ code, error, field?, suggestion? }`.
+- **Không** tin HTML `required` / `type="email"` / `minLength` — luôn validate lại trên server.
+- Email: dùng `requiredEmailSchema` / `optionalEmailSchema` (format + chặn typo domain phổ biến như `gmai.com`). Password đăng ký/tạo user: min 8, có chữ + số, max 128.
 - Giới hạn độ dài chuỗi, số phần tử mảng, kích thước file upload.
+- Client form: `safeParse` cùng schema trước khi `fetch`; hiện lỗi theo field + i18n `validation.*`.
 
 ## Response & lỗi
 - Lỗi trả dạng `{ code: "SCREAMING_CODE", detail? }` + HTTP status đúng (400/401/403/404/409/429/500) — dùng `jsonCode()` trong `src/lib/classroom/manage-http.ts` làm mẫu.

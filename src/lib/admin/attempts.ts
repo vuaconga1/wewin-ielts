@@ -4,6 +4,7 @@
  */
 
 import { canUsePrisma } from "@/lib/db";
+import { isVercel } from "@/lib/paths";
 import { practicePath } from "@/lib/practice/paths";
 import { prisma } from "@/lib/prisma";
 import type { Prisma } from "@/generated/prisma/client";
@@ -325,7 +326,10 @@ function userIdsInClass(
 async function loadLocalAttemptsAsRows(
   userMap: Map<string, UserLite>,
 ): Promise<AdminAttemptRow[]> {
-  const [attempts, tests] = await Promise.all([listAttempts(), listTests()]);
+  const [attempts, tests] = await Promise.all([
+    listAttempts({ lean: true, take: 500 }),
+    listTests(),
+  ]);
   const testBySlug = new Map(tests.map((t) => [t.slug, t]));
 
   return attempts.map((a) => {
@@ -614,7 +618,6 @@ async function listAdminAttemptsUncached(
   filters: AdminAttemptFilters,
 ): Promise<AdminAttemptsResult> {
   const userMap = await loadUserMap();
-  const localRows = await loadLocalAttemptsAsRows(userMap);
   const classUserIds = userIdsInClass(userMap, filters.classId);
 
   let prismaRows: AdminAttemptRow[] = [];
@@ -626,8 +629,14 @@ async function listAdminAttemptsUncached(
     }
   }
 
-  const { rows: allRows, source } = mergeAttemptRows(prismaRows, localRows);
-  const users = buildUserOptions(allRows, userMap);
+  // Production (Vercel): Prisma is source of truth — skip global lean listAttempts
+  // (default take 5000) that doubles Neon egress on every admin attempts view.
+  const localRows =
+    prismaRows.length > 0 && isVercel
+      ? []
+      : await loadLocalAttemptsAsRows(userMap);
+
+  const { rows: allRows, source } = mergeAttemptRows(prismaRows, localRows);  const users = buildUserOptions(allRows, userMap);
 
   // Prefer catalog titles from listTests so dropdown shows all known tests,
   // then merge any attempt-only slugs.
