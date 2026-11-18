@@ -272,3 +272,27 @@ ws-34          : THIẾU KEYS -> tự soạn toàn bộ 58 câu (quy tắc at/in
   + Test 38.C16.04 - Listening (slug: test-38-listening, 4 sections, 40 questions, status: PUBLISHED)
   + Test 38.C16.04 - Reading (slug: test-38-reading, 3 sections, 40 questions, status: PUBLISHED)
 - Database: Đã persist thành công toàn bộ 8 đề (28 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái PUBLISHED.
+
+----------------------------------------------------
+[2026-11-18] Cambridge IELTS 17 (Tests 1–4 in book = Tests 39–42 in system) — IELTS Academic
+----------------------------------------------------
+- Nguồn: docs/cambridge_17/Cambridge IELTS 17 PDF.pdf + docs/cambridge_17/Audio cambridge 17/
+- File PDF đã chia nhỏ thành các file <= 40 trang tại:
+  + docs/cambridge_17_split/fixed_40_pages/ (Part 1: 1-40, Part 2: 41-80, Part 3: 81-120, Part 4: 121-144)
+  + docs/cambridge_17_split/ (6 file phân đoạn logic Intro+Test1, Test2, Test3, Test4, Audioscripts, Keys+Samples)
+- Audio: 16 file audio tương ứng gán đúng tại public/uploads/audio/test-{39..42}-section-{1..4}.mp3 (đầy đủ 16/16 section).
+  + Đã bổ sung 3 file phần 2, 3, 4 cho Test 4 từ nguồn chuẩn ieltstrainingonline.
+- Hình ảnh Media: Cambridge 17 Listening & Reading không chứa bất kỳ câu hỏi biểu đồ hay bản đồ nào (0 maps, 0 plan diagrams). Không cần cắt ảnh.
+- Đáp án (Keys): Trích xuất và đối chiếu 100% từ Answer Keys gốc của sách Cambridge 17 (trang 119–126).
+  + Đã chạy test tự động đối chiếu scripts/verify_cambridge_17.py: 320/320 câu hỏi khớp 100% không sai lệch.
+- Layout và Schema: Đã kiểm tra qua scripts/validate_cambridge_17.ts (Zod ParsedTestDraftSchema + QuestionContentSchema + Question Layout Spec): 0 lỗi, 0 cảnh báo.
+- Danh sách đề trong hệ thống:
+  + Test 39.C17.01 - Listening (slug: test-39-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 39.C17.01 - Reading (slug: test-39-reading, 3 sections, 40 questions, status: PUBLISHED)
+  + Test 40.C17.02 - Listening (slug: test-40-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 40.C17.02 - Reading (slug: test-40-reading, 3 sections, 40 questions, status: PUBLISHED)
+  + Test 41.C17.03 - Listening (slug: test-41-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 41.C17.03 - Reading (slug: test-41-reading, 3 sections, 40 questions, status: PUBLISHED)
+  + Test 42.C17.04 - Listening (slug: test-42-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 42.C17.04 - Reading (slug: test-42-reading, 3 sections, 40 questions, status: PUBLISHED)
+- Database: Đã persist thành công toàn bộ 8 đề (28 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái PUBLISHED.

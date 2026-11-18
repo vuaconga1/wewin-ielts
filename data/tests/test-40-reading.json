@@ -1,0 +1,996 @@
+{
+  "title": "Test 40.C17.02 - Reading",
+  "slug": "test-40-reading",
+  "skill": "READING",
+  "status": "DRAFT",
+  "examType": "ACADEMIC",
+  "sourceFolder": "Cambridge IELTS 17 PDF.pdf",
+  "savedAt": "2026-11-18T09:59:46.445013+00:00",
+  "parts": [
+    {
+      "order": 0,
+      "title": "Reading Passage 1",
+      "content": "R E ADI NG\nRE A D ING P A S S A GE 1\nPassage 1 below.\n\nThe Dead Sea Scrolls\nIn late 1946 or early 1947, three Bedouin teenagers were tending their goats and sheep\nnear the ancient settlement of Qumran, located on the northwest shore of the Dead\nSea in what is now known as the West Bank. One of these young shepherds tossed a\nrock into an opening on the side of a cliff and was surprised to hear a shattering sound.\nHe and his companions later entered the cave and stumbled across a collection of\nlarge clay jars, seven of which contained scrolls with writing on them. The teenagers\ntook the seven scrolls to a nearby town where they were sold for a small sum to a local\nantiquities dealer. Word of the find spread, and Bedouins and archaeologists eventually\nunearthed tens of thousands of additional scroll fragments from 10 nearby caves;\ntogether they make up between 800 and 900 manuscripts. It soon became clear that this\nwas one of the greatest archaeological discoveries ever made.\nThe origin of the Dead Sea Scrolls, which were written around 2,000 years ago between\n150 BCE and 70 CE, is still the subject of scholarly debate even today. According to the\nprevailing theory, they are the work of a population that inhabited the area until Roman\ntroops destroyed the settlement around 70 CE. The area was known as Judea at that\ntime, and the people are thought to have belonged to a group called the Essenes, a\ndevout Jewish sect.\nThe majority of the texts on the Dead Sea Scrolls are in Hebrew, with some fragments\nwritten in an ancient version of its alphabet thought to have fallen out of use in the fifth\ncentury BCE. But there are other languages as well. Some scrolls are in Aramaic, the\nlanguage spoken by many inhabitants of the region from the sixth century BCE to the\nsiege of Jerusalem in 70 CE. In addition, several texts feature translations of the Hebrew\nBible into Greek.\nThe Dead Sea Scrolls include fragments from every book of the Old Testament of the\nBible except for the Book of Esther. The only entire book of the Hebrew Bible preserved\namong the manuscripts from Qumran is Isaiah; this copy, dated to the first century BCE,\nis considered the earliest biblical manuscript still in existence. Along with biblical texts,\nthe scrolls include documents about sectarian regulations and religious writings that do\nnot appear in the Old Testament.\n\nThe writing on the Dead Sea Scrolls is mostly in black or occasionally red ink, and\nthe scrolls themselves are nearly all made of either parchment (animal skin) or an\nearly form of paper called ‘papyrus’. The only exception is the scroll numbered 3Q15,\nwhich was created out of a combination of copper and tin. Known as the Copper\nScroll, this curious document features letters chiselled onto metal – perhaps, as some\nhave theorized, to better withstand the passage of time. One of the most intriguing\nmanuscripts from Qumran, this is a sort of ancient treasure map that lists dozens of gold\nand silver caches. Using an unconventional vocabulary and odd spelling, it describes 64\nunderground hiding places that supposedly contain riches buried for safekeeping. None\nof these hoards have been recovered, possibly because the Romans pillaged Judea\nduring the first century CE. According to various hypotheses, the treasure belonged to\nlocal people, or was rescued from the Second Temple before its destruction or never\nexisted to begin with.\nSome of the Dead Sea Scrolls have been on interesting journeys. In 1948, a Syrian\nOrthodox archbishop known as Mar Samuel acquired four of the original seven scrolls\nfrom a Jerusalem shoemaker and part-time antiquity dealer, paying less than $100\nfor them. He then travelled to the United States and unsuccessfully offered them to a\nnumber of universities, including Yale. Finally, in 1954, he placed an advertisement in\nthe business newspaper The Wall Street Journal – under the category ‘Miscellaneous\nItems for Sale’ – that read: ‘Biblical Manuscripts dating back to at least 200 B.C. are for\nsale. This would be an ideal gift to an educational or religious institution by an individual\nor group.’ Fortunately, Israeli archaeologist and statesman Yigael Yadin negotiated their\npurchase and brought the scrolls back to Jerusalem, where they remain to this day.\nIn 2017, researchers from the University of Haifa restored and deciphered one of the last\nuntranslated scrolls. The university’s Eshbal Ratson and Jonathan Ben-Dov spent one\nyear reassembling the 60 fragments that make up the scroll. Deciphered from a band\nof coded text on parchment, the find provides insight into the community of people who\nwrote it and the 364-day calendar they would have used. The scroll names celebrations\nthat indicate shifts in seasons and details two yearly religious events known from\nanother Dead Sea Scroll. Only one more known scroll remains untranslated.\n\nQuestions 1–5\nComplete the notes below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 1–5 on your answer sheet.\n\nThe Dead Sea Scrolls\nDiscovery\nQumran, 1946/7\n•\n\nthree Bedouin shepherds in their teens were near an opening on side of cliff\n\n•\n\nheard a noise of breaking when one teenager threw a 1\n\n•\t\u0007teenagers went into the 2\nmade of 3\n\nand found a number of containers\n\nThe scrolls\n•\n\ndate from between 150 BCE and 70 CE\n\n•\t\u0007thought to have been written by group of people known as the\n•\n\nwritten mainly in the 5\n\n•\n\nmost are on religious topics, written using ink on parchment or papyrus\n\nlanguage\n\nQuestions 6–13\nDo the following statements agree with the information given in Reading Passage 1?\nIn boxes 6–13 on your answer sheet, write\nTRUE\nif the statement agrees with the information\nFALSE\nif the statement contradicts the information\nNOT GIVEN if there is no information on this\n\nThe Bedouin teenagers who found the scrolls were disappointed by how little\nmoney they received for them.\n\n\nThere is agreement among academics about the origin of the Dead Sea Scrolls.\n\n\nMost of the books of the Bible written on the scrolls are incomplete.\n\n\nThe information on the Copper Scroll is written in an unusual way.\n\n\nMar Samuel was given some of the scrolls as a gift.\n\n\nIn the early 1950s, a number of educational establishments in the US were keen to\nbuy scrolls from Mar Samuel.\n\n\nThe scroll that was pieced together in 2017 contains information about annual\noccasions in the Qumran area 2,000 years ago.\n\n\nAcademics at the University of Haifa are currently researching how to decipher the\nfinal scroll.",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "heard a noise of breaking when one teenager threw a 1 ________",
+            "blank": true
+          },
+          "correctAnswer": "rock"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "teenagers went into the 2 ________",
+            "blank": true
+          },
+          "correctAnswer": "cave"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "found a number of containers made of 3 ________",
+            "blank": true
+          },
+          "correctAnswer": "clay"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "thought to have been written by group of people known as the 4 ________",
+            "blank": true
+          },
+          "correctAnswer": "Essenes"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "written mainly in the 5 ________ language",
+            "blank": true
+          },
+          "correctAnswer": "Hebrew"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The Bedouin teenagers who found the scrolls were disappointed by how little money they received for them.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "There is agreement among academics about the origin of the Dead Sea Scrolls.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Most of the books of the Bible written on the scrolls are incomplete.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The information on the Copper Scroll is written in an unusual way.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Mar Samuel was given some of the scrolls as a gift.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "In the early 1950s, a number of educational establishments in the US were keen to buy scrolls from Mar Samuel.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The scroll that was pieced together in 2017 contains information about annual occasions in the Qumran area 2,000 years ago.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Academics at the University of Haifa are currently researching how to decipher the final scroll.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        }
+      ]
+    },
+    {
+      "order": 1,
+      "title": "Reading Passage 2",
+      "content": "RE A D ING P A S S A GE 2\nPassage 2 below.\n\nA second attempt at domesticating the tomato\nA\t\u0007\nIt took at least 3,000 years for humans to learn how to domesticate the wild tomato\nand cultivate it for food. Now two separate teams in Brazil and China have done it all\nover again in less than three years. And they have done it better in some ways, as\nthe re-domesticated tomatoes are more nutritious than the ones we eat at present.\n\t\u0007This approach relies on the revolutionary CRISPR genome editing technique, in\nwhich changes are deliberately made to the DNA of a living cell, allowing genetic\nmaterial to be added, removed or altered. The technique could not only improve\nexisting crops, but could also be used to turn thousands of wild plants into useful\nand appealing foods. In fact, a third team in the US has already begun to do this\nwith a relative of the tomato called the groundcherry.\n\t\u0007This fast-track domestication could help make the world’s food supply healthier and\nfar more resistant to diseases, such as the rust fungus devastating wheat crops.\n\t\u0007‘This could transform what we eat,’ says Jorg Kudla at the University of Munster in\nGermany, a member of the Brazilian team. ‘There are 50,000 edible plants in the\nworld, but 90 percent of our energy comes from just 15 crops.’\n\t\u0007‘We can now mimic the known domestication course of major crops like rice, maize,\nsorghum or others,’ says Caixia Gao of the Chinese Academy of Sciences in Beijing.\n‘Then we might try to domesticate plants that have never been domesticated.’\nB\t\u0007\nWild tomatoes, which are native to the Andes region in South America, produce\npea-sized fruits. Over many generations, peoples such as the Aztecs and Incas\ntransformed the plant by selecting and breeding plants with mutations* in their\ngenetic structure, which resulted in desirable traits such as larger fruit.\n\t\u0007But every time a single plant with a mutation is taken from a larger population for\nbreeding, much genetic diversity is lost. And sometimes the desirable mutations\ncome with less desirable traits. For instance, the tomato strains grown for\nsupermarkets have lost much of their flavour.\n\t\u0007By comparing the genomes of modern plants to those of their wild relatives,\nbiologists have been working out what genetic changes occurred as plants were\ndomesticated. The teams in Brazil and China have now used this knowledge to\nreintroduce these changes from scratch while maintaining or even enhancing the\ndesirable traits of wild strains.\n* mutations: changes in an organism’s genetic structure that can be passed down to later generations\n\nKudla’s team made six changes altogether. For instance, they tripled the size\nC\t\u0007\nof fruit by editing a gene called FRUIT WEIGHT, and increased the number of\ntomatoes per truss by editing another called MULTIFLORA.\nWhile\n\t\u0007\nthe historical domestication of tomatoes reduced levels of the red pigment\nlycopene – thought to have potential health benefits – the team in Brazil managed\nto boost it instead. The wild tomato has twice as much lycopene as cultivated ones;\nthe newly domesticated one has five times as much.\n‘They are quite tasty,’ says Kudla. ‘A little bit strong. And very aromatic.’\nThe\n\t\u0007\nteam in China re-domesticated several strains of wild tomatoes with desirable\ntraits lost in domesticated tomatoes. In this way they managed to create a strain\nresistant to a common disease called bacterial spot race, which can devastate\nyields. They also created another strain that is more salt tolerant – and has higher\nlevels of vitamin C.\nMeanwhile, Joyce Van Eck at the Boyce Thompson Institute in New York state\nD\t\u0007\ndecided to use the same approach to domesticate the groundcherry or goldenberry\n(Physalis pruinosa) for the first time. This fruit looks similar to the closely related\nCape gooseberry (Physalis peruviana).\nGroundcherries\n\t\u0007\nare already sold to a limited extent in the US but they are hard to\nproduce because the plant has a sprawling growth habit and the small fruits fall\noff the branches when ripe. Van Eck’s team has edited the plants to increase fruit\nsize, make their growth more compact and to stop fruits dropping. ‘There’s potential\nfor this to be a commercial crop,’ says Van Eck. But she adds that taking the\nwork further would be expensive because of the need to pay for a licence for the\nCRISPR technology and get regulatory approval.\nThis approach could boost the use of many obscure plants, says Jonathan Jones\nE\t\u0007\nof the Sainsbury Lab in the UK. But it will be hard for new foods to grow so popular\nwith farmers and consumers that they become new staple crops, he thinks.\nThe\n\t\u0007\nthree teams already have their eye on other plants that could be ‘catapulted\ninto the mainstream’, including foxtail, oat-grass and cowpea. By choosing wild\nplants that are drought or heat tolerant, says Gao, we could create crops that will\nthrive even as the planet warms.\nBut\n\t\u0007\nKudla didn’t want to reveal which species were in his team’s sights, because\nCRISPR has made the process so easy. ‘Any one with the right skills could go to\ntheir lab and do this.’\n\nQuestions 14–18\nReading Passage 2 has five sections, A–E.\nWhich section contains the following information?\nWrite the correct letter, A–E, in boxes 14–18 on your answer sheet.\nNB You may use any letter more than once.\n\na reference to a type of tomato that can resist a dangerous infection\n\n\nan explanation of how problems can arise from focusing only on a certain type of\ntomato plant.\n\n\na number of examples of plants that are not cultivated at present but could be\nuseful as food sources\n\n\na comparison between the early domestication of the tomato and more recent research\n\n\na personal reaction to the flavour of a tomato that has been genetically edited\n\nQuestions 19–23\nLook at the following statements (Questions 19–23) and the list of researchers below.\nMatch each statement with the correct researcher, A–D.\nWrite the correct letter, A–D, in boxes 19–23 on your answer sheet.\nNB You may use any letter more than once.\n\nDomestication of certain plants could allow them to adapt to future environmental\nchallenges.\n\n\nThe idea of growing and eating unusual plants may not be accepted on a large scale.\n\n\nIt is not advisable for the future direction of certain research to be made public.\n\n\nPresent efforts to domesticate one wild fruit are limited by the costs involved.\n\n\nHumans only make use of a small proportion of the plant food available on Earth.\nList of Researchers\nA\nB\nC\nD\n\nJorg Kudla\nCaixia Gao\nJoyce Van Eck\nJonathan Jones\n\nQuestions 24–26\nComplete the sentences below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 24–26 on your answer sheet.\n\nAn undesirable trait such as loss of\nin a tomato gene.\n\n\nBy modifying one gene in a tomato plant, researchers made the tomato three times\n.\nits original\n\n\nA type of tomato which was not badly affected by\nin vitamin C, was produced by a team of researchers in China.\n\n\n\nmay be caused by a mutation\n\n, and was rich",
+      "questions": [
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a reference to a type of tomato that can resist a dangerous infection",
+            "options": [
+              {
+                "label": "A",
+                "text": "Section A"
+              },
+              {
+                "label": "B",
+                "text": "Section B"
+              },
+              {
+                "label": "C",
+                "text": "Section C"
+              },
+              {
+                "label": "D",
+                "text": "Section D"
+              },
+              {
+                "label": "E",
+                "text": "Section E"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MATCHING",
+          "content": {
+            "stem": "an explanation of how problems can arise from focusing only on a certain type of tomato plant.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Section A"
+              },
+              {
+                "label": "B",
+                "text": "Section B"
+              },
+              {
+                "label": "C",
+                "text": "Section C"
+              },
+              {
+                "label": "D",
+                "text": "Section D"
+              },
+              {
+                "label": "E",
+                "text": "Section E"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a number of examples of plants that are not cultivated at present but could be useful as food sources",
+            "options": [
+              {
+                "label": "A",
+                "text": "Section A"
+              },
+              {
+                "label": "B",
+                "text": "Section B"
+              },
+              {
+                "label": "C",
+                "text": "Section C"
+              },
+              {
+                "label": "D",
+                "text": "Section D"
+              },
+              {
+                "label": "E",
+                "text": "Section E"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a comparison between the early domestication of the tomato and more recent research",
+            "options": [
+              {
+                "label": "A",
+                "text": "Section A"
+              },
+              {
+                "label": "B",
+                "text": "Section B"
+              },
+              {
+                "label": "C",
+                "text": "Section C"
+              },
+              {
+                "label": "D",
+                "text": "Section D"
+              },
+              {
+                "label": "E",
+                "text": "Section E"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "a personal reaction to the flavour of a tomato that has been genetically edited",
+            "options": [
+              {
+                "label": "A",
+                "text": "Section A"
+              },
+              {
+                "label": "B",
+                "text": "Section B"
+              },
+              {
+                "label": "C",
+                "text": "Section C"
+              },
+              {
+                "label": "D",
+                "text": "Section D"
+              },
+              {
+                "label": "E",
+                "text": "Section E"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Domestication of certain plants could allow them to adapt to future environmental challenges.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jorg Kudla"
+              },
+              {
+                "label": "B",
+                "text": "Caixia Gao"
+              },
+              {
+                "label": "C",
+                "text": "Joyce Van Eck"
+              },
+              {
+                "label": "D",
+                "text": "Jonathan Jones"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "The idea of growing and eating unusual plants may not be accepted on a large scale.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jorg Kudla"
+              },
+              {
+                "label": "B",
+                "text": "Caixia Gao"
+              },
+              {
+                "label": "C",
+                "text": "Joyce Van Eck"
+              },
+              {
+                "label": "D",
+                "text": "Jonathan Jones"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MATCHING",
+          "content": {
+            "stem": "It is not advisable for the future direction of certain research to be made public.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jorg Kudla"
+              },
+              {
+                "label": "B",
+                "text": "Caixia Gao"
+              },
+              {
+                "label": "C",
+                "text": "Joyce Van Eck"
+              },
+              {
+                "label": "D",
+                "text": "Jonathan Jones"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Present efforts to domesticate one wild fruit are limited by the costs involved.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jorg Kudla"
+              },
+              {
+                "label": "B",
+                "text": "Caixia Gao"
+              },
+              {
+                "label": "C",
+                "text": "Joyce Van Eck"
+              },
+              {
+                "label": "D",
+                "text": "Jonathan Jones"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Humans only make use of a small proportion of the plant food available on Earth.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Jorg Kudla"
+              },
+              {
+                "label": "B",
+                "text": "Caixia Gao"
+              },
+              {
+                "label": "C",
+                "text": "Joyce Van Eck"
+              },
+              {
+                "label": "D",
+                "text": "Jonathan Jones"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "An undesirable trait such as loss of 24 ________ may be caused by a mutation in a tomato gene.",
+            "blank": true
+          },
+          "correctAnswer": "flavour",
+          "acceptableAnswers": [
+            "flavour",
+            "flavor"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "researchers made the tomato three times its original 25 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "size"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "tomato which was not badly affected by 26 ________ , and was rich in vitamin C",
+            "blank": true
+          },
+          "correctAnswer": "salt"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Reading Passage 3",
+      "content": "RE A D ING P A S S A GE 3\nPassage 3 below.\n\nInsight or evolution?\nTwo scientists consider the origins of discoveries and other innovative behavior\nScientific discovery is popularly believed to result from the sheer genius of such intellectual\nstars as naturalist Charles Darwin and theoretical physicist Albert Einstein. Our view of such\nunique contributions to science often disregards the person’s prior experience and the efforts of\ntheir lesser-known predecessors. Conventional wisdom also places great weight on insight in\npromoting breakthrough scientific achievements, as if ideas spontaneously pop into someone’s\nhead – fully formed and functional.\nThere may be some limited truth to this view. However, we believe that it largely misrepresents\nthe real nature of scientific discovery, as well as that of creativity and innovation in many other\nrealms of human endeavor.\nSetting aside such greats as Darwin and Einstein – whose monumental contributions are duly\ncelebrated – we suggest that innovation is more a process of trial and error, where two steps\nforward may sometimes come with one step back, as well as one or more steps to the right or\nleft. This evolutionary view of human innovation undermines the notion of creative genius and\nrecognizes the cumulative nature of scientific progress.\nConsider one unheralded scientist: John Nicholson, a mathematical physicist working in the\n1910s who postulated the existence of ‘proto-elements’ in outer space. By combining different\nnumbers of weights of these proto-elements’ atoms, Nicholson could recover the weights of all\nthe elements in the then-known periodic table. These successes are all the more noteworthy given\nthe fact that Nicholson was wrong about the presence of proto-elements: they do not actually\nexist. Yet, amid his often fanciful theories and wild speculations, Nicholson also proposed a novel\ntheory about the structure of atoms. Niels Bohr, the Nobel prize-winning father of modern atomic\ntheory, jumped off from this interesting idea to conceive his now-famous model of the atom.\nWhat are we to make of this story? One might simply conclude that science is a collective and\ncumulative enterprise. That may be true, but there may be a deeper insight to be gleaned. We\npropose that science is constantly evolving, much as species of animals do. In biological systems,\norganisms may display new characteristics that result from random genetic mutations. In the same\nway, random, arbitrary or accidental mutations of ideas may help pave the way for advances in\nscience. If mutations prove beneficial, then the animal or the scientific theory will continue to\nthrive and perhaps reproduce.\n\nSupport for this evolutionary view of behavioral innovation comes from many domains. Consider\none example of an influential innovation in US horseracing. The so-called ‘acey-deucy’ stirrup\nplacement, in which the rider’s foot in his left stirrup is placed as much as 25 centimeters lower\nthan the right, is believed to confer important speed advantages when turning on oval tracks. It\nwas developed by a relatively unknown jockey named Jackie Westrope. Had Westrope conducted\nmethodical investigations or examined extensive film records in a shrewd plan to outrun his\nrivals? Had he foreseen the speed advantage that would be conferred by riding acey-deucy? No.\nHe suffered a leg injury, which left him unable to fully bend his left knee. His modification just\nhappened to coincide with enhanced left-hand turning performance. This led to the rapid and\nwidespread adoption of riding acey-deucy by many riders, a racing style which continues in\ntoday’s thoroughbred racing.\nPlenty of other stories show that fresh advances can arise from error, misadventure, and also\npure serendipity – a happy accident. For example, in the early 1970s, two employees of the\ncompany 3M each had a problem: Spencer Silver had a product – a glue which was only slightly\nsticky – and no use for it, while his colleague Art Fry was trying to figure out how to affix\ntemporary bookmarks in his hymn book without damaging its pages. The solution to both these\nproblems was the invention of the brilliantly simple yet phenomenally successful Post-It note.\nSuch examples give lie to the claim that ingenious, designing minds are responsible for human\ncreativity and invention. Far more banal and mechanical forces may be at work; forces that are\nfundamentally connected to the laws of science.\nThe notions of insight, creativity and genius are often invoked, but they remain vague and of\ndoubtful scientific utility, especially when one considers the diverse and enduring contributions of\nindividuals such as Plato, Leonardo da Vinci, Shakespeare, Beethoven, Galileo, Newton, Kepler,\nCurie, Pasteur and Edison. These notions merely label rather than explain the evolution of human\ninnovations. We need another approach, and there is a promising candidate.\nThe Law of Effect was advanced by psychologist Edward Thorndike in 1898, some 40 years\nafter Charles Darwin published his groundbreaking work on biological evolution, On the Origin\nof Species. This simple law holds that organisms tend to repeat successful behaviors and to\nrefrain from performing unsuccessful ones. Just like Darwin’s Law of Natural Selection, the Law\nof Effect involves an entirely mechanical process of variation and selection, without any end\nobjective in sight.\nOf course, the origin of human innovation demands much further study. In particular, the\nprovenance of the raw material on which the Law of Effect operates is not as clearly known as\nthat of the genetic mutations on which the Law of Natural Selection operates. The generation of\nnovel ideas and behaviors may not be entirely random, but constrained by prior successes and\nfailures – of the current individual (such as Bohr) or of predecessors (such as Nicholson).\nThe time seems right for abandoning the naive notions of intelligent design and genius, and for\nscientifically exploring the true origins of creative behavior.\n\nQuestions 27–31\nChoose the correct letter, A, B, C or D.\nWrite the correct letter in boxes 27–31 on your answer sheet.\n\nThe purpose of the first paragraph is to\nA\nB\nC\nD\n\n\nWhat are the writers doing in the second paragraph?\nA\nB\nC\nD\n\n\nThey represent an exception to a general rule.\nTheir way of working has been misunderstood.\nThey are an ideal which others should aspire to.\nTheir achievements deserve greater recognition.\n\nJohn Nicholson is an example of a person whose idea\nA\nB\nC\nD\n\n\ncriticising an opinion\njustifying a standpoint\nexplaining an approach\nsupporting an argument\n\nIn the third paragraph, what do the writers suggest about Darwin and Einstein?\nA\nB\nC\nD\n\n\ndefend particular ideas.\ncompare certain beliefs.\ndisprove a widely held view.\noutline a common assumption.\n\nestablished his reputation as an influential scientist.\nwas only fully understood at a later point in history.\nlaid the foundations for someone else’s breakthrough.\ninitially met with scepticism from the scientific community.\n\nWhat is the key point of interest about the ‘acey-deucy’ stirrup placement?\nA\nB\nC\nD\n\nthe simple reason why it was invented\nthe enthusiasm with which it was adopted\nthe research that went into its development\nthe cleverness of the person who first used it\n\nQuestions 32–36\nDo the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 32–36 on your answer sheet, write\nYES\nif the statement agrees with the claims of the writer\nNO\nif the statement contradicts the claims of the writer\nNOT GIVEN if it is impossible to say what the writer thinks about this\n\nAcknowledging people such as Plato or da Vinci as geniuses will help us\nunderstand the process by which great minds create new ideas.\n\n\nThe Law of Effect was discovered at a time when psychologists were seeking a\nscientific reason why creativity occurs.\n\n\nThe Law of Effect states that no planning is involved in the behaviour of organisms.\n\n\nThe Law of Effect sets out clear explanations about the sources of new ideas and\nbehaviours.\n\n\nMany scientists are now turning away from the notion of intelligent design\nand genius.\n\nQuestions 37–40\nComplete the summary using the list of words, A–G, below.\nWrite the correct letter, A–G, in boxes 37–40 on your answer sheet.\n\nThe origins of creative behaviour\nThe traditional view of scientific discovery is that breakthroughs happen when a\nsingle great mind has sudden 37\n\n. Although this can occur, it is\n\nnot often the case. Advances are more likely to be the result of a longer process.\nIn some cases, this process involves 38\n\n, such as Nicholson’s\n\ntheory about proto-elements. In others, simple necessity may provoke innovation,\nas with Westrope’s decision to modify the position of his riding stirrups. There is also\noften an element of 39\n\n, for example, the coincidence of ideas that\n\nled to the invention of the Post-It note. With both the Law of Natural Selection and\nthe Law of Effect, there may be no clear 40\n\ninvolved, but merely a\n\nprocess of variation and selection.\n\nA\nD\nG\n\ninvention\nmistakes\nexperiments\n\nB\nE\n\ngoals\nluck\n\nC\nF\n\ncompromise\ninspiration",
+      "questions": [
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The purpose of the first paragraph is to",
+            "options": [
+              {
+                "label": "A",
+                "text": "defend particular ideas."
+              },
+              {
+                "label": "B",
+                "text": "compare certain beliefs."
+              },
+              {
+                "label": "C",
+                "text": "disprove a widely held view."
+              },
+              {
+                "label": "D",
+                "text": "outline a common assumption."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What are the writers doing in the second paragraph?",
+            "options": [
+              {
+                "label": "A",
+                "text": "criticising an opinion"
+              },
+              {
+                "label": "B",
+                "text": "justifying a standpoint"
+              },
+              {
+                "label": "C",
+                "text": "explaining an approach"
+              },
+              {
+                "label": "D",
+                "text": "supporting an argument"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In the third paragraph, what do the writers suggest about Darwin and Einstein?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They represent an exception to a general rule."
+              },
+              {
+                "label": "B",
+                "text": "Their way of working has been misunderstood."
+              },
+              {
+                "label": "C",
+                "text": "They are an ideal which others should aspire to."
+              },
+              {
+                "label": "D",
+                "text": "Their achievements deserve greater recognition."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "John Nicholson is an example of a person whose idea",
+            "options": [
+              {
+                "label": "A",
+                "text": "established his reputation as an influential scientist."
+              },
+              {
+                "label": "B",
+                "text": "was only fully understood at a later point in history."
+              },
+              {
+                "label": "C",
+                "text": "laid the foundations for someone else’s breakthrough."
+              },
+              {
+                "label": "D",
+                "text": "initially met with scepticism from the scientific community."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 31,
+          "order": 30,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is the key point of interest about the ‘acey-deucy’ stirrup placement?",
+            "options": [
+              {
+                "label": "A",
+                "text": "the simple reason why it was invented"
+              },
+              {
+                "label": "B",
+                "text": "the enthusiasm with which it was adopted"
+              },
+              {
+                "label": "C",
+                "text": "the research that went into its development"
+              },
+              {
+                "label": "D",
+                "text": "the cleverness of the person who first used it"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Acknowledging people such as Plato or da Vinci as geniuses will help us understand the process by which great minds create new ideas.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The Law of Effect was discovered at a time when psychologists were seeking a scientific reason why creativity occurs.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The Law of Effect states that no planning is involved in the behaviour of organisms.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "YES"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The Law of Effect sets out clear explanations about the sources of new ideas and behaviours.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NO"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Many scientists are now turning away from the notion of intelligent design and genius.",
+            "options": [
+              {
+                "label": "YES",
+                "text": "YES"
+              },
+              {
+                "label": "NO",
+                "text": "NO"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "MATCHING",
+          "content": {
+            "stem": "breakthroughs happen when a single great mind has sudden 37 ________ .",
+            "options": [
+              {
+                "label": "A",
+                "text": "invention"
+              },
+              {
+                "label": "B",
+                "text": "goals"
+              },
+              {
+                "label": "C",
+                "text": "compromise"
+              },
+              {
+                "label": "D",
+                "text": "mistakes"
+              },
+              {
+                "label": "E",
+                "text": "luck"
+              },
+              {
+                "label": "F",
+                "text": "inspiration"
+              },
+              {
+                "label": "G",
+                "text": "experiments"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "MATCHING",
+          "content": {
+            "stem": "In some cases, this process involves 38 ________ ,",
+            "options": [
+              {
+                "label": "A",
+                "text": "invention"
+              },
+              {
+                "label": "B",
+                "text": "goals"
+              },
+              {
+                "label": "C",
+                "text": "compromise"
+              },
+              {
+                "label": "D",
+                "text": "mistakes"
+              },
+              {
+                "label": "E",
+                "text": "luck"
+              },
+              {
+                "label": "F",
+                "text": "inspiration"
+              },
+              {
+                "label": "G",
+                "text": "experiments"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "MATCHING",
+          "content": {
+            "stem": "There is also often an element of 39 ________ ,",
+            "options": [
+              {
+                "label": "A",
+                "text": "invention"
+              },
+              {
+                "label": "B",
+                "text": "goals"
+              },
+              {
+                "label": "C",
+                "text": "compromise"
+              },
+              {
+                "label": "D",
+                "text": "mistakes"
+              },
+              {
+                "label": "E",
+                "text": "luck"
+              },
+              {
+                "label": "F",
+                "text": "inspiration"
+              },
+              {
+                "label": "G",
+                "text": "experiments"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "MATCHING",
+          "content": {
+            "stem": "there may be no clear 40 ________ involved,",
+            "options": [
+              {
+                "label": "A",
+                "text": "invention"
+              },
+              {
+                "label": "B",
+                "text": "goals"
+              },
+              {
+                "label": "C",
+                "text": "compromise"
+              },
+              {
+                "label": "D",
+                "text": "mistakes"
+              },
+              {
+                "label": "E",
+                "text": "luck"
+              },
+              {
+                "label": "F",
+                "text": "inspiration"
+              },
+              {
+                "label": "G",
+                "text": "experiments"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    }
+  ]
+}

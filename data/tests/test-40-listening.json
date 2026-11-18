@@ -1,0 +1,939 @@
+{
+  "title": "Test 40.C17.02 - Listening",
+  "slug": "test-40-listening",
+  "skill": "LISTENING",
+  "status": "DRAFT",
+  "examType": "ACADEMIC",
+  "sourceFolder": "Cambridge IELTS 17 PDF.pdf",
+  "savedAt": "2026-11-18T09:59:46.443018+00:00",
+  "parts": [
+    {
+      "order": 0,
+      "title": "Part 1",
+      "content": "LIS T E NI NG\nPA R T 1   Questions 1–10\nQuestions 1–7\nComplete the notes below.\n\nListening test audio\n\nWrite ONE WORD ONLY for each answer.\n\nOpportunities for voluntary work in Southoe village\nLibrary\n•\n\nHelp with 1\n\n•\n\nHelp needed to keep 2\n\n•\n\nLibrary is in the 3\n\nbooks (times to be arranged)\nof books up to date\nRoom in the village hall\n\nLunch club\n•\n\nHelp by providing 4\n\n•\n\nHelp with hobbies such as 5\n\nHelp for individuals needed next week\n•\n\nTaking Mrs Carroll to 6\n\n•\n\nWork in the 7\n\nat Mr Selsbury’s house\n\nQuestions 8–10\nComplete the table below.\nWrite ONE WORD ONLY for each answer.\n\nDate\n19 Oct\n\nEvent\n\n18 Nov dance\n31 Dec New Year’s Eve party\n\nVillage social events\nLocation\nHelp needed\nVillage hall\nproviding refreshments\nVillage hall\n\nchecking 9\n\nMountfort Hotel designing the 10",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Help with 1 ________ books (times to be arranged)",
+            "blank": true
+          },
+          "correctAnswer": "collecting"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Help needed to keep 2 ________ of books up to date",
+            "blank": true
+          },
+          "correctAnswer": "records"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Library is in the 3 ________ Room in the village hall",
+            "blank": true
+          },
+          "correctAnswer": "West"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Help by providing 4 ________",
+            "blank": true
+          },
+          "correctAnswer": "transport"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Help with hobbies such as 5 ________",
+            "blank": true
+          },
+          "correctAnswer": "art"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Taking Mrs Carroll to 6 ________",
+            "blank": true
+          },
+          "correctAnswer": "hospital"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Work in the 7 ________ at Mr Selsbury’s house",
+            "blank": true
+          },
+          "correctAnswer": "garden"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "19 Oct Event: 8 ________",
+            "blank": true
+          },
+          "correctAnswer": "quiz"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "18 Nov: checking 9 ________",
+            "blank": true
+          },
+          "correctAnswer": "tickets"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "31 Dec: designing the 10 ________",
+            "blank": true
+          },
+          "correctAnswer": "poster"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-40-section-1.mp3"
+      }
+    },
+    {
+      "order": 1,
+      "title": "Part 2",
+      "content": "P A R T 2   Questions 11–20\nQuestions 11–14\nListening test audio\n\nChoose the correct letter, A, B or C.\n\nOniton Hall\n\nMany past owners made changes to\nA\nB\nC\n\n\nSir Edward Downes built Oniton Hall because he wanted\nA\nB\nC\n\n\naudio guides.\nphotographs.\npeople in costume.\n\nWhat is new for children at Oniton Hall?\nA\nB\nC\n\n\na place for discussing politics.\na place to display his wealth.\na place for artists and writers.\n\nVisitors can learn about the work of servants in the past from\nA\nB\nC\n\n\nthe gardens.\nthe house.\nthe farm.\n\nclothes for dressing up\nmini tractors\nthe adventure playground\n\nQuestions 15–20\nWhich activity is offered at each of the following locations on the farm?\nChoose SIX answers from the box and write the correct letter, A–H, next to\nQuestions 15–20.\nActivities\nA\n\nshopping\n\nB\n\nwatching cows being milked\n\nC\n\nseeing old farming equipment\n\nD\n\neating and drinking\n\nE\n\nstarting a trip\n\nF\n\nseeing rare breeds of animals\n\nG\n\nhelping to look after animals\n\nH\n\nusing farming tools\n\nLocations on the farm\n\ndairy\t\t\t\t\t\n\n\nlarge barn\t\t\t\n\n\nsmall barn\t\t\t\n\n\nstables\t\t\t\t\n\n\nshed\t\t\t\t\t\n\n\nparkland",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Many past owners made changes to",
+            "options": [
+              {
+                "label": "A",
+                "text": "the gardens."
+              },
+              {
+                "label": "B",
+                "text": "the house."
+              },
+              {
+                "label": "C",
+                "text": "the farm."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Sir Edward Downes built Oniton Hall because he wanted",
+            "options": [
+              {
+                "label": "A",
+                "text": "a place for discussing politics."
+              },
+              {
+                "label": "B",
+                "text": "a place to display his wealth."
+              },
+              {
+                "label": "C",
+                "text": "a place for artists and writers."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Visitors can learn about the work of servants in the past from",
+            "options": [
+              {
+                "label": "A",
+                "text": "audio guides."
+              },
+              {
+                "label": "B",
+                "text": "photographs."
+              },
+              {
+                "label": "C",
+                "text": "people in costume."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is new for children at Oniton Hall?",
+            "options": [
+              {
+                "label": "A",
+                "text": "clothes for dressing up"
+              },
+              {
+                "label": "B",
+                "text": "mini tractors"
+              },
+              {
+                "label": "C",
+                "text": "the adventure playground"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MATCHING",
+          "content": {
+            "stem": "dairy",
+            "options": [
+              {
+                "label": "A",
+                "text": "shopping"
+              },
+              {
+                "label": "B",
+                "text": "watching cows being milked"
+              },
+              {
+                "label": "C",
+                "text": "seeing old farming equipment"
+              },
+              {
+                "label": "D",
+                "text": "eating and drinking"
+              },
+              {
+                "label": "E",
+                "text": "starting a trip"
+              },
+              {
+                "label": "F",
+                "text": "seeing rare breeds of animals"
+              },
+              {
+                "label": "G",
+                "text": "helping to look after animals"
+              },
+              {
+                "label": "H",
+                "text": "using farming tools"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "large barn",
+            "options": [
+              {
+                "label": "A",
+                "text": "shopping"
+              },
+              {
+                "label": "B",
+                "text": "watching cows being milked"
+              },
+              {
+                "label": "C",
+                "text": "seeing old farming equipment"
+              },
+              {
+                "label": "D",
+                "text": "eating and drinking"
+              },
+              {
+                "label": "E",
+                "text": "starting a trip"
+              },
+              {
+                "label": "F",
+                "text": "seeing rare breeds of animals"
+              },
+              {
+                "label": "G",
+                "text": "helping to look after animals"
+              },
+              {
+                "label": "H",
+                "text": "using farming tools"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "small barn",
+            "options": [
+              {
+                "label": "A",
+                "text": "shopping"
+              },
+              {
+                "label": "B",
+                "text": "watching cows being milked"
+              },
+              {
+                "label": "C",
+                "text": "seeing old farming equipment"
+              },
+              {
+                "label": "D",
+                "text": "eating and drinking"
+              },
+              {
+                "label": "E",
+                "text": "starting a trip"
+              },
+              {
+                "label": "F",
+                "text": "seeing rare breeds of animals"
+              },
+              {
+                "label": "G",
+                "text": "helping to look after animals"
+              },
+              {
+                "label": "H",
+                "text": "using farming tools"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "stables",
+            "options": [
+              {
+                "label": "A",
+                "text": "shopping"
+              },
+              {
+                "label": "B",
+                "text": "watching cows being milked"
+              },
+              {
+                "label": "C",
+                "text": "seeing old farming equipment"
+              },
+              {
+                "label": "D",
+                "text": "eating and drinking"
+              },
+              {
+                "label": "E",
+                "text": "starting a trip"
+              },
+              {
+                "label": "F",
+                "text": "seeing rare breeds of animals"
+              },
+              {
+                "label": "G",
+                "text": "helping to look after animals"
+              },
+              {
+                "label": "H",
+                "text": "using farming tools"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "shed",
+            "options": [
+              {
+                "label": "A",
+                "text": "shopping"
+              },
+              {
+                "label": "B",
+                "text": "watching cows being milked"
+              },
+              {
+                "label": "C",
+                "text": "seeing old farming equipment"
+              },
+              {
+                "label": "D",
+                "text": "eating and drinking"
+              },
+              {
+                "label": "E",
+                "text": "starting a trip"
+              },
+              {
+                "label": "F",
+                "text": "seeing rare breeds of animals"
+              },
+              {
+                "label": "G",
+                "text": "helping to look after animals"
+              },
+              {
+                "label": "H",
+                "text": "using farming tools"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "parkland",
+            "options": [
+              {
+                "label": "A",
+                "text": "shopping"
+              },
+              {
+                "label": "B",
+                "text": "watching cows being milked"
+              },
+              {
+                "label": "C",
+                "text": "seeing old farming equipment"
+              },
+              {
+                "label": "D",
+                "text": "eating and drinking"
+              },
+              {
+                "label": "E",
+                "text": "starting a trip"
+              },
+              {
+                "label": "F",
+                "text": "seeing rare breeds of animals"
+              },
+              {
+                "label": "G",
+                "text": "helping to look after animals"
+              },
+              {
+                "label": "H",
+                "text": "using farming tools"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-40-section-2.mp3"
+      }
+    },
+    {
+      "order": 2,
+      "title": "Part 3",
+      "content": "P A R T 3   Questions 21–30\nQuestions 21 and 22\nListening test audio\n\nChoose TWO letters, A–E.\n\nWhich TWO things do the students agree they need to include in their reviews of\nRomeo and Juliet?\nA\nB\nC\nD\nE\n\nanalysis of the text\na summary of the plot\na description of the theatre\na personal reaction\na reference to particular scenes\n\nQuestions 23–27\nWhich opinion do the speakers give about each of the following aspects of\nThe Emporium’s production of Romeo and Juliet?\nChoose FIVE answers from the box and write the correct letter, A–G, next to\nQuestions 23–27.\nOpinions\nA\n\nThey both expected this to be more traditional.\n\nB\n\nThey both thought this was original.\n\nC\n\nThey agree this created the right atmosphere.\n\nD\n\nThey agree this was a major strength.\n\nE\n\nThey were both disappointed by this.\n\nF\n\nThey disagree about why this was an issue.\n\nG\n\nThey disagree about how this could be improved.\n\nAspects of the production\n\nthe set\t\t\t\t\n\n\nthe lighting\t\t\t\n\n\nthe costume design\t\t\n\n\nthe music \t\t\t\n\n\nthe actors’ delivery\n\nQuestions 28–30\nChoose the correct letter, A, B or C.\n\nThe students think the story of Romeo and Juliet is still relevant for young people\ntoday because\nA\nB\nC\n\n\nThe students found watching Romeo and Juliet in another language\nA\nB\nC\n\n\nit illustrates how easily conflict can start.\nit deals with problems that families experience.\nit teaches them about relationships.\nfrustrating.\ndemanding.\nmoving.\n\nWhy do the students think Shakespeare’s plays have such international appeal?\nA\nB\nC\n\nThe stories are exciting.\nThere are recognisable characters.\nThey can be interpreted in many ways.",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "analysis of the text"
+              },
+              {
+                "label": "B",
+                "text": "a summary of the plot"
+              },
+              {
+                "label": "C",
+                "text": "a description of the theatre"
+              },
+              {
+                "label": "D",
+                "text": "a personal reaction"
+              },
+              {
+                "label": "E",
+                "text": "a reference to particular scenes"
+              }
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "analysis of the text"
+              },
+              {
+                "label": "B",
+                "text": "a summary of the plot"
+              },
+              {
+                "label": "C",
+                "text": "a description of the theatre"
+              },
+              {
+                "label": "D",
+                "text": "a personal reaction"
+              },
+              {
+                "label": "E",
+                "text": "a reference to particular scenes"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the set",
+            "options": [
+              {
+                "label": "A",
+                "text": "They both expected this to be more traditional."
+              },
+              {
+                "label": "B",
+                "text": "They both thought this was original."
+              },
+              {
+                "label": "C",
+                "text": "They agree this created the right atmosphere."
+              },
+              {
+                "label": "D",
+                "text": "They agree this was a major strength."
+              },
+              {
+                "label": "E",
+                "text": "They were both disappointed by this."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about why this was an issue."
+              },
+              {
+                "label": "G",
+                "text": "They disagree about how this could be improved."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the lighting",
+            "options": [
+              {
+                "label": "A",
+                "text": "They both expected this to be more traditional."
+              },
+              {
+                "label": "B",
+                "text": "They both thought this was original."
+              },
+              {
+                "label": "C",
+                "text": "They agree this created the right atmosphere."
+              },
+              {
+                "label": "D",
+                "text": "They agree this was a major strength."
+              },
+              {
+                "label": "E",
+                "text": "They were both disappointed by this."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about why this was an issue."
+              },
+              {
+                "label": "G",
+                "text": "They disagree about how this could be improved."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the costume design",
+            "options": [
+              {
+                "label": "A",
+                "text": "They both expected this to be more traditional."
+              },
+              {
+                "label": "B",
+                "text": "They both thought this was original."
+              },
+              {
+                "label": "C",
+                "text": "They agree this created the right atmosphere."
+              },
+              {
+                "label": "D",
+                "text": "They agree this was a major strength."
+              },
+              {
+                "label": "E",
+                "text": "They were both disappointed by this."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about why this was an issue."
+              },
+              {
+                "label": "G",
+                "text": "They disagree about how this could be improved."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the music",
+            "options": [
+              {
+                "label": "A",
+                "text": "They both expected this to be more traditional."
+              },
+              {
+                "label": "B",
+                "text": "They both thought this was original."
+              },
+              {
+                "label": "C",
+                "text": "They agree this created the right atmosphere."
+              },
+              {
+                "label": "D",
+                "text": "They agree this was a major strength."
+              },
+              {
+                "label": "E",
+                "text": "They were both disappointed by this."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about why this was an issue."
+              },
+              {
+                "label": "G",
+                "text": "They disagree about how this could be improved."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MATCHING",
+          "content": {
+            "stem": "the actors’ delivery",
+            "options": [
+              {
+                "label": "A",
+                "text": "They both expected this to be more traditional."
+              },
+              {
+                "label": "B",
+                "text": "They both thought this was original."
+              },
+              {
+                "label": "C",
+                "text": "They agree this created the right atmosphere."
+              },
+              {
+                "label": "D",
+                "text": "They agree this was a major strength."
+              },
+              {
+                "label": "E",
+                "text": "They were both disappointed by this."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about why this was an issue."
+              },
+              {
+                "label": "G",
+                "text": "They disagree about how this could be improved."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students think the story of Romeo and Juliet is still relevant for young people today because",
+            "options": [
+              {
+                "label": "A",
+                "text": "it illustrates how easily conflict can start."
+              },
+              {
+                "label": "B",
+                "text": "it deals with problems that families experience."
+              },
+              {
+                "label": "C",
+                "text": "it teaches them about relationships."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students found watching Romeo and Juliet in another language",
+            "options": [
+              {
+                "label": "A",
+                "text": "frustrating."
+              },
+              {
+                "label": "B",
+                "text": "demanding."
+              },
+              {
+                "label": "C",
+                "text": "moving."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Why do the students think Shakespeare’s plays have such international appeal?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The stories are exciting."
+              },
+              {
+                "label": "B",
+                "text": "There are recognisable characters."
+              },
+              {
+                "label": "C",
+                "text": "They can be interpreted in many ways."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-40-section-3.mp3"
+      }
+    },
+    {
+      "order": 3,
+      "title": "Part 4",
+      "content": "P A R T 4  \n\nQuestions 31–40\n\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nListening test audio\n\nThe impact of digital technology on the Icelandic language\nThe Icelandic language\n•\n\nhas approximately 31\n\n•\n\nhas a 32\n\n•\n\nhas not changed a lot over the last thousand years\n\n•\n\nhas\n\t\u0007\nits own words for computer-based concepts, such as web browser\nand 33\n\nspeakers\nthat is still growing\n\nYoung speakers\n•\n\nare big users of digital technology, such as 34\n\n•\n\nare becoming 35\n\n•\n\nare\n\t\u0007 having discussions using only English while they are in the\nat school\n\n•\n\nare\n\t\u0007 better able to identify the content of a 37\nIcelandic\n\nvery quickly\n\nin English than\n\nTechnology and internet companies\n•\n\nwrite\n\t\u0007\nvery little in Icelandic because of the small number of speakers and\nbecause of how complicated its 38\nis\n\nThe Icelandic government\n•\n\nhas\n\t\u0007\nset up a fund to support the production of more digital content in the language\n\n•\n\nbelieves that Icelandic has a secure future\n\n•\n\nis worried that young Icelanders may lose their 39\n\n•\n\nis\n\t\u0007 worried about the consequences of children not being 40\nin either Icelandic or English\n\n\n\n\nas Icelanders",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "has approximately 31 ________ speakers",
+            "blank": true
+          },
+          "correctAnswer": "321,000",
+          "acceptableAnswers": [
+            "321,000",
+            "321000"
+          ]
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "has a 32 ________ that is still growing",
+            "blank": true
+          },
+          "correctAnswer": "vocabulary"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "such as web browser and 33 ________",
+            "blank": true
+          },
+          "correctAnswer": "podcast"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "are big users of digital technology, such as 34 ________",
+            "blank": true
+          },
+          "correctAnswer": "smartphones"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "are becoming 35 ________ very quickly",
+            "blank": true
+          },
+          "correctAnswer": "bilingual"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "while they are in the 36 ________ at school",
+            "blank": true
+          },
+          "correctAnswer": "playground"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "identify the content of a 37 ________ in English than Icelandic",
+            "blank": true
+          },
+          "correctAnswer": "picture"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "because of how complicated its 38 ________ is",
+            "blank": true
+          },
+          "correctAnswer": "grammar"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "is worried that young Icelanders may lose their 39 ________ as Icelanders",
+            "blank": true
+          },
+          "correctAnswer": "identity"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "worried about the consequences of children not being 40 ________ in either Icelandic or English",
+            "blank": true
+          },
+          "correctAnswer": "fluent"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-40-section-4.mp3"
+      }
+    }
+  ]
+}
