@@ -245,3 +245,30 @@ ws-34          : THIẾU KEYS -> tự soạn toàn bộ 58 câu (quy tắc at/in
   + Test 34.C18.04 - Listening (slug: test-34-listening, 4 sections, 40 questions, status: DRAFT)
   + Test 34.C18.04 - Reading (slug: test-34-reading, 3 sections, 40 questions, status: DRAFT)
 - Database: Đã persist thành công toàn bộ 8 đề (56 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái DRAFT.
+
+----------------------------------------------------
+[2026-11-18] Cambridge IELTS 16 (Tests 1–4 in book = Tests 35–38 in system) — IELTS Academic
+----------------------------------------------------
+- Nguồn: docs/cambridge_16/C61.pdf + docs/cambridge_16/Audio.zip (đã giải nén).
+- File PDF đã chia nhỏ thành các file <= 40 trang tại:
+  + docs/cambridge_16_split/fixed_40_pages/ (Part 1: 1-40, Part 2: 41-80, Part 3: 81-120, Part 4: 121-143)
+  + docs/cambridge_16_split/ (6 file phân đoạn logic Intro+Test1, Test2, Test3, Test4, Audioscripts, Keys+Samples)
+- Audio: 16 file audio tương ứng gán đúng tại public/uploads/audio/test-{35..38}-section-{1..4}.mp3 (đầy đủ 16/16 section).
+- Hình ảnh Media: 4/4 hình ảnh đã cắt và làm sạch watermark 100%, lưu tại public/uploads/images/:
+  + test-35-map.png (Test 35 L-S2: Stevenson's site plan A-H)
+  + test-36-white-horse.png (Test 36 R-P1: The White Horse of Uffington)
+  + test-38-map.png (Test 38 L-S2: Recreation ground map A-I)
+  + test-38-diagram.png (Test 38 R-P1: Persian Qanat & Roman Shaft)
+- Đáp án (Keys): Trích xuất và đối chiếu 100% từ Answer Keys gốc của sách Cambridge 16 (trang 121–128).
+  + Đã chạy test tự động đối chiếu scripts/verify_cambridge_16.py: 320/320 câu hỏi khớp 100% không sai lệch.
+- Layout và Schema: Đã kiểm tra qua scripts/validate_cambridge_16.ts (Zod ParsedTestDraftSchema + QuestionContentSchema + Question Layout Spec): 0 lỗi, 0 cảnh báo.
+- Danh sách đề trong hệ thống:
+  + Test 35.C16.01 - Listening (slug: test-35-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 35.C16.01 - Reading (slug: test-35-reading, 3 sections, 40 questions, status: PUBLISHED)
+  + Test 36.C16.02 - Listening (slug: test-36-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 36.C16.02 - Reading (slug: test-36-reading, 3 sections, 40 questions, status: PUBLISHED)
+  + Test 37.C16.03 - Listening (slug: test-37-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 37.C16.03 - Reading (slug: test-37-reading, 3 sections, 40 questions, status: PUBLISHED)
+  + Test 38.C16.04 - Listening (slug: test-38-listening, 4 sections, 40 questions, status: PUBLISHED)
+  + Test 38.C16.04 - Reading (slug: test-38-reading, 3 sections, 40 questions, status: PUBLISHED)
+- Database: Đã persist thành công toàn bộ 8 đề (28 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái PUBLISHED.

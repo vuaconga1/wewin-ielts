@@ -97,6 +97,10 @@ yarn-error.log*
 !/data/tests/test-32-*.json
 !/data/tests/test-33-*.json
 !/data/tests/test-34-*.json
+!/data/tests/test-35-*.json
+!/data/tests/test-36-*.json
+!/data/tests/test-37-*.json
+!/data/tests/test-38-*.json
 
 # uploaded audio (keep folder + section mp3s needed at runtime)
 /public/uploads/audio/*
@@ -144,6 +148,8 @@ next-env.d.ts
 /docs/cambridge_12/
 /docs/cambridge_12_split/pages/
 /docs/cambridge_12_split/text/
+/docs/cambridge_16/
+/docs/cambridge_16_split/
 /docs/cambridge_18/
 /docs/cambridge_18_split/
 /DE-IELTS/

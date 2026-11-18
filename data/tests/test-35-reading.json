@@ -1,0 +1,1094 @@
+{
+  "title": "Test 35.C16.01 - Reading",
+  "slug": "test-35-reading",
+  "skill": "READING",
+  "status": "DRAFT",
+  "parts": [
+    {
+      "title": "Reading Passage 1",
+      "content": "Why we need to protect polar bears\n\nPolar bears are facing severe threats from climate change, and their disappearance could have far-reaching consequences. They are uniquely adapted to the harsh conditions of the Arctic Circle, where temperatures often fall to -40°C. One reason is that they have up to 11 centimetres of adipose tissue underneath their skin. In humans, similar levels of fat would lead to obesity and increased risk of diabetes and heart disease, yet polar bears suffer no such health problems.\n\nA 2014 study by Shi Ping Liu and colleagues compared the genetic profile of polar bears with that of their closest relatives, brown bears from warmer regions. This helped determine the genes enabling polar bears to survive in one of the world's most extreme environments. Liu's team identified that polar bears possess a gene known as APoB, which lowers levels of low-density lipoproteins (LDLs), a form of 'bad' cholesterol. In humans, mutations of this gene increase heart disease risk, making polar bears a promising model for understanding human cardiovascular health.\n\nThe polar bear genome may also hold clues for treating osteoporosis, a disease characterized by reduced bone density due to lack of exercise, poor calcium intake, or food starvation. Bone tissue normally undergoes remodeling based on nutrient levels and mechanical stress. Female polar bears face extreme conditions during pregnancy. In autumn, they dig maternity dens in snow and remain there through winter, fasting for about six months while nursing their cubs. Despite depleting calcium reserves, their bones remain dense and strong.\n\nIn 2008, physiologists Alanda Lennox and Allen Goodship discovered that pregnant bears increase bone density prior to entering dens, and emerged six months later without significant loss of bone density. Brown bears lack this capacity and must rebuild bone in spring. Understanding this mechanism could benefit bedridden patients and astronauts.\n\nBeyond medical benefits, conservation should consider polar bears' intelligence and emotional life. Contrary to common perceptions of bears as unintelligent and violent, anecdotal and scientific evidence shows strong problem-solving abilities. At Tennoji Zoo in Osaka, a male bear named GoGo used a tree branch as a tool to dislodge meat placed out of reach. Wild bears have also exhibited calculating behavior, such as jumping onto barrels to reach a platform where a photographer stood four metres high.\n\nA 2008 study by Alison Ames showed bears engaging in conscious manipulation of objects, stacking them and knocking them down like a game. Furthermore, bears display emotions: they strike at ice and snow out of frustration when missing a kill. They can also form interspecies relationships, playing with sled dogs or, in the case of a bear named Agee, swimming with her human trainer Mark Dumas.\n\nQuestions 1–7\nDo the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–7 on your answer sheet, write\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this\n\n1 Polar bears suffer from various health problems due to the build-up of fat under their skin.\n2 The study done by Liu and his colleagues compared different groups of polar bears.\n3 Liu and colleagues were the first researchers to compare polar bears and brown bears genetically.\n4 Polar bears are able to control their levels of 'bad' cholesterol by genetic means.\n5 Female polar bears are able to survive for about six months without food.\n6 It was found that the bones of female polar bears were very weak when they came out of their dens in spring.\n7 The polar bear's mechanism for increasing bone density could also be used by people one day.\n\nQuestions 8–13\nComplete the table below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 8–13 on your answer sheet.\n\nReasons why polar bears should be protected\nPeople think of bears as unintelligent and 8 ............... .\nHowever, this may not be correct. For example:\n• In Tennoji Zoo, a bear has been seen using a branch as a 9 ............... . This allowed him to knock down some 10 ............... .\n• A wild polar bear worked out a method of reaching a platform where a 11 ............... was located.\n• Polar bears have displayed behaviour such as conscious manipulation of objects and activity similar to a 12 ............... .\nBears may also display emotions. For example:\n• They may make movements suggesting 13 ............... if disappointed when hunting.\n• They may form relationships with other species.",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Polar bears suffer from various health problems due to the build-up of fat under their skin.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The study done by Liu and his colleagues compared different groups of polar bears.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Liu and colleagues were the first researchers to compare polar bears and brown bears genetically.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "NOT GIVEN"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Polar bears are able to control their levels of 'bad' cholesterol by genetic means.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "Female polar bears are able to survive for about six months without food.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "It was found that the bones of female polar bears were very weak when they came out of their dens in spring.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "FALSE"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "TRUE_FALSE_NG",
+          "content": {
+            "stem": "The polar bear's mechanism for increasing bone density could also be used by people one day.",
+            "options": [
+              {
+                "label": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "label": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "label": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          "correctAnswer": "TRUE"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "People think of bears as unintelligent and 8 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "violent"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In Tennoji Zoo, a bear has been seen using a branch as a 9 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "tool"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "This allowed him to knock down some 10 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "meat"
+        },
+        {
+          "number": 11,
+          "order": 10,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "reaching a platform where a 11 ________ was located.",
+            "blank": true
+          },
+          "correctAnswer": "photographer"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "activity similar to a 12 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "game"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "They may make movements suggesting 13 ________ if disappointed when hunting.",
+            "blank": true
+          },
+          "correctAnswer": "frustration"
+        }
+      ],
+      "order": 0
+    },
+    {
+      "title": "Reading Passage 2",
+      "content": "The Step Pyramid of Djoser\n\nA The pyramids are ancient Egypt's most famous monuments and continue to fascinate visitors today. Although other civilizations also built pyramids, Egypt's monumental tradition began with a tomb for one ruler, conceived by a brilliant architect: the Step Pyramid of Djoser at Saqqara.\n\nB Djoser was the first ruler of Egypt's Third Dynasty and pioneered stone construction. Earlier tombs were rectangular structures of sun-dried mudbrick covering subterranean burial chambers. Djoser's chief official, Imhotep, conceived an ambitious design: stacking progressively smaller stone slabs to form a stepped pyramid. Djoser ruled for an estimated 19 years, though some scholars argue his reign lasted longer given the scale of construction.\n\nC Modern excavations show the Step Pyramid was constructed through several distinct phases. Historian Marc Van de Mieroop observes that extensive experimentation occurred before completing the six-tiered structure. The enormous mass posed structural challenges, prompting builders to angle the stones inward to prevent collapse.\n\nD When finished, the 62-metre monument was the tallest building of its era. The surrounding 16-hectare complex functioned like a miniature city, featuring a temple, courtyards, shrines, and living quarters for priests. It was encircled by a 10.5-metre-high wall with a 750-metre trench and 13 false doorways, leaving only one concealed true entrance at the south-east corner to deter intruders. In recognition of Imhotep's groundbreaking design, Djoser had the architect's name inscribed alongside his own.\n\nE Beneath the pyramid lay a subterranean maze of corridors designed to baffle grave robbers. Excavations uncovered more than 40,000 stone vessels bearing names of First and Second Dynasty pharaohs. Scholars debate whether these vessels were buried by Djoser to honor previous dynasties or deposited in shafts to block access to the royal burial chamber.\n\nF Despite these precautions, thieves breached the tomb in antiquity, looting Djoser's treasures and mummy. Nevertheless, the remaining architecture and artifacts left archaeologists in awe of the ancient builders' skill.\n\nG As Egyptologist Miroslav Verner observes, the Step Pyramid complex represents a defining milestone in monumental architecture, establishing the archetype that guided all subsequent Egyptian pyramid builders.\n\nQuestions 14–20\nReading Passage 2 has seven paragraphs, A–G.\nChoose the correct heading for each paragraph from the list of headings below.\nWrite the correct number, i–ix, in boxes 14–20 on your answer sheet.\n\nList of Headings\ni The areas and artefacts within the pyramid itself\nii A difficult task for those involved\niii A king who saved his people\niv A single certainty among other less definite facts\nv An overview of the external buildings and areas\nvi A pyramid design that others copied\nvii An idea for changing the design of burial structures\nviii An incredible experience despite the few remains\nix The answers to some unexpected questions\n\n14 Paragraph A\n15 Paragraph B\n16 Paragraph C\n17 Paragraph D\n18 Paragraph E\n19 Paragraph F\n20 Paragraph G\n\nQuestions 21–24\nComplete the notes below.\nChoose ONE WORD ONLY from the passage for each answer.\nWrite your answers in boxes 21–24 on your answer sheet.\n\nThe Step Pyramid of Djoser\nThe complex that includes the Step Pyramid and its surroundings is considered to be as big as an Egyptian 21 ............... of the past. The area outside the pyramid included accommodation that was occupied by 22 ............... , along with many other buildings and features.\nA wall ran around the outside of the complex and a number of false entrances were built into this. In addition, a long 23 ............... encircled the wall. As a result, any visitors who had not been invited were cleverly prevented from entering the pyramid grounds unless they knew the 24 ............... of the real entrance.\n\nQuestions 25 and 26\nChoose TWO letters, A–E.\nWrite the correct letters in boxes 25 and 26 on your answer sheet.\nWhich TWO of the following points does the writer make about King Djoser?\nA Initially he had to be persuaded to build in stone rather than clay.\nB There is disagreement concerning the length of his reign.\nC He failed to appreciate Imhotep's part in the design of the Step Pyramid.\nD A few of his possessions were still in his tomb when archaeologists found it.\nE He criticised the design and construction of other pyramids in Egypt.",
+      "questions": [
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph A",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "iv"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph B",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "vii"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph C",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "ii"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph D",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "v"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph E",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "i"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph F",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "viii"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Paragraph G",
+            "options": [
+              {
+                "label": "i",
+                "text": "The areas and artefacts within the pyramid itself"
+              },
+              {
+                "label": "ii",
+                "text": "A difficult task for those involved"
+              },
+              {
+                "label": "iii",
+                "text": "A king who saved his people"
+              },
+              {
+                "label": "iv",
+                "text": "A single certainty among other less definite facts"
+              },
+              {
+                "label": "v",
+                "text": "An overview of the external buildings and areas"
+              },
+              {
+                "label": "vi",
+                "text": "A pyramid design that others copied"
+              },
+              {
+                "label": "vii",
+                "text": "An idea for changing the design of burial structures"
+              },
+              {
+                "label": "viii",
+                "text": "An incredible experience despite the few remains"
+              },
+              {
+                "label": "ix",
+                "text": "The answers to some unexpected questions"
+              }
+            ]
+          },
+          "correctAnswer": "vi"
+        },
+        {
+          "number": 21,
+          "order": 20,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "as big as an Egyptian 21 ________ of the past.",
+            "blank": true
+          },
+          "correctAnswer": "city"
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "accommodation that was occupied by 22 ________ , along with many other buildings and features.",
+            "blank": true
+          },
+          "correctAnswer": "priests"
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In addition, a long 23 ________ encircled the wall.",
+            "blank": true
+          },
+          "correctAnswer": "trench"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "unless they knew the 24 ________ of the real entrance.",
+            "blank": true
+          },
+          "correctAnswer": "location"
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of the following points does the writer make about King Djoser? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Initially he had to be persuaded to build in stone rather than clay."
+              },
+              {
+                "label": "B",
+                "text": "There is disagreement concerning the length of his reign."
+              },
+              {
+                "label": "C",
+                "text": "He failed to appreciate Imhotep's part in the design of the Step Pyramid."
+              },
+              {
+                "label": "D",
+                "text": "A few of his possessions were still in his tomb when archaeologists found it."
+              },
+              {
+                "label": "E",
+                "text": "He criticised the design and construction of other pyramids in Egypt."
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of the following points does the writer make about King Djoser? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Initially he had to be persuaded to build in stone rather than clay."
+              },
+              {
+                "label": "B",
+                "text": "There is disagreement concerning the length of his reign."
+              },
+              {
+                "label": "C",
+                "text": "He failed to appreciate Imhotep's part in the design of the Step Pyramid."
+              },
+              {
+                "label": "D",
+                "text": "A few of his possessions were still in his tomb when archaeologists found it."
+              },
+              {
+                "label": "E",
+                "text": "He criticised the design and construction of other pyramids in Egypt."
+              }
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "order": 1
+    },
+    {
+      "title": "Reading Passage 3",
+      "content": "The future of work\n\nConsultancy estimates suggest that 3–14% of the global workforce will need to transition into new careers over the next decade as artificial intelligence transforms industries. AI manifests both as physical machines ('embodied AI') and as computational algorithms ('disembodied AI').\n\nDr Stella Pachidi of Cambridge Judge Business School observes that major transformations are occurring through the 'algorithmication' of data-driven roles in the knowledge economy. Algorithms now perform tasks once reserved for human expertise, from contract analysis to medical diagnostics. Organizations adopt algorithms because they seek decisions grounded in what they view as 'perfect information', while cutting costs and boosting efficiency.\n\nHowever, Pachidi warns that replacing routine tasks with AI disrupts professional development: when novices no longer observe seasoned experts directly, traditional learning through peripheral participation breaks down. In a two-year study of a telecommunications firm, Pachidi found sales representatives increasingly relying on algorithmic recommendations rather than exercising personal judgement and intuition, stifling creative exploration. In some instances, staff even entered misleading data to meet algorithmic performance targets.\n\nResearchers are working to make algorithms more transparent and explainable to strengthen users' confidence and understanding. Meanwhile, economist Professor Hamish Low argues that future careers will follow flexible, multistage paths rather than a linear trajectory toward retirement. Low rejects the assumption that automation reduces total jobs, explaining that new technologies generally expand overall employment opportunities.\n\nLegal scholar Dr Ewan McGaughey similarly argues that technological change does not inevitably produce a jobless society. He contends that unemployment stems from legal and economic constraints on capital rather than technology itself, urging policymakers to enact bold social protections, retraining programs, and fair labor laws to ensure that the ongoing technological revolution produces shared economic security.\n\nQuestions 27–30\nChoose the correct letter, A, B, C or D.\nWrite the correct letter in boxes 27–30 on your answer sheet.\n\n27 The first paragraph tells us about\nA the kinds of jobs that will be most affected by the growth of AI.\nB the extent to which AI will alter the nature of the work that people do.\nC the proportion of the world's labour force who will have jobs in AI in the future.\nD the difference between ways that embodied and disembodied AI will impact on workers.\n\n28 According to the second paragraph, what is Stella Pachidi's view of the 'knowledge economy'?\nA It is having an influence on the number of jobs available.\nB It is changing people's attitudes towards their occupations.\nC It is the main reason why the production sector is declining.\nD It is a key factor driving current developments in the workplace.\n\n29 What did Pachidi observe at the telecommunications company?\nA staff disagreeing with the recommendations of AI\nB staff feeling resentful about the intrusion of AI in their work\nC staff making sure that AI produces the results that they want\nD staff allowing AI to carry out tasks they ought to do themselves\n\n30 In his recently published research, Ewan McGaughey\nA challenges the idea that redundancy is a negative thing.\nB shows the profound effect of mass unemployment on society.\nC highlights some differences between past and future job losses.\nD illustrates how changes in the job market can be successfully handled.\n\nQuestions 31–34\nComplete the summary using the list of words, A–G, below.\nWrite the correct letter, A–G, in boxes 31–34 on your answer sheet.\n\nThe 'algorithmication' of jobs\nStella Pachidi of Cambridge Judge Business School has been focusing on the 'algorithmication' of jobs which rely not on production but on 31 ............... .\nWhile monitoring a telecommunications company, Pachidi observed a growing 32 ............... on the recommendations made by AI, as workers begin to learn through the 'algorithm's eyes'. Meanwhile, staff are deterred from experimenting and using their own 33 ............... , and are therefore prevented from achieving innovation.\nTo avoid the kind of situations which Pachidi observed, researchers are trying to make AI's decision-making process easier to comprehend, and to increase users' 34 ............... with regard to the technology.\n\nA pressure\nB satisfaction\nC intuition\nD promotion\nE reliance\nF confidence\nG information\n\nQuestions 35–40\nLook at the following statements (Questions 35–40) and the list of people below.\nMatch each statement with the correct person, A, B or C.\nWrite the correct letter, A, B or C, in boxes 35–40 on your answer sheet.\nNB You may use any letter more than once.\n\nList of people\nA Stella Pachidi\nB Hamish Low\nC Ewan McGaughey\n\n35 Greater levels of automation will not result in lower employment.\n36 There are several reasons why AI is appealing to businesses.\n37 AI's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras.\n38 It is important to be aware of the range of problems that AI causes.\n39 People are going to follow a less conventional career path than in the past.\n40 Authorities should take measures to ensure that there will be adequately paid work for everyone.",
+      "questions": [
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The first paragraph tells us about",
+            "options": [
+              {
+                "label": "A",
+                "text": "the kinds of jobs that will be most affected by the growth of AI."
+              },
+              {
+                "label": "B",
+                "text": "the extent to which AI will alter the nature of the work that people do."
+              },
+              {
+                "label": "C",
+                "text": "the proportion of the world's labour force who will have jobs in AI in the future."
+              },
+              {
+                "label": "D",
+                "text": "the difference between ways that embodied and disembodied AI will impact on workers."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to the second paragraph, what is Stella Pachidi's view of the 'knowledge economy'?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It is having an influence on the number of jobs available."
+              },
+              {
+                "label": "B",
+                "text": "It is changing people's attitudes towards their occupations."
+              },
+              {
+                "label": "C",
+                "text": "It is the main reason why the production sector is declining."
+              },
+              {
+                "label": "D",
+                "text": "It is a key factor driving current developments in the workplace."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What did Pachidi observe at the telecommunications company?",
+            "options": [
+              {
+                "label": "A",
+                "text": "staff disagreeing with the recommendations of AI"
+              },
+              {
+                "label": "B",
+                "text": "staff feeling resentful about the intrusion of AI in their work"
+              },
+              {
+                "label": "C",
+                "text": "staff making sure that AI produces the results that they want"
+              },
+              {
+                "label": "D",
+                "text": "staff allowing AI to carry out tasks they ought to do themselves"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In his recently published research, Ewan McGaughey",
+            "options": [
+              {
+                "label": "A",
+                "text": "challenges the idea that redundancy is a negative thing."
+              },
+              {
+                "label": "B",
+                "text": "shows the profound effect of mass unemployment on society."
+              },
+              {
+                "label": "C",
+                "text": "highlights some differences between past and future job losses."
+              },
+              {
+                "label": "D",
+                "text": "illustrates how changes in the job market can be successfully handled."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 31,
+          "order": 30,
+          "type": "MATCHING",
+          "content": {
+            "stem": "jobs which rely not on production but on 31 ________ .",
+            "options": [
+              {
+                "label": "A",
+                "text": "pressure"
+              },
+              {
+                "label": "B",
+                "text": "satisfaction"
+              },
+              {
+                "label": "C",
+                "text": "intuition"
+              },
+              {
+                "label": "D",
+                "text": "promotion"
+              },
+              {
+                "label": "E",
+                "text": "reliance"
+              },
+              {
+                "label": "F",
+                "text": "confidence"
+              },
+              {
+                "label": "G",
+                "text": "information"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Pachidi observed a growing 32 ________ on the recommendations made by AI,",
+            "options": [
+              {
+                "label": "A",
+                "text": "pressure"
+              },
+              {
+                "label": "B",
+                "text": "satisfaction"
+              },
+              {
+                "label": "C",
+                "text": "intuition"
+              },
+              {
+                "label": "D",
+                "text": "promotion"
+              },
+              {
+                "label": "E",
+                "text": "reliance"
+              },
+              {
+                "label": "F",
+                "text": "confidence"
+              },
+              {
+                "label": "G",
+                "text": "information"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "MATCHING",
+          "content": {
+            "stem": "staff are deterred from experimenting and using their own 33 ________",
+            "options": [
+              {
+                "label": "A",
+                "text": "pressure"
+              },
+              {
+                "label": "B",
+                "text": "satisfaction"
+              },
+              {
+                "label": "C",
+                "text": "intuition"
+              },
+              {
+                "label": "D",
+                "text": "promotion"
+              },
+              {
+                "label": "E",
+                "text": "reliance"
+              },
+              {
+                "label": "F",
+                "text": "confidence"
+              },
+              {
+                "label": "G",
+                "text": "information"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "MATCHING",
+          "content": {
+            "stem": "to increase users' 34 ________ with regard to the technology.",
+            "options": [
+              {
+                "label": "A",
+                "text": "pressure"
+              },
+              {
+                "label": "B",
+                "text": "satisfaction"
+              },
+              {
+                "label": "C",
+                "text": "intuition"
+              },
+              {
+                "label": "D",
+                "text": "promotion"
+              },
+              {
+                "label": "E",
+                "text": "reliance"
+              },
+              {
+                "label": "F",
+                "text": "confidence"
+              },
+              {
+                "label": "G",
+                "text": "information"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Greater levels of automation will not result in lower employment.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stella Pachidi"
+              },
+              {
+                "label": "B",
+                "text": "Hamish Low"
+              },
+              {
+                "label": "C",
+                "text": "Ewan McGaughey"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "MATCHING",
+          "content": {
+            "stem": "There are several reasons why AI is appealing to businesses.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stella Pachidi"
+              },
+              {
+                "label": "B",
+                "text": "Hamish Low"
+              },
+              {
+                "label": "C",
+                "text": "Ewan McGaughey"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "MATCHING",
+          "content": {
+            "stem": "AI's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stella Pachidi"
+              },
+              {
+                "label": "B",
+                "text": "Hamish Low"
+              },
+              {
+                "label": "C",
+                "text": "Ewan McGaughey"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "MATCHING",
+          "content": {
+            "stem": "It is important to be aware of the range of problems that AI causes.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stella Pachidi"
+              },
+              {
+                "label": "B",
+                "text": "Hamish Low"
+              },
+              {
+                "label": "C",
+                "text": "Ewan McGaughey"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "MATCHING",
+          "content": {
+            "stem": "People are going to follow a less conventional career path than in the past.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stella Pachidi"
+              },
+              {
+                "label": "B",
+                "text": "Hamish Low"
+              },
+              {
+                "label": "C",
+                "text": "Ewan McGaughey"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Authorities should take measures to ensure that there will be adequately paid work for everyone.",
+            "options": [
+              {
+                "label": "A",
+                "text": "Stella Pachidi"
+              },
+              {
+                "label": "B",
+                "text": "Hamish Low"
+              },
+              {
+                "label": "C",
+                "text": "Ewan McGaughey"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ],
+      "order": 2
+    }
+  ],
+  "examType": "ACADEMIC",
+  "sourceFolder": "C61.pdf",
+  "savedAt": "2026-11-17T10:57:41.457568+00:00"
+}

@@ -1,0 +1,931 @@
+{
+  "title": "Test 37.C16.03 - Listening",
+  "slug": "test-37-listening",
+  "skill": "LISTENING",
+  "status": "DRAFT",
+  "examType": "ACADEMIC",
+  "sourceFolder": "C61.pdf",
+  "savedAt": "2026-11-18T09:30:33.005988+00:00",
+  "parts": [
+    {
+      "order": 0,
+      "title": "Part 1",
+      "content": "PART 1\nThe examiner asks you about yourself, your home, work or studies and other familiar\ntopics.\nEXAMPLE\nFlowers and plants\n» Do you have a favourite flower or plant? [Why/Why not?]\n» What kinds of flowers and plants grow near where you live? [Why/Why not?]\nIs it important to you to have flowers and plants in your home? [Why/Why not?]\n* Have you ever bought flowers for someone else? [Why/Why not?]\nPART 2\nDescribe a review you read about a product or You will have to talk\nservice. about the topic for one\nYou should say: jo two chet\nwhere you read the review think het h \" os\nwhat the product or service was ; ano PB wha y\nwhat information the review gave about the Jd pat . say. ho\nproduct or service rs\nto help you if you wish.\nand explain what you did as a result of reading\nthis review.\nPART 3\nDiscussion topics:\nOnline reviews\nExample questions:\nWhat kinds of things do people write online reviews about in your country?\nWhy do some people write online reviews?\nDo you think that online reviews are good for both shoppers and companies?\nCustomer service\nExample questions:\nWhat do you think it might be like to work in a customer service job?\nDo you agree that customers are more likely to complain nowadays?\nHow important is it for companies to take all customer complaints seriously?",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "First of all, children at this level are taken to practise in a 1 ________",
+            "blank": true
+          },
+          "correctAnswer": "park"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Instructors wear 2 ________ shirts.",
+            "blank": true
+          },
+          "correctAnswer": "blue"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A 3 ________ is required and training is given.",
+            "blank": true
+          },
+          "correctAnswer": "reference"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "There are quiet times during the morning for a 4 ________ or a game.",
+            "blank": true
+          },
+          "correctAnswer": "story"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Classes are held even if there is 5 ________",
+            "blank": true
+          },
+          "correctAnswer": "rain"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "What to bring: a change of clothing, a 6 ________",
+            "blank": true
+          },
+          "correctAnswer": "snack"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Charlie's 7 ________",
+            "blank": true
+          },
+          "correctAnswer": "medication"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Before the class, his 8 ________ will be checked.",
+            "blank": true
+          },
+          "correctAnswer": "helmet"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "He should then go to the 9 ________ to meet his class instructor.",
+            "blank": true
+          },
+          "correctAnswer": "tent"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The course costs 10 $ ________ per week.",
+            "blank": true
+          },
+          "correctAnswer": "199",
+          "acceptableAnswers": [
+            "199",
+            "$199"
+          ]
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-37-section-1.mp3"
+      }
+    },
+    {
+      "order": 1,
+      "title": "Part 2",
+      "content": "PART 1 Questions 1-10\nComplete the notes below.\nWrite ONE WORD ANDIOR A NUMBER for each answer.\nJUNIOR CYCLE CAMP\nThe course focuses on skills and safety.\ne Charlie would be placed in Level 5.\n. First of all, children at this level are taken to practise in @ 1 woo.\nInstructors\ne Instructors wear 2... Shirts.\n® AZ 1S TEQUIred and training is given.\nClasses\ne The size of the classes is limited.\n* There are quiet times during the morning fora 4 ............ooo OF @ game.\ne Classes are held even if there is 5...\nWhat to bring\ne achange of clothing\n© 86\ne shoes (not sandals)\no Charlie's 7\nDay 1\n* Charlie should arrive at 9.20 am on the first day.\n* Before the class, his 8 ..................... will be checked.\n¢ He should then goto the 9..................... to meet his class instructor.\nCost\n* The course costs 10 § ..........n. PET Week.\n\nPART 2 Questions 11-20\nQuestions 11 and 12\nChoose TWO letters, A-E.\nAccording to Megan, what are the TWO main advantages of working in the agriculture\nand horticulture sectors?\nA the active lifestyle\nB the above-average salaries\nC the flexible working opportunities\nD the opportunities for overseas travel\nE the chance to be in a natural environment\nQuestions 13 and 14\nChoose TWO letters, A-E.\nWhich TWO of the following are likely to be disadvantages for people working outdoors?\nA the increasing risk of accidents\nB being in a very quiet location\nC difficult weather conditions at times\nD the cost of housing\nE the level of physical fitness required",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the active lifestyle"
+              },
+              {
+                "label": "B",
+                "text": "the above-average salaries"
+              },
+              {
+                "label": "C",
+                "text": "the flexible working opportunities"
+              },
+              {
+                "label": "D",
+                "text": "the opportunities for overseas travel"
+              },
+              {
+                "label": "E",
+                "text": "the chance to be in a natural environment"
+              }
+            ]
+          },
+          "correctAnswer": "A",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the active lifestyle"
+              },
+              {
+                "label": "B",
+                "text": "the above-average salaries"
+              },
+              {
+                "label": "C",
+                "text": "the flexible working opportunities"
+              },
+              {
+                "label": "D",
+                "text": "the opportunities for overseas travel"
+              },
+              {
+                "label": "E",
+                "text": "the chance to be in a natural environment"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of the following are likely to be disadvantages for people working outdoors? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the increasing risk of accidents"
+              },
+              {
+                "label": "B",
+                "text": "being in a very quiet location"
+              },
+              {
+                "label": "C",
+                "text": "difficult weather conditions at times"
+              },
+              {
+                "label": "D",
+                "text": "the cost of housing"
+              },
+              {
+                "label": "E",
+                "text": "the level of physical fitness required"
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO of the following are likely to be disadvantages for people working outdoors? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the increasing risk of accidents"
+              },
+              {
+                "label": "B",
+                "text": "being in a very quiet location"
+              },
+              {
+                "label": "C",
+                "text": "difficult weather conditions at times"
+              },
+              {
+                "label": "D",
+                "text": "the cost of housing"
+              },
+              {
+                "label": "E",
+                "text": "the level of physical fitness required"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Fresh food commercial manager",
+            "options": [
+              {
+                "label": "A",
+                "text": "not a permanent job"
+              },
+              {
+                "label": "B",
+                "text": "involves leading a team"
+              },
+              {
+                "label": "C",
+                "text": "experience not essential"
+              },
+              {
+                "label": "D",
+                "text": "intensive work but also fun"
+              },
+              {
+                "label": "E",
+                "text": "chance to earn more through overtime"
+              },
+              {
+                "label": "F",
+                "text": "chance for rapid promotion"
+              },
+              {
+                "label": "G",
+                "text": "accommodation available"
+              },
+              {
+                "label": "H",
+                "text": "local travel involved"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Agronomist",
+            "options": [
+              {
+                "label": "A",
+                "text": "not a permanent job"
+              },
+              {
+                "label": "B",
+                "text": "involves leading a team"
+              },
+              {
+                "label": "C",
+                "text": "experience not essential"
+              },
+              {
+                "label": "D",
+                "text": "intensive work but also fun"
+              },
+              {
+                "label": "E",
+                "text": "chance to earn more through overtime"
+              },
+              {
+                "label": "F",
+                "text": "chance for rapid promotion"
+              },
+              {
+                "label": "G",
+                "text": "accommodation available"
+              },
+              {
+                "label": "H",
+                "text": "local travel involved"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Fresh produce buyer",
+            "options": [
+              {
+                "label": "A",
+                "text": "not a permanent job"
+              },
+              {
+                "label": "B",
+                "text": "involves leading a team"
+              },
+              {
+                "label": "C",
+                "text": "experience not essential"
+              },
+              {
+                "label": "D",
+                "text": "intensive work but also fun"
+              },
+              {
+                "label": "E",
+                "text": "chance to earn more through overtime"
+              },
+              {
+                "label": "F",
+                "text": "chance for rapid promotion"
+              },
+              {
+                "label": "G",
+                "text": "accommodation available"
+              },
+              {
+                "label": "H",
+                "text": "local travel involved"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Garden centre sales manager",
+            "options": [
+              {
+                "label": "A",
+                "text": "not a permanent job"
+              },
+              {
+                "label": "B",
+                "text": "involves leading a team"
+              },
+              {
+                "label": "C",
+                "text": "experience not essential"
+              },
+              {
+                "label": "D",
+                "text": "intensive work but also fun"
+              },
+              {
+                "label": "E",
+                "text": "chance to earn more through overtime"
+              },
+              {
+                "label": "F",
+                "text": "chance for rapid promotion"
+              },
+              {
+                "label": "G",
+                "text": "accommodation available"
+              },
+              {
+                "label": "H",
+                "text": "local travel involved"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Tree technician",
+            "options": [
+              {
+                "label": "A",
+                "text": "not a permanent job"
+              },
+              {
+                "label": "B",
+                "text": "involves leading a team"
+              },
+              {
+                "label": "C",
+                "text": "experience not essential"
+              },
+              {
+                "label": "D",
+                "text": "intensive work but also fun"
+              },
+              {
+                "label": "E",
+                "text": "chance to earn more through overtime"
+              },
+              {
+                "label": "F",
+                "text": "chance for rapid promotion"
+              },
+              {
+                "label": "G",
+                "text": "accommodation available"
+              },
+              {
+                "label": "H",
+                "text": "local travel involved"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Farm worker",
+            "options": [
+              {
+                "label": "A",
+                "text": "not a permanent job"
+              },
+              {
+                "label": "B",
+                "text": "involves leading a team"
+              },
+              {
+                "label": "C",
+                "text": "experience not essential"
+              },
+              {
+                "label": "D",
+                "text": "intensive work but also fun"
+              },
+              {
+                "label": "E",
+                "text": "chance to earn more through overtime"
+              },
+              {
+                "label": "F",
+                "text": "chance for rapid promotion"
+              },
+              {
+                "label": "G",
+                "text": "accommodation available"
+              },
+              {
+                "label": "H",
+                "text": "local travel involved"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-37-section-2.mp3"
+      }
+    },
+    {
+      "order": 2,
+      "title": "Part 3",
+      "content": "Questions 15-20\nWhat information does Megan give about each of the following job opportunities?\nChoose SIX answers from the box and write the correct letter, AH, next to\nQuestions 15-20.\nInformation\n\nA not a permanent job\n\nB involves leading a team\n\nC experience not essential\n\nD intensive work but also fun\n\nE chance to earn more through overtime\n\nF chance for rapid promotion\n\nG accommodation available\n\nH local travel involved\n\nJob opportunities\n15 Fresh food commercial manager ERS\n16  Agronomist Ens\n17 Fresh produce buyer oo\n18 Garden centre sales manager —\n19 Tree technician Pr ———\n20 Farm worker —\n\nPART 3 Questions 21-30\nQuestions 21 and 22\nChoose TWO letters, A-E.\nWhich TWO points does Adam make about his experiment on artificial sweeteners?\nA The results were what he had predicted.\nB The experiment was simple to set up.\nC  Alarge sample of people was tested.\nD The subjects were unaware of what they were drinking.\nE The test was repeated several times for each person.\nQuestions 23 and 24\nChoose TWO letters, A-E.\nWhich TWO problems did Rosie have when measuring the fat content of nuts?\nA She used the wrong sort of nuts.\nB She used an unsuitable chemical.\nC She did not grind the nuts finely enough.\nD The information on the nut package was incorrect.\nE The weighing scales may have been unsuitable.",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO points does Adam make about his experiment on artificial sweeteners? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "The results were what he had predicted."
+              },
+              {
+                "label": "B",
+                "text": "The experiment was simple to set up."
+              },
+              {
+                "label": "C",
+                "text": "A large sample of people was tested."
+              },
+              {
+                "label": "D",
+                "text": "The subjects were unaware of what they were drinking."
+              },
+              {
+                "label": "E",
+                "text": "The test was repeated several times for each person."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO points does Adam make about his experiment on artificial sweeteners? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "The results were what he had predicted."
+              },
+              {
+                "label": "B",
+                "text": "The experiment was simple to set up."
+              },
+              {
+                "label": "C",
+                "text": "A large sample of people was tested."
+              },
+              {
+                "label": "D",
+                "text": "The subjects were unaware of what they were drinking."
+              },
+              {
+                "label": "E",
+                "text": "The test was repeated several times for each person."
+              }
+            ]
+          },
+          "correctAnswer": "D",
+          "acceptableAnswers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO problems did Rosie have when measuring the fat content of nuts? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "She used the wrong sort of nuts."
+              },
+              {
+                "label": "B",
+                "text": "She used an unsuitable chemical."
+              },
+              {
+                "label": "C",
+                "text": "She did not grind the nuts finely enough."
+              },
+              {
+                "label": "D",
+                "text": "The information on the nut package was incorrect."
+              },
+              {
+                "label": "E",
+                "text": "The weighing scales may have been unsuitable."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO problems did Rosie have when measuring the fat content of nuts? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "She used the wrong sort of nuts."
+              },
+              {
+                "label": "B",
+                "text": "She used an unsuitable chemical."
+              },
+              {
+                "label": "C",
+                "text": "She did not grind the nuts finely enough."
+              },
+              {
+                "label": "D",
+                "text": "The information on the nut package was incorrect."
+              },
+              {
+                "label": "E",
+                "text": "The weighing scales may have been unsuitable."
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Adam suggests that restaurants could reduce obesity if their menus",
+            "options": [
+              {
+                "label": "A",
+                "text": "offered fewer options."
+              },
+              {
+                "label": "B",
+                "text": "had more low-calorie foods."
+              },
+              {
+                "label": "C",
+                "text": "were organised in a particular way."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The students agree that food manufacturers deliberately",
+            "options": [
+              {
+                "label": "A",
+                "text": "make calorie counts hard to understand."
+              },
+              {
+                "label": "B",
+                "text": "fail to provide accurate calorie counts."
+              },
+              {
+                "label": "C",
+                "text": "use ineffective methods to reduce calories."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does Rosie say about levels of exercise in England?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The amount recommended is much too low."
+              },
+              {
+                "label": "B",
+                "text": "Most people overestimate how much they do."
+              },
+              {
+                "label": "C",
+                "text": "Women now exercise more than they used to."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Adam refers to the location and width of stairs in a train station to illustrate",
+            "options": [
+              {
+                "label": "A",
+                "text": "practical changes that can influence people’s behaviour."
+              },
+              {
+                "label": "B",
+                "text": "methods of helping people who have mobility problems."
+              },
+              {
+                "label": "C",
+                "text": "ways of preventing accidents by controlling crowd movement."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What do the students agree about including reference to exercise in their presentation?",
+            "options": [
+              {
+                "label": "A",
+                "text": "They should probably leave it out."
+              },
+              {
+                "label": "B",
+                "text": "They need to do more research on it."
+              },
+              {
+                "label": "C",
+                "text": "They should discuss this with their tutor."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What are the students going to do next for their presentation?",
+            "options": [
+              {
+                "label": "A",
+                "text": "prepare some slides for it"
+              },
+              {
+                "label": "B",
+                "text": "find out how long they have for it"
+              },
+              {
+                "label": "C",
+                "text": "decide on its content and organisation"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-37-section-3.mp3"
+      }
+    },
+    {
+      "order": 3,
+      "title": "Part 4",
+      "content": "Questions 25-30\nChoose the correct letter, A, B or C.\n25 Adam suggests that restaurants could reduce obesity if their menus\nA offered fewer options.\nB had more low-calorie foods.\nC were organised in a particular way.\n26 The students agree that food manufacturers deliberately\nA make calorie counts hard to understand.\nB fail to provide accurate calorie counts.\nC use ineffective methods to reduce calories.\n27 What does Rosie say about levels of exercise in England?\nA The amount recommended is much too low.\nB Most people overestimate how much they do.\nC Women now exercise more than they used to.\n28 Adam refers to the location and width of stairs in a train station to illustrate\nA practical changes that can influence people’s behaviour.\nB methods of helping people who have mobility problems.\nC ways of preventing accidents by controlling crowd movement.\n29 What do the students agree about including reference to exercise in their\npresentation?\nA They should probably leave it out.\nB They need to do more research on it.\nC They should discuss this with their tutor.\n30 What are the students going to do next for their presentation?\nA prepare some slides for it\nB find out how long they have for it\nC decide on its content and organisation",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "We imagine someone like a 31 ________ knitting.",
+            "blank": true
+          },
+          "correctAnswer": "grandmother"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A 32 ________ ago, knitting was expected to disappear.",
+            "blank": true
+          },
+          "correctAnswer": "decade"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "People are buying more 33 ________ for knitting nowadays.",
+            "blank": true
+          },
+          "correctAnswer": "equipment"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "gives support in times of 34 ________ difficulty",
+            "blank": true
+          },
+          "correctAnswer": "economic"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "requires only 35 ________ skills and little money to start",
+            "blank": true
+          },
+          "correctAnswer": "basic"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Findings show early knitted items to be 36 ________ in shape.",
+            "blank": true
+          },
+          "correctAnswer": "round"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The first needles were made of natural materials such as wood and 37 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "bone"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Early yarns felt 38 ________ to touch.",
+            "blank": true
+          },
+          "correctAnswer": "rough"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Geographical areas had their own 39 ________ of knitting.",
+            "blank": true
+          },
+          "correctAnswer": "style"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Everyday tasks like looking after 40 ________ were done while knitting.",
+            "blank": true
+          },
+          "correctAnswer": "sheep"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-37-section-4.mp3"
+      }
+    }
+  ]
+}

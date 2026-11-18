@@ -1,0 +1,1059 @@
+{
+  "title": "Test 35.C16.01 - Listening",
+  "slug": "test-35-listening",
+  "skill": "LISTENING",
+  "status": "DRAFT",
+  "parts": [
+    {
+      "title": "Section 1",
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nChildren's Engineering Workshops\nTiny Engineers (ages 4–5)\nActivities\n• Create a cover for an 1 ............... so they can drop it from a height without breaking it.\n• Take part in a competition to build the tallest 2 ............... .\n• Make a 3 ............... powered by a balloon.\n\nJunior Engineers (ages 6–8)\nActivities:\n• Build model cars, trucks and 4 ............... and learn how to program them so they can move.\n• Take part in a competition to build the longest 5 ............... using card and wood.\n• Create a short 6 ............... with special software.\n• Build, 7 ............... and program a humanoid robot.\n\nCost for a five-week block: £50\nHeld on 8 ............... from 10 am to 11 am\n\nLocation\nBuilding 10A, 9 ............... Industrial Estate, Grasford\nPlenty of 10 ............... is available.",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Create a cover for an 1 ________ so they can drop it from a height without breaking it.",
+            "blank": true
+          },
+          "correctAnswer": "egg"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Take part in a competition to build the tallest 2 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "tower"
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Make a 3 ________ powered by a balloon.",
+            "blank": true
+          },
+          "correctAnswer": "car"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Build model cars, trucks and 4 ________ and learn how to program them so they can move.",
+            "blank": true
+          },
+          "correctAnswer": "animals"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Take part in a competition to build the longest 5 ________ using card and wood.",
+            "blank": true
+          },
+          "correctAnswer": "bridge"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Create a short 6 ________ with special software.",
+            "blank": true
+          },
+          "correctAnswer": "movie",
+          "acceptableAnswers": [
+            "movie",
+            "film"
+          ]
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Build, 7 ________ and program a humanoid robot.",
+            "blank": true
+          },
+          "correctAnswer": "decorate"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Held on 8 ________ from 10 am to 11 am",
+            "blank": true
+          },
+          "correctAnswer": "Wednesdays",
+          "acceptableAnswers": [
+            "Wednesdays",
+            "Wednesday"
+          ]
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Building 10A, 9 ________ Industrial Estate, Grasford",
+            "blank": true
+          },
+          "correctAnswer": "Fradstone"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Plenty of 10 ________ is available.",
+            "blank": true
+          },
+          "correctAnswer": "parking"
+        }
+      ],
+      "order": 0,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-35-section-1.mp3"
+      }
+    },
+    {
+      "title": "Section 2",
+      "content": "Questions 11–14\nChoose the correct letter, A, B or C.\n\n11 Stevenson's was founded in\nA 1923.\nB 1924.\nC 1926.\n\n12 Originally, Stevenson's manufactured goods for\nA the healthcare industry.\nB the automotive industry.\nC the machine tools industry.\n\n13 What does the speaker say about the company premises?\nA The company has recently moved.\nB The company has no plans to move.\nC The company is going to move shortly.\n\n14 The programme for the work experience group includes\nA time to do research.\nB meetings with a teacher.\nC talks by staff.\n\nQuestions 15–20\nLabel the map below.\nWrite the correct letter, A–J, next to Questions 15–20.\n\nPlan of Stevenson's site\n\n![Plan of Stevenson's site](/uploads/images/test-35-map.png)\n\n15 coffee room\n16 warehouse\n17 staff canteen\n18 meeting room\n19 human resources\n20 boardroom",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Stevenson's was founded in",
+            "options": [
+              {
+                "label": "A",
+                "text": "1923."
+              },
+              {
+                "label": "B",
+                "text": "1924."
+              },
+              {
+                "label": "C",
+                "text": "1926."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Originally, Stevenson's manufactured goods for",
+            "options": [
+              {
+                "label": "A",
+                "text": "the healthcare industry."
+              },
+              {
+                "label": "B",
+                "text": "the automotive industry."
+              },
+              {
+                "label": "C",
+                "text": "the machine tools industry."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker say about the company premises?",
+            "options": [
+              {
+                "label": "A",
+                "text": "The company has recently moved."
+              },
+              {
+                "label": "B",
+                "text": "The company has no plans to move."
+              },
+              {
+                "label": "C",
+                "text": "The company is going to move shortly."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The programme for the work experience group includes",
+            "options": [
+              {
+                "label": "A",
+                "text": "time to do research."
+              },
+              {
+                "label": "B",
+                "text": "meetings with a teacher."
+              },
+              {
+                "label": "C",
+                "text": "talks by staff."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MATCHING",
+          "content": {
+            "stem": "coffee room",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              },
+              {
+                "label": "J",
+                "text": "Location J"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "warehouse",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              },
+              {
+                "label": "J",
+                "text": "Location J"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "staff canteen",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              },
+              {
+                "label": "J",
+                "text": "Location J"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "meeting room",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              },
+              {
+                "label": "J",
+                "text": "Location J"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "human resources",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              },
+              {
+                "label": "J",
+                "text": "Location J"
+              }
+            ]
+          },
+          "correctAnswer": "I"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "boardroom",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              },
+              {
+                "label": "J",
+                "text": "Location J"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ],
+      "order": 1,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-35-section-2.mp3"
+      }
+    },
+    {
+      "title": "Section 3",
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO parts of the introductory stage to their art projects do Jess and Tom agree were useful?\nA the Bird Park visit\nB the workshop sessions\nC the Natural History Museum visit\nD the projects done in previous years\nE the handouts with research sources\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nIn which TWO ways do both Jess and Tom decide to change their proposals?\nA by giving a rationale for their action plans\nB by being less specific about the outcome\nC by adding a video diary presentation\nD by providing a timeline and a mind map\nE by making their notes more evaluative\n\nQuestions 25–30\nWhich personal meaning do the students decide to give to each of the following pictures?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 25–30.\n\nPersonal meanings\nA a childhood memory\nB hope for the future\nC fast movement\nD a potential threat\nE the power of colour\nF the continuity of life\nG protection of nature\nH a confused attitude to nature\n\nPictures\n25 Falcon (Landseer)\n26 Fish hawk (Audubon)\n27 Kingfisher (van Gogh)\n28 Portrait of William Wells\n29 Vairumati (Gauguin)\n30 Portrait of Giovanni de Medici",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO parts of the introductory stage to their art projects do Jess and Tom agree were useful? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the Bird Park visit"
+              },
+              {
+                "label": "B",
+                "text": "the workshop sessions"
+              },
+              {
+                "label": "C",
+                "text": "the Natural History Museum visit"
+              },
+              {
+                "label": "D",
+                "text": "the projects done in previous years"
+              },
+              {
+                "label": "E",
+                "text": "the handouts with research sources"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO parts of the introductory stage to their art projects do Jess and Tom agree were useful? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "the Bird Park visit"
+              },
+              {
+                "label": "B",
+                "text": "the workshop sessions"
+              },
+              {
+                "label": "C",
+                "text": "the Natural History Museum visit"
+              },
+              {
+                "label": "D",
+                "text": "the projects done in previous years"
+              },
+              {
+                "label": "E",
+                "text": "the handouts with research sources"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In which TWO ways do both Jess and Tom decide to change their proposals? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "by giving a rationale for their action plans"
+              },
+              {
+                "label": "B",
+                "text": "by being less specific about the outcome"
+              },
+              {
+                "label": "C",
+                "text": "by adding a video diary presentation"
+              },
+              {
+                "label": "D",
+                "text": "by providing a timeline and a mind map"
+              },
+              {
+                "label": "E",
+                "text": "by making their notes more evaluative"
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In which TWO ways do both Jess and Tom decide to change their proposals? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "by giving a rationale for their action plans"
+              },
+              {
+                "label": "B",
+                "text": "by being less specific about the outcome"
+              },
+              {
+                "label": "C",
+                "text": "by adding a video diary presentation"
+              },
+              {
+                "label": "D",
+                "text": "by providing a timeline and a mind map"
+              },
+              {
+                "label": "E",
+                "text": "by making their notes more evaluative"
+              }
+            ]
+          },
+          "correctAnswer": "E",
+          "acceptableAnswers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Falcon (Landseer)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a childhood memory"
+              },
+              {
+                "label": "B",
+                "text": "hope for the future"
+              },
+              {
+                "label": "C",
+                "text": "fast movement"
+              },
+              {
+                "label": "D",
+                "text": "a potential threat"
+              },
+              {
+                "label": "E",
+                "text": "the power of colour"
+              },
+              {
+                "label": "F",
+                "text": "the continuity of life"
+              },
+              {
+                "label": "G",
+                "text": "protection of nature"
+              },
+              {
+                "label": "H",
+                "text": "a confused attitude to nature"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Fish hawk (Audubon)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a childhood memory"
+              },
+              {
+                "label": "B",
+                "text": "hope for the future"
+              },
+              {
+                "label": "C",
+                "text": "fast movement"
+              },
+              {
+                "label": "D",
+                "text": "a potential threat"
+              },
+              {
+                "label": "E",
+                "text": "the power of colour"
+              },
+              {
+                "label": "F",
+                "text": "the continuity of life"
+              },
+              {
+                "label": "G",
+                "text": "protection of nature"
+              },
+              {
+                "label": "H",
+                "text": "a confused attitude to nature"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Kingfisher (van Gogh)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a childhood memory"
+              },
+              {
+                "label": "B",
+                "text": "hope for the future"
+              },
+              {
+                "label": "C",
+                "text": "fast movement"
+              },
+              {
+                "label": "D",
+                "text": "a potential threat"
+              },
+              {
+                "label": "E",
+                "text": "the power of colour"
+              },
+              {
+                "label": "F",
+                "text": "the continuity of life"
+              },
+              {
+                "label": "G",
+                "text": "protection of nature"
+              },
+              {
+                "label": "H",
+                "text": "a confused attitude to nature"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Portrait of William Wells",
+            "options": [
+              {
+                "label": "A",
+                "text": "a childhood memory"
+              },
+              {
+                "label": "B",
+                "text": "hope for the future"
+              },
+              {
+                "label": "C",
+                "text": "fast movement"
+              },
+              {
+                "label": "D",
+                "text": "a potential threat"
+              },
+              {
+                "label": "E",
+                "text": "the power of colour"
+              },
+              {
+                "label": "F",
+                "text": "the continuity of life"
+              },
+              {
+                "label": "G",
+                "text": "protection of nature"
+              },
+              {
+                "label": "H",
+                "text": "a confused attitude to nature"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Vairumati (Gauguin)",
+            "options": [
+              {
+                "label": "A",
+                "text": "a childhood memory"
+              },
+              {
+                "label": "B",
+                "text": "hope for the future"
+              },
+              {
+                "label": "C",
+                "text": "fast movement"
+              },
+              {
+                "label": "D",
+                "text": "a potential threat"
+              },
+              {
+                "label": "E",
+                "text": "the power of colour"
+              },
+              {
+                "label": "F",
+                "text": "the continuity of life"
+              },
+              {
+                "label": "G",
+                "text": "protection of nature"
+              },
+              {
+                "label": "H",
+                "text": "a confused attitude to nature"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Portrait of Giovanni de Medici",
+            "options": [
+              {
+                "label": "A",
+                "text": "a childhood memory"
+              },
+              {
+                "label": "B",
+                "text": "hope for the future"
+              },
+              {
+                "label": "C",
+                "text": "fast movement"
+              },
+              {
+                "label": "D",
+                "text": "a potential threat"
+              },
+              {
+                "label": "E",
+                "text": "the power of colour"
+              },
+              {
+                "label": "F",
+                "text": "the continuity of life"
+              },
+              {
+                "label": "G",
+                "text": "protection of nature"
+              },
+              {
+                "label": "H",
+                "text": "a confused attitude to nature"
+              }
+            ]
+          },
+          "correctAnswer": "G"
+        }
+      ],
+      "order": 2,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-35-section-3.mp3"
+      }
+    },
+    {
+      "title": "Section 4",
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nStoicism\nStoicism is still relevant today because of its 31 ............... appeal.\n\nAncient Stoics\n• Stoicism was founded over 2,000 years ago in Greece.\n• The Stoics' ideas are surprisingly well known, despite not being intended for 32 ............... .\n\nStoic principles\n• Happiness could be achieved by leading a virtuous life.\n• Controlling emotions was essential.\n• Epictetus said that external events cannot be controlled but the 33 ............... people make in response can be controlled.\n• A Stoic is someone who has a different view on experiences which others would consider as 34 ............... .\n\nThe influence of Stoicism\n• George Washington organised a 35 ............... about Cato to motivate his men.\n• The French artist Delacroix was a Stoic.\n• Adam Smith's ideas on 36 ............... were influenced by Stoicism.\n• Some of today's political leaders are inspired by the Stoics.\n• Cognitive Behaviour Therapy (CBT)\n  - the treatment for 37 ............... is based on ideas from Stoicism\n  - people learn to base their thinking on 38 ............... .\n• In business, people benefit from Stoicism by identifying obstacles as 39 ............... .\n\nRelevance of Stoicism\n• It requires a lot of 40 ............... but Stoicism can help people to lead a good life.\n• It teaches people that having a strong character is more important than anything else.",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Stoicism is still relevant today because of its 31 ________ appeal.",
+            "blank": true
+          },
+          "correctAnswer": "practical"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The Stoics' ideas are surprisingly well known, despite not being intended for 32 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "publication"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Epictetus said that external events cannot be controlled but the 33 ________ people make in response can be controlled.",
+            "blank": true
+          },
+          "correctAnswer": "choices"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A Stoic is someone who has a different view on experiences which others would consider as 34 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "negative"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "George Washington organised a 35 ________ about Cato to motivate his men.",
+            "blank": true
+          },
+          "correctAnswer": "play"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Adam Smith's ideas on 36 ________ were influenced by Stoicism.",
+            "blank": true
+          },
+          "correctAnswer": "capitalism"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "the treatment for 37 ________ is based on ideas from Stoicism",
+            "blank": true
+          },
+          "correctAnswer": "depression"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "people learn to base their thinking on 38 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "logic"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "In business, people benefit from Stoicism by identifying obstacles as 39 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "opportunity"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "It requires a lot of 40 ________ but Stoicism can help people to lead a good life.",
+            "blank": true
+          },
+          "correctAnswer": "practice",
+          "acceptableAnswers": [
+            "practice",
+            "practise"
+          ]
+        }
+      ],
+      "order": 3,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-35-section-4.mp3"
+      }
+    }
+  ],
+  "examType": "ACADEMIC",
+  "sourceFolder": "C61.pdf",
+  "savedAt": "2026-11-17T10:57:41.457568+00:00"
+}

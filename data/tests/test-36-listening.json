@@ -1,0 +1,689 @@
+{
+  "title": "Test 36.C16.02 - Listening",
+  "slug": "test-36-listening",
+  "skill": "LISTENING",
+  "status": "DRAFT",
+  "parts": [
+    {
+      "title": "Section 1",
+      "content": "Questions 1–10\nComplete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nCopying photos to digital format\nName of company: Picturerep\n\nRequirements\n• Maximum size of photos is 30 cm, minimum size 4 cm.\n• Photos must not be in a 1 ............... or an album.\n\nCost\n• The cost for 360 photos is 2 £ ............... (including one disk).\n• Before the completed order is sent, 3 ............... is required.\n\nServices included in the price\n• Photos can be placed in a folder, e.g. with the name 4 ............... .\n• The 5 ............... and contrast can be improved if necessary.\n• Photos which are very fragile will be scanned by 6 ............... .\n\nSpecial restore service (costs extra)\n• It may be possible to remove an object from a photo, or change the 7 ............... .\n• A photo which is not correctly in 8 ............... cannot be fixed.\n\nOther information\n• Orders are completed within 9 ............... .\n• Send the photos in a box (not 10 ...............).",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Photos must not be in a 1 ________ or an album.",
+            "blank": true
+          },
+          "correctAnswer": "frame"
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The cost for 360 photos is 2 £ ________ (including one disk).",
+            "blank": true
+          },
+          "correctAnswer": "195",
+          "acceptableAnswers": [
+            "195",
+            "£195"
+          ]
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Before the completed order is sent, 3 ________ is required.",
+            "blank": true
+          },
+          "correctAnswer": "payment"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Photos can be placed in a folder, e.g. with the name 4 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "Grandparents",
+          "acceptableAnswers": [
+            "Grandparents",
+            "grandparents"
+          ]
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The 5 ________ and contrast can be improved if necessary.",
+            "blank": true
+          },
+          "correctAnswer": "colour",
+          "acceptableAnswers": [
+            "colour",
+            "color"
+          ]
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Photos which are very fragile will be scanned by 6 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "hand"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "remove an object from a photo, or change the 7 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "background"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A photo which is not correctly in 8 ________ cannot be fixed.",
+            "blank": true
+          },
+          "correctAnswer": "focus"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Orders are completed within 9 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "10 days",
+          "acceptableAnswers": [
+            "10 days",
+            "ten days"
+          ]
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Send the photos in a box (not 10 ________ ).",
+            "blank": true
+          },
+          "correctAnswer": "plastic"
+        }
+      ],
+      "order": 0,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-36-section-1.mp3"
+      }
+    },
+    {
+      "title": "Section 2",
+      "content": "Questions 11–15\nChoose the correct letter, A, B or C.\n\n11 Dartfield House school used to be\nA a tourist information centre.\nB a private home.\nC a local council building.\n\n12 What is planned with regard to the lower school?\nA All buildings on the main site will be improved.\nB The lower school site will be used for new homes.\nC Additional school buildings will be constructed on the lower school site.\n\n13 The catering has been changed because of\nA long queuing times.\nB changes to the school timetable.\nC dissatisfaction with the menus.\n\n14 Parents are asked to\nA help their children to decide in advance which serving point to use.\nB make sure their children have enough money for food.\nC advise their children on healthy food to eat.\n\n15 What does the speaker say about the existing canteen?\nA Food will still be served there.\nB Only staff will have access to it.\nC Pupils can take their food into it.\n\nQuestions 16–18\nWhat comment does the speaker make about each of the following serving points in the Food Hall?\nChoose THREE answers from the box and write the correct letter, A–D, next to Questions 16–18.\n\nComments\nA pupils help to plan menus\nB only vegetarian food\nC different food every week\nD daily change in menu\n\nFood available at serving points in Food Hall\n16 World Adventures\n17 Street Life\n18 Speedy Italian\n\nQuestions 19 and 20\nChoose TWO letters, A–E.\nWhich TWO optional after-school lessons are new?\nA swimming\nB piano\nC acting\nD cycling\nE theatre sound and lighting",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Dartfield House school used to be",
+            "options": [
+              {
+                "label": "A",
+                "text": "a tourist information centre."
+              },
+              {
+                "label": "B",
+                "text": "a private home."
+              },
+              {
+                "label": "C",
+                "text": "a local council building."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What is planned with regard to the lower school?",
+            "options": [
+              {
+                "label": "A",
+                "text": "All buildings on the main site will be improved."
+              },
+              {
+                "label": "B",
+                "text": "The lower school site will be used for new homes."
+              },
+              {
+                "label": "C",
+                "text": "Additional school buildings will be constructed on the lower school site."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "The catering has been changed because of",
+            "options": [
+              {
+                "label": "A",
+                "text": "long queuing times."
+              },
+              {
+                "label": "B",
+                "text": "changes to the school timetable."
+              },
+              {
+                "label": "C",
+                "text": "dissatisfaction with the menus."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Parents are asked to",
+            "options": [
+              {
+                "label": "A",
+                "text": "help their children to decide in advance which serving point to use."
+              },
+              {
+                "label": "B",
+                "text": "make sure their children have enough money for food."
+              },
+              {
+                "label": "C",
+                "text": "advise their children on healthy food to eat."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What does the speaker say about the existing canteen?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Food will still be served there."
+              },
+              {
+                "label": "B",
+                "text": "Only staff will have access to it."
+              },
+              {
+                "label": "C",
+                "text": "Pupils can take their food into it."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "World Adventures",
+            "options": [
+              {
+                "label": "A",
+                "text": "pupils help to plan menus"
+              },
+              {
+                "label": "B",
+                "text": "only vegetarian food"
+              },
+              {
+                "label": "C",
+                "text": "different food every week"
+              },
+              {
+                "label": "D",
+                "text": "daily change in menu"
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Street Life",
+            "options": [
+              {
+                "label": "A",
+                "text": "pupils help to plan menus"
+              },
+              {
+                "label": "B",
+                "text": "only vegetarian food"
+              },
+              {
+                "label": "C",
+                "text": "different food every week"
+              },
+              {
+                "label": "D",
+                "text": "daily change in menu"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Speedy Italian",
+            "options": [
+              {
+                "label": "A",
+                "text": "pupils help to plan menus"
+              },
+              {
+                "label": "B",
+                "text": "only vegetarian food"
+              },
+              {
+                "label": "C",
+                "text": "different food every week"
+              },
+              {
+                "label": "D",
+                "text": "daily change in menu"
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO optional after-school lessons are new? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "swimming"
+              },
+              {
+                "label": "B",
+                "text": "piano"
+              },
+              {
+                "label": "C",
+                "text": "acting"
+              },
+              {
+                "label": "D",
+                "text": "cycling"
+              },
+              {
+                "label": "E",
+                "text": "theatre sound and lighting"
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO optional after-school lessons are new? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "swimming"
+              },
+              {
+                "label": "B",
+                "text": "piano"
+              },
+              {
+                "label": "C",
+                "text": "acting"
+              },
+              {
+                "label": "D",
+                "text": "cycling"
+              },
+              {
+                "label": "E",
+                "text": "theatre sound and lighting"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        }
+      ],
+      "order": 1,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-36-section-2.mp3"
+      }
+    },
+    {
+      "title": "Section 3",
+      "content": "Questions 21–24\nChoose the correct letter, A, B or C.\n\nAssignment on sleep and dreams\n21 Luke read that one reason why we often forget dreams is that\nA our memories cannot cope with too much information.\nB we might otherwise be confused about what is real.\nC we do not think they are important.\n\n22 What do Luke and Susie agree about dreams predicting the future?\nA It may just be due to chance.\nB It only happens with certain types of event.\nC It happens more often than some people think.\n\n23 Susie says that a study on pre-school children having a short nap in the day\nA had controversial results.\nB used faulty research methodology.\nC failed to reach any clear conclusions.\n\n24 In their last assignment, both students had problems with\nA statistical analysis.\nB making an action plan.\nC self-assessment.\n\nQuestions 25–30\nComplete the flow chart below.\nWrite ONE WORD ONLY for each answer.\n\nAssignment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number of dreams?\n↓\nDecide on sample:\nTwelve students from the 25 ............... department\n↓\nDecide on methodology:\nSelf-reporting\n↓\nDecide on procedure:\nAnswers on 26 ...............\n↓\nCheck ethical guidelines for working with 27 ...............\nEnsure that risk is assessed and 28 ............... is kept to a minimum\n↓\nAnalyse the results\nCalculate the correlation and make a 29 ...............\n↓\n30 ............... the research",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Luke read that one reason why we often forget dreams is that",
+            "options": [
+              {
+                "label": "A",
+                "text": "our memories cannot cope with too much information."
+              },
+              {
+                "label": "B",
+                "text": "we might otherwise be confused about what is real."
+              },
+              {
+                "label": "C",
+                "text": "we do not think they are important."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "What do Luke and Susie agree about dreams predicting the future?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It may just be due to chance."
+              },
+              {
+                "label": "B",
+                "text": "It only happens with certain types of event."
+              },
+              {
+                "label": "C",
+                "text": "It happens more often than some people think."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Susie says that a study on pre-school children having a short nap in the day",
+            "options": [
+              {
+                "label": "A",
+                "text": "had controversial results."
+              },
+              {
+                "label": "B",
+                "text": "used faulty research methodology."
+              },
+              {
+                "label": "C",
+                "text": "failed to reach any clear conclusions."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "In their last assignment, both students had problems with",
+            "options": [
+              {
+                "label": "A",
+                "text": "statistical analysis."
+              },
+              {
+                "label": "B",
+                "text": "making an action plan."
+              },
+              {
+                "label": "C",
+                "text": "self-assessment."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Twelve students from the 25 ________ department",
+            "blank": true
+          },
+          "correctAnswer": "history"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Answers on 26 ________",
+            "blank": true
+          },
+          "correctAnswer": "paper"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Check ethical guidelines for working with 27 ________",
+            "blank": true
+          },
+          "correctAnswer": "humans",
+          "acceptableAnswers": [
+            "humans",
+            "people"
+          ]
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Ensure that risk is assessed and 28 ________ is kept to a minimum",
+            "blank": true
+          },
+          "correctAnswer": "stress"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Calculate the correlation and make a 29 ________",
+            "blank": true
+          },
+          "correctAnswer": "graph"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "30 ________ the research",
+            "blank": true
+          },
+          "correctAnswer": "evaluate"
+        }
+      ],
+      "order": 2,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-36-section-3.mp3"
+      }
+    },
+    {
+      "title": "Section 4",
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nHealth benefits of dance\nRecent findings:\n• All forms of dance produce various hormones associated with feelings of happiness.\n• Dancing with others has a more positive impact than dancing alone.\n• An experiment on university students suggested that dance increases 31 ............... .\n• For those with mental illness, dance could be used as a form of 32 ............... .\n\nBenefits of dance for older people:\n• accessible for people with low levels of 33 ...............\n• reduces the risk of heart disease\n• better 34 ............... reduces the risk of accidents\n• improves 35 ............... function by making it work faster\n• improves participants' general well-being\n• gives people more 36 ............... to take exercise\n• can lessen the feeling of 37 ............... , very common in older people\n\nBenefits of Zumba:\n• A study at The University of Wisconsin showed that doing Zumba for 40 minutes uses up as many 38 ............... as other quite intense forms of exercise.\n• The American Journal of Health Behavior study showed that:\n  - women suffering from 39 ............... benefited from doing Zumba.\n  - Zumba became a 40 ............... for the participants.",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "suggested that dance increases 31 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "creativity"
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "dance could be used as a form of 32 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "therapy"
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "accessible for people with low levels of 33 ________",
+            "blank": true
+          },
+          "correctAnswer": "fitness"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "better 34 ________ reduces the risk of accidents",
+            "blank": true
+          },
+          "correctAnswer": "balance"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "improves 35 ________ function by making it work faster",
+            "blank": true
+          },
+          "correctAnswer": "brain"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "gives people more 36 ________ to take exercise",
+            "blank": true
+          },
+          "correctAnswer": "motivation"
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "can lessen the feeling of 37 ________ , very common in older people",
+            "blank": true
+          },
+          "correctAnswer": "isolation"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "doing Zumba for 40 minutes uses up as many 38 ________",
+            "blank": true
+          },
+          "correctAnswer": "calories"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "women suffering from 39 ________ benefited from doing Zumba.",
+            "blank": true
+          },
+          "correctAnswer": "obesity"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Zumba became a 40 ________ for the participants.",
+            "blank": true
+          },
+          "correctAnswer": "habit"
+        }
+      ],
+      "order": 3,
+      "meta": {
+        "audioUrl": "/uploads/audio/test-36-section-4.mp3"
+      }
+    }
+  ],
+  "examType": "ACADEMIC",
+  "sourceFolder": "C61.pdf",
+  "savedAt": "2026-11-17T10:57:41.457568+00:00"
+}

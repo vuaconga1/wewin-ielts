@@ -1,0 +1,1020 @@
+{
+  "title": "Test 38.C16.04 - Listening",
+  "slug": "test-38-listening",
+  "skill": "LISTENING",
+  "status": "DRAFT",
+  "examType": "ACADEMIC",
+  "sourceFolder": "C61.pdf",
+  "savedAt": "2026-11-18T09:30:33.008289+00:00",
+  "parts": [
+    {
+      "order": 0,
+      "title": "Part 1",
+      "content": "PART 1\nThe examiner asks you about yourself, your home, work or studies and other\nfamiliar topics.\nEXAMPLE\nSummer\n+ Is summer your favourite time of year? [Why/Why not?]\n+ What do you do in summer when the weather's very hot? [Why?]\n+ Do you go on holiday every summer? [Why/Why not?]\n- Did you enjoy the summer holidays when you were at school? [Why/Why not?]\nPART 2\nDescribe a luxury item you would like to own in You will have to talk\nthe future. about the topic for one\nto two minutes. You\nYou should say: have one minute to\nwhat item you would like to own +\n— g think about what you\nwhat this item looks like arb doing toa: Your\nwhy you would like to own this item going to say.\ncan make some notes\nand explain whether you think you will ever own to help you if you wish.\nthis item.\nPART 3\nDiscussion topics:\nExpensive items\nExample questions:\nWhich expensive items would many young people (in your country) like to buy?\nHow do the expensive items that younger people want to buy differ from those that older\npeople want to buy?\nDo you think that people are more likely to buy expensive items for their friends or for\nthemselves?\nRich people\nExample questions:\nHow difficult is it to become very rich in today’s world?\nDo you agree that money does not necessarily bring happiness?\nIn what ways might rich people use their money to help society?",
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "available for week beginning 1 ________ May",
+            "blank": true
+          },
+          "correctAnswer": "28th",
+          "acceptableAnswers": [
+            "28th",
+            "28",
+            "28th May"
+          ]
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "cost for the week: £ 2 ________",
+            "blank": true
+          },
+          "correctAnswer": "550",
+          "acceptableAnswers": [
+            "550",
+            "£550"
+          ]
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "3 ________ Cottage (cost for the week: £480)",
+            "blank": true
+          },
+          "correctAnswer": "Chervil"
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "building was originally a 4 ________",
+            "blank": true
+          },
+          "correctAnswer": "garage"
+        },
+        {
+          "number": 5,
+          "order": 4,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "walk through doors from living room into a 5 ________",
+            "blank": true
+          },
+          "correctAnswer": "garden"
+        },
+        {
+          "number": 6,
+          "order": 5,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "several 6 ________ spaces at the front",
+            "blank": true
+          },
+          "correctAnswer": "parking"
+        },
+        {
+          "number": 7,
+          "order": 6,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "central heating and stove that burns 7 ________",
+            "blank": true
+          },
+          "correctAnswer": "wood"
+        },
+        {
+          "number": 8,
+          "order": 7,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "views of old 8 ________ from living room",
+            "blank": true
+          },
+          "correctAnswer": "bridge"
+        },
+        {
+          "number": 9,
+          "order": 8,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "view of hilltop 9 ________ from the bedroom",
+            "blank": true
+          },
+          "correctAnswer": "monument"
+        },
+        {
+          "number": 10,
+          "order": 9,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "deadline for final payment: end of 10 ________",
+            "blank": true
+          },
+          "correctAnswer": "March"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-38-section-1.mp3"
+      }
+    },
+    {
+      "order": 1,
+      "title": "Part 2",
+      "content": "PART 1 Questions 1-10\nComplete the notes below.\nWrite ONE WORD ANDIOR A NUMBER for each answer.\nHoliday rental\nOwners’ names: Jack Fitzgerald and Shirley Fitzgerald\nGranary Cottage\ne available for week beginning 1... May.\no cost for the week: 2 £ ....ccmscmsini\nfc JSR oo) 1 To |-\ne cost for the week: £480\ne building was originally @ 4...\ne walk through doors from living ro0mM iNt0 @ 5...\neo several... Spaces at the front\ne bathroom has a shower\ne central heating and stove that burns 7...\no views of Old 8... frOM living room\no view Of hilltop 9 ......crcrcircnn. frOM the bedroom\nPayment\ne deposit: £144\n* deadline for final payment: end of 10...\n\n![Recreation ground after proposed changes](/uploads/images/test-38-map.png)\n\nPART 2 Questions 11-20\nQuestions 11-14\nChoose the correct letter, A, B or C.\nLocal council report on traffic and highways\n11 Asurvey found people’s main concern about traffic in the area was\nA cuts to public transport.\nB poor maintenance of roads.\nC changes in the type of traffic.\n12 Which change will shortly be made to the cycle path next to the river?\nA It will be widened.\nB It will be extended.\nC It will be resurfaced.\n13 Plans for a pedestrian crossing have been postponed because\nA the Post Office has moved.\nB the proposed location is unsafe.\nC funding is not available at present.\n14 On Station Road, notices have been erected\nA telling cyclists not to leave their bikes outside the station ticket office.\nBasking motorists to switch off engines when waiting at the level crossing.\nC warning pedestrians to leave enough time when crossing the railway line.",
+      "questions": [
+        {
+          "number": 11,
+          "order": 10,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "A survey found people’s main concern about traffic in the area was",
+            "options": [
+              {
+                "label": "A",
+                "text": "cuts to public transport."
+              },
+              {
+                "label": "B",
+                "text": "poor maintenance of roads."
+              },
+              {
+                "label": "C",
+                "text": "changes in the type of traffic."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 12,
+          "order": 11,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which change will shortly be made to the cycle path next to the river?",
+            "options": [
+              {
+                "label": "A",
+                "text": "It will be widened."
+              },
+              {
+                "label": "B",
+                "text": "It will be extended."
+              },
+              {
+                "label": "C",
+                "text": "It will be resurfaced."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 13,
+          "order": 12,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Plans for a pedestrian crossing have been postponed because",
+            "options": [
+              {
+                "label": "A",
+                "text": "the Post Office has moved."
+              },
+              {
+                "label": "B",
+                "text": "the proposed location is unsafe."
+              },
+              {
+                "label": "C",
+                "text": "funding is not available at present."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 14,
+          "order": 13,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "On Station Road, notices have been erected",
+            "options": [
+              {
+                "label": "A",
+                "text": "telling cyclists not to leave their bikes outside the station ticket office."
+              },
+              {
+                "label": "B",
+                "text": "asking motorists to switch off engines when waiting at the level crossing."
+              },
+              {
+                "label": "C",
+                "text": "warning pedestrians to leave enough time when crossing the railway line."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 15,
+          "order": 14,
+          "type": "MATCHING",
+          "content": {
+            "stem": "New car park",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 16,
+          "order": 15,
+          "type": "MATCHING",
+          "content": {
+            "stem": "New cricket pitch",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 17,
+          "order": 16,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Children’s playground",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "number": 18,
+          "order": 17,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Skateboard ramp",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ]
+          },
+          "correctAnswer": "I"
+        },
+        {
+          "number": 19,
+          "order": 18,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Pavilion",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 20,
+          "order": 19,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Notice board",
+            "options": [
+              {
+                "label": "A",
+                "text": "Location A"
+              },
+              {
+                "label": "B",
+                "text": "Location B"
+              },
+              {
+                "label": "C",
+                "text": "Location C"
+              },
+              {
+                "label": "D",
+                "text": "Location D"
+              },
+              {
+                "label": "E",
+                "text": "Location E"
+              },
+              {
+                "label": "F",
+                "text": "Location F"
+              },
+              {
+                "label": "G",
+                "text": "Location G"
+              },
+              {
+                "label": "H",
+                "text": "Location H"
+              },
+              {
+                "label": "I",
+                "text": "Location I"
+              }
+            ]
+          },
+          "correctAnswer": "H"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-38-section-2.mp3"
+      }
+    },
+    {
+      "order": 2,
+      "title": "Part 3",
+      "content": "Questions 15-20\nLabel the map below.\nWrite the correct letter, A—I, next to Questions 15-20.\nRecreation ground after proposed changes\n; (ROVER .\nx [=] ¥ }\n[Bn\nt wee\n[B fr----°! & s\nop F\n{I}\n} =\nField UN\nCommunity G ¥\nc Hall\nKi\n= RL\n[Roe\n15 New car park JR\n16 New cricket pitch JR\n17 Children’s playground Sr,\n18 Skateboard ramp ER\n19 Pavilion EET\n20 Notice board ER\n\nPART 3 Questions 21-30\nQuestions 21-22\nChoose TWO letters, A-E.\nWhich TWO benefits of city bike-sharing schemes do the students agree are the\nmost important?\n\nA reducing noise pollution\n\nB reducing traffic congestion\n\nC improving air quality\n\nD encouraging health and fitness\n\nE making cycling affordable\nQuestions 23-24\nChoose TWO letters, A—E.\nWhich TWO things do the students think are necessary for successful bike-sharing\nschemes?\n\nA Bikes should have a GPS system.\n\nB The app should be easy to use.\n\nC Public awareness should be raised.\n\nD Only one scheme should be available.\n\nE There should be a large network of cycle lanes.",
+      "questions": [
+        {
+          "number": 21,
+          "order": 20,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO benefits of city bike-sharing schemes do the students agree are the most important? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "reducing noise pollution"
+              },
+              {
+                "label": "B",
+                "text": "reducing traffic congestion"
+              },
+              {
+                "label": "C",
+                "text": "improving air quality"
+              },
+              {
+                "label": "D",
+                "text": "encouraging health and fitness"
+              },
+              {
+                "label": "E",
+                "text": "making cycling affordable"
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 22,
+          "order": 21,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO benefits of city bike-sharing schemes do the students agree are the most important? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "reducing noise pollution"
+              },
+              {
+                "label": "B",
+                "text": "reducing traffic congestion"
+              },
+              {
+                "label": "C",
+                "text": "improving air quality"
+              },
+              {
+                "label": "D",
+                "text": "encouraging health and fitness"
+              },
+              {
+                "label": "E",
+                "text": "making cycling affordable"
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 23,
+          "order": 22,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do the students think are necessary for successful bike-sharing schemes? (Option 1)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Bikes should have a GPS system."
+              },
+              {
+                "label": "B",
+                "text": "The app should be easy to use."
+              },
+              {
+                "label": "C",
+                "text": "Public awareness should be raised."
+              },
+              {
+                "label": "D",
+                "text": "Only one scheme should be available."
+              },
+              {
+                "label": "E",
+                "text": "There should be a large network of cycle lanes."
+              }
+            ]
+          },
+          "correctAnswer": "B",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 24,
+          "order": 23,
+          "type": "MULTIPLE_CHOICE",
+          "content": {
+            "stem": "Which TWO things do the students think are necessary for successful bike-sharing schemes? (Option 2)",
+            "options": [
+              {
+                "label": "A",
+                "text": "Bikes should have a GPS system."
+              },
+              {
+                "label": "B",
+                "text": "The app should be easy to use."
+              },
+              {
+                "label": "C",
+                "text": "Public awareness should be raised."
+              },
+              {
+                "label": "D",
+                "text": "Only one scheme should be available."
+              },
+              {
+                "label": "E",
+                "text": "There should be a large network of cycle lanes."
+              }
+            ]
+          },
+          "correctAnswer": "C",
+          "acceptableAnswers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "number": 25,
+          "order": 24,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Amsterdam",
+            "options": [
+              {
+                "label": "A",
+                "text": "They agree it has been disappointing."
+              },
+              {
+                "label": "B",
+                "text": "They think it should be cheaper."
+              },
+              {
+                "label": "C",
+                "text": "They are surprised it has been so successful."
+              },
+              {
+                "label": "D",
+                "text": "They agree that more investment is required."
+              },
+              {
+                "label": "E",
+                "text": "They think the system has been well designed."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about the reasons for its success."
+              },
+              {
+                "label": "G",
+                "text": "They think it has expanded too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "number": 26,
+          "order": 25,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Dublin",
+            "options": [
+              {
+                "label": "A",
+                "text": "They agree it has been disappointing."
+              },
+              {
+                "label": "B",
+                "text": "They think it should be cheaper."
+              },
+              {
+                "label": "C",
+                "text": "They are surprised it has been so successful."
+              },
+              {
+                "label": "D",
+                "text": "They agree that more investment is required."
+              },
+              {
+                "label": "E",
+                "text": "They think the system has been well designed."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about the reasons for its success."
+              },
+              {
+                "label": "G",
+                "text": "They think it has expanded too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "F"
+        },
+        {
+          "number": 27,
+          "order": 26,
+          "type": "MATCHING",
+          "content": {
+            "stem": "London",
+            "options": [
+              {
+                "label": "A",
+                "text": "They agree it has been disappointing."
+              },
+              {
+                "label": "B",
+                "text": "They think it should be cheaper."
+              },
+              {
+                "label": "C",
+                "text": "They are surprised it has been so successful."
+              },
+              {
+                "label": "D",
+                "text": "They agree that more investment is required."
+              },
+              {
+                "label": "E",
+                "text": "They think the system has been well designed."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about the reasons for its success."
+              },
+              {
+                "label": "G",
+                "text": "They think it has expanded too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "number": 28,
+          "order": 27,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Buenos Aires",
+            "options": [
+              {
+                "label": "A",
+                "text": "They agree it has been disappointing."
+              },
+              {
+                "label": "B",
+                "text": "They think it should be cheaper."
+              },
+              {
+                "label": "C",
+                "text": "They are surprised it has been so successful."
+              },
+              {
+                "label": "D",
+                "text": "They agree that more investment is required."
+              },
+              {
+                "label": "E",
+                "text": "They think the system has been well designed."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about the reasons for its success."
+              },
+              {
+                "label": "G",
+                "text": "They think it has expanded too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "E"
+        },
+        {
+          "number": 29,
+          "order": 28,
+          "type": "MATCHING",
+          "content": {
+            "stem": "New York",
+            "options": [
+              {
+                "label": "A",
+                "text": "They agree it has been disappointing."
+              },
+              {
+                "label": "B",
+                "text": "They think it should be cheaper."
+              },
+              {
+                "label": "C",
+                "text": "They are surprised it has been so successful."
+              },
+              {
+                "label": "D",
+                "text": "They agree that more investment is required."
+              },
+              {
+                "label": "E",
+                "text": "They think the system has been well designed."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about the reasons for its success."
+              },
+              {
+                "label": "G",
+                "text": "They think it has expanded too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "number": 30,
+          "order": 29,
+          "type": "MATCHING",
+          "content": {
+            "stem": "Sydney",
+            "options": [
+              {
+                "label": "A",
+                "text": "They agree it has been disappointing."
+              },
+              {
+                "label": "B",
+                "text": "They think it should be cheaper."
+              },
+              {
+                "label": "C",
+                "text": "They are surprised it has been so successful."
+              },
+              {
+                "label": "D",
+                "text": "They agree that more investment is required."
+              },
+              {
+                "label": "E",
+                "text": "They think the system has been well designed."
+              },
+              {
+                "label": "F",
+                "text": "They disagree about the reasons for its success."
+              },
+              {
+                "label": "G",
+                "text": "They think it has expanded too quickly."
+              }
+            ]
+          },
+          "correctAnswer": "A"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-38-section-3.mp3"
+      }
+    },
+    {
+      "order": 3,
+      "title": "Part 4",
+      "content": "Questions 25-30\nWhat is the speakers’ opinion of the bike-sharing schemes in each of the\nfollowing cities?\nChoose SIX answers from the box and write the correct letter, A-G, next to\nQuestions 25-30.\nOpinion of bike-sharing scheme\nA They agree it has been disappointing.\nB They think it should be cheaper.\nC They are surprised it has been so successful.\nD They agree that more investment is required.\nE They think the system has been well designed.\nF They disagree about the reasons for its success.\nG They think it has expanded too quickly.\nCities\n25 Amsterdam [ES—\n26 Dublin J\n27 London [E—\n28 Buenos Aires [ES\n29 New York RE,\n30 Sydney SS",
+      "questions": [
+        {
+          "number": 31,
+          "order": 30,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "1507 — Portuguese ships transporting 31 ________ stopped at the island to collect food and water.",
+            "blank": true
+          },
+          "correctAnswer": "spices",
+          "acceptableAnswers": [
+            "spices",
+            "spice"
+          ]
+        },
+        {
+          "number": 32,
+          "order": 31,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "1638 — The Dutch established a 32 ________ on the island.",
+            "blank": true
+          },
+          "correctAnswer": "colony",
+          "acceptableAnswers": [
+            "colony",
+            "settlement"
+          ]
+        },
+        {
+          "number": 33,
+          "order": 32,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "A Dutch painting suggests the dodo was very 33 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "fat"
+        },
+        {
+          "number": 34,
+          "order": 33,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The only remaining soft tissue is a dried 34 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "head"
+        },
+        {
+          "number": 35,
+          "order": 34,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Recent studies of a dodo skeleton suggest the birds were capable of rapid 35 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "movement"
+        },
+        {
+          "number": 36,
+          "order": 35,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "It's thought they were able to use their small wings to maintain 36 ________ .",
+            "blank": true
+          },
+          "correctAnswer": "balance",
+          "acceptableAnswers": [
+            "balance",
+            "balancing"
+          ]
+        },
+        {
+          "number": 37,
+          "order": 36,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Their 37 ________ was of average size.",
+            "blank": true
+          },
+          "correctAnswer": "brain"
+        },
+        {
+          "number": 38,
+          "order": 37,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "Their sense of 38 ________ enabled them to find food.",
+            "blank": true
+          },
+          "correctAnswer": "smell"
+        },
+        {
+          "number": 39,
+          "order": 38,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "39 ________ also escaped onto the island and ate the birds’ eggs.",
+            "blank": true
+          },
+          "correctAnswer": "rats"
+        },
+        {
+          "number": 40,
+          "order": 39,
+          "type": "GAP_FILL",
+          "content": {
+            "stem": "The arrival of farming meant the 40 ________ was destroyed.",
+            "blank": true
+          },
+          "correctAnswer": "forest"
+        }
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-38-section-4.mp3"
+      }
+    }
+  ]
+}
