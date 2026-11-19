@@ -14,8 +14,8 @@ function allowedOrigins(): string[] {
     .filter(Boolean);
 }
 
-function isLocalDevOrigin(origin: string): boolean {
-  if (process.env.NODE_ENV === "production") return false;
+function isLocalDevOrigin(origin: string, nodeEnv: string | undefined): boolean {
+  if (nodeEnv === "production") return false;
   try {
     const url = new URL(origin);
     return (
@@ -27,8 +27,17 @@ function isLocalDevOrigin(origin: string): boolean {
   }
 }
 
+export type ReturnToOptions = {
+  /** Override for tests; defaults to process.env.NODE_ENV. */
+  nodeEnv?: string;
+};
+
 /** Absolute URL whose origin is allowlisted (blocks open redirects). */
-export function isAllowedReturnTo(value: string): boolean {
+export function isAllowedReturnTo(
+  value: string,
+  options?: ReturnToOptions,
+): boolean {
+  const nodeEnv = options?.nodeEnv ?? process.env.NODE_ENV;
   let url: URL;
   try {
     url = new URL(value);
@@ -36,12 +45,12 @@ export function isAllowedReturnTo(value: string): boolean {
     return false;
   }
   if (url.protocol !== "http:" && url.protocol !== "https:") return false;
-  if (process.env.NODE_ENV === "production" && url.protocol !== "https:") {
+  if (nodeEnv === "production" && url.protocol !== "https:") {
     return false;
   }
   if (url.username || url.password) return false;
 
   const origin = url.origin;
   if (allowedOrigins().some((allowed) => allowed === origin)) return true;
-  return isLocalDevOrigin(origin);
+  return isLocalDevOrigin(origin, nodeEnv);
 }
