@@ -116,4 +116,21 @@ assert(
   `passage label joins its sentence: ${passageLabel[0]!.instructions}`,
 );
 
+// OCR-spaced listening chrome: "PA R T 4 Questions 31–40"
+const spacedPart = parseReadingQuestionGroups(
+  "PA R T 4\u2003\u2003 Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n",
+  [31, 32, 40].map(mc),
+);
+assert(
+  spacedPart.length === 1 &&
+    spacedPart[0]!.start === 31 &&
+    spacedPart[0]!.end === 40 &&
+    /Questions 31-40/.test(spacedPart[0]!.header),
+  `spaced PART header parses: ${JSON.stringify(spacedPart[0])}`,
+);
+assert(
+  spacedPart[0]!.instructions.some((line) => /Complete the notes below/i.test(line)),
+  "spaced PART group keeps instructions",
+);
+
 console.log("question group sub-headers regression: ok");

@@ -13,11 +13,10 @@ export function resolveHubBranch(): HubBranch {
   return raw === "XVNT" ? "XVNT" : "NTL";
 }
 
+/** Public IELTS origin for absolute links. Never use VERCEL_URL (breaks cookies on custom domains). */
 export function siteOrigin(): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
   if (fromEnv) return fromEnv;
-  const vercel = process.env.VERCEL_URL?.trim().replace(/\/$/, "");
-  if (vercel) return `https://${vercel}`;
   return "https://ielts.wewin.edu.vn";
 }
 

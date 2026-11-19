@@ -31,4 +31,6 @@ export type HubPlacementFilters = {
   from?: string;
   to?: string;
   take?: number;
+  /** When set, aggregate loads only that source (hub tabs). */
+  source?: "ielts" | "cambridge";
 };

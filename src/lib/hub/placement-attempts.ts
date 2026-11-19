@@ -8,7 +8,6 @@ import {
   resolveHubBranch,
   scoreFromPayload,
   scorePercent,
-  siteOrigin,
 } from "@/lib/hub/placement-attempts-pure";
 import type {
   HubBranch,
@@ -124,7 +123,8 @@ async function listHubPlacementAttemptsUncached(
       scoreCorrect: correct,
       scoreTotal: total,
       scorePercent: scorePercent(correct, total),
-      detailUrl: `${siteOrigin()}${practiceResultPath(row.test.slug, row.id)}`,
+      // Relative so hub on custom domain keeps wewin_session (no VERCEL_URL host).
+      detailUrl: practiceResultPath(row.test.slug, row.id),
     };
 
     byBranch[branch] += 1;

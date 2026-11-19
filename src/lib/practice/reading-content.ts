@@ -973,7 +973,13 @@ export function repairImportedText(text: string): string {
     .join("\n");
   return unglued
     .replace(/\bddomestic\b/g, "domestic")
-    .replace(/^(list of headings)(?=[ivx])/gim, "$1\n");
+    .replace(/^(list of headings)(?=[ivx])/gim, "$1\n")
+    // OCR often spaces book chrome: "P A R T 4", "LIS T E NI NG", "PA R T"
+    .replace(/\bL\s*I\s*S\s*T\s*E\s*N\s*I\s*N\s*G\b/gi, "LISTENING")
+    .replace(/\bR\s*E\s*A\s*D\s*I\s*N\s*G\b/gi, "READING")
+    .replace(/\bP\s*A\s*R\s*T\b/gi, "PART")
+    .replace(/\bS\s*E\s*C\s*T\s*I\s*O\s*N\b/gi, "SECTION")
+    .replace(/\bP\s*A\s*S\s*S\s*A\s*G\s*E\b/gi, "PASSAGE");
 }
 
 function inlineBlankNumbers(text: string): number[] {
@@ -1927,7 +1933,7 @@ export function parseReadingQuestionGroups(
     if (stem.length >= 8) stemByNumber.set(q.number, stem);
   }
 
-  const lines = tasks.replace(/\r\n/g, "\n").split("\n");
+  const lines = repairImportedText(tasks).replace(/\r\n/g, "\n").split("\n");
   const groups: ReadingQuestionGroup[] = [];
   let current: {
     header: string;

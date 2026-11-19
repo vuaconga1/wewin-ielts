@@ -21,6 +21,8 @@ export type {
 const DEFAULT_CAMBRIDGE_HUB =
   "https://cambridge-placement-test.vercel.app/api/hub/placement-attempts";
 
+const CAMBRIDGE_SSO_DETAIL = "/api/admin/hub/cambridge-sso";
+
 function cambridgeHubUrl(): string {
   return (
     process.env.CAMBRIDGE_HUB_URL?.trim() ||
@@ -74,29 +76,43 @@ function emptyByBranch(): Record<HubBranch, number> {
   return { NTL: 0, XVNT: 0 };
 }
 
+function cambridgeSsoDetailUrl(attemptId: string): string {
+  return `${CAMBRIDGE_SSO_DETAIL}?attempt=${encodeURIComponent(attemptId)}`;
+}
+
 /** Merge lean placement lists from IELTS (local) + Cambridge (remote hub). */
 export async function aggregatePlacementAttempts(
   filters: HubPlacementFilters = {},
 ): Promise<AggregatedPlacementResult> {
   const take = filters.take ?? 50;
+  const sourceFilter = filters.source;
   const sources: AggregatedPlacementResult["sources"] = {
     ielts: { ok: false },
     cambridge: { ok: false },
   };
 
+  const loadIelts = sourceFilter !== "cambridge";
+  const loadCambridge = sourceFilter !== "ielts";
+
   const [ieltsSettled, cambridgeSettled] = await Promise.allSettled([
-    listHubPlacementAttempts(filters),
-    fetchCambridge(filters),
+    loadIelts
+      ? listHubPlacementAttempts(filters)
+      : Promise.resolve(null),
+    loadCambridge
+      ? fetchCambridge(filters)
+      : Promise.resolve(null),
   ]);
 
   const items: AggregatedPlacementItem[] = [];
 
-  if (ieltsSettled.status === "fulfilled") {
+  if (!loadIelts) {
+    sources.ielts = { ok: true };
+  } else if (ieltsSettled.status === "fulfilled" && ieltsSettled.value) {
     sources.ielts = { ok: true };
     for (const row of ieltsSettled.value.items) {
       items.push({ ...row, source: "ielts" });
     }
-  } else {
+  } else if (ieltsSettled.status === "rejected") {
     sources.ielts = {
       ok: false,
       error:
@@ -104,14 +120,22 @@ export async function aggregatePlacementAttempts(
           ? ieltsSettled.reason.message
           : "IELTS_HUB_FAILED",
     };
+  } else {
+    sources.ielts = { ok: true };
   }
 
-  if (cambridgeSettled.status === "fulfilled") {
+  if (!loadCambridge) {
+    sources.cambridge = { ok: true };
+  } else if (cambridgeSettled.status === "fulfilled" && cambridgeSettled.value) {
     sources.cambridge = { ok: true };
     for (const row of cambridgeSettled.value.items) {
-      items.push({ ...row, source: "cambridge" });
+      items.push({
+        ...row,
+        source: "cambridge",
+        detailUrl: cambridgeSsoDetailUrl(row.id),
+      });
     }
-  } else {
+  } else if (cambridgeSettled.status === "rejected") {
     sources.cambridge = {
       ok: false,
       error:
@@ -119,6 +143,8 @@ export async function aggregatePlacementAttempts(
           ? cambridgeSettled.reason.message
           : "CAMBRIDGE_HUB_FAILED",
     };
+  } else {
+    sources.cambridge = { ok: true };
   }
 
   items.sort(

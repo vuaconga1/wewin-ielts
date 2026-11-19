@@ -59,3 +59,9 @@ for pair in test_pairs:
         print(f"Generated: {slug}.json ({title}) | Parts: {len(test['parts'])}, Questions: {q_count}, Size: {file_size} bytes")
 
 print(f"\nSuccessfully generated all {len(generated_files)} Cambridge 20 test JSON files in {OUT_DIR}!")
+print(
+    "NOTE: Reading section.content is passage-only in the Python builders. "
+    "After regenerate, run:\n"
+    "  npx tsx scripts/fix-cambridge-20-reading-task-headers.ts --apply\n"
+    "so practice UI can show Questions N–M titles / instructions."
+)

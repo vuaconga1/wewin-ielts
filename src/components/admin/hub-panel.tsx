@@ -17,6 +17,35 @@ import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
 import type { AggregatedPlacementResult } from "@/lib/hub/aggregate-placement-types";
 
 type BranchFilter = "" | "NTL" | "XVNT";
+type SourceTab = "ielts" | "cambridge";
+
+function cambridgeSourceMessage(
+  code: string | undefined,
+  t: (key: string, fallback?: string) => string,
+): string {
+  if (code === "CAMBRIDGE_HUB_NOT_CONFIGURED") {
+    return t(
+      "hubCambridgeNotConfigured",
+      "Chưa cấu hình WEWIN_HUB_API_KEY trên site IELTS.",
+    );
+  }
+  if (code === "ADMIN_REQUIRED") {
+    return t(
+      "hubCambridgeUnauthorized",
+      "Cambridge từ chối key (kiểm tra WEWIN_HUB_API_KEY giống nhau trên cả hai site).",
+    );
+  }
+  if (code === "AbortError" || /aborted|timeout/i.test(code || "")) {
+    return t(
+      "hubCambridgeTimeout",
+      "Hết thời gian chờ khi gọi Cambridge.",
+    );
+  }
+  return t(
+    "hubCambridgeSourceError",
+    "Không lấy được dữ liệu Cambridge (kiểm tra WEWIN_HUB_API_KEY trên cả hai site).",
+  );
+}
 
 const PLATFORMS = [
   {
@@ -87,6 +116,7 @@ export function HubPanel() {
 
   const [query, setQuery] = useState("");
   const [branch, setBranch] = useState<BranchFilter>("");
+  const [sourceTab, setSourceTab] = useState<SourceTab>("ielts");
   const [data, setData] = useState<AggregatedPlacementResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<{ message: string; detail?: string } | null>(
@@ -100,6 +130,7 @@ export function HubPanel() {
       const params = new URLSearchParams();
       if (query.trim()) params.set("q", query.trim());
       if (branch) params.set("branch", branch);
+      params.set("source", sourceTab);
       params.set("take", "50");
       const res = await fetch(
         `/api/admin/hub/placement-attempts?${params.toString()}`,
@@ -134,7 +165,7 @@ export function HubPanel() {
     } finally {
       setLoading(false);
     }
-  }, [branch, query, t, te]);
+  }, [branch, query, sourceTab, t, te]);
 
   useEffect(() => {
     const handle = window.setTimeout(() => {
@@ -202,16 +233,15 @@ export function HubPanel() {
         ))}
       </section>
 
-      {data && (!data.sources.ielts.ok || !data.sources.cambridge.ok) ? (
+      {data &&
+      ((sourceTab === "ielts" && !data.sources.ielts.ok) ||
+        (sourceTab === "cambridge" && !data.sources.cambridge.ok)) ? (
         <div className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-900">
-          {!data.sources.ielts.ok
+          {sourceTab === "ielts" && !data.sources.ielts.ok
             ? t("hubIeltsSourceError", "Không lấy được dữ liệu IELTS.")
-            : null}{" "}
-          {!data.sources.cambridge.ok
-            ? t(
-                "hubCambridgeSourceError",
-                "Không lấy được dữ liệu Cambridge (kiểm tra WEWIN_HUB_API_KEY trên cả hai site).",
-              )
+            : null}
+          {sourceTab === "cambridge" && !data.sources.cambridge.ok
+            ? cambridgeSourceMessage(data.sources.cambridge.error, t)
             : null}
         </div>
       ) : null}
@@ -233,6 +263,41 @@ export function HubPanel() {
               )}
             </p>
           </header>
+
+          <div
+            role="tablist"
+            aria-label={t("hubTabListLabel", "Nguồn dữ liệu")}
+            className="flex gap-1 border-b border-wewin-border px-4 pt-3 sm:px-5"
+          >
+            {(
+              [
+                { id: "ielts" as const, labelKey: "hubTabIelts" as const, fallback: "IELTS" },
+                {
+                  id: "cambridge" as const,
+                  labelKey: "hubTabCambridge" as const,
+                  fallback: "Cambridge",
+                },
+              ] as const
+            ).map((tab) => {
+              const active = sourceTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={active}
+                  onClick={() => setSourceTab(tab.id)}
+                  className={`min-h-10 rounded-t-lg px-4 py-2 text-sm font-semibold transition-colors ${
+                    active
+                      ? "bg-wewin-navy text-white"
+                      : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
+                  }`}
+                >
+                  {t(tab.labelKey, tab.fallback)}
+                </button>
+              );
+            })}
+          </div>
 
           <div className="flex flex-wrap gap-2 border-b border-wewin-border px-4 py-3 sm:px-5">
             <input
@@ -325,7 +390,7 @@ export function HubPanel() {
                                 {row.studentName}
                               </strong>
                               <span className="block text-xs text-zinc-500">
-                                {row.externalId} · {row.source}
+                                {row.externalId}
                               </span>
                             </div>
                           </div>
