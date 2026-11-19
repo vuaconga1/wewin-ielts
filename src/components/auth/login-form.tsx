@@ -35,6 +35,8 @@ export function LoginForm() {
   const router = useRouter();
   const search = useSearchParams();
   const next = search.get("next") || "/dashboard";
+  const returnToParam =
+    search.get("return_to") || search.get("returnTo") || "";
   const reason = search.get("reason");
   const te = useTranslations("errors").t;
   const ta = useTranslations("auth").t;
@@ -139,7 +141,12 @@ export function LoginForm() {
           body: JSON.stringify(
             mode === "register"
               ? { email, password, username: username || undefined }
-              : { email, password, action: "login" },
+              : {
+                  email,
+                  password,
+                  action: "login",
+                  ...(returnToParam ? { returnTo: returnToParam } : {}),
+                },
           ),
         },
       );
@@ -148,6 +155,7 @@ export function LoginForm() {
         code?: string;
         suggestion?: string;
         field?: string;
+        returnTo?: string;
         user?: {
           username: string;
           fullName?: string | null;
@@ -186,16 +194,6 @@ export function LoginForm() {
         setError(mapped);
         return;
       }
-      const dest =
-        data.user?.role === "ADMIN" && next.startsWith("/admin")
-          ? next
-          : data.user?.role === "ADMIN"
-            ? "/admin/classes"
-            : next.startsWith("/admin")
-              ? data.user?.role === "TEACHER" && isTeacherAdminPath(next)
-                ? next
-                : "/tests"
-              : next;
       clearMyRankCache();
       clearSessionMe();
       if (data.user) {
@@ -215,6 +213,21 @@ export function LoginForm() {
               : data.user.role === "ADMIN",
         });
       }
+      // Cross-site SSO: prefer server-validated absolute returnTo.
+      if (data.returnTo && /^https?:\/\//i.test(data.returnTo)) {
+        window.location.assign(data.returnTo);
+        return;
+      }
+      const dest =
+        data.user?.role === "ADMIN" && next.startsWith("/admin")
+          ? next
+          : data.user?.role === "ADMIN"
+            ? "/admin/classes"
+            : next.startsWith("/admin")
+              ? data.user?.role === "TEACHER" && isTeacherAdminPath(next)
+                ? next
+                : "/tests"
+              : next;
       startNavProgress();
       router.push(dest);
       router.refresh();

@@ -13,6 +13,8 @@ export const loginBodySchema = z.object({
   email: z.string().optional(),
   username: z.string().optional(),
   password: loginPasswordSchema,
+  /** Absolute allowlisted URL for cross-site SSO (Admin Panel). */
+  returnTo: z.string().max(2048).optional(),
 }).superRefine((data, ctx) => {
   const raw = (data.email ?? data.username ?? "").trim();
   const id = loginIdentifierSchema.safeParse(raw);

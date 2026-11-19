@@ -11,6 +11,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Clapperboard,
+  ClipboardList,
   GraduationCap,
   Home,
   Menu,
@@ -60,6 +61,7 @@ export type DashboardNavKey =
   | "admin-audit-logs"
   | "admin-classes"
   | "admin-zoom"
+  | "admin-hub"
   | "login";
 
 type UserChip = SidebarUser | null;
@@ -261,6 +263,12 @@ export function DashboardShell({
               />
               {(
                 [
+                  {
+                    key: "admin-hub" as const,
+                    href: "/admin/hub",
+                    label: t("nav.adminHub", "Admin Panel"),
+                    icon: ClipboardList,
+                  },
                   {
                     key: "admin-classes" as const,
                     href: "/admin/classes",

@@ -9,6 +9,7 @@ import {
 import { getUserDisplayProfile } from "@/lib/user-profile";
 import { getUserAccess } from "@/lib/access";
 import { recordAuditEvent } from "@/lib/audit-log";
+import { isAllowedReturnTo } from "@/lib/auth/sso-return-to";
 import { loginBodySchema } from "@/lib/validation/auth";
 import { parseJsonBody } from "@/lib/validation/http";
 
@@ -63,6 +64,7 @@ export async function POST(request: Request) {
       username?: string;
       password?: string;
       action?: "login" | "logout";
+      returnTo?: string;
     };
 
     if (body.action === "logout") {
@@ -79,6 +81,7 @@ export async function POST(request: Request) {
       email: body.email,
       username: body.username,
       password: body.password,
+      returnTo: body.returnTo,
     });
     if (!parsed.ok) return parsed.response;
 
@@ -87,6 +90,10 @@ export async function POST(request: Request) {
     await recordAuditEvent({ actor: user, action: "LOGIN", request });
     const profile = await getUserDisplayProfile(user.id);
     const access = await getUserAccess(user.id);
+
+    const returnToRaw = parsed.data.returnTo?.trim();
+    const returnTo =
+      returnToRaw && isAllowedReturnTo(returnToRaw) ? returnToRaw : undefined;
 
     return NextResponse.json({
       user: {
@@ -100,6 +107,7 @@ export async function POST(request: Request) {
         accessStatus: access?.status ?? "UNLIMITED",
       },
       canImport: canAccessAdmin(user),
+      ...(returnTo ? { returnTo } : {}),
     });
   } catch (e) {
     if (e instanceof AuthError) {

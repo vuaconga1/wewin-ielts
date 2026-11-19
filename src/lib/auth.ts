@@ -115,12 +115,15 @@ export async function verifyPassword(
 
 export async function createSession(user: SessionUser): Promise<void> {
   const jar = await cookies();
+  const domain = process.env.SESSION_COOKIE_DOMAIN?.trim();
   jar.set(COOKIE_NAME, encodeSession(user), {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    // Shared Domain cookies must be Secure in real browsers; also require Secure in production.
+    secure: process.env.NODE_ENV === "production" || Boolean(domain),
     path: "/",
     maxAge: MAX_AGE_SEC,
+    ...(domain ? { domain } : {}),
   });
 }
 
