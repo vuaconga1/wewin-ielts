@@ -432,7 +432,12 @@
     "panelTitle": "WEWIN advice",
     "panelSubtitle": "Usually replies instantly",
     "minimize": "Minimize",
-    "cardCta": "Chat with WEWIN for a study plan →"
+    "cardCta": "Chat with WEWIN for a study plan →",
+    "welcomeMessage": "Hi! WEWIN can help with IELTS / course advice. What do you need?",
+    "inputPlaceholder": "Type a message…",
+    "send": "Send",
+    "typing": "WEWIN is typing…",
+    "sendFailed": "Could not send the message. Try again later."
   },
   "purchase": {
     "buyNow": "Buy now",
@@ -1491,7 +1496,7 @@
     "hubChatHeroSubtitle": "Review chatbot conversations (webhook sync). Full transcripts stay on Fastbots.",
     "hubChatTitle": "Chat History (Fastbots)",
     "hubChatHint": "Conversations sync when Fastbots creates/updates a contact (messages included in the payload). Times in UTC+7.",
-    "hubChatScopeNote": "Fastbots only pushes contacts via webhook — there is no API to list full Chat History. Older Fastbots chats appear here only after a contact create/update (or webhook Test).",
+    "hubChatScopeNote": "Chats via the WeWIN website widget sync message-by-message. Messenger/Fanpage and chats that only live on Fastbots still need Contact webhooks or the Fastbots dashboard.",
     "hubChatBackfill": "Split chats from webhook",
     "hubChatBackfilling": "Splitting chats…",
     "hubChatBackfillFailed": "Could not split chats from webhook payloads.",
@@ -1505,7 +1510,7 @@
     "hubChatSearchPlaceholder": "Search name, email, or last message",
     "hubChatFilterStatus": "Filter status",
     "hubChatStatusAll": "All statuses",
-    "hubChatEmpty": "No conversations yet. Configure the Fastbots webhook or open the Fastbots dashboard.",
+    "hubChatEmpty": "No conversations yet. New/updated Fastbots contacts (or a webhook Test) will appear here.",
     "hubChatColContact": "Contact",
     "hubChatColChannel": "Channel",
     "hubChatColType": "Type",

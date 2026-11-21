@@ -52,7 +52,6 @@ export function HubFastbotsChats() {
   );
   const [detail, setDetail] = useState<FastbotsChatDetail | null>(null);
   const [detailLoading, setDetailLoading] = useState(false);
-  const [backfilling, setBackfilling] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -142,42 +141,6 @@ export function HubFastbotsChats() {
     [t, te],
   );
 
-  const runBackfill = useCallback(async () => {
-    setBackfilling(true);
-    setError(null);
-    try {
-      const res = await fetch("/api/admin/hub/fastbots-chats", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ backfill: true }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => null)) as {
-          code?: string;
-        } | null;
-        setError(
-          friendlyError(
-            body?.code,
-            t("hubChatBackfillFailed", "Không tách được hội thoại từ webhook."),
-            te,
-          ),
-        );
-        return;
-      }
-      await load();
-    } catch (err) {
-      setError(
-        friendlyError(
-          err,
-          t("hubChatBackfillFailed", "Không tách được hội thoại từ webhook."),
-          te,
-        ),
-      );
-    } finally {
-      setBackfilling(false);
-    }
-  }, [load, t, te]);
-
   const dashboardUrl = data?.config.dashboardUrl || "https://app.fastbots.ai/";
   const webhookConfigured = data?.config.webhookConfigured ?? false;
 
@@ -196,27 +159,15 @@ export function HubFastbotsChats() {
               )}
             </p>
           </div>
-          <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              disabled={backfilling}
-              onClick={() => void runBackfill()}
-              className="inline-flex min-h-10 items-center rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50 disabled:opacity-60"
-            >
-              {backfilling
-                ? t("hubChatBackfilling", "Đang tách hội thoại…")
-                : t("hubChatBackfill", "Tách hội thoại từ webhook")}
-            </button>
-            <a
-              href={dashboardUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50"
-            >
-              {t("hubChatOpenFastbots", "Mở Fastbots")}
-              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-            </a>
-          </div>
+          <a
+            href={dashboardUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50"
+          >
+            {t("hubChatOpenFastbots", "Mở Fastbots")}
+            <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+          </a>
         </div>
       </header>
 
@@ -326,7 +277,7 @@ export function HubFastbotsChats() {
                   <span className="mt-2 block">
                     {t(
                       "hubChatEmpty",
-                      "Chưa có hội thoại. Bấm Test webhook trên Fastbots hoặc Tách hội thoại từ webhook.",
+                      "Chưa có hội thoại. Contact mới/cập nhật trên Fastbots (hoặc Test webhook) sẽ hiện ở đây.",
                     )}
                   </span>
                 </td>

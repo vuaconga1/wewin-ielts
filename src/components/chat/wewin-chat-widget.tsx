@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 import { GripHorizontal, Minus, X } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
 import { trackChatOpen, trackLeadGeneration } from "@/lib/gtag";
+import { WewinChatPanel } from "@/components/chat/wewin-chat-panel";
 
 const FASTBOTS_BOT_ID = "cm6t5x0pl1e32svk4sez4rwwq";
-const CHAT_URL = `https://app.fastbots.ai/embed/${FASTBOTS_BOT_ID}`;
 const MASCOT_SRC = "/branding/wewin-mascot-hero.png";
 
 export const OPEN_CHAT_EVENT = "wewin:open-chat";
@@ -284,12 +284,7 @@ export function WewinChatWidget() {
               <Minus className="h-4 w-4" />
             </button>
           </header>
-          <iframe
-            src={CHAT_URL}
-            title={t("panelTitle", "Tư vấn WEWIN")}
-            allow="clipboard-write"
-            className={`min-h-0 w-full flex-1 border-0 bg-white ${dragging ? "pointer-events-none" : ""}`}
-          />
+          <WewinChatPanel dragging={dragging} />
         </section>
       ) : null}
     </>
