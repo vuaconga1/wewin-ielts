@@ -3,6 +3,7 @@ import { canAccessAdmin, getSessionUser } from "@/lib/auth";
 import { recordAuditEvent } from "@/lib/audit-log";
 import { fastbotsChatListQuerySchema } from "@/lib/fastbots/schemas";
 import {
+  backfillFastbotsConversationsFromRaw,
   listFastbotsConversations,
   upsertFastbotsWebhookPayload,
 } from "@/lib/fastbots/store";
@@ -13,12 +14,14 @@ export const runtime = "nodejs";
 
 const NO_STORE = { "Cache-Control": "private, no-store" };
 
-const ingestBodySchema = z.object({
-  items: z
-    .array(z.record(z.string(), z.unknown()))
-    .min(1)
-    .max(100),
-});
+const ingestBodySchema = z.union([
+  z.object({
+    items: z.array(z.record(z.string(), z.unknown())).min(1).max(100),
+  }),
+  z.object({
+    backfill: z.literal(true),
+  }),
+]);
 
 export async function GET(request: Request) {
   const user = await getSessionUser();
@@ -79,7 +82,26 @@ export async function POST(request: Request) {
   if (!parsed.ok) return parsed.response;
 
   try {
-    const result = await upsertFastbotsWebhookPayload(parsed.data.items);
+    if ("backfill" in parsed.data && parsed.data.backfill) {
+      const result = await backfillFastbotsConversationsFromRaw();
+      await recordAuditEvent({
+        actor: user,
+        action: "FASTBOTS_CHAT_INGEST",
+        request,
+        metadata: {
+          backfill: true,
+          processed: result.processed,
+          upserted: result.upserted,
+        },
+      });
+      return NextResponse.json(
+        { ok: true, ...result },
+        { status: 200, headers: NO_STORE },
+      );
+    }
+
+    const items = "items" in parsed.data ? parsed.data.items : [];
+    const result = await upsertFastbotsWebhookPayload(items);
     await recordAuditEvent({
       actor: user,
       action: "FASTBOTS_CHAT_INGEST",

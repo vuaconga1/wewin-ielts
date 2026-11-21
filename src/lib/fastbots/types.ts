@@ -1,4 +1,5 @@
 import type { FastbotsChatStatus } from "@/generated/prisma/client";
+import type { FastbotsMessage } from "@/lib/fastbots/normalize";
 
 export type FastbotsChatListItem = {
   id: string;
@@ -23,4 +24,9 @@ export type FastbotsChatListResult = {
     dashboardUrl: string;
     webhookPath: string;
   };
+};
+
+export type FastbotsChatDetail = FastbotsChatListItem & {
+  tags: string[];
+  messages: FastbotsMessage[];
 };

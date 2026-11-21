@@ -626,6 +626,12 @@
     "CLOSED": "Closed",
     "UNKNOWN": "Unknown"
   },
+  "fastbotsChatRoles": {
+    "visitor": "Visitor",
+    "bot": "Bot",
+    "agent": "Agent",
+    "unknown": "Other"
+  },
   "importJobStatus": {
     "PENDING": "Pending",
     "PARSING": "Parsing",
@@ -1484,7 +1490,15 @@
     "hubChatHeroTitle": "Chat History · Fastbots",
     "hubChatHeroSubtitle": "Review chatbot conversations (webhook sync). Full transcripts stay on Fastbots.",
     "hubChatTitle": "Chat History (Fastbots)",
-    "hubChatHint": "Conversations synced via Fastbots webhooks. Times shown in Vietnam time (UTC+7).",
+    "hubChatHint": "Conversations sync when Fastbots creates/updates a contact (messages included in the payload). Times in UTC+7.",
+    "hubChatScopeNote": "Fastbots only pushes contacts via webhook — there is no API to list full Chat History. Older Fastbots chats appear here only after a contact create/update (or webhook Test).",
+    "hubChatBackfill": "Split chats from webhook",
+    "hubChatBackfilling": "Splitting chats…",
+    "hubChatBackfillFailed": "Could not split chats from webhook payloads.",
+    "hubChatDetailTitle": "Conversation detail",
+    "hubChatDetailClose": "Close",
+    "hubChatDetailFailed": "Could not open conversation.",
+    "hubChatNoMessages": "No messages in this webhook payload yet.",
     "hubChatOpenFastbots": "Open Fastbots",
     "hubChatWebhookPending": "Fastbots webhook is not configured on the server.",
     "hubChatWebhookHelp": "Set FASTBOTS_WEBHOOK_SECRET (≥16 chars) in env, then in Fastbots → Contacts → Contact Settings set Endpoint URL to {path}?secret=<secret> (Active on).",

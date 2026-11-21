@@ -626,6 +626,12 @@
     "CLOSED": "Đã đóng",
     "UNKNOWN": "Chưa rõ"
   },
+  "fastbotsChatRoles": {
+    "visitor": "Khách",
+    "bot": "Bot",
+    "agent": "Nhân viên",
+    "unknown": "Khác"
+  },
   "importJobStatus": {
     "PENDING": "Chờ xử lý",
     "PARSING": "Đang phân tích",
@@ -1484,7 +1490,15 @@
     "hubChatHeroTitle": "Chat History · Fastbots",
     "hubChatHeroSubtitle": "Xem hội thoại chatbot tư vấn (đồng bộ webhook). Chi tiết đầy đủ vẫn trên Fastbots.",
     "hubChatTitle": "Chat History (Fastbots)",
-    "hubChatHint": "Danh sách hội thoại đồng bộ qua webhook Fastbots. Thời gian theo giờ Việt Nam (UTC+7).",
+    "hubChatHint": "Hội thoại đồng bộ khi Fastbots tạo/cập nhật contact (kèm tin nhắn trong payload). Thời gian UTC+7.",
+    "hubChatScopeNote": "Fastbots chỉ đẩy contact qua webhook — không có API list toàn bộ Chat History. Hội thoại cũ trên Fastbots chỉ hiện ở đây sau khi contact được tạo/cập nhật (hoặc Test webhook).",
+    "hubChatBackfill": "Tách hội thoại từ webhook",
+    "hubChatBackfilling": "Đang tách hội thoại…",
+    "hubChatBackfillFailed": "Không tách được hội thoại từ webhook.",
+    "hubChatDetailTitle": "Chi tiết hội thoại",
+    "hubChatDetailClose": "Đóng",
+    "hubChatDetailFailed": "Không mở được hội thoại.",
+    "hubChatNoMessages": "Chưa có tin nhắn trong payload webhook này.",
     "hubChatOpenFastbots": "Mở Fastbots",
     "hubChatWebhookPending": "Chưa cấu hình webhook Fastbots trên server.",
     "hubChatWebhookHelp": "Thêm FASTBOTS_WEBHOOK_SECRET (≥16 ký tự) vào env, rồi trong Fastbots → Contacts → Contact Settings đặt Endpoint URL: {path}?secret=<secret> (bật Active).",
