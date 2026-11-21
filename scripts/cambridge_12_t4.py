@@ -70,16 +70,7 @@ Questions 15–20
 Label the map below.
 Write the correct letter, A–I, next to Questions 15–20.
 
-Art and History in the Sheepmarket
-
-![Art and History in the Sheepmarket](/uploads/images/test-30-map.png)
-
-15 The Reynolds House
-16 The Thumb
-17 The Museum
-18 The Contemporary Art Gallery
-19 The Warner Gallery
-20 Nucleus"""
+Art and History in the Sheepmarket"""
 
     map_options = [
         {"label": "A", "text": "Location A"},
@@ -92,18 +83,26 @@ Art and History in the Sheepmarket
         {"label": "H", "text": "Location H"},
         {"label": "I", "text": "Location I"},
     ]
+    map_image = "/uploads/images/test-30-map.png"
+    map_content = lambda stem: {
+        "stem": stem,
+        "options": map_options,
+        "imageUrl": map_image,
+        "blank": True,
+        "variant": "MAP_LABELING",
+    }
 
     s2_questions = [
         {"number": 11, "order": 10, "type": "MULTIPLE_CHOICE", "content": {"stem": "Which is the most rapidly-growing group of residents in the Sheepmarket area?", "options": [{"label": "A", "text": "young professional people"}, {"label": "B", "text": "students from the university"}, {"label": "C", "text": "employees in the local market"}]}, "correctAnswer": "A"},
         {"number": 12, "order": 11, "type": "MULTIPLE_CHOICE", "content": {"stem": "The speaker recommends the side streets in the Sheepmarket for their", "options": [{"label": "A", "text": "international restaurants."}, {"label": "B", "text": "historical buildings."}, {"label": "C", "text": "arts and crafts."}]}, "correctAnswer": "C"},
         {"number": 13, "order": 12, "type": "MULTIPLE_CHOICE", "content": {"stem": "Clothes designed by entrants for the Young Fashion competition must", "options": [{"label": "A", "text": "be modelled by the designers themselves."}, {"label": "B", "text": "be inspired by aspects of contemporary culture."}, {"label": "C", "text": "be made from locally produced materials."}]}, "correctAnswer": "B"},
         {"number": 14, "order": 13, "type": "MULTIPLE_CHOICE", "content": {"stem": "Car parking is free in some car parks if you", "options": [{"label": "A", "text": "stay for less than an hour."}, {"label": "B", "text": "buy something in the shops."}, {"label": "C", "text": "park in the evenings or at weekends."}]}, "correctAnswer": "B"},
-        {"number": 15, "order": 14, "type": "MATCHING", "content": {"stem": "The Reynolds House", "options": map_options}, "correctAnswer": "H"},
-        {"number": 16, "order": 15, "type": "MATCHING", "content": {"stem": "The Thumb", "options": map_options}, "correctAnswer": "C"},
-        {"number": 17, "order": 16, "type": "MATCHING", "content": {"stem": "The Museum", "options": map_options}, "correctAnswer": "F"},
-        {"number": 18, "order": 17, "type": "MATCHING", "content": {"stem": "The Contemporary Art Gallery", "options": map_options}, "correctAnswer": "G"},
-        {"number": 19, "order": 18, "type": "MATCHING", "content": {"stem": "The Warner Gallery", "options": map_options}, "correctAnswer": "I"},
-        {"number": 20, "order": 19, "type": "MATCHING", "content": {"stem": "Nucleus", "options": map_options}, "correctAnswer": "B"},
+        {"number": 15, "order": 14, "type": "MAP_LABELING", "mediaUrl": map_image, "content": map_content("The Reynolds House"), "correctAnswer": "H"},
+        {"number": 16, "order": 15, "type": "MAP_LABELING", "mediaUrl": map_image, "content": map_content("The Thumb"), "correctAnswer": "C"},
+        {"number": 17, "order": 16, "type": "MAP_LABELING", "mediaUrl": map_image, "content": map_content("The Museum"), "correctAnswer": "F"},
+        {"number": 18, "order": 17, "type": "MAP_LABELING", "mediaUrl": map_image, "content": map_content("The Contemporary Art Gallery"), "correctAnswer": "G"},
+        {"number": 19, "order": 18, "type": "MAP_LABELING", "mediaUrl": map_image, "content": map_content("The Warner Gallery"), "correctAnswer": "I"},
+        {"number": 20, "order": 19, "type": "MAP_LABELING", "mediaUrl": map_image, "content": map_content("Nucleus"), "correctAnswer": "B"},
     ]
 
     s3_content = """Questions 21–24
@@ -222,7 +221,14 @@ Virtual reality programs
         "tags": ["#IELTS Academic", "#Listening"],
         "parts": [
             {"title": "Section 1", "order": 0, "audioUrl": "/uploads/audio/test-30-section-1.mp3", "content": s1_content, "questions": s1_questions},
-            {"title": "Section 2", "order": 1, "audioUrl": "/uploads/audio/test-30-section-2.mp3", "content": s2_content, "questions": s2_questions},
+            {
+                "title": "Section 2",
+                "order": 1,
+                "audioUrl": "/uploads/audio/test-30-section-2.mp3",
+                "imageUrl": map_image,
+                "content": s2_content,
+                "questions": s2_questions,
+            },
             {"title": "Section 3", "order": 2, "audioUrl": "/uploads/audio/test-30-section-3.mp3", "content": s3_content, "questions": s3_questions},
             {"title": "Section 4", "order": 3, "audioUrl": "/uploads/audio/test-30-section-4.mp3", "content": s4_content, "questions": s4_questions},
         ]

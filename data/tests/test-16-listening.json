@@ -582,7 +582,7 @@
     {
       "title": "Section 3",
       "order": 2,
-      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO pieces of information surprised the students during the sessions on food safety?\nA the rise in obesity rates\nB the variety of diseases caused by food\nC the lack of control over packaging\nD the waste of out-of-date food\nE the transmission of antibiotics into humans\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO things did the students find particularly useful in the visiting lecturers' presentations?\nA learning about food fraud\nB understanding food safety laws\nC the focus on people with specific diets\nD the examples of poor labelling\nE the discussion on international standards\n\nQuestions 25 and 26\nChoose TWO letters, A–E.\nWhich TWO aspects of the nutrition project did the students think were most successful?\nA the cooperation among team members\nB the quality of the visual data\nC the relevance of the findings to local people\nD the depth of the initial research\nE the variety of age groups involved\n\nQuestions 27–30\nComplete the flow-chart below.\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 27–30.\n\nA create questions\nB analyze data\nC decide focus\nD select participants\nE test pilot survey\nF choose platform\n\nCreating an online survey\nFirst step: 27 ...............\nNext: 28 ...............\nThen: 29 ...............\nFinally: 30 ...............",
+      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO facts in the sessions on food safety were new information for Nadia and Fergus?\nA the amount of plastic in the ocean\nB the number of diseases caused by contaminated food\nC the amount of food that is wasted\nD the number of people who are obese\nE the result of treating animals with antibiotics\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO features of a project aiming to prevent food fraud impressed Fergus?\nA the new technology it used\nB the publicity it received\nC the use of multiple tests on food items\nD the variety of dietary requirements included\nE the way information was made widely accessible\n\nQuestions 25 and 26\nChoose TWO letters, A–E.\nWhich TWO topics do both students recommend should be included in the course?\nA sustainable fishing\nB targeted nutrition\nC global differences in consumption\nD sustainable agriculture\nE digital technology and food\n\nQuestions 27–30\nComplete the flow-chart below.\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 27–30.\n\nA This was challenging but enjoyable.\nB This led to some disagreement.\nC This was easy to decide on.\nD This was helped by the guidelines provided.\nE This seemed like an unnecessary stage.\nF This involved selecting a new ingredient.\n\nStudent project: developing a new food product\nInitial aim\n27 ............................................\nLiterature review\n28 ............................................\nProduct development\n29 ............................................\nProduct production\n30 ............................................",
       "meta": {
         "audioUrl": "/uploads/audio/test-16-section-3.mp3"
       },
@@ -592,27 +592,27 @@
           "order": 0,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO pieces of information surprised the students during the sessions on food safety?",
+            "stem": "Which TWO facts in the sessions on food safety were new information for Nadia and Fergus?",
             "options": [
               {
                 "label": "A",
-                "text": "the rise in obesity rates"
+                "text": "the amount of plastic in the ocean"
               },
               {
                 "label": "B",
-                "text": "the variety of diseases caused by food"
+                "text": "the number of diseases caused by contaminated food"
               },
               {
                 "label": "C",
-                "text": "the lack of control over packaging"
+                "text": "the amount of food that is wasted"
               },
               {
                 "label": "D",
-                "text": "the waste of out-of-date food"
+                "text": "the number of people who are obese"
               },
               {
                 "label": "E",
-                "text": "the transmission of antibiotics into humans"
+                "text": "the result of treating animals with antibiotics"
               }
             ],
             "selectCount": 2,
@@ -646,27 +646,27 @@
           "order": 2,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO things did the students find particularly useful in the visiting lecturers' presentations?",
+            "stem": "Which TWO features of a project aiming to prevent food fraud impressed Fergus?",
             "options": [
               {
                 "label": "A",
-                "text": "learning about food fraud"
+                "text": "the new technology it used"
               },
               {
                 "label": "B",
-                "text": "understanding food safety laws"
+                "text": "the publicity it received"
               },
               {
                 "label": "C",
-                "text": "the focus on people with specific diets"
+                "text": "the use of multiple tests on food items"
               },
               {
                 "label": "D",
-                "text": "the examples of poor labelling"
+                "text": "the variety of dietary requirements included"
               },
               {
                 "label": "E",
-                "text": "the discussion on international standards"
+                "text": "the way information was made widely accessible"
               }
             ],
             "selectCount": 2,
@@ -700,27 +700,27 @@
           "order": 4,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO aspects of the nutrition project did the students think were most successful?",
+            "stem": "Which TWO topics do both students recommend should be included in the course?",
             "options": [
               {
                 "label": "A",
-                "text": "the cooperation among team members"
+                "text": "sustainable fishing"
               },
               {
                 "label": "B",
-                "text": "the quality of the visual data"
+                "text": "targeted nutrition"
               },
               {
                 "label": "C",
-                "text": "the relevance of the findings to local people"
+                "text": "global differences in consumption"
               },
               {
                 "label": "D",
-                "text": "the depth of the initial research"
+                "text": "sustainable agriculture"
               },
               {
                 "label": "E",
-                "text": "the variety of age groups involved"
+                "text": "digital technology and food"
               }
             ],
             "selectCount": 2,
@@ -754,31 +754,31 @@
           "order": 6,
           "type": "MATCHING",
           "content": {
-            "stem": "First step: ________",
+            "stem": "Initial aim",
             "options": [
               {
                 "label": "A",
-                "text": "create questions"
+                "text": "This was challenging but enjoyable."
               },
               {
                 "label": "B",
-                "text": "analyze data"
+                "text": "This led to some disagreement."
               },
               {
                 "label": "C",
-                "text": "decide focus"
+                "text": "This was easy to decide on."
               },
               {
                 "label": "D",
-                "text": "select participants"
+                "text": "This was helped by the guidelines provided."
               },
               {
                 "label": "E",
-                "text": "test pilot survey"
+                "text": "This seemed like an unnecessary stage."
               },
               {
                 "label": "F",
-                "text": "choose platform"
+                "text": "This involved selecting a new ingredient."
               }
             ]
           },
@@ -789,31 +789,31 @@
           "order": 7,
           "type": "MATCHING",
           "content": {
-            "stem": "Next: ________",
+            "stem": "Literature review",
             "options": [
               {
                 "label": "A",
-                "text": "create questions"
+                "text": "This was challenging but enjoyable."
               },
               {
                 "label": "B",
-                "text": "analyze data"
+                "text": "This led to some disagreement."
               },
               {
                 "label": "C",
-                "text": "decide focus"
+                "text": "This was easy to decide on."
               },
               {
                 "label": "D",
-                "text": "select participants"
+                "text": "This was helped by the guidelines provided."
               },
               {
                 "label": "E",
-                "text": "test pilot survey"
+                "text": "This seemed like an unnecessary stage."
               },
               {
                 "label": "F",
-                "text": "choose platform"
+                "text": "This involved selecting a new ingredient."
               }
             ]
           },
@@ -824,31 +824,31 @@
           "order": 8,
           "type": "MATCHING",
           "content": {
-            "stem": "Then: ________",
+            "stem": "Product development",
             "options": [
               {
                 "label": "A",
-                "text": "create questions"
+                "text": "This was challenging but enjoyable."
               },
               {
                 "label": "B",
-                "text": "analyze data"
+                "text": "This led to some disagreement."
               },
               {
                 "label": "C",
-                "text": "decide focus"
+                "text": "This was easy to decide on."
               },
               {
                 "label": "D",
-                "text": "select participants"
+                "text": "This was helped by the guidelines provided."
               },
               {
                 "label": "E",
-                "text": "test pilot survey"
+                "text": "This seemed like an unnecessary stage."
               },
               {
                 "label": "F",
-                "text": "choose platform"
+                "text": "This involved selecting a new ingredient."
               }
             ]
           },
@@ -859,31 +859,31 @@
           "order": 9,
           "type": "MATCHING",
           "content": {
-            "stem": "Finally: ________",
+            "stem": "Product production",
             "options": [
               {
                 "label": "A",
-                "text": "create questions"
+                "text": "This was challenging but enjoyable."
               },
               {
                 "label": "B",
-                "text": "analyze data"
+                "text": "This led to some disagreement."
               },
               {
                 "label": "C",
-                "text": "decide focus"
+                "text": "This was easy to decide on."
               },
               {
                 "label": "D",
-                "text": "select participants"
+                "text": "This was helped by the guidelines provided."
               },
               {
                 "label": "E",
-                "text": "test pilot survey"
+                "text": "This seemed like an unnecessary stage."
               },
               {
                 "label": "F",
-                "text": "choose platform"
+                "text": "This involved selecting a new ingredient."
               }
             ]
           },
@@ -894,7 +894,7 @@
     {
       "title": "Section 4",
       "order": 3,
-      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nSustainable tourism\nEnvironmental impact of mass tourism\n• 31 ............... from cruise ships is a major concern\n• Some islands have introduced a tourist 32 ............... to pay for conservation work\n\nLocal economic benefits\n• In some areas, traditional agriculture (e.g. producing 33 ...............) has received support\n• The 34 ............... of flights can affect how much money remains in local communities\n• High accommodation 35 ............... often benefits foreign hotel chains rather than residents\n\nResponsible tourist behaviour\n• Tour operators must enforce strict 36 ............... regarding wildlife observation\n• Coral reefs: tourists should avoid touching reefs during 37 ............... excursions\n• Eating locally: visitors are encouraged to choose 38 ............... options to reduce environmental footprint\n• In remote villages, free 39 ............... access should not be expected\n• Travellers are requested not to share 40 ............... showing sensitive sacred sites on social media",
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nChallenges facing the cruise ship industry\nProblems with overtourism\n• 31 ............................................ is one of the worst problems.\n• A tourist 32 ............................................ is being introduced in some cities to reduce numbers, e.g. Barcelona.\n• Bruges: action was taken to limit day trips from the nearby port because the city was becoming a 'theme park' (e.g. many shops were only stocking 33 ............................................ and souvenirs).\n• Dubrovnik: limits the number of tourists by managing the 34 ............................................ of cruise ship arrivals.\n\nProblems of perception\n• Cruises are generally associated with the elderly.\n• There is an assumption about the 35 ............................................ of cruises.\n• People think there may be too many 36 ............................................ .\n\nSolutions\nCruise lines are attracting younger customers by:\n• becoming more sustainable e.g. using hybrid engines.\n• having a wide range of activities e.g. boxing, 37 ............................................ and well-being programmes.\n• offering a diverse selection of food including 38 ............................................ options.\n• providing reliable 39 ............................................ .\n• improving marketing on social media with high quality 40 ............................................ .",
       "meta": {
         "audioUrl": "/uploads/audio/test-16-section-4.mp3"
       },
@@ -904,17 +904,21 @@
           "order": 0,
           "type": "GAP_FILL",
           "content": {
-            "stem": "________ from cruise ships is a major concern",
+            "stem": "________ is one of the worst problems.",
             "blank": true
           },
-          "correctAnswer": "Pollution"
+          "correctAnswer": "pollution",
+          "acceptableAnswers": [
+            "pollution",
+            "Pollution"
+          ]
         },
         {
           "number": 32,
           "order": 1,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Some islands have introduced a tourist ________ to pay for conservation work",
+            "stem": "A tourist ________ is being introduced in some cities to reduce numbers, e.g. Barcelona.",
             "blank": true
           },
           "correctAnswer": "tax"
@@ -924,7 +928,7 @@
           "order": 2,
           "type": "GAP_FILL",
           "content": {
-            "stem": "traditional agriculture (e.g. producing ________) has received support",
+            "stem": "Bruges: many shops were only stocking ________ and souvenirs.",
             "blank": true
           },
           "correctAnswer": "chocolate"
@@ -934,7 +938,7 @@
           "order": 3,
           "type": "GAP_FILL",
           "content": {
-            "stem": "The ________ of flights can affect how much money remains in local communities",
+            "stem": "Dubrovnik: limits the number of tourists by managing the ________ of cruise ship arrivals.",
             "blank": true
           },
           "correctAnswer": "timing"
@@ -944,7 +948,7 @@
           "order": 4,
           "type": "GAP_FILL",
           "content": {
-            "stem": "High accommodation ________ often benefits foreign hotel chains",
+            "stem": "There is an assumption about the ________ of cruises.",
             "blank": true
           },
           "correctAnswer": "cost"
@@ -954,7 +958,7 @@
           "order": 5,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Tour operators must enforce strict ________ regarding wildlife observation",
+            "stem": "People think there may be too many ________ .",
             "blank": true
           },
           "correctAnswer": "rules"
@@ -964,7 +968,7 @@
           "order": 6,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Coral reefs: tourists should avoid touching reefs during ________ excursions",
+            "stem": "having a wide range of activities e.g. boxing, ________ and well-being programmes.",
             "blank": true
           },
           "correctAnswer": "diving"
@@ -974,7 +978,7 @@
           "order": 7,
           "type": "GAP_FILL",
           "content": {
-            "stem": "visitors are encouraged to choose ________ options",
+            "stem": "offering a diverse selection of food including ________ options.",
             "blank": true
           },
           "correctAnswer": "vegan"
@@ -984,17 +988,23 @@
           "order": 8,
           "type": "GAP_FILL",
           "content": {
-            "stem": "In remote villages, free ________ access should not be expected",
+            "stem": "providing reliable ________ .",
             "blank": true
           },
-          "correctAnswer": "wifi"
+          "correctAnswer": "wifi",
+          "acceptableAnswers": [
+            "wifi",
+            "Wi-Fi",
+            "wi-fi",
+            "WiFi"
+          ]
         },
         {
           "number": 40,
           "order": 9,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Travellers are requested not to share ________ showing sensitive sacred sites",
+            "stem": "improving marketing on social media with high quality ________ .",
             "blank": true
           },
           "correctAnswer": "videos"

@@ -126,7 +126,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11–14\nChoose the correct letter, A, B or C.\n\nVisiting the Sheepmarket area\n11 Which is the most rapidly-growing group of residents in the Sheepmarket area?\nA young professional people\nB students from the university\nC employees in the local market\n\n12 The speaker recommends the side streets in the Sheepmarket for their\nA international restaurants.\nB historical buildings.\nC arts and crafts.\n\n13 Clothes designed by entrants for the Young Fashion competition must\nA be modelled by the designers themselves.\nB be inspired by aspects of contemporary culture.\nC be made from locally produced materials.\n\n14 Car parking is free in some car parks if you\nA stay for less than an hour.\nB buy something in the shops.\nC park in the evenings or at weekends.\n\nQuestions 15–20\nLabel the map below.\nWrite the correct letter, A–I, next to Questions 15–20.\n\nArt and History in the Sheepmarket\n\n![Art and History in the Sheepmarket](/uploads/images/test-30-map.png)\n\n15 The Reynolds House\n16 The Thumb\n17 The Museum\n18 The Contemporary Art Gallery\n19 The Warner Gallery\n20 Nucleus",
+      "content": "Questions 11–14\nChoose the correct letter, A, B or C.\n\nVisiting the Sheepmarket area\n11 Which is the most rapidly-growing group of residents in the Sheepmarket area?\nA young professional people\nB students from the university\nC employees in the local market\n\n12 The speaker recommends the side streets in the Sheepmarket for their\nA international restaurants.\nB historical buildings.\nC arts and crafts.\n\n13 Clothes designed by entrants for the Young Fashion competition must\nA be modelled by the designers themselves.\nB be inspired by aspects of contemporary culture.\nC be made from locally produced materials.\n\n14 Car parking is free in some car parks if you\nA stay for less than an hour.\nB buy something in the shops.\nC park in the evenings or at weekends.\n\nQuestions 15–20\nLabel the map below.\nWrite the correct letter, A–I, next to Questions 15–20.\n\nArt and History in the Sheepmarket",
       "questions": [
         {
           "number": 11,
@@ -223,7 +223,7 @@
         {
           "number": 15,
           "order": 14,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
             "stem": "The Reynolds House",
             "options": [
@@ -263,14 +263,18 @@
                 "label": "I",
                 "text": "Location I"
               }
-            ]
+            ],
+            "imageUrl": "/uploads/images/test-30-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "H"
+          "correctAnswer": "H",
+          "mediaUrl": "/uploads/images/test-30-map.png"
         },
         {
           "number": 16,
           "order": 15,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
             "stem": "The Thumb",
             "options": [
@@ -310,14 +314,18 @@
                 "label": "I",
                 "text": "Location I"
               }
-            ]
+            ],
+            "imageUrl": "/uploads/images/test-30-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "C"
+          "correctAnswer": "C",
+          "mediaUrl": "/uploads/images/test-30-map.png"
         },
         {
           "number": 17,
           "order": 16,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
             "stem": "The Museum",
             "options": [
@@ -357,14 +365,18 @@
                 "label": "I",
                 "text": "Location I"
               }
-            ]
+            ],
+            "imageUrl": "/uploads/images/test-30-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "F"
+          "correctAnswer": "F",
+          "mediaUrl": "/uploads/images/test-30-map.png"
         },
         {
           "number": 18,
           "order": 17,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
             "stem": "The Contemporary Art Gallery",
             "options": [
@@ -404,14 +416,18 @@
                 "label": "I",
                 "text": "Location I"
               }
-            ]
+            ],
+            "imageUrl": "/uploads/images/test-30-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "G"
+          "correctAnswer": "G",
+          "mediaUrl": "/uploads/images/test-30-map.png"
         },
         {
           "number": 19,
           "order": 18,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
             "stem": "The Warner Gallery",
             "options": [
@@ -451,14 +467,18 @@
                 "label": "I",
                 "text": "Location I"
               }
-            ]
+            ],
+            "imageUrl": "/uploads/images/test-30-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "I"
+          "correctAnswer": "I",
+          "mediaUrl": "/uploads/images/test-30-map.png"
         },
         {
           "number": 20,
           "order": 19,
-          "type": "MATCHING",
+          "type": "MAP_LABELING",
           "content": {
             "stem": "Nucleus",
             "options": [
@@ -498,13 +518,19 @@
                 "label": "I",
                 "text": "Location I"
               }
-            ]
+            ],
+            "imageUrl": "/uploads/images/test-30-map.png",
+            "blank": true,
+            "variant": "MAP_LABELING"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "B",
+          "mediaUrl": "/uploads/images/test-30-map.png"
         }
       ],
       "meta": {
-        "audioUrl": "/uploads/audio/test-30-section-2.mp3"
+        "audioUrl": "/uploads/audio/test-30-section-2.mp3",
+        "imageUrl": "/uploads/images/test-30-map.png",
+        "mediaUrl": "/uploads/images/test-30-map.png"
       }
     },
     {

@@ -1,0 +1,141 @@
+{
+  "title": "Test 16.C21.02 - Speaking",
+  "slug": "test-16-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "description": "IELTS Academic Speaking practice test 16 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How well do you know the capital city of your country?",
+            "topic": "Cities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you think cities are exciting places to live?",
+            "topic": "Cities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do some people dislike living in a city?",
+            "topic": "Cities",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "If you could visit any city in the world, where would you go?",
+            "topic": "Cities",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe a time when you read or heard something that you thought was not true.\n\nYou should say:\n• where you read/heard this\n• what you read/heard\n• why you thought it was not true\nand explain how you felt about reading/hearing this thing that you thought was not true.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 6,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you think children are more honest than adults?",
+            "topic": "Honesty and children",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 7,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do adults tell children it's important to be honest?",
+            "topic": "Honesty and children",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 8,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you think there are sometimes good reasons for adults not to tell children the truth?",
+            "topic": "Honesty and children",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 9,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Are there any claims in advertisements that are sometimes not true?",
+            "topic": "Honesty and advertising",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 10,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do people still buy things even when they know advertisements aren't completely accurate?",
+            "topic": "Honesty and advertising",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 11,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you think advertisements that are dishonest should be banned?",
+            "topic": "Honesty and advertising",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

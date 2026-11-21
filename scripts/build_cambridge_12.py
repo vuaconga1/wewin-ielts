@@ -30,11 +30,18 @@ def build_all():
         # Standardize parts
         for p_idx, part in enumerate(test.get("parts", [])):
             part["order"] = p_idx
+            if "meta" not in part or not isinstance(part["meta"], dict):
+                part["meta"] = {}
             if "audioUrl" in part:
-                audio_url = part.pop("audioUrl")
-                if "meta" not in part or not isinstance(part["meta"], dict):
-                    part["meta"] = {}
-                part["meta"]["audioUrl"] = audio_url
+                part["meta"]["audioUrl"] = part.pop("audioUrl")
+            if "imageUrl" in part:
+                image_url = part.pop("imageUrl")
+                part["meta"]["imageUrl"] = image_url
+                part["meta"]["mediaUrl"] = image_url
+            if "mediaUrl" in part:
+                part["meta"]["mediaUrl"] = part.pop("mediaUrl")
+                if "imageUrl" not in part["meta"]:
+                    part["meta"]["imageUrl"] = part["meta"]["mediaUrl"]
 
             # Ensure questions orders and numbers
             for q_idx, q in enumerate(part.get("questions", [])):

@@ -134,17 +134,18 @@ G headings
 H officials
 
 STAGES IN DOING A TOURISM CASE STUDY
+
 RESEARCH
 Locate and read relevant articles, noting key information and also 21 ...............
 Identify a problem or need
 Select interviewees – these may be site 22 ..............., visitors or city 23 ...............
 Prepare and carry out interviews. If possible, collect statistics.
 Check whether 24 ............... of interviewees can be used
-
+↓
 ANALYSIS
 Select relevant information and try to identify 25 ...............
 Decide on the best form of visuals
-
+↓
 WRITING THE CASE STUDY
 Give some background before writing the main sections
 Do NOT end with 26 ...............
@@ -184,13 +185,20 @@ C limit visitor numbers."""
         {"label": "H", "text": "officials"},
     ]
 
+    flow_q = lambda n, order, answer: {
+        "number": n,
+        "order": order,
+        "type": "MATCHING",
+        "content": {"stem": "", "options": flowchart_opts, "variant": "FLOW_CHART_COMPLETION"},
+        "correctAnswer": answer,
+    }
     s3_questions = [
-        {"number": 21, "order": 20, "type": "MATCHING", "content": {"stem": "Locate and read relevant articles, noting key information and also 21", "options": flowchart_opts}, "correctAnswer": "C"},
-        {"number": 22, "order": 21, "type": "MATCHING", "content": {"stem": "Select interviewees – these may be site 22", "options": flowchart_opts}, "correctAnswer": "E"},
-        {"number": 23, "order": 22, "type": "MATCHING", "content": {"stem": "or city 23", "options": flowchart_opts}, "correctAnswer": "H"},
-        {"number": 24, "order": 23, "type": "MATCHING", "content": {"stem": "Check whether 24 of interviewees can be used", "options": flowchart_opts}, "correctAnswer": "B"},
-        {"number": 25, "order": 24, "type": "MATCHING", "content": {"stem": "Select relevant information and try to identify 25", "options": flowchart_opts}, "correctAnswer": "A"},
-        {"number": 26, "order": 25, "type": "MATCHING", "content": {"stem": "Do NOT end with 26", "options": flowchart_opts}, "correctAnswer": "F"},
+        flow_q(21, 20, "C"),
+        flow_q(22, 21, "E"),
+        flow_q(23, 22, "H"),
+        flow_q(24, 23, "B"),
+        flow_q(25, 24, "A"),
+        flow_q(26, 25, "F"),
         {"number": 27, "order": 26, "type": "MULTIPLE_CHOICE", "content": {"stem": "Natalie and Dave agree one reason why so few people visit Horton Castle is that", "options": [{"label": "A", "text": "the publicity is poor."}, {"label": "B", "text": "it is difficult to get to."}, {"label": "C", "text": "there is little there of interest."}]}, "correctAnswer": "A"},
         {"number": 28, "order": 27, "type": "MULTIPLE_CHOICE", "content": {"stem": "Natalie and Dave agree that the greatest problem with a visitor centre could be", "options": [{"label": "A", "text": "covering the investment costs."}, {"label": "B", "text": "finding a big enough space for it."}, {"label": "C", "text": "dealing with planning restrictions."}]}, "correctAnswer": "C"},
         {"number": 29, "order": 28, "type": "MULTIPLE_CHOICE", "content": {"stem": "What does Dave say about conditions in the town of Horton?", "options": [{"label": "A", "text": "There is a lot of unemployment."}, {"label": "B", "text": "There are few people of working age."}, {"label": "C", "text": "There are opportunities for skilled workers."}]}, "correctAnswer": "B"},

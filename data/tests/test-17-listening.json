@@ -132,7 +132,7 @@
     {
       "title": "Section 2",
       "order": 1,
-      "content": "Questions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO facilities are available at the newly refurbished youth hostel?\nA a climbing wall\nB a heated swimming pool\nC a bicycle repair workshop\nD a laundry room\nE a communal kitchen\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO activities are recommended for rainy days?\nA visiting the transport museum\nB exploring the underground caverns\nC touring the woollen mill\nD attending a pottery workshop\nE watching a film at the historic cinema\n\nQuestions 15 and 16\nChoose the correct letter, A, B or C.\n\n15 Why is booking recommended for the guided walk along the gorge?\nA It is only offered on certain days of the week.\nB Group sizes are strictly limited.\nC The guide is an internationally known expert.\n\n16 What does the speaker say about public transport to the coastal nature reserve?\nA Buses run every fifteen minutes.\nB Tickets must be bought in advance online.\nC The service does not operate on Sundays.\n\nQuestions 17–20\nWhat should visitors bear in mind about each of the following attractions?\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 17–20.\n\nA Sturdy footwear is essential.\nB Entry is free for children under twelve.\nC Photography is prohibited inside the building.\nD It is advisable to bring warm clothing.\nE Mobile phone reception is unavailable.\nF Food cannot be purchased on site.\n\nAttractions\n17 High Crag Lighthouse\n18 Blackwood Forest Trail\n19 Old Watermill\n20 Beacon Hill Lookout",
+      "content": "Questions 11–20\nQuestions 11 and 12\nChoose TWO letters, A–E.\nWhich TWO explanations for the popularity of street food are given?\nA low price\nB locally sourced\nC freshly made\nD convenience\nE unusual food\n\nQuestions 13 and 14\nChoose TWO letters, A–E.\nWhich TWO places are recommended for new street food businesses?\nA music festivals\nB food markets\nC weddings\nD parties\nE parks\n\nQuestions 15 and 16\nChoose the correct letter, A, B or C.\n\n15 What does the speaker say about getting equipment for a street food business?\nA High quality equipment is a good investment.\nB It's best to buy second-hand equipment.\nC Renting equipment can be cheap.\n\n16 What advice is given about creating a product for a street food business?\nA Provide information about the ingredients.\nB It is important to have an original product.\nC The presentation is an important factor.\n\nQuestions 17–20\nWhat problem did the owners of each of the following street food businesses experience?\nChoose FOUR answers from the box and write the correct letter, A–F, next to Questions 17–20.\n\nProblems\nA Some ingredients were too expensive.\nB The meals took a long time to prepare.\nC They had no money for marketing.\nD It was difficult to get a permit to sell food.\nE A competitor was selling similar food in their area.\nF They worked very long hours.\n\nStreet food businesses\n17 Thai Basil\n18 Basque\n19 Lou's kitchen\n20 Chip Chop",
       "meta": {
         "audioUrl": "/uploads/audio/test-17-section-2.mp3"
       },
@@ -142,27 +142,27 @@
           "order": 0,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO facilities are available at the newly refurbished youth hostel?",
+            "stem": "Which TWO explanations for the popularity of street food are given?",
             "options": [
               {
                 "label": "A",
-                "text": "a climbing wall"
+                "text": "low price"
               },
               {
                 "label": "B",
-                "text": "a heated swimming pool"
+                "text": "locally sourced"
               },
               {
                 "label": "C",
-                "text": "a bicycle repair workshop"
+                "text": "freshly made"
               },
               {
                 "label": "D",
-                "text": "a laundry room"
+                "text": "convenience"
               },
               {
                 "label": "E",
-                "text": "a communal kitchen"
+                "text": "unusual food"
               }
             ],
             "selectCount": 2,
@@ -196,27 +196,27 @@
           "order": 2,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO activities are recommended for rainy days?",
+            "stem": "Which TWO places are recommended for new street food businesses?",
             "options": [
               {
                 "label": "A",
-                "text": "visiting the transport museum"
+                "text": "music festivals"
               },
               {
                 "label": "B",
-                "text": "exploring the underground caverns"
+                "text": "food markets"
               },
               {
                 "label": "C",
-                "text": "touring the woollen mill"
+                "text": "weddings"
               },
               {
                 "label": "D",
-                "text": "attending a pottery workshop"
+                "text": "parties"
               },
               {
                 "label": "E",
-                "text": "watching a film at the historic cinema"
+                "text": "parks"
               }
             ],
             "selectCount": 2,
@@ -250,19 +250,19 @@
           "order": 4,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Why is booking recommended for the guided walk along the gorge?",
+            "stem": "What does the speaker say about getting equipment for a street food business?",
             "options": [
               {
                 "label": "A",
-                "text": "It is only offered on certain days of the week."
+                "text": "High quality equipment is a good investment."
               },
               {
                 "label": "B",
-                "text": "Group sizes are strictly limited."
+                "text": "It's best to buy second-hand equipment."
               },
               {
                 "label": "C",
-                "text": "The guide is an internationally known expert."
+                "text": "Renting equipment can be cheap."
               }
             ]
           },
@@ -273,19 +273,19 @@
           "order": 5,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "What does the speaker say about public transport to the coastal nature reserve?",
+            "stem": "What advice is given about creating a product for a street food business?",
             "options": [
               {
                 "label": "A",
-                "text": "Buses run every fifteen minutes."
+                "text": "Provide information about the ingredients."
               },
               {
                 "label": "B",
-                "text": "Tickets must be bought in advance online."
+                "text": "It is important to have an original product."
               },
               {
                 "label": "C",
-                "text": "The service does not operate on Sundays."
+                "text": "The presentation is an important factor."
               }
             ]
           },
@@ -296,31 +296,31 @@
           "order": 6,
           "type": "MATCHING",
           "content": {
-            "stem": "High Crag Lighthouse",
+            "stem": "Thai Basil",
             "options": [
               {
                 "label": "A",
-                "text": "Sturdy footwear is essential."
+                "text": "Some ingredients were too expensive."
               },
               {
                 "label": "B",
-                "text": "Entry is free for children under twelve."
+                "text": "The meals took a long time to prepare."
               },
               {
                 "label": "C",
-                "text": "Photography is prohibited inside the building."
+                "text": "They had no money for marketing."
               },
               {
                 "label": "D",
-                "text": "It is advisable to bring warm clothing."
+                "text": "It was difficult to get a permit to sell food."
               },
               {
                 "label": "E",
-                "text": "Mobile phone reception is unavailable."
+                "text": "A competitor was selling similar food in their area."
               },
               {
                 "label": "F",
-                "text": "Food cannot be purchased on site."
+                "text": "They worked very long hours."
               }
             ]
           },
@@ -331,31 +331,31 @@
           "order": 7,
           "type": "MATCHING",
           "content": {
-            "stem": "Blackwood Forest Trail",
+            "stem": "Basque",
             "options": [
               {
                 "label": "A",
-                "text": "Sturdy footwear is essential."
+                "text": "Some ingredients were too expensive."
               },
               {
                 "label": "B",
-                "text": "Entry is free for children under twelve."
+                "text": "The meals took a long time to prepare."
               },
               {
                 "label": "C",
-                "text": "Photography is prohibited inside the building."
+                "text": "They had no money for marketing."
               },
               {
                 "label": "D",
-                "text": "It is advisable to bring warm clothing."
+                "text": "It was difficult to get a permit to sell food."
               },
               {
                 "label": "E",
-                "text": "Mobile phone reception is unavailable."
+                "text": "A competitor was selling similar food in their area."
               },
               {
                 "label": "F",
-                "text": "Food cannot be purchased on site."
+                "text": "They worked very long hours."
               }
             ]
           },
@@ -366,31 +366,31 @@
           "order": 8,
           "type": "MATCHING",
           "content": {
-            "stem": "Old Watermill",
+            "stem": "Lou's kitchen",
             "options": [
               {
                 "label": "A",
-                "text": "Sturdy footwear is essential."
+                "text": "Some ingredients were too expensive."
               },
               {
                 "label": "B",
-                "text": "Entry is free for children under twelve."
+                "text": "The meals took a long time to prepare."
               },
               {
                 "label": "C",
-                "text": "Photography is prohibited inside the building."
+                "text": "They had no money for marketing."
               },
               {
                 "label": "D",
-                "text": "It is advisable to bring warm clothing."
+                "text": "It was difficult to get a permit to sell food."
               },
               {
                 "label": "E",
-                "text": "Mobile phone reception is unavailable."
+                "text": "A competitor was selling similar food in their area."
               },
               {
                 "label": "F",
-                "text": "Food cannot be purchased on site."
+                "text": "They worked very long hours."
               }
             ]
           },
@@ -401,31 +401,31 @@
           "order": 9,
           "type": "MATCHING",
           "content": {
-            "stem": "Beacon Hill Lookout",
+            "stem": "Chip Chop",
             "options": [
               {
                 "label": "A",
-                "text": "Sturdy footwear is essential."
+                "text": "Some ingredients were too expensive."
               },
               {
                 "label": "B",
-                "text": "Entry is free for children under twelve."
+                "text": "The meals took a long time to prepare."
               },
               {
                 "label": "C",
-                "text": "Photography is prohibited inside the building."
+                "text": "They had no money for marketing."
               },
               {
                 "label": "D",
-                "text": "It is advisable to bring warm clothing."
+                "text": "It was difficult to get a permit to sell food."
               },
               {
                 "label": "E",
-                "text": "Mobile phone reception is unavailable."
+                "text": "A competitor was selling similar food in their area."
               },
               {
                 "label": "F",
-                "text": "Food cannot be purchased on site."
+                "text": "They worked very long hours."
               }
             ]
           },
@@ -436,7 +436,7 @@
     {
       "title": "Section 3",
       "order": 2,
-      "content": "Questions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO properties of semi-synthetic fabrics make them popular in the fashion industry?\nA their resistance to tearing\nB their biodegradable nature\nC their ability to absorb bright dyes\nD their low manufacturing cost\nE their breathability in hot climates\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO environmental problems associated with viscose production do the students emphasize?\nA deforestation caused by harvesting raw timber\nB high energy use during spinning\nC microplastic shedding in domestic washing\nD toxic chemical release into rivers\nE excessive water consumption in processing\n\nQuestions 25–30\nWhat comment do the speakers make about each of the following semi-synthetic fibres?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 25–30.\n\nComments\nA It requires chemicals that are hard to neutralise.\nB It is made using a closed-loop solvent system.\nC It has superior fire resistance.\nD It is derived from waste agricultural products.\nE It has been banned in several European countries.\nF Its production is currently too expensive for mass markets.\nG It produces exceptionally smooth yarn.\nH It requires less land than conventional cotton.\n\nFibres\n25 Modal\n26 Lyocell (Tencel)\n27 Cupro\n28 Bamboo viscose\n29 Orange fibre\n30 Seaweed-based fabric",
+      "content": "Questions 21–30\nQuestions 21 and 22\nChoose TWO letters, A–E.\nWhich TWO points do the speakers make about the terms 'ethical' and 'sustainable' fashion?\nA Their definitions keep changing.\nB People think they mean the same thing.\nC The term 'eco-friendly' is preferable.\nD They are often used imprecisely.\nE Companies should avoid using them on clothing labels.\n\nQuestions 23 and 24\nChoose TWO letters, A–E.\nWhich TWO claims about wool production do the speakers disagree with?\nA Sheep are generally well-treated.\nB Wool is easy to recycle.\nC Wool is a long-lasting fabric.\nD Wool production involves few chemicals.\nE Sheep do less environmental damage than other livestock.\n\nQuestions 25–30\nWhat comment do the speakers make about each of the following semi-synthetic fabrics?\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 25–30.\n\nComments\nA The production process is fuel efficient.\nB It is the least sustainable of alternative fabrics.\nC Production costs are high.\nD It provides additional health benefits.\nE It is not durable in the long-term.\nF It needs to be produced in a certain way to be sustainable.\nG Chemicals required for production can be reused.\nH This is from a wholly sustainable source.\n\nSemi-synthetic fabrics\n25 Lyocell\n26 Cupro\n27 Bamboo\n28 EcoVero\n29 Cork\n30 Hemp",
       "meta": {
         "audioUrl": "/uploads/audio/test-17-section-3.mp3"
       },
@@ -446,27 +446,27 @@
           "order": 0,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO properties of semi-synthetic fabrics make them popular in the fashion industry?",
+            "stem": "Which TWO points do the speakers make about the terms 'ethical' and 'sustainable' fashion?",
             "options": [
               {
                 "label": "A",
-                "text": "their resistance to tearing"
+                "text": "Their definitions keep changing."
               },
               {
                 "label": "B",
-                "text": "their biodegradable nature"
+                "text": "People think they mean the same thing."
               },
               {
                 "label": "C",
-                "text": "their ability to absorb bright dyes"
+                "text": "The term 'eco-friendly' is preferable."
               },
               {
                 "label": "D",
-                "text": "their low manufacturing cost"
+                "text": "They are often used imprecisely."
               },
               {
                 "label": "E",
-                "text": "their breathability in hot climates"
+                "text": "Companies should avoid using them on clothing labels."
               }
             ],
             "selectCount": 2,
@@ -500,27 +500,27 @@
           "order": 2,
           "type": "MULTIPLE_CHOICE",
           "content": {
-            "stem": "Which TWO environmental problems associated with viscose production do the students emphasize?",
+            "stem": "Which TWO claims about wool production do the speakers disagree with?",
             "options": [
               {
                 "label": "A",
-                "text": "deforestation caused by harvesting raw timber"
+                "text": "Sheep are generally well-treated."
               },
               {
                 "label": "B",
-                "text": "high energy use during spinning"
+                "text": "Wool is easy to recycle."
               },
               {
                 "label": "C",
-                "text": "microplastic shedding in domestic washing"
+                "text": "Wool is a long-lasting fabric."
               },
               {
                 "label": "D",
-                "text": "toxic chemical release into rivers"
+                "text": "Wool production involves few chemicals."
               },
               {
                 "label": "E",
-                "text": "excessive water consumption in processing"
+                "text": "Sheep do less environmental damage than other livestock."
               }
             ],
             "selectCount": 2,
@@ -554,39 +554,39 @@
           "order": 4,
           "type": "MATCHING",
           "content": {
-            "stem": "Modal",
+            "stem": "Lyocell",
             "options": [
               {
                 "label": "A",
-                "text": "It requires chemicals that are hard to neutralise."
+                "text": "The production process is fuel efficient."
               },
               {
                 "label": "B",
-                "text": "It is made using a closed-loop solvent system."
+                "text": "It is the least sustainable of alternative fabrics."
               },
               {
                 "label": "C",
-                "text": "It has superior fire resistance."
+                "text": "Production costs are high."
               },
               {
                 "label": "D",
-                "text": "It is derived from waste agricultural products."
+                "text": "It provides additional health benefits."
               },
               {
                 "label": "E",
-                "text": "It has been banned in several European countries."
+                "text": "It is not durable in the long-term."
               },
               {
                 "label": "F",
-                "text": "Its production is currently too expensive for mass markets."
+                "text": "It needs to be produced in a certain way to be sustainable."
               },
               {
                 "label": "G",
-                "text": "It produces exceptionally smooth yarn."
+                "text": "Chemicals required for production can be reused."
               },
               {
                 "label": "H",
-                "text": "It requires less land than conventional cotton."
+                "text": "This is from a wholly sustainable source."
               }
             ]
           },
@@ -597,39 +597,39 @@
           "order": 5,
           "type": "MATCHING",
           "content": {
-            "stem": "Lyocell (Tencel)",
+            "stem": "Cupro",
             "options": [
               {
                 "label": "A",
-                "text": "It requires chemicals that are hard to neutralise."
+                "text": "The production process is fuel efficient."
               },
               {
                 "label": "B",
-                "text": "It is made using a closed-loop solvent system."
+                "text": "It is the least sustainable of alternative fabrics."
               },
               {
                 "label": "C",
-                "text": "It has superior fire resistance."
+                "text": "Production costs are high."
               },
               {
                 "label": "D",
-                "text": "It is derived from waste agricultural products."
+                "text": "It provides additional health benefits."
               },
               {
                 "label": "E",
-                "text": "It has been banned in several European countries."
+                "text": "It is not durable in the long-term."
               },
               {
                 "label": "F",
-                "text": "Its production is currently too expensive for mass markets."
+                "text": "It needs to be produced in a certain way to be sustainable."
               },
               {
                 "label": "G",
-                "text": "It produces exceptionally smooth yarn."
+                "text": "Chemicals required for production can be reused."
               },
               {
                 "label": "H",
-                "text": "It requires less land than conventional cotton."
+                "text": "This is from a wholly sustainable source."
               }
             ]
           },
@@ -640,39 +640,39 @@
           "order": 6,
           "type": "MATCHING",
           "content": {
-            "stem": "Cupro",
+            "stem": "Bamboo",
             "options": [
               {
                 "label": "A",
-                "text": "It requires chemicals that are hard to neutralise."
+                "text": "The production process is fuel efficient."
               },
               {
                 "label": "B",
-                "text": "It is made using a closed-loop solvent system."
+                "text": "It is the least sustainable of alternative fabrics."
               },
               {
                 "label": "C",
-                "text": "It has superior fire resistance."
+                "text": "Production costs are high."
               },
               {
                 "label": "D",
-                "text": "It is derived from waste agricultural products."
+                "text": "It provides additional health benefits."
               },
               {
                 "label": "E",
-                "text": "It has been banned in several European countries."
+                "text": "It is not durable in the long-term."
               },
               {
                 "label": "F",
-                "text": "Its production is currently too expensive for mass markets."
+                "text": "It needs to be produced in a certain way to be sustainable."
               },
               {
                 "label": "G",
-                "text": "It produces exceptionally smooth yarn."
+                "text": "Chemicals required for production can be reused."
               },
               {
                 "label": "H",
-                "text": "It requires less land than conventional cotton."
+                "text": "This is from a wholly sustainable source."
               }
             ]
           },
@@ -683,39 +683,39 @@
           "order": 7,
           "type": "MATCHING",
           "content": {
-            "stem": "Bamboo viscose",
+            "stem": "EcoVero",
             "options": [
               {
                 "label": "A",
-                "text": "It requires chemicals that are hard to neutralise."
+                "text": "The production process is fuel efficient."
               },
               {
                 "label": "B",
-                "text": "It is made using a closed-loop solvent system."
+                "text": "It is the least sustainable of alternative fabrics."
               },
               {
                 "label": "C",
-                "text": "It has superior fire resistance."
+                "text": "Production costs are high."
               },
               {
                 "label": "D",
-                "text": "It is derived from waste agricultural products."
+                "text": "It provides additional health benefits."
               },
               {
                 "label": "E",
-                "text": "It has been banned in several European countries."
+                "text": "It is not durable in the long-term."
               },
               {
                 "label": "F",
-                "text": "Its production is currently too expensive for mass markets."
+                "text": "It needs to be produced in a certain way to be sustainable."
               },
               {
                 "label": "G",
-                "text": "It produces exceptionally smooth yarn."
+                "text": "Chemicals required for production can be reused."
               },
               {
                 "label": "H",
-                "text": "It requires less land than conventional cotton."
+                "text": "This is from a wholly sustainable source."
               }
             ]
           },
@@ -726,39 +726,39 @@
           "order": 8,
           "type": "MATCHING",
           "content": {
-            "stem": "Orange fibre",
+            "stem": "Cork",
             "options": [
               {
                 "label": "A",
-                "text": "It requires chemicals that are hard to neutralise."
+                "text": "The production process is fuel efficient."
               },
               {
                 "label": "B",
-                "text": "It is made using a closed-loop solvent system."
+                "text": "It is the least sustainable of alternative fabrics."
               },
               {
                 "label": "C",
-                "text": "It has superior fire resistance."
+                "text": "Production costs are high."
               },
               {
                 "label": "D",
-                "text": "It is derived from waste agricultural products."
+                "text": "It provides additional health benefits."
               },
               {
                 "label": "E",
-                "text": "It has been banned in several European countries."
+                "text": "It is not durable in the long-term."
               },
               {
                 "label": "F",
-                "text": "Its production is currently too expensive for mass markets."
+                "text": "It needs to be produced in a certain way to be sustainable."
               },
               {
                 "label": "G",
-                "text": "It produces exceptionally smooth yarn."
+                "text": "Chemicals required for production can be reused."
               },
               {
                 "label": "H",
-                "text": "It requires less land than conventional cotton."
+                "text": "This is from a wholly sustainable source."
               }
             ]
           },
@@ -769,39 +769,39 @@
           "order": 9,
           "type": "MATCHING",
           "content": {
-            "stem": "Seaweed-based fabric",
+            "stem": "Hemp",
             "options": [
               {
                 "label": "A",
-                "text": "It requires chemicals that are hard to neutralise."
+                "text": "The production process is fuel efficient."
               },
               {
                 "label": "B",
-                "text": "It is made using a closed-loop solvent system."
+                "text": "It is the least sustainable of alternative fabrics."
               },
               {
                 "label": "C",
-                "text": "It has superior fire resistance."
+                "text": "Production costs are high."
               },
               {
                 "label": "D",
-                "text": "It is derived from waste agricultural products."
+                "text": "It provides additional health benefits."
               },
               {
                 "label": "E",
-                "text": "It has been banned in several European countries."
+                "text": "It is not durable in the long-term."
               },
               {
                 "label": "F",
-                "text": "Its production is currently too expensive for mass markets."
+                "text": "It needs to be produced in a certain way to be sustainable."
               },
               {
                 "label": "G",
-                "text": "It produces exceptionally smooth yarn."
+                "text": "Chemicals required for production can be reused."
               },
               {
                 "label": "H",
-                "text": "It requires less land than conventional cotton."
+                "text": "This is from a wholly sustainable source."
               }
             ]
           },
@@ -812,7 +812,7 @@
     {
       "title": "Section 4",
       "order": 3,
-      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nInvasive marine species\nIntroduction of alien species\n• Global shipping has accelerated the introduction of non-native organisms\n• Ballast water discharged into ports is a key pathway for spreading 31 ...............\n• Alien species disrupt the balance of the local 32 ...............\n\nCase studies\n• Mediterranean Sea:\n  Caulerpa taxifolia (alga) escaped from an aquarium and covered vast underwater areas\n  Spread was aided by recreational boats during the summer 33 ............... season\n• Caribbean lionfish:\n  Likely released by private owners of exotic 34 ...............\n  Voracious predators consuming juvenile reef fish in huge numbers\n• Comb jellies in the Black Sea:\n  Fed heavily on zooplankton, starving native anchovies\n  Damaged the commercial fishing industry and reduced local 35 ............... production\n\nControl and prevention strategies\n• Ballast water treatment:\n  Using filtration, heat, or ultraviolet 36 ............... before discharge\n• Biological control:\n  Careful introduction of a specific natural predator or 37 ............... to target pests\n• Monitoring and community science:\n  Tracking changes in marine species 38 ...............\n  Encouraging divers to upload sighting data to an online 39 ...............\n  Every record should include coordinates and a clear 40 ............... for verification",
+      "content": "Questions 31–40\nComplete the notes below.\nWrite ONE WORD ONLY for each answer.\n\nInvasive species\nDefinition: an animal or plant that causes harm to an environment after being introduced by humans\nAn invasive species can be a problem when it:\n• eats native species.\n• introduces a new 31 ..................................... .\n• takes food from native species.\n• threatens an entire 32 ..................................... .\n\nHow invasive species spread\n• accidentally e.g. via people returning from their 33 ..................................... or on cargo ships\n• intentionally e.g. for pest control, or as 34 .................................... .\n\nExamples of invasive species\n• Rhinella marina (toads)\n- were introduced to Australia from Hawaii in 1935 to eat a type of insect that was damaging the 35 ..................................... plantations.\n- failed to solve the problem and became widespread in the north of Australia.\n- are poisonous for any species that eats them and reduce the food available for native frogs.\n• Japanese knotweed plants were popular among 19th-century gardeners in the UK.\n• Rhododendron plants prevent 36 ..................................... from reaching native plants.\n• Grey squirrels from N. America reduce sources of food for the UK's native red squirrels and spread a 37 ..................................... that kills red squirrels.\n\nTackling invasive species\n• Monitoring helps us to understand the 38 ..................................... of invasive species and the impact they have.\n• Setting up a national 39 ..................................... makes it easier to track them.\n• Asking the public to 40 ..................................... and report them helps with monitoring.",
       "meta": {
         "audioUrl": "/uploads/audio/test-17-section-4.mp3"
       },
@@ -822,7 +822,7 @@
           "order": 0,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Ballast water is a key pathway for spreading ________",
+            "stem": "introduces a new ________ .",
             "blank": true
           },
           "correctAnswer": "disease"
@@ -832,7 +832,7 @@
           "order": 1,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Alien species disrupt the balance of the local ________",
+            "stem": "threatens an entire ________ .",
             "blank": true
           },
           "correctAnswer": "ecosystem"
@@ -842,7 +842,7 @@
           "order": 2,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Spread was aided by recreational boats during the summer ________ season",
+            "stem": "accidentally e.g. via people returning from their ________ or on cargo ships",
             "blank": true
           },
           "correctAnswer": "holiday",
@@ -857,7 +857,7 @@
           "order": 3,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Likely released by private owners of exotic ________",
+            "stem": "intentionally e.g. for pest control, or as ________ .",
             "blank": true
           },
           "correctAnswer": "pets"
@@ -867,7 +867,7 @@
           "order": 4,
           "type": "GAP_FILL",
           "content": {
-            "stem": "reduced local ________ production",
+            "stem": "were introduced to Australia from Hawaii in 1935 to eat a type of insect that was damaging the ________ plantations.",
             "blank": true
           },
           "correctAnswer": "sugar"
@@ -877,7 +877,7 @@
           "order": 5,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Using filtration, heat, or ultraviolet ________ before discharge",
+            "stem": "Rhododendron plants prevent ________ from reaching native plants.",
             "blank": true
           },
           "correctAnswer": "light"
@@ -887,7 +887,7 @@
           "order": 6,
           "type": "GAP_FILL",
           "content": {
-            "stem": "introduction of a natural predator or ________",
+            "stem": "spread a ________ that kills red squirrels.",
             "blank": true
           },
           "correctAnswer": "virus"
@@ -897,7 +897,7 @@
           "order": 7,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Tracking changes in marine species ________",
+            "stem": "Monitoring helps us to understand the ________ of invasive species and the impact they have.",
             "blank": true
           },
           "correctAnswer": "behaviour",
@@ -911,7 +911,7 @@
           "order": 8,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Encouraging divers to upload sighting data to an online ________",
+            "stem": "Setting up a national ________ makes it easier to track them.",
             "blank": true
           },
           "correctAnswer": "database"
@@ -921,7 +921,7 @@
           "order": 9,
           "type": "GAP_FILL",
           "content": {
-            "stem": "Every record should include coordinates and a clear ________",
+            "stem": "Asking the public to ________ and report them helps with monitoring.",
             "blank": true
           },
           "correctAnswer": "photograph"

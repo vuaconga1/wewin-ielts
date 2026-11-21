@@ -31,10 +31,10 @@
             "stem": "Accommodation: ________ Hotel on George Street",
             "blank": true
           },
-          "correctAnswer": "Kings",
+          "correctAnswer": "King's",
           "acceptableAnswers": [
-            "Kings",
-            "King's"
+            "King's",
+            "Kings"
           ]
         },
         {
@@ -114,10 +114,11 @@
             "stem": "need to have lunch before ________ p.m.",
             "blank": true
           },
-          "correctAnswer": "2.30",
+          "correctAnswer": "2:30",
           "acceptableAnswers": [
+            "2:30",
             "2.30",
-            "2:30"
+            "two thirty"
           ]
         },
         {
@@ -959,5 +960,5 @@
     }
   ],
   "sourceFolder": "CAM 20 Reading - Listening (đẹp).pdf",
-  "savedAt": "2026-11-19T12:16:00.743Z"
+  "savedAt": "2026-11-21T05:23:06.052Z"
 }

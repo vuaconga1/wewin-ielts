@@ -296,3 +296,109 @@ ws-34          : THIẾU KEYS -> tự soạn toàn bộ 58 câu (quy tắc at/in
   + Test 42.C17.04 - Listening (slug: test-42-listening, 4 sections, 40 questions, status: PUBLISHED)
   + Test 42.C17.04 - Reading (slug: test-42-reading, 3 sections, 40 questions, status: PUBLISHED)
 - Database: Đã persist thành công toàn bộ 8 đề (28 sections, 320 questions) vào cơ sở dữ liệu PostgreSQL (Neon) với trạng thái PUBLISHED.
+
+----------------------------------------------------
+[2026-11-21] KEY ĐÃ SỬA / CÂU HỎI ĐÃ SỬA — Test 15.C21.01 Reading (slug: test-15-reading)
+----------------------------------------------------
+- Lỗi: lúc import Cambridge 21 Test 1 Reading, passage giữ được nhưng TOÀN BỘ stem câu hỏi
+  (Q1–40, cả 3 passage) bị AI tự chế; đáp án vẫn lấy từ answer key nên letter/word khớp key
+  nhưng stem không khớp đề gốc (vd Q1–7 "Collecting art", P2 Bernardi/Bartels, P3 MCQ/summary bịa).
+- Đã sửa: viết lại passage (bỏ PAGE OCR marker, sửa typo OCR) + questions theo OCR
+  docs/cambridge_21_split/Cambridge_21_Part1_Trang_001-032_Intro_Test1.txt và answer key
+  Part5 trang 118 (1 mining … 40 YES) — 40/40 khớp key.
+- Script: scripts/fix-c21-test1-reading-questions.ts
+- Persist: npx tsx scripts/upsert-tests-from-json.ts --only test-15-reading --status PUBLISHED
+
+----------------------------------------------------
+[2026-11-21] KEY/CÂU HỎI ĐÃ SỬA — Cambridge 21 Reading Tests 2–4 (test-16/17/18-reading)
+----------------------------------------------------
+- Nguồn chuẩn: docs/cambridge_21_split/Cambridge IELTS 21.pdf (extract text + render trang).
+- Lỗi: import cũ bịa stem Q1–40 (đáp án vẫn lấy từ answer key). Test17 P2: passage Dar es Salaam
+  nhưng câu hỏi Curitiba.
+- Đã rebuild toàn bộ questions từ PDF:
+  + scripts/fix-c21-test2-reading-questions.ts → test-16-reading.json
+  + scripts/fix-c21-test3-reading-questions.ts → test-17-reading.json
+  + scripts/fix-c21-test4-reading-questions.ts → test-18-reading.json
+- Đối chiếu answer keys PDF trang 120–125: 40/40 mỗi đề.
+- Persist: npx tsx scripts/upsert-tests-from-json.ts --only test-16-reading,test-17-reading,test-18-reading --status PUBLISHED
+- Test 15 Reading đã sửa trước đó (cùng ngày) từ PDF/OCR.
+
+----------------------------------------------------
+[2026-11-21] LAYOUT — Cambridge 12 Listening Test 3–4 (test-29/30-listening)
+----------------------------------------------------
+- Báo cáo học viên: Cam 12 Test 4 Listening Q15–20 thiếu bản đồ Sheepmarket;
+  Cam 12 Test 3 Listening Q21–26 flow-chart bị phẳng (nhầm stage).
+- Map: file public/uploads/images/test-30-map.png đã có sẵn nhưng JSON chỉ gắn markdown
+  trong part.content; UI chỉ đọc meta.imageUrl / question.imageUrl. Đã đổi Q15–20 →
+  MAP_LABELING + meta.imageUrl/mediaUrl (mẫu test-16).
+- Flow-chart: thêm ↓ giữa RESEARCH / ANALYSIS / WRITING THE CASE STUDY; Q21–26 stem rỗng
+  + variant FLOW_CHART_COMPLETION; renderer stage boxes trong inline-notes-gaps.
+- Scripts: scripts/fix-c12-map-flowchart-layout.ts, cambridge_12_t3.py, cambridge_12_t4.py,
+  build_cambridge_12.py (đưa imageUrl vào meta).
+- Persist: npx tsx scripts/upsert-tests-from-json.ts --only test-29-listening,test-30-listening --status PUBLISHED
+
+----------------------------------------------------
+[2026-11-21] KEY/CÂU HỎI ĐÃ SỬA — Cambridge 21 Listening Tests 2–4 (test-16/17/18-listening)
+----------------------------------------------------
+- Nguồn chuẩn: docs/cambridge_21_split/Cambridge IELTS 21.pdf (extract text + render trang PNG + đối chiếu Answer Keys trang 118–124).
+- Lỗi: import cũ giữ đáp án đúng từ Answer Keys nhưng AI bịa đặt stem và options cho:
+  + test-16-listening: Parts 3–4 (Q21–40: session food safety, project food fraud, recommendations, flow chart new food product, cruise ship overtourism).
+  + test-17-listening: Parts 2–4 (Q11–40: street food business, ethical/sustainable fashion, semi-synthetic fabrics, invasive species).
+  + test-18-listening: Parts 2–4 (Q11–40: business exhibition, discounts, speaker topics, houses of the future, music therapy surgical patients).
+- Đã rebuild toàn bộ questions & task content từ PDF gốc:
+  + test-15-listening: Audited OK, 40/40 khớp đề gốc và answer key trang 118.
+  + test-16-listening: Giữ Part 1-2 (Q1-20 kèm map Melby Coal Mine chuẩn); rebuild Part 3-4 (Q21-40) qua scripts/fix-c21-test2-listening-questions.ts.
+  + test-17-listening: Giữ Part 1 (Q1-10 Shetland ferry); rebuild Part 2-4 (Q11-40) qua scripts/fix-c21-test3-listening-questions.ts.
+  + test-18-listening: Giữ Part 1 (Q1-10 Broadbeach); rebuild Part 2-4 (Q11-40) qua scripts/fix-c21-test4-listening-questions.ts.
+- Kiểm tra media: Audio 16/16 file đầy đủ tại /uploads/audio/test-{15..18}-section-{1..4}.mp3. Map Melby Coal Mine tại /uploads/images/test-16-map.png.
+- Persist: Đã upsert thành công lên DB PostgreSQL với trạng thái PUBLISHED.
+
+----------------------------------------------------
+[2026-11-21] IMPORT MỚI — Cambridge 21 Writing Tests 1–4 (test-15/16/17/18-writing)
+----------------------------------------------------
+- Nguồn chuẩn: docs/cambridge_21_split/Cambridge IELTS 21.pdf (trang 30–31, 52–53, 73–74, 95–96).
+- Đầy đủ 4 đề thi Writing chuẩn IELTS Academic (2 tasks mỗi đề: Task 1 ít nhất 150 từ, Task 2 ít nhất 250 từ):
+  + Test 15.C21.01 - Writing: Task 1 biểu đồ đường (US jobs 1960–2020), Task 2 tall apartment blocks.
+  + Test 16.C21.02 - Writing: Task 1 sơ đồ cải tạo (college café before redesign & today), Task 2 theatres & cinemas in digital age.
+  + Test 17.C21.03 - Writing: Task 1 quy trình địa chất (rain-shadow desert formation), Task 2 study abroad / work placement.
+  + Test 18.C21.04 - Writing: Task 1 biểu đồ tròn & bảng số liệu (university library users & satisfaction), Task 2 formal learning & play in primary school.
+- Media Task 1: Cắt trực tiếp từ trang PDF độ phân giải cao 200 DPI tại /uploads/writing/test-{15..18}-writing-task1.png (không watermark, không prompt dính kèm).
+- Script tạo & crop: scripts/generate_writing_crops.py, scripts/create_c21_writing_tests.ts.
+- Persist: Đã upsert thành công lên DB PostgreSQL với trạng thái PUBLISHED.
+
+----------------------------------------------------
+[2026-11-21] IMPORT MỚI — Cambridge 21 Speaking Tests 1–4 (test-15/16/17/18-speaking)
+----------------------------------------------------
+- Nguồn chuẩn: docs/cambridge_21_split/Cambridge IELTS 21.pdf (trang 32, 54, 75, 97).
+- Đầy đủ 4 đề thi Speaking chuẩn IELTS Academic (3 Parts mỗi đề: Part 1 interview, Part 2 cue card 1-2 phút, Part 3 discussion):
+  + Test 15.C21.01 - Speaking: Part 1 Hairstyles, Part 2 Tourist information, Part 3 Holidays & attractions.
+  + Test 16.C21.02 - Speaking: Part 1 Cities, Part 2 Something read/heard not true, Part 3 Honesty (children & advertising).
+  + Test 17.C21.03 - Speaking: Part 1 Spending and saving money, Part 2 Interesting garden/park, Part 3 Homes, gardens & gardening hobby.
+  + Test 18.C21.04 - Speaking: Part 1 Bread, Part 2 Competitive person, Part 3 Competitions & sports competitiveness.
+- Script tạo: scripts/create_c21_speaking_tests.ts.
+- Persist: Đã upsert thành công lên DB PostgreSQL với trạng thái PUBLISHED.
+
+----------------------------------------------------
+[2026-11-21] AUDIT & REBUILD — Cambridge 20 Reading & Listening Tests 1–4 (test-23/24/25/26)
+----------------------------------------------------
+- Nguồn chuẩn: docs/CAM 20 Reading - Listening (đẹp) (1).pdf (80 trang).
+- Vấn đề phát hiện trên web trước khi sửa:
+  + Cả 4 bài Reading (test-23-reading, test-24-reading, test-25-reading, test-26-reading) trong import cũ bị AI tóm tắt (summarized) và viết lại (rewritten/hallucinated) bài đọc: đoạn văn bị cắt xén từ ~5500-7000 ký tự xuống còn ~3500-4500 ký tự; các trích dẫn, ví dụ gốc bị thay thế; câu hỏi và phương án trắc nghiệm bị diễn giải sai lệch (ví dụ: test-23 P2 Q23 bị đổi thành "You understand the motivation for planting elms...", P3 Q28 đổi options C-D, Q29 đổi stem, Q30 đổi stem và options; test-25 P3 bị cắt mất một nửa nội dung bài đọc).
+  + Footer có watermark "thread: dongan.signs (8 Ielts overall + writing, Ielts9988 task 2), nhận chấm 35k/ bài" cần loại bỏ sạch sẽ.
+  + Listening test-26: Q1 chỉ nhận "Kings" (chuẩn PDF: "King's"), Q8 nhận "2.30" (chuẩn PDF: "2:30").
+- Giải pháp thực hiện:
+  1. Trích xuất 100% nguyên văn (verbatim) toàn bộ 12 bài đọc từ file PDF gốc (loại bỏ hoàn toàn watermark và các số trang thừa).
+  2. Xây dựng lại toàn bộ câu hỏi (Questions 1–40), bao gồm đầy đủ task chrome, instructions, group headers, interactive blanks và options đối chiếu khớp từng chữ với đề PDF gốc.
+  3. Cập nhật và chuẩn hóa answer keys 100% theo đáp án chính thức của Cambridge IELTS 20:
+     * Test 23 Reading: P1 (1-6: F, F, F, NG, T, T; 7-13: bulbs, soil, feathers, deer, 1980, funding, stakeholders); P2 (14-18: C, G, B, E, C; 19-23: B, A, B, C, A; 24-26: oak, flooring, keel); P3 (27-30: C, A, D, C; 31-35: B, G, F, E, D; 36-40: YES, NOT GIVEN, NO, YES, YES).
+     * Test 24 Reading: P1 (1-6: tail, flippers, hair, seagrasses, lips, buoyancy; 7-13: TRUE, NOT GIVEN, FALSE, NOT GIVEN, TRUE, NOT GIVEN, TRUE); P2 (14-16: B, F, B; 17-22: laziness, anxious, threats, exams, perfectionists, guilt; 23-24: A, C; 25-26: A, E); P3 (27-32: NO, YES, NOT GIVEN, NO, NOT GIVEN, YES; 33-37: F, D, H, B, G; 38-40: B, D, C).
+     * Test 25 Reading: P1 (1-7: potatoes, butter, meat, crystals, cellophane, tin, refrigerator; 8-13: NOT GIVEN, TRUE, FALSE, TRUE, FALSE, NOT GIVEN); P2 (14-19: v, ii, iv, vii, iii, vi; 20-21: C, E; 22-23: B, D; 24-26: tentacles, protection, colour); P3 (27-33: A, C, B, A, B, A, C; 34-36: C, B, D; 37-40: B, C, B, C).
+     * Test 26 Reading: P1 (1-7: teacher, charcoal, skyscrapers, flowers, bones, landscape, rivers; 8-13: FALSE, TRUE, FALSE, TRUE, NOT GIVEN, NOT GIVEN); P2 (14-17: D, A, C, F; 18-22: pumps, dams, float, crops, trees; 23-26: B, E, A, C); P3 (27-31: D, G, B, C, B; 32-36: D, E, B, C, A; 37-40: jackals, diseases, food, foxes).
+     * Test 26 Listening: Chuẩn hóa Q1 chấp nhận "King's" và "Kings"; Q8 chấp nhận "2:30", "2.30", "two thirty".
+  4. Scripts tái tạo:
+     * scripts/rebuild_c20_t1.py, scripts/rebuild_c20_t2.py, scripts/rebuild_c20_t3.py, scripts/rebuild_c20_t4.py, scripts/rebuild_all_c20.py.
+  5. Kiểm tra & xác thực:
+     * scripts/validate_cambridge_20_schema.ts: Zod schema valid 8/8 test, 0 lỗi layout.
+     * scripts/test_reading_content_parser.ts: 100% question groups và passage text được tách chuẩn xác cho giao diện Web Practice CDI.
+     * scripts/verify_cambridge_20.py: 100% audio R2 CDN và map image hợp lệ.
+  6. Persist DB: Đã upsert cả 8 tests Cambridge 20 vào Neon PostgreSQL với status PUBLISHED.

@@ -573,22 +573,59 @@ export function InlineNotesGaps({
         : null;
     const steps = title ? lines.slice(1) : lines;
     const plain: GapBindings = { ...bindings, plainText: true };
+    /** Groups of lines separated by ↓ — each group is one stage box (paper layout). */
+    const stages: string[][] = [[]];
+    for (const line of steps) {
+      if (/^[↓⬇]$/.test(line)) {
+        stages.push([]);
+        continue;
+      }
+      stages[stages.length - 1]!.push(line);
+    }
+    const stageBlocks = stages.filter((stage) => stage.length > 0);
+    const isStageHeading = (line: string) => {
+      if (findInlineBlankNumbers(line).length) return false;
+      const letters = line.replace(/[^A-Za-z]/g, "");
+      return letters.length >= 3 && letters === letters.toUpperCase() && line.length < 64;
+    };
     return (
-      <div className="break-words rounded-sm border border-zinc-500 bg-white px-4 py-4 text-sm leading-7 text-zinc-900">
+      <div className="break-words space-y-1 rounded-sm border border-zinc-500 bg-white px-3 py-3 text-sm leading-7 text-zinc-900 sm:px-4 sm:py-4">
         {title ? (
-          <p className="mb-4 text-center text-sm font-bold sm:text-base">{title}</p>
+          <p className="mb-3 text-center text-sm font-bold sm:text-base">{title}</p>
         ) : null}
-        {steps.map((line, index) =>
-          /^[↓⬇]$/.test(line) ? (
-            <p key={`arrow-${index}`} className="py-2 text-center text-lg leading-none text-zinc-800">
-              ↓
-            </p>
-          ) : (
-            <p key={`step-${index}`} className="text-center">
-              {renderInlineSegments(line, `flow-${index}`, plain)}
-            </p>
-          ),
-        )}
+        {stageBlocks.map((stage, stageIndex) => {
+          const heading = stage[0] && isStageHeading(stage[0]) ? stage[0] : null;
+          const body = heading ? stage.slice(1) : stage;
+          return (
+            <div key={`stage-${stageIndex}`}>
+              {stageIndex > 0 ? (
+                <p className="py-2 text-center text-lg leading-none text-zinc-800">↓</p>
+              ) : null}
+              <div className="rounded-sm border border-zinc-400 bg-[#f7f8fa] px-3 py-3">
+                {heading ? (
+                  <p className="mb-2 text-center text-xs font-bold uppercase tracking-wide text-wewin-navy sm:text-sm">
+                    {heading}
+                  </p>
+                ) : null}
+                {body.map((line, index) => {
+                  const emph =
+                    !findInlineBlankNumbers(line).length &&
+                    /^[A-Z]/.test(line) &&
+                    line.length < 72 &&
+                    !/[.?!]$/.test(line);
+                  return (
+                    <p
+                      key={`step-${stageIndex}-${index}`}
+                      className={`text-center ${emph ? "font-semibold text-zinc-900" : ""}`}
+                    >
+                      {renderInlineSegments(line, `flow-${stageIndex}-${index}`, plain)}
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
       </div>
     );
   }

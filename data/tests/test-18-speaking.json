@@ -1,0 +1,141 @@
+{
+  "title": "Test 18.C21.04 - Speaking",
+  "slug": "test-18-speaking",
+  "skill": "SPEAKING",
+  "examType": "ACADEMIC",
+  "timeLimitMinutes": 15,
+  "tags": [
+    "#IELTS Academic",
+    "#Speaking"
+  ],
+  "description": "IELTS Academic Speaking practice test 18 (Part 1 · Part 2 · Part 3).",
+  "parts": [
+    {
+      "title": "Part 1",
+      "order": 0,
+      "questions": [
+        {
+          "number": 1,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "When do you usually eat bread?",
+            "topic": "Bread",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 2,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How important is bread in your culture?",
+            "topic": "Bread",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 3,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Have you tried any kinds of bread from other countries?",
+            "topic": "Bread",
+            "speakingPart": 1
+          }
+        },
+        {
+          "number": 4,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Would you be interested in learning how to make bread?",
+            "topic": "Bread",
+            "speakingPart": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2",
+      "order": 1,
+      "questions": [
+        {
+          "number": 5,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Describe a person you know who is very competitive.\n\nYou should say:\n• who this person is\n• what this person is competitive about\n• how successful this person is\nand explain why you think this person is so competitive.",
+            "speakingPart": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3",
+      "order": 2,
+      "questions": [
+        {
+          "number": 6,
+          "order": 0,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What kinds of competitions do people like to enter in your country?",
+            "topic": "Competitions",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 7,
+          "order": 1,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "What do you think is the best kind of prize to win in a competition?",
+            "topic": "Competitions",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 8,
+          "order": 2,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do people like watching quiz shows and other competitions on TV?",
+            "topic": "Competitions",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 9,
+          "order": 3,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "How important is it to be very competitive at sport?",
+            "topic": "Being competitive in sports",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 10,
+          "order": 4,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Do you think sportspeople perform better when they play against competitors who are stronger than they are?",
+            "topic": "Being competitive in sports",
+            "speakingPart": 3
+          }
+        },
+        {
+          "number": 11,
+          "order": 5,
+          "type": "SPEAKING_PROMPT",
+          "content": {
+            "stem": "Why do some people think that taking part in sport is more important than winning?",
+            "topic": "Being competitive in sports",
+            "speakingPart": 3
+          }
+        }
+      ]
+    }
+  ]
+}

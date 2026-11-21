@@ -380,14 +380,14 @@
     {
       "title": "Section 3",
       "order": 2,
-      "content": "Questions 21–26\nComplete the flow-chart below.\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 21–26.\n\nA patterns\nB names\nC sources\nD questions\nE employees\nF solutions\nG headings\nH officials\n\nSTAGES IN DOING A TOURISM CASE STUDY\nRESEARCH\nLocate and read relevant articles, noting key information and also 21 ...............\nIdentify a problem or need\nSelect interviewees – these may be site 22 ..............., visitors or city 23 ...............\nPrepare and carry out interviews. If possible, collect statistics.\nCheck whether 24 ............... of interviewees can be used\n\nANALYSIS\nSelect relevant information and try to identify 25 ...............\nDecide on the best form of visuals\n\nWRITING THE CASE STUDY\nGive some background before writing the main sections\nDo NOT end with 26 ...............\n\nQuestions 27–30\nChoose the correct letter, A, B or C.\n\nThe Horton Castle site\n27 Natalie and Dave agree one reason why so few people visit Horton Castle is that\nA the publicity is poor.\nB it is difficult to get to.\nC there is little there of interest.\n\n28 Natalie and Dave agree that the greatest problem with a visitor centre could be\nA covering the investment costs.\nB finding a big enough space for it.\nC dealing with planning restrictions.\n\n29 What does Dave say about conditions in the town of Horton?\nA There is a lot of unemployment.\nB There are few people of working age.\nC There are opportunities for skilled workers.\n\n30 According to Natalie, one way to prevent damage to the castle site would be to\nA insist visitors have a guide.\nB make visitors keep to the paths.\nC limit visitor numbers.",
+      "content": "Questions 21–26\nComplete the flow-chart below.\nChoose SIX answers from the box and write the correct letter, A–H, next to Questions 21–26.\n\nA patterns\nB names\nC sources\nD questions\nE employees\nF solutions\nG headings\nH officials\n\nSTAGES IN DOING A TOURISM CASE STUDY\n\nRESEARCH\nLocate and read relevant articles, noting key information and also 21 ...............\nIdentify a problem or need\nSelect interviewees – these may be site 22 ..............., visitors or city 23 ...............\nPrepare and carry out interviews. If possible, collect statistics.\nCheck whether 24 ............... of interviewees can be used\n↓\nANALYSIS\nSelect relevant information and try to identify 25 ...............\nDecide on the best form of visuals\n↓\nWRITING THE CASE STUDY\nGive some background before writing the main sections\nDo NOT end with 26 ...............\n\nQuestions 27–30\nChoose the correct letter, A, B or C.\n\nThe Horton Castle site\n27 Natalie and Dave agree one reason why so few people visit Horton Castle is that\nA the publicity is poor.\nB it is difficult to get to.\nC there is little there of interest.\n\n28 Natalie and Dave agree that the greatest problem with a visitor centre could be\nA covering the investment costs.\nB finding a big enough space for it.\nC dealing with planning restrictions.\n\n29 What does Dave say about conditions in the town of Horton?\nA There is a lot of unemployment.\nB There are few people of working age.\nC There are opportunities for skilled workers.\n\n30 According to Natalie, one way to prevent damage to the castle site would be to\nA insist visitors have a guide.\nB make visitors keep to the paths.\nC limit visitor numbers.",
       "questions": [
         {
           "number": 21,
           "order": 20,
           "type": "MATCHING",
           "content": {
-            "stem": "Locate and read relevant articles, noting key information and also 21",
+            "stem": "",
             "options": [
               {
                 "label": "A",
@@ -421,7 +421,8 @@
                 "label": "H",
                 "text": "officials"
               }
-            ]
+            ],
+            "variant": "FLOW_CHART_COMPLETION"
           },
           "correctAnswer": "C"
         },
@@ -430,7 +431,7 @@
           "order": 21,
           "type": "MATCHING",
           "content": {
-            "stem": "Select interviewees – these may be site 22",
+            "stem": "",
             "options": [
               {
                 "label": "A",
@@ -464,7 +465,8 @@
                 "label": "H",
                 "text": "officials"
               }
-            ]
+            ],
+            "variant": "FLOW_CHART_COMPLETION"
           },
           "correctAnswer": "E"
         },
@@ -473,7 +475,7 @@
           "order": 22,
           "type": "MATCHING",
           "content": {
-            "stem": "or city 23",
+            "stem": "",
             "options": [
               {
                 "label": "A",
@@ -507,7 +509,8 @@
                 "label": "H",
                 "text": "officials"
               }
-            ]
+            ],
+            "variant": "FLOW_CHART_COMPLETION"
           },
           "correctAnswer": "H"
         },
@@ -516,7 +519,7 @@
           "order": 23,
           "type": "MATCHING",
           "content": {
-            "stem": "Check whether 24 of interviewees can be used",
+            "stem": "",
             "options": [
               {
                 "label": "A",
@@ -550,7 +553,8 @@
                 "label": "H",
                 "text": "officials"
               }
-            ]
+            ],
+            "variant": "FLOW_CHART_COMPLETION"
           },
           "correctAnswer": "B"
         },
@@ -559,7 +563,7 @@
           "order": 24,
           "type": "MATCHING",
           "content": {
-            "stem": "Select relevant information and try to identify 25",
+            "stem": "",
             "options": [
               {
                 "label": "A",
@@ -593,7 +597,8 @@
                 "label": "H",
                 "text": "officials"
               }
-            ]
+            ],
+            "variant": "FLOW_CHART_COMPLETION"
           },
           "correctAnswer": "A"
         },
@@ -602,7 +607,7 @@
           "order": 25,
           "type": "MATCHING",
           "content": {
-            "stem": "Do NOT end with 26",
+            "stem": "",
             "options": [
               {
                 "label": "A",
@@ -636,7 +641,8 @@
                 "label": "H",
                 "text": "officials"
               }
-            ]
+            ],
+            "variant": "FLOW_CHART_COMPLETION"
           },
           "correctAnswer": "F"
         },

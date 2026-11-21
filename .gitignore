@@ -145,6 +145,9 @@ next-env.d.ts
 
 # Raw resource packs and downloads (not part of deployment)
 *.zip
+/docs/cambridge_21_split/pdf_extract/
+/docs/cambridge_21_split/Cambridge IELTS 21.pdf
+/docs/CAM 20 Reading - Listening (đẹp) (1).pdf
 /docs/worksheets_split/fixed_40_pages/
 /docs/cambridge_20_split/剑桥20/
 /docs/cambridge_20_split/__MACOSX/
