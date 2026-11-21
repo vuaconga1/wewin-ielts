@@ -23,6 +23,7 @@ export type FastbotsChatListResult = {
     webhookConfigured: boolean;
     dashboardUrl: string;
     webhookPath: string;
+    messengerConfigured: boolean;
   };
 };
 

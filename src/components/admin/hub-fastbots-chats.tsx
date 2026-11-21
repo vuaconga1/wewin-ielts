@@ -52,6 +52,7 @@ export function HubFastbotsChats() {
   );
   const [detail, setDetail] = useState<FastbotsChatDetail | null>(null);
   const [detailLoading, setDetailLoading] = useState(false);
+  const [syncingMessenger, setSyncingMessenger] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -141,8 +142,51 @@ export function HubFastbotsChats() {
     [t, te],
   );
 
+  const syncMessenger = useCallback(async () => {
+    setSyncingMessenger(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/admin/hub/messenger-sync", {
+        method: "POST",
+      });
+      const body = (await res.json().catch(() => null)) as {
+        code?: string;
+        detail?: string;
+        synced?: number;
+      } | null;
+      if (!res.ok) {
+        setError(
+          friendlyError(
+            body?.code,
+            t(
+              "hubChatMessengerSyncFailed",
+              "Không đồng bộ được Messenger. Kiểm tra FACEBOOK_PAGE_ID và FACEBOOK_PAGE_ACCESS_TOKEN.",
+            ),
+            te,
+          ),
+        );
+        return;
+      }
+      await load();
+    } catch (err) {
+      setError(
+        friendlyError(
+          err,
+          t(
+            "hubChatMessengerSyncFailed",
+            "Không đồng bộ được Messenger. Kiểm tra FACEBOOK_PAGE_ID và FACEBOOK_PAGE_ACCESS_TOKEN.",
+          ),
+          te,
+        ),
+      );
+    } finally {
+      setSyncingMessenger(false);
+    }
+  }, [load, t, te]);
+
   const dashboardUrl = data?.config.dashboardUrl || "https://app.fastbots.ai/";
   const webhookConfigured = data?.config.webhookConfigured ?? false;
+  const messengerConfigured = data?.config.messengerConfigured ?? false;
 
   return (
     <section className="relative min-w-0 rounded-xl border border-wewin-border bg-white shadow-sm">
@@ -159,15 +203,35 @@ export function HubFastbotsChats() {
               )}
             </p>
           </div>
-          <a
-            href={dashboardUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50"
-          >
-            {t("hubChatOpenFastbots", "Mở Fastbots")}
-            <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-          </a>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              disabled={syncingMessenger || !messengerConfigured}
+              onClick={() => void syncMessenger()}
+              title={
+                messengerConfigured
+                  ? undefined
+                  : t(
+                      "hubChatMessengerNotConfigured",
+                      "Chưa cấu hình FACEBOOK_PAGE_ID / FACEBOOK_PAGE_ACCESS_TOKEN trên server.",
+                    )
+              }
+              className="inline-flex min-h-10 items-center rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {syncingMessenger
+                ? t("hubChatMessengerSyncing", "Đang đồng bộ Messenger…")
+                : t("hubChatMessengerSync", "Đồng bộ Messenger")}
+            </button>
+            <a
+              href={dashboardUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50"
+            >
+              {t("hubChatOpenFastbots", "Mở Fastbots")}
+              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+            </a>
+          </div>
         </div>
       </header>
 
@@ -192,9 +256,26 @@ export function HubFastbotsChats() {
       <div className="border-b border-sky-100 bg-sky-50/70 px-4 py-2.5 text-xs text-sky-950 sm:px-5">
         {t(
           "hubChatScopeNote",
-          "Fastbots chỉ đẩy contact qua webhook — không có API list toàn bộ Chat History. Hội thoại cũ trên Fastbots chỉ hiện ở đây sau khi contact được tạo/cập nhật (hoặc Test webhook).",
+          "Widget website đồng bộ từng tin. Messenger/Fanpage: bấm «Đồng bộ Messenger» (cần token Fanpage) hoặc cấu hình webhook Meta.",
         )}
       </div>
+
+      {!messengerConfigured && data ? (
+        <div className="border-b border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-950 sm:px-5">
+          <p className="font-semibold">
+            {t(
+              "hubChatMessengerNotConfigured",
+              "Chưa cấu hình FACEBOOK_PAGE_ID / FACEBOOK_PAGE_ACCESS_TOKEN trên server.",
+            )}
+          </p>
+          <p className="mt-1 break-words text-amber-900/90">
+            {t(
+              "hubChatMessengerSetupHelp",
+              "Tạo Facebook App → thêm Messenger → lấy Page ID + Page Access Token, ghi vào Vercel/.env rồi Redeploy. Sau đó bấm Đồng bộ Messenger.",
+            )}
+          </p>
+        </div>
+      ) : null}
 
       {error ? (
         <div className="px-4 pt-3 sm:px-5">

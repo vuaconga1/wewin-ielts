@@ -16,6 +16,7 @@ import {
   getFastbotsDashboardUrl,
   getFastbotsWebhookSecret,
 } from "@/lib/fastbots/webhook-auth";
+import { isMessengerConfigured } from "@/lib/messenger/config";
 
 function toListItem(row: {
   id: string;
@@ -99,6 +100,7 @@ export async function listFastbotsConversations(
       webhookConfigured: Boolean(getFastbotsWebhookSecret()),
       dashboardUrl: getFastbotsDashboardUrl(),
       webhookPath: "/api/webhooks/fastbots",
+      messengerConfigured: isMessengerConfigured(),
     },
   };
 }
