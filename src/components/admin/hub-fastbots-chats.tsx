@@ -36,15 +36,30 @@ function statusBadgeClass(status: string): string {
 }
 
 type StatusFilter = "ALL" | "OPEN" | "CLOSED" | "UNKNOWN";
+type ChannelFilter = "ALL" | "MESSENGER" | "FACEBOOK_COMMENT" | "WEB";
+
+function channelLabel(
+  channel: string | null | undefined,
+  tc: (key: string, fallback?: string) => string,
+): string {
+  if (!channel) return "—";
+  const key = channel.trim().toUpperCase();
+  if (key === "MESSENGER") return tc("MESSENGER", "Messenger");
+  if (key === "FACEBOOK_COMMENT") return tc("FACEBOOK_COMMENT", "Comment fanpage");
+  if (key === "WEB") return tc("WEB", "Website");
+  return channel;
+}
 
 export function HubFastbotsChats() {
   const { t } = useTranslations("admin");
   const ts = useTranslations("fastbotsChatStatus").t;
   const tr = useTranslations("fastbotsChatRoles").t;
+  const tc = useTranslations("fastbotsChatChannels").t;
   const te = useTranslations("errors").t;
 
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState<StatusFilter>("ALL");
+  const [channel, setChannel] = useState<ChannelFilter>("ALL");
   const [data, setData] = useState<FastbotsChatListResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<{ message: string; detail?: string } | null>(
@@ -53,6 +68,7 @@ export function HubFastbotsChats() {
   const [detail, setDetail] = useState<FastbotsChatDetail | null>(null);
   const [detailLoading, setDetailLoading] = useState(false);
   const [syncingMessenger, setSyncingMessenger] = useState(false);
+  const [syncingComments, setSyncingComments] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -61,6 +77,7 @@ export function HubFastbotsChats() {
       const params = new URLSearchParams();
       if (query.trim()) params.set("q", query.trim());
       if (status !== "ALL") params.set("status", status);
+      if (channel !== "ALL") params.set("channel", channel);
       params.set("take", "50");
       const res = await fetch(
         `/api/admin/hub/fastbots-chats?${params.toString()}`,
@@ -95,7 +112,7 @@ export function HubFastbotsChats() {
     } finally {
       setLoading(false);
     }
-  }, [query, status, t, te]);
+  }, [query, status, channel, t, te]);
 
   useEffect(() => {
     const handle = window.setTimeout(() => {
@@ -184,9 +201,53 @@ export function HubFastbotsChats() {
     }
   }, [load, t, te]);
 
+  const syncComments = useCallback(async () => {
+    setSyncingComments(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/admin/hub/facebook-comments-sync", {
+        method: "POST",
+      });
+      const body = (await res.json().catch(() => null)) as {
+        code?: string;
+        detail?: string;
+        synced?: number;
+        posts?: number;
+      } | null;
+      if (!res.ok) {
+        setError(
+          friendlyError(
+            body?.code || body?.detail,
+            t(
+              "hubChatCommentsSyncFailed",
+              "Không đồng bộ được comment fanpage. Kiểm tra token Page và quyền pages_read_engagement / pages_read_user_content.",
+            ),
+            te,
+          ),
+        );
+        return;
+      }
+      await load();
+    } catch (err) {
+      setError(
+        friendlyError(
+          err,
+          t(
+            "hubChatCommentsSyncFailed",
+            "Không đồng bộ được comment fanpage. Kiểm tra token Page và quyền pages_read_engagement / pages_read_user_content.",
+          ),
+          te,
+        ),
+      );
+    } finally {
+      setSyncingComments(false);
+    }
+  }, [load, t, te]);
+
   const dashboardUrl = data?.config.dashboardUrl || "https://app.fastbots.ai/";
   const webhookConfigured = data?.config.webhookConfigured ?? false;
   const messengerConfigured = data?.config.messengerConfigured ?? false;
+  const facebookSyncBusy = syncingMessenger || syncingComments;
 
   return (
     <section className="relative min-w-0 rounded-xl border border-wewin-border bg-white shadow-sm">
@@ -206,7 +267,7 @@ export function HubFastbotsChats() {
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
-              disabled={syncingMessenger || !messengerConfigured}
+              disabled={facebookSyncBusy || !messengerConfigured}
               onClick={() => void syncMessenger()}
               title={
                 messengerConfigured
@@ -221,6 +282,24 @@ export function HubFastbotsChats() {
               {syncingMessenger
                 ? t("hubChatMessengerSyncing", "Đang đồng bộ Messenger…")
                 : t("hubChatMessengerSync", "Đồng bộ Messenger")}
+            </button>
+            <button
+              type="button"
+              disabled={facebookSyncBusy || !messengerConfigured}
+              onClick={() => void syncComments()}
+              title={
+                messengerConfigured
+                  ? undefined
+                  : t(
+                      "hubChatMessengerNotConfigured",
+                      "Chưa cấu hình FACEBOOK_PAGE_ID / FACEBOOK_PAGE_ACCESS_TOKEN trên server.",
+                    )
+              }
+              className="inline-flex min-h-10 items-center rounded-lg border border-wewin-border bg-white px-3 py-2 text-sm font-semibold text-wewin-navy hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {syncingComments
+                ? t("hubChatCommentsSyncing", "Đang đồng bộ comment…")
+                : t("hubChatCommentsSync", "Đồng bộ Comment")}
             </button>
             <a
               href={dashboardUrl}
@@ -256,7 +335,7 @@ export function HubFastbotsChats() {
       <div className="border-b border-sky-100 bg-sky-50/70 px-4 py-2.5 text-xs text-sky-950 sm:px-5">
         {t(
           "hubChatScopeNote",
-          "Widget website đồng bộ từng tin. Messenger/Fanpage: bấm «Đồng bộ Messenger» (cần token Fanpage) hoặc cấu hình webhook Meta.",
+          "Widget website đồng bộ từng tin. Messenger: «Đồng bộ Messenger». Comment bài đăng fanpage: «Đồng bộ Comment» (cần token Page có pages_read_engagement).",
         )}
       </div>
 
@@ -271,7 +350,7 @@ export function HubFastbotsChats() {
           <p className="mt-1 break-words text-amber-900/90">
             {t(
               "hubChatMessengerSetupHelp",
-              "Tạo Facebook App → thêm Messenger → lấy Page ID + Page Access Token, ghi vào Vercel/.env rồi Redeploy. Sau đó bấm Đồng bộ Messenger.",
+              "Tạo Facebook App → thêm Messenger → lấy Page ID + Page Access Token (kèm quyền đọc comment), ghi vào Vercel/.env rồi Redeploy. Sau đó bấm Đồng bộ Messenger / Đồng bộ Comment.",
             )}
           </p>
         </div>
@@ -308,6 +387,19 @@ export function HubFastbotsChats() {
           <option value="OPEN">{ts("OPEN", "Đang mở")}</option>
           <option value="CLOSED">{ts("CLOSED", "Đã đóng")}</option>
           <option value="UNKNOWN">{ts("UNKNOWN", "Chưa rõ")}</option>
+        </select>
+        <select
+          value={channel}
+          onChange={(e) => setChannel(e.target.value as ChannelFilter)}
+          aria-label={t("hubChatFilterChannel", "Lọc kênh")}
+          className="rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+        >
+          <option value="ALL">{t("hubChatChannelAll", "Tất cả kênh")}</option>
+          <option value="MESSENGER">{tc("MESSENGER", "Messenger")}</option>
+          <option value="FACEBOOK_COMMENT">
+            {tc("FACEBOOK_COMMENT", "Comment fanpage")}
+          </option>
+          <option value="WEB">{tc("WEB", "Website")}</option>
         </select>
         <button
           type="button"
@@ -392,7 +484,9 @@ export function HubFastbotsChats() {
                       </div>
                     </td>
                     <td className="px-3 py-2.5 text-zinc-700">
-                      {row.channel || "—"}
+                      <span className="inline-block rounded-full bg-wewin-accent-blue-bg px-2 py-0.5 text-[11px] font-semibold text-wewin-navy">
+                        {channelLabel(row.channel, tc)}
+                      </span>
                     </td>
                     <td className="max-w-[240px] px-3 py-2.5">
                       <span className="line-clamp-2 break-words text-zinc-800">
@@ -460,7 +554,13 @@ export function HubFastbotsChats() {
                   {detail?.contactName || t("hubLoading", "Đang tải…")}
                 </h3>
                 <p className="mt-0.5 truncate text-xs text-zinc-500">
-                  {[detail?.channel, detail?.contactEmail, detail?.contactPhone]
+                  {[
+                    detail?.channel
+                      ? channelLabel(detail.channel, tc)
+                      : null,
+                    detail?.contactEmail,
+                    detail?.contactPhone,
+                  ]
                     .filter(Boolean)
                     .join(" · ") || "—"}
                 </p>
@@ -475,6 +575,31 @@ export function HubFastbotsChats() {
               </button>
             </header>
             <div className="min-h-0 flex-1 space-y-3 overflow-y-auto px-4 py-4">
+              {detail?.channel === "FACEBOOK_COMMENT" &&
+              detail.postContext &&
+              (detail.postContext.postSnippet || detail.postContext.permalink) ? (
+                <div className="rounded-lg border border-wewin-border bg-zinc-50 px-3 py-2 text-xs text-zinc-700">
+                  <p className="font-semibold text-wewin-navy">
+                    {t("hubChatPostContext", "Bài đăng")}
+                  </p>
+                  {detail.postContext.postSnippet ? (
+                    <p className="mt-1 line-clamp-3 break-words">
+                      {detail.postContext.postSnippet}
+                    </p>
+                  ) : null}
+                  {detail.postContext.permalink ? (
+                    <a
+                      href={detail.postContext.permalink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1.5 inline-flex items-center gap-1 font-semibold text-wewin-accent-blue hover:underline"
+                    >
+                      {t("hubChatPostOpen", "Mở trên Facebook")}
+                      <ExternalLink className="h-3 w-3" aria-hidden />
+                    </a>
+                  ) : null}
+                </div>
+              ) : null}
               {detailLoading && !detail ? (
                 <p className="text-sm text-zinc-500">
                   {t("hubLoading", "Đang tải…")}

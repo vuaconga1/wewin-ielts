@@ -89,3 +89,53 @@ export async function listMessengerConversations(input?: {
 
   return page.data ?? [];
 }
+
+import type { GraphFeedPost } from "@/lib/messenger/comments-map";
+
+export type {
+  GraphComment,
+  GraphCommentFrom,
+  GraphFeedPost,
+} from "@/lib/messenger/comments-map";
+
+/** List recent Page feed posts with nested comment threads. */
+export async function listPageCommentThreads(input?: {
+  limitPosts?: number;
+  commentsPerPost?: number;
+  repliesPerComment?: number;
+}): Promise<GraphFeedPost[]> {
+  const config = getMessengerConfig();
+  if (!config) {
+    throw new MessengerGraphError("MESSENGER_NOT_CONFIGURED", 503);
+  }
+
+  const limitPosts = Math.min(25, Math.max(1, input?.limitPosts ?? 20));
+  const commentsPerPost = Math.min(50, Math.max(1, input?.commentsPerPost ?? 25));
+  const repliesPerComment = Math.min(30, Math.max(1, input?.repliesPerComment ?? 15));
+
+  const commentFields = [
+    "id",
+    "from{id,name}",
+    "message",
+    "created_time",
+    `comments.limit(${repliesPerComment}){id,from{id,name},message,created_time}`,
+  ].join(",");
+
+  const fields = [
+    "id",
+    "message",
+    "created_time",
+    "permalink_url",
+    `comments.limit(${commentsPerPost}){${commentFields}}`,
+  ].join(",");
+
+  const page = await graphGet<GraphList<GraphFeedPost>>(
+    `/${config.pageId}/feed`,
+    {
+      limit: String(limitPosts),
+      fields,
+    },
+  );
+
+  return page.data ?? [];
+}

@@ -681,6 +681,7 @@ model FastbotsConversation {
 
   @@unique([externalId])
   @@index([status, startedAt])
+  @@index([channel, startedAt])
   @@index([startedAt])
   @@index([updatedAt])
   @@index([contactEmail])

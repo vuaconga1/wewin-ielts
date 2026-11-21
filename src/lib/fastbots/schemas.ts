@@ -1,10 +1,14 @@
 import { z } from "zod";
 
 const statusQuerySchema = z.enum(["OPEN", "CLOSED", "UNKNOWN", "ALL"]).optional();
+const channelQuerySchema = z
+  .enum(["ALL", "MESSENGER", "FACEBOOK_COMMENT", "WEB"])
+  .optional();
 
 export const fastbotsChatListQuerySchema = z.object({
   q: z.string().trim().max(200).optional().default(""),
   status: statusQuerySchema.default("ALL"),
+  channel: channelQuerySchema.default("ALL"),
   take: z.coerce.number().int().min(1).max(100).optional().default(50),
   skip: z.coerce.number().int().min(0).max(10_000).optional().default(0),
 });

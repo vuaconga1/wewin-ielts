@@ -27,7 +27,14 @@ export type FastbotsChatListResult = {
   };
 };
 
+export type FastbotsChatPostContext = {
+  postId: string | null;
+  postSnippet: string | null;
+  permalink: string | null;
+};
+
 export type FastbotsChatDetail = FastbotsChatListItem & {
   tags: string[];
   messages: FastbotsMessage[];
+  postContext: FastbotsChatPostContext | null;
 };

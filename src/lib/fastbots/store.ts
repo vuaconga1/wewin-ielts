@@ -17,6 +17,7 @@ import {
   getFastbotsWebhookSecret,
 } from "@/lib/fastbots/webhook-auth";
 import { isMessengerConfigured } from "@/lib/messenger/config";
+import { extractFacebookPostContext } from "@/lib/messenger/comments-map";
 
 function toListItem(row: {
   id: string;
@@ -56,6 +57,10 @@ export async function listFastbotsConversations(
 
   if (query.status && query.status !== "ALL") {
     where.status = query.status;
+  }
+
+  if (query.channel && query.channel !== "ALL") {
+    where.channel = query.channel;
   }
 
   if (q) {
@@ -138,6 +143,7 @@ export async function getFastbotsConversationDetail(
     ...toListItem(row),
     tags: row.tags,
     messages: extractMessagesFromRawPayload(row.rawPayload, preferredChannel),
+    postContext: extractFacebookPostContext(row.rawPayload),
   };
 }
 
