@@ -653,3 +653,36 @@ model WorksheetAttempt {
   @@index([worksheetId])
 }
 
+/// Chat / contact rows synced from Fastbots webhooks (Chat History on /admin/hub).
+enum FastbotsChatStatus {
+  OPEN
+  CLOSED
+  UNKNOWN
+}
+
+model FastbotsConversation {
+  id                 String             @id @default(cuid())
+  /// Fastbots conversation or contact id from the webhook payload
+  externalId         String
+  contactName        String?
+  contactEmail       String?
+  contactPhone       String?
+  channel            String?
+  conversationType   String?
+  lastMessage        String?            @db.Text
+  status             FastbotsChatStatus @default(UNKNOWN)
+  startedAt          DateTime?
+  closedAt           DateTime?
+  tags               String[]           @default([])
+  /// Original webhook body for forward-compat / debugging
+  rawPayload         Json?
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+
+  @@unique([externalId])
+  @@index([status, startedAt])
+  @@index([startedAt])
+  @@index([updatedAt])
+  @@index([contactEmail])
+}
+

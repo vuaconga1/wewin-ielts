@@ -10,14 +10,17 @@ import {
   Gamepad2,
   Monitor,
   FolderOpen,
+  MessageSquare,
 } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
 import { friendlyError } from "@/lib/ui/friendly-error";
 import { FriendlyErrorAlert } from "@/components/ui/friendly-error-alert";
+import { HubFastbotsChats } from "@/components/admin/hub-fastbots-chats";
 import type { AggregatedPlacementResult } from "@/lib/hub/aggregate-placement-types";
 
 type BranchFilter = "" | "NTL" | "XVNT";
 type SourceTab = "ielts" | "cambridge";
+type HubSection = "placement" | "chats";
 
 function cambridgeSourceMessage(
   code: string | undefined,
@@ -114,6 +117,7 @@ export function HubPanel() {
   const { t } = useTranslations("admin");
   const te = useTranslations("errors").t;
 
+  const [section, setSection] = useState<HubSection>("placement");
   const [query, setQuery] = useState("");
   const [branch, setBranch] = useState<BranchFilter>("");
   const [sourceTab, setSourceTab] = useState<SourceTab>("ielts");
@@ -124,6 +128,7 @@ export function HubPanel() {
   );
 
   const load = useCallback(async () => {
+    if (section !== "placement") return;
     setLoading(true);
     setError(null);
     try {
@@ -165,14 +170,15 @@ export function HubPanel() {
     } finally {
       setLoading(false);
     }
-  }, [branch, query, sourceTab, t, te]);
+  }, [branch, query, section, sourceTab, t, te]);
 
   useEffect(() => {
+    if (section !== "placement") return;
     const handle = window.setTimeout(() => {
       void load();
     }, query ? 300 : 0);
     return () => window.clearTimeout(handle);
-  }, [load, query]);
+  }, [load, query, section]);
 
   const total = data?.stats.total ?? 0;
   const ntl = data?.stats.byBranch.NTL ?? 0;
@@ -185,20 +191,80 @@ export function HubPanel() {
           {t("hubEyebrow", "WeWIN · NTL & XVNT")}
         </p>
         <h1 className="mt-2 max-w-2xl text-2xl font-bold tracking-tight sm:text-3xl">
-          {t("hubTitle", "Kết quả Placement Test")}
+          {section === "chats"
+            ? t("hubChatHeroTitle", "Chat History · Fastbots")
+            : t("hubTitle", "Kết quả Placement Test")}
         </h1>
         <p className="mt-2 max-w-xl text-sm text-white/80">
-          {t(
-            "hubSubtitle",
-            "Tra cứu bài kiểm tra đầu vào từ IELTS và Cambridge. Chi tiết mở trên web gốc.",
-          )}
+          {section === "chats"
+            ? t(
+                "hubChatHeroSubtitle",
+                "Xem hội thoại chatbot tư vấn (đồng bộ webhook). Chi tiết đầy đủ vẫn trên Fastbots.",
+              )
+            : t(
+                "hubSubtitle",
+                "Tra cứu bài kiểm tra đầu vào từ IELTS và Cambridge. Chi tiết mở trên web gốc.",
+              )}
         </p>
-        <ClipboardList
-          className="pointer-events-none absolute right-8 top-1/2 hidden h-16 w-16 -translate-y-1/2 text-wewin-gold/40 sm:block"
-          aria-hidden
-        />
+        {section === "chats" ? (
+          <MessageSquare
+            className="pointer-events-none absolute right-8 top-1/2 hidden h-16 w-16 -translate-y-1/2 text-wewin-gold/40 sm:block"
+            aria-hidden
+          />
+        ) : (
+          <ClipboardList
+            className="pointer-events-none absolute right-8 top-1/2 hidden h-16 w-16 -translate-y-1/2 text-wewin-gold/40 sm:block"
+            aria-hidden
+          />
+        )}
       </section>
 
+      <div
+        role="tablist"
+        aria-label={t("hubSectionTabListLabel", "Khu vực Admin Panel")}
+        className="flex flex-wrap gap-2"
+      >
+        {(
+          [
+            {
+              id: "placement" as const,
+              labelKey: "hubSectionPlacement" as const,
+              fallback: "Placement",
+              Icon: ClipboardList,
+            },
+            {
+              id: "chats" as const,
+              labelKey: "hubSectionChats" as const,
+              fallback: "Chat History",
+              Icon: MessageSquare,
+            },
+          ] as const
+        ).map((tab) => {
+          const active = section === tab.id;
+          return (
+            <button
+              key={tab.id}
+              type="button"
+              role="tab"
+              aria-selected={active}
+              onClick={() => setSection(tab.id)}
+              className={`inline-flex min-h-10 items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
+                active
+                  ? "bg-wewin-navy text-white"
+                  : "border border-wewin-border bg-white text-zinc-700 hover:bg-zinc-50"
+              }`}
+            >
+              <tab.Icon className="h-4 w-4" aria-hidden />
+              {t(tab.labelKey, tab.fallback)}
+            </button>
+          );
+        })}
+      </div>
+
+      {section === "chats" ? <HubFastbotsChats /> : null}
+
+      {section === "placement" ? (
+      <>
       <section className="grid grid-cols-1 gap-3 sm:grid-cols-3">
         {[
           {
@@ -511,6 +577,8 @@ export function HubPanel() {
           </section>
         </aside>
       </div>
+      </>
+      ) : null}
     </div>
   );
 }

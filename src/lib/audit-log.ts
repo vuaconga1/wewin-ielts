@@ -28,7 +28,8 @@ export type AuditAction =
   | "ZOOM_ACCOUNT_UPDATE"
   | "ZOOM_ACCOUNT_DELETE"
   | "ZOOM_HOST_LINK"
-  | "ZOOM_HOST_UNLINK";
+  | "ZOOM_HOST_UNLINK"
+  | "FASTBOTS_CHAT_INGEST";
 
 export type AuditActor = {
   id: string;

@@ -25,6 +25,24 @@ type Props = {
 };
 
 const SPEAKING_KINDS: SpeakingPartKind[] = [1, 2, 3];
+const TIME_LIMIT_OPTIONS = [15, 20, 30, 40, 60, 90] as const;
+
+function initialTimeLimitMinutes(defaultMinutes: number | null): string {
+  if (
+    defaultMinutes != null &&
+    (TIME_LIMIT_OPTIONS as readonly number[]).includes(defaultMinutes)
+  ) {
+    return String(defaultMinutes);
+  }
+  if (defaultMinutes != null) {
+    return String(
+      TIME_LIMIT_OPTIONS.reduce((best, m) =>
+        Math.abs(m - defaultMinutes) < Math.abs(best - defaultMinutes) ? m : best,
+      ),
+    );
+  }
+  return "60";
+}
 
 export function TestStartPanel({
   slug,
@@ -45,8 +63,8 @@ export function TestStartPanel({
   });
   const [selectedKinds, setSelectedKinds] =
     useState<SpeakingPartKind[]>(SPEAKING_KINDS);
-  const [timeLimit, setTimeLimit] = useState<string>(
-    defaultTimeLimit ? String(defaultTimeLimit) : "",
+  const [timeLimit, setTimeLimit] = useState<string>(() =>
+    initialTimeLimitMinutes(defaultTimeLimit),
   );
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<{ message: string; detail?: string } | null>(
@@ -113,7 +131,7 @@ export function TestStartPanel({
                   tab === "full" ? SPEAKING_KINDS : selectedKinds,
               }
             : {}),
-          timeLimitMinutes: timeLimit === "" ? null : Number(timeLimit),
+          timeLimitMinutes: Number(timeLimit),
         }),
       });
       const data = await res.json();
@@ -133,7 +151,7 @@ export function TestStartPanel({
         skill,
         mode: tab === "full" ? "FULL" : "PRACTICE",
         questionCount: totalQuestions,
-        timeLimitMinutes: timeLimit === "" ? null : Number(timeLimit),
+        timeLimitMinutes: Number(timeLimit),
       });
       startNavProgress();
       router.push(data.redirect);
@@ -270,14 +288,12 @@ export function TestStartPanel({
             value={timeLimit}
             onChange={(e) => setTimeLimit(e.target.value)}
           >
-            <option value="">{t("startPanel.noLimit")}</option>
-            {[15, 20, 30, 40, 60, 90].map((m) => (
+            {TIME_LIMIT_OPTIONS.map((m) => (
               <option key={m} value={m}>
                 {t("common.minutes", { n: m })}
               </option>
             ))}
           </select>
-          <p className="mt-1 text-xs text-zinc-500">{t("startPanel.timeHint")}</p>
         </div>
 
         {error ? (
