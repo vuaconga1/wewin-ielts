@@ -19,7 +19,12 @@ export function getFastbotsDashboardUrl(): string {
   );
 }
 
-/** Accept Bearer token or X-Fastbots-Secret header. */
+/**
+ * Accept secret via:
+ * - Authorization: Bearer <secret>
+ * - X-Fastbots-Secret header
+ * - ?secret= or ?token= query (Fastbots UI only supports Endpoint URL)
+ */
 export function verifyFastbotsWebhookRequest(request: Request): boolean {
   const secret = getFastbotsWebhookSecret();
   if (!secret) return false;
@@ -32,6 +37,17 @@ export function verifyFastbotsWebhookRequest(request: Request): boolean {
 
   const headerSecret = request.headers.get("x-fastbots-secret")?.trim() || "";
   if (headerSecret && safeEqual(headerSecret, secret)) return true;
+
+  try {
+    const url = new URL(request.url);
+    const fromQuery =
+      url.searchParams.get("secret")?.trim() ||
+      url.searchParams.get("token")?.trim() ||
+      "";
+    if (fromQuery && safeEqual(fromQuery, secret)) return true;
+  } catch {
+    // ignore invalid URL
+  }
 
   return false;
 }

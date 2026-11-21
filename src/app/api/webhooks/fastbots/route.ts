@@ -11,6 +11,17 @@ export const runtime = "nodejs";
 
 const NO_STORE = { "Cache-Control": "private, no-store" };
 
+/** Browser GET is not the webhook; Fastbots must POST. */
+export async function GET() {
+  return NextResponse.json(
+    {
+      ok: true,
+      message: "Fastbots webhook is ready. Use POST with ?secret=…",
+    },
+    { headers: NO_STORE },
+  );
+}
+
 export async function POST(request: Request) {
   if (!getFastbotsWebhookSecret()) {
     return NextResponse.json(

@@ -1487,7 +1487,7 @@
     "hubChatHint": "Danh sách hội thoại đồng bộ qua webhook Fastbots. Thời gian theo giờ Việt Nam (UTC+7).",
     "hubChatOpenFastbots": "Mở Fastbots",
     "hubChatWebhookPending": "Chưa cấu hình webhook Fastbots trên server.",
-    "hubChatWebhookHelp": "Thêm FASTBOTS_WEBHOOK_SECRET (≥16 ký tự) vào env, rồi trong Fastbots → Contacts → Contact Settings trỏ webhook tới {path} với header Authorization: Bearer <secret>.",
+    "hubChatWebhookHelp": "Thêm FASTBOTS_WEBHOOK_SECRET (≥16 ký tự) vào env, rồi trong Fastbots → Contacts → Contact Settings đặt Endpoint URL: {path}?secret=<secret> (bật Active).",
     "hubChatSearchPlaceholder": "Tìm tên, email hoặc tin nhắn cuối",
     "hubChatFilterStatus": "Lọc trạng thái",
     "hubChatStatusAll": "Tất cả trạng thái",

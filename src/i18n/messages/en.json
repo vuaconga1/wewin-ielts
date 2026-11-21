@@ -1487,7 +1487,7 @@
     "hubChatHint": "Conversations synced via Fastbots webhooks. Times shown in Vietnam time (UTC+7).",
     "hubChatOpenFastbots": "Open Fastbots",
     "hubChatWebhookPending": "Fastbots webhook is not configured on the server.",
-    "hubChatWebhookHelp": "Set FASTBOTS_WEBHOOK_SECRET (≥16 chars) in env, then in Fastbots → Contacts → Contact Settings point the webhook to {path} with Authorization: Bearer <secret>.",
+    "hubChatWebhookHelp": "Set FASTBOTS_WEBHOOK_SECRET (≥16 chars) in env, then in Fastbots → Contacts → Contact Settings set Endpoint URL to {path}?secret=<secret> (Active on).",
     "hubChatSearchPlaceholder": "Search name, email, or last message",
     "hubChatFilterStatus": "Filter status",
     "hubChatStatusAll": "All statuses",
