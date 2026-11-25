@@ -50,6 +50,8 @@ export function AudioPlayer({
   const [playing, setPlaying] = useState(false);
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [loadError, setLoadError] = useState(false);
+  const hasSrc = Boolean(src?.trim());
 
   const start = clipStart != null && Number.isFinite(clipStart) ? clipStart : 0;
   const end =
@@ -60,6 +62,9 @@ export function AudioPlayer({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    setLoadError(false);
+    setPlaying(false);
+    setDuration(0);
 
     const clamp = () => {
       if (el.currentTime < start) {
@@ -77,6 +82,7 @@ export function AudioPlayer({
       setCurrent(el.currentTime);
     };
     const onMeta = () => {
+      setLoadError(false);
       setDuration(el.duration || 0);
       if (el.currentTime < start) el.currentTime = start;
       setCurrent(el.currentTime);
@@ -84,12 +90,18 @@ export function AudioPlayer({
     const onPlay = () => setPlaying(true);
     const onPause = () => setPlaying(false);
     const onEnded = () => setPlaying(false);
+    const onError = () => {
+      setPlaying(false);
+      setDuration(0);
+      setLoadError(true);
+    };
 
     el.addEventListener("timeupdate", onTime);
     el.addEventListener("loadedmetadata", onMeta);
     el.addEventListener("play", onPlay);
     el.addEventListener("pause", onPause);
     el.addEventListener("ended", onEnded);
+    el.addEventListener("error", onError);
     if (el.readyState >= 1) onMeta();
 
     return () => {
@@ -98,6 +110,7 @@ export function AudioPlayer({
       el.removeEventListener("play", onPlay);
       el.removeEventListener("pause", onPause);
       el.removeEventListener("ended", onEnded);
+      el.removeEventListener("error", onError);
     };
   }, [src, start, end]);
 
@@ -110,12 +123,15 @@ export function AudioPlayer({
 
   function toggle() {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !hasSrc || loadError) return;
     if (el.paused) {
       if (end != null && el.currentTime >= end - 0.05) {
         el.currentTime = start;
       }
-      void el.play();
+      void el.play().catch(() => {
+        setPlaying(false);
+        setLoadError(true);
+      });
     } else {
       el.pause();
     }
@@ -123,7 +139,7 @@ export function AudioPlayer({
 
   function seek(value: number) {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !hasSrc || loadError) return;
     const max = end ?? el.duration ?? value;
     const next = Math.min(Math.max(value, start), max);
     el.currentTime = next;
@@ -142,11 +158,17 @@ export function AudioPlayer({
       : start > 0
         ? t("from", { time: fmt(start) })
         : null;
+  const controlsDisabled = !hasSrc || loadError;
+  const errorText =
+    !hasSrc || loadError
+      ? t("loadError", "Audio file is missing or unavailable.")
+      : null;
+  const audioSrc = hasSrc ? src : undefined;
 
   if (pane) {
     return (
       <div className="min-w-0 rounded-sm border border-zinc-400 bg-white px-3 py-3">
-        <audio ref={ref} src={src} preload="metadata" />
+        <audio ref={ref} src={audioSrc} preload="metadata" />
         <div className="mb-2 flex min-w-0 flex-wrap items-center justify-between gap-2">
           <p className="min-w-0 break-words text-xs font-semibold text-zinc-800">
             {label ?? t("title")}
@@ -155,25 +177,31 @@ export function AudioPlayer({
             {fmt(current)} / {fmt(max || duration)}
           </span>
         </div>
+        {errorText ? (
+          <p className="mb-2 text-[11px] font-medium text-red-700">{errorText}</p>
+        ) : null}
         <div className="flex min-w-0 flex-wrap items-center gap-2">
           <button
             type="button"
             onClick={() => skip(-5)}
-            className="rounded-sm border border-zinc-400 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-800 hover:bg-zinc-50"
+            disabled={controlsDisabled}
+            className="rounded-sm border border-zinc-400 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-800 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {t("back5")}
           </button>
           <button
             type="button"
             onClick={toggle}
-            className="rounded-sm border border-[#8a6d00] bg-[#f5c518] px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-zinc-900 hover:bg-[#e6b800]"
+            disabled={controlsDisabled}
+            className="rounded-sm border border-[#8a6d00] bg-[#f5c518] px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-zinc-900 hover:bg-[#e6b800] disabled:cursor-not-allowed disabled:opacity-50"
           >
             {playing ? t("pause") : t("play")}
           </button>
           <button
             type="button"
             onClick={() => skip(5)}
-            className="rounded-sm border border-zinc-400 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-800 hover:bg-zinc-50"
+            disabled={controlsDisabled}
+            className="rounded-sm border border-zinc-400 bg-white px-2 py-1.5 text-[11px] font-medium text-zinc-800 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {t("fwd5")}
           </button>
@@ -184,7 +212,8 @@ export function AudioPlayer({
             step={0.1}
             value={Math.min(Math.max(current, start), progressMax)}
             onChange={(e) => seek(Number(e.target.value))}
-            className="h-1.5 min-w-[8rem] flex-1 cursor-pointer accent-[#1a3a6b]"
+            disabled={controlsDisabled}
+            className="h-1.5 min-w-[8rem] flex-1 cursor-pointer accent-[#1a3a6b] disabled:cursor-not-allowed disabled:opacity-50"
             aria-label={t("title")}
           />
         </div>
@@ -195,31 +224,39 @@ export function AudioPlayer({
   if (compact) {
     return (
       <div className="mx-auto flex max-w-[1800px] min-w-0 flex-wrap items-center gap-2 px-3 py-1.5 sm:gap-3 sm:px-4">
-        <audio ref={ref} src={src} preload="metadata" />
+        <audio ref={ref} src={audioSrc} preload="metadata" />
         <p className="min-w-0 shrink truncate text-[11px] font-medium text-zinc-300">
           {label ?? t("title")}
           {clipLabel ? (
             <span className="ml-1.5 font-normal text-zinc-500">{clipLabel}</span>
           ) : null}
         </p>
+        {errorText ? (
+          <p className="w-full text-[11px] font-medium text-amber-300 sm:w-auto">
+            {errorText}
+          </p>
+        ) : null}
         <button
           type="button"
           onClick={() => skip(-5)}
-          className="rounded-sm border border-zinc-500 bg-[#3a4556] px-2 py-1 text-[11px] font-medium text-zinc-100 hover:bg-[#465266]"
+          disabled={controlsDisabled}
+          className="rounded-sm border border-zinc-500 bg-[#3a4556] px-2 py-1 text-[11px] font-medium text-zinc-100 hover:bg-[#465266] disabled:cursor-not-allowed disabled:opacity-50"
         >
           {t("back5")}
         </button>
         <button
           type="button"
           onClick={toggle}
-          className="rounded-sm border border-[#8a6d00] bg-[#f5c518] px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-zinc-900 hover:bg-[#e6b800]"
+          disabled={controlsDisabled}
+          className="rounded-sm border border-[#8a6d00] bg-[#f5c518] px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-zinc-900 hover:bg-[#e6b800] disabled:cursor-not-allowed disabled:opacity-50"
         >
           {playing ? t("pause") : t("play")}
         </button>
         <button
           type="button"
           onClick={() => skip(5)}
-          className="rounded-sm border border-zinc-500 bg-[#3a4556] px-2 py-1 text-[11px] font-medium text-zinc-100 hover:bg-[#465266]"
+          disabled={controlsDisabled}
+          className="rounded-sm border border-zinc-500 bg-[#3a4556] px-2 py-1 text-[11px] font-medium text-zinc-100 hover:bg-[#465266] disabled:cursor-not-allowed disabled:opacity-50"
         >
           {t("fwd5")}
         </button>
@@ -230,7 +267,8 @@ export function AudioPlayer({
           step={0.1}
           value={Math.min(Math.max(current, start), progressMax)}
           onChange={(e) => seek(Number(e.target.value))}
-          className="h-1.5 min-w-0 flex-1 basis-[6rem] cursor-pointer accent-[#f5c518]"
+          disabled={controlsDisabled}
+          className="h-1.5 min-w-0 flex-1 basis-[6rem] cursor-pointer accent-[#f5c518] disabled:cursor-not-allowed disabled:opacity-50"
           aria-label={t("title")}
         />
         <span className="shrink-0 font-mono text-[11px] tabular-nums text-zinc-300">
@@ -242,7 +280,7 @@ export function AudioPlayer({
 
   return (
     <div className="min-w-0 rounded-xl border border-wewin-navy/15 bg-wewin-accent-blue-bg/60 px-3 py-3 sm:px-4">
-      <audio ref={ref} src={src} preload="metadata" />
+      <audio ref={ref} src={audioSrc} preload="metadata" />
       <div className="mb-2 flex min-w-0 flex-wrap items-center justify-between gap-2 sm:gap-3">
         <p className="min-w-0 break-words text-xs font-semibold uppercase tracking-wide text-wewin-navy">
           {label ?? t("title")}
@@ -256,25 +294,31 @@ export function AudioPlayer({
           {fmt(current)} / {fmt(max || duration)}
         </span>
       </div>
+      {errorText ? (
+        <p className="mb-2 text-xs font-medium text-red-700">{errorText}</p>
+      ) : null}
       <div className="flex min-w-0 flex-wrap items-center gap-2">
         <button
           type="button"
           onClick={() => skip(-5)}
-          className="rounded-lg border border-wewin-navy/20 bg-white px-2 py-2 text-xs font-medium text-wewin-navy hover:bg-wewin-accent-blue-bg"
+          disabled={controlsDisabled}
+          className="rounded-lg border border-wewin-navy/20 bg-white px-2 py-2 text-xs font-medium text-wewin-navy hover:bg-wewin-accent-blue-bg disabled:cursor-not-allowed disabled:opacity-50"
         >
           {t("back5")}
         </button>
         <button
           type="button"
           onClick={toggle}
-          className="rounded-lg bg-wewin-navy px-4 py-2 text-sm font-medium text-white hover:bg-wewin-navy-hover"
+          disabled={controlsDisabled}
+          className="rounded-lg bg-wewin-navy px-4 py-2 text-sm font-medium text-white hover:bg-wewin-navy-hover disabled:cursor-not-allowed disabled:opacity-50"
         >
           {playing ? t("pause") : t("play")}
         </button>
         <button
           type="button"
           onClick={() => skip(5)}
-          className="rounded-lg border border-wewin-navy/20 bg-white px-2 py-2 text-xs font-medium text-wewin-navy hover:bg-wewin-accent-blue-bg"
+          disabled={controlsDisabled}
+          className="rounded-lg border border-wewin-navy/20 bg-white px-2 py-2 text-xs font-medium text-wewin-navy hover:bg-wewin-accent-blue-bg disabled:cursor-not-allowed disabled:opacity-50"
         >
           {t("fwd5")}
         </button>
@@ -285,7 +329,8 @@ export function AudioPlayer({
           step={0.1}
           value={Math.min(Math.max(current, start), progressMax)}
           onChange={(e) => seek(Number(e.target.value))}
-          className="h-2 min-w-0 flex-1 basis-[8rem] cursor-pointer accent-wewin-navy"
+          disabled={controlsDisabled}
+          className="h-2 min-w-0 flex-1 basis-[8rem] cursor-pointer accent-wewin-navy disabled:cursor-not-allowed disabled:opacity-50"
         />
       </div>
     </div>

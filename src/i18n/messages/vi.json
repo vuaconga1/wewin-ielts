@@ -1149,7 +1149,8 @@
     "back5": "−5s",
     "pause": "Pause",
     "play": "Play",
-    "fwd5": "+5s"
+    "fwd5": "+5s",
+    "loadError": "Không tải được file ghi âm (thiếu file hoặc link lỗi)."
   },
   "result": {
     "title": "Kết quả bài làm",

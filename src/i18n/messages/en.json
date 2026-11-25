@@ -1149,7 +1149,8 @@
     "back5": "−5s",
     "pause": "Pause",
     "play": "Play",
-    "fwd5": "+5s"
+    "fwd5": "+5s",
+    "loadError": "Audio file is missing or unavailable."
   },
   "result": {
     "title": "Attempt result",

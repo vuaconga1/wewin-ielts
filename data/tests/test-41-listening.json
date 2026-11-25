@@ -122,7 +122,10 @@
           },
           "correctAnswer": "boots"
         }
-      ]
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-41-section-1.mp3"
+      }
     },
     {
       "order": 1,
@@ -464,7 +467,10 @@
           },
           "correctAnswer": "C"
         }
-      ]
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-41-section-2.mp3"
+      }
     },
     {
       "order": 2,
@@ -822,7 +828,10 @@
           },
           "correctAnswer": "H"
         }
-      ]
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-41-section-3.mp3"
+      }
     },
     {
       "order": 3,
@@ -930,7 +939,16 @@
           },
           "correctAnswer": "atlas"
         }
-      ]
+      ],
+      "meta": {
+        "audioUrl": "/uploads/audio/test-41-section-4.mp3"
+      }
     }
+  ],
+  "audioFiles": [
+    "/uploads/audio/test-41-section-1.mp3",
+    "/uploads/audio/test-41-section-2.mp3",
+    "/uploads/audio/test-41-section-3.mp3",
+    "/uploads/audio/test-41-section-4.mp3"
   ]
 }

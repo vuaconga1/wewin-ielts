@@ -402,3 +402,18 @@ ws-34          : THIẾU KEYS -> tự soạn toàn bộ 58 câu (quy tắc at/in
      * scripts/test_reading_content_parser.ts: 100% question groups và passage text được tách chuẩn xác cho giao diện Web Practice CDI.
      * scripts/verify_cambridge_20.py: 100% audio R2 CDN và map image hợp lệ.
   6. Persist DB: Đã upsert cả 8 tests Cambridge 20 vào Neon PostgreSQL với status PUBLISHED.
+
+----------------------------------------------------
+[2026-11-25] FIX AUDIO ATTACH — C12.03–04 / C16 / C17 Listening (test-29,30,35–42)
+----------------------------------------------------
+- Vấn đề: 10 đề Listening PUBLISHED trên production thiếu MediaAsset AUDIO (mediaCount=0).
+  test-41/42 thêm thiếu section meta.audioUrl → practice không phát được.
+  File mp3 đã có local + R2 (40/40), khớp nguồn Ha English (byte size trùng).
+- Nguồn đối chiếu:
+  + git ignore/Bộ Cambridge IELTS 12 PDF + Audio_ Ha English (Test 7–8 → test-29/30)
+  + git ignore/Bộ Cambridge IELTS 16 PDF + Audio_ Ha English (Test 1–4 Part → test-35..38)
+  + git ignore/Bộ Cambridge IELTS 17 PDF + Audio_ Ha English (t1–t4 audio1–4 → test-39..42)
+- Xử lý: gắn 4 MediaAsset AUDIO + meta.audioUrl mỗi section; cập nhật data/tests/test-{29,30,35..42}-listening.json (audioFiles).
+  Không upload R2 lại (đã đủ, public URL HTTP 206).
+- Script: scripts/_tmp-fix-attach-c12-c16-c17-audio.ts --persist
+- Kiểm tra: mediaCount=4 và sectionAudio đủ 4 path cho cả 10 slug; R2 present 40/40.

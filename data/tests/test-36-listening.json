@@ -685,5 +685,11 @@
   ],
   "examType": "ACADEMIC",
   "sourceFolder": "C61.pdf",
-  "savedAt": "2026-11-17T10:57:41.457568+00:00"
+  "savedAt": "2026-11-17T10:57:41.457568+00:00",
+  "audioFiles": [
+    "/uploads/audio/test-36-section-1.mp3",
+    "/uploads/audio/test-36-section-2.mp3",
+    "/uploads/audio/test-36-section-3.mp3",
+    "/uploads/audio/test-36-section-4.mp3"
+  ]
 }
