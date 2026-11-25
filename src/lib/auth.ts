@@ -113,23 +113,63 @@ export async function verifyPassword(
   return bcrypt.compare(password, passwordHash);
 }
 
-export async function createSession(user: SessionUser): Promise<void> {
-  const jar = await cookies();
-  const domain = process.env.SESSION_COOKIE_DOMAIN?.trim();
-  jar.set(COOKIE_NAME, encodeSession(user), {
+function sessionCookieBase(
+  domain: string | undefined,
+): {
+  httpOnly: true;
+  sameSite: "lax";
+  secure: boolean;
+  path: "/";
+  domain?: string;
+} {
+  return {
     httpOnly: true,
     sameSite: "lax",
     // Shared Domain cookies must be Secure in real browsers; also require Secure in production.
     secure: process.env.NODE_ENV === "production" || Boolean(domain),
     path: "/",
-    maxAge: MAX_AGE_SEC,
     ...(domain ? { domain } : {}),
+  };
+}
+
+/**
+ * Expire a cookie variant. Host-only and Domain=.wewin.edu.vn are distinct
+ * browser cookies — clear both during shared-SSO rollout (dual-write migrate).
+ */
+function expireSessionCookie(
+  jar: Awaited<ReturnType<typeof cookies>>,
+  domain?: string,
+): void {
+  jar.set(COOKIE_NAME, "", {
+    ...sessionCookieBase(domain),
+    maxAge: 0,
+  });
+}
+
+export async function createSession(user: SessionUser): Promise<void> {
+  const jar = await cookies();
+  const domain = process.env.SESSION_COOKIE_DOMAIN?.trim() || undefined;
+  // When issuing a shared-domain cookie, also drop any legacy host-only
+  // wewin_session so the browser does not keep two cookies with the same name.
+  if (domain) {
+    expireSessionCookie(jar);
+  }
+  jar.set(COOKIE_NAME, encodeSession(user), {
+    ...sessionCookieBase(domain),
+    maxAge: MAX_AGE_SEC,
   });
 }
 
 export async function destroySession(): Promise<void> {
   const jar = await cookies();
-  jar.delete(COOKIE_NAME);
+  const domain = process.env.SESSION_COOKIE_DOMAIN?.trim() || undefined;
+  // Always clear host-only; also clear shared Domain when configured.
+  expireSessionCookie(jar);
+  if (domain) {
+    expireSessionCookie(jar, domain);
+  } else {
+    jar.delete(COOKIE_NAME);
+  }
 }
 
 /** Deduped within a single RSC/request (SiteShell + page both call this). */

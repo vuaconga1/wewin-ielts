@@ -6,12 +6,24 @@
 function allowedOrigins(): string[] {
   const raw = process.env.WEWIN_HUB_ALLOWED_RETURN_ORIGINS?.trim();
   if (!raw) {
-    return ["https://wewin.edu.vn"];
+    return [
+      "https://admin.wewin.edu.vn",
+      "https://wewin.edu.vn",
+      "https://exam.wewin.edu.vn",
+    ];
   }
   return raw
     .split(",")
     .map((s) => s.trim().replace(/\/$/, ""))
     .filter(Boolean);
+}
+
+/** Entries like `.wewin.edu.vn` allow any https host under that parent. */
+function isAllowedBySuffix(hostname: string, entry: string): boolean {
+  if (!entry.startsWith(".")) return false;
+  const parent = entry.slice(1).toLowerCase();
+  const host = hostname.toLowerCase();
+  return host === parent || host.endsWith(`.${parent}`);
 }
 
 function isLocalDevOrigin(origin: string, nodeEnv: string | undefined): boolean {
@@ -51,6 +63,10 @@ export function isAllowedReturnTo(
   if (url.username || url.password) return false;
 
   const origin = url.origin;
-  if (allowedOrigins().some((allowed) => allowed === origin)) return true;
+  const allowed = allowedOrigins();
+  if (allowed.some((entry) => entry === origin)) return true;
+  if (allowed.some((entry) => isAllowedBySuffix(url.hostname, entry))) {
+    return true;
+  }
   return isLocalDevOrigin(origin, nodeEnv);
 }

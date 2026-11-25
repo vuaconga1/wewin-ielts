@@ -183,3 +183,11 @@ __pycache__/
 # Local Fluid CPU bench snapshots
 /scripts/.bench-fluid-cpu-*.json
 /scripts/.bench-fluid-cpu-*.json.log
+
+# AdminPanel nested Next app (own package.json / optional own git remote)
+/AdminPanel/node_modules/
+/AdminPanel/.next/
+/AdminPanel/.env
+/AdminPanel/.env.local
+/AdminPanel/.env.*.local
+/AdminPanel/tsconfig.tsbuildinfo
