@@ -76,4 +76,13 @@ tmp-test7-writing.txt
 backups
 docs/cambridge_*
 docs/worksheets_split
+# Local Cambridge PDF+Audio dumps (~1.6GB) — never upload to Vercel
+/git ignore/
+/_LOCAL_cambridge_packs_DO_NOT_DEPLOY/
+
+
+# Extra local media (deploy lean)
+public/uploads/images/**
+public/uploads/writing/**
+data/audits/**
 

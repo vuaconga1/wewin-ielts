@@ -144,6 +144,8 @@ next-env.d.ts
 *.traineddata
 
 # Raw resource packs and downloads (not part of deployment)
+/git ignore/
+/_LOCAL_cambridge_packs_DO_NOT_DEPLOY/
 *.zip
 /docs/cambridge_21_split/pdf_extract/
 /docs/cambridge_21_split/Cambridge IELTS 21.pdf
