@@ -1,27 +1,35 @@
 import type { NextConfig } from "next";
 
+/** Admin Panel (+ local) may embed this app in an iframe for SSO workspace. */
+const FRAME_ANCESTORS = [
+  "'self'",
+  "https://admin.wewin.edu.vn",
+  "https://*.wewin.edu.vn",
+  "http://localhost:3000",
+  "http://127.0.0.1:3000",
+].join(" ");
+
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  { key: "X-Frame-Options", value: "SAMEORIGIN" },
   {
     // Speaking practice needs getUserMedia audio. `microphone=()` blocks the
     // entire document (site settings cannot override). Allow same-origin only.
     key: "Permissions-Policy",
     value: "camera=(), microphone=(self), geolocation=()",
   },
-  // Light CSP: allow Next.js inline/scripts; block framing by others.
-  // Avoid overly strict script-src that breaks Next hydration.
+  // Prefer CSP frame-ancestors (do not also set X-Frame-Options SAMEORIGIN —
+  // that blocks Admin Panel cross-origin embeds).
   {
     key: "Content-Security-Policy",
-    value: "frame-ancestors 'self'; base-uri 'self'; object-src 'none'",
+    value: `frame-ancestors ${FRAME_ANCESTORS}; base-uri 'self'; object-src 'none'`,
   },
 ];
 
 const zoomMeetingFrameCsp = [
   "default-src 'self'",
   "base-uri 'self'",
-  "frame-ancestors 'self'",
+  `frame-ancestors ${FRAME_ANCESTORS}`,
   "worker-src blob:",
   "style-src 'self' 'unsafe-inline' https://source.zoom.us https://*.zoom.us",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://source.zoom.us https://zoom.us https://*.zoom.us https://dmogdx0jrul3u.cloudfront.net blob:",
